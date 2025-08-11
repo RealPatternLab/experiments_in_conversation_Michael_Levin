@@ -175,3 +175,21 @@ example_downloads/
 *.mkv
 data/ingested/youtube/frames/
 .env.backup
+archive/
+
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Logs
+logs/
+
+# Data directories (optional - uncomment if you don't want to track data)
+# media_pipelines/*/data/
+
+# Environment files
+.env
+.env.backup
