@@ -175,7 +175,6 @@ example_downloads/
 *.mkv
 data/ingested/youtube/frames/
 .env.backup
-archive/
 
 # Virtual environment
 .venv/
@@ -193,3 +192,4 @@ logs/
 # Environment files
 .env
 .env.backup
+/archive
