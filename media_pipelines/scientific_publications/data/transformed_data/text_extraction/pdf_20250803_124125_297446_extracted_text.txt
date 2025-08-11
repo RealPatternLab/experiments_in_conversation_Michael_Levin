@@ -1,0 +1,623 @@
+Programmable Delivery of Fluoxetine via Wearable
+Bioelectronics for Wound Healing In Vivo
+
+The ability to deliver drugs with precise dosages at specific time points can
+significantly improve disease treatment while reducing side effects. Drug
+encapsulation for gradual delivery has opened the doors for a superior
+treatment regimen. To expand on this ability, programming bioelectronic
+devices to deliver small molecules enables ad-hoc personalized therapeutic
+profiles that are more complex than gradual release. Here, a wearable
+bioelectronic device with an integrated electrophoretic ion pump that affords
+on-demand drug delivery with precise dose control is introduced. Delivery of
+fluoxetine to wounds in mice result in a 27.2% decrease in the macrophage
+ratio (M1/M2) and a 39.9% increase in re-epithelialization, indicating a
+shorter inflammatory phase and faster overall healing. Programmable drug
+delivery using wearable bioelectronics in wounds introduces a broadly
+applicable strategy for the long-term delivery of a prescribed treatment
+regimen with minimal external intervention.
+
+[PAGE 1] 1. Introduction
+The ability to tailor the therapeutic levels
+of drugs over time to the dynamic evo-
+lution of our physiology improves treat-
+ment effectiveness and leads to better
+clinical outcomes.[1] Research in drug de-
+livery has developed materials and chem-
+ical strategies for passively and actively
+controlled release. [2] Merging this active
+control strategy for tunable drug delivery
+with programmable electronic devices
+can open the doors to personalized and
+more effective treatment regimens. [3]
+Bioelectronic devices are capable of de-
+livering on-demand physiological-active
+ions, [4] small molecules, [3b,5] and elec-
+tric fields as treatments.[6] This ability is
+particularly important when applied to rapidly changing envi-
+ronments, such as the one found in wounds.[7] Wound healing
+usually involves four overlapping phases: hemostasis, inflam-
+mation, proliferation, and remodeling. [8] A delay or disruption
+in one of these phases can lead to wound chronicity, scarring,
+infection, sepsis, and even death. [9] To facilitate wound healing,
+wearable bioelectronics have employed external stimuli, such as
+electric fields[10] and biochemicals.[11] To expand on these treat-
+ments, here we have developed a programmable bioelectronic
+device capable of delivering the drug fluoxetine (FLX), a selective
+serotonin reuptake inhibitor (SSRI) commonly used as an
+antidepressant agent, with the capacity to reduce
+inflammation[12] to accelerate healing in a mouse wound
+model (Figure 1). Prior studies have demonstrated that both
+systemic and topical administration of fluoxetine improves
+wound healing in both diabetic and non-diabetic rodent skin[13]
+as well as decreases wound pathogen growth, biofilm formation,
+and the dissemination of infection in rodents. [14]
+
+[PAGE 2] 2. Results and Discussion
+The wearable bioelectronic device consists of two modules
+(Figure 1): an ion pump drug delivery module and a battery-
+powered controller module (Figure 1B). The controller module
+is responsible for translating a pre-programmed delivery profile
+into a sequence of voltage signals (Figure 1C), which activate
+the ion pump to deliver fluoxetine to the wound (Figure 1D).
+The ion pump drug delivery module consists of two reservoirs
+containing a fluoxetine solution. These reservoirs are connected
+to the wound bed through two glass capillaries filled with an
+ion-selective hydrogel. (Figure 2A). The module is made of
+polydimethylsiloxane (PDMS) using a casting process (see
+Experimental Section, Figure S1, Supporting Information). Two
+silver/silver chloride (Ag/AgCl) electrodes (a working electrode
+on the left and a counter electrode on the right) connect the
+reservoirs to the voltage source on the control module that drives
+the delivery of fluoxetine using VFLX. To allow the delivery of
+fluoxetine, the solution in the reservoirs is acidic 0.01 м fluoxe-
+tine hydrochloride (FLX-HCl) tuned to pH 6, making fluoxetine
+positively charged (FLX+) due to protonation (Figure S2, Sup-
+porting Information). When VFLX is positive, FLX+ molecules
+are pushed from the reservoir (on top part of Figure 2A) into
+the wound bed via the ion-selective hydrogel acting as an ion
+exchange membrane that blocks negatively charged anions
+entering the reservoirs from the wound bed. To maintain charge
+neutrality, we presume that physiological cations exit the wound
+bed through the ion-selective hydrogel on the right and enter
+the other reservoir that houses the counter electrode. These
+physiological cations also act as the charge carriers in the wound
+bed, completing the circuit. The difference in concentration
+between the physiological cations (≈150 mm) [15] and fluoxetine
+(<0.3 mm) in the wound bed ensures that most, if not all, of the
+fluoxetine delivered to the wound bed does not escape into the
+reservoir containing the counter electrode.
+Continuous delivery of FLX+ occurs due to two opposite elec-
+trochemical reactions at the working and counter electrodes that
+maintain charge balance throughout the system (Figure 2B).
+In the reservoir containing the working electrode or anode
+(Figure 2B, top), the protonated FLX+ is in FLX+Cl- form to
+maintain charge neutrality. With VFLX = 1-3 V, an electron leaves
+the surface of the Ag, creating Ag+, which in turn reacts with the
+Cl of the FLX-HCl to form AgCl. This reaction leaves the pos-
+itively charged FLX+ free to follow the electric field through the
+ion-selective hydrogel into the wound bed. To close the circuit,
+the opposite reaction occurs at the counter electrode (Figure 2B,
+bottom), where an electron from the leads creates Cl that pairs
+with one of the physiological cations (such as Na+ or K+) that en-
+tered the reservoir from the wound bed, leaving an Ag surface
+and a salt.
+The ion pump module comprises four reservoirs and four
+pins in contact with the Ag/AgCl electrodes (Figure 2C). The
+pins also provide mechanical coupling between the two modules
+(Figure 2D). Two reservoirs deliver FLX+ into the wound bed,
+while the remaining two house the reference/counter electrodes.
+COMSOL simulations result in a uniform distribution of FLX+
+on the wound for this delivery strategy (Figure S3, Supporting
+Information). On top of the ion pump module (Figure 2D, E), the
+control module contains microcontrollers, analog-to-digital con-
+verters, and a battery that powers the wearable device so that it
+can function wirelessly between dressing changes. The control
+electronics translate the delivery regimen stored in memory into
+VFLX pulses (Figure 2F).
+We tested the ion pump delivery module in a well plate with
+saline solution and substituted the control module with a po-
+tentiostat (Figure 2G). We measured the current in the circuit
+(IFLX) while VFLX underwent a series of pulses ranging from 0–
+2 V with a duration of 200 ms each. As expected, since the deliv-
+ery circuit comprises all linear elements, IFLX increases linearly
+with VFLX. According to our description of the delivery mecha-
+nism (Figure 2A,B), IFLX is proportional to the number of FLX+
+molecules delivered to the wound bed. To characterize the work-
+ing efficiency of the ion pump, we measured the amount of FLX+
+delivered after a specific number of pulses into the saline solution
+by HPLC-MS (refer to SI text, Figures S4 and S5, Table S1, Sup-
+porting Information). The HPLC-MS results showed that the de-
+livery efficiency (n) was 20 ± 4%, meaning that we delivered one
+FLX+ molecule for every five electrons going through the circuit.
+This efficiency is in line with other ion pumps, and FLX+ is likely
+to face competition from H+.[16] Calculating η allows us to infer
+the FLX+ dose from measuring IFLX during delivery.
+We then proceeded to test the efficacy of the wearable bioelec-
+tronic device in vivo on a mouse wound model (Figure 3). We cre-
+ated a 6 mm punch wound held open by a silicone splint ring to
+minimize wound contraction (Figure 3A). Wound contraction is
+a major wound-healing process in mice but not humans. It con-
+founds the histological analysis of the wound response to ther-
+apy, particularly re-epithelialization.[13b,14] The lightweight device
+(2.5 g) affixed with Tegaderm allowed the mouse to move around
+its cage without interference (Figure 3B). We programmed the
+delivery of FLX+ for three days, six hours per day (Figure 3C)
+for a desired dose of 100 nMol of fluoxetine each day. This FLX+
+dose improves healing in a mouse wound model when topically
+applied to the wound bed. [13b,14] A blinking LED on the bioelec-
+tronic device indicated successful delivery (Figures S6 and S7,
+Movie S1, Supporting Information).
+
+[PAGE 3] 
+We used a previously reported machine-learning algorithm [17]
+to analyze images of wound size and area as an indication of
+wound healing progression (Figure 3D,E). Both the control and
+fluoxetine-treated wounds slightly increased in size at day 1 and
+decreased in size on subsequent days - this trend is expected in
+the process of wound healing (Figure 3F). There was no statis-
+tically significant difference in wound area between the treated
+wounds and the control. Therefore, we further assessed the
+wound healing process by measuring re-epithelialization on fully
+excised and fixed wounds, stained with hematoxylin and eosin
+(H&E) (Figure 3G,H; Figure S8, Supporting Information). Re-
+epithelialization, contributed to by both keratinocyte prolifera-
+tion and migration, is required for wound closure. [18] Treatment
+of wounds with FLX+ delivered from the bioelectronic device re-
+sulted in a 39.9% (P<0.05) increase in re-epithelialization com-
+pared to control (Figure 3I), indicating a significant improvement
+in early-stage healing. To determine the actual drug delivery to the
+wound, we used an established method that utilizes the correla-
+tion between dose and charge in the ion pump. [19] By calculat-
+ing the pump efficiency from in vitro results, we were able to de-
+rive the actual amount of fluoxetine delivered to each wound. [5b]
+Due to blood flow in the wound and drug half-life, measuring
+the drug concentration in the wound itself is challenging; how-
+ever, leveraging the ion pump's characteristics allowed us to cal-
+culate and quantify the amount of drug delivered based on the
+measured current on each wound. Across 15 mice, the bioelec-
+tronic device consistently delivered the desired dose (Figure 3J,
+left). The variability in the delivered dose is primarily attributed
+to system-related factors, such as changes in contact resistance
+during mouse movement, rather than being intentional by de-
+sign. Nonetheless, we leveraged this variability to establish a qual-
+itative correlation between the dose of FLX+ and wound heal-
+ing, assessed by the percentage of re-epithelization (Figure 3J,
+right). For example, re-epithelization in mouse 2, which received
+>300 nMol per day FLX+, was much faster than in mouse 15,
+which received a 10x smaller dose. This observation is consis-
+tent with the direct topical application of fluoxetine to murine
+skin wounds.[13b,14] To enhance precision and minimize vari-
+ability, we can implement a current control system with closed-
+loop control algorithms, as demonstrated in vitro with other ion
+pump systems. [20] These approaches can reduce variability and
+improved precision in drug delivery in future design of bioelec-
+tronic devices.
+
+[PAGE 4] 
+After analyzing the promising re-epithelization data, we ex-
+amined another crucial indicator of wound healing: the M1/M2
+macrophage ratio (Figure 4). [21] Macrophages play a pivotal
+role in the immune response and are crucially involved in the
+healing and regeneration of wounds. Although macrophages are
+phenotypically heterogeneous over a continuum, a simplified
+classification based on their polarized functions during the
+
+[PAGE 5]
+
+[PAGE 5] Figure 3. In vivo experiment of wearable bioelectronic device on mice. A) Photo of a mouse wound model during surgery. The left panel shows the
+mouse wound sutured with a silicone splint ring, and the right panel shows the wearable bioelectronic device fixed on the wound by Tegaderm. Scale
+bar = 5 mm. B) A mouse maintains normal daily activity while wearing the bioelectronic device on its wound. C) Plot of fluoxetine delivery over time
+from 15 experimental mice. D) Wound image taken from a group of experiments over 3 days. Scale bar = 5 mm. E) Image processing using machine
+learning to determine wound size. The top image is the mask generated by the algorithm to mark the size of the wound, and the bottom image depicts
+the overlayed image of the mask and the wound, showing that the masked area is accurate. F) Wound area analysis of the control group (orange line)
+and fluoxetine-treated group (blue line). G) H&E staining of tissue section across the wound. The top panel shows the control wound, and the bottom
+panel shows the fluoxetine-treated wound. The green line shows re-epithelization. Scale bar = 1 mm. H) A zoomed-in view of the H&E staining on the
+area of the wound edge. Scale bar = 1 mm. I) Box plot of statistics of the re-epithelization percentage of the wound. The control group (n = 22) has 22 +/-
+12% re-epithelization, and the fluoxetine-treated group (n = 15) has 30 +/-14% re-epi. Wounds treated with fluoxetine demonstrated a 39.9% increase
+in re-epithelization compared to the control, n = 15-22 mice, p<0.05. J) Bar plot of dose versus re-epithelization percentage on each fluoxetine-treated
+mouse.
+
+
+[PAGE 6] Figure 4. Macrophage analysis of the wound. A) Staining of different macrophage subtypes in the wound section. All cells (stained by DAPI, shown in
+blue), M1 (stained by iNOS, shown in red in left column), M2 (stained by CD206, shown in red in right column), and overall macrophages (stained by
+F4/80, shown in green) were imaged and presented. B) M1 and M2 cell count result from cross-channel counting, showing the distribution and ratio
+of macrophage subtypes, cell edges highlighted to separate individual cells. Scale bar = 200 µm. C) Box plot showing statistics of the M1/M2 ratio,
+which was 1.8 +/-0.6 in the control group and 1.3 +/-0.5 for the fluoxetine-treated group. The fluoxetine-treated wounds (n = 13 mice) demonstrated
+an average of 27.2% decrease in M1/M2 ratio compared to control wounds (n = 16 mice), p <0.05. D) Plot of the M1/M2 ratio over time. The blue dot
+represents the M1/M2 ratio from the control group, and the red dot represents the fluoxetine-treated group. The dashed lines indicate the projected
+wound age, while the solid line represents the trend plotted from the data in the reference.[25]
+
+different stages of wound repair[21] defines the M1 subtype that
+carries out pro-inflammatory activities[22] and the M2 subtype
+that is anti-inflammatory [23] and promotes tissue repair. [24] Using
+immunohistochemistry to identify the subtypes based on the
+expression of recognized markers, we found M1 macrophages
+significantly infiltrated the center of the control wound three days
+after injury, while there was no change observed in the fluoxetine-
+treated wound (Figure 4A; Figure S9, Supporting Information).
+Meanwhile, the number of M2-like macrophages increased in the
+center of the fluoxetine-treated wound, as depicted in Figure 4A.
+At day 3 the M1/M2 ratio was noticeably reduced following treat-
+ment, as shown in the overlay of M1 and M2 cells (Figure 4B).
+Fluoxetine treatment additionally reduced the M1/M2 ratio on
+day 3 by 27.2% compared to the control (P<0.05) (Figure 4C) indi-
+cating a lower number of the M1 pro-inflammatory macrophages
+compared to the M2 pro-reparative macrophages. This M1/M2
+ratio decrease suggests a shorter inflammatory phase with a more
+rapid progression toward the reparative phase of healing, con-
+sistent with the noted improvement in wound re-epithelization.
+To further investigate this effect, we examined the M1/M2 ra-
+tio change in the context of a continuous curve over the healing
+process. Using time series data of M1 and M2 cells in mouse
+incision wounds obtained from published studies, [25] we plot-
+ted the M1/M2 ratio's dependence on time (Figure 4D). Though
+the comparison of the published data generated from incisional
+wounds[25] to the current data generated from excisional wounds
+may be an imperfect approach, nevertheless, plotting M1/M2 ra-
+tio along with published data enables us to estimate the wound
+progression. The M1/M2 ratio of both fluoxetine-treated and con-
+trol wounds on day 3 of this experiment are within the same order
+of magnitude (blue and red dots in Figure 4D) as the time-series
+obtained from published data (black line in Figure 4D). However,
+because the curve is non-monotonic, there are two periods that
+might correspond to the M1/M2 value obtained in this study –
+one is day 0, and another is days 3-5. After taking into account
+other wound indicators, such as the onset of re-epithelialization,
+the presence of macrophages, and diminishing wound size, we
+conclude that our day 3 data correspond to the day 3-5 part of
+the curve, i.e., M1/M2 ratio is monotonically decreasing in that
+time period. Therefore, a lower M1/M2 ratio indicates that the
+wound has entered a later healing stage. Previous studies re-
+ported that the M1-M2 transition is critical for the resolution
+of inflammation and for promoting tissue repair. [26] Since the
+fluoxetine-treated wounds showed increased re-epithelialization
+and decreased M1/M2 ratio, we conclude that we have demon-
+strated proof of concept that the wearable bioelectronic device's
+fluoxetine treatment accelerated the wound-healing process. This
+finding is consistent with earlier studies that directly applied
+fluoxetine to the wound bed. [13b,14] Although fluoxetine is a
+selective serotonin reuptake inhibitor primarily used as a
+systemically administered drug for treating depression, re-
+cent studies that identify serotonin receptors in the epidermal
+cells reveals the potential of SSRI drugs to facilitate wound
+healing. [27] Topical application of fluoxetine, either in solution
+
+
+[PAGE 7] or in a hydrogel, improves wound healing in diabetic and non-
+diabetic rodent skin,[13c,28] and minimizes infection,[29] possi-
+bly via regulating the local serotonin pathway to promote ker-
+atinocyte migration and modulate inflammatory responses.[13b]
+Similarly, fluoxetine has been reported to increase M2, anti-
+inflammatory phenotype in microglial macrophages in vitro. [30]
+These effects collectively can contribute to improved skin wound
+healing.
+We have engineered a wearable bioelectronic device for con-
+tinuous delivery of treatment to the wound. This treatment lim-
+its the need for patient self-delivered daily topical treatment
+that may be error-prone in terms of dose and complicated by
+patience non-adherence.[31] Delivery from the bioelectronic de-
+vice also minimizes the potential for non-specific off-target ef-
+fects since there is little to no systemic accumulation of fluox-
+etine or impact on the serotonin metabolism (Figure $10, Sup-
+porting Information)[32]. Finally, our analysis of a 7-day positive
+control with topical application of fluoxetine to the wound caused
+a decrease of re-epithelization on mice (Figure S11, Support-
+ing Information). Bioelectronic treatment with fluoxetine, on the
+other hand, resulted in with 39.9% increase of re-epithelialization
+at day 3 brings a huge benefit. Furthermore, with this pre-
+cise delivery system, it may be possible to deliver drugs with
+temporal targeting of specific sub-populations of immune cells
+or epithelial cells as they emerge at the wound site for tissue
+repair.
+As this research is a proof of concept for the in vivo applica-
+tion of wearable bioelectronic devices for drug delivery, the sam-
+ple size is small, and the treatment duration is short, resulting
+in a wide distribution in experimental outcomes. Also, we only
+used the bioelectronic device to deliver a pre-determined dosage
+repetitively instead of delivering a customized treatment regi-
+men. Though we proved that bioelectronic drug delivery helped
+wound healing compared to no treatment, additional studies to
+compare it with other drug delivery methods, such as bolus top-
+ical application or conventional gradual release encapsulations,
+are needed to fully demonstrate the advantage of the wearable
+bioelectronic devices.
+We selected fluoxetine as the test drug for delivery, but the
+strategy of wearable bioelectronic ion pump devices can also be
+used for other charged biomolecules, such as acetylcholine.[33]
+Moreover, neutral molecules like gamma-aminobutyric acid
+(GABA) can be converted into charged ions under cer-
+tain pH conditions and delivered through bioelectronic ion
+pumps. [4a,5a,16] We primarily employed histological staining tech-
+niques, specifically re-epithelialization evaluation through H&E
+staining,[18d,34] and macrophage phenotype assessment through
+immunohistochemical marker staining, [10a,35] to monitor the
+wound healing process. These methods are widely recognized,
+well-established, and commonly utilized in research. It is worth
+noting that more advanced techniques, such as Imaging Mass
+Cytometry (IMC) offer the potential to provide greater detail and
+improved accuracy for future investigations.[36] As a proof-of-
+concept study, we utilized a total of 34 mice, all of which were sac-
+rificed on day 3 to facilitate statistical analysis. However, consid-
+ering that day 3 data represents only a single time point, a study
+with a larger sample size distributed over various time points
+would yield more conclusive results.
+
+
+[PAGE 7] 3. Conclusion
+
+Our results demonstrate the successful design and fabrication
+of a wearable bioelectronic device capable of actively controlling
+drug release for in vivo wound healing. The device is standalone,
+and it includes an ion pump delivery module, a controller mod-
+ule, and a power supply, eliminating the need for external instru-
+ments or connections to operate. This configuration allows for ex-
+tended periods of use without external interaction. We created a
+wound treatment that provides the timed and programmed deliv-
+ery of fluoxetine in a mouse wound model, and if used clinically,
+would not require patient intervention. Our treatment resulted in
+faster wound healing at day 3 as indicated by a statistically signif-
+icant 39.9% increase in re-epithelization and 27.2% decrease in
+M1 pro-inflammatory macrophages respect to M2 pro-reparative
+macrophages. These results suggest that delivery of fluoxetine
+from the wearable bioelectronic device promotes wound heal-
+ing by influencing the balance of M1/M2 phenotypes and ker-
+atinocyte migration. While the effect of fluoxetine accelerating
+wound healing is not surprising, the wearable bioelectronic de-
+vice offers a customized drug dose regimen with temporal pre-
+cision, which can be favorable over the conventional systemic
+routes of drug administration that deliver a single, full dose every
+24 h with an initial peak and subsequent lower concentration. In
+future research, the timing of drug release can be programmed
+to align with the wound stage[37] in a closed loop fashion[38] to
+further aid the healing process. We aim to further optimize the
+design of the wearable bioelectronic device for potential clinical
+use in the future.
+
+
+[PAGE 7] 4. Experimental Section
+
+Experimental Design: The objective of this experimental research is to
+evaluate the effectiveness of a wearable bioelectronic device with an in-
+tegrated electrophoretic ion pump for programmable drug delivery and
+enhanced wound healing in mice. It is hypothesized that the device could
+deliver drugs with precise dose control and personalized therapeutic pro-
+files to wounds in mice, leading to faster overall healing with minimal side
+effects.
+The wearable bioelectronic device was tested in vivo using a mouse
+wound model. A total of 37 male C57BL/6J mice were used, with 15 in the
+treatment group and 22 in the control group. Six-millimeter wounds were
+created on the back of each mouse under anesthesia, using the protocol
+we have previously reported. [136] The control group received a wearable
+bioelectronic device that was not powered on, while the treatment group
+received 6 h of fluoxetine delivery per day for 3 days. The wound area, re-
+epithelialization rate, and M1/M2 macrophage ratio were evaluated using
+digital photography and histological analysis.
+Design of Wearable Bioelectronic Device: The wearable bioelectronic
+device comprises two major components: the delivery module or ion
+pump, and the controller module with a PCB, electronic components,
+and a battery. These components were fabricated separately and then
+assembled.
+Fabrication of lon Pump: To fabricate the ion pump for the wearable
+bioelectronic device, AutoCAD software was used to design 3D-printed,
+two-part molds (Figure Sla, Supporting Information). The molds were
+filled with Polydimethylsiloxane (PDMS) and baked at 60 °C for 48 h. The
+resulting PDMS parts were then removed from the molds (Figure S1b,
+Supporting Information) and cleaned with Isopropyl Alcohol (IPA) and
+water, followed by nitrogen (N2) drying to ensure no debris remained
+on the PDMS layers. The top layer of PDMS contained four reservoirs,
+
+
+[PAGE 8] designed to hold fluoxetine solutions of specific concentrations, and four
+capillary tubes filled with hydrogels for fluoxetine delivery. The bottom
+PDMS part acted as a lid, covering the reservoirs and featuring a 0.5 mm
+tall notch to ensure contact with the wound bed below the skin. Ag and
+Ag/AgCl wires with a diameter of 0.1 mm were inserted inside each reser-
+voir. The top and bottom layers were bonded together through oxygen (O2)
+plasma treatment, which oxidizes the polymer surface and changes the
+CH3 groups on the PDMS surface to OH groups. The oxidized surfaces
+were bonded together using custom aluminum pieces. The PDMS sur-
+face was coated with Parylene to increase the media lifetime on the PDMS
+reservoirs. Hydrogel-filled capillaries, which act as the ion exchange mem-
+brane for the ion pump, were fabricated using a previously optimized and
+reported method. [39] The hydrogel recipe in this study consisted of a 1 м
+concentration of 2-acrylamido-2-methyl-1-propanesulfonic acid (AMPSA),
+0.4 м concentration of polyethylene glycol diacrylate (AMPSA), and 0.05 м
+concentration of photoinitiator (12959). 100 mm of silica tubing with an in-
+ner diameter of 100 µm and an outer diameter of 375 µm were etched with
+NaOH and then treated with silane A174 to prevent hydrogel expansion.
+The hydrogel was cross-linked with five minutes of 365 nm UV treatment
+at a power density of 8 mW cm-2. After UV curing, the capillary tubes
+were segmented into 5 mm segments and loaded by immersing them in
+а 0.01 м fluoxetine solution for at least 4 h before use. Finally, the capillar-
+ies filled with hydrogel were inserted into each reservoir to complete the
+fabrication of the ion pump.
+Design and Fabrication of Controller Module: The controller module for
+drug delivery comprises a programmable PCB with electronic components
+used for actuation and sensing. The PCB was designed using Autodesk
+EAGLE and contains a microcontroller with a built-in ADC, a memory
+chip, a DAC, and resistors for sensing current (Figure 2F). Prior to the
+experiment, programs were flashed into the onboard microcontroller, and
+actuation commences automatically once the battery is inserted. During
+program execution, the microcontroller sent 12C commands to the DAC
+to apply the appropriate voltages to the electrodes of the ion pump. As
+a result, current flowed through the resistors, generating voltages that
+could be read by either the ADC on the microcontroller or by external
+probes.
+Assembling of the Wearable Bioelectronic Device: To integrate the two
+modules of the wearable bioelectronic device, steel pins were inserted into
+four holes on the PDMS layer of the ion pump. The bottom of each pin was
+coated with silver paste to establish electrical connections between the pin
+and Ag or Ag/Cl electrodes. After assembling the wearable bioelectronic
+device, the pins were soldered to the PCB. Sterilized fluoxetine hydrochlo-
+ride solutions (0.01 M) were then prepared by dissolving the drug in ster-
+ilized water, adjusting the pH to 6 to allow the fluoxetine to protonate,
+filtering through 0.2 µm filters, and injecting the sterilized fluoxetine solu-
+tions into each reservoir.
+Ex vivo Testing of the Wearable Bioelectronic Device: The wearable bio-
+electronic device was tested ex vivo in PDMS wells filled with Steinberg
+solution to mimic the biochemical environment of tissue. The testing
+involved connecting the wearable bioelectronic device to a potentiostat
+(Metrohm Autolab) and controlling the voltage pattern via a computer
+while the ion pump outlet contacted the solution in the well. After a spe-
+cific duration of actuation, voltage and current were recorded, and the test
+was stopped to collect the solution in the well. The total charge that went
+through the circuit was calculated by integrating the current over time,
+and the dose of fluoxetine was calculated by HPLC-MS. The efficiency of
+the delivery n = moles of fluoxetine/moles of charge.
+Measurement of Fluoxetine with HPLC-MS: In order to measure the
+concentration of fluoxetine in the solution, we utilized HPLC-MS (Thermo
+Scientific LTQ) with a reversed-phase column (Synergi 4 µm Fusion-RP
+80 Å, 150 x 2 mm, 00F-4424-B0). Initially, we generated a standard curve
+from a series of samples with known concentrations of fluoxetine. These
+samples were then analyzed using HPLC-MS to verify the fluoxetine peak
+by retention time and mass reading, and the mass-spec intensity was
+recorded. The peak area of mass-spec intensity versus concentration was
+plotted in (Figure S4, Supporting Information) and fitted the data to a
+calibration curve to obtain the slope and intercept. Subsequently, the
+collected samples with unknown concentrations were loaded into the
+HPLC-MS and we recorded the fluoxetine intensity. Using the peak area
+and calibration curve, were able to calculate the concentration of the
+sample.
+Mouse Preparation and Drug Delivery by the Wearable Bioelectronics
+Device: The device was tested on C57BL/6J male mice by creating
+full-thickness, 6 mm circular wounds on their backs. [136] Bioelectron-
+ics devices were then applied with either fluoxetine (experimental group,
+15 mice) or a mock control device (on control group, 22 mice) to the
+wounds and secured them with a Tegaderm overwrap. The target deliv-
+ery dose for fluoxetine was set at 100 nMol or 0.035 mg wound-¹ day-1
+during the daily 6 h delivery program. On the third day after the surgery,
+we removed the wearable bioelectronic devices, captured images of the
+wounds using a camera, and harvested wound tissue for histological anal-
+ysis.
+Tissue Collection and Sectioning: After euthanizing the mice at the end
+of each experiment, wounds were excised and placed in a paraformalde-
+hyde solution for fixation for 24 h. Fixed tissues were then processed in a
+tissue processor for formalin-fixed paraffin-embedded (FFPE) tissue his-
+tology. During processing, the tissues were dehydrated and impregnated
+with paraffin wax to preserve the tissue structure. The processed tissues
+were embedded into paraffin blocks and cut into 5 µm thick sections us-
+ing a microtome, and the sections were placed onto glass slides. After
+drying, these sections were used for further analysis of re-epithelialization
+and macrophage subtypes.
+Re-Epithelization Calculation: To assess re-epithelialization, tissue sec-
+tions were stained with H&E using a standard protocol. Brightfield images
+were taken on a BioRevo BZ-9000 inverted microscope, and BZ Analyzer
+software (Keyence, Osaka, Japan) was used to score the images. The left
+and right wound edges were determined by identifying the innermost fol-
+licle on each side. The basal keratinocyte layer was used to measure ep-
+ithelial ingrowth on each side of the wound, from the innermost follicle
+to the tip of the epithelial tongue. The total width of the wound was mea-
+sured along the surface of the granulation tissue between the two follicles.
+The percent re-epithelialization was calculated as [(length of left epithelial
+tongue in µm) + (length of right epithelial tongue in µm)]/(wound width
+in µm) × 100.
+Macrophage Staining: Full-thickness mouse skin tissues were
+collected from both fluoxetine-treated and untreated groups 3 days
+after wounding and examined them for the expression of M1
+(F4/80+INOS+) and M2 (F4/80+CD206+) macrophage markers.
+To detect all macrophages, F4/80 as a pan-macrophage marker was
+used. M1-like macrophages were identified as a fraction of F4/80+
+macrophages expressing inducible nitric oxide synthase (iNOS), and
+M2-like macrophages as F4/80+ cells expressing CD206.
+Formalin-fixed, paraffin-embedded tissues were deparaffinized, pro-
+cessed for antigen retrieval, and blocked for 2 h at room temperature
+with 10% Donkey Serum (Thermo Fisher). The slides were then incubated
+overnight at 4 °C with primary antibodies, including Rat anti-F4/80 (dilu-
+tion 1:50; MCA497G, BIO-RAD, Hercules, CA), Rabbit anti-iNOS (dilution
+1:100; PA3-030A, Thermo Fisher Scientific), and Goat anti-CD206 (dilu-
+tion 1:100; PA5-46994, Thermo Fisher Scientific). These antibodies were
+selected based on the validation information provided on the manufactur-
+ers' websites. Some samples with technical problems with staining were
+excluded, leaving 13 samples for FLX-treated group and 16 for control
+group for scoring.
+After washing, sections were incubated with corresponding Alexa Fluor-
+conjugated secondary antibodies (Donkey Anti rat-AlexaFluor 488, Don-
+key Anti rabbit-AlexaFluor 647, Donkey Anti goat-AlexaFluor 568, dilu-
+tion 1:200, Thermo Fisher Scientific). Nuclei were counterstained with
+4',6-diamidino-2-phenylindole (DAPI), and coverslips were mounted us-
+ing an anti-fade mountant (SlowFade Mountant; S36936, Thermo Fisher
+Scientific). Fluorescence images were acquired using a Keyence au-
+tomated high-resolution microscope (BZ-X800, KEYENCE, Itasca, IL).
+Five adjacent areas were imagined at the wound center at 40x mag-
+nification and processed the images using Image) and Cell Profiler
+4.2 software.
+For semi-quantification, the numbers of macrophage subtypes in the
+wound were manually counted based on double-positive staining with
+
+
+[PAGE 9] F4/80+iNOS+ for M1-like macrophages and F4/80+CD206+ for M2-like
+cells, with blind evaluation.
+Fluoxetine Quantitative Analysis in Blood: To measure the levels of flu-
+oxetine and its major metabolite norfluoxetine in mouse serum, reverse-
+phase HPLC was employed with UV detection and purified the samples us-
+ing C18 pipette-tip solid phase extraction (C18 PT-SPE). The mobile phase
+used was 300:700:1 acetonitrile: 50 mm phosphate buffer pH 6.0: triethy-
+lamine. Separation of fluoxetine, norfluoxetine, and fluvoxamine (the inter-
+nal standard) was achieved on a Cortecs C18 column (3 mm ID × 100 mm
+L, 2.7 µm particle diameter, Waters, Ireland) at a flow rate of 450 ul min-1
+and a temperature of 35 °C. The column effluent was monitored at 230 nm
+with a time constant of 0.5 s. For the PT-SPE cartridges, 20 mg C18 sil-
+ica sorbent was slurry-packed in methanol into 1 mL pipette tips using
+glass wool as a bottom frit, and acid-washed sand in place of a top frit.
+After packing, 2 tube volumes of water were passed through and the
+cartridges were ready for use. To prepare the sample loading solution,
+10 uL of a fluvoxamine solution (10 µg mL¯¹ in methanol) was spiked
+into 100 µL of study serum, and then diluted this solution with 100 µL of
+water. This sample loading solution was applied to the conditioned SPE
+cartridges, which were then washed with 600 µL ultra-pure water followed
+by 600 µL 50:50 methanol:water. Fluoxetine, norfluoxetine, and fluvoxam-
+ine were eluted using 100 µL of methanol containing 0.5% (v/v) formic
+acid. After elution, we diluted the samples 1:1 with water, mixed well, and
+centrifuged them. Finally, 10 µL of the resulting solution was injected for
+analysis.
+Serotonin Quantitation in Blood: Serotonin quantitation in mouse
+serum was performed according to the previously published protocol.[40]
+Statistical Analysis: Statistical analysis was performed using multiple
+software packages including Microsoft Excel, the Scipy.stats library writ-
+ten in Python, and Prism 9. The significance of the comparison of re-
+epithelialization and M1/M2 ratio between the treated and control group
+was assessed using an independent two-tailed Student's t-test, with a
+significance level of P <0.05. The correlation between the dose and re-
+epithelialization is evaluated by Pearson correlation coefficient (r), where
+r2> 0.5 is considered a strong correlation. The significance of the linear re-
+gression was evaluated by Wald Test with t-distribution, with a significance
+level of P <0.05.
+Ethical Statement for Animal Experiment: All animal experiments con-
+ducted in this study were approved by the Institutional Animal Care and
+Use Committee (IACUC) at the University of California, Davis, under an
+approved protocol. The animal handling protocol was designed to mini-
+mize pain or discomfort to the animals, and the study adheres to UC Davis
+and Federal ethical and regulatory guidelines.
+
+
+[PAGE 9] Author Contributions
+
+H.L. and H.Y. contributed equally to this work. H.L., H.Y., M.T., R.I., M.R.,
+and J.S. performed conceptualization. H.L., Η.Υ., Ρ.Β., Η.Η., Τ.Ν., C.H.,
+K.Z., J.S., L.L., H.C., M.Τ., Μ.Α., L.L., A.B., J.O., C.H., and M.R. performed
+methodology. H.L., H.Υ., Ν.Α., P.B., A.L., A.G., K.Z., and C.R. performed
+investigation. H.L., K.Z., and H.C. performed visualization. R.I., M.R., M.T.,
+M.Z., M.G., M.L., A.S., and N.N. performed supervision. H.L. and H.Y.
+wrote the original draft. H.L., Η.Υ., Ν.Α., Τ.Ν., Κ.Ζ., Μ.Τ., Μ.Ζ., M.G., R.I.,
+and M.R. wrote, reviewed, and edited the final manuscript.
+
+
+[PAGE 9] Data Availability Statement
+
+The data that support the findings of this study are available in the sup-
+plementary material of this article.
+
+[PAGE 9] Author Contributions
+H.L. and H.Y. contributed equally to this work. H.L., H.Y., M.T., R.I., M.R., and J.S. performed conceptualization. H.L., Η.Υ., Ρ.Β., Η.Η., Τ.Ν., C.H., K.Z., J.S., L.L., H.C., M.Τ., Μ.Α., L.L., A.B., J.O., C.H., and M.R. performed methodology. H.L., H.Υ., Ν.Α., P.B., A.L., A.G., K.Z., and C.R. performed investigation. H.L., K.Z., and H.C. performed visualization. R.I., M.R., M.T., M.Z., M.G., M.L., A.S., and N.N. performed supervision. H.L. and H.Y. wrote the original draft. H.L., Η.Υ., Ν.Α., Τ.Ν., Κ.Ζ., Μ.Τ., Μ.Ζ., M.G., R.I., and M.R. wrote, reviewed, and edited the final manuscript.
+
+[PAGE 9] Data Availability Statement
+The data that support the findings of this study are available in the supplementary material of this article.
+
+[PAGE 9] Keywords
+bioelectronic ion pump, controlled drug delivery, wearables, wound healing
+
+[PAGE 9] Acknowledgements
+The authors thank the help from Mr. Vincent Pham and Dr. Harrison Shawa for assisting the mouse experiments and animal care. The authors thank the help from Dr. Chuong Nguyen for assisting the mouse experiments and analyzing the data. The authors thank the help from DaVinci Biomedical Research Products, Inc. For conducting the biocompatibility test of the device on rabbits. This research was sponsored by the Defense Advanced Research Projects Agency (DARPA) through Cooperative Agreement D20AC00003 awarded by the U.S. Department of the Interior (DOI), Interior Business Center. The content of the information does not necessarily reflect the position or the policy of the Government, and no official endorsement should be inferred.
+
+[PAGE 9] Conflict of Interest
+The authors declare no conflict of interest.

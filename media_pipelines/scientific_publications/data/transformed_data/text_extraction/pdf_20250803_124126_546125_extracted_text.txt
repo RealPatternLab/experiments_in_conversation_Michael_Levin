@@ -1,0 +1,1496 @@
+The neural crest as a bioelectric Rosetta Stone:
+translating the analog and digital bioelectric code with Fluorescent Lifetime
+Imaging (FLIM)
+
+McMillen, P.1,2, Levin, M.1,2,*
+
+1 Allen Discovery Center at Tufts University, Medford, MA 02155, USA.
+2 Wyss Institute for Biologically Inspired Engineering, Harvard University, Boston, MA
+02115, USA.
+
+* Corresponding author:
+200 Boston Ave., Suite 4600
+Medford, MA 02155
+Email: michael.levin@tufts.edu
+
+Running title: Bioelectric Rosetta Stone
+
+Keywords: Bioelectricity, FLIM, Bioelectric Imaging, Neural Crest Cells
+
+
+[PAGE 2] Abstract:
+Translating the bioelectric code remains one of the core challenges to widespread
+biomedical translation of bioelectric interventions, as well as a better evolutionary
+understanding of how developmental ionic signaling became the basis of neural
+intelligence. Thus, it is essential to develop model systems and protocols in which diverse
+bioelectrical parameters can be quantitatively studied together, in the living state, and
+connected to cell- and tissue-level outcomes. Here, we apply state-of-the-art quantitative
+Fluorescent Lifetime Imaging (FLIM) optical estimation of membrane potential (Vmem) to
+map the bioelectric dynamics of spreading Xenopus laevis neural crest cells over roughly
+18-hour time periods. We identify a slow "analog" bioelectric component that functions
+on the scale of hours, and a faster "digital" component that acts on the scale of seconds.
+We then use information theory to show that digital NCC Vmem dynamics are largely
+distinct from calcium dynamics. Finally, we provide a survey of diverse bioelectric events
+revealing a deep complexity in collective bioelectric dynamics, likely involving tunneling
+nanotubes in their transmission, which suggests numerous avenues for further
+investigation.
+
+
+[PAGE 3] Introduction
+Translating the languages of life
+After the fall of their empire, the hieroglyphic language of the Ancient Egyptians
+was lost to European scholars, hiding from them crucial insights into the foundations of
+their own more modern culture. The discovery of the Rosetta Stone, a tablet containing
+a single message written in ancient Egyptian hieroglyphs, ancient Egyptian script, and
+the accessible language of Greek, allowed them to translate this lost language and
+access the secrets that it held. Contemporary biologists face a similar challenge to that
+of 19th century Egyptologists: decoding the ancient languages of our progenitors to better
+understand ourselves (Figure 1A).
+
+The use of codes is not exclusive to human culture. Biology is replete with
+encodings, occurring at different size scales and implemented in different types of
+substrates [1-4]. Advances in bioengineering and regenerative medicine, as well as the
+basic understanding of evolutionary biology and cognitive science require that we learn
+to read and write these codes. Our ability to glean information from measurements, and
+to rationally manipulate molecular and biophysical states, to reliably achieve complex,
+system-level outcomes in living systems, depends on knowing the mapping between input
+states and subsequent outcomes.
+
+The purpose of language is to communicate information in a way that increases
+functional alignment among individuals, and a key early step in translating a language is
+understanding how information in encoded. This was the central insight of Jean-Francois
+Champollion, who first used the Rosetta Stone to translate hieroglyphics: "Hieroglyphic
+writing is a complex system, a script all at once figurative, symbolic and phonetic, in one
+and the same text, in one and the same sentence, and, I might even venture, one and
+the same word." (cited in [5]). To understand developmental and regenerative
+morphogenesis, as well as diseases of cellular cooperation such as cancer, it is essential
+to characterize the diverse communication pathways occurring among cells and the ways
+in which cellular interpretation of biophysical states orchestrates functional alignment of
+cells toward adaptive and consistent anatomical outcomes [6, 7]. Like the hieroglyphic
+language, we hypothesize that bioelectricity may encode information in multiple different
+modalities in parallel, showing a tractable and biomedically relevant modality in which
+physics and semiotics intersect [2, 8].
+
+One particularly interesting physical medium for encoding in living media is
+bioelectricity. Neuroscience, via its project of neural decoding [9-12], is largely predicated
+on the idea that mental content the ability to flexibly navigate a problem space toward
+adaptive outcomes is encoded in electrophysiological states. However, bioelectric
+networks did not first appear in brains - they are an ancient method of encoding and using
+information, dating back to bacterial biofilms [13] and gaining its full development as a
+precursor to the control of motility by regulating traversals of anatomical morphospace
+[14, 15]. We have previously suggested that the binding function that electrophysiology
+serves in brains – mediating the coordination of large numbers of neurons toward
+outcomes at the organismal behavior level – extends to (and derives from) developmental
+biology non-neural cells' need to cooperate together toward complex, unified anatomical
+outcomes [7, 16]. This suggests extension of the neural decoding field [9-12] to other
+tissues in the body, especially those that are undergoing active pattern formation [16].
+
+
+[PAGE 4] Bioelectricity as a primordial cellular language
+There is a rapidly growing body of evidence that non-neural bioelectricity plays
+important roles in development, regeneration, cancer progression, and evolution [17-19]
+(Figure 1B). Voltage parameters regulate stem cell differentiation [20-24], proliferation
+[25-29], gene expression [30, 31], and cellular interpretation of canonical biochemical
+signaling factors [32-35]. Misexpresion of ion channels induces ectopic eyes formation in
+Xenopus embryos, even outside of areas competent eye induction by the "master
+regulator" gene pax6 [36]. Bioelectricity regulates wing development in Drosophila [37],
+the size of zebrafish fins [38], and the patterning of the vertebrate heart, brain, and face
+[39-42]. It has also been implicated in evolution of the highly specialized fins of flying
+fishes [43]. Bioelectric intervention has been shown to rescue regeneration in non-
+regenerative contexts [44, 45], overcome chemical and genetic teratogenesis [46], and
+normalize tumor like structures induced by human oncogenes [47-50].
+
+Bioelectricity is also an appealing avenue for biomedical intervention due to the
+diverse array of interventional reagents that can induce complex, coordinated
+downstream responses – electroceuticals - many of which are already FDA approved
+because of their role in neuromedicine and other indications [51, 52]. And yet, predicting
+outcomes of bioelectric intervention, diagnosis of underlying bioelectric causes of
+pathology and integration of bioelectricity with the greater cell, molecular and
+developmental biology knowledgebase has proved challenging due to the daunting
+technical challenge of observing and interpreting the dynamics of bioelectric patterns at
+physiologically meaningful timescales. Bioelectricity is a complex computational medium
+[53] that cannot be controlled by simple 1-to-1 input-to-output relations, and in order to
+control the bioelectric code, we must be able to read it. Here we report efforts to use the
+embryonic cell population known as the neural crest as a model system in which to
+address bioelectrical encoding of developmentally-relevant information [54-57].
+
+The neural crest as a Bioelectric Rosetta Stone
+The neural crest is a multipotent stem cell population that sits at the interface
+between the neural and non-neural paradigms, ultimately differentiating into both neural
+and non-neural cell types [58-61]. Neural tissue is induced by cues secreted by the
+notochord, a transient medial organizing structure. Ectodermal cells that receive
+insufficient inductive cues from the notochord remain non-neural, while cells that receive
+an intermediate dose become neural crest, which can adopt both neural and non-neural
+fates. Neural crest cells (NCCs) collectively and intelligently navigate the forming embryo
+to adopt a diverse variety [62, 63] of fates with cells becoming peripheral neurons, heart
+cells, melanocytes and cranial bone and cartilage among others. And, especially relevant
+to our study, they and have repeatedly been shown to be bioelectrically active. Amphibian
+NCCs electrotax toward the cathode of exogenously generated electric fields [64, 65].
+Moreover, mutation of multiple key bioelectric effectors prevents normal NCC
+development, including K+ channels [66, 67], calcium channels [68], gap junctions [62,
+63], and the mechanosensitive cation non-specific channel Piezo1 [69].
+
+Because of its intermediate state between neural and non-neural cells, we envision
+the neural crest as a sort of bioelectric Rosetta Stone that may help translate between
+different aspects of ionic signaling. The Rosetta Stone allowed archaeologists to
+understand the language of a precursor civilization and, in so doing, to better understand
+
+
+[PAGE 5] the foundations of their own more modern culture. Similarly, we propose that bioelectric
+study of the neural crest will allow us to translate the powerful theoretical and
+methodological advances of neuroscience to the more ancient functions of non-neural
+biology, while in turn providing insights into developing insights into primitive cognition
+that will provide novel insights into the evolution and function of the brain (Figure 1A).
+
+Beyond its appeal as an intermediary between neural and non-neural cell behavior,
+neural crest cells are an important model for collective cell behavior [70-76]. NCC
+collectives chemotax towards the attractant Sdf1a, while individual cells are unable to do
+so[77] demonstrating that the collective is greater than the sum of its parts. Cells
+expressing a dominant negative version of the Sdf1a receptor CXCR4 regain the ability
+to chemotax toward Sdf1a when mixed into a collective with wild type cells[77], further
+evidencing the collective nature of this tissue. NCC collectivity is structural as well as
+function, as NCCs form supracellular Actin cables that drive migrating collectives in vitro
+and in vivo [78].
+
+NCCs demonstrate notable collective intelligence per William James' definition of
+intelligence as the ability to achieve the same goal via different paths [15, 79]. They show
+remarkable ability to do so: for example, in response to ablation they can migrate to
+deficient regions through non-canonical paths [80, 81] (as do neurons [82]), and they can
+regulate their numbers either up or down, as needed, to achieve correct target
+morphology [83]. Perhaps most impressively, mouse neural crest cells grafted into
+chicken embryos can successfully navigate their new environment and successfully form
+teeth in the chicken's beak [84]. This complex and highly plastic behavioral repertoire
+points to an underlying complexity and context-sensitive behavior that makes the neural
+crest and appealing model for studying bioelectric communication and more generally,
+collective behavior in anatomical state space [85].
+
+Finding the information in the bioelectric code
+Neural bioelectric signals are staggeringly fast, complex, and very large in
+magnitude of the voltage change achieved per unit time. More primitive non-neural
+bioelectric signals, in contrast, are much slower and weaker in magnitude. Myosin
+provides a useful analogy for bioelectricity. Muscles contain a highly specialized
+actomyosin system the facilitates production of macroscale levels of force. A less
+specialized version of non-muscle myosin pervades eukaryotic biology, driving cell motion
+and cell and tissue contractility [86]. But while there is a conservation of their molecular
+mechanism, the tools required to study organismal and cell motility are very different.
+Similarly, while powerful tools like patch, whole-cell clamping, and multi-electrode arrays
+(MEAs) have been developed for neural bioelectric signals, the toolkit for reading non-
+neural bioelectric signals is far more limited [87-89].
+
+Neuroscientists have circumvented these challenges to some degree with calcium
+imaging, which facilitates relatively non-invasive measurement of long-term
+measurement of a large number of cells in unison [90, 91]. While bioelectric intervention
+can alter calcium signals during development [92], it remains unclear how well calcium
+signaling reflects non-neural bioelectric communication, especially over long periods of
+time [93]. Specifically, because several other transduction mechanisms leading from
+voltage change to gene expression changes, besides the opening of voltage-gated
+
+[PAGE 5] Finding the information in the bioelectric code
+Neural bioelectric signals are staggeringly fast, complex, and very large in
+magnitude of the voltage change achieved per unit time. More primitive non-neural
+bioelectric signals, in contrast, are much slower and weaker in magnitude. Myosin
+provides a useful analogy for bioelectricity. Muscles contain a highly specialized
+actomyosin system the facilitates production of macroscale levels of force. A less
+specialized version of non-muscle myosin pervades eukaryotic biology, driving cell motion
+and cell and tissue contractility [86]. But while there is a conservation of their molecular
+mechanism, the tools required to study organismal and cell motility are very different.
+Similarly, while powerful tools like patch, whole-cell clamping, and multi-electrode arrays
+(MEAs) have been developed for neural bioelectric signals, the toolkit for reading non-
+neural bioelectric signals is far more limited [87-89].
+Neuroscientists have circumvented these challenges to some degree with calcium
+imaging, which facilitates relatively non-invasive measurement of long-term
+measurement of a large number of cells in unison [90, 91]. While bioelectric intervention
+can alter calcium signals during development [92], it remains unclear how well calcium
+signaling reflects non-neural bioelectric communication, especially over long periods of
+time [93]. Specifically, because several other transduction mechanisms leading from
+voltage change to gene expression changes, besides the opening of voltage-gated
+calcium signals, have been studied, it is unlikely that calcium readouts capture the entire
+richness of cells' responses to endogenous bioelectric events [94].
+
+[PAGE 6] 
+Evan Miller's group has developed a promising technology that combines their
+VoltageFluor (VF) dye system with the highly quantitative imaging tool Fluorescent
+Lifetime Imaging (FLIM) [95, 96]. VF dyes comprise a fluorophore, a molecular wire, and
+an electron donation quencher (Figure 2A). They insert into the cell membrane like a
+thumb tack, and once inserted their intensity and fluorescent lifetime change as the
+direction of the local electric field either pushes the electrons into the fluorophore
+(hyperpolarization), reducing its intensity and lifetime, or draws them out of it
+(depolarization), increasing intensity and lifetime. Because lifetime is an intrinsic property
+of a fluorophore that does not directly scale with dye concentration, FLIM largely
+eliminates confounds stemming from differential dye incorporation and cell shape
+changes (Figure 2B-D"). This is critical for reading non-neural bioelectric signals which
+tend to be very low magnitude and change over long time-periods, causing them to be
+easily obscured by even modest artifacts. We use FLIM with the highly photostable far-
+red VF dye BeRST [97] to enable long-term (>17 hours) bioelectric imaging with minimal
+phototoxicity and photobleaching for the first time in primary tissue explants.
+Here, we seek to uncover ways in which information is encoded in bioelectric
+signals. Our approach is founded on Claude Shannon's definition of Information [98],
+which is mathematically similar to the thermodynamic concept of entropy and increases
+with increasing diversity of states in a system. We discuss the application of Information
+Theory to biological signal discrimination in greater depth in [99], and apply it to
+cytoskeletal and calcium signal dynamics in relatively stationary Xenopus laevis animal
+cap explants. Shannon information is highest in systems with high variability, and it
+follows that such systems are the most appealing candidates as bioelectric
+communication modalities. Here we extend this methodology to map information flow
+between previously-undescribed optically estimated Vmem and calcium dynamics to
+migrating neural crest cell explants for an extended time period. We find that, unlike in
+neurons [90, 91], Vmem and calcium dynamics in neural crest are largely independent,
+revealing a fascinating aspect of the evolution of ionic signaling in multicellular contexts
+[14, 100-102].
+
+[PAGE 6] Methods
+Frog rearing and mRNA injection
+Animal care was done in compliance with and approval from the Institutional
+Animal Care and Use Committee (IACUC) under protocol number M2023-18 of Tufts
+University. Capped and tagged mRNA was generated used an mMessage Sp6 in vitro
+transcription kit (ThermoFisher). Embryos were microinjected 4 were injected 4X at the
+2-4 cell stage with a bolus of roughly 0.9µm outer diameter with mRNA containing 600
+ng/µL JGCAMP8s mRNA [103], 10 ng/µL mCherry-Erk2 [104] and 200 ng/µL LifeAct-
+Turquoise2 [105] in RNAse-Free water (Ambion).
+pLifeAct-mTurquoise2 was a gift from Dorus Gadella (Addgene plasmid # 36201;
+http://n2t.net/addgene:36201; RRID:Addgene_36201). pHR SFFVp BFP-Erk2 was a gift
+
+[PAGE 7] 
+from Wendell Lim (Addgene plasmid # 50848; http://n2t.net/addgene:50848;
+RRID:Addgene_50848).
+
+Neural Crest (NC) explanting onto Fibronectin (FN) coated cover glass
+NC explant procedure was modified from Gouignard et al., 2021 [106]. NC
+removal was performed in Danilchick's For Amy (DFA) [107] media to minimize bioelectric
+effects from multiple media changes. Neural crest explants were removed during
+neurulation prior to closure of the anterior neural tube (NF stages 15-17). mRNA injection
+of multiple sensors coupled with rearing at 22°C through gastrulation induces slight
+heterochrony, and while effort was made to take explants from similarly aged embryos we
+report a conservatively large stage window. We attempted to mitigate effects of stage
+variation by cutting 4-5 explants per excised neural crest, pooling and thoroughly mixing
+the explants in DFA buffer and distributing explants evenly between conditions.
+We performed experiments on three separate replicates form distinct clutches of eggs.
+For each replicate, we changed the spatial location of the three K+ conditions to mitigate
+possible confounds from well location or explant imaging order. It is impractical to confirm
+the molecular identity of each explanted cell as such testing generally requires either
+genetically encodable reporters or fixation of the tissue, neither of which is compatible
+with our analysis. We therefore avoid referring to these explants as 'neural crest cells,'
+instead using the term 'neural crest explants' to acknowledge the possibility of
+contamination with, or differentiation into, specific tissue types.
+
+Optically estimated membrane potential (Vmeme)
+While FLIM greatly improves the quantitative power of bioelectric imaging, as well
+as allowing monitoring of large numbers of cells, over developmental timescales, all
+without the disruption of penetrating them with electrodes, it is unreasonable to expect
+that bioelectric imaging maintains the same magnitude of accuracy as classic
+electrophysiological techniques in all cell types at all times. Dye internalization, artifacts
+from dye trapping, Vmem-independent effects on lifetime and other unforeseeable artifacts
+are necessary limitations of the current state of the technology. However, optical
+estimation does not suffer from the many confounds introduced by comparatively invasive
+electrophysiology techniques [87]. We use the nomenclature "Optically Estimated Vmem”
+Vmeme throughout this paper to prevent confusion about what exactly we are reporting.
+
+[PAGE 7] Dye staining
+Explants were stained in standard DFA buffer containing 4.5mM K+ gluconate,
+50uL Nuc Blue reagent (Hoechst 33342, Invitrogen R37605) and 5ul of 0.5mM BeRST
+DMSO stock (gift of Evan Miller, synthesized by Pharmaron, China) for 30 minutes in a
+22°C incubator while being covered from light. Staining media was gradually introduced
+to 8-well glass bottom chambered coverslips (Ibidi) to minimize disruption to explants and
+mixed between chambers to minimize uneven staining.
+
+[PAGE 7] Imaging
+Imaging was performed using a Leica Stellaris 8 confocal microscope. Imaging
+conditions and directory of relevant metadata files (included as supplemental pdf files) is
+presented in Supplemental Table 1. Long-term imaging was performed at 20°C. For the
+
+[PAGE 8] 
+quantitative dataset discussed in Figures 3-6 independent replicates were performed with
+eggs collected from different clutches. 9 total explants were imaged per condition, 3 in
+each imaging session for the data in these figures. Slight variation due to stage travel rate
+was present between the three replicates, but because this amounted to only a few
+minutes over the 17-hour plus duration timepoints between replicates were pooled.
+Images displayed may be from either 0.5 mM K+, 4.5 mM K+ or 8.5 mM K+ condition
+unless specified. Some images were scaled up in Fiji without interpolation to make
+cleaner figures and movies.
+
+[PAGE 8] Image analysis
+LasX FLIM quantification: Curve fitting is performed using the LasX FLIM/FCS
+module. While Lazzari-Dean et al. [95] use a bi-exponential decay fit for VF2.1.Cl and a
+mono-exponential decay fit for VF2.0.Cl, we used a mono-exponential fit for all
+fluorophores due to the relatively low photon counts. For timeseries data reported in
+Figures 3-6 BeRST lifetime images were binned in LasX prior to exporting to improve
+curve fitting by increasing photon values per fit, then scaled up in Fiji [108] using bilinear
+interpolation or in CellProfiler .
+Whole-explant quantification: Explant timeseries were exported from LasX as
+separate intensity and lifetime channels. An intensity factor of 1 per count and a lifetime
+factor or 0.001 per count were applied so that 16-bit images scaled to picoseconds would
+be produced for analysis. Unless processed by CellProfiler, binary masks were produced
+using either the BeRST intensity channel or NucBlue signal.
+Kymographs: Kymorgaphs are produced by using the NucBlue signal to mask the
+channels of interest then running the Radial Reslice tool in ImageJ and producing an
+average intensity projection. A radius is drawn from Images are formatted as 32-bit with
+background set to NaN to prevent below-threshold pixels from affecting the data. Positive
+derivative images are generated by subtracting an image from the image at the next
+timepoint and discarding any values below 0.
+Cell Profiler nucleus outlining: Our CellProfiler [109, 110] pipeline is attached as
+Supplemental Methods 1. In this study CellProfiler was only used to outline nuclei in
+Supplemental Movie 7.
+
+[PAGE 8] Informational analysis of Vmemºº and calcium kymographs
+The kymographs are cropped to a height of 240 pixels, removing the outermost
+pixels and binarized with a manually derived threshold, one threshold value being used
+for all Vmeme kymographs and another for all calcium kymographs. y-axis is then median-
+binned by a factor of 16 to produce an image 15 pixels high, with the pixels representing
+average values of a series of concentric circles 16 pixels thick. The x-axis of the resulting
+kymograph is replaced with time, converting the single kymograph image into a timeseries
+one pixel thick and 15 pixels high. Both timelapses are then spatially scaled up 100-fold
+and segmented to make each original pixel into a distinct ROI and a mosaic timelapse
+with calcium values on the left and Vmeme values on the right created and saved as an
+.avi format file. The Information Theory software package CAIM [111] was then used to
+extract timeseries data from each ROI and calculate the Information within each signaling
+paradigm at each ROI and the Mutual Information between each channel and each ROI.
+
+[PAGE 9] 
+Data was processed in Excel and statistically analyzed and plotted in Prism. Statistical
+significance was determined using Friedmann's test with Dunn's multiple comparison test.
+
+Bioelectric event size estimation
+Binarized data from the information analysis above was used to estimate the
+average size of bioelectric events within each explant. The average number of ROls with
+signal was measured from each timepoint containing at least one active ROI in either the
+Vmeme or Calcium paradigm were tabulated, then an average event size for each explant
+was determined. Explants that did not contain at least one Vmeme event and one calcium
+event were excluded. Statistical significance was calculated in GraphPad Prism using a
+paired t-test.
+
+[PAGE 9] Scan speed bioelectric event dynamic estimation
+We observed linear signals perpendicular to the direction of scan speed. We
+divided the frame capture duration of the image by the number of scan lines composing
+it to estimate the dwell time for each scan line. We then used ImageJ to draw a line along
+the masked lifetime image (background pixels being set as NaNs were not included in the
+analysis) parallel to the scan direction and manually defined to be thick enough to
+encompass the bioelectric event with minimal contamination from nearby cells. We
+extracted the variation in lifetime over space using the Plot Profile tool in ImageJ and
+converted the spatial component to time using the scan line dwell time estimate and
+plotted the resulting lifetime vs. time plot.
+
+[PAGE 9] Statistics
+Lazic et al. [112], Lord et al. [113], and Motulsky [114] were used as guides for
+statistical analysis Multiple neural crests from different animals were cut into smaller
+explants which were randomized and sorted into different K+ conditions. Because
+randomization occurred at the explant level the sample size was calculated as the number
+of explants, and different explants were used as replicates for statistics. Explants were
+collected from 3 separate clutches and imaged in three separate sessions with the 3
+conditions being imaged in parallel. Out of efficiency concerns we do not explicitly
+account for possible clutch and imaging session level variability in our statistics, though
+in Figure 3A we used different colored spots for each of the three replicates. Because
+long-term timelapses are time consuming, for both information and event size estimation
+we pool data from all three K+ concentration conditions to increase statistical power and
+use color to denote to which condition each datapoint belongs. For the event size
+estimation explants that do not have both Vmeme and Calcium events were excluded.
+Statistical tests were conducted using GraphPad Prism 10.4.0 in accordance with its
+recommendations [114].
+
+[PAGE 9] Data was processed in Excel and statistically analyzed and plotted in Prism. Statistical
+significance was determined using Friedmann's test with Dunn's multiple comparison test.
+
+Bioelectric event size estimation
+Binarized data from the information analysis above was used to estimate the
+average size of bioelectric events within each explant. The average number of ROIs with
+signal was measured from each timepoint containing at least one active ROI in either the
+Vmem or Calcium paradigm were tabulated, then an average event size for each explant
+was determined. Explants that did not contain at least one Vmem event and one calcium
+event were excluded. Statistical significance was calculated in GraphPad Prism using a
+paired t-test.
+
+Scan speed bioelectric event dynamic estimation
+We observed linear signals perpendicular to the direction of scan speed. We
+divided the frame capture duration of the image by the number of scan lines composing
+it to estimate the dwell time for each scan line. We then used ImageJ to draw a line along
+the masked lifetime image (background pixels being set as NaNs were not included in the
+analysis) parallel to the scan direction and manually defined to be thick enough to
+encompass the bioelectric event with minimal contamination from nearby cells. We
+extracted the variation in lifetime over space using the Plot Profile tool in ImageJ and
+converted the spatial component to time using the scan line dwell time estimate and
+plotted the resulting lifetime vs. time plot.
+
+Statistics
+Lazic et al. [112], Lord et al. [113], and Motulsky [114] were used as guides for
+statistical analysis Multiple neural crests from different animals were cut into smaller
+explants which were randomized and sorted into different K+ conditions. Because
+randomization occurred at the explant level the sample size was calculated as the number
+of explants, and different explants were used as replicates for statistics. Explants were
+collected from 3 separate clutches and imaged in three separate sessions with the 3
+conditions being imaged in parallel. Out of efficiency concerns we do not explicitly
+account for possible clutch and imaging session level variability in our statistics, though
+in Figure 3A we used different colored spots for each of the three replicates. Because
+long-term timelapses are time consuming, for both information and event size estimation
+we pool data from all three K+ concentration conditions to increase statistical power and
+use color to denote to which condition each datapoint belongs. For the event size
+estimation explants that do not have both Vmem and Calcium events were excluded.
+Statistical tests were conducted using GraphPad Prism 10.4.0 in accordance with its
+recommendations [114].
+
+
+[PAGE 10] Results
+As with the characterization of any new information medium or coding modality,
+use of a model system for cracking the bioelectric code requires knowledge of the kind of
+bioelectric properties of which it is capable (analog vs. digital signals, signaling "frame
+rate", bandwidth in terms of ability to carry different states per unit area, etc.), as well as
+a knowledge of how these properties respond to stimuli. We examined these in the
+Xenopus neural crest as follows.
+
+Three-dye bioelectric FLIM imaging reveals spatial bioelectric variation obscured in
+standard non-FLIM imaging
+We hypothesized that there exist subtle bioelectric patterns in spreading neural
+crest explants that are not readily detectable by intensity-only fluorescent imaging. In
+order to test this, we compared the Vmem patterns optically estimated by intensity and
+lifetime using a set of three bioelectric dyes.
+We recently described a strategy [115] to validate specificity of bioelectric patterns
+detected with BeRST using the control dyes VF2.1.Cl, the lifetime properties have been
+rigorously quantified with electrophysiology[95], and VF2.0.CI, a negative control variant
+of VF2.1.CI lacking the electron donating quencher that confers Vmem sensitivity. We have
+found that co-staining NC explants with BeRST and VF2.0.CI dramatically reduces the
+lifetime and variability of the VF2.0.CI signal, suggesting a possible FRET interaction
+between the two dyes (data not shown). We therefore avoided co-staining BeRST with
+either VF2.1.Cl or VF2.0CI, instead staining separate explants in parallel. Conclusions
+were based on two separate clutches comprising 9 explants stained with VF2.0.CI, 8
+explants stained with VF2.1.Cl and 13 explants stained with BeRST. Imaging conditions
+were altered slightly between explants to generate comparable images. Explants
+presented in Figure 2 were not obtained from injected embryos to prevent crosstalk
+between constructs and VF2.0.Cl and VF2.1.CI.
+Comparison of the intensity (B-C") and lifetime (D-D") components of the three
+dyes demonstrated the value of FLIM for reading bioelectric states. In the intensity
+pictures, cell shape appeared to play a major role in apparent Vmem. With all three dyes
+sites of cell-overlap appeared relatively depolarized due the increased local dye
+concentration generating, a circumferential ring that is not present in the lifetime images.
+Figure 2B' and C' showing the intensity of the Vmem sensitive dye VF2.1.Cl are especially
+problematic, as they suggested that the central cell clusters are much more depolarized
+than the individual spreading cells. However, this pattern was also present in panels B"
+and C" using the Vmem insensitive dye VF2.0.CI, strongly indicating that these patterns
+are false positives. The FLIM data in panels D' and D" further supported this conclusion
+as the VF2.1.Cl stained explant has a different pattern from the VF2.0.Cl stained control,
+which is more uniform. Thus, FLIM removed major sources of noise and reveals subtle
+bioelectric patterns that this noise obscures.
+We observed a few differences, however, indicating possible artifacts. Both
+VF2.1.CI and VF2.0.Cl occasionally showed a reduced lifetime in dense clumps of tissue
+(Figure 3F,G, asterices). This pattern was not present with BeRST, and indeed the
+opposite tends to be true with dense tissue often having elevated lifetimes consistent with
+depolarization (Figure 3D", D", E asterisk). One known artifact of VF-FLIM is self-
+
+
+[PAGE 11] quenching at high dye concentrations[95]. Due to the density of pre-migratory explants
+and our desire to do long-term imaging with minimal photon requirements we used BeRST
+at a relatively high concentration (5µm) to increase evenness of penetration. The VF
+dyes tended to penetrate tissue more effectively than BeRST, meaning that they likely
+had an even higher local concentration. We interpreted these data to mean that dense
+tissue tended to be depolarized on the inside and hyperpolarized on the periphery and
+that this effect is if anything underestimated due to dye quenching artifacts. We also
+observed that neurites have an elevated lifetime with VF2.1.CI, indicative of
+depolarization (D"), while appearing hyperpolarized with BeRST (Figure 2 F"). The
+hyperpolarization reported by BeRST is more consistent with established biophysical
+models, suggesting that there is an artifact with VF2.1.Cl, but out of caution we resisted
+interpreting any neurite patterns in this paper until this contradiction can be resolved.
+In (Figure 2E-G") we have included a gallery of Vmem images of NC explants
+stained with BeRST and cultured in parallel and imaged roughly 20 hours after plating.
+FLIM produces two distinct datasets for each pixel. Intensity is a photon count and is the
+standard readout for fluorescent confocal microscopy. Lifetime is a measurement of the
+amount of time that the fluorophore remains in the excited state and is reported in
+nanoseconds. We reported these data in three ways: First, intensity only, which showed
+patterns as detected by standard bioelectric imaging (Figure 2 E-E""). Second, intensity
+and lifetime combined, in which pixel brightness was determined by intensity and pixel
+color is determined by lifetime (Figure 2F-F""). This is the default output of the LasX FLIM
+module and combines the cell-shape cues provided by intensity, but obfuscates some of
+the quantitative power of the lifetime data. Third, we have presented the lifetime image
+masked by the intensity image and colored with a custom LUT (Figure 2G-G"). This
+presentation technique was the most quantitative and best shows low-magnitude
+patterns. In figures subsequent to Figure 2 we generally used the lifetime-only
+presentation technique due to its quantitative power unless otherwise specified.
+Together, these data demonstrate that FLIM enabled detection of subtle bioelectric
+variation that was masked in intensity-only fluorescent bioelectric imaging. Further, they
+underscore the dangers of 'false positive' bioelectric pattern detection with intensity-only
+imaging that can largely be ameliorated with FLIM. However, they also reveale a
+remarkable constellation of cell-to-cell bioelectric variation in explanted NCCs, especially
+in cells that have split off from larger collectives. But how did this variation arise? Were
+they evidence of transient fluctuations or persistent static cell differences? To address
+these questions, we leveraged one of the main strengths of bioelectric imaging: the ability
+to observe large populations of cells in parallel over extended periods of time.
+
+Bioelectric variation in time: NCC explants exhibit multiscale bioelectric signals on scales
+from seconds to hours
+Having identified spatial variation in bioelectric state, we next asked how bioelectric
+patterns evolve in time during neural crest cell migration and how these patterns respond
+to bioelectric intervention by altering media K+ levels. Bioelectric imaging greatly improved
+the temporal and spatial range over which we could detect bioelectric patterns. We
+leveraged this sensitivity window to explore Vmem dynamics over a roughly 17-hour
+window as the neural crest explants spread out, migrate collectively, and begin to
+separate off from their collective to migrate individually.
+
+
+[PAGE 12] As we outlined in Figure1B, one of the greatest challenges in the field of
+bioelectricity is predicting phenotypic outcomes of bioelectric interventions. Do cells
+compensate quickly to interventions return to a set Vmem, or do they remained de- or
+hyperpolarized for extended time periods? Are bioelectric dynamics tightly clamped,
+potentially preventing cells from transitioning into new states, or simply shifted to de- or
+hyperpolarized levels? To address these questions, we ran parallel longitudinal studies of
+NCC explants with altered external potassium levels to test the effects of extracellular ion
+levels on long-term bioelectric patterns. We performed a bulk lifetime analysis on the
+explant timelapses to estimate global Vmem patterns over time by thresholding the
+Intensity component of the image to remove dim pixels from our analysis. Because this
+approach does not require image segmentation it is relatively unbiased, but is more
+sensitive to artifacts like those generated by cell death and dye internalization.
+We first wanted to see whether we could detect effects of changing K+ levels on
+BeRST lifetime. We determined the average value of each explant over the timecourse
+and found that, as expected[116], increasing K+ increased Vmem (Figure 3A)
+Unexpectedly, decreasing K+ levels did not significantly decrease lifetime (Figure 3A).
+Plotting the mean value at each timepoint suggested that the standard deviation of the
+0.5 mM K+ condition is larger than the other two conditions.
+In all three conditions, Vmem followed a consistent 3-Phase pattern over time
+(Figure 3B). When the data from all three conditions are pooled each phase was
+statistically distinct from its previous phase. Initially the explants appear relatively
+depolarized, followed by a roughly 6.5 hour period of gradual hyperpolarization. This
+depolarization generally manifested as bioelectric gradient with the center of the explant
+appearing relatively depolarized with increased polarization towards the explant periphery
+(Supplemental movie 1). This central depolarization tends to flatten during this 6.5 hour
+period as the explant hyperpolarizes. The initial hyperpolarization window is followed by
+gradual depolarization over the next 10 or so hours, with Phase 3 not being significantly
+different from Phase 1.
+Phase 2 and 3 explants in 8.5 mM K+ had significantly higher Vmem than explants
+in 4.5 mM K+, while in Phase 1 none of the conditions were significantly different
+(Supplemental Figure 1). This pattern was evident in Figure 2B, as the gap between the
+mean of the 8.5 mM K+ explants and the 4.5 mM K+ explants starts small in Phase 1,
+expands in Phase 2 and remains large in Phase 3. These trends were consistent with an
+intrinsic variation in K+ permeability as cells progress through migration.
+To better explore the unexpected lack of Vmem reduction in the 0.5mM K+
+condition, and informed by the relatively large standard deviation in this condition (Figure
+3D) we examined the long-term dynamics of each explant independently (Figure 3D-F).
+These independent observations revealed relatively short, sharp depolarization events
+that are most prominent in the 0.5mM condition (Figure 3D, red asterisk) and seem most
+evident during Phase 2. Because these signals were relatively rapid (minutes) and
+appeared to be discrete events, as defined by a changing time much faster than the
+duration of the constant periods between, we refer to them as 'digital' to differentiate them
+from the slow (on the order of hours) 'analog' bioelectric signals. These signals
+confounded attempts to determine the resting membrane potential of cells in the 0.5 mM
+K+ condition, explaining the high standard deviation in this condition and potentially
+explaining why it does not have significantly lower Vmem than the 4.5mM K+ condition.
+
+
+[PAGE 13] Closer qualitative analysis of these digital signals revealed that they often involved
+a large number of cells, but did not necessarily encompass the entire explant. In the
+example low K+ treated explant in Figure 4A and B has split into two fragments (see
+Supplemental movie 1 for full video). In Panel B, the bottom fragment depolarized as a
+collective while the upper fragment remained relatively constant. 14 minutes later, in
+panel H, the upper fragment collectively depolarized while the lower fragment gradually
+hyperpolarized. This trend suggested that these two fragments contain separate dynamic
+bioelectric circuits. We have also provided two more examples with combined Vmem and
+intensity to show the diversity of digital bioelectric signals (Supplemental Movies 2 and
+3).
+Taken together, these data revealed a slow, 3-phase progression of Vmem during
+NC explant spreading: an early, relatively depolarized phase characterized by a
+depolarized center that gradually becomes more hyperpolarized toward the periphery
+(Phase 1), a second more hyperpolarized phase in which this gradient weakens during
+which cells begin to separate from the explant (Phase 2), and third phase of increasing
+depolarization (Phase 3). Together these data suggested that membrane K+ permeability
+shifts as NCC migration progresses. Finally, we identified an unexpected increase in fast,
+short duration depolarization events in the low K+ condition, demonstrating that even very
+simple bioelectric interventions may have nonlinear phenotypic consequences.
+
+Digital bioelectric dynamics partially overlap with calcium dynamics
+In neurons, calcium dynamics are strongly correlated with depolarization [90, 91].
+We compared Vmem and calcium patterns in order to determine if this is true in the NC
+as well.
+Calcium signaling is one of the best-studied dynamic signaling paradigms in non-
+neural biology [117, 118], and it has regularly been used as a proxy for dynamic neural
+signals for decades [90, 91, 119]. It has further been found to be active during NC explant
+migration and patterning [120, 121] and disruption of the Ca2+/H+ channel AMO1 [68],
+and the nonspecific cation channel Piezo1 prevents normal NCC migration in vivo [69].
+Given this correlation between dynamic neural signals and calcium, we hypothesized that
+the digital bioelectric signals we describe in the previous section are an undescribed
+component of the dynamic non-neural calcium paradigm.
+We analyzed our timeseries for evidence of correlation between bioelectric and
+calcium signals, and as we hypothesized, we found examples of calcium signals that
+correlate with bioelectric signals (Figure 4C). However, we also observed bioelectric
+events with no corresponding calcium signal (Figure 4D) and calcium signals without
+corresponding bioelectric signals (Figure 4D). Given these data, we rejected the
+hypothesis that calcium can be a sufficient proxy for developmental bioelectricity, and
+instead concluded that bioelectric and calcium signals are crosstalk with one another, but
+lack the tight correlation canonically found in neural bioelectricity.
+To more holistically compare calcium and digital bioelectric dynamics we turned to
+kymography (Figure 5 A-O). Because analog and digital bioelectric signals differ by the
+relative rate of their signal changes, we deconvolved them by creating 'positive derivative'
+timeseries by subtracting the Vmem lifetime (or calcium intensity) values at each
+timepoint from the following timepoint. Kymographs produced from the undifferentiated
+
+Closer qualitative analysis of these digital signals revealed that they often involved
+a large number of cells, but did not necessarily encompass the entire explant. In the
+example low K+ treated explant in Figure 4A and B has split into two fragments (see
+Supplemental movie 1 for full video). In Panel B, the bottom fragment depolarized as a
+collective while the upper fragment remained relatively constant. 14 minutes later, in
+panel H, the upper fragment collectively depolarized while the lower fragment gradually
+hyperpolarized. This trend suggested that these two fragments contain separate dynamic
+bioelectric circuits. We have also provided two more examples with combined Vmeme and
+intensity to show the diversity of digital bioelectric signals (Supplemental Movies 2 and
+3).
+
+Taken together, these data revealed a slow, 3-phase progression of Vmem during
+NC explant spreading: an early, relatively depolarized phase characterized by a
+depolarized center that gradually becomes more hyperpolarized toward the periphery
+(Phase 1), a second more hyperpolarized phase in which this gradient weakens during
+which cells begin to separate from the explant (Phase 2), and third phase of increasing
+depolarization (Phase 3). Together these data suggested that membrane K+ permeability
+shifts as NCC migration progresses. Finally, we identified an unexpected increase in fast,
+short duration depolarization events in the low K+ condition, demonstrating that even very
+simple bioelectric interventions may have nonlinear phenotypic consequences.
+
+Digital bioelectric dynamics partially overlap with calcium dynamics
+
+In neurons, calcium dynamics are strongly correlated with depolarization [90, 91].
+We compared Vmeme and calcium patterns in order to determine if this is true in the NC
+as well.
+
+Calcium signaling is one of the best-studied dynamic signaling paradigms in non-
+neural biology [117, 118], and it has regularly been used as a proxy for dynamic neural
+signals for decades [90, 91, 119]. It has further been found to be active during NC explant
+migration and patterning [120, 121] and disruption of the Ca2+/H+ channel AMO1 [68],
+and the nonspecific cation channel Piezo1 prevents normal NCC migration in vivo [69].
+Given this correlation between dynamic neural signals and calcium, we hypothesized that
+the digital bioelectric signals we describe in the previous section are an undescribed
+component of the dynamic non-neural calcium paradigm.
+
+We analyzed our timeseries for evidence of correlation between bioelectric and
+calcium signals, and as we hypothesized, we found examples of calcium signals that
+correlate with bioelectric signals (Figure 4C). However, we also observed bioelectric
+events with no corresponding calcium signal (Figure 4D) and calcium signals without
+corresponding bioelectric signals (Figure 4D). Given these data, we rejected the
+hypothesis that calcium can be a sufficient proxy for developmental bioelectricity, and
+instead concluded that bioelectric and calcium signals are crosstalk with one another, but
+lack the tight correlation canonically found in neural bioelectricity.
+
+To more holistically compare calcium and digital bioelectric dynamics we turned to
+kymography (Figure 5 A-O). Because analog and digital bioelectric signals differ by the
+relative rate of their signal changes, we deconvolved them by creating 'positive derivative'
+timeseries by subtracting the Vmeme lifetime (or calcium intensity) values at each
+timepoint from the following timepoint. Kymographs produced from the undifferentiated
+image (Figure 5 D,H,L) showed the analog system dynamics, while kymographs of the
+positive derivative image reveal the digital dynamics (Figure 5 E,I,M).
+
+We generated positive derivative timeseries by using the NucBlue nuclear signal
+to mask the timeseries and remove all datapoints outside of the nucleus ROI. This
+thresholding served two purposes: it removed much of the internalized dye that accrues
+within cells over time as the vesicles housing this dye tend to be occluded by the nucleus,
+and it removed noise from cell movement which is a substantial confound for this positive
+derivative approach. We also used nuclear thresholding with the original images. We
+then used the "Radial Reslice" tool in Fiji [108] to draw 360 kymographs (spaced 1 degree
+apart) spanning the center of the image to its periphery (Figure 5A,B). Stacking these
+360 kymographs into an average intensity projection produced a single image that
+conveys dynamic information about the bioelectric evolution of the whole explant in space
+and time.
+
+We show representative kymographs from our three conditions in Figure 5 D-O.
+The analog trends visualized by the undifferentiated kymographs aligned with the trends
+we described in our whole-explant analysis (Figure 3): Initial depolarization followed by
+hyperpolarization that eventually trended back to depolarization, a depolarization to
+hyperpolarization gradient from the center of the explant to the periphery that gradually
+faded, and a strong hyperpolarization in peripheral cells splitting off from the explant. The
+effects of external K+ levels also aligned with the low K+ condition demonstrating stronger
+hyperpolarization during Phase 2 and the 8.5mM K+ condition demonstrating higher
+depolarization in Phase 3.
+
+Examination of the kymographic datasets lead us to formulate two hypotheses: (1)
+that Vmeme and calcium dynamics were weakly coordinated in migrating NCCs and (2)
+that Vmeme dynamics tended to be larger in scale than calcium dynamics. To
+quantitatively evaluate these hypotheses we applied well-established Information Theory
+formalism using the tool CAIM (Calcium Imaging) [111], which we have previously used
+to quantify Information flow in and between the calcium and cytoskeletal pathways in
+Xenopus laevis animal cap cells[99].
+
+We began by pooling Vmeme and calcium data from the 0.5mMK+, 4.5mMK+ and
+8.5mMK+ conditions in an attempt to estimate the Informational properties of these
+pathways throughout the spectrum of K+ levels they may encounter during development
+and improve our statistical power. We determined an average information value for each
+explant. In this pooled data we detect an average of 0.079 bits of Information in the Vmemoe
+pathway and 0.062 bits detected in the calcium pathway (Figure 6B) though these values
+are not significantly different.
+
+Only about 7% of calcium Information is shared with Vmemoe
+
+To test our hypothesis that calcium and Vmeme and calcium are weakly correlated
+in migrating NCC explants we measured the Mutual Information between the two
+variables within each ROI and compared it to the amount of Information measured in each
+pathway. Consistent with our hypothesis Mutual Information between calcium and Vmemое
+was significantly lower than either of the two variables (Figure 6B), only about 7% of the
+Information measured in the calcium pathway and 5.6% of the Information measured in
+Vmeme. These data suggest that the two pathways are largely, though not entirely,
+independent in migrating NCCs.
+
+Vmemºº events tend to be larger than calcium events
+
+We observed that Vmeme events tend to be incorporate more cells than calcium
+signaling events. To test this, we used the binarized ROI data generated for the CAIM
+analysis above and measured the average number of ROIs included in events of each
+signaling paradigm. Explants not exhibiting both calcium and bioelectric events were
+excluded from this analysis, and the number of events was not considered, only the
+average size of the detected events. Each datapoint represents the average event size
+for the indicated paradigm for one explant, and the K+ condition to which the explant
+belongs is indicated by the datapoint color.
+
+Survey of rare bioelectric events implies cytological bioelectric decision making
+
+The expanded spatial and temporal range of bioelectric imaging (Figure 2D) allows
+us to capture relatively rare events that would be extremely challenging to catch with
+classic needle-based electrophysiology. The relative rarity of spontaneous occurrence of
+these events has prevented us from drawing quantitative conclusions about them at this
+time, but should provide a foundation for future study while underscoring the fascinating
+complexity of the bioelectric world.
+
+Vmeme increases during cell division
+
+Bioelectricity has been implicated both phenomenologically and functionally in
+many aspects of the cell cycle [28, 122-124]. In Supplemental Movie 4 we document
+several events of depolarization during cell division, one of which is shown in Figure 7A.
+This observation aligns with previously described bioelectric cell cycle patterns [125],
+reinforcing the ability of the VF-FLIM technique to detect previously established bioelectric
+events. Further, the minimal invasiveness of bioelectric imaging coupled with its high
+temporal and spatial resolution provides an appeal platform to tease apart the bioelectric
+mechanisms of cell cycle progression.
+
+Cells and cell collective depolarize upon re-encountering their original collective
+
+In Supplemental Movie 5, we observed a cell hyperpolarize, break off from the
+collective, and migrate independently before contacting another location in the explant,
+depolarizing (Figure 8B), and integrating into this new location. Contact appears to be
+mediated by tunneling nanotubes [121, 126-132]. We have also observed this
+phenomenon with cell collectives, which depolarize in unison when the most proximal
+member of the group re-contacts the greater collective Supplemental Movies 6 and 7.
+This immediate, long distance response points to a role for contact-mediated bioelectric
+signaling in balancing the rate and degree of spreading during NCC migration, though
+further study will be needed to evaluate its functionality.
+
+Scan artifacts reveal dynamic signal kinetics
+
+We have observed that in explants raised for roughly 22 hours at 18 degrees,
+switching from 4.5mM K+ to 0.5mM K+ appears to stimulate bioelectric signals similar to
+those observed in Phase 2 of imaged over time at 20 degrees. We leveraged this
+observation to survey for fast bioelectric events at increased magnification (Supplemental
+movies 2 and 3). Under these conditions we occasionally observed straight lines of
+depolarization perfectly parallel to the y-imaging axis. Because we are performing line-
+scanning imaging we interpret these lines as digital bioelectric events that manifest
+between successive scan lines. Assuming that these bioelectric events are consistent
+across the cell we can use the line-scan rate across an ROI parallel to the x-axis to
+estimate the kinetics of the bioelectric signal. We find that these signals can be repetitive
+and have relatively fast on-kinetics and slow off-kinetics (Figure 9C', C"). The frequency
+of these signals varies from cell-to-cell, suggesting a diversity in the underlying ion
+channel mechanism, though they tend to persist for on-the-order of seconds. Notably the
+cell in C' was in direct contact with several neurite-like projections, presenting the
+possibility that neuronal activity may play a role in producing or modulating some of these
+digital bioelectric signals.
+
+Strikingly, we found that these digital bioelectric events can span long ranges in
+cell collectives, and even propagate to cells outside of the core collective and presumably
+linked only by tunneling nanotubes (Figure 7C"). By assuming uniform activation across
+the collective in this case we can estimate the collective digital bioelectric signal kinetics
+and find a third bioelectric pattern distinct from the ones in C' and C". The diversity in on
+and off kinetics of these signals provides a tantalizing glimpse into the temporal encoding
+of non-neural bioelectric events, though the relative rarity of these events precludes
+deeper interpretation without further experimental optimization.
+
+Bioelectric activity of NC explant projections
+
+Because it stains the cell membrane, BeRST effectively highlights tunneling
+nanotubes and other cellular projections that have a high ratio of cell membrane to
+cytoplasm. Such projections have been shown to be able to mediate long-distance
+communication [129], including bioelectric communication via gap junctions [126, 128].
+In rare cases like that shown in Figure 7D we observed that depolarization of the cell body
+extends to its tunneling nanotubes. Notably the tunneling nanotubes of multiple cells
+depolarize in unison suggesting that the bioelectric reach of the cell collective is much
+greater than the space occupied by the cell bodies might suggest. This is consistent with
+our finding of relatively high mutual information in the Vmem pathway compared with the
+calcium pathway. More generally the small size of tunneling nanotubes makes them
+exceedingly difficult to clamp with existing technology, and this finding demonstrates that
+bioelectric imaging may be a powerful tool for better understanding their dynamics.
+
+[PAGE 17] Discussion
+
+The Rosetta stone's value stemmed primarily from its revelation of both similarities
+and differences between ancient and modern languages. Likewise, we analyze NCCs to
+reveal both similarities and differences between neural signaling and non-neural and
+neural bioelectric signals. We describe some key pitfalls in bioelectric imaging and
+discuss how FLIM can be used to circumvent them. We then describe long-period analog
+bioelectric patterns that manifest over the course of hours and much faster digital
+bioelectric signals that manifest on the order of seconds. We then apply information
+theory to demonstrate that, unlike action potentials [90, 91], these digital bioelectric signals
+are mostly distinct from calcium dynamics. Finally, we discuss the implications for these
+comparisons to the ontogeny of neural bioelectricity.
+
+
+The value of FLIM in revealing bioelectric patterns
+
+Perhaps the most generally applicable finding of this paper is the danger of using
+intensity-only measurements to detect bioelectric patterns. The high level of confounding
+noise both obscures subtle bioelectric patterns (compare Figure 2C' and 2D') and, even
+more problematically, can appear as false-positive signal (compare Figure 2 C" and D").
+Due to the necessity of long-term imaging for our approach, we were limited in our ability
+to detect contamination from NCC-proximal tissues or differentiation of multipotent NCCS
+into any of the many types of cells to which they give rise. Our work reveals a striking
+variety in bioelectric signals during NCC migration and provides a foundation for future
+studies to deconvolve the phenomenological and functional nature of contributions of
+inter-tissue interactions, cell differentiation and crosstalk between different NCC
+derivatives to the NCC bioelectric code. Applications of understanding the roles of ionic
+signaling for orchestrating cell behavior more broadly extend across evolutionary
+developmental biology [102, 133], the biomedicine of birth defects and injury [41, 134,
+135], and the use of diverse cell types in programmable biorobotics [136].
+
+The analog bioelectric code
+
+Migrating explanted cells follow a slow three-phase bioelectric trajectory that
+manifests over a series of hours. (Figure 3A-G, Supplemental Movie 1). In Phase I a
+strong gradient with more depolarized cells on the inside and more hyperpolarized cells
+on the outside. In Phase II this gradient weakens as the whole explant hyperpolarizes
+and begins to break apart. Finally, in Phase III the explants again depolarize. While these
+trends are consistent, the actual estimated bioelectric values vary considerably between
+explants indicating a lack of fixed gating setpoints lead us to refer to these as "analog"
+signals.
+
+Effects of K+ concentration on bioelectric dynamics of NCC explants
+
+How do bioelectric interventions affect bioelectric signals? One of the biggest
+challenges in the field of bioelectricity is designing bioelectric interventions that reliably
+produce desired phenotypic outcomes (Figure 1). Doing so is necessary for therapeutic
+intervention in regeneration and cancer treatment [137, 138]. Here, we took steps to
+bridge this gap by measuring the effects of a common bioelectric intervention, variation
+of extracellular K+ levels, over an extended period of time. As predicted from previous
+
+[PAGE 17] Discussion
+The Rosetta stone's value stemmed primarily from its revelation of both similarities
+and differences between ancient and modern languages. Likewise, we analyze NCCs to
+reveal both similarities and differences between neural signaling and non-neural and
+neural bioelectric signals. We describe some key pitfalls in bioelectric imaging and
+discuss how FLIM can be used to circumvent them. We then describe long-period analog
+bioelectric patterns that manifest over the course of hours and much faster digital
+bioelectric signals that manifest on the order of seconds. We then apply information
+theory to demonstrate that, unlike action potentials [90, 91], these digital bioelectric signals
+are mostly distinct from calcium dynamics. Finally, we discuss the implications for these
+comparisons to the ontogeny of neural bioelectricity.
+
+The value of FLIM in revealing bioelectric patterns
+Perhaps the most generally applicable finding of this paper is the danger of using
+intensity-only measurements to detect bioelectric patterns. The high level of confounding
+noise both obscures subtle bioelectric patterns (compare Figure 2C' and 2D') and, even
+more problematically, can appear as false-positive signal (compare Figure 2 C" and D").
+Due to the necessity of long-term imaging for our approach, we were limited in our ability
+to detect contamination from NCC-proximal tissues or differentiation of multipotent NCCS
+into any of the many types of cells to which they give rise. Our work reveals a striking
+variety in bioelectric signals during NCC migration and provides a foundation for future
+studies to deconvolve the phenomenological and functional nature of contributions of
+inter-tissue interactions, cell differentiation and crosstalk between different NCC
+derivatives to the NCC bioelectric code. Applications of understanding the roles of ionic
+signaling for orchestrating cell behavior more broadly extend across evolutionary
+developmental biology [102, 133], the biomedicine of birth defects and injury [41, 134,
+135], and the use of diverse cell types in programmable biorobotics [136].
+
+The analog bioelectric code
+Migrating explanted cells follow a slow three-phase bioelectric trajectory that
+manifests over a series of hours. (Figure 3A-G, Supplemental Movie 1). In Phase I a
+strong gradient with more depolarized cells on the inside and more hyperpolarized cells
+on the outside. In Phase II this gradient weakens as the whole explant hyperpolarizes
+and begins to break apart. Finally, in Phase III the explants again depolarize. While these
+trends are consistent, the actual estimated bioelectric values vary considerably between
+explants indicating a lack of fixed gating setpoints lead us to refer to these as "analog"
+signals.
+
+Effects of K+ concentration on bioelectric dynamics of NCC explants
+How do bioelectric interventions affect bioelectric signals? One of the biggest
+challenges in the field of bioelectricity is designing bioelectric interventions that reliably
+produce desired phenotypic outcomes (Figure 1). Doing so is necessary for therapeutic
+intervention in regeneration and cancer treatment [137, 138]. Here, we took steps to
+bridge this gap by measuring the effects of a common bioelectric intervention, variation
+of extracellular K+ levels, over an extended period of time. As predicted from previous
+
+[PAGE 18] 
+work [116], elevating extracellular K+ appears to depolarize cells. Reducing K+ does not
+significantly hyperpolarize cells, however. We further found that reduction of extracellular
+K+ lead to an unanticipated increase in fast 'digital' bioelectric signals demonstrating that
+even simple bioelectric interventions can have major non-linear effects. The mechanisms
+by which reduced K+ could increase digital bioelectric signaling remain unclear, though it
+is of some interest that reduced K+ in the brain has been associated with sleep [139], and
+thus our findings may have implications for the primitive evolutionary origins of sleep.
+
+The digital bioelectric code
+What role could digital bioelectric signals play? There is a growing body of
+evidence that temporally encoded signaling dynamics are an underappreciated element
+of signal transduction, with pulsed and static inputs of the same growth factor having
+different effects. [140-143]. Given that neural bioelectric signals are fundamentally digital,
+it follows that their more primitive non-neural counterparts would also have temporally
+encoded properties. The variable off and on kinetics we report in Figure 7C provide
+evidence for the tantalizing possibility that there may exist a temporally encoded
+vocabulary of non-neural digital bioelectric signals. While the rarity of these events limits
+our ability to study them, future work better characterizing may go a long way to
+addressing our key knowledge gap of designing bioelectric interventions to achieve
+specific outcomes.
+There is also some evidence of this phenomenon in bioelectric signaling. Elegant
+work employing fluorescence-fluctuation correlation analysis of the genetically encoded
+voltage-indicator rEstus has shown that Vmem fluctuations can correlate between cells in
+immortalized A375, HEK293T and MCF cell lines, and they report reduced Vmem variation
+in confluent clusters [144]. The events that we describe are more discrete than the
+fluctuations describe by Rühl et al. [144], and while we see spatial variation increase in
+isolated cells, cells within collectives reliably produce robust digital signals. Further work
+will be needed to determine if the digital bioelectric signals that we report are alternative
+manifestations of the same phenomenon described by Rühl et al. or if they are separate
+pathways.
+
+How does digital Vmem and calcium signals compare in NCCs? Calcium and Vmem
+are largely distinct informational channels in NCC explants, in a substantial departure
+from the neural paradigm (Figure 8). This disparity highlights the danger of using calcium
+as a proxy for Vmem in non-neural cells and underscores the importance of calcium-
+independent effectors of bioelectric signals. Vmem signals exhibit mutual information at a
+greater distances than calcium signals. This patterns aligns interestingly with the
+specialized function of these channels in neurons, in which Vmem allows for fast long-
+distance communication while calcium mediates the relatively local process of vesicle
+release. Could the long-distance nature of the bioelectric signals that we see point to an
+intermediary evolutionary mechanism that was supplanted by axons in the brain? Better
+understanding the mechanistic origins of NCC digital signals may provide insights into the
+early evolution of neural bioelectricity.
+
+What is the molecular basis of digital bioelectric signals? Hyperpolarization
+activated cyclic nucleotide gated channels (HCN) increase membrane cation conductivity
+in response to hyperpolarization and have been shown to mediate long-range repair of
+chemical and genetic perturbation of Xenopus development [46, 145, 146]. These
+
+[PAGE 19]
+channels are known to function in stem cells [147-149], excitatory cells including neurons
+[150] and cardiomyocytes [151, 152], making them reasonable candidates for effectors of
+the digital bioelectric signals we describe here. However, HCN channels are calcium
+permeable, and digital bioelectric signals only loosely correlate with calcium dynamics.
+Likewise, while the mechanosensitive nonspecific cation channel Piezo1 is necessary for
+proper NCC migration [69], it too show allow calcium influx and thus it is an unlikely
+effector for digital bioelectric signals. Our data therefore point to an alternative
+hyperpolarization activated ion channels that can coordinate cell physiology over large
+distances making these appealing targets for future studies of repair and regeneration.
+
+Implications for the deep history of bioelectricity
+Comparison of the bioelectric circuitry of comparatively primitive NCCs with the
+more specialized, highly stereotyped circuitry of action potentials provides a tantalizing
+glimpse into the early ontogeny of neuron specification. We show here that calcium and
+Vmem dynamics have distinct computational capacities in neural crest cells, suggesting
+that they existed as distinct phenomena very different from their textbook roles in neurons
+during deep evolutionary time. Could some happy accident of the kinetics of the circuitry
+produced by their unification be the spark that enabled evolution of the neuron and all
+that followed? If so, a similar non-linear increase in computational power may be
+synthetically attainable through directed engineering of other biological circuitry. Further
+understanding the computational properties and semantics [1, 2, 8, 53, 153-158] of the
+bioelectric code in both neural and non-neural cells will be foundational to the
+development of a synthesis of behavioral and morphogenetic problem-solving in biology,
+and the novel forms of computation it has the potential to unlock.
+
+[PAGE 19] Acknowledgements
+We gratefully acknowledge support via Grant 62212 from the John Templeton
+Foundation and of a sponsored research agreement from Astonishing Labs. We thank
+Evan Miller for his kind gift of VF2.1.CI, VF2.0.Cl and BeRST dyes, Erin Switzer for Animal
+Husbandry support, Daniel Tom and Giulia Ossato for training with FLIM, and Julia Poirier
+for help with the manuscript.
+
+[PAGE 21] Figure 2: Neural crest explants exhibit remarkable spatial bioelectric variability
+(A) In VoltageFluor dyes quenching electrons reduce fluorophore intensity and lifetime
+when loaded into hyperpolarized cells. In depolarized cells, the electrons are drawn out
+of the fluorophore, the quenching is relieved and both the intensity and lifetime of the dyes
+are increased.
+(B-D) Gallery of NC explants near the end of spreading, roughly 22 hours after explanting
+raised at 18° С.
+(B-B") Intensity-only images of the type produced by non-FLIM confocal fluorescent
+imaging.
+(C-C"") Intensity/Lifetime composite images in which intensity is reported by pixel
+brightness and lifetime is reported by pixel lifetime.
+(D-D"") Lifetime only images with background removed via masking using the Intensity
+only image.
+(E-G) Representative control explants comparing Vmem sensitive and Vmem insensitive VF
+dyes.
+(E) BeRST, which is the dye used throughout the rest of this paper. Asterix shows dense
+tissue fragment which shows no sign of dye-density dependent quenching.
+(F) VF2.1.Cl, a green dye that has been rigorously quantified with FLIM[95]. Asterix
+shows dense fragment with evident dye-density dependent quenching.
+(G) VF2.0.CI, a Vmem-insensitive control variant of VF2.1.Cl lacking the quencher that
+confers Vmem sensitivity. Asterix shows dense fragment with evident dye-density
+dependent quenching.
+
+[PAGE 22] Figure 3: NC explants exhibit a three-phase pattern of long-term analog bioelectric
+changes
+(A) Increasing K+ by 4mM increases Vmeme, while decreasing K+ by 4mM does not
+decrease Vmeme. Significance determined using Browne-Forsythe and Welch ANOVA
+tests with Dunnett's T3 multiple comparison test in Prism. Large datapoint represent
+average values over the complete timecourse for a single explant (used to determine
+statistical significance), and small datapoints represent individual timepoints. Different
+colors represent different clutches. Plot produced following [113]. Line at mean, Error
+bar = 95% confidence interval.
+(B) Mean whole-explant lifetime over time displayed with SD. Vertical lines demarcate
+Phases.
+
+[PAGE 23] (C) Vmem decreases from Phase 1 to Phase 2, then increases from Phase 2 to Phase3
+in timeseries pooled from all 3 K+ conditions. Datapoints represent mean Vmeme values
+of a single explant during indicated Phase. Datapoint color indicates K+ condition.
+Significance determined with repeated Measures One-Way ANOVA with Tukey's multiple
+comparison test in Prism. Line at mean, Error bar = 95% confidence interval.
+(D-F) Traces of individual explants raised at different K+ concentrations over time.
+Asterisk in D indicates increased dynamics during Phase 2 in 0.5 mM K+ condition.
+(G) Representative image of NC explant raised in 4.5 mM K+ at the three different
+bioelectric phases.
+
+[PAGE 24] Figure 4: NC explants exhibit multicellular digital signals on the scale of minutes that only
+partially correlate with calcium signaling
+(A,B) Successive frames of intensity and lifetime images showing digital bioelectric
+signals in NC explants. Asterisks indicate which fragment of the explant depolarizes
+during the timeseries.
+(C,D,E) Successive timepoints of BeRST intensity, Vmeme and jGCAMP8S reported
+calcium dynamics. In C the apparent depolarization coincides with a calcium signaling
+event, though not all depolarized cells exhibit a calcium response. D shows a calcium
+event with no corresponding bioelectric event. E shows a bioelectric event with no
+corresponding calcium event.
+
+[PAGE 25] Figure 5: Kymograph analysis reveals distinct analog and digital bioelectric signals
+(A) Screenshot of radial reslicing of a lifetime image after application of a nuclear mask
+generated from Nuc Blue DNA stain signal.
+(B) Resultant kymograph of a single radial spoke.
+
+[PAGE 25] Figure 5: Kymograph analysis reveals distinct analog and digital bioelectric signals
+(A) Screenshot of radial reslicing of a lifetime image after application of a nuclear mask
+generated from Nuc Blue DNA stain signal.
+(B) Resultant kymograph of a single radial spoke.
+
+[PAGE 26] (C) Average intensity projection combining lifetime values at each radial spoke to produce
+a composite representation of bioelectric activity in kymograph space.
+(D-O) Representative kymographs of Vmemº® (D,H,L), the positive derivative of Vmemoe
+(E,I,M) and calcium (F,J,N) and a merge of Vmeme and calcium (G,K,O) at different K+
+concentrations.
+
+[PAGE 26] Figure 6. Information analysis of calcium and Vmem channels shows they are distinct
+paradigms that respond differently to changes in resting membrane potential
+A. Movies are segmented into 15 concentric circles that are then used as ROIs for
+Information (B) and object size analysis (C). Small events intersect a small number of
+circles producing low Mutual Information values (A), while larger events cross many
+circles to give high Mutual Information values (A').
+B. The information contained in both the Vmeme and Calcium paradigms is greater than
+the mutual information between them (Friedman test with Dunn's multiple comparison
+post-test) Line at median, error bars = 95% confidence interval.
+C. Bioelectric and calcium events were scored by the mean number of ROIs affected to
+estimate event size. Events without at least one bioelectric and calcium event were
+omitted. Significance determined via paired t-test to compare event size within each
+explant. Line at median, error bars = 95% confidence interval.
+Values for B and C were obtained by pooling datasets with spot color signifying K+ level:
+0.5 mM K+ (blue), 4.5 mM K+ (green) and 8.5mM K+ (red).
+
+[PAGE 27] Figure 7: Survey of rare bioelectric events
+(A,B): NucBlue signal was used to separate the nucleus ROI from the cell body. BeRST
+FLIM is shown in the nucleus ROI while BeRST intensity is shown in the cell body to show
+Vmeme and cell shape clearly at the same time.
+(A) Depolarization prior to cell division
+(B) Depolarization of isolated cell upon re-contacting collective
+(C) Measurement of vertical scan-line artifacts facilitates estimation the kinetics of
+bioelectric events.
+(D) Cellular projections appear to depolarize in concert with cell bodies.
+
+[PAGE 28] Figure 8: Comparing neural and neural crest bioelectricity:
+Unlike in neurons (A) in which Vmem and calcium are closely linked, in neural
+crest cells (B) Vmem and calcium are largely separate pathways.
+
+[PAGE 29] Supplemental Figures
+
+[PAGE 29] Supplemental Figure 1: K+ has different effects on Vmeme at different phases of NCC
+migration. The 8.5mM K+ condition has elevated lifetime compared with the other two
+conditions in Phase 2 and 3, but not in Phase 1. Line at mean with 95% confidence
+interval.
+
+[PAGE 29] Supplemental Figures
+
+Supplemental Figure 1: K+ has different effects on V_meme at different phases of NCC migration. The 8.5mM K+ condition has elevated lifetime compared with the other two conditions in Phase 2 and 3, but not in Phase 1. Line at mean with 95% confidence interval.
+
+[PAGE 30] Supplemental Tables
+
+Supplemental Table 1: Glossary of imaging conditions and imaging metafiles for each Figure and movie.
+
+[PAGE 30] Supplemental Movie Legends:
+
+Supplemental Movie 1: FLIM (Right) reveals bioelectric patterns at multiple timescales in migrating NC explants that are obscured by intensity only imaging. Fluorescent lifetime heatmap range displayed: 1.1ns to 1.3ns
+
+Supplemental Movie 2: 40X magnification movie showing combined intensity and FLIM reveals diverse bioelectric dynamics of migrating NCCs. Fluorescent lifetime heatmap range displayed: 1 to 1.5 ns
+
+Supplemental Movie 3: 40X magnification movie showing combined intensity and FLIM reveals diverse bioelectric dynamics of migrating NCCs. Fluorescent lifetime heatmap range displayed:1 to 1.5 ns
+
+Supplemental Movie 4: Optically estimated depolarization accompanying cell division. Colored nuclear ROI shows Vmeme, while extra-nuclear greyscale BeRST intensity shows cell morphology. Fluorescent lifetime heatmap range displayed: 1.1 to 1.4ns
+
+[PAGE 31] Supplemental Movie 5: A cell departs the collective while hyperpolarizing, migrates independently, then depolarizes upon re-joining the collective. Fluorescent lifetime heatmap range displayed: 0.800ns to 1.400ns
+
+Supplemental Movie 6: A group of cells hyperpolarizes and departs the collective, migrates as a separate collective, then depolarizes when re-contacting the larger collective. Fluorescent lifetime heatmap range displayed: 0.9 to 1.3ns
+
+Supplemental Movie 7: Colored nuclear ROI shows Vmemºº, while extra-nuclear greyscale BeRST intensity shows cell morphology. CellProfiler was used to identify nuclei and the dilate function was used to draw a one pixel thick black line surrounding them. Fluorescent lifetime heatmap range displayed: 0.9 to 1.3ns
+
+21. Cao, L., et al., Endogenous bioelectric currents promote differentiation of the
+mammalian lens. J Cell Physiol, 2018. 233(3): p. 2202-2212.
+22. van Vliet, P., et al., Hyperpolarization induces differentiation in human
+cardiomyocyte progenitor cells. Stem Cell Rev, 2010. 6(2): p. 178-85.
+23. Konig, S., et al., The calcineurin pathway links hyperpolarization (Kir2.1)-induced
+Ca2+ signals to human myoblast differentiation and fusion. Development, 2006.
+133(16): p. 3107-14.
+24. Konig, S., et al., Membrane hyperpolarization triggers myogenin and myocyte
+enhancer factor-2 expression during human myoblast differentiation. J Biol Chem,
+2004. 279(27): p. 28187-96.
+25. Bhavsar, M.B., et al., Role of Bioelectricity During Cell Proliferation in Different Cell
+Types. Front Bioeng Biotechnol, 2020. 8: p. 603.
+26. Piggott, B.J., et al., Paralytic, the Drosophila voltage-gated sodium channel,
+regulates proliferation of neural progenitors. Genes Dev, 2019. 33(23-24): p. 1739-
+1750.
+27. Ding, F., et al., Involvement of cationic channels in proliferation and migration of
+human mesenchymal stem cells. Tissue & cell, 2012. 44(6): p. 358-64.
+28. Blackiston, D.J., K.A. McLaughlin, and M. Levin, Bioelectric controls of cell
+proliferation: ion channels, membrane voltage and the cell cycle. Cell Cycle, 2009.
+8(21): p. 3519-28.
+29. Petsakou, A. and N. Perrimon, Bioelectric regulation of intestinal stem cells. Trends
+Cell Biol, 2022.
+30. Thomas, C.F., et al., Voltage-gated sodium channel activity mediates sea urchin
+larval skeletal patterning through spatial regulation of Wnt5 expression.
+Development, 2023. 150(10).
+31. Pai, V.P., et al., Genome-wide analysis reveals conserved transcriptional responses
+downstream of resting potential change in Xenopus embryos, axolotl regeneration,
+and human mesenchymal cell differentiation. Regeneration (Oxf), 2016. 3(1): p. 3-
+25.
+32. Spannl, S., et al., Glycolysis regulates Hedgehog signalling via the plasma
+membrane potential. EMBO J, 2021. 40(7): p. e107925.
+33. Borodinsky, L.N. and Y.H. Belgacem, Crosstalk among electrical activity, trophic
+factors and morphogenetic proteins in the regulation of neurotransmitter phenotype
+specification. J Chem Neuroanat, 2016. 73: p. 3-8.
+34. Borodinsky, L.N., et al., Spatiotemporal integration of developmental cues in neural
+development. Dev Neurobiol, 2015. 75(4): p. 349-59.
+35. Belgacem, Y.H. and L.N. Borodinsky, Inversion of Sonic hedgehog action on its
+canonical pathway by electrical activity. Proc Natl Acad Sci USA, 2015. 112(13): p.
+4140-5.
+36. Pai, V.P., et al., Transmembrane voltage potential controls embryonic eye patterning
+in Xenopus laevis. Development (Cambridge, England), 2012. 139(2): p. 313-323.
+37. Bates, E., Ion Channels in Development and Cancer. Annual Review of Cell and
+Developmental Biology, 2015. 31(1): p. 231-247.
+38. Perathoner, S., et al., Bioelectric signaling regulates size in zebrafish fins. PLoS
+Genet, 2014. 10(1): p. e1004080.
+39. Pitcairn, E., et al., Coordinating heart morphogenesis: A novel role for
+Hyperpolarization-activated cyclic nucleotide-gated (HCN) channels during
+cardiogenesis in Xenopus laevis. Communicative & Integrative Biology, 2017. 10(3):
+p. e1309488.
+40. Pai, V.P., et al., Endogenous Gradients of Resting Potential Instructively Pattern
+Embryonic Neural Tissue via Notch Signaling and Regulation of Proliferation. The
+Journal of Neuroscience, 2015. 35(10): p. 4366-85.
+41. Adams, D.S., et al., Bioelectric signalling via potassium channels: a mechanism for
+craniofacial dysmorphogenesis in KCNJ2-associated Andersen-Tawil Syndrome. J
+Physiol, 2016. 594(12): p. 3245-3270.
+42. Vandenberg, L.N., R.D. Morrie, and D.S. Adams, V-ATPase-dependent ectodermal
+voltage and pH regionalization are required for craniofacial morphogenesis. Dev
+Dyn, 2011. 240(8): p. 1889-904.
+43. Daane, J.M., et al., Modulation of bioelectric cues in the evolution of flying fishes.
+Current Biology, 2021. 31(22): p. 5052-5061.e8.
+44. Tseng, A.S., et al., Induction of vertebrate regeneration by a transient sodium
+current. J Neurosci, 2010. 30(39): p. 13192-200.
+45. Adams, D.S., A.S. Tseng, and M. Levin, Light-activation of the Archaerhodopsin H(+)-
+pump reverses age-dependent loss of vertebrate regeneration: sparking system-
+level controls in vivo. Biol Open, 2013. 2(3): p. 306-13.
+46. Pai, V.P. and M. Levin, HCN2 channel-induced rescue of brain, eye, heart and gut
+teratogenesis caused by nicotine, ethanol and aberrant notch signalling. Wound
+Repair Regen, 2022. 30(6): p. 681-706.
+47. Chernet, B.T. and M. Levin, Transmembrane voltage potential is an essential cellular
+parameter for the detection and control of tumor development in a Xenopus model.
+Disease models & mechanisms, 2013. 6(3): p. 595-607.
+48. Chernet, B.T., C. Fields, and M. Levin, Long-range gap junctional signaling controls
+oncogene-mediated tumorigenesis in Xenopus laevis embryos. Front Physiol, 2014.
+5: p. 519.
+49. Lobikin, M., et al., Resting potential, oncogene-induced tumorigenesis, and
+metastasis: the bioelectric basis of cancer in vivo. Phys Biol, 2012. 9(6): p. 065002.
+50. Chernet, B.T., et al., Use of genetically encoded, light-gated ion translocators to
+control tumorigenesis. Oncotarget, 2016. 7(15): p. 19575-19588.
+51. Balasubramanian, S., et al., Electroceuticals: emerging applications beyond the
+nervous system and excitable tissues. Trends in Pharmacological Sciences, 2024.
+45(5): p. 391-394.
+52. Kofman, K. and M. Levin, Bioelectric pharmacology of cancer: A systematic review
+of ion channel drugs affecting the cancer phenotype. Prog Biophys Mol Biol, 2024.
+191: p. 25-39.
+53. Levin, M. and C.J. Martyniuk, The bioelectric code: An ancient computational
+medium for dynamic control of growth and form. Biosystems, 2018. 164: p. 76-93.
+54. Hotary, K.B. and K.R. Robinson, Endogenous electrical currents and the resultant
+voltage gradients in the chick embryo. Dev Biol, 1990. 140(1): p. 149-60.
+55. Robinson, K.R., The responses of cells to electrical fields: a review. J Cell Biol, 1985.
+101(6): p. 2023-7.
+56. Cooper, M.S. and R.E. Keller, Perpendicular orientation and directional migration of
+amphibian neural crest cells in DC electrical fields. Proc Natl Acad Sci USA, 1984.
+81(1): p. 160-4.
+57. Stump, R.F. and K.R. Robinson, Xenopus neural crest cell migration in an applied
+electrical field. Journal of Cell Biology, 1983. 97(4): p. 1226-1233.
+58. Bronner-Fraser, M., Neural crest cell migration in the developing embryo. Trends Cell
+Biol, 1993. 3(11): p. 392-7.
+59. Trainor, P.A., Making headway: the roles of Hox genes and neural crest cells in
+craniofacial development. ScientificWorldJournal, 2003. 3: p. 240-64.
+60. Mayor, R. and M.J. Aybar, Induction and development of neural crest in Xenopus
+laevis. Cell Tissue Res, 2001. 305(2): p. 203-9.
+61. Fuchs, S. and L. Sommer, The neural crest: understanding stem cell function in
+development and disease. Neurodegener Dis, 2007. 4(1): p. 6-12.
+62. Lo, C.W., et al., Cx43 gap junction gene expression and gap junctional
+communication in mouse neural crest cells. Dev Genet, 1997. 20(2): p. 119-32.
+63. Lo, C.W., K.L. Waldo, and M.L. Kirby, Gap junction communication and the
+modulation of cardiac neural crest cells. Trends Cardiovasc Med, 1999. 9(3-4): p.
+63-9.
+64. Stump, R.F. and K.R. Robinson, Xenopus neural crest cell migration in an applied
+electrical field. J Cell Biol, 1983. 97(4): p. 1226-33.
+65. Gruler, H. and R. Nuccitelli, Neural crest cell galvanotaxis: new data and a novel
+approach to the analysis of both galvanotaxis and chemotaxis. Cell Motil
+Cytoskeleton, 1991. 19(2): p. 121-33.
+66. Adams, D.S., et al., Bioelectric signalling via potassium channels: a mechanism for
+craniofacial dysmorphogenesis in KCNJ2-associated Andersen-Tawil Syndrome. J
+Physiol, 2016. 594(12): p. 3245-70.
+67. Belus, M.T., et al., Kir2.1 is important for efficient BMP signaling in mammalian face
+development. Dev Biol, 2018. 444 Suppl 1 (Suppl 1): p. S297-s307.
+68. Melchionda, M., et al., Ca2+/H+ exchange by acidic organelles regulates cell
+migration in vivo. J Cell Biol, 2016. 212(7): p. 803-13.
+69. Canales Coutiño, B. and R. Mayor, The mechanosensitive channel Piezo1
+cooperates with semaphorins to control neural crest migration. Development, 2021.
+148(23).
+70. Shellard, A. and R. Mayor, Rules of collective migration: from the wildebeest to the
+neural crest. Philos Trans R Soc Lond B Biol Sci, 2020. 375(1807): p. 20190387.
+71. Barriga, E.H. and E. Theveneau, In vivo Neural Crest Cell Migration Is Controlled by
+"Mixotaxis". Frontiers in Physiology, 2020. 11.
+72. Theveneau, E. and C. Linker, Leaders in collective migration: are front cells really
+endowed with a particular set of skills? F1000Res, 2017. 6: p. 1899.
+73. Theveneau, E., et al., Chase-and-run between adjacent cell populations promotes
+directional collective migration. Nat Cell Biol, 2013. 15(7): p. 763-72.
+74. Theveneau, E. and R. Mayor, Can mesenchymal cells undergo collective cell
+migration? The case of the neural crest. Cell Adhesion and Migration, 2011. 5(6): p.
+490-498.
+75. Theveneau, E. and R. Mayor, Collective cell migration of the cephalic neural crest:
+the art of integrating information. Genesis, 2011. 49(4): p. 164-76.
+76. Hartmann, J. and R. Mayor, Self-organized collective cell behaviors as design
+principles for synthetic developmental biology. Semin Cell Dev Biol, 2023. 141: p.
+63-73.
+77. Theveneau, E., et al., Collective Chemotaxis Requires Contact-Dependent Cell
+Polarity. Developmental Cell, 2010. 19(1): p. 39-53.
+78. Shellard, A., et al., Supracellular contraction at the rear of neural crest cell groups
+drives collective chemotaxis. Science, 2018. 362(6412): p. 339-343.
+79. James, W., The principles of psychology, Vol I. The principles of psychology, Vol I.
+1890, New York, NY, US: Henry Holt and Co. xii, 697-xii, 697.
+80. Couly, G., et al., The regeneration of the cephalic neural crest, a problem revisited:
+the regenerating cells originate from the contralateral or from the anterior and
+posterior neural fold. Development, 1996. 122(11): p. 3393-407.
+81. Le Douarin, N.M., et al., Neural crest cell plasticity and its limits. Development,
+2004. 131(19): p. 4637-50.
+82. Little, G.E., et al., Specificity and plasticity of thalamocortical connections in
+Sema6A mutant mice. PLoS Biol, 2009. 7(4): p. e98.
+83. Zarzosa, A., et al., Axolotls with an under- or oversupply of neural crest can regulate
+the sizes of their dorsal root ganglia to normal levels. Dev Biol, 2014. 394(1): p. 65-
+82.
+84. Mitsiadis, T.A., et al., Development of teeth in chick embryos after mouse neural
+crest transplantations. Proc Natl Acad Sci USA, 2003. 100(11): p. 6541-5.
+85. McMillen, P. and M. Levin, Collective intelligence: A unifying concept for integrating
+biology across scales and substrates. Commun Biol, 2024. 7(1): p. 378.
+86. Vicente-Manzanares, M., et al., Non-muscle myosin II takes centre stage in cell
+adhesion and migration. Nature Reviews Molecular Cell Biology, 2009. 10(11): p.
+778-790.
+87. Lazzari-Dean, J.R., A.M.M. Gest, and E.W. Miller, Measuring Absolute Membrane
+Potential Across Space and Time. Annu Rev Biophys, 2021. 50: p. 447-468.
+88. Adams, D.S. and M. Levin, Measuring resting membrane potential using the
+fluorescent voltage reporters DiBAC4(3) and CC2-DMPE. Cold Spring Harbor
+protocols, 2012. 2012(4): p. 459-64.
+89. Adams, D.S. and M. Levin, General principles for measuring resting membrane
+potential and ion concentration using fluorescent bioelectricity reporters. Cold
+Spring Harbor protocols, 2012. 2012(4): p. 385-97.
+90. Smetters, D., A. Majewska, and R. Yuste, Detecting action potentials in neuronal
+populations with calcium imaging. Methods, 1999. 18(2): p. 215-21.
+91. Yuste, R. and L.C. Katz, Control of postsynaptic Ca2+ influx in developing neocortex
+by excitatory and inhibitory neurotransmitters. Neuron, 1991. 6(3): p. 333-44.
+92. McMillen, P., R. Novak, and M. Levin, Toward Decoding Bioelectric Events in
+Xenopus Embryogenesis: New Methodology for Tracking Interplay Between Calcium
+and Resting Potentials In Vivo. J Mol Biol, 2020. 432(2): p. 605-620.
+93. George, L.F. and E.A. Bates, Mechanisms Underlying Influence of Bioelectricity in
+Development. Frontiers in Cell and Developmental Biology, 2022. 10.
+94. Levin, M., G. Pezzulo, and J.M. Finkelstein, Endogenous Bioelectric Signaling
+Networks: Exploiting Voltage Gradients for Control of Growth and Form. Annu Rev
+Biomed Eng, 2017. 19: p. 353-387.
+95. Lazzari-Dean, J.R., A.M.M. Gest, and E.W. Miller, Optical estimation of absolute
+membrane potential using fluorescence lifetime imaging. eLife, 2019. 8: p. e44522.
+96. Lazzari-Dean, J.R. and E.W. Miller, Optical Estimation of Absolute Membrane
+Potential Using One- and Two-Photon Fluorescence Lifetime Imaging Microscopy.
+Bioelectricity, 2021. 3(3): p. 197-203.
+97. Huang, Y.L., A.S. Walker, and E.W. Miller, A Photostable Silicon Rhodamine Platform
+for Optical Voltage Sensing. Journal of the American Chemical Society, 2015.
+137(33): p. 10767-10776.
+98. Shannon, C.E., A Mathematical Theory of Communication. Bell System Technical
+Journal, 1948. 27(3): p. 379-423.
+99. McMillen, P., S.I. Walker, and M. Levin, Information Theory as an Experimental Tool
+for Integrating Disparate Biophysical Signaling Modules. Int J Mol Sci, 2022. 23(17).
+100. Jekely, G., F. Keijzer, and P. Godfrey-Smith, An option space for early neural
+evolution. Philos Trans R Soc Lond B Biol Sci, 2015. 370(1684).
+101. de Wiljes, O.O., et al., Modeling spontaneous activity across an excitable
+epithelium: Support for a coordination scenario of early neural evolution. Front
+Comput Neurosci, 2015. 9: p. 110.
+102. Keijzer, F., M. van Duijn, and P. Lyon, What nervous systems do: early evolution,
+input-output, and the skin brain thesis. Adaptive Behavior, 2013. 21(2): p. 67-85.
+103. Zhang, Y., et al., Fast and sensitive GCaMP calcium indicators for imaging neural
+populations. Nature, 2023. 615(7954): p. 884-891.
+104. Toettcher, J.E., O.D. Weiner, and W.A. Lim, Using optogenetics to interrogate the
+dynamic control of signal transmission by the Ras/Erk module. Cell, 2013. 155(6): p.
+1422-34.
+105. Goedhart, J., et al., Structure-guided evolution of cyan fluorescent proteins towards
+a quantum yield of 93%. Nat Commun, 2012. 3: p. 751.
+106. Gouignard, N., C. Rouvière, and E. Theveneau, Using Xenopus Neural Crest Explants
+to Study Epithelial-Mesenchymal Transition, in The Epithelial-to Mesenchymal
+Transition: Methods and Protocols, K. Campbell and E. Theveneau, Editors. 2021,
+Springer US: New York, NY. p. 257-274.
+107. Sater, A.K., R.A. Steinhardt, and R. Keller, Induction of neuronal differentiation by
+planar signals in Xenopus embryos. Dev Dyn, 1993. 197(4): p. 268-80.
+108. Schindelin, J., et al., Fiji: an open-source platform for biological-image analysis. Nat
+Methods, 2012. 9(7): p. 676-82.
+
+91. Yuste, R. and L.C. Katz, Control of postsynaptic Ca2+ influx in developing neocortex
+by excitatory and inhibitory neurotransmitters. Neuron, 1991. 6(3): p. 333-44.
+92. McMillen, P., R. Novak, and M. Levin, Toward Decoding Bioelectric Events in
+Xenopus Embryogenesis: New Methodology for Tracking Interplay Between Calcium
+and Resting Potentials In Vivo. J Mol Biol, 2020. 432(2): p. 605-620.
+93. George, L.F. and E.A. Bates, Mechanisms Underlying Influence of Bioelectricity in
+Development. Frontiers in Cell and Developmental Biology, 2022. 10.
+94. Levin, M., G. Pezzulo, and J.M. Finkelstein, Endogenous Bioelectric Signaling
+Networks: Exploiting Voltage Gradients for Control of Growth and Form. Annu Rev
+Biomed Eng, 2017. 19: p. 353-387.
+95. Lazzari-Dean, J.R., A.M.M. Gest, and E.W. Miller, Optical estimation of absolute
+membrane potential using fluorescence lifetime imaging. eLife, 2019. 8: p. e44522.
+96. Lazzari-Dean, J.R. and E.W. Miller, Optical Estimation of Absolute Membrane
+Potential Using One- and Two-Photon Fluorescence Lifetime Imaging Microscopy.
+Bioelectricity, 2021. 3(3): p. 197-203.
+97. Huang, Y.L., A.S. Walker, and E.W. Miller, A Photostable Silicon Rhodamine Platform
+for Optical Voltage Sensing. Journal of the American Chemical Society, 2015.
+137(33): p. 10767-10776.
+98. Shannon, C.E., A Mathematical Theory of Communication. Bell System Technical
+Journal, 1948. 27(3): p. 379-423.
+99. McMillen, P., S.I. Walker, and M. Levin, Information Theory as an Experimental Tool
+for Integrating Disparate Biophysical Signaling Modules. Int J Mol Sci, 2022. 23(17).
+100. Jekely, G., F. Keijzer, and P. Godfrey-Smith, An option space for early neural
+evolution. Philos Trans R Soc Lond B Biol Sci, 2015. 370(1684).
+101. de Wiljes, O.O., et al., Modeling spontaneous activity across an excitable
+epithelium: Support for a coordination scenario of early neural evolution. Front
+Comput Neurosci, 2015. 9: p. 110.
+102. Keijzer, F., M. van Duijn, and P. Lyon, What nervous systems do: early evolution,
+input-output, and the skin brain thesis. Adaptive Behavior, 2013. 21(2): p. 67-85.
+103. Zhang, Y., et al., Fast and sensitive GCaMP calcium indicators for imaging neural
+populations. Nature, 2023. 615(7954): p. 884-891.
+104. Toettcher, J.E., O.D. Weiner, and W.A. Lim, Using optogenetics to interrogate the
+dynamic control of signal transmission by the Ras/Erk module. Cell, 2013. 155(6): p.
+1422-34.
+105. Goedhart, J., et al., Structure-guided evolution of cyan fluorescent proteins towards
+a quantum yield of 93%. Nat Commun, 2012. 3: p. 751.
+106. Gouignard, N., C. Rouvière, and E. Theveneau, Using Xenopus Neural Crest Explants
+to Study Epithelial-Mesenchymal Transition, in The Epithelial-to Mesenchymal
+Transition: Methods and Protocols, K. Campbell and E. Theveneau, Editors. 2021,
+Springer US: New York, NY. p. 257-274.
+107. Sater, A.K., R.A. Steinhardt, and R. Keller, Induction of neuronal differentiation by
+planar signals in Xenopus embryos. Dev Dyn, 1993. 197(4): p. 268-80.
+108. Schindelin, J., et al., Fiji: an open-source platform for biological-image analysis. Nat
+Methods, 2012. 9(7): p. 676-82.
+109. Stirling, D.R., et al., CellProfiler 4: improvements in speed, utility and usability. BMC
+Bioinformatics, 2021. 22(1): p. 433.
+110. Lamprecht, M.R., D.M. Sabatini, and A.E. Carpenter, CellProfiler: free, versatile
+software for automated biological image analysis. Biotechniques, 2007. 42(1): p. 71-
+5.
+111. Moore, D. and P. McMillen, CAIM: information analysis of imaging data. 2019.
+112. Lazic, S.E., C.J. Clarke-Williams, and M.R. Munafò, What exactly is 'N' in cell culture
+and animal experiments? PLoS Biol, 2018. 16(4): p. e2005282.
+113. Lord, S.J., et al., SuperPlots: Communicating reproducibility and variability in cell
+biology. Journal of Cell Biology, 2020. 219(6).
+114. Motulsky, H.J. GraphPad Statistics Guide. [cited 2025 March 4]; Available from:
+https://www.graphpad.com/guides/prism/latest/statistics/index.htm.
+115. McMillen, P. and M. Levin, Optical Estimation of Bioelectric Patterns in Living
+Embryos. Methods Mol Biol, 2024. 2745: p. 91-102.
+116. Bonzanni, M., et al., Defined extracellular ionic solutions to study and manipulate
+the cellular resting membrane potential. Biology Open, 2020. 9(1).
+117. Brodskiy, P.A. and J.J. Zartman, Calcium as a signal integrator in developing
+epithelial tissues. Phys Biol, 2018. 15(5): p. 051001.
+118. Brodskiy, P.A., et al., Decoding Calcium Signaling Dynamics during Drosophila Wing
+Disc Development. Biophys J, 2019. 116(4): p. 725-740.
+119. Alivisatos, A.P., et al., The brain activity map project and the challenge of functional
+connectomics. Neuron, 2012. 74(6): p. 970-4.
+120. McKinney, M.C. and P.M. Kulesa, In vivo calcium dynamics during neural crest cell
+migration and patterning using GCaMP3. Dev Biol, 2011. 358(2): p. 309-17.
+121. McKinney, M.C., et al., Neural crest cell communication involves an exchange of
+cytoplasmic material through cellular bridges revealed by photoconversion of
+KikGR. Dev Dyn, 2011. 240(6): p. 1391-401.
+122. Xu, X., et al., N-cadherin and Cx43alpha1 gap junctions modulates mouse neural
+crest cell motility via distinct pathways. Cell Commun Adhes, 2001. 8(4-6): p. 321-4.
+123. Barghouth, P.G., M. Thiruvalluvan, and N.J. Oviedo, Bioelectrical regulation of cell
+cycle and the planarian model system. Biochimica et biophysica acta, 2015.
+1848(10 Pt B): p. 2629-37.
+124. Aprea, J. and F. Calegari, Bioelectric state and cell cycle control of mammalian
+neural stem cells. Stem cells international, 2012. 2012: p. 816049.
+125. Blackiston, D.J., Κ.Α. McLaughlin, and M. Levin, Bioelectric controls of cell
+proliferation: lon channels, membrane voltage and the cell cycle. Cell Cycle, 2009.
+8(21): p. 3527-3536.
+126. Wang, X., et al., Animal cells connected by nanotubes can be electrically coupled
+through interposed gap-junction channels. Proc Natl Acad Sci USA, 2010. 107(40):
+p. 17194-9.
+127. Teddy, J.M. and P.M. Kulesa, In vivo evidence for short- and long-range cell
+communication in cranial neural crest cells. Development, 2004. 131(24): p. 6141-
+51.
+128. Wang, X. and H.H. Gerdes, Long-distance electrical coupling via tunneling
+nanotubes. Biochim Biophys Acta, 2012. 1818(8): p. 2082-6.
+129. McMillen, P., et al., Beyond Neurons: Long Distance Communication in
+Development and Cancer. Front Cell Dev Biol, 2021. 9: p. 739024.
+130. Osswald, M., et al., Brain tumour cells interconnect to a functional and resistant
+network. Nature, 2015. 528(7580): p. 93-8.
+131. Osswald, M., et al., A malignant cellular network in gliomas: potential clinical
+implications. Neuro Oncol, 2016. 18(4): p. 479-85.
+132. Weil, S., et al., Tumor microtubes convey resistance to surgical lesions and
+chemotherapy in gliomas. Neuro Oncol, 2017. 19(10): p. 1316-1326.
+133. Keijzer, F. and A. Arnellos, The animal sensorimotor organization: a challenge for the
+environmental complexity thesis. Biol Philos, 2017. 32(3): p. 421-441.
+134. Pai, V.P. and M. Levin, HCN2 channel-induced rescue of brain, eye, heart and gut
+teratogenesis caused by nicotine, ethanol and aberrant notch signalling. Wound
+Repair Regen, 2022.
+135. Pai, V.P., et al., HCN2 Channel-Induced Rescue of Brain Teratogenesis via Local and
+Long-Range Bioelectric Repair. Frontiers in Cellular Neuroscience, 2020. 14(136): p.
+136.
+136. Ebrahimkhani, M.R. and M. Levin, Synthetic living machines: A new window on life.
+iScience, 2021. 24(5): p. 102505.
+137. Levin, M., The Multiscale Wisdom of the Body: Collective Intelligence as a Tractable
+Interface for Next-Generation Biomedicine. Bioessays, 2024: p. e202400196.
+138. Whited, J.L. and M. Levin, Bioelectrical controls of morphogenesis: from ancient
+mechanisms of cell coordination to biomedical opportunities. Curr Opin Genet Dev,
+2019. 57: p. 61-69.
+139. Ding, F., et al., Changes in the composition of brain interstitial ions control the
+sleep-wake cycle. Science, 2016. 352(6285): p. 550-5.
+140. Purvis, J.E. and G. Lahav, Encoding and decoding cellular information through
+signaling dynamics. Cell, 2013. 152(5): p. 945-56.
+141. Johnson, H.E. and J.E. Toettcher, Signaling Dynamics Control Cell Fate in the Early
+Drosophila Embryo. Dev Cell, 2019. 48(3): p. 361-370 e3.
+142. Wilson, M.Z., et al., Tracing Information Flow from Erk to Target Gene Induction
+Reveals Mechanisms of Dynamic and Combinatorial Control. Mol Cell, 2017. 67(5):
+p. 757-769 e5.
+143. Goglia, A.G., et al., A Live-Cell Screen for Altered Erk Dynamics Reveals Principles of
+Proliferative Control. Cell Syst, 2020. 10(3): p. 240-253 e6.
+144. Rühl, P., et al., An Ultrasensitive Genetically Encoded Voltage Indicator Uncovers
+the Electrical Activity of Non-Excitable Cells. Advanced Science, 2024. 11(20): p.
+2307938.
+145. Pai, V.P., et al., HCN2 Channel-Induced Rescue of Brain Teratogenesis via Local and
+Long-Range Bioelectric Repair. Frontiers in Cellular Neuroscience, 2020. 14(136).
+146. Pitcairn, E., et al., Coordinating heart morphogenesis: A novel role for
+hyperpolarization-activated cyclic nucleotide-gated (HCN) channels during
+cardiogenesis in Xenopus laevis. Commun Integr Biol, 2017. 10(3): p. e1309488.
+147. Johard, H., et al., HCN Channel Activity Balances Quiescence and Proliferation in
+Neural Stem Cells and Is a Selective Target for Neuroprotection During Cancer
+Treatment. Mol Cancer Res, 2020. 18(10): p. 1522-1533.
+148. Lau, Y.T., et al., Effects of hyperpolarization-activated cyclic nucleotide-gated (HCN)
+channel blockers on the proliferation and cell cycle progression of embryonic stem
+cells. Pflugers Archiv: European journal of physiology, 2011. 461(1): p. 191-202.
+149. Bruzauskaite, I., et al., Relevance of HCN2-expressing human mesenchymal stem
+cells for the generation of biological pacemakers. Stem Cell Res Ther, 2016. 7(1): p.
+67.
+150. Benarroch, E.E., HCN channels: function and clinical implications. Neurology, 2013.
+80(3): p. 304-10.
+151. Depuydt, A.S., S. Peigneur, and J. Tytgat, Review: HCN Channels in the Heart. Curr
+Cardiol Rev, 2022. 18(4): p. e040222200836.
+152. Stevens, S.M. and W.T. Pu, HCN4 charges up the first heart field. Circulation
+research, 2013. 113(4): p. 350-1.
+153. Barbieri, M., The definitions of information and meaning two possible boundaries
+between physics and biology. Riv Biol, 2004. 97(1): p. 91-109.
+154. Salthe, S.N., Hierarchy. More Developed Sign: Interpreting the Work of Jesper
+Hoffmeyer, 2012. 10: p. 155-156.
+155. Salthe, S.N., The System of Interpretance, Naturalizing Meaning as Finality.
+Biosemiotics, 2008. 1(3): p. 285-294.
+156. Ó. Nualláin, S., Subjects and Objects: Metaphysics, Biology, Consciousness, and
+Cognition. Biosemiotics, 2008. 1(2): p. 239-251.
+157. Kauffman, S. and P. Clayton, On emergence, agency, and organization. Biology &
+Philosophy, 2006. 21(4): p. 501-521.
+158. Salthe, S.N., Semiosis as development. Joint Conference on the Science and
+Technology of Intelligent Systems, 1998: p. 730-735.
+
+This page appears to be blank.  As per the instructions, no additional commentary or explanation should be added.

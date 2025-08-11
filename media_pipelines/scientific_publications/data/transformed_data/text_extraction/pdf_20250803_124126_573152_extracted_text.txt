@@ -1,0 +1,362 @@
+Bioelectricity is a universal multifaced
+signaling cue in living organisms
+GuangJun Zhanga,*, and Michael Levinb,*
+aDepartment of Comparative Pathobiology, Purdue University, West Lafayette, IN 47906; bAllen Discovery
+Center at Tufts University, Medford, MA 02155
+
+ABSTRACT The cellular electrical signals of living organisms were discovered more than a
+century ago and have been extensively investigated in the neuromuscular system. Neuronal
+depolarization and hyperpolarization are essential for our neuromuscular physiological and
+pathological functions. Bioelectricity is being recognized as an ancient, intrinsic, fundamental property of all living cells, and it is not limited to the neuromuscular system. Instead,
+emerging evidence supports a view of bioelectricity as an instructional signaling cue for fundamental cellular physiology, embryonic development, regeneration, and human diseases,
+including cancers. Here, we highlight the current understanding of bioelectricity and share
+our views on the challenges and perspectives.
+
+[PAGE 1] INTRODUCTION
+Bioelectricity refers to the cellular electrical properties intrinsically
+caused by the uneven distributions of ions and charged molecules
+across cell membranes (Burr and Northrop, 1935). Usually, there
+is a high concentration of potassium ions and a low concentration of sodium ions in cytosol compared with the external cellular
+environment—the cellular resting membrane potential forms when
+these chemical concentrations and their electric charge gradients
+reach a balance. The ion channels, pumps, gap junctions, and solute carriers are the major contributors to this uneven distribution
+of ions and charged molecules, such as amino acids and proteins,
+essential for maintaining cell physiology. The types of these contributors can be variable, given one type of tissues or cells. Thus,
+different types of cells may possess a characteristic resting membrane potential, which can be due to a unique profile of ion regulators or to its physiological history, as many of these ion regulators can open and close posttranslationally due to other events
+in the cell. From this perspective, the neuron is a specialized cell
+type with drastic electric changes. In this brief review, we focus on
+nonexcitable cells.
+While bioelectricity is a phenomenon that is intrinsically rooted
+in individual cells, its influence is not limited to the cellular level
+(McCaig et al., 2009). Instead, it can manifest at various levels, including the organ, tissue, and even whole body (Figure. 1). This
+multilevel manifestation of bioelectricity plays a crucial role in various physiological processes, such as cell migration, proliferation,
+differentiation, and many diseases, including cancer metastasis.
+One important function of bioelectric signaling is to enable cellular collectives (tissue networks) to store and process information
+in ways that individual cells cannot. Much as neural bioelectricity
+in the brain underlies the emergence of a coherent organism that
+adaptively navigates three-dimensional space, non-neural bioelectricity allows groups of cells to traverse anatomical morphospace
+during embryogenesis and large-scale regeneration. Thus, bioelectricity could have diverse and far-reaching implications in biology.
+
+[PAGE 1] BIOELECTRICITY AND FUNDAMENTAL CELLULAR
+PHYSIOLOGY
+The differential distributions of ions and charged molecules not
+only establish the cell membrane potential but also maintain cell
+volume. In animals, stable cell volume is maintained by pumping
+Na+ out and K+ in through Na+/K+ ATPase to counter the Donnan
+effect, unstable osmotic fluctuations caused by intracellular impermeant molecules from cell metabolism (Kay, 2017). Cellular shapes
+and sizes are critical for cell function and cell migration. Migrating
+cells are usually polarized and form leading-edge protrusions (e.g.,
+lamellipodia, filopodia, and blebs). The local membrane potential
+and differential distribution of ion channels were found to contribute to the lamellipodial protrusion (Schwab, 2001). Indeed, the
+cell membrane potential also serves as a fundamental regulator of
+cell migration through calcium influx (voltage-gated ion channels),
+modulating cytoskeleton signaling such as ERK-Rho-kinase, and
+modulating cortical actin polymerization (Schwab et al., 2012). Various ion channels (e.g., K+, Na+, Ca2+, Cl-, TRP (Transient receptor
+potential) superfamily, and piezo channels) have been reported to
+be involved in cell migration (Schwab et al., 2012; Canales Coutino
+and Mayor, 2021).
+Cellular bioelectric state and its related differential ion concentrations are also critical for cell metabolism. Intracellular ion
+concentration may directly affect key metabolic enzymes and essential regulator proteins. In addition, some solute carriers pair
+metabolites (e.g., glutamate) transport and specific ions (Zhang
+et al., 2019; Alam et al., 2023). Thus, bioelectric change inevitably influences metabolism. Furthermore, cellular membrane
+potential can interact with metabolic redox and energy carrier
+pairs (NADH/NAD+ and ADP/ATP) through membrane ATPase and
+membrane-bound dehydrogenases (Schofield et al., 2020).
+Cell proliferation, another critical autonomous behavior, was
+also found to be tightly linked with cell membrane potential and
+ion channels (Blackiston et al., 2009). Each cell type may have a
+distinct bioelectric status. Generally, the cell membrane potentials
+of less proliferative cells are more electrically hyperpolarized, and
+proliferating cells are more depolarized (Blackiston et al., 2009;
+Abdul Kadir et al., 2018). In addition, cell membrane potentials
+and potassium ion concentration undergo a rhythmic change during cell cycles (Urrego et al., 2014). For example, MCF-7 mammary
+tumor cells were found to be depolarized toward G0/G1, intermediately hyperpolarized during the G₁/S transition, and then further
+hyperpolarized during the G2/M stage (Wonderlin et al., 1995). Not
+only cell membrane potential but also mitochondrial membrane
+potential was reported to regulate cell cycle in yeasts (Gorospe et
+al., 2023). In addition, cell membrane potential was also found essential for bacterial cell division (Strahl and Hamoen, 2010), and
+bacterial biofilm formation and interbacteria communications can
+be mediated by bioelectric signals (Koshland, 1983; Prindle et al.,
+2015; Yang et al., 2020). Recently, we have observed that zebrafish
+embryonic cells show hyperpolarization before cytokinesis during
+cleavage stages (Silic et al., 2022). Alter cell membrane potential
+leads to cell proliferation changes, suggesting that bioelectricity
+may control the cell cycle, likely through the Ca2+ and K+ ion flux
+and cyclin/cyclin-dependent kinases (Whitaker, 1995; Abdul Kadir
+et al., 2018; Humeau et al., 2018).
+Cell differentiation is generally coupled with cell proliferation and cell metabolism (Agathocleous and Harris, 2013). It is
+not surprising that bioelectricity also regulates cell differentiation
+(Sundelacruz et al., 2009). Mounting evidence revealed that the cell
+membrane potential is not only associated with cell differentiation
+but also plays an instructional role in multiple cell types, such as keratinocytes, neural cells, immune cells, and myocytes (Sundelacruz
+et al., 2008). For example, hyperpolarization may trigger tyrosine
+dephosphorylation of the Kir2.1 channel and cause an increase
+of myocyte transcription factors through Ca2+ influx (Konig et al.,
+2004). Another fascinating example is that stem cells can be induced to differentiate into osteogenic or neurogenic tissues using
+electrical stimulation matching the endogenous membrane potentials (Zhang et al., 2023).
+
+[PAGE 2] BIOELECTRICITY IN EMBRYONIC DEVELOPMENT
+Embryonic development is a robust system in which a fertilized egg
+proliferates, differentiates, and eventually forms an entire organism. Cell-autonomous behaviors such as proliferation and differentiation are essential. The intercell interactions (short and long
+ranges) are also critical for multicellular organisms to pattern and
+orient body axes, as well as pattern tissues such as bird feather
+systems (Jiang et al., 2021; Tseng et al., 2023) and create organs of
+the correct shapes and sizes (Takahashi et al., 2001; Lander, 2011).
+Morphogen proteins and transcription factors play crucial roles in
+embryogenesis (Wolpert, 1969; Pearson et al., 2005; Briscoe and
+Small, 2015; Negrete and Oates, 2021), and some of these are
+downstream of bioelectric cues (Vandenberg et al., 2011; Pai et
+al., 2015; Dahal et al., 2017; Belus et al., 2018). The role of bioelectricity is becoming evident in the developmental biology of
+multiple organisms such as Xenopus, zebrafish, mice, and fruit flies
+and has been extensively reviewed (Levin et al., 2017; Harris, 2021;
+Levin, 2021a; George and Bates, 2022; Silic and Zhang, 2023). The
+ectopic expression of ion channels, as well as dominant negative
+or hypermorphic mutations, leads to drastic morphological structure changes in animal models and human patients bearing channelopathies (Masotti et al., 2015; Adams et al., 2016; Sun et al.,
+2019). This finding suggests that bioelectricity may serve as organlevel or whole-body-level instructional signals. Bioelectric signals
+are critical for embryonic patterning that sets organ shapes and
+sizes, as reported in zebrafish fin-size – altered mutants caused
+by multiple K+ channels, connexins, and solute carriers (lovine and
+Johnson, 2000; lovine et al., 2005; Perathoner et al., 2014; Lanni
+et al., 2019; Silic et al., 2020; Daane et al., 2021; Stewart et al.,
+2021). In addition, changes in the bioelectric state of certain embryonic regions in a developmental stage can change the identity of that region to different organs. For example, ectopic eyes
+were induced via expression of a constitutively conductive EXP1
+cation channel, glycine-gated chloride channel, or dominant negative Kir6.1 (Kcnj8) in Xenopus head or trunk regions (Pai et al.,
+2012), including gut tissues normally thought to be incompetent to
+acquire eye fate in vertebrates. A similar phenotype caused by multiple channels strongly supports the idea that bioelectricity, not individual ion channels, is the key to these embryonic phenotypes—
+a conclusion also supported by the ability to swap vertebrate ion
+pumps for yeast pumps with no sequence or structural homology
+while keeping their functional effects in regeneration (Adams et
+al., 2007). Indeed, consistent with early studies using microprobes
+on Xenopus embryos, a recent investigation using the GEVI (genetically encoded voltage indicator), ASAP1, revealed characteristic
+voltage changes during zebrafish embryogenesis (Silic et al.
+2022). Moreover, it was discovered that external electrical currents
+could regulate tissue size and shape in vitro (Shim et al., 2024). It
+is clear that bioelectricity plays a crucial instructional role in embryonic development. A few hypotheses, such as bioelectric code
+and integration with a morphogenic field, have been proposed as
+frameworks within which to understand how patterns of bioelectric state map onto anatomical outcomes (Tseng and Levin, 2013b;
+Levin and Martyniuk, 2018; Harris, 2021).
+
+
+[PAGE 3] BIOELECTRICITY IN TISSUE HOMEOSTASIS AND
+REGENERATION
+Upon completion of embryonic development, tissue, and organlevel bioelectric signaling remains functional and is critical for tissue
+homeostasis, which is usually achieved through regeneration and
+tissue turnover. Turnover is a universal process of decay and regeneration of new components across biological systems (Reddien,
+2024). Electrically coupled cells and collective electrical fields may
+serve as regenerative cues for other chemical and mechanical signals responsive to tissue integrity changes or injury (Levin, 2009;
+Tyler, 2017; McLaughlin and Levin, 2018). Consistent with this notion, electric currents have been recorded in the newt limb and
+Xenopus tadpole tail regeneration (Borgens et al., 1977b; Reid et
+al., 2009). Moreover, the regeneration can be modulated by external electric stimulation, V-ATPase, and voltage-gated Na+ channel, Nav1.2, in tadpole tail regeneration (Borgens et al., 1977a;
+Adams et al., 2007; Tseng et al., 2010). In addition to newts and
+frogs, bioelectricity in regeneration was also reported in murids and
+zebrafish (Becker, 1972; Hechavarria et al., 2010; Monteiro et al.,
+2014; Leppik et al., 2015). Similarly, electric response and wound
+healing have been demonstrated in epithelial cells, and the regenerative bioelectricity has been found to be mediated by PI(3)K and
+redox signaling (Zhao et al., 2006; Reid and Zhao, 2014; Ferreira et
+al., 2016).
+In addition to vertebrates, bioelectricity is evident in planarian regeneration, where it is responsible for the patterning of
+the anterior-posterior axis. Targeting the endogenous bioelectric
+circuit in regenerating planarian fragments can produce no-head
+and two-head animals (Beane et al., 2011; Beane et al., 2013;
+Durant et al., 2019). Strikingly, a temporary (as brief as 3 h) alteration of the bioelectric state gave rise to planaria, which have a
+permanently altered target morphology—their fragments continue
+to generate two heads in perpetuity with no further manipulation
+(Oviedo et al., 2010; Durant et al., 2017), motivating a model in
+which the bioelectric circuit holds anterior-posterior axis polarity as
+a kind of rewritable memory separate from the genetics (Pezzulo et
+al., 2021).
+Altering the bioelectric state of the blastema by sodium
+ionophores was able to induce complete regeneration of tails and
+limbs in amphibia in normally nonregenerative conditions, acting
+as a brief trigger that kickstarts a complex program of changes in
+gene expression in anatomy (Tseng et al., 2010; Tseng and Levin,
+2013a). The bioelectric role in regeneration is also being validated
+in other organisms. Fruit fly gut epithelial regeneration has also
+been reported to be bioelectric dependent on gap junction - mediated Ca2+ currents triggered by neurons (Petsakou et al., 2023).
+Another exciting discovery is that Nav1.7 was identified as a critical chondrocyte regulator and therapeutic target for osteoarthritis,
+a joint degeneration disease. The Nav1.7 channel regulates the
+chondrocyte secretome through Ca2+ signaling, and blocking this
+channel can facilitate the progression of osteoarthritis (Fu et al.,
+2024). As aging is naturally linked with tissue/organ homeostasis
+and regeneration, it is not a surprise that bioelectricity also plays a
+crucial role in aging (Silver and Nelson, 2018; Pio-Lopez and Levin,
+2024).
+
+[PAGE 3] BIOELECTRICAL MALFUNCTIONS AND CANCER: A
+FAILURE OF MULTICELLULARITY
+Cancer, though defined on the pathology level, is often thought of
+as a disease of genome decay, accompanied by genomic instability and a myriad of mutations from chromosome changes to single
+nucleotide mutations. So far, only a small number of genes have
+been defined as cancer driver genes (oncogenes or tumor suppressor genes), which are critical for cancer formation (Stratton et
+al., 2009). With the completion of many human cancer genomes,
+essentially all human genes are found mutated in some human cancer cell genomes (Ding et al., 2018; Martinez-Jimenez et al., 2020;
+Ostroverkhova et al., 2023). So, it is unsurprising that many ion
+channels were reported in cancers, especially given that more than
+400 channels are in the human genome and are widely expressed
+in many cell types (Hutchings et al., 2019). Other models of cancer,
+favoring nongenetic mechanisms (Soto and Sonnenschein, 2011;
+Sonnenschein and Soto, 2016), likewise implicate impairments of
+bioelectrical signaling as defects in the mechanisms that normally
+bind individual cells to a common purpose in normal tissue and
+organ morphostasis (Levin, 2021b).
+A role for bioelectric signaling in cancer, via the role of sodium
+and potassium channels, is beginning to be dissected, and even
+some channel blockers were already in clinical trials (Ding et al.,
+2018; Prevarskaya et al., 2018; Martinez-Jimenez et al., 2020; Bell
+et al., 2023; Ostroverkhova et al., 2023). The detailed correlation
+evidence of ion channels in cancer has already been reviewed
+(Montgomery et al., 2020). As bioelectricity is an intrinsic signal
+and has a wide distribution of ion channels, it is undoubted that
+it has an essential cellular function in tumor initiation, progression,
+and metastasis from various human cancers (Yang and Brackenbury,
+2013; Robinson et al., 2021; Sheth and Esfandiari, 2022). Glioma, a
+notorious brain tumor, is another of the most studied tumors for the
+role of bioelectricity. Glioma cells can interact with neurons through
+glioma synapses and gap junctions to change neuron bioelectric
+activities and cause disease symptoms. Recently, the in vivo glioma
+neuron interactions were demonstrated in awake mice using a
+genetically encoded Ca2+reporter, GCaMP6f (Montgomery et al.,
+2020).
+In animal models, bioelectric signals have been shown to induce melanoma in the absence of genetic defects or oncogene
+drivers (Morokuma et al., 2008; Lobikin et al., 2015), as well as to
+normalize tumors induced by human oncogenes such as TP53 and
+KRAS mutations (Chernet and Levin, 2013; Chernet et al., 2016).
+Recently, a neuron-like GABA-mediated bioelectrical activity between melanoma cells and keratinocytes was revealed in the zebrafish genetic melanoma model (Tagore et al., 2023). During cancer progression, cancer cells may depolarize cellular membrane
+potential to achieve independent cell growth and uncontrolled
+proliferation, and this process is tightly linked to ion channel alterations and Ca²+ signals (Yang and Brackenbury, 2013). Depolarized glioma cell membrane potential was able to promote tumor
+proliferation, and hyperpolarization reduced the glioma progression (Venkatesh et al., 2019). Similarly, knockdown gap junction
+GJB2 could disrupt cancer cell nanotube projection and inhibit tumor invasiveness (Bahcheli et al., 2024). The cancer cell bioelectric
+changes may also influence cell differentiations and make some
+cancer stem-like cells (Biagiotti et al., 2006; Biella et al., 2007). The
+tumor microenvironment (TME) usually consists of an extracellular
+matrix and multiple cell types, including fibroblasts, immune cells,
+and endothelial cells. During cancer progression, TME profoundly
+impacts cancer cell bioelectricity and vice versa, along with interactions between bioelectric, biochemical, and mechanical signals
+(see details in next section) (Sheth and Esfandiari, 2022). Consistent
+with this notion, neuronal regulation in many types of cancer has
+recently been recognized since the bioelectric contributions from
+neurons can be relatively measured (Gillespie and Monje, 2020;
+Winkler et al., 2023).
+Bioelectricity is also crucial for metastasis due to cancer cell bioelectric status and cancer microenvironment. (Payne et al., 2019).
+It is well known that ion channel distribution and related cell membrane potential are key regulators for cell migration (Schwab et al.,
+2012). Cancer cells may co-opt similar mechanisms for metastasis
+(Zhang et al., 2024). Many studies suggested that depolarized cancer cells may tend to be more metastatic (Ribeiro et al., 2020). On
+the tissue or organ level, bioelectricity may coordinate the metastasis from invasion to colonization through the TME and blood or
+lymphatic vessel environments. Collective migration and electric
+field were also frequently reported in cancers (Li et al., 2013; Garg
+et al., 2019; Zhu et al., 2020). Thus, ion channel blockers/agonists
+and external electric fields may interrupt cancer development. Indeed, ion channels' function and potential as therapeutic targets
+are currently being investigated (Takayasu et al., 2020; Abed et
+al., 2023). In addition, electrotherapy and external electric devices
+have already been clinically applied to glioma based on the principle of bioelectricity (Rominiyi et al., 2021).
+
+[PAGE 4] CHALLENGES, NEW PROGRESS, AND PERSPECTIVES
+One of the challenges is that the bioelectricity concept is not well
+accepted or even well known in many research areas. A prominent
+contributing factor is the misconception that bioelectricity is exclusively relevant in neuroscience, not nonexcitable tissues (Levin,
+2021a). But this is gradually changing as more scientific discoveries are revealed and published. The bioelectricity subgroup in the
+Cell Bio 2023 is a great advance, at least to the cell biology research community (Pai et al., 2024). The special topic journal, like
+Bioelectricity, is an excellent move and a landmark for the bioelectricity field. The second barrier is the largely unrevealed connection
+with the current biomedical research regime centered on biochemistry and genetics. Genetics alone does not determine phenotypes
+entirely because the bioelectrical layer of control provides a kind of
+physiological "software" that provides extra plasticity to the genetically encoded hardware. For example, bioelectric status changes
+can induce persistent alternative anatomical structures after regeneration and even ones associated with different species than the
+genomic default (Sullivan et al., 2016; Levin, 2021a). Likewise, genetic state and phenotype diverge in animals bearing oncogenic
+mutation but no tumor due to bioelectric normalization.
+Biochemical molecules are deemed as the mainstream signaling carriers (Lander, 2011). Bioelectricity is different from traditional
+biochemical signals in many ways. The bioelectric signals generally serve as overall body patterning instruction and coordinate
+and program overall body anatomy (Levin, 2021a). Essentially, the
+bioelectric control could be an epigenetic mechanism that guides
+morphogenesis usually through a robust and dynamic status (i.e.,
+cellular voltage memory) (Levin et al., 2017; Levin and Martyniuk,
+2018; Levin, 2021a). Furthermore, there is a lack of a 1:1 relationship between bioelectric outcome and gene products. This is
+because bioelectricity is an overall readout of multiple contributors (channels, gap junctions, etc.) and multiple downstream output routes to biochemical machinery on the cellular level (Levin,
+2014, 2021a). Bioelectric patterns were found to impact important
+morphogen proteins such as BMP, SHH, and FGFs, which are critical for embryonic development, adult tissue, and organ regeneration. For example, BMP signaling was found to be regulated by
+KCNJ2-mediated bioelectricity in mice and fruit flies (George and
+Bates, 2022). Cell membrane potential stabilizes SMO and regulates hedgehog (HH) signaling in fruit fly wing discs (Emmons-Bell
+and Hariharan, 2021; Spannl et al., 2021). The Na+ and K+ gradients are essential for SHH secretion and SMO activation (Petrov et
+al., 2020). Likely due to the nature of secondary messenger, calcium signaling is often reported as a common downstream pathway. The calcium signal is similar to cellular voltage change during
+zebrafish embryos (Chen et al., 2017; Silic et al., 2022). In addition
+to calcineurin and PI(3)K pathways, Ca2+ flux can modulate bioelectricity and tune the conductivity of ion channels that directly
+contribute to cell bioelectricity and excitability (Clapham, 2007). It
+is hard to distinguish the bioelectricity from the Ca2+ signaling, but
+additional transduction mechanisms, such as serotonin movement
+(Fukumoto et al., 2005) and K-ras clustering (Zhou et al., 2015),
+exist for converting bioelectric information into downstream transcriptional readouts.
+In addition to biochemical interactions, bioelectricity is also
+tightly linked with mechanical transduction, which is involved in various physiological (e.g., touching, hearing, angiogenesis, development, and regeneration) and pathological processes (e.g., cardiac
+hypertrophy, muscular dystrophy, and polycystic kidney) (Martinac,
+2014). Some ion channels, such as TRP, PIEZO, K2P, and ENaC
+(epithelial sodium channel), can directly sense cellular mechanical
+forces and convert mechanical changes into an electric signal or Ca2+ flux (Martinac, 2014; Jin et al., 2020). Inversely, PIEZO
+channels were also found to be gated by voltage (Moroni et al.,
+2018). The extracellular matrix proteins can also directly influence
+ion channel conductivities on the cell membrane. For example,
+chondroitin sulfates were reported to modify voltage-dependent
+ion channels (Vigetti et al., 2008). Similarly, extracellular matrix proteins can also impact connexin functions (Imbeault et al., 2009).
+Thus, these mechanical, bioelectric, and biochemical signals can
+interplay and coordinately regulate complex biological processes
+such as stem cell differentiation and cancers (Engler et al., 2006;
+Discher et al., 2009; Karska et al., 2023).
+Another challenge of bioelectricity research is the still limited
+available experimental approaches. The overall cellular bioelectric
+status is an integration from multiple inputs of ion channels, pumps,
+gap junctions, and solute carriers. Thus, the bioelectric status is
+robust and dynamic and is usually a component of physiological
+feedback, requiring the development of bioelectric simulator platforms (Pietak and Levin, 2016), and more broadly, new conceptual frameworks borrowed from multiscale neuroscience (Pezzulo
+and Levin, 2015). Genetic mutation of one of these contributors
+is generally insufficient to cause a phenotype unless the mutation is dominant negative or hypermorphic (Silic and Zhang, 2023).
+This phenomenon was noticed as bioelectricity does not reduce
+to molecular genetics (Levin, 2014). Thus, identifying a critical endogenous contributor is hard since forward genetic screening is
+less effective. As bioelectricity is highly dynamic, measuring in vivo
+cellular bioelectric status is also challenging using old-fashioned
+chemical dyes or patch clamp techniques. Fortunately, newly developed tools such as optical probes, GEVIs, optogenetics, and
+chemogenetics can readily be adapted to bioelectricity research
+using well-established model organisms such as zebrafish (Foust
+et al., 2023; Silic and Zhang, 2023). However, nonoptical reporter
+technologies will be needed to detect bioelectric states in deep
+tissues. Another exciting area of progress involves electroceuticals
+(Balasubramanian et al., 2024), including pharmacological and optogenetic modalities that target tissue native bioelectric networks
+instead of a specific pathway (Adams et al., 2013; Chernet et al.,
+2016; Pio-Lopez and Levin, 2023).
+In addition to challenges, some new frontiers of cell biology related to bioelectricity have emerged. Extracellular vesicle (EV) is
+one of them. EVs are cell-derived membrane-enclosed particles
+found in essentially all cell types. Currently, EVs are known as a
+universal way of intracellular communication as they can deliver
+soluble mediators, such as proteins (cytokines, morphogens, and
+microRNAs, to the direct contact of neighboring cells. EVs can be
+classified into exosomes or ectosomes based on their biogenesis, and they have variable sizes (Zappulli et al., 2016; Salomon et
+al., 2022; van de Wakker et al., 2023). The EVs may directly distribute ion channels such as sodium channels, glutamate receptor
+subunits, solute transporters, connexin, and aquaporins (Faure et
+al., 2006; Soares et al., 2015; Pathare et al., 2017; Barros Lamus
+et al., 2021; Nouri et al., 2021). Thus, they may modulate cellular
+bioelectricity. On the other hand, bioelectricity could also regulate
+EV formation and release. P2X7R, an ATP-gated ion channel, was
+found in controlling EV release (Golia et al., 2023). Like EV, the cell
+membrane tunneling nanotubes (TNTs) are another type of intercellular communication for diverse contents from ions and proteins
+to organelles. However, the TNT working range (physical distance
+between cells) is longer than EVs. TNTs have an actin structure and
+portions of the plasma membrane between two cells and facilitate
+cytoplasm and organelle exchange (Cervantes and Zurzolo, 2021;
+Zurzolo, 2021; Wang et al., 2024). TNTs are also related to cellular bioelectricity since connexin and Ca2+ flux were found to be
+generated and propagated within TNTs (Smith et al., 2011; Vargas
+et al., 2019). Moreover, cells connected by TNT can be electrically
+coupled through connexins (Wang et al., 2010). This TNT-mediated
+electrical coupling could modulate intracellular downstream signaling molecules such as PI3K (Abounit and Zurzolo, 2012). Thus, both
+EVs and TNTs expand the horizon of bioelectricity.
+
+In conclusion, bioelectricity is a universal, multifaceted signaling
+modality for regulating autonomous collective cell behavior, embryonic development, regeneration, and diseases such as cancers.
+Although there are some challenges, significant progress has been
+made in recent years. With newly developed tools, we expect bioelectricity to find its way into cell, developmental, and evolutionary
+biology, as well as many other biomedical research areas.
+
+[PAGE 5] ACKNOWLEDGMENTS
+
+We thank Ziyu Dong for the illustration of the figure. G.Z. is supported by the National Institute of General Medical Sciences of the
+National Institutes of Health (R35GM124913). The content is solely
+the responsibility of the authors and does not necessarily represent
+the official views of the funding agents. M.L. gratefully acknowledges support via a grant from the John Templeton Foundation,
+via a Sponsored Research Agreement from Astonishing Labs, and
+via Guy Foundation Family Trust (grant 103733-00001).

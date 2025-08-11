@@ -1,0 +1,869 @@
+Control flow in active inference systems
+Part II:
+Tensor networks as general models of control
+flow
+
+Abstract-Living systems face both environmental complexity
+and limited access to free-energy resources. Survival under these
+conditions requires a control system that can activate, or deploy,
+available perception and action resources in a context specific
+way. In Part I, we introduced the free-energy principle (FEP)
+and the idea of active inference as Bayesian prediction-error
+minimization, and show how the control problem arises in
+active inference systems. We then review classical and quantum
+formulations of the FEP, with the former being the classical limit
+of the latter. In this accompanying Part II, we show that when
+systems are described as executing active inference driven by
+the FEP, their control flow systems can always be represented
+as tensor networks (TNs). We show how TNs as control systems
+can be implemented within the general framework of quantum
+topological neural networks, and discuss the implications of these
+results for modeling biological systems at multiple scales.
+
+Index Terms-Bayesian mechanics, Dynamic attractor, Free-
+energy principle, Quantum reference frame, Scale-free model,
+Topological quantum field theory.
+
+[PAGE 1] I. INTRODUCTION
+
+The framework of active inference provides a completely
+general, scale-free formal framework for describing in-
+teractions between physical systems in cognitive terms. In
+Part I of this paper, we reviewed how active inference –
+a combination of learning with active exploration of the
+environment – emerges in systems compliant with the Free En-
+ergy Principle (FEP), a general least-action principle initially
+developed in neuroscience [1]-[7]. We then showed how the
+control flow problem arises in active inference systems, and
+reviewed classical and quantum formulations of the problem.
+Control flow can be represented as switching between classical
+dynamical attractors, between deployed quantum reference
+frames (QRFs) [8], [9], and between computational processes
+represented by TQFTs [10], [11]. Implementing control flow
+has a free-energy cost; hence any control-flow system must
+trade off its own processing costs against the expected benefits
+of switching between input/ouput modes. The time and mem-
+ory dependence of control flow generically leads to context
+effects on both perception and action.
+
+In this Part II, we develop a fully-general tensor repre-
+sentation of control flow in §II, and prove that this tensor
+can be factored into a TN if, and only if, the separability
+(or conditional statistical independence) conditions needed to
+identify distinct features of, or objects in, the environment
+are met. We show how TN architectures allows classification
+of control flows, and give two illustrative examples. We then
+discuss several established relationships between TNs and
+artificial neural network (ANN) architectures in §III, and
+show how these generalize to topological quantum neural
+networks [11], [12], of which standard deep-learning (DL)
+architectures are a classical limit [13]. Having developed these
+formal results, we turn to implications of these results for
+biology in §IV, and discuss how TN architecture correlates
+with the observational capabilities of the system being mod-
+eled, particularly as regards abilities to detect spatial locality
+and mereology. We consider how to classify known control
+pathways in terms of TN architecture and how to employ the
+TN representation of control flow in experimental design. We
+conclude by looking forward to how these FEP-based tools
+can further integrate the physical and life sciences.
+
+[PAGE 1] II. TENSOR NETWORK REPRESENTATION OF CONTROL
+FLOW
+
+A. Tensor networks and holographic duality
+
+Entanglement and quantum error correction, two concepts
+developed in quantum information theory, have been proved to
+have a fundamental role in unveiling quantum gravity [14]. At
+the origin of this consideration is the discovery by Bekenstein
+and Hawking [15]–[18] that the second law of thermodynamics
+can be preserved in the gravitational field of a black hole,
+if this latter has an entropy proportional to the area of its
+horizon, by the inverse of the Newton gravitational constant
+G. This entropy is maximal, as implied by the second law
+itself, providing an upper bound for possible configurations of
+matter within a region of the same size [19], [20].
+
+Nonetheless, the scaling of the local degrees of freedom
+counted by the entropy does not increase as the volume,
+hinging toward the formulation of the holographic conjecture
+[21], suggesting a division between the information that can
+only be retrieved on the boundary world, and a merely appar-
+ent bulk world. AdS/CFT realized the holographic conjecture,
+postulating a duality between gravity in asymptotically AdS
+space and quantum field theory on the spatial infinity of the
+AdS space [22]. Giving literal meaning to the duality, Ryu
+and Takayanagi (RT, [23]) proposed that entanglement of a
+boundary region fulfils the same law as for the black hole
+entropy, replacing the area of the black hole horizon with
+an extremal surface area that bounds the bulk region under
+scrutiny.
+
+While on the boundaries the theory can be individuated
+by assigning a specific conformal field theory (CFT), in the
+bulk the geometry can be associated to specific entanglement
+structures of the quantum systems. This is, for instance, what
+happens to the ground states of a CFT associated to an
+AdS space: the RT surface area increases less fast than the
+volume of the boundary. When the boundary is at equilibrium,
+in a thermal state of finite temperature, the bulk geometry
+corresponds to that of a black hole, its horizon being parallel to
+the boundary and its size increasing with the temperature. The
+RT surface is then confined between the boundary and the back
+hole horizon, approaching the boundary at higher temperature
+and increasing its entropy. These considerations suggest the
+existence of a subtle link interconnecting the structure of
+spacetime and quantum entanglement, and hence that a theory
+of quantum gravity must be fundamentally holographic, where
+its states satisfy the RT formula for some bulk geometry.
+
+The existence of an exact correspondence between bulk
+gravity and quantum theory at the boundary may hinge toward
+possible inconsistencies with locality. This has been discussed
+in the literature, in terms of local reconstruction theory [24]–
+[26]: variables in the bulk (e.g. bulk spins) can be controlled
+instantaneously from the boundary, but this requires simul-
+taneous access to a large portion of the boundary: locality
+and an upper speed of light do not hold exactly in this
+theory. Nonetheless, local observers confined in small regions
+at the boundary still fulfill locality and the existence of
+an upper limit of the speed of information exchange, in a
+way that is reminiscent of quantum error correction codes
+(QECCs) in quantum information theory: information is stored
+redundantly, in such a way that when part of it is corrupted,
+a reconstruction of information is still possible. Locality in
+the bulk is therefore a QECC property of the encoding map
+that realizes the duality between bulk and boundary. On the
+other hand, these properties are strictly connected to RT, which
+provides the necessary resource of entanglement for QEEC to
+emerge.
+
+The RT formula and QECC are properties fulfilled by
+
+[PAGE 3] B. General results
+
+We can now move to prove a general result:
+
+Theorem 1. A system A exhibits non-trivial control flow if,
+and only if, its control flow can be represented by a TN.
+
+and examine some of its corollaries. We begin by defining:
+
+Definition 1. Control flow is trivial if a system deploys only
+one QRF.
+
+As any collection of mutually-commuting QRFs can be rep-
+resented as a single QRF [11], [79], any system that deploys
+only mutually-commuting QRFs exhibits trivial control flow.
+Systems that deploy only a single QRF “do the same thing"
+regardless of context, and so do not qualify as "interesting" in
+the sense used here. As noted above, no finite physical system
+can measure the entire state of its boundary with a single QRF,
+so no such system can simultaneously measure and act on its
+entire context. Any system A that deploys multiple QRFs Qi
+in sequence cannot, as noted in Part I, avoid contextuality
+due to unobservable effects, mediated by the action of Hв,
+of the action of Q¿ on the state later measured by Qj. Every
+action taken by an "interesting" system, in other words, at
+least transiently increases the VFE at its boundary.
+
+Consider, then, a system A that deploys multiple, distinct
+QRFs Q1, Q2,...Qn, acting on its environment B, where
+n < N = dim(HAB). Classical control flow in A can then
+be represented by a matrix CF = [Pij], where Pij is the
+probability of the control transition Qi → Qj. As noted in
+Part I, any such transition has an energetic cost, which must
+be paid with free energy sourced from the thermodynamic
+sector F of the A-B boundary B.
+
+The matrix CF is a 2-tensor. Theorem 1 states that this
+tensor can be decomposed into a TN. We prove it as follows:
+
+Proof (Thm. 1). Suppose first that control flow in a system
+A can be represented by a TN. A TN is, by definition, a
+factorization of a tensor operator into a network of tensor
+operators. This network can be either hierarchical or flat; if
+it is hierarchical, each layer can be considered a flat TN.
+Hence no generality is lost in considering just the case of a flat
+TN, which is an operator contraction T = ...TijTjkTkl...,
+where summation on shared indices is left implicit. In general,
+Tjk ≠ Tk = Tkj, hence these expressions do not commute.
+They therefore represent non-trivial control flow. Conversely,
+any non-trivial control flow can be written, at any fixed scale
+or level of abstraction, as a linear sequence of (in general
+probabilistic) operators. The fixed order of operators in the
+sequence can be encoded formally by adding “spatial" indices
+as needed to allow contraction over shared indices. Hence any
+non-trivial control flow at a fixed scale can be written as a flat
+TN. This construction can be repeated at each larger scale to
+produce a hierarchical TN over a collection of "lowest-scale"
+TNs.
+
+We can now examine two corollaries of this result:
+
+Corollary 1. Decoherent reference sectors exist on a bound-
+ary B if and only if control flow can be implemented by a
+TN.
+
+Proof. Decoherence between sectors requires independently-
+deployable, non-commuting QRFs. This requires a control
+structure that factors, hence by Theorem 1, it requires a
+TN. Conversely, a TN factors the control structure, making
+QRFs independently deployable, which renders their sectors
+decoherent.
+
+Equivalently, the generative model (GM) implemented by
+a system [4] factors if, and only if, control flow can be
+implemented by a TN.
+
+Corollary 2. The TN of any system compliant with the FEP
+is a decomposition of the Identity.
+
+Proof. The FEP applies to systems with a NESS, and drives
+such systems to return to (the vicinity of) the NESS after
+any perturbation. Hence at a sufficiently large scale, the TN
+of any such system is a cycle, i.e., a decomposition of the
+Identity.
+
+Many standard TN models, e.g., MERAs, assume bound-
+ary conditions asymptotically far, in numbers of lowest-scale
+operators, from the region of the network that is of interest.
+Identifying such asymptotic boundary conditions yields a
+cyclic system.
+
+Theorem 1, together with its corollaries, provides a natural,
+formal means of classifying systems by their control architec-
+tures. At a high level, two characteristics distinguish systems
+with different architectures:
+
+• Hierarchical depth, which indicates the number of "virtual
+machine" layers [43] the architecture supports. The in-
+terfaces between these layers implement coarse-graining,
+removing from the higher-level representation all dimen-
+sions, and hence all information, which is contracted out
+of the lower-level operators.
+• Number and location of contractions that yield unitary op-
+erators, and hence build in entanglement between lower-
+level operators. The natural limit is a MERA, in which
+every pair of lower-level operators is entangled at every
+hierarchical level [44].
+
+The control-flow architecture, in turn, specifies the structure
+of the "layout" of distinguishable sectors on B and hence
+of detectable features/objects in the environment. Locality
+on B requires a hierarchical TN; detectable entanglement
+requires a MERA-like TN. Locality is required for detectable
+features/objects to appear to have components with nested
+decompositions. Any QRF for geometric space, and hence for
+spacetime, must be hierarchical, and must be a MERA if en-
+tanglement in space is to be detected. A MERA is required, in
+particular, if the use of coherence between spatially-separated
+systems as a computational or communication resource is
+detectable.
+
+
+[PAGE 4] III. IMPLEMENTING CONTROL FLOW WITH TQNNS
+
+Tensor Networks can be naturally associated to the ma-
+trix elements of physical scalar products among topological
+quantum neural networks (TQNNs). Physical scalar products
+encode indeed the dynamics of TQFTs, since they fulfill their
+constraints of imposing flatness of the curvature and gauge
+invariance. Thus, the matrix elements associated to scalar
+products can be seen as evolution matrix elements for the spin-
+network states that span the Hilbert spaces of TQNNs.
+
+[PAGE 5] A. Tensor networks as classifiers for TQNNS
+
+A notable example is provided by BF theories [47], a
+class of TQFTs particularly well studied in the literature of
+mathematical physics that enables expressing effective theories
+of particle physics, gravity and condensed matter, and provides
+as well a general framework for implementations of models
+of quantum information and quantum computation, machine
+learning (ML), and neuroscience. These are defined on the
+principal bundle M of a connection A for some internal gauge
+group G, with algebra g, according to the action on a d-
+dimensional manifold Ma:
+
+S =  ∫_(Ma) Tr[BF], (3)
+
+where B is an ad(g)-valued d-2-form, F denotes the field-
+strength of A, which is a 2-form, and the trace Tr is over the
+internal indices of g, ensuring gauge invariance of the density
+Lagrangian L = Tr[B ∧ F] of the BF theory.
+
+Variation with respect to the conjugated variables, the
+connection A and the B frame-field, closing a canonical
+symplectic structure, provide the equations of motion of the
+theory [47]:
+
+F=0, d_AB = 0, (4)
+
+which are, respectively, the curvature constraint, imposing the
+flatness of the connection, and the Gauß constraint, imposing
+invariance under gauge transformations, having denoted with
+d_A the covariant derivative with respect to the connection A.
+
+At the quantum level, the states of the kinematical Hilbert
+space of the theory, fulfilling by construction the Gauß con-
+straint, can be represented in terms of cylindrical functionals,
+
+FIELDS ET AL, CONTROL FLOW IN ACTIVE INFERENCE SYSTEMS, PART II
+5
+Input
+Output
+T
+T+1
+Fig. 3. Architecture of the Bidirectional Associative Memory (BAM) network
+employed here. As in Fig. 2, only the connections of the first and last nodes
+are shown explicitly.
+invariance. Thus, the matrix elements associated to scalar
+products can be seen as evolution matrix elements for the spin-
+network states that span the Hilbert spaces of TQNNs.
+
+[PAGE 5] A. Tensor networks as classifiers for TQNNS
+A notable example is provided by BF theories [47], a
+class of TQFTs particularly well studied in the literature of
+mathematical physics that enables expressing effective theories
+of particle physics, gravity and condensed matter, and provides
+as well a general framework for implementations of models
+of quantum information and quantum computation, machine
+learning (ML), and neuroscience. These are defined on the
+principal bundle M of a connection A for some internal gauge
+group G, with algebra g, according to the action on a d-
+dimensional manifold Ma:
+S =
+/ Tr
+Ma
+Tr[BF],
+(3)
+where B is an ad(g)-valued d-2-form, F denotes the field-
+strength of A, which is a 2-form, and the trace Tr is over the
+internal indices of g, ensuring gauge invariance of the density
+Lagrangian L = Tr[B ^ F] of the BF theory.
+Variation with respect to the conjugated variables, the
+connection A and the B frame-field, closing a canonical
+symplectic structure, provide the equations of motion of the
+theory [47]:
+F=0, dAB = 0,
+(4)
+which are, respectively, the curvature constraint, imposing the
+flatness of the connection, and the Gauß constraint, imposing
+invariance under gauge transformations, having denoted with
+da the covariant derivative with respect to the connection A.
+At the quantum level, the states of the kinematical Hilbert
+space of the theory, fulfilling by construction the Gauß con-
+straint, can be represented in terms of cylindrical functionals,
+
+Cyl, supported on graphs Γ that are unions of segments Yi, the
+end points of which meet in nodes n, and with holonomies
+elements of the group G
+Hy [A] of the connection A
+assigned to Yi and intertwiner operators invariant tensor
+products of representations – Un assigned to the nodes n.
+For G = SU(2), spin-networks |Γ, jy, in), supported on Γ
+and labelled by the spin jy of the irreducible representations
+of the group elements assigned to y and by the quantum
+intertwiner numbers in associated to vn, represent a basis of
+the kinematical Hilbert space of the theory. In terms of func-
+tionals of Cyl, one can provide the holonomy representation,
+which is related to the "spin and intertwiner" representation of
+Γ, jy, n) by means of the Peter-Weyl transform. This allows
+us to decompose the spin-network cylindric functional as [48]:
+Ψjvijini (hvij)
+=
+In
+✔D(İvij) (hy)
+(5)
+,
+n
+Vij
+with D(i) are Wigner matrices providing representation ma-
+trices of the SU(2) group elements.
+The functorial evolution among spin-networks is ensured by
+the projector operator [11], which implements the curvature
+constraint in the physical scalar product among states, i.e.
+(in Plout),
+with
+P =
+= D[N] exp( / Tr[NF]).
+(6)
+We may then regard |in) as elements of the Hilbert space, and
+without loss of generality pick up those ones resulting from
+composing tensorially in Cyl k-representations of holonomies.
+We may further denote them as j₁... jk), with some ordering
+prescription to associate the topological structure of F to
+the sequence of spin labels. Physically evolving states Plin)
+are distinguished from the former ones by labelling them as
+|j1··· jk). Similarly, we introduce out) as the tensor product
+of (n-k)-representations of holonomies, and denote these states
+as i1...in-k). Then the matrix elements of (in Plout)
+naturally give rise [27] to an n-tensor, i.e.
+(i1...in-k|İ1··· jk) = Ti1...in-k.j1... jk. (7)
+
+[PAGE 6] B. Geometric RG flow for TQNNs and TNs
+The mathematical structures of TQNNs we summarized in
+Sec. III-A are picturing systems "at equilibrium", for which
+TQFTs characterize a topological stability that percolates into
+the related transition amplitudes. Nonetheless, it is worth
+considering as well how stochastic noise might interfere with
+the topological order ensured by TQFTs, and study the role of
+“out-of-equilibrium” physics in the analysis of the evolution
+of the systems under scrutiny.
+Out-of-equilibrium dynamics is instantiated considering a
+heat-flow evolution of the fundamental fields of the theory,
+with respect to a thermal time 7. Typical Langevin equations,
+complemented with stochastic noise, provide through their
+convergence toward the equations of motion of the theory the
+relaxation toward equilibrium of the field configurations rep-
+resenting specific systems [49]. In general, given some fields
+
+with a classical equation of motion derived, according
+to the variational principle 8S/8φο, from an action S over
+a Euclidean manifold M, the associated Langevin equations
+read:
+σ
+მ
+δS
+Φο =
+Эт
+δφσ
++ ησ,
+(8)
+with ησ a stochastic noise term. The theory at equilibrium is
+characterized by the symmetries of the equations of motion
+δδ/δφο = 0 that are broken in the transient phase [50];
+these symmetries are consistent with – and in the case of BF
+theories, actually generated by – the theories at equilibrium.
+A prototype of geometric heat-flow was introduced by
+Hamilton, and then used by Perelman to prove the Poincaré
+conjecture, which goes under the name of Ricci flow. Here the
+gravitational field guv is the basic configurational space field,
+while the drift terms are the Einstein equations of motion in
+the vacuum, which indeed are expressed by requiring that the
+components of the Ricci tensor vanish, i.e. Ruv = 0. The
+Ricci flow then reads
+მ
+129μν = -2μν,
+(9)
+having considered now a Lorentzian manifold M. The Ricci
+flow equations can be further complemented introducing the
+Ricci target R = κ²(Τμν−1/29μνT), expressed in terms of
+the Newton constant G = κ²/(8π) and the energy-momentum
+tensor of matter Τμν, so as to obtain at equilibrium the Einstein
+equations:
+1
+Rμν - 59μυ R = κ²Τμν,
+or equivalently
+Rμν = R
+μν
+Ruv
+(10)
+The stochastic version of the Ricci flow, with heat equation
+turning into a Langevin equation, has been introduced and
+deepened in [50] for a generic gravitational system in the
+presence of matter fields, describing an action S for gravity
+and matter. Moving then from:
+მ
+9μν
+Эт
+1 δS
+κ2 δαμν
++ 79μν
+=
+(11)
+in which a multiplicative noise ημν
+η μν appears, the
+Hamiltonian analysis of the stochastic Ricci flow (SRF) in the
+Adomian decomposition method (ADM) variables has been
+derived [50].
+An essential by-product of the discussion, from the Ricci
+flow perspective, is that the equilibration trajectories corre-
+spond to those of a renormalization group (RG) flow. The
+thermal time 7 plays the role of scale parameter that individ-
+uates a dimension in the bulk, which is out-of-equilibrium.
+The boundaries are recovered asymptotically in 7, in the
+infrared regime, and are by definition at equilibrium and thus
+symmetric.
+For a particular class of TQFTs, the BF theories we have
+introduced in Sec. III-A for implementing TQNNs and TNs,
+the geometric RG flow acquire a specific expression as the
+TQFT equivalent of the gravitational Ricci flow [51].
+
+[PAGE 6] C. TNs as a generalization of the main model architectures in
+ML
+The use of TNs is an emerging topic in the ML community.
+The integration between the two appears quite immediate. A
+TN structure can be viewed as a ML model in which the
+parameters are properly adjusted to learn the classification of a
+data set. Yet, as Ref. [52] mentions, machine learning can aid,
+in turn, in determining a factorization of a TN approximating
+a data set. Moreover, TNs are also used to compress the layers
+of ANN architectures, besides a variety of other uses. Tensor
+networks are becoming more and more popular to the extent
+that they are a powerful tool for representing and manipulating
+high-dimensional data, as in the case of image and video
+classification tasks in which the data are represented as a high-
+dimensional tensor. High efficiency, flexibility, and ease of use
+
+[PAGE 7] are making them a dominant choice for many AI applications.
+Furthermore, besides being used to represent data, TNs can
+be used to process data by exploiting a number of operators.
+This feature makes them an effective technique for processing
+data in ML applications.
+As is well known, TNs are particularly well suited for rep-
+resenting quantum many-body states in which the dimension
+of the Hilbert space is exponentially large in the number of
+particles. The corresponding ML approach consists in:
+• Lifting data to exponentially higher spaces;
+• Applying any linear classifier f(x) = W*Φ(X) to a non-
+linear space;
+• Compressing the weights by using TNs.
+The output of the model is a separation of classes that would
+not be linearly separable in a linear space. In particular, the
+decision function is the overlap of the weight tensor W with
+the feature map tensor as in Fig. 4. The weight tensor W
+can be approximated by the decomposition in Fig. 5.
+Regularization and optimization are built as a constructive
+product of low-order tensors while weight compression is
+performed by using the Matrix Product States (MPS) decom-
+position. If we look at Deep Neural Networks as a piecewise
+composition of linear discriminators (logistic regression func-
+tions), then the TN framework appears as a generalization of
+the main model architectures found in the ML literature, e.g.
+Support Vector Machines, Kernel models, and Deep Neural
+Networks.
+The literature concerning the use of tensor theory in tra-
+ditional ML is becoming large. A short review starts with
+a seminal paper by Stoudenmire and Schwab [54], which
+demonstrated how algorithms for optimizing TNs can be
+adapted to supervised learning tasks by using MPS (ten-
+sor trains) to parametrize non-linear kernel learning models.
+Novikov, Trofimov, and Oseledets [55] have shown how an
+exponentially large tensor of parameters can be represented
+in a factorized format called Tensor Train (TT), with the
+consequence of obtaining a regularization of the model. van
+Glasser, Pancotti, and Cirac [56] explored the connection be-
+tween TNs and probabilistic graphical models by introducing
+the concept of a "generalized tensor network architecture"
+for ML. Ref. [57] then designed a generative model, i.e. a
+traditional machine learning model that learns joint probability
+distributions from data and generates samples according to
+it, by using MPS. Ref. [58] made use of autoregressive
+MPSs for building an unsupervised learning model that goes
+beyond proof-of-concept by showing performance comparable
+to standard traditional models. Finally, Ref. [59] analyzes
+the contribution of polynomials of different degrees to the
+supervised learning performance of different architectures.
+
+[PAGE 7] IV. IMPLICATIONS FOR BIOLOGICAL CONTROL SYSTEMS
+Scale-free biology requires a smooth transition from
+quantum-like to classical-like behavior. Typical representations
+of metabolic, signal-transduction, and gene-regulatory path-
+ways are entirely classical, even though many of their steps in-
+volve electron-transfer or other mechanisms that are acknowl-
+edged to require a quantum-theoretic description [60], [61]. As
+noted earlier, free-energy budget considerations suggest that
+both prokaryotic and eukaryotic cells employ quantum coher-
+ence as a computational resource [62]. Emerging empirical
+evidence for longer-range entanglement in mammalian brains
+suggests that large-scale networks may also be using quantum
+coherence as a resource [63]. Control flow models must,
+therefore, support the possibility of quantum computation
+in biological systems. Hierarchical TNs that include unitary
+components, e.g., MERA-type models, provide this capability.
+In prokaryotes, the primary tasks of control flow are
+adapting metabolism to available resources via metabolite-
+driven gene regulation [64] and initiating DNA replication
+and cell division when conditions are favorable. We can,
+therefore, expect shallow hierarchies of effectively classical
+control transitions in these organisms. Eukaryotes, however,
+are characterized by both intracellular compartmentalization
+and morphological degrees of freedom at the whole-cell scale.
+We have shown previously that the FEP will induce “neu-
+romorphic" morphologies i.e. morphologies that segregate
+inputs from outputs and enable a fan-in/fan-out computational
+architecture - in any systems with morphological degrees of
+freedom [65]. Such systems can be expected to have deep con-
+trol hierarchies at the cellular level, with hierarchical structure
+correlating with morphological structure in morphologically-
+complex cells such as neurons [66], and in multicellular
+assemblages at all scales. These distinctions correlate with the
+orders-of-magnitude increase in classical computational power
+(estimated from total metabolic energy budget) as a function
+of cell-surface area in eukaryotes as compared to prokaryotes
+[62], as illustrated in Fig. 6.
+
+[PAGE 8] As well as managing metabolism and replication, most
+eukaryotes implement active exploration of the environment,
+communication with other systems, and crucially for cog-
+nition the writing and reading of stigmergic memories.
+Thus we can expect such systems to implement QRFs for
+spacetime and for specific kinds of objects, e.g., conspecifics
+and suitable substrates for recording stigmergic memories.
+Such QRFs rely on symmetries, and hence on redundancy
+of encoded (or encodable) information; they depend, in other
+words, on the availability of error-correcting codes [67], [68].
+The implementation of spacetime as a QECC by TNs has
+been extensively studied by physicists as noted above; see [69]
+for review and [27] for a detailed analysis using the present
+formalism. The use of spacetime as an error-correcting code
+by organisms e.g., the implementation of translational and
+rotational invariance of objects by dorsal visual processing in
+mammals [70], [71] – is well-understood phenomenologically,
+but the details of neural implementation remain to be eluci-
+dated.
+Both the context-sensitivity of, and the occurence of context
+effects due to non-commutativity of QRFs in, control net-
+works can be expected to increase with their complexity and
+hierarchical depth. “Bowtie” networks with high fan-in/fan-
+out to/from multi-use proteins or second messengers such
+as Ca2+ are increasingly recognized as ubiquitous in higher
+eukaryotic cells [72]. Such networks have the general form
+of the CCCD depicted in Part I, Diagram 3. Frequently, such
+networks evolve via compression of information (e.g. toward
+share second messengers, as in [Ca2+]-based interactions [73],
+[74]) as an efficiency-increasing mechanism. Bowties intro-
+duce semantic ambiguities that must be resolved by context.
+Each incoming signal has its own governing semantics, but
+the relevant context can depend on boundary conditions which
+can be exceedingly difficult (if not impossible) to predetermine
+(see e.g., [75], [76] for general discussions of the history and
+semantic depth of this problem). As pointed out in [77], a
+context change xy is semantically problematic if for
+a fixed set {0} of observations, the conditional probability
+distributions P(0₁|x) and P(0₁|y) are well defined, but the joint
+distribution P(0₁|x∨y) is not [78]. This occurs whenever the
+QRFs for x and y do not commute [79, Th 7.1]. As suggested
+by Part I, Diagram 3, this context-switching problem affects
+deep learning using VAEs [80]; see e.g., the application to
+antimicrobial peptides in [81]. In general, the structure of
+Part I, Diagram 3 can serve as a convenient benchmark for
+distinguishing signal transduction networks that incorporate
+co-deployable versus non-co-deployable QRFs [79].
+
+[PAGE 8] "Quantum" context effects due to non-commutativity have,
+interestingly, been reported even at the scale of human lan-
+guage use. The "Snow Queen" experiment [82] challenged
+subjects with distinct, mutually-inconsistent meanings of terms
+such as 'kind', 'evil', or 'beautiful' in different contexts, and
+detected statistically-significant context effects using the CbD
+formalism [83], [84]. Such effects cannot be explained by
+linguistic ambiguity, misreading, etc. Such language-driven
+contextuality is taken up in the setting of psycholinguistics
+and distributional semantics in [85], which combines CbD and
+the sheaf theoretic [86], [87] methods to systematically study
+semantic ambiguity as creating meaning/sense discrepancies
+in statements like "It was about time", "She had time on her
+hands to win the heat”, “West led with a queen", etc.
+While the notion of "languages" has thus far been ap-
+plied to cells, tissues, and even non-vertebrates in a mostly
+metaphorical way, we can speculate that linguistic approaches
+to understanding the interplay between context dependence
+and semantic ambiguity may be useful to biology in general.
+Immune cells (e.g., T cells) are, for example, “programmed” or
+"trained" by their progenitor cells to respond to local cellular
+signals and ambient conditions in particular ways. Unexpected
+context changes may induce dysfunctional (at the organism
+scale) responses, including chronic disorders [88]; these can be
+considered consequenes of discrepancies between the "actual"
+semantics of incoming signals and the semantics expected by
+the immune system's "language.” This suggestion of possi-
+ble "linguistic" contextuality seems in consonance with the
+hypothesis of [89] that the immune system is a cognitive
+(living) system implementing its exclusive system of language-
+grammar, which may be prone to analogous disorders of com-
+munication as those discussed in [85]. Similar context effects
+have been observed in microbiological systems [90]; here
+discrepancies in experimentally derived classical probabilities
+arising from lactose-glucose interference signaling in E. Coli
+can only be explained in terms of non-classical probabilities.
+We note that the expression 'quantum-like' [91] is often used
+for such effects; however, their formal structure is exactly that
+given by quantum theory.
+We expect that further research into quantum biology will
+unfold significant perspectives on human/mammalian physiol-
+ogy and cognitive capabilities along the lines suggested in the
+
+[PAGE 9] present article. For example, allostatic maintenance, as briefly
+alluded to in Part I, can be seen as a process regulating a
+body's physiological conditions relative to costs and benefits
+while dynamically allocating resources for the purpose of
+overall adaptability of an organism within its internal envi-
+ronment. Implementing the allostatic and anticipatory mech-
+anisms are the visceromotor cortical regions generating auto-
+nomic, hormonal, and immunological predictions leading to
+interoceptive inference [92]–[94], [96]–[99], [102]. This pro-
+cess of inference in humans and mammals putatively utilizes
+predictive coding for the processes of homeostasis-allostasis
+through a hierarchy of cellular to organ-level systems, in turn
+connecting interoception to the processes of extercoception
+and proprioception [92], [99]-[102]. The basic principles
+follow from how allostasis provides protection against po-
+tential surprise by utilizing a framework somewhat beyond
+the error signaling necessary for homeostatic maintenance (it
+is essentially through minimizing the free energy of internal
+state trajectories towards combatting surprise, as discussed in
+Part I). The net effect of the process is consonant with the
+Good Regulator theorem of [95], showing how regulation of
+a given system requires an internal model of that system. A
+further perspective is to emphasize the predictive nature of
+an integrated, complex, allostatic-interoceptive cortical system
+capable of supporting a spectrum of psychological phenomena
+including memory and emotions [99] (cf. [102]). Accordingly,
+cognitive conditions such as depression and autism have been
+described as abnormalities of allostatic-interoceptive inference,
+so impairing predictive coding mechanisms due to aberrant
+assimilation and mistuning of prediction errors (putatively a
+connectivity issue), conceivably leading to a root cause of
+many known cognitive conditions [92], [100], [102].
+We anticipate that this fully general, context sensitive
+model of control flow will be important for understanding
+morphogenesis, which is not simply a feed-forward emergent
+system, but rather a highly context-sensitive error-minimizing
+process [103]. Specifically, the collective intelligence of cells
+during embryonic development, organ regeneration, and meta-
+morphosis can create and repair specific complex structures
+despite a wide range of perturbations [104]. Changes in the
+genome, the number of cells, or the starting configuration can
+often be overcome: bisected embryos result in normal twins,
+amputated salamander limbs re-grow back to normal, and
+planarian fragments result in perfect little worms [105]. The
+competency of cellular collectives to reach the correct target
+morphology despite even drastic interventions requires an
+understanding of how they navigate, via context-sensitive con-
+trol flow, problem spaces including anatomical morphospace
+[106], physiological, and transcriptional spaces [68], [107].
+Understanding the navigation policies used by unconventional
+collective intelligences can help not only understand creative
+problem-solving on rapid timescales (such as the ability to
+regulate genes to accommodate an entirely novel stressor [108]
+without evolutionary adaptation), but may also have implica-
+tions for predicting and managing the goals and behavioral
+repertoires of synthetic beings [109].
+
+[PAGE 9] V. CONCLUSION
+We have shown here how the problem of defining control
+flow arises in active inference systems, and provided three
+formal representations of the problem. We have proved that
+control flow in such systems can always be represented by
+a tensor network, provided illustrative examples, and shown
+how the general formalism of topological quantum neural
+networks can be used to implement a general model of control
+flow. These results provide a general formalism with which to
+characterize context dependence in active inference systems
+at any scale, from that of macromolecular pathways to that of
+multi-organism communities. They suggest that the concept
+of communication by language is not just metaphorical when
+applied to biological systems in general, but rather an appro-
+priate and productive description of interactional dynamics.
+We view these results as a further step toward fully
+integrating the formal models, concepts, and languages of
+physics, biology, and cognitive science. This integration is not
+reductive. It rather allows us to classify systems using natural
+measures of organizational and computational complexity, and
+to understand how interactions between simpler systems can
+implement the more complex behavior of the larger systems
+that they compose.
+
+[PAGE 9] V. CONCLUSION
+
+We have shown here how the problem of defining control
+flow arises in active inference systems, and provided three
+formal representations of the problem. We have proved that
+control flow in such systems can always be represented by
+a tensor network, provided illustrative examples, and shown
+how the general formalism of topological quantum neural
+networks can be used to implement a general model of control
+flow. These results provide a general formalism with which to
+characterize context dependence in active inference systems
+at any scale, from that of macromolecular pathways to that of
+multi-organism communities. They suggest that the concept
+of communication by language is not just metaphorical when
+applied to biological systems in general, but rather an appro-
+priate and productive description of interactional dynamics.
+We view these results as a further step toward fully
+integrating the formal models, concepts, and languages of
+physics, biology, and cognitive science. This integration is not
+reductive. It rather allows us to classify systems using natural
+measures of organizational and computational complexity, and
+to understand how interactions between simpler systems can
+implement the more complex behavior of the larger systems
+that they compose.
+
+[PAGE 9] ACKNOWLEDGEMENTS
+
+K.F. is supported by funding for the Wellcome Centre for
+Human Neuroimaging (Ref: 205103/Z/16/Z), a Canada-UK
+Artificial Intelligence Initiative (Ref: ES/T01279X/1) and the
+European Union's Horizon 2020 Framework Programme for
+Research and Innovation under the Specific Grant Agreement
+No. 945539 (Human Brain Project SGA3). M.L. gratefully
+acknowledges funding from the Guy Foundation and the
+John Templeton Foundation, Grant 62230. A.M. wishes to
+acknowledge support by the Shanghai Municipality, through
+the grant No. KBH1512299, by Fudan University, through
+the grant No. JJH1512105, the Natural Science Foundation
+of China, through the grant No. 11875113, and by the Depart-
+ment of Physics at Fudan University, through the grant No.
+IDH1512092/001.
+
+[PAGE 9] CONFLICT OF INTEREST
+
+The authors declare no competing, financial, or commercial
+interests in this research.
+
+[PAGE 11] VI. BIOGRAPHY SECTION
+
+Chris Fields (fieldsres@gmail.com) is an information theorist. He has worked
+in AI applications, neuromorphic computing, and the bioinformatics. He
+currently focuses on the interface between quantum information, computing,
+and the life sciences.
+
+Filippo Fabrocini is Professor in the College of Design & Innovation at
+Tongji University, Director of the Tongji Sustainable AI Lab, and among the
+founders of the Tongji AI Art Lab. Filippo Fabrocini is also affiliated with
+the Italy National Research Council (Institute for Computing Applications).
+His main areas of interest are Machine Learning, Quantum Neural Networks,
+Ethical AI, and AI Art.
+
+Karl Friston (k.friston@ucl.ac.uk) is a theoretical neuroscientist and authority
+on brain imaging. He invented statistical parametric mapping, voxel-based
+morphometry, and dynamic causal modelling. He is the architect of the free
+energy principle and active inference. He was elected a fellow of the Royal
+Society in 2006 and received the Weldon Memorial Prize and Medal in 2013.
+
+James F. Glazebrook (jfglazebrook@eiu.edu) is Professor Emeritus of
+Eastern Illinois University, and member of the Adjunct Faculty (Mathematics)
+of the University of Illinois at Urbana-Champaign, USA. Current research
+interests include mathematical methods in the cognitive sciences involving
+scale-free architectures, information theory from the categorical perspective
+as applied to contextuality and active inference. Pastimes include music,
+literature, theatre, and travelling.
+
+Hananel Hazan (Hananel.Hazan@tufts.edu) is a research scientist at the
+Allen Discovery Center at Tufts University, where he focuses on biologically-
+inspired computing and neurocomputation. With a strong background in
+machine learning and an interdisciplinary approach to his research, Dr. Hazan
+explores the computational properties of both neuronal and non-neuronal
+systems to advance our understanding of biological systems and improve ma-
+chine learning algorithms. His research interests include biologically-inspired
+computing, neuronal and non-neuronal computation, emergent behavior from
+complex systems, and noisy reinforcement learning.
+
+Michael Levin (michael.levin@tufts.edu) is Distinguished Professor and
+Vannevar Bush Chair at the Department of Biology at Tufts University,
+director of the Allen Discovery Center at Tufts, and an Associate Faculty
+at the Wyss Institute for Biologically Inspired Engineering at Harvard. His
+lab works at the intersection of developmental biology, computer science, and
+behavioral science to understand cognition in diverse evolved, designed, and
+hybrid complex systems.
+
+Antonino Marcianò is currently tenured professor of physics at Fudan
+University and member of the Italian Institute of Nuclear Physics (INFN). He
+currently focuses on a variety of topics in theoretical physics, ranging mainly
+from quantum field theories and theories of gravity, to their neighboring
+research areas as well as analogous applications to solid state physics, artificial
+intelligence and quantum computation.

@@ -1,0 +1,563 @@
+Neurotransmitter signaling pathways required for
+normal development in Xenopus laevis embryos:
+a pharmacological survey screen
+Kelly G. Sullivan and Michael Levin
+Biology Department, Center for Regenerative and Developmental Biology, Tufts University, Medford, MA, USA
+
+Abstract
+Neurotransmitters are not only involved in brain function but are also important signaling molecules for many
+diverse cell types. Neurotransmitters are widely conserved, from evolutionarily ancient organisms lacking
+nervous systems through man. Here, results are reported from a loss- and gain-of-function survey, using
+pharmacological modulators of several neurotransmitter pathways to examine possible roles for these pathways
+in normal embryogenesis. Applying reagents targeting the glutamatergic, adrenergic and dopaminergic
+pathways to embryos of Xenopus laevis from gastrulation to organogenesis stages, we observed and quantified
+numerous malformations, including craniofacial defects, hyperpigmentation, muscle mispatterning and
+miscoiling of the gut. These data implicate several key neurotransmitters in new embryonic patterning roles,
+reveal novel earlier stages for processes involved in eye development, suggest new targets for subsequent
+molecular-genetic investigation, and highlight the necessity for in-depth toxicology studies of psychoactive
+compounds to which human embryos might be exposed during pregnancy.
+
+[PAGE 1] Introduction
+Although neurotransmitters are most often investigated for
+their role relaying information throughout the nervous sys-
+tem, they also participate as chemical messengers in many
+signaling events of a non-neuronal nature (Lauder, 1988;
+Entschladen et al. 2002; Levin et al. 2006; Dube & Amireault,
+2007). Neurotransmitters precede the appearance of ner-
+vous systems on both developmental and evolutionary time
+scales. Classical neurotransmitters have been found in
+oocytes and pre-nervous embryos of both vertebrates and
+invertebrates, including mammals, amphibians, fish, insects
+and echinoderms (Buznikov & Shmukler, 1981; Kusano et al.
+1982). In addition, neurotransmitters are so evolutionarily
+ancient that they are found in organisms outside the animal
+kingdom. For example, acetylcholine is present in all king-
+doms of life including fungi and bacteria (Horiuchi et al.
+2003), and serotonin is present in plants (Levin et al. 2006;
+Pelagio-Flores et al. 2011). It has thus been hypothesized
+that the complex cognitive functions occurring in animal
+brains, and partially mediated by neurotransmitters, evolved
+from much simpler cell-cell signaling events responsible for
+developmental patterning and maintenance of homeostasis
+in primitive organisms (Buznikov & Shmukler, 1981).
+Humans and other vertebrates express serotonergic,
+glutamatergic, cholinergic and dopaminergic receptors in
+non-neural tissues, where these receptors participate in a
+variety of physiological events (Levin et al. 2006; Wessler &
+Kirkpatrick, 2008; Bozic & Valdivielso, 2015; Tank & Lee
+Wong, 2015). Most remarkably, complete neurotransmitter
+systems containing not only receptors, but also machinery
+for neurotransmitter synthesis and degradation, are present
+in several somatic organs. For example, the kidney possesses
+its own dopaminergic system that protects it from oxidative
+stress and inflammation, and regulates sodium excretion
+(Choi et al. 2015). In addition, the epidermis has cholinergic
+and adrenergic systems that control cell growth, motility
+and pigmentation (Grando et al. 2006), as well as a seroton-
+ergic system responsible for a wide range of responses to
+environmental rhythms and stresses (Slominski et al. 2003,
+2005).
+
+[PAGE 2] 
+Perhaps most interestingly, neurotransmitters have been
+shown to participate in embryonic development as well as
+in maintenance of physiological states. They are best known
+for organizing the developing mammalian brain (Nguyen
+et al. 2001), but also act as important body-wide patterning
+signals in a wide variety of animals. In the sea urchin
+embryo, cleavage and gastrulation are, in part, regulated
+by serotonin (Levin et al. 2006); a similar role was found for
+serotonin in the fruit fly model (Colas et al. 1999a,b). In
+addition, lipophilic analogs of serotonin, acetylcholine and
+cannabinoids have been shown to rescue sea urchin
+embryos from developmental defects induced by the amy-
+loid protein fragments responsible for Alzheimer's disease
+(Buznikov et al. 2008).
+In vertebrates, several developmental roles of serotonin
+are well documented. Serotonin regulates many different
+aspects of bone development, including chondrogenic dif-
+ferentiation (Bhasin et al. 2004), osteoblast proliferation
+(Cray et al. 2014) and maintenance of bone mass (Ducy &
+Karsenty, 2010). Serotonergic signaling is also an invaluable
+regulator of craniofacial development, stimulating neural
+crest cell migration (Moiseiwitsch & Lauder, 1995; Choi
+et al. 1997), morphogenesis of the jaw joint and branchial
+arches (Reisoli et al. 2010), skull ossification (Cray et al.
+2014), formation of the teeth (Moiseiwitsch & Lauder,
+1996), and organization of the retina (Reisoli et al. 2008). In
+addition, it has been shown in both frog and chick that
+serotonin acts as a very early signal in left-right patterning,
+acting upstream of the earliest asymmetrically transcribed
+genes (Fukumoto et al. 2005a,b; Carneiro et al. 2011; Beyer
+et al. 2012; Vandenberg et al. 2012, 2014).
+Although serotonin is well established as a player in ver-
+tebrate embryonic development, the developmental func-
+tions of other neurotransmitter families are yet to be
+characterized. Information on involvement of neurotrans-
+mitters in pattern formation would not only identify novel
+components of embryogenesis, but also give important
+insight into potential new endpoints for teratogenic (em-
+bryotoxic) effects of widespread pharmaceuticals (Alwan
+et al. 2007; Louik et al. 2007; Colvin et al. 2011; Myles et al.
+2013; Hurault-Delarue et al. 2014; Yazdy et al. 2014). To
+begin to identify possible patterning roles for other neuro-
+transmitter families, this study took advantage of com-
+pounds developed for neuropharmacological research, and
+an exploratory drug screen was conducted in the Xenopus
+laevis embryo, a popular vertebrate model for the study of
+well-conserved developmental mechanisms (Kaltenbrun
+et al. 2011; King et al. 2012; Ori et al. 2013; Pratt & Khakha-
+lin, 2013; Schmitt et al. 2014), as well as for studies of devel-
+opmental toxicology (Sunderman et al. 1991, 1992; Fort
+et al. 1992; Mouche et al. 2011; Leconte & Mouche, 2013).
+This preliminary screen represents the first tier of an inverse
+drug screen, of the variety described by (Adams & Levin,
+2006), in which drugs are tested in a hierarchical manner
+according to target specificity, to rapidly bypass large
+families with no apparent roles and progressively home in
+on targets with interesting functions. Here, representative
+pharmacological loss- and gain-of-function experiments
+were presented using reagents targeting the glutamatergic,
+adrenergic and dopaminergic systems indiscriminately (ex.
+glutamate release inhibitor) or at the first level of receptor
+categorization (ex. adrenergic β-agonist). This study specifi-
+cally focused on reagents whose effects revealed true pat-
+terning defects as opposed to simply generalized toxicity at
+the cellular level. The results of this screen demonstrate that
+neuroactive drugs, many of which are used clinically, are
+capable of inducing a wide variety of craniofacial, pigmen-
+tation, muscle and body axis abnormalities. These data
+implicate several interesting targets for further pharmaco-
+logical testing, as well as for future molecular-genetic
+experiments and analysis of developmental marker
+expression.
+
+
+[PAGE 2] Materials and methods
+
+Animal husbandry
+Xenopus laevis eggs were fertilized in vitro and embryos were cul-
+tured according to standard protocols (Sive et al. 2000) in 0.1 x
+modified Mark's Ringer (MMR, pH 7.8) solution with 0.1% gen-
+tamycin. Embryos were housed at 14-22 °C and staged according to
+Nieuwkoop & Faber (1994). All experimental procedures involving
+use of laboratory animals were approved by the Institutional Ani-
+mal Care and Use Committee (IACUC) and Division of Laboratory
+Animal Medicine at Tufts University, under protocol number
+(M2014-79).
+
+[PAGE 2] Pharmacological screen
+All compounds were obtained from Tocris, with the exception of
+propranolol, which was obtained from Sigma. Drugs were dissolved
+in water or dimethylsulfoxide (DMSO; if water insoluble), aliquot-
+ted and stored at -20 °C until use.
+Embryos from three-four mothers were mixed and divided into
+control (MMR) or experimental (MMR + drug at concentrations of
+500 пм-500 μμ) groups. Doses were established for each drug on an
+individual basis as follows. To establish an initial reference point for
+dosing, literature using the drug in either a cell culture, syaptosome
+Xenopus oocyte, or mammalian brain slice system was examined.
+The dose was then adjusted upwards or downwards from the value
+found in the literature, until a dose was reached at which embryos
+displayed developmental phenotypes but no increase in mortality
+or overt toxicity compared with controls. If drugs caused different
+phenotypes at different doses, all such results were discussed. All
+doses discussed were within about one order of magnitude of the
+doses found in the literature: riluzole, 4 μμ (Westphalen & Hem-
+mings, 2003); norketamine, 39 μμ (Ebert et al. 1997a); BAY 36-7620,
+10 µm (Carroll et al. 2001); propranolol, 50 µm (Pan et al. 2015);
+nicergoline, 10 μm (Caraci et al. 2005); cimaterol, 100 μм (Hu et al.
+1988); and SCH 23390, 10 μμ (Szulczyk et al. 2012). Vehicle (DMSO
+for water-insoluble compounds) levels never exceeded 0.5%, a level
+that permits completely normal embryonic development. Water
+was used as vehicle whenever possible. Drug exposures began at
+gastrulation (Stages 10-11) and continued until Stage 45. If this
+length of exposure was unable to produce any aberrant pheno-
+types, an earlier exposure starting at cleavage was tested (2/4 cell-
+Stage 45). At Stage 45, embryos were imaged on a Nikon (SMZ-
+1500) microscope with a combination of incident light and transmit-
+ted light that best highlighted anatomical features.
+
+[PAGE 3] Statistics
+At Stage 45, embryos were morphologically scored for craniofacial
+defects (compressed head, microcephaly, indentation or projection
+of nose), abnormal eye development (cyclopia, missing eyes, ectopic
+retinal pigment epithelium (RPE), pigmented optic nerves, and
+undersized or misshapen eyes), miscoiling of the gut and hyperpig-
+mentation, via a Zeiss SV6 microscope. Hyperpigmentation was an
+all-or-nothing phenotype (Blackiston et al. 2011; Lobikin et al.
+2015) characterized by large numbers of ectopic melanocytes being
+present around the eyes and in the peripheral regions of the head,
+as well as increased melanocyte arborization and coverage of the
+gut and tail. Occasional dead embryos and embryos lacking basic
+body organization (such as exogastrulates) were considered unscor-
+able and excluded from analysis. The incidences of unscorable
+embryos did not differ between control and drug-treated groups.
+Counts of normal and abnormal embryos in control and drug-trea-
+ted groups were plotted on a 2 x 2 contingency table and statisti-
+cally analyzed with Fisher's Exact Test, using GRAPHPAD software.
+To further characterize the defects observed, five embryos per
+dose of each drug were randomly selected, and a number of param-
+eters describing craniofacial shape, pigmentation, body size and
+body curvature were measured using IMAGEJ software. For visual
+descriptions of these parameters, please see Fig. S1. These parame-
+ters were then compared with those of five randomly-selected con-
+trol embryos via the Mann-Whitney U-test. Basic dimensions of the
+head included maximum width, length from posterior-most point
+of the craniofacial skeleton to anterior-most point of the head, and
+distance between the eyes (as defined by the proximal-most exten-
+sion of RPE toward the midline). Parameters of facial shape
+included length: width ratio, anterior projection of the nose
+(length of a line running perpendicularly from the imaginary line
+connecting the eye lenses to the anterior-most point of the face)
+and eye ratio (distance between eyes: max head width).
+In addition to quantifying craniofacial size and shape, a variety
+of parameters were also used to describe overall body size and cur-
+vature. Two different types of body length measurement were
+taken: 'straight' length and 'string' length. Straight length is
+defined as the length of a straight line extending from the ante-
+rior-most point of the head to the tip of the tail. String length is
+the length of a line that extends from the anterior-most point of
+the head to the tip of the tail, passing through the muscular por-
+tion of the tail and bending with the animal. Curvature of the ani-
+mal was quantified by calculating the ratio of straight length to
+string length. Perfectly straight animals have a string: straight ratio
+of 1, and lower ratio values signify increased curvature. For straight
+drug-treated animals and their respective controls, straight length
+was the primary metric used to describe overall body size. For
+curved animals and their respective controls, however, string length
+was a more accurate indicator of the animals' body size.
+Finally, for drugs that caused hyperpigmentation, gut and tail
+melanocytes were quantified on digital images using the cell coun-
+ter function of IMAGEJ. Animals in the images were anesthetized
+with tricaine (MS-222), which contracts pigment granules and
+allows discrete pigmented cells to be counted unambiguously.
+Areas in which melanocytes were counted were defined using a
+standard-size area in Adobe Photoshop. In the gut, melanocytes
+were counted within a circle whose diameter was 350 pixels. In the
+tail, melanocytes were counted within a 350 x 200 pixel box
+extending posteriorly from the cloaca, whose bottom edge lined up
+with the ventral-most edge of the tail muscles.
+
+[PAGE 3] Whole-mount immunohistochemistry for muscle visu
+alization
+Control and drug-exposed embryos were killed at Stage 45 with tri-
+caine (MS-222) and fixed in MEMFA [100 мм 3-(N morpholino)
+propanesulfonic acid (pH 7.4), 2 тм ethylene-glycol tetraacetic acid,
+1 мм MgSO4, 3.7% formaldehyde] for 2 h. Embryos were then
+washed 3 x in phosphate-buffered saline (PBS), permeabilized at
+room temperature in PBTr [PBS, 2 mg mL-¹ bovine serum albumin
+(BSA), 0.1% Triton X-100] for 30 min, and blocked for 1 h at room
+temperature with 10% goat serum in PBT (PBS, 2 mg mL-1 BSA,
+0.1% Tween-20). Embryos were rocked overnight at 4 °C with
+12/101 primary antibody (DHSB, 1: 100 dilution in blocking solu-
+tion). Following primary exposure, embryos were washed 6 x in
+PBT (1 h per wash) and blocked for 1h with 10% goat serum in
+PBT. Embryos were then rocked overnight at 4 °C with AlexaFluor-
+555 (1: 500 dilution in blocking solution). Following secondary incu-
+bation, embryos were washed 6 x in PBT (1 h per wash) and imaged
+on a Nikon (SMZ-1500) microscope.
+
+[PAGE 3] Alcian Blue staining
+Alcian Blue staining was performed on embryos with phenotypes in
+which examination of craniofacial cartilages would be informative
+for characterizing their specific defects. Embryos were continuously
+exposed to drugs from gastrulation until Stage 45. They were then
+washed 3 x in MMR. Embryos were then grown in MMR and fed
+every other day with spirulina until they reached Stage 48 (except
+for riluzole and Bay 36-7620, which were analyzed at Stage 45
+because of viability problems at later stages.). Tadpoles were then
+killed with an overdose of tricaine (MS-222) and fixed overnight in
+MEMFA. Tadpoles were then stained in Alcian Blue according to
+Pasqualetti et al. (2000) and imaged with a Nikon (SMZ-1500)
+microscope.
+
+[PAGE 3] Results
+Riluzole
+treatment caused hyperpigmentation,
+edema, miscoiling of the gut and craniofacial defects
+Riluzole is an anticonvulsive drug that increases y-aminobu-
+tyric acid (GABA)-ergic signaling by blocking its reuptake,
+and decreases glutamatergic signaling by inhibiting gluta-
+mate release (Cifra et al. 2013). At all riluzole doses tested
+(exposed from gastrula to Stage 45), over 90% of embryos
+were hyperpigmented due to the presence of excess (in-
+cluding ectopic) abnormally arborized melanocytes darken-
+ing the gut, tail and peripheral regions of the head (Fig. 1).
+The frequency of total developmental abnormalities in rilu-
+zole-treated embryos (n = 54, 61 and 58 for 5, 33 and 50 μμ,
+respectively) was significantly greater than in control (n =
+55) embryos at all doses tested (P<0.01 for all doses).
+Although riluzole caused a high occurrence of defects
+regardless of dose, the frequencies of different sub-classes
+of defects changed according to the dose tested, with the
+exception of hyperpigmentation. In Xenopus, hyperpig-
+mentation results from a neoplastic-like conversion of mela-
+nocytes (Morokuma et al. 2008; Blackiston et al. 2011), and
+in humans, can be a sign of systemic diseases resulting from
+the dysregulation of endocrine or cell-cell signaling path-
+ways (Speeckaert et al. 2014). Hyperpigmentation was not
+observed at all in controls. Quantification of gut and tail
+melanocytes revealed that embryos treated with 5 µm rilu-
+zole had significantly larger populations of melanocytes in
+these body areas than did controls (Table 1; P<0.02 for
+gut, P<0.03 for tail). It is not yet known whether the
+increased number of melanocytes in riluzole-treated tad-
+poles is due to conversion of additional cell types into the
+melanocyte lineage in ectopic locations, or overprolifera-
+tion and migration of excess melanocytes away from their
+endogenous locations.
+Unlike hyperpigmentation, all other classes of defect
+increased in a dose-dependent manner (Fig. 1b). Edema,
+while not present in controls, was observed in 26% of
+embryos treated with 5 µm riluzole. All embryos at the 33
+and 50 µm doses exhibited pronounced pericardial edema
+as well as swelling of the face. Miscoiling of the gut,
+which is normally arranged in a spiral pattern, also
+became more frequent as riluzole dose increased. While
+only a small percentage (1-3%) of control and 5 μμ
+embryos developed miscoiled guts, this defect was present
+in 70% of embryos treated with 33 µm riluzole and 100%
+of embryos treated with 50 µm riluzole. In addition, stain-
+ing with skeletal muscle antibody 12/101 (Fig. 1a; Kintner
+& Brockes, 1984) demonstrated that occurrence of muscle
+defects increased in a dose-dependent manner. Disorgani-
+zation of hypaxial muscles lining the gut was only
+observed in 7.4% of control embryos (n = 27), while this
+defect was present in 21.1% of 5 µm embryos (n = 19), all
+33 μμ embryos (n = 26) and 96.6% of 50 μμ embryos (n =
+29). Similarly, disruptions in the continuity of the interhy-
+oideus muscle of the lower jaw were observed in only
+3.7% of control embryos, while this defect was present in
+5.3% of 5 μμ embryos, 11.5% of 33 μμ embryos and
+34.5% of 50 μμ embryos.
+Craniofacial anomalies were yet another class of defects
+that varied according to dose of riluzole. Quantification of
+craniofacial dimensions and Alcian blue staining reveal that
+the facial morphology of embryos exposed to 5 µm riluzole
+was indistinguishable from that of controls (Fig. 1a;
+Table 1). However, embryos treated with 33 µm had signifi-
+cantly squatter heads (Fig. 1a; Table 1). This is evident in
+the shape of their craniofacial skeletons and confirmed by
+their shorter head lengths (P<0.02), as well as their smaller
+head length: head width (P<0.02) and head length : body
+length ratios (P<0.02). All embryos treated with 50 µm had
+a similar but more severe craniofacial morphology (Fig. 1a;
+Table 1). Heads of 50 µm embryos were significantly smaller
+than controls in both length (P<0.02) and width (P<0.02).
+Their smaller head length : head width ratios (P = 0.09) indi-
+cate that they were also noticeably squatter in shape.
+Although the bodies of 50 μμ embryos were significantly
+shorter than those of controls (P<0.05), their head length :
+body length ratios (P<0.02) were also significantly smaller,
+showing that their heads were, in fact, specifically com-
+pressed on the A-P axis.
+In addition to changes in facial shape and size, 76% of
+embryos treated with 50 µm riluzole had a RPE defect char-
+acterized by the thickening and pigmentation of connec-
+tions between the eye and brain (Fig. 1b). This same defect
+was never observed at frequencies over 4% in control
+
+[PAGE 5] 
+embryos or embryos treated with lower doses of drug.
+Quantification of eye ratio (distance between eyes relative
+to maximum head width) confirmed that the RPE of
+embryos exposed to 50 µm riluzole extended significantly
+closer to the midline than that of controls (Table 1; P<
+0.02).
+
+Norketamine altered patterning of the tail or eye,
+depending on treatment start time
+
+Norketamine is a dissociative anesthetic and N-methyl-D-
+aspartate (NMDA) non-competitive inhibitor (Ebert et al.
+1997b). Embryos were continuously exposed to norke-
+tamine, starting at either cleavage (early exposure) or gas-
+trulation (late exposure; Fig. 2a). Embryos exposed to 100
+μ™ norketamine starting at gastrulation developed defects
+at a significantly higher frequency than controls (P<0.01).
+The most common defect observed in these late-exposure
+embryos was a truncated tail on a rounded fin (Fig. 3b).
+This defect was present in 45% of drug-treated embryos,
+but was not observed at all in controls. There was no signif-
+icant difference in the occurrence of eye defects between
+controls and late exposure embryos.
+
+Embryos treated with either 100 μμ (n = 94) or 200 μμ (η
+= 71) norketamine during cleavage developed eye defects
+(n = 87, P<0.01 for all doses). The eye defects observed in
+norketamine-treated embryos could be divided into four
+different and mutually exclusive categories. The first was
+cyclopia, or the fusion of both eyes in the center of the
+head to form one large eye. The second included defects of
+the RPE, such as pigmentation of the optic nerves, or thick-
+ening and pigmentation of the connection between the
+eye and brain. The third category consisted of embryos
+missing either one or both eyes. The final category con-
+tained embryos with ocular defects that could not fit easily
+into the previous three groups. These included embryos
+with defects such as undersized or generally misshapen
+eyes, as well as embryos possessing two different defects
+simultaneously (Fig. 2c).
+
+Both RPE and other defects were present at small per-
+centages (<3%) in control embryos, and increased in a
+dose-dependent manner (Fig. 2d). While only 2.3% of con-
+trol embryos (n = 87) developed abnormal RPE, this class of
+defects was observed in 26% of embryos treated with 100
+µm and 30% of embryos treated with 200 μμ. Similarly, only
+1% of control embryos developed defects that fell into the
+'other' category, while such defects were present in 6.4%
+and 11% of the 100 and 200 µm norketamine treatment
+groups, respectively. Cyclopia and missing eyes were not
+observed at all in controls. Cyclopia, however, was observed
+in 2% of embryos treated with 100 µm norketamine and
+21% of embryos treated with 200 µm. Interestingly, missing
+eyes were observed in 11% of embryos treated with 100 μΜ
+norketamine, but were not observed at all at 200 μμ
+(Fig. 2d).
+
+Treatment with BAY 36-7620 induced abnormal
+patterning of the head, gut and tail
+
+BAY 36-7620 (BAY) is a potent, non-competitive antagonist
+of the mGlu1 receptor (Carroll et al. 2001). Embryos treated
+with BAY from gastrulation until Stage 45 developed cran-
+iofacial, gut and tail defects that increased in both
+penetrance and severity according to the dose administered
+(Fig. 2). At both 27 μμ (n = 57) and 40 μμ (n = 58), the occur-
+rence of developmental abnormalities was significantly
+higher than in control (n = 56) embryos (P<0.01).
+
+Embryos treated with 27 μμ ΒAY developed permutations
+of four different developmental abnormalities that were
+apparent via gross morphological observation: a curved tail;
+a compressed, rectangular head; pigmented optic nerves
+(RPE defects); and a miscoiled gut (Fig. 3a). While the cran-
+iofacial, gut and RPE defects did occur in control embryos,
+they occurred at notably higher frequencies in BAY-treated
+embryos (Fig. 3b). Miscoiled guts were only present in 5%
+of control embryos, but were observed in 18% of embryos
+administered 27 µм BAY. Similarly, one-third of BAY-treated
+embryos had pigmented optic nerves, while RPE abnormali-
+ties were only seen in < 5% of controls. Calculation of eye
+ratio revealed that the RPE of BAY embryos did indeed
+extend closer to the midline than that of controls (Table 2;
+P<0.02). Most remarkably, only 2% of control embryos
+developed misshapen faces, while craniofacial abnormali-
+ties were observed in 46% of embryos treated with BAY.
+Alcian blue staining showed that the craniofacial skeletons
+of BAY embryos were notably reduced in size (Fig. 3a).
+Quantification of craniofacial dimensions confirmed that
+the heads of 27 µм embryos were significantly smaller than
+those of controls in terms of both length (P<0.02) and
+width (P<0.02). In addition, their smaller length: width
+ratios (P<0.05) reveal that they were significantly squatter
+in shape, while the smaller head length: body length ratios
+(P<0.02) show that they were specifically compressed on
+the A-P axis (Table 2). Interestingly, 23% of BAY-treated
+embryos developed tails that curved along the dorso-ven-
+tral axis, a defect that was not observed at all in controls
+(Fig. 3b). Calculation of string length: straight length (cur-
+vature) ratios confirmed that the bodies of BAY embryos
+were indeed significantly more curved than those of con-
+trols (Table 2; P<0.05).
+
+A combination of different muscular defects was also
+observed in embryos treated with 27 μμ BAY. Disorganized
+hypaxial muscles were observed in 52.4% of BAY-treated
+embryos, and disrupted continuity of the interhyoideus
+muscle was present in 23.8% of BAY embryos (n = 21).
+These same defects were only observed in 7.4% and 3.7%
+of control embryos, respectively (n = 27). Another interest-
+ing defect was observed in 23.8% of BAY embryos: nor-
+mally stained hypaxial muscles but overall dim staining of
+the craniofacial muscles (Fig. 3a). This defect was not
+observed in controls.
+
+At 40 μμ BAY (n = 58), all embryos developed a unique
+phenotype consisting of a curved tail, microcephaly and an
+uncoiled gut (Fig. 3a). No control embryos developed this
+phenotype. Straight length: string length ratios confirm
+that the bodies of 40 µm embryos were, in fact, significantly
+more curved than those of controls (P<0.02; Table 2). In
+addition, quantification of head dimensions (Table 2) con-
+firmed that the heads of 40 μμ embryos were significantly
+smaller than those of controls in terms of both length (P<
+0.02) and width (P<0.02). Although the bodies of 40 μμ
+embryos were significantly shorter than those of controls
+(P<0.02), their head length: body length ratios revealed
+that their heads were compressed on the A-P axis (P < 0.02).
+Alcian blue staining revealed that 40 µm embryos lacked an
+organized craniofacial skeleton. In addition, hypaxial mus-
+cles were reduced and disorganized, and no muscle was
+present in the heads of these embryos (Fig. 3a; n = 15).
+
+Adrenergic antagonists induced abnormal patterning
+of the head, gut and skeletal muscles
+
+Propranolol is an antagonist of the ẞ-adrenergic receptor
+(Wolter et al. 2014), and nicergoline is an a-adrenergic
+antagonist (Alvarez-Guerra et al. 1999). Embryos treated
+from gastrulation to Stage 45 with both nicergoline (n = 63,
+CTRL n = 53) and propranolol (n = 60, CTRL n = 56) devel-
+oped malformations at a significantly higher frequency
+
+[PAGE 5] Developmental neurotransmitter drug screen, K. G. Sullivan and M. Levin 491
+than control embryos (P<0.01 for both drugs). Embryos
+treated with 100 µm propranolol developed a phenotype
+that was 100% penetrant, consisting of a miscoiled gut and
+a rectangular face (Fig. 4b,e,h). Alcian blue staining of pro-
+pranolol-treated embryos revealed that all elements of their
+cartilaginous craniofacial skeleton were reduced in size
+compared with that of controls, and that the jaw formed a
+pointed, triangular shape as opposed to the arched shape
+of controls (Fig. 4n). Quantification of craniofacial dimen-
+sions (Table 3) revealed that the heads of propranolol
+embryos were significantly shorter (P<0.02) and narrower
+(P<0.02) than those of controls. Although they had the
+same head length: head width proportions (P = 1) as con-
+trols, the anterior projection of their noses relative to head
+length is significantly smaller than that of controls (P<
+0.02). In addition, while the bodies of propranolol-exposed
+embryos are significantly shorter than those of controls (P<
+0.02), their head length: body length ratios are also notably
+smaller (P = 0.09), suggesting that the heads of propranolol
+embryos are somewhat compressed on the A-P axis
+(Table 3).
+
+In addition, 90% of propranolol-treated embryos were
+hyperpigmented, with abnormally arborized melanocytes
+darkening the gut, tail and peripheral regions of the
+head (Fig. 4b,h). Quantification of gut (P<0.05) and tail (P
+<0.02) melanocytes indicated that propranolol-exposed
+embryos had significantly larger melanocyte populations in
+these body areas than controls (Table 3). In addition, 50%
+of embryos developed an RPE defect in which the inner side
+of the eye was subtly pointed (Fig. 4h). Calculation of the
+eye ratio revealed that the RPE of propranolol embryos did
+indeed extend significantly closer to the midline than that
+of controls (P<0.03; Table 3). Gut and RPE defects occurred
+in <4% of control embryos, while hyperpigmentation and
+craniofacial abnormalities were not observed at all.
+
+Immunostaining with the skeletal muscle antibody 12/101
+(Kintner & Brockes, 1984) revealed that propranolol treat-
+ment also induced abnormal muscle patterning (Fig. 4k).
+Notably, all propranolol-treated embryos (n = 33) had sev-
+ere disorganization of the hypaxial muscles surrounding
+the gut. In addition, continuity of the interhyoideus muscle
+across the lower jaw was disrupted in ~24% of propranolol-
+treated embryos. While all control embryos (n = 30) had
+perfectly continuous interhyoideus muscles, partial and
+
+
+[PAGE 6] Developmental neurotransmitter drug screen, K. G. Sullivan and M. Levin 492
+complete discontinuities were observed in 13.3% and 10.7%
+of propranolol-treated embryos, respectively.
+
+Embryos treated with 33 µm nicergoline developed a pheno-
+type consisting of a miscoiled gut and a rectangular head
+(Fig. 4c,f,i). Alcian blue staining revealed that the craniofa-
+cial skeletons of nicergoline-treated embryos were reduced
+in size compared with those of controls, and that

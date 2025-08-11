@@ -1,0 +1,89 @@
+{
+  "file_metadata": {
+    "text_file": "data/extracted_text/pdf_20250803_124126_129305_extracted_text.txt",
+    "original_filename": "pdf_20250803_124126_129305_extracted_text.txt",
+    "pdf_filename": "pdf_20250803_124126_129305.pdf",
+    "file_size": 2729,
+    "authors": "[\"Mustafa B.A. Djamgoz, PhD\", \"Michael Levin, PhD\"]",
+    "journal": "gettingthejournalgoing.Wealsothankallourcontributors The next (June) issue of Bioelectricity will be a Special",
+    "doi": "10.1089/bioe.2020.0005",
+    "year": null,
+    "title": "Inaugural Issue",
+    "confidence_score": null,
+    "document_type": "editorial",
+    "crossref_data": true,
+    "enrichment_method": "crossref_api"
+  },
+  "chunks": [
+    {
+      "text": "We are pleased and honored to launch our \\\"inaugural issue\\\" as Bioelectricity enters its second volume, and as it does, we thank again Dr. Dany Spencer Adams for getting the journal going. We also thank all our contributors and reviewers. Bioelectricity is going from strength to strength! This is our biggest ordinary issue to date with three perspectives and four original research articles plus a revamped section on \\\"Bioelectricity Buzz,\\\" highlighting some interesting articles published elsewhere that our readers might also like to be aware of. We hope that you will enjoy this varied section that our Media Editor, Ann Rajnicek, has brilliantly put together. You will notice that the Buzz includes neuroscience among the highlighted topics and although we all know that there is a plethora of neuroscience journals, we would like Bioelectricity also to be home for such articles.",
+      "section": "Introduction",
+      "topic": "Journal Launch and Growth",
+      "chunk_summary": "Bioelectricity journal launches its second volume with increased content and a broader scope, aiming to become a central hub for bioelectricity research.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null,
+      "pdf_filename": "pdf_20250803_124126_129305.pdf",
+      "original_filename": "pdf_20250803_124126_129305_extracted_text.txt",
+      "authors": "[\"Mustafa B.A. Djamgoz, PhD\", \"Michael Levin, PhD\"]",
+      "year": null,
+      "journal": "gettingthejournalgoing.Wealsothankallourcontributors The next (June) issue of Bioelectricity will be a Special",
+      "doi": "10.1089/bioe.2020.0005"
+    },
+    {
+      "text": "It is our ultimate aim to make Bioelectricity a \\\"one-stop\\\" peer-reviewed publication for keeping up with the most important developments and events in the field. As a start, as you can see, the journal is now subtitled \\\"Science, Engineering, and Medicine\\\" to make it explicit that bioelectricity as a discipline covers the whole spectrum and our journal intends to cater for this scope. As a further step, therefore, we have started reorganizing the editorial board and are delighted to welcome Dr. Utkan Demirci, from Stanford University School of Medicine, as a senior editor. Dr. Demirci, an expert on microfluidics, works at the interface between micro/nanoscale engineering and medicine. Further appointments and adjustments to the board will follow.",
+      "section": "Introduction",
+      "topic": "Journal Scope and Editorial Board",
+      "chunk_summary": "The journal aims to be comprehensive, covering science, engineering, and medicine, and is expanding its editorial board with experts like Dr. Utkan Demirci to reflect this broader scope.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null,
+      "pdf_filename": "pdf_20250803_124126_129305.pdf",
+      "original_filename": "pdf_20250803_124126_129305_extracted_text.txt",
+      "authors": "[\"Mustafa B.A. Djamgoz, PhD\", \"Michael Levin, PhD\"]",
+      "year": null,
+      "journal": "gettingthejournalgoing.Wealsothankallourcontributors The next (June) issue of Bioelectricity will be a Special",
+      "doi": "10.1089/bioe.2020.0005"
+    },
+    {
+      "text": "The next (June) issue of Bioelectricity will be a Special Issue on \\\"Electrically Charged Biomaterials for Drug Delivery and Tissue Repair.\\\" We are very pleased that Drs. Ambika Bajpayee and Mansoor Amiji at Northeastern University are guest editing this.",
+      "section": "Introduction",
+      "topic": "Upcoming Special Issue",
+      "chunk_summary": "A special issue on electrically charged biomaterials for drug delivery and tissue repair is planned for the June issue, guest-edited by Drs. Bajpayee and Amiji.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null,
+      "pdf_filename": "pdf_20250803_124126_129305.pdf",
+      "original_filename": "pdf_20250803_124126_129305_extracted_text.txt",
+      "authors": "[\"Mustafa B.A. Djamgoz, PhD\", \"Michael Levin, PhD\"]",
+      "year": null,
+      "journal": "gettingthejournalgoing.Wealsothankallourcontributors The next (June) issue of Bioelectricity will be a Special",
+      "doi": "10.1089/bioe.2020.0005"
+    },
+    {
+      "text": "The journal welcomes submissions and ideas for future special issues. We know the importance of fast reviewing and publication, especially for young scientists. We are especially proud to report, therefore, that the average review and publication times for Bioelectricity so far have been 3.5 and 7 weeks, respectively. We are also happy to note our prompt online publication. We shall do our utmost to maintain these times.",
+      "section": "Introduction",
+      "topic": "Submissions and Publication Speed",
+      "chunk_summary": "The journal encourages submissions and prioritizes fast reviewing and publication, with average times of 3.5 weeks for review and 7 weeks for publication.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null,
+      "pdf_filename": "pdf_20250803_124126_129305.pdf",
+      "original_filename": "pdf_20250803_124126_129305_extracted_text.txt",
+      "authors": "[\"Mustafa B.A. Djamgoz, PhD\", \"Michael Levin, PhD\"]",
+      "year": null,
+      "journal": "gettingthejournalgoing.Wealsothankallourcontributors The next (June) issue of Bioelectricity will be a Special",
+      "doi": "10.1089/bioe.2020.0005"
+    }
+  ],
+  "gemini_response": "```json\n[\n  {\"text\": \"We are pleased and honored to launch our \\\\\\\"inaugural issue\\\\\\\" as Bioelectricity enters its second volume, and as it does, we thank again Dr. Dany Spencer Adams for getting the journal going. We also thank all our contributors and reviewers. Bioelectricity is going from strength to strength! This is our biggest ordinary issue to date with three perspectives and four original research articles plus a revamped section on \\\\\\\"Bioelectricity Buzz,\\\\\\\" highlighting some interesting articles published elsewhere that our readers might also like to be aware of. We hope that you will enjoy this varied section that our Media Editor, Ann Rajnicek, has brilliantly put together. You will notice that the Buzz includes neuroscience among the highlighted topics and although we all know that there is a plethora of neuroscience journals, we would like Bioelectricity also to be home for such articles.\", \"section\": \"Introduction\", \"topic\": \"Journal Launch and Growth\", \"chunk_summary\": \"Bioelectricity journal launches its second volume with increased content and a broader scope, aiming to become a central hub for bioelectricity research.\", \"position_in_section\": \"Beginning\", \"certainty_level\": \"High\", \"citation_context\": \"None\", \"page_number\": null},\n  {\"text\": \"It is our ultimate aim to make Bioelectricity a \\\\\\\"one-stop\\\\\\\" peer-reviewed publication for keeping up with the most important developments and events in the field. As a start, as you can see, the journal is now subtitled \\\\\\\"Science, Engineering, and Medicine\\\\\\\" to make it explicit that bioelectricity as a discipline covers the whole spectrum and our journal intends to cater for this scope. As a further step, therefore, we have started reorganizing the editorial board and are delighted to welcome Dr. Utkan Demirci, from Stanford University School of Medicine, as a senior editor. Dr. Demirci, an expert on microfluidics, works at the interface between micro/nanoscale engineering and medicine. Further appointments and adjustments to the board will follow.\", \"section\": \"Introduction\", \"topic\": \"Journal Scope and Editorial Board\", \"chunk_summary\": \"The journal aims to be comprehensive, covering science, engineering, and medicine, and is expanding its editorial board with experts like Dr. Utkan Demirci to reflect this broader scope.\", \"position_in_section\": \"Middle\", \"certainty_level\": \"High\", \"citation_context\": \"None\", \"page_number\": null},\n  {\"text\": \"The next (June) issue of Bioelectricity will be a Special Issue on \\\\\\\"Electrically Charged Biomaterials for Drug Delivery and Tissue Repair.\\\\\\\" We are very pleased that Drs. Ambika Bajpayee and Mansoor Amiji at Northeastern University are guest editing this.\", \"section\": \"Introduction\", \"topic\": \"Upcoming Special Issue\", \"chunk_summary\": \"A special issue on electrically charged biomaterials for drug delivery and tissue repair is planned for the June issue, guest-edited by Drs. Bajpayee and Amiji.\", \"position_in_section\": \"Middle\", \"certainty_level\": \"High\", \"citation_context\": \"None\", \"page_number\": null},\n  {\"text\": \"The journal welcomes submissions and ideas for future special issues. We know the importance of fast reviewing and publication, especially for young scientists. We are especially proud to report, therefore, that the average review and publication times for Bioelectricity so far have been 3.5 and 7 weeks, respectively. We are also happy to note our prompt online publication. We shall do our utmost to maintain these times.\", \"section\": \"Introduction\", \"topic\": \"Submissions and Publication Speed\", \"chunk_summary\": \"The journal encourages submissions and prioritizes fast reviewing and publication, with average times of 3.5 weeks for review and 7 weeks for publication.\", \"position_in_section\": \"End\", \"certainty_level\": \"High\", \"citation_context\": \"None\", \"page_number\": null}\n]\n```",
+  "processed_at": "2025-08-05T10:54:52.974506",
+  "enriched_at": "2025-08-11T14:37:04.236520",
+  "enrichment_methods": [
+    "crossref"
+  ]
+}

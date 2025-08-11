@@ -1,0 +1,2890 @@
+[PAGE 1] ENGINEERED MULTICELLULAR CILIATED
+ORGANISMS AND KINEMATIC
+SELF-REPLICATION THEREOF
+
+ABSTRACT
+Disclosed are engineered multicellular organisms. The dis-
+closed organisms comprise an aggregate of ciliated cells,
+and the organisms move when the ciliated cells are actuated.
+The engineered multicellular organisms also are capable of
+kinematic self-replication. The engineered multicellular
+organisms are capable of moving a plurality of dissociated
+ciliated cells into piles of ciliated cells which form a
+multicellular organism comprising an aggregate of ciliated
+cells which moves when the ciliated cells are actuated. Also
+disclosed are systems and methods for designing, preparing,
+and utilizing the engineered multicellular organisms.
+
+Multiciliated cells per 500µm region I
+20-
+Wild Type
+NotchICD
+Embryo
+Explant
+Figure 1 (continued)
+
+
+WT day 5
+Ր
+WT day 9
+J'
+NotchICD day 5.
+NotchICD day 9
+Figure 1 (continued)
+
+
+K80
+40
+Average velocity (m/s)
+20
+4
+8
+Day (24h average)
+Figure 1 (continued)
+
+
+Brightfield
+A)
+pre-injury
+injury
+5m repair
+10m repair
+15m repair
+48h repair
+Figure 2
+
+
+B
+Hausdorff
+0 = "p
+d
+d = 37.6
+d = 13.0
+d = 29.0
+d = 12.0
+d. = 12.2
+Figure 2 (continued)
+
+[PAGE 9] Figure 2 (continued)
+
+[PAGE 10] Figure 2 (continued)
+
+[PAGE 11] Figure 3
+
+[PAGE 12] Figure 3 (continued)
+
+[PAGE 13] Figure 4
+
+No text content to extract from the provided pages. These pages appear to contain only images (figures) and associated labels, which are excluded according to the instructions.
+
+[PAGE 17] Figure 5 (continued)
+
+[PAGE 17] Figure 6
+
+[PAGE 18] Figure 7
+
+[PAGE 19] Figure 8
+
+[PAGE 20] Figure 9
+
+[PAGE 21] Figure 9
+
+[PAGE 22] Figure 10
+
+[PAGE 23] Figure 11
+
+[PAGE 24] Figure 12
+
+[PAGE 25] Figure 13
+
+[PAGE 26] Figure 15
+self replication star
+voxel legend
+Mature ciliated celis
+atach
+develop
+
+[PAGE 27] Figure 16
+Deepgreen
+Node
+3
+Node
+2
+Node
+10
+evolutionary
+trial 10
+GPU
+8
+GPU
+9
+GPU
+10
+voxcraft
+simulation
+Processor
+9
+Processor
+10-1
+Processor
+10-2
+evolutionary trial 1
+
+[PAGE 28] Figure 17
+3
+2
+1
+0
+Filial
+generations
+B
+FG: 3.83 FG: 2.79 FO:2.73 FO: 2.92 FG: 2.93 FG: 3.32 FG: 3.5
+shapes
+FG: 3.32 FG: 2.67 FG: 2.39 FO: 293 FG 2.95 FG:2.88 FG.2.83
+FG: 2.81 FG: 2.6 FG: 3.15 FG:2.41 FG:2.86 FG:2.51 FG: 2.82
+FG: 2.94 FG: 2.79 FG: 263 FG 281 FG:268 FG345 FG: 35
+FG: 2.5 FG: 2.71 FG2.77 FG:2.81 FG: 3.12
+FG: 3.5 FG: 2.51
+FG: 2.97 FG: 3.51 FG: 2.66 FO: 2.93 FG: 2.66 FG: 3.41 FG: 2.63
+1000 2000 3000 4000 5000
+Designs evaluated
+FG: 2.95 FG: 3.4 FG: 3.15 FO: 2.72 FG: 2.88 FG: 2.79 FG: 2.79
+
+[PAGE 29] 
+
+Figure 17
+
+[PAGE 30] 
+
+Figure 18
+
+[PAGE 31] 
+
+Figure 19
+
+[PAGE 32] 
+
+Figure 20
+
+[PAGE 33] 
+
+Figure 21
+
+[PAGE 4] ENGINEERED MULTICELLULAR CILIATED
+ORGANISMS AND KINEMATIC
+SELF-REPLICATION THEREOF
+CROSS-REFERENCE TO RELATED PATENT
+APPLICATIONS
+
+[0001] The present application is a continuation of U.S.
+application Ser. No. 17/647,847, filed Jan. 12, 2022, which
+claims the benefit of priority under 35 U.S.C. § 119 (e) to
+U.S. Provisional Application No. 63/136,564, filed on Jan.
+12, 2021, and U.S. Provisional Application No. 63/261,258,
+filed on Sep. 15, 2021. The contents of which are incorpo-
+rated herein by reference in their entireties.
+
+STATEMENT REGARDING FEDERALLY
+SPONSORED RESEARCH OR DEVELOPMENT
+
+[0002] This invention was made with government support
+under grant HR0011-18-2-0022 awarded by the Department
+of Defense. The government has certain rights in the inven-
+tion.
+
+BACKGROUND
+
+[0003] The field of the invention relates to engineered
+multicellular organisms and systems and methods for
+designing, preparing, and utilizing engineered multicellular
+organisms. The engineered multicellular organisms may be
+configured for movement and other physical and biological
+activities.
+
+[0004] Here, we introduce "Xenobots," which are multi-
+cellular biological robots ("biobots") from frog (Xenopus
+laevis) with a diameter ranging from 100 to 500 microns.
+Xenobots have a built-in capacity for motility in aqueous
+environments based on locomotive appendages called
+"cilia" which cover their surface. Xenobots are induced to
+arise by cellular self-organization and do not require scaf-
+folds or microprinting, and the amphibian cells which form
+Xenobots are highly amenable to surgical, genetic, chemi-
+cal, and optical stimulation to control the self-assembly
+process. Xenobots are motile and are capable of moving in
+various trajectories including loops, straight lines, large arcs,
+and even in zigzag patterns with a linear speed ranges from
+5-50 microns/second.
+
+[0005] Because Xenobots develop on their own without
+the need for external manipulation or micromanagement,
+many of them can be grown in parallel. This makes Xeno-
+bots amenable to easy mass fabrication, which not only
+makes their production more scalable and economical, but
+also enables easy generation of Xenobots swarms that may
+collectively accomplish task that cannot be accomplished by
+a single Xenobot. Furthermore, Xenobots can be loaded with
+exogenous payloads such as RNA, protein, drugs, dyes, and
+synthetic molecules. Therefore, Xenobots can be pro-
+grammed on demand to execute a diverse set of tasks in
+different environments.
+
+[0006] Recently, we have found that semitoroidal shaped
+("Pac Man" shape) xenobots are capable of kinematic self
+replication. We also found that xenobots can push individual
+frog cells into piles. The cells in these piles attach together
+and grow cilia-small motion-propelling hairs on the pile's
+outer face.
+
+[0007] Making functional self copies of oneself by amass-
+ing and organizing external material through motion is
+known as kinematic self replication. This differs from
+growth-based replication, the standard form of propagation
+in biology.
+
+[0008] We have observed that a swarm of semitoroids can
+trigger five rounds of this replicative process before losing
+the ability to self-replicate, if supplied with enough frog
+cells as construction material. It should be possible to keep
+this process going indefinitely if sufficient quantities of cells
+are provided. Further, starting with just a few starter semi-
+toroids, a very large number of xenobots can be created
+automatically, thus classing this technology as an exponen-
+tial technology. We have shown that, in theory, these swarms
+are capable of performing exponentially increasing amounts
+of useful work at the microscale, such as building and fixing
+microelectronics, or cleaning contaminants from soils and
+waterways.
+
+[PAGE 4] SUMMARY
+
+[0009] Disclosed are engineered multicellular organisms.
+The disclosed organisms comprise or consist of relatively
+small aggregates of ciliated cells, and the organisms move
+when the ciliated cells are actuated.
+
+[0010] The engineered multicellular organisms also are
+capable of kinematic self-replication. The engineered mul-
+ticellular organisms are capable of moving a plurality of
+dissociated ciliated cells into piles of ciliated cells which
+form a multicellular organism comprising an aggregate of
+ciliated cells which moves when the ciliated cells are
+actuated. Also disclosed are systems and methods for
+designing, preparing, and utilizing the engineered multicel-
+lular organisms.
+
+[PAGE 4] BRIEF DESCRIPTION OF THE FIGURES
+
+
+[PAGE 5] 
+[0017] FIG. 7. Xenobot lifespan can be extended with
+nutrient rich media. Reared in standard 0.75×MMR, Xeno-
+bots live an average of 10 days post excision, metabolizing
+yolk platelets maternally loaded into the embryo. However,
+this lifespan can be extended for a period of months (A-F)
+with the addition of nutrient rich culture media. Under these
+conditions, Xenobots gradually lose pigmentation and
+become transparent, similar to the epidermis of a developing
+tadpole tailfin (G-I). Scale bars indicate 500 μm.
+
+[0018] FIG. 8. Spontaneous kinematic self replication. (A)
+Stem cells are removed from early stage frog blastula,
+dissociated, and placed in a saline solution where they
+cohere into spheres containing ~3000 cells. The spheres
+develop cilia on their outer surfaces after 3 days. When the
+resulting mature swarm is placed amid ~60,000 dissociated
+stem cells in a 60 mm-diameter circular dish (B), their
+collective motion pushes some cells together into piles
+(C,D), which, if sufficiently large (at least 50 cells), develop
+into ciliated offspring (E) themselves capable of swimming,
+and, if provided additional dissociated stem cells (F), build
+additional offspring. In short, progenitors (p) build offspring
+(o), which then become progenitors. This process can be
+disrupted by withholding additional dissociated cells. Under
+these, the currently best known environmental conditions,
+the system naturally self replicates for a maximum of two
+rounds before halting. The probability of halting (a) or
+replicating (1-a) depends on a temperature range suitable for
+frog embryos, the concentration of dissociated cells, the
+number and stochastic behavior of the mature organisms, the
+viscosity of the solution, the geometry of the dish's surface,
+and the possibility of contamination. Scale bars indicate 500
+microns.
+
+[0019] FIG. 9. Amplifying kinematic self replication. Due
+to surface tension, reconfigurable organisms naturally
+develop into ciliated spheroids, but they can be sculpted into
+non spheroidal morphologies manually during development
+to realize more complex body shapes. Progenitor shapes
+were evolved in silico to maximize the number of self
+replication rounds before halting. (A) Shapes often converge
+to an asymmetrical semitoroid (C-shape; pink) with a single
+narrow mouth in which dissociated cells (green) can be
+captured, transported, and aggregated. This evolved shape
+was fabricated and released in vivo (B), recapitulating the
+behavior observed in silico (A). Offspring built by wild type
+spheroids (C) were smaller than those built by the semitor-
+oids (D), regardless of the size and aspect ratios of the
+spheroids, and across different concentrations of dissociated
+cells (E). The maximum of two rounds of self-replication
+achieved by the spheroids (F) was extended by the semitor-
+oids to a maximum of four rounds (G). Scale bars indicate
+500 microns.
+
+[0020] FIG. 10. Evolving self-replication. (A) An evolu-
+tionary algorithm, starting with random swarms, evolves
+swarms with increasing self replicative ability. (FG-number
+of filial generations achieved by a given swarm. The frac-
+tional part denotes how close the swarm got to achieving
+another replication round.) The most successful lineage in
+this evolutionary trial originated from a spheroid that built
+
+after 48 h of healing. In all cases, individuals were capable
+of closing the wound and resolving the injury. (B) To
+quantify repair, images were first binarized using edge
+detection software. The resulting images were passed
+though Harsdorf distance software, comparing the pre-injury
+state with proceeding timepoints. (C) All repair time points
+showed significant improvement over that of the initial
+injury. Repeated measures ANOVA followed by Dunnett's
+post-hoc comparisons. Error bars indicate ±1 SD.
+
+[0013] FIG. 3. Xenobots can record experience using a
+photoconvertible fluorescent reporter. (A) Xenobots injected
+with mRNA encoding the protein EosFP emit strong green
+fluorescence at five days of development. This signal per-
+manently photo-converts to red when exposed to 390 nm
+light (B) due to an irreversible break in the backbone of the
+chromophore. (C) Using this reporter, Xenobots were intro-
+duced into a 5 cm arena containing an illuminated spot 7 mm
+in diameter. After exploring the environment for 1 hour, the
+individuals were collected and housed in a 14° C. incubator.
+(D,E) Two days later, fluorescent imaging revealed which
+Xenobots moved through the blue light during their explo-
+ration of the dish.
+
+[0014] FIG. 4. Xenobots navigate diverse environments.
+(A) Xenobots were released into an open field with debris
+composed of carmine dye particles. Similar to prior obser-
+vations, individuals demonstrate a variety of movement
+types, from linear motion to elliptical tracks. (B) In large
+mazes, individuals follow channels provided by the envi-
+ronment. (C) Narrow mazes begin to restrict rotational
+movement, resulting in individuals following edges in the
+arena. (D) In a narrow glass capillary with a 0.58 mm inner
+diameter, individuals can traverse the length of the tunnel
+and emerge from the opposite end.
+
+[0015] FIG. 5. Modeling collective behavior. (A) Six
+living Xenobots were released into an arena covered in 5-10
+µM silicone coated iron oxide beads. (B) After 12 h, the
+living Xenobots cleared regions of the arena, creating piles
+of particles across the environment (B'). (C) Five simulated
+Xenobots (green) were initially placed within a 35×35 grid
+of particulate matter (red) and collectively evolved in silico
+as a swarm to recapitulate a specific behavior observed in
+vivo: pile making ((C') Expanded inset). (D) The Xenobots
+were identically shaped and propelled with open-loop con-
+trol (no sensors were included) according to an initially
+random set of static cilia forces. (E) The simulated Xenobots
+were "blind" but nevertheless, after 500 generations of
+evolution in silico, the simulated swarm exhibited dynamic
+coupling, complex movement trajectories, and herding
+behavior by pushing the initially separated debris into cen-
+tral piles. (F) The body shape of five simulated Xenobots (F';
+green) was evolved in silico to aggregate particulate matter.
+Each individual Xenobot in the swarm shares the same
+evolved morphology but has its own evolved cilia controller.
+The living Xenobots in this paper have spherical bodies, but
+can be sculpted to match the computer-designed blueprint
+(F"). (G) It remains to be determined if the behavior of a
+swarm of computer-designed Xenobots would match the
+predicted behavior.
+
+[0016] FIG. 6. Ectoderm derived Xenobots do not contain
+neural tissue. Small (A, A') and large (B, B') Xenobots were
+fixed, bisected, and processed with anti-acetylated tubulin
+immunohistochemistry. Visualization of the fluorescent sec-
+ondary reveals the presence of multiciliated cells along the
+surface of the Xenobot, but no neurons were present exter-
+nally or internally (n=24). Similarly, young tadpoles also
+possess multiciliated cells across the epidermis of their tail
+(C) and trunk (C'). However, in the case of tadpoles, motor
+axons are present between the somites and peripheral nerves
+are observed throughout the fin tissue. Scale bars indicate
+250 µm.
+
+[0017] FIG. 7. Xenobot lifespan can be extended with
+nutrient rich media. Reared in standard 0.75×MMR, Xeno-
+bots live an average of 10 days post excision, metabolizing
+yolk platelets maternally loaded into the embryo. However,
+this lifespan can be extended for a period of months (A-F)
+with the addition of nutrient rich culture media. Under these
+conditions, Xenobots gradually lose pigmentation and
+become transparent, similar to the epidermis of a developing
+tadpole tailfin (G-I). Scale bars indicate 500 μm.
+
+[0018] FIG. 8. Spontaneous kinematic self replication. (A)
+Stem cells are removed from early stage frog blastula,
+dissociated, and placed in a saline solution where they
+cohere into spheres containing ~3000 cells. The spheres
+develop cilia on their outer surfaces after 3 days. When the
+resulting mature swarm is placed amid ~60,000 dissociated
+stem cells in a 60 mm-diameter circular dish (B), their
+collective motion pushes some cells together into piles
+(C,D), which, if sufficiently large (at least 50 cells), develop
+into ciliated offspring (E) themselves capable of swimming,
+and, if provided additional dissociated stem cells (F), build
+additional offspring. In short, progenitors (p) build offspring
+(o), which then become progenitors. This process can be
+disrupted by withholding additional dissociated cells. Under
+these, the currently best known environmental conditions,
+the system naturally self replicates for a maximum of two
+rounds before halting. The probability of halting (a) or
+replicating (1-a) depends on a temperature range suitable for
+frog embryos, the concentration of dissociated cells, the
+number and stochastic behavior of the mature organisms, the
+viscosity of the solution, the geometry of the dish's surface,
+and the possibility of contamination. Scale bars indicate 500
+microns.
+
+[0019] FIG. 9. Amplifying kinematic self replication. Due
+to surface tension, reconfigurable organisms naturally
+develop into ciliated spheroids, but they can be sculpted into
+non spheroidal morphologies manually during development
+to realize more complex body shapes. Progenitor shapes
+were evolved in silico to maximize the number of self
+replication rounds before halting. (A) Shapes often converge
+to an asymmetrical semitoroid (C-shape; pink) with a single
+narrow mouth in which dissociated cells (green) can be
+captured, transported, and aggregated. This evolved shape
+was fabricated and released in vivo (B), recapitulating the
+behavior observed in silico (A). Offspring built by wild type
+spheroids (C) were smaller than those built by the semitor-
+oids (D), regardless of the size and aspect ratios of the
+spheroids, and across different concentrations of dissociated
+cells (E). The maximum of two rounds of self-replication
+achieved by the spheroids (F) was extended by the semitor-
+oids to a maximum of four rounds (G). Scale bars indicate
+500 microns.
+
+[0020] FIG. 10. Evolving self-replication. (A) An evolu-
+tionary algorithm, starting with random swarms, evolves
+swarms with increasing self replicative ability. (FG-number
+of filial generations achieved by a given swarm. The frac-
+tional part denotes how close the swarm got to achieving
+another replication round.) The most successful lineage in
+this evolutionary trial originated from a spheroid that built
+
+[PAGE 3] DETAILED DESCRIPTION
+
+[0034] The following discussion is presented to enable a
+person skilled in the art to make and use embodiments of the
+disclosure. Various modifications to the illustrated embodi-
+ments will be readily apparent to those skilled in the art, and
+the generic principles herein can be applied to other embodi-
+ments and applications without departing from embodi-
+ments of the disclosure. Thus, embodiments of the disclo-
+sure are not intended to be limited to embodiments shown,
+but are to be accorded the widest scope consistent with the
+principles and features disclosed herein. The following
+detailed description is to be read with reference to the
+figures. The figures, which are not necessarily to scale,
+depict selected embodiments and are not intended to limit
+the scope of embodiments of the disclosure. Skilled artisans
+will recognize the examples provided herein have many
+useful alternatives and fall within the scope of embodiments
+of the disclosure.
+
+US 2025/0145944 A1
+6
+May 8, 2025
+cells, rat cells, and the like). Suitable cells may include cells
+that have been cultured in vitro.
+[0053] The aggregate of cells may comprise, consist
+essentially of, or consist of ciliated cells. In some embodi-
+ments, the aggregate of cells may comprise or may not
+comprise additional non-ciliated cell types.
+[0054] In some embodiments, the engineered multicellular
+organisms are non-innervated (e.g., the organisms do not
+comprise neural cells or neural tissue) and/or or non-carti-
+laginous. The multicellular organisms may be described as
+"engineered" because they are different from naturally
+occurring organism that arise without the guidance of human
+ingenuity and modifications. In other words, the multicel-
+lular organisms are synthetic and non-naturally occurring,
+albeit the multicellular organism may utilize endogenous
+cell: cell signaling and morphogenesis.
+[0055] The aggregate of cells of the engineered multicel-
+lular organisms may comprise cells that have been engi-
+neered to express a heterologous molecule. In some embodi-
+ments, the cells of the organisms are engineered to express
+a heterologous protein or secrete specific desired molecules.
+[0056] In embodiments in which the aggregate of cells
+comprises cells that have been engineered to express a
+heterologous molecule, suitable heterologous molecules that
+are expressed may include enzymes. Suitable enzymes may
+include enzymes that metabolize a target substrate, which
+may include toxins. Other suitable heterologous molecules
+may include receptors for a target ligand (e.g., a target ligand
+sensed by the organism), or sensors of light, heat, and other
+physical properties in the environment. Other suitable het-
+erologous molecules may include reporter molecules (e.g.,
+photoconvertible fluorescent reporter molecules).
+[0057] The disclosed engineered multicellular organisms
+may be self-repairing. In some embodiments, if the aggre-
+gate of cells is subjected to deaggregation (e.g., physical
+damage that disrupts aggregation of the cells), the cells will
+reaggregate and/or remodel to re-form the aggregate of cells
+having the original shape or a new shape.
+[0058] The engineered multicellular organisms may be
+configured in order to perform tasks. For example, the
+engineered multicellular organisms may be configured
+structurally and/or genetically.
+[0059] In some embodiments, the organism is configured
+for moving a target object (e.g., by pushing a target object).
+In further embodiments, the organism is configured for
+moving target objects (e.g., by pushing target objects) and
+collecting the moved target objections (i.e., aggregating the
+target objects).
+[0060] The engineered multicellular organisms may be
+configured to have a cavity. In some embodiments, the
+engineered multicellular organisms are configured to have a
+cavity for capturing and/or transporting a target object.
+[0061] The engineered multicellular organisms may be
+utilized in a number of applications. In some embodiments,
+the engineered multicellular organisms are utilized in meth-
+ods for removing a target substrate from an environment
+(e.g., a toxin from an environment). The methods may
+comprise engineering the organisms to express an enzyme
+that metabolizes the target substrate and placing the organ-
+ism in the environment to remove the target substrate from
+the environment.
+[0062] In other embodiments, the engineered multicellular
+organisms are utilized in methods for detecting a target
+ligand in a sample. The methods may comprise engineering
+the organisms to express a receptor for the target ligand and
+place the organism in the sample, where the organism
+generates a signal after the receptor binds the target ligand.
+[0063] In other embodiments, the engineered multicellular
+organisms may express a photoconvertible fluorescent
+reporter molecule, and the organism generates a fluorescent
+signal when the photoconvertible fluorescent reporter mol-
+ecule is exposed to light. As such, the activity and movement
+of the organisms may be monitored by placing the organisms
+in an environment and providing a light source for activating
+the photoconvertible fluorescent reporter molecule.
+[0064] Also disclosed are methods for preparing the engi-
+neered multicellular organisms. In some embodiments, the
+methods comprising explanting cells from tissue and cul-
+turing the explanted cells under conditions in which the
+cultured, explanted cells form the engineered multicellular
+organisms.
+
+[PAGE 6] Illustrative Embodiments
+[0065] The following embodiments are illustrative and
+should not be interpreted to limit the scope of the claimed
+subject matter.
+[0066] Embodiment 1. An engineered multicellular organ-
+ism comprising an aggregate of ciliated cells, wherein the
+organism moves when the ciliated cells are actuated.
+[0067] Embodiment 2. The organism of embodiment 1,
+wherein the organism consists of biological material and/or
+does not comprise any inorganic material, for example as a
+scaffold.
+[0068] Embodiment 3. The organism of embodiment 1 or
+2, wherein the organism comprises a sensor for detecting a
+target molecule.
+[0069] Embodiment 4. The organism of any of the fore-
+going embodiments, wherein the cells of the organism
+self-assemble.
+[0070] Embodiment 5. The organism of any of the fore-
+going embodiments, wherein the organism has an effective
+diameter of about 100-500 microns.
+[0071] Embodiment 6. The organism of any of the fore-
+going embodiments, wherein the organism moves at a rate of
+at least about 15, 20, 25, 50, 100, 200, 500, or 1000
+microns/second when the ciliated cells are actuated.
+[0072] Embodiment 7. The organism of any of the fore-
+going embodiments, wherein the organism does not com-
+prise neural cells or neural tissue.
+[0073] Embodiment 8. The organism of any of the fore-
+going embodiments, wherein the ciliated cells are eukaryotic
+epidermal cells.
+[0074] Embodiment 9. The organism of any of the fore-
+going embodiments, wherein the ciliated cells are engi-
+neered to express a heterologous molecule.
+[0075] Embodiment 10. The organism of embodiment 9,
+wherein the heterologous molecule is a reporter molecule
+(e.g., a photoconvertible fluorescent reporter molecule).
+[0076] Embodiment 11. The organism of embodiment 9,
+wherein the heterologous molecule is an enzyme that
+metabolizes a target substrate (e.g., a toxin).
+[0077] Embodiment 12. The organism of embodiment 9,
+wherein the heterologous molecule is a receptor for a target
+ligand (e.g., a target ligand sensed by the organism).
+[0078] Embodiment 13. The organism of any of the fore-
+going embodiments, wherein the aggregate of cells reaggre-
+gates after the aggregate is subjected to deaggregation (i.e.,
+the organism self-repairs).
+[0079] Embodiment 14. The organism of any of the fore-
+going embodiments, wherein the organism is configured for
+moving a target object, optionally wherein the organism
+comprises a hole or cavity for holding the target object.
+[0080] Embodiment 15. The organism of any of the fore-
+going embodiments, wherein the organism is configured to
+have a cavity for capturing and/or transporting a target
+object.
+[0081] Embodiment 16. The organism of any of the fore-
+going embodiments, wherein the organism comprises
+amphibian cells.
+[0082] Embodiment 17. A plurality of the organism of any
+of the foregoing embodiments, wherein the plurality exhibits
+collective and/or coordinated behavior.
+[0083] Embodiment 18. The plurality of embodiment 17,
+wherein the collective and/or coordinated behavior is col-
+lective and/or coordinated movement.
+[0084] Embodiment 19. A method for removing a target
+substrate from an environment, the method comprising
+engineering the organism of any of embodiments 1-18 or a
+plurality thereof to express an enzyme that metabolizes the
+target substrate and placing the organism in the environ-
+ment.
+[0085] Embodiment 20. A method for detecting a target
+ligand in a sample, the method comprising engineering the
+organism of any of embodiments 1-18 or plurality thereof to
+express a receptor for the target ligand and place the
+organism in the sample, wherein the organism generates a
+signal after the receptor binds the target ligand.
+[0086] Embodiment 21. A method for detecting movement
+of an organism of any of embodiments 1-17 or a plurality
+thereof, wherein the organism or the plurality thereof
+expresses a photoconvertible fluorescent reporter molecule,
+and the organism generates a fluorescent signal when the
+photoconvertible fluorescent reporter molecule is exposed to
+light.
+[0087] Embodiment 22. A method for preparing the engi-
+neered multicellular organism of any of embodiments 1-17
+or a plurality thereof, the method comprising explanting
+cells from tissue and culturing the explanted cells under
+conditions in which the cultured, explanted cells form the
+engineered multicellular organism or the plurality thereof.
+[PAGE 8] EXAMPLES
+[0110] The following examples are illustrative and should
+not be interpreted to limit the scope of the claimed subject
+matter.
+
+[PAGE 8] Example 1-a Cellular Platform for the
+Development of Synthetic Living Machines
+[0111] Reference is made to Blackiston et al., "A cellular
+platform for the development of synthetic living machines,"
+Sci. Robot. 2021 Mar. 31; 6 (52): eabf1571. doi: 10.1126/
+scirobotics.abf1571, the content of which is incorporated
+herein by reference in its entirety.
+
+[PAGE 8] Title a New Cellular Platform for the Development of
+Synthetic Living Machines
+[0112] Robot swarms have to date been constructed from
+artificial materials. Motile biological constructs have been
+created from muscle cells grown on precisely shaped scaf-
+folds. However, the exploitation of emergent self-organiza-
+tion and functional plasticity into a self-directed living
+machine has remained a major challenge. We report here an
+explant-based method for generation of in vitro biological
+robots from frog (Xenopus laevis) cells. These Xenobots
+exhibit coordinated locomotion via cilia present on their
+surface. These cilia arise through normal tissue patterning
+and do not require complicated construction methods or
+genomic editing, making biobot production amenable to
+high-throughput projects. The biobots arise by cellular self-
+organization and do not require scaffolds or microprinting;
+the amphibian cells are highly amenable to surgical, genetic,
+chemical, and optical stimulation during the self-assembly
+process. We show that the Xenobots can navigate aqueous
+environments in diverse ways, heal after damage, and show
+emergent group behaviors. We provide in silico simulations
+using evolutionary computation that explain how sensor-less
+behavior of Xenobots gives rise to observed manipulation of
+objects in their environment. In addition, we provide proof
+of principle for a writable molecular memory using a
+photoconvertible protein which can record exposure to a
+specific wavelength of light. Together, these results intro-
+duce a new platform that can be used to study many aspects
+of self-assembly, swarm behavior, and synthetic bioengi-
+neering, as well as provide versatile, soft-body living
+machines for numerous practical applications in biomedi-
+cine and the environment.
+
+[PAGE 8] Introduction
+[0113] Constructing robot swarms at small scales remains
+an open problem (1-4). Fabrication challenges abound, yet
+manufacturing advances are allowing for the construction of
+large numbers of microrobots composed of diverse compo-
+nents (5-7). Formulating and programming complex control
+policies into very small devices to enable swarm behavior
+also raises many conceptual challenges (8-10). However,
+recent advances in synthetic biology suggest an alternative
+path to many-bodied microswarms that, to some degree,
+sidestep some of these manufacturing and conceptual chal-
+lenges: constructing small-scale living machines solely from
+biological tissue (11) in such a way that they inherit the
+adaptive potential of their wild type analogs. All organisms,
+including those that grow to macro size scales, pass through
+early stages of development in which they must achieve and
+maintain complex behaviors. This raises the possibility of
+direct and indirect perturbations to natural development,
+including tissue explantation and/or rearrangement, to
+achieve novel yet stable small-scale biological forms
+orthogonal to any found in nature. One major advantage of
+this approach is that living cells already possess numerous
+sensors, effectors, and signaling/computational circuits.
+Their native biochemical, biomechanical, and bioelectrical
+communication and control machinery can be repurposed
+for novel functionality at the system level and does not have
+to be directly engineered.
+[0114] Classical developmental biology has long focused
+on uncovering the genes, organizing centers, and signaling
+cascades that drive specification of cells and tissues from
+undifferentiated precursors (12, 13). Historically, this
+research used in vivo embryonic models to examine the
+effects of misexpression of early patterning genes on down-
+stream phenotypes, creating morphological and molecular
+fate maps in their respective native systems (14-19). A more
+recent effort has been directed towards harnessing the infor-
+mation garnered from this classical basic biology to create
+complex systems from the ground up in vitro. These bio-
+logical robots allow investigation into diverse topics ranging
+from the origin of multicellularity, aspects of basal cogni-
+tion, new approaches to synthetic biology, and the creation
+of implantable bio-prosthetics.
+[0115] A recognizable example of this methodology are
+organoids, 3-dimensional in vitro cultured representations of
+complex tissues and organs that reproduce the physiology of
+their in vivo counterparts. Indeed, this work has revealed
+many mechanisms of stem cell differentiation, and has
+enabled investigators to drive progenitor cells to a wide
+array of complex tissue types with diverse anatomies includ-
+ing components of the eye, cerebral structures, gut, liver,
+intestine, mammary gland, kidney, and pancreas among
+others (20). Furthermore, recent advances led the to the
+miniaturization and daisy-chaining of multiple organoid
+types, leading to body-on-a-chip systems aimed at recapitu-
+lating whole-organism nested physiology (21, 22). The
+power of this technology enables investigators to model
+complex multi-organ diseases, understand drug interactions
+between organ systems, and better represent patient physi-
+ology compared to single organoids grown in culture. How-
+ever, while these techniques further our understanding of
+many aspects of differentiation and self-assembly, they are
+designed to replicate existing in vivo systems rather than
+building novel morphologies. Moreover, they are largely
+produced by micromanaging (via bio-printing or scaffolds)
+cellular arrangement, and have yet to truly exploit the
+remarkable self-assembly and plasticity of cells in vivo (23).
+Similarly, they have not yet been explored for the ability to
+exhibit motility and interaction with changing environments.
+This important advance would enable the extension of
+physiological and biomedical studies into the emerging field
+of basal cognition which seeks to address the origin of
+computation, decision-making, and adaptive control in
+diverse body-plans. Developing amenable platforms for
+addressing this question is as crucial for understanding the
+evolution of brain-body complexity as they are for providing
+insight and biological inspiration for robotics and artificial
+intelligence.
+[PAGE 9] [0116] Creation of novel biological forms and structures
+non-existent in nature is the goal of the emerging field of
+biorobotics. So far, efforts in this field have somewhat
+coalesced around biohybrid designs, combining synthetic
+scaffolds or components alongside living cells and tissues.
+These systems often use muscle actuators to drive rigid
+artificial body-parts, as in the case of phototaxis guided
+biohybrid stingray (24), micro walking and swimming
+biohybrids propelled by skeletal and cardiac muscle tissue
+(25, 26), and macroscale sea turtle like Aplysia biohybrid
+(27). This design approach capitalizes on the benefits of
+traditional robotics; synthetic components can be modeled
+quickly in simulation, adjusted, and fabricated with a high
+degree of precision. It also enables the creation of morpholo-
+gies which would be difficult or impossible to produce with
+living tissues, including micrometer thin sheets with high
+rigidity, thin filaments resistant to breaking, and sharp edges.
+However, these synthetic components also contain the limi-
+tations of traditional robotic systems-they are unable to
+regenerate or self-repair, they do not possess metabolic
+pathways, and are generally unable undergo extensive
+remodeling or migration like living cells and tissues.
+[0117] Instead of relying on synthetic components that
+specify the types of function the robot can accomplish, one
+could take advantage of the plasticity biology has to offer
+and build designs entirely out of cells and tissues, creating
+a fully biological machine (11). By using a combination of
+epidermal and cardiac muscle tissue, one can create biobots
+that can crawl through aqueous environments, collect debris
+in their immediate vicinity, and quickly heal from mechani-
+cal lacerations. While less precise in their functionality
+compared to biohybrids, the biobots are robust to damage
+and can respond to changes in their environment. These
+constructs are also completely self-powered, surviving ten
+days without additional nutrients, and are fully biodegrad-
+able, harmlessly breaking down at their end of life.
+[0118] The current study expands on these fully biological
+machines, documenting a bottom up approach to produce
+synthetic living machines from cells of the frog Xenopus
+laevis. We hypothesized that when liberated from the rest of
+the animal, cells would self-organize into a functional mor-
+phology that was distinct from their genomically-specified
+default. We report here that tissue explanted from wild-type
+frog embryos forms synthetic constructs with fascinating
+morphology and behavior that are different from that of
+normal tadpoles. These "Xenobots" generate swimming
+motion through the beating of multiciliated cells present on
+their surface (repurposing machinery whose normal function
+is to distribute mucus and flow pathogens and other material
+off the skin). As opposed to imposing tissue placement and
+shape from the top down (11), the design method presented
+here uses whole explants from developing frog embryos.
+While these explants, known as animal caps, have been used
+for decades to understand the early patterning events of
+epidermal and neural cell lineages (28-31), they have not
+been examined for behavioral capacity as proto-organisms,
+or used to create novel living machines with specific func-
+tions.
+[0119] Here we report the use of Xenopus animal cells for
+generating swimming automata capable of locomoting
+through a variety of environments. In addition to categoriz-
+ing their lifecycle, behavior, and regenerative capacity, we
+also document the ability to introduce simple read-write
+functionality via RNA encoded photoconvertible proteins,
+serving as a proof of principle that experiences can be
+encoded as a molecular memory and retrieved at a later time.
+We use computational modeling to explain their multi-scale
+behaviors and effects on their environment. These findings
+demonstrate that novel behaviors can be elicited from bio-
+bots, and that they also inherit useful behaviors exhibited by
+many organisms, such as robustness to damage, and a
+spontaneous drive to exhibit collective behavior. This may,
+in future, make coaxing desired collective behaviors from
+biobot swarms more straightforward than programming
+equivalent behaviors into swarms of microrobots. Together,
+these results contribute to a new field at the intersection of
+synthetic biology and developmental biology and represent
+a new bottom-up method to produce simple biological
+machines.
+
+[PAGE 9] Methods
+[0120] We here survey the stages of the biological con-
+struction process (sects. m1-m8), computational design of
+simulated biobots to exhibit a representative collective
+behavior (sect. m9), and analysis of the distinct behaviors
+exhibited by a physical swarm of biobots performing this
+behavior (sect. m10).
+[0121] m1: Animal Husbandry. All experiments were con-
+ducted using fertilized Xenopus laevis embryos as donor
+tissue. Wild type embryos were collected 30 minutes post
+fertilization and reared in 0.1× Marcs Modified Ringer
+solution (MMR), pH 7.8, at 14° C. prior to microinjection or
+animal cap dissection. Experimental procedures using ani-
+mals for experimental purposes were approved by the Insti-
+tutional Animal Care and Use Committee and Tufts Univer-
+sity Department of Laboratory Animal Medicine under
+protocol number M2020-35.
+[0122] m2: Explant culture. Xenopus animal cap explants
+were performed using standard methods (32). Briefly, fer-
+tilized embryos were raised at 14° C. in 0.1×MMR (pH 7.8),
+until Neiuwkoop and Faber stage 9. The vitelline membrane
+of each embryo was removed with surgical forceps (Du-
+mont, 11241-30 #4) before being transferred to a 1% agarose
+lined petri dish containing 0.75×MMR for excision. Surgical
+forceps were then used to remove a circular mass of tissue
+from the animal-most region of each blastula embryo, after
+which the remainder of the embryo was removed from the
+dish. Each explant was then inverted and allowed to heal for
+30 minutes to 1 hour in 0.75×MMR, allowing the tissue to
+ball up into a spherical mass. After healing, all the explants
+from each treatment were transferred to new 1% agarose
+covered dishes containing 10 ml 0.75×MMR and 5 ng/µl
+gentamicin and cultured at 14° C. until ready for use. Media
+was replaced three time a week to clean out cellular debris
+and any possible contamination.
+[0123] For long term growth studies extending beyond the
+normal 10-day lifespan, explants were raised in Xenopus cell
+culture media containing 50% Ringer's solution, 49% Lei-
+bovitz L-15 Medium (ThermoFisher 11415064), and 1%
+fetal bovine serum. Explants were placed into individual
+wells of a 24-well plate lined with 2% agarose and were fed
+with 1 m1 of culture media and 5 ng/µl gentamicin. Explants
+were moved to new wells with fresh media three times per
+week to reduce the likelihood of fungal contamination.
+[0124] In experiments using the K+ inhibitor/Ca2+ acti-
+vator barium chloride, Xenobots were exposed a 2.0 mM
+solution in 0.75×MMR beginning 3-4 hours after excision/
+healing and kept in the solutions throughout the remainder
+[PAGE 10] of the study. All pharmaceuticals were stored as stocks at 4°
+C. and working solutions were refreshed every three days.
+[0125] m3: Microinjection. All mRNA was synthesized
+using standard message machine kits (Life Technologies)
+and stored at -80° C. until used. Prior to injection, cohorts
+of 4 cell stage embryos were transferred to a 3% Ficoll
+solution and aligned in a laser etched Petri dish. Individual
+embryos were then injected into each of the 4 cells using a
+pulled capillary to deliver approximately 500 ng of RNA in
+a 50 nL volume to each cell. Four cell embryos were chosen
+for injection over one cell due to the observation that
+expression tended to be more uniform at the 4-cell stage.
+Two hours after microinjection the embryos were washed
+twice in 0.1×MMR (pH 7.8), moved to new Petri dishes, and
+moved to a 22° C. incubator overnight. The following
+morning, the embryos were cleaned one final time before
+processing for animal cap excision. Constructs used in the
+current study included the multi-ciliated cell inhibitor
+Notch-ICD (33, 34) and EosFP (35).
+[0126] m4: Immunohistochemistry. Multi-ciliated cell
+number was visualized through immunohistochemistry with
+the monoclonal anti-acetylated alpha tubulin antibody
+(Sigma T7451) using a protocol described previously (36).
+Cohorts of Xenobots from each treatment were pooled and
+transferred to a 3 ml scintillation vial containing MEMFA
+fixative (100 mM MOPS (pH 7.4), 2 mM EGTA, 1 mM
+MgSO4, 3.7% (v/v) formaldehyde). Fixation proceeded for
+2H at room temperature on a nutator, after which the fixative
+was removed with a disposable pipette and the Xenobots
+were washed three times, ten minutes per wash, in phosphate
+buffered saline+0.1% Tween 20 (PBST) and stored at 4° С.
+until ready for processing. Processing began by blocking for
+1H at room temperature with 10% goat serum in PBST.
+Samples were then rocked overnight at 4° C. in monoclonal
+anti-acetylated alpha tubulin antibody diluted 1:1000 in
+PBST+10% goat serum. Following primary incubation,
+samples were washed three times for 15 min in PBST before
+60 min secondary incubation with AlexaFluor-555 conju-
+gated secondary at 1:500 dilution in PBST. Following sec-
+ondary incubation, samples were washed three times for 15
+min in PBST.
+[0127] m5: Behavioral analysis. Mazes used in behavioral
+tests were created from acrylic negatives and cast with 2%
+agarose. Each negative was affixed to the lid of a petri dish
+with a spot of cyanoacrylate-based adhesive and lowered
+into a dish containing sufficient volume of melted agarose to
+submerge the maze one half of its total height. Dishes cooled
+at room temperature for 1 hour before being wrapped in
+Parafilm and stored at 4° C. until use. For glass capillary
+experiments, standard 1.0 mm OD, 0.5 mm ID, 4-inch length
+capillaries (Sutter Instruments BF100-50-10) were cut down
+to a 2 cm length using a diamond knife. Individual Xenobots
+were then manually loaded into one end of the capillary and
+observed for 10 minutes on a stereoscope with an attached
+Sony IMX234 camera. In cases where movement was
+observed moving out of the loading area (i.e. the opposite
+direction of the preferred movement), the individual was
+rotated 180 degrees and reloaded in the same manner. Trials
+were considered a success if the individual emerged from the
+opposite end of the capillary.
+[0128] For particle aggregation and displacement experi-
+ments, a stock solution carmine dye (Sigma-Aldrich C1022-
+5G) was created at a concentration of 0.01 g per 10 ml
+0.75×MMR and vortexed for 10 seconds. Individual work-
+ing solutions were then created in 1% agarose coated
+polystyrene petri dishes by diluting the stock 1:10, again in
+0.75×MMR, for a final concentration of 0.001 g per 10 ml.
+Dishes containing the working solution were housed under
+an imaging microscope and allowed to settle for four hours
+at 22° C., creating a layer of particulate dye on the surface
+of the dish. Silicone coated iron oxide spheres (Ocean
+Nanotech SOR-10-50) were prepared in a similar manner,
+though only one hour of settling was necessary due to the
+higher density of the material.
+[0129] m6: Wound healing. To assess wound healing,
+individual Xenobots aged 4 to 7 days post-explantation were
+moved to fresh 1% agarose coated petri dishes containing
+0.75×MMR. Surgical forceps were used to create a mechani-
+cal laceration spanning approximately one half the diameter
+of the individual. Images were collected before injury,
+directly following injury, May 10, 2015 minutes following
+injury, and after 48 h of healing. Images were first processed
+by cropping, downsampling, and binarization. To crop the
+images, contours were automatically drawn on the image by
+traversing the boundaries of each transition between body
+and background pixels to find closed loops (each of which
+is a contour). A bounding box was then drawn around the
+largest contour (by area), and the rest of the image is
+trimmed off. Finally, the cropped images were resized
+(downsampled) to a constant resolution (300×300). These
+processed images were then assessed by comparing each
+timepoint to its initial shape using Hausdorff distance. To
+calculate Hausdorff distance, the image was binarized, with
+each pixel assigned either 1 (for pixels belonging to the body
+of the organism) or 0 (the background). The Hausdorff
+distance is the largest discrepancy between pairs of pre- and
+post-damage body pixel coordinates, in terms of euclidean
+distance.
+[0130] Formally, the Hausdorff distance for tissue type 1 is
+defined as:
+H = max (supasinfbed(a, b), sup bebinfasad(a, b)}, [Eqn. H.]
+[0131] where A and B are the sets of pre- and post-damage
+pixels, and d(a, b) is the Euclidean distance between pixels
+a and b. A small Hausdorff distance indicates that for every
+pixel prior to damage there is a pixel nearby post-damage,
+and vice versa. During repair, we measure the amount of
+shape change toward the pre-damage shape using the sta-
+tistic
+A=Hpost/Hinjury,
+[Eqn. Delta.]
+which is a ratio of two Hausdorff distances: one taken
+recovery (numerator) and the other immediately after injury
+(denominator).
+[0132] Because H is sensitive to rotation, H was calculated
+360 times for every post-damage image, each time rotating
+the image by 1 degree. The rotation with the best match (the
+smallest H) was selected and plotted in FIG. 1. Because His
+sensitive to the position of the body within the frame of an
+image, copies of images were auto-cropped (FIG. 2) such
+that the edge of the design fills the frame, and H was
+recalculated (with 360 rotations). Final Hausdorff distances
+
+[PAGE 10] m3: Microinjection.
+of the study. All pharmaceuticals were stored as stocks at 4°
+C. and working solutions were refreshed every three days.
+m3: Microinjection. All mRNA was synthesized
+using standard message machine kits (Life Technologies)
+and stored at -80° C. until used. Prior to injection, cohorts
+of 4 cell stage embryos were transferred to a 3% Ficoll
+solution and aligned in a laser etched Petri dish. Individual
+embryos were then injected into each of the 4 cells using a
+pulled capillary to deliver approximately 500 ng of RNA in
+a 50 nL volume to each cell. Four cell embryos were chosen
+for injection over one cell due to the observation that
+expression tended to be more uniform at the 4-cell stage.
+Two hours after microinjection the embryos were washed
+twice in 0.1×MMR (pH 7.8), moved to new Petri dishes, and
+moved to a 22° C. incubator overnight. The following
+morning, the embryos were cleaned one final time before
+processing for animal cap excision. Constructs used in the
+current study included the multi-ciliated cell inhibitor
+Notch-ICD (33, 34) and EosFP (35).
+
+[PAGE 10] m4: Immunohistochemistry.
+m4: Immunohistochemistry. Multi-ciliated cell
+number was visualized through immunohistochemistry with
+the monoclonal anti-acetylated alpha tubulin antibody
+(Sigma T7451) using a protocol described previously (36).
+Cohorts of Xenobots from each treatment were pooled and
+transferred to a 3 ml scintillation vial containing MEMFA
+fixative (100 mM MOPS (pH 7.4), 2 mM EGTA, 1 mM
+MgSO4, 3.7% (v/v) formaldehyde). Fixation proceeded for
+2H at room temperature on a nutator, after which the fixative
+was removed with a disposable pipette and the Xenobots
+were washed three times, ten minutes per wash, in phosphate
+buffered saline+0.1% Tween 20 (PBST) and stored at 4° С.
+until ready for processing. Processing began by blocking for
+1H at room temperature with 10% goat serum in PBST.
+Samples were then rocked overnight at 4° C. in monoclonal
+anti-acetylated alpha tubulin antibody diluted 1:1000 in
+PBST+10% goat serum. Following primary incubation,
+samples were washed three times for 15 min in PBST before
+60 min secondary incubation with AlexaFluor-555 conju-
+gated secondary at 1:500 dilution in PBST. Following sec-
+ondary incubation, samples were washed three times for 15
+min in PBST.
+
+[PAGE 10] m5: Behavioral analysis.
+m5: Behavioral analysis. Mazes used in behavioral
+tests were created from acrylic negatives and cast with 2%
+agarose. Each negative was affixed to the lid of a petri dish
+with a spot of cyanoacrylate-based adhesive and lowered
+into a dish containing sufficient volume of melted agarose to
+submerge the maze one half of its total height. Dishes cooled
+at room temperature for 1 hour before being wrapped in
+Parafilm and stored at 4° C. until use. For glass capillary
+experiments, standard 1.0 mm OD, 0.5 mm ID, 4-inch length
+capillaries (Sutter Instruments BF100-50-10) were cut down
+to a 2 cm length using a diamond knife. Individual Xenobots
+were then manually loaded into one end of the capillary and
+observed for 10 minutes on a stereoscope with an attached
+Sony IMX234 camera. In cases where movement was
+observed moving out of the loading area (i.e. the opposite
+direction of the preferred movement), the individual was
+rotated 180 degrees and reloaded in the same manner. Trials
+were considered a success if the individual emerged from the
+opposite end of the capillary.
+
+[PAGE 11] For particle aggregation and displacement experi-
+ments, a stock solution carmine dye (Sigma-Aldrich C1022-
+5G) was created at a concentration of 0.01 g per 10 ml
+0.75×MMR and vortexed for 10 seconds. Individual work-
+ing solutions were then created in 1% agarose coated
+polystyrene petri dishes by diluting the stock 1:10, again in
+0.75×MMR, for a final concentration of 0.001 g per 10 ml.
+Dishes containing the working solution were housed under
+an imaging microscope and allowed to settle for four hours
+at 22° C., creating a layer of particulate dye on the surface
+of the dish. Silicone coated iron oxide spheres (Ocean
+Nanotech SOR-10-50) were prepared in a similar manner,
+though only one hour of settling was necessary due to the
+higher density of the material.
+
+[PAGE 11] m6: Wound healing.
+m6: Wound healing. To assess wound healing,
+individual Xenobots aged 4 to 7 days post-explantation were
+moved to fresh 1% agarose coated petri dishes containing
+0.75×MMR. Surgical forceps were used to create a mechani-
+cal laceration spanning approximately one half the diameter
+of the individual. Images were collected before injury,
+directly following injury, May 10, 2015 minutes following
+injury, and after 48 h of healing. Images were first processed
+by cropping, downsampling, and binarization. To crop the
+images, contours were automatically drawn on the image by
+traversing the boundaries of each transition between body
+and background pixels to find closed loops (each of which
+is a contour). A bounding box was then drawn around the
+largest contour (by area), and the rest of the image is
+trimmed off. Finally, the cropped images were resized
+(downsampled) to a constant resolution (300×300). These
+processed images were then assessed by comparing each
+timepoint to its initial shape using Hausdorff distance. To
+calculate Hausdorff distance, the image was binarized, with
+each pixel assigned either 1 (for pixels belonging to the body
+of the organism) or 0 (the background). The Hausdorff
+distance is the largest discrepancy between pairs of pre- and
+post-damage body pixel coordinates, in terms of euclidean
+distance.
+
+[PAGE 11] Formally, the Hausdorff distance for tissue type 1 is
+defined as:
+H = max (supasinfbed(a, b), sup bebinfasad(a, b)}, [Eqn. H.]
+where A and B are the sets of pre- and post-damage
+pixels, and d(a, b) is the Euclidean distance between pixels
+a and b. A small Hausdorff distance indicates that for every
+pixel prior to damage there is a pixel nearby post-damage,
+and vice versa. During repair, we measure the amount of
+shape change toward the pre-damage shape using the sta-
+tistic
+A=Hpost/Hinjury,
+[Eqn. Delta.]
+which is a ratio of two Hausdorff distances: one taken
+recovery (numerator) and the other immediately after injury
+(denominator).
+Because H is sensitive to rotation, H was calculated
+360 times for every post-damage image, each time rotating
+the image by 1 degree. The rotation with the best match (the
+smallest H) was selected and plotted in FIG. 1. Because His
+sensitive to the position of the body within the frame of an
+image, copies of images were auto-cropped (FIG. 2) such
+that the edge of the design fills the frame, and H was
+recalculated (with 360 rotations). Final Hausdorff distances
+
+[PAGE 11] conformed to normality and were compared using a repeated
+measures ANOVA, followed by Dunnett's post-hoc com-
+parison of injury values to all proceeding timepoints.
+
+[PAGE 11] m7: Imaging.
+m7: Imaging. Xenobot morphology was imaged
+using a Nikon SMZ-1500 microscope attached to a QImag-
+ing Retiga 2000R CCD camera. Live samples were photo-
+graphed in 0.75×MMR at 22° C. using both overhead and
+substage illumination in combination with a concavity slide
+to keep the Xenobots in view. Immunofluorescence was
+detected using a 4x or 10x objective and standard TRITC
+filter cube on an Olympus BX-61 microscope equipped with
+a Photometrics CoolSNAP DYNO CCD camera and
+CoolLED PE-300 lightsource. Images were captured as tiff
+z-stacks and combined into composite images using Meta-
+morph software before being moved to ImageJ for analysis.
+
+[PAGE 11] m8: Motion tracking.
+m8: Motion tracking. Motion tracking of Xenobot
+behavior was completed by uploading time-lapse videos into
+Ethovision XT v.14/15 (Noldus Information Technology). A
+scaled background image was uploaded prior to data pro-
+cessing to accurately set movement speeds and distance.
+Tracking was completed in using automated settings and the
+coordinates of each xenobot position across the time lapse
+was then exported as an .xslv file via analysis tools. Any
+tracking errors were manually removed (field values left
+empty) in the .xslv file after the coordinates were exported
+from Ethovision for statistical analysis.
+
+[PAGE 11] m9: Modeling collective behavior.
+m9: Modeling collective behavior. All modeling
+was run in voxcraft-sim (37), a GPU-accelerated implemen-
+tation of the Voxcad environment, which has been docu-
+mented previously (38, 39). Xenobots are simulated by
+hundreds of elastic voxels (deformable cuboids), each
+approximating a section of tissue, rather than a one-to-one
+voxel-to-cell representation. At each time step, the dynamics
+(position and motion) of every voxel can be updated in
+parallel across multiple independent simulations. Xenobots
+here were simulated with Young's modulus of 0.02 MPa,
+density 1,500 kg/m^3, 0.35 Poisson's ratio, and coefficients
+of static and dynamic friction of 1 and 0.5, respectively. The
+simulated debris were slightly stiffer (0.03 MPa), less dense
+(1,000 kg/m^3), and had a higher coefficient of dynamic
+friction (0.8). The debris were made slightly adhesive to
+better approximate the real properties of the physical par-
+ticulate matter: a persisting but breakable bond was formed
+between a pair of voxels if they touched and broken if the
+bond's stress exceeds a threshold (0.05 MPa).
+
+[PAGE 11] The material properties of the voxels were manu-
+ally adjusted for simulation speed (heavier/softer material
+can be stably simulated with a larger time step of numerical
+integration because their resonance frequency is lower than
+lighter/stiffer material). Each simulation consisted of 22,940
+time steps (long enough to see pile-making behavior occur),
+with step size 0.00044 sec (low enough to ensure simulation
+stability; for details see (38)), yielding an evaluation period
+of ten seconds. The aggregate (metachronal wave) force
+produced by a patch of beating cilia was modeled on each
+surface voxel as an impulse force originating at the center of
+the voxel and pointing in any direction in the horizontal (x,y)
+plane. Internal voxels inside a Xenobot do not have cilia, nor
+do the debris. The maximal magnitude of the force was
+manually adjusted to ensure that the maximal speed would
+not cause continual tumbling behavior (which has not been
+observed in vivo).
+
+[PAGE 11] A generative network (40) was used to genetically
+encode the cilia force of every surface voxel. The network
+takes as input the initial x,y,z position of a voxel (at
+simulation time t=0) and outputs an impulse force for that
+voxel. This force is then fixed for the remainder of the
+evaluation period. The network is inherently biased such that
+when it generates the constant force for each surface voxel
+in the simulated swarm, voxel pairs close together in space
+are more likely to have similar cilia forces than a pair of
+initially distant voxels. This biases search toward spatial
+regularity. For more details, see (41).
+
+[PAGE 11] An evolutionary algorithm (42) was employed that
+maintains a population of 40 initially random genetic net-
+works for 500 generations. At every generation, the popu-
+lation is doubled by making a randomly mutated copy of
+each of the 40 networks, where a mutation either adds,
+removes, or modifies one of the network's edges or vertices
+(for more details see (11)). Each network then generates cilia
+forces for a swarm of virtual Xenobots, and the swarm's
+behavior is evaluated for ten seconds in simulation. The
+fitness of a swarm (F) was measured as the number of debris
+voxel pairs within three voxel length units of each other
+(they are initialized on a grid, four voxel lengths away):
+F =
+1,225 1,225
+Σd(vi, vj)
+i=1 j=1
+Eqn. MCB.
+where v; is the i-th debris voxel (within the 35×35=1,225
+grid of debris),
+d(a, b) = 1 if dist(a, b) <3
+d(a, b) = 0 otherwise,
+where dist() is the euclidean distance.
+
+[PAGE 11] This objective function was intended to promote
+the evolution of pile-making behavior. We also investigated
+an alternative objective function that measured the pairwise
+sum of voxel distances; however, the penalty of moving
+debris apart resulted in no Xenobot movement.
+
+[PAGE 11] Results
+Xenopus embryonic ectoderm creates a motile liv-
+ing machine. Previous reports utilized a top down approach
+to impose shape, cell type, and contractile motion on a first
+generation of mobile living machines (11). In contrast, the
+current study used a bottom up approach to ask whether cells
+removed from their normal developmental constraints
+would be able to self-organize into a different type of living
+form. Production began by harvesting stem cell tissue from
+the animal hemisphere, a region of undifferentiated pre-
+sumptive ectoderm, from Neiuwkoop and Faber stage 9
+Xenopus laevis embryos (FIG. 1A). Tissue explants were
+then moved to a 0.75× Marc's Modified Ringer's (MMR)
+solution, pH 7.8 and allowed to heal for 1 h at 20° C. (FIG.
+1B) and then cultured at 14° C. until experimentation begins
+(FIG. 1D). Under these conditions, explants form into
+spheres of tissue (FIG. 1C) that differentiate over the course
+of 4 days into ciliated epithelium. Three days after forma-
+tion, explants become mobile in aqueous solutions and are
+capable of moving at rates exceeding 100 µm/s (FIG. 1E).
+Fully differentiated spheres range in size from an average of
+
+[PAGE 12] 487±39 µm for the smallest cut explants, to 602±30 µm for
+the largest (n=15 and 13 respectively).
+Surprisingly, we observed motile behavior, as the
+cells' native cilia, which normally move material past the
+animal surface, were spontaneously re-purposed for coher-
+ent locomotion. Movement is driven by flow arising from
+multiciliated cells present on the surface of the construct
+(which are revealed by anti-acetylated tubulin immunohis-
+tochemistry (FIG. 1F)). Further, this motion can be abol-
+ished by inhibiting multiciliated cell formation through
+overexpression of the Notch receptor intracellular domain
+(NotchICD), which drives the differentiating tissue to other
+epidermal cell fates (FIG. 1F'). Multiciliated cells are also
+naturally present on the skin of the frog (FIG. 1G), and
+likewise respond to the overexpression of NotchICD (FIG.
+1G'), though explants display a higher multi-ciliated cell
+density per area than age matched tadpoles (FIG. 1H).
+The degree of behavioral complexity we observed
+is normally associated with a nervous system (43). Although
+made entirely of skin, we sought to confirm whether there
+might be any neurons in the Xenobots. Using a pan-neuronal
+marker in immunohistochemistry, we showed that no neu-
+rons were present at the surface or internally in any of the
+individuals imaged (FIG. 6, n=24), indicating that their
+behavior is driven entirely by the signaling and functional
+dynamics of non-neural cells. The Xenobots are thus a new
+synthetic model for understanding preneural life forms and
+their capacities (44, 45).
+Explants have a lifespan of approximately 9-10
+days after formation and do not require an external food
+source as they metabolize the maternally loaded yolk plate-
+lets present in all early embryonic Xenopus tissues. While
+their spontaneous disintegration is a welcome safety feature
+for deploying synthetic biobots, we sought methods to
+extend their working capacity by taking advantage of the
+cells' metabolic machinery. We found that their lifespan can
+be extended for timeframes exceeding 90 days if raised in a
+Xenopus specific culture media (FIG. 7). This ability to
+control their lifespan also availed us the opportunity to
+characterize their novel "developmental sequence", as their
+morphology is not like that of normal Xenopus embryos. We
+found that their pigmentation lightens with age (FIG. 1I-J'),
+although their average velocity does not vary significantly
+across explant lifespan (Kruskal-Wallis one-way ANOVA,
+p=0.29, FIG. 1K), and they eventually acquire a balloon-
+like, extended spheroid morphology (FIG. 7). At the end of
+their lifespan, explants begin shedding cells and deteriorate
+until the multiciliated cells no longer function and the tissue
+disintegrates. Together, these results demonstrate that
+embryonic explants from genomically-normal Xenopus cells
+form motile living machines with novel morphologies which
+are capable of aqueous locomotion via cilia.
+
+[PAGE 12] Xenobots self-repair after damage.
+Xenobots self-repair after damage. A desired fea-
+ture in biological and artificial machines is a robust ability
+to deal with unexpected damage, arising from both normal
+wear and tear or external environmental insult. To examine
+the repair ability of Xenobots, 5 day old individuals were
+given severe mechanical lacerations with surgical forceps.
+Lacerations were performed with a single incision, opening
+a wound across approximately half of the diameter of the
+individual, and spanning the entire width. Images were
+collected prior to damage, directly proceeding damage,
+5/10/15 m post damage, and 48 h following injury. In all
+cases individuals were capable of resolving the wound,
+
+[PAGE 14] Discussion
+Here we documented the creation of Xenobots,
+synthetic living machines derived from amphibian embry-
+onic explants, their ability to spontaneously exhibit collec-
+tive behavior, and the potential to design such swarms in
+future to exaggerate these behaviors. Compared to our
+previously reported design method (which produced con-
+tractile driven motion through top-down implementation of
+shape and tissue placement (11)) the Xenobots reported here
+exhibit bottom up emergent behaviors and generate move-
+ment through multiciliated cell propulsion. These swimming
+Xenobots survive for up to ten days in mild saline solution
+without additional energy sources, and for multiple months
+if supplemented with cell culture medium. Movement first
+appears four days after construction and average velocity
+remains constant across the lifespan of the Xenobot cohorts.
+Further, motion can be inhibited through the overexpression
+of the intracellular domain of notch, which inhibits multi-
+ciliated cell development by driving precursors to other
+epidermal lineages. Together, this design method allows for
+the rapid generation of many mobile constructs with mini-
+mum top down design from the investigator.
+Xenobot speed and behavior remains constant
+across their ten-day lifespan, pointing to their potential for
+maintaining desired swarm behavior. Movement tends
+towards circular rotation, although arcing and linear motion
+was also observed less frequently. An interesting future area
+of study would include the enhancement of planar cell
+polarity patterning, enforcing specific tissue-scale cilia
+alignment to drive user specified motion types. Further,
+given their ability to self-locomote, Xenobots can move
+through a variety of diverse environments from open fields
+to narrow capillaries. These features suggest several pos-
+sible downstream applications which are difficult for tradi-
+tional robots, from the cleaning microfluidic chambers to
+environmental sensing and ecologically benign remediation
+in natural waterways.
+The ability to program rudimentary sensing and
+memory into biobots was also demonstrated. As Xenobots
+can explore an aqueous environment, we designed a proof of
+principle system where an individual can record exposure to
+an environmental stimulus that can be read at a later time by
+an observer, using the photoconvertible reporter EosFP.
+After expressing the protein in Xenobots through mRNA
+microinjection, individuals emit strong fluorescence in green
+wavelengths. However, following exposure to 400 nm blue
+light, the reporter undergoes a permanent conformational
+change, shifting emission wavelengths from green to red.
+Using this feature, we were able to show that unsupervised
+
+[PAGE 14] Discussion
+Here we documented the creation of Xenobots, synthetic living machines derived from amphibian embryonic explants, their ability to spontaneously exhibit collective behavior, and the potential to design such swarms in future to exaggerate these behaviors. Compared to our previously reported design method (which produced contractile driven motion through top-down implementation of shape and tissue placement (11)) the Xenobots reported here exhibit bottom up emergent behaviors and generate movement through multiciliated cell propulsion. These swimming Xenobots survive for up to ten days in mild saline solution without additional energy sources, and for multiple months if supplemented with cell culture medium. Movement first appears four days after construction and average velocity remains constant across the lifespan of the Xenobot cohorts. Further, motion can be inhibited through the overexpression of the intracellular domain of notch, which inhibits multiciliated cell development by driving precursors to other epidermal lineages. Together, this design method allows for the rapid generation of many mobile constructs with minimum top down design from the investigator.
+
+Xenobot speed and behavior remains constant across their ten-day lifespan, pointing to their potential for maintaining desired swarm behavior. Movement tends towards circular rotation, although arcing and linear motion was also observed less frequently. An interesting future area of study would include the enhancement of planar cell polarity patterning, enforcing specific tissue-scale cilia alignment to drive user specified motion types. Further, given their ability to self-locomote, Xenobots can move through a variety of diverse environments from open fields to narrow capillaries. These features suggest several possible downstream applications which are difficult for traditional robots, from the cleaning microfluidic chambers to environmental sensing and ecologically benign remediation in natural waterways.
+
+The ability to program rudimentary sensing and memory into biobots was also demonstrated. As Xenobots can explore an aqueous environment, we designed a proof of principle system where an individual can record exposure to an environmental stimulus that can be read at a later time by an observer, using the photoconvertible reporter EosFP. After expressing the protein in Xenobots through mRNA microinjection, individuals emit strong fluorescence in green wavelengths. However, following exposure to 400 nm blue light, the reporter undergoes a permanent conformational change, shifting emission wavelengths from green to red. Using this feature, we were able to show that unsupervised Xenobots could explore an environment containing an illuminated blue spot, and exposure to this light could subsequently be assessed using fluorescent microscopy. The general methodology of the approach could be readily adapted to a wide variety of scenarios including: increased/decreased sensitivity to stimuli, chemical/contaminant detection, bioaccumulation of target substances, release of compounds upon sensation of stimuli, multimodal recording, and nested if/then circuitry.
+
+Unlike current robots, in which robustness must be programmed in, Xenobots exhibit automatic self-repair following injury. When presented with lacerations, all individuals were able to heal the wound within 15 minutes and in no cases did an individual perish as a result of the insult. Tadpoles also rapidly resolve injuries resulting from mechanical damage or transplantation, revealing that like ciliary motion, emergent capabilities of cell groups can be deployed in different ways on very different body architectures. Further, contraction at the wound site is sufficient to close minor injuries but the mechanism behind large scale damage repair is unknown. The ability to self-repair remains an important feature of soft-bodied robots that is difficult to achieve using synthetic materials (47) but emerges naturally from the biology of our constructs.
+
+While current Xenobots do not contain specialized sense organs, they display many behaviors comparable to those observed in highly sensorized robots, including the aggregation of environmental debris. We found that Xenobots can move through and push small amounts of debris, clearing regions of the arena while depositing piles of material elsewhere. To test if this behavior could result purely from the physics of sensorless locomoting bodies, we developed a new GPU-based physics engine that could handle the computational demands of many interacting soft bodies at high mechanical resolution. Our simulation results demonstrate that it is indeed possible to achieve the complex pile-making behavior seen in the physical Xenobots without any feedback from sensors. These modeling studies also provide a framework for predicting the collective behavior of a swarm of cilia-driven physical Xenobots based on their geometry, despite the difficulty of predicting cilia-driven movement of an individual physical Xenobot. Such studies also suggest that machine learning methods may in future automatically design the shape and tissue distribution of simulated biobots to maximize desired collective behavior in silico, which retain that collective function when physical copies of the best designs are constructed and deployed. This seems achievable, as transference was obtained with Xenobots previously, for desired individual behavior (11).
+
+Finally, biobots differ from both robot swarms and modular robots in that they exhibit collective behavior and modularity at least four scales. There is the biobot swarm itself, but each individual biobot is composed of thousands of cells, each of which is itself a complex and semiautonomous machine. Finally, the intricate internal architecture of a cell houses myriad self-motile machines that build and maintain cellular integrity and function. Such multiscale structure poses unique future challenges and opportunities for altering collective function at each and all of these scales.
+
+Together, these in vitro and in silico results provide a pipeline to move between the physical and virtual world, where results in one environment can inform the other. For example, modeling may allow rapid testing of many parameters that would be impossible biologically due to the time and effort involved. Alternatively, biological experiments can provide baselines and constraints to existing models, refining them with values which are translatable to real world scenarios for a range of downstream applications.
+
+The computational modeling of unexpected, emergent properties at multiple scales, and the apparent plasticity of cells with wild-type genomes to cooperate toward the construction of new, functional body architectures, offer a very powerful synergy. Future work to better predict and control of the structure and function of synthetic living machines is likely to broadly impact several fields. Basic evolutionary developmental biology and basal cognition can use this new model to understand self-assembly of body forms and functional controllers. Moreover, existing toolkits of synthetic biology, bioelectrical signaling, and computation via cell networks offer an extremely rich space of possible living machines with useful functions including biomedicine, environmental remediation, and exploration (48-52).
+
+[PAGE 16] Example 2-Kinematic Self-Replication in Reconfigurable Organisms
+
+Reference is made to Kriegman et al., "Kinematic self-replicatoin in reconfigurable organisms," Proc Natl Acad Sci USA. 2021 Dec. 7; 1189 (49): e2112672118. doi: 10.1073/pnas.2112672118, the content of which is incorporated herein by reference in its entirety.
+
+All living systems perpetuate themselves via growth in or on the body, followed by splitting, budding, or birth. We find that synthetic multicellular assemblies can also replicate kinematically by moving and compressing dissociated cells in their environment into functional self copies. This form of perpetuation, previously unseen in any organism, arises spontaneously over days rather than evolving over millennia. We also show how Al methods can design assemblies that postpone loss of replicative ability and perform useful work as a side effect of replication. This suggests other unique and useful phenotypes can be rapidly reached from wild type organisms without selection or genetic engineering, thereby broadening our understanding of the conditions under which replication arises, phenotypic plasticity, and how useful replicative machines may be realized.
+
+[PAGE 16] Significance
+Almost all organisms replicate by growing and then shedding offspring. Some molecules also replicate, but by moving rather than growing: they find and combine building blocks into self copies. Here we show that clusters of cells, if freed from a developing organism, can similarly find and combine loose cells into clusters that look and move like they do, and that this ability does not have to be evolved or introduced by genetic manipulation. Finally, we show that Al can design clusters that replicate better, and perform useful work as they do so. This suggests future technologies may, with little outside guidance, become more useful as they spread, and that life harbors surprising behaviors just below the surface, waiting to be uncovered.
+
+[PAGE 16] Introduction
+Like the other necessary abilities life must possess to survive, replication has evolved into many diverse forms: fission, budding, fragmentation, spore formation, vegetative propagation, parthenogenesis, sexual reproduction, hermaphroditism, and viral propagation. These diverse processes however share a common property: all involve growth within or on the body of the organism. In contrast, a non-growth-based form of self replication dominates at the subcellular level: molecular machines assemble material in their external environment into functional self copies directly, or in concert with other machines. Such kinematic replication has never been observed at higher levels of biological organization, nor was it known whether multicellular systems were even capable of it.
+
+Despite this lack, organisms do possess deep reservoirs of adaptive potential at all levels of organization, allowing for manual or automated interventions that deflect development toward biological forms and functions different from wild type (1), including the growth and maintenance of organs independent of their host organism (2,3,4), or unlocking regenerative capacity (5,6,7). Design, if framed as morphological reconfiguration, can reposition biological tissues or redirect self organizing processes to new stable forms without recourse to genomic editing or transgenes (8). Recent work has shown that individual, genetically unmodified prospective skin (9) and heart muscle (10) cells, when removed from their native embryonic microenvironments and reassembled, can organize into stable forms and behaviors not exhibited by the organism from which the cells were taken, at any point in its natural life cycle. We show here that if cells are similarly liberated, compressed, and placed among more dissociated cells that serve as feedstock, they can exhibit kinematic self replication, a behavior not only absent from the donating organism, but from every other known plant or animal. Further, replication does not evolve in response to selection pressures, but arises spontaneously over five days, given appropriate initial and environmental conditions.
+
+
+[PAGE 17] Results
+Pluripotent stem cells were collected from the animal pole of X. laevis embryos (FIG. 12A) and raised for 24 h in 14° C. mild saline solution. These excised cells, if left together as an animal cap (11) (FIG. 12A,B) or brought back in contact after dissociation (12) (FIG. 12C,D), naturally adhere and differentiate into a spheroid of epidermis covered by ciliated epithelium (13,14) over five days (9) (Sect. S1; FIG. 8A). The resulting wild type reconfigurable organisms move using multiciliated cells present along their surface (which generate flow through the coordinated beating of hairlike projections) and typically follow helical trajectories through an aqueous solution for a period of 10-14 days, before shedding cells and deteriorating as their maternally-provided energy stores are depleted.
+
+Previous studies reported spontaneous aggregation of artificial particles by groups of wild type self-organizing (9) and Al-designed (10) reconfigurable organisms: the particles were gathered and compressed as a side effect of their movement. Here, kinematic self replication was achieved by replacing the synthetic particles in the arena with dissociated X. laevis stem cells as follows.
+
+When 12 wild type reconfigurable organisms are placed in a petri dish amid dissociated stem cells (FIG. 8B), their combined movement re-aggregates some of the dissociated cells into piles (FIG. 8C,D). Piled cells adhere, compact, and, over five days, develop into more ciliated spheroids (FIG. 8E) also capable of self propelled movement. These offspring are then separated from their progenitor spheroids and placed in a new petri dish containing additional dissociated stem cells (FIG. 8F). There, offspring spheroids build further piles, which mature into a new generation of motile spheroids.
+
+In four of five independent trials using densities of 25-150 cells/mm², wild type reconfigurable organisms kinematically self-replicated only one generation. In the fifth trial, two generations were achieved. Each successive generation, the size and number of offspring decreased until offspring were too small to develop into self-motile organisms, and replication halted.
+
+To determine if offspring were indeed built by the kinematics of progenitor organisms rather than just fluid dynamics and self assembly, the dissociated stem cells were observed alone without the progenitors. With no progenitor organisms present, no offspring self-assembled at any of the stem cell concentrations tested (FIG. 13E).
+
+[PAGE 17] Kinematic Self Replication
+Given their rapid loss of replicative ability, reconfigurable organisms can be viewed as autonomous but partially functioning machines potentially amenable to improvement. Autonomous machines that replicate kinematically by combining raw materials into independent functional self copies have long been known to be theoretically possible (15). Since then, kinematic replicators have been of use for reasoning about abiogenesis, but they have also been of engineering interest: If physical replicators could be designed to perform useful work as a side effect of replication, and sufficient building material were discoverable or provided, the replicators would be collectively capable of exponential utility over time, with only a small initial investment in progenitor machine design, manufacture and deployment. To that end, computational (16,17,18), mechanical (19) and robotic (20-23) self replicators have been built, but to date, all are made from artificial materials and are manually designed. Kinematic self replication may also, in contrast to growth-based biological forms of reproduction, offer many options for automated improvement due to its unique reliance on self movement. If progenitor machines could be automatically designed, it may become possible to automatically improve machine replication fidelity (24), increase or alter the utility performed as a side effect of replication, allow replication to feed on more atomic materials (25), control replication speed and spread, and extend the number of replication cycles before the system suffers a loss of replicative ability. We introduce an Al method here that can indeed extend replication cycles by designing the shape of the progenitor reconfigurable organisms.
+
+[PAGE 17] Amplifying Kinematic Self Replication
+Determining sufficient conditions for self replication requires substantial effort and resources. Each round of replication takes one week, and regular media changes are required to minimize contamination. Thus, an evolutionary algorithm was developed and combined with a physics simulator to seek conditions likely to yield increased self replication, measured as the number of rounds of replication achieved before halting, in the simulator. Progenitor shape was chosen as the condition to be varied, as previous work demonstrated that shapes of simulated organisms can be evolved in silico to produce locomotion in cardiac tissue-driven reconfigurable organisms (10), or enhanced synthetic particle aggregation by ciliated-driven reconfigurable organisms (9).
+
+Simulations indicated that some body shapes amplified pile size and replication rounds, while others damped or halted self replication. Some, but not all geometries were better than the spheroids. The most performant geometry discovered by the evolutionary algorithm in silico and manufacturable in vivo was a semi-torus (FIG. 9A). When 12 semitoroidal progenitor organisms were constructed and placed in an arena filled with densities of 61-91 dissociated stem cells/mm², they exhibited the same enhanced piling behavior in vivo observed in silico (FIG. 9B). The offspring produced by the progenitor spheroids (FIG. 29C) were significantly smaller than those produced by the progenitor semitoroids (FIG. 9D), although both progenitor groups produced spheroid offspring. Controlling for dissociated cell density, the diameter of offspring produced by progenitor spheroids was increased 149% by the progenitor semitoroids (p<0.05) (FIG. 9E). The replication rounds achieved by progenitor spheroids (mean=1.2+/-0.4SD, max of 2 shown in FIG. 9F) was increased 250% by the progenitor semitoroids (mean=3+/-0.8SD, max of four shown in FIG. 9G) (p<0.05). The only trial using semitoroids that reproduced less than three rounds was terminated early due to fungal contamination. Across the five trials with wild type progenitor spheroids and the three trials with Al-designed progenitor semitoroids, the size of the first generation of offspring correlated with the total number of generations achieved (rho=0.93; p<0.001).
+
+[PAGE 18] Given the observation that larger spheroids yielded more replication rounds, another, simpler route to increasing self replication seemed possible: increasing the density of dissociated cells. However, FIG. 9E shows that spheroid offspring size does not appreciably increase even when tripling density from 50 to 150 cells/mm² in the presence of sphere progenitors.
+
+The semitoroidal design was found in silico using an evolutionary algorithm (FIG. 10A). First, sixteen progenitor shapes are randomly generated. For each shape, nine simulated organisms with that shape are evaluated within a simulated petri dish (FIG. 10E). If the swarm creates piles large enough to mature into offspring, the simulated offspring are transferred to a fresh dish (FIG. 10F) and the process continues (FIG. 10G). When self replication halts, the shape is assigned a performance score computed as the number of filial generations achieved. Higher performing progenitor shapes are copied, mutated, and replace shapes in the population with poorer performance. Each of the newly-created progenitor shapes is expanded into a swarm, simulated, and scored (FIG. 310C). The algorithm terminates after a fixed amount of computational effort has been expended, and the shape that produced the most replication rounds is extracted (FIG. 10D). Forty nine independent optimization trials were conducted, yielding 49 high performing progenitor shapes (FIG. 10H) that, in silico, produce larger offspring (p<0.0001) and more replication rounds (p<0.0001) than simulated wild type spheroids (FIG. 17).
+
+Conditions other than progenitor shape can be optimized to improve self replication. To that end, the algorithm was modified to evolve terrain shape rather than progenitor shape to amplify self replication in silico for wild type spheroid progenitors. Terrain was shaped by the inclusion of reconfigurable walls that, once positioned along the bottom surface of the simulated dish, constrain the stochastic movement of organisms along more predictable trajectories within predefined limits. Starting with randomly generated terrains, the algorithm evolved terrains that, in silico, increased the number of replication rounds achieved by the wild type spheroid progenitors, compared to their performance on a flat surface (p<0.0001) (FIGS. 18-19).
+
+The algorithm not only can amplify kinematic self replication in a given environment but can also bestow this capability on swarms otherwise incapable of achieving it in adverse environments. In a cluttered environment, the wild type progenitors cannot move enough to self replicate. However, the algorithm discovered progenitor shapes with ventral surfaces that elevated the simulated organisms above the clutter while maintaining frontal plane curvatures that facilitated pile making and the achieving of self replication (FIG. 20).
+
+In contrast to other known forms of biological reproduction, kinematic self replication allows for the opportunity to significantly enlarge and miniaturize offspring each generation. This was observed in vivo (FIG. 8G) and in silico (FIG. 21). This suggests that swarms may be automatically designed in future to produce offspring of diverse size, shape and useful behaviors beyond simply more self replication.
+
+[PAGE 18] Exponential Utility
+von Neumann's original self replicating machine (15) was capable in theory of not just building a functional self copy, but also other machines as a side effect of the replicative process. If these tangential machines performed useful work, the entire system was capable of exponential utility. As long as sufficient feedstock was available, only a small expenditure of energy and manufacture was required to build the first replicative machine. To estimate whether the self replicating reconfigurable organisms introduced here may be capable of exponential utility, we created a computational model using known features of the physical semitoroids to forecast their potential rate of increase in utility. It is assumed that progenitor machines will be placed in semi-structured environments, sufficient feedstock will be within reach, and random action of the swarm will be sufficient to result in useful work. Given these requirements, the task of microcircuit assembly was chosen (FIG. 11A). Although current circuit assembly systems are fast, efficient and reliable, in situ repair or assembly of simple electronics in hostile or remote environments is currently impossible using traditional robots, rendering this a use case worthy of investigation. The simulated environment contains microscale power supplies (26), light emitters (27), and disconnected flexible adhesive wires (28) (FIG. 22). Random action by swarm members can inadvertently move wires and close a circuit between a power supply and a light emitter (FIG. 11A), considered here as useful work. The environment is also assumed to contain dissociated stem cells, such that offspring organisms may be built in parallel with circuit assembly. If any offspring are built, they are divided into two groups and moved into two new dishes with more electronic components and stem cells (FIG. 11B,C). If no offspring are built, the process terminates (FIG. 11D). In this model, utility increases quadratically over time (FIG. 11E).
+
+Superlinear utility here depends on a superlinearly increasing supply of dissociated stem cells. This may be more achievable than mining artificial materials for non-biological robot replicators given that a single female X. laevis can produce thousands of eggs daily, with each embryo containing~3000 cells for dissociation, and X. laevis itself is capable of reproduction and thereby superlinearly increasing egg production. Reconfigurable organisms are thus constructed from a renewable material source which requires less invasive component sourcing than other existing self-motile biological machines (29,30). The quadratic increase in utility predicted by the model in FIG. 11 may not be achievable when in situ circuit assembly and repair matures and the model can be tested empirically. But, as long as the components are small enough in weight and size to be moved, an acceptable temperature range is maintained, sufficient components have already been created and deployed and are nontoxic, and self replication is maintained, the system will produce superlinear increases in
+
+duced by progenitor spheroids was increased 149% by the
+progenitor semitoroids (p<0.05) (FIG. 9E). The replication
+rounds achieved by progenitor spheroids (mean=1.2+/-0.
+4SD, max of 2 shown in FIG. 9F) was increased 250% by
+the progenitor semitoroids (mean=3+/-0.8SD, max of four
+shown in FIG. 9G) (p<0.05). The only trial using semitor-
+oids that reproduced less than three rounds was terminated
+early due to fungal contamination. Across the five trials with
+wild type progenitor spheroids and the three trials with
+Al-designed progenitor semitoroids, the size of the first
+generation of offspring correlated with the total number of
+generations achieved (rho=0.93; p<0.001).
+
+[0229] Given the observation that larger spheroids yielded
+more replication rounds, another, simpler route to increasing
+self replication seemed possible: increasing the density of
+dissociated cells. However, FIG. 9E shows that spheroid
+offspring size does not appreciably increase even when
+tripling density from 50 to 150 cells/mm² in the presence of
+sphere progenitors.
+
+[0230] The semitoroidal design was found in silico using
+an evolutionary algorithm (FIG. 10A). First, sixteen pro-
+genitor shapes are randomly generated. For each shape, nine
+simulated organisms with that shape are evaluated within a
+simulated petri dish (FIG. 10E). If the swarm creates piles
+large enough to mature into offspring, the simulated off-
+spring are transferred to a fresh dish (FIG. 10F) and the
+process continues (FIG. 10G). When self replication halts,
+the shape is assigned a performance score computed as the
+number of filial generations achieved. Higher performing
+progenitor shapes are copied, mutated, and replace shapes in
+the population with poorer performance. Each of the newly-
+created progenitor shapes is expanded into a swarm, simu-
+lated, and scored (FIG. 310C). The algorithm terminates
+after a fixed amount of computational effort has been
+expended, and the shape that produced the most replication
+rounds is extracted (FIG. 10D). Forty nine independent
+optimization trials were conducted, yielding 49 high per-
+forming progenitor shapes (FIG. 10H) that, in silico, pro-
+duce larger offspring (p<0.0001) and more replication
+rounds (p<0.0001) than simulated wild type spheroids (FIG.
+17).
+
+[0231] Conditions other than progenitor shape can be
+optimized to improve self replication. To that end, the
+algorithm was modified to evolve terrain shape rather than
+progenitor shape to amplify self replication in silico for wild
+type spheroid progenitors. Terrain was shaped by the inclu-
+sion of reconfigurable walls that, once positioned along the
+bottom surface of the simulated dish, constrain the stochas-
+tic movement of organisms along more predictable trajec-
+tories within predefined limits. Starting with randomly gen-
+erated terrains, the algorithm evolved terrains that, in silico,
+increased the number of replication rounds achieved by the
+wild type spheroid progenitors, compared to their perfor-
+mance on a flat surface (p<0.0001) (FIGS. 18-19).
+
+[0232] The algorithm not only can amplify kinematic self
+replication in a given environment but can also bestow this
+capability on swarms otherwise incapable of achieving it in
+adverse environments. In a cluttered environment, the wild
+type progenitors cannot move enough to self replicate.
+However, the algorithm discovered progenitor shapes with
+ventral surfaces that elevated the simulated organisms above
+the clutter while maintaining frontal plane curvatures that
+facilitated pile making and the achieving of self replication
+(FIG. 20).
+
+[0233] In contrast to other known forms of biological
+reproduction, kinematic self replication allows for the
+opportunity to significantly enlarge and miniaturize off-
+spring each generation. This was observed in vivo (FIG. 8G)
+and in silico (FIG. 21). This suggests that swarms may be
+automatically designed in future to produce offspring of
+diverse size, shape and useful behaviors beyond simply
+more self replication.
+
+[PAGE 19] Exponential Utility
+
+[0234] von Neumann's original self replicating machine
+(15) was capable in theory of not just building a functional
+self copy, but also other machines as a side effect of the
+replicative process. If these tangential machines performed
+useful work, the entire system was capable of exponential
+utility. As long as sufficient feedstock was available, only a
+small expenditure of energy and manufacture was required
+to build the first replicative machine. To estimate whether
+the self replicating reconfigurable organisms introduced here
+may be capable of exponential utility, we created a compu-
+tational model using known features of the physical semi-
+toroids to forecast their potential rate of increase in utility.
+It is assumed that progenitor machines will be placed in
+semi-structured environments, sufficient feedstock will be
+within reach, and random action of the swarm will be
+sufficient to result in useful work. Given these requirements,
+the task of microcircuit assembly was chosen (FIG. 11A).
+Although current circuit assembly systems are fast, efficient
+and reliable, in situ repair or assembly of simple electronics
+in hostile or remote environments is currently impossible
+using traditional robots, rendering this a use case worthy of
+investigation. The simulated environment contains
+microscale power supplies (26), light emitters (27), and
+disconnected flexible adhesive wires (28) (FIG. 22). Ran-
+dom action by swarm members can inadvertently move
+wires and close a circuit between a power supply and a light
+emitter (FIG. 11A), considered here as useful work. The
+environment is also assumed to contain dissociated stem
+cells, such that offspring organisms may be built in parallel
+with circuit assembly. If any offspring are built, they are
+divided into two groups and moved into two new dishes with
+more electronic components and stem cells (FIG. 11B,C). If
+no offspring are built, the process terminates (FIG. 11D). In
+this model, utility increases quadratically over time (FIG.
+11E).
+
+[0235] Superlinear utility here depends on a superlinearly
+increasing supply of dissociated stem cells. This may be
+more achievable than mining artificial materials for non-
+biological robot replicators given that a single female X.
+laevis can produce thousands of eggs daily, with each
+embryo containing~3000 cells for dissociation, and X. laevis
+itself is capable of reproduction and thereby superlinearly
+increasing egg production. Reconfigurable organisms are
+thus constructed from a renewable material source which
+requires less invasive component sourcing than other exist-
+ing self-motile biological machines (29,30). The quadratic
+increase in utility predicted by the model in FIG. 11 may not
+be achievable when in situ circuit assembly and repair
+matures and the model can be tested empirically. But, as
+long as the components are small enough in weight and size
+to be moved, an acceptable temperature range is maintained,
+sufficient components have already been created and
+deployed and are nontoxic, and self replication is main-
+tained, the system will produce superlinear increases in
+
+[PAGE 19] Discussion
+
+[0236] The ability of genetically unmodified cells to be
+reconfigured into kinematic self replicators, a behavior pre-
+viously unobserved in plants or animals, and the fact that
+this new replicative strategy arises spontaneously rather than
+evolves, further exemplifies the developmental plasticity
+available in biological design (1-8). 
+
+[PAGE 22] Materials and Methods
+
+[0239] Manual construction of reconfigurable organisms.
+
+[PAGE 22] Forecasting utility.
+
+where g is the total number of filial generations achieved, s
+is the size of the largest pile, in voxels, at the end of an
+evaluation period of 3.5 sec (16,366 time steps with step size
+2.14×10-4 sec), and p is the pile size threshold required for
+a pile to develop into an organism. If s is greater than p, a
+new filial generation begins, otherwise the simulation ter-
+minates. A conservative threshold of p=108, two-thirds the
+size of the simulated wild type spheroids, was selected such
+that relatively few randomly generated shapes achieved g>0
+(Sect. S2.2). Such overly conservative estimates can com-
+pensate for inaccuracies in other simulated parameters.
+
+[0252] Statistical hypothesis testing. The diameters of the
+10 largest physical offspring (generation 1) built by wild
+type organisms across five independent trials, and across
+different cell concentrations (gray points, FIG. 9E), were
+compared to the diameters of those built by the semitoroidal
+organisms in three independent trials (pink points, FIG. 9E).
+The diameters of all offspring were normalized by dividing
+by the cell concentration at which they were built. Compar-
+ing offspring size in this way is a conservative test since the
+volumetric difference between two spheres is eight times as
+large as their diametric difference. A Mann-Whitney rank
+test was performed with a sample of eight independent
+measurements: the average offspring diameter within the
+eight independent trials (three trials with progenitor semi-
+toroids, five trials with progenitor spheroids). The null
+hypothesis is that the average size of the semitoroid's
+offspring (normalized by cell concentration) was no different
+than the average size of wild type spheroids' offspring
+(p=0.037). Controlling for false discovery rate (41), this null
+hypothesis can be rejected at the 0.05 level of significance
+(Sect. S4.1).
+
+[0253] Wild type organisms produced just a single filial
+generation in four of the five independent trials. The only
+trial to produce two generations of offspring was the one
+with the highest cell concentration tested (150 cells/mm²).
+The first of three independent trials using the semitoroidal
+organisms resulted in two filial generations at 61 cells/mm²,
+but was then halted because the organisms all contracted a
+motily-compromising fungal infection. In the second and
+third trials using semitoroids, additional precautions were
+taken to avoid fungal infections. Three successive genera-
+tions of offspring were produced at 61 cells/mm²; four
+successive generations of offspring were produced at 91
+cells/mm². A Mann-Whitney rank test was performed. The
+null hypothesis is that the number of generations of self
+replication achieved by the semitoroids (2 g, 3 g, 4 g) was
+no greater than the number of generations produced by the
+wild type spheroids (1 g, 1 g, 1 g, 1 g, 2 g) (p=0.019).
+Controlling for false discovery rate, the null hypothesis is
+rejected at the 0.05 level of significance (Sect. S4.2).
+
+[0254] A Spearman rank-order correlation coefficient of
+0.9322 (p=0.00074) holds between the number of genera-
+tions achieved and the aggregate size of the 10 largest first
+generation offspring.
+
+[0255] Forecasting utility. Three kinds of microelectronic
+components, that adhere permanently upon collision, were
+added to the simulation: light emitters, batteries, and wire
+(FIG. 11A). Each component contains vertically stacked and
+insulated conductors which maintain connectability under
+translational and rotational movement in plane (FIG. 22C-
+E). As a side effect of movement, reconfigurable organisms
+will randomly push together microelectronics modules pres-
+ent in the dish (Sect. S5.1). If a light emitter connects by an
+unbroken circuit of wire to a battery, the light emitter
+switches on permanently (as indicated by a red circled X in
+FIGS. 11 and 22).
+
+[0256] The swarm builds piles, which, if large enough,
+develop into offspring, and the dissociated cells are replen-
+ished, every 3.5 seconds. Piles under the size threshold are
+removed to make way for fresh dissociated cells. Because
+we are interested in estimating utility rather than self-
+replication, progenitors are left in the dish and continue
+building additional offspring alongside their former off-
+spring for another four, 3.5 second periods. After 17.5
+seconds of simulation time, the number of light emitters
+connected to a power supply was recorded, the progenitors
+were removed, and all offspring were extracted. The off-
+spring were then split equally into two new simulated petri
+dishes, each with a new partially-completed circuit (Sect.
+$5.2). Self replication and circuit building begin afresh in
+these two dishes, again for 17.5 seconds. This is the start of
+a binary simulation tree (FIG. 11D) in which each simulation
+begets at most two simulation branches, each containing one
+half of the produced offspring of their root simulation. If
+only a single offspring is created by a swarm after 17.5 sec,
+then only one new simulation branch is started. If no
+offspring were built, then that branch of the binary simula-
+tion tree terminates.
+
+[0257] After 50 simulation bifurcations, 5024 light emit-
+ters were switched on. Symbolic regression (42) was used to
+find the degree of a polynomial function that best explains
+the cumulative number of lights switched on. Regression
+found that utility increases quadratically with time, as esti-
+mates found by symbolic regression all converged toward
+the quadratic curve derived by ordinary least squares: 2.7x2-
+43x+182.4, where x is the number of simulation bifurcations
+(R2=0.9988).
+
+[PAGE 22] REFERENCES AND NOTES FOR EXAMPLE 2
+
+[PAGE 24] Example 3-Supplemental Material for Example 2
+Materials and Methods
+1. Summary of Previous Work Using Reconfigurable
+Organisms.
+
+[0301] The first manuscript to report reconfigurable organ-
+isms (10) introduced a pipeline for automatically designing
+cardiac-driven organisms to exhibit a desired behavior, such
+as locomotion. The overall geometry of each organism, and
+its internal configuration of ectoderm and cardiac muscle,
+were designed ab initio using an evolutionary algorithm and
+physics-based simulation. The most promising designs were
+manufactured by combining cells, according to the com-
+puter-generated blueprint, and shaping the resultant aggre-
+gates with a microcautery electrode and surgical forceps.
+
+[0302] Later (9), it was demonstrated that multiciliated
+epithelial tissue could be used, instead of cardiac muscle, to
+generate cilia-driven "swimming" designs. These ciliated
+designs can be manufactured more rapidly and have a higher
+probability of self motile behavior than the cardiac-driven
+designs. Ciliated reconfigurable organisms can be produced
+two different ways. The excised animal cap tissue, including
+the outer superficial ectodermal layer, can be left intact and
+allowed to heal into mucociliary epidermal spheroids (FIG.
+12A,B). Alternatively, if dissociated stem cells from one or
+more animal caps are brought into contact, they will adhere,
+compact and reassemble into a mucociliary spheroid (FIG.
+12C,D). Using either construction method, the resultant
+aggregates are structurally and functionally equivalent (8).
+We here refer to these motile spheres as wild type recon-
+figurable organisms.
+
+[0303] Хепоpus tissue is ideal for this use case because its
+cell types and organization are known (43-51) and their
+development is controllable: cells can be driven to any
+lineage (52-61) and specific cell types can be inhibited or
+overproduced with molecular or chemical intervention (62-
+66). However, outside of (9) and (10), these tissues have not
+been used as self-motile agents, nor have they been engi-
+neered to exhibit specific motile functions such as particle
+aggregation. In (9), the useful lifespan, velocities, and
+movements of cilia-driven behavior was quantified as these
+metrics were not previously reported. These data were used
+to develop the simulations used in the present work, which
+builds on both studies to show how ciliated tissues can be
+shaped to control their collective behavior and amplify their
+kinematic self replication.
+
+[PAGE 24] 2. The Simulation.
+
+[0304] This section details how self-replication was simu-
+lated. The corresponding Table 1 details how simulation
+parameters were estimated from biology.
+
+[PAGE 24] 2.1. Biophysics in Silico.
+
+[0305] Voxel-based physics. Biological tissues were mod-
+eled as collections of elastic voxels (deformable cuboids)
+(9,10). Two voxels in the same simulation can connect face
+to face on a 3D cartesian grid by a single Euler-Bernoulli
+beam, forming a small body. A beam starts at the center point
+mass of one voxel and ends at the center of the other voxel.
+Beams have rotational and translational stiffness allowing
+for local stretching, compressing, bending, and twisting of
+one voxel mass relative to another.
+
+[0306] Simulated organisms comprise hundreds of voxels.
+Each voxel within an organism is connected by beams to at
+most six other voxels, one on each of its six faces (up, down,
+left, right, front, back). Voxels with less than six beams thus
+have at least one face that is exposed, forming one part of the
+external surface of the organism's body (or part of the
+surface of an internal cavity). Self-collisions between two
+non-neighboring surface voxels are resolved by temporary
+
+[PAGE 24] Gpu Acceleration.
+
+[0308] To simulate the swarms of colliding organisms and
+dissociated stem cells reported in the present work, we used
+voxcraft-sim (67), a GPU-accelerated re-implementation of
+Voxelyze (the physical simulator underpinning VoxCAD
+(40)) with a more scalable tree-based collision system (68).
+In Voxelyze, voxels are evaluated sequentially on a single
+thread of a CPU. In voxcraft-sim, thousands of voxels can be
+evaluated concurrently on a GPU (FIG. 16). Collisions in
+Voxelyze are detected and resolved in an exhaustive pair-
+wise comparison of all n surface voxels, with time com-
+plexity O (n2). In voxcraft-sim, collisions are handled using
+a bounding volume hierarchy (BVH) tree data structure with
+O (n log n).
+
+[PAGE 24] Organisms (Ciliated, Pink Voxels).
+
+[0309] The mature swimming organisms, which are com-
+posed of thousands of living cells, are simulated by hundreds
+of pink colored voxels (FIGS. 8A, 9F-H, 15). Each pink
+voxel thus approximates a section of tissue, rather than a
+one-to-one voxel-to-cell representation. The aggregate
+(metachronal wave) force produced by a patch of beating
+cilia was modeled on each surface voxel as an impulse force
+originating at the center of the voxel and pointing in any
+direction in the horizontal (x,y) plane. The vertical (z)
+moments and forces of a simulated organism's pink voxels
+are locked in plane to stabilize their movement and remove
+the possibility of persistent tumbling behavior in silico.
+Tumbling sometimes does briefly occur in wild type recon-
+figurable organisms, but they tend to glide with a constant
+dorsoventral orientation.
+
+[PAGE 24] Dissociated Stem Cells (Adhesive, Green Voxels).
+
+[0310] Dissociated stem cells are simulated as dissociated
+(beamless) voxel singletons and are colored green. When
+two green voxels collide with each other, a new semi-
+permanent beam is created to bond them together. The beam
+is semi-permanent because it is breakable under conditions
+that are described below. Green voxels do not have cilia and,
+unlike pink voxels of the mature organisms, green voxels are
+free to move and rotate vertically as well as horizontally
+when hit. In an earlier draft of the model, we simulated
+dissociated stem cells with negative buoyancy so that they
+would settle to the bottom of the dish, as observed in vivo.
+However, simulated adhesion under negative buoyancy
+almost always resulted in flat planes of voxels connected
+along the surface plane at the bottom of the dish. The model
+was therefore adjusted so that stem cells were simulated
+with neutral buoyancy. That is, without collision forces
+
+[PAGE 25] Hyperparameters.
+
+[0313] Parameters of the model were estimated from biol-
+ogy according to Table 1. Both the mature organisms' tissue
+(pink voxels) and the dissociated stem cells (green voxels)
+were simulated with Young's modulus of 0.05 MPa, density
+1000 kg/m^3, and 0.5 Poisson's ratio. These material prop-
+erties of the voxels were manually adjusted for simulation
+speed. (Heavier/softer material can be stably simulated with
+a larger time step of numerical integration because their
+resonance frequency is lower than light/stiff material.) These
+properties were kept constant across the two material types
+to minimize instantaneous changes in dynamics when piles
+of stem cells develop into ciliated organisms. The develop-
+ment of adhesive, compacting stem cells into the mature
+tissue of a swimming organism is detailed in the following
+section. 
+
+[PAGE 25] 2.2. Self Replication in Silico.
+Filial Generations.
+
+[PAGE 26] 3. The Al design tools. This
+section describes how parameters of reconfigurable organ-
+isms, and their environment, can be adjusted to generate a
+desired amount of kinematic self replication in reconfigur-
+able organisms. 3.1. Controllability of reconfigurable organ-
+isms. Individual behavior. Previous work (10) used an
+evolutionary algorithm to automatically design the overall
+shape, and distributions of epidermal and cardiac tissues, of
+deciliated reconfigurable organisms, so that they would
+exhibit some desired behavior such as surface-based loco-
+motion in a specified direction. Behavior generated in simu-
+lation was observed in some of the manufactured organisms
+because cardiac-driven movement was sufficiently deter-
+mined by geometry and tissue distribution. The behavior of
+the cilia-driven swimming organisms manufactured here, in
+contrast, are not as obviously determined by their geometry:
+very similarly shaped bodies can move very differently.
+Even a single organism can exhibit diverse movement
+patterns driven by spontaneous transitions in cilia beating
+patterns, rather than traveling along a single trajectory as
+when driven by a regular cardiac pulse. Collective Behavior.
+Predicting cilia-driven movement of an individual organism
+is challenging. But some collective behaviors do appear to
+be predictable in simulation. Specifically, it was found that
+when a swarm of ciliated reconfigurable organisms are
+placed together in the same dish amid debris [carmine dye
+particles (10) or silicone coated iron oxide beads (9)], they
+tend to reliably aggregate the initially scattered debris into
+piles. Previous modeling studies (9) assessed whether body
+shape could affect pile size in silico under precisely tuned
+movement trajectories (a custom set of static cilia forces was
+optimized for each swarm to increase pile size). The data
+suggested that some body shapes were capable of building
+significantly larger piles than others, but this hypothesis was
+not verified in vivo. And because the simulated debris were
+intended to model synthetic material, piles of debris did not
+develop into child organisms. In previous implementations
+of dynamic voxel attachment, piles were only numerically
+stable if inertial forces were heavily overdamped post-
+attachment, resulting in heavy, irregularly-shaped masses of
+tangled voxels that could not stably locomote using cilia
+impulse forces. The "debris" in this present work, instead,
+are dissociated stem cells that, when pushed together into a
+sufficiently large pile, compact and develop into a ciliated
+organism (offspring) capable of swimming and pushing
+together loose stem cells into additional piles (which can
+then develop into yet additional offspring). The control
+problem is thus to adjust the amount of self
+
+[0319] replication produced by the swarm without know-
+ing exactly how the individual organisms will move. 3.2.
+Increasing the amount of self replication. There are various
+adjustable parameters of the self reproducing system that
+can be manually tuned or tuned by an evolutionary algo-
+rithm (Table 1) to affect the amount of self replication. Some
+of these conditions are strict and non-adjustable. Contami-
+nation, for instance, must be avoided or viability will be lost
+between rounds of replication. Likewise, a suitable tempera-
+ture range for frog embryos and ex vivo tissues/cells must be
+maintained in vitro (4° C. to 28° C.). Other conditions are
+more adjustable. For instance, the size of the petri dish and
+the number of organisms could be changed. The size of the
+manually constructed organisms are all 400-600 microns in
+diameter (FIG. 14), but can be made larger or smaller (FIG.
+12). The adherence properties of the dissociated stem cells
+could be altered through the expression of cadherins or
+integrins. Reconfigurable organisms live for 10 to 14 days
+from the energy preloaded in their cells; but they can survive
+for at least three months in a nutrient rich medium (9). The
+speed at which the organisms can move during their life-
+times can be throttled by increasing or decreasing the
+viscosity of their aqueous environment and the friction of
+the arena substrate. The structure of the bottom surface or
+walls of the dish can channel and/or constrain the otherwise
+unpredictable movement of cilia-driven reconfigurable
+organisms (9). Finally, the morphology of the organisms can
+affect how they interact with other objects and with each
+other (9,10). This inherent sensitivity of kinematic self
+replication to adjustable external conditions exposes several
+potential control parameters that can be set by a human
+operator or automatic control system. Here, we focus on two
+such parameters: the shape of the organisms and the struc-
+ture of the terrain on which they operate. Body shape. The
+initial swarm of reconfigurable organisms (FO), which are
+formed by manually deconstructing one-day old Xenopus
+embryos, naturally compact into spheroids due to cell adher-
+ence (referred to here as "wild type"), but they can be carved
+into other shapes by subtraction (FIG. 12F,H). The wild type
+FO spheroids are here modeled as a vertical stack of five
+circular layers of 21, 37, 45, 37, and 21 voxels, respectively,
+yielding a voxelized spheroid composed of 161 voxels with
+a 7:5 width:height aspect ratio (FIG. 15). Other body shapes
+can be formed by removing one or more of the 161 voxels
+in a single simulated spheroid. For simplicity, each of the N
+organisms within a swarm were constrained to share the
+same body shape. Terrain (black voxels). The terrain of a
+simulated petri dish can be modified by adding fixed struc-
+tures along the bottom surface of the dish, in the form of
+black voxels. Because the simulated organisms cannot move
+over or through the fixed structures, the terrain can channel
+the random movement of the organisms along more predict-
+able trajectories within predefined limits. Details of the two
+experiments modifying body shape and terrain, respectively,
+are identical unless stated otherwise. Encoding shape. A
+structure made of voxels (whether body shape or terrain) can
+be encoded as a network that takes as input a set of
+regularly-spaced coordinates within a bounding volume of
+fixed size, and outputs whether or not a voxel is present at
+each of those
+
+[0320] required to observe piling behavior occurring in
+silico, elastic boundaries were implemented which nudge
+the organisms back toward the dissociated stem cells in the
+center of the dish. Hyperparameters. Parameters of the
+model were estimated from biology according to Table 1.
+Both the mature organisms' tissue (pink voxels) and the
+dissociated stem cells (green voxels) were simulated with
+Young's modulus of 0.05 MPa, density 1000 kg/m^3, and
+0.5 Poisson's ratio. These material properties of the voxels
+were manually adjusted for simulation speed. (Heavier/
+softer material can be stably simulated with a larger time
+step of numerical integration because their resonance fre-
+quency is lower than light/stiff material.) These properties
+were kept constant across the two material types to minimize
+instantaneous changes in dynamics when piles of stem cells
+develop into ciliated organisms. The development of adhe-
+sive, compacting stem cells into the mature tissue of a
+swimming organism is detailed in the following section. 2.2.
+Self replication in silico. Filial generations. A swarm of N
+parent organisms (ciliated pink voxels) were placed amid a
+uniform lattice of suspended dissociated stem cells (adhe-
+sive green voxels). These initial N parents are here referred
+to as filial generation zero (FO). In the main experiments,
+there are nine simulated FO organisms (N=9). Each filial
+generation, parents swam for three seconds with random
+cilia impulse forces, where the x,y cilia force for each
+surface voxel, in Newtons, was drawn from a bivariate
+
+[PAGE 26] 
+shape, and distributions of epidermal and cardiac tissues, of
+deciliated reconfigurable organisms, so that they would
+exhibit some desired behavior such as surface-based loco-
+motion in a specified direction. Behavior generated in simu-
+lation was observed in some of the manufactured organisms
+because cardiac-driven movement was sufficiently deter-
+mined by geometry and tissue distribution. The behavior of
+the cilia-driven swimming organisms manufactured here, in
+contrast, are not as obviously determined by their geometry:
+very similarly shaped bodies can move very differently.
+Even a single organism can exhibit diverse movement
+patterns driven by spontaneous transitions in cilia beating
+patterns, rather than traveling along a single trajectory as
+when driven by a regular cardiac pulse. Collective Behavior.
+Predicting cilia-driven movement of an individual organism
+is challenging. But some collective behaviors do appear to
+be predictable in simulation. Specifically, it was found that
+when a swarm of ciliated reconfigurable organisms are
+placed together in the same dish amid debris [carmine dye
+particles (10) or silicone coated iron oxide beads (9)], they
+tend to reliably aggregate the initially scattered debris into
+piles. Previous modeling studies (9) assessed whether body
+shape could affect pile size in silico under precisely tuned
+movement trajectories (a custom set of static cilia forces was
+optimized for each swarm to increase pile size). The data
+suggested that some body shapes were capable of building
+significantly larger piles than others, but this hypothesis was
+not verified in vivo. And because the simulated debris were
+intended to model synthetic material, piles of debris did not
+develop into child organisms. In previous implementations
+of dynamic voxel attachment, piles were only numerically
+stable if inertial forces were heavily overdamped post-
+attachment, resulting in heavy, irregularly-shaped masses of
+tangled voxels that could not stably locomote using cilia
+impulse forces. The "debris" in this present work, instead,
+are dissociated stem cells that, when pushed together into a
+sufficiently large pile, compact and develop into a ciliated
+organism (offspring) capable of swimming and pushing
+together loose stem cells into additional piles (which can
+then develop into yet additional offspring). The control
+problem is thus to adjust the amount of self
+
+[PAGE 26]
+replication produced by the swarm without know-
+ing exactly how the individual organisms will move. 3.2.
+Increasing the amount of self replication. There are various
+adjustable parameters of the self reproducing system that
+can be manually tuned or tuned by an evolutionary algo-
+rithm (Table 1) to affect the amount of self replication. Some
+of these conditions are strict and non-adjustable. Contami-
+nation, for instance, must be avoided or viability will be lost
+between rounds of replication. Likewise, a suitable tempera-
+ture range for frog embryos and ex vivo tissues/cells must be
+maintained in vitro (4° C. to 28° C.). Other conditions are
+more adjustable. For instance, the size of the petri dish and
+the number of organisms could be changed. The size of the
+manually constructed organisms are all 400-600 microns in
+diameter (FIG. 14), but can be made larger or smaller (FIG.
+12). The adherence properties of the dissociated stem cells
+could be altered through the expression of cadherins or
+integrins. Reconfigurable organisms live for 10 to 14 days
+from the energy preloaded in their cells; but they can survive
+for at least three months in a nutrient rich medium (9). The
+speed at which the organisms can move during their life-
+times can be throttled by increasing or decreasing the
+viscosity of their aqueous environment and the friction of
+the arena substrate. The structure of the bottom surface or
+walls of the dish can channel and/or constrain the otherwise
+unpredictable movement of cilia-driven reconfigurable
+organisms (9). Finally, the morphology of the organisms can
+affect how they interact with other objects and with each
+other (9,10). This inherent sensitivity of kinematic self
+replication to adjustable external conditions exposes several
+potential control parameters that can be set by a human
+operator or automatic control system. Here, we focus on two
+such parameters: the shape of the organisms and the struc-
+ture of the terrain on which they operate. Body shape. The
+initial swarm of reconfigurable organisms (FO), which are
+formed by manually deconstructing one-day old Xenopus
+embryos, naturally compact into spheroids due to cell adher-
+ence (referred to here as "wild type"), but they can be carved
+into other shapes by subtraction (FIG. 12F,H). The wild type
+FO spheroids are here modeled as a vertical stack of five
+circular layers of 21, 37, 45, 37, and 21 voxels, respectively,
+yielding a voxelized spheroid composed of 161 voxels with
+a 7:5 width:height aspect ratio (FIG. 15). Other body shapes
+can be formed by removing one or more of the 161 voxels
+in a single simulated spheroid. For simplicity, each of the N
+organisms within a swarm were constrained to share the
+same body shape. Terrain (black voxels). The terrain of a
+simulated petri dish can be modified by adding fixed struc-
+tures along the bottom surface of the dish, in the form of
+black voxels. Because the simulated organisms cannot move
+over or through the fixed structures, the terrain can channel
+the random movement of the organisms along more predict-
+able trajectories within predefined limits. Details of the two
+experiments modifying body shape and terrain, respectively,
+are identical unless stated otherwise. Encoding shape. A
+structure made of voxels (whether body shape or terrain) can
+be encoded as a network that takes as input a set of
+regularly-spaced coordinates within a bounding volume of
+fixed size, and outputs whether or not a voxel is present at
+each of those
+
+[PAGE 27]
+required to observe piling behavior occurring in
+silico, elastic boundaries were implemented which nudge
+the organisms back toward the dissociated stem cells in the
+center of the dish. Hyperparameters. Parameters of the
+model were estimated from biology according to Table 1.
+Both the mature organisms' tissue (pink voxels) and the
+dissociated stem cells (green voxels) were simulated with
+Young's modulus of 0.05 MPa, density 1000 kg/m^3, and
+0.5 Poisson's ratio. These material properties of the voxels
+were manually adjusted for simulation speed. (Heavier/
+softer material can be stably simulated with a larger time
+step of numerical integration because their resonance fre-
+quency is lower than light/stiff material.) These properties
+were kept constant across the two material types to minimize
+instantaneous changes in dynamics when piles of stem cells
+develop into ciliated organisms. The development of adhe-
+sive, compacting stem cells into the mature tissue of a
+swimming organism is detailed in the following section. 2.2.
+Self replication in silico. Filial generations. A swarm of N
+parent organisms (ciliated pink voxels) were placed amid a
+uniform lattice of suspended dissociated stem cells (adhe-
+sive green voxels). These initial N parents are here referred
+to as filial generation zero (FO). In the main experiments,
+there are nine simulated FO organisms (N=9). Each filial
+generation, parents swam for three seconds with random
+cilia impulse forces, where the x,y cilia force for each
+surface voxel, in Newtons, was drawn from a bivariate
+uniform distribution from (-0.3,-0.3) to (0.3,0.3). These
+cilia forces are held constant, relative to the orientation of
+the voxel, for one second of simulation time (4676 time
+steps), yielding ballistic swimming trajectories. After every
+second of simulation time, all of the cilia forces were
+replaced by new random values, resulting in three indepen-
+dent random trajectories of collective swimming behavior.
+As simulated parents swim along the surface of the dish,
+they collide with the simulated dissociated stem cells, which
+adhere into piles of stem cells that slowly compact together.
+At the end of their three second evaluation period, parents
+were removed from the simulation and the piles were
+allowed to compact and spherify for an additional 0.5
+seconds of 2 simulation time. The size of the largest pile was
+then compared against a threshold of 108 voxels, two-thirds
+the size of the unsculpted, 161-voxel FO spheres. Piles
+smaller than the threshold (less than 108 voxels) were
+removed from simulation, and piles larger than the threshold
+(if any) develop instantaneously into child organisms with
+cilia (green voxels become pink voxels) (FIG. 15). This first
+set of organisms assembled by the FO parents are referred to
+as the first filial generation (F1). Empty space in the dish
+surrounding the F1 organisms (due to the removal of parents
+and small piles below the threshold) is repopulated by a
+fresh grid of dissociated stem cells, and a new 3.5 second
+evaluation period begins in which the F1 organisms are the
+pile-building parents. The F1 organisms may build piles, the
+largest of which may develop into F2 organisms, which in
+turn may build piles of their own, and so on. The simulation
+ends when no parents (pink voxels) remain in the dish, or
+after a maximum of five filial generations (F5) elapse, for at
+most 6*3.5-21 seconds.
+Hyperparameters.
+
+[PAGE 27]
+The behavior of each filial generation was simu-
+lated for 16,366 time steps (just long enough to see pile-
+making behavior occur), with step size 2.14×10-4 sec (just
+low enough to ensure simulation stability; for details see
+(40)), yielding an evaluation period of 3.5 simulation sec-
+onds. Table 1 details how these simulated dynamics corre-
+spond to properties of the physical self-replicating system,
+in vivo.
+3. The AI Design Tools.
+
+[PAGE 27]
+This section describes how parameters of recon-
+figurable organisms, and their environment, can be adjusted
+to generate a desired amount of kinematic self replication in
+reconfigurable organisms.
+3.1. Controllability of Reconfigurable Organisms.
+Individual Behavior.
+
+[PAGE 27]
+Previous work (10) used an evolutionary algorithm
+to automatically design the overall shape, and distributions
+of epidermal and cardiac tissues, of deciliated reconfigurable
+organisms, so that they would exhibit some desired behavior
+such as surface-based locomotion in a specified direction.
+Behavior generated in simulation was observed in some of
+the manufactured organisms because cardiac-driven move-
+ment was sufficiently determined by geometry and tissue
+distribution. The behavior of the cilia-driven swimming
+organisms manufactured here, in contrast, are not as obvi-
+ously determined by their geometry: very similarly shaped
+bodies can move very differently. Even a single organism
+can exhibit diverse movement patterns driven by spontane-
+ous transitions in cilia beating patterns, rather than traveling
+along a single trajectory as when driven by a regular cardiac
+pulse.
+Collective Behavior.
+
+[PAGE 27]
+Predicting cilia-driven movement of an individual
+organism is challenging. But some collective behaviors do
+appear to be predictable in simulation. Specifically, it was
+found that when a swarm of ciliated reconfigurable organ-
+isms are placed together in the same dish amid debris
+[carmine dye particles (10) or silicone coated iron oxide
+beads (9)], they tend to reliably aggregate the initially
+scattered debris into piles. Previous modeling studies (9)
+assessed whether body shape could affect pile size in silico
+under precisely tuned movement trajectories (a custom set of
+static cilia forces was optimized for each swarm to increase
+pile size). The data suggested that some body shapes were
+capable of building significantly larger piles than others, but
+this hypothesis was not verified in vivo. And because the
+simulated debris were intended to model synthetic material,
+piles of debris did not develop into child organisms. In
+previous implementations of dynamic voxel attachment,
+piles were only numerically stable if inertial forces were
+heavily overdamped post-attachment, resulting in heavy,
+irregularly-shaped masses of tangled voxels that could not
+stably locomote using cilia impulse forces.
+
+[PAGE 27]
+The "debris" in this present work, instead, are
+dissociated stem cells that, when pushed together into a
+sufficiently large pile, compact and develop into a ciliated
+organism (offspring) capable of swimming and pushing
+together loose stem cells into additional piles (which can
+then develop into yet additional offspring). The control
+problem is thus to adjust the amount of self replication
+produced by the swarm without knowing exactly how the
+individual organisms will move.
+3.2. Increasing the Amount of Self Replication.
+
+[PAGE 27]
+There are various adjustable parameters of the self
+reproducing system that can be manually tuned or tuned by
+an evolutionary algorithm (Table 1) to affect the amount of
+self replication. Some of these conditions are strict and
+non-adjustable. Contamination, for instance, must be
+avoided or viability will be lost between rounds of replica-
+tion. Likewise, a suitable temperature range for frog
+embryos and ex vivo tissues/cells must be maintained in
+vitro (4° C. to 28° C.). Other conditions are more adjustable.
+For instance, the size of the petri dish and the number of
+organisms could be changed. The size of the manually
+constructed organisms are all 400-600 microns in diameter
+(FIG. 14), but can be made larger or smaller (FIG. 12). The
+adherence properties of the dissociated stem cells could be
+altered through the expression of cadherins or integrins.
+Reconfigurable organisms live for 10 to 14 days from the
+energy preloaded in their cells; but they can survive for at
+least three months in a nutrient rich medium (9). The speed
+at which the organisms can move during their lifetimes can
+be throttled by increasing or decreasing the viscosity of their
+aqueous environment and the friction of the arena substrate.
+The structure of the bottom surface or walls of the dish can
+channel and/or constrain the otherwise unpredictable move-
+ment of cilia-driven reconfigurable organisms (9). Finally,
+
+[PAGE 28]
+the morphology of the organisms can affect how they
+interact with other objects and with each other (9,10). This
+inherent sensitivity of kinematic self replication to adjust-
+able external conditions exposes several potential control
+parameters that can be set by a human operator or automatic
+control system. Here, we focus on two such parameters: the
+shape of the organisms and the structure of the terrain on
+which they operate.
+Body Shape.
+
+[PAGE 28]
+The initial swarm of reconfigurable organisms
+(F0), which are formed by manually deconstructing one-day
+old Xenopus embryos, naturally compact into spheroids due
+to cell adherence (referred to here as "wild type"), but they
+can be carved into other shapes by subtraction (FIG. 12F,H).
+The wild type FO spheroids are here modeled as a vertical
+stack of five circular layers of 21, 37, 45, 37, and 21 voxels,
+respectively, yielding a voxelized spheroid composed of 161
+voxels with a 7:5 width:height aspect ratio (FIG. 15). Other
+body shapes can be formed by removing one or more of the
+161 voxels in a single simulated spheroid. For simplicity,
+each of the N organisms within a swarm were constrained to
+share the same body shape.
+Terrain (Black Voxels).
+
+[PAGE 28]
+The terrain of a simulated petri dish can be modi-
+fied by adding fixed structures along the bottom surface of
+the dish, in the form of black voxels. Because the simulated
+organisms cannot move over or through the fixed structures,
+the terrain can channel the random movement of the organ-
+isms along more predictable trajectories within predefined
+limits. Details of the two experiments modifying body shape
+and terrain, respectively, are identical unless stated other-
+wise.
+Encoding Shape.
+
+[PAGE 28]
+A structure made of voxels (whether body shape or
+terrain) can be encoded as a network that takes as input a set
+of regularly-spaced coordinates within a bounding volume
+of fixed size, and outputs whether or not a voxel is present
+at each of those three-dimensional locations. Consistent with
+previous computational models of reconfigurable organisms
+(10), a feedforward Compositional Pattern-Producing Net-
+work, or CPPN (39), was used to encode voxel structures. A
+CPPN consists of vertices connected by weighted edges.
+Each edge multiplies its input value by a real valued weight
+between-1 and 1. Each vertex sums the values of its input
+edges and outputs a function applied to that sum. The
+function encoded in a node is drawn from the following set:
+sine, signum, square, absolute value, square root of the
+absolute value; and the negations of those five functions. In
+the last layer of the network, positive output values corre-
+spond to present voxels and negative values correspond to
+empty space (an additional signum function is applied). The
+largest connected component of voxels was taken to be the
+structure. Alteration to edge weights and/or changes in
+node-encoded functions alters the structure output by the
+network. For more details, see (69).
+
+[PAGE 28]
+When encoding body shape, for the main experi-
+ments within a flat petri dish, networks were restricted to
+removing vertical columns of voxels along the z axis, at
+particular positions in (x,y), from the default spheroid, rather
+than removing individual voxels. This ensured that, if a
+simulated shape were to be instantiated as a physical recon-
+figurable organism, organisms could be rapidly shaped using
+coarse subtraction, instead of sculpting intricate 3D con-
+cavities into each one (10). Similarly, when encoding terrain,
+only one-voxel tall structures (z=0) were considered so that
+all of the immovable black voxels rested on the bottom of
+the dish. Thus, in both cases, only the x and y coordinates
+need to be input to the encoding network.
+Measuring the Amount of Self Replication.
+
+[PAGE 28]
+The amount of self replication achieved by a spe-
+cific body shape or terrain can be measured by the number
+of filial generations (g) they generate. The fitness, f, of a
+CPPN is computed as:
+f = s/p + g,
+(Eqn. 1)
+where s is the size of the largest pile (the number of voxels
+it contains) at the end of the evaluation period; p is the pile
+size threshold required for a pile to develop into an organism
+(if s is greater than p, a new filial generation begins,
+otherwise the evaluation period ends); and g is the number
+of filial generations achieved. A conservative threshold
+(s=108 voxels) of two-thirds the size of the simulated wild
+type spheres (161 voxels) was selected such that relatively
+few randomly generated swarms achieved g>0. This signifi-
+cantly reduced the computational effort required to find
+viable terrains and body shapes that increase the amount of
+self replication. It also matched the observation that physical
+swarms composed of the wild type spheroids usually only
+managed one generation of replication.
+Optimization Algorithm.
+
+[PAGE 28]
+CPPNs were optimized to output replicator shapes,
+or terrains, that cause more self replication than that
+observed in the wild type spheroids. An evolutionary algo-
+rithm was used because the authors have considerable
+experience using this particular algorithm to evolve soft
+robots and reconfigurable organisms in previous work.
+Many optimization methods could be adapted for optimizing
+CPPNs, but derivative-free optimization methods such as
+evolutionary algorithms are a natural choice for this problem
+because the relationship between behavior and morphology
+was modeled using a nondifferentiable physical simulator.
+More specifically, low self replicative ability cannot yet be
+localized to specific missing parts of specific piles. These
+missing pile parts in turn cannot yet be propagated back
+through the physical simulator to implicate movement pat-
+terns of specific swarm members, and back further to
+specific parts of the replicators' bodies causing those move-
+ments. Finally, implicated body parts cannot be propagated
+back further into the CPPN, to implicate specific edges and
+nodes that should be tuned to rectify the low replicative
+ability. In addition, evolutionary rather than learning algo-
+rithms are desirable because initial conditions of the system
+(body shapes, terrains) are optimized here, rather than
+optimizing the control of each organism.
+
+[PAGE 28]
+The evolutionary algorithm used here is a multi-
+objective optimization algorithm (38) that continuously
+injects new design alternatives into the population, and
+reduces selection pressure on newer designs, in order to
+
+[PAGE 29]
+favor the evolution of new, different ways to achieve self
+replication. Each independent evolutionary trial starts with
+its own unique set of 16 initially random CPPNs, and a
+sequence of random (but static) cilia forces (described in
+Sect. S2.1). Each CPPN is translated into a swarm, or a
+terrain for the default swarm of spheroids. The swarm is
+simulated and its self replicative ability is measured. A
+modified copy is made of all 16 CPPNs in the population,
+and each copy inherits the lineage age of its parent CPPN.
+A mutation adds, removes, or modifies one of the network's
+edges or vertices. Vertex modification involves replacing the
+activation function currently encoded there with a function
+randomly selected from the following set: sine, signum,
+square, absolute value, square root of the absolute value. The
+age of each of the 32 CPPNs is incremented by one, and one
+new CPPN with a lineage age of zero is randomly generated.
+The 17 new swarms produced by the 17 new CPPNs are
+evaluated in silico, as described in Sect. S2.2. Then, the
+entire population of 16±17=33 CPPNs are then sorted, on
+the basis of their age and fitness scores (Eqn. 1), into Pareto
+fronts. The first Pareto front consists of the youngest and
+most fit CPPNs, which are by definition nondominated. The
+second Pareto front consists of CPPNs that are dominated by
+at least one CPPN in the first front, but are not dominated by
+any other CPPNs. The N-th front consists of CPPNs that are
+dominated only by CPPNs the preceding N-1 fronts. Starting
+with the first Pareto front, successive fronts are kept in their
+entirety until doing so would overfill the population past its
+original size, 16 CPPNs, at which point CPPNs are added
+stochastically with probability proportional to their fitness
+until the population contains 16 CPPNs.
+
+[PAGE 29]
+When evolving body shape, 49 independent evo-
+lutionary trials were conducted. Each evolutionary trial
+started with its own unique set of random shape-encoding
+CPPNs and sets of random cilia forces, yielding 49 cham-
+pion swarms: the body shape that achieved the highest value
+of Eqn. 1 above, in each trial.
+
+[PAGE 29]
+Runtime. Each evolutionary trial was conducted
+using eight NVIDIA Tesla V100s for a maximum of 48
+hours wall-clock time or 500 updates of the CPPN popula-
+tion (whichever came first). The runtime varies due to the
+algorithm's stochasticity; some swarms produce more filial
+generations than others and thus require more time to
+simulate. Because evaluating swarms in simulation is the
+computational bottleneck, the algorithm is readily paralleliz-
+able: doubling the number of GPUs would allow halving the
+wall-clock time for the same population size, or doubling the
+size of the CPPN population that can be evaluated using the
+same amount of wall-clock time.
+3.3. Inhibiting and Recovering Self Replication.
+
+[PAGE 29]
+A simple way to stop kinematic self replication is
+to stop supplying the system with additional building mate-
+rials (here, dissociated stem cells). This is one of the reasons
+that
+
+[PAGE 29]
+kinematic self replication is inherently more con-
+trollable than the other nine known forms of biological
+replication. Another way to slow or halt a kinematic self-
+replicator is to impede its movement in a cluttered environ-
+ment.
+Cluttered Environment.
+
+[PAGE 29]
+To investigate whether the evolutionary algorithm
+could impart self replication to a system otherwise incapable
+of it, a cluttered environment was created by attaching a
+sparse uniform grid of immovable black voxels to the
+bottom of the dish (FIG. 20). The simulated wild type
+reconfigurable organisms could no longer spontaneously
+self-replicate in this environment because their movement is
+contained within a small region surrounding their starting
+position (FIG. 20A). However, if sections are removed from
+the simulated organisms' ventral surfaces, they can glide
+over the top of the static debris (FIG. 20B-D). The challenge
+here is to not only regain movement, but to recover self
+replication. This requires carving away voxels on the ventral
+surface of a body shape while retaining the ability to capture
+and aggregate dissociated cells into piles. Thus, instead of
+carving away entire columns at a time (which simplifies
+manufacture), independent removal of any voxel within the
+sphere was permitted.
+4. Statistical Analysis.
+4.1. Size of Offspring.
+In Silico.
+
+[PAGE 29]
+Five hundred simulations were conducted in which
+two groups the wild type spheroids and the evolved semi-
+toroids built piles. In each simulation, the swarm moved
+differently, as each member was driven by different random
+cilia forces. The simulations were terminated before any
+piles could develop into F1 organisms. The null hypothesis
+is that the average size of the piles built by the spheroids was
+no different from the size of those built by the optimized
+shape (the semi-torus). Because the same random cilia
+forces were used for the spheres and the evolved shape, the
+two samples are dependent. Thus, a Wilcoxon test was
+performed, resulting in p=3.9*10-5 (W=6311.5). Control-
+ling for false discovery rate, the null hypothesis is rejected
+at the 0.0001 level of significance.
+In Vivo.
+
+[PAGE 29]
+The sizes of the 10 largest physical F1 offspring
+generated by each of eight different swarms was recorded.
+Five of the swarms were composed of wild type spheroids,
+one was composed of spheroids double the size, and one was
+composed of flattened spheroids (gray points in FIG. 9E).
+Each swarm behaved within a dish with differing dissociated
+cell density. The sizes of the 10 largest physical F1 offspring
+generated by each of three additional swarms, composed of
+the automatically designed semitoroid, were also recorded,
+again at different dissociated cell densities (pink points in
+FIG. 9E). Within each set of 10, the size of the offspring was
+divided by the cell density in which they were built. The null
+hypothesis is that the average diameter of the offspring
+(normalized by cell concentration) built by semitoroids
+progenitors across three independent trials was no different
+than the average diameter of the offspring built across five
+independent trials by the wild type spheroids or spheroid
+variants. Comparing offspring size in this way is a conser-
+vative test since the volumetric difference between two
+spheres is eight times as large as their corresponding dif-
+ference in diameter. A Mann Whitney U test was performed,
+resulting in p=0.0368 (U=1.0). Controlling for false discov-
+ery rate, the null hypothesis is rejected at the 0.05 level of
+significance.
+4.2. Number of Generations.
+In Silico.
+
+[PAGE 30]
+The 49 evolutionary trials resulted in progenitor
+shapes that self-replicated for two to three generations in
+silico, under strict conditions: a pile size threshold of two
+thirds the number of voxels contained within the simulated
+wild type spheres. Two thirds is a strict threshold because the
+best estimate is closer to one fourth (see Table 1). All 49
+trials were compared to evaluations of spheres. The wild
+type spheres did not self replicate for more than a single
+generation, in any of the 49 trials. Bootstrapped confidence
+intervals of the 49 best swarms from each trial were com-
+pared against 49 of the wild type spheroid swarms to
+determine the probability of overlap (FIG. 17A). Controlling
+for false discovery rate the null hypothesis is rejected at the
+0.0001 level of significance.
+
+[PAGE 30]
+The same procedure was performed for terrain
+optimization with wild type spheroid swarms in silico (FIG.
+18). The null hypothesis is that of no difference in the
+number of filial generations produced by swarms operating
+on the best evolved terrains (e.g. FIG. 19) and those oper-
+ating on the flat surface plane of a standard petri dish (e.g.
+FIG. 15). Based on the bootstrapped confidence intervals,
+and controlling for false discovery rate, the null hypothesis
+is rejected at the 0.0001 level of significance.
+In Vivo.
+
+[PAGE 30]
+The wild type reconfigurable organisms produced
+just a single filial generation in four of the five independent
+trials. The only trial to produce two generations of offspring
+required the highest cell concentration we tested (150 cells/
+mm²). In the first of three self replication trials using the
+optimized body shape (semitoroids) resulted in two genera-
+tions at 61 cells/mm² but then degraded into immobility due
+to a fungal infection. In the second and third trials using the
+optimized body shape, additional precautions were taken to
+avoid fungal infections. Three successive generations of
+offspring were produced at 61 cells/mm²; four successive
+generations of offspring were produced at 91 cells/mm². The
+null hypothesis is that the number of generations of self
+replication achieved by the optimized design (2 g, 3 g, 4 g)
+was no greater than the number of generations produced by
+the wild type spheroids (1 g, 1 g, 1 g, 1 g, 2 g). A Mann
+Whitney U test was performed: p=0.0188. (U=0.5). Con-
+trolling for false discovery rate, the null hypothesis is
+rejected at the 0.05 level of significance.
+4.3. Correlation Between First Generation Size and Total
+Number of Generations in Vivo.
+
+[PAGE 30]
+There was a Spearman rank-order correlation coef-
+ficient of 0.9322 (p=0.00074) between the number of rep-
+lication generations achieved and the aggregate size of the
+10 largest first generation offspring.
+5. Utility Forecast.
+
+[PAGE 30]
+A computational model was created to predict the
+amount of utility (useful work) the self-replicating swarm
+may be capable of, if it was provided with reachable but
+unassembled parts in a semi-structured environment. To that
+end, a circuit completion task was chosen. This section
+details how the parameters were estimated for the self-
+replicating swarm and the electronic parts. The model incor-
+porates many biological details from the physical reconfig-
+urable organisms reported here, and from emerging
+microscale electronic components. But, many of the details
+estimated in the model will be refined when more is known
+about how such organisms can or cannot interact with
+various microscale environments containing artificial mate-
+rials. This will, in future, yield better forecasts of the
+potential utility of this technology.
+5.1. Circuit Components.
+
+[PAGE 30]
+Three types of modular microelectronic compo-
+nents were simulated: light emitters, batteries, and wire.
+Each component contains vertically stacked and insulated
+conductors, which maintains connectability under transla-
+tional and rotational movement in plane (FIG. 22C-E). That
+is, the electronic components, if resting on a surface plane,
+can be pushed together and connected by a swarm of
+reconfigurable organisms that move along the same surface.
+The simulated wires (blue voxels in FIG. 22A) adhere to
+each other upon collision like the simulated dissociated stem
+cells do (green voxels). Except, once the wires attach, they
+do not detach (there is no stochastic spherification as in the
+stem cells). Current emanates from a power source that
+could, if instantiated physically, be supplied by a microbat-
+tery or electrodes, and is approximated in simulation by
+passing discrete packets of voltage along neighboring voxels
+in a chain of connected voxels. If a packet of voltage reaches
+a light emitter, it is switched on, permanently.
+
+[PAGE 30]
+There exist atomically-thin light emitters with light
+emission visible to the naked eye that are made of just a few
+layers of graphene, stretched across a 2D sheet<5 µM in
+length and width and powered at ~0.4 V µm¯¹ (27). Any
+organisms gathering and connecting these emitters to a
+power supply would have to be removed or sacrificed before
+powering the circuit. The number of switched-on light
+emitters was chosen here as the unit of "useful work"
+performed by a self-replicating swarm, but the choice was
+arbitrary. There are other kinds of microscale resistors, such
+as transistors, which could be used instead, or any number
+of other kinds of microscale inspection, maintenance or
+assembly tasks.
+5.2. Estimated Utility.
+Task Environment.
+
+[PAGE 30]
+Sixteen initially disconnected strips of vertically
+stacked and insulated conductive voxels ("wires"; blue
+voxels) are spread out along the edge of the soft boundary
+of a simulated dish (FIGS. 11 and 22). In each corner, two
+of the strips are connected at a 90 degree angle to a small
+light emitter (white voxels). Two of the remaining eight
+strips along the edge, on opposing sides, are attached to
+power supplies. Nine reconfigurable organisms are placed in
+the center of the simulated dish amid a grid of dissociated
+stem cells. Twelve additional strips of vertically-insulated
+conductive voxels are placed among them, randomly ori-
+ented north-south or east-west with equal probability (FIG.
+11B,C). Potential current flow is shown in yellow propagat-
+ing down blue conductive voxels connected to a power
+supply. As organisms move in their dish, they self replicate
+(by building piles out of dissociated stem cells) and, simul-
+taneously, snap together the conductive strips of voxels in
+the dish as a side effect of movement. If one of the corner
+
+[PAGE 30] 4.2. Number of Generations.
+
+In Silico.
+
+[0341] The 49 evolutionary trials resulted in progenitor shapes that self-replicated for two to three generations in silico, under strict conditions: a pile size threshold of two thirds the number of voxels contained within the simulated wild type spheres. Two thirds is a strict threshold because the best estimate is closer to one fourth (see Table 1). All 49 trials were compared to evaluations of spheres. The wild type spheres did not self replicate for more than a single generation, in any of the 49 trials. Bootstrapped confidence intervals of the 49 best swarms from each trial were compared against 49 of the wild type spheroid swarms to determine the probability of overlap (FIG. 17A). Controlling for false discovery rate the null hypothesis is rejected at the 0.0001 level of significance.
+
+[0342] The same procedure was performed for terrain optimization with wild type spheroid swarms in silico (FIG. 18). The null hypothesis is that of no difference in the number of filial generations produced by swarms operating on the best evolved terrains (e.g. FIG. 19) and those operating on the flat surface plane of a standard petri dish (e.g. FIG. 15). Based on the bootstrapped confidence intervals, and controlling for false discovery rate, the null hypothesis is rejected at the 0.0001 level of significance.
+
+In Vivo.
+
+[0343] The wild type reconfigurable organisms produced just a single filial generation in four of the five independent trials. The only trial to produce two generations of offspring required the highest cell concentration we tested (150 cells/ mm²). In the first of three self replication trials using the optimized body shape (semitoroids) resulted in two generations at 61 cells/mm² but then degraded into immobility due to a fungal infection. In the second and third trials using the optimized body shape, additional precautions were taken to avoid fungal infections. Three successive generations of offspring were produced at 61 cells/mm²; four successive generations of offspring were produced at 91 cells/mm². The null hypothesis is that the number of generations of self replication achieved by the optimized design (2 g, 3 g, 4 g) was no greater than the number of generations produced by the wild type spheroids (1 g, 1 g, 1 g, 1 g, 2 g). A Mann Whitney U test was performed: p=0.0188. (U=0.5). Controlling for false discovery rate, the null hypothesis is rejected at the 0.05 level of significance.
+
+[PAGE 30] 4.3. Correlation Between First Generation Size and Total Number of Generations in Vivo.
+
+[0344] There was a Spearman rank-order correlation coefficient of 0.9322 (p=0.00074) between the number of replication generations achieved and the aggregate size of the 10 largest first generation offspring.
+
+[PAGE 30] 5. Utility Forecast.
+
+[0345] A computational model was created to predict the amount of utility (useful work) the self-replicating swarm may be capable of, if it was provided with reachable but unassembled parts in a semi-structured environment. To that end, a circuit completion task was chosen. This section details how the parameters were estimated for the self-replicating swarm and the electronic parts. The model incorporates many biological details from the physical reconfigurable organisms reported here, and from emerging microscale electronic components. But, many of the details estimated in the model will be refined when more is known about how such organisms can or cannot interact with various microscale environments containing artificial materials. This will, in future, yield better forecasts of the potential utility of this technology.
+
+[PAGE 30] 5.1. Circuit Components.
+
+[0346] Three types of modular microelectronic components were simulated: light emitters, batteries, and wire. Each component contains vertically stacked and insulated conductors, which maintains connectability under translational and rotational movement in plane (FIG. 22C-E). That is, the electronic components, if resting on a surface plane, can be pushed together and connected by a swarm of reconfigurable organisms that move along the same surface. The simulated wires (blue voxels in FIG. 22A) adhere to each other upon collision like the simulated dissociated stem cells do (green voxels). Except, once the wires attach, they do not detach (there is no stochastic spherification as in the stem cells). Current emanates from a power source that could, if instantiated physically, be supplied by a microbattery or electrodes, and is approximated in simulation by passing discrete packets of voltage along neighboring voxels in a chain of connected voxels. If a packet of voltage reaches a light emitter, it is switched on, permanently.
+
+[0347] There exist atomically-thin light emitters with light emission visible to the naked eye that are made of just a few layers of graphene, stretched across a 2D sheet<5 µM in length and width and powered at ~0.4 V µm¯¹ (27). Any organisms gathering and connecting these emitters to a power supply would have to be removed or sacrificed before powering the circuit. The number of switched-on light emitters was chosen here as the unit of "useful work" performed by a self-replicating swarm, but the choice was arbitrary. There are other kinds of microscale resistors, such as transistors, which could be used instead, or any number of other kinds of microscale inspection, maintenance or assembly tasks.
+
+[PAGE 30] 5.2. Estimated Utility.
+
+Task Environment.
+
+[0348] Sixteen initially disconnected strips of vertically stacked and insulated conductive voxels ("wires"; blue voxels) are spread out along the edge of the soft boundary of a simulated dish (FIGS. 11 and 22). In each corner, two of the strips are connected at a 90 degree angle to a small light emitter (white voxels). Two of the remaining eight strips along the edge, on opposing sides, are attached to power supplies. Nine reconfigurable organisms are placed in the center of the simulated dish amid a grid of dissociated stem cells. Twelve additional strips of vertically-insulated conductive voxels are placed among them, randomly oriented north-south or east-west with equal probability (FIG. 11B,C). Potential current flow is shown in yellow propagating down blue conductive voxels connected to a power supply. As organisms move in their dish, they self replicate (by building piles out of dissociated stem cells) and, simultaneously, snap together the conductive strips of voxels in the dish as a side effect of movement. If one of the corner strips with a light emitter connects by conductive voxels to one of the two power supplies, the light emitter switches on (as indicated by a red circled X in FIGS. 11 and 22).
+
+[0349] The swarm builds piles, which, if sufficiently larger than 40 voxels, develop into offspring, and the dissociated cells are replenished, every 3.5 seconds, as in the above experiments. Forty voxels is one fourth the size of the simulated wild type spheroids, which is the best estimate for the minimum size of piles that developed into self motile offspring in vivo (Table 1). Because utility is measured rather than self replication, the parents are left in the dish and continue building additional filial generations alongside their offspring for 17.5 seconds. As the 3 organisms move they randomly push the circuit components into place, occasionally turning on up to four light emitters. After 17.5 seconds of simulation time, the parents were removed, and the offspring were extracted. To better approximate the spherification that occurs in vivo, offspring extracted from a completed simulation are converted to spheroids containing roughly the same number of voxels. The spherified offspring were then split into two subgroups, each subgroup was injected into one of two new simulated petri dishes, and each new dish contains a new partially-completed circuit. Self replication and circuit building begin afresh in these two dishes, again for 17.5 seconds. This process triggers the growth of a binary simulation tree (FIG. 11) in which each simulation begets at most two simulation branches, each containing one half of the produced offspring of their root simulation. If only a single offspring is created by a swarm after 17.5 seconds, then only one new simulation branch is spawned. If no offspring were built, then that branch of the binary simulation tree dies out.
+
+[PAGE 31] Growth Rate of Utility.
+
+[0350] After 50 simulation bifurcations (875 seconds of simulation time), 5024 light emitters were switched on by the self-replicating swarm.
+
+[0351] Symbolic regression (42) was used to find the degree of a polynomial function that best explains the cumulative number of emitters switched on by the self-replicating swarm. The regression operators were limited to addition and multiplication. The operands were the number of simulation bifurcations (a sequence from 1 to 51), and an ephemeral constant drawn from a gaussian distribution (mu-0, sigma-10). Each candidate solution is evaluated based on its root mean squared error (RMSE) with the cumulative number of emitters switched on at each simulation bifurcation.
+
+[0352] A population of 1000 candidate equations was optimized for 1000 generations using the same optimization algorithm (38) used to design body shapes and terrains. The population size could be set much larger for this experiment because evaluating equations takes milliseconds whereas evaluating self-replicating swarms takes minutes. Ten independent optimization trials were conducted, each starting from a different random set of 1000 candidate equations. The objective is to minimize root mean squared error. After 1000 generations, the least-error equations found in each trial all converged about the quadratic curve derived by ordinary least squares: 2.7x2-43x+182.4, where x is the number of simulation bifurcations (R2=0.9988). The prediction of the model is thus, under the simulated conditions, utility increases quadratically with time.
+
+[0353] Self replication (and thus utility) could, in principle, be enhanced in vivo through numerous bioengineering and molecular interventions, including: altering cell adherence properties (through the expression of cadherins or integrins), increasing cell lifespan with culture media, increasing swimming velocity by altering the number and polarity of cilia, changing cilia beat frequency, generating larger parents, increasing the number of adults during self replication, provision of more feeder cells, altering the size of the arena, and changing the substrate on which self replication occurs (increased or decreased friction). For the current settings of these parameters, and others that could affect the rate of utility produced by future reconfigurable organisms, see Table 1.
+
+[0354] It is clear that, in theory, self-replicative machines that perform useful work as a side effect will superlinearly increase in utility over time. However, it was not clear that there exists a domain in which the randomly-acting self-replicative system described here would be so. The flexible electronics technology simulated here demonstrates that, assuming such technology comes to fruition, there may soon be a domain in which our technology may be superlinearly useful over time.
+
+[PAGE 34] Example 4 Control of Locomotion in Engineered Living Systems
+
+[0424] Biological robots are currently limited by their lack of autonomy: actuation/movement, where available, requires remote controlled stimulation of specific cell populations, and currently no closed loop autonomous systems exist. We have developed a new approach to control movement/behavior in engineered biological robots, through the utilization of motile cilia, small hairlike structures present on the surface of cells which beat in unison to generate fluid flow.
+
+[0425] This new advance in the autonomous control of movement involves the expression of light sensitive optogenetic proteins in motile cilia containing cell populations. These optogenetic proteins "open" and "close" in response to specific wavelengths of light, which in turn changes the charge [voltage] of the cell. In response to voltage changes, the beat frequency of motile cilia increases or decreases, which could directly alter biological robot movement.
+
+[0426] To demonstrate these channels can be used to control cilia beating, and thus robot velocity, we expressed a common optogenetic channel, channelrhodopsin-2 [ChR2], in our biological robots via mRNA microinjection. This channel is "activated" in response to blue light and remains closed at other wavelengths or in darkness. The velocity of 8 individuals were measured over a period of 40 s, with blue light being present only during the latter 20 seconds of observation (FIG. 23A-D), delivered by a SMZ-1500 fluorescent microscope equipped with 467-498 nm filter. Untreated controls showed no change in velocity in response to blue light, however, ChR2 expressing designs showed a significant increase in velocity in response to light stimulus (FIG. 23E, t-test, p=0.0124, n=8 individuals per treatment). These data are the first to show control of cilia beating with light, and that it is thus possible to control the movement of engineered biological robots within aqueous environments.
+
+[0427] In the foregoing description, it will be readily apparent to one skilled in the art that varying substitutions and modifications may be made to the invention disclosed herein without departing from the scope and spirit of the invention. The invention illustratively described herein suitably may be practiced in the absence of any element or elements, limitation or limitations which is not specifically disclosed herein. The terms and expressions which have been employed are used as terms of description and not of limitation, and there is no intention that in the use of such terms and expressions of excluding any equivalents of the features shown and described or portions thereof, but it is recognized that various modifications are possible within the scope of the invention. Thus, it should be understood that although the present invention has been illustrated by specific embodiments and optional features, modification and/ or variation of the concepts herein disclosed may be resorted to by those skilled in the art, and that such modifications and variations are considered to be within the scope of this invention.
+
+[0428] All methods described herein can be performed in any suitable order unless otherwise indicated herein or otherwise clearly contradicted by context. The use of any and all examples provided herein, is intended merely to better illuminate the invention and does not pose a limitation on the scope of the invention unless otherwise claimed.
+
+[0409] 55. Gurdon, J. B., Harger, P., Mitchell, A., Lemaire,
+P. Activin signalling and response to a morphogen gradi-
+ent. Nature, 371, 487-492 (1994).
+[0410] 56. Ariizumi, T., Asashima, M. In Vitro Control of
+the Embryonic Form of Xenopus laevis by Activin A:
+Time and Dose-Dependent Inducing Properties of
+Activin-Treated Ectoderm: (activin/ectoderm/organizer/
+Xenopus laevis/neural induction). Development, Growth
+& Differentiation, 36, 499-507 (1994).
+[0411] 57. Sasai, Y., Lu, B., Piccolo, S., De Robertis, E. M.
+Endoderm induction by the organizer-secreted factors
+chordin and noggin in Xenopus animal caps. The EMBO
+Journal, 15, 4547-4555 (1996). 17
+[0412] 58. Miyanaga, Y., Shiurba, R., Asashima, M. Blood
+cell induction in Xenopus animal cap explants: effects of
+fibroblast growth factor, bone morphogenetic proteins,
+and activin. Development Genes and Evolution, 209,
+69-76 (1999).
+[0413] 59. Ariizumi, T., Takahashi, S., Chan, T. C., Ito, Y.,
+Michiue, T., Asashima, M. Isolation and differentiation of
+Xenopus animal cap cells. Current Protocols in Stem Cell
+Biology, 9, 1D-5 (2009).
+[0414] 60. Ariizumi, T., Michiue, T., Asashima, M. In
+Vitro Induction of Xenopus Embryonic Organs Using
+Animal Cap Cells. Cold Spring Harbor Protocols, pdb-
+prot097410 (2017).
+[0415] 61. Teegala, S., Chauhan, R., Lei, E., Weinstein, D.
+C. Tbx2 is required for the suppression of mesendoderm
+during early Xenopus development. Developmental
+Dynamics, 247, 903-913 (2018).
+[0416] 62. Marnellos, G., Deblandre, G. A., Mjolsness, E.,
+Kintner, C. Delta-Notch lateral inhibitory patterning in
+the emergence of ciliated cells in Xenopus: experimental
+observations and a gene network model. In Biocomputing
+2000, 329-340 (1999).
+[0417] 63. Stubbs, J. L., Oishi, I., Belmonte, J. C. I.,
+Kintner, C. The forkhead protein Foxjl specifies node-like
+cilia in Xenopus and zebrafish embryos. Nature Genetics,
+40, 1454-1460 (2008).
+[0418] 64. Quigley, I. K., Stubbs, J. L., Kintner, C. Speci-
+fication of ion transport cells in the Xenopus larval skin.
+Development, 138, 705-714 (2011).
+[0419] 65. Myers, C. T., Appleby, S. C., Krieg, P. A. Use
+of small molecule inhibitors of the Wnt and Notch sig-
+naling pathways during Xenopus development. Methods,
+66, 380-389 (2014).
+[0420] 66. Brooks, E. R., Wallingford, J. B. Multiciliated
+cells. Current Biology, 24, R973-R982 (2014).
+[0421] 67. Liu, S., Matthews, D., Kriegman, S., Bongard,
+J. Voxcraft-sim, a GPU-accelerated voxel-based physics
+engine. 10.5281/zenodo.3835152, https://github.com/
+voxcraft/voxcraft-sim (2020).
+[0422] 68. Karras, T. Maximizing parallelism in the con-
+struction of BVHs, octrees, and k-d trees. In Procs. of the
+ACM Conf. on High-Performance Graphics, 33-37
+(2012).
+[0423] 69. Cheney, N., et al. Unshackling evolution:
+Evolving soft robots with multiple materials and a pow-
+erful generative encoding." In Procs. of the Genetic and
+Evolutionary Computation Conf. (2013).
+
+Example 4 Control of Locomotion in Engineered
+Living Systems
+[0424] Biological robots are currently limited by their lack
+of autonomy: actuation/movement, where available,
+requires remote controlled stimulation of specific cell popu-
+lations, and currently no closed loop autonomous systems
+exist. We have developed a new approach to control move-
+ment/behavior in engineered biological robots, through the
+utilization of motile cilia, small hairlike structures present
+on the surface of cells which beat in unison to generate fluid
+flow.
+[0425] This new advance in the autonomous control of
+movement involves the expression of light sensitive opto-
+genetic proteins in motile cilia containing cell populations.
+These optogenetic proteins "open" and "close" in response
+to specific wavelengths of light, which in turn changes the
+charge [voltage] of the cell. In response to voltage changes,
+the beat frequency of motile cilia increases or decreases,
+which could directly alter biological robot movement.
+[0426] To demonstrate these channels can be used to
+control cilia beating, and thus robot velocity, we expressed
+a common optogenetic channel, channelrhodopsin-2
+[ChR2], in our biological robots via mRNA microinjection.
+This channel is "activated" in response to blue light and
+remains closed at other wavelengths or in darkness. The
+velocity of 8 individuals were measured over a period of 40
+s, with blue light being present only during the latter 20
+seconds of observation (FIG. 23A-D), delivered by a SMZ-
+1500 fluorescent microscope equipped with 467-498 nm
+filter. Untreated controls showed no change in velocity in
+response to blue light, however, ChR2 expressing designs
+showed a significant increase in velocity in response to light
+stimulus (FIG. 23E, t-test, p=0.0124, n=8 individuals per
+treatment). These data are the first to show control of cilia
+beating with light, and that it is thus possible to control the
+movement of engineered biological robots within aqueous
+environments.
+[0427] In the foregoing description, it will be readily
+apparent to one skilled in the art that varying substitutions
+and modifications may be made to the invention disclosed
+herein without departing from the scope and spirit of the
+invention. The invention illustratively described herein suit-
+ably may be practiced in the absence of any element or
+elements, limitation or limitations which is not specifically
+disclosed herein. The terms and expressions which have
+been employed are used as terms of description and not of
+limitation, and there is no intention that in the use of such
+terms and expressions of excluding any equivalents of the
+features shown and described or portions thereof, but it is
+recognized that various modifications are possible within the
+scope of the invention. Thus, it should be understood that
+although the present invention has been illustrated by spe-
+cific embodiments and optional features, modification and/
+or variation of the concepts herein disclosed may be resorted
+to by those skilled in the art, and that such modifications and
+variations are considered to be within the scope of this
+invention.
+[0428] All methods described herein can be performed in
+any suitable order unless otherwise indicated herein or
+otherwise clearly contradicted by context. The use of any
+and all examples provided herein, is intended merely to
+better illuminate the invention and does not pose a limitation
+on the scope of the invention unless otherwise claimed. No

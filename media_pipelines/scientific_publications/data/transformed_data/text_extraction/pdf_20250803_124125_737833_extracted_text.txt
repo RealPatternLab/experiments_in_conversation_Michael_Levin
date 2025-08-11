@@ -1,0 +1,142 @@
+Microfluidic Platform to Study Intercellular
+Connectivity Through On-chip Electrical Impedance
+Measurement
+Joel Dungan¹, Juanita Mathews², Michael Levin², Valencia Koomson¹
+Department of Electrical and Computer Engineering, Tufts University, Medford, MA 02155¹
+Department of Biology, Tufts University, Medford, MA 02155²
+
+Abstract-A platform has been developed to study
+intercellular communication in non-neural cells as it relates
+to developmental biology and morphogenetic
+bioengineering. The versatile platform uses laminar flow in
+a microfluidic channel to create a “sucrose gap" that forces
+electrical signaling through a cell monolayer. The
+intercellular communication in the cell network is detected
+through electrical impedance measurements. A phase
+sensitive homodyne system has been designed and
+simulated in a 130nm CMOS process to provide a readout
+of cell monolayer complex impedance within the device. The
+system exhibits a highly linear conversion rate of
+0.589mV/kΩ for cell layer impedances up to 1 ΜΩ.
+Keywords-CMOS; homodyne; lab-on-a-chip; gap junction
+
+[PAGE 1] I. INTRODUCTION
+Non-neural cells possess sophisticated intercellular
+communication mechanisms and are capable of forming
+networks and making decisions about cell growth and
+proliferation [1]. Non-neural cellular communication is
+mediated by gap junctions. These close cytosolic couplings
+allow the exchange of signaling molecules or ions between
+adjacent cells. Gap junctions are comprised of membrane
+proteins that can allow diffusion with high specificity [1-3].
+Recent results have shown that connectivity between non-neural
+cells plays a crucial role in shaping cell development.
+
+Patterns in connectivity established at the cellular level
+cascade into complex behaviors important to regenerative
+medicine and morphogenetic bioengineering. Altering gap
+junction activity has been shown to affect pattern formation [4],
+asymmetry [5], and organ growth, going so far as to induce the
+formation of multiple heads in planarians [6]. Errors in gap
+junction signaling can also cause abnormal growth that
+manifests as various disease states in humans, including forms
+of cancer [7]. Numerous studies have linked abnormal gap
+junction communication with tumor formation and
+carcinogenesis, and therapies focusing on gap junction
+regulation have met with some success in mouse models [8].
+Gap junction-mediated signaling has been shown to affect the
+differentiation of multipotent cells [9], and in general, regulation
+of these electrical synapses is an essential component of
+exploiting developmental bioelectricity for the bioengineering
+of artificial living constructs (synthetic morphology) [10-12].
+
+Traditionally, gap junction activity is examined via either the
+patch clamping method [13] or by observation of specialized
+diffusive dyes [9-11]. Whole cell patch clamping measures gap
+junction activity by recording the flow of charged ions through
+a cell membrane as an electrical voltage. However, the technique
+disrupts the membrane and is both expensive and technically
+challenging to perform, especially on more than a single cell.
+Dye diffusion methods attach fluorescent indicators to track the
+flow of signaling molecules through gap junctions. However, the
+results of these dye tests are difficult to quantify and
+repeatability is a significant issue.
+
+To overcome the limitations of the existing technologies, a
+microfluidic platform is proposed to perform repeatable non-
+invasive assays on tissue networks. In a manner analogous to
+sucrose bridge experiments [14], the microfluidic chip
+electrically isolates a living cell culture, allowing precise
+impedance measurements that correspond to the average
+connectivity across the cells. This real time monitoring of
+cellular connectivity allows closed loop drug delivery studies
+that will test training and anticipation in gap junction networks.
+The ability to sense and manipulate gap junctional
+communication could have profound impacts on research and
+applications in developmental biology and tissue engineering.
+
+[PAGE 1] II. MICROFLUIDIC PLATFORM
+A. Microfluidic Design
+A microfluidic device that miniaturizes sucrose bridge
+experiments was presented in [15]. This work extends those
+results and incorporates key improvements to realize a true lab-
+on-chip research platform. The device takes advantage of the
+phenomenon of laminar flow to create three distinct fluid regions
+in a central channel, shown in Fig. 1. A sucrose based center
+stream creates a high impedance barrier which forces the
+majority of electrical signaling through the cell layer above.
+Thus, any current stimulus driven between the conductive saline
+side streams traverses the cell monolayer producing a recordable
+voltage that represents the average electrical impedance across
+the cell network.
+
+Digitally controlled solenoid valves allow quick switching
+(on order of milliseconds) of the central stream among three high
+resistivity sucrose solutions, each which may be perfused with
+chemicals agents that induce changes in cell connectivity. This
+rapid automated solution exchange enables closed loop drug
+delivery experiments, in which drug delivery is modulated
+directly in response to electrical measurement of cellular
+network connectivity.
+
+A polymethylsiloxane (PDMS) layer forming the top layer
+of the microchannels offers several advantages. Importantly, the
+device is much less susceptible to leaking because the elastomer
+accommodates some non-uniformity in the SU8 film. In addition
+to easing fabrication tolerances, the PDMS also allows trapped
+bubbles to outgas over time. Cell adhesion to PDMS has proved
+exceptional. In the case of normal rat kidney cells, adhesion to
+PDMS appears superior to glass and has been successfully
+demonstrated under laminar flow conditions for 24 hours.
+
+[PAGE 2] B. Fabrication
+The microfluidic chip, as diagrammed in Fig. 1, has been
+fabricated in the Tufts Micro/Nanofab. Cr/Au electrodes were
+patterned onto a borosilicate substrate using a liftoff process.
+The walls of the microfluidic channels were formed using
+MicroChem SU8-3050 at a thickness of 65μm. A flat layer of
+PDMS (Sylgard 184), mixed at a ratio of 5:1 elastomeric base to
+curing agent in order to increase rigidity, forms the top of the
+microfluidic channels and serves as a substrate for cell culture.
+The layers of the device are compressed together in a custom
+housing laser cut from clear acrylic (ePlastics 1/8"). The housing
+provides even pressure generated through 6 screws and is
+designed to the dimensions of a standard 90 mm petri dish so
+that it can be easily mounted on an inverted microscope.
+
+[PAGE 2] C. Electrical Measurement
+The device has also been reconfigured to improve the
+electrode design and electrical measurement scheme. An
+additional set of electrodes have been incorporated to create a
+built in control channel. The electrodes have also been routed
+(under protective photoresist) to a single edge of the chip where
+a good electrical contact can be made via a standard chip edge
+connector. The connector routes all signals into a custom printed
+circuit board that houses the proposed integrated circuit to
+perform electrical impedance measurements.
+
+[PAGE 2] III. INTEGRATED CIRCUIT
+A. System Architecture
+
+
+... (The rest of the content from Extraction 1, starting from "In order to prevent electroplating..." is included verbatim, as it is the most complete version with correctly formatted equations and consistent page numbering.)

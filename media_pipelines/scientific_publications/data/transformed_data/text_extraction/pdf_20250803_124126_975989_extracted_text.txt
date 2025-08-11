@@ -1,0 +1,1657 @@
+Machines All the Way Up and Cognition All the Way Down:
+Updating the machine metaphor in biology
+Michael Levin and Richard Watson
+
+[PAGE 2] Abstract:
+Cell and developmental biology offer numerous remarkable examples of collective intelligence and adaptive plasticity to novel circumstances, as cells implement large-scale form and function. Many of these capabilities seem different from the behavior of machines or the results of computations. And yet, they are implemented by biochemical, biophysical, and bioelectrical events which are often interpreted with the machine metaphor that dominates molecular and cell biology. The seeming incongruity between molecular mechanisms and the emergence of self-constructing and goal-driven intentional living agents has driven a perennial debate between mechanist and organicist thinkers. Here, we discuss the inadequacies of, on the one hand, the (unminded) mechanist and computationalist frameworks, and on the other, dualistic conceptions of machine vs. mind. Both fail to provide an integration of agential and mechanistic aspects evident in biology. We propose that a new kind of cognitivism, cognition all the way down, provides the necessary unification of 'bottom-up' and ‘top-down' causal flows evident in living systems. We illustrate how the organizational layers between genotype and phenotype provide problem-solving intelligence, not merely complexity, and discuss the benefits and inadequacies of specific machine metaphors in this context. By taking a pragmatist approach to the hypothesis that life and mind are fundamentally the same problem, formalisms are emerging that embrace the unique quality of the agential material of life while fully benefitting from the advances of modern machine science. New ways to map formal concepts of machine and data to biology provide a route toward unifying evolutionary and developmental biology, and rich substrates for the use of truly bio-inspired principles to advance engineering and computer science.
+
+
+[PAGE 3] Introduction
+Critical knowledge and capability gaps
+Progress in molecular biology and biochemistry has been immense over the last half century. Yet, fundamental questions and capability gaps remain. While it is known that the genome provides crucial information for the control of growth and form, we are still not able to predict anatomical structure, physiological function, or behavior from genomic data (other than by comparing it to systems whose properties we already know). The gap between biochemical rules and desired organ- and system-level outcomes is the most critical limiting step toward pressing needs in regenerative medicine. Birth defects, traumatic injury, cancer, aging, and degenerative disease would all cease their massive negative impact on quality of life for patients world-wide if we understood how to communicate anatomical goals to groups of cells so that they would build desired healthy structures in vivo, and also in the context of useful bioengineered living constructs. While we are very good at manipulating the hardware of life (genome editing, pathway rewiring, protein engineering, etc.), we are still very far away from the needed control of large-scale form and function. The health-span and well-being of a myriad natural, and forthcoming hybrid (altered humans, cyborgs, etc.) beings depend on transcending this impasse.
+
+One can envision the endgame of this field as the "Anatomical Compiler”, with which the user would specify a final anatomical layout of a desired animal, plant, organ, or biobot, and it would produce a set of stimuli that could be given to cells to coax exactly that outcome. We currently have nothing like this, and can only rationally control large-scale shape in a few cases. These capability gaps are the results of fundamental open questions in cell and developmental biology (CDB). How do the mechanical, molecular events underlying cell behavior scale up into systems that self-assemble into agents that can store and act on memories, pursue goals or make mistakes, and solve new problems? What is the relationship between evolution and natural biological intelligence, and how do the remarkable examples of creative robustness in the face of novelty arise in living lineages?
+
+While not commonly thought about as the province of CDB, we note that it is uniquely charged with advancing philosophy of mind, not only biomedicine and bioengineering. Clearly, it is in CDB that we see metacognitive beings (including humans) arise – slowly, gradually, from unfertilized oocytes, and the agential problem-solving capabilities of developmental processes more generally threads intelligence throughout all of life. CDB is fundamentally the science of the scaling of chemistry to cognition, from physics to mind. Here we address this aspect of the life sciences, arguing that tracking the metamorphosis of mechanistic systems into cognitive ones provides a much-needed conceptual framework for the next leaps forward in regenerative medicine and the understanding of evolutionary and technological origin of complexity. Specifically, we argue that morphogenesis, seen as a collective intelligence which solves problems in anatomical space, is an ideal model system in which to develop frameworks for an essential new vision of the life sciences.
+
+Current conceptual landscape: mechanicism vs. organicism
+What kind of conceptual apparatus is appropriate for a deep understanding of CDB? Thinking in this field has been dominated by a debate between two communities. The currently more popular, mainstream paradigm is that of mechanicism: life as machine [1-5]. It focuses on the known rules of interactions of biochemical components, seeking to explain and control larger-scale phenomena via various machine and computational metaphors. Cellular automata, emergence, and complexity are favorite workhorse concepts [6]. The machine metaphor sees systems as dumb parts following mechanical local rules that don't know or care about the large-scale goals of the system. We agree with the organicists that this paradigm is woefully inadequate for the life sciences because it does not provide proper linkage between these bottom-up considerations and the apparently top-down aspects of goal-driven agents. Although emergence allows for "surprising outcomes” to arise at higher levels of organization, these are created bottom-up, and are not reversible (i.e. the high-level constructs do not have agency to orchestrate low-level events). Whilst this might be sufficient for characterizing tornadoes or traffic jams, it does not have enough explanatory or engineering power with respect to large-scale, and the system level properties we seek in order to predict and understand in living systems [7-9].
+
+The computationalist lens adds a lot of power to the simple machine metaphor. Computer science has not only dealt with, but effectively exploited, multiscale approaches to system function. In computer engineering, students fluidly move from the physics of Kirchoff's rule (which guides the relationship between voltage, current, and resistance) to constructing logic gates (basic elements of rational inference) and ultimately reprogrammable machines that obey physics and yet also are guided by algorithms - immaterial constructs that, in the most practical sense, guide the motion of electrons through circuits. Computer science has given us concepts that are massively important for understanding biology: software as the reprogrammability of some kinds of materials, layers of abstraction, modularity, and top-down control. Computer engineers spawned the incredible successes of the information technology revolution precisely because they take seriously both – the physics underlying their hardware, and the causal power of information patterns and software. It is no wonder that this set of metaphors – machines more broadly (especially when it comes to ribosomes, cytoskeletal components, etc.), and computationalism specifically – have been popular in the current generation of life sciences, especially including synthetic biology and bioengineering.
+
+And yet, a minority of organicist thinkers maintain an opposing position, pointing out the gulf between today's machines (including computers) and the flexibility, dynamic intelligence, and self-grounding seen in the living world [10-19]. They resist the mechanization of life [14, 20], arguing that the conceptual metaphors that are sufficient for creation of engineered artifacts are not appropriate or sufficient to capture what is unique about living organisms. The evolution, physiology, and behavior of living beings is often argued to require ways of thinking that are totally different from those appropriate to mere machines. Thus, it is claimed that the advances in molecular and synthetic biology are not just as yet insufficient, but offramps to the deep understanding of life. They are right that computationalism is not enough – dumb parts following someone else's algorithm, with intelligence only appearing (if at all) at the highest level, is not sufficient for encompassing the agential material of life.
+
+The next lens in this progression is the cognitive lens [21]. This framing emphasizes that there is a level in the system that is not merely following rules but is *about* something – it functionally represents beliefs, memories, preferences, and goals of the larger system. In contrast to computationalism, cognitivism reminds us that the programmer doesn't need to be human or magical; it usefully naturalizes intelligence. However, we think it is still limited by two implicit assumptions. First, that there is only one level of intelligence (at the very top of the system). Second, that natural selection is the only programmer. We argue that this is insufficient. The crux of the problem is that it preserves the dualism between meaningful cognition (down from the top) and dumb parts (up from the bottom) that somehow underlie it. This fails to resolve the basic 'agency-body' problem (like the ‘mind-body' problem, but for all life, not just life with neurons and brains). It encourages the idea that life starts off (evolutionarily or developmentally) as dumb machine parts devoid of agency, and somehow, at some stage, a threshold is crossed and *then* it becomes a bone fide agent that can then, by some mysterious means that did not previously apply, control the actions and events among the parts of which it is composed. It also encourages arguments about whether any specific system is 'really just mechanical' or 'actually an agent' (in some sense ‘like us'). This kind of dichotomous thinking is not sufficient for addressing the spectrum of life as we find it. And even in cases where we can all agree that agency is relevant (like ourselves), it fails to explain what the causal relationship is between the agent with its goals and intentions and the mechanical substrate of which it is constituted. For example, it fails to resolve disagreements about whether this component (e.g. molecular pathway or gene or hormone) is the ‘real cause' of something or merely a ‘tool' that the agent is using for its purposes [22]. No wonder the mechanicists prefer to steer clear of ideas like agency altogether.
+
+
+We argue that the facts of life show clearly that there are no dumb parts in biology, because it is cognition all the way down¹. Biology does not obey the dualistic, binary distinctions that have held back both mechanist and organicist thought for centuries. We show how life has agency all the way down¹, and every level of organization not only accommodates but actively exploits the agential nature of its components. The way to resolve the dispute between the various metaphors of life as different kinds of machines is to recognize that none of the relevant machines are the dumb, lifeless things that serve as the contrast for the organicist emphasis on creativity and purpose. Here, we illustrate examples that illustrate the evidence, and practical applications, of this approach, focusing on multi-scale competency (intelligence in diverse problem spaces), polycomputation (multiple, non-privileged observers), creative interpretation of data by living systems (leaning in to the unreliable substrate of life), and strong mappings between evolution and learning.
+
+Overview of our approach
+It is important in all such efforts to make philosophical positions explicit. We approach the problem from a perspective of: a) naturalism and anti-mysterianism (no appeal to impenetrable mysteries), b) a broad view of explanations (explaining something does not drain it of its magnificence), c) a lack of a privileged level of causation (good explanations are not always
+
+[PAGE 5] human or magical; it usefully naturalizes intelligence. However, we think it is still limited by two
+implicit assumptions. First, that there is only one level of intelligence (at the very top of the
+system). Second, that natural selection is the only programmer. We argue that this is insufficient.
+
+The crux of the problem is that it preserves the dualism between meaningful cognition (down
+from the top) and dumb parts (up from the bottom) that somehow underlie it. This fails to resolve
+the basic 'agency-body' problem (like the ‘mind-body' problem, but for all life, not just life with
+neurons and brains). It encourages the idea that life starts off (evolutionarily or developmentally)
+as dumb machine parts devoid of agency, and somehow, at some stage, a threshold is crossed
+and then it becomes a bone fide agent that can then, by some mysterious means that did not
+previously apply, control the actions and events among the parts of which it is composed. It also
+encourages arguments about whether any specific system is 'really just mechanical' or 'actually
+an agent' (in some sense ‘like us'). This kind of dichotomous thinking is not sufficient for
+addressing the spectrum of life as we find it. And even in cases where we can all agree that agency
+is relevant (like ourselves), it fails to explain what the causal relationship is between the agent
+with its goals and intentions and the mechanical substrate of which it is constituted. For example,
+it fails to resolve disagreements about whether this component (e.g. molecular pathway or gene
+or hormone) is the ‘real cause' of something or merely a ‘tool' that the agent is using for its
+purposes [22]. No wonder the mechanicists prefer to steer clear of ideas like agency altogether.
+
+We argue that the facts of life show clearly that there are no dumb parts in biology,
+because it is cognition all the way down. Biology does not obey the dualistic, binary distinctions
+that have held back both mechanist and organicist thought for centuries. We show how life has
+agency all the way down¹, and every level of organization not only accommodates but actively
+exploits the agential nature of its components. The way to resolve the dispute between the
+various metaphors of life as different kinds of machines is to recognize that none of the relevant
+machines are the dumb, lifeless things that serve as the contrast for the organicist emphasis on
+creativity and purpose. Here, we illustrate examples that illustrate the evidence, and practical
+applications, of this approach, focusing on multi-scale competency (intelligence in diverse
+problem spaces), polycomputation (multiple, non-privileged observers), creative interpretation
+of data by living systems (leaning in to the unreliable substrate of life), and strong mappings
+between evolution and learning.
+
+[PAGE 5] Overview of our approach
+
+It is important in all such efforts to make philosophical positions explicit. We approach
+the problem from a perspective of: a) naturalism and anti-mysterianism (no appeal to
+impenetrable mysteries), b) a broad view of explanations (explaining something does not drain
+it of its magnificence), c) a lack of a privileged level of causation (good explanations are not always
+
+[PAGE 6] given at the lowest level), d) pluralism (the polycomputing view, in which everything is specified
+from the perspective of some observer and thus more than one mapping of formal system onto
+biology can be correct), e) operationalism (formal analysis does not find what something "truly
+is", rather it finds good interaction protocols), and f) pragmatism (the utility of views is
+determined by their ability to drive new research programs and facilitate discovery of new
+capabilities, not allegiance to philosophical categories, ancient or modern).
+
+What is a metaphor? Here, we take an operationalist position, against the standard view
+that there are “real” things like pathways contrasted by “metaphorical ways of speaking” like
+cells having memory. We hold that every conceptual tool in science is a metaphor, and our task
+is to continuously improve them toward increased empirical fecundity. Our focus is not just on
+explaining past events, but on facilitating novel discovery, unifying phenomena across domains
+to reveal compact dynamics underlying diverse systems and processes, and providing novel
+capabilities (e.g., for bioengineering and regenerative medicine) that were heretofore
+unreachable (or unthinkable, as good metaphors enable new ways of thinking). Thus, in large
+part, metaphors are defined and evaluated by the tools they enable and the barriers they dissolve
+more than by their compatibility with prior categories.
+
+On the one hand, all metaphors are wrong, and nothing is any of our formal models - not
+Turing Machines, not even the "pathways" that are so beloved in CDB. On the other hand, we
+think it's a mistake to dismiss computational and machine metaphors as just a sign of each age
+using their preferred technology as the hammer for every nail (water pipes, clockwork, electric
+switchboards, etc.). This is because technology is a manifestation of a successful conceptual gain;
+its existence is a sign of increased insights into the universe's causal structure, and it makes good
+sense to test out these concepts in other fields. Life is not a steam engine, but the deeper
+concepts of thermodynamics have led to great insights in both engineering and the life sciences.
+Thus, we focus on concepts from computer science and behavioral science to explore what they
+can do for CDB. Life is not like current computers, but both biology and computer science can
+learn a lot from the deep symmetry between the dynamic body and the active, self-referential
+mind.
+
+[PAGE 6] Preview of the path forward: dissolving the dualistic perspective by naturalizing multi-scale
+cognition
+
+We begin by showing how CDB reveals emergent proto-cognition, not merely emergent
+complexity. This motivates the use of concepts from cognitive and information sciences. The bad
+news is that we cannot engineer living materials the way we have been engineering passive
+matter for thousands of years – living matter has agendas, and competencies. That leads to the
+good news: instead of the impossible task of micromanaging cells and tissues, we can exploit and
+extend their innate capabilities, making use of the same co-creative strategies that underlie the
+multiscale competency architecture of life. This in turn makes evolution, regenerative medicine,
+and bioengineering look very different. Specifically, we sketch a direction for research that not
+only dissolves the mechanist/organicist debate but suggests novel research opportunities far
+beyond what traditional mappings of machine metaphors enabled, for both life and for machines.
+
+We focus on the agential material of life, and emphasize what is the same and what is
+different with respect to both today's machines and more general concepts underlying embodied
+algorithms. We argue that a fundamental capacity for learning and problem-solving underlies
+
+[PAGE 7] advances in biology and machine learning, which are not captured by current brittle models. We
+sketch the beginnings of an improved metaphor, brought up-to-date with advances in Artificial
+Life, and machine learning, which have heretofore been ignored in the organicist critiques of
+mechanistic biology. By exploring the benefits of multiple mappings between concepts across
+informational, life, and physical sciences, an integrated and intensely practical set of conceptual
+tools emerges for an exciting roadmap of discovery in CDB and beyond.
+
+[PAGE 7] Agential material of life - a tour
+
+A key aspect of cell and developmental biology is that they study the problem-solving
+competencies of certain kinds of patterns in molecular media: not just emergent complexity and
+unpredictability, but the ability to reliably navigate a specific problem space in novel and creative
+ways as needed to meet specific adaptive ends. In cell behavior and morphogenesis we first
+encounter the concept of error; chemistry does not make mistakes, but cells can misperceive [23]
+and embryonic development, regeneration, or cancer suppression can certainly make mistakes
+[24] (the subject of teratology). The self-assembly of a multicellular structure from cells offers an
+example of agential material, in which components become aligned (physically and functionally)
+toward a specific outcome (which is why we detect “1 embryo" and not only millions of individual
+cells, in a developmental setting).
+
+This process requires, and implements, a number of key features that strongly
+differentiate it from the passive materials with which we have engineered for thousands of years.
+First, the material itself has agendas and competencies at multiple levels. Cells perceive and
+process a wide range of multi-modal stimuli in guiding their behavior [25, 26] and learning [27,
+28], while the molecular networks within them offer six different kinds of learning including
+Pavlovian conditioning [29-31]. Second, it operates in a number of problem spaces [32],
+navigating the space of possible gene expressions, physiological states, and anatomical
+configurations (anatomical morphospace). Life functions as a multiscale competency
+architecture which is not merely nested structurally into different scales, but has active agendas
+at each level; their autonomy is harnessed and integrated toward the goals of larger levels of
+which the parts have no knowledge by bending the energy landscape of parts to serve a collective
+[33, 34].
+
+[PAGE 7] The directiveness of organic activities: cybernetic properties of cellular collectives
+
+The most obvious feature of CDB is the ability to build bodies; to navigate anatomical
+morphospace reliably, consistently moving from a single fertilized egg to a complex species-
+specific target morphology. This is not just an embryonic phenomenon – some animals
+regenerate complex structures when they are missing, such as axolotls which can restore eyes,
+jaws, limbs, ovaries, and other structures [35]. But regeneration is not just a side issue or a special
+case. Indeed, we can think of embryogenesis in all multicellulars as a form of regenerative repair:
+rebuilding the entire body from 1 cell. However, alongside adult regeneration and the normal
+course of regulative embryogenesis (Figure 1A), we find phenomena such as metamorphosis (e.g.,
+remodeling of caterpillars into butterflies) in which body construction does not begin from
+scratch. However, what is common to all of these diverse examples is a kind of pattern
+homeostasis: the ability of the group to achieve a reliable outcome.
+
+
+[PAGE 8] It should be noted that neither final shape, nor degree of ability to restore that shape, can
+currently be derived from full genetic information about an organism. We can guess, based on
+phylogenetic similarity to other species with already known form and regenerative capacity, but
+the protein sequences and regulatory elements of the DNA are not currently mappable into
+information about exactly how a living system is going to navigate morphospace. Largely this is
+because form arises not from a hardwired process that can be fully encompassed by a mechanical
+working out of a set of rigid molecularly-defined steps – that open-loop model does not predict
+or enable exploitation of the ability of cell groups to traverse the space of anatomical possibilities
+in a context-sensitive manner and resolve deviations from the correct target morphology. The
+genetically-encoded hardware only tells part of the story; the dynamics of morphogenesis, repair,
+and cancer suppression emerge from the closed-loop control implemented by physiological
+software (context-sensitive, reprogrammable feedbacks).
+
+The most obvious example (Figure 1B) is the fact that an axolotl limb can be amputated
+at any position along the proximo-distal axis and will regenerate a perfect copy of the original.
+The cells spring into action as soon as the system is deviated from its normal location in
+morphospace and work rapidly to reduce the delta between current state and setpoint (a
+homeostatic process that implements an error minimization loop). The crucial aspect is that it
+knows when to stop: when the correct amphibian limb is restored (i.e., the position in anatomical
+space has been regained). A similar process is illustrated by regulative development: embryos cut
+into parts give rise to twins and triplets, not half-bodies, further revealing the fundamental
+similarity between embryogenesis and regeneration.
+
+Another example is provided by the process of remodeling during metamorphosis, which
+turns amphibian larvae into adults (Figure 1C). The tadpole of the frog Xenopus laevis must
+rearrange its face to become a frog – all of the craniofacial structures must move. This was
+thought to be a hardwired process – if each organ moves the right amount in the right direction,
+a normal tadpole becomes a normal frog. But, when the plasticity of this process was tested, by
+creating "Picasso tadpoles" in which the mouth, eyes, nostrils, and other structures were
+scrambled, largely normal frogs resulted [36]. The system showed the ability to start in abnormal
+locations, and undergo novel movement paths in order to achieve the correct final configuration.
+
+Even more impressive examples of adjusting local molecular and cell behavior to achieve
+a given large-scale target morphology are seen when whole appendages are artificially moved
+(Figure 1D) or cell size is altered (Figure 1E). What all of these phenomena demonstrate is not a
+rote set of pre-determined mechanical steps, but context-sensitive feedbacks of anatomical
+homeostasis which detect and correct errors. Such examples raise two obvious questions: what
+are the mechanistic and algorithmic parallels between morphogenesis and conventional
+problem-solving capacities observed in behavior in 3D space by many organisms, and how do
+these systems store the setpoint (the pattern to which to reduce error – the state that once
+achieved, causes further growth and remodeling to cease).
+
+[PAGE 8] The collective intelligence of morphogenesis:
+
+We have previously argued that the parallels between anatomical problem-solving and
+conventional intelligence are quite strong. One definition of intelligence [37] is some degree of
+ability to achieve the same goal by different means. James' definition is interesting because it
+does not require awareness of the goal-seeking process (i.e., it's applicable to minimal active
+
+[PAGE 9] systems, not second-order brainy consciousness), nor is it tied to nervous systems as substrate.
+Indeed, its cybernetic nature makes it highly applicable to diverse problem spaces [32]. We can
+define goals as setpoints towards which cellular systems work despite perturbation, and cell
+groups as a kind of collective intelligence in which the parts are functionally (and often physically,
+as occurs in planar cell polarity) aligned with respect to which setpoint they are pursuing as a
+group. The parallels to neuroscience are very strong (as will be seen at the mechanistic level in
+the next subsection), primarily with respect to the fact that we too are a collective intelligence
+consisting of a huge number of neurons (and other cells) that implements goal-seeking behaviors
+that reveal us to be more than the sum of our parts [34, 38]. Just as the human brain implements
+memories, goals, and preferences that do not belong to any of our individual neurons,
+regeneration builds and rebuilds the right number of fingers on an amphibian limb even though
+no individual cell knows what a finger is or how many are appropriate. The collective knows, in
+the sense of a functional setpoint that it will defend against deviations.
+
+Thus, we frame morphogenesis as the behavior, in a well-defined anatomical
+morphospace, of a collective intelligence navigating toward a specific target morphology.
+Importantly, this navigational capacity goes far beyond mere reliability (high precision of
+embryogenesis), and even beyond the ability to rebuild the same structures in the face of surgical
+damage. A number of examples illustrate different aspects of intelligent systems, beyond the
+already discussed goal-seeking homeostatic and homeodynamic loops.
+
+An example of re-writable, non-genetic memory concerns planarian regeneration (Figure
+2A-B). Planaria cut into fragments reliably regenerate a normal body with 1 head and 1 tail.
+However, this requires long-range communication as the anatomical fate of a wound cannot be
+decided locally (because the head- and tail- producing cells on either side of a single cut were
+adjacent neighbors and had the same positional information before the bisection). This
+communication, allowing the new growth to decide what organs to build, is mediated by gap
+junctional (GJ) communication [39]. After a brief blockade of GJs, fragments create a 2-headed
+form which persists in future rounds of regeneration without any more treatment. The shift to a
+2-headed morphology is permanent (but can be reversed), requiring no changes to the genome.
+The new pattern is stored bioelectrically (see next section), and has all the properties of memory:
+it is stable, but rewritable, and enables multiple different patterning programs to run on the same
+hardware.
+
+Interestingly, this model system also offers an example of storing counterfactuals (a
+precursor of the “time travel” ability normally thought of as a property enabled by brains – to
+store patterns that are not representing what is happening at a given moment but rather
+represent past or future states). Planarians induced to have a unique “cryptic” bioelectrical
+pattern have a normal anatomy and normal expression of anterior-posterior marker genes [40]
+will regenerate as 1- or 2-headed if they are cut at a future time. In other words, the planarian
+body can store one of several representations of what a correct planarian should look like, which
+remain latent until they are needed in recall to guide regeneration. While the 2-headed form is
+permanent and stable, the stochastic nature of the cryptic line has been modeled as perceptual
+bistability [24] - a dynamic of alternate interpretations of sensory stimuli by a decision-making
+perceptual system. A final point is that these 2-headed and cryptic lines of worms are the only
+abnormal planaria strains available – unlike many other organisms (Drosophila, zebrafish, mice,
+etc.), in which genetic mutants are available with abnormal morphogenesis, these permanent
+
+[PAGE 9]
+systems, not second-order brainy consciousness), nor is it tied to nervous systems as substrate.
+Indeed, its cybernetic nature makes it highly applicable to diverse problem spaces [32]. We can
+define goals as setpoints towards which cellular systems work despite perturbation, and cell
+groups as a kind of collective intelligence in which the parts are functionally (and often physically,
+as occurs in planar cell polarity) aligned with respect to which setpoint they are pursuing as a
+group. The parallels to neuroscience are very strong (as will be seen at the mechanistic level in
+the next subsection), primarily with respect to the fact that we too are a collective intelligence
+consisting of a huge number of neurons (and other cells) that implements goal-seeking behaviors
+that reveal us to be more than the sum of our parts [34, 38]. Just as the human brain implements
+memories, goals, and preferences that do not belong to any of our individual neurons,
+regeneration builds and rebuilds the right number of fingers on an amphibian limb even though
+no individual cell knows what a finger is or how many are appropriate. The collective knows, in
+the sense of a functional setpoint that it will defend against deviations.
+
+Thus, we frame morphogenesis as the behavior, in a well-defined anatomical
+morphospace, of a collective intelligence navigating toward a specific target morphology.
+Importantly, this navigational capacity goes far beyond mere reliability (high precision of
+embryogenesis), and even beyond the ability to rebuild the same structures in the face of surgical
+damage. A number of examples illustrate different aspects of intelligent systems, beyond the
+already discussed goal-seeking homeostatic and homeodynamic loops.
+
+An example of re-writable, non-genetic memory concerns planarian regeneration (Figure
+2A-B). Planaria cut into fragments reliably regenerate a normal body with 1 head and 1 tail.
+However, this requires long-range communication as the anatomical fate of a wound cannot be
+decided locally (because the head- and tail- producing cells on either side of a single cut were
+adjacent neighbors and had the same positional information before the bisection). This
+communication, allowing the new growth to decide what organs to build, is mediated by gap
+junctional (GJ) communication [39]. After a brief blockade of GJs, fragments create a 2-headed
+form which persists in future rounds of regeneration without any more treatment. The shift to a
+2-headed morphology is permanent (but can be reversed), requiring no changes to the genome.
+The new pattern is stored bioelectrically (see next section), and has all the properties of memory:
+it is stable, but rewritable, and enables multiple different patterning programs to run on the same
+hardware.
+
+Interestingly, this model system also offers an example of storing counterfactuals (a
+precursor of the “time travel” ability normally thought of as a property enabled by brains – to
+store patterns that are not representing what is happening at a given moment but rather
+represent past or future states). Planarians induced to have a unique “cryptic” bioelectrical
+pattern have a normal anatomy and normal expression of anterior-posterior marker genes [40]
+will regenerate as 1- or 2-headed if they are cut at a future time. In other words, the planarian
+body can store one of several representations of what a correct planarian should look like, which
+remain latent until they are needed in recall to guide regeneration. While the 2-headed form is
+permanent and stable, the stochastic nature of the cryptic line has been modeled as perceptual
+bistability [24] - a dynamic of alternate interpretations of sensory stimuli by a decision-making
+perceptual system. A final point is that these 2-headed and cryptic lines of worms are the only
+abnormal planaria strains available – unlike many other organisms (Drosophila, zebrafish, mice,
+etc.), in which genetic mutants are available with abnormal morphogenesis, these permanent
+planarian lines – induced by transient physiological experience, not genomic editing or mutation
+– are the only ones known to exist (discussed in detail in [41]).
+
+[PAGE 10]
+A remarkable example of non-genetic memory of growth and form exists in mammals:
+deer antler regeneration exhibits trophic memory (Figure 2C). In certain species of deer, injury to
+the branched structure will induce growth of an ectopic new tine in the same specific location
+during next year's growth [42]. The phenomenon involves sensing the location of damage within
+a very large 3-dimensional structure, storing that information in the remaining body cells for
+months, and using it to guide bone/nerve/vasculature to an ectopic growth in the right location.
+No model in terms of conventional biochemical signaling has been put forward, as it is very
+challenging to explain how the long range, both spatially and temporally, phenomenon and its
+geometric specificity would be encoded by molecular pathways or gene-regulatory circuits.
+
+The point is not the peculiar nature of planarian morphogenetic memory and inheritance,
+nor the peculiar nature of deer antler re-genesis per se. These examples demonstrate that
+persistent heritable change in morphological set-points (without genetic interventions), and
+reverse-engineering morphological set-points from phenotypic interventions into other
+information spaces and back again, is possible. This demonstrates the falsehood of the general
+assumption that morphological memories can only be held in genes (or constructed bottom-up
+from the molecular level), and must thereby originate from by variation and selection at that
+level.
+
+Memory re-writable by experience is not the only proto-cognitive capacity seen in
+morphogenetic systems. Another important aspect is creative problem-solving by the cellular
+collective. Defined operationally, as do typical IQ tests administered to human and non-human
+subjects, this refers to the ability to use available resources to solve new problems in a novel way.
+One remarkable example is kidney tubule formation in newts (Figure 1E). Under normal
+circumstances, cell-cell communication by small cells is used to build a tube with a lumen.
+However, polyploid newts can be created in which cells become very large. The final newt is of
+normal size, because the cellular material not only adjusts to abnormal number of each gene, but
+also adjusts to the abnormal size of cells by using fewer cells to reach the same anatomical goal
+state. The most remarkable aspect is seen in high copy number polyploid animals in which just 1
+gigantic cell bends around itself to create a tube with a lumen. Here, cytoskeletal bending – a
+different molecular mechanism – is deployed to reach their setpoint. This is what creative
+problem-solving by a collective intelligence looks like in morphospace – using genetically-
+provided affordances in a context-sensitive manner to achieve the same goal by different means,
+when not only the environment but also the system's own parts change in unforeseen ways. Note
+that like the other examples of tail eyes, barium-exposure, etc., this is a response to a new
+scenario, not an alternative construction baked in through prior repeated exposure to this
+condition over many generations of variation and selection (except insofar as the one most
+consistent feature of encounters with the environment in biology is the need to solve problems
+in the face of novelty).
+
+Finally, it is important to note the most extreme examples of morphogenetic space
+navigation: instances where the system does not merely reach its default target morphology in
+light of perturbations, but reaches novel attractors in that space. The first concerns the
+hackability of morphogenesis by simple prompts. Cells of many plants, which normally very
+reliably build flat, green leaves can be induced by a parasite's signals to instead construct
+
+[PAGE 11]
+remarkable spiky round structures – galls (Figure 2D); this is an outcome we could never guess if
+it wasn't for the functional data provided by this non-human bioengineer. Crucially, it is not built
+the way that wasps build their nest – a kind of 3D printing where each piece is manually placed,
+corresponding to bioprinting in the bioengineering of new organs. Instead, they follow the path
+sought by regenerative medicine workers who look for triggers of complex downstream
+morphogenetic cascades, not micromanagement [43]: a simple, low information-content
+stimulus which relies on the competency of the target material to implement the details (a key
+property of cognitive behavioral systems).
+
+In all of these cases, the large-scale anatomical form is set in the context of a multicellular
+field, which must establish boundaries within which a specific morphology is to be established.
+The scale of the subunits which implement a pattern can shift, growing from a single cell at he
+beginning of development (and evolution of multicellularity) to encompass very large structures.
+The breakdown of the physiological dynamics that bind individual cells toward grandiose goals in
+anatomical space is a dissociative phenomenon known as cancer (Figure 2E-G) [44]. Thus, there
+are two main components to the rule of biophysical networks among cells: setting the size of the
+setpoints to be dynamically pursued (from single cells' tiny metabolic setpoints to organism-level
+anatomical patterns), and storing a specific setpoint, at appropriate scale [45].
+
+An alternative to inducing novel morphogenetic behaviors with external signals is the
+ability to reach novel anatomical outcomes by subtraction, or release from native instructive
+signals. When liberated from the frog embryo (Figure 3A-C), in which other cells dictate their fate
+as the passive outer barrier of the organism, epithelial cells self-assemble into a self-motile proto-
+organism that exhibits several kinds of behavior (including kinematic self-replication, not known
+to occur in any other organism or evolutionary lineage) and modifies the expression of hundreds
+of genes, for example turning on a cascade of hearing-related transcripts which actually allow it
+to respond to sound stimuli in ways that embryos never do [46]. Likewise, adult human tracheal
+epithelial cells liberated from the organism form Anthrobots (Figure 3D-F) – self-motile structures
+that differentially express over 9000 genes (half the genome), arise in several discrete
+morphotypes with different behaviors, and are able to repair wounds in neural tissues they
+encounter in their environment [47]. They look like no stage of human development, and become
+epigenetically younger than their cells of origin [48]. All of this takes place in the absence of
+synthetic biology circuits, genomic editing, scaffolds, or nanomaterials and reveals the
+capabilities of genetically-normal cells to construct new, adaptive, coherent morphological,
+behavioral, and transcriptional outcomes when their default paths are unavailable. These
+examples show that it is not just the morphological shape of living materials that is plastic,
+environmentally sensitive, re-writable, and reliably re-constructible over multiple generations,
+but also complex novel behaviors.
+
+[PAGE 11] The bioelectric layer of developmental information
+
+We have seen the parallels between the functional algorithms governing morphogenesis
+and those governing behavior, in terms of memory, complex responses to simple triggers, and
+ability to reach standard, or novel, solutions to anatomical, physiological, or transcriptional
+challenges. Are these merely analogous or homologous, with respect to the evolution of
+underlying components? What mechanisms underlie flexible, adaptive behaviors in conventional
+3D space and in morphogenetic space, and how much do they have in common? That is, are the
+
+[PAGE 12]
+algorithms of morphogenesis and behavior actually kinds of cognition? Dynamic anatomy is
+known to involve biochemical morphogen gradients as well as biomechanical gradients, but some
+of the most interesting aspects of shape homeostasis are driven by the same modality that
+enables behavior toward goals in 3D space: bioelectric networks [49, 50].
+
+All cells, not just neurons, express ion channels which dynamically set resting voltage
+potential, and most cells have gap junctions – electrochemical synapses [51] which enable
+networks through which the voltage states propagate according to complex rules (because both
+ion channels and gap junctions are themselves voltage-sensitive, resulting in feedback loops). All
+tissues form an excitable medium in which bioelectric patterns can form (akin to the Turing
+patterns in biochemical medium) by breaking symmetry, amplifying specific features, and
+changing over time (Figure 4A). Because cells are sensitive to the bioelectric state of their own
+membrane and that of their neighbors (Figure 4C), developmental bioelectricity has long been
+known to regulate cell behavior (proliferation, migration, differentiation, gene expression) and
+morphogenesis [52]. Bioelectric states contribute to the control of size and location of organs
+[53], by regulating distribution of morphogens, the behavior of stem cells [54, 55], and the ways
+in which cells interpret other cues such as Hedgehog gradients [56, 57]. However, it is now known
+that this modality is much more than another piece of biophysics to keep track of during
+morphogenetic events.
+
+The first key function of bioelectric patterns is that of memory: specifically, holding the
+setpoints of anatomical homeostasis (Figure 4B). This is a critical difference from models of
+morphogenesis in which complex form emerges as a feed-forward (open loop) consequence of
+biochemical rules implementing a cellular automaton with no pre-determined goal state. This set
+of models can be useful to understand wound healing and similar events but it is constrictive in
+the control of de novo organization of novel complex structures because it limits interventions
+to manipulation of the rules. The inverse problem – how to change the rules guiding cell behavior
+in order to result in a different outcome - is in general unsolvable due to the iterative, non-linear
+nature of the mapping between genes and resulting morphology [58]. Fortunately however,
+neither evolution nor workers in regenerative medicine are limited by this paradigm because
+many instances of morphogenesis are a homeostatic process that works to reduce error relative
+to an encoded setpoint. Because at least one mechanism of setpoint encoding is now known (the
+bioelectric prepatterns shown in Figure 4), evolution and bioengineering can take advantage of
+a most important feature of such cybernetic systems: change the setpoint, and the hardware will
+build to that.
+
+In some cases, morphogenetic memory is stored bioelectrically. One example is the
+planarian head-tail axial polarity discussed above [59]. A bioelectric gradient specifies the
+number and location of heads, and that pattern can be readily edited by drugs targeting ion
+channels, pumps, or gap junctions to produce 1-, 2-, or 0-headed worms on demand [60] (Figure
+2A). A more elaborate pattern is encoded in the "electric face” prepattern in vertebrate
+embryogenesis (Figure 4B), in which the position of the eyes and other craniofacial organs (as
+well as the gene expression domains establishing them) are indicated by a stereotypical
+distribution of voltage domains before they become apparent in molecular-genetic or histological
+readouts [61]. Manipulating this pattern via experimental interventions or genetic syndromes
+such as Andersen-Tawil result in the predicted changes in gene expression and subsequent birth
+defects [62].
+
+
+[PAGE 13]
+Even more importantly than merely being a necessary aspect of normal morphogenesis,
+these patterns can be sufficient to functionally encode a specific complex form and thus serve as
+a target for interventions designed to achieve a desired organ-level outcome. For example, the
+specific bioelectric patterns (Figure 4B) of the developing face can be used in a gain-of-function
+mode: bioelectric prepatterns that indicate the prospective position of the eyes in the “electric
+face" can be introduced elsewhere in the body, such as in the gut region, resulting in ectopic eye
+formation (Figure 4D) when these bioelectric patterns can over-ride the normal cancer-
+suppressing ability of cells to maintain default bioelectric staes (Figure 4E-F). Importantly, these
+eyes can form in posterior regions, revising previous conclusion that only anterior neurectoderm
+was competent to become eye [63]: a more accurate view of competence is obtained when one
+uses the correct prompt (a bioelectric state achieves what the master eye gene Pax6 cannot do).
+Likewise, bioelectric properties can be modulated to induce re-growth of complete appendages
+such as tails and legs [64]. Computational methods can now be used to infer which ion channels
+should be activated to induce specific changes in the bioelectric pattern, such as sharpening its
+borders and thus improving the precision of morphogenesis, which has been done in the case of
+chemically- and genetically-induced teratogenesis [65]. The HCN2 channel has been used to
+repair defects of the brain, face, heart, and gut [66], as guided by a simulator of bioelectric state
+change.
+
+The bioelectric layer of morphogenetic control implements several key aspects of the
+agential material of life. First, it serves as the memory medium storing re-writable setpoints
+toward which morphogenetic error-minimization loops operate – in the case of the planarian
+anterior-posterior axis, embryonic head and face shape, and left-right asymmetry, the
+bioelectrically-encoded prepatterns guide subsequent gene expression and morphogenesis [67].
+Second, it provides the kind of top-down, modular control that is ubiquitous in cognitive systems:
+simple stimuli can kick off very complex behavioral cascades (in this case, in the space of
+morphogenetic outcomes) because the machinery that interprets bioelectrical states is
+sophisticated (just as a simple verbal message is sufficient to re-organize synaptic machinery in
+the recipient's brain to enable memory and communication). Low information-content triggers,
+such as simple voltage states initiate the formation of very complex organs and appendages.
+
+Third, it implements a physiological software layer that provides significant independence
+from the genetically-encoded hardware. Planarians can be made permanently 2-headed [39],
+tumors induced by KRAS and p53 mutations can be normalized [68], and birth defects induced
+by NOTCH mutation can be repaired [69], not by changing the genome but by altering the
+information stored in the bioelectrical circuits. Thus, at least in some cases, hardware defects
+such as mutations in key genes can be over-ridden by physiological information, illustrating the
+reprogrammability of life. Consistent with the insufficiency of hardware information to explain
+or control the behavior of reprogrammable digital systems, genetically-normal worm fragments
+can make heads (and brains) appropriate to other species [70], and in general, genetic
+information is not sufficient to distinguish 1-headed from 2-headed animals, or correctly predict
+birth defects or tumors in animals carrying mutations in crucial genes. The ability of ion channels
+and gap junctions to acquire and retain states that are set post-translationally results in a
+versatile memory medium that can store different information on the same (genetically-encoded)
+hardware.
+
+[PAGE 13] 
+Even more importantly than merely being a necessary aspect of normal morphogenesis,
+these patterns can be sufficient to functionally encode a specific complex form and thus serve as
+a target for interventions designed to achieve a desired organ-level outcome. For example, the
+specific bioelectric patterns (Figure 4B) of the developing face can be used in a gain-of-function
+mode: bioelectric prepatterns that indicate the prospective position of the eyes in the “electric
+face" can be introduced elsewhere in the body, such as in the gut region, resulting in ectopic eye
+formation (Figure 4D) when these bioelectric patterns can over-ride the normal cancer-
+suppressing ability of cells to maintain default bioelectric staes (Figure 4E-F). Importantly, these
+eyes can form in posterior regions, revising previous conclusion that only anterior neurectoderm
+was competent to become eye [63]: a more accurate view of competence is obtained when one
+uses the correct prompt (a bioelectric state achieves what the master eye gene Pax6 cannot do).
+Likewise, bioelectric properties can be modulated to induce re-growth of complete appendages
+such as tails and legs [64]. Computational methods can now be used to infer which ion channels
+should be activated to induce specific changes in the bioelectric pattern, such as sharpening its
+borders and thus improving the precision of morphogenesis, which has been done in the case of
+chemically- and genetically-induced teratogenesis [65]. The HCN2 channel has been used to
+repair defects of the brain, face, heart, and gut [66], as guided by a simulator of bioelectric state
+change.
+
+The bioelectric layer of morphogenetic control implements several key aspects of the
+agential material of life. First, it serves as the memory medium storing re-writable setpoints
+toward which morphogenetic error-minimization loops operate – in the case of the planarian
+anterior-posterior axis, embryonic head and face shape, and left-right asymmetry, the
+bioelectrically-encoded prepatterns guide subsequent gene expression and morphogenesis [67].
+Second, it provides the kind of top-down, modular control that is ubiquitous in cognitive systems:
+simple stimuli can kick off very complex behavioral cascades (in this case, in the space of
+morphogenetic outcomes) because the machinery that interprets bioelectrical states is
+sophisticated (just as a simple verbal message is sufficient to re-organize synaptic machinery in
+the recipient's brain to enable memory and communication). Low information-content triggers,
+such as simple voltage states initiate the formation of very complex organs and appendages.
+
+Third, it implements a physiological software layer that provides significant independence
+from the genetically-encoded hardware. Planarians can be made permanently 2-headed [39],
+tumors induced by KRAS and p53 mutations can be normalized [68], and birth defects induced
+by NOTCH mutation can be repaired [69], not by changing the genome but by altering the
+information stored in the bioelectrical circuits. Thus, at least in some cases, hardware defects
+such as mutations in key genes can be over-ridden by physiological information, illustrating the
+reprogrammability of life. Consistent with the insufficiency of hardware information to explain
+or control the behavior of reprogrammable digital systems, genetically-normal worm fragments
+can make heads (and brains) appropriate to other species [70], and in general, genetic
+information is not sufficient to distinguish 1-headed from 2-headed animals, or correctly predict
+birth defects or tumors in animals carrying mutations in crucial genes. The ability of ion channels
+and gap junctions to acquire and retain states that are set post-translationally results in a
+versatile memory medium that can store different information on the same (genetically-encoded)
+hardware.
+
+[PAGE 14] Bioelectricity: a tractable example of cognitive glue
+Finally, a crucial aspect of the bioelectric layer is its function as cognitive glue. Information
+processed by the electrical network of neurons is widely understood as providing the “cognitive
+glue" - mechanisms and policies of interactions between cells that allow animals to have goals,
+preferences, and memories that do not belong to any of the individual cells. In other words, it
+enables coordination and alignment of components toward a whole that operates in new
+problem spaces. Neural bioelectric networks enable this as an evolutionary pivot of a much more
+ancient function of bioelectricity playing the same role, first in metabolic space in bacterial
+biofilms (enabling coordinated behavior of the colony in feeding [71], Figure 5E) and then in
+anatomical space as it guides the navigation of embryos through the shape changes needed to
+develop and regenerate. Both the functional properties of ion channel-mediated electrical
+circuits and their molecular underpinnings (electrical synapses known as gap junctions) are
+homologous across morphogenesis and cognitive function. Likewise, the mechanisms used to
+communicate bioelectrically-mediated decisions to downstream mechanisms of cell behavior
+and gene expression – neurotransmitters are likewise conserved, with for example serotonin
+being not only a crucial neurotransmitter involved in high-level cognition but also an important
+signaling molecule for pattern regulation in the axial morphogenesis of early embryos,
+craniofacial and heart development [72].
+
+Crucially, bioelectric networks are not just a communication medium for cells: much as
+they do in both cognitive science and computer architectures, they establish an excitable medium
+within which instructive information patterns can interact and compete for the opportunity to
+express as phenotypic outputs. For example, in the case of the bioelectric pattern that specifies
+the "make an eye here" signal, sometimes eyes appear and sometimes they do not. What
+happens is that the group of cells ex2pressing the prospective eye bioelectric pattern tries to
+induce their normal (un-manipulated) neighbors to participate in eye formation. At the same
+time, as part of a cancer suppression mechanism, the neighbors are trying to normalize the
+nascent eye cells by equalizing their voltage with the local region which would keep them as skin,
+gut, etc. Even after they commit to an eye pathway by expressing genes like Rx1 (Figure 4E-F),
+they eye can fail to appear, consistent with the ability of voltage states to re-set and normalize
+nascent tumors (Figure 2E-G). This battle of anatomical models of the future (morphogenetic goal
+states) can be seen as a communication and signaling process between groups of cells, or, as
+competition between patterns encoding goal states within a medium – a dichotomy very familiar
+to the field of computational psychiatry and cognitive neuroscience in general. In these ways,
+developmental bioelectricity underwrites the deep symmetry between the developmental origin
+of bodies and of minds.
+
+[PAGE 14] Below the cell level: cognition all the way down
+The above examples illustrate the importance of cognitive, not just mechanistic, models
+of cellular networks and their navigation of anatomical space. Importantly for our argument
+linking morphogenesis to cognition, these feedbacks are only the first step along the spectrum
+of self-regulatory abilities that lead from passive matter to complex behavioral capacities (Figure
+5A). It is becoming increasingly realized that even cells exhibit learning, decision-making, and
+problem-solving in other spaces, for example physiological and transcriptional spaces [27, 28, 32,
+73, 74]. For example, in planaria exposed to barium, a non-specific potassium channel blocker,
+
+[PAGE 15] 
+heads immediately degenerate (because of neural toxicity in the absence of normal potassium
+flux). Surprisingly, they then regenerate a new head which is barium-insensitive [75] (in a time
+frame far too fast for a trial and error search through the space of possible gene expression
+combinations). Transcriptional comparison between original and barium-adapted heads revealed
+a small number of genes which were induced in order to deal with a stressor that the planarian
+lineage was likely never exposed to in its evolutionary history. In a space of several tens of
+thousands of possible actions (up- and down-regulation of specific genes), cells rapidly identified
+and deployed those transcriptional effectors that resolved a novel physiological stressor, showing
+the ability to map between transcriptional and physiological space and to improve novel
+solutions. This suggests it is not a trial and error process (certainly not one on evolutionary
+timescales), nor is it likely to be a ‘canned' solution found from previous experience and later
+recalled. Instead, what is indicated is an informed problem-solving process that can actively
+identify the changes in genetic activity that are required to accommodate to this novel stress.
+
+However, the cellular level is not the beginning of these capacities – they appear even in
+the biochemical substrate inside of cells (Figure 5B-C). One example is that of learning: it was
+found that gene-regulatory network models, a workhorse of understanding transcriptional
+dynamics [76], can perform several different kinds of learning including Pavlovian conditioning.
+While this capability is enriched in real biological networks (i.e., probably favored by evolution,
+but not necessarily [77, 78]), random networks can do it to some extent as it is an emergent
+feature of the mathematics governing networks of interacting subunits such as signaling
+pathways and molecular reactions. This reveals living material to comprise a multi-scale
+competency architecture, with problem-solving capacities at each level of organization (Figure
+5D).
+
+These properties can now be quantified via causal emergence a new development of
+information theory which allows quantification of the degree to which a system is "more than
+the sum of its parts”. This mathematical analysis is used in cognitive science to as a signature
+revealing a first-person observer inside a system, making the difference between a collection of
+neurons and a brain that houses an aware mind (indeed, it is used clinically to differentiate
+different states of awareness in human brains [79]). Recent analysis indicates that gene
+regulatory networks not only exhibit significant causal emergence, but also increase their
+integration as they are trained by stimuli in learning paradigms [80]. These examples illustrate
+the ubiquity of cognitive glue mechanisms at multiple scales and in multiple media/substrates
+[81]. This feedback loop, in which wholes learn things their parts do not know (and cannot know
+[33]), and in turn become more highly integrated agents as a result of that learning, is a powerful
+aspect of the agential material of life and can underlie the spiral between evolution and
+intelligence.
+
+
+[PAGE 15] The machine metaphor: computationalist models of life and mind
+In this section we explain what is good about a computationalist stance (within the
+mechanistic metaphor), before discussing its insufficiencies in the following section. The above
+examples illustrate goal-directed, problem-solving, navigational processes in anatomical
+morphospace which are implemented by circuits in various substrates (e.g. electrical,
+
+[PAGE 16] 
+biochemical and biomechanical). Because cybernetics and computer engineering have a long
+history of implementing such synthetic intentional systems, it is tempting to adopt a
+computationalist approach in which the autopoiesis of form and behavior are described as a very
+specific kind of machine: the computer. This has many advantages and is quite powerful, taking
+biology well beyond the limiting mechanistic and bottom-up control strategies of the traditional
+machine metaphor.
+
+The reductionist, mechanistic approach focuses on explanations of systems' behavior by
+understanding of the interaction rules of their components (e.g., the drive in the biological
+sciences for “molecular mechanisms" for complex properties and traits). In order to
+accommodate phenomena at higher levels of organization, this then emphasizes the concept of
+“emergence” – the observed appearance of complex outcomes of form and function when local,
+simple interactions are iterated many times, with effects that circulate across the entire system.
+Examples of mathematical formalisms that seek to model this include the rich behavior of cellular
+automata for example [82]. It is then thought that life can likewise be understood as the workings
+out of biochemical rules. Interestingly, while many in the field believe that reducing down to
+biochemistry should be the goal, it is rarely said that the reduction should keep going all the way
+to the dynamics of quantum foam for example. This is curious because supposing that biologically
+relevant causes can be realized at one particular level of organization, e.g. molecular, tacitly
+acknowledges that one level of organization can be ʻlow enough', rendering lower level details
+to be not biologically efficacious, but denies even the possibility of causes at other (higher) levels
+of organization that would make that preferred level of organization non-efficacious in the same
+way.
+
+The problem with emergence as a guiding concept in life science is that it is open loop
+there is no notion of a goal state, things just progressively unroll in time and whatever happens,
+happens. This does not capture systems that clearly exhibit feedback that minimizes distance
+from specific outcomes or adapts to reach them (Figure 1), and does not help make predictions
+(other than “try it and see what emerges”) when one changes the initial conditions or interaction
+rules (Figures 2-3). Worse, it does not facilitate manipulation: to change the outcome in
+biomedical or bioengineering settings, the only target for intervention are the rules or starting
+configuration – low-level targets that have no obvious relationship to the properties one wants
+to change (e.g., which genes to edit to change the axial symmetry of an organism?). Because the
+emergent, recurrent nature of morphogenesis is irreversible, there is no general process for
+solving the inverse problem of knowing what to change to get a specific outcome (note that the
+antler and barium-resistance examples above show that this is biologically possible, and we
+suggest, is a ubiquitous feature of robust and pliant developmental targets). This is a strong
+limitation for popular genome editing and other molecular-level approaches to the goals of
+regenerative medicine or synthetic morphology. The computational metaphor enables
+"reprogrammable materials” whose behavior can be modified by rational design because it
+provides a bundle of conceptual tools needed to achieve specific endpoints.
+
+A computational metaphor for life allows us to move away from simplistic ideas of life-
+as-machine. For example, a simplistic machine has parts that only do one thing, or provide one
+function, and cannot deviate from whatever it is they are built to do. Whilst this kind of thinking
+is often applied to the molecular machinery of CDB, the computational metaphor allows for much
+more flexible interpretations without abandoning an essentially mechanistic position – that is,
+
+[PAGE 17] 
+computers are a particular kind of machine. Some of the most important features of computers,
+relevant to updating our thinking about CDB, are: software/hardware separation,
+programme/data duality, multiple levels of abstraction, substrate independence and abstract
+top-down causes, namely algorithms, learning and intelligence.
+
+The software/hardware distinction, already discussed, offers a machine type where we
+can see that the same physical components (hardware) can be used to serve different functions
+(run different programs). This means that a naïve one-component-one-function (OCOF)
+assumption is not true of all machines, and we can see it isn't true of CDB. Whilst the OCOF
+assumption is often a starting point in genetics, alternative splicing and the 'moonlighting' roles
+of proteins, shows this to be an unsustainable simplification; the same components do different
+functions depending on the behavioural context of the cell. Likewise, in the normal action of
+cellular differentiation and organogenesis, the genetic composition of each cell is identical, but
+the phenotype of the cell is determined by the organismic context. And the examples above, such
+as the induction of ectopic organs and limbs, and changing the number of heads of planaria,
+through bioelectric manipulation, we see that the same tissues can be given different forms and
+function.
+
+In computational machines we often talk about a programme taking data as input and
+producing data as output. But a more interesting observation is that a programme can also be
+data (input to anther program), and the data output from a program can be also be a programme.
+A classic example of this kind of ambiguity in CDB is the way that DNA can be interpreted, via the
+ribosomes, as a set of instructions for constructing proteins, but the same DNA can also be
+treated by DNA polymerase as though it is merely data to be copied. At another level, we can
+think of gene-expression profiles as outputs of the cellular genetics, determining the phenotype
+of the cell, but gene-expression profiles include transcription factors that are also inputs to gene-
+regulatory machinery – and can thereby, in effect, change the programme of the cell (or a
+neighbouring cell), to behave differently.
+
+In any complex mechanical machine there are often multiple layers of abstraction that
+are useful in understanding how they work (e.g. the car contains the engine, contains the
+combustion chamber, contains the pistons and valves). But in computational machines this is
+more extreme (and through substrate independence, has more fundamental meaning). For
+example, when we run an application on a computer, it uses an algorithm, written in a
+programming language, executed in a run-time environment, running on an operating system,
+running on a given hardware set-up, involving multiple layers of hardware abstraction from
+arithmetic unts, to logic circuits, to individual transistor gates. CDB also quite clearly has multiple
+levels of organisation from molecules, to pathways, to cells, to tissues and organs, to organisms.
+Sometimes, however, it can be unclear whether these levels of organisation are just levels of
+description that ease our understanding, or whether they have a more objective meaning.
+
+A vital concept in computation is the notion of substrate independence. That is, we can
+describe an algorithm (a step-by-step procedure), e.g. for sorting numbers or performing matrix
+multiplication, and we can implement that same algorithm in any programming language and run
+it on any machine with exactly the same results. In principle, it does not matter whether the
+computer is built out of electronics, or cogs and levers, or hydraulics and valves, it can run the
+same algorithm with the same results. Indeed, computers are designed and built to 'protect'
+algorithms from the hardware details. We say that the algorithm is substrate independent or
+
+[PAGE 17]
+computers are a particular kind of machine. Some of the most important features of computers,
+relevant to updating our thinking about CDB, are: software/hardware separation,
+programme/data duality, multiple levels of abstraction, substrate independence and abstract
+top-down causes, namely algorithms, learning and intelligence.
+
+The software/hardware distinction, already discussed, offers a machine type where we
+can see that the same physical components (hardware) can be used to serve different functions
+(run different programs). This means that a naïve one-component-one-function (OCOF)
+assumption is not true of all machines, and we can see it isn't true of CDB. Whilst the OCOF
+assumption is often a starting point in genetics, alternative splicing and the 'moonlighting' roles
+of proteins, shows this to be an unsustainable simplification; the same components do different
+functions depending on the behavioural context of the cell. Likewise, in the normal action of
+cellular differentiation and organogenesis, the genetic composition of each cell is identical, but
+the phenotype of the cell is determined by the organismic context. And the examples above, such
+as the induction of ectopic organs and limbs, and changing the number of heads of planaria,
+through bioelectric manipulation, we see that the same tissues can be given different forms and
+function.
+
+In computational machines we often talk about a programme taking data as input and
+producing data as output. But a more interesting observation is that a programme can also be
+data (input to anther program), and the data output from a program can be also be a programme.
+A classic example of this kind of ambiguity in CDB is the way that DNA can be interpreted, via the
+ribosomes, as a set of instructions for constructing proteins, but the same DNA can also be
+treated by DNA polymerase as though it is merely data to be copied. At another level, we can
+think of gene-expression profiles as outputs of the cellular genetics, determining the phenotype
+of the cell, but gene-expression profiles include transcription factors that are also inputs to gene-
+regulatory machinery – and can thereby, in effect, change the programme of the cell (or a
+neighbouring cell), to behave differently.
+
+In any complex mechanical machine there are often multiple layers of abstraction that
+are useful in understanding how they work (e.g. the car contains the engine, contains the
+combustion chamber, contains the pistons and valves). But in computational machines this is
+more extreme (and through substrate independence, has more fundamental meaning). For
+example, when we run an application on a computer, it uses an algorithm, written in a
+programming language, executed in a run-time environment, running on an operating system,
+running on a given hardware set-up, involving multiple layers of hardware abstraction from
+arithmetic unts, to logic circuits, to individual transistor gates. CDB also quite clearly has multiple
+levels of organisation from molecules, to pathways, to cells, to tissues and organs, to organisms.
+Sometimes, however, it can be unclear whether these levels of organisation are just levels of
+description that ease our understanding, or whether they have a more objective meaning.
+
+A vital concept in computation is the notion of substrate independence. That is, we can
+describe an algorithm (a step-by-step procedure), e.g. for sorting numbers or performing matrix
+multiplication, and we can implement that same algorithm in any programming language and run
+it on any machine with exactly the same results. In principle, it does not matter whether the
+computer is built out of electronics, or cogs and levers, or hydraulics and valves, it can run the
+same algorithm with the same results. Indeed, computers are designed and built to 'protect'
+algorithms from the hardware details. We say that the algorithm is substrate independent or
+
+[PAGE 18]
+multiply realisable. This gives a formal way to separate one layer of organisational abstraction
+from another. That is, if a function at one level can be realised multiple different ways by
+functions at another level, then a layer of abstraction is, in this sense, more specific than simply
+multiple level of description within one system. It is not just that an algorithm could be, in
+principle, instantiated in multiple different ways but actually, in practice, it is implemented in one
+way on a given machine. Operating systems routinely farm out processes to different processors
+and different areas of memory dynamically in response to resource constraints. In CDB dynamic
+multiple realisability is evidenced in many ways. For example, the pacemaker rhythm of the heart
+can be realised by oscillations involving different sets of genes to the same effect. In one example,
+when a gene contributing a product responsible for 80% of the electric current is knocked-out,
+there is only a 15% difference in rhythm because other genes step in to achieve the same function
+by different means [83]. Likewise in the barium resistant planaria, a different pathway is activated
+to achieve the same regulatory outcome. Many such examples demonstrate that higher-level
+biological abstractions (rhythms, homeostatic regulation, phenotypic goal states) can be realised
+in many different lower-level biological details, and invoked 'on the fly'.
+
+The idea of an algorithm gives us the idea of a cause, at a high level of abstraction, that
+orchestrates the activity of parts, at a low level of abstraction a top-down cause. For example,
+the reason that a particular transistor changed from one state to another is because the
+computer was running a particular algorithm. This lies in stark contrast to the idea that the
+algorithm was caused by the behaviour of the transistors. In CDB, we find the same distinction
+very useful. For example, the reason that a group of cells took on a particular arrangement of cell
+phenotypes was because the developmental (algorithm) of the organism was growing a
+particular organ or limb, rather than the idea that the organ was caused by the arrangement of
+cell phenotypes. This perspective is supported by the observation that these developmental
+outcomes can be changed by top-down bioelectric interventions.
+
+Lastly, computational metaphors give us a way to understand how machines can be
+intelligent. Algorithms that learn and problem-solve are not mystical but implemented in
+predictable ways. Computation thus allows us to see that natural intelligence can live within a
+mechanistic framing. These concepts thus help us make sense of what we observe in CDB and
+help us understand a sense in which organisms can be problem-solving agents that cause the
+suitable orchestrated activity of their constituent components, despite also being physically
+constituted by them.
+
+An apparent weakness of the computational metaphor is that, although it offers
+algorithms to stand in for top-down agency, it appears that this agent still ‘only does whatever it
+was told to do', e.g. by the programmer. This is not the case, however. Any system that can
+change state as a result of experience can become something different, with different functions
+and goals, as a result of that experience. In computation we call this machine learning. Learning
+systems can, and frequently do, behave in ways that surprise their programmers [84]. Via
+program-data duality, there is no principled distinction between a programme that learns from
+data and a programme that becomes a different program as a result. Since one program can
+'experience' data that specifies the instructions of another program, and then run this program,
+this means there is no principled distinction between learning and re-programming. This means
+that the behaviour of a programme can be essentially determined not by the programmer, but
+by the system's environment or experience. In CDB, this is illustrated by environmental changes
+
+[PAGE 19]
+to the developmental program, that not only change the phenotype, but permanently change
+the goals of the developmental programme (e.g. two-headed planaria). These are clearly not
+doing what they were originally ‘programmed' to do. We can also recognise the idea that
+computer code can modify its own code, for example, when CRISPR genes modify DNA directly.
+Learning in a less radical sense is also widespread in living systems and does not require
+organisms with neurons and brains. Still, one might counter that, although the system is doing
+something that goes beyond its original programming, it is only learning what it was programmed
+to learn (e.g. using objectives, goals or reward criteria set-up by a programmer). This is also not
+really the case. A programme can take as input data that are used as criteria for a learning process
+- hence re-setting its goals. This is illustrated by (bioelectric) resetting of the latent morphological
+target of the planarian body form.
+
+Together the computational concept space offers a robust defence of the idea that
+abstract, top-down, multiply-realisable goals can be set and reset in interaction with the
+environment in a top-down way, such that the underlying details of how this gets implemented
+in low-level hardware is flexible and therefore cannot support a bottom-up causal account.
+However, the computational metaphor does have genuine weaknesses.
+
+From Computationalism to cognitivism
+
+One weakness of computationalism is that it all seems rather artificial – computational
+machines, albeit ones that learn, built by human designers for the purpose of doing computation
+(including learning). While some of the concepts appear to have useful biological analogues in
+CDB, can these be genuine homologues given that computers are so artificial? What is needed is
+a way to naturalise computational intelligence. This is provided by cognitivism. Obviously the
+brain-as-computer metaphor also has limitations, but many of the same concepts transfer from
+computers to familiar concepts in cognitive science: software/hardware separation (mind/brain),
+programme/data duality (thinking about thoughts/thoughts that change how you think), multiple
+levels of abstraction (e.g. levels of representation), substrate independence and abstract top-
+down causes/algorithms (thoughts and other mental constructs as genuine causes), and not least,
+learning and intelligence.
+
+What becomes clear, however, is that these principles do not apply only to brains but to
+all levels of biological organisation in CDB. To help us naturalise these cognitive principles in other
+levels of biology (in particular organisms without neurons and brains), it is useful to recognise
+that, although there are many contemporary machine learning and Al approaches that are very
+complex and many of these are of little biological relevance, the basic principles of learning can
+be surprisingly powerful with very weak assumptions. In particular, connectionist models of
+learning depend only on very simple homogeneous computational units, connected
+appropriately [77, 78, 85-88]. This can be implemented in many different kinds of biological
+substrates from gene networks [89] to protein networks to ecosystems [89, 90]. And
+connectionist learning principles can also be very powerful and yet also very natural and simple.
+Hebbian learning, in particular, can be demonstrated in many kinds of non-neural and non-
+biological systems [89, 91, 92]. This kind of learning is sufficient for forming associative memories,
+learning with generalisation, and adaptive problem-solving (without a programmer, teacher or
+
+[PAGE 20]
+natural selection [78, 89]). This means that many of the useful concepts familiar in the
+computational domain do transfer naturally to many different levels of biology relevant to CDB.
+
+Another weakness of computationalism is that we retain a lingering intuition that there
+are only two causal levels and corresponding directions of influence. Namely, bottom-up causes
+(from the nature of the hardware components, upwards into its higher-level processes and
+activities) and top-down causes (from the algorithm, acting downwards onto the lower-level
+specifics of the hardware). This encourages a kind of dualistic thinking – there is the machine and
+there is 'the ghost in the machine'. And this dualism tends to carry over to the cognitivist
+metaphor - the dualism of the body and the mind.
+
+This seems to be a problem that these metaphors, in this form at least, cannot rectify.
+The mind-body problem has a deep philosophical basis but causes very real disagreements in
+CDB. This is manifest in contemporary arguments about the genuine efficacy of agency as a
+biological cause. For example, some argue that agency is the core concept that distinguishes the
+living form non-living [13, 93], others tackle it philosophically [94, 95] and with biological
+examples [96], and others nudge the periphery with concepts like ‘the active role of phenotypes'
+[97]. But others see agency as no more useful than ‘elan vital'. One way to understand the
+difficulty is that if the bottom-up mechanist perspective is not wrong, and it dominates at the
+molecular level (because surely molecules are not agential), then at what level does it stop? And
+relatedly, at what level of biological organisation does agency 'kick-in'? And when it does, how
+can it possibly over-rule the bottom-up causes previously identified? Even if we grant that
+organisms like us have agency (perhaps by virtue of our specialised neural machinery), we are at
+a loss to decide whether some intermediate level of organisation within our bodies (e.g. our cell
+behaviour) did what it did because it was necessitated by its physical make-up or because we
+willed it to do so with our minds.
+
+So long as agency is restricted to these rarified strata of organisms with brains like ours,
+it has limited relevance to CDB. And if we push cognitive concepts down into other levels of
+biology, this does not solve the dualistic problem of bottom-up vs top-down thinking. This does
+not seem like a problem that can be answered within this dualistic framing. Of course, the reason
+that cognition is a naturalised kind of intelligence (unlike computation) is that it is a product of
+natural selection. However, here we find another way in which the bottom-up vs top-down
+problem shows up; namely in the proximal vs ultimate distinction. That is, proximal mechanisms
+concern the low-level nitty gritty of a biological situation. But ultimate causes concern the higher-
+level reason, coming, one way or another, from the fact that it caused an organism to survive and
+reproduce better (wrapping-up all the low-level detail into a single high-level ‘evolutionary
+imperative'). This places natural selection in the position of ‘agent' acting top-down on the design
+and programming of CDB. Whereas the mechanisms of CDB act ‘upwards' producing phenotypes
+that selection can act on. In other words, although cognition is more natural than computation,
+the idea that organisms have goals that are programmed by natural selection fails to resolve the
+dualistic mind-body problem of organismic agency.
+
+Most recently, the development of computational architectures such as Neural Cellular
+Automata, diffusion models, variational auto-encoders (VAEs7–10), and two-stage Artificial
+Neural Networks (ANNs11–15) has helped extend the classic Central Dogma model, beyond
+"blueprint” or “program” metaphors to better understand morphogenesis as a hierarchical
+decoding process from a single cell into a mature organism – a dynamic and flexible
+
+
+[PAGE 21]
+reconstruction of past information as suitable for new contexts. This set of ideas [98, 99]
+identifies the genome as compressed latent variables that instantiate organismal development
+as a generative model. These machine learning architectures consist of an encoder and a de-
+coder part (Figure 6C) which compress input data into a lower-dimensional bottleneck
+representation, from which the original data is then reconstructed via decompression. Typically,
+the decoding stack of VAEs operates hierarchically, going from abstract representations through
+adding modular features to detailed reconstructions of the original data, recapitulating the
+hierarchical structure of bodies. These computational formalisms are fundamentally based on
+learning and flexible sense-making of patterns within data, enabling generative processes relying
+on compressed latent variables arguably to leverage modularity and evolvability in
+developmental biology in a much richer way than traditional explicit algorithmic models.
+
+As useful as the computational and cognitive metaphors are in the life sciences, the
+current version of the formalism must be expanded in three ways to encompass more effective
+interaction with the agential material of life. First and simplest is the insistence on one correct,
+objective mapping of the data/machine concepts: it must be realized that DNA as software is just
+one useful way to use the abstraction, and that DNA can also be seen as specifying the hardware
+of life, while the physiological computations of cells and tissues are the software. More broadly,
+the question of which structure/process is the data, and which are the machine that operates on
+it, is not obvious for any complex system. Second, is the need to resolve the dualistic framing
+manifest in the idea that there are (only) two levels of causation – namely bottom-up
+mechanisms and top-down agency. Third, the biggest issue with the standard metaphors is the
+lack of compatibility between a deductive (algorithmic) process and a creative one. Organicist
+critiques of the computationalist machine metaphor (or a computational interpretation of
+cognition) have not had their due influence on state-of-the-art bench biology and medicine
+because they have not offered tractable replacements. In the next section we describe the
+direction of a research program for updating the computational metaphor in ways that are better
+suited for interacting with living matter.
+
+Confabulatory computing as the foundation for living intelligence
+
+A key aspect in which cognitive elements enter biology at all scales of size and temporality,
+which is not well-handled by current computational approaches, is the need to creatively
+interpret information. Confabulation is basically 'making it up as you go along' – i.e. constructing
+a plausible narrative on the fly. Naturally, one might assume this is an undesirable characteristic
+of human cognition, but here we use it to refer to the dynamic and radically improvisational
+nature of biological sense-making that occurs at all levels of biological systems [100, 101]. This is
+useful to help us understand how to address the three needs above, beginning with the way that
+living things handle data.
+
+Current computational devices are focused on the fidelity of data – keeping it from
+changing due to vagaries of the hardware, using error-correcting codes and layers of abstraction
+that enable high-level programmers not to worry about the copper and silicon properties
+because the data they read will be the exact data that they wrote. While the biological hardware
+sometimes does this too (proofreading and repair of DNA for example), biology has a different
+
+[PAGE 21] Confabulatory computing as the foundation for living intelligence
+A key aspect in which cognitive elements enter biology at all scales of size and temporality,
+which is not well-handled by current computational approaches, is the need to creatively
+interpret information. Confabulation is basically 'making it up as you go along' – i.e. constructing
+a plausible narrative on the fly. Naturally, one might assume this is an undesirable characteristic
+of human cognition, but here we use it to refer to the dynamic and radically improvisational
+nature of biological sense-making that occurs at all levels of biological systems [100, 101]. This is
+useful to help us understand how to address the three needs above, beginning with the way that
+living things handle data.
+Current computational devices are focused on the fidelity of data – keeping it from
+changing due to vagaries of the hardware, using error-correcting codes and layers of abstraction
+that enable high-level programmers not to worry about the copper and silicon properties
+because the data they read will be the exact data that they wrote. While the biological hardware
+sometimes does this too (proofreading and repair of DNA for example), biology has a different
+approach to the problem overall [102], committing to maximizing saliency instead of fidelity of
+information.
+
+Living systems face the paradox of change: if a species fails to change over time, they will
+often become extinct. On the other hand, if a species adapts and changes, then the original
+species is no longer there. The same is true on a cognitive level, because the ability to learn means
+that future experiences will actively change you, and the more you learn and grow cognitively,
+the less you resemble your original self. Thus, biology commits to the fact that its material is
+fundamentally unreliable (continually transformed by experience, not static) – cells cannot count
+on knowing how many proteins or transcripts of any kind they will have (molecular noise,
+degradation, and stochastic gene expression), or in the example of the newt in Figure 1E, even
+how many copies of their genome will be present or how big their cells will be, and over the scale
+of lineages, their parts are guaranteed to mutate and change over time. Not just their
+environment, but their own components cannot be counted on to stay fixed [103]. Thus,
+evolution mostly produces systems that are plastic and good at making the best of whatever
+affordances (internal, as well as external machinery and information) they have, toward an
+adaptive outcome [41]. This, we propose, is the reason for the plasticity described above (Figures
+1-3): it is not a special mechanism evolved to deal with specific kinds of injuries (exceptions to a
+default condition) – it is a fundamental “beginner's mind” approach, in which living systems and
+subsystems cannot assume much about their situation and have to creatively navigate their
+problem spaces every single time. Normal embryogenesis hides this fact because in standard
+circumstances, evolved problem-solving agents find the same reliable solutions (with each layer
+of organization hiding ‘failures' from the levels above and below); but this plasticity is revealed
+upon perturbations of internal or external circumstances.
+
+This requirement to actively interpret, not just read out, is true on several scales of
+relevance to CDB (Figure 5A,5D). On the largest scale, living systems do not over-train on their
+evolutionary priors: the genome is not a set of instructions on what to make, but a set of
+affordances that the physiological circuits can draw on [104]. For example, Anthrobots [47, 48]
+and Xenobots [105, 106] both have immensely different transcriptomes due to their new lifestyle,
+despite being made of un-edited wild-type cells living in their normal medium. Because no
+organism can count on its genome or environment being the same as their ancestors, most life
+forms (with the possible exception of some mosaic forms like C. elegans) have the capacity to
+interpret their ancestry via regulative morphogenetic pathways that either reach the standard
+target morphology despite new situations, or pick an entirely different attractor in the
+morphospace landscape (Figures 2-3).
+
+As befitting the strong parallels (and evolutionary history) between morphogenesis and
+cognition, the exact same issue is faced by cognitive systems at all scales, from microbes to
+humans. None of us has access to the past; what we have access to are the memory engrams left
+in our brains and bodies by past experience – memories from our past Selves (Figure 6A-B). These
+must be actively interpreted, not merely read out, and our cognitive system is not trying to
+interpret them precisely in their original form, but to continuously shape a dynamic, malleable
+story as required to drive behaviour in the current situation. For example, memories formed in
+the caterpillar persist to the butterfly despite the total refactoring of the brain during
+metamorphosis [107]. However, the key feature here is not the ability to maintain information
+despite a drastically remodeling substrate, but the ability to re-map and re-interpret those
+memories [102]. The precise memories (linking stimulus to motile behavior that results in food)
+of the caterpillar are useless in a butterfly body, which has vision, motion control, and food
+requirements totally different from its prior embodiment. What makes it into the new body,
+living in a higher-dimensional space, are not the details of the prior life but the deep lessons –
+this requires generalization and a remapping of information toward a new meaning.
+
+This process solves the same question evolution solves: what information should make it
+into the next generation? It should be the information which is optimally amenable to adaptive
+interpretation by the problem-solving agents evolution creates. This bow-tie architecture fits
+perfectly with the multi-scale nature of control in living systems: a thin, low information-content
+signal such as Pax6 or a particular Vmem state can induce entire eyes (and different eyes depending
+on the species [108]) because this sparse signal is meaningful to the cellular machinery which
+takes context-appropriate action and brings more to the process than it gets from the stimulus.
+
+The freedom of our developmentally-derived agency consists of not only needing to
+interpret messages in our ever-changing context, but to revise our self- and world-model to tell
+new stories and re-envision the past toward adaptive needs in the future. Our memories are an
+active construction, and unlike in computer systems, there is no “nondestructive read" – every
+recall can alter the memory. Much as in the morphological computation being used to implement
+flexible robotics [109], this process can involve many internal and external materials, as niche
+construction exists at multiple scales and implements a loop between agent and environment
+that facilitates learning and problem-solving [110]. At all scales of space and time, living systems
+are thus fundamentally active sense-making agents that treat information (learned or genetic) as
+prompts for their future-oriented process [111-113].
+
+Biology is using an ancient architecture that computer technology is now beginning to
+exploit: that of the bow-tie (Figure 6C). Information from the past, whether genetic or
+experiential, is compressed into a sparse representation (DNA or other memory media). That
+representation passes through the fleeting “now” moment and must continuously be interpreted
+by processes on the right side of the bow-tie to generate behavior in morphogenetic or 3D spaces.
+Physically, these bow-tie or hub notes that force the generalization, not memorization, of details
+and implement the coarse-graining needed for intelligent navigation of diverse physiological
+spaces are implemented by mechanisms such as voltage resting potential, calcium signaling,
+transepithelial electric fields, stress/strain, and many others (Figure 6C').
+
+Because the process of learning or evolution discards many high-order correlations,
+information is lost by the algorithmic compression and must be creatively un-folded into
+morphogenetic or behavioral outputs (confabulated specifics). Importantly, in the agential
+material of life, numerous subsystems are simultaneously observing these physical embodiments
+of memories and drawing their own conclusions about their functional meaning and implications
+for next action [114]. This architecture of overlapping sense-making observers at different scales
+is only now becoming formalized in technology as the field of polycomputing [115]. This
+framework also provides a way to understand the whole-part relationship [33]: looking down
+into a system's parts is looking backwards in terms of how we got here and what one sees is that
+every part just did what they do; but looking upwards is looking forward - what should be done
+next - and only the higher level of organization knows that.
+
+This way of thinking about information flow across scales further unifies the challenges of
+constructing (and operating) a body and a mind. The creative process at the root of life (a
+necessity to interpret genomic and physiological information) means that confabulation – telling
+an adaptive story, now, that has little allegiance to past interpretations – is a central feature, not
+a bug. Confabulation and many other aspects of our cognition have their origin in ancient,
+existential challenges all life faces in its attempts to persist as a dynamic process as everything
+changes [116]. Suppose that cognitive confabulation is not the exception, it's the rule; i.e. there
+is no such thing as precise storage and recall of brain states, there is only dynamic, context-
+sensitive improvisation of the ‘clues' that are left in mental engrams. We suggest that CDB is like
+this. That is, there is no such thing as genotypes that code for phenotypes – there is only a
+dynamic bio-cognitive improvisation of the phenotypic clues that are scattered in the genetic tea
+leaves. The reliability of this when developmental conditions are unperturbed is not what is really
+interesting about CDB. What is interesting is the active and creative problem-solving it affords as
+life transforms and adapts over many different timescales (from developmental to evolutionary).
+Moreover, more radically, we suggest that this is not an analogy between cognitive memories
+and developmental processes, they are natural extensions of one another – bottom-up and top-
+down, confabulatory reconstructions of form and function, through many different levels of
+biological organization.
+
+Thus, the action/perception loops create objects as internal correlations, at cognitive,
+developmental and ecological scales [117, 118]. The degree of freedom which the system brings
+to the informational prompts is the creativity parameter which is as useful with current language
+models as it is in ecology. At low settings, it gives precise but inflexible, hardwired beings like
+nematodes. At highest settings, we find planaria – which are highly regenerative, cancer-resistant,
+and ageless despite, or more accurately, because of, their incredibly noisy genome [119].
+Mammals and amphibia are in the middle of that spectrum.
+
+Life is what we call extended cognitive beings with no permanent Self but extremely
+honed creative powers that actively shape metabolic, transcriptional, physiological, and
+behavioral patterns toward persistence and growth. Biology commits to an unreliable substrate,
+which means there can be no permanent Self, but this is also the thing that creates any
+(semi)permanence in the first place; the key question answered by the brain and the body is
+"what do my memories mean?". The many examples discussed above, where genomes are not
+predictive of form or function, demonstrate the creative interpretation of genetic information.
+This hides information from selection, resulting in a positive feedback loop [41, 119] in which
+evolutionary improvement targets the interpretation machinery, further loosening the linkage
+between genotype and phenotype. We propose that this cycle, at the root of the symmetry
+between life and mind, which the forefather of computer science saw clearly [120, 121], is the
+origin of conventional intelligence which began as soon as life started navigating spaces with
+ever-present uncertainty. Knowing which genes to up-regulate when faced with a barium toxin,
+which morphogenetic processes to activate when faced with a novel complement of genes, cells,
+or environment, and which motile behaviors to execute in the face of threats and opportunities
+in behavioral space are all fundamentally the same kind of problem manifest in different spaces.
+The understanding of the processes that guide living systems through the latent space of possible
+meanings to be assigned to sparse molecular and bioelectric prompts is a major emerging
+direction of research in this field.
+
+The creative interpretation of physically encoded information is a key part of the
+cognition all the way down formalism, unifying the plasticity of brain-based behaviors in 3D space
+with that of generic cell groups in anatomical space in developmental contexts. In all such cases,
+living material is simultaneously solving problems at several levels of organization and scale,
+which requires higher levels to distort the option landscape for their parts so that active agents
+at the lower scale are aligned and act toward setpoints in the higher level's space. The
+relationship between one level and the next is precisely the kind of compression/decompression
+that involves a degree of context-sensitive confabulation, and a degree of locally-mechanistic
+necessity.
+
+[PAGE 25] Future Outlook
+The conceptual frameworks we use in cell, developmental, and evolutionary biology are
+important. They are not philosophical dressing: they are critical conceptual structures that
+strongly affect experimental design and progress in basic life sciences, biomedical applications,
+and the capabilities of bioengineering and synthetic biology. Mechanistic, computationalist,
+traditional cognitivist, and multiscale cognitivist perspectives each unlock specific ways to
+interact with living systems at different levels. Here we argue that the agential material of life
+uniquely requires an approach in which cognition is not a rare, evolutionarily-late arrival but is
+ubiquitous throughout the biosphere and is a defining feature of life. Our goal should be to
+understand the origin and scaling of these cognitive properties in diverse media and
+development of protocols to recognize, predict the behavior of, and rationally control the
+behavior of these systems in different problem spaces.
+
+Opportunities for future theoretical work in this research agenda include the exploration
+and eventual possible unification with powerful paradigms from cognitive science (such as active
+inference [122, 123]), game theory of communication/cooperation/competition between agents
+[124-127], evolutionary theory [128], physics [129, 130], information theory [131], and computer
+science [132]. The notion of “mortal computations” [11] are an important beginning. Continued
+importation of powerful concepts from computational neuroscience, including the
+understanding of molecular placebos [29, 30, 133], perceptual control theory, and representation
+of self and world by electrochemical networks can be merged with forthcoming advances in
+machine learning and the interpretability of networks with numerous competencies. A key rate-
+limiting step for future progress is development of formalisms for the creative interpretation of
+memories (Figure 6D-E') by biological systems at all scales, as they adaptively solve novel
+problems - a parallel research program to efforts in cognitive science to understand intelligence,
+creativity, and genius implemented by the electrophysiology of the brain.
+
+Rich opportunities for empirical work to extend this paradigm includes a broadening of
+the understanding of learning and problem-solving capacities of molecular pathways and
+physiological circuits [134, 135], as well as of whole populations and ecosystems [89]. Emerging
+tools for manipulating biochemical, bioelectrical, biomechanical, and even optical [136]
+interfaces to living systems will be exploited in three main ways: (a) resetting the boundaries of
+systems by manipulating the cognitive glue dynamics, (b) modifying and re-writing specific
+pattern memories to modify the setpoints of homeodynamic processes, and (c) interrogating
+systems to take advantage of the wisdom of the body (i.e., cells' ability to identify effective
+responses to novel challenges) to solve problems for which we cannot compute the solution
+directly. In all of these cases, it is likely that AI tools can serve as translator interfaces, helping
+patients and clinicians communicate with the unconventional intelligence of tissues and organs
+
+[PAGE 25] Future Outlook
+The conceptual frameworks we use in cell, developmental, and evolutionary biology are
+important. They are not philosophical dressing: they are critical conceptual structures that
+strongly affect experimental design and progress in basic life sciences, biomedical applications,
+and the capabilities of bioengineering and synthetic biology. Mechanistic, computationalist,
+traditional cognitivist, and multiscale cognitivist perspectives each unlock specific ways to
+interact with living systems at different levels. Here we argue that the agential material of life
+uniquely requires an approach in which cognition is not a rare, evolutionarily-late arrival but is
+ubiquitous throughout the biosphere and is a defining feature of life. Our goal should be to
+understand the origin and scaling of these cognitive properties in diverse media and
+development of protocols to recognize, predict the behavior of, and rationally control the
+behavior of these systems in different problem spaces.
+
+Opportunities for future theoretical work in this research agenda include the exploration
+and eventual possible unification with powerful paradigms from cognitive science (such as active
+inference [122, 123]), game theory of communication/cooperation/competition between agents
+[124-127], evolutionary theory [128], physics [129, 130], information theory [131], and computer
+science [132]. The notion of “mortal computations” [11] are an important beginning. Continued
+importation of powerful concepts from computational neuroscience, including the
+understanding of molecular placebos [29, 30, 133], perceptual control theory, and representation
+of self and world by electrochemical networks can be merged with forthcoming advances in
+machine learning and the interpretability of networks with numerous competencies. A key rate-
+limiting step for future progress is development of formalisms for the creative interpretation of
+memories (Figure 6D-E') by biological systems at all scales, as they adaptively solve novel
+problems - a parallel research program to efforts in cognitive science to understand intelligence,
+creativity, and genius implemented by the electrophysiology of the brain.
+Rich opportunities for empirical work to extend this paradigm includes a broadening of
+the understanding of learning and problem-solving capacities of molecular pathways and
+physiological circuits [134, 135], as well as of whole populations and ecosystems [89]. Emerging
+tools for manipulating biochemical, bioelectrical, biomechanical, and even optical [136]
+interfaces to living systems will be exploited in three main ways: (a) resetting the boundaries of
+systems by manipulating the cognitive glue dynamics, (b) modifying and re-writing specific
+pattern memories to modify the setpoints of homeodynamic processes, and (c) interrogating
+systems to take advantage of the wisdom of the body (i.e., cells' ability to identify effective
+responses to novel challenges) to solve problems for which we cannot compute the solution
+directly. In all of these cases, it is likely that Al tools can serve as translator interfaces, helping
+patients and clinicians communicate with the unconventional intelligence of tissues and organs
+
+[PAGE 26] as recent efforts attempt to do with other non-human minds [137]. Likewise, emerging robot
+scientist platforms [138], operating in a cycle of hypothesis formation and experiment, must be
+extended from metabolic and drug development contexts to help understand the mapping
+between informational stimuli and emergent, multicellular, system-level form and function.
+
+Two other main directions deserve to be highlighted. First, the continued development
+of triggers and top-down prompts as alternative strategies to molecular micromanagement for
+reaching complex outcomes of growth and form. The second is a broader understanding of the
+agents that drive outcomes in CDB. In addition to the easily-recognized material components,
+such as cells and tissues, the energy and information patterns that drive outcomes must
+themselves become targets of intervention and analysis. This is already true for evolutionary
+developmental biology, where we track “genes” and “alleles” – informational entities, but it must
+be expanded to memory patterns, persistent physiological states, anatomical attractors, and
+other denizens of the invisible spaces that life traverses. These features of transcriptional,
+metabolic, physiological, and anatomical morphospaces not only represent the “physics" of these
+other spaces that provide constraint, but are also affordances that life exploits as morphological
+computation exploits the physics and materials properties of the 3D world to offload effort and
+solve complex problems [139]. But crucially, many of these physiological, genetic, and cognitive
+patterns may have a degree of agency themselves, best modeled as goal-seeking systems that
+modify their tissue environment and interact with each other in rich ways. Such patterns are
+known to perform niche construction [110], in the sense that data or information patterns
+moving through a machine (or through a cognitive system) alter that system - from cancer cells
+modifying their microenvironment to persistent thoughts reshaping synaptic connections.
+Phenomena such as morphogenesis and aging can be modeled as physical cells whose activities
+are observable as byproduct patterns in physiological spaces, or, as patterns in excitable media
+whose interactions result in biochemical and anatomical changes as scratchpad (a kind of
+stigmergy). Thus, physiological patterns and cognitive content of neural and non-neural tissues
+are themselves targets for intervention in health and disease, and possible drivers of evolutionary
+and developmental order.
+
+In the end, what we are counting when we see "one embryo” instead of “100,000 cells"
+is the collective alignment of active subunits to model of a journey through anatomical
+morphospace [140-143]. The information patterns, serving as memory setpoints in the collective
+intelligence of the cellular construction and repair machinery, implement the dynamic Ship of
+Theseus of the body. In this sense, the self-assembly of morphogenesis is the solidification of a
+somewhat more temporally persistent form as the result of self-reinforcing, creative problem-
+solving dynamics that are only partially captured by current physics, computational, and cognitive
+frameworks [144]. As happened with the electromagnetic spectrum, which unified disparate-
+looking phenomena and enabled us to operate in domains to which we were previously oblivious,
+the development of a scale-free, substrate-invariant theory of intelligence will have massive
+implications across basic and applied domains. We foresee the next decades as providing a rich
+bi-directional interaction in which cell and developmental biology provides a critical new model
+system for understanding the scaling of unconventional collective intelligence, and likewise, the
+emerging tools of cognitive science beyond neurons contributing transformative frameworks for
+basic CDB and applications in regenerative medicine and bioengineering.
+
+
+[PAGE 29] Figure 2: the goals of morphogenetic behavior can be re-specified without editing genetic
+hardware.
+(A) Planarian flatworms can be reprogrammed to adopt a 2-headed form. Left column shows a
+wild-type animal, while the right column shows an animal treated for 3 hours with ionophores
+to alter the bioelectric prepattern determining head humber. Animals with normal anterior
+gene expression (only in one end of the animal, top row), but different bioelectric patterns
+(2nd row), and normal anatomy (3rd row), give rise to 1-headed or 2-headed animals after
+being cut into thirds,showing that a normal planarian body (with unchanged genetics and
+axial marker expression) can store one of two different setpoints for the target morphology
+to be implemented by cells if the body is injured in the future. Images used with permission
+from [40].
+
+[PAGE 29] Figure 2: the goals of morphogenetic behavior can be re-specified without editing genetic hardware.
+(A) Planarian flatworms can be reprogrammed to adopt a 2-headed form. Left column shows a wild-type animal, while the right column shows an animal treated for 3 hours with ionophores to alter the bioelectric prepattern determining head humber. Animals with normal anterior gene expression (only in one end of the animal, top row), but different bioelectric patterns (2nd row), and normal anatomy (3rd row), give rise to 1-headed or 2-headed animals after being cut into thirds,showing that a normal planarian body (with unchanged genetics and axial marker expression) can store one of two different setpoints for the target morphology to be implemented by cells if the body is injured in the future. Images used with permission from [40].
+
+[PAGE 30] (B) Such 2-headed animals will continue to regenerate with 2 heads in all future rounds of regeneration (without any additional treatment), showing that tissue can stably store re-written target morphology information, and that a new lineage of propagating bodyplans can be initiated without mutation. The 2-headed form can be converted back to a 1-headed form by brief blockade of the proton-potassium ATPase. Images used with permission from [39].
+(C) Even mammals can show this kind of long-term modification of the target morphology, for example in trophic memory in deer. An injury at a particular spot along the invariant branched structure of antlers (left panel) heals with a callus, but next year a new ectopic tine grows at the same spot (middle panel). It happens this way for several years and then eventually disappears (right panel). This kind of long-term morphogenetic pattern memory re-writing challenges conventional models of feed-forward emergent outcomes of biochemical circuits. Images used with permission from [42].
+(D) Acorns become oaks which make stereotypical patterns of leaves, emphasizing the reliability of morphogenesis. But the process is far from hardwired, and plant cells can be prompted by cues from a wide range of parasites (D') to form remarkably different structures known as galls (D"). Note how the sophistication of the structure produced is proportional to the level of complexity of the bio-hacker (spectrum in D'). Image in D' used with permission from [147].
+(E) Another way to reprogram morphogenetic outcomes is by changing the scale of the network that stores the pattern memory, from individual cells to multi-cellular collectives. The processes of embryogenesis and cancer represent scaling up and down, respectively, of the size of the goal states that each agent can pursue, from unicellular metabolic setpoints to anatomical patterns that guide movement of collectives in anatomical states.
+(F) Bioelectric dye imaging (top panel) reveals the abnormal voltage state of tissue misexpressing a human oncogene in a tadpole flank (bottom panel), showing how those cells physiologically disconnect from their environment. Images used with permission from [148].
+(G) Functionally reconnecting those cells via misexpression of an ion channel (top panel, showing mRNA injection into a frog embryo) results in normal tissue (middle panel) despite strong expression of the oncoprotein (labeled in red, bottom panel, same animal as middle panel). Images used with permission from [148].
+
+[PAGE 31] Figure 3: Morphogenesis can implement evolutionarily-novel form and function
+(A) Wild-type frog cells can make frog embryos or Xenobots. A normal frog embryo gives rise to a stereotypical set of developmental stages (top row). But when embryonic epithelial cells are liberated form the influence of surrounding cells, they assemble into a Xenobot, which is a self-motile spherical construct (bottom row, left image) and eventually develops into something quite different (bottom right, right image, showing Xenbot that is over a month old). Xenobots exhibit novel behavior; when provided with loose skin cells as material (B), their individual and collective motion collects those cells into spheres which then mature to be the next generation of Xenbots, which continue the cycle of kinematic self-replication (C).
+(D) Wild-type human cells can make human bodies or Anthrobots, when they are removed from tracheal epithelium and allowed to reboot their multicellularity in vitro (white hairs on the outer surface are the cilia by means of which they locomote).
+(E) A collection of Anthrobots (labeled in green) can settle in a neural scratch wound (human neurons are shown in red) and induce repair across the gap (white arrow).
+(F) Anthrobots also have ~9000 differentially-expressed genes compared to their tissue of origin, despite normal genetics and a lack of synthetic biology circuits, nanomaterials, or scaffolds. Images used with permission from Xenbase [149] and Douglas Blackiston [105, 106, 150] (A-C), and [47] and [48] for D,E and F respectively.
+
+
+[PAGE 32] Figure 4: encoding target morphology: bioelectric pattern memory.
+(A) Conserved mechanisms (ion channels and gap junctions) underlie bioelectric circuit formation in neural (top left) and non-neural (bottom left) cells. Similar research programs seeking to decode electrophysiological dynamcis to recover their cognitive content (memories, goals, etc.) are being pursued in neuroscience (top right) and the science of morphogenesis (bottom right). Image courtesy of Jeremy Guay of Peregrine Creative.
+
+[PAGE 33] (B) Bioelectric imaging in non-neural tissues enables the tracking of anatomical setpoints to which cells are building. Top panel shows the prepattern of resting potential across the anterior ectoderm of the frog embryo face. This pattern determines the future position of the eyes, mouth, and other craniofacial organs [61]. Bottom panel shows a cleavage-stage frog embryo, revealing the electrophysiology underlying early patterning events. Top image used with permission from [61]; bottom image by Dany S. Adams, Levin lab.
+(C) Bioelectric patterns actively propagate information through tissues, as seen when a depolarized cel (red arrowhead, left panel) touches a collective which imposes its own pattern on it within seconds (right panel). Images used with permission from [151].
+(D) Functional tools can write information into the bioelectric prepatterns; in this case, a voltage pattern indicating “make an eye” is induced by ion channel mRNA injection (top panel) which results in re-specifying organ-level fate in gut cells which create an entire eye (bottom panel). Image from Xenbase [149].
+(E) A section through a bioelectrically-induced ectopic lens in the flank of a tadpole shows that only some of the cells had been injected with the ion channel mRNA (blue tracking dye), while much of the structure consists of non-injected brown cells that were induced by the injected ones to participate in their construction project. Image used with permission from [63].
+(F) The dynamic nature of these bioelectric patterns and their adoption by tissue is revealed using in situ hybridization for an early eye field marker gene RX1; here are shown several ectopic eye spots (red arrows) in a neurula stage frog embryo, but only one of them eventually became an eye (as in panel D) because its pattern overcame the local cells' attempts to normalize cells to a local skin or gut pattern, while the others succumbed to the local morphogenetic plan and were not able to successfully dominate and re-write it.
+
+(B) Bioelectric imaging in non-neural tissues enables the tracking of anatomical setpoints to which
+cells are building. Top panel shows the prepattern of resting potential across the anterior
+ectoderm of the frog embryo face. This pattern determines the future position of the eyes,
+mouth, and other craniofacial organs [61]. Bottom panel shows a cleavage-stage frog embryo,
+revealing the electrophysiology underlying early patterning events. Top image used with
+permission from [61]; bottom image by Dany S. Adams, Levin lab.
+(C) Bioelectric patterns actively propagate information through tissues, as seen when a
+depolarized cel (red arrowhead, left panel) touches a collective which imposes its own
+pattern on it within seconds (right panel). Images used with permission from [151].
+(D) Functional tools can write information into the bioelectric prepatterns; in this case, a voltage
+pattern indicating “make an eye” is induced by ion channel mRNA injection (top panel) which
+results in re-specifying organ-level fate in gut cells which create an entire eye (bottom panel).
+Image from Xenbase [149].
+(E) A section through a bioelectrically-induced ectopic lens in the flank of a tadpole shows that
+only some of the cells had been injected with the ion channel mRNA (blue tracking dye), while
+much of the structure consists of non-injected brown cells that were induced by the injected
+ones to participate in their construction project. Image used with permission from [63].
+(F) The dynamic nature of these bioelectric patterns and their adoption by tissue is revealed using
+in situ hybridization for an early eye field marker gene RX1; here are shown several ectopic
+eye spots (red arrows) in a neurula stage frog embryo, but only one of them eventually
+became an eye (as in panel D) because its pattern overcame the local cells' attempts to
+normalize cells to a local skin or gut pattern, while the others succumbed to the local
+morphogenetic plan and were not able to successfully dominate and re-write it.
+
+[PAGE 34] Figure 5: morphogenesis as a collective intelligence – cognition across scales.
+(A) One possible ontology of the waypoints across a continuum of intelligence (modified after
+[152]), revealing the major transitions in agency.
+(B) A schematic of morphogenesis, illustrating the conventional open-loop (feedforward)
+component of emergence of form, and the feedback loops that implement a goal-directed
+process of anatomical homeostasis.
+(C) A schematic of basal cognition (several different kinds of learning) existing below the cell level,
+in which the tools of behavioral science (e.g., Pavlovian conditioning) are applicable to
+molecular pathways such as gene-regulatory networks. CS = conditioned stimulus (initially, a
+neutral stimulus, UCS = unconditiones stimulus, R = response. Repeated signaling induced at
+the UCS node (which natively triggers a Response) together with a node which normally does
+not trigger R (a neutral stimulus) results in associative learning in which future presentations
+of the neutral stimulus alone can trigger R [29, 30].
+(D) A schematic representation of a multiscale competency architecture in which each level of
+organization from molecular to the swarm has abilities to solve problems in various problem
+spaces.
+(E) A schematic representation of how evolution pivoted some of the same, universal
+navigational competencies across problem spaces such as metabolic, physiological,
+transcriptional, and anatomical space, before nerve and muscle enabled the colonization of
+the more familiar 3D space of motion.
+Images in panels C-E courtesy of Jeremy Guay of Peregrine Creative.
+
+[PAGE 36] Figure 6: unreliable computing as the basis for creative intelligence of agential material.
+(A) A schematic, akin to the time slices of Special Relativity, showing that at each point, a being
+does not have access to the past, but only to the information present in its body and environment
+at the moment.
+(B) A schematic illustrating how the memory engrams formed by past slices of an organism are
+messages to the current Self from past time slices, similar to messages received from other
+organisms, and thus must be interpreted.
+(C) A computational architecture in which a thin middle layer forces compression and
+generalization (not merely memorization) of past instances into memory engrams, which then
+must be creatively interpreted in the future because their original meaning is not preserved
+through the bowtie hub.
+(D) The same compression/interpretation dynamic occurs in evolution and morphogenesis,
+where the lessons of past instances are compressed into a generative prompt (the genome),
+which must be actively interpreted, not directly obeyed, by the problem-solving intelligence of
+the multiscale cellular collective during embryogenesis, regeneration, remodeling, and cancer
+suppression.
+(E) Tadpoles with an etopic eye (red arrowhead) on their tails, which do not connect to the brain
+(E') can still see [153]. This is just one example of many of the incredible plasticity and robustness
+afforded by a process which does not store precise instructions for form and function: whether
+default embryogenesis or novel circumstances, life has committed to the intelligence needed to
+deal with an unreliable material. Images taken with permission from [153].
+
+(C) A computational architecture in which a thin middle layer forces compression and
+generalization (not merely memorization) of past instances into memory engrams, which then
+must be creatively interpreted in the future because their original meaning is not preserved
+through the bowtie hub.
+(D) The same compression/interpretation dynamic occurs in evolution and morphogenesis,
+where the lessons of past instances are compressed into a generative prompt (the genome),
+which must be actively interpreted, not directly obeyed, by the problem-solving intelligence of
+the multiscale cellular collective during embryogenesis, regeneration, remodeling, and cancer
+suppression.
+(E) Tadpoles with an etopic eye (red arrowhead) on their tails, which do not connect to the brain
+(E') can still see [153]. This is just one example of many of the incredible plasticity and robustness
+afforded by a process which does not store precise instructions for form and function: whether
+default embryogenesis or novel circumstances, life has committed to the intelligence needed to
+deal with an unreliable material. Images taken with permission from [153].
+
+[PAGE 38] References
+
+[41] [62] D.S. Adams, S.G. Uzel, J. Akagi, D. Wlodkowic, V. Andreeva, P.C. Yelick, A. Devitt-Lee, J.F.
+Paré, M. Levin, Bioelectric signalling via potassium channels: a mechanism for craniofacial
+dysmorphogenesis in KCNJ2-associated Andersen-Tawil Syndrome, J Physiol 594(12) (2016)
+3245-70.
+[41] [63] V.P. Pai, S. Aw, T. Shomrat, J.M. Lemire, M. Levin, Transmembrane voltage potential
+controls embryonic eye patterning in Xenopus laevis, Development 139(2) (2012) 313-23.
+[41] [64] A. Tseng, M. Levin, Cracking the bioelectric code: Probing endogenous ionic controls of
+pattern formation, Commun Integr Biol 6(1) (2013) e22595.
+[41] [65] V.P. Pai, A. Pietak, V. Willocq, B. Ye, N.Q. Shi, M. Levin, HCN2 Rescues brain defects by
+enforcing endogenous voltage pre-patterns, Nat Commun 9(1) (2018) 998.
+[41] [66] V.P. Pai, M. Levin, HCN2 channel-induced rescue of brain, eye, heart and gut teratogenesis
+caused by nicotine, ethanol and aberrant notch signalling, Wound Repair Regen 30(6) (2022)
+681-706.
+[41] [67] M. Levin, Bioelectric signaling: Reprogrammable circuits underlying embryogenesis,
+regeneration, and cancer, Cell 184(8) (2021) 1971-1989.
+[41] [68] B.T. Chernet, D.S. Adams, M. Lobikin, M. Levin, Use of genetically encoded, light-gated ion
+translocators to control tumorigenesis, Oncotarget 7(15) (2016) 19575-88.
+[41] [69] V.P. Pai, J.M. Lemire, J.F. Paré, G. Lin, Y. Chen, M. Levin, Endogenous gradients of resting
+potential instructively pattern embryonic neural tissue via Notch signaling and regulation of
+proliferation, J Neurosci 35(10) (2015) 4366-85.
+[41] [70] M. Emmons-Bell, F. Durant, J. Hammelman, N. Bessonov, V. Volpert, J. Morokuma, K. Pinet,
+D.S. Adams, A. Pietak, D. Lobo, M. Levin, Gap Junctional Blockade Stochastically Induces
+Different Species-Specific Head Anatomies in Genetically Wild-Type Girardia dorotocephala
+Flatworms, Int J Mol Sci 16(11) (2015) 27865-96.
+[41] [71] J. Liu, R. Martinez-Corral, A. Prindle, D.D. Lee, J. Larkin, M. Gabalda-Sagarra, J. Garcia-
+Ojalvo, G.M. Süel, Coupling between distant biofilms and emergence of nutrient time-sharing,
+Science 356(6338) (2017) 638-642.
+[41] [72] M. Levin, G.A. Buznikov, J.M. Lauder, Of minds and embryos: left-right asymmetry and the
+serotonergic controls of pre-neural morphogenesis, Dev Neurosci 28(3) (2006) 171-85.
+[41] [73] P. Lyon, The cognitive cell: bacterial behavior reconsidered, Front Microbiol 6 (2015) 264.
+[41] [74] P. Lyon, The biogenic approach to cognition, Cogn Process 7(1) (2006) 11-29.
+[41] [75] M. Emmons-Bell, F. Durant, A. Tung, A. Pietak, K. Miller, A. Kane, C.J. Martyniuk, D.
+Davidian, J. Morokuma, M. Levin, Regenerative Adaptation to Electrochemical Perturbation in
+Planaria: A Molecular Analysis of Physiological Plasticity, iScience 22 (2019) 147-165.
+[41] [76] E.H. Davidson, Emerging properties of animal gene regulatory networks, Nature 468(7326)
+(2010) 911-20.
+[41] [77] C.L. Buckley, T. Lewens, M. Levin, B. Millidge, A. Tschantz, R.A. Watson, Natural Induction:
+Spontaneous Adaptive Organisation without Natural Selection, Entropy (Basel) 26(9) (2024)
+765.
+[41] [78] R.A. Watson, T. Lewens, M. Levin, Evolution by Natural Induction, submitted, 2025.
+[41] [79] S. Casarotto, A. Comanducci, M. Rosanova, S. Sarasso, M. Fecchio, M. Napolitani, A.
+Pigorini, G.C. A, P.D. Trimarchi, M. Boly, O. Gosseries, O. Bodart, F. Curto, C. Landi, M. Mariotti,
+G. Devalle, S. Laureys, G. Tononi, M. Massimini, Stratification of unresponsive patients by an
+independently validated index of brain complexity, Ann Neurol 80(5) (2016) 718-729.
+[42] [80] F. Pigozzi, A. Goldstein, M. Levin, Associative Conditioning in Gene Regulatory Network
+Models Increases Integrative Causal Emergence, OSF Preprints (2025).
+[42] [81] C. Fields, M. Levin, Scale-Free Biology: Integrating Evolutionary and Developmental
+Thinking, Bioessays 42(8) (2020) e1900228.
+[42] [82] H. Hatzikirou, A. Deutsch, Cellular automata as microscopic models of cell migration in
+heterogeneous environments, Curr Top Dev Biol 81 (2008) 401-34.
+[42] [83] D. Noble, Ionic mechanisms determining the timing of ventricular repolarization:
+significance for cardiac arrhythmias, Ann NY Acad Sci 644 (1992) 1-22.
+[42] [84] J. Lehman, J. Clune, D. Misevic, C. Adami, L. Altenberg, J. Beaulieu, P.J. Bentley, S. Bernard,
+G. Beslon, D.M. Bryson, N. Cheney, P. Chrabaszcz, A. Cully, S. Doncieux, F.C. Dyer, K.O. Ellefsen,
+R. Feldt, S. Fischer, S. Forrest, A. Fŕenoy, C. Gagńe, L. Le Goff, L.M. Grabowski, B. Hodjat, F.
+Hutter, L. Keller, C. Knibbe, P. Krcah, R.E. Lenski, H. Lipson, R. MacCurdy, C. Maestre, R.
+Miikkulainen, S. Mitri, D.E. Moriarty, J.B. Mouret, A. Nguyen, C. Ofria, M. Parizeau, D. Parsons,
+R.T. Pennock, W.F. Punch, T.S. Ray, M. Schoenauer, E. Schulte, K. Sims, K.O. Stanley, F. Taddei,
+D. Tarapore, S. Thibault, R. Watson, W. Weimer, J. Yosinski, The Surprising Creativity of Digital
+Evolution: A Collection of Anecdotes from the Evolutionary Computation and Artificial Life
+Research Communities, Artif Life 26(2) (2020) 274-306.
+[42] [85] J.D. Farmer, A Rosetta Stone for Connectionism, Physica D 42(1-3) (1990) 153-187.
+[42] [86] R.A. Watson, R. Mills, C.L. Buckley, K. Kouvaris, A. Jackson, S.T. Powers, C. Cox, S. Tudge, A.
+Davies, L. Kounios, D. Power, Evolutionary Connectionism: Algorithmic Principles Underlying the
+Evolution of Biological Organisation in Evo-Devo, Evo-Eco and Evolutionary Transitions, Evol Biol
+43(4) (2016) 553-581.
+[42] [87] T. Lewens, R.A. Watson, Universal Darwinism Revisited, (under review), 2024.
+[42] [88] J.J. Hopfield, Neural networks and physical systems with emergent collective
+computational abilities, Proc Natl Acad Sci USA 79(8) (1982) 2554-8.
+[42] [89] D.A. Power, R.A. Watson, E. Szathmáry, R. Mills, S.T. Powers, C.P. Doncaster, B. Czapp,
+What can ecosystems learn? Expanding evolutionary ecology with learning theory, Biol Direct
+10 (2015) 69.
+[42] [90] F.J. Varela, P. Bourgine, Introduction: Toward a practice of autonomous systems:
+Proceedings of the First European Conference on Artificial Life, MIT press, Cambridge, MA,
+1992.
+[42] [91] R.A. Watson, E. Szathmáry, How Can Evolution Learn?, Trends Ecol Evol 31(2) (2016) 147-
+157.
+[42] [92] R.A. Watson, G.P. Wagner, M. Pavlicev, D.M. Weinreich, R. Mills, The evolution of
+phenotypic correlations and "developmental memory", Evolution 68(4) (2014) 1124-38.
+[42] [93] B. Rosslenbroich, The theory of increasing autonomy in evolution: a proposal for
+understanding macroevolutionary innovations, Biology & Philosophy 24(5) (2009) 623-644.
+[42] [94] D. Walsh, Piaget's Paradox: Adaptation, Evolution, and Agency, Human Development 67(5-
+6) (2024) 273-287.
+[42] [95] H.D. Potter, K.J. Mitchell, Naturalising Agent Causation, Entropy (Basel) 24(4) (2022).
+[42] [96] A.P. Moczek, When the end modifies its means: the origins of novelty and the evolution of
+innovation, Biological Journal of the Linnean Society 139(4) (2023) 433-440.
+[43] [97] K.N. Laland, T. Uller, M.W. Feldman, K. Sterelny, G.B. Müller, A. Moczek, E. Jablonka, J.
+Odling-Smee, The extended evolutionary synthesis: its structure, assumptions and predictions,
+Proc Biol Sci 282(1813) (2015) 20151019.
+[43] [98] K.J. Mitchell, N. Cheney, The Genomic Code: the genome instantiates a generative model
+of the organism, Trends Genet (2025).
+[43] [99] B. Hartl, M. Levin, What does Evolution Make?, OSF Preprints (2025).
+[43] [100] M.M. James, M. Jamaluddin, T. Froese, A. Belhadi, A. Panagiotou, D. Snowden,
+Wayshaping: A Multiscale Framework for Behavior Change, PsyArXiv (2025).
+[43] [101] A. Hiott, Waymaking: a nested approach to cognition inspired by cognitive and
+computational hippocampal models, in: F.K.A. M. Goldwater, B. K. Hayes, & D. C. Ong (Ed.) 45th
+Annual Conference of the Cognitive Science Society, Sydney, AU, 2023.
+[43] [102] M. Levin, Self-Improvising Memory: A Perspective on Memories as Agential, Dynamically
+Reinterpreting Cognitive Glue, Entropy (Basel) 26(6) (2024).
+[43] [103] Y. Soen, M. Knafo, M. Elgart, A principle of organization which facilitates broad
+Lamarckian-like adaptations by improvisation, Biol Direct 10(1) (2015) 68.
+[43] [104] D.M. Walsh, Organisms, agency, and evolution, Cambridge University Press, Cambridge
+UK, 2015.
+[43] [105] S. Kriegman, D. Blackiston, M. Levin, J. Bongard, Kinematic self-replication in
+reconfigurable organisms, Proc Natl Acad Sci USA 118(49) (2021).
+[43] [106] D. Blackiston, E. Lederer, S. Kriegman, S. Garnier, J. Bongard, M. Levin, A cellular platform
+for the development of synthetic living machines, Sci Robot 6(52) (2021) eabf1571.
+[43] [107] D.J. Blackiston, T. Shomrat, M. Levin, The stability of memories during brain remodeling: A
+perspective, Commun Integr Biol 8(5) (2015) e1073424.
+[43] [108] P. Callaerts, G. Halder, W.J. Gehring, PAX-6 in development and evolution, Annu Rev
+Neurosci 20 (1997) 483-532.
+[43] [109] D. Shah, B. Yang, S. Kriegman, M. Levin, J. Bongard, R. Kramer-Bottiglio, Shape Changing
+Robots: Bioinspiration, Simulation, and Physical Realization, Adv Mater 33(19) (2021) e2002882.
+[43] [110] L. Pio-Lopez, G. Pezzulo, M. Levin, Scale-free Niche Construction: expanding agent-
+microenvironment co-development to unconventional substrates, OSF Preprints (2025).
+[43] [111] H.R. Maturana, F.J. Varela, Autopoiesis and Cognition the Realization of the Living,
+Springer Netherlands,, Dordrecht, 1980, p. 1 online resource (180 pages).
+[43] [112] F.G. Varela, H.R. Maturana, R. Uribe, Autopoiesis: the organization of living systems, its
+characterization and a model, Curr Mod Biol 5(4) (1974) 187-96.
+[43] [113] F. Varela, H. Maturana, Mechanism and Biological Explanation, Philos Sci 39(3) (1972)
+378-382.
+[43] [114] C. Fields, M. Levin, How Do Living Systems Create Meaning?, Philosophies 5(4) (2020).
+[43] [115] J. Bongard, M. Levin, There's Plenty of Room Right Here: Biological Systems as Evolved,
+Overloaded, Multi-Scale Machines, Biomimetics (Basel) 8(1) (2023).
+[43] [116] C. Fields, M. Levin, Thoughts and thinkers: On the complementarity between objects and
+processes, Phys Life Rev 52 (2025) 256-273.
+[43] [117] K.J. Friston, T. Parr, C. Heins, A. Constant, D. Friedman, T. Isomura, C. Fields, T. Verbelen,
+M. Ramstead, J. Clippinger, C.D. Frith, Federated inference and belief sharing, Neurosci
+Biobehav Rev 156 (2024) 105500.
+[44] [118] C. Prakash, C. Fields, D.D. Hoffman, R. Prentner, M. Singh, Fact, Fiction, and Fitness,
+Entropy (Basel) 22(5) (2020).
+[44] [119] L. Shreesha, M. Levin, Cellular Competency during Development Alters Evolutionary
+Dynamics in an Artificial Embryogeny Model, Entropy (Basel) 25(1) (2023) 131.
+[44] [120] A.M. Turing, The Chemical Basis of Morphogenesis, Philos T Roy Soc B 237(641) (1952) 37-
+72.
+[44] [121] A.M. Turing, Computing machinery and intelligence, Mind 59(236) (1950) 433-460.
+[44] [122] K. Friston, Life as we know it, J R Soc Interface 10(86) (2013) 20130475.
+[44] [123] M. Allen, K.J. Friston, From cognitivism to autopoiesis: towards a computational
+framework for the embodied mind, Synthese 195(6) (2018) 2459-2482.
+[44] [124] B. Skyrms, Evolution of signalling systems with multiple senders and receivers, Philos
+Trans R Soc Lond B Biol Sci 364(1518) (2009) 771-9.
+[44] [125] M. Martínez, Deception as cooperation, Stud Hist Philos Biol Biomed Sci 77 (2019)
+101184.
+[44] [126] M. Artiga, J. Birch, M. Martínez, The meaning of biological signals, Stud Hist Philos Biol
+Biomed Sci 84 (2020) 101348.
+[44] [127] R.J. Planer, P. Godfrey-Smith, Communication and representation understood as sender-
+receiver coordination, Mind & Language 36(5) (2021) 750-770.
+[44] [128] K. Kouvaris, J. Clune, L. Kounios, M. Brede, R.A. Watson, How evolution learns to
+generalise: Using the principles of learning theory to understand the evolution of
+developmental organisation, PLoS Comput Biol 13(4) (2017) e1005358.
+[44] [129] C. Fields, D.D. Hoffman, C. Prakash, R. Prentner, Eigenforms, Interfaces and Holographic
+Encoding Toward an Evolutionary Account of Objects and Spacetime, Constructivist
+Foundations 12(3) (2017) 265-274.
+[44] [130] C. Fields, J.F. Glazebrook, M. Levin, Minimal physicalism as a scale-free substrate for
+cognition and consciousness, Neurosci Conscious 2021(2) (2021) niab013.
+[44] [131] A. Kolchinsky, D.H. Wolpert, Semantic information, autonomous agency and non-
+equilibrium statistical physics, Interface Focus 8(6) (2018) 20180041.
+[44] [132] S. Wolfram, A new kind of science, Wolfram Media, Champaign, IL, 2002.
+[44] [133] A. Piedimonte, F. Benedetti, Words and Drugs: Same Mechanisms of Action?, Journal of
+Contemporary Psychotherapy 46(3) (2016) 159-166.
+[44] [134] Y. Katz, W. Fontana, Probabilistic Inference with Polymerizing Biochemical Circuits,
+Entropy (Basel) 24(5) (2022).
+[44] [135] Y. Katz, M. Springer, W. Fontana, Embodying probabilistic inference in biochemical
+circuits, arXiv, 2018, p. arXiv:1806.10161.
+[44] [136] F. Scholkmann, D. Fels, M. Cifra, Non-chemical and non-contact cell-to-cell
+communication: a short review, Am J Transl Res 5(6) (2013) 586-93.
+[44] [137] B. McCowan, J. Hubbard, L. Walker, F. Sharpe, J. Frediani, L. Doyle, Interactive bioacoustic
+playback as a tool for detecting and exploring nonhuman intelligence: "conversing" with an
+Alaskan humpback whale, PeerJ 11 (2023) e16349.
+[44] [138] A. Sparkes, W. Aubrey, E. Byrne, A. Clare, M.N. Khan, M. Liakata, M. Markham, J.
+Rowland, L.N. Soldatova, K.E. Whelan, M. Young, R.D. King, Towards Robot Scientists for
+autonomous scientific discovery, Autom Exp 2 (2010) 1.
+[45] [139] R. Pfeifer, J. Bongard, S. Grand, How the body shapes the way we think : a new view of
+intelligence, MIT Press, Cambridge MA, 2007.
+[45] [140] F. Kuchling, K. Friston, G. Georgiev, M. Levin, Integrating variational approaches to
+pattern formation into a deeper physics: Reply to comments on "Morphogenesis as Bayesian
+inference: A variational approach to pattern formation and manipulation in complex biological
+systems", Phys Life Rev 33 (2020) 125-128.
+[45] [141] F. Kuchling, K. Friston, G. Georgiev, M. Levin, Morphogenesis as Bayesian inference: A
+variational approach to pattern formation and control in complex biological systems, Phys Life
+Rev 33 (2020) 88-108.
+[45] [142] A. Annila, The art of abstraction: Comment on "Morphogenesis as Bayesian inference: A
+variational approach to pattern formation and control in complex biological systems" by F.
+Kuchling, K. Friston, G. Georgiev, M. Levin, Phys Life Rev 33 (2020) 119-120.
+[45] [143] K. Friston, M. Levin, B. Sengupta, G. Pezzulo, Knowing one's place: a free-energy approach
+to pattern regulation, J R Soc Interface 12(105) (2015).
+[45] [144] A. Tuck, Singing the rug: Patterned textiles and the origins of Indo-European metrical
+poetry, American Journal of Archaeology 110(4) (2006) 539-550.
+[45] [145] N. Farinella-Ferruzza, The transformation of a tail into a limb after xenoplastic
+transformation, Experientia 15 (1956) 304-305.
+[45] [146] G. Fankhauser, Maintenance of normal structure in heteroploid salamander larvae,
+through compensation of changes in cell size by adjustment of cell number and cell shape, J Exp
+Zool 100(3) (1945) 445-55.
+[45] [147] O. Gätjens-Boniche, The mechanism of plant gall induction by insects: revealing clues,
+facts, and consequences in a cross-kingdom complex interaction, Revista De Biologia Tropical
+67(6) (2019) 1359-1382.
+[45] [148] B.T. Chernet, M. Levin, Transmembrane voltage potential is an essential cellular
+parameter for the detection and control of tumor development in a Xenopus model, Dis Model
+Mech 6(3) (2013) 595-607.
+[45] [149] C. James-Zorn, V.G. Ponferrada, C.J. Jarabek, K.A. Burns, E.J. Segerdell, J. Lee, K. Snyder, B.
+Bhattacharyya, J.B. Karpinka, J. Fortriede, J.B. Bowes, A.M. Zorn, P.D. Vize, Xenbase: expansion
+and updates of the Xenopus model organism database, Nucleic Acids Res 41(Database issue)
+(2013) D865-70.
+[45] [150] S. Kriegman, D. Blackiston, M. Levin, J. Bongard, A scalable pipeline for designing
+reconfigurable organisms, Proc Natl Acad Sci USA 117(4) (2020) 1853-1859.
+[45] [151] P. McMillen, M. Levin, The neural crest as a bioelectric Rosetta Stone: translating the
+analog and digital bioelectric code with Fluorescent Lifetime Imaging (FLIM), OSF Preprints
+(2025).
+[45] [152] A. Rosenblueth, N. Wiener, J. Bigelow, Behavior, purpose, and teleology, Philos Sci 10
+(1943) 18-24.
+[45] [153] D.J. Blackiston, M. Levin, Ectopic eyes outside the head in Xenopus tadpoles provide
+sensory data for light-mediated learning, J Exp Biol 216(Pt 6) (2013) 1031-40.
+
+[139] R. Pfeifer, J. Bongard, S. Grand, How the body shapes the way we think : a new view of
+intelligence, MIT Press, Cambridge MA, 2007.
+[140] F. Kuchling, K. Friston, G. Georgiev, M. Levin, Integrating variational approaches to
+pattern formation into a deeper physics: Reply to comments on "Morphogenesis as Bayesian
+inference: A variational approach to pattern formation and manipulation in complex biological
+systems", Phys Life Rev 33 (2020) 125-128.
+[141] F. Kuchling, K. Friston, G. Georgiev, M. Levin, Morphogenesis as Bayesian inference: A
+variational approach to pattern formation and control in complex biological systems, Phys Life
+Rev 33 (2020) 88-108.
+[142] A. Annila, The art of abstraction: Comment on "Morphogenesis as Bayesian inference: A
+variational approach to pattern formation and control in complex biological systems" by F.
+Kuchling, K. Friston, G. Georgiev, M. Levin, Phys Life Rev 33 (2020) 119-120.
+[143] K. Friston, M. Levin, B. Sengupta, G. Pezzulo, Knowing one's place: a free-energy approach
+to pattern regulation, J R Soc Interface 12(105) (2015).
+[144] A. Tuck, Singing the rug: Patterned textiles and the origins of Indo-European metrical
+poetry, American Journal of Archaeology 110(4) (2006) 539-550.
+[145] N. Farinella-Ferruzza, The transformation of a tail into a limb after xenoplastic
+transformation, Experientia 15 (1956) 304-305.
+[146] G. Fankhauser, Maintenance of normal structure in heteroploid salamander larvae,
+through compensation of changes in cell size by adjustment of cell number and cell shape, J Exp
+Zool 100(3) (1945) 445-55.
+[147] O. Gätjens-Boniche, The mechanism of plant gall induction by insects: revealing clues,
+facts, and consequences in a cross-kingdom complex interaction, Revista De Biologia Tropical
+67(6) (2019) 1359-1382.
+[148] B.T. Chernet, M. Levin, Transmembrane voltage potential is an essential cellular
+parameter for the detection and control of tumor development in a Xenopus model, Dis Model
+Mech 6(3) (2013) 595-607.
+[149] C. James-Zorn, V.G. Ponferrada, C.J. Jarabek, K.A. Burns, E.J. Segerdell, J. Lee, K. Snyder, B.
+Bhattacharyya, J.B. Karpinka, J. Fortriede, J.B. Bowes, A.M. Zorn, P.D. Vize, Xenbase: expansion
+and updates of the Xenopus model organism database, Nucleic Acids Res 41(Database issue)
+(2013) D865-70.
+[150] S. Kriegman, D. Blackiston, M. Levin, J. Bongard, A scalable pipeline for designing
+reconfigurable organisms, Proc Natl Acad Sci USA 117(4) (2020) 1853-1859.
+[151] P. McMillen, M. Levin, The neural crest as a bioelectric Rosetta Stone: translating the
+analog and digital bioelectric code with Fluorescent Lifetime Imaging (FLIM), OSF Preprints
+(2025).
+[152] A. Rosenblueth, N. Wiener, J. Bigelow, Behavior, purpose, and teleology, Philos Sci 10
+(1943) 18-24.
+[153] D.J. Blackiston, M. Levin, Ectopic eyes outside the head in Xenopus tadpoles provide
+sensory data for light-mediated learning, J Exp Biol 216(Pt 6) (2013) 1031-40.

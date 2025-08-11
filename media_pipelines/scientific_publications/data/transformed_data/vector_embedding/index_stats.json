@@ -1,0 +1,7 @@
+{
+  "total_chunks": 754,
+  "embedding_dimension": 3072,
+  "model": "text-embedding-3-large",
+  "index_type": "IndexFlatIP",
+  "normalized": true
+}

@@ -1,0 +1,703 @@
+[PAGE 1] Introduction
+
+Introduction to provocative questions
+in left-right asymmetry
+
+Left-right asymmetry is a phenomenon that has a broad appeal to anat-
+omists, developmental biologists and evolutionary biologists—because it is a
+morphological feature of organisms that spans scales of size and levels of
+organization, from unicellular protists, to vertebrate organs, to social behav-
+iour. Here, we highlight a number of important aspects of asymmetry that
+encompass several areas of biology-cell-level, physiological, genetic, anatom-
+ical and evolutionary components—and that are based on research conducted
+in diverse model systems, ranging from single cells to invertebrates to human
+developmental disorders. Together, the contributions in this issue reveal a
+heretofore-unsuspected variety in asymmetry mechanisms, including ancient
+chirality elements that could underlie a much more universal basis to asymme-
+try development, and provide much fodder for thought with far reaching
+implications in biomedical, developmental, evolutionary and synthetic biology.
+The new emerging theme of binary cell-fate choice, promoted by asymmetric
+cell division of a deterministic cell, has focused on investigating asymmetry
+mechanisms functioning at the single cell level. These include cytoskeleton
+and DNA chain asymmetry—mechanisms that are amplified and coordinated
+with those employed for the determination of the anterior-posterior and
+dorsal-ventral axes of the embryo.
+
+This article is part of the themed issue ‘Provocative questions in left-
+right asymmetry'.
+
+[PAGE 1] Introduction
+
+From the nano to the macro, the man-made to the natural and the simple to the
+complex, the world we inhabit is rich in pattern. Although there is extensive
+variance in the intricacy and magnitude of the patterns that surround us,
+they fundamentally stem from only two core motifs: symmetry and asymmetry.
+Prevalent in our art, architecture, dance, music, fashion and other design-sym-
+metry evokes order, desire, harmony and perfection. Indeed, we place such
+high value on symmetry that its presence in facial features can be used to
+define physical beauty. Like symmetry, asymmetry is also pervasive in our
+aesthetics, where it lends a provocative contrast, representing the dynamic,
+the unexpected, the emerging and the innovative. Together, symmetry and
+asymmetry comprise the proverbial Yin and Yang, the black and white, the
+metaphorical good and sinister. Both are essential for completeness, but too
+much in either direction disrupts a critical balance-symmetry unchecked
+by asymmetry transmutes order, harmony and beauty into static, sterile
+and monotonous. Asymmetry unchecked by symmetry becomes aberrant,
+unrestrained and chaotic.
+
+Biology holds no exception to this duet. At first glance, symmetry may
+appear to be the predominant pattern in nature; indeed, animal cognitive systems
+have evolved sensitive symmetry detectors that function during mating choice
+and predator detection. However, organisms ranging from protists to plants to
+
+[PAGE 2] 
+
+vertebrates possess a fascinating collection of asymmetries
+within their body structures. Such morphological asymmetries
+exist with respect to the left-right (L/R) axis, spanning scales
+of size and levels of anatomical organization. The ability of
+biological forms to reliably generate consistent asymmetry in
+a universe that does not distinguish left from right (except at
+the quantum level) [1,2] is a remarkable phenomenon that
+attracts significant interest from many disciplines. As the first
+laterality genes were discovered only about 20 years ago, the
+field of L/R asymmetry is in a vibrant state of advancement,
+with emerging insights into deep unresolved questions about
+the cell biology and evolutionary history of chirality, propelled
+by identification of a steady stream of molecular-level work
+performed in a range of model systems.
+
+
+In higher organisms, the establishment of body shape
+requires precise development and coordination of anterior-
+posterior (A/P), dorsal-ventral (D/V) and L/R body axes
+during embryogenesis. D/V and A/P axes are specified by
+external forces that operate on the oocyte, such as the point
+of sperm entry, maternal animal-vegetal gradients and the
+effect of gravity. Of the three body axes, the most open ques-
+tions concern the mechanisms of specifying and patterning the
+L/R axis. Models proposed to explain laterality mechanisms
+remain controversial, but it is clear that anomalies of L/R
+axis determination can lead to a spectrum of congenital
+disorders that affect both arrangement and morphology of
+the heart and visceral organs. L/R visceral organ asymmetry
+anomalies are broadly classified as two disorders, situs ambi-
+guus and situs inversus. Also termed heterotaxy, situs
+ambiguus is a disorder of discordance in which some organs
+develop normal L/R asymmetry and others do not. This
+class of laterality disorders includes isomerism, in which
+some normally asymmetric organs instead develop symmetri-
+cally (e.g. left or right atrial or pulmonary isomerism) with
+health consequences, including prenatal death. Situs ambiguus
+is associated with significant foetal and perinatal lethality in
+humans and other vertebrates, largely owing to the develop-
+ment of complex congenital heart defects. Comparatively less
+mortality is associated with situs inversus, a disorder in
+which all organs are concordantly (mirror-image) reversed
+with respect to the other two body axes. Nevertheless, as cili-
+ary defects are often associated with situs inversus, respiratory,
+kidney and reproductive function are frequently compromised
+in affected individuals. Moreover, developmental anomalies of
+unknown cause with ectodermal derived tissues representing
+brain hemispheric L/R asymmetry are associated with debili-
+tating schizophrenia and bipolar psychoses disorders found in
+approximately 2.0% individuals worldwide and for that of the
+very rare mirror-hand movements disorder found in humans.
+
+Because of the importance of L/R axis determination for
+vertebrates' health and the many questions surrounding
+the mechanisms involved, it was an obvious choice for the
+Royal Society to publish a monograph on this subject. The
+editors' intention in accepting this assignment was to high-
+light recent research achievements, current controversies
+and remaining gaps in our knowledge in the field, with the
+goal to help guide future research. Experts in this field
+were asked in their contributions to summarize the progress
+made thus far, either as review articles or original research
+articles. We believe this monograph will be useful for
+researchers in this specific field, as a tool for teaching devel-
+opmental biology in graduate-level courses and for teaching
+the biology of origin of congenital disorders to medical
+
+[PAGE 2] Synopsis of laterality chapters
+
+As defining the mechanisms driving L/R asymmetric pheno-
+types is the main subject of this theme issue, it begins with a
+compact yet comprehensive review by Palmer [3], who discusses
+the ways in which asymmetries arise in otherwise bilaterally
+symmetrical organisms. This review beautifully highlights very
+different phenotypes of laterality development in diverse organ-
+isms, tackling the questions of how symmetry is first broken
+during embryogenesis, whether it is determined by genes,
+environment and chance, whether direction of asymmetry is
+maintained during regeneration of a tissue and whether asymme-
+try is produced at the organ level or globally at the organismal
+level. By reviewing asymmetry across multiple species and
+their morphogenetic features, such as gastropod coiling, flatfish
+eye sidedness, directional crossbill crossing, claw asymmetry in
+lobsters, crabs and shrimp, katydid sound-producing structures
+and various plant asymmetries the message is reinforced of
+the diversity that exists across organisms in the process of asym-
+metry, with different mechanisms likely having evolved multiple
+times for the benefit of each species. One particularly illuminating
+example of this is presented by the genetics of coiling direction
+controlled by two of the three alleles of a single locus of gastro-
+pods. They are the right, left and stochastic alleles, where the
+stochastic allele is recessive to both the dominant right or left alleles
+of a specific species. One key question this raises for future
+research is whether there is a commonality of biological
+mechanisms used for evolution of novel phenotypic variation
+of L/R asymmetry? The study of Schilthuizen et al. [4] adds to
+the understanding of evolution of asymmetry in the context of
+another coiling macroscopic feature: the asymmetric genitalia in
+Coleoptera. Asymmetry in male genitalia is a pervasive aspect
+of much of the animal kingdom, raising interesting questions
+about the physical and behavioural dynamics that drive this
+outcome in animals with highly diverse body plans and lifestyles.
+Regarding the molecular origin of asymmetry, one popu-
+lar model suggests that ciliary movement during neurulation
+initiates asymmetry in those organisms that have cilia prior to
+the appearance of laterality. For some vertebrates, ciliary
+
+
+[PAGE 3] 
+
+movement during neurulation and the subsequent calcium
+signal is a crucial event [5]. An excellent review of this
+model with details on the role of motile cilia in leftward
+fluid flow in humans and animal models is provided by
+Dasgupta and Amack [6]. They explain that while there is con-
+sensus that a transient leftward fluid flow can direct left-side
+asymmetric activation of the conserved Nodal pathway,
+namely in mouse and zebrafish, there is evidence indicating
+that not all vertebrates use this mechanism. Moreover, as
+also discussed by Dasgupta and Amack [6], and elsewhere
+[7], this model has faced a number of problems, including
+the question of what mechanism(s) are used to sense the
+fluid flow-e.g. mechanosensitive cilia, morphogen gradients
+or vesicular particles. More recent studies have shown that pri-
+mary cilia are not in fact calcium-responsive mechanosensors
+[8], and that asymmetries in cleavage-stage frog embryos
+have not only consistently asymmetric metabolic profiles [9],
+but also protein components with functional roles in asymme-
+try development [10]. Consistent with the existence of L/R
+asymmetry at such an early stage of development, Dasgupta
+and Amack [6] used mosaic cell labelling and time-lapse ima-
+ging in the zebrafish embryo to demonstrate that ciliated cells
+within Kupffer's vesicle-a structure that is functionally analo-
+gous to the embryonic node and alternatively termed the 'L/R
+organizer' are non-stochastically arranged, suggesting that
+they may be propagating L/R positional information that
+exists prior to L/R Organizer morphogenesis and hence,
+generation of directional fluid flow.
+
+If asymmetry precedes the L/R organizer, then what is the
+symmetry-breaking event and when does it occur? A common
+view of development suggests that cells in the embryo initially
+are undifferentiated, and that a morphogen gradient is gener-
+ated to specify gene regulatory networks on cells located at
+different locations in the embryo [11]. This model was adapted
+by Wolpert [12] for explaining general development, including
+L/R axis determination [13], and has constituted the major
+paradigm for guiding developmental biology research con-
+ducted for decades. The variety of data described in this
+issue reveals that asymmetry mechanisms are far broader. In
+fact, in a 2009 interview, Wolpert discarded the morphogen
+model by stating: 'diffusible gradients are out' [14, p. 659]. In
+our view, the mechanisms of L/R axis remain open, with
+two emerging (and non-mutually exclusive) alternatives to
+the morphogen model: both place the element of initial L/R
+asymmetry inside the cell, as opposed to extracellular fluid
+flow, and notably at a much earlier time point (early cleavage).
+As expertly presented by Klar [15], one intriguing model that
+is fundamentally different from the commonly invoked mor-
+phogen model is based on DNA strand-specific segregation,
+driven by the mechanism of somatic strand-specific imprinting
+and selective chromatid segregation (SSIS). This mechanism
+invokes the processes of monochromatid gene expression, and
+that is based on the asymmetry of DNA chains of developmental
+control gene(s), followed by selective segregation of thus epigen-
+etically differentiated sister chromatids in the mitosis of a
+deterministic cell to produce developmentally unequal sister
+cells. This paper summarizes previous application of this
+mechanism to explain the genetically caused variation of devel-
+opment of visceral organs' laterality in vertebrates, the piebald
+(i.e. two different colours; black spots on one wing and red
+spots on the lateral wing) mutant phenotype of the Bruchus
+beetle and anomalies of brain hemispheric asymmetry owing
+to chromosome 11 rearrangements that are associated with
+
+[PAGE 3] 
+
+psychoses and for mirror-hand movement disorders owing to
+RAD51 haploinsufficiency in humans. Klar [15] has here
+extended the application of this developmental mechanism to
+explain the genetics of congenital limb developmental anomaly
+in humans. This anomaly is called the split hand/foot malfor-
+mation, where the index and middle fingers fail to develop
+with variable penetrance even for different limbs of the same
+person. It is known that deletions and conventional mutations
+of DLX5 (the Drosophila distal-less dll homologue) in chromosome
+7 cause the anomaly with incomplete penetrance owing to hap-
+loinsufficiency, but paradoxically, the vast majority of cases
+result from chromosomal aberrations where the DLX5 locus
+itself is not mutated, and moreover, where the aberration break-
+points are often located millions of bases away from the DLX5
+locus. Klar [15] concludes that chromosome 7 translocations
+and inversions associated with the disorder (whose genetic
+aetiology has remained unexplained thus far) have satisfied
+developmental biology predictions of the SSIS mechanism. It
+is argued that the double-helix structure of DNA itself forms
+the physical basis of turning the developmental control gene
+ON in one chromatid and OFF in sister chromatid during repli-
+cation of the progenitor cell's gene, and this binary-coded gene
+expression switching mechanism may be the underlying mech-
+anism of development in general. By evolving factors that can
+vary the selective strand/chromatid segregation process func-
+tioning at the centromere of the relevant chromosome, both
+regulated asymmetric versus symmetric cell divisions can be
+produced in different cell types by the same intracellular SSIS
+mechanism, providing a possible molecular explanation for
+the Ying and Yang developmental outcome described above.
+Another alternative model of symmetry breaking is
+grounded in the role of the cytoskeleton, with a mechanism
+that has strong implications for evolution. It should be
+appreciated that intracellular features of cellular polarity
+and cytoskeleton comprising cellular chirality (to be pre-
+sented below) must play a critical role for the SSIS
+mechanism to operate. Nodal ciliary flow is absent in pig
+and chick, as well as Drosophila, snails and Caenorhabditis
+elegans; thus, if cilia are crucial in some situations, then the
+origin of asymmetry must be highly divergent across phyla.
+By contrast, intracellular cytoskeletal elements are highly con-
+served; recent data revealed a microtubule protein that was
+functionally implicated in asymmetry of plants, C. elegans,
+Xenopus and human cells [10]. One possibility is that asym-
+metry is an ancient property that predates the origins of
+multicellularity; even bacteria [16], unicellular ciliates [17]
+and slime moulds [18] exhibit asymmetry. Satir's paper [19]
+deftly overviews the many actin filaments and microtubule
+processes in cells that exhibit chiral properties, and illustrates
+how helical properties of cytoskeletal elements instruct cell
+behaviour and subsequent morphogenesis.
+
+Consistent with this model, exciting recent data have
+revealed that individual cells have many directionally
+oriented asymmetric behaviours that can be explained by
+chiral properties that have an impact on large-scale structures
+to which these cells contribute [20-23]. The ability of single
+cells (even in vitro) to determine their L/R axis in the absence
+of ciliated organs [24-26] suggests that in at least some cases,
+asymmetry is leveraged intracellularly and may be present
+throughout the body. The link between single-cell asymmetry
+and whole-body asymmetry is one of the most exciting future
+aspects of this field. Inaki et al. [27] have reviewed studies
+with model systems addressing the role of cellular chirality
+
+
+[PAGE 4] 
+
+in L/R axis determination and asymmetric organ development.
+They review various cultured cell lines of vertebrates that show
+intrinsic chirality affecting cellular behaviours, and suggest that
+chirality derives from cellular structures such as basal bodies
+and/or cytoskeleton. Specific examples include blastomere
+chirality, which dictates L/R body asymmetry at or before the
+eight-cell stage in C. elegans embryos and dextral versus sinistral
+shell coiling in snails, and myosin31DF as a key player in con-
+trolling directionality of gut looping in Drosophila. Wan et al.
+[28] also critically review cell chirality, focusing on in vitro cell
+systems involving microprinting and degradable hydrogels
+as well as mathematical models of biophysical mechanisms
+that have been used to probe multicellular chirality and its
+propagation during collective cell migration. In addition, they
+discuss a recently developed three-dimensional spheroid
+rotation assay that can be used to determine chirality of less
+adhesive cells. As chirality appears to be an intrinsic property
+of all cells, and is readily demonstrable with experimental
+micropatterning systems, one intriguing application of this
+phenomenon is use of cell chirality as an endpoint in screening
+for nanomaterial toxicity and putative teratogens.
+
+An important avenue for future work is the development
+of computational models that reveal how large-scale body
+plans arise from the activities of single cells. In the L/R asym-
+metry field, this amounts to multi-scale biophysical models
+that quantitatively explain the integration of chiral cell beha-
+viours towards whole body axes. Recent work has begun this
+task [20,23,29-31], and the contribution by Martinez et al.
+[32] extends the effort to patterns of plant leaf asymmetry.
+Analysis of several mutants with spiral phyllotaxis found
+the mirrored patterns of L/R leaflet displacement as pre-
+dicted by the model, as were the results of analysis of leaf
+pair shapes in plants with distichous phyllotaxis. The
+model was based on the dynamic of fluxes in auxin concen-
+trations, which is interesting, because auxin is a signalling
+molecule very similar to serotonin—a neurotransmitter with
+important L/R patterning roles [33].
+
+For L/R axis patterning, clearly, laterality-specifying
+genes and their precise regulation are required. But how
+does a cell regulate laterality gene expression according to
+whether it lies on the left versus right side of the embryo?
+Transcriptional processes cannot distinguish spatial direc-
+tions by themselves, and any gene regulatory circuit has to
+be painted onto a shape that is in part dictated by physical
+forces. In the L/R axis, regardless of which of the initiation
+models turns out to be correct, a microscopic, physical
+process (structure of cytoskeletal or DNA elements) is ampli-
+fied into signals across whole cell fields. This is an important
+example of biological information processing, as chiral phys-
+ical elements provide direction (e.g. leftward or clockwise),
+whereas L/R-asymmetric gene expression requires position
+(left side relative to midline). During the early phases of
+asymmetry, the embryo converts microscopic directional
+cues into macroscopic positional cues, which feed into differ-
+ential cascades of gene expression on the L and R sides.
+Burdine and Grimes [34] exploit the strength of the zebrafish
+model system, performing a large number of elegant
+transplantation and ablation studies in mutant lines that
+show how events in the zebrafish L/R organizer result
+in the reliable unilateral expression of key L/R patterning
+genes. These events involve tissue interactions between the
+notochord, lateral plate mesoderm and the Kupffer's vesicle,
+revealing how the transcriptional cascades operate in the
+
+
+[PAGE 4] 
+
+context of a complex embryo that is simultaneously patterning
+numerous other aspects. An essential component is the notion
+of midline; the midline is essential for defining asymmetry in
+the first place, but how an early embryo bisects itself in a con-
+sistent manner is a key unanswered question. Asymmetric cell
+division occurring very early on to bisect the embryo, followed
+by each laterality-specified daughter cell's progenies executing
+the specific left- versus right-sided developmental programme,
+should be considered as one of the possibilities.
+
+In addition to an essential role in maintaining L/R asym-
+metry, midline interactions also simultaneously operate to
+preserve symmetry in bilaterally paired organs that arise from
+lateral tissues. Robichaux et al. [35] explore this in the context
+of mammary gland development in mice lacking a functional
+allele for an A/P patterning gene, retinoid X receptor alpha
+(RXRa). In this study, the authors demonstrate that the geneti-
+cally engineered haploinsufficiency in the RXRa locus causes a
+substantial fraction of mammary glands (in approx. 50% of all
+animals analysed) to demonstrate distinct patterning asymmetry
+when left breast tissues are compared with their right counter-
+parts, as evidenced by quantifying such anatomic parameters
+as ductal network area, density of terminal end buds and
+branch points, and relative mass of gland tissue. No variances
+in L/R morphometrics were present in wild-type mice carrying
+both functional RXRa alleles. Even more notably, in RXRx+/-
+animals, the effect was restricted to thoracic mammary glands
+but not detected in inguinal mammary glands, an observation
+that underscores previously made assumptions of differential
+tissue response to retinoid-mediated signalling along the A/P
+axis. As parenchymal L/R asymmetry in breast tissue is an
+early and sensitive predictor of breast cancer risk, this study
+suggests that heightened risk for neoplasia may actually be
+rooted in L/R asymmetric tissue disorganization that results
+from relatively subtle embryonic axial patterning defects.
+
+Two laterality genes with highly conserved expression
+and function in midline and lateral patterning events include
+Nodal and Pitx2. Martin-Duran et al. [36] cover evolution of
+L/R asymmetry of spiralians, which includes the most cele-
+brated phenotype of the direction of coiling of snail shells,
+which they associate with embryonic chirality. In this study,
+they describe in detail the pattern of gene expression of a
+Nodal orthologue in a brachiopod species and the pattern of
+PitX orthologues expression in an annelid and pripulid
+species. Their description helps us appreciate the evidence
+depicting patterning of L/R asymmetries in early embryonic
+cell lineages of the Spiralia group. Studies of these taxa indi-
+cate that embryonic chirality is a widespread feature of
+development, and this investigation highlights the features
+of asymmetric Nodal and Pitx2 orthologue expression in
+embryonic cells even in species that develop without obvious
+adult L/R asymmetries. From their description, it is appreci-
+ated that the Nodal signalling pathway functioned even in
+the ancestors of all bilaterally symmetric animals. Consistent
+with other studies presented in this issue, Martin-Duran et al.
+[36] demonstrate that Nodal and Pitx genes are not expressed
+in the earliest cleavage stages of the embryo, indicating that a
+separate upstream genetic mechanism defines the L/R axis in
+spiralian embryos. Indeed, a recent study has demonstrated
+that the cytoskeleton formin gene (ldia2) dictates the handed-
+ness of shell coiling through its differential expression at the
+two-cell stage of the embryo [37]. Thus, as in other species,
+such a very early embryonic symmetry-breaking event must
+influence expression of genes such as Nodal for L/R axis
+
+
+[PAGE 5] 
+
+specification to occur later on. The next challenge is to define
+how such very early decisions control later L/R axis pro-
+grammes later on during embryogenesis.
+
+Also focused on Nodal, Signore et al. [38] take a comparative
+approach to cover the role of this pathway in the development
+of nervous system asymmetries in fish and ascidian species.
+These authors make an important distinction between Nodal
+as a laterality inducer and Nodal as a modulator of pre-existing
+identity, and describe experimental conditions in which the pre-
+cise role of Nodal can be investigated. The main lesson spelled
+out is that bilaterally paired and midline-unpaired structures
+respond differently to perturbations of Nodal expression.
+Therefore, effects on paired structures should be interpreted
+separately from effects on unpaired strictures. These lessons
+can be applied to other systems for defining the role of Nodal
+signalling, such as for mammalian visceral and brain hemi-
+spheric laterality specification.
+
+Subsequently, physics enters the picture again, as asym-
+metric protein products ultimately ensure distinct tension,
+stretching and bending forces that implement asymmetric mor-
+phogenesis. L/R patterning is thus not only an example of multi-
+scale integration, but also of the continuous interplay of physics
+and genetics, aspects that are ubiquitous in living systems and
+yet still poorly understood. Another way in which L/R asymme-
+try sheds light on biology beyond embryonic laterality is in the
+implications for regenerative repair. McDowell et al. [39] report
+that the L/R transcriptional cascade, which is known to be
+highly conserved, has the capability of self-repair: early treat-
+ments that efficiently randomize early asymmetric genes such
+as the left-sided nodal often give rise to a smaller percentage
+of embryos with abnormal sidedness of downstream genes
+such as Lefty or Pitx2, and an even smaller percentage of ani-
+mals with abnormal organ laterality. This reveals that
+although molecular functional data in specific assays identify
+genes necessary and sufficient for induction of the downstream
+genes (e.g. the Nodal → Lefty → Pitx2 cascade), the story in vivo
+is more complex, owing to the presence of parallel repair path-
+ways that can apparently detect and reverse molecular
+abnormalities, so that subsequent steps have normal laterality.
+Despite advances made in identifying many of the cellular
+and molecular processes that control L/R axis determination,
+the genetic aetiology of L/R asymmetry disorders remains
+largely unknown. Whereas the majority of human laterality
+defects are believed to be sporadic, there is also an appreciable
+incidence of heritable transmission, including X-linked,
+autosomal dominant and autosomal recessive modes. As dis-
+cussed by Cowan et al. [40], familial studies have led to
+identification of mutations in Nodal and other L/R patterning
+genes (e.g. ZIC3); however, surprisingly, these mutations
+underlie only a minority of sporadic heterotaxy cases. To identity
+additional causes, Cowan et al. [40] used array-based genotyping
+methods to discover that nearly 20% of patients with heterotaxy
+and heterotaxy-associated congenital heart defects have copy
+number variants (CNVs) in their genome. As analysis included
+only affected individuals but not their parents, it is unclear
+whether CNVs result from de novo mutations or if they are
+familially inherited. Regardless, a number of genes with cilia-
+related functions, including TTC21B, CEP290, TTBK2 and
+CFPAP126, were implicated for L/R anomalies. Duplications
+or deletion of several other loci have been identified. One interest-
+ing case is that of phosphofructokinase-1 (PFKP), a gene whose
+heterotaxy pathogenesis was confirmed by morpholino-based
+experiments in Xenopus laevis. This enzymatic activity is required
+for glycolysis, raising the question of how could it be involved in
+L/R asymmetry development? The authors speculate that there
+is a non-glycolytic role of PFKP in L/R patterning because its
+isoforms are known to bind the a-subunit of H+-V-ATPase, a
+membrane-bound proton pump implicated in laterality determi-
+nation in Xenopus and chick. Given the success achieved in this
+study, future continued study of additional human subjects is
+anticipated to be highly rewarding.
+
+[PAGE 5] 
+
+Genetic analysis of heterotaxy is also being conducted by
+Alcorn et al. [41], who use C. elegans in their search for disease
+loci. The commonly used laboratory strain of this nematode
+exhibits a stereotypical gut-gonad L/R asymmetry that has
+been shown to be established during early embryogenesis,
+i.e. during the division of the two anterior granddaughter
+cells of four-cell stage embryo. In examining nearly 100 evolu-
+tionarily diverged isolates of this species, Alcorn et al. [41]
+discovered that there is naturally existing variation in L/R
+organ asymmetry, and moreover, that some species exhibit
+heterotaxy in up to 11-12% of the animals. By conducting gen-
+etic crosses of lines showing normal L/R situs with lines
+showing heterotaxy, these investigators found that heterotaxy
+is associated with three genomic regions. Moreover, they
+report that temperature elevation prior to gastrulation can
+cause heterotaxy, consistent with an early embryonic sym-
+metry-breaking event existing in this research model organism.
+In addition to gut-gonad asymmetry, nervous system
+asymmetry can be readily investigated in C. elegans. Laterality
+of the nervous system is observed across many species, includ-
+ing brain hemispheric laterality development in humans that is
+driven by poorly defined mechanisms. Focusing on the pair
+of amphid wing 'C' (AWC) olfactory neurons in C. elegans,
+Alqadah et al. [42] review recent progress made in defining
+the mechanisms that regulate their functional and molecular
+L/R asymmetric development. The AWC neuron pair differen-
+tiates asymmetrically into AWCON and AWCOFF subtypes,
+which sense different odours, and curiously these two neurons
+are randomly (stochastically) distributed with respect to the
+L/R axis. The AWC asymmetry is established by exposure of
+cells to different levels of calcium signalling during embryo-
+genesis, and following this specification neuronal identities
+are maintained throughout the life of the animal. Because of
+its genetic tractability and the simplicity of its nervous system's
+laterality, C. elegans has emerged as a powerful model organ-
+ism to define molecular mechanisms of neuronal asymmetry
+and the laterality of gut and gonad organs. Very interesting
+mutations that affect the neuronal asymmetry development
+are highlighted in the review. The authors note that, as
+found in studies of AWC asymmetry in the nematode, calcium
+signalling is implicated in L/R organ patterning in vertebrates.
+
+
+[PAGE 5] Concluding remarks
+
+L/R asymmetry is one of the most exciting problems under
+investigation in modern biology. Far from being solved, recent
+progress only highlights the remarkable opportunities high-
+lighted by this aspect of pattern formation. A study of L/R
+asymmetry, in its deep aspects, will reward not only the
+novice student of biology, but also the seasoned expert in
+other fields. Spanning scales of organization, from cell to
+whole organism, and disciplines, from evolution to cell biology
+to clinical medicine, it provides fertile ground for research for
+generations of workers to come. Biological asymmetry's
+
+Downloaded from https://royalsocietypublishing.org/ on 02 August 2025
+specification to occur later on. The next challenge is to define
+how such very early decisions control later L/R axis pro-
+grammes later on during embryogenesis.
+
+Also focused on Nodal, Signore et al. [38] take a comparative
+approach to cover the role of this pathway in the development
+of nervous system asymmetries in fish and ascidian species.
+These authors make an important distinction between Nodal
+as a laterality inducer and Nodal as a modulator of pre-existing
+identity, and describe experimental conditions in which the pre-
+cise role of Nodal can be investigated. The main lesson spelled
+out is that bilaterally paired and midline-unpaired structures
+respond differently to perturbations of Nodal expression.
+Therefore, effects on paired structures should be interpreted
+separately from effects on unpaired strictures. These lessons
+can be applied to other systems for defining the role of Nodal
+signalling, such as for mammalian visceral and brain hemi-
+spheric laterality specification.
+
+Subsequently, physics enters the picture again, as asym-
+metric protein products ultimately ensure distinct tension,
+stretching and bending forces that implement asymmetric mor-
+phogenesis. L/R patterning is thus not only an example of multi-
+scale integration, but also of the continuous interplay of physics
+and genetics, aspects that are ubiquitous in living systems and
+yet still poorly understood. Another way in which L/R asymme-
+try sheds light on biology beyond embryonic laterality is in the
+implications for regenerative repair. McDowell et al. [39] report
+that the L/R transcriptional cascade, which is known to be
+highly conserved, has the capability of self-repair: early treat-
+ments that efficiently randomize early asymmetric genes such
+as the left-sided nodal often give rise to a smaller percentage
+of embryos with abnormal sidedness of downstream genes
+such as Lefty or Pitx2, and an even smaller percentage of ani-
+mals with abnormal organ laterality. This reveals that
+although molecular functional data in specific assays identify
+genes necessary and sufficient for induction of the downstream
+genes (e.g. the Nodal → Lefty → Pitx2 cascade), the story in vivo
+is more complex, owing to the presence of parallel repair path-
+ways that can apparently detect and reverse molecular
+abnormalities, so that subsequent steps have normal laterality.
+
+Despite advances made in identifying many of the cellular
+and molecular processes that control L/R axis determination,
+the genetic aetiology of L/R asymmetry disorders remains
+largely unknown. Whereas the majority of human laterality
+defects are believed to be sporadic, there is also an appreciable
+incidence of heritable transmission, including X-linked,
+autosomal dominant and autosomal recessive modes. As dis-
+cussed by Cowan et al. [40], familial studies have led to
+identification of mutations in Nodal and other L/R patterning
+genes (e.g. ZIC3); however, surprisingly, these mutations
+underlie only a minority of sporadic heterotaxy cases. To identity
+additional causes, Cowan et al. [40] used array-based genotyping
+methods to discover that nearly 20% of patients with heterotaxy
+and heterotaxy-associated congenital heart defects have copy
+number variants (CNVs) in their genome. As analysis included
+only affected individuals but not their parents, it is unclear
+whether CNVs result from de novo mutations or if they are
+familially inherited. Regardless, a number of genes with cilia-
+related functions, including TTC21B, CEP290, TTBK2 and
+CFPAP126, were implicated for L/R anomalies. Duplications
+or deletion of several other loci have been identified. One interest-
+ing case is that of phosphofructokinase-1 (PFKP), a gene whose
+heterotaxy pathogenesis was confirmed by morpholino-based
+experiments in Xenopus laevis. This enzymatic activity is required
+for glycolysis, raising the question of how could it be involved in
+L/R asymmetry development? The authors speculate that there
+is a non-glycolytic role of PFKP in L/R patterning because its
+isoforms are known to bind the a-subunit of H+-V-ATPase, a
+membrane-bound proton pump implicated in laterality determi-
+nation in Xenopus and chick. Given the success achieved in this
+study, future continued study of additional human subjects is
+anticipated to be highly rewarding.
+
+Genetic analysis of heterotaxy is also being conducted by
+Alcorn et al. [41], who use C. elegans in their search for disease
+loci. The commonly used laboratory strain of this nematode
+exhibits a stereotypical gut-gonad L/R asymmetry that has
+been shown to be established during early embryogenesis,
+i.e. during the division of the two anterior granddaughter
+cells of four-cell stage embryo. In examining nearly 100 evolu-
+tionarily diverged isolates of this species, Alcorn et al. [41]
+discovered that there is naturally existing variation in L/R
+organ asymmetry, and moreover, that some species exhibit
+heterotaxy in up to 11-12% of the animals. By conducting gen-
+etic crosses of lines showing normal L/R situs with lines
+showing heterotaxy, these investigators found that heterotaxy
+is associated with three genomic regions. Moreover, they
+report that temperature elevation prior to gastrulation can
+cause heterotaxy, consistent with an early embryonic sym-
+metry-breaking event existing in this research model organism.
+In addition to gut-gonad asymmetry, nervous system
+asymmetry can be readily investigated in C. elegans. Laterality
+of the nervous system is observed across many species, includ-
+ing brain hemispheric laterality development in humans that is
+driven by poorly defined mechanisms. Focusing on the pair
+of amphid wing 'C' (AWC) olfactory neurons in C. elegans,
+Alqadah et al. [42] review recent progress made in defining
+the mechanisms that regulate their functional and molecular
+L/R asymmetric development. The AWC neuron pair differen-
+tiates asymmetrically into AWCON and AWCOFF subtypes,
+which sense different odours, and curiously these two neurons
+are randomly (stochastically) distributed with respect to the
+L/R axis. The AWC asymmetry is established by exposure of
+cells to different levels of calcium signalling during embryo-
+genesis, and following this specification neuronal identities
+are maintained throughout the life of the animal. Because of
+its genetic tractability and the simplicity of its nervous system's
+laterality, C. elegans has emerged as a powerful model organ-
+ism to define molecular mechanisms of neuronal asymmetry
+and the laterality of gut and gonad organs. Very interesting
+mutations that affect the neuronal asymmetry development
+are highlighted in the review. The authors note that, as
+found in studies of AWC asymmetry in the nematode, calcium
+signalling is implicated in L/R organ patterning in vertebrates.
+
+[PAGE 7] 3. Concluding remarks
+
+L/R asymmetry is one of the most exciting problems under
+investigation in modern biology. Far from being solved, recent
+progress only highlights the remarkable opportunities high-
+lighted by this aspect of pattern formation. A study of L/R
+asymmetry, in its deep aspects, will reward not only the
+novice student of biology, but also the seasoned expert in
+other fields. Spanning scales of organization, from cell to
+whole organism, and disciplines, from evolution to cell biology
+to clinical medicine, it provides fertile ground for research for
+generations of workers to come. Biological asymmetry's
+fundamental feature is the continuous, tight integration of
+physical and genetic mechanisms; understanding this is a fun-
+damental challenge, while learning to exploit it will enable
+powerful new roadmaps for biomedicine.

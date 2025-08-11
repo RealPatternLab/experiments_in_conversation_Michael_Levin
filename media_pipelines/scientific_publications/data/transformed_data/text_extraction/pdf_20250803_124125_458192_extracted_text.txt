@@ -1,0 +1,611 @@
+Membrane potential depolarization causes alterations in
+neuron arrangement and connectivity in cocultures
+Nurdan Özkucur¹,2, Kyle P. Quinn¹, Jin C. Pang³, Chuang Du¹,4, Irene Georgakoudi¹, Eric Miller³,
+Michael Levin² & David L. Kaplan¹
+¹Department of Biomedical Engineering, Tufts University, 4 Colby St., Medford, Massachusetts 02155
+²Biology Department, Tufts University, 200 Boston Avenue, Suite 4600, Medford, Massachusetts 02155
+³Department of Electrical and Computer Engineering, Tufts University, 161 College Avenue, Medford, Massachusetts 02155
+⁴Department of Neuroscience, Tufts University, 136 Harrison Ave, Boston, Massachusetts
+
+Keywords
+Automated cluster analysis, cell resting
+membrane potential, connectivity, cortical
+neurons, neuron assemblies.
+
+Correspondence
+David L. Kaplan, Department of Biomedical
+Engineering, Tufts University, 4 Colby St.,
+Medford, MA 02155.
+Tel: +1 617 6273251; Fax: +1 617 6273231;
+E-mail: david.kaplan@tufts.edu
+Michael Levin, Biology Department, Tufts
+University, 200 Boston Avenue, Suite 4600,
+Medford, MA 02155.
+Tel: +1 617 6276161; Fax: +1 617 6276121;
+E-mail: michael.levin@tufts.edu
+
+Funding Information
+This study was supported by German
+Research Council (DFG, OE 541/2-1), The
+G. Harold and Leila Y. Mathers Charitable
+Foundation, and the National Institutes of
+Health via grants AR005593, AR061988,
+AR061933 and EB007542.
+
+
+Abstract
+Background: The disruption of neuron arrangement is associated with several
+pathologies. In contrast to action potentials, the role of resting potential (Vmem)
+in regulating connectivity remains unknown. Methods: Neuron assemblies were
+quantified when their Vmem was depolarized using ivermectin (Ivm), a drug that
+opens chloride channels, for 24 h in cocultures with astrocytes. Cell aggregation
+was analyzed using automated cluster analysis methods. Neural connectivity was
+quantified based on the identification of isolated somas in phase-contrast images
+using image processing. Vmem was measured using voltage-sensitive dyes and
+whole-cell patch clamping. Immunocytochemistry and Western blotting were
+used to detect changes in the distribution and production of the proteins. Results:
+Data show that Vmem regulates cortical tissue shape and connectivity. Automated
+cluster analysis methods revealed that the degree of neural aggregation was signifi-
+cantly increased (0.26 clustering factor vs. 0.21 in controls, P < 0.01). The num-
+ber of beta-tubulin III positive neural projections was also significantly increased
+in the neural aggregates in cocultures with Ivm. Hyperpolarized neuron cells
+formed fewer connections (33% at 24 h, P < 0.05) compared to control cells in 1-
+day cultures. Glia cell densities increased (33.3%, P ≤ 0.05) under depolarizing
+conditions. Conclusion: Vmem can be a useful tool to probe neuronal cells, disease
+tissues models, and cortical tissue arrangements.
+
+
+[PAGE 1] Introduction
+Cortical arrangement, including shape and size at the cel-
+lular and tissue levels, relates to neural connectivity asso-
+ciated with normal brain development and function
+(Anstotz et al. 2013; Comin and da Fontoura Costa 2013;
+Foxworthy et al. 2013). We have used the term 'neuron
+arrangement' as a general term referring to the positional
+reorganization of cells in respect to each other. Neural
+assemblies, as first defined by Donald Hebb, are diffuse
+structures comprising cells in the cortex and diencepha-
+lon. Those structures are also capable of acting briefly as
+a closed system, delivering facilitation to other such sys-
+tems. Neural assemblies are implicated in complex brain
+functions such as learning or planning, and accepted as
+the smallest representatives of a cognitive concept in the
+brain, as explained in Hebbian theory (Hebb 1949). Neu-
+ral assemblies are suggested to constitute neural syntaxes
+that integrate and parse the fundamental assemblies of
+neural activities (Buzsaki 2010).
+Deficits in neuronal organization and connectivity can
+result in a range of pathologies. Brains of corticobasal
+syndrome patients have a common degenerating neural
+network comprised of the motor circuit and primary
+motor-cortex (Sudmeyer et al. 2012). Corticostriatal con-
+nectivity with a precise arrangement of large scale loops
+has been suggested to play a critical role in neurodevelop-
+mental, neuropsychiatric, and movement disorders (Shep-
+herd 2013). In autism, altered connectivity due to
+changes in the ratio of distinct types of inhibitory neu-
+rons has been reported (Zikopoulos and Barbas 2013).
+Similarly, profound alterations have been recorded from
+cortical and subcortical networks in epileptic seizures
+(Spencer 2002). Changes in brain functional connectivity
+are detected in patients with Obsessive-Compulsive Disor-
+der and in social anxiety disorder (Fontenelle et al. 2012;
+Gimenez et al. 2012).
+The deformation or volume change in cortical tissue
+occurs in several neurological diseases. For example, hip-
+pocampal shape and volume can predict the onset of
+dementia in the elderly (Csernansky et al. 2005). In Amyo-
+tropic Lateral Sclerosis, a significant thinning due to
+reduced gray matter has been detected in multiple motor
+and extramotor cortical areas (d'Ambrosio et al. 2014).
+Brain morphometric studies have revealed focal abnormali-
+ties in several areas of brain, including the cortex, in
+schizophrenia patients (Davatzikos et al. 2005; Zierhut
+et al. 2013). Volume loss and cortical thinning was found
+in the medial temporal lobe of individuals with schizophre-
+nia when compared with control groups. Also correlations
+between structural measures and memory performance in
+schizophrenia subjects were demonstrated (Karnik-Henry
+et al. 2012). Significant variations in shape have been
+reported in the frontobasal brain region in Obsessive-
+Compulsive Disorder (Pujol et al. 2011). Reductions in
+cortical thickness in the left hemisphere and a lack of integ-
+rity of white matter is a main contributor to long-term
+impairment in declarative memory among patients suffer-
+ing from severe and diffuse traumatic brain injury (Pala-
+cios et al. 2013). A recent study verified that cortical
+thinning is observable/quantifiable and is functionally rele-
+vant in blast-related traumatic brain injury patients (Tate
+et al. 2014). Interestingly, regardless of the disease-induced
+cause, a decline in cortex volume has also been identified
+in elderly (Thomann et al. 2013). However, it is still not
+known which cell types in number, density, or size in the
+brain are disturbed related to neurological disorders.
+Magnetic resonance imaging of clinical subjects is the
+most common approach used to assess functional brain
+anatomy. This analytical approaches provides rapid and
+general diagnosis for clinical purposes (Bernhardt et al.
+2013), but lacks spatial resolution at the cellular level,
+which is important to elucidate the mechanisms of disease
+and development. In vitro model systems and automated
+quantitative analysis tools are needed to achieve insight
+into disease mechanisms and to implement approaches
+for disease control and therapy.
+Vmem can regulate cell differentiation as undifferentiated
+cells exhibit relatively depolarized Vmem compared to ter-
+minally differentiated cells (Levin 2007). The underlying
+mechanism for that is the regulation of cell proliferation
+and differentiation (Sundelacruz et al. 2009). It has long
+been known that activity of the nervous system during
+embryogenesis helps regulate differentiation, proliferation,
+and topology of the nascent CNS (Katz and Shatz 1996;
+Penn and Shatz 1999; Deisseroth et al. 2004; Young et al.
+2012). However, despite the exciting recent data indicating
+roles for resting potential gradients in embryonic pattern-
+ing of many organs (Levin et al. 2002; Lange et al. 2011;
+Levin 2012, 2013; Levin and Stevenson 2012; Beane et al.
+2013; Tseng and Levin 2013), the roles of Vmem in neural
+connectivity remain unknown. The objective of this study
+was to develop a novel approach to mimic and detect
+abnormalities in cortical tissue arrangement based on
+changes in the neuron arrangement, as well as shape and
+size of neural cell assemblies. Ivm is known to change the
+cellular chloride content. Ivm can change the Vmem specifi-
+cally by binding to Glycine Receptor Chloride Channel
+alpha-1 subunit. That makes Ivm a specifically targeted
+and a convenient tool to change the Vmem in cells express-
+ing the channel (Sharmeen et al. 2010; Blackiston et al.
+2011; Lynagh et al. 2011; Dutertre et al. 2012). We found
+that Ivm can affect both astrocytes and neurons, as western
+blot studies revealed that GlyR was produced also in astro-
+cytes. However, the ability of Ivm to affect Vmem was in
+different time windows for neurons and astrocytes. Ivm
+caused a relatively hyperpolarized Vmem in astrocytes alone
+at 2w and 4w where it reversed neuron Vmem (depolarized)
+at 3 weeks in presence of astrocytes versus the controls
+(Ozkucur et al., in review). Using intrinsic chloride-depen-
+dent Vmem shift from depolarizing to hyperpolarizing in
+developing neurons (Ehrlich et al. 1999), cortical shape
+and connectivity were controlled with a Vmem-specific
+manner using Ivm. The data reveal that changes in gross
+cortical anatomy can be recapitulated at the cellular level,
+and suggest Vmem as a useful tool to establish in vitro
+models for both normal and diseased cortex.
+
+[PAGE 3] Materials and Methods
+E18 rat cerebral cortical tissue was kindly provided every
+week from Gregory Frost from Dr. Steven Moss's
+laboratory at Tufts Neuroscience Center. The brain tissue
+isolation protocol was approved by Tufts University
+Institutional Animal Care and Use Committee and com-
+plies with the NIH Guide for the Care and Use of Labo-
+ratory Animals (IACUC # B2011-45).
+
+Dissociation and plating of rat cortical
+neurons
+Cortices were removed from Hanks Balanced Salt Solu-
+tion (HBSS) using a 10 mL pipette, and were placed in a
+pre-warmed 0.25%/0.3% Trypsin/DNase solution in a
+new 35-mm dish. Cortices were incubated at 37°C for
+20 min for enzymatic dissociation of the tissues. The tis-
+sue suspension was mixed with pre-warmed trypsin inhib-
+itor solution (1 mg/mL) at 1:1 ratio in a 15 mL tube.
+The mixture was pipetted up and down <20 times until
+the tissues were broken up into a homogeneous cell sus-
+pension. Dissociated neurons were centrifuged
+at
+1000 rpm for 5 min. The cell pellet was resuspended in
+10 mL dissociation buffer (complete NB media + 1:50
+glutamate). Cells were counted using a hemocytometer.
+Cells were seeded on poly-d-lysine (100 µg/mL) coated
+plates in Neurobasal Media, supplemented with B27, 1%
+penicillin/streptomycin and 1% glutamax, all purchased
+from Invitrogen (Carlsbad, CA). Ivm (1 µmol/L, Tocris
+Bioscience-R&D Systems, Inc., MN) was added to the cul-
+ture medium to change Vmem of the cells. Cell culture
+media were changed once a week. Each series of experi-
+ments constituted the same pool of cortical cells isolated
+from one rat cerebral cortex. Ninety-six-well plates
+(Nunc, Rochester, NY), 8-well chambers, and 3-cm petri
+dishes (Ibidi, LLC, Verona, WI) were used for high-
+throughput measurements, immunocytochemistry, and
+connectivity assays, respectively.
+
+Isolation and culture of rat astroglial cells
+Each cortex was taken up with a 10 mL pipette and
+placed into a 15 mL conical tube containing 5 mL
+warmed 10% FBS DMEM + 1% penicillin/streptomycin
+media. Cortices were pipetted up and down <20 times.
+The homogenized cell suspension was passed through a
+40 µm cell strainer into a 50 mL tube. The cell strainer
+was moved to a new tube and 5 mL of cells were pip-
+etted from a 50 mL conical tube into T-25 flasks. The
+next day after seeding, the media were replaced with
+prewarmed fresh 10% FBS DMEM + 1% penicillin/strep-
+tomycin. This process was repeated 2-5 days after seed-
+ing. After 1 week, the media were removed, cells were
+rinsed with PBS, and new prewarmed 2% FBS
+DMEM + 1% penicillin/streptomycin media were added
+to the cells. Neurons and astrocytes were seeded in 3:1
+(3 × 10⁵:1 x 10⁵ cells/mL) ratio for cocultures. Each
+series of experiments constituted the same pool of astro-
+cytes isolated from cerebral cortices of the offspring of
+one pregnant rat. Cocultures were maintained in astro-
+cyte media combined with complete neurobasal media at
+37°C in a humidified incubator with 5% CO₂. Medium
+was changed once in a week. Astrocyte cultures were
+split 1:5 once a week.
+
+Cell toxicity assay WST-1
+Cell toxicity data were collected from WST-1 assay that
+measures mitochondrial activity. This assay is based on a
+tetrazolium salt is cleaved to formazan by the 'succinate-
+tetrazolium reductase' system which belongs to the respi-
+ratory chain of the mitochondria and is active only in
+viable cells (Hoper 1997; Ngamwongsatit et al. 2008).
+Cultures at 0-4 weeks after plating were incubated for
+2 h, at 37°C with WST-1 reagent (1:10 in cell culture
+medium, Roche). Mitochondrial dehydrogenase activity in
+vital cells was measured as optical density at 440 nm
+using multimode multiplate reader (SpectraMax M2,
+Molecular devices, Sunnyvale, CA) with SoftMax Pro soft-
+ware. After measurement, cells were trypsinized and cell
+numbers were counted using hemocytometer. Cell viabil-
+ity was represented as optical density (OD) values divided
+by corresponding cell numbers (Ncell).
+
+Immunocytochemistry
+Cells were washed once with Ca²⁺- and Mg²⁺-containing
+PBS (pH 7.4), fixed in 4% formaldehyde/PBS for 30 min
+at room temperature (RT), permeabilized with 0.03% Tri-
+ton X-100/PBS (Sigma Aldrich) for 5 min. Primary anti-
+bodies were added in 10% FBS/PBS and incubated
+overnight at 4°C. After washing with PBS, cells were fur-
+ther treated with fluorescence-coupled secondary antibod-
+ies in 10% FBS/PBS at 37°C for 30 min. Fluoroshield
+Mounting Medium With DAPI (Abcam, Cambridge, MA)
+was used as a mounting solution. The following antibod-
+ies were used; rabbit polyclonal Vimentin (Sigma-Aldrich
+Cat# SAB4503083, RRID:AB_10746985), mouse monoclo-
+nal Glial Fibrillary Acidic Protein (GFAP, Sigma-Aldrich
+Cat# G3893 RRID:AB_477010)), rabbit polyclonal Glycine
+Receptor Alpha 1 (GLRA1, Abcam Cat# ab475, RRID:
+AB_304586), mouse monoclonal Synaptophysin (Abcam
+Cat# ab8049 RRID:AB_2198854), rabbit polyclonal beta
+III-tubulin (Abcam Cat# ab18207 RRID:AB_444319),
+anti-mouse Alexa Fluor 568 (Life Technologies Cat#
+A11004 RRID:AB_10562368), anti-rabbit Alexa Fluor 488
+(Molecular Probes Cat# A11008 RRID:AB_143165), and
+Hoechst 33342 (Invitrogen, Cat# H1399). Images were
+collected using Leica DM, (Wetzlar, Germany) inverted
+fluorescence microscope, equipped with a mercury lamp,
+ebq 100 and a monochrome camera. 20X and 40X objec-
+tives were used. DAPI (excitation 360 ± 20 nm and
+emission 470 ± 20 nm), GFP (excitation 470 ± 20 nm
+and emission 525 ± 25 nm), and TexasRed (excitation
+560 ± 20 nm and emission 645 ± 40 nm) filter sets were
+used.
+
+[PAGE 4] Western blot
+The samples were reduced and denatured by boiling each
+cell lysate in sample buffer at 65°C for 5 min. Samples
+were loaded into the wells of the SDS-PAGE gel, along
+with molecular weight markers. Ten µg of total protein
+was loaded from cell lysate. The gel was run at 80V for
+30 min, and then switched to 150V and run 1-2 h. The
+protein was then transferred from the gel to PVDF mem-
+brane using 200 mA current for 2 h.
+The membrane was blocked in room temperature for
+1 h or overnight at 4°C using 5% blocking solution. The
+membrane was then incubated with the appropriate dilu-
+tions of primary antibody in 5% BSA overnight at 4°C or
+for 2 h at room temperature. The membrane was washed
+in PBST three times, 5 min each. Membrane was then
+incubated with the recommended dilution of labeled sec-
+ondary antibody in 5% blocking buffer in PBST at room
+temperature for 1 h. After washing the membrane three
+times in PBST, the membrane was soaked in Pierce ECL
+western blotting substrate for 1 min for signal develop-
+ment. The membrane was covered in transparent plastic
+wrap before for imaging.
+
+[PAGE 4] Membrane potential measurement using
+Di-8-ANEPPS dye
+Ratiometric di-8-ANEPPS dye (Invitrogen, Carlsbad, CA)
+was used to measure the Vmem of neurons (N), astrocytes
+(A) and cocultures (NA) from 0-4 weeks (w) after plat-
+ing. Cells were washed once with HBSS prior to staining.
+Di-8-ANEPPS dye was diluted in HBSS to a final concen-
+tration of 2 µmol/L and added to the cells (100 µL/well).
+Cells were incubated at 37°C for 30 min in the dark. The
+uptake of dye was confirmed under a microscope using a
+red filter. Cells were washed once with HBSS to remove
+the excessive dye prior to measurement. Fluorescent
+intensities were measured using a top read fluorescence
+multimode multiplate reader (SpectraMax M5, Molecular
+Devices, Sunnyvale, CA). The relative Vmem of the cells
+was measured as the ratio of readings at two excitation
+states of the dye (450 nm/510 nm, emission: 640 nm).
+Plots were generated in excel. P values were calculated
+using Student's t-test.
+
+[PAGE 4] Membrane Potential Measurement using
+whole-cell patch clamping
+Cultured rat embryonic day 18 cortical neurons plated on
+poly-D-lysine-coated 10-mm glass cover slips with or
+without astrocytes 4-6 days ago were placed inside a
+recording chamber (P1, Warner Instruments) that con-
+tained extracellular solution (140 mmol/L NaCl,
+2.8 mmol/L KCl, 2 mmol/L CaCl₂, 2 mmol/L MgCl₂,
+10 mmol/L HEPES, and 10 mmol/L D-glucose, with pH
+adjusted to 7.4 with NaOH). Cells were visualized with a
+Zeiss Axiovert 100 inverted microscope. Membrane
+potentials were measured at room temperature by whole-
+cell patch clamp using an Axopatch 1D amplifier (Axon
+Instruments) in current-clamp mode. Patch electrodes
+were pulled from 1.5-mm-diameter borosilicate glass cap-
+illaries (Sutter) with a Sutter P-87 microelectrode puller,
+and had 4-6 ΜΩ resistances when filled with an intracel-
+lular solution that contained 140 mmol/L potassium glu-
+conate, 10 mmol/L NaCl, 2 mmol/L MgCl₂, 10 mmol/L
+HEPES, 1 mmol/L EGTA, 4 mmol/L MgATP, and
+0.3 mmol/L NaGTP, with pH adjusted to 7.3 with KOH.
+Membrane potential data were filtered by the amplifier-
+incorporated 4-pole Bessel filter at 2 KHz, and digitized
+at 5 KHz by a Molecular Devices digitizer (Digidata
+1440A) using a Dell Precision 340 computer, with
+pClamp 10 software (Molecular Devices). Vmem quantifi-
+cation based on two methods, di-8-ANEPPS and whole-
+cell patch clamping, revealed that 1% change in ANEPPS
+ratio corresponds to 1 mV change in Vmem in E18 corti-
+cal neurons (Fig. 1).
+
+[PAGE 4] Clustering, cell area, and density analysis
+To quantify the extent to which cells clustered, a Fourier-
+based analysis of image intensities was utilized through
+the development of a custom-written Matlab code. This
+method enabled us to analyze large number of cells
+immune-labeled for three different cellular components in
+an automated manner. Images that were collected with
+different objectives and at different digital resolutions
+were first resampled to a consistent digital resolution
+(800 x 600 pixels; 1.6 pixels/µm) that exceeded the dif-
+fraction-limit optical resolution of all objectives in an
+effort to standardize the image data prior to cluster analy-
+sis. To facilitate Fourier-based cluster analysis, images
+were further cropped to a 600 × 600 pixel image by tak-
+ing the center portion of the original image. A two-
+dimensional (2D) power spectral density (PSD) map was
+obtained through a discrete Fourier transform, and the
+2D PSD was then radially sampled to produce a single
+PSD-frequency curve for each image as previously
+described (Xylas et al. 2012). The PSD-frequency data
+were log transformed, and a PSD-weighted average spatial
+frequency (f) was then computed using every data point i:
+
+log(f) =
+Σ [log(PSDᵢ) * log(fᵢ)]
+Σ [log(PSDᵢ)]
+
+
+A normalized clustering factor (NCF) was defined from
+the PSD-weighted average frequency as follows:
+
+NCF =
+2 * log(f) - log(fmin * fmax)
+log(fmin/fmax)
+,
+
+where fmin and fmax represent the minimum and maxi-
+mum spatial frequencies in the PSD curve. In this nor-
+malized scale, random (white) noise would produce a
+NCF = 0, whereas a single large Gaussian distributed
+clump would correspond to the maximum value of
+NCF = 1. Of note, PSD-frequency curves demonstrating a
+power law decay (e.g., a self-similar fractal) would pro-
+duce an NCF = 0.5. NCF values were obtained from each
+fluorescence channel in the acquired images.
+
+[PAGE 5] Cell counting and area estimation
+The number of cells in each image and the average cell
+area were also approximated through automated image
+analysis algorithms written in Matlab. Cells were counted
+by identifying the locations of individual DAPI-stained
+nuclei. First, pixel intensity values were normalized in the
+DAPI images to span between 0 and 1. To highlight the
+location of nuclei, which spanned 12-18 pixels in diame-
+ter, two filtered DAPI images were produced through
+convolutions with 12 and 18 pixel diameter disks. An
+image of the difference between the two filtered images
+was produced to highlight nuclei between this 12-18 pixel
+diameter range. Pixel locations from this filtered image
+exceeding a value of 0.005 were noted. Next, a Prewitt
+edge finding filter was applied to the filtered image to
+identify pixel locations with a high intensity gradient.
+Objects made of contiguous pixels with intensities exceed-
+ing 0.005 and a gradient value exceeding 0.02 were identi-
+fied, and the locations of individual nuclei were defined
+by the centroids of each of these objects. These two inten-
+sity threshold values for the processed DAPI images were
+chosen based on their collective ability to provide an
+accurate identification of nuclei across all image sets.
+Nuclei were labeled as neurons if the intensity of the
+green channel (beta III tubulin/Alexa Fluor 488) exceeded
+the intensity of the red channel (Glial Fibrillary Acidic
+Protein/Alexa Fluor 568) at that pixel location, whereas
+astrocytes were defined when the red intensity exceeded
+the green intensity.
+The relative areas covered by astrocytes and neurons
+were also calculated from the image intensities in each
+channel. Regions covered by astrocytes were defined by
+pixel locations that (a) had a red channel intensity that
+exceeded 10% of the image's maximum intensity and (b)
+also had a higher red channel intensity than green
+channel intensity. The neuronal regions were defined by
+pixel locations at which the green intensity exceeded both
+10% of the maximum image intensity and also the red
+channel intensity at that location. The average area of an
+individual cell within each image was computed from the
+total area covered by cells of that type divided by the
+number of cells of that type in the image. Cell densities
+were computed from the number of cells divided by the
+total image area.
+
+[PAGE 5] Resting Membrane Potential in Neuron Arrangement
+microenvironment due to the higher density packing of
+astrocytes surrounding them.
+
+Immature neurons establish fewer
+connections under hyperpolarizing
+conditions
+
+Neural connectivity was assessed based on the quantifica-
+tion of neurite outgrowth and the establishment of con-
+tact between neuron somas. One day cultures of E18 rat
+primary cortical neurons were assessed under normal
+physiological (no Ivm)- and depolarizing (after Ivm expo-
+sure, 1 µmol/L, 24 h) conditions between 0 and 24 h,
+with 2 h interval initially. The relative Vmem of cells was
+measured using di-8-ANEPPS dye (Fig. 5A). Immature
+neurons were characterized using specific markers vimen-
+tin and GFAP (Fig. 5B). Phase-contrast images were col-
+lected of the same cells before- and after Ivm exposure at
+given time points for quantification. Images taken from
+cells before and after Ivm exposure were shown here
+(Fig. 5C,D). The ratio of the total number of soma to the
+number of isolated soma was manually counted by two
+researchers independently.
+
+For imaging, four time points were chosen: 0, 2, 4, 6,
+and 24 h. The ratio of the total somas to the isolated
+somas in the images from each time point was obtained.
+Images were processed, consisting of 10 drug groups and
+10 control groups. The ratio of total somas to isolated
+somas was used as a metric to determine whether Ivm
+suppressed cell connectivity. Statistical analysis using Stu-
+dent's t-test based on these 100 ratio values (10 × 2 × 5)
+indicated that there was a significant (P ≤ 0.05) difference
+between the drug and control groups, suggesting the drug
+dose suppressed cell connectivity.
+
+Data revealed that neural connectivity was significantly
+suppressed (P ≤ 0.05) at each time point used in the
+study. In Ivm-exposed samples, the ratio of total soma
+number to isolated soma decreased at 0, 2, 4, 6, and 24 h
+significantly by 28%, 25%, 16%, 21%, and by 33%,
+respectively (Fig. 5E).
+
+To define synaptic connections, we labeled cells with
+beta-III tubulin, Synaptophysin and Glycine receptor
+alpha (GLRA) for axon outgrowth, pre-, and postsynaptic
+proteins, respectively. Ivm-treated cells had very thin, dis-
+continuous, broken membrane projections (arrows) as
+labeled with beta-III tubulin, whereas control cells had
+continuous, thick bundles of projections indicating a
+well-integrated network of neurons (Fig. 5F). Similarly
+Ivm-treated neurons did not show the presynaptic protein
+Synaptophysin, whereas control cells had large, dense syn-
+aptic areas that were positive for the protein (arrows,
+Fig. 5G). Additionally, postsynaptic protein GLRA was
+not detected along the projections of Ivm-treated neurons
+but in somas only, whereas control cells had strong pro-
+duction of GLRA along their membrane projections as
+well as in their somas (arrows, Fig. 5H), revealing that
+inhibitory synapses were eliminated in Ivm-treated cells.
+We conclude that membrane potential hyperpolarization
+caused a decrease in neuron connectivity.
+
+
+[PAGE 7] DISCUSSION
+The pancreas is an organ located in the abdomen. It plays an essential role in converting the food we eat into fuel for the body's cells. The pancreas has two main functions: an exocrine function that helps in digestion and an endocrine function that regulates blood sugar.
+Exocrine Function: The pancreas contains exocrine glands that produce enzymes important to digestion. These enzymes include trypsin and chymotrypsin to digest proteins; amylase for the digestion of carbohydrates; and lipase to break down fats. When food enters the stomach, these pancreatic juices are released into a system of ducts that culminate in the main pancreatic duct. The pancreatic duct joins the common bile duct to form the ampulla of Vater which is located at the first portion of the small intestine, called the duodenum. The common bile duct originates in the liver and the gallbladder and produces another important digestive juice called bile. The pancreatic juices and bile that are released into the duodenum, help the body to digest fats, carbohydrates, and proteins.
+Endocrine Function: The endocrine component of the pancreas consists of islet cells (islets of Langerhans) that create and release important hormones directly into the bloodstream. Two of the main pancreatic hormones are insulin, which acts to lower blood sugar, and glucagon, which acts to raise blood sugar. Maintaining proper blood sugar levels is crucial to the functioning of key organs including the brain, liver, and kidneys.
+
+
+[PAGE 7] Resting Membrane Potential in Neuron Arrangement
+The present study demonstrates that Vmem plays a
+critical role in the arrangement of neurons and glia in
+vitro. We found that depolarization of Vmem in mature
+neurons caused an increase in the number of projections,
+whereas hyperpolarization of Vmem in immature
+neurons caused a decrease in the number of connections.
+These findings suggest that Vmem may be a key
+regulator of neuronal and glial cell morphology and
+connectivity.
+
+[PAGE 8] Resting Membrane Potential in Neuron Arrangement
+Our results also showed that depolarization of Vmem in
+mature neurons caused an increase in glial cell density.
+This finding is consistent with previous studies showing
+that depolarization of neurons can lead to the
+proliferation of glial cells (Barres 1991; Ridet et al.
+1992). The increased glial cell density may be due to the
+release of growth factors from depolarized neurons, or to
+the increased metabolic demands of depolarized
+neurons.  Changes in Vmem have been shown to affect a variety
+of cellular processes, including cell proliferation, migra-
+tion, and differentiation (Blackiston et al. 2009; Adams
+and Levin 2012). Our findings suggest that Vmem may
+also play a role in the arrangement of neurons and glia.
+Depolarization of Vmem in mature neurons caused an
+increase in the number of projections, which may be
+due to the activation of voltage-gated calcium channels
+(Spitzer 1991). The influx of calcium can activate a
+variety of signaling pathways that promote neurite out-
+growth (Mattson 1988).
+
+The clustering of neurons observed in our study may be
+due to the increased expression of cell adhesion mole-
+cules (CAMs) (Fields and Itoh 1996). CAMs are trans-
+membrane proteins that mediate cell-cell adhesion.
+Depolarization of Vmem has been shown to increase
+the expression of CAMs (Tang et al. 1998). The increased
+expression of CAMs may promote the clustering of neu-
+rons by increasing cell-cell adhesion.
+
+The increase in glial cell density observed in our study
+may be due to the release of growth factors from neu-
+rons (Ransom et al. 1993). Depolarization of Vmem has
+been shown to increase the release of growth factors
+from neurons (Zafra et al. 1990). These growth factors
+may promote the proliferation and differentiation of glia.
+
+
+[PAGE 9] Resting Membrane Potential in Neuron Arrangement
+Our findings have important implications for
+understanding the role of Vmem in neuronal and glial
+cell development and function. Vmem is known to be
+involved in a variety of cellular processes, including
+neurotransmitter release, ion channel gating, and
+synaptic plasticity (Hille 2001). Our results suggest that
+Vmem may also play a role in regulating the
+morphology and connectivity of neurons and glia.
+Further studies are needed to investigate the
+mechanisms by which Vmem regulates these processes.
+
+[PAGE 11] Discussion
+Cortical size and shape have been accepted as an accurate
+clinical measure for functional brain disorders (Hutton
+et al. 2008; Abdel Razek et al. 2009; Takao et al. 2010;
+Prabhakaran et al. 2012; Kuhnt et al. 2013). Many of
+these disorders can be diagnosed using volumetric mea-
+surements, including by functional magnetic resonance
+imaging or positron emission tomography scanning.
+However, the underlying mechanisms of these anatomical
+abnormalities in diseased cortices cannot be gauged at the
+cellular level via these currently available diagnostic tools.
+Understanding the cell physiological basis of brain dis-
+eases is crucial to specifically characterize the nature of a
+given disorder. This is needed in order to establish realis-
+tic models of neurological diseases in the laboratory,
+which can then be employed for diagnostic and therapeu-
+tic purposes. In this study, we show that Vmem can
+change cortical tissue arrangement, shape, size, and neural
+connectivity in vitro. We observed that mature cortical
+neurons aggregated together and formed assemblies when
+their Vmem was depolarized. These assemblies varied in
+size ranging from 5-10 cells to 40-50 cells in vitro.
+Hypotheses for the molecular signatures of neuron assem-
+blies (Yagi 2012) are mostly characterized based on firing
+patterns (Harris 2005). Membrane potential regulation of
+cell connectivity is

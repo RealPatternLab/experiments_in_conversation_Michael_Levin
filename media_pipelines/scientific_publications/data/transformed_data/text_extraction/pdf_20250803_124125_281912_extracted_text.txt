@@ -1,0 +1,515 @@
+Downloaded from https://www.pnas.org by 68.114.221.214 on August 2, 2025 from IP address 68.114.221.214.
+
+Modulation of potassium channel function confers
+a hyperproliferative invasive phenotype on
+embryonic stem cells
+
+Junji Morokuma*, Douglas Blackiston*, Dany S. Adams*, Guiscard Seebohm**, Barry Trimmers, and Michael Levin*1
+*Center for Regenerative and Developmental Biology, Forsyth Institute, and Department of Developmental Biology, Harvard School of Dental Medicine,
+140 The Fenway, Boston, MA 02115; Institute of Physiology I, University of Tubingen, 72076 Tubingen, Germany; Biochemistry I, Ruhr University Bochum,
+44780 Bochum, Germany; and Department of Biology, Tufts University, Medford, MA 02155
+
+Communicated by Clifford J. Tabin, Harvard Medical School, Boston, MA, August 22, 2008 (received for review February 5, 2008)
+
+Ion transporters, and the resulting voltage gradients and electric
+fields, have been implicated in embryonic development and re-
+generation. These biophysical signals are key physiological aspects
+of the microenvironment that epigenetically regulate stem and
+tumor cell behavior. Here, we identify a previously unrecognized
+function for KCNQ1, a potassium channel known to be involved in
+human Romano-Ward and Jervell-Lange-Nielsen syndromes
+when mutated. Misexpression of its modulatory wild-type β-
+subunit XKCNE1 in the Xenopus embryo resulted in a striking
+alteration of the behavior of one type of embryonic stem cell: the
+pigment cell lineage of the neural crest. Depolarization of embry-
+onic cells by misexpression of KCNE1 non-cell-autonomously in-
+duced melanocytes to overproliferate, spread out, and become
+highly invasive of blood vessels, liver, gut, and neural tube, leading
+to a deeply hyperpigmented phenotype. This effect is mediated by
+the up-regulation of Sox10 and Slug genes, thus linking alterations
+in ion channel function to the control of migration, shape, and
+mitosis rates during embryonic morphogenesis. Taken together,
+these data identify a role for the KCNQ1 channel in regulating key
+cell behaviors and reveal the molecular identity of a biophysical
+switch, by means of which neoplastic-like properties can be con-
+ferred upon a specific embryonic stem cell subpopulation.
+
+cancer | ion channel | melanocyte | neural crest | KCNQ
+
+[PAGE 1]
+Embryonic stem cells' behavior is controlled in part by signals
+from their cellular environment. It is now clear that ion currents,
+electric fields, and endogenous voltage gradients are an endoge-
+nous system for cellular communication (1, 2). Roles for bioelectric
+signals have been uncovered in galvanotaxis of migratory cells,
+mitotic regulation, and control of differentiation, as well as in
+complex morphogenetic events, such as wound healing, limb de-
+velopment, left-right patterning, neurogenesis, vertebrate tail re-
+generation, and cancer (3-8).
+
+Stem cells have distinguishing electrophysiological properties
+(9-11) and express a variety of passive (12, 13) and active (14)
+electrogenic transporters. Membrane hyperpolarization triggers,
+and is required for, myogenin and MEF-2 expression in myoblast
+differentiation (15), whereas direct electrical modulation of cells
+can result in a dedifferentiation phenotype (16, 17), raising the
+possibility that depolarization of cells may move them toward a
+more primitive, stem-like state.
+
+The functional significance of electrical signals for stem cells'
+participation in complex morphogenetic events is largely mysteri-
+ous. Likewise, the proximal transcriptional targets that link bioel-
+ectrical events to changes in cell behavior remain unknown.
+Progress in this fascinating field requires identification of both the
+source and the downstream targets of ion flows in a well charac-
+terized embryonic stem cell population. Neural crest cells differ-
+entiate into a variety of cell types, including smooth muscle cells,
+peripheral neurons, glia, craniofacial cartilage and bone, and en-
+docrine and pigment cells, playing key roles in morphogenesis of the
+face, heart, and other structures.
+
+To contribute to basic developmental biology and regenerative
+medicine (seeking novel ways to rationally modulate the position,
+identity, and number of embryonic stem cells), we performed
+molecular and pharmacological screens (18, 19) for ion flows that
+regulate stem cell behavior during pattern formation. We uncov-
+ered a role for a channel in neural crest regulation: KCNQ1/
+KCNE1.
+
+KCNQ1 (also known as KvLQT1 and Kv7.1) is a six-
+transmembrane-region K+ channel. When coassembled with the
+regulatory accessory subunit KCNE1 (also known as mink and
+Isk), it forms the "slow delayed rectifier" (20, 21). Mutations in
+KCNQ are responsible for an inherited birth defect that leads to
+cardiac long-QT arrhythmia (22), and for the hearing loss observed
+in Jervell and Lange-Nielsen Syndromes (23).
+
+We showed recently that the KCNQ1/KCNE1 channel functions
+in left-right patterning of early Xenopus embryos (24). Here, we
+demonstrate that manipulation of this channel activity in Xenopus
+embryos results in up-regulation of Xslug, and ultimately in a drastic
+increase in melanocyte proliferation, cell shape change, and induc-
+tion of invasiveness in these neural crest derivatives. In addressing
+the control of embryonic stem cell behavior by ion transporters, our
+data reveal a biophysical mechanism that confers a neoplastic-like
+phenotype on a specific subpopulation of embryonic stem cells.
+
+[PAGE 2] RESULTS
+KCNE1 Misexpression Induces Hyperpigmentation. KCNQ1 but not
+KCNE1 is normally expressed in the neural crest in Xenopus
+embryos (SI Figs. S1 and S2). Microin-
+jection of mRNA encoding wild-type KCNE1 into one-cell frog
+embryos resulted in a striking hyperpigmentation observed in 32%
+of KCNE1-injected larvae by stage 45 (Fig. 1). Misexpression of
+other ion transporters, including Bir10, H,K-ATPase, ROMK, and
+Mirp2, did not cause hyperpigmentation (n > 100 for each).
+Quantification of melanocyte number and total melanin content
+(Table 1) revealed a 2.1-fold increase in the number of pigment cells
+per unit area after KCNE1 misexpression. However, KCNE1-
+injected larvae had only 1.4-fold the melanin of control embryos,
+demonstrating that the hyperpigmentation effect is not due to
+greater pigment content per cell but is completely accounted for by
+the increase in melanocyte number. This hyperproliferation of
+melanocytes was not accompanied by general disruptions of mor-
+phogenesis, twinning, or axial duplications; the KCNE1-
+overexpressing larvae had normal dorsoanterior index, correct
+length and proportions, and proper patterning of eyes, heart, and
+face (n > 500; examples shown in Figs. 1 B and C and 4A, and Figs.
+S3 and S8 A and B). We conclude that misexpression of KCNE1
+specifically increases the production of melanocytes.
+
+[PAGE 2] KCNE1 Misexpression Depolarizes Embryonic Cells by Inhibition of
+KCNQ1. We next asked whether the effect of KCNE1 was mediated
+by modulation of endogenous KCNQ1 channels. In many cell types,
+including some neurons and nonexcitable tissues, KCNQ1 channels
+help determine resting membrane potential (25, 26). The average
+potential of Xenopus embryonic cells in the KCNQ1-expressing
+region is -21.6 mV (Fig. S4A). This is similar to the transmembrane
+potential in oocytes (-20 to -35 mV), allowing us to examine the
+effects of KCNE1 expression on KCNQ1 currents directly by
+electrophysiology. KCNQ1 expression in Xenopus oocytes resulted
+in a rapidly activating, voltage-dependent, and K+-selective chan-
+nel; this results in a hyperpolarization of the resting membrane
+potential that can be rescued by inhibition with the KCNQ1 blocker
+Chromanol 293B (Fig. S4 B-D). These data suggest that at resting
+potentials similar to those found during neural crest induction,
+KCNQ1 channels contribute significantly to membrane voltage.
+Coexpression with KCNE1 reduced KCNQ1 currents at a wide
+range of transmembrane potentials (Fig. 2A and Fig. S5). Biotiny-
+lation Western blot analysis (Fig. 2B) supported a direct effect of
+the KCNE1 protein on the KCNQ1 channel (not on localization of
+channels to the plasma membrane). We conclude that coexpression
+of KCNE1 inhibits the activity of the hyperpolarizing KCNQ1
+independent of trafficking to the cell surface.
+
+Exposure at stage 41 to Chromanol 293B, a specific blocker of
+KCNQ1 (27), also resulted in hyperpigmentation (Fig. S3), consis-
+tent with inhibition of KCNQ1 being responsible for hyperpigmen-
+tation. The physiology data showing reduction of KCNQ1 currents
+by KCNE1, together with the observation that the same embryonic
+phenotype is obtained by direct KCNQ1 blockade as by KCNE1
+misexpression, suggest that the induction of hyperpigmentation by
+KCNE1 is mediated by reduction of KCNQ1 activity.
+
+Consistent with this and with the inhibition of KCNQ1 function
+by KCNE1, analysis using the fluorescent membrane voltage re-
+porter dye DiSBAC (28) revealed that embryonic cells were
+significantly depolarized by KCNE1 injection. Although it is not yet
+possible to calibrate DiSBAC fluorescence changes to absolute
+millivolt values, analysis of the data clearly showed (Fig. 2 C and D)
+that transmembrane potential is significantly depolarized by
+KCNE1 mRNA injection but not by injection of a control mRNA
+(encoding an ion transporter that does not inhibit polarizing
+currents). We conclude that the embryonic effects of KCNE1 are
+likely to be mediated by its inhibitory effect on KCNQ1 activity and
+the resulting cellular depolarization.
+
+
+[PAGE 2] KCNE1 Expression Alters Proliferation, Migration, and Invasiveness of
+Melanocytes. We then characterized the phenotype further, noting
+that melanocytes not only were greater in number but also were
+located in aberrant locations in the embryo. The ectopic melano-
+cytes induced by KCNE1 exhibited a highly invasive character and
+a spread-out dendritic morphology characteristic of many meta-
+static cells. These cells colonized the neural tube, wrapping around
+the spinal cord and sending processes into the dense neural tissue
+(Fig. 3 A-B' and D). In contrast, the KCNQ1 opener drug RL-3
+(29) caused 46% of the embryos to exhibit a lighter, hypopigmented
+phenotype compared with controls (n = 28), the effect being
+greater in the tail (Fig. S6 A and A'). The melanocytes continued
+spreading across the epidermal layers and were particularly at-
+tracted to ganglia, the gut, and organ primordia, colonizing them at
+high density; sometimes, tissue outgrowths were observed, with a
+presence of ectopic melanocytes in the center (Figs. S6 and S7).
+Ectopic melanocytes also colonized the blood vessels (Fig. 3 E and
+F), as observed in melanoma (30).
+
+[PAGE 3] To analyze the proliferation phenotype, we characterized the
+effect of KCNE1 by immunohistochemistry with an antibody to
+phosphorylated histone 3B, a standard marker of cells in the G2/M
+cell cycle transition (Table 2). The melanocyte-rich region in the
+center of the flank had almost twice the number of mitotic cells in
+KCNE1-injected larvae than in controls, indicating that the prolif-
+erative increase conferred by KCNE1 lasts for at least 7 days past
+induction of the neural crest. However, there was no significant
+difference in the number of proliferative cells in the ventral flank
+(largely devoid of melanocytes), indicating that KCNE1 misexpres-
+sion does not induce a global (nonselective) up-regulation of mitotic
+potential. Although we did not observe discrete tumors bearing
+classical histoarchitecture changes indicative of cancer, taken to-
+gether these data reveal a neoplastic-like phenotype conferred
+upon individual melanocytes by the KCNE1 overexpression. This
+phenotype includes a change in melanocyte shape (spread out with
+extended processes), hyperproliferation, and aggressive invasion
+into multiple deep tissues at significant distances from their source.
+
+[PAGE 3] KCNE1 Induces Neural Crest/Tumor Regulator Gene Expression in a
+Non-Cell-Autonomous Manner. We next used molecular markers to
+examine how KCNE1 induces the coordinated changes in melano-
+cyte behavior. Ectopic KCNE1 could be acting within the mela-
+nocytes themselves or could provide cues to melanocytes when it is
+expressed in other cell types. The hyperpigmentation could arise
+from a normal melanoblast population being forced through more
+rapid cell cycles, or through additional cells outside the normal
+melanocyte lineage being converted to a pigment cell type (K+
+transport modulation may exert effects mainly on cell cycle ma-
+chinery or on lineage switches during embryonic differentiation).
+Injections of XKCNE1 mRNA into dorsal, ventral, or vegetal
+regions never (0%, n = 84) resulted in ectopic staining of the Xtrp-2
+(31) melanocyte precursor marker (Fig S8 A and B). Thus, the
+hyperproliferation phenotype does not arise from recruitment of
+cells from alternative locations into the melanocyte lineage. How-
+ever, ectopic melanocytes were often found in regions that had not
+been themselves targeted by KCNE1 (e.g., dorsal head hyperpig-
+mentation after injection of KCNE1 mRNA into ventral blas-
+tomeres). This is likely due to colonization of these regions by
+melanocytes that originate in KCNE1-positive areas, since mela-
+nocytes are highly migratory (32). Analysis of a lineage label of cells
+receiving KCNE1 mRNA (made possible by the mosaic expression
+that results from mRNA injected at the one-cell stage) revealed the
+non-cell-autonomous nature of this effect: the majority of ectopic
+melanocytes had not themselves received the KCNE1 mRNA
+(lineage label in Fig. 4 A and B).
+
+Crucially, KCNE1 produced efficient ectopic induction of Sox10
+(Fig. 4C), a regulator of neural crest progenitor specification into
+the melanocyte lineage (33), and of Slug (Fig. 4D), a member of the
+SNAIL family of zinc finger transcriptional repressors that controls
+neural crest development and proliferation (33, 34). In contrast, a
+number of control markers and determinants of other types of
+embryonic structures (including OTX2, anterior specification;
+XHE1, hatching gland; CG1, cement gland; and Pax6, eye field)
+were not up-regulated in any of the embryos injected with KCNE1
+(n > 41 in all cases). Thus, KCNE1 misexpression is able to
+selectively alter the spatial expression of at least two important
+regulators of neural crest lineages. Nevertheless, the dorsoanterior
+development, craniofacial patterning, and marker expression in the
+embryos and of the resulting larvae were normal, revealing that this
+effect is not inducing major alterations of head or heart morpho-
+genesis (as would be expected if large numbers of cells were diverted
+from other neural crest lineages or if major and nonspecific changes
+in signaling factor expression were being caused). These data reveal
+that KCNE1 misexpression induces ectopic expression of powerful
+regulators of both neural crest and neoplastic cell behavior (35–38).
+
+[PAGE 3] DISCUSSION
+Gain-of-function experiments have demonstrated that artificial
+modulation of endogenous bioelectrical events can provide signals
+altering morphogenesis and cell behavior in a coherent, spatially
+instructive manner (2). It has been suggested that three-
+dimensional systems of voltage gradients may be coordinates for
+cell migration and morphogenesis (39, 40), and neural crest is
+particularly sensitive to extracellular electrical cues (41). However,
+in most cases the molecular details of these events remain unknown.
+
+[PAGE 4] In particular, the least is known about how ion flows regulate
+embryonic stem cell functions, and what downstream transcrip-
+tional targets couple bioelectrical events to specific cell behaviors.
+Our data identify KCNQ/KCNE1 complexes as a fascinating ex-
+ample of the genetic underpinning of such biophysical signals.
+Misexpression of wild-type KCNE1 induces a striking phenotype
+caused by overproliferation of melanocytes. Other cell types may
+have been affected, but the embryos exhibited very normal devel-
+opment of most structures (including neural crest derivatives, such
+as heart and craniofacial structures). Moreover, the proliferative
+effect was not detected in melanocyte-poor regions of KCNE1-
+injected larvae (Table 2). Thus, the phenotype is not a broad
+misregulation of embryonic proliferation, migration, or differenti-
+ation, but rather affects primarily one (or a small number) of
+embryonic cell types.
+
+Direct, specific pharmacological activation and blockade of
+KCNQ1 by RL-3 and Chromanol 293B reduced and increased,
+respectively, the pigmentation of larvae. Misexpression of MiRP2
+(a regulatory subunit in the KCNE family that suppresses ERG
+channels) or other K+ channel subunits did not induce hyperpig-
+mentation. Thus, independent confirmation using molecular ge-
+netic and pharmacological techniques implicates KCNQ1 as the
+proximal target of KCNE1 misexpression and implicates KCNQ1
+in the control of melanocyte behavior.
+
+The data suggest an inhibitory role for KCNE1 on KCNQ1
+activity. Our direct electrophysiology results show that although
+KCNQ1 contributes significantly to membrane potential, coexpres-
+sion of KCNE1 suppresses KCNQ1 channel currents (without
+detectable alterations of KCNQ1 channel proteins at the plasma
+membrane) and depolarizes embryonic cells in vivo. Misexpression
+of MiRP2 (which does not inhibit KCNQ1 function at any potential)
+does not induce hyperpigmentation. KCNE1's decrease of
+KCNQ1's current at physiological potential explains why KCNE1
+overexpression and KCNQ1 blockade affect melanocytes in the
+same way; the reduction of KCNQ1 currents by KCNE1 expression
+is also consistent with our direct observation of depolarization
+induced by KCNE1. Given the known presence of voltage gradients
+in embryos (42), it is clear that future efforts to understand control
+of neural crest, and stem cell behavior in general, must take into
+account membrane potentials and ion flows in these cells and their
+niche. Importantly, although an association between depolarization
+and up-regulation of proliferation has been suggested previously
+(43), the induction of hyperproliferation by KCNE1-mediated
+depolarization provides molecular evidence for a functional role of
+membrane potential in mitotic regulation.
+
+Marker analysis showed that the effect of KCNE1 is on the
+endogenous set of melanocyte precursors and does not entail
+conversion of cells from unrelated regions into melanocyte fate.
+The normal craniofacial patterning and cardiovascular function
+(two sensitive readouts) suggest that other neural crest derivatives
+have not been diverted from their normal migration or respecified
+into pigment cells by KCNE1. Rather than altering specification,
+KCNE1 misexpression induces long-lasting increases in cell prolif-
+eration rate and changes in cell shape. Because XSox10 and XSlug
+are necessary and sufficient for the hyperproliferation of melano-
+cytes (33, 44), the up-regulation of these targets by KCNE1
+misexpression accounts for the observed phenotypes. Although it is
+possible that other genes also were activated by the changes in
+membrane potential, a global nonspecific effect is ruled out by the
+normal development of the KCNE1-injected animals. The data
+implicating up-regulation of Sox10 and Slug provide a unique
+example of the identification of transcriptional target readouts of
+non-cell-autonomous ion channel modulation effects and provide a
+powerful model for studies to molecularly dissect steps leading from
+depolarization to the activation of key transcription factors.
+
+Our results suggest a model for the role of KCNE1 in modulating
+the behavior of the melanocyte neural crest lineage during embry-
+onic development (Fig. 5): expression of KCNE1 reduces KCNQ1
+function, depolarizing cells and leading to the up-regulation of
+XSox10 and its downstream targets, such as Xslug in neighboring
+cells, inducing their proliferation and invasiveness.
+
+[PAGE 4] This role for KCNQ1/KCNE1 in regulating cell proliferation may
+have implications for cancer biology, since a number of "chan-
+nelopathies" have been suggested to contribute to neoplasm (3, 45).
+Significant correlations have been found between neoplastic po-
+tential and bioelectrical properties of cells (45–49). These biophys-
+ical properties are not simply markers but are functional signals;
+misexpression of an ion transporter induces tumorigenicity in
+fibroblasts (50), and inhibition of EAG channel function suppresses
+neoplasm in an animal model in vivo (51). Ion channel function
+controls the proliferation rate and invasiveness of a number of cell
+types that often form tumors (49, 52-55), and overexpression of
+KCNK9 (strongly overexpressed in breast cancer) promotes tumor
+formation and confers resistance to hypoxia and serum deprivation
+(56). Misexpression of KCNE1 did not induce tumors per se.
+However, KCNE1 misexpression conferred several properties on
+melanocytes that are strongly associated with cancer cells (e.g.,
+melanoma; ref. 57): up-regulation of Sox10 and Slug, hyperprolif-
+eration, increased dendricity, invasive colonization of a wide range
+of organs and tissues (blood vessels and neural tube), and ectopic
+growths. SLUG not only is a critical regulator of neural crest
+development (44) but also has been implicated in the acquisition of
+invasive behavior, increase of proliferation, and maintenance of
+neoplastic phenotype during tumor progression (58).
+
+It is unknown whether KCNE1-dependent mechanisms are
+relevant to any clinical cancers. However, taken together, the five
+phenotypes arising from KCNE1 expression demonstrate that
+changes in bioelectrical signals can confer neoplastic-like properties
+on a specific embryonic stem cell population. The results of late
+Chromanol 293B exposure also show that mature neural crest cells
+or their derivatives (not only early crest populations) can be affected
+by K+ channel modulation. In light of the conservation of molecular
+mechanisms, such as the Wnt and PTEN pathways in both stem cell
+regulation and neoplasia, the idea has been put forward that some
+cancers arise from misregulation of stem cell control (59-64).
+Because of the known role of bioelectric properties in neoplasia and
+the control of differentiation, proliferation, and migration in em-
+bryonic and adult cells, it is tempting to speculate that KCNE1/
+KCNQ1 is a biophysical environmental signal that shifts embryonic
+stem cells toward a neoplasia-like behavior.
+
+
+[PAGE 5] The ubiquitous use of bioelectric mechanisms across phyla
+suggests that the KCNE1 phenotype may be of broad significance.
+KCNE1 roles have not been directly tested in mammalian neural
+crest function, although a microarray analysis (65) recently identi-
+fied KCNQ1 as being up-regulated more than 3-fold in mice with
+an increased number of neural progenitor cells. The high conser-
+vation of Sox10/Slug signaling among vertebrates suggests that
+overexpression of KCNE1 should be investigated as a possible
+marker of (and a potentiating factor in) human metaplasia and
+neural crest defects.
+
+Bioelectric events are a poorly understood form of "epige-
+netic" processes, which are of high significance in understanding
+cellular controls (66, 67). Our data implicate a clinically relevant
+ion channel protein in the orchestration of gene expression, cell
+number, shape, and location during development. Understand-
+ing the regulation of stem cell populations by the biophysical
+properties of the plasma membrane and extracellular ion flows
+will ultimately reveal novel markers and control points for
+biomedical intervention.
+
+
+[PAGE 5] METHODS
+See SI Methods for additional details.
+
+[PAGE 5] Fig. 5. A model of KCNQ1/KCNE1 function in embryogenesis. (A) A parsi-
+monious model of the data proposes that KCNE1 modifies the function of
+KCNQ1, which up-regulates Sox10 and its downstream targets, such as XSlug.
+These factors are known to be necessary and sufficient for the observed
+up-regulation of proliferation, change in cell shape, and induction of invasive
+migration behavior in melanocytes. (B) Embryonic regions expressing KCNE1
+induce up-regulation of key transcription factors, such as Sox10 and Slug, in
+other cells in the neural crest population, which confers upon them a hyper-
+proliferative, invasive phenotype. This illustrates a non-cell-autonomous
+mechanism by which ion flows are transduced into canonical transcription
+cascades that control cell behavior. Black dashed lines indicate migration of
+hyperproliferating offspring of the target (green) cell. The original event
+takes place in the cell expressing KCNE1 (blue), which does not itself contrib-
+ute all of the proliferative offspring. The target cell may induce the XSox10
+pathway in neighbors by conventional biochemical signals (e.g., BMPs, FGFs,
+and WNTs). The direct biophysical interaction occurs in the target cell, where
+KCNE1-mediated loss of membrane polarization is relayed to the downstream
+signaling machinery by cell-autonomous mechanisms.
+phenotypes arising from KCNE1 expression demonstrate that
+changes in bioelectrical signals can confer neoplastic-like properties
+on a specific embryonic stem cell population. The results of late
+Chromanol 293B exposure also show that mature neural crest cells
+or their derivatives (not only early crest populations) can be affected
+by K+ channel modulation. In light of the conservation of molecular
+mechanisms, such as the Wnt and PTEN pathways in both stem cell
+regulation and neoplasia, the idea has been put forward that some
+cancers arise from misregulation of stem cell control (59-64).
+Because of the known role of bioelectric properties in neoplasia and
+the control of differentiation, proliferation, and migration in em-
+bryonic and adult cells, it is tempting to speculate that KCNE1/
+KCNQ1 is a biophysical environmental signal that shifts embryonic
+stem cells toward a neoplasia-like behavior.
+
+The ubiquitous use of bioelectric mechanisms across phyla
+suggests that the KCNE1 phenotype may be of broad significance.
+KCNE1 roles have not been directly tested in mammalian neural
+crest function, although a microarray analysis (65) recently identi-
+fied KCNQ1 as being up-regulated more than 3-fold in mice with
+an increased number of neural progenitor cells. The high conser-
+vation of Sox10/Slug signaling among vertebrates suggests that
+overexpression of KCNE1 should be investigated as a possible
+marker of (and a potentiating factor in) human metaplasia and
+neural crest defects.
+Bioelectric events are a poorly understood form of "epige-
+netic" processes, which are of high significance in understanding
+cellular controls (66, 67). Our data implicate a clinically relevant
+ion channel protein in the orchestration of gene expression, cell
+number, shape, and location during development. Understand-
+ing the regulation of stem cell populations by the biophysical
+properties of the plasma membrane and extracellular ion flows
+will ultimately reveal novel markers and control points for
+biomedical intervention.
+
+[PAGE 5] Methods
+See SI Methods for additional details.
+
+[PAGE 5] Expression Analysis. In situ hybridization was performed as in Harland (68) by
+using clones (24) for KCNQ1 (EF07869) and KCNE1 (AF545500). Immunohisto-
+chemistry was performed as in Levin (69) by using a polyclonal antibody to IsK (70)
+at 1:1,000 and KCNQ1 antibodies generated by Invitrogen to peptide sequences
+TYEQLNVPRMTQDNIS and ITHISELKEHHRAAIK (1:500).
+
+[PAGE 5] Microinjection. Capped, synthetic mRNAs (~2.7 nl) were dissolved in water and
+injected into embryos in 3% Ficoll. Results of injections are reported as percent-
+age of otherwise normal embryos that were hyperpigmented, sample size (n),
+and P values comparing treated groups to controls.
+
+[PAGE 5] Electrophysiology. Whole-cell currents in Xenopus oocytes were recorded with
+standard two-electrode voltage-clamp techniques. Data were acquired with
+Clampex (PCLAMP 8.0, Axon Instruments) and analyzed with ClampFit (pCLAMP
+8.0, Axon Instruments) and Origin 6.0 (Microcal). Whole-cell currents were re-
+corded in ND96 solution (see SI Methods).
+
+[PAGE 5] Imaging of Membrane Voltage Patterns by Using DiSBAC2(3). Fresh DiSBAC
+(Molecular Probes) stocks (stock = 1 mg/ml in DMSO) were diluted 1:10 in distilled
+water; that primary dilution then was diluted 1:1000 in 0.1× Modified Marc
+Ringer's solution for a final concentration of 0.2 µM. Stage 20-24 embryos were
+soaked in dye for 30 min. Embryos in solution were imaged using the TRITC cube
+set on an Olympus BX61 microscope with an ORCA digital CCD camera
+(Hamamatsu) with IPLabs software. Each embryo was brought into focus, the
+milliseconds of exposure were set, and the image was taken. Before imaging the
+next embryo, the contents of the Petri dish were swirled to ensure even distri-
+bution of dye.
+Images were segmented by hand such that the entire image of the embryo was
+defined as the region of interest. IPLabs software then generated histograms of
+the distribution of pixel intensities within the region of interest. Frequencies were
+normalized to maximum frequency to correct for different numbers of pixels
+measured. Intensities were converted from 0 to 4095 to 0 to 255 by IPLabs.
+Because different exposures were required for different embryos, intensity val-
+ues then were normalized to milliseconds of exposure. We characterized the
+resulting distributions (histograms, see Fig. 2C) by comparing the mean width of
+the first peak at half-maximum (Fig. 2D).
+
+[PAGE 5] ACKNOWLEDGMENTS. We thank Punita Koustubhan and Amber Currier for
+Xenopus husbandry; Dayong Qiu for general lab assistance; Drucilla Roberts for
+help with pathohistology; Harry Witchel, Michael Sanguinetti, and Uwe Gerlach
+for advice on KCNQ1 physiology and pharmacology; Michael Schwake for RL-3;
+Jaques Barhanin for KCNE1 antibody; Naoto Ueno and Takamasa Yamamoto for
+EST clones; Geoffrey Abbott for the MiRP2 clone; Roberto Mayor and Michael
+Klymkowski for information on neural crest anatomy; Kelly McLaughlin, Wendy
+Beane, and Laura Vandenberg for comments on the manuscript; Kristin Artinger,
+Yun Kee, and Carole LaBonne for advice and in situ probe; and Peter Smith and
+the BioCurrents Research Center for support and discussions. This work was
+supported by grants to M.L. from the National Institutes of Health (R01-
+GM07742), American Heart Association (0740088N), National Highway Traffic
+Safety Administration (DTNH22-06-G-00001), and March of Dimes (6-FY04-65),
+and by National Institutes of Health Grants 5T32DE007327-07 (to D.B.) and
+5K22DE16633 (to D.S.A.).

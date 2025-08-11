@@ -1,0 +1,173 @@
+[
+  {
+    "text": "Characteristic spatial differences of cellular resting potential across tissues have been shown to act as instructive bioelectric prepatterns regulating embryonic and regenerative morphogenesis, as well as cancer suppression. Indeed, modulation of bioelectric patterns via specific ion channel-targeting drugs, channel misexpression, or optogenetics has been used to control growth and form in vitro, showing promise in regenerative medicine and synthetic bioengineering. Repair of defects, injury, and transformation requires quantitative understanding of bioelectric dynamics within tissues so that these can be modulated toward desired outcomes in organ patterning or the creation of entirely novel synthetic constructs. The major gap in the discovery of interventions for rational control of organ-level outcomes is the inability to predict large-scale bioelectric patterns – their emergence from symmetry breaking (given a set of channels expressed on the tissue) and their change as a function of time under specific bioelectrical interventions. It is thus essential to develop machine learning and other computational tools to help human scientists identify bioelectric states with desirable properties. Here, we tested the ability of a heuristic search algorithm to explore the parameter space of bio-electrical circuits by adjusting the parameters of simulated cells. We show that while bioelectrical space is not easy to search, it does contain parameter sets that encode rich and interesting patterning behaviors. We demonstrate proof of principle of using a computational search platform to identify circuits with desired properties, as a first step toward the design of machine learning tools for improved bioelectric control of growth and form.",
+    "section": "Abstract",
+    "topic": "Bioelectric signaling in regeneration",
+    "chunk_summary": "Bioelectric patterns are crucial for morphogenesis and regeneration, but predicting their emergence and change requires computational tools like machine learning, which this study explores using a heuristic search algorithm.",
+    "position_in_section": "Beginning",
+    "certainty_level": "High",
+    "citation_context": "Describing prior work"
+  },
+  {
+    "text": "Morphogenesis is crucial for understanding evolution, biomedicine (birth defects, injury, cancer), and synthetic bioengineering. Bioelectric signaling, involving spatial distributions of cellular transmembrane resting potentials (Vmem), encodes information about organ size, axial polarity, and cell behaviors. Disorders in bioelectric signaling can cause cancer and birth defects, while its modulation can induce organ formation, regeneration, and even the formation of structures from other species. Thus, bioelectric computations are a key interface for controlling growth and form.",
+    "section": "Introduction",
+    "topic": "Bioelectric signaling in development",
+    "chunk_summary": "Bioelectric signaling is a crucial regulator of morphogenesis, impacting evolution, biomedicine, and bioengineering, and its modulation offers control over growth and form.",
+    "position_in_section": "Beginning",
+    "certainty_level": "High",
+    "citation_context": "Describing prior work"
+  },
+  {
+    "text": "Brain defects induced by alcohol, nicotine, and Notch gene mutation can be rescued by reinforcing the normal bioelectric prepattern. This was achieved by computationally modeling the ion channel circuit and using it to identify an intervention (activating the HCN2 channel) to restore the pattern. This approach, where bioelectric modeling predicts electroceutical drugs, also rescued defects in other organs, suggesting conserved control principles.",
+    "section": "Introduction",
+    "topic": "Bioelectric prepatterns in brain development",
+    "chunk_summary": "Computational modeling of bioelectric prepatterns can identify interventions, like HCN2 activation, to rescue brain defects and potentially other organ defects due to conserved control principles.",
+    "position_in_section": "Middle",
+    "certainty_level": "High",
+    "citation_context": "Describing prior work"
+  },
+  {
+    "text": "Bioelectric dynamics are modeled using equivalent circuits and BETSE (Bioelectric Tissue Simulation Engine). BETSE simulates bioelectric patterns based on tissue geometry, ion channels, and gap junctions, revealing self-organization and symmetry-breaking in development. However, voltage-gating creates complex feedback loops, making it difficult to intuit conditions for specific Vmem patterns, requiring computational tools to solve the inverse problem.",
+    "section": "Introduction",
+    "topic": "Computational modeling of bioelectricity",
+    "chunk_summary": "BETSE simulates bioelectric dynamics, revealing self-organization, but the complexity of bioelectric circuits necessitates computational tools to solve the inverse problem of predicting ion channel properties for desired Vmem patterns.",
+    "position_in_section": "End",
+    "certainty_level": "High",
+    "citation_context": "Describing prior work"
+  },
+  {
+    "text": "This study aims to develop tools for the bioinformatics of form, using machine learning to discover conditions for bioengineering and biomedicine. It also aims to map the phenotypic bioelectrical space, creating an ontology of patterns formed by bioelectric circuits, facilitating the study of complex behavior emergence from homogenous states. The inverse problem is addressed: given patterns P' and P, which ion channels should be manipulated to convert P' to P?",
+    "section": "Introduction",
+    "topic": "Research aims and objectives",
+    "chunk_summary": "This research aims to develop computational tools to solve the inverse problem of identifying ion channel manipulations needed to achieve desired bioelectric patterns and to map the space of possible bioelectric circuit behaviors.",
+    "position_in_section": "End",
+    "certainty_level": "High",
+    "citation_context": "None"
+  },
+  {
+    "text": "The study uses BETSE for bioelectric circuit simulation and a heuristic search algorithm to explore parameter space. The hypothesis is that distinct BETSE circuits exist with desirable properties: self-organization, robustness against perturbations, and memory that can be reset by a specific stimulus. These circuits are relevant for synthetic biobots and bioelectrically-controlled tissues. BETSE allows for external/internal interventions mimicking drug/optogenetic stimuli.",
+    "section": "Approach",
+    "topic": "Methodology and experimental design",
+    "chunk_summary": "The study uses BETSE and a heuristic search algorithm to find bioelectric circuits with self-organization, robustness, and memory, relevant for synthetic biology and bioengineering.",
+    "position_in_section": "Beginning",
+    "certainty_level": "High",
+    "citation_context": "None"
+  },
+  {
+    "text": "The study uses BETSE and a custom genetic algorithm for heuristic search on HPC clusters. The genetic algorithm performs parameter tuning based on a fitness function. It involves multiple agents sharing a gene pool, running simultaneously and asynchronously. Each agent selects genes, runs BETSE, evaluates results, and updates the gene pool based on fitness. The genes represent parameters for BETSE configuration.",
+    "section": "Methods",
+    "topic": "Heuristic search algorithm",
+    "chunk_summary": "A custom genetic algorithm, running on HPC clusters, is used for heuristic search, tuning BETSE parameters based on a fitness function evaluated by multiple agents sharing a gene pool.",
+    "position_in_section": "Beginning",
+    "certainty_level": "High",
+    "citation_context": "None"
+  },
+  {
+    "text": "The population (gene pool) contains genes and their fitness scores, shared by all agents. Each genome has 33 genes (0-1 range) representing parameters. Metadata stores effective range and other properties. The algorithm explores this 33-dimensional space to maximize fitness. Offspring are created via selection, crossover, and mutation, mimicking natural selection. Selection uses weighted random selection based on normalized fitness scores.",
+    "section": "Methods",
+    "topic": "Genetic algorithm operations",
+    "chunk_summary": "The genetic algorithm uses a 33-gene genome, exploring parameter space via selection, crossover, and mutation to maximize fitness, with selection based on weighted randomness using normalized fitness scores.",
+    "position_in_section": "Middle",
+    "certainty_level": "High",
+    "citation_context": "None"
+  },
+  {
+    "text": "Crossover merges parts of parent genes to create offspring, using random pivot points. Mutation randomly alters one or more genes based on a mutation rate. BETSE parameters (33 total) include 18 for cell properties (11 common, 7 for voltage-dependent channels) and 15 for environment initialization (symmetry breaking). Initial homogeneity requires physiological noise for self-organization. Symmetry breaking uses circular interventions with coordinates, radius, and strength.",
+    "section": "Methods",
+    "topic": "BETSE parameters and initialization",
+    "chunk_summary": "Crossover and mutation create offspring. BETSE uses 33 parameters for cell properties, environment initialization (symmetry breaking), and physiological noise for self-organization from an initial homogenous state.",
+    "position_in_section": "End",
+    "certainty_level": "High",
+    "citation_context": "None"
+  },
+  {
+    "text": "The fitness function evaluates BETSE results against a desired profile, returning a score (0-1). For example, for a \"smile\" pattern, it compares Vmem of cells in marked (black) pixels of a mask image to unmarked (white) pixels, scoring higher for larger differences. The heuristic search explored parameters controllable by experimentalists, using physiological noise for self-organization from initial homogeneity. Nine tasks of biological relevance were chosen.",
+    "section": "Methods",
+    "topic": "Fitness function and experimental tasks",
+    "chunk_summary": "The fitness function compares simulated Vmem patterns to desired patterns (e.g., \"smile\"), scoring based on differences.  Nine biologically relevant tasks were used to test the heuristic search algorithm.",
+    "position_in_section": "End",
+    "certainty_level": "High",
+    "citation_context": "None"
+  },
+  {
+    "text": "The study tested nine tasks with varying tissue shapes and complexities, including GRN mechanisms. Task 1 sought stable, homogenous Vmem, finding circuits with such bioelectric prepatterns. Task 2 sought stable, spatially patterned tissues, finding configurations maintaining stable patterns. Task 3 aimed for a specific Vmem (-35mV), finding configurations with homeostatic behavior resembling PID controllers, useful for synthetic biology.",
+    "section": "Results",
+    "topic": "Experimental results summary",
+    "chunk_summary": "The study tested nine tasks, finding circuits for stable homogenous Vmem (Task 1), stable spatial patterns (Task 2), and specific Vmem with homeostatic behavior (Task 3).",
+    "position_in_section": "Beginning",
+    "certainty_level": "High",
+    "citation_context": "Presenting new results"
+  },
+  {
+    "text": "Task 4 sought spatially and temporally dynamic patterns, finding circuits with high variance in both domains. Task 5 aimed for specific patterns (\"bullseye\" and \"smiley face\"), achieving approximate matches. Task 6 tested pattern insensitivity to tissue shape/size, finding that main features (excitation, stripes, variance) were maintained, while frequency and duty cycles were sensitive to size/shape. Task 7 sought self-healing circuits, finding configurations restoring Vmem after perturbation.",
+    "section": "Results",
+    "topic": "Experimental results summary",
+    "chunk_summary": "Tasks 4-7 explored dynamic patterns, specific patterns (bullseye, smiley face), shape/size insensitivity (maintaining key features while frequency/duty cycle varied), and self-healing circuits.",
+    "position_in_section": "Middle",
+    "certainty_level": "High",
+    "citation_context": "Presenting new results"
+  },
+  {
+    "text": "Task 8 explored memory retention after stimulation, finding circuits maintaining altered Vmem. Task 9 sought temporal memory (different responses to first/second stimuli), finding circuits exhibiting such memory through altered Vmem dynamics. The study found bioelectric parameter space produces diverse patterns, each residing in \"islands\" of variations. Challenges include the ruggedness of bioelectric space, fitness function design, and target definition.",
+    "section": "Results",
+    "topic": "Experimental results summary",
+    "chunk_summary": "Tasks 8-9 explored memory retention and temporal memory, respectively, with successful circuit discovery. The bioelectric parameter space shows diverse patterns in \"islands\", but challenges remain in search and target definition.",
+    "position_in_section": "End",
+    "certainty_level": "High",
+    "citation_context": "Presenting new results"
+  },
+  {
+    "text": "Bioelectric patterns are crucial for morphogenesis, requiring control for understanding evolution, regenerative medicine, and bioengineering. This study applied machine learning (heuristic search) to discover ion channel parameters for desired spatio-temporal patterns. It explored the space of possible bioelectric circuits, revealing diverse behaviors achievable through evolution. Genetic algorithms were chosen as they approximate the natural emergence of multicellular anatomies.",
+    "section": "Discussion",
+    "topic": "Bioelectric patterns and morphogenesis",
+    "chunk_summary": "This study used machine learning and genetic algorithms to explore the space of bioelectric circuits, revealing diverse behaviors relevant to morphogenesis and its control in various applications.",
+    "position_in_section": "Beginning",
+    "certainty_level": "High",
+    "citation_context": "Drawing conclusions"
+  },
+  {
+    "text": "Obstacles include the ruggedness of bioelectric space, fitness function design (handling nonuniform score distributions and distorted spaces), and target definition (formalizing features for human-recognizable patterns). Future directions include improving heuristic search with machine learning, adding cell intelligence (embedded GRNs), adding a translation layer between search parameters and cell parameters, and designing interactive fitness functions.",
+    "section": "Discussion",
+    "topic": "Challenges and future directions",
+    "chunk_summary": "Challenges include the nature of bioelectric space, fitness function design, and target definition. Future work involves enhancing search with machine learning, adding cell intelligence, translation layers, and interactive fitness functions.",
+    "position_in_section": "End",
+    "certainty_level": "High",
+    "citation_context": "None"
+  },
+  {
+    "text": "The vast 33-dimensional parameter space limits exploration. Future improvements include leveraging past explorations in machine learning, adding cell intelligence (GRNs), a translation layer for non-polynomial parameter changes, and interactive fitness functions. Advances in computing and machine learning will enable AI systems to aid scientists in bioelectric circuit design, impacting bioelectric signaling control in health, disease, and bioengineering.",
+    "section": "Discussion",
+    "topic": "Future of bioelectric circuit design",
+    "chunk_summary": "Future research will leverage machine learning, cell intelligence, and advanced computing to improve bioelectric circuit design and control of bioelectric signaling in various applications.",
+    "position_in_section": "End",
+    "certainty_level": "High",
+    "citation_context": "None"
+  },
+  {
+    "text": "This work was supported by a sponsored research agreement from Morphoceuticals Inc., a company co-founded by M.L. researching developmental bioelectricity for injury repair. The authors thank Julia Poirier and Alexis Pietak for assistance, acknowledge the use of the Tufts University High Performance Compute Cluster and its team, and acknowledge support from Morphoceuticals Inc.",
+    "section": "Acknowledgements",
+    "topic": "Funding and acknowledgements",
+    "chunk_summary": "The study was supported by Morphoceuticals Inc., and the authors thank contributors and acknowledge the use of Tufts HPC resources.",
+    "position_in_section": "Beginning",
+    "certainty_level": "High",
+    "citation_context": "None"
+  },
+  {
+    "text": "Levin M. The wisdom of the body: future techniques and approaches to morphogenetic fields in regenerative medicine, developmental biology and cancer. Regen Med 2011;6:667-673. DOI: 10.2217/rme.11.69. Kamm RD, Bashir R, Arora N et al. Perspective: The promise of multi-cellular engineered living systems. APL Bioeng 2018;2:040901. DOI: 10.1063/1.5038337. Ebrahimkhani MR, Ebisuya M. Synthetic developmental biology: build and control multicellular systems. Curr Opin Chem Biol 2019;52:9-15. DOI: 10.1016/j.cbpa.2019.04.006. Landge AN, Jordan BM, Diego X, et al. Pattern formation mechanisms of self-organizing reaction-diffusion systems. Dev Biol 2020;460:2-11. DOI: 10.1016/j.ydbio.2019.10.031. Davidson LA, Joshi SD, Kim HY, et al. Emergent morphogenesis: elastic mechanics of a self-deforming tissue. J Biomech 2010;43:63-70. DOI: 10.1016/j.jbiomech.2009.09.010. Levin M. Bioelectric signaling: Reprogrammable circuits underlying embryogenesis, regeneration, and cancer. Cell 2021;184:1971-1989. DOI: 10.1016/j.cell.2021.02.034. Fields C, Bischof J, Levin M. Morphological Coordination: A Common Ancestral Function Unifying Neural and Non-Neural Signaling. Physiology (Bethesda) 2020;35:16-30. DOI: 10.1152/physiol.00027.2019. Fields C, Levin M. Competency in Navigating Arbitrary Spaces as an Invariant for Analyzing Cognition in Diverse Embodiments. Entropy (Basel) 2022;24. DOI: 10.3390/e24060819. Levin M. Collective Intelligence of Morphogenesis as a Teleonomic Process. 2022. DOI: 10.31234/osf.io/hqc9b. Harris MP. Bioelectric signaling as a unique regulator of development and regeneration. Development 2021;148. DOI: 10.1242/dev.180794. Bates E. Ion Channels in Development and Cancer. Annu Rev Cell Dev Biol 2015;31:231-247. DOI: 10.1146/annurev-cellbio-100814-125338. Beane WS, Morokuma J, Adams DS, et al. A chemical genetics approach reveals H,K-ATPase-mediated membrane voltage is required for planarian head regeneration. Chem Biol 2011;18:77-89. DOI: 10.1016/j.chembiol.2010.11.012. Daane JM, Lanni J, Rothenberg I, et al. Bioelectric-calcineurin signaling module regulates allometric growth and size of the zebrafish fin. Sci Rep 2018;8:10391. DOI: 10.1038/s41598-018-28450-6. Yi C, Spitters TW, Al-Far EAA, et al. A calcineurin-mediated scaling mechanism that controls a K(+)-leak channel to regulate morphogen and growth factor transcription. Elife 2021;10. DOI: 10.7554/eLife.60691. Belus MT, Rogers MA, Elzubeir A, et al. Kir2.1 is important for efficient BMP signaling in mammalian face development. Dev Biol 2018;444 Suppl 1:S297-S307. DOI: 10.1016/j.ydbio.2018.02.012. Hernández-Díaz S, Levin M. Alteration of bioelectrically-controlled processes in the embryo: a teratogenic mechanism for anticonvulsants. Reprod Toxicol 2014;47:111-114. DOI: 10.1016/j.reprotox.2014.04.008. Payne SL, Levin M, Oudin MJ. Bioelectric Control of Metastasis in Solid Tumors. Bioelectricity 2019;1:114-130. DOI: 10.1089/bioe.2019.0013. Levin M. Bioelectrical approaches to cancer as a problem of the scaling of the cellular self. Prog Biophys Mol Biol 2021;165:102-113. DOI: 10.1016/j.pbiomolbio.2021.04.007. Brackenbury WJ, Djamgoz MB, Isom LL. An emerging role for voltage-gated Na+ channels in cellular migration: regulation of central nervous system development and potentiation of invasive cancers. Neuroscientist 2008;14:571-583. DOI:",
+    "section": "References",
+    "topic": "Bioelectricity, Morphogenesis, Regeneration",
+    "chunk_summary": "References related to bioelectricity, morphogenesis, regeneration, and related topics are listed.",
+    "position_in_section": "Beginning",
+    "certainty_level": "High",
+    "citation_context": "None"
+  },
+  {
+    "text": "Adams DS, Uzel SG, Akagi J, et al. Bioelectric signalling via potassium channels: a mechanism for craniofacial dysmorphogenesis in KCNJ2-associated Andersen-Tawil Syndrome. J Physiol 2016;594:3245-3270. DOI: 10.1113/JP271930. Srivastava P, Kane A, Harrison C, et al. A Meta-Analysis of Bioelectric Data in Cancer, Embryogenesis, and Regeneration. Bioelectricity 2021;3:42-67. DOI: 10.1089/bioe.2019.0034. Pai VP, Aw S, Shomrat T, et al. Transmembrane voltage potential controls embryonic eye patterning in Xenopus laevis. Development 2012;139:313-323. DOI: 10.1242/dev.073759. Tseng AS, Beane WS, Lemire JM, et al. Induction of vertebrate regeneration by a transient sodium current. J Neurosci 2010;30:13192-13200. DOI: 30/39/13192 [pii] 10.1523/JNEUROSCI.3315-10.2010. Emmons-Bell M, Durant F, Hammelman J, et al. Gap Junctional Blockade Stochastically Induces Different Species-Specific Head Anatomies in Genetically Wild-Type Girardia dorotocephala Flatworms. Int J Mol Sci 2015;16:27865-27896. DOI: 10.3390/ijms161126065. Levin M, Martyniuk CJ. The bioelectric code: An ancient computational medium for dynamic control of growth and form. Biosystems 2018;164:76-93. DOI: 10.1016/j.biosystems.2017.08.009. Adams DS, Levin M. General principles for measuring resting membrane potential and ion concentration using fluorescent bioelectricity reporters. Cold Spring Harb Protoc 2012;2012:385-397. DOI: 10.1101/pdb.top067710. Pietak A, Levin M. Exploring Instructive Physiological Signaling with the Bioelectric Tissue Simulation Engine. Front Bioeng Biotechnol 2016;4:55. DOI: 10.3389/fbioe.2016.00055. Pai VP, Levin M. HCN2 channel-induced rescue of brain, eye, heart and gut teratogenesis caused by nicotine, ethanol and aberrant notch signalling. Wound Repair Regen 2022. DOI: 10.1111/wrr.13032. Pai VP, Cervera J, Mafe S, et al. HCN2 Channel-Induced Rescue of Brain Teratogenesis via Local and Long-Range Bioelectric Repair. Front Cell Neurosci 2020;14:136. DOI: 10.3389/fncel.2020.00136. Pai VP, Pietak A, Willocq V, et al. HCN2 Rescues brain defects by enforcing endogenous voltage pre-patterns. Nat Commun 2018;9:998. DOI: 10.1038/s41467-018-03334-5. Pai VP, Lemire JM, Pare JF, et al. Endogenous gradients of resting potential instructively pattern embryonic neural tissue via Notch signaling and regulation of proliferation. J Neurosci 2015;35:4366-4385. DOI: 10.1523/JNEUROSCI.1877-14.2015. Cervera J, Levin M, Mafe S. Morphology changes induced by intercellular gap junction blocking: A reaction-diffusion mechanism. Biosystems 2021;209:104511. DOI: 10.1016/j.biosystems.2021.104511. Cervera J, Pai VP, Levin M, et al. From non-excitable single-cell to multicellular bioelectrical states supported by ion channels and gap junction proteins: Electrical potentials as distributed controllers. Prog Biophys Mol Biol 2019;149:39-53. DOI: 10.1016/j.pbiomolbio.2019.06.004. Cervera J, Levin M, Mafe S. Bioelectrical Coupling of Single-Cell States in Multicellular Systems. J Phys Chem Lett 2020;11:3234-3241. DOI: 10.1021/acs.jpclett.0c00641. Pietak A, Levin M. Bioelectric gene and reaction networks: computational modelling of genetic, biochemical and bioelectrical dynamics in pattern regulation. J R Soc Interface 2017;14. DOI: 10.1098/rsif.2017.0425. Brodsky M. Turing-like patterns can arise from purely bioelectric mechanisms. bioRxiv 2018. DOI: 10.1101/336461. Brodsky MZ, Levin M. From Physics to Pattern: Uncovering Pattern Formation in Tissue Electrophysiology. In: ALIFE 2018: The 2018 Conference on Artificial Life. Ikegami T, Virgo N, Witkowski O, et al., eds. (MIT Press, Tokyo, Japan). 2018; pp. 351-358.",
+    "section": "References",
+    "topic": "Bioelectricity, Ion Channels, Gap Junctions",
+    "chunk_summary": "The listed references cover topics such as bioelectric signaling, ion channels, gap junctions, and their roles in development, regeneration, and disease.",
+    "position_in_section": "Middle",
+    "certainty_level": "High",
+    "citation_context": "None"
+  }
+]

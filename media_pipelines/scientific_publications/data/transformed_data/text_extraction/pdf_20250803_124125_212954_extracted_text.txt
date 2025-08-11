@@ -1,0 +1,1452 @@
+Embryos Assist Each Other's Morphogenesis:
+calcium and ATP signaling mechanisms in collective resistance to teratogens
+
+Authors: Tung, A.¹, Sperry, M.1,2, Clawson, W.¹, Pavuluri, A.¹, Bulatao, S¹., Yue, M.2, Flores,
+R. M.2, Pai, V¹. McMillen, P.¹, Kuchling, F.¹, Levin, M.1,2,*
+
+Affiliations:
+1 Allen Discovery Center at Tufts University, Medford, MA 02155, USA.
+2 Wyss Institute for Biologically Inspired Engineering, Harvard University, Boston, MA
+02115, USA.
+
+*Corresponding author: michael.levin@tufts.edu
+
+Running title:
+inter-embryo morphogenesis assistance
+
+Keywords:
+embryo, development, group, morphogenesis, model
+
+
+[PAGE 2] Abstract
+We investigated the possibility that instructive influences for normal embryonic
+development are provided not only at the level of cells within the embryo, but also via interactions
+between embryos. To explore this, we challenged groups of embryos with disruptors of normal
+development while varying group size. We observed that embryos are much more sensitive to a
+diverse set of chemical and molecular-biological perturbations (thioridazine, nicotine, forskolin,
+and dominant-negative kir6.1 ion channel expression) when exposed and allowed to develop alone
+or in small groups, than in large groups. As the number of embryos in an exposed cohort increased,
+while per-embryo exposure was kept constant, the rate of survival increased and incidence of
+defects decreased, reaching an optimal effect at a cohort size of 300. This inter-embryo assistance
+effect was found to be mediated by short-range diffusible signals, and involves the P2 ATP
+receptor. RNA-seq analysis revealed a small set of transcripts specific for teratogen response in
+large groups but not small ones. We provide a computational model that explains the resulting
+dynamics as a set of diffusing information exchanges between embryonic agents who alter their
+environmental sampling as a function of stress. We also describe and quantify a wave of
+intracellular calcium following injury that propagates not only within, but between embryos,
+identifying one potential inter-embryo signaling mechanism. Our data emphasize that
+morphogenesis is a collective phenomenon not only at the level of cells but also of whole bodies,
+and that cohort size is a crucial variable in studies of ecotoxicology, teratogenesis, and
+developmental plasticity.
+
+[PAGE 3] Introduction
+During embryogenesis a complex anatomical form is constructed via the interactions of
+large numbers of individual cells. A key question, with impacts ranging across evolution,
+regenerative medicine, and bioengineering, concerns the origin of the information enabling correct
+morphogenesis. Most of the emphasis to date has been placed upon information provided vertically
+from parent to offspring – the genome and the inanimate environment [1-8]. The typical
+perspective is of a single embryo and its local microenvironment as the arena within which cells
+compete and cooperate using their genomically-specified cellular hardware to complete
+embryogenesis in a given situation. While work on developmental plasticity and extended
+phenotype do consider factors outside of individual bodies [9-13], the embryo (and its outer
+perimeter) is most commonly taken to be the natural, self-contained unit of studies on control
+mechanisms and the origin of specific anatomies in evolutionary morphology, reproductive
+toxicology, and developmental genetics. However, many phenomena in biology exhibit scale-free
+or at least multi-scale dynamics [14-16]. Thus, we explored the possibility of relationships between
+development and external social environments, specifically whether instructive information could
+also propagate horizontally, enabling embryos to benefit from a kind of “wisdom of the crowd" in
+their cohort [17-20].
+
+While the focus of most studies has been the self-contained genome, a number of prior
+studies have also reported extra-genomic influences on developmental outcomes [21], in the
+context of phenotypic plasticity [11, 22-24]. Of particular interest were studies focusing on inter-
+conspecific interactions, or interactions amongst members of the same cohort. For example, rat
+studies have shown that the uterine environment and position in the uterine horn can affect
+progeny. Females that were located contiguous to a caudal male or between two males exhibited
+more masculine characteristics, mounting behavior and morphology than females contiguous to a
+cephalic male or near no males [25, 26]. Adverse intrauterine conditions lead to females being
+bigger than their male littermates and increased uterine occupancy lead to smaller males [27]. In
+humans, studies have shown that skin to skin contact between caregivers and preterm infants can
+have positive cardio-respiratory impacts [28, 29]. Inter-embryo communication in the context of
+predation has been observed in a number of species ranging from birds to frogs [30-34].
+
+These lateral interactions go beyond straightforward negative effects such as competition
+for nutrients, oxygen levels, and accumulating waste products, and suggest that there are also
+beneficial effects from being part of a collective. Postnatally, the Allee effect [35] is a well-known
+effect of animal aggregation and its correlation on fitness. It is defined as a positive correlation
+between population density and individual fitness. Studies in fish, rodents, and planaria have
+shown that having conspecifics can positively impact future health outcomes. For example, large
+groups of planaria and goldfish survive colloidal silver exposure better than small groups. In line
+with other studies showing beneficial effects of larger groups, dense populations of starfish were
+able to right themselves faster than sparse populations [35-38].
+
+These effects are seen at the cellular level as well, from social amoebas [39] to metazoan
+cells in culture [40]. In mesenchymal cells in vitro, low population seeding impacts the
+differentiation potentials and alters cell fates and growth rates of tumors are affected by cell density
+[41, 42]. It has long been realized that groups of cells resist transformation and cancer [43-46],
+providing a collective dynamic that keeps cell activity orchestrated towards adaptive outcomes
+[47]. One such example of cellular resistance is the culturing of multiple ovarian follicles, which
+improves follicular survival and growth through paracrine signaling from one follicle to another
+[48]. In the case of tissue injury, paracrine factors have also been shown to play an important role.
+
+[PAGE 4] In Xenopus embryos, wounding induces calcium waves within a single organism that aid in cell-
+cell coordination and permit rapid wound closure in response to superficial injury [49, 50]. АТР
+is one such ligand that can trigger cell contractility and plays a role in coordinating long-range
+contraction responses after injury [51]. However, the transfer of such information between
+individuals or distinct tissues and organs has not been visualized or quantified.
+
+Thus, a number of cases of beneficial lateral interactions have been reported, and the study
+of cell cooperativity and instructive communication is an active field. However, a significant
+knowledge gap exists with respect to instructive lateral interactions for correct development at a
+level of organization above that of tissues, organs, and individual organisms. While epigenetic
+studies have explored how genes can be impacted on environment and behavior, the information
+transfer from this field is still vertical. Here, we sought to test the hypothesis that embryos can
+interact across distance in their medium to provide beneficial, specific information that assists
+morphogenesis. Our fundamental assay was resistance to teratogens: we exposed groups of
+Xenopus laevis embryos to several disruptors of normal development with diverse mechanisms of
+action, and asked whether large groups can resist exposure better than small ones. We found that
+collective development is much more stable, with respect to morphological perturbations (birth
+defects), and analyzed an agent-based cellular automata computational model that explains the
+collective morphogenetic stability of larger embryonic groups through local interactions.
+Functional experiments reveal that this effect is mechanistically mediated by a short-range
+chemical signal, requiring calcium and P2 receptor signaling. It also does not involve detectable
+transcriptional changes at stage 25, but does implicate a small group of changes by stage 35. We
+also report the remarkable phenomenon of a mechanical injury triggered injury wave that
+propagates not only within embryos, as has been shown previously [49-51], but also between
+embryos, identifying it as a potential candidate for the communication process within a network
+of developing individuals. Finally, our transcriptomic profiling of small versus large groups,
+identifies a set of up- and down-regulated genes that provide a signature of the collective response
+to teratogen challenge.
+
+[PAGE 5] Results
+Incidence and severity of thioridazine-induced defects is dependent on group size
+To test the hypothesis of collective influences on development, we asked whether group
+size was a factor in embryos' ability to undergo normal morphogenesis despite the presence of
+well-known teratogenic influences. Embryos for each experiment were from the same clutch but
+separated into differing group sizes. Importantly, we kept teratogen concentration constant
+between groups by scaling media volume to group size so that the per embryo teratogen exposure
+was constant regardless of group size.
+
+We began with thioridazine, a chemical reagent that targets dopamine pathways [52, 53].
+Xenopus laevis were raised in identical, standard conditions but at different group sizes within
+each Petri dish, and subjected to 90 µM of thioridazine across all densities (Figure 1A). Media and
+dish size were scaled proportionally between large and small groups so that the only difference
+between experimental conditions was the number of animals in a dish. Large groups (n=300)
+received 120mL of media while small groups (n=100) received 40mL of media. To rule out greater
+drug degradation by larger cohorts as a potential confounder, we quantified thioridazine in the
+medium following treatment of embryos in groups of various sizes. Liquid chromatography- mass
+spectrometry analysis indicated that there was no significant difference in thioridazine
+concentration between groups ranging in size from 25 to 400 (Figure 1B).
+
+Following treatment with 90 µM thioridazine for 18 hours or stages 12.5-25 (Figure 1C),
+we observed both embryonic death and a range of defects in survivors and scored their incidence.
+Survival increased with increasing group size. For singlets and groups of 5 embryos, thioridazine
+exposure resulted in 0% survival. When exposed in groups of 25 and 75, averages of 13% and
+44% of embryos survived, respectively. For group sizes of 100 and 300, survival rates increased
+to averages of 85% and 98%, respectively (N=3, p=0.0051 using ANOVA). Among survivors,
+thioridazine caused significant developmental abnormalities, as expected. Compared to age-
+matched controls, exposure to thioridazine resulted in rectangular head shape, misshapen eyes, and
+hyperpigmentation (Figure 1D, red arrows indicating misshapen eyes, hyperpigmentation, and
+square head shape). After exposure, tadpoles in the largest group treatment (n=300) and smaller
+group treatment (n=100) were scored at NF stage 45 for defects (Figure 1E). Large groups had
+significantly fewer average incidents of square head (22.7% vs 40.7%) and hyperpigmentation
+(37.8% vs 54.2%) (N=6, p=0.00029 using Welch's T-test).
+
+As quantitative validation that individuals scored with the hyperpigmentation phenotype
+were truly different from controls, 10 tadpoles were pooled, dissolved, and measured for
+absorbance at 260nm. Control animals had an average absorbance of 0.427 while hyperpigmented
+animals had an average absorbance of 0.615 (Figure 1F) (N=3, p=0.0029 using Welch's T-Test).
+We used morphometric analysis to further quantify the square head shape phenotypes by
+determining the difference between the diameter of the head and the width at the base of branchial
+arch (Figure 1G). In treated animals with square heads, this number is significantly smaller than
+in controls (261.2 vs 23.5, respectively. N=3, p<0.0001 using Welch's T-Test). To prevent bias,
+blind scoring was used for all thioridazine experiments.
+
+We conclude that larger group size confers a significant protective effect against both
+thioridazine-induced death and craniofacial defects in a manner that cannot be explained by
+increased drug degradation in larger cohorts. We call this phenomenon the Cross-Embryo
+Morphogenetic Assistance (CEMA) effect.
+
+[PAGE 5] Results
+Incidence and severity of thioridazine-induced defects is dependent on group size
+To test the hypothesis of collective influences on development, we asked whether group size was a factor in embryos' ability to undergo normal morphogenesis despite the presence of well-known teratogenic influences. Embryos for each experiment were from the same clutch but separated into differing group sizes. Importantly, we kept teratogen concentration constant between groups by scaling media volume to group size so that the per embryo teratogen exposure was constant regardless of group size.
+
+We began with thioridazine, a chemical reagent that targets dopamine pathways [52, 53]. Xenopus laevis were raised in identical, standard conditions but at different group sizes within each Petri dish, and subjected to 90 µM of thioridazine across all densities (Figure 1A). Media and dish size were scaled proportionally between large and small groups so that the only difference between experimental conditions was the number of animals in a dish. Large groups (n=300) received 120mL of media while small groups (n=100) received 40mL of media. To rule out greater drug degradation by larger cohorts as a potential confounder, we quantified thioridazine in the medium following treatment of embryos in groups of various sizes. Liquid chromatography- mass spectrometry analysis indicated that there was no significant difference in thioridazine concentration between groups ranging in size from 25 to 400 (Figure 1B).
+
+Following treatment with 90 µM thioridazine for 18 hours or stages 12.5-25 (Figure 1C), we observed both embryonic death and a range of defects in survivors and scored their incidence. Survival increased with increasing group size. For singlets and groups of 5 embryos, thioridazine exposure resulted in 0% survival. When exposed in groups of 25 and 75, averages of 13% and 44% of embryos survived, respectively. For group sizes of 100 and 300, survival rates increased to averages of 85% and 98%, respectively (N=3, p=0.0051 using ANOVA). Among survivors, thioridazine caused significant developmental abnormalities, as expected. Compared to age-matched controls, exposure to thioridazine resulted in rectangular head shape, misshapen eyes, and hyperpigmentation (Figure 1D, red arrows indicating misshapen eyes, hyperpigmentation, and square head shape). After exposure, tadpoles in the largest group treatment (n=300) and smaller group treatment (n=100) were scored at NF stage 45 for defects (Figure 1E). Large groups had significantly fewer average incidents of square head (22.7% vs 40.7%) and hyperpigmentation (37.8% vs 54.2%) (N=6, p=0.00029 using Welch's T-test).
+
+As quantitative validation that individuals scored with the hyperpigmentation phenotype were truly different from controls, 10 tadpoles were pooled, dissolved, and measured for absorbance at 260nm. Control animals had an average absorbance of 0.427 while hyperpigmented animals had an average absorbance of 0.615 (Figure 1F) (N=3, p=0.0029 using Welch's T-Test). We used morphometric analysis to further quantify the square head shape phenotypes by determining the difference between the diameter of the head and the width at the base of branchial arch (Figure 1G). In treated animals with square heads, this number is significantly smaller than in controls (261.2 vs 23.5, respectively. N=3, p<0.0001 using Welch's T-Test). To prevent bias, blind scoring was used for all thioridazine experiments.
+
+We conclude that larger group size confers a significant protective effect against both thioridazine-induced death and craniofacial defects in a manner that cannot be explained by increased drug degradation in larger cohorts. We call this phenomenon the Cross-Embryo Morphogenetic Assistance (CEMA) effect.
+
+[PAGE 6] Cross-embryo morphogenetic assistance effect is not limited to thioridazine exposure
+We next asked whether the surprising CEMA effect is a feature of thioridazine teratogenesis specifically or whether it is a wider phenomenon, and, if so, what kinds of perturbations can embryos resist collectively better than singly? We explored additional teratogens orthologous to thioridazine: other drugs with a different target, and a non-pharmacological method using misexpression of mutant mRNA.
+
+Two drugs with different targets from each other and from thioridazine were used to test the robustness of the CEMA effect. We first tested forskolin – a drug that targets adenylate cyclase [54]. Tadpoles were subjected to 5 µM of forskolin at stages 10-45 in group sizes of small (n=25), medium (n=50), and large (n=300) (Figure 2A). In the small and medium groups, forskolin resulted in hyperpigmentation in an average of 93.3% and 86% of embryos, respectively, while the large group exhibited hyperpigmentation in an average of just 13.9% of embryos (N=3, p<0.001 using ANOVA). Blind scoring was done in two of three replicates to prevent any bias.
+
+Next we tested nicotine, which is known to cause developmental brain and other defects [55-57]. Embryos were separated into different group sizes at stage 11 and treated with nicotine until stage 35, allowed to develop in regular medium until stage 45, and then scored for brain defects including absence of forebrain, of both forebrain and midbrain, and malformed hindbrains (Figure 2B). For tadpoles reared and exposed in the smaller groups (n=10 and n=25), an average of 96.7% and 94.7%, respectively, exhibited brain defects. Those reared at higher densities (50 and 75) had defects in an average of 46.9% and 33.3% of embryos, respectively. At the highest density, n=125, only an average of 10.1% of embryos exhibited defects (N=3, p<0.001, ANOVA) (Figure 2B).
+
+We next examined the effect of group size on a mechanistically different kind of perturbation that has previously been shown to cause defects in eye and heart morphogenesis [58]: disrupting native bioelectric signaling among embryonic cells [59-61] by microinjecting mRNA encoding a mutant ion channel. We found that large group size also protected embryos against the negative effects of mutant ion channel expression. At the 2-cell stage, both cells were microinjected with mRNA encoding dominant-negative Kir6.1 [62-64]. Following injection, animals were raised in dishes containing varying embryo group sizes (Figure 2C). Defects observed at stage 45 included misshapen eyes, overall head malformations, hyperpigmentation, and death. Unlike thioridazine, dominant-negative Kir6.1 microinjections did not induce significant embryo death and we saw no significant differences in survival between embryos raised in different group sizes and controls. There was, however, again a dramatic protective effect of group size on incidence of craniofacial defects. At a density of 5 embryos per dish, 100% of the injected embryos had defects. Increasing the density to 25 and 50 animals lowered the average defect incidence to 88.2% and 79.7%, respectively. At the highest group size, n=100 animals, the average defect incidence was 54.2% and the average of normal individuals was 43.0% (N=3, p=0.0141using ANOVA). We note that the mRNA microinjection experiments rule out explanations based on pharmacokinetics of drugs in different sized groups. Because there is no significant embryo death, they also indicate that the protective effect of larger group size against craniofacial defects is not secondary to an effect on survival.
+
+These results indicate that the protective effect of larger group size on craniofacial defects is not specific to one kind of pathway or teratogen. We conclude that CEMA is a more general developmental stability mechanism that can stabilize several diverse kinds of developmental processes against perturbations.
+
+
+[PAGE 7] CEMA operates across genetically-diverse populations
+We next asked whether the assistive effect is only operational across identical conspecifics, or whether genetically-diverse groups also reap the benefits. We mixed strains of wild-type and an albino strain of Xenopus laevis, then treated them to ask whether one genetic background can help another. A group of 150 wildtype embryos treated with 90µM thioridazine (stages 12.5-25) had a square head average of 44.7% and 44.3% for 150 treated albino embryos. Increasing group size to 300 leads to averages of 20.7% for wildtypes and 23.7% for albinos. Mixing a group of 150 wildtype and 150 albino embryos had an average of 21% (Figure 3). While there were significant differences between the 150 and 300 group sizes, there were no significant differences between wildtype and albino embryos of the same group size. Given this, we conclude that CEMA does not require the large cohort to be genetically homogenous.
+
+[PAGE 7] Stabilization by perturbed individuals
+In prior experiments, every animal in a given cohort was exposed to the same stressor. We next asked whether animals that had never experienced the teratogen could improve the resistance of conspecifics that were exposed. This would be expected if, for example, animals were providing developmental signals to each other – in that case, un-perturbed control embryos would be even more efficient than exposed ones in stabilizing other embryos. Thus, we investigated CEMA in experiments in which wild-type animals exposed to thioridazine were reared with naïve albino embryos in mixed cohorts. After treatment with thioridazine, wild-type animals were rinsed three times before being mixed in with an equal number of untreated albinos. Consistent with our previous experiments, groups of 150 treated wildtype animals had an average square head incidence of 36.0%, which was significantly reduced to an average of 23.3% in groups of 300 treated wildtype animals (N=3, p=0.0068, ANOVA). However, in the mixed cohort (150 treated wildtype animals with 150 untreated albinos), an average of 37.0% had defects, not significantly different from that seen in the group of 150 treated embryos reared alone (Figure 4). The 300 mixed group had no significant difference from that of the 150 treated wildtype group, but there was a significantly increased incidence of square heads compared to that of the 300 all treated group (N=3, p=0.0068 using ANOVA). Thus, unperturbed individuals do not help stabilize teratogen-exposed individuals and we conclude that only perturbed individuals have a role in CEMA.
+
+[PAGE 7] A computational model of CEMA
+To better understand inter-embryonic signaling within CEMA and guide future studies, we developed a model of the system-level collective dynamics and ran simulations to probe potential explanations and generate testable predictions. Specifically, we developed a computational approach to show how development of embryos (or any morphogenic agent) may be more stable and harder to disrupt in larger groups than for singletons or small groups. We chose an agent-based approach to virtual embryogeny [65-70], where each embryo was a cellular automaton [71-78] that could interact with its neighbors through diffuse signaling and was parametrized to reflect the quantitative data in Fig. 1 with regard to survival as a function of cohort size.
+
+For our model, we chose to use elementary cellular automata (ECA), which are 1D arrays consisting of cells that can hold a value of either 0 or 1 [79]. At each time step in a simulation, these cells can change their values based on pre-programmed update rules, wherein they sample their own value and their close neighbor's (within 1 to 3 cells to the left or right) and either maintain their existing value (0 or 1) or change to the opposite value. This inherent ‘local interactions only' property makes ECAs a good choice for this model, since many biological collective systems (especially during morphogenesis) appear to be governed by parallel local interactions not dependent on a central controller [80-82].
+
+[PAGE 8] We chose to simulate embryonic development using an ECA paradigm that recapitulates the core task: independent subunits (whether cells or larger structures) working toward a species-specific endpoint. The “majority problem" is a task in which given an initial configuration of 0s and 1s, the cells of the ECA update their states at each time step eventually converging on a final state where all cells have the same value – either 0 or 1 – matching the value in the majority at initiation (Figure 5A and Supplementary Figure 1) [83-85]. Conceptually, we equate this to normal embryogenesis, a healthy embryo starts in a given configuration and develops towards a goal embryonic state. However, what update rule is suitable to follow to achieve this goal state? In previous ECA studies, one update rule that solves this task is the Gacs, Kudyumov, and Levin rule (GKL rule), which dictates that a cell's value at each timestep is set to match the value shared by the majority of a set that includes itself and defined neighbors to the left or right (see Methods). Not only does the GKL rule solve this problem, it also does so efficiently, defined as converging to the correct value before a number of steps equal to half of the total number of cells.
+
+Teratogens cause defective development or death by disrupting the endogenous, exquisitely coordinated cellular processes (such as sensing and information-processing) that required for morphogenetic coordination. Thus, we chose to model teratogenic perturbations in development as noise introduced as an alternate update rule, causing cells to mimic a single neighbor's state at random rather than following the GKL rule (see Supplementary Figure 1). This noise is sufficient to cause dysfunction in how ECAs develop over time, resulting in incomplete or incorrect solutions at the end of the simulation (Supplementary Figure 1).
+
+To model conspecific interactions between embryos, we introduced a communication paradigm that relies on local communication in groups, similar to the local interaction between cells within ECAs (described above), but now at the level of interaction between ECAs. First, ECAs (representing embryos in a cohort) were given a spatial location on a 2D grid (i.e., growing embryos in a square configuration). Each ‘embryo' was assigned a health value, which can vary between 1 (perfectly healthy) and 0 (dead) but was set at 1 for all ‘embryos' at the start of simulation (Supplementary Figure 2). To model teratogen exposure, there is a chance (parameterized to 70%) that each embryo may be affected by noise (representing the deleterious effects of the reagent on the accurate functioning of the cellular machinery), in which case the embryo's health value is decreased by a percentage (parameterized to 70%). At each timestep, embryos that have been ‘exposed' in this time step or in previous timesteps broadcast their health value to their immediate neighbors and to their neighbor's neighbors (via a more diffuse and weaker signal; see Figure 5 and Methods for details). As would be true for a biological stress signal, an 'embryo' in the model broadcasts if and only if it has been exposed. To simulate CEMA, at the next timestep (and until the end of the simulation), each embryo that received the health/stress signal shares a supportive signal in response. This supportive response scales with the cell's health value and, modeling our experimental finding that only exposed embryos can provide the CEMA effect, only ‘exposed embryos' send a supportive signal. Incoming supportive signals are integrated as a weighted average. Additionally, we introduced a mechanism in which the healthier an embryo is (the closer its health status is to 1), the less it weights its neighbors' input and increases its own signal's weight; conversely, the unhealthier an embryo is, the more it weights its neighbor's input and decreases its own weight. Importantly, the model is designed to ensure that an embryo has no ‘knowledge' of its neighbors' internal processes (we do not assume that embryos can sense the ground truth of the internal states of neighboring embryos). Instead, embryos can only send local signals that support (or destroy if the cell is noisy) update processes.
+
+Based on the experimental data presented above, our hypothesis is that inter-embryonic signaling is a key mechanism in collective robustness of morphogenesis. We thus simulated the development of embryos as singletons or in groups, similar to how embryos were grown in small or large groups. The results (Figure 5) indicate that inter-embryo communication is essential for normal development in the presence of noise and that large groups are much more effective at achieving normal development than smaller groups, matching the embryo data in Figure 1C. Overall, our agent-based simulation demonstrates that in morphogenetic systems in which emergent outcomes arise from local rules, collective dynamics can help stabilize against perturbation and noise (uncertainty) through local signaling mechanisms between agents.
+
+[PAGE 9] RNAseq analysis reveals transcriptional signature of CEMA
+Morphogenesis is the result of numerous biochemical, bioelectrical, and biomechanical signals, all of which feed into transcriptional changes that canalize physiological events into cell differentiation and other long-acting morphogenetic modules. We next asked to what extent the CEMA effect involves changes at the transcriptional level: does gene expression reflect the differential responses to challenge that we observe in small vs. large groups? We performed RNA sequencing (RNA-seq) on Xenopus samples derived from large (300-embryo) and small (100-embryo) groups of conspecifics that were either untreated or exposed to thioridazine. A randomly selected group of 15 embryos were collected from each group (N=3 samples/group) either immediately after thioridazine treatment (developmental stage 25) or after brief recovery in MMR media (developmental stage 35). At stage 25, we observed weak separation across groups when batch-corrected data was assessed by principal component analysis, with particular overlap across the untreated group with a large number of conspecifics and both thioridazine groups (Supplemental Figure 3). Comparison of samples between the large vs. small conspecific groups by differential expression analysis found that no genes passed FDR-correction for either the control naïve or thioridazine-treated embryos. We conclude that by stage 25, the mechanisms implementing CEMA have not had a significant impact on gene expression profiles.
+
+However, at stage 35, transcriptional separation was observed between differently sized and treated groups (Supplemental Figure 3). Differential expression analysis revealed 32 significantly changed genes (FDR<0.05) between embryos housed in untreated control groups of 300 vs. 100 in control media, with 30 genes increased and 2 genes decreased in the larger (300-embryo) group compared to the smaller group (Figure 6A). This reveals that even in the absence of an external morphogenetic stressor, gene expression is sensitive to the size of the developmental cohorts.
+
+For embryos exposed to thioridazine, 19 unique genes were differentially expressed between embryos housed in groups of 300 vs. 100, with 3 genes increased and 16 genes decreased in the larger (300-embryo) group (Figure 6B), revealing that the presence of large numbers of conspecifics modify the transcriptional response to teratogen exposure. It must be emphasized that our analysis is not simply picking up conventional transcriptional responses to a teratogen: the data in Figure 6 reflect differential responses to the same insult in large vs. small cohorts. Thus, distinct transcriptional signatures exist for both conditions: simply developing in a large group (with no exogenous stressors) induced changes in gene expression, as did specifically being in a large group responding to a teratogen.
+
+[PAGE 9] RNAseq analysis reveals transcriptional signature of CEMA
+Morphogenesis is the result of numerous biochemical, bioelectrical, and biomechanical
+signals, all of which feed into transcriptional changes that canalize physiological events into cell
+differentiation and other long-acting morphogenetic modules. We next asked to what extent the
+CEMA effect involves changes at the transcriptional level: does gene expression reflect the
+differential responses to challenge that we observe in small vs. large groups? We performed RNA
+sequencing (RNA-seq) on Xenopus samples derived from large (300-embryo) and small (100-
+embryo) groups of conspecifics that were either untreated or exposed to thioridazine. A randomly
+selected group of 15 embryos were collected from each group (N=3 samples/group) either
+immediately after thioridazine treatment (developmental stage 25) or after brief recovery in MMR
+media (developmental stage 35). At stage 25, we observed weak separation across groups when
+batch-corrected data was assessed by principal component analysis, with particular overlap across
+the untreated group with a large number of conspecifics and both thioridazine groups
+(Supplemental Figure 3). Comparison of samples between the large vs. small conspecific groups
+by differential expression analysis found that no genes passed FDR-correction for either the control
+naïve or thioridazine-treated embryos. We conclude that by stage 25, the mechanisms
+implementing CEMA have not had a significant impact on gene expression profiles.
+However, at stage 35, transcriptional separation was observed between differently sized
+and treated groups (Supplemental Figure 3). Differential expression analysis revealed 32
+significantly changed genes (FDR<0.05) between embryos housed in untreated control groups of
+300 vs. 100 in control media, with 30 genes increased and 2 genes decreased in the larger (300-
+embryo) group compared to the smaller group (Figure 6A). This reveals that even in the absence
+of an external morphogenetic stressor, gene expression is sensitive to the size of the developmental
+cohorts.
+For embryos exposed to thioridazine, 19 unique genes were differentially expressed
+between embryos housed in groups of 300 vs. 100, with 3 genes increased and 16 genes decreased
+in the larger (300-embryo) group (Figure 6B), revealing that the presence of large numbers of
+conspecifics modify the transcriptional response to teratogen exposure. It must be emphasized that
+our analysis is not simply picking up conventional transcriptional responses to a teratogen: the data
+in Figure 6 reflect differential responses to the same insult in large vs. small cohorts. Thus, distinct
+transcriptional signatures exist for both conditions: simply developing in a large group (with no
+exogenous stressors) induced changes in gene expression, as did specifically being in a large group
+responding to a teratogen.
+
+[PAGE 10] We computationally identified biological structures and pathways potentially impacted by
+these transcriptional changes through over-representation testing amongst highly expressed genes
+(FDR < 0.1). In the control group, pathways related to nucleosome activity, signaling receptor
+binding, translation, and ribosomal pathways were over-expressed (FDR < 0.1) in the 300-embryo
+group compared to the 100-embryo group, while those related to extracellular matrix, glycolytic,
+and mitochondrial processes decreased (Figure 6C). In thioridazine-exposed embryos, the
+expression of genes associated with signaling pathways, including caveolae and nuclear steroid
+receptors, was increased in embryos housed in groups of 300 vs. 100 (Figure 6D). In contrast,
+genes involved in multiple membrane transport pathways were decreased in the larger group,
+including proton transmembrane transport. Together, these findings suggest that embryonic
+transcriptional programs are sensitive to the number of individuals in a cohort. In addition,
+regulation of a small, diverse set of genes involved in multiple modes of signaling, between stages
+25 and 35, is a signature of group resistance to teratogens.
+[PAGE 10] A diffusible molecule as a mode of communication
+We next performed several functional blocking experiments to identify the modality
+responsible for the CEMA effect. First, to evaluate whether physical contact between embryos is
+required, 3D-printed separation devices were made. A clear, transparent plastic was used to create
+a platform with individual wells, measuring 1.80mm tall and 1.80mm wide, in which embryos
+could be placed (Figure 7A). The entire separating device was placed inside of a dish thus allowing
+embryos to be physically separated, but still share media. A large (n=300) group of embryos were
+separated into the individual solid, clear plastic wells while treated in thioridazine. While the wells
+were separate, the medium could diffuse freely across the top of the wells. Separating the embryos
+dropped the survival rate to 1.3% compared to 96% in groups where embryos were not separated
+from each other (Figure 7B) (N=3, p<0.001 using Welch's T-Test). To increase diffusion in the
+separation devices, new constructs were designed so that the walls of each well had windows that
+would not hinder diffusion. Animals were treated with thioridazine in these new wells had an
+increased survival rate (63%) compared to the solid well separated animals (1.3%), but were still
+lower than that for unseparated animals (96%) (Figure 7B) (N=3, p=0.0005 using ANOVA). While
+testing for physical touch, optical cues were also tested through the use of the same separation
+device, but made from an opaque black plastic that prevented sharing of optical cues. The results
+of blocking vision were not significantly different from blocking physical contact alone. Embryos
+left unseparated had an average survival of 93.7% while those treated in clear plastic had an
+average survival rate of 61.7% and 58.0% from those that were visually isolated (Figure 7C). Based
+on these data, we concluded that the most likely medium of inter-embryo influence is a short-range
+chemical signal.
+[PAGE 10] Interfering with calcium and P2 receptors blocks the CEMA effect
+To help identify the molecular nature of the diffusible signal, we focused on ATP, which
+is a known signaling molecule implicated in morphogenetic coordination in a range of model
+systems [86-88], as well as mediating long-range contraction responses after injury [51]. It is also
+rapidly diffusible, which makes it a plausible target given all of the above data. Studies have shown
+calcium and ATP acting in a range of different communication pathways, including injury
+response and intercellular communication [89-94]. Calcium waves in particular have been shown
+to act as communicators for damage and regeneration [93, 95-97], suggesting these as potential
+candidates for inter-embryo signaling mechanisms for CEMA. We made use of a loss-of-function
+
+[PAGE 11] reagent known to block ATP signaling via the P2X/P2Y receptors: the purinergic receptor type 2
+antagonist suramin [98-101] to see whether it would prevent the CEMA effect and render large
+groups as susceptible to defects as small ones [93, 94, 102].
+Consistent with our results above, animals treated with thioridazine as singletons had a
+96.2% incidence of defects; treating embryos in groups of 300 reduced this to 38.8%. Including
+suramin with thioridazine in large group (300) treatments resulted in an incidence of 86.4%, not
+significantly different from the rate for embryos treated as singletons, suggesting suramin blocked
+the protective effect of the large group. Suramin by itself induced some defects in embryos treated
+in groups of 300, but only in an average of 7% of embryos (Figure 8A) (N=3). In an effort to
+identify a more precise molecular target, we focused on suramin's two major targets: calcium and
+P2 receptors. Thapsigargin has been shown to deplete intracellular calcium stores and BAPTA has
+been used as a calcium chelator [103-106]. Previous studies have shown that PPADS blocks a
+number of different metabotropic and ionotropic receptors, including the P2 receptors [107, 108].
+When thioridazine was used in conjunction with BAPTA, the average survival rate of a group of
+100 embryos was 80.3% which was not significantly different from thioridazine only treatment,
+86.7%. Thioridazine and thapsigargin, however, caused the average survival rate to plummet to
+0.0%. Using PPADS with thioridazine also caused a drop of average survival to 20.7% (Figure
+8B). These data indicate that intracellular calcium stores and P2 receptors are involved in the
+CEMA effect. To further investigate whether ATP is involved, we measured extracellular ATP
+levels with the hypothesis that larger groups expel more ATP into the media that signal to other
+embryos. Media from treated and control animals were harvested, and an ATP determination kit
+was used to quantify concentrations in the two conditions. Ratios of ATP concentration of the large
+group over the small group revealed that the average extracellular ATP concentration in treated
+groups was 1.073 µM while control groups had an average of 0.989 µM (Figure 8C). This increase
+further supports a potential ATP-based mechanism for CEMA.
+
+[PAGE 11] Mechanical damage in Xenopus induces intracellular calcium waves in distant, uninjured
+conspecifics
+We next sought to directly visualize the physiological dynamics that could underlie
+coordination between embryos using an acute mechanical injury assay. We reasoned that we may
+be able to observe such dynamics in the embryonic collective, and made use of a genetically-
+encoded fluorescent calcium reporter, GCAMP6S. To directly visualize if Xenopus are sensitive
+to the damage of conspecifics, we first measured calcium signaling dynamics in GCAMP6S-
+expressing embryos exposed to mechanical injury as well as calcium activity in distant, uninjured
+embryos that share the same pool of 0.1x MMR media. We chose mechanical injury because it
+enabled a precise, known timepoint relative to which we could examine embryonic neighbors'
+activity. Experiments were conducted in custom channels to ensure repeatable media volume and
+embryo spacing paradigms (Figure 9A). Mechanical damage is well-known to induce calcium
+waves within a single organism that aid in cell-cell coordination and permit rapid wound closure
+in Xenopus embryos in response to superficial injury [49, 50].
+
+[PAGE 12] Supplementary Video 2), which was not itself manipulated in any way. In many cases, we observed
+that the calcium wave in the second embryo starts at a point adjacent to the injured embryo,
+however, the wave is not completely consistent in starting at this closest point (Supplementary
+Video 3). Furthermore, we observed multiple injury wave transfers when an individual was injured
+within a group of 10 embryos (Supplementary Video 4).
+We measured cell-to-cell injury wave speeds of 6.7±3.48 µm/s in the injured embryo
+(N=7), 5.28±1.89 µm/s between embryos (N=8), and 2.36±1.66 µm/s in the uninjured embryo
+(N=9). The wave speed in the uninjured embryo was slower than both the inter-embryo (p=0.023)
+and injured embryo (p=0.045) speeds (Figure 9C). To more easily visualize calcium dynamics
+over time, the microscopy videos of the uninjured embryo were transformed into kymographs
+depicting the pre-injury spontaneous activity and post-injury activity (Figure 9D). For untreated
+receiver embryos, post-injury calcium activity was detected within 5-10 minutes following
+mechanical damage in the adjacent injured embryo. Calcium dynamics in the receiver embryo
+included a combination of sporadic bursting activity as well as lower, background levels of
+consistent calcium activity. Across replicates (N=10), the median peak of calcium activity in the
+injured embryo was 1.77-fold higher than spontaneous activity levels (p<0.0001) and 1.08-fold
+change over spontaneous activity in the uninjured embryo (p=0.002). Furthermore, the injury wave
+crossed distances of>1 mm in the medium, suggesting that diffusible molecules may allow for
+long-range signaling and detection of tissue damage between conspecifics.
+[PAGE 12] Suramin treatment attenuates injury waves between embryos
+We then tested if inter-embryo injury wave propagation uses signaling mechanisms
+necessary for CEMA by testing the P2-purinoceptor antagonist suramin, which interferes with
+ATP signaling. Embryos treated with suramin (N=5) were tested in the injury wave assay and
+compared to a compiled set of controls (N=10). No treatment suppressed GCAMP6S intensity in
+injured embryos below that of controls (Figure 9E). Calcium waves traveled from the epicenter of
+injury to the edge of the embryo as observed in controls. However, injury wave transfer to adjacent
+embryos was attenuated compared to untreated embryos in the case of suramin treatment (p=0.009;
+
+[PAGE 13] Figure 9E,F), suggesting that suramin suppresses only the propagation of the wave from the
+injured embryos to adjacent embryos. The mean peak of calcium activity was 1.08-fold change
+over spontaneous activity levels in the uninjured embryos in control media and 1.02-fold change
+over spontaneous activity in uninjured embryos treated with suramin (Figure 9F). Because suramin
+is defined as a P2 receptor antagonist, this finding suggests that injury signaling between
+conspecifics could involve ATP signaling. Indeed, when we apply a bolus of ATP, GCAMP6S is
+increased (p=0.02) in uninjured embryos (2.11-fold change from spontaneous) over embryos
+exposed to a bolus of control media (1.05-fold change from spontaneous) (Figure 9D,G &
+Supplementary Video 5). However, the representation of the GCAMP6S signal in a kymograph
+(Figure 9D) shows that the calcium dynamics are substantially different between the mechanical
+injury scenario and the application of a bolus of ATP. This difference in dynamics may occur
+because the mechanically injured embryo continuously releases diffusible molecules, including
+ATP, into the shared media pool and the receiver embryo detects these molecules, resulting in
+prolonged calcium bursting behavior. When a bolus of ATP is applied in the media, the receiver
+embryo detects all the molecules in bulk, resulting in a strong, but short-lived, signal. Together,
+these differences suggest that simply applying ATP to media may not mimic the more complex
+signaling dynamics provided by nearby conspecifics that could provide an additional layer of
+information apart from the molecule itself. Additionally, because suramin has been shown to
+exhibit multiple off-target effects beyond its defined P2-purinoceptor antagonism [109], it is
+possible that additional molecules beyond ATP contribute to inter-embryo injury wave
+propagation and on-going work in our lab aims to fully characterize the diffusible molecules
+involved in the injury wave effect as well as CEMA.
+
+exhibit multiple off-target effects beyond its defined P2-purinoceptor antagonism [109], it is
+possible that additional molecules beyond ATP contribute to inter-embryo injury wave
+propagation and on-going work in our lab aims to fully characterize the diffusible molecules
+involved in the injury wave effect as well as CEMA.
+
+[PAGE 14] Discussion
+It is clear that although the hardware components of embryogenesis are encoded by the
+genome, phenotypic plasticity integrates inputs from the environment [11, 21, 22, 110]. Here, we
+addressed the hypothesis that embryonic outcomes result not only from the activities of a single
+embryo's developmental mechanisms, but also from a kind of collective computation [83, 111-
+116], with stability properties arising from inter-embryo influence. Our results identify a source of
+lateral influence on development and morphology which resembles molecular- and cell-level
+collective repair [14, 117].
+Increasing cohort size (while scaling the amount of media and drug to be constant per
+embryo) was sufficient to mitigate the effects of different teratogens, including thioridazine,
+nicotine, and forskolin (Figures 1 and 2). As cohort size increased, survival increased and
+incidence of defects decreased (Figure 1 C and E), an effect we term Cross-Embryo Morphogenetic
+Assistance (CEMA). The observation of this protective effect of cohort size against defects
+induced by thioridazine, forskolin, and nicotine [118, 119] (Figure 2B and D), indicates that the
+effect is not specific to disruptors of a specific pathway. To further understand the boundaries of
+this assistive effect, we also looked at the effect of cohort size on defects known to be induced by
+overexpression of a dominant mutant of Kir6.1, a transmembrane potassium channel critical for
+bioelectric signaling during morphogenesis [58]. The protective effect of cohort size held for this
+disruptor as well (Figure 2A). Finally, we also show that genetic diversity among cohort does not
+affect the magnitude of CEMA (Figure 3) and that CEMA is evident in perturbed rearing
+conditions, where larger treated cohorts have reduced baseline incidence of defects (Figure 4). We
+conclude that individual Xenopus laevis embryos communicate with each other via instructive
+signals that protect against teratogenic insults.
+These results, particularly the broad effect of CEMA across diverse disruptors and in
+control conditions, support the idea that robustness in morphogenesis is partly the result of lateral
+interactions between conspecifics. This has precedence in several related biological systems.
+Perhaps the earliest (pre-metazoan) involves quorum sensing and coordination in bacteria [120,
+121]. Others include clutch hatching synchronization in response to perceived predation in birds
+[31, 122], body color and brain changes in locusts depending on presence of others [123, 124], and
+growth pattern of plant roots in order to avoid other plants or forage [125-127]. The boundary
+between the body and the outside world shifts on both ontogenic (developmental) and phylogenic
+(evolutionary) timescales [16]. Thus, it is perhaps not surprising that a kind of multi-scale dynamic
+is in play in morphogenetic homeostasis: interactions between cells, known to be crucial for normal
+embryogenesis, have a parallel in the interaction between embryos in a cohort [14].
+
+[PAGE 14] Molecular components of CEMA
+We also gained insight into the mechanism of inter-embryo communication. Evidence of
+inter-individual communication has been noted in a variety of cases, including quorum
+sensing[128], viral lysis-lysogeny [129], and regeneration [130]. In an effort to understand the
+modality of communication in CEMA, special culture devices were used to physically separate
+embryos. Results indicated that CEMA required adjacency but not physical contact (Figure 5),
+identifying diffusible chemical(s) as a likely inter-embryo signaling mechanism underlying
+CEMA. When embryos were physically distanced and prevented from touching, the average
+survival rate decreased significantly from non-separated, densely situated individuals. While
+separating embryos influenced survival, visual cues did not have any significant impact on
+outcome.
+Previous studies have found that following damage, ATP is released in high concentrations
+into extracellular space and can induce calcium waves [131-133]. In our study we have shown that
+increasing the number of embryos in a group has a protective effect when faced with a stressor
+(chemical or physical) and that either depleting calcium stores or blocking P2 receptors can
+eliminate this shielding effect (Figure 8). When embryos are physically injured, they elicit a
+calcium wave that starts at the site of injury, propagates across the embryo, and spreads to a
+neighboring unharmed embryo (Figure 9). It should be noted that, as always, the identification of
+the molecular components underlying the effect is just part of the explanation. Simple
+concentration of ATP or any other molecule does not have the bandwidth to specify the
+information needed for complex morphogenesis as observed here. Future work will address the
+dynamic encoding of patterning cues via these molecular implementations, which could include
+spatial or temporal patterns (e.g., pulse-coding as has been observed with calcium [134-137]).
+
+[PAGE 15] Calcium waves as potential inter-embryo mediators of communication about injury/insult
+Consistent with previous studies, we found that an intra-embryo calcium wave is induced
+when mechanical damage occurs [50, 51]. Furthermore, we observed for the first time that the
+calcium wave not only travels across the injured embryo, but also into and across adjacent, un-
+injured embryos (Figure 9 and Supplementary Videos 1-4). Further, targeting ATP signaling with
+suramin, an antagonist of purinergic receptors P2X and P2Y, abrogated both the inter-embryo
+calcium wave and the CEMA effect against morphogenesis disruptors (Figures 7 and 8),
+suggesting a common ATP signaling mechanism (Supplementary Video 5). While these results do
+not directly implicate inter-embryo calcium waves in CEMA, they suggest that embryo damage
+can cause diffusible signaling molecules to be detected by nearby conspecifics. Notably, the
+mechanical damage observed in the injury wave assay may induce different signaling responses
+than that induced by chemical injuries, like thioridazine and nicotine. Therefore, additional modes
+of injury should be investigated in the injury wave assay, including possibly chemical and laser-
+induced damage. The above-implicated mechanisms are not meant to be exclusive, and it's entirely
+possible that other modalities are also involved.
+
+[PAGE 15] Transcriptional signature of CEMA
+Communication between cells and embryos that affects morphogenetic outcomes is likely
+to involve downstream changes in the expression of developmental genes. In an effort to identify
+unique transcriptome features between large and small conspecific groups, an RNAseq analysis
+(using rRNA depletion, to capture more unique features) was done on samples from the
+thioridazine experiment. Our analyses showed that changes are first detectable between stages 25
+and 35, and involve a small number of genes that specifically respond to cohort size and not simply
+to the action of a teratogen. There were 16 genes that were down-regulated and 3 that were up-
+regulated (Supplementary Table 1). Many of these are currently of unknown function, but the list
+includes the V-ATPase, which is well known to drive morphogenetic events [138-144], and
+interesting new components linked to DNA damage and endopeptidase activity. Gene set
+enrichment analysis showed that genes associated with signaling pathways, including caveolae and
+nuclear steroid receptors, were increased in large groups, but genes involved in multiple membrane
+transport pathways were decreased in the larger group (Figure 6). These changes also distinguish
+the context of a cohort responding to a challenge vs. simply to the size of a developmental clutch
+(Figure 6).
+
+[PAGE 16] A model for intra-embryo signaling about developmental disruption/injury
+Taken together, the data suggest the following signaling elements (Figure 10). We propose
+that in normal conditions, the extracellular concentration of ATP is low. Injury induces an internal
+calcium wave and increased ATP release from the injured embryo. The fact that suramin or PPADS
+both block the calcium wave in neighboring intact embryos, and, blocking P2 receptors prevents
+a calcium response, suggests that ATP released from injured embryos binds to P2 receptors on the
+surface of neighboring embryos, triggering the secondary calcium response in uninjured embryos.
+Thapsigargin, which depletes intracellular calcium stores, blocks the calcium response in embryos,
+suggesting that P2 receptor binding by ATP leads to calcium release from intracellular calcium
+stores (Figure 10).
+
+[PAGE 16] Interaction dynamics of CEMA: a computational minimal model
+Much as in traditional developmental studies of single embryo morphogenesis, it is not
+enough to identify the molecular components necessary for CEMA. Previous work indicates that
+the robustness of normal craniofacial development is due to the computational capabilities of cell
+collectives, which allow them to reach an appropriate target anatomy despite perturbations in
+starting state or environment. To begin to identify system-level collective dynamics sufficient to
+produce group robustness across embryos, computational modeling can help interrogate the ways
+in which instructive lateral signals might protect embryos in large groups against disruptive
+signals. In addition, it can motivate intervention strategies. There are many examples of stability
+in groups, for example coupled oscillators – from Huygens' clocks to networks of networks [145-
+148] or of robot swarms [149]; the “wisdom of crowds” [150] is now a well-known phenomenon.
+We modeled this effect using agent-based, cellular automata, with an emphasis on
+anatomical homeostasis – the ability of morphogenetic systems to resist noise. In this model,
+embryos which are affected proportionally seek necessary morphogenetic signaling information
+from others in the cohort. Numerous examples of embryos sensing and progressively correcting
+for powerful disruptors to early developmental processes, such as those that affect left-right
+asymmetry [151], but to our knowledge this has not before been studied at the group level. This
+aspect of the model is a formalization of the idea that stress propagation is an important aspect of
+collective problem-solving because it leads to multiple subunits taking actions to address the same
+unmet need. It is easy to imagine how this could have evolved: autocrine signaling can readily
+become paracrine signaling, at whatever scale of organization. Selection could progressively
+reward the leakiness of signals that represent current error state as broadcasts that enable integrated
+activity to reduce the error.
+Our model reinforced the conclusion that inter-embryonic signaling is a key factor in
+CEMA. A key component is that we modelled both embryonic development and CEMA using
+local interactions, not requiring a central controller mechanism. These types of local interactions
+are a hallmark of complex collectives which are found across biology, and are hypothesized to
+support a number of functions [152, 153]. In our simulations, local interactions were sufficient to
+solve the majority problem, overcoming noise and supporting ‘normal development'. However,
+one open question in this study, as well as in the field of complex systems, is how many agents
+(i.e., embryos) do you need to become a ‘collective' that functions differently than smaller groups?
+Here, the experimental and simulation data support a number around 300 for 100% survival in the
+presence of a teratogen but we do not have a clear picture as to why this specific number and if this
+number is unique to this species or can be generalized to other systems. In future studies this
+“behavior vs cohort size” phenomenon could be investigated if the relationship between them is
+similar. For example, in both the experiment and model see a sharp, seemingly non-linear
+relationship between cohort size and survival.
+While our results do reflect what is seen in Figure 1C, they do not match perfectly. In our
+simulation groups of fewer than 25 conspecifics demonstrate small robustness against disruption
+by noise (<10% survival), whereas in the experimental data in Figure 1C, groups of 5 and 10
+embryos show no significant resistance to the effects of teratogen. Our model could be extended
+in several ways in future work. First, while there is embryonic death during the simulation, there
+is no 'death-signaling', wherein a dying embryo may emit a destructive signal that effects other
+embryos and could greatly affect development. Second, all ECAs are given a random initial
+configuration of 0's and 1's, with a majority (60%) set to 1. However, it may be that initial
+embryonic stages are not so random but have some amount of reproducible structure. Further
+experimental and computational studies are needed to address this issue. Third, while our inter-
+embryonic signaling is indeed local, it does not necessarily account for inter-embryonic travelling
+waves. If signals can propagate across a larger space over time in relay fashion, this may change
+how the collective develops. We are currently developing a more in-depth model to address these
+issues in future work.
+
+
+[PAGE 17] Limitations of study and extension in future work
+A number of questions remain open. First, we do not know how this effect operates in the
+wild or how the many additional factors of a complex natural environment will impact CEMA.
+Thus, while we have shown that embryos can cooperate in groups to resist teratogenesis, we do
+not know how much this affects evolution and adaptive fitness in nature. We also do not know the
+limits of this effect across types of injury. We do not claim it is universal, and many more
+perturbations beyond the three tested above will need to be tested to see how broadly general this
+effect may be. Subsequent experiments will look at gene expression changes in individual animals
+of a cohort, paralleling the strategy of doing single-cell RNAseq in single bodies [154-156], to
+help understand the scaling of instructive cues and their transcriptional responses.
+Other avenues for future work are now open. First, this needs to be investigated in other
+systems, particularly mammals. It is already known that calcium waves exist across mammalian
+tissues [94, 157], and that mammalian cells in culture do much better in groups than they do alone
+[158, 159], but we don't know if this extends to cohorts in embryonic mammalian development.
+The general field of Allee effects [35-37] in novel embodiments is a fascinating area for future
+investigation, especially as it may connect with other instances of horizontal transfer of influence
+via substrates of different scales, from exosomes [160-162] to whole tissues or even organs
+transplanted across bodies [163-169]. We hope that the above dataset and novel assay forms the
+basis for an integrated approach to understanding robustness of collective decision-making across
+scales, adding to the growing literature on collective problem-solving [18-20, 170-173].
+There are also potential connections to evolutionary questions related to group selection
+[174-176], which may be enriched by a better understanding of what group dynamics contribute
+to developmental fitness of each member of a community. It is likely that interesting evolutionary
+developmental biology analyses could emerge from a broad study of CEMA, impacting basic
+questions about the information flows that determine embryonic outcomes [177, 178]. In general,
+
+Here, the experimental and simulation data support a number around 300 for 100% survival in the
+presence of a teratogen but we do not have a clear picture as to why this specific number and if this
+number is unique to this species or can be generalized to other systems. In future studies this
+“behavior vs cohort size” phenomenon could be investigated if the relationship between them is
+similar. For example, in both the experiment and model see a sharp, seemingly non-linear
+relationship between cohort size and survival.
+While our results do reflect what is seen in Figure 1C, they do not match perfectly. In our
+simulation groups of fewer than 25 conspecifics demonstrate small robustness against disruption
+by noise (<10% survival), whereas in the experimental data in Figure 1C, groups of 5 and 10
+embryos show no significant resistance to the effects of teratogen. Our model could be extended
+in several ways in future work. First, while there is embryonic death during the simulation, there
+is no 'death-signaling', wherein a dying embryo may emit a destructive signal that effects other
+embryos and could greatly affect development. Second, all ECAs are given a random initial
+configuration of 0's and 1's, with a majority (60%) set to 1. However, it may be that initial
+embryonic stages are not so random but have some amount of reproducible structure. Further
+experimental and computational studies are needed to address this issue. Third, while our inter-
+embryonic signaling is indeed local, it does not necessarily account for inter-embryonic travelling
+waves. If signals can propagate across a larger space over time in relay fashion, this may change
+how the collective develops. We are currently developing a more in-depth model to address these
+issues in future work.
+
+[PAGE 17] Limitations of study and extension in future work
+A number of questions remain open. First, we do not know how this effect operates in the
+wild or how the many additional factors of a complex natural environment will impact CEMA.
+Thus, while we have shown that embryos can cooperate in groups to resist teratogenesis, we do
+not know how much this affects evolution and adaptive fitness in nature. We also do not know the
+limits of this effect across types of injury. We do not claim it is universal, and many more
+perturbations beyond the three tested above will need to be tested to see how broadly general this
+effect may be. Subsequent experiments will look at gene expression changes in individual animals
+of a cohort, paralleling the strategy of doing single-cell RNAseq in single bodies [154-156], to
+help understand the scaling of instructive cues and their transcriptional responses.
+Other avenues for future work are now open. First, this needs to be investigated in other
+systems, particularly mammals. It is already known that calcium waves exist across mammalian
+tissues [94, 157], and that mammalian cells in culture do much better in groups than they do alone
+[158, 159], but we don't know if this extends to cohorts in embryonic mammalian development.
+The general field of Allee effects [35-37] in novel embodiments is a fascinating area for future
+investigation, especially as it may connect with other instances of horizontal transfer of influence
+via substrates of different scales, from exosomes [160-162] to whole tissues or even organs
+transplanted across bodies [163-169]. We hope that the above dataset and novel assay forms the
+basis for an integrated approach to understanding robustness of collective decision-making across
+scales, adding to the growing literature on collective problem-solving [18-20, 170-173].
+There are also potential connections to evolutionary questions related to group selection
+[174-176], which may be enriched by a better understanding of what group dynamics contribute
+to developmental fitness of each member of a community. It is likely that interesting evolutionary
+developmental biology analyses could emerge from a broad study of CEMA, impacting basic
+questions about the information flows that determine embryonic outcomes [177, 178]. In general,
+these types of inputs into developmental outcomes stretch the concept of epigenetics via
+environment influences. Moreover, cross-embryo beneficial influences challenge the assumption
+that non-genetic external factors are always due to inanimate physical aspects of the environment,
+conspecific competition, or harmful exploitation by other biotic agents [179].
+
+[PAGE 18] Implications
+Taken together, these data reveal an essential role for inter-embryo signaling during
+morphogenesis, adding to the growing body of work indicating that the relationship between
+genomic information and anatomical outcome is not as straightforward as expected. For example,
+planaria accumulate many mutations through somatic inheritance but are able to regrow any
+missing part with 100% fidelity to reach a target morphology [180]. The fact that organisms can
+reach their correct morphology despite variation in genetic material shows that there is a gap in
+understanding all the informative sources of morphology. It is essential to continue to elucidate
+diverse instructive inputs to understand the mechanisms of anatomical plasticity and robustness.
+The discovery of the CEMA effect may have several practical impacts. The first concerns
+available data on developmental toxicity of various agents. Our results indicate that the percentage
+of defects (i.e., teratogenic potential) identified in assays such as FETAX [181-184] are
+unwittingly adjusted for CEMA – the degree of teratogenicity reported is what is seen after an
+unknown level of embryonic assistance has taken place (since these assays are almost never done
+on singletons). In other words, because most studies do not compare (or sometimes even state) the
+size of the cohorts, we rarely know the actual effect of a given agent – only its effect after possible
+CEMA mechanisms have had a chance to improve it. This suggests that it is essential to state the
+cohort size in teratogenicity assays, and even to re-do many of the most important studies using
+different embryo group sizes, to improve transferability of the findings to human embryos where
+the cohort size is much smaller than in Xenopus or Zebrafish models.
+The more positive implication concerns how understanding CEMA might improve
+biomedicine. It is tempting to speculate that, having understood how a group of agents signals each
+other to establish a healthier outcome, we may someday be able to artificially trigger that response
+in therapeutic settings. While much more work needs to be done to properly evaluate the potential
+of this effect for biomedicine, it is clear that beneficial, instructive cross-embryo communication,
+understood broadly, is an exciting phenomenon which could shed light on evolutionary fitness of
+developmental mechanism and could perhaps be hacked to address urgent biomedical needs in
+birth defects and other disorders of morphogenesis [185, 186].
+
+
+[PAGE 19] Acknowledgements
+We thank Douglas Blackiston and other members of the Levin lab for helpful discussions,
+and Susan Lewis and Julia Poirier for help with the manuscript. This work was supported by the
+Emerald Gate Charitable Trust (awarded to M.L.). Research reported in this publication was
+supported by the National Institutes of Health via their support of a NovaSeq facility via award
+number S100D032203 (awarded to M.L.). The authors gratefully acknowledge funding from the
+Army Research Office/DARPA under Cooperative Agreement Number W911NF-19-2-0027
+(awarded to M.L.). The views and conclusions contained in this document are those of the authors
+and should not be interpreted as representing the official policies, either expressed or implied, of
+the Army Research Office/DARPA or the U.S. Government. The U.S. Government is authorized
+to reproduce and distribute reprints for Government purposes notwithstanding any copyright
+notation herein.
+
+tadpole at stage 45. Control embryo with normal, round head shape and pigmentation indicated
+by blue arrows. Thioridazine-treated embryo with square head shape and hyperpigmentation
+indicated by red arrows. (E) Quantification of the frequency of malformed square heads, and
+hyperpigmentation in large group thioridazine exposure (n=300, blue) and small group treatment
+(n=100, purple). (F) Quantification of hyperpigmentation between untreated (control) and
+thioridazine-treated hyperpigmented animals. (G) Quantification of face width difference
+between untreated (left) and treated square head (right) animals. Data are plotted as mean ± SD
+and each point represents a trial. T-test: *p < 0.05, ***p<0.001, and **** p≤ 0.0001. All
+treatments are normalized to the mean of non-treated controls' spontaneous defects. Scale bars
+represent 500μm.
+
+[PAGE 22] Figure 2. Conspecific effect beyond thioridazine exposure. (A) Images of control (top) and
+forskolin-treated (bottom) animals, demonstrating hyperpigmentation following forskolin
+exposure. Graph shows quantification of the frequency of hyperpigmentation in embryos exposed
+to forskolin in small (n=25), medium (n=50), and large (n=300) groups. (B) Control animal raised
+in 0.1x MMR with normal brain structures (top). Representative animals from cohorts subjected
+to nicotine treatment then raised at group sizes of 10 animals (middle) and 75 animals (bottom).
+
+Right: Percent of embryos with brain defects in groups treated with nicotine at densities of 10, 25,
+50, 75, and 125. (C) Effect of group size on incidence of defects in dominant-negative Kir6.1-
+injected embryos. Images of control (top) and injected (bottom) embryos at stage 45. Red arrows
+indicate misshapen eye and head malformation; blue arrows indicate normal structures in control
+animal. Right: quantification of malformed and normal individuals at stage 45. Both cells at the
+2-cell stage were injected and embryos were split into different size groups post injection. For all
+data: Values are plotted as mean ± SD, one way ANOVA was conducted and ***p<0.001,
+**p<0.01, *p<0.05. All treatments are normalized to the mean of non-treated controls'
+spontaneous defects. Scale bars represent 1mm.
+
+[PAGE 24] Figure 3. Genetically-diverse populations can also benefit from CEMA. Percent of embryos with
+square heads in two strains of Xenopus laevis, wildtype and albino. Values are plotted as mean ±
+SD, one way ANOVA was conducted. All treatments are normalized to the mean of non-treated
+controls' spontaneous defects.
+
+[PAGE 25] Figure 4. Unperturbed cohort members do not aid in stabilization. Quantification of the frequency
+of square head defects in: a mixed group of 150 thioridazine treated wildtype embryos + 150
+untreated albinos (blue), 300 treated wild-type embryos (purple), and 150 treated wild-type
+embryos (pink). Values are plotted as mean ± SD, one way ANOVA was conducted and
+***p<0.001, **p<0.01, *p<0.05. All treatments are normalized to the mean of non-treated
+controls' spontaneous defects.
+
+[PAGE 25] Figure 4. Unperturbed cohort members do not aid in stabilization. Quantification of the frequency
+of square head defects in: a mixed group of 150 thioridazine treated wildtype embryos + 150
+untreated albinos (blue), 300 treated wild-type embryos (purple), and 150 treated wild-type
+embryos (pink). Values are plotted as mean ± SD, one way ANOVA was conducted and
+***p<0.001, **p<0.01, *p<0.05. All treatments are normalized to the mean of non-treated
+controls' spontaneous defects.
+
+[PAGE 26] Figure 5. Computational agent-based model of CEMA. (A) Cartoon examples of healthy and
+teratogen influenced development. Left, an ECA, a 1D array of Os and 1s, has an initial
+configuration of 40% 0s (white) and 60% ones (black). ECA follow the GKL update rule, solving
+the majority problem by converging to all 1s. Right, an ECA that has noise induced by teratogens,
+which does not successfully solve the majority problem. (B) A cartoon example of inter-embryonic
+signaling from time t to time t+1. Embryos signal their current health (red) at time t and supportive
+signals (black) at the next time step to their neighbors and nearest neighbors. Embryos that have
+not been exposed to the teratogen cannot participate. (C) Data from simulation shows that inter-
+embryonic signaling, CEMA, aids in development in the presence of noise (blue line). Without
+this communication, development fails in the presence of noise (red line). When half of a cohort
+is comprised of untreated embryos, they do not participate, and therefore the effect is lower (orange
+line). Bars on the graph are 95% confidence intervals.
+
+[PAGE 27] Figure 6. Increasing cohort size induced changes to transcription of different small sets of genes
+in control and thioridazine-treated embryos. Volcano plots of differential expression data for large
+(300 embryos) compared to small (100 embryos) groups of (A) control and (B) thioridazine-treated
+embryos. Genes undergoing significant changes in expression (FDR<0.05) are highlighted in red
+(increased expression) and blue (decreased expression). Gene set enrichment analysis for
+comparison of large vs. small numbers of conspecifics in the (C) control and (D) thioridazine
+treatment conditions.
+
+[PAGE 28] Figure 7. CEMA requires diffusion but not physical contact. (A) Images of embryos undergoing
+thioridazine treatment in standard physical isolation device (left) and in a diffusion-enhanced
+physical isolation device (right). (B) Groups of 300 embryos were treated with thioridazine and
+were isolated using windowed wells (blue), solid wells (purple), or unseparated (pink). (C) Groups
+of 300 embryos were either put into clear (purple) or opaque (pink) separation devices or left
+unseparated (blue) and treated with thioridazine. Values are means + SD, t-tests or one way
+ANOVA were conducted and *p<0.05 and ****p<0.0001. All treatments are normalized to the
+mean of non-treated controls' spontaneous defects.
+
+[PAGE 29] Figure 8. ATP/P2X receptors may mediate CEMA. (A) Suramin eliminates the protective effect
+of large group size against thioridazine-induced craniofacial defects and death. Tadpoles in groups
+of 300 were treated with 100 µM suramin (blue), 90 µM thioridazine (purple), 90 µM thioridazine
+and 100 µM suramin together (pink), and compared to 90 µM thioridazine exposure as singletons
+(green). Percent defect of each group was then quantified. (B) Thioridazine concentration was
+constant at 90 μΜ across all treatments and various calcium and P2 receptor blockers were added.
+Calcium was depleted using 5 µM Bapta (purple) or 10 µM thapsigargin (pink). P2 receptors were
+inhibited with 100 µM PPADS (green). (C) Quantification of extracellular ATP concentration.
+Values are plotted as mean ± SD, one way ANOVA was conducted and ***p<0.001, **p<0.01,
+*p<0.05. All treatments are normalized to the mean of non-treated controls' spontaneous defects.
+
+[PAGE 29] Figure 8. ATP/P2X receptors may mediate CEMA. (A) Suramin eliminates the protective effect
+of large group size against thioridazine-induced craniofacial defects and death. Tadpoles in groups
+of 300 were treated with 100 µM suramin (blue), 90 µM thioridazine (purple), 90 µM thioridazine
+and 100 µM suramin together (pink), and compared to 90 µM thioridazine exposure as singletons
+(green). Percent defect of each group was then quantified. (B) Thioridazine concentration was
+constant at 90 μΜ across all treatments and various calcium and P2 receptor blockers were added.
+Calcium was depleted using 5 µM Bapta (purple) or 10 µM thapsigargin (pink). P2 receptors were
+inhibited with 100 µM PPADS (green). (C) Quantification of extracellular ATP concentration.
+Values are plotted as mean ± SD, one way ANOVA was conducted and ***p<0.001, **p<0.01,
+*p<0.05. All treatments are normalized to the mean of non-treated controls' spontaneous defects.
+
+[PAGE 30] Figure 9. Mechanical damage in Xenopus induces calcium waves in distant, uninjured
+conspecifics. (A) Dimensions for holder and embryo arrangement for injury experiments. (B)
+Fluorescent images of GCAMP6S-expressing embryos at 0-, 10-, and 20-minutes post-injury for
+untreated stage 10-12 embryos. The injured embryo is on the left and the neighboring uninjured
+
+[PAGE 31] embryo is on the right. (C) The speeds of GCAMP6S signal propagation between and within
+embryos. Speeds were compared across compartments using the Kruskal-Wallis test; *p<0.05. (D)
+Kymographs of receiver embryo calcium dynamics before injury (spontaneous activity) and post-
+injury under control, suramin, and ATP conditions. Maximum GCAMP6S signal for (E) injured
+and (F) receiver embryos from the control and suramin-treated groups. Intensities are normalized
+to the mean of the pre-injury spontaneous activity. Groups were compared separately for injured
+and receiver embryos using Welch's t-test; **p=0.009. (G) Maximum GCAMP6S signal for
+embryos exposed to a bolus of MMR media (control) or ATP. Groups were compared using
+Welch's t-test; *p=0.021.
+
+[PAGE 32] Figure 10. Mechanistic model of CEMA effects. (A) Naive conditions in which embryos are
+undisturbed. Damaged conditions in which embryos are subjected to injury and ATP expulsion
+increases. Damaged embryo + PPADS/Suramin showing environment in which P-type receptors
+are blocked and inhibiting the binding of ATP. Damaged + thapsigargin showing that internal
+calcium stores are depleted and there is a reduction of calcium response. (B) Enlarged view of
+internal events during injury. Top: Embryo on the left is injured and elicits a calcium response and
+increased ATP release. ATP binds to P2X receptors on neighboring, uninjured embryo and elicits
+its own calcium response. Middle: In the presence of PPADS/Suramin, the injured embryo has a
+calcium and ATP response but P2X receptor blockade prevents ATP binding and subsequent
+calcium wave in the uninjured embryo. Bottom: In the presence of thapsigargin, the injured
+embryo no longer has a calcium response, but is still able to increase release of ATP. ATP can still
+bind to P2X receptors in the neighboring embryo but there is not calcium wave, indicating that the
+calcium responses in both the injured and uninjured neighbor are dependent on intracellular
+calcium stores.
+
+[PAGE 33] Supplemental Figure 1. A visual example of how the control and ‘teratogen-exposed' ECAs
+update from one time step to another. (Left) Normally, cells follow the GKL rule [85], successfully
+solving the majority problem. There is an initial distribution of ones (black) and zeros (white) with
+more ones than zeros. The ECA evolves (top to bottom) and converges to all ones. (Right) In the
+presence of noise (red dashed line), the rules shift (and stay shifted) to random updating, and the
+ECA fails to solve the majority problem. There is the same majority in the right as in the left, but
+at the end of the simulation not all cells are one/black. These examples were generated as
+singletons, and no collective effects are shown here.
+
+[PAGE 33] Supplementary Figures
+
+Supplemental Figure 1. A visual example of how the control and ‘teratogen-exposed' ECAs update from one time step to another. (Left) Normally, cells follow the GKL rule [85], successfully solving the majority problem. There is an initial distribution of ones (black) and zeros (white) with more ones than zeros. The ECA evolves (top to bottom) and converges to all ones. (Right) In the presence of noise (red dashed line), the rules shift (and stay shifted) to random updating, and the ECA fails to solve the majority problem. There is the same majority in the right as in the left, but at the end of the simulation not all cells are one/black. These examples were generated as singletons, and no collective effects are shown here.
+
+[PAGE 34] Supplemental Figure 2. Two representative examples of health values over time. In each graph, the y-axis is embryos in the group and the x-axis is time. At each time point the health value of the embryo is reported as a color (yellow is more health and blue is more unhealthy). For low numbers of total embryos, health values quickly collapse to low values. This can be seen in the top graph as the colors slowly drift to a dark blue color. Conversely, under the same conditions, large numbers of embryos better resist noise, resulting in healthy, although not perfectly healthy, embryos. This can be visually seen in the lower graph, where the health values are more yellow than the upper graph, meaning higher health. While not a central area of investigation for this study, it is particularly interesting how health and noise balance one another.
+
+[PAGE 35] Supplemental Figure 3. Principal component analysis of RNA-sequencing data for Stage 25 and Stage 35 Xenopus housed in small (100-embryo) and large (300-embryo) group sizes in control or thioridazine-treated media.
+
+Supplementary Video 1. Calcium waves travels across an injured embryo. (top) and across adjacent, un-injured embryos (middle and bottom). Bright spot on injured embryo is the site of injury. Injured embryo is on left and un-injured embryos is on right (middle). Injured embryo is in the center and surrounded by un-injured embryos (bottom).
+
+Supplementary Video 2. In a pair of embryos, a calcium wave travels from an injured embryo to an adjacent, uninjured embryo.
+
+Supplementary Video 3. The calcium wave does not always travel to the closest point (arrow indicating expected signal) on an adjacent embryo.
+
+Supplementary Video 4. In a group of 10 embryos, multiple calcium waves travel from an injured embryo to adjacent, uninjured embryos.
+
+Supplementary Video 5. ATP is sufficient to elicit a calcium response. The addition of ATP into a channel with a single embryo is able to initiate a calcium response in the un-injured embryo. Site of ATP addition is labeled on the left side of the channel while an un-injured embryo was placed on the right side.
+
+[PAGE 36] Supplementary Table 1. (A) Differentially expressed genes (FDR < 0.05) for Stage 35 Xenopus housed in small (100-embryo) and large (300-embryo) group sizes in control or thioridazine-treated media. (B) List of significantly differentially expressed genes from thioridazine treated large vs small groups with their known products.
+
+[PAGE 37] Materials and Methods
+
+Animal husbandry
+
+Xenopus laevis tadpoles were reared in 0.1× Marc's Modified Ringers solution (MMR), pH 7.8 using standard procedures[187] and were staged according to Neiuwkoop and Faber[188]. All embryos (pooled from separate mothers then randomly divided between treatments) were raised at 14 °C. Feeding stage animals were fed 3 times a week with Sierra Micron powdered diet, and media changes were performed M, W, and F. Tadpoles were raised in either small dishes or large dishes depending on the cohort size.
+
+Pharmacological exposures
+
+Thioridazine (thioridazine-HCl, Sigma-Aldrich) was dissolved in deionized water at 1mM and frozen in single use aliquots to prevent continuous thawing. Neurula stage embryos that had been reared at 14°C prior to exposure were treated with 90 µM thioridazine in 0.1x MMR from NF stage 12.5 to 26. During the treatment, experimental and control embryos were kept at 18°C. Post-exposure they were returned to 14°C until they reached scoring stage 45.
+
+Forskolin (Forskolin, Tocris) was dissolved in dimethyl sulfoxide at 10mM, aliquoted into single doses, and frozen until use. Stages 10 embryos were exposed to 5 µM forskolin in 0.1x MMR. Animals were reared at 14°C and media was refreshed three times a week (M, W, F) until animals reached scoring stage 45.
+
+Nicotine (Sigma Aldrich) exposure occurred from stage 11 to stage 35 at 0.1mg/mL nicotine in 0.1X MMR, with media/drug refreshed every other day. Animals were kept at 18°C during treatment. Post treatment, animals were rinsed with 0.1x MMR twice, moved into fresh 0.1x MMR, and kept at 14°C until stage 45.
+
+Suramin (Suramin sodium salt, Sigma Aldrich) was dissolved in dimethyl sulfoxide at 10mM, aliquoted into single doses and frozen until use. Exposure occurred with 100 µM suramin in 0.1x MMR conducted on neurula stage embryos (NF stage 12.5-26) that had been reared at 14°C prior to exposure. During the treatment, experimental and control embryos were kept at 18°C. After the exposure they were returned to 14°C until they reached scoring stage 45. Calcium wave experiments were performed on pre-neurula stage embryos (NF stage 10-12). Embryos were exposed to 100 µM suramin in 0.1x MMR for 30 minutes prior to treatment at 18°C. Embryos were maintained in suramin during measurement of spontaneous and post-injury calcium activity.
+
+Morphometrics
+
+Tadpoles used for morphometric analysis were imaged with a Nikon SMZ1500 microscope with a Retiga 2000R camera and Q-capture imaging software. Landmarks for morphometric analysis were based on reproducibility across tadpoles. ImageJ was used to either measure length between two points (head width) or angle (head angle). For head width, landmarks were outermost points of the head (generally near the middle of the eyes), marking the diameter and base of the branchial arches. For angle of head, the landmarks were outermost points of the head and anterior-most tip of the head (center of mouth).
+
+Microinjection
+
+mRNA for a chimeric construct that is dominant negative for Kir6.1 was synthesized using standard message machine kits (Life Technologies) and stored at -80 °C until used. Embryos were transferred to 3% Ficoll solution before being microinjected. Pulled capillary needles were used
+
+[PAGE 37] Materials and Methods
+Animal husbandry
+Xenopus laevis tadpoles were reared in 0.1× Marc's Modified Ringers solution (MMR),
+pH 7.8 using standard procedures[187] and were staged according to Neiuwkoop and Faber[188].
+All embryos (pooled from separate mothers then randomly divided between treatments) were
+raised at 14 °C. Feeding stage animals were fed 3 times a week with Sierra Micron powdered diet,
+and media changes were performed M, W, and F. Tadpoles were raised in either small dishes or
+large dishes depending on the cohort size.
+
+Pharmacological exposures
+Thioridazine (thioridazine-HCl, Sigma-Aldrich) was dissolved in deionized water at 1mM
+and frozen in single use aliquots to prevent continuous thawing. Neurula stage embryos that had
+been reared at 14°C prior to exposure were treated with 90 µM thioridazine in 0.1x MMR from
+NF stage 12.5 to 26. During the treatment, experimental and control embryos were kept at 18°C.
+Post-exposure they were returned to 14°C until they reached scoring stage 45.
+Forskolin (Forskolin, Tocris) was dissolved in dimethyl sulfoxide at 10mM, aliquoted into
+single doses, and frozen until use. Stages 10 embryos were exposed to 5 µM forskolin in 0.1x
+MMR. Animals were reared at 14°C and media was refreshed three times a week (M, W, F) until
+animals reached scoring stage 45.
+Nicotine (Sigma Aldrich) exposure occurred from stage 11 to stage 35 at 0.1mg/mL
+nicotine in 0.1X MMR, with media/drug refreshed every other day. Animals were kept at 18°C
+during treatment. Post treatment, animals were rinsed with 0.1x MMR twice, moved into fresh
+0.1x MMR, and kept at 14°C until stage 45.
+Suramin (Suramin sodium salt, Sigma Aldrich) was dissolved in dimethyl sulfoxide at
+10mM, aliquoted into single doses and frozen until use. Exposure occurred with 100 µM suramin
+in 0.1x MMR conducted on neurula stage embryos (NF stage 12.5-26) that had been reared at 14°C
+prior to exposure. During the treatment, experimental and control embryos were kept at 18°C.
+After the exposure they were returned to 14°C until they reached scoring stage 45. Calcium wave
+experiments were performed on pre-neurula stage embryos (NF stage 10-12). Embryos were
+exposed to 100 µM suramin in 0.1x MMR for 30 minutes prior to treatment at 18°C. Embryos
+were maintained in suramin during measurement of spontaneous and post-injury calcium activity.
+
+Morphometrics
+Tadpoles used for morphometric analysis were imaged with a Nikon SMZ1500 microscope
+with a Retiga 2000R camera and Q-capture imaging software. Landmarks for morphometric
+analysis were based on reproducibility across tadpoles. ImageJ was used to either measure length
+between two points (head width) or angle (head angle). For head width, landmarks were outermost
+points of the head (generally near the middle of the eyes), marking the diameter and base of the
+branchial arches. For angle of head, the landmarks were outermost points of the head and anterior-
+most tip of the head (center of mouth).
+
+Microinjection
+mRNA for a chimeric construct that is dominant negative for Kir6.1 was synthesized using
+standard message machine kits (Life Technologies) and stored at -80 °C until used. Embryos were
+transferred to 3% Ficoll solution before being microinjected. Pulled capillary needles were used
+with break pressure between 55-60 kPA and injection pressure set to 140kPA. Injection time was
+set at 100ms and 2/2 cells were injected. Immediately after injection, embryos were moved to fresh
+3% Ficoll plates and left to recover for one to two hours. After that timeframe, half the media was
+poured out and filled with 0.1xMMR for another hour. Afterwards, embryos were washed twice
+in 0.1xMMR and moved to a 14°C incubator. Similarly, mRNA for the genetically encodable
+fluorescent calcium reporter GCAMP6S was synthesized and 2 nl of 300 ng/ml (CHECK) mRNA
+was delivered to 4/4 cells by microinjection.
+
+[PAGE 38] Injury induction & calcium imaging
+GCAMP6S-injected embryos (NF stage 10-12) were loaded in groups of 2 into custom-
+machined acrylic holders with channels (4.6 x 1.6 x 2.5 mm). A thin layer of mineral oil (Sigma
+Aldrich) was added on top each channel to prevent drying during imaging sessions. Using a ZEISS
+Axio Zoom.V16 microscope and frame rate of 1 image acquired every 2 seconds, 10 minutes of
+spontaneous GCAMP6S activity was captured for all embryos at baseline. Localized mechanical
+injury was induced in 1 of the 2 embryos by a pulled glass capillary needle. Using identical imaging
+parameters, GCaMP6s expression was captured for all embryos from the time of injury for a
+duration of 20 minutes.
+In Fiji (ImageJ), image stacks including baseline and post-injury activity were cropped to
+separate image stacks for each embryo (injured and receiver) and each stack was registered using
+the descriptor-based time series registration plug-in. A circular region of interest was selected to
+encompass each embryo and the mean grey value was output for that region across all frames
+acquired. The mean grey values after injury were normalized to the spontaneous activity collected
+for each embryo.
+The peak of activity for a given region was defined as the maximum normalized signal at
+any time during post-injury data capture. The distance between any 2 regions of interest was
+calculated by finding the magnitude of the vector from the injury site to the closest point on the
+receiver embryo. The time of calcium wave transfer between embryos was taken as the time from
+injury induction to the time that the mean calcium signal surpassed the maximum of spontaneous
+activity within an embryo. To avoid detecting aberrant spikes, a transfer between embryos was
+only considered complete if the mean calcium signal was maintained above spontaneous levels for
+longer than 1 minute. The cell-to-cell speed within a single embryo (injured embryo & receiver
+embryo speeds) was measured by selecting a cell at the start of a calcium wave and a cell at the
+end of the calcium wave. The time from cell-to-cell was calculated by measuring the peak-to-peak
+time delay between each cell. Speed for intra- and inter-embryo measurements were defined as the
+time of calcium wave transfer divided by inter-region distance.
+
+[PAGE 38] CEMA Computational Model
+All models were built using the MATLAB software (9.12.0.1884302, R2022a). Each ECA
+was created with 149 cells with a full runtime of Ncells/2, a common configuration [83, 84]. Το
+simulate development, ECAs were given the GKL rule to solve the majority problem, with an
+initial configuration of 60% 1s and 40% 0s [85]. An embryo was considered successfully
+developed with no defects if all cells had converged to 1 before the end of simulation time. To
+simulate embryo groups, they were developed in a square configuration (2x2, 3x3, 10x10, for
+example) from values ranging from singletons (1 embryo) to large groups (18x18, or 324 total
+embryos). Tested values were chosen to emulate the experimental data.
+
+[PAGE 39] To simulate health and noise (teratogen), each embryo was given an initial health value of
+1. At each time step there is a chance that noise, pnoise, could affect any embryo in the group,
+altering its health by a percentage, ndec, parameterized to 0.7. Then, each embryo effected by the
+noise will update its health value based on a weighted average of its neighbors and neighbor's
+neighbors. The embryos weight is 1, its neighbor's weights are 1, and its neighbor's neighbors
+weights are 0.25. These values were chosen to simulate spatially close mixing as well as diffuse,
+slightly distant signaling. After, each embryo affected by noise will again update its health based
+on supportive signaling, sampled from the previous timestep. This health update is also calculated
+based off of a weighted average, with the weights of the embryo's own signal proportional to (1-
+health), as is the signal from its neighbors. The weights of the neighbor's neighbors are weighted
+as 0.25*(1-health), again to simulate diffuse signaling. This weighted average is then applied to
+the embryo's health value following the formula:
+health value += current health value * weighted support signal
+After this, an embryo then evolves according to the GKL rule if health is above 0.5, or the
+random update rule if health is equal to, or less than, 0.5. For parameterization, noise values from
+0.0 to 1 were tested in steps of 0.1, and we found that noise of 0.8 best reflected the data found
+experimentally. For ndec, parameterization found that 0.7 best fit the experimental data. Each
+simulation was run 20 times to create a sample space, and 99% confidence intervals were
+calculated for each noise value and across number of embryos.
+To simulate the experimental design when embryos not affected by the teratogen were
+introduced into a group that had previously been exposed, we artificially locked half of the
+population to 1, meaning they stay perfectly healthy. With this, they were not allowed to participate
+in the health signaling.
+
+[PAGE 39] RNA Extraction
+At stage 35, embryos were sacrificed for rRNA depletion study. A sample consisted of 15
+pooled tadpoles and each was repeated 3 times. Tissue was extracted using TRIzol (Thermo Fisher
+Scientific) as per the manufacturer's protocol, and total RNA quality and quantity was assessed
+using a NanoDrop spectrophotometer (Thermo Fisher Scientific).
+
+[PAGE 39] rRNA depletion RNA-sequencing
+RNA was sent to the Tufts Genomic Core where RNA quality was assessed via
+bioanalyzer, and high-quality RNA was used for library preparation with the Illumina Stranded
+Total RNA with Ribo-Zero Plus. Libraries were then multiplexed, and an rRNA depletion run
+using single-end, 75-nucleotide sequencing was performed on Illumina HiSeq 2500. Raw read
+files were sent to the Bioinformatics and Biostatistics Core at Joslin Diabetes Center.
+
+[PAGE 39] NGS analysis
+Reads
+were
+trimmed
+for
+adapter
+“CTGTCTCTTATACACATCTCCGAGCCCACGAGAC” and polyX tails, then filtered by
+sequencing Phred quality (>=Q15) using fastp [189]. Adapter-trimmed reads were aligned to
+the Xenopus laevis rRNA genomic sequence (version 10.1) from the NCBI nucleotide database
+using Bowtie2 [190] and unmapped reads were removed using samtools [191]. Adapter-trimmed
+reads were aligned to the genome using STAR aligner with the two-pass option. The RSEM tool
+was used to estimate the gene expression from the gene alignments. Low expressing genes
+(threshold of 1.8 counts per million in at least 3 samples) were filtered out, leaving a total of 21,720
+genes after filtering. Counts were then normalized by weighted trimmed mean of M-values (TMM)
+[192]. The counts were Voom transformed [193] into logCPM (logCPM=log2(10º *count/(library
+size *normalization factor)). Two surrogate variables (SVs) were identified and constructed [194].
+Batch and the SV effects were adjusted and a principal component analysis (PCA) was performed.
+Differential expression analysis between groups was performed using limma [195]. Pathway
+analysis was performed by testing the over-representation of the differentially expressed genes
+(FDR <0.1) in the Gene ontology (GO) terms/pathways using R package clusterProfiler (Yu et al.
+2012). Enriched pathways were identified at a significance threshold of adjusted p-value (FDR) <
+0.1. In the gene ontology dot plots, the size of the dots reflects the gene ratios (number of
+significant genes associated with the GO term / total number of significant genes associated with
+any GO term), and the adjusted p-value (FDR) reflects the significance.
+
+
+[PAGE 40] Statistics
+All statistical analyses were performed using Prism 9. To achieve statistical power,
+biological replicates (N) were conducted 3-6 times with n >50 embryos for each treatment unless
+otherwise noted. Data across various iterations were pooled and analyzed by non-parametric t-test
+(for 2 groups) or ANOVA (for more than two groups).
+
+[PAGE 41] References
+1. Thompson, R.P., E. Nilsson, and M.K. Skinner, Environmental epigenetics and epigenetic inheritance in domestic farm animals. Animal Reproduction Science, 2020. 220: p. 106316.
+2. Barua, S. and M.A. Junaid, Lifestyle, pregnancy and epigenetic effects. Epigenomics, 2015. 7(1): p. 85-102.
+3. Cavalli, G. and E. Heard, Advances in epigenetics link genetics to the environment and disease. Nature, 2019. 571(7766): p. 489-499.
+4. Eckersley-Maslin, M.A., C. Alda-Catalinas, and W. Reik, Dynamics of the epigenetic landscape during the maternal-to-zygotic transition. Nature Reviews Molecular Cell Biology, 2018. 19(7): p. 436-450.
+5. Peixoto, P., et al., From 1957 to Nowadays: A Brief History of Epigenetics. International Journal of Molecular Sciences, 2020. 21(20): p. 7571.
+6. Quadrana, L. and V. Colot, Plant Transgenerational Epigenetics. Annual Review of Genetics, 2016. 50(1): p. 467-491.
+7. Ramos-Cruz, D., A.N. Troyee, and C. Becker, Epigenetics in plant organismic interactions. Current Opinion in Plant Biology, 2021. 61: p. 102060.
+8. Tammen, S.A., S. Friso, and S.-W. Choi, Epigenetics: The link between nature and nurture. Molecular Aspects of Medicine, 2013. 34(4): p. 753-764.
+9. Wells, D.A., The extended phenotype(s): a comparison with niche construction theory. Biology & Philosophy, 2015. 30(4): p. 547-567.
+10. West-Eberhard, M.J., Developmental plasticity and evolution, in Oxford scholarship online. 2020, Oxford University Press,: New York. p. 1 online resource (815 p.
+11. West-Eberhard, M.J., Phenotypic accommodation: adaptive innovation due to developmental plasticity. J Exp Zool B Mol Dev Evol, 2005. 304(6): p. 610-8.
+12. Moczek, A.P., et al., The role of developmental plasticity in evolutionary innovation. Proc Biol Sci, 2011. 278(1719): p. 2705-13.
+13. Watson, R.A. and C. Thies, Are Developmental Plasticity, Niche Construction, and Extended Inheritance Necessary for Evolution by Natural Selection? The Role of Active Phenotypes in the Minimal Criteria for Darwinian Individuality, in Evolutionary Causation, U. Laland, Editor. 2019, MIT Press.
+14. Fields, C. and M. Levin, Scale-Free Biology: Integrating Evolutionary and Developmental Thinking. Bioessays, 2020. 42(8): p. e1900228.
+15. Levin, M., Life, death, and self: Fundamental questions of primitive cognition viewed through the lens of body plasticity and synthetic organisms. Biochemical and Biophysical Research Communications, 2020. 564: p. 114-133.
+16. Levin, M., The Computational Boundary of a “Self”: Developmental Bioelectricity Drives Multicellularity and Scale-Free Cognition. Frontiers in Psychology, 2019. 10(2688): p. 2688.
+17. Heylighen, F., Self-organization in Communicating Groups: The Emergence of Coordination, Shared References and Collective Intelligence. Complexity Perspectives on Language, Communication and Society, 2013: p. 117-149.
+18. Couzin, I., Collective minds. Nature, 2007. 445(7129): p. 715.
+19. Deisboeck, T.S. and I.D. Couzin, Collective behavior in cancer cell populations. Bioessays, 2009. 31(2): p. 190-7.
+20. Couzin, I.D., Collective cognition in animal groups. Trends Cogn Sci, 2009. 13(1): p. 36-43.
+21. Tung, A. and M. Levin, Extra-genomic instructive influences in morphogenesis: A review of external signals that regulate growth and form. Dev Biol, 2020. 461(1): p. 1-12.
+22. Kelly, S.A., T.M. Panhuis, and A.M. Stoehr, Phenotypic plasticity: molecular mechanisms and adaptive significance. Comprehensive Physiology, 2012. 2(2): p. 1417-39.
+23. Horton, T.H., Fetal origins of developmental plasticity: animal models of induced life history variation. Am J Hum Biol, 2005. 17(1): p. 34-43.
+24. West-Eberhard, M.J., Developmental plasticity and the origin of species differences. Proc Natl Acad Sci U S A, 2005. 102 Suppl 1: p. 6543-9.
+25. Gandelman, R., Uterine position and the activation of male sexual activity in testosterone propionate-treated female guinea pigs. Horm Behav, 1986. 20(3): p. 287-93.
+26. Gandelman, R., F.S. vom Saal, and J.M. Reinisch, Contiguity to male foetuses affects morphology and behaviour of female mice. Nature, 1977. 266(5604): p. 722-4.
+27. Ward, W.F., C.H. Karp, and H. Aceto, Developmental effects of the uterine environment: dependence on fetal sex in rats. Reproduction, 1977. 50(2): p. 269-274.
+28. Sehgal, A., et al., Impact of Skin-to-Skin Parent-Infant Care on Preterm Circulatory Physiology. The Journal of Pediatrics, 2020. 222: p. 91-97.e2.
+29. Bloch-Salisbury, E., et al., Kangaroo care: cardio-respiratory relationships between the infant and caregiver. Early Human Development, 2014. 90(12): p. 843-850.
+30. McGlashan, J.K., R.-J. Spencer, and J.M. Old, Embryonic communication in the nest: metabolic responses of reptilian embryos to developmental rates of siblings. Proceedings of the Royal Society B: Biological Sciences, 2012. 279(1734): p. 1709-1715.
+31. Noguera, J.C. and A. Velando, Bird embryos perceive vibratory cues of predation risk from clutch mates. Nature Ecology & Evolution, 2019. 3(8): p. 1225-1232.
+32. Aubret, F., et al., Heartbeat, embryo communication and hatching synchrony in snake eggs. Scientific Reports, 2016. 6: p. 23519.
+33. Johnson, J.B., et al., The influence of predator threat on the timing of a life-history switch point: predator-induced hatching in the southern leopard frog (Rana sphenocephala). Canadian Journal of Zoology, 2003. 81(9): p. 1608-1613.
+34. Ireland, D.H., A.J. Wirsing, and D.L. Murray, Phenotypically plastic responses of green frog embryos to conflicting predation risk. Oecologia, 2007. 152(1): p. 162-168.
+35. Allee, W.C., Studies in animal aggregations: Mass protection from fresh water for Procerodes, a marine turbellarian. Journal of Experimental Zoology, 1928. 50(2): p. 295-318.
+36. Allee, W.C. and E.S. Bowen, Studies in animal aggregations: Mass protection against colloidal silver among goldfishes. Journal of Experimental Zoology, 1932. 61(2): p. 185-207.
+37. Allee, W.C. and J.F. Schuett, Studies in Animal Aggregations: The Relation between Mass of Animals and Resistance to Colloidal Silver. Biological Bulletin, 1927. 53(5): p. 301-317.
+38. Ludford, R.J., Protozoa and the Evolution of the Gregarious Instinct. Nature, 1921. 107(2689): p. 332-332.
+39. DiSalvo, S., et al., In the social amoeba Dictyostelium discoideum, density, not farming status, determines predatory success on unpalatable Escherichia coli. BMC Microbiol, 2014. 14: p. 328.
+40. Daneshpour, H., P. van den Bersselaar, and H. Youk, Centimeter-scale quorum sensing dictates collective survival of differentiating embryonic stem cells. bioRxiv, 2021: p. 2020.12.20.423651.
+41. Shoshani, O., et al., Cell isolation induces fate changes of bone marrow mesenchymal cells leading to loss or alternatively to acquisition of new differentiation potentials. Stem Cells, 2014. 32(8): p. 2008-20.
+42. Johnson, K.E., et al., Cancer cell population growth kinetics at low densities deviate from the exponential growth model and suggest an Allee effect. PLOS Biology, 2019. 17(8): p. e3000399.
+43. Rubin, H., Ordered heterogeneity and its decline in cancer and aging. Advances in cancer research, 2007. 98: p. 117-47.
+44. Rubin, H., What keeps cells in tissues behaving normally in the face of myriad mutations? BioEssays, 2006. 28(5): p. 515-24.
+45. Rubin, H., M. Chow, and A. Yao, Cellular aging, destabilization, and cancer. Proc Natl Acad Sci USA, 1996. 93(5): p. 1825-30.
+46. Rubin, H., Cancer as a dynamic developmental disorder. Cancer Res, 1985. 45(7): p. 2935-42.
+47. Levin, M., Bioelectrical approaches to cancer as a problem of the scaling of the cellular self. Prog Biophys Mol Biol, 2021. 165: p. 102-113.
+48. Hornick, J.E., et al., Multiple follicle culture supports primary follicle growth through paracrine-acting signals. Reproduction, 2013. 145(1): p. 19-32.
+49. Davidson, L.A., A.M. Ezin, and R. Keller, Embryonic wound healing by apical contraction and ingression in Xenopus laevis. Cell Motility, 2002. 53(3): p. 163-176.
+50. Joshi, S.D., M. von Dassow, and L.A. Davidson, Experimental control of excitable embryonic tissues: three stimuli induce rapid epithelial contraction. Experimental Cell Research, 2010. 316(1): p. 103-114.
+51. Kim, Y., et al., Mechanochemical actuators of embryonic epithelial contractility. Proceedings of the National Academy of Sciences, 2014. 111(40): p. 14366-14371.
+52. Thioridazine. Tuberculosis, 2008. 88(2): p. 164-167.
+53. Thanacoody, R.H., Thioridazine: the good and the bad. Recent Pat Antiinfect Drug Discov, 2011. 6(2): p. 92-8.
+54. Daly, J.W., Forskolin, adenylate cyclase, and cell physiology: an overview. Adv Cyclic Nucleotide Protein Phosphorylation Res, 1984. 17: p. 81-9.
+55. Pai, V.P. and M. Levin, HCN2 channel-induced rescue of brain, eye, heart and gut teratogenesis caused by nicotine, ethanol and aberrant notch signalling. Wound Repair Regen, 2022.
+56. Pai, V.P., et al., HCN2 Channel-Induced Rescue of Brain Teratogenesis via Local and Long-Range Bioelectric Repair. Frontiers in Cellular Neuroscience, 2020. 14(136): p. 136.
+57. Pai, V.P., et al., HCN2 Rescues brain defects by enforcing endogenous voltage pre-patterns. Nature Communications, 2018. 9(1): p. 998.
+58. Pai, V.P., et al., Transmembrane voltage potential controls embryonic eye patterning in Xenopus laevis. Development, 2012. 139(2): p. 313-23.
+59. Levin, M., Bioelectric signaling: Reprogrammable circuits underlying embryogenesis, regeneration, and cancer. Cell, 2021. 184(4): p. 1971-1989.
+60. Harris, M.P., Bioelectric signaling as a unique regulator of development and regeneration. Development, 2021. 148(10).
+61. Bates, E., Ion Channels in Development and Cancer. Annu Rev Cell Dev Biol, 2015. 31: p. 231-47.
+62. Lalli, M.J., et al., Suppression of KATP currents by gene transfer of a dominant negative Kir6.2 construct. Pflugers Archiv : European journal of physiology, 1998. 436(6): p. 957-61.
+63. Miki, T., et al., Roles of ATP-sensitive K+ channels in cell survival and differentiation in the endocrine pancreas. Diabetes, 2001. 50 Suppl 1: p. S48-51.
+64. Aw, S., et al., The ATP-sensitive K(+)-channel (K(ATP)) controls early left-right patterning in Xenopus and chick embryos. Dev Biol, 2010. 346(1): p. 39-53.
+65. Manicka, S. and M. Levin, Minimal Developmental Computation: A Causal Network Approach to Understand Morphogenetic Pattern Formation. Entropy, 2022. 24(1): p. 107.
+66. Lai, G., et al., Virtual Creature Morphology - A Review. Computer Graphics Forum, 2021. 40(2): p. 659-681.
+67. Siregar, P., et al., Computational morphogenesis - Embryogenesis, cancer research and digital pathology. Biosystems, 2018. 169-170: p. 40-54.
+68. Siregar, P., et al., A general framework dedicated to computational morphogenesis Part I Constitutive equations. Biosystems, 2018. 173: p. 298-313.
+69. Andersen, T., R. Newman, and T. Otter, Shape homeostasis in virtual embryos. Artif Life, 2009. 15(2): p. 161-83.
+70. Andersen, T., R. Newman, and T. Otter. Development of virtual embryos with emergent self-repair in AAAI Fall 2006 Symposium on Developmental Systems. 2006. Arlington, VA.
+71. Stark, W.R., Amorphous computing: examples, mathematics and theory. Nat Comput, 2013. 12: p. 377-392.
+72. Ozturkeri, C. and C.G. Johnson, Evolution of Self-Assembling Patterns in Cellular Automata using Development. Journal of Cellular Automata, 2011. 6(4-5): p. 257-300.
+73. Gerlee, P., D. Basanta, and A.R. Anderson, Evolving homeostatic tissue using genetic algorithms. Progress in biophysics and molecular biology, 2011. 106(2): p. 414-25.
+74. Basanta, D., M. Miodownik, and B. Baum, The evolution of robust development and homeostasis in artificial organisms. PLoS Comput Biol, 2008. 4(3): p. e1000030.
+75. Akberdin, I.R., et al., A cellular automaton to model the development of primary shoot meristems of Arabidopsis thaliana. J Bioinform Comput Biol, 2007. 5(2B): p. 641-50.
+76. Hatzikirou, H. and A. Deutsch, Cellular automata as microscopic models of cell migration in heterogeneous environments. Curr Top Dev Biol, 2008. 81: p. 401-34.
+77. Markus, M., D. Bohm, and M. Schmick, Simulation of vessel morphogenesis using cellular automata. Math Biosci, 1999. 156(1-2): p. 191-206.
+78. Simpson, M.J., et al., Simulating invasion with cellular automata: connecting cell-scale and population-scale properties. Phys Rev E Stat Nonlin Soft Matter Phys, 2007. 76(2 Pt 1): p. 021918.
+79. Wolfram, S., Statistical mechanics of cellular automata. Reviews of Modern Physics, 1983. 55(3): p. 601-644.
+80. Chaté, H. and P. Manneville, Collective Behaviors in Spatially Extended Systems with Local Interactions and Synchronous Updating. Progress of Theoretical Physics, 1992. 87(1): p. 1-60.
+81. Gordon, D.M., Ant Encounters: Interaction Networks and Colony Behavior, ed. P.U. Press. 2010: Princeton University Press. 184.
+82. Rio, K.W., G.C. Dachner, and W.H. Warren, Local interactions underlying collective motion in human crowds. Proceedings of the Royal Society B: Biological Sciences, 2018. 285(1878): p. 20180611.
+83. Crutchfield, J.P., M. Mitchell, and R. Das The Evolutionary Design of Collective Computation in Cellular Automata. arXiv e-prints, 1998.
+84. Mitchell, M., J.P. Crutchfield, and P.T. Hraber, Evolving cellular automata to perform computations: mechanisms and impediments. Physica D: Nonlinear Phenomena, 1994. 75(1-3): p. 361-391.
+85. P. Gach, G.L. Kurdyumov, and L.A. Levin, One-Dimensional Uniform Arrays That Wash Out Finite Islands. Problems of Information Transmission, 1978. 14(3): p. 223-226.
+86. Schiffmann, Y., An hypothesis: phosphorylation fields as the source of positional information and cell differentiation--(cAMP, ATP) as the universal morphogenetic Turing couple. Progress in biophysics and molecular biology, 1991. 56(2): p. 79-105.
+87. Masse, K., et al., Purine-mediated signalling triggers eye development. Nature, 2007. 449(7165): p. 1058-62.
+88. Masse, K. and N. Dale, Purines as potential morphogens during embryonic development. Purinergic Signal, 2012. 8(3): p. 503-21.
+89. Sanderson, M.J., et al., Mechanisms and function of intercellular calcium signaling. Molecular and Cellular Endocrinology, 1994. 98(2): p. 173-187.
+90. Braet, K., et al., Calcium signal communication in the central nervous system. Biology of the Cell, 2004. 96(1): p. 79-91.
+91. Nesbitt, W.S., et al., Intercellular calcium communication regulates platelet aggregation and thrombus growth. Journal of Cell Biology, 2003. 160(7): p. 1151-1161.
+92. Junkin, M., et al., Mechanically induced intercellular calcium communication in confined endothelial structures. Biomaterials, 2013. 34(8): p. 2049-2056.
+93. Herrgen, L., O.P. Voss, and C.J. Akerman, Calcium-dependent neuroepithelial contractions expel damaged cells from the developing brain. Dev Cell, 2014. 31(5): p. 599-613.
+94. Kono, T., et al., Spontaneous oscillation and mechanically induced calcium waves in chondrocytes. Cell Biochem Funct, 2006. 24(2): p. 103-11.
+95. Xing, F., et al., Spatiotemporal Characteristics of Intercellular Calcium Wave Communication in Micropatterned Assemblies of Single Cells. ACS Appl Mater Interfaces, 2018. 10(3): p. 2937-2945.
+96. Scemes, E., S.O. Suadicani, and D.C. Spray, Chapter 7: Intercellular Calcium Wave Communication via Gap Junction Dependent and Independent Mechanisms, in Current Topics in Membranes, C. Peracchia, Editor. 1999, Academic Press. p. 145-173.
+97. Giaume, C. and L. Venance, Intercellular calcium signaling and gap junctional communication in astrocytes. GLIA, 1998. 24(1): p. 50-64.
+98. Bailey, S.J. and S.M. Hourani, Differential effects of suramin on P2-purinoceptors mediating contraction of the guinea-pig vas deferens and urinary bladder. Br J Pharmacol, 1994. 112(1): p. 219-25.
+
+80.
+Chaté, H. and P. Manneville, Collective Behaviors in Spatially Extended Systems with
+Local Interactions and Synchronous Updating. Progress of Theoretical Physics, 1992.
+87(1): p. 1-60.
+81.
+Gordon, D.M., Ant Encounters: Interaction Networks and Colony Behavior, ed. P.U.
+Press. 2010: Princeton University Press. 184.
+82.
+Rio, K.W., G.C. Dachner, and W.H. Warren, Local interactions underlying collective
+motion in human crowds. Proceedings of the Royal Society B: Biological Sciences, 2018.
+285(1878): p. 20180611.
+83.
+Crutchfield, J.P., M. Mitchell, and R. Das The Evolutionary Design of Collective
+Computation in Cellular Automata. arXiv e-prints, 1998.
+84.
+Mitchell, M., J.P. Crutchfield, and P.T. Hraber, Evolving cellular automata to perform
+computations: mechanisms and impediments. Physica D: Nonlinear Phenomena, 1994.
+75(1-3): p. 361-391.
+85.
+P. Gach, G.L. Kurdyumov, and L.A. Levin, One-Dimensional Uniform Arrays That Wash
+Out Finite Islands. Problems of Information Transmission, 1978. 14(3): p. 223-226.
+86.
+Schiffmann, Y., An hypothesis: phosphorylation fields as the source of positional
+information and cell differentiation--(cAMP, ATP) as the universal morphogenetic
+Turing couple. Progress in biophysics and molecular biology, 1991. 56(2): p. 79-105.
+87.
+Masse, K., et al., Purine-mediated signalling triggers eye development. Nature, 2007.
+449(7165): p. 1058-62.
+88.
+Masse, K. and N. Dale, Purines as potential morphogens during embryonic development.
+Purinergic Signal, 2012. 8(3): p. 503-21.
+89.
+Sanderson, M.J., et al., Mechanisms and function of intercellular calcium signaling.
+Molecular and Cellular Endocrinology, 1994. 98(2): p. 173-187.
+90.
+Braet, K., et al., Calcium signal communication in the central nervous system. Biology of
+the Cell, 2004. 96(1): p. 79-91.
+91.
+Nesbitt, W.S., et al., Intercellular calcium communication regulates platelet aggregation
+and thrombus growth. Journal of Cell Biology, 2003. 160(7): p. 1151-1161.
+92.
+Junkin, M., et al., Mechanically induced intercellular calcium communication in confined
+endothelial structures. Biomaterials, 2013. 34(8): p. 2049-2056.
+93.
+Herrgen, L., O.P. Voss, and C.J. Akerman, Calcium-dependent neuroepithelial
+contractions expel damaged cells from the developing brain. Dev Cell, 2014. 31(5): p.
+599-613.
+94.
+Kono, T., et al., Spontaneous oscillation and mechanically induced calcium waves in
+chondrocytes. Cell Biochem Funct, 2006. 24(2): p. 103-11.
+95.
+Xing, F., et al., Spatiotemporal Characteristics of Intercellular Calcium Wave
+Communication in Micropatterned Assemblies of Single Cells. ACS Appl Mater
+Interfaces, 2018. 10(3): p. 2937-2945.
+96.
+Scemes, E., S.O. Suadicani, and D.C. Spray, Chapter 7: Intercellular Calcium Wave
+Communication via Gap Junction Dependent and Independent Mechanisms, in Current
+Topics in Membranes, C. Peracchia, Editor. 1999, Academic Press. p. 145-173.
+97.
+Giaume, C. and L. Venance, Intercellular calcium signaling and gap junctional
+communication in astrocytes. GLIA, 1998. 24(1): p. 50-64.
+98.
+Bailey, S.J. and S.M. Hourani, Differential effects of suramin on P2-purinoceptors
+mediating contraction of the guinea-pig vas deferens and urinary bladder. Br J
+Pharmacol, 1994. 112(1): p. 219-25.
+99.
+Gil, M., et al., Effect of purinergic receptor antagonists suramin and theobromine on
+tumor-induced angiogenesis in BALB/c mice. Folia Biol (Praha), 1993. 39(2): p. 63-8.
+100. Hourani, S.M., D.A. Hall, and C.J. Nieman, Effects of the P2-purinoceptor antagonist,
+suramin, on human platelet aggregation induced by adenosine 5'-diphosphate. Br J
+Pharmacol, 1992. 105(2): p. 453-7.
+101. Urbanek, E., P. Nickel, and E. Schlicker, Antagonistic properties of four suramin-related
+compounds at vascular purine P2X receptors in the pithed rat. Eur J Pharmacol, 1990.
+175(2): p. 207-10.
+102. Lambrecht, G., et al., Structure-activity relationships of suramin and pyridoxal-5'-
+phosphate derivatives as P2 receptor antagonists. Curr Pharm Des, 2002. 8(26): p. 2371-
+99.
+103. Huang, Y. and J.W. Putney, Jr., Relationship between intracellular calcium store
+depletion and calcium release-activated calcium current in a mast cell line (RBL-1). J
+Biol Chem, 1998. 273(31): p. 19554-9.
+104. Collatz, M.B., R. Rüdel, and H. Brinkmeier, Intracellular calcium chelator BAPТА
+protects cells against toxic calcium overload but also alters physiological calcium
+responses. Cell Calcium, 1997. 21(6): p. 453-9.
+105. Thurman, C.L., J.S. Burns, and R.G. O'Neil, Identifying the Ca++ signalling sources
+activating chloride currents in Xenopus oocytes using ionomycin and thapsigargin.
+Cellular Signalling, 2000. 12(9): p. 629-635.
+106. Ferrari, M.B., J. Rohrbough, and N.C. Spitzer, Spontaneous calcium transients regulate
+myofibrillogenesis in embryonic Xenopus myocytes. Dev Biol, 1996. 178(2): p. 484-97.
+107. Abbracchio, M.P., et al., International Union of Pharmacology LVIII: update on the P2Y
+G protein-coupled nucleotide receptors: from molecular mechanisms and
+pathophysiology to therapy. Pharmacol Rev, 2006. 58(3): p. 281-341.
+108. Khakh, B.S., Molecular physiology of P2X receptors and ATP signalling at synapses. Nat
+Rev Neurosci, 2001. 2(3): p. 165-74.
+109. Wiedemar, N., D.A. Hauser, and P. Mäser, 100 Years of Suramin. Antimicrobial Agents
+and Chemotherapy, 2020. 64(3): p. e01168-19.
+110. Fraebel, D.T., et al., Evolution of Generalists by Phenotypic Plasticity. iScience, 2020.
+23(11): p. 101678.
+111. Moore, D.G., et al., Inform: Efficient Information-Theoretic Analysis of Collective
+Behaviors. Frontiers in Robotics and AI, 2018. 5(60): p. 60.
+112. Beloussov, L.V., et al., Local and global dynamics in collective movements of embryonic
+cells [English]. BioSystems, 2018(Computational, Theoretical, and Experimental
+Approaches to Embryogenesis, Eds.: Abir U. lgamberdiev, Richard Gordon, Bradly
+Alicea & Vladimir G. Cherdantsev): p. https://doi.org/10.1016/j.biosystems.2018.09.011.
+113. Camley, B.A. and W.J. Rappel, Physical models of collective cell motility: from cell to
+tissue. J Phys D Appl Phys, 2017. 50(11).
+114. Sole, R., et al., Synthetic collective intelligence. Biosystems, 2016. 148: p. 47-61.
+115. Trianni, V. and A. Campo, Fundamental Collective Behaviors in Swarm Robotics.
+Springer Handbook of Computational Intelligence, 2015: p. 1377-1394.
+116. Peak, D., et al., Evidence for complex, collective dynamics and emergent, distributed
+computation in plants. Proceedings of the National Academy of Sciences of the United
+States of America, 2004. 101(4): p. 918-22.
+117. Parodi, S. and G. Brambilla, Relationships between mutation and transformation
+frequencies in mammalian cells treated "in vitro" with chemical carcinogens. Mutat Res,
+1977. 47(1): p. 53-74.
+118. Pai, V.P., et al., HCN2 Rescues brain defects by enforcing endogenous voltage pre-
+patterns. Nature Communications, 2018. 9(1): p. 998.
+119. Lobikin, M., et al., Serotonergic regulation of melanocyte conversion: A bioelectrically
+regulated network for stochastic all-or-none hyperpigmentation. Science Signaling,
+2015. 8(397): p. ra99-ra99.
+120. Liu, J., et al., Coupling between distant biofilms and emergence of nutrient time-sharing.
+Science, 2017. 356(6338): p. 638-642.
+121. Zusman, D.R., Cell-Cell Interactions and Development in Myxococcus Xanthus. The
+Quarterly Review of Biology, 1984. 59(2): p. 119-138.
+122. Persson, I. and G. Andersson, Intraclutch Hatch Synchronization in Pheasants and
+Mallard Ducks. Ethology, 1999. 105(12): p. 1087-1096.
+123. Tanaka, S., et al., The mechanism controlling phenotypic plasticity of body color in the
+desert locust: some recent progress. Curr Opin Insect Sci, 2016. 17: p. 10-15.
+124. Ott, S.R. and S.M. Rogers, Gregarious desert locusts have substantially larger brains
+with altered proportions compared with the solitarious phase. Proceedings of the Royal
+Society B: Biological Sciences, 2010. 277(1697): p. 3087-3096.
+125. Mahall, B.E. and R.M. Callaway, Root communication among desert shrubs. Proceedings
+of the National Academy of Sciences of the United States of America, 1991. 88(3): p.
+874-876.
+126. McCleery, W.T., N.A. Mohd-Radzman, and V.A. Grieneisen, Root branching plasticity:
+collective decision-making results from local and global signalling. Curr Opin Cell Biol,
+2017. 44: p. 51-58.
+127. Ljubotina, M.K. and J.F. Cahill, Effects of neighbour location and nutrient distributions
+on root foraging behaviour of the common sunflower. Proceedings of the Royal Society
+B: Biological Sciences, 2019. 286(1911): p. 20190955.
+128. Miller, M.B. and B.L. Bassler, Quorum sensing in bacteria. Annual review of
+microbiology, 2001. 55(1): p. 165-199.
+129. Erez, Z., et al., Communication between viruses guides lysis-lysogeny decisions. Nature,
+2017. 541(7638): p. 488-493.
+130. Busse, S.M., P.T. McMillen, and M. Levin, Cross-limb communication during Xenopus
+hindlimb regenerative response: non-local bioelectric injury signals. Development, 2018.
+145(19).
+131. Pearson, R.A., et al., ATP released via gap junction hemichannels from the pigment
+epithelium regulates neural retinal progenitor proliferation. Neuron, 2005. 46(5): p. 731-
+44.
+132. Liu, X., et al., Gap junctions/hemichannels modulate interkinetic nuclear migration in the
+forebrain precursors. The Journal of neuroscience : the official journal of the Society for
+Neuroscience, 2010. 30(12): p. 4197-4209.
+133. Weissman, T.A., et al., Calcium waves propagate through radial glial cells and modulate
+proliferation in the developing neocortex. Neuron, 2004. 43(5): p. 647-61.
+134. De Pitta, M., et al., Multimodal encoding in a simplified model of intracellular calcium
+signaling. Cognitive processing, 2009. 10 Suppl 1: p. S55-70.
+135. Ng, C.K. and M.R. McAinsh, Encoding specificity in plant calcium signalling: hot-
+spotting the ups and downs and waves. Ann Bot (Lond), 2003. 92(4): p. 477-85.
+136. Romano, S.A., et al., An integrated calcium imaging processing toolbox for the analysis
+of neuronal population dynamics. PLoS Comput Biol, 2017. 13(6): p. e1005526.
+137. Dolmetsch, R.E., K. Xu, and R.S. Lewis, Calcium oscillations increase the efficiency and
+specificity of gene expression. Nature, 1998. 392(6679): p. 933-6.
+138. Li, L., et al., ATP6V1H regulates the growth and differentiation of bone marrow stromal
+cells. Biochem Biophys Res Commun, 2018. 502(1): p. 84-90.
+139. Fraire-Zamora, J.J. and M. Simons, The vacuolar ATPase is required for ERK-dependent
+wound healing in the Drosophila embryo. Wound Repair Regen, 2018. 26(1): p. 102-107.
+140. Sennoune, S.R., et al., V-ATPase regulates communication between microvascular
+endothelial cells and metastatic cells. Cellular and molecular biology, 2014. 60(1): p. 19-
+25.
+141. Monteiro, J., et al., V-ATPase Proton Pumping Activity Is Required for Adult Zebrafish
+Appendage Regeneration. PloS one, 2014. 9(3): p. e92594.
+142. Adams, D.S., A. Masi, and M. Levin, H+ pump-dependent changes in membrane voltage
+are an early mechanism necessary and sufficient to induce Xenopus tail regeneration.
+Development, 2007. 134(7): p. 1323-35.
+143. Adams, D.S., et al., Early, H+-V-ATPase-dependent proton flux is necessary for
+consistent left-right patterning of non-mammalian vertebrates. Development, 2006.
+133(9): p. 1657-1671.
+144. Lange, C., et al., The H(+) vacuolar ATPase maintains neural stem cells in the
+developing mouse cortex. Stem cells and development, 2011. 20(5): p. 843-50.
+145. Kawakubo, H., et al., A network of networks approach for modeling interconnected brain
+tissue-specific networks. Bioinformatics, 2019. 35(17): p. 3092-3101.
+146. Marques-Pita, M. and L.M. Rocha, Canalization and control in automata networks: body
+segmentation in Drosophila melanogaster. PLoS One, 2013. 8(3): p. e55946.
+147. Labavic, D. and H. Meyer-Ortmanns, Networks of coupled circuits: from a versatile
+toggle switch to collective coherent behavior. Chaos, 2014. 24(4): p. 043118.
+148. Strogatz, S.H. and I. Stewart, Coupled oscillators and biological synchronization. Sci
+Am, 1993. 269(6): p. 102-9.
+149. Talamali, M.S., et al., When less is more: Robot swarms adapt better to changes with
+constrained communication. Sci Robot, 2021. 6(56).
+150. Galton, F., Vox populi (the wisdom of crowds). Nature, 1907. 75: p. 450–451.
+151. McDowell, G., S. Rajadurai, and M. Levin, From cytoskeletal dynamics to organ
+asymmetry: a nonlinear, regulative pathway underlies left-right patterning. Philos Trans
+R Soc Lond B Biol Sci, 2016. 371(1710): p. 20150409.
+152. Mitchell, M., Complexity: A Guided Tour. 2009: Oxford University Press.
+153. Mitchell, M., A complex-systems perspective on the "computation vs. dynamics" debate
+in cognitive science. Proceedings of the Twentieth Annual Conference of the Cognitive
+Science Society, 1998: p. 710-715.
+154. Foster, S., et al., Single cell RNA-seq in the sea urchin embryo show marked cell-type
+specificity in the Delta/Notch pathway. Mol Reprod Dev, 2019. 86(8): p. 931-934.
+155. He, P., et al., The changing mouse embryo transcriptome at whole tissue and single-cell
+resolution. Nature, 2020. 583(7818): p. 760-767.
+156. Ilsley, G.R., et al., Finding cell-specific expression patterns in the early Ciona embryo
+with single-cell RNA-seq. Sci Rep, 2020. 10(1): p. 4961.
+157. Junkin, M., et al., Mechanically induced intercellular calcium communication in confined
+endothelial structures. Biomaterials, 2013. 34(8): p. 2049-56.
+158. Nikolits, I., et al., Towards Physiologic Culture Approaches to Improve Standard
+Cultivation of Mesenchymal Stem Cells. Cells, 2021. 10(4).
+159. Place, T.L., F.E. Domann, and A.J. Case, Limitations of oxygen delivery to cells in
+culture: An underappreciated problem in basic and translational research. Free Radic
+Biol Med, 2017. 113: p. 311-322.
+160. Verweij, F.J., et al., Live Tracking of Inter-organ Communication by Endogenous
+Exosomes In Vivo. Dev Cell, 2019. 48(4): p. 573-589 e4.
+161. Krause, M., et al., Exosomes as secondary inductive signals involved in kidney
+organogenesis. J Extracell Vesicles, 2018. 7(1): p. 1422675.
+162. Kramer-Albers, E.M., Exosomes deliver ROS for regeneration. Nat Cell Biol, 2018.
+20(3): p. 225-226.
+163. Moore, R.S., et al., The role of the Cerl transposon in horizontal transfer of
+transgenerational memory. Cell, 2021. 184(18): p. 4697-4712 e18.
+164. Nicolas, C.T., et al., Ex Vivo Cell Therapy by Ectopic Hepatocyte Transplantation Treats
+the Porcine Tyrosinemia Model of Acute Liver Failure. Mol Ther Methods Clin Dev,
+2020. 18: p. 738-750.
+165. Oldani, G., S. Lacotte, and C. Toso, Chimeric xenotransplantation. Curr Opin Organ
+Transplant, 2019. 24(5): p. 543-546.
+166. Cousin, H., Cranial Neural Crest Transplants. Cold Spring Harb Protoc, 2018. 2018(3):
+p. pdb prot097402.
+167. Guo, Z., et al., Mesenchymal stem cells reprogram host macrophages to attenuate
+obliterative bronchiolitis in murine orthotopic tracheal transplantation. Int
+Immunopharmacol, 2013. 15(4): p. 726-34.
+168. Elliott, K.L., D.W. Houston, and B. Fritzsch, Transplantation of Xenopus laevis Tissues
+to Determine the Ability of Motor Neurons to Acquire a Novel Target. PloS one, 2013.
+8(2): p. e55541.
+169. Shimizu, H., Transplantation analysis of developmental mechanisms in Hydra. Int J Dev
+Biol, 2012. 56(6-8): p. 463-72.
+170. Strandburg-Peshkin, A., et al., GROUP DECISIONS. Shared decision-making drives
+collective movement in wild baboons. Science, 2015. 348(6241): p. 1358-61.
+171. Rosenthal, S.B., et al., Revealing the hidden networks of interaction in mobile animal
+groups allows prediction of complex behavioral contagion. Proc Natl Acad Sci USA,
+2015. 112(15): p. 4690-5.
+172. Bazazi, S., et al., Collective motion and cannibalism in locust migratory bands. Curr
+Biol, 2008. 18(10): p. 735-9.
+173. Couzin, I.D., et al., Collective memory and spatial sorting in animal groups. J Theor
+Biol, 2002. 218(1): p. 1-11.
+174. Power, D.A., et al., What can ecosystems learn? Expanding evolutionary ecology with
+learning theory. Biol Direct, 2015. 10: p. 69.
+175. Frank, S.A., Natural selection. III. Selection versus transmission and the levels of
+selection. J Evol Biol, 2012. 25(2): p. 227-43.
+176. Okasha, S., Evolution and the levels of selection. 2006, Oxford
+
+156. Ilsley, G.R., et al., Finding cell-specific expression patterns in the early Ciona embryo
+with single-cell RNA-seq. Sci Rep, 2020. 10(1): p. 4961.
+157. Junkin, M., et al., Mechanically induced intercellular calcium communication in confined
+endothelial structures. Biomaterials, 2013. 34(8): p. 2049-56.
+158. Nikolits, I., et al., Towards Physiologic Culture Approaches to Improve Standard
+Cultivation of Mesenchymal Stem Cells. Cells, 2021. 10(4).
+159. Place, T.L., F.E. Domann, and A.J. Case, Limitations of oxygen delivery to cells in
+culture: An underappreciated problem in basic and translational research. Free Radic
+Biol Med, 2017. 113: p. 311-322.
+160. Verweij, F.J., et al., Live Tracking of Inter-organ Communication by Endogenous
+Exosomes In Vivo. Dev Cell, 2019. 48(4): p. 573-589 e4.
+161. Krause, M., et al., Exosomes as secondary inductive signals involved in kidney
+organogenesis. J Extracell Vesicles, 2018. 7(1): p. 1422675.
+162. Kramer-Albers, E.M., Exosomes deliver ROS for regeneration. Nat Cell Biol, 2018.
+20(3): p. 225-226.
+163. Moore, R.S., et al., The role of the Cerl transposon in horizontal transfer of
+transgenerational memory. Cell, 2021. 184(18): p. 4697-4712 e18.
+164. Nicolas, C.T., et al., Ex Vivo Cell Therapy by Ectopic Hepatocyte Transplantation Treats
+the Porcine Tyrosinemia Model of Acute Liver Failure. Mol Ther Methods Clin Dev,
+2020. 18: p. 738-750.
+165. Oldani, G., S. Lacotte, and C. Toso, Chimeric xenotransplantation. Curr Opin Organ
+Transplant, 2019. 24(5): p. 543-546.
+166. Cousin, H., Cranial Neural Crest Transplants. Cold Spring Harb Protoc, 2018. 2018(3):
+p. pdb prot097402.
+167. Guo, Z., et al., Mesenchymal stem cells reprogram host macrophages to attenuate
+obliterative bronchiolitis in murine orthotopic tracheal transplantation. Int
+Immunopharmacol, 2013. 15(4): p. 726-34.
+168. Elliott, K.L., D.W. Houston, and B. Fritzsch, Transplantation of Xenopus laevis Tissues
+to Determine the Ability of Motor Neurons to Acquire a Novel Target. PloS one, 2013.
+8(2): p. e55541.
+169. Shimizu, H., Transplantation analysis of developmental mechanisms in Hydra. Int J Dev
+Biol, 2012. 56(6-8): p. 463-72.
+170. Strandburg-Peshkin, A., et al., GROUP DECISIONS. Shared decision-making drives
+collective movement in wild baboons. Science, 2015. 348(6241): p. 1358-61.
+171. Rosenthal, S.B., et al., Revealing the hidden networks of interaction in mobile animal
+groups allows prediction of complex behavioral contagion. Proc Natl Acad Sci USA,
+2015. 112(15): p. 4690-5.
+172. Bazazi, S., et al., Collective motion and cannibalism in locust migratory bands. Curr
+Biol, 2008. 18(10): p. 735-9.
+173. Couzin, I.D., et al., Collective memory and spatial sorting in animal groups. J Theor
+Biol, 2002. 218(1): p. 1-11.
+174. Power, D.A., et al., What can ecosystems learn? Expanding evolutionary ecology with
+learning theory. Biol Direct, 2015. 10: p. 69.
+175. Frank, S.A., Natural selection. III. Selection versus transmission and the levels of
+selection. J Evol Biol, 2012. 25(2): p. 227-43.
+176. Okasha, S., Evolution and the levels of selection. 2006, Oxford
+Oxford; New York: Oxford University Press.
+177. Pezzulo, G. and M. Levin, Re-membering the body: applications of computational
+neuroscience to the top-down control of regeneration of limbs and other complex organs.
+Integr Biol (Camb), 2015. 7(12): p. 1487-517.
+178. Friston, K., et al., Knowing one's place: a free-energy approach to pattern regulation. J R
+Soc Interface, 2015. 12(105).
+179. Fields, C. and M. Levin, Regulative development as a model for origin of life and
+artificial life studies. Biosystems, 2023. 229: p. 104927.
+180. Nishimura, O., et al., Unusually Large Number of Mutations in Asexually Reproducing
+Clonal Planarian Dugesia japonica. PLOS ONE, 2015. 10(11): p. e0143525.
+181. Bantle, J.A., et al., Further validation of FETAX: evaluation of the developmental toxicity
+of five known mammalian teratogens and non-teratogens. Drug and chemical toxicology,
+1990. 13(4): p. 267-82.
+182. Fort, D.J., B.L. James, and J.A. Bantle, Evaluation of the developmental toxicity of five
+compounds with the frog embryo teratogenesis assay: Xenopus (FETAX) and a metabolic
+activation system. Journal of applied toxicology : JAT, 1989. 9(6): p. 377-88.
+183. Dawson, D.A., et al., Developmental toxicity testing with FETAX: evaluation of five
+compounds. Drug & Chemical Toxicology, 1989. 12(1): p. 67-75.
+184. Bantle, J.A., D.J. Fort, and B.L. James, Identification of Developmental Toxicants Using
+the Frog Embryo Teratogenesis Assay Xenopus (Fetax). Hydrobiologia, 1989. 188: p.
+577-585.
+185. Levin, M., The wisdom of the body: future techniques and approaches to morphogenetic
+fields in regenerative medicine, developmental biology and cancer. Regenerative
+medicine, 2011. 6(6): p. 667-73.
+186. Mathews, J. and M. Levin, The body electric 2.0: recent advances in developmental
+bioelectricity for regenerative and synthetic bioengineering. Curr Opin Biotechnol, 2018.
+52: p. 134-144.
+187. Sive, H.L., R.M. Grainger, and R.M. Harland, Early development of Xenopus laevis : a
+laboratory manual. 2000, Cold Spring Harbor, N.Y: Cold Spring Harbor Laboratory
+Press. ix, 338 pages : illustrations.
+188. Nieuwkoop, P.D., NORMAL TABLE OF XENOPUS LAEVIS (DAUDIN). 1967.
+189. Chen, S., et al., fastp: an ultra-fast all-in-one FASTQ preprocessor. Bioinformatics,
+2018. 34(17): p. 1884-1890.
+190. Langmead, B. and S.L. Salzberg, Fast gapped-read alignment with Bowtie 2. Nature
+Methods, 2012. 9(4): p. 357-359.
+191. Li, H., et al., The Sequence Alignment/Map format and SAMtools. Bioinformatics, 2009.
+25(16): p. 2078-9.
+192. Robinson, M.D. and A. Oshlack, A scaling normalization method for differential
+expression analysis of RNA-seq data. Genome Biology, 2010. 11(3): p. R25.
+193. Law, C.W., et al., voom: precision weights unlock linear model analysis tools for RNA-
+seq read counts. Genome Biology, 2014. 15(2): p. R29.
+194. Leek, J.T. and J.D. Storey, Capturing heterogeneity in gene expression studies by
+surrogate variable analysis. PLoS Genet, 2007. 3(9): p. 1724-35.
+195. Ritchie, M.E., et al., limma powers differential expression analyses for RNA-sequencing
+and microarray studies. Nucleic Acids Res, 2015. 43(7): p. e47.

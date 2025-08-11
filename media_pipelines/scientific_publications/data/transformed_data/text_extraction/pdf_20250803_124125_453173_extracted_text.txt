@@ -1,0 +1,393 @@
+Uncertainty minimization and pattern
+recognition in Volvox carteri and V. aureus
+Franz Kuchling, Isha Singh, Mridushi Daga, Susan Zec, Alexandra Kunen and
+Michael Levin
+Allen Discovery Center, Tufts University, Medford, MA, USA
+
+[PAGE 1] 1. Introduction
+Living organisms are good at detecting, responding to and adapting to
+variable environments, not just on evolutionary time scales but also via short-
+and long-term adaptive organismal behaviour. Interestingly, this does not
+require brains or advanced nervous systems [1-4]. Examples of learning and
+adaptive behavioural responses in aneural organisms include context-
+dependent motility [5,6], stress response-triggered learning [7,8], anticipation
+[8], long-range spatial decision-making [9] and associative learning [10] in a
+range of microbial organisms. Even embryophytes, despite their apparent lack
+of dynamic motility, possess highly complex adaptive responses through their
+fast and complex internal calcium signalling patterns [11]. Similarly, in
+vascular plants, synaptic adhesion domains and action potentials [12,13] yield
+self-identity and recognition capabilities through their use of
+plant-specific synapses in Cayratia japonica [12], and can detect acoustic
+vibrations from feeding caterpillars and subsequent elicitation of chemical
+defences in Arabidopsis thaliana [14]. Furthermore, the slime mould Physarum
+detects material properties of its environment via pulsatile mechanosensing
+and makes growth decisions based on information gleaned about objects at
+long range [9]. In each of these examples, adaptation to environmental
+conditions occurs through a change of organismal behaviour, or, in a broader
+
+[PAGE 2] sense, entering a different organismal or cellular active state. These adaptations range from changes of motility (direction and
+amplitude), physical properties such as chemical release (as a defence in plants), mechanical tension (which can regulate
+organismal shape or orientation, especially in plants), bioelectric state (modulated calcium signalling patterns), metabolic state
+(such as increased glucose consumption and biosurfactant production in response to ultrasonication in Lactobacillus plantarum
+[15]) to transcriptional changes leading to the expression of proteins that help the organism to deal with its new environment
+(such as heat shock proteins in high stress environments for example, and even cell identity changes in multi-cellular organ-
+isms).
+
+The question at the heart of this study is what is the fundamental basis behind the emergence of these various modes of
+pattern detection that are so crucial to each form of basal cognition? Attempts to devise a unified framework for answering
+this question that complies with evolutionary theory and is supported by direct experimental evidence are missing. On the one
+hand, archaeological evidence as summarized by Peter Godfrey-Smith allows the recreation of a cognitive lineage in evolution
+as an arms race of action and detection [16] but falls short of providing a theoretical framework that explains its principal
+emergence. On the other hand, theoretical work by Terrance Deacon links goal-directed, 'teleodynamic' properties in biological
+organisms to the most basic forms of statistical physics [17], but fails to provide experimentally falsifiable predictions of cellular
+and organismal behaviour. Our work was hence motivated by two interrelated questions: how far down the evolutionary scale
+of complexity do organisms exhibit the ability to detect novel environmental patterns, and do they have expectations that may
+or may not be met? What frameworks can help us understand these capacities in novel substrates?
+
+The ability to detect environmental patterns and distinguish them from random noise is considered a basic component of
+intelligence—the inference of a general pattern from particular experiences. Such a pattern can serve as the primitive basis of
+counterfactuals because the recognition of a pattern endows an organism with expectations for what should happen next before
+it happens. While ubiquitous seasonal and day-night cycles provide a highly reliable environmental pattern that is constant
+across generations (and thus can serve as a stable target for selection), it is unclear how much individual aneural organisms can
+detect and adapt to novel and more variable patterns on much shorter time scales.
+
+Changes in a cell's extracellular environment can affect both its current physiological states and its future states, both
+physiological and genetic. An example of environmentally triggered immediate changes in current cellular active states is
+seen in basic phototactic organisms, where light-induced protein conformation states coupled with changes in flagellar beating
+rates result in movement towards or away from light stimuli. The short-term changes in light sensitivity and downstream
+flagellar beating responsivity that are the core of this ability to orient towards light and maintain direction are referred to as
+photoadaptation [18]. While the mechanisms of delayed adaptive responses of light-sensitive cells are fairly well understood in
+the human visual system as being mediated through intracellular signalling coupled to transcription, translation and epigenetic
+modifications, photoadaptation, especially in response to complex activation patterns, has not been well studied in simpler
+phototactic organisms such as Volvox.
+
+Work over the last decade has shown that patterned environmental stimuli that differ only in the frequency of presentation
+to the organism can elicit distinct downstream signalling events and functional (behavioural) outcomes in many kinds of
+cellular systems. For example, pulsatile variation of osmotic concentrations leads to severe yeast growth inhibition as a result
+of frequency-specific activation and refractory relationship in the mitogen-activated protein kinase (MAPK) pathway, but only
+at specific frequencies of osmotic oscillation [19]. A similar phenomenon is presented by using optogenetics to dynamically
+activate signalling pathways [20], where optogenetic activation of epidermal growth factor (EGF) to vary the temporal dynamics
+of extracellular signal-regulated kinase (ERK) signalling leads to temporal variation in activation pulse frequency induction of
+ERK signalling that not only affects the amount of transcription and the subsequent translation of a target gene but can also
+trigger transcription of different target genes [21,22]. In Volvox, simple sinusoidal light stimulation patterns have been used
+to measure flagellar regulation [18], but not their effect on the overall colony behaviour and not in contrast to other types of
+activation patterns necessary to fully deduce complex organismal behaviour adaption.
+
+Physiological bottom-up models employed in the examples above require a high degree of detailed knowledge of the
+underlying mechanistic biochemical pathway activation and require a high degree of experimental accessibility to those
+molecular pathways to be useful, which is not always possible. Thus, here we aimed to understand these phenomena from
+a top-down perspective focusing on the response of the system to patterns and information content in its environment-by
+generalizing a theoretical framework of adaptive responses to dynamic inputs reminiscent of higher level information process-
+ing common to many cellular systems. Using a cognitive Bayesian framework based on our earlier work [23] and that of
+Karl Friston and others in the field [24-29], we can formulate a model of cellular beliefs (or predictions) that encode what
+type of signals the cell expects to receive at any given point in time. These cellular beliefs encompass all the receptors and
+cellular machinery currently expressed and represent the cell's best estimate of which physiological and transcriptional state
+will make it the most adaptable to current and anticipated environmental effects [23,30]. Regulatory output aimed at modifying
+the signalling activity could hence be interpreted as the effort to minimize uncertainties in measurements of the environment
+compared with expected signalling inputs. Mechanistically, cellular expectations for input signalling activity stem from the state
+of the internal signalling pathway dynamics of the cell, itself encoded by transcriptional dynamics (with changes occurring
+in the range of minutes to hours) on the one hand, but also by more short-term state changes in protein conformations (e.g.
+opening and closing of ion channels and activation and internalization of receptor proteins) and activity profiles (ion inflow,
+propagation and available storage, such as encompassed through calcium dynamics) on the other. The ensuing transcriptional
+outputs and functional changes of proteins realize a constant modification of physiological and biophysical parameters affecting
+signalling transmission.
+
+[PAGE 3] The uncertainty minimization employed by the cells as dictated by Bayesian inference [23] predicts that random (and hence
+unpredictable) dynamic stimulation will elicit a stronger but less directed cellular physiological and transcriptional response
+than a regular, predictable dynamic stimulation, resulting in an aversion to irregular environments and preference for more
+regular ones [31]. Specifically, this idea has been developed in a rich body of work on surprise minimization [25,27,32-34],
+which emphasizes the drive of living beings to continuously improve their internal models of their environments and of
+themselves. These ideas are frequently discussed with respect to neural brain mechanisms; however, given the wide conserva-
+tion of signalling mechanisms and algorithms across neural and non-neural cells [35,36], it becomes especially interesting to ask
+whether systems with no brains, and no neurons, can likewise support expectations about the future born of pattern inference
+and exhibit responses which reveal that these expectations cannot be met in random environments.
+
+
+Here, we test the hypothesis that aneural organisms can display actionable pattern recognition in general and uncertainty
+minimization in particular. We chose to investigate this using the photoadaptive response in two different species of the
+chlorophyte green algae Volvox (V. carteri and V. aureus) as a readily measurable adaptive behaviour to an external physical
+stimulus that can be varied in any temporal pattern. We simulated different light stimulation patterns (including crucially
+randomized ones) in our model and tested their predictions for a variable effect on phototactic modulation in V. carteri. We
+designed an experimental platform that allows us to compare Volvox phototaxis towards two distinct regimes of light stimuli
+with different patterns of light pulsation, exploring mechanisms and long-term effects on the organism. We complement the
+phototactic trajectories obtained from these experiments with gain-of-function drug experiments focused on shifting phototactic
+biases based on both our knowledge of underlying molecular pathways and their effect on their information-processing
+modalities. We furthermore also tested whether Volvox exhibit short-term memory towards past light stimuli in terms of their
+phototactic paths, which would provide them with further crucial neural-like capabilities. We also tested whether Volvox's
+photosynthesis would also be affected by dynamic light patterns in an attempt to detect metabolic manifestations of uncertainty
+minimization in Volvox. Finally, to begin exploring the potential for training of Volvox phototaxis to desired light pattern biases,
+we examined whether patterned electric shocks could manipulate Volvox responses to patterned light stimuli. Taken together,
+our study aims to reveal capacities that would not normally be expected in algae and provide a proof-of-concept for searching
+for such capacities in a wide range of minimal and synthetic model systems that not only links existing theories of basal
+cognition to experimental evidence but crucially provides us with a testable behavioural directive of simple organisms and cells
+(uncertainty minimization) that can be applied to yield novel methods of intervention from medicine to ecology.
+
+[PAGE 3] 2. Methods
+
+[PAGE 3] 2.1. Culture conditions and strains
+Volvox carteri eve strain (female) was obtained from Bradley J. S. C. Olsen Lab and grown in standard Volvox media (SVM), while
+V. aureus was obtained from Carolina (catalogue number 152655) and cultured exclusively in AlgaGro®. Both strains are
+incubated in a Peltier cooled incubator (catalogue number 3915FL) at 30°C under a 14 h light and 10 h dark cycle [37]. A
+75 W light-emitting diode (LED) Grow Panel (model number HY-MD-D169-S-75W-RB-US) was used inside the incubator to
+maintain the light and dark cycles. SVM media is prepped following a previously tested recipe by the Olson Lab (2017).
+AlgaGro® medium is purchased in 50× concentrate from Carolina (catalogue number 153758) and diluted in Poland Spring
+water per instructions from the manufacturer. Every time new Volvox are used for experiments, the entire culture flask is gently
+mixed and placed in front of a light source for at least 5 min to allow active Volvox to move to one side of the flask for easy
+collection of 1-2 ml of between 500 and 2000 viable Volvox colonies.
+
+[PAGE 3] 2.2. Light-stimulation apparatus and imaging
+Initial experiments with V. aureus were done in ABS plastic chambers printed by a fused deposition modelling (FDM) three-
+dimensional printer, with clear polystyrene plastic glued to the sides for light access.
+Light stimulation was achieved using standard through hole blue LEDs (from Mouser Electronics, catalogue number
+630-HLMP-CB1A-XY0DD) with a wavelength of 470 nm and an opening angle of 15°, controlled with an LED driver from
+Thorlabs (part number: LEDD1B), dialled to power output 1 mm from the LED of 2 mW. To calibrate the LEDs to equal outputs,
+LEDs were pre-sorted to similar outputs and then soldered into a parallel circuit with a potentiometer in series with every
+individual LED. Then, light intensity was measured using a photometer probe from Thorlabs (part number: PM130D) at two
+distances, right at the LED and at 6 cm away from it, after which the angle of the LED and the resistance of the potentiometer
+were adjusted to achieve a good match of intensities from row to row, as well as from side to side.
+Quantification in this set-up was achieved through a collection of V. aureus colonies in the different sections with subsequent
+manual counting using still images of the collected colony ensembles. Plots of phototactic biases using the set-up shown in
+figure 1 only consider the approximate position of V. aureus in the end sections of the chambers that show a more pronounced
+bias due to the length of the chamber when compared with the second set-up shown in figure 2, which allows for less
+swimming back and forth.
+All light experiments performed on V. carteri used SK9822 individually addressable RGB LEDs with total light outputs above
+the LED at 2 mW each. Light patterns were programmed using Arduino Nano Controllers (code available at https://github.com/
+Fw-Franz/Volvox). Housings for adaptive cultures were printed with ventilation holes reaching from underneath upwards
+between LEDs and culture flasks to aid in heat distribution. Phototactic experiments were performed with only the blue light
+from the LED at 460 nm, while growth experiments and oxygen measurements were performed at both blue and red (650 nm)
+light to match incubator conditions.
+
+[PAGE 4] Using the MCAM Gigapixel Multi-Camera array of 24 cameras, up to 48 individual chambers (two per camera) can be
+observed at high spatio-temporal resolution simultaneously with individual light pattern stimulation for each chamber.
+Three-dimensional printed clear dual chambers with an optically opaque divider inserted between the two chamber halves
+to reduce light contamination from the sides are inserted into the device for experiments with V. carteri and are removable.
+Autofluorescence of V. carteri was detected at a peak wavelength of 695 nm using a near IR long pass filter with a pass-through
+wavelength of 685 nm, where the excitation light was the blue light from the LED light at 460 nm. Prior to phototactic
+experiments in the MCAM camera array, V. carteri were dark adapted for at least 2 min.
+
+
+[PAGE 4] 2.3. Computational tracking and analysis
+To analyse the movement of V. carteri, a Python (v. 3.10) program was created that utilizes the trackpy library (version
+0.4.2, https://soft-matter.github.io/trackpy/v0.4.2/) to track the particle trajectories. The program takes in multiple parameters
+including, but not limited to, the following: size, speed and integrated light intensity of each V. carteri colony, x and y midpoints
+of the chamber and the number of V. carteri colonies. Additionally, the program can adjust for V. carteri that are stationary
+during most of the tracking, so that they can be counted separately for further analysis or excluded in the counting analysis
+to remove V. carteri that are stuck to a surface due to their flagella getting caught to imperfections on the chamber surface.
+As these imperfections have been reduced heavily by sanding and clear coating of the chambers, this only applies to a small
+proportion of V. carteri and no bias towards different light patterns was observed, as the mechanism is unrelated to the light. The
+program then takes the filtered information and determines the precise position within each chamber of each V. carteri colony
+in each time frame. As photo biases did not change drastically over time, we used the average position over the duration of the
+experiment for statistics and plotting.
+
+[PAGE 5] 2.4. Simulations of cellular photoadaptation in V. carteri
+Simulations of cellular photoadaption in V. carteri in response to different light patterns employ the empirically determined
+model developed by Drescher et al. [18]. While we refer to their work for more detail on the model, we proceed to provide a
+short summary of our implementation of their model.
+The model by Drescher et al. is centred around a system of coupled differential equations governing the photoresponse of
+individual flagella pairs on the surface of V. carteri colony spheres, which are of the form
+
+$dp/dt = (s-h)H(s-h) - P/T_r$
+
+$dh/dt = (s-h)/T_a$  (2.1)
+
+where s(t) is the dimensionless light stimulus with s∈ [0,1], p(t) is the photoresponse variable that correlates with light
+activation, h(t) is a photoadaptation variable representing the hidden biochemistry, H is the Heaviside step function that ensures
+a reduction in light cannot increase flagellar beating above base levels and finally $T_a$ and $T_r$ are the adaptive and response time
+constants governing the temporal aspects of photoadaptation.
+From this, the measurable fluid speed u generated by the flagella pairs just above the surface of the colony is calculated by
+solving the pair of differential equations above using the function solve_ivp from Python package scipy.integrate, with
+
+$u = (1 – \beta p)$, (2.2)
+
+where $u_0$ is the base fluid speed (experimentally determined by Drescher et al. at 81 µm s¯¹) and β > 0 quantifies the amplitude
+of decrease in fluid speed in response to light, which varies across the colony surface, but is set to 1 in our calculations for
+simplicity without loss of generality.
+
+[PAGE 5] 2.5. Electric shock treatment
+
+[PAGE 5] 2.5.1. Chamber configuration
+A three-dimensional printed 30 × 20 × 2 mm chamber as shown in figure 3 was resin printed. A platinum iridium wire (catalogue
+number AA10056BS) electrodes of 0.5 mm (diameter) were inserted through holes printed on either side of the chamber
+allowing 1 mm of the electrode to be exposed within the active area of the chamber. An additional chamber stage was printed
+to act as a holder for a strip of LED lights. The lights were controlled through an Arduino microcontroller, with programs
+determining the intensity of light.
+
+[PAGE 5] 2.5.2. Voltage and current control
+Current was delivered using an LED driver (part number LEDD1B), the current limit was set at 0.2 A and dialled until the
+voltage in the chamber was measured at the desired level of 3 V, then balanced with resistors in parallel to lower the actual
+current going through the chamber to non-destructive levels. Measurements were done using a multimeter. An Arduino Nano
+microcontroller was used to modulate the current. Fixed pulse current was delivered at 1 Hz frequency, and the same random
+pulse pattern was used for the random light pulse sequences.
+
+[PAGE 5] 2.6. Long-term light pattern treatments and oxygen measurements
+Long-term light pattern exposure of V. carteri was achieved in dome-shaped three-dimensional printed devices with inbuilt
+LEDs and ventilation holes on the bottom, and open space towards the top of the culture flask, but shielding the culture flasks
+from the rest of the incubator lights during treatment. For the long-term experiments, a V. carteri culture was expanded into
+four cultures, one of which was kept under normal incubator conditions, while the remaining three were inserted into the
+aforementioned dome device under the same fixed 1 Hz, random and continuous light patterns as used in the phototactic
+experiments. Overall LED output was set to the same level as the incubator lights using the photometer from above. These V.
+carteri cultures alone were grown in the AlgaGro® for increased stability.
+For measurements of oxygen production of V. carteri in response to light, we used the Firesting o2® apparatus from
+pyrotechnics, which measures oxygen concentration in a vial in gaseous or aqueous form by scanning an oxygen-sensitive
+sensor spot inside the glass vial from the outside with an optical fibre probe. Volvox carteri cultures were expanded 2 days
+before the start of treatment into four flasks of 200 ml each, then, before the start of treatment, combined in a conical tube,
+gently inverted to thoroughly mix the cultures and then separated into four new flasks. One was left as control in the incubator,
+while the other three were exposed to light in the dome-shaped three-dimensional printed devices described above. Oxygen
+measurements were taken before treatment, and then after 6, 24, 30 and 48 h, respectively, by slowly and gently swirling each
+flask to mix the media but not to agitate and add more oxygen, then gently and extremely slowly transferring 5 ml using a
+Pasteur pipette of one culture into the oxygen measurement vial with a temperature probe in it for temperature compensation
+of oxygen concentration measurement.
+
+[PAGE 6] 3. Results
+
+[PAGE 6] 3.1. Volvox distinguish between patterned and random light stimuli
+To investigate the ability of Volvox, starting with V. aureus, to detect and differentially react to temporal light patterns, we
+designed three-dimensional printed chambers of different sizes, consisting of isolated channels with clear ends, each end
+illuminated by a separately microcontrolled LED, with manual counting (figure 1) and camera-based tracking (figure 2). Based
+on our central hypothesis of surprise minimization in aneural organisms, we tested the prediction that a phototactic organism
+such as V. aureus would reveal a preference for order (or a dislike of unpredictability) by preferentially moving towards light
+stimulation patterns of higher regularity (and hence predictability). When we exposed V. aureus to an overall equal amount
+of light over time but at a regular, fixed light pulse interval versus a randomized, irregular light pattern (see figure 4), a
+significantly larger proportion of V. aureus were detected in the section adjacent to the fixed interval stimulation than in the
+section adjacent to the random stimulation (p < 0.05, Wilcoxon signed-rank test), in accordance with our predictions based on
+uncertainty minimization.
+Because of this observed preferential movement of V. aureus to the regular 1 Hz light pattern when opposed with a random-
+ized light pulse pattern of similar average pulse length, we conclude that V. aureus can distinguish patterned light stimuli from
+random ones, a fundamental building block for intelligent information processing [38,39].
+To minimize sources of error and bias from manually counting Volvox and to get real-time data on Volvox photoadaptation for
+downstream data mining, we also designed and tested a system that combines highly transparent smaller chambers (reducing
+the effect of light scattering) with a high-resolution camera system. For this system, we chose exclusively V. carteri, as we have a
+more detailed understanding of its photoadaptive mechanism on which we can rely to interpret the tracking data gained from
+our experiments using this set-up. We used this apparatus to test the same hypothesis on another species of Volvox, V. carteri,
+which is evolutionarily distant from V. aureus by an estimated 75 Myr [40].
+Our results in this automated platform show that, as for V. aureus, V. carteri also exhibits a photoadaptive bias towards a
+regular light pulse pattern versus a random one (see figure 4a), as over time, more V. carteri swam closer to the patterned
+stimulus side than to the randomized stimulus side (p < 0.01). From this, we conclude that despite the physiological difference
+between both species, the phototactic biased behaviour predicted by uncertainty minimization was present in both species,
+which constitutes strong evidence for uncertainty minimization as ubiquitous behavioural directive in aneural organisms.
+We exploited the detailed quantitative nature of this imaging apparatus to investigate the influence of V. carteri colony
+size (µm), swimming speed (µm s¯¹), and the number of colonies inside the chamber on its phototactic bias using a principal
+component analysis (PCA), where the range of these variables was 138-171 µm, 71-670 µm s¯¹ and 8–38 respectively, rounded
+to the nearest integer. A graphical representation of the distribution of those three variables can be found in electronic
+
+[PAGE 7] supplementary material, figure S1. The PCA revealed that the first two principal components accounted for 91.07% of the total
+variance in the data, with PC1 explaining 56.72% and PC2 explaining 34.35%. The third component, PC3, accounted for the
+remaining 8.94% of the variance. The component loadings for each variable are presented in table 1.
+The strong positive loading for both V. carteri colony size and swimming speed in PC1 suggests a robust positive correlation
+between these two variables, indicating that larger V. carteri colonies tend to swim at higher speeds in our system. This
+relationship could be attributed to the increased propulsive force generated by larger colonies with more flagellated cells.
+The strong negative loading for the number of colonies per frame in PC2 suggests that this component appears to represent
+colony density, largely independent of size and speed. The moderate negative loading for speed on this component suggests
+a slight tendency for lower swimming speeds in frames with higher colony counts, possibly due to increased hydrodynamic
+or direct flagellar interactions, leading to V. carteri colonies getting stuck to each other temporarily. PC3, while only explaining
+8.94% of the variance, revealed an interesting contrast between colony size and swimming speed. This minor component might
+capture exceptions to the main trend, possibly representing scenarios where larger colonies move more slowly or smaller
+colonies move more quickly and could be related to variations in colony morphology, flagellar activity or local environmental
+conditions.
+The high cumulative variance explained by PC1 and PC2 (91.07%) indicates that the three-dimensional data can be effectively
+represented in two dimensions with minimal loss of information. This suggests a strong underlying structure in the V. carteri
+population dynamics, primarily driven by the size-speed relationship and variations in colony density.
+Based on this analysis, we filtered V. carteri by size (colony diameter between 120 and 150 µm) and swimming speeds (larger
+than 120 µm s¯¹) in the analysis of the trajectories for higher uniformity and standardization of our data. Thus, the most effective
+distinction between the random and patterned stimuli was being carried out by V. carteri of that size and swimming speed.
+
+
+[PAGE 8] 3.2. Volvox show optimal photoadaptation to specific frequencies
+We next examined which light pulse frequencies, if any, Volvox most readily adapt to—by exposing Volvox inside the channel to
+different light pulse frequencies on each side of the chamber. Using first the manual tracking set-up with V. aureus, we tested
+various pulse frequencies from 50 to 1 Hz and determined the per cent of V. aureus that swam to each end of the chamber (see
+figure 5). There was a clear preferential adaptive response to light pulse frequencies of 2 Hz when opposed to smaller and larger
+pulse frequencies, respectively (p < 0.001 as determined by Wilcoxon signed-rank test). From this, we conclude that V. aureus
+distinguish different regular patterns in terms of their adaptive, phototactic response.
+Using the automated tracking apparatus, we also tested the presence of phototactic biases in V. carteri for the highly
+significant case of 1 Hz versus 2 Hz in V. aureus. However, unlike in V. aureus (see figure 5), in V. carteri there was no
+difference between photoadaptive responses to either opposing light stimuli of 1 and 2 Hz, respectively. We only compared two
+frequencies, so it is very possible that photoadaptation in V. carteri is optimized to a different frequency range than in V. aureus,
+possibly due to slightly different flagellar response times, overall rotational speed or resonant tuning of the two compared with
+V. aureus. These differences would need to be investigated in future studies, as no such detailed studies have been done on V.
+aureus. Note that flagellar beating frequencies in V. carteri have been previously determined to average at 39.3 Hz [41], much
+higher than the light pulse stimulation frequencies used in the experiments here, and are hence unlikely to have influenced
+phototactic biases in our experiments, as they are too fast to interact with the experimental stimulation.
+The data from §3.1 on the patterned versus randomized light sequences, combined with these data on different light pulse
+frequencies in two similarly simple aneural species, support the hypothesis that even aneural organisms can detect patterns
+and tend to avoid random stimulation patterns precisely because of the difference in overall predictability of those stimulation
+patterns, and not just due to differences in frequency.
+
+[PAGE 8] 3.3. Simulation using a cellular scale in silico model of V. carteri response to random versus patterned inputs predicts
+that uncertain inputs decrease photoadaptation
+In order to probe how uncertainty minimization is implemented mechanistically on the level of individual somatic cells that
+biochemically implement the photoresponse, we built on work by Drescher et al. [18], who measured fluid speeds in the
+vicinity of individual somatic cells in response to light activation as a measure of flagellar beating modulation to construct
+their photoadaptive model, to simulate the adaptive phototactic response of V. carteri to the same types of input used in our
+experimental system above (figures 1 and 2).
+We simulated fluid speed changes caused by flagellum beating speed downregulation in response to inputs reflecting
+fixed 1 and 2 Hz versus randomized light pulse stimulations with similar average interval lengths and equal total light
+exposure. The average adaptive, or recovery time (the time it takes for a flagellum to return to baseline beating frequency after
+photostimulation), obtained for the irregular, randomized light input series was increased (see figure 6e) compared with the
+fixed pulse sequence (figure 6c). Not only did the average fluid speed return to lower base levels for the random sequence
+compared with the fixed treatment but there was also a much higher variation around its mean recovery, which is likely to
+contribute to interfere with overall photoadaptation on the organismal level, as that noise further decouples adaptive time from
+the colony rotation period.
+Given the ubiquity of Poisson-distributed neuronal activation patterns in neural organisms [42], we confirmed that when we
+randomized inputs by shuffling stimulation pulses (which constrained each stimulation to yield similar average pulse duration
+and equal total light exposure), the histogram of inter-pulse durations exhibited a Poisson distribution (see figure 6f).
+Interestingly, this is the distribution most used to model natural pulsed stimulation patterns in human brains [42] to avoid
+adaptation through habituation to repeated stimuli. As seen below, this opens up research on short-term adaption in Volvox
+as a foundation for learning, as Poisson-type stimulation patterns have been shown to evoke distinct spike timing-dependent
+plasticity (STDP) in neurons [43]. In other words, neural systems react very differently to purely random Poisson-distributed
+spike trains versus tightly regulated, repeatable activation patterns, the balance thereof being an active source for debate and
+probably varies in different neuronal systems depending on how tightly information is compressed at each level [44,45].
+Since the ability of V. carteri to maintain directionality in phototaxis is immensely time-constrained by their rotational
+frequency (which is colony size dependent and falls between 0.5 and 3 rad s¯¹ for colonies between 100 and 200 µm diameter
+and is closely matched with the photoresponse [18]), we can hypothesize that a Poisson-distributed light stimulation pattern
+
+[PAGE 9] will interfere with their ability to maintain their direction. This is because, by decreasing calcium signalling, such randomized
+activation patterns would effectively decouple colony rotation from photoactivation, whose evolved interdependency is at the
+heart of how V. carteri maintain phototactic direction in the first place. Interestingly, this tuning of flagellar adaptation time to
+rotational frequency has also been demonstrated in Chlamydomonas and Gonium, related Volvocales genera, demarking it as an
+important evolutionary conserved feature [46,47].
+Note that while we did not model three-dimensional movement of V. carteri in these simulations, their relatively slow
+average upward swimming speed of 274 µms¹ and max fluid speeds of 400 µms¹ [41] compared with the ratio of
+chamber length (2 and 10 cm for the imaging and manual counting set-up, respectively) and light pulse frequencies mean
+that the effect of colony displacement on light amplitude changes can be considered negligible compared with rotational
+frequencies.
+
+[PAGE 11] 3.4. Temporal selectivity of V. carteri photoadaptation is altered by a calcium channel blocker targeting primarily
+internal calcium channels
+We next investigated the mechanism underlying the temporal preferences we observed in phototactic outcomes both in silico
+and in vivo.
+First, we characterized how components integral to the modularity of the adaptive photoresponse (i.e. light activation and
+recovery time of downregulated flagellar beating speed) are implemented in V. carteri. While initial calcium currents upon light
+activation peak between 1 and 25 ms depending on the stimulation light intensity in this organism [48], far outside the regime
+of rotational time periods (approx. 2-12 s) and flagellar beating modulation (approx. 50-400 ms), its diffusion across the flagella
+has been estimated to take an average of 200 ms [18], which is in the same order of magnitude as flagellar beating modulation,
+with response times $T_r$ around 200 ms for normal light intensities [18]. We used nimodipine, a reagent commonly used to
+selectively inhibit calcium signalling [49,50], which was previously shown in the close V. carteri relative Chlamydomonas, to bind
+to a calcium inhibitor binding protein localized primarily in the cell-internal membrane [51].
+This enabled us to observe the adaptive response of V. carteri to light inputs in real time during the inhibition of signalling
+from the photoreceptor to the flagella (figure 7). As blocking calcium this way slows down the calcium-mediated signal
+progression from photoreceptor towards flagella, thereby causing a decrease in phototactic sensitivity [51], we can describe this
+effect in V. carteri as an increase in the photoresponse time $T_r$ introduced earlier.
+Note that we shifted the speed filtering criteria for nimodipine containing media for lower speeds, as nimodipine also
+reduced overall maximum speeds as a consequence of lowered phototactic sensitivity (see electronic supplementary material,
+figure S2).
+We tested whether such a decrease in internal calcium flow rates causes a shift in the frequency dependence of phototactic
+preference. We found that in the presence of nimodipine, V. carteri showed a significant phototactic bias towards the 2 Hz
+stimulus compared with the 1 Hz, while preference for the 1 Hz regular stimulus compared with the random pulse sequence
+reversed. Based on these results and the known mechanism of action of nimodipine as a calcium channel blocker interfering
+with internal calcium flow in Volvocales, we have hence shown that calcium signalling is required for maintaining the temporal
+fidelity of photoadaptation and that inhibiting it partially decouples the photo-induced, calcium-mediated flagellar modulation
+from colony rotation as phototactic biases towards set frequencies or patterns were shifted in our experiments.
+To further elucidate this phenomenon, we turned back to the simulations from §3.3 and simulated the fluid speed induced
+by flagellar beating in response to the same 2 Hz frequency as before under the effect of nimodipine. Nimodipine, through
+its mode as a calcium channel blocker, reduces calcium flow into the flagella and hence the speed of information flow from
+photoreceptor to flagellar that determines its photoresponse time, so we increased the response time in the simulation of
+photoadaptation $T_r$ by a somewhat arbitrary factor of 5. Its exact value would need experimental validation through high-speed
+imaging of flagellar activity and fluid flow in response to the drug at different doses, but the choice was motivated by calcium
+uptake being accelerated fivefold in normal light activation in Chlamydomonas [51]. While this means our simulations here
+cannot confirm the exact behaviour of the dose of nimodipine employed, we believe it illustrated the general mode of action in
+our model at this chosen translated drug dose. We found that while the overall exponential fit was not too different from figure
+6e, the decreased response time reduces the overall amplitude of variation over the mean fluid response, making it more similar
+in shape to the regular step function. This corresponds to shifting the high-frequency light above a flicker fusion frequency
+(the rate at which photoreceptor responses no longer discriminate between intermittent light pulses) in V. carteri photodetection.
+While the

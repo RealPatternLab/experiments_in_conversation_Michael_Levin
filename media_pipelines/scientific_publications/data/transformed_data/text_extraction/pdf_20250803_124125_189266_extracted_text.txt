@@ -1,0 +1,416 @@
+Identification of brain-like functional information architectures in
+embryonic tissue of Xenopus laevis.
+Thomas F. Varley, 1, 2, * Vaibhav P. Pai,³, * Caitlin Grasso, 2
+Jeantine Lunshof,4,5 Michael Levin, and Josh Bongard1, 2
+1 Vermont Complex Systems Center, University of Vermont, Burlington, VT
+2 Department of Computer Science, University of Vermont, Burlington, VT†
+3 Allen Discovery Institute, Tufts University, Medford, MA
+4 Wyss Institute for Biologically Inspired Engineering at Harvard, Boston, MA
+5 Department of Genetics, Harvard Medical School, Boston, MA, USA
+(Dated: December 5, 2024)
+
+
+[PAGE 2] Abstract
+Understanding how populations of cells collectively coordinate activity to produce the complex
+structures and behaviors that characterize multicellular organisms is a fundamental issue in modern
+biology. Here we show how mathematical techniques from complex systems science and multivariate
+information theory can provide a rigorous framework for inferring the structure of collective
+organization in non-neural tissue. Many of these techniques were developed and refined in the context of
+theoretical neuroscience, a field well-used to the problem of inferring coordinated activity in
+high-dimensional data. In neuroscience, these statistics (functional connectivity network structure,
+modularity, higher-order information, etc) have been found to be altered during different cognitive,
+clinical, or behavioral states and are generally thought to be informative about the underlying dynamics
+linking biology to cognition. Here we show that these same patterns of coordinated activity
+are also present in the aneural tissues of evolutionarily distant biological systems: preparations of
+self-motile embryonic Xenopus tissue (colloquially known as “basal Xenobots"). When analyzing
+calcium recordings from basal Xenobots and comparing them to fMRI recordings from a sample of
+adult human brains, we find that the bots have a "brain-like" functional information architecture,
+complete with positive and negative functional connections, meso-scale communities, higher-order
+redundant and synergistic interactions, and integrated information that is "greater than the sum
+of its parts". By comparing each recording (brain and bot) to a personalized null model that
+preserves all first-order statistical structures (autocorrelation, frequency spectrum, etc.) while
+disrupting all higher-order interactions, we show that these are genuine higher order interactions
+and not trivially reducible to lower-order features of the data. These similarities suggest that such
+patterns of activity and information structures either: arose independently in these two systems
+epithelial constructs and brains, are epiphenomenological byproducts of other dynamics conserved
+across vastly different configurations of life; or somehow directly support adaptive behavior across
+diverse living systems.
+Keywords: Developmental biology, neuroscience, functional connectivity, emergence, synergy,
+multivariate information theory.
+
+
+[PAGE 2] I. INTRODUCTION
+One of the hallmarks of biological systems is what cybernetician Warren Weaver called
+“organized complexity” [1]. In contrast to simple, physical systems with just a few elements
+that can be well-described by formal mathematical models, biological systems display highly
+non-trivial structures that manifest complexity at multiple scales [2, 3]. Understanding the
+nature and structure of organized complexity is a canonical problem in modern biology,
+which considers interactions between ensembles of biomolecules, cells, organs, and individuals.
+Additionally, beyond mere complexity, biological systems have a clear capacity to
+engage in sophisticated self-assembly and repair of complex anatomical structures. This is
+not merely emergent complexity for its own sake, but rather dynamic problem-solving capacity
+[3, 4]. Collectives of cells and tissues homeostatically navigate the space of anatomical
+states during embryogenesis, regeneration, and cancer suppression [5, 6]. These states occur
+at scales much larger than the cells and molecular networks that implement them, requiring
+global coordination and virtual governor dynamics that adaptively manipulate subsystems
+to reach the correct species-specific target morphology and physiological states despite a
+range of unpredictable circumstances [5, 7]. While biologists intuitively recognize the presence
+of this high-level organization and control, and have noted its importance for applications
+in biomedicine [8, 9] and bioengineering [10], quantifying it for rigorous study has
+proven difficult, due to the inherent difficulties in understanding high-dimensional, multi-scale
+processes [11]. Parallels between the functionality of electrophysiological networks in
+the brain and in non-brain tissue have been discussed, because of their common evolutionary
+and developmental origin, and many invariants across neuro-behavioral and morphogenetic
+problem-solving [12, 13]. Nevertheless, major knowledge gaps exist with respect to what
+kind of information patterns are being implemented in neural and non-neural tissues.
+The challenge, then, is how can we infer the structure these high-dimensional processes
+given limited, and often noisy, empirical data? One of the most well-developed approaches
+is studying how information is distributed over the component elements of the system, and
+the structure of the dependencies that form the “scaffold” of on-going, spontaneous dynamics
+[14]. These approaches have been most well-developed in the field of computational neuroscience,
+where large datasets of high-temporal and high-spatial resolution time series are
+frequently recorded using methodologies like fMRI, EEG, and MEG [15]. From these data,
+a whole library of tools have been developed that characterize the structure of multivariate
+interactions and describe them with a variety of formal statistics.
+In the context of neuroscience, these techniques have revealed a rich architecture of
+different kinds of interactions, between neurons, neuronal networks, and whole regions of
+cortex [16, 17]. Despite these findings, however, many of these techniques have remained
+sequestered in neuroscience, leaving it unclear to what extent the patterns observed in the
+brain are "brain-specific", or if these patterns of brain activity reflect larger features of
+information processing dynamics across biological systems. The answer to this question
+would be a contribution to the emerging field of Diverse Intelligence research [18-20], which
+seeks to understand how cognitive capacities arise and are adaptively implemented in a wide
+range of material substrates and problem-spaces.
+To do this, we compare temporal information dynamics in two, radically diverse systems:
+resting state fMRI data from human brains, and calcium signaling data recorded from preparations
+of embryonic Xenopus tissue known colloquially as "Xenobots" [21, 22]. The term
+“Xenobot” is very broad and refers to a number of different preparations: here we specifically
+deal with so-called “basal Xenobots”, which represent a kind of default configuration,
+lacking some of the additional features seen in [21, 22]. The latter are autonomously-motile,
+self-assembling constructs derived from ectoderm (epidermal progenitor) cells from the frog
+Xenopus laevis, which are used in the field of biorobotics as a chassis in which competencies
+of living materials in novel configurations can be assessed, and for which techniques to
+induce novel useful behaviors can be developed [23]. Because of their morphogenetic and
+behavioral properties, their lack of nervous system, their synthetic (ecologically-unique and
+novel) nature, and their amenability to optical interrogation, they are an interesting model
+system to compare to the dynamics observed in neural constructs, which have been under
+long periods of selection for specific functionality in a fixed configuration. While fMRI data
+and calcium signals from basal Xenobots represent two radically different biological systems,
+they share important commonalities: both a basal Xenobot and a brain are a “whole” system
+which can be subdivided into distinct sub-systems, or “parts” (cortical parcels in fMRI
+data, individual cells in basal Xenobots). From each of these parcels, we can record time
+series data, and explore how interactions between lower-level elements (parcels, cells) are
+structured in relation to each-other, and the collective whole.
+Here we systematically explore the presence of higher-order interactions in the basal
+Xenobot cellular structure, and show that those patterns are similar to those found in the
+dynamics of the adult human brain. Recent prior work on calcium signaling has shown
+that xenopus epidermal organoid systems (with no autonomous motion behavior) do show
+signs of non-trivial functional organization [24], however an in-depth, comparative analysis
+remains an outstanding question. Multicellular patterns of calcium signaling are widespread
+in biology, and complex patterns (waves, bursts, and oscillations) have been found in diverse
+systems, including animal epithelial tissue [25, 26], plant tissue [27], and fungal mycelial networks
+[28]. These coordinated dynamics have been found to be crucial for many dynamical
+and self-organizing processing in biology; examples include skin development [29], regeneration
+[30], wound healing [31], and cell-type differentiation [32]. While the role of calcium
+transients in diverse biological processes is well-developed, and the apparent complexity
+of multi-cellular patterns of calcium activity have been qualitatively described in terms of
+waves, oscillations, and other large-scale patterns, a rigorous, formal analysis of multivariate
+information-processing structures in networks of signaling cells has not been done.
+The vast majority of these particular statistics were first developed in the context of
+theoretical neuroscience for application to the analysis of neuroimaging data, and have been
+found to correlate with various features of cognition, health, and disease. A systematic
+review of all the measures can be found in the Materials and Methods, but we will briefly
+describe them and relevant findings in the context of neuroscience. The first, and most
+fundamental inference is that of signed, functional connectivity networks that form the architecture
+of the whole system (see Sec. V D). In the brain, consistent functional connectivity
+networks have been found in all neuroimaging modalities [33, 34], and include a complex
+distribution of positively and negatively signed dependencies between brain regions, indicating
+correlated and anti-correlated patterns of activity. These interactions between positive
+and negative edges are thought to play a key role in the maintenance of non-trivial structure
+[35-37], and alterations to the distribution of positive and negative edges has been associated
+with cognitive and clinical differences [38-41]. The networks themselves are organized
+hierarchically, with edges arranged into a modular, meso-scale structure of communities
+with high internal co-fluctuation (associated with positively-signed edges) and anticorrelations
+between communities [17, 42], and changes in this modular structure are associated
+with behavioral and cognitive differences as well [43-45]. A limitation of all of these analyses
+is that they are built on pairwise models of interaction: in the functional connectivity
+framework, the fundamental unit is the bivariate edge, and higher-order interactions can
+only be inferred indirectly by considering patterns of lower-order interactions [46]. To get
+around this limitation, there has recently been an increase in interest in truly higher-order
+interactions in complex systems [47], using techniques from information theory to assess
+polyadic synergies and redundancies directly. Analysis of neural data has found that these
+higher-order interactions are widespread throughout the human brain [46, 48], and changes
+in higher-order interactions have been observed in the context of aging [49–51], neurodegeneration
+[52], autism [53], schizophrenia [54], and sequel to neurosurgery [55]. All of these
+statistics are summary statistics, which describe some feature of the average structure of
+
+[PAGE 6]
+the system. To deepen our analysis, we also explored time-resolved metrics. The first was
+the variance of the instantaneous co-fluctuation, which describes frame-resolved changes in
+integration-segregation balance over time [56–59], and the second was the integrated information
+[60], which measures how much more effectively an observer can predict the future of
+a whole based on a model of its true joint statistics versus a disintegrated model. Changes
+in integrated information have been found to be most closely associated with changes to
+consciousness following anesthesia or brain injury [61, 62]. This literature from neuroscience
+shows that patterns of collective behavior are not merely statistical “noise” or some kind
+mathematical shell game, but rather that they reflect meaningful differences in the underlying
+processes that generate complex cognition and behavior, sometimes with clinical or
+quality-of-life implications.
+
+A natural question of this line of work, is whether the comparison of calcium signals from
+basal Xenobots and fMRI time series from humans is a “fair” comparison; these are different
+organs, different organisms, different scales, and different imaging modalities. We believe
+that, first, this difference is as much a feature as it is a bug, as it provides an opportunity to
+test the extent to which these patterns, widespread in brain activity, are actually modality-
+specific or system-specific, and to think about what reasons could prevent applications of
+information metrics to specific kinds of materials. Second, these two datatypes are not as
+different as they appear on first blush. The key similarity is that they both describe a
+"whole” unit, parcellated into component “parts.” In the basal Xenobot, we have coverage
+of calcium activity from the camera-facing surface of the bot, while in the fMRI, we have
+coverage from the entire surface of the brain (the cortex). Contrast this with calcium
+recordings of spiking neurons (e.g. [63]), which typically only sample a small number of
+neurons from the whole brain. The “whole” is not recorded from in this case, making the
+structure of part-whole-relationships inaccessible. The data themselves also have similarities
+that help facilitate comparison: recordings are generally short (on the order of a few hundred
+frames), the signals are real-valued (unlike spiking neurons), and generally autocorrelated,
+which means that a common set of information-theoretic estimators and a common null
+model can be appropriately used in both cases.
+
+In this paper, we are not comparing brains and basal Xenobots directly (e.g. we are not
+asking "which system has more total correlation"): differences in system sizes, the properties
+of the recordings, and variable first order dynamics can introduce complex and hard-to-
+
+[PAGE 7]
+untangle biases in the estimation of information-theoretic quantities [14]. Instead, we show
+that both systems consistently display greater integration than you would expect if the
+elements were independent. It is well known that certain lower-order features of a time series
+can complicate analysis of higher-order interactions [64], requiring careful consideration to
+avoid Type 1 errors [65]. Doing this requires constructing a bespoke null model for each
+fMRI recording and each basal Xenobot that preserves all first-order features of the elements
+(autocorrelation, frequency spectrum, etc.) while disrupting any interactions between
+them. To do this, we use a circular-shift null model (for details see Materials and Methods)
+to preserve first order features while disrupting higher-order interactions between elements.
+
+Morphogenesis is based on coordinated activities of individual cells resulting in a collective
+outcome. Thus, we hypothesized that, despite being radically different kinds of systems, that
+
+[PAGE 8]
+the basal Xenobots would show non-trivial information structure, indicative of complex,
+higher-order organization, despite the comparative “simplicity” of the system (relative to
+the brain). Our results largely bear this hypothesis out: we found that, for all measures
+tested, both the basal Xenobots and the brains showed significantly greater higher-order
+integration than would be expected in the null case of independent elements with preserved
+first-order statistics.
+
+[PAGE 8] RESULTS
+
+[PAGE 8] A. Basal Xenobots show non-trivial, spatially-embedded functional connectivity
+networks.
+
+In order to determine whether basal Xenobots showed patterns of information integration
+and emergent dynamics in a manner similar to the human brain, we computed a battery of
+measures on both calcium signals recorded from basal Xenobots (N=28) and fMRI BOLD
+signals recording from resting adult human brains (N=50). We found that, despite their
+comparatively simple biological structure the basal Xenobots displayed every sign of emergent
+complexity at significantly greater intensities than was observed in surrogate null data
+that preserved first-order features. When constructing functional connectivity networks, in
+every single brain, and every single bot, we found that positive and negative functional correlations
+were widely present, while in the autocorrelation-preserving nulls, there was almost
+no correlation to speak of. These correlations form the functional connectivity network: every
+element in the system (cortical parcels from brains, cells for basal Xenobots) forms a
+vertex, and the weight of the edge between them is the Pearson correlation between their
+respective time series. When considering the spatial embedding of edges, we found that
+basal Xenobots displayed a stereotyped pattern also typically found in the brain: a negative
+correlation relating the Euclidean distance between two cells and the edge dependency between
+them. All twenty eight bots had statistically significant negative correlations between
+signed functional edge weight and distance (average r = -0.124±0.06, all p-values less than
+10-6). The same pattern was observed in the fMRI data: all brains showed a negative correlation
+between functional edge weight and Euclidean distance (average r = -0.237±0.03,
+all p-values less than 10-100). While the distance/functional connectivity relationship was
+
+[PAGE 9]
+
+certainly weaker in the basal Xenobots than in the brains, we should note that the brain
+regions are represented in three-dimensional space, while the basal Xenobot cells are only
+represented in two-dimensional space, reducing the available degrees of freedom. This shows
+that basal Xenobots have a non-trivial functional structure, more closely resembling the
+brain than a disintegrated system of independent cells, and that the spatial embedding of
+bots informs on the kinds of communication that cells can engage in, in a way that is reminiscent
+of cortical communication. These results also replicate findings first observed in
+
+
+[PAGE 9] FIG. 2. Data preparation and matrix construction. A: This cartoon describes the production
+of basal Xenobots from frog embryonic tissue. Caps are excised by hand and cultured for seven days
+without perturbation; the resulting autonomously moving epidermal cell structure is a "basal" (i.e.
+unmodified) Xenobot. B: The pipeline for learning functional connectivity patterns from basal
+Xenobots. Videos of the bots are segmented into individual cells, from which average calcium
+traces are extracted. The covariance matrix defines the functional connectivity, which can be
+organized into meso-scale communities following clustering. C: The same pipeline, but for human
+brain data recorded with an fMRI; in this case, the elements are cortical regions (corresponding
+to the Schaefer 200 parcellation [66]) and the signal is BOLD rather than calcium, but the overall
+pipeline remains the same.
+
+
+[24], in a closely-related organoid model system. Multi-resolution community detection [67]
+finds that, in both brains and bots, these positive and negative correlations are arranged
+into a meso-scale structure of multiple distinct communities that are internally positively
+correlated, with anticorrelations between them. These communities group vertices (cortical
+
+[PAGE 10] FIG. 3. Similar expression of complex functional connectivity structures in basal
+Xenobots and brains. A-B Scatterplots of the Pearson correlation coefficient of functional
+connectivity edge strength against Euclidean distance, plotted against the p-value of the correlation.
+Clearly in both brains and basal Xenobots, there is a strong negative correlation between
+functional connectivity strength and spatial distance, as would be expected from an embedded system.
+C-D: Scatterplots of the difference between Euclidean distance within functional connectivity
+modules against the p-value of the difference. There is a consistent pattern that cells within functional
+modules are also closer to each-other in space. E-H: Box plots showing the higher-order
+structures in sets of three, four, and five elements for total correlation (E), dual total correlation
+(F), those multiplets with positive O-information (G, indicating redundancy), and those multiplets
+with negative O-information (H, indicating synergy). I The variance in RSS timeseries for each
+system, compared to the respective nulls. J The TSE-complexity for each system, compared to
+their respective nulls. K The corrected whole-minus-sum integrated information ΦR for each system
+and their respective nulls.
+
+
+[PAGE 11] parcels in brains, cells in basal Xenobots) into sub-systems that are more strongly connected
+within themselves than they are between other groups of vertices. For visualization
+of example modular covariance matrices, see Figure 2. If we consider the spatial embedding
+modules, we find that in basal Xenobots, cells that are grouped within modules tend to
+be closer in space than cells grouped into different modules (average ∆ = −0.02 ± 0.02),
+with 20 of 28 bots showing a statistically significant difference (p < 0.05, Bonferroni corrected).
+For visualization, see Figure 3C-D. The relationship between spatial embedding
+and modules was more consistent in the fMRI scans, but followed the same pattern: average
+A = -0.047 ± 0.02, and all fifty recordings showed a statistically significant difference
+(p < 0.05, Bonferroni corrected). In the brain these modules are associated with distinct
+functional systems, such as the default mode network, or the fronto-parietal control network
+[42], but their significance in the bots is decidedly less clear. They may reflect distinct
+types of cells, or areas that (if normal development were allowed to continue) are destined
+to differentiate into distinct mature systems. For visualization, see Figure 2A-B.
+
+[PAGE 11] B. Time-resolved analysis shows dynamic integration and segregation balance
+
+The functional connectivity results describe the average dependency between two elements.
+To assess whether the patterns of co-fluctuation were similar at the highest possible
+level of temporal resolution, we used an edge time series analysis [56, 68], which decomposes
+the average correlation into a series of instantaneous couplings (see Materials and Methods).
+To construct a summary statistic from the edge time series, we considered the variance of
+the root-sum-squares (RSS) for every frame across every node. The variance of the RSS acts
+like a crude Fano factor [69]: if all elements are independent, the variance of the RSS will be
+zero, likewise if all time series are copies of each-other. Variance of RSS is highest when the
+system combines moments of instantaneous integration and segregation at different times.
+Both the basal Xenobots and the fMRI scans had a significantly higher empirical variance
+in the RSS of co-fluctuations than their respective nulls. For visualization, see Figure 3I.
+The variance for the basal Xenobots was 1168.179 ± 823.86, significantly greater than the
+basal Xenobot nulls, which had variance of 405.06 ±308.59 (Cohen's D = 1.227, p < 10-9).
+In the fMRI scans, the variance was 4667.169 ± 1630.249, which was significantly greater
+than the null variance: 211.797 ± 14.641 (Cohen's D = 3.865, p < 10-14). These results
+
+[PAGE 12] suggest that both the brains and the basal Xenobots have a rich temporal dynamic combining
+a mixture of transient integration and segregation: in some frames all the cells are
+co-fluctuating together, while in others they are behaving as if they are independent.
+
+[PAGE 12] C. Basal Xenobots show emergent, higher-order information dependencies
+
+When considering polyadic information describing coordinated activity between multiple
+elements, we found that all forms of higher-order information were significantly enriched
+in both brains and basal Xenobots compared to their respective nulls. So far, all of the
+measures discussed have been pairwise: describing some feature of the interaction between
+dyads of elements. To explore genuine higher-order interactions comprising sets of three
+or more elements, we turned to multivariate information, and specifically, generalizations
+of the mutual information: the total correlation, the dual total correlation, and the O-
+information [70, 71]. The total correlation and dual total correlation both quantify different
+notions of what it means for a set of multiple variables to “share” information [72, 73], while
+the O-information gives a heuristic measure of whether the overall information structure is
+dominated by redundant or synergistic dependencies [71]. For visualization, see Figure 3E-
+H. In fMRI scans, across multiplets of size three regions, four regions, and five regions, the
+average total correlation [72] was 0.326±0.267 nats, significantly greater than their respective
+nulls 3.5 × 10-5 ±2.65 × 10-5 nats (Cohen's D = 1.726, p < 10-100). The same was true with
+basal Xenobots, which had an average total correlation of 0.2±0.27 nat, greater than the null
+average of 0.00017±0.0003 nat (Cohen's D = 1.029, p < 10-100). The total correlation
+can be understood as a measure of functional synchrony, as it is maximal when all time
+
+[PAGE 13] series are copies of each-other, these results suggest that the brains and the basal Xenobots
+both share features of multi-element synchrony in BOLD and calcium data respectively.
+The same pattern was true when using the dual total correlation [73]. In fMRI scans, the
+average dual total correlation was 0.2996±0.228 nat, significantly greater than the null 3.53 ×
+10-5±2.65×10-5 nat (Cohen's D = 1.859, p < 10-100). Similarly, with basal Xenobots, the
+empirical average dual total correlation was 0.18±0.22 nat, significantly greater than the null
+0.0002±0.0003 nat (Cohen's D = 1.15, p < 10-100). The dual total correlation quantifies the
+amount of "entangled information"; information that is duplicated over multiple elements.
+The finding that both brains and basal Xenobots have significant amounts of dual total
+correlation indicates the presence of complex, multivariate interactions binding together
+information across multiple elements in both systems. When considering the O-information,
+the analysis is a little more complex, as the sign of the O-information is meaningful in
+addition to its absolute value: if the sign is negative, then the system in question is dominated
+by synergistic dependencies (information in the whole that is not present in the parts), while
+if the sign is positive, the system is dominated by redundant dependencies (information
+copied over multiple elements) [71]. Crucially, if the system is comprised of solely bivariate
+dependencies, then the O-information is zero, and by implication, whatever information is
+visible must be truly polyadic. The simplest analysis is to consider the relative absolute
+values of the O-information between empirical and null datasets, as that will give a heuristic
+measure of the presence of beyond-pairwise information (redundant or synergistic). We
+found that both brains and basal Xenobots had significant polyadic information. In empirical
+fMRI, the average absolute value of the O-information was 0.039 ± 0.065 nat, significantly
+greater than the null fMRI data 8.41 × 10⁻⁸ ±7.9 × 10-8 nats (Cohen's D = 0.852, p < 10-100).
+Similarly, in empirical basal Xenobots, the absolute value of the O-information was 0.016±
+0.08 nat, significantly greater than the disintegrated null: 9.07 × 10-9 ±2.5 × 10-6 (Cohen's
+D = 0.3, p < 10-100). Since the O-information can disambiguate between two flavors
+of higher-order information, we can also break the dataset down into two parts based on
+sign, representing those multiplets that are redundancy dominated and those multiplets
+that are synergy-dominated. When we consider only redundancy-dominated multiplets, we
+find the same pattern as the absolute value of the O-information. The fMRI data had
+significantly more redundancy (0.05 ± 0.076 nat) than the null data (6.4e – 08 ± 7.63e – 08,
+Cohen's D = 0.945, p < 10-100), and likewise the basal Xenobots have significantly more
+redundancy as well (0.036±0.09 nats) than the nulls (6.35×10⁻⁷ ±2.47×10⁻⁶, Cohen's D =
+0.52, p < 10-100). When considering the synergy, we find the same pattern: when considering
+only multiplets with negative O-information, the fMRI data had significantly more synergy
+(-0.018±0.026 nat) compared to the associated nulls (-9.16 × 10⁻⁸ ±7.87 × 10⁻⁸, Cohen's
+D = -0.964, p < 10-100). The basal Xenobots showed the same pattern, with the empirical
+data having significantly greater synergy (-0.01 ± 0.023 nat) compared to the associated
+nulls (-6.27 × 10⁻⁷ ± 2.36 × 10⁻⁶, Cohen's D = -0.66, p < 10-100). These results show
+that, not only do basal Xenobots have statistically significant higher-order information,
+but that they have both higher-order redundancies and synergies, in a manner that is typical
+of the human brain (as recorded with fMRI). Redundancies and synergies have been found
+throughout the natural world; beyond brains, synergistic dependencies have also been found
+in sociological [74] data, climate data [75, 76], economic data [77], psychometric data [78],
+physical phase changes [79], and even the structure of musical scores [80]. Consequently,
+higher-order synergy may reflect a very general kind of “integrated sophistication" common
+to many complex systems.
+The final higher-order functional connectivity measure that we used was the Tononi-
+Sporns-Edelman (TSE) complexity [81], which provides a measure of the balance between
+integration and segregation (somewhat analogous to the O-information's balance of redundancy
+and synergy). A high TSE complexity suggests that integration and segregation are
+co-existing in some non-trivial way. In the fMRI data, we found that the TSE complexity
+was much greater in the empirical data (19662.089 ± 519.661 nat) compared to the associated
+nulls (3.82 ± 0.339, Cohen's D = 53.498, p < 10⁻¹⁵). The same pattern
+is apparent in the basal Xenobots, with the empirical bots having a very high TSE complexity
+(24857.58 ± 38739.62) compared to the associated nulls (7.79 ± 11.73, Cohen's D =
+0.9, p < 10⁻⁹). These results collectively show that the functional structure of the basal
+Xenobots show sophisticated, multi-cell coordination that is highly similar to what is seen
+in human brain activity. For visualization, see Figure 3J.
+
+[PAGE 14] D. Basal Xenobots integrate information over time
+
+So far, all of the measures that we have computed are functional measures: they model
+the dynamics of the BOLD signal or calcium signal as independent frames. We also wanted
+to consider the effective connectivity, which quantifies the extent to which the past state of
+elements discloses information about their collective future: this is a dynamic measure that
+accounts for the temporal integration of the whole system. To do this we computed the
+whole-minus-sum integrated information [60, 82], which provides a measure of how much
+more predictive power there is when modeling the system based on its true joint statistics
+compared to the sum of all the parts modeled independently. We computed a corrected
+version of the integrated information to ensure that it was non-negative [83], for details see
+Sec VH. We found that both the basal Xenobots and the brain had significantly greater
+dynamic integrated information compared to their respective nulls. In the fMRI data, the
+average integrated information was 0.072±0.071 nat, significantly higher than the associated
+null 0.012 ± 0.004 (Cohen's D = 1.197, p < 10⁻¹¹). In the basal Xenobots, the average
+integrated information was 0.09±0.11 nat, significantly greater than the null 0.005 ±0.001
+nat (Cohen's D = 1.072, p < 10⁻⁷). For visualization, see Figure 3K.
+All of these results have fit a common pattern: whatever the measure of structure applied,
+both the brains and basal Xenobots show statistically significantly greater structure than a
+null model that preserves lower-order dynamics but disrupts higher-order ones. This suggests
+that there is a large number of “features” of structural organization that are shared by both
+basal Xenobots and brains, despite their radically different biological substrates.
+
+[PAGE 15] III. DISCUSSION
+... (continues as in Extraction 3, including the rest of the document with corrected formatting and consistent use of symbols like ΦR, ⊙, etc.)

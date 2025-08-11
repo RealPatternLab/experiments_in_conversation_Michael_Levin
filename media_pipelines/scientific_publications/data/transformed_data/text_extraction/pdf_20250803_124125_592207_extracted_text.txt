@@ -1,0 +1,254 @@
+[PAGE 1] Abstract
+The Diverse Intelligence research seeks to understand commonalities in behavioral competencies across a wide range of implementations. Especially interesting are simple systems that provide unexpected examples of memory, decision-making, or problem-solving in substrates that at first glance do not appear to be complex enough to implement such capabilities. We seek to develop tools to determine minimal requirements for such capabilities, and to learn to recognize and predict basal forms of intelligence in unconventional substrates. Here, we apply novel analyses to the behavior of classical sorting algorithms—short pieces of code studied for many decades. To study these sorting algorithms as a model of biological morphogenesis and its competencies, we break two formerly ubiquitous assumptions: top-down control (instead, each element within an array of numbers can exert minimal agency and implement sorting policies from the bottom up), and fully reliable hardware (instead, allowing elements to be "damaged" and fail to execute the algorithm). We quantitatively characterize sorting activity as traversal of a problem space, showing that arrays of autonomous elements sort themselves more reliably and robustly than traditional implementations in the presence of errors. Moreover, we find the ability to temporarily reduce progress in order to navigate around a defect, and unexpected clustering behavior among elements in chimeric arrays consisting of two different algorithms. The discovery of emergent problem-solving capacities in simple, familiar algorithms contributes a new perspective showing how basal forms of intelligence can emerge in simple systems without being explicitly encoded in their underlying mechanics.
+
+[PAGE 1] Keywords
+Decentralized intelligence, emergence, sort, minimal models, basal cognition
+
+[PAGE 1] 1. Introduction
+On their respective time scales, evolutionary and developmental biology require that cognitive capabilities such as memory and goal-directed activity in the face of perturbations originate in proto-cognitive functions that existed long before complex brains came onto the scene (James, 1890; Jennings, 1906; Lyon, 2006). The gradual history of intermediate forms with different levels of competency undermines a view in which discrete natural kinds have, or do not have, binary properties such as intelligence (Fields & Levin, 2020; James et al., 2019; Keijzer et al., 2013; Levin, 2021; Lyon, 2006, 2015). Moreover, a rich continuum of intermediate forms can be created by chimerizing biological and technological material in many different combinations (Clawson & Levin, 2023; Nanos & Levin, 2022), further eroding the notion of a binary, categorical separation between engineered and biological capabilities. The nascent field of Diverse Intelligence seeks invariants across evolved, engineered, and hybrid systems to determine what all agents have in common, regardless of their composition or provenance, and thus better to understand the origin and scaling of embodied minds (Levin, 2019). Beyond fundamental knowledge, this is also an essential step toward being able to recognize, repair, create, communicate with, and ethically relate to an enormous space of extant and forthcoming beings ranging from human cyborgs to synthetic life forms, Artificial Intelligences (AIs), and possible exobiological beings (Clawson & Levin, 2023).
+
+[PAGE 2] For the purposes of this study, "intelligence" refers to some degree of competency in navigating a problem space so as to meet adaptive goals despite barriers, perturbations, and unexpected challenges (James, 1890). It focuses on problem-solving as an observable behavioral competency, not on the affect, first-person perspective, or playful exploration aspects which can occur in advanced cognitive beings. The goal of using such a definition is aligned with cybernetic approaches (Rosenblueth et al., 1943) that seek frameworks in which degrees of intelligence, from passive and random behavior to high-level metacognition, can be empirically studied in a broad range of unconventional forms. Human beings have much practice and skill in recognizing conventional intelligence implemented as classic "behavior"; we easily detect it in the behavior of medium-sized objects moving at medium speeds in the 3-dimensional world. However, our evolutionary history, our outward-pointing sense organs, and our cognitive structure all make it difficult to detect unconventional intelligences that operate in novel embodiments, exist at different spatio-temporal scales, or live in unusual problem spaces such as physiological or anatomical morphospaces (Fields & Levin, 2022). In particular, while we have neuroscience and folk theory-of-mind for predicting the competencies of the collective intelligence of neural systems (i.e., animals with brains), we have no mature science that enables us to predict either the goals, or the degree of competency in pursuing those goals, of other kinds of systems.
+
+[PAGE 2] Great strides have been made in understanding how complexity can emerge from simple local rules (Anderson, 1972; Kauffman, 1993; Kelty-Stephen & Dixon, 2012; Prokopenko et al., 2009; Ulanowicz, 2007). However, most of the emphasis to date has been on the emergence of phenomena at the lower end of degrees of the ladder of agency (Rosenblueth et al., 1943). Beyond simple emergent complexity, such as that seen in static structures like fractals, lie second-order behaviors that serve as the origins of goals, preferences, valence, memory, and other phenomena that scale up to familiar cognitive systems (Arnellos & Moreno, 2015; Baluška & Reber, 2021; Barandiaran et al., 2009; Fields, 2014; Kauffman & Clayton, 2006; Lyon & Kuchling, 2021; Newman, 2023; Repp & Knoblich, 2007; Sultan et al., 2022). Here, in keeping with an emphasis on basal (minimal) cognition, "goal" is used not to refer to a high-order, metacognitive "known purpose" as seen in human behavior, but rather in its minimal cybernetic (Rosenblueth et al., 1943) definition of a target state that a system has some ability to reach, despite a range of challenges. Learning to predict and control the goals of collective systems—especially newly engineered systems—is likely to be of existential importance to human flourishing over the coming decades in areas ranging from swarm robotics to AI systems to bio-engineered tissues (Ebrahimkhani & Levin, 2021; Gumuskaya et al., 2024).
+
+[PAGE 2] Diverse Intelligence research includes the use of very minimal models to understand how problem-solving capacities can arise from the interaction of components at various levels (Levin, 2022). These include synthetic droplets, molecular chemotaxis, and other simple systems in addition to the study of biological pathway models and whole cells and tissues (Biswas et al., 2021, 2022; Brancazio et al., 2019; Fan et al., 2020; Hanczyc, 2014; Krist et al., 2021; McGivern, 2019; Meredith et al., 2020; Watson et al., 2010).
+
+[PAGE 2] One such system involves the collective behavior of cells during morphogenesis, such as embryonic development, regeneration, metamorphic remodeling, and cancer suppression (Levin, 2023a; 2023b; 2023c). What all of these phenomena have in common is the ability of cells (themselves composite, agential materials (Davies & Levin, 2023)) to work collectively to achieve specific anatomical endpoints (Levin, 2023b), such as re-growing a limb and then stopping once the correct structure is complete (Birnbaum & Sanchez Alvarado, 2008), or remodeling a tail transplanted to the flank into a limb—the structure more appropriate to its new global location (Farinella-Ferruzza, 1956). Crucially, this is not just open-loop emergence, but closed-loop control and error-minimization: cellular collective behavior in anatomical morphospace exhibits numerous abilities to solve problems (that is, to meet goals despite perturbations) in ways seen in other collective intelligences (Fields & Levin, 2023; Levin, 2023b). For example, tadpoles which have the position of their facial features scrambled spontaneously re-arrange to the correct positions as they metamorphose into frogs (Pinet et al., 2019; Vandenberg et al., 2012). Examples abound of cells taking actions via molecular, cellular, and tissue-level actuators in order to reach a specific target state despite perturbations or changing circumstances (reviewed in (Levin, 2023b)). Thus, it has been proposed that morphogenesis is the behavior of a collective intelligence of cells in anatomical
+
+[PAGE 3] morphospace, and that understanding and learning to exploit the problem-solving competencies of living tissues offers the opportunity for significant advances in regenerative medicine of cancer, traumatic injury, and birth defects (Lagasse & Levin, 2023; Mathews et al., 2023).
+
+[PAGE 3] A large body of existing work explores the complex behavioral responses and capacities of tissues, cells (Bugaj et al., 2017; Koseska & Bastiaens, 2017), and even of molecular pathways (Biswas et al., 2021, 2022; Csermely et al., 2020). However, all of these systems and their internal subsystems are quite complex, exhibiting a likely endless variety of new details which could be responsible for the observed behaviors. To understand the necessary and sufficient dynamics for competencies to emerge requires insights from even more minimal systems—ones in which all of the components and their interactions are known and precisely trackable. Especially useful models for this research agenda leave no room to posit additional explicit mechanisms, or substrates encoding behavioral policies or goals, that have simply not been discovered yet. Thus, we are interested in toy models of collective decision-making that are entirely transparent, to gain insight into the lower bound at which unexpected behavior and problem-solving competencies can arise which may be relevant to cellular swarms.
+
+[PAGE 3] Here, we abstract one key property of regulative morphogenesis: the ability to produce an anatomical structure with a precise order of components along one axis. For example, development or metamorphosis results in a tadpole or frog in which all of the organs are placed in a specific order along the anterior-posterior axis (Figure 1). For the purpose of modeling, we are agnostic as to whether this behavior occurs from scratch, such as during embryogenesis, or by unscrambling existing components (such as during metamorphosis and regenerative remodeling).
+
+[PAGE 3] We abstract this task, undertaken by cells which can re-arrange the organs as needed even when starting from highly abnormal initial configurations (Pinet & McLaughlin, 2019; Vandenberg et al., 2012), as a sorting algorithm. We use traditional sorting algorithms, as studied by countless computer science students, as a minimal system, and we study which unexpected, novel competencies these familiar algorithms might have in order to explore the idea that novel capabilities may lie in systems that we think we fully understand because we designed them.
+
+[PAGE 3] The use of a linear array of objects which can determine the overall direction of the collective matches the well-known ability of cells to organize and polarize a primary developmental axis (e.g., anterior-posterior, or left-right) (De Robertis et al., 1989), via mechanisms such as morphogen gradients and planar polarization (Eldar et al., 2004). To improve the fit between this model and the abilities of regulative development, we break two critical assumptions normally used with sorting algorithms. First, instead of a central algorithm operating on an array of numbers it can see and control in its entirety, we implement a distributed algorithm that is executed, in parallel, by each number (i.e., cell) with local knowledge of its environment. In lieu of a central controller, cells have individual preferences about the ordering between them and their neighbors. Second, we do not assume that each operation succeeds—that is, we (like biology) implement an unreliable substrate, in which some cells are defective and may not obey when the rules tell them to move. We then quantitatively investigate the ability of these algorithms to sort an array of integers.
+
+[PAGE 3] Our goals here are: (1) to establish a proof of concept for taking a system which seems simple and well-understood, and for using empirical experiments to identify that system's novel capabilities, goals, behaviors, and failure modes (Abramson & Levin, 2021); (2) to gain insight into the dynamical process of establishing a linear axis, so that the relevant dynamics could be better understood by developmental biologists and synthetic bioengineers (Davies & Glykofrydis, 2020; Doursat et al., 2013; Doursat & Sánchez, 2014; Ho & Morsut, 2021; Kamm et al., 2018; Santorelli et al., 2019; Teague et al., 2016; Toda et al., 2018); (3) to understand how decentralized, agent-based systems can solve morphogenetic control tasks; (4) to determine how noise and unreliability in the medium is handled by such algorithms (robustness); and (5) to identify new behaviors and competencies that are not encoded overtly in the algorithm. Although ours is a very simple system, especially compared to any real biology, the benefit of these sorting algorithms is precisely that they are simple, easy to understand, and offer no place for additional complexity to hide (unlike in real cells). Here we show that even familiar, simple algorithms have the surprising ability to deal with perturbations in order to meet the algorithmically specified goals, and also exhibit novel behaviors that are not directly encoded in the algorithm.
+
+[PAGE 4] 2. Definitions of terms
+
+[PAGE 4] 3. Methods
+We developed a sorting algorithm evaluation system and implemented the cell-view sorting algorithms in python 3. The following sections provide more details about the model of the sorting platform, the structure of the sorting cells, the process of the evaluation, and the experimental test methods. https://github.com/Zhangtaining/cell_research
+
+[PAGE 4] 3.1. Sorting evaluation system
+We designed the sorting evaluation system to consist of 2 parts: the sorting algorithm execution (which performs the sorting on a given array) and the sorting process evaluation (which oversees and analyzes the sorting across trials).
+
+[PAGE 4] 1. Sorting algorithm execution
+We use three variables (Position, Value, and Algotype) to describe each cell's status. Initially, all cells are assigned values for these variables. Each cell has a unique Position (i = 0, 1, 2...L-1), while Value and Algotype may be the same as others. During sorting, Value and Algotype remain constant, and only the Position changes due to movement. The sorting execution part chooses the specified sorting algorithm to perform the sorting experiments based on the given number of experiments and the Frozen Cells. The execution subsystem passes a Probe object to each experiment run, and the Probe is designed to record each step of the sorting process. After the sorting process ends, the information collected by the Probe is stored as a .npy file.
+
+[PAGE 4] 2. Sorting process evaluation
+The input for the evaluation is configurable including the algorithms to evaluate, the number of Frozen Cells, and the evaluation types. The evaluation process fetches the files based on the specified inputs. The evaluation subsystem picks up the corresponding files based on the inputs that contain the sorting process info. Then the given evaluation is performed for the data in those files.
+
+[PAGE 4] 3.2. Traditional sorting algorithms
+In conventional sorting algorithms, a single top-down controller implements a set of rules to move cells
+
+
+[PAGE 30] around. The traditional algorithms we used as our baseline were:
+• Bubble Sort
+```
+procedure bubbleSort(A: list of sortable items)
+  n = len(A) # Get total number of items
+  swapped = False
+  #Keep looping the whole list until no swapping happened.
+  while not swapped
+    #Check each item with its previous neighbor
+    # So we start from the item on index 1 to last item (index starts from 0)
+    for i in range(1, n):
+      if A[i - 1] > A[i]:
+        swap(A[i - 1], A[i])
+        record swap
+        swapped = True
+  end procedure
+```
+
+• Insertion Sort
+```
+procedure insertionSort(A: list of sortable items)
+  n = len(A) # Get total number of items
+  for i in range(1, n): # Start from index 1 to end of the list (Index starting from 0)
+    value = A[i]
+    j = i - 1 # Start checking all the elements before the index i
+    while j >= 0 and A[j] > value:
+      swap(A[j + 1], A[j])
+      record swap
+      j = j - 1
+  end procedure
+```
+
+• Selection Sort
+```
+procedure selectionSort(A: list of sortable items)
+  n = len(A) # Get total number of items
+  for i in range(0, n - 1):
+    minIndex = i
+    # go over all elements after index i and find
+    # the min value to swap
+    for j in range(i + 1, n):
+      if A[j] < A[minIndex]:
+        minIndex = j
+    if minIndex != i:
+      swap(A[i], A[minIndex])
+      record swap
+  end procedure
+```
+
+[PAGE 30] 3.3. Implementation of cell-view sorting algorithm
+We sought to study the sorting process in a more biologically grounded (distributed) architecture, where each cell is a competent agent implementing local policies. We thus defined three bottom-up versions of common sort algorithms, where actions take place based on the cells' perspective (view) of their environment within the array. We used multi-thread programming to implement the cell-view sorting algorithms. Two types of threads were involved during the sorting process: cell threads are used to represent all cells, with each cell represented by a single thread; a main thread is used to activate all the threads and monitor the sorting process. The cell threads were multiple instances of the same sorting class (i.e., each cell had the same Algotype, which determined which of the sorting algorithms that cell used to guide its behavior). To ensure each cell acquires the lock randomly, regardless of the python scheduler, we ask each cell thread to generate their own random number (0-1) every time before it tries to acquire the lock. Only when the random number is smaller than 0.5 can the cell get the lock. This ensures that each cell gets the lock and performs its behavior randomly. Inspired by the 3 traditional sorting algorithms described above, we designed 3 kinds of cell-view sorting algorithms (Figure 2):
+
+• Cell-view Bubble Sort
+```
+procedure run()
+  while True:
+    random acquire lock
+    targetPosition = currentPosition + 1
+    if currentValue > value at targetPosition:
+      swap current cell with the cell at target position
+      record swap
+    release lock
+end procedure
+```
+
+• Cell-view Insertion Sort
+```
+procedure run()
+  is_enabled = False
+  while True:
+    random acquire lock
+    if is_enabled or all left side sorted:
+      is_enabled = True
+      targetPosition = currentPosition - 1
+      if currentValue < value at targetPosition:
+        swap current cell with the cell at target position
+        record swap
+    release lock
+end procedure
+```
+
+• Cell-view Selection Sort
+```
+// Each cell has an current target position and initial value is at the most left of the list.
+currentTargetPosition = 0 # Expecting itself has the smallest value and deserve position 0
+procedure run()
+  while True:
+    random acquire lock
+    targetPosition = currentTargetPosition
+    if currentValue < value at targetPosition:
+      swap current cell with the cell at target position
+      record swap
+    else:
+      currentTargetPosition += 1 # Lower the expectation to next right position.
+    release lock
+end procedure
+```
+The sorting process was set up in the main thread. All cells' threads were activated and killed from there.
+```
+procedure main()
+  A: list of sortable items
+  cells = []
+  for num in A:
+    c = cell type initiation(num)
+    cells.append(c)
+  for cell in cells:
+    cell.run()
+  // Since the cell thread won't stop by themselves, we need to have the main thread keeps
+  // monitoring the sorting process and stop all threads once the cells are sorted.
+  while cells not sorted:
+    wait(10)
+end procedure
+```
+We also introduce the Frozen Cell concept in the following study. The implementation of this concept is in the swap function:
+
+[PAGE 31] • Traditional sorting algorithms
+```
+procedure swap(i, j, frozenList)
+  if i in frozenList or j in frozenList:
+    return
+  request to swap
+end procedure
+```
+
+• Passive Frozen Cell
+```
+procedure swapTo(target)
+  if self is frozen:
+    return
+  request to swap
+end procedure
+```
+
+• Stuck Frozen Cell
+```
+procedure swapTo(target)
+  if self is frozen or target is frozen:
+    return
+  request to swap
+end procedure
+```
+
+[PAGE 31] 3.4. Evaluation metrics
+To quantify the comparison between traditional sorting algorithms and their cell-view versions, we utilized the following metrics to evaluate the performance of those algorithms.
+
+• Total Sorting Steps, Average, and Standard Deviation
+We defined each swap as a sorting step, and we used the Probe to record the total number of sorting steps for each experiment. Depending on the experiment (as stated in Results), we counted movement, or movement + comparison, as individual Steps. By comparing the average and standard deviation of the total steps, we derive the efficiency of sorting performance. We use  _ci_  to represent for the count of the sorting steps for Experiment  _i_ , and  _N_  for the total number of sorting experiments. Then we get the equation for average sorting steps  _C_  and standard deviation  _s_ :
+```
+C = (∑_(i=1)^N▒c_i )/N     (1)
+s = sqrt(((∑_(i=1)^N▒〖(c_i-C)〗^2)/(N-1)) )     (2)
+```
+
+• Monotonicity and Monotonicity Error
+Monotonicity is the measurement of how well the cells followed monotonic order (either increasing or decreasing). The monotonicity error is the number of cells that violate the monotonic order and break the monotonicity of the cell array. Unlike the total sorting steps, the monotonicity error can be measured at each time step. The following formula shows the calculation for the monotonicity error for increasing order sequence.  _Vi_  stands for the value of cell at position  _i_ , and  _n_  represents the total cells number. The maximum error is  _n_  - 1 when the list is in reverse order:
+```
+E = ∑_(i=1)^(n-1)▒〖V_i<V_(i-1) then 1 else 0〗     (3)
+```
+
+• Sortedness Value
+Sortedness Value is defined as the percentage of cells that strictly follow the designated sort order (either increasing or decreasing). For example, if the array were completely sorted, the Sortedness Value would be 100%.  _Vi_  stands for the value of cell at position  _i_ , and  _n_  represents for the total cells number:
+```
+S = (∑_(i=1)^(n-1)▒〖V_i>V_(i-1) then 1 else 0〗)/n     (4)
+```
+
+• Sortedness Delayed Gratification
+Delayed Gratification is used to evaluate the ability of each algorithm to undertake actions that temporarily increase Monotonicity Error to achieve gains later on. Delayed Gratification is defined as the improvement in Sortedness made by a temporarily error-increasing action. After measuring the Sortedness for each time step of the sorting process, we can get a Sortedness array. For any Sortedness mono-increasing subarray, we use  _Sii_  to represent for the first Sortedness value in the subarray and use  _Sij_  to represent for the last Sortedness value in the subarray. The total Sortedness change after a consecutive Sortedness value's increasing is ∆_Sincreasing_  =  _Sij_  –  _Sii_ . We use  _Sdi_  to represent for the first Sortedness value in the decreasing subarray after the increasing and use  _Sdj_  to represent for the last Sortedness value in the decreasing subarray. The Sortedness value decreasing starting from last peak is ∆_Sdecreasing_  =  _Sdi_  -  _Sdj_ :
+```
+DG = (∆S_increasing-∆S_decreasing)/∆S_decreasing     (5)
+```
+
+• Aggregation Value
+In sorting experiments with mixed Algotypes, we measured the extent to which cells of the same Algotype aggregated together (spatially) within an array at any given
+
+[PAGE 32] time. We defined Aggregation Value as the percentage of cells in the array having a directly adjacent left neighbor cell that were all the same Algotype.  _Ti_  stands for the algorithm type of cell at position  _i_  and  _n_  represents for the total number of cells:
+```
+A = (∑_(i=1)^(n-1)▒〖T_i=T_(i-1) then 1 else 0〗)/n     (6)
+```
+
+[PAGE 32] 3.5. Statistical hypothesis test methods
+We applied standard statistical hypothesis methods, z-test, to evaluate the significance of the differences we report.
+
+[PAGE 32] 4. Results
+We first analyzed the results both from our Cell-View Sorting Algorithms and from the traditional versions of those sorting algorithms, with the goal of determining whether the cell-view versions worked (Figure 3), and comparing measures of efficiency, error tolerance, and Delayed Gratification with those of their canonical counterparts. We also examined additional aspects of these algorithms' traversal of the sorting space, by characterizing their morphological structure during the process.
+
+[PAGE 32] 4.1. Efficiency comparison
+We found that our self-sorting arrays could indeed complete the task, and proceeded to characterize their efficiency at doing so. We used the total sorting steps that each algorithm needed to complete the sorting process for 100 elements (n = 100) in each experiment and repeated the experiments 100 times (N = 100) independently for each sorting algorithm. The initial values of the elements are random permutation from 1 to 100 without duplication. Then we used the average sorting steps (C) of the 100 pairs of experiments for traditional algorithms against Cell-View algorithms with same initial values. The value of average sorting steps (equation (1)) indicated the efficiency of the algorithm (Figure 4).
+
+[PAGE 9] Figure 3. Visualizing the sorting process as movement through sequence space. Much as biological morphogenesis can be described as a trajectory through anatomical morphospace, here we view the progressive sorting process as the ability of traditional or cell-view sorting algorithms to navigate the state space of sequences toward the eventual goal of monotonicity. We define the degree of sequential order in the array of data, at any given time, as its Sortedness, here plotted on the Y axis. Each plot indicates the trajectory of 100 repeated experiments (sorting process on a random input number sequence, with no repeat digits). Just as their traditional counterparts do, cell-view sorts successfully completed the sorting process, navigating from a random state to the 100% fully sorted state. Top row shows the comparison of Sortedness change during the sorting process between traditional Bubble sort and cell-view Bubble sort. Middle row shows the comparison of Sortedness change during the sorting process between traditional Insertion sort and cell-view Insertion sort. The difference between the two graphs is relatively small, because the implementation of cell-view Insertion sort always keeps the left side of the array sorted and allows one cell to join the sorted side each time, which is very similar to the traditional Insertion sorting algorithm. Bottom row shows the comparison of Sortedness change during the sorting process between traditional Selection sort and cell-view Selection sort. The major difference between these two graphs is that the cell-view sorting process needs more swaps to complete the sort, because every cell can move to its current target position and be swapped away when another cell with smaller value has the same current target position.
+
+[PAGE 10] Figure 4. Efficiency comparison between traditional and cell-view sort. 100 experimental repeats were performed in three kinds of sort, in traditional and cell-view modes, to compare efficiencies of each method. When comparing only the active moves taken (a), it is seen that cell-view sort is almost exactly as efficient as the traditional version for Bubble and Insertion sort (p = .24), but is less efficient for Selection sort (the Z-test statistical value is 120.43, and p-value is 0). When comparing comparisons as well as moves (corresponding to the biological cost of sensing, as well as acting), the cell-view versions are actually more efficient for Bubble and Insertion Sorts (Z-test statistical values for bubble and insertion sort were -68.96 and -71.19, respectively, p<<0.01), while the cell-view version is less efficient (z = 106.55, p<<0.01) for Selection sort (b).
+
+[PAGE 10] 4.2. Error tolerance
+We used 2 different ways to count the sorting steps: one counts only swaps as sorting steps; the other counts both swaps and comparisons. When we counted only swapping steps, the statistical values comparing the efficiencies of Bubble and Insertion sort were 0.73 and 1.26 (p-values were 0.47 and 0.24, respectively), revealing no significant difference between their performance. This indicates that the efficiency is very similar between traditional and cell-view versions of Bubble and Insertion sorting algorithms. However, cell-view Selection sort takes more swaps to complete sorting process than its traditional version by 11 times (z = 120.43, p<<0.01). Thus, we conclude that the cell-view Selection sort is less efficient than the traditional Selection sort.  The situation changed when we considered both reading (comparison) and writing (swapping) as costly steps, simulating the metabolic cost of both measurements and actions. In this comparison, the total steps taken to complete the sorting process of bottom-up versus traditional sorting algorithms were fewer by 1.5 and 2.03 times for Bubble and Insertion sort, respectively (z = -68.96, -71.19, p<<0.01 in both cases). For Selection sort, the total steps of the bottom-up version were greater by 1.17 (z = 106.55, p<<0.01). These results indicate that the cell-view Bubble and Insertion sorting algorithms are more efficient than the traditional versions. This is likely because traditional algorithms are using each element to compare with other elements, while cell-view algorithms will stop proactively comparing with other cells when they are on the target position. In contrast, the cell-view Selection sorting algorithm is less efficient than the traditional Selection sorting algorithm.
+
+To compare the error tolerance of the cell-view sorting algorithms with that of the traditional sorting algorithms, we introduced Frozen Cells into the sorting process. We ran the sorting Experiment 100 times (N = 100) for 100 cells (n = 100) using different numbers (f = 1, 2, 3) of Frozen Cells and then checked the average final monotonicity errors for the experiments with a given number of Frozen Cells. A higher monotonicity error indicates lower error tolerance (Figure 5). We found that all the cell-view sorting algorithms exhibited less monotonicity error than the traditional versions, from which we conclude that cell-view algorithms have higher error tolerance than the traditional versions. By comparing the different cell-view algorithms, we saw that with passive Frozen Cells, the cell-view Bubble sort has the least monotonicity error (average value of 100 experiments was zero with 1 Frozen Cell, 0.8 with 2 Frozen Cells, and 2.64 with 3 Frozen Cells); and the cell-view Selection sort has the highest monotonicity error (average value of 100 experiments was 2.24 with 1 Frozen Cell, 4.36 with 2 Frozen Cells, and 13.24 with 3 Frozen Cells). With stuck Frozen Cells, the cell-view Bubble sort has the highest monotonicity error (average value of 100 experiments was 1.91 with 1 Frozen Cell, 3.72 with 2 Frozen Cells, and 5.37 with 3 Frozen Cells); and the cell-view Selection sort has the lowest monotonicity error (average value of 100 experiments was 1.0 with 1 Frozen Cell, 1.96 with 2 Frozen Cells, and 2.91 with 3 Frozen Cells). In conclusion, we can see that both Cell-view and Traditional algorithms have performed with high error tolerance. The cell-view Selection sort had the highest Error Tolerance
+
+[PAGE 11] with stuck Frozen Cells, and that the cell-view Bubble sort had higher Error Tolerance with passive Frozen Cells.
+
+[PAGE 11] 4.3. Characterization of delayed gratification
+Delayed Gratification (DG) is the ability to temporarily go further away from a goal to achieve gains later in the process (Figure 6). To compare the Delayed Gratification (DG) of cell-view algorithms and traditional algorithms, we calculated the Delayed Gratification based on the results of the error tolerance experiments mentioned above (Figure 7). All the algorithms showed the ability of Delayed Gratification. It is important to note that traditional sorting algorithms encounter difficulties when encountering frozen cells. The DG metric effectively demonstrates how the level of Sortedness changes as the sorting processes encounters these frozen cells. We use the results from the experiments we have done for the error tolerance to do the analysis. The average Delayed Gratification difference between the Cell-view and Traditional Bubble sort was found to be 0.16 (z = 34.04, p<<0.01). The difference between the Cell-view and Traditional Insertion sort was very small - 0.03 (z=0.60, p = .55). The average DG difference between the Cell-view and Traditional Selection sort was 2.77 (z = 17.21, p<<0.01). From these results, we conclude that cell-view Bubble sort performs more DG than the traditional version, cell-view Insertion sort performs very similar amounts of DG as the traditional version, and cell-view Selection sort performs less DG than the traditional version.
+
+A random walker will also sometimes move further from its goal and thus exhibit what may at first look like Delayed Gratification; in general, perturbative experiments are needed to distinguish these cases and understand what any behavioral system is really doing. To demonstrate DG as a problem-solving strategy, it must be shown to be performed specifically in the context of barriers, not just part of a stochastic strategy without feedback or context. Thus, we next compared the amount of DG observed for each algorithm in the context of different numbers of Frozen Cells: would the algorithm tend to temporarily back-track in Sortedness more often when there are more broken cells in its environment? We observed a clear trend of increasing average Delayed Gratification for the Bubble and Insertion sort experiments for both Traditional and Cell-view, and the Cell-view algorithms performed more Delayed Gratification during the sorting process. The average Delayed Gratification for cell-view Bubble sort was 0.24 with zero Frozen Cell, 0.29 with 1 Frozen Cell, 0.32 with 2 Frozen Cells, and 0.37 with 3 Frozen Cells (all average values are based on 100 repetitions). For Insertion sort, we saw that the average DG value was 1.1 with no Frozen Cell, 1.13 with 1 Frozen Cell, 1.15 with 2 Frozen Cells, and 1.19 with 3 Frozen Cells. However, we did not see a clear trend for either cell-view or traditional Selection sort. This reveals that Bubble and
+
+[PAGE 11] Insertion sort deploy Delayed Gratification in a context-sensitive manner—they do more backtracking specifically when faced with defective cells.
+
+[PAGE 11] 4.4. Mixed Algotype sorting: Analyzing chimeric arrays
+We next introduce the notion of an "Algotype": this refers to one of several discrete algorithms that a cell may be using to control its behavior. Algotype is meant to be distinct from data quantities like a cell's numerical value (its genotype) or its current position (its phenotype); rather, Algotype reflects a cell's behavioral tendencies. Our use of bottom-up (distributed) control in the sort

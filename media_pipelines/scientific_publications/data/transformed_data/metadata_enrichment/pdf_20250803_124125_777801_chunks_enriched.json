@@ -1,0 +1,109 @@
+{
+  "file_metadata": {
+    "text_file": "data/extracted_text/pdf_20250803_124125_777801_extracted_text.txt",
+    "original_filename": "pdf_20250803_124125_777801_extracted_text.txt",
+    "pdf_filename": "pdf_20250803_124125_777801.pdf",
+    "file_size": 43031,
+    "authors": [
+      "Carol J. Maples"
+    ],
+    "journal": "Giving Voice",
+    "doi": "10.4324/9781032676883-12",
+    "year": "2025",
+    "title": "Giving Voice Evolving",
+    "confidence_score": null,
+    "document_type": "book-chapter",
+    "publication_date": "2024",
+    "page_range": "102-120",
+    "crossref_data": true,
+    "enrichment_method": "crossref_api"
+  },
+  "chunks": [
+    {
+      "text": "Guiding biological systems toward desired states, such as morphogenetic outcomes, remains a fundamental challenge with far-reaching implications for medicine and synthetic biology. While large language models (LLMs) have enabled natural language as an interface for interpretable control in AI systems, their use as mediators for steering biological or cellular dynamics remains largely unexplored. In this work, we present a functional pipeline that translates natural language prompts into spatial vector fields capable of directing simulated cellular collectives. Our approach combines a large language model with an evolvable neural controller (Prompt-to-Intervention, or P2I), optimized via evolutionary strategies to generate behaviors such as clustering or scattering in a simulated 2D environment. We show that even with a limited vocabulary and simplified cell models, evolved P2I networks can successfully align cellular dynamics with user-defined goals expressed in plain language. This work offers a complete loop from language input to simulated bioelectric-like intervention to behavioral output, providing a foundation for future systems capable of natural language-driven cellular control.",
+      "section": "Abstract",
+      "topic": "Natural language control of cellular dynamics",
+      "chunk_summary": "A novel pipeline uses large language models and evolvable neural controllers to translate natural language prompts into spatial vector fields for directing simulated cellular collectives.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null,
+      "pdf_filename": "pdf_20250803_124125_777801.pdf",
+      "original_filename": "pdf_20250803_124125_777801_extracted_text.txt",
+      "authors": "[\"Nam H. Le\", \"Patrick Erikson\", \"Yanbo Zhang\", \"Michael Levin\", \"Josh Bongard\"]",
+      "year": "2025",
+      "journal": "ACM GECCO Proceedings 2025",
+      "doi": null
+    },
+    {
+      "text": "Complex systems remain inherently difficult to predict and control. Biological systems, despite being notoriously complex and thus hard to control, have an advantage over inorganic complex systems in that their behavior can be modified by a wide range of interventions across physical modalities (electrical, mechanical, chemical, vibrations, thermal, optical) – applied across multiple scales, from molecular interactions to whole-body and even ecosystem-level influences. However, traditional bottom-up approaches to biological control have predominantly focused on molecular mechanisms at the cellular level, often neglecting the emergent behaviors that arise from the collective interactions of cells. Recent insights from information theory and control systems suggest that higher levels of organization may provide effective control points, where emergent dynamics serve as interfaces for top-down regulation. For instance, collective behaviors such as those observed in wound healing, morphogenesis, and metastasis are driven by localized interactions yet give rise to robust global patterns essential for life. Bridging these hierarchical levels of control remains a key challenge for understanding and influencing emergent biological dynamics.",
+      "section": "Introduction",
+      "topic": "Challenges in biological control",
+      "chunk_summary": "Traditional bottom-up approaches to biological control often neglect emergent behaviors, while higher levels of organization may offer more effective control points.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null,
+      "pdf_filename": "pdf_20250803_124125_777801.pdf",
+      "original_filename": "pdf_20250803_124125_777801_extracted_text.txt",
+      "authors": "[\"Nam H. Le\", \"Patrick Erikson\", \"Yanbo Zhang\", \"Michael Levin\", \"Josh Bongard\"]",
+      "year": "2025",
+      "journal": "ACM GECCO Proceedings 2025",
+      "doi": null
+    },
+    {
+      "text": "One way to discover the best angles from which to apply successful interventions to biological targets is to not presuppose the scale and type of intervention. Rather, it could be efficacious to train AI to autonomously discover the appropriate scale and type of intervention free of human investigator bias, as well as which intervention of that type, and at that scale, yield the desired result. It is very likely that different desired results will require different interventions of different kind and scale. Thus it would be desirable to (1) develop an interface that allows investigators to rapidly articulate and specify desired outcome; (2) employ an AI model that could translate these desired outcomes into interventions likely to bring them about; and (3) provide a complementary interface that renders the resulting system behavior in human-interpretable form. In this paper, we present a framework that embodies these ideas in a simulated environment. Our approach-termed ZapGPT-leverages natural language as the medium for interfacing with cellular dynamics. Specifically, natural language prompts (e.g., \\\"Cluster!\\\") are translated into spatially distributed interventions via a Prompt-to-Intervention (P2I) model, and the ensuing cellular dynamics are interpreted back into natural language using a Dynamics-to-Response (D2R) model based on a video language model. While our experiments focus on a simplified task with a constrained set of interventions and outcomes, they serve as an initial demonstration of a language-guided, evolutionary framework for influencing decentralized behaviors in synthetic systems. We further explore how evolutionary algorithms can be integrated to optimize the mapping from human prompts to cellular interventions. In our study, we focus on simple collective behaviors such as clustering and scattering—providing a proof-of-concept that lays the groundwork for future investigations into more complex and nuanced language-to-cellular dynamics transformations.",
+      "section": "Introduction",
+      "topic": "ZapGPT framework",
+      "chunk_summary": "The ZapGPT framework uses natural language prompts to control cellular dynamics in a simulated environment, translating prompts into interventions via a P2I model and interpreting the results via a D2R model.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null,
+      "pdf_filename": "pdf_20250803_124125_777801.pdf",
+      "original_filename": "pdf_20250803_124125_777801_extracted_text.txt",
+      "authors": "[\"Nam H. Le\", \"Patrick Erikson\", \"Yanbo Zhang\", \"Michael Levin\", \"Josh Bongard\"]",
+      "year": "2025",
+      "journal": "ACM GECCO Proceedings 2025",
+      "doi": null
+    },
+    {
+      "text": "Recent advances in developmental biology, bioelectricity, and multi-scale physiology suggest that biological systems exhibit collective intelligence, integrating information across multiple scales to make adaptive decisions. Cells communicate through bioelectric, biochemical, and mechanical signals, dynamically shaping morphogenesis, regeneration, and behavior. Understanding and harnessing these properties require a framework that enables high-level communication with cellular collectives rather than micromanaging molecular mechanisms. It has been shown recently that biological systems process information beyond the molecular scale, suggesting that higher-level interventions can shape collective behavior without requiring direct genetic or molecular manipulations. Bioelectric signaling, for instance, provides a powerful mechanism for influencing cellular decision-making, enabling the reprogramming of anatomical structures and regenerative outcomes. Rather than focusing solely on gene editing or biochemical pathways, researchers have explored methods for modulating bioelectric gradients to guide self-organization and pattern formation in tissues. This shift from reductionist molecular control to emergent, system-level regulation suggests the need for novel computational frameworks that can translate high-level human intent into biologically meaningful interventions. Rather than prescribing specific molecular changes, such frameworks should enable guided self-organization, allowing tissues to achieve target structures or behaviors based on interpretable external cues.",
+      "section": "Background",
+      "topic": "Bioelectric signaling and system-level regulation",
+      "chunk_summary": "Bioelectric signaling and other higher-level interventions can shape collective cellular behavior without direct genetic manipulation, highlighting the need for frameworks that translate human intent into biologically meaningful interventions.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null,
+      "pdf_filename": "pdf_20250803_124125_777801.pdf",
+      "original_filename": "pdf_20250803_124125_777801_extracted_text.txt",
+      "authors": "[\"Nam H. Le\", \"Patrick Erikson\", \"Yanbo Zhang\", \"Michael Levin\", \"Josh Bongard\"]",
+      "year": "2025",
+      "journal": "ACM GECCO Proceedings 2025",
+      "doi": null
+    },
+    {
+      "text": "Similar principles have been demonstrated in synthetic systems, where decentralized agents evolve complex behaviors through local interactions and selection. For example, evolving neuronal controllers for Boid-like agents has shown that coordinated group motion and adaptive dynamics can emerge from simple, bottom-up rules, without centralized control or explicit objectives. This line of work underscores the potential of evolutionary computation to generate lifelike, adaptive behaviors offering a synthetic parallel to the self-organizing principles observed in biological morphogenesis. Advances in artificial intelligence (AI) and machine learning (ML) have enabled new ways to analyze and control complex systems, including biological networks. Deep learning models have been applied to tasks such as protein folding, cellular image analysis, and bioelectric signal interpretation. However, most AI applications in biology remain focused on data-driven pattern recognition rather than active control. Beyond predictive modeling, evolutionary algorithms (EAs) offer a robust framework for optimizing biologically meaningful interventions, experimental protocols, and control strategies for cellular behaviors. EAs have been applied in fields such as synthetic biology and bioelectric pattern optimization, providing a mechanism for tuning system-level parameters to achieve desired outcomes without requiring explicit mechanistic models. Yet, a key challenge remains: while evolutionary algorithms can optimize interventions, they do not inherently provide an intuitive way for human users to specify goals or interpret results. Most AI-driven approaches in biological control either rely on rigid mechanistic models or produce opaque, uninterpretable policies. To address this, our work proposes leveraging natural language as an intuitive interface for specifying objectives and evaluating outcomes. Language-based interventions allow for adaptive, dynamic communication between human intent and complex systems, bridging the gap between abstract symbolic goals and physical interventions. Inspired by this idea, our proposed framework integrates large language models (LLMs) to generate structured interventions and vision-language models (VLMs) to interpret the resulting system dynamics. Furthermore, evolutionary algorithms are employed to refine the translation process from natural language to intervention. It is important to note that our approach is presented as a preliminary, proof-of-concept demonstration within a constrained simulation setting, with the ultimate goal of scaling to more complex, real-world scenarios. The following section describes the key components of this framework and the experimental setup used to evaluate its effectiveness.",
+      "section": "Background",
+      "topic": "Evolutionary algorithms and natural language interface",
+      "chunk_summary": "Evolutionary algorithms offer a robust framework for optimizing biological interventions, and integrating natural language provides an intuitive interface for specifying goals and interpreting results.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null,
+      "pdf_filename": "pdf_20250803_124125_777801.pdf",
+      "original_filename": "pdf_20250803_124125_777801_extracted_text.txt",
+      "authors": "[\"Nam H. Le\", \"Patrick Erikson\", \"Yanbo Zhang\", \"Michael Levin\", \"Josh Bongard\"]",
+      "year": "2025",
+      "journal": "ACM GECCO Proceedings 2025",
+      "doi": null
+    }
+  ],
+  "gemini_response": "",
+  "processed_at": "2025-08-06T12:21:04.676289",
+  "enriched_at": "2025-08-11T14:27:36.102558",
+  "enrichment_methods": [
+    "crossref_title"
+  ]
+}

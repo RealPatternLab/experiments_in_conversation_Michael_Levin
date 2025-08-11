@@ -1,0 +1,234 @@
+Morphogenesis as Bayesian Inference:
+A Variational Approach to Pattern Formation and Control in
+Complex Biological Systems
+
+Franz Kuchling¹, Karl Friston², Georgi Georgiev³, Michael Levin1*
+
+1 Biology Department, Allen Discovery Center at Tufts University, Medford, MA, USA
+2 The Wellcome Trust Centre for Neuroimaging, Institute of Neurology, Queen Square,
+London, UK
+3 Assumption College, Department of Physics, 500 Salisbury St., Worcester, MA, USA
+
+* Michael.Levin@tufts.edu
+
+[PAGE 1] Abstract
+Recent advances in molecular biology such as gene editing [Mahas et al., 2018], bioelectric recording and manipulation [Levin, 2012a] and live cell microscopy using fluorescent reporters [Mutoh et al., 2012], [V. Sekar et al., 2011] - especially with the advent of light-controlled protein activation through optogenetics [Bugaj et al., 2017] have provided the tools to measure and manipulate molecular signaling pathways with unprecedented spatiotemporal precision. This has produced ever increasing detail about the molecular mechanisms underlying development and regeneration in biological organisms. However, an overarching concept – that can predict the emergence of form and the robust maintenance of complex anatomy - is largely missing in the field. Classic (i.e., dynamic systems and analytical mechanics) approaches such as least action principles are difficult to use when characterizing open, far-from equilibrium systems that predominate in Biology. Similar issues arise in neuroscience when trying to understand neuronal dynamics from first principles. In this (neurobiology) setting, a variational free energy principle has emerged based upon a formulation of self-organization in terms of (active) Bayesian inference. The free energy principle has recently been applied to biological self-organization beyond the neurosciences [Friston et al., 2015], [Friston, 2013]. For biological processes that underwrite development or regeneration, the Bayesian inference framework treats cells as information processing agents, where the driving force behind morphogenesis is the maximization of a cell's model evidence. This is realized by the appropriate expression of receptors and other signals that correspond to the cell's internal (i.e., generative) model of what type of receptors and other signals it should express. The emerging field of the free energy principle in pattern formation provides an essential quantitative formalism for understanding cellular decision-making in the context of embryogenesis, regeneration, and cancer suppression. In this paper, we derive the mathematics behind Bayesian inference as understood in this framework and use simulations to show that the formalism can reproduce experimental, top-down manipulations of complex morphogenesis. First, we illustrate this 'first principle' approach to morphogenesis through simulated alterations of anterior-posterior axial polarity (i.e., the induction of two heads or two tails) as in planarian regeneration. Then, we consider aberrant signaling and functional behavior of a single cell within a cellular ensemble as a first step in carcinogenesis as false 'beliefs' about what a cell should 'sense' and 'do'. We further show that simple modifications of the inference process can cause and rescue mis-patterning of developmental and regenerative events without changing the implicit generative model of a cell as specified, for example, by its DNA. This formalism offers a new road map for understanding developmental change in evolution and for designing new interventions in regenerative medicine settings.
+
+
+[PAGE 2] An Introduction to Bayesian Inference
+Evolutionary change results from mutations in DNA and selection acting on functional bodies. Thus, it is essential to understand how the hardware encoded by the genome enables the behavioral plasticity of cells that can cooperate to build and repair complex anatomies. Indeed, most problems of biomedicine - repair of birth defects, regeneration of traumatic injury, tumor reprogramming, etc. could be addressed if prediction and control could be gained over the processes by which cells implement dynamic pattern homeostasis. The fundamental knowledge gap and opportunity of the next decades in the biosciences is to complement bottom-up molecular understanding of mechanisms with a top-down computational theory of cellular decision-making and infotaxis. Relevant concepts have been developed in neuroscience and physics, but are generally not familiar to developmental or regenerative biologists [Friston et al., 2015], [Friston, 2013]. Here, we lay out the mathematical foundation of the type of Bayesian modeling employed by new approaches to understand metazoan cell cooperation to characterize - and simulate - pattern formation. We start by identifying a Lyapunov function that can be used to analyze and solve any dynamic system, using the fundamental theorem of vector calculus (i.e., the Helmholtz Decomposition). We use it to characterize the generalized flow of systemic states, in terms of convergence to a non-equilibrium steady-state. We then introduce the notion of a Markov blanket that separates the external and internal states of the system, where the Markov blanket is comprised of active and sensory states. Using this partition, we can then replace the Lyapunov function with a variational free energy to solve for the evolution of internal and active states and thereby characterize self-organization in far from equilibrium systems that can be partitioned into a cell (i.e., internal states and their Markov blanket) and the external milieu. Subsequent sections apply this formalism to illustrate morphogenesis and neoplasia using simulations. Bayesian inference is a statistical process, wherein Bayes theorem is used to update the probability of a hypothesis with respect to evidence obtained by measurement of the sensorium or environment. In essence, any kind of information processing system infers unobservable (i.e., hidden) states of its environment by comparing sensory samples with predictions of sensory input and updating its expectations about the causes of that input. Bayes theorem rests on the three basic axioms of probability theory and is used to relate the conditional probability of an unobservable event A, given an observable quantity B, to the likelihood of B, given that A is true. This is written as:
+
+P(A | B) = P(B|A)P(A) / P(B) , (1)
+
+where conditional probability P(A|B) is also called the posterior; namely, the inferred probability of an event A, given an event B. Conversely, P(B|A) is the probability of B, given A, called the likelihood. The probability P(A) is called a prior belief and the probability of P(B), is called marginal likelihood or evidence. In Bayesian inference, the above relationship is used to accumulate information about an unobservable or hidden state by sampling measurable events. This is known as Bayesian belief updating, because it converts prior beliefs into posterior beliefs - based on a generative model.  In short, the likelihood assigned to the observation and prior beliefs are combined to form posterior beliefs.
+
+To describe the dynamics of an ensemble of information processing agents (as in cells, for example) as a process of Bayesian belief updating, we need to relate the stochastic differential equations governing Newtonian motion and biochemical activity to the probabilistic quantities above. This is fairly straightforward to do, if we associate biophysical states with the parameters of a probability density - and ensure their dynamics perform a gradient flow on a quantity called variational free energy. Variational free energy is a quantity in Bayesian statistics that, when minimized, ensures the parameterized density converges to the posterior belief, as we will see below. In neuroscience, the minimization of variational free energy is referred to as active inference. This approach to neuronal dynamics has been successfully used to reproduce a variety of neuronal phenomena [Friston et al., 2017], [Ungerleider and Leslie, 2000], [Adams et al., 2013], [Desimone and Duncan, 1995], [Barrett and Simmons, 2015], [Corbetta and Shulman, 2002]. Crucially, exactly the same scheme has been shown recently - through computational proof-of-principle simulations - to produce and maintain the somatic patterning of self-organization [Friston, 2013], [Friston et al., 2015]. We will see that when the basic condition for an inference type description of a system namely, the existence of a Markov blanket separating external and internal states - is satisfied, agents such as biological cells form into organized conglomerations based on their generative models of how of their blanket states influence – and are influenced by external states in the external milieu (i.e., the states of other cells) [Friston, 2013].
+
+In classical thermodynamic descriptions, this would be accompanied by an increase of thermodynamic entropy over the entire system, through localized increases in organization (i.e., decrease in entropy) of the states associated with each cell (i.e., internal states and their Markov blanket). However, as biological systems, especially cells, are invariably open, far-from-equilibrium or non-equilibrium steady state systems, the dynamics of this process are almost impossible to compute. Instead, by focusing on a probabilistic account of self-organization, in terms of Bayesian belief updating, we can place an upper bound on the entropy of the system's blanket states that is computationally tractable. In brief, we will see that the dynamics of system with a Markov blanket that self-organizes to non-equilibrium steady-state can be described as a gradient flow on this computable (variational) free energy bound. This approach has been shown to have a high predictive validity in neurobiology; both in terms of behavior and the neuronal correlates of action and perception. However, its application in the broader biosciences has not been explored, even though the basic assumptions behind it apply broadly.
+
+
+[PAGE 3] Mathematical Foundations
+In what follows, we introduce the mathematics that underwrites the Bayesian interpretation of non-equilibrium steady-state dynamics. We will start with a brief overview of the Helmholtz decomposition and Lyapunov functions in dynamical systems. We will see that one can formulate any dynamics in terms of a potential function that plays the role of a Lyapunov function. This is illustrated from the point of view of classical mechanics with dissipative aspects. We then derive the same result in terms of density dynamics using the Fokker Planck equation, in generalized coordinates of motion. This formulation shows that the potential or Lyapunov function is simply the negative log probability of a state being occupied at non-equilibrium steady-state. Crucially, this quantity is bounded from above by variational free energy. This means the flow of particular states at non-equilibrium steady-state can be cast as a gradient flow on the same quantity that is minimized by Bayesian belief updating.
+
+
+[PAGE 4] 3.1 Stability and Convergence in Coupled Dynamical Systems
+3.1.1 The Helmholtz decomposition
+The Helmholtz decomposition states that any sufficiently smooth (i.e., possessing continuous derivatives) vector field F can be decomposed into an irrotational (curl-free) and a solenoidal (divergence-free) vector field. Because an irrotational vector field has only a scalar potential and a solenoidal vector field has only a vector potential, we can express the vector field as
+
+F = -∇I + ∇ × A, (2)
+
+where I and ∇ × A are the irrotational and solenoidal vector fields respectively.
+
+3.1.2 Lyapunov functions
+Lyapunov functions have been used extensively in dynamical systems theory and engineering to characterize the stability of fixed points of a dynamical system [Lyapunov, 1992], [Mawhin, 2015]. Lyapunov functions are generally defined for smooth systems through the following conditions:
+
+(a) L(x*) = 0, and L(x) > 0 if x ≠ x*
+(b) dL(x)/dt ≤ 0, for all x ∈ O, (3)
+
+where O ⊂ R is an open set containing all states x.
+(a) requires the Lyapunov function L to be minimal for fixed points x* representing local minima, and (b) denotes convergence to these fixed points over time. Following [Yuan et al., 2014], we can generalize this local Lyapunov function of stability to a global Lyapunov function that plays the role of a potential function of any dynamical system. This follows by generalizing condition (a) to allow for saddle points:
+
+∇L(x*) = 0, (4)
+
+Following [Yuan et al., 2014] we show how a Lyapunov function is equivalent to a potential function, when characterizing the stability of a dynamical system. In physics, a potential function ψ can be constructed to describe the flow of or forces acting on a particle through a potential energy gradient:
+
+Fpot = ∇ψ. (5)
+
+These forces are conservative, where the total work done on the particle is independent of its trajectory (e.g., Gravitational force). However, there are also dissipative, or non-conservative forces, for which the total work done depends on the particle's trajectory and is hence irreversible (e.g., frictional force). At steady-state, these components balance each other, so that the total Force Ftot is zero:
+
+Ftot = Fcon + Fdis = 0, (6)
+
+where Fcon and Fdis are the conservative and dissipative forces respectively. For example, in electromagnetics, the Lorentz force describes the forces acting on a moving charged particle:
+
+FLorentz = qE + ev × B, (7)
+
+
+[PAGE 5] where q is its charge, v the velocity of the particle, and E and B are the electric and magnetic forces, respectively. We can therefore write Fcon as a combination of Lorentz force and potential energy induced force:
+
+Fcon = -∇ψ(x) + ev × B, (8)
+
+while the dissipative force can be expressed as a frictional force (due to dissipative random fluctuations):
+
+Fdis = -Sv. (9)
+
+Here, S is a symmetric and semi-positive definite friction tensor. Combining these definitions, we can express the total force as a balance of the forces as defined above, resulting in:
+
+Sv + ev × B = -∇ψ(x), (10)
+
+One can generalize this equation for arbitrary n-dimensional systems by replacing the vector-valued cross product v × B = Tv, where T is an antisymmetric matrix to give the canonical form of (11):
+
+(S + T)v = -∇ψ(x), (11)
+
+Finally, following [Yuan et al., 2014] we can transform this expression into a standard form using a diffusion tensor Γ (defined as half the covariance of the dissipative random fluctuations) and a tensor Q (describing friction) satisfying ∇ • Q∇ψ(x) = 0, by setting ψ(x) as the Lyapunov function L(x) as defined above so that we get:
+
+f(x) = v = (Q – Γ)∇L(x), (12)
+
+where f(x) describes the flow of states. This equation describes the evolution or flow of states resulting from (conservative and dissipative) forces at non-equilibrium steady-state.
+
+In summary, for any dynamical system at non-equilibrium steady-state, we can express the flow in terms of a scalar potential or Lyapunov function f(x) = L(x), where the flow can always be decomposed into a gradient flow, which minimizes the potential, and a solenoidal component, that flows on the iso-contours of the potential. The final move is to associate the Lyapunov function or potential with variational free energy as follows.
+
+[PAGE 5] 3.2 Variational Free Energy
+Variational free energy is a function of internal states that allows one to associate the Lyapunov function from (17) with Bayesian model evidence and hence characterize systemic dynamics in terms of Bayesian inference and the implicit generative models. This device works by unpacking the non-equilibrium steady-state flow of external, internal and blanket states. Under this partition, instead of minimizing the Lyapunov function or (thermodynamic) potential, the internal and active states come to minimize variational free energy. Crucially, the variational free energy is defined in terms of a generative model and implicit posterior beliefs encoded by internal states. This minimization licenses an interpretation of self-organization in terms of belief updating according to Bayes rules above. In turn, this allows us to specify the resulting non-equilibrium steady-state in terms of a generative model - and ensuing inference - as we will see below. First, we will revisit the standard form for dynamics above, in the setting of generalized coordinates of motion and density dynamics as described by the Fokker Planck equation.
+
+
+[PAGE 6] 3.2.1 Generalized Flow
+We can describe dynamics in generalized coordinates of motion, denoted with a tilde, where  x̃ is defined as:
+
+x̃ = (x, ẋ, ẍ, ...), (13)
+
+This augments a state with its velocity, acceleration and so on. Later, we will use generalized coordinates of motion to parameterize a posterior density over (the generalized motion of) external states (that are hidden behind the Markov blanket). Among other advantages, generalized coordinates of motion allow one to accommodate temporal correlations in random fluctuations. Assuming a smooth dynamical system, subject to random fluctuations, we can describe the motion of states with the Langevin equation:
+
+ẋ = f(x) + ῶ, (14)
+
+where f(x) is the generalized flow (or time evolution) of states due to forces acting on the states and ῶ are random fluctuations, under the usual Wiener assumptions (the flow of states is made up of a process of independent, Gaussian increments that follow a continuous path).
+
+In statistical physics the ensuing dynamics is commonly described in terms of density or ensemble dynamics; namely, the evolution of the probability density p(x), through the Fokker-Planck equation. The Fokker Planck equation can be obtained for any Langevin equation, using the conservation of probability mass:
+
+ṗ(x) = ∇ • [ẋp(x)] = 0, (15)
+
+where ẋp(x) describes the probability current. This turns the Fokker-Planck equation into a continuity equation, which reads:
+
+ṗ(x) = ∇ • Γ∇p – ∇ • (f(x)p). (16)
+
+This is a partial differential equation that describes the time evolution of the probability density p(x) under dissipative (first term) and conservative (second term) forces. At non-equilibrium steady-state, the density dynamics is just the solution to the Fokker Planck equation:
+
+L(x) = -ln p(x), (17)
+
+such that ṗ = -p∇L and ṗ = 0.
+Using the Helmholtz decomposition from (2), we can now express steady-state flow in terms of a divergence-free component and a curl-free descent on a scalar Lyapunov function L(x) to obtain
+
+f(x) = (Q – Γ)∇L(x). (18)
+
+This is the solution at non-equilibrium steady-state and is exactly the same solution for the flow of particles in the classical treatment above. Crucially, we can now see that the Lyapunov function is the negative log probability of finding the system in any (generalized) state L(x) = -ln p(x). This is also known as the self-information of a state in information theory (also known as surprisal, or more simply surprise). In Bayesian statistics it is known as the negative log evidence.
+
+In summary, any weakly mixing dynamical system that at non-equilibrium steady-state will evince a flow that can be decomposed into a gradient flow on surprise and an accompanying solenoidal flow. Because we can associate the Lyapunov function
+
+
+[PAGE 7] in (18) with a free energy [Seifert, 2012], the system is effectively minimizing a free energy in its convergence to a set of attracting states (known as a random dynamical attractor), which have a high probability of being occupied [Crauel and Flandoli, 1994]; namely a high marginal likelihood or evidence. This construction is used extensively in biophysical research fields, such as protein folding to solve for steady-state solutions [Dinner et al., 2000], [Lammert et al., 2012].
+
+[PAGE 7] 3.2.2 Least Action Principles
+Physics offers a useful formalism to understand, at a quantitative level, the ability of biological systems (as evidenced by regulative development and regeneration) to work towards an invariant outcome, despite various perturbations. Understanding this 'goal-directed' activity is an important open problem in biological control.  The least action principle can predict the emergence of form, in terms of the flow or paths of least action in biological systems. For example, in colonies, ants find the paths of least action to harvest food and bring it to the colony. This example considers their paths as flow channels, or trajectories, finding the least average action for each instance of foraging, given available resources. More generally, minimization of action in an open system leads to structure formation. The 'flows' in such (dissipative) systems are of energy, matter and constituent elements along the paths of least action. An open dynamical system tends towards its state of least action, or the 'most action efficient state'. A canonical example of the emergence of such dissipative structures is when a moving fluid (e.g., a river) erodes obstructions to its flow to form a network of flow channels.
+
+In (dissipative) random dynamical systems [Arnold, 1995], [Crauel and Flandoli, 1994], action is not minimized for each element of the system, but, on average over an ensemble of elements (or repeated trajectories of the same element) [Georgiev and Georgiev, 2002], [Georgiev et al., 2015], [Georgiev and Chatterjee, 2016], [Georgiev et al., 2017]. Obstructive-constraint minimization therefore reduces action for each event within the system and self-organizes it, forming a flow structure that could be construed as a dissipative structure [England, 2015], [Evans and Searles, 2002], [Prigogine, 1978]. Crucially, since self-organizing open systems are not conservative, their structured flow is quintessentially dissipative. While the Lyapunov function of a physical system is readily used to establish the stability of a fixed point in dynamical systems, physicists commonly use the Lagrangian to solve the trajectory of a systems states. Classically, for a conservative system, the Lagrangian is defined as:
+
+L = T - V, (19)
+
+where V is the potential energy of the system, defined through the constraints of the system, and T is the kinetic energy of the particles that constitute the system at hand. For any Lagrangian, the trajectory of states in generalized coordinates (t, x(t), ẋ(t)) are given by the solutions to the the Euler-Lagrange equation, which are bound by the principle of variations to be functions for which the following functional has extrema (i.e., is stationary):
+
+
+[PAGE 8] 
+S(x) = ∫ L(t, x(t), ẋ(t)) dt. (20)
+
+S integrates the Lagrangian of generalized states for boundary conditions defined for initial and final time points t₁ and t₂. The most likely path between these points is obtained when the functional derivative is zero; i.e., δS = 0. This is the Hamilton's principle. In this case, the equations of motion are derived from the Euler-Lagrange equations which are the solutions of the principle of least action:
+
+d/dt (∂L/∂ẋᵢ) - ∂L/∂xᵢ = 0 for i = 1,2,..., n. (21)
+
+Where xᵢ are the generalized coordinates and ẋᵢ the generalized velocities.
+For dissipative systems, this equation has additional dissipative terms. For example, if the dissipative function depends on the square of the velocity:
+
+F = ½kx², (22)
+
+Then the Euler-Lagrange equations become:
+
+d/dt (∂L/∂ẋᵢ) - ∂L/∂xᵢ + ∂F/∂ẋᵢ = 0 (23)
+
+The constraints to motion of the agents in a system are given additionally by the Lagrange multipliers.
+
+δ∫ [L(t, x(t), ẋ(t)) + Σₖ λₖ(t)gₖ(t, x(t))]dt = 0 (24)
+
+with the added dissipative terms are as follows.
+
+d/dt (∂L/∂ẋᵢ) - ∂L/∂xᵢ + ∂F/∂ẋᵢ + Σₖ λₖ∂gₖ/∂xᵢ = 0 (25)
+
+Where λₖ are the Lagrange multipliers, and gₖ are the constraints [Arfken and Weber, 1995]. The solutions are the constrained Lagrangian equations of motion, which
+
+
+[PAGE 9] Terms with random noise can also be added to this equation, which are pertinent for biological systems [El Kaabouchi and Wang, 2015]. Because the Lagrangian describes the trajectories of particles under forces, the functional S is the action of the system. Hence, when the variational principle is applied to the action of a system in this manner, it is referred to as a least action principle. To apply least action principles to the kind of systems of interest in biology, it is necessary to consider the action of an ensemble of systems of particles. Minimizing the average action allows individual trajectories to deviate from their paths of least paths, so that they can reduce the action of other particles. The most likely solution for an ensemble minimizes the ensemble average of action, compared to other arrangements of particles and implicit constraints on their flow. As the system evolves, it searches forever lower minima of this average action [Georgiev and Georgiev, 2002], [Georgiev et al., 2015], [Georgiev and Chatterjee, 2016], [Georgiev et al., 2017]. This means that the principle of least action does not apply in isolation to each member of the ensemble but is contextualized by coupling between particles that depend upon many characteristics. These characteristics include: the number of particles, the number of interactions, the total action of the system within certain interval of time, etc. Furthermore, these interdependent functions (interfunctions) are bound by power law relations [Georgiev et al., 2015], [Georgiev and Chatterjee, 2016], [Georgiev et al., 2017]. From our perspective, the key observation here is that any (dissipative) random dynamical system can be formulated as a gradient flow on the log likelihood of its states. This is reflected in our solution L(x) = − ln p(x) to the Fokker-Planck equation in (17), which means the action is the time or path integral of the marginal likelihood or self-information:
+
+S = ∫ f(x(t)) dt = ∫ ln p(m) dt, (26)
+
+for any system or model m. This means, the least action integral over the Lagrangian turns into an integration over the self-information of states, which is known as entropy in information theory. In short, the principle of least action manifests as a principle of least entropy for systems that possess a random dynamical attractor - and thereby obtain non-equilibrium steady-state. We now consider the specific structure of the system or model m that underwrites Bayesian inference; namely, the Markov blanket.
+
+[PAGE 9] 3.2.3 Markov Blanket
+A robust literature is developing around the ability of cells and many other aneural systems measuring aspects of their environment via specific sensors [Baluška and Levin, 2016]. All biological systems can be analyzed in terms of sensory and internal states and the relationships between them [Rosen, 2012].
+A Markov partition separates all states x ∈ X into external e ∈ E, sensory s ∈ S, active a ∈ A, and internal states i ∈ I (with their generalized versions x̃, ē, š, ã, and ĩ), so that
+
+x ∈ X = E×S×A×I, (27)
+
+where × denotes the Cartesian product that returns a product set of sets. The ensuing partition is defined in Table 1. The Markov blanket separating external and internal states is hence given by S × A, as depicted in Figure 1. The partition into external, internal and blanket states rests upon conditional independencies implicit in the system's equations of motion or dynamics. In brief, external and internal states depend only upon blanket states, subject to the constraint that sensory states are not influenced by internal states and active states are not influenced by external states.  With the Markov partition (and associated influences) in hand, the flow f(x) can then be decomposed into 4 parts:
+
+fₑ(ē, š, ã)
+fₛ(ē, š, ã)
+fₐ(š, ã, ĩ)
+fᵢ(š, ã, ĩ) (28)
+
+The response of active and internal states, to sensory stimuli, therefore, becomes
+
+(a) fₐ(š, ã, ĩ) = (Qₐ – Γₐ)∇ₐL(š, ã, ĩ)
+(b) fᵢ(š, ã, ĩ) = (Qᵢ – Γᵢ)∇ᵢL(š, ã, ĩ)
+(c) L(š, ã, ĩ) = − ln p(š, ã, ĩ|m), (29)
+
+where m describes the Markov partition that defines the underlying random dynamical system (e.g., a cell).
+
+
+Fig 1. [PAGE 9] Markov blanket schematic. The internal and external states of each cell are separated by a Markov blanket, which comprises the cell's sensory and active states. The internal states can be interpreted as the intracellular states of a cell, such as its gene expression levels. While the sensory states correspond to the surface states of the cell membrane, such as receptors and ion channel states. The active states are given by the underlying active components of the cytoskeleton, such as actin filaments and microtubules. By associating the gradient flows of the Markov blanket partition with Bayesian belief updating, self-organization of internal states – in response to sensory fluctuations can be thought of as perception, while active states couple internal states back to hidden external states vicariously, to provide a mathematical formulation of action and behavior. Adapted from [Friston et al., 2015].
+
+Inserting (c) into (a) and (b), gives:
+
+(a') fₐ(š,ã, ĩ) = (Γₐ – Qₐ)∇ₐ ln p(š, ã, ĩ|m)
+(b') fᵢ(š,ã, ĩ) = (Γᵢ - Qᵢ)∇ĩ ln p(š, ã, ĩ|m) (30)
+
+The key aspect of this dynamics is that the autonomous (i.e., active and internal) states of an agent depend upon same quantity, which reduces to the log probability of finding the agent in a particular state; where the agent's states comprise the internal states and their Markov blanket. In this partition, autonomous states are those states that do not depend upon external states; namely, internal and active states. Solving equation (30) for the evolution f of active and internal states thus corresponds to evaluating the gradients of the log probabilities above that correspond to the Lagrangian of an open system. In general, this would be a very difficult problem to solve; however, we can now replace the Lagrangian with a variational free energy functional of a probabilistic model of how a system thinks it should behave, as follows.
+
+
+3.2.4 Kullback-Leibler Divergence and Variational Free Energy
+Using the above Markov blanket partition, we can now interpret internal states as parameterizing some arbitrary probability density q(e) over external states. This allows us to express the Lagrangian or Lyapunov function as a free energy functional of beliefs, and implicitly a function of the internal states. In probability theory, an ergodic random dynamical system is a system which has the same behavior averaged over time as averaged over the system's states. In physics ergodicity implies that a system satisfies the ergodic hypothesis of thermodynamics, which says that over a sufficiently long time span, the time spent by a system in some region of state or phase space of individual states (with the same energy) is proportional the probability of the system be found in that region [Boltzmann, 2009].
+Using the statistical definition for an expected value as averaged over all states x ∈ R,
+
+E[X] = ∫ᵣ xp(x)dx, (31)
+
+we can then express the variational free energy through the introduction of the Kullback-Leibler Divergence:
+
+Dᴋʟ (p||q) = ∫ p(x) ln (p(x)/q(x)) dx, (32)
+
+which is the expectation of the logarithmic difference between the probabilities p and q, where the expectation is taken using the probabilities p.
+
+Therefore, in place of the log density ln p(š, ã, ĩ|m) above, we can now write a variational free energy F that corresponds to the logarithmic difference between the (variational) density or Bayesian beliefs about external states q(e) and actual probability densities p(ē, š, ã, ĩ|m) of all states under the Markov blanket m defined in Table 1 and Figure 1:
+
+F(š, ã, ĩ) = ∫ q(ẽ) ln (q(ẽ)/p(ẽ, š, ã, ĩ|m)) dẽ = -ln p(š, ã, ĩ|m) + Dᴋʟ(q(ẽ)||p(ẽ|š, ã, ĩ)) . (33)
+
+The first term is also called (Bayesian negative log) model evidence, or marginal likelihood, which essentially describes the likelihood that the sensory inputs were generated by a generative model implicit in the Markov blanket m. The second term is referred to as relative entropy and works as to minimize the divergence between the variational and posterior density q(e) and p(ẽ|š, ã, ĩ) respectively. As a result, maximizing model evidence results into minimizing the free energy of the system, and because the divergence of the second term can never be less than zero, free energy is an upper bound on the negative log evidence. Using this expression, the flow of autonomous (i.e., active and internal) states becomes
+
+(a") fₐ(š,ã, ĩ) = (Qₐ – Γₐ)∇ₐF(š, ã, ĩ) = (Γₐ - Qₐ)∇ₐ ln p(š, ã, ĩ|m) – (Γₐ – Qₐ)∇ₐDᴋʟ
+(b") fᵢ(š,ã, ĩ) = (Qᵢ − Γᵢ)∇ᵢF(š, ã, ĩ) = (Γᵢ - Qᵢ)∇ĩ ln p(š, ã, ĩ|m) – (Γᵢ – Qᵢ)∇ᵢDᴋʟ . (34)
+
+The key thing to note here is that the gradient descent on variational free energy will reduce the divergence in equation (32) to its lower bound of zero (because the divergence cannot be less than zero). At this point, the gradients of the divergence in equation (34) disappear and the dynamics reduce to the self-organization in equation (30), which is what we want to solve.
+
+This is important because the variational free energy bound in equation (33) can be evaluated in a straightforward way given a generative model; namely, the joint probability over (generalized) external, internal and blanket states. On this view, we can associate the joint probability in equation (33) with a likelihood; namely, the probability of an cell's states, given external states and a prior; namely, the prior probability of a cell's states (i.e., internal states and their Markov blanket). Finally, this means that q(e) plays the role of a posterior density over hidden or external states under a particular Markov blanket or model (m). Crucially, this variational posterior is parameterized by internal states. In other words, we can talk about the internal states encoding beliefs about external states.
+
+In summary, to solve the problem of self-organization, we can specify a generative model for a cell and integrate (34). Before we turn to the construction of this generative model, we will briefly consider the ensuing (Bayesian filtering) scheme we used below to simulate self-organization in terms of dynamical belief updating in subsequent sections.
+
+3.3 Bayesian Filtering and Self-Organization
+We have seen above that one can replace the Lyapunov or Lagrangian function for any dynamics of a system that is equipped with a Markov blanket with a variational free energy that depends upon a generative model. This variational free energy is, effectively, a variational (upper) bound on model evidence; here, interpreted in terms of the probability of an agent's state (see equation (1)). This means that one can always interpret any self-organization to non-equilibrium steady-state (i.e., no time variation of the density over states) in terms of maximizing a quantity that plays the role of Bayesian model evidence. This is sometimes referred to as self-evidencing, a concept from brain sciences, where the agent (usually the brain) has to identify an evidentiary boundary between itself and its environment as a necessary condition for inference [Hohwy, 2016], [Moutoussis et al., 2014].
+
+The variational free energy here is exactly the same mathematical construct used in statistics and variational Bayes. Simple examples of this include Kalman filtering and particle filtering, for inferring hidden states under dynamic Bayesian networks. Similar schemes have been used to infer genetic regulatory network structures from available genomic microarray time-series measurements [Lijun et al., 2008], [Noor et al., 2012]. The generalization of methods like Kalman filtering to a non-linear setting (in generalized coordinates of motion) leads to generalized (variational) filtering. These induce a variational free energy bound on model evidence by assuming under a fixed-form (usually a Gaussian) for the variational density q(e) above. This fixed form assumption underwrites the variational approximation that renders an intractable integration problem (30) into a tractable optimization problem that can be expressed as a gradient descent (34). The ensuing optimization rests upon a particular generative model - and implicit

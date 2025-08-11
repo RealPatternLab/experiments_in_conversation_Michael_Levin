@@ -1,0 +1,225 @@
+What Lives? A meta-analysis of diverse opinions on the definition of life
+Reed Bender1#, Karina Kofman2#, Blaise Agüera y Arcas³, and Michael Levin4,5*
+Affiliations:
+1 Attune Intelligence, LLC
+2 Faculty of Dentistry, University of Toronto, Toronto, Canada
+3 Paradigms of Intelligence Team, Google
+4 Allen Discovery Center at Tufts University
+5 Wyss Institute for Biologically Inspired Engineering at Harvard University
+# Co-first authors
+* Author for Correspondence
+200 Boston Ave.
+Suite 4600
+Medford, MA 02155
+email: michael.levin@tufts.edu
+Running title:
+Defining Life
+Keywords:
+Biology, life, information, agency, intelligence, thermodynamics,
+computation, evolution, cybernetics, artificial intelligence
+
+[PAGE 2] Abstract
+The question of "what is life?" has challenged scientists and philosophers for centuries, producing an array of definitions that reflect both the mystery of its emergence and the diversity of disciplinary perspectives brought to bear on the question. Despite significant progress in our understanding of biological systems, psychology, computation, and information theory, no single definition for life has yet achieved universal acceptance. This challenge becomes increasingly urgent as advances in synthetic biology, artificial intelligence, and astrobiology challenge our traditional conceptions of what it means to be alive. We undertook a methodological approach that leverages large language models (LLMs) to analyze a set of definitions of life provided by a curated set of cross-disciplinary experts. We used a novel pairwise correlation analysis to map the definitions into distinct feature vectors, followed by agglomerative clustering, intra-cluster semantic analysis, and t-SNE projection to reveal underlying conceptual archetypes. This methodology revealed a continuous landscape of the themes relating to the definition of life, suggesting that what has historically been approached as a binary taxonomic problem should be instead conceived as differentiated perspectives within a unified conceptual latent space. We offer a new methodological bridge between reductionist and holistic approaches to fundamental questions in science and philosophy, demonstrating how computational semantic analysis can reveal conceptual patterns across disciplinary boundaries, and opening similar pathways for addressing other contested definitional territories across the sciences.
+
+[PAGE 3] 1. Introduction
+The challenge of defining life extends beyond semantics; it reveals fundamental epistemological differences in how experts across disciplines conceptualize and investigate the boundaries between living and nonliving systems. Biologists often emphasize metabolic processes, reproduction, and cellular organization [1-6], while physicists may focus on thermodynamic properties, energy utilization, and entropy reduction [7-9]. Computer scientists and complexity theorists might alternatively prioritize information processing, self-organization, and emergent complexity [10-14].
+These divergent perspectives, shaped by distinct methodological approaches and theoretical frameworks, have historically been difficult to reconcile. This definitional challenge becomes increasingly urgent as advances in synthetic biology [15], artificial intelligence [16], and astrobiology [17] continue to challenge what it means to be alive, which has not only scientific but ethical and regulatory implications.
+Some have advocated for definitional pluralism—the acceptance of multiple, contextually appropriate definitions rather than pursuing a single universal concept [18,19]. This pragmatic approach acknowledges the value of specialized definitions within differentiated research contexts. However, it leaves unanswered the question of whether deeper patterns of coherence might exist beneath these apparent disciplinary divisions, and whether a more integrated understanding is possible without sacrificing disciplinary perspectives.
+Others have rejected binary categorizations entirely, criticizing attempts to draw arbitrary lines between the living and nonliving. These perspectives reframe the conversation around characterizing life as existing along multiple continuous dimensions rather than as a categorical distinction [20-23]. More radically, some scholars question the utility of defining life at all, suggesting that such attempts are either conceptually futile or entirely misguided [24-26].
+We sought to survey a set of contemporary scholars for their definition of life and then use both manual and computational semantic analysis to examine the resulting dataset. Our research addressed the definitional ambiguity through a methodological approach that leverages large language models (LLMs) to systematically analyze 68 expert-provided answers to the question of "what is life?" We implemented an LLM-derived pairwise correlation analysis to quantitatively map the collective set of responses into a collective correlation matrix, followed by agglomerative clustering and dimensionality reduction to project those encoded and clustered respondent feature vectors onto a 2-dimensional plane. To further interpret this visualized semantic space, we leveraged LLMs to compare intra-cluster definitions of life and to generate a consensus definition of life that is representative of each cluster.
+By systematically mapping how expert perspectives vary across perceptual frames, we aim to provide a multidimensional framework for understanding "aliveness" that transcends traditional categorical distinctions to guide ethical and conceptual decisions in our rapidly evolving technological landscape.
+
+[PAGE 4] 2. Background
+Historical Conceptions of Life
+Long before the emergence of modern scientific frameworks, ancient civilizations sought to characterize the animating force which gives rise to life. Rather than providing naturalistic explanations, these ancient cultures relied on supernatural abstractions such as Prana, Qi, Ka, Pneuma, and Ruach in the Vedic, Chinese, Egyptian, Greek, and Hebrew traditions respectively. These concepts, while diverse in their cultural origins, shared a common attempt to articulate an invisible principle that separated animate from inanimate matter within metaphorical abstractions.
+Greek philosophy transformed these symbolic conceptions into the first systematic definitional frameworks of the soul and its relation to life. Plato's (428–348 BCE) cosmology in the Timaeus characterizes the cosmos itself as a living and intelligent being, with its motions governed by cognition rather than mechanical causation, thereby unifying the soul as both the principle of cognition and the principle of life for the first time [27]. For Plato, the differentiated life of the microcosm was a mirror of the expression of life at the scale of the macrocosm.
+“The permanent value of the Timaeus rests in its successful presentation of a cosmological basis for a theoretical and practical ethics for mankind. Its theme is life, the generating principle of life—not merely the life of one man or even of humanity, but the genesis τοῦ παντός¹, a fit subject for any philosopher [28].”
+Aristotle (384–322 BCE) then advanced this framework through his teleological approach in De Anima, further characterizing life by its manifested functional properties. His biological framework presents a nested hierarchy of capacities, where the vegetative soul (nutrition and reproduction) is present in all living things, the sensitive soul (perception and movement) in animals, and the rational soul uniquely in humans [29]. His emphasis on intrinsic purpose (telos) established the first ontologically robust definition of life as a self-actualizing system, where the most natural act of living things is "the production of another like itself, an animal producing an animal, a plant a plant, in order that, as far as nature allows, it may partake in the eternal and divine" [30]. For Aristotle, the goal towards which all living things strive is to “do whatsoever their nature renders possible," establishing living things as fundamentally self-actualizing systems with intrinsic teleology.
+The transition from Greek thought to our modern materialistic conceptions of life was mediated by medieval and Renaissance thinkers who preserved teleological frameworks while introducing increasingly material explanations. Galen (129–216 CE) extended Aristotelian biological teleology through empirical anatomy, demonstrating the purposive construction of every anatomical feature [31]. Renaissance alchemists, particularly Paracelsus (1493–1541), subsequently developed hybrid frameworks that viewed organisms as chemical laboratories governed by an "archeus" or inner alchemist—a concept that maintained a sense of teleological functionalism while increasingly describing life by its biochemical form [32]. These "chemical philosophies" represented an important conceptual evolution [33], maintaining the notion that living systems operated toward intrinsic ends while simultaneously beginning to articulate material processes underlying vital functions. This historical progression established a foundational tension between teleological and mechanistic perspectives that continues to challenge contemporary efforts to define life.
+During the Enlightenment, René Descartes (1596–1650) conceptualized the human as an assemblage of parts that together operated as a machine, dualistically distinct from the mind which governed its function. This mechanistic approach to the expression of life fundamentally reoriented its conception away from its teleological roots, redirecting focus towards its mechanistic processes.
+“Thus, I say, when you reflect on how these functions follow completely naturally in this machine solely from the disposition of the organs, no more nor less than those of a clock or other automaton from its counterweights and wheels, then it is not necessary to conceive on this account any other vegetative soul, nor sensitive one, nor any other principle of motion and life, than its blood and animal spirits, agitated by the heat of the continually burning fire in the heart, and which is of the same nature as those fires found in inanimate bodies [34]."
+While Descartes described life as a duality of immaterial mind and its mechanistic body, his contemporaries developed thoroughly materialistic philosophies from the seed of his work. Thomas Hobbes (1588–1679) advanced perhaps the most comprehensive materialistic framework of this period, rejecting Cartesian dualism entirely and arguing that all phenomena characteristic of life could be reduced to matter in motion. In conceptualizing life, Hobbes rejected prior teleologic or metaphysical conceptions in favor of the view that biological functions are purely mechanical processes.
+“For seeing life is but a motion of Limbs, the beginning whereof is in some principal part within; why may we not say, that all Automata (Engines that move themselves by springs and wheels as doth a watch) have an artificial life? For what is the Heart, but a Spring; and the Nerves, but so many Strings; and the Joints, but so many Wheeles, giving motion to the whole Body, such as was intended by the Artificer? [35]."
+Throughout the Enlightenment, this mechanistic naturalization of life continued to evolve through philosophers such as Gassendi [36], Spinoza [37], and La Mettrie [38], culminating in a thoroughly materialist framework that would define our modern scientific age. Yet even as the philosophical landscape shifted decisively toward mechanistic explanations, the fundamental question of how to define life persisted. By the dawn of the 19th century, scientific inquiry had not resolved but rather reformulated this ancient problem: if life emerges from purely physical processes, what distinguishes living from non-living matter?
+
+[PAGE 6] Modern Conceptions of Life
+The transition into modern scientific conceptions of life was catalyzed by a series of pivotal 19th-century developments: cell theory identified the fundamental organizational unit of life [39]; Charles Darwin's theory of evolution by natural selection provided the first mechanistic framework for explaining life's complexity and adaptation [40]; the emergence of thermodynamics laid the physical foundation for understanding how living systems maintain order in spite of the Second Law of Thermodynamics [41].
+These advances set the stage for Erwin Schrödinger's seminal 1944 lectures, "What is Life?", which framed organisms as thermodynamic systems that create and maintain order by generating entropy in their environment [7]. This thermodynamic perspective, while influential, immediately faced challenges: could a purely energetic characterization capture the qualitative difference between living and non-living?
+The molecular revolution of the mid-20th century promised resolution. James Watson and Francis Crick's elucidation of DNA's double helix structure unveiled the physical basis of heredity [42], while subsequent discoveries in molecular biology revealed the central dogma of genetic information flow [43]. This mechanistic understanding of heredity spawned information-theoretic definitions, most notably by John von Neumann, who characterized life as a computational system capable of self-replication with inheritable variation [44].
+Contemporary definitional approaches have proliferated across disciplines, diversifying the available perspectives from which one might define life. Thermodynamic frameworks emphasize energy flux and entropy production [45], while autopoietic theories, such as those developed by Maturana and Varela, focus on self-organization and boundary maintenance [46]. The Chemoton model by Gánti proposes minimal requirements including metabolism, information storage, and boundary control [47]. NASA's operational definition, adopted from a suggestion by Carl Sagan, represents a pragmatic definition of life for astrobiological research: "a self-sustaining chemical system capable of Darwinian evolution" [17].
+Despite the complexification of life's definitional landscape, tension between perspectives persists. Thermodynamic approaches may capture energy dynamics while underspecifying organizational complexity. Information-theoretic models illuminate genetic coding but struggle with the semantics of biological meaning. Operational definitions encounter borderline cases: viruses, prions, and computational life forms that exhibit some but not all traditional life characteristics.
+The emergence of artificial life, synthetic biology, and complex computational systems has further complicated definitional boundaries. Craig Venter's synthetic Mycoplasma cell demonstrated the feasibility of constructing a viable synthetic cell with a compressed genomic code [48]; Michael Levin has shown that embryonic frog cells can self-assemble into novel forms of biology when removed from their traditional physiological context [15]; artificial neural networks [49] and evolutionary algorithms [50] exhibit adaptation and reproduction without biological substrates. These developments challenge the assumption that life requires carbon-based chemistry, cellular organization, or evolutionary adaptation to exhibit characteristics of life.
+Systems biology has attempted synthesis through hierarchical frameworks that integrate multiple organizational levels, from molecular networks to ecosystems [51]. However, even this integrative approach must contend with the fundamental question: which properties represent necessary versus sufficient conditions for life?
+
+[PAGE 7] The proliferation of definitional frameworks reflects both scientific progress and persistent conceptual challenges in our understanding of life. As our empirical science deepens, the boundaries of life's definition paradoxically become less distinct. We conceptualize these ontological tensions as a semantic topology that individual disciplinary approaches have mapped only partially, awaiting the tools of computational systematic analysis to reveal the underlying continuities present within this latent space.
+To begin to explore this space and develop methods for parsing the conceptual landscape of scientists' opinions in difficult, interdisciplinary domains, we undertook an AI-guided analysis of a set of modern scientists' definitions of "Life." Hand-picked thinkers in a range of disciplines were asked to define "Life" (or argue against the possibility of doing so) in three sentences or less. Our goal was to map out the structure and main drivers of the highly diverse set of responses and evaluate the utility of LLMs for helping to do so.
+
+[PAGE 7] A Priori Computational Text Clustering Methods
+Our approach builds upon recent advances in AI-augmented clustering, consensus formation, and pairwise constraint modeling, applying these techniques to analyze conceptual patterns in the semantic space of our respondents' definitions of life. LLMs have been previously demonstrated to achieve comparable or superior performance to state-of-the-art text embedding and clustering methods by asking the model to generate potential labels for a given dataset and then subsequently categorizing each sample with an appropriate label [52]. More commonly, researchers utilize LLMs to generate text embeddings that encode contextual meaning into dense floating-point vectors, where abstract linguistic patterns can be represented geometrically. Comparative analysis of LLM embeddings for clustering demonstrates how these models consistently capture semantic relationships encoded as geometric proximity in high-dimensional latent spaces [53].
+Recent innovations have further enhanced these capabilities through interpretable k-means clustering and instruction-tuned feedback mechanisms. The k-LLMmeans algorithm utilizes LLMs to generate textual summaries as cluster centroids, capturing semantic nuances often lost when relying on the purely mathematical properties of k-means clustering [54]. The ClusterLLM framework introduces an LLM to improve embedded-text clustering by constructing triplet questions <does A better correspond to B than C>, where A, B, and C are similar data points that belong to different clusters according to the original embedder [55]. Following this same paradigm, Liusie et al. have demonstrated that LLMs performed significantly better at comparative assessment tasks (e.g., "Which summary is more coherent, A or B?") than at absolute assessment tasks (e.g., "Provide a score between 1 and 10 that measures this summary's coherence.") [56].
+These advances demonstrate how LLMs can leverage both embedded semantic relationships and direct linguistic instruction to achieve superior clustering performance, especially when prompted in the form of pairwise comparative analysis. This capability for interpretable analysis through pairwise comparison makes LLMs particularly suitable for mapping the complex conceptual landscape of life's definitions.
+
+[PAGE 8] These LLM capabilities—semantic clustering, pairwise comparative analysis, and interpretable pattern recognition—directly address the methodological challenges inherent in analyzing diverse definitions of life. Traditional approaches have struggled to systematically compare and integrate definitions across disciplinary boundaries. Our approach treats expert definitions as data points within a quantifiable semantic space, enabling computational analysis of patterns that resist conventional categorical frameworks. By applying these techniques to the 68 expert responses, we can map the conceptual relationships between different definitional approaches while maintaining the nuance and complexity of each perspective. This methodology transforms the question "what is life?" from a philosophical debate into a structured exploration of semantic patterns within expert discourse.
+
+[PAGE 9] 3. Methods
+We developed a software architecture to analyze and cluster diverse definitions of life using large language models (LLMs) and unsupervised learning techniques. Our approach encompasses five key methodological components:
+1. Expert curation and definition collection
+2. Quantitative pairwise correlation analysis between definitions
+3. Agglomerative clustering of the resulting correlation matrix
+4. Thematic analysis of intra- and inter-cluster semantic patterns
+5. t-SNE dimensionality reduction of correlation feature vectors to 2-dimensional space
+
+Figure 1 shows the key computational steps taken to go from the raw pairwise correlation matrix, to a sorted and clustered matrix, to ultimately a 2-dimensional t-SNE projection of the definitional space.
+
+To validate the robustness of our semantic analysis and mitigate potential model-specific biases, we independently replicated all analytical processes across three state-of-the-art LLMs: Claude 3.7 Sonnet, GPT-40, and Llama-3.3 70B Instruct. These three matrices were then averaged together to produce the final correlation matrix, accounting for cross-model biases and integrating the nuanced perspective of each model in the final feature set. This methodology was implemented using Python, with all code available as an open-source Github repository in the Supplemental Code.
+
+[PAGE 10] Collection of Expert Definitions and Manual Classification
+Here, we were specifically focused on modern researchers' definitions of life (not classic historical figures' definitions). Individuals were selected based on their peer-reviewed papers in the literature which impacted (or required an opinion on) the question of life. These academic authors were contacted through email-based correspondence to their institutional email addresses, with balanced representation from fields and disciplines including branches of biology, computer science, physics, and engineering. Sixty-eight total definitions were included in the final analysis. Fourteen distinct countries were represented by the current affiliations of respondents, with the United States (41) and the United Kingdom (9) being the most prevalent.
+The respondents were not aware of each other's responses or thought processes, were not given any specific guidance or criteria for inclusion/exclusion, and were independently responsible for submitting their own definition. Respondents did not have any set time limit to formulate and structure their responses and were permitted to consult external references; no policy prohibiting contact with colleagues on the matter was set forth. Respondents were instructed to aim for no more than three sentences and told that they should think about life as broadly as they wished, not restricted, for example, to terrestrial life. They were not given any guidelines about word count, and they were made aware that their responses were going to be analyzed in a manuscript for publication.
+Two of the provided definitions came from authors of this analysis. Like all the other respondents, the two authors who provided definitions did not see any of the other life definitions submitted prior to formulating their own. No additional weight was given to these two responses in the downstream analysis.
+For editorial purposes, a small proportion of responses were shortened without interfering with the key takeaways of the authors' definitions. This was done to maintain standardized length for all definitions. Finally, experts were given a chance to proofread their definitions for correct attribution but were strongly discouraged from making any changes at this point, as they had already seen some of the other definitions.
+Once all definitions had been received, a process of manual review and categorization was done to ground the results in human understanding before proceeding to the AI-driven analysis. It was possible for an author's definition to be grouped into more than one category. The row "Other" was introduced when a definition did not neatly fit into one of the pre-existing categories. The resulting categorical distinctions are presented in Table 1. All 68 provided definitions of life are presented in Supplemental Table 1.
+
+[PAGE 10] Quantitative Pairwise Correlation Analysis
+To quantify semantic relationships between definitions, we developed a pairwise correlation analysis framework using LLM-based inference. For each pair of definitions in our dataset, we computed a correlation score ranging from -1.0 (complete disagreement) to 1.0 (complete agreement) using the following prompt structure:
+
+[PAGE 11] Analyze the following two definitions of life, where:
+-1.0 = Fundamentally opposing or incompatible primary frameworks;
+-0.5 to -0.9 = Significantly different emphasis with some contradiction;
+0.0 = Independent or orthogonal frameworks;
+0.1 to 0.4 = Slight overlap in secondary elements;
+0.5 to 0.9 = Significant overlap with some differences;
+1.0 = Aligned core frameworks and secondary elements.
+Definition 1: {{definition_1}}
+Definition 2: {{definition_2}}
+What is the correlation metric between -1.0 and 1.0 for these two definitions?
+Respond with ONLY a single number!
+
+To enhance reliability and account for potential variability in LLM outputs, we performed multiple replicate inferences (n=3) for each definition pair and computed the average correlation score and standard deviation. This correlation metric was computed for each pair of responses (n²), resulting in a correlation matrix of respondent definitions encoding pairwise similarity (0 < r < 1) and dissimilarity (-1 < r < 0).
+The pairwise correlation analysis generated two n×n matrices, where n is the number of definitions: (1) a correlation matrix M containing the average correlation scores between all definition pairs, and (2) a standard deviation matrix S capturing the variability of correlation estimates. Both matrices were symmetrized by averaging with their transpose (M' = (M + M^T)/2) to account for potential rank-ordering effects in the LLM-derived correlation inference, resulting in a total of six instances of inference averaged to generate each pairwise correlation metric. The resulting correlation matrices were visualized as heatmaps using a divergent color scheme with correlation values ranging from -1 (disagreement, red) to 1 (agreement, green).
+This analysis was repeated with Claude 3.7 Sonnet, Llama 3.3 70B, and GPT-40, with the final correlation matrix being derived from the average of each analysis' result. Each provided correlation metric is then the result of 18 averaged LLM-generated correlation metrics, six from each tested model.
+
+[PAGE 11] Agglomerative Clustering of Correlation Matrix
+To identify natural groupings within the definition space, we applied hierarchical agglomerative clustering to the symmetrized correlation matrix. This bottom-up clustering approach begins with each definition as its own cluster and iteratively merges the most similar clusters until all definitions belong to a single cluster, creating a hierarchical structure that reveals multi-scale relationships between definitions.
+The correlation matrix was first transformed into a distance matrix using the relationship d = √(2(1-r)), where r represents the correlation coefficient. This transformation maps correlation coefficients between -1 and 1 to distances between 0 and 2, with higher correlations corresponding to smaller distances between definitions, with the squaring operation amplifying the distances between high correlations and
+
+[PAGE 12] therefore making the clustering algorithm more sensitive to subtle semantic distinctions between closely related definitions.
+We employed complete linkage (maximum distance between any two elements from different clusters, also known as farthest-neighbor linkage) as our agglomerative method. Complete linkage was selected for its ability to produce compact, clearly separated clusters that emphasize conceptual boundaries between semantic groupings, making it particularly suitable for analyzing definitional relationships where clear delineations are desirable.
+The dendrogram construction process mimics how one might organize ideas into increasingly broad conceptual categories. At the beginning, each definition stands alone as a unique perspective; each leaf is embedded within a tree with one node. The algorithm then identifies the two most similar definitions and joins them at a height proportional to their similarity. Closely aligned definitions join near the bottom of the dendrogram, while more distant conceptual relatives join higher up. This process continues iteratively, with either individual definitions joining existing groups or groups merging with other groups, always connecting the most similar entities at each step. The resulting tree structure then captures which definitions belong together as related conceptual definitions, as well as the relative semantic distance between them.
+To then perform unsupervised clustering on this dendrogram, we analyzed the pattern of merge distances to identify the inflection points where further cluster merges would suddenly bring together substantively different conceptual frameworks. This "elbow" in the derived linkage matrix reveals the natural number of clusters present in the data as the point where merging clusters would begin to obscure important conceptual distinctions. This clustering solution partitions definitions into groups that share fundamental conceptual frameworks while maintaining meaningful separation between distinct philosophical or scientific approaches to defining life. When superimposed on top of the sorted correlation matrix of respondent definitions, this multi-scale perspective allows us to examine both fine-grained distinctions within conceptual frameworks and broader patterns across the entire definitional space.
+
+[PAGE 12] LLM Cluster Semantic Analysis
+For each cluster identified through hierarchical agglomerative clustering, we employed LLMs to perform two complementary analytical processes: (1) intra-cluster thematic analysis to characterize conceptual frameworks and (2) consensus definition generation to distill essential shared elements. Claude 3.7 Sonnet was used to generate the semantic analysis for the multi-model clustered correlation matrix.
+The intra-cluster thematic analysis was conducted using a structured prompt designed to systematically extract patterns from definition clusters. This protocol instructed the LLM to analyze definitions through three progressive lenses:
+
+```
+1. WHAT Are The Core Ideas?
+- List every key concept mentioned
+- Count how often each appears
+- Group similar concepts together
+- Note which concepts appear most
+- Mark which are always present
+
+[PAGE 13] 2. HOW Do Ideas Connect?
+- Find concepts that link to others
+- Map which ideas depend on others
+- Note concept hierarchies
+- Identify central hub concepts
+- Track idea flow patterns
+
+3. WHY This Structure?
+- Identify shared a priori frameworks
+- Find similar starting points
+- Track reasoning patterns
+- Mark scope boundaries
+- Note definitional strategies
+```
+
+All prompts are available in their complete form in the Supplemental Code. This thematic analysis was then used to inform our meta-review of various definitions for "what is life?" from a quantitative, statistically grounded, computational point of view.
+Complementing the thematic analysis, we further employed LLMs to synthesize a single representative definition for each cluster. This protocol explicitly constrained the LLM to adhere to the requirements defined in the following prompt structure:
+
+[PAGE 13] 
+```
+You are tasked with synthesizing a consensus definition of life from a group of experts who have similar perspectives. Below are their definitions:
+{{definitions}}
+
+In addition to these provided cluster definitions, you have also conducted a prior thematic review which contains a meta-analysis of the key concepts being discussed by this group of respondents:
+{{cluster_analysis}}
+
+Start: "Life is..."
+Content: Only majority-shared concepts (>50% frequency)
+Language: Technical terms from source definitions
+Structure: Logical flow of connected concepts
+Style: Match source complexity and tone
+Length: Within ±20% of median definition length
+Exclude: Unique views, novel terms, explanations
+```
+
+This algorithmic approach to consensus formation ensured that the resulting definitions genuinely represented the central tendencies within each cluster rather than introducing new concepts or arbitrary interpretations. By limiting content to majority-shared concepts and using only terminology present in the source definitions, we maintained fidelity to the original expert perspectives while distilling their shared conceptual core.
+
+[PAGE 14] The resulting thematic analyses and consensus definitions provide complementary perspectives on each cluster: the thematic analysis characterizes the conceptual landscape and intellectual approach shared by definitions within a cluster, while the consensus definition distills these shared elements into a single coherent statement that represents the cluster's central perspective on what constitutes life. Together, these analyses reveal both the distinctive conceptual frameworks that characterize different approaches to defining life and the core elements that unify definitions within each framework.
+Finally, a third inference call was executed to generate a title name for each cluster. Provided with the consensus definition and the thematic analysis in the prompt context, the LLM was asked to generate a brief cluster title according to the following prompt:
+
+```
+Based on the consensus definition and thematic analysis provided, generate a SINGLE WORD or VERY SHORT PHRASE (2-4 words maximum) that captures the DISTINCTIVE ESSENCE of this specific cluster.
+The title should be:
+1. HIGHLY SPECIFIC to the philosophical, scientific, or conceptual framework unique to this cluster
+2. DISTINCTIVE enough that it wouldn't apply equally well to other clusters of life definitions
+3. TECHNICALLY PRECISE, using domain-specific terminology where appropriate
+4. CONCEPTUALLY FOCUSED on the core unifying principle of these definitions
+
+Provided below is the analysis of the given cluster:
+{{cluster_analysis}}
+Provided below is the derived consensus definition for the given cluster:
+{{consensus_definition}}
+...
+```
+
+These titles were then mapped to the cluster groups derived by agglomerative clustering and used to define the clusters subsequently plotted by the described 2-dimensional projection methodology.
+
+[PAGE 14] 2-Dimensional Projection of Definitional Landscape
+To create an interpretable visualization of the definitional landscape, we applied t-SNE (t-distributed Stochastic Neighbor Embedding) dimensionality reduction to project the high-dimensional correlation features into a two-dimensional representational space. Unlike principal component analysis, t-SNE specifically emphasizes the preservation of local neighborhood relationships, making it particularly suitable for visualizing clusters of semantically related definitions. This was validated by testing against multidimensional scaling (MDS), Principal Component Analysis (PCA), and Uniform Manifold Approximation and Projection (UMAP), with t-SNE consistently producing the best spatial projection of the underlying correlation embeddings.
+The correlation matrix was first transformed into a distance matrix using the relationship d = √(2(1-r)), where r represents the correlation coefficient between definition pairs—the same distance transformation applied to agglomerative clustering. The resulting distance matrix was then symmetrized by averaging with its transpose (M' = (M + M^T)/2) to account for potential asymmetries in the process of translating correlation features to distance features, effectively placing definitionally similar responses (high correlation) in proximity while separating dissimilar ones (low correlation).
+The final t-SNE projection visualizes the semantic landscape of life definitions, with each point representing an expert's response colored according to its assigned cluster. Contour lines were added to highlight density variations within the definitional space, revealing regions of conceptual convergence and divergence. The final visualization incorporates cluster assignments derived from agglomerative hierarchical clustering, with each cluster labeled according to its LLM-derived title that characterizes the unifying conceptual framework of that group. This approach reveals the distinct conceptual territories in relation to the broader definitional landscape, providing a comprehensive spatial reflection of how experts conceptualize life across disciplinary boundaries.
+
+[PAGE 16] 4. Results
+Expert Definitions
+Supplemental Table 1 shows the definitions provided by the survey participants. Some focused on the impossibility (or futility) of a definition, while others attempted this task from varying conceptual alignments. The 68 definitions collected represent a broad spectrum of disciplinary perspectives, from traditional biological frameworks to computational approaches, from physics-inspired thermodynamic views to cognitive and philosophical stances. Despite the likely impossibility of defining truly orthogonal categories along which to categorize or classify these definitions, we attempted to do so manually (without AI assistance) using the criteria in Table 1.
+Manual categorization of these definitions revealed several predominant themes, with certain concepts appearing repeatedly across multiple definitional frameworks. Thermodynamics and energetics appeared in 18 out of 68 (26%) of all definitions, while information/pattern-based approaches were found in 25% of definitions. Dynamics (including self-organization) was the most prevalent theme, appearing in 29% of definitions.
+
+[PAGE 17] We further characterized the most prominent divergent properties commonly discussed (Figure 2), revealing that 57% of definitions took an objective stance (defining life in observer-independent terms), while 43% incorporated observer-relative elements. Additionally, 54% of definitions framed life as a continuous property rather than a binary state, reflecting a shift away from categorical distinctions between living and non-living systems. Most definitions (88%) were actionable in the sense that they provided concrete, conventionally defined criteria, while 12% took more inspirational, poetic, or self-recursive approaches.
+
+[PAGE 17] 
+Table 1: Categorizing definitions of life
+| Category | Definitions | Authors |
+|---|---|---|
+| Functionality/behavior | 20 | Albantakis, Ball, Caves, Dussutour, Das, Lyon, Sonnenschein, Sultan |
+| Replication/Reproduction/Evolution/Heredity | 17 | Ackley, Adamatzky, Adami, Davies, Ingber, Jablonka, Jackson, Lander, Gentili, Nunn, Ratcliff, Shapiro, Sloman, Szathmáry |
+| Material composition | 12 | Baluška, Das, Kauffman, Lane, Newman, Pizzi, Ratcliff, Sloman |
+| Against strong definition | 11 | Albantakis, Ball, Frank, Gunawardena, McShea, Stanley, Wong, McShea |
+| Other | 8 | Ciaunica, Fields, Hoffman, Marshall, Witkowski, Watson |
+
+
+[PAGE 18] Pairwise Correlation Analysis
+To assess the semantic relationships between expert definitions of life, we analyzed how three state-of-the-art LLMs perceived conceptual overlap among the 68 definitions. Each model independently evaluated all possible definition pairs, producing a correlation matrix that quantifies similarity (-1.0 for complete opposition to 1.0 for perfect alignment) between each definition pair.
+Claude 3.7 Sonnet, Llama 3.3 70B Instruct, and GPT-40 were independently used to generate three distinct correlation matrices. Claude 3.7 Sonnet demonstrated the most optimistic assessment with the highest average correlation, while Llama 3.3 70B Instruct produced more conservative estimates of correlation and showed greater standard deviation in its responses. Notably, all models displayed negative skewness (-0.76 to -0.97), indicating a systematic tendency to identify more areas of conceptual similarity than opposition. The general correlation matrix statistics for each model are presented in Supplemental Table 2.
+Despite the models' independent analysis, they showed remarkable consistency in their overall assessment of which definitions aligned conceptually and which diverged. The pairwise matrix-to-matrix correlations were notably high:
+• Claude 3.7 Sonnet vs. Llama 3.3 70B Instruct: r = 0.7279
+• Claude 3.7 Sonnet vs. GPT-40: r = 0.8103
+• Llama 3.3 70B Instruct vs. GPT-40: r = 0.7977
+These substantial correlations suggest that while each model brought a distinct analytical perspective to the definitional landscape, they independently converged on similar patterns of conceptual relationships.
+These correlation matrices are shared in Supplemental Figures 1, 2, and 3 for Claude, Llama, and GPT, respectively. The resulting unsorted multi-model averaged correlation matrix is presented as Supplemental Figure 4. Additionally, the standard deviations (Entropy Matrix) for all aggregated instances of inference are available at Supplemental Figures 5, 6, and 7 for Claude, Llama, and GPT, respectively, highlighting the consistency with which the LLMs scored correlation for each respondent across repeated instances of inference.
+To mitigate potential biases from any single model and create a more robust assessment of semantic relationships, we computed an element-wise average across the three symmetrized correlation matrices. The multi-model integration succeeded in capturing the central tendencies of all three individual analyses, as evidenced by the high correlations between each model's matrix and the averaged matrix:
+• Claude 3.7 Sonnet vs. Multi-Model-Average: r = 0.9017
+• Llama 3.3 70B Instruct vs. Multi-Model-Average: r = 0.9294
+• GPT-40 vs. Multi-Model-Average: r = 0.9358
+The multi-model average matrix successfully captured the nuanced perspectives of each model, ultimately producing a rich encoding of pairwise correlation patterns amongst the provided definitions of life.
+
+[PAGE 18] Agglomerative Clustering of Correlation Matrices
+
+[PAGE 19] The three LLMs tested exhibited distinct clustering behaviors, identifying between 7 and 11 natural clusters through elbow method analysis. Claude 3.7 Sonnet produced the most integrative solution with 7 clusters and the lowest contrast metric (0.258), while Llama 3.3 70B Instruct demonstrated the most discriminative approach with 11 clusters and the highest contrast metric (0.563). The multi-model integration yielded 8 clusters with a balanced contrast metric of 0.359, positioning it between the integrative and discriminative extremes. This integrated approach achieved robust intra-cluster correlation (0.509 ± 0.187) while maintaining modest inter-cluster correlation (0.150 ± 0.390), suggesting it captured both the distinctiveness of conceptual frameworks and meaningful connections between them. The statistics of each tested model's clustering results are available in Supplemental Table 3.
+Figure 3 presents the visualization of the multi-model integrated analysis, showing both the clustered correlation matrix (with green indicating high correlation and red indicating negative correlation) and the corresponding dendrogram structure on the right. Additionally, the clustered correlation matrices for Claude, Llama, and GPT's independent analyses are presented in Supplemental Figures 8, 9, and 10, respectively, to show how each model uniquely organized the respondents in relation to each other.
+
+[PAGE 20] Figure 3: Hierarchically sorted correlation matrix of respondent definitions, along with the corresponding dendrogram defining the linkage distance between definitions, highlighting 8 distinct conceptual clusters.
+
+This sorted correlation matrix reveals a distinct block-diagonal structure indicating strong intra-cluster coherence, while also exhibiting meaningful cross-

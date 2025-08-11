@@ -1,0 +1,533 @@
+[PAGE 1] Serotonin Transporter Function Is an
+Early Step in Left-Right Patterning in
+Chick and Frog Embryos
+
+Key Words
+Serotonin 5-Hydroxytryptamine Serotonin
+transporter. Vesicular monoamine transporter •
+Left-right asymmetry Xenopus. Chick
+
+Abstract
+The neurotransmitter serotonin has been shown to reg-
+ulate a number of embryonic patterning events in addi-
+tion to its crucial role in the nervous system. Here, we
+examine the role of two serotonin transporters, the plas-
+ma membrane serotonin transporter (SERT) and the ve-
+sicular monoamine transporter (VMAT), in embryonic
+left-right asymmetry. Pharmacological or genetic inhibi-
+tors of either SERT or VMAT specifically randomized the
+laterality of the heart and viscera in Xenopus embryos.
+This effect takes place during cleavage stages, and is up-
+stream of the left-sided gene XNR-1. Targeted microin-
+jection of an SERT-dominant negative construct con-
+firmed the necessity for SERT function in embryonic
+laterality and revealed that the descendants of the right
+ventral blastomere are the most dependant upon SERT
+signaling in left-right patterning. Moreover, the impor-
+tance of SERT and VMAT in laterality is conserved in
+chick embryos, being upstream of the early left-sided
+gene Shh. Endogenous transcripts of SERT and VMAT
+are expressed from the initiation of the primitive streak
+in chick and are asymmetrically expressed in Hensen's
+node. Taken together our data characterize two new
+right-sided markers in chick gastrulation, identify a nov-
+el, early component of the left-right pathway in two ver-
+tebrate species, and reveal a new biological role for se-
+rotonin transport.
+
+
+[PAGE 1] Introduction
+The indoleamine serotonin (5-hydroxytryptamine or
+5-HT) is a neurotransmitter that regulates psychodynamic
+function [Lucki, 1998]. It is linked to a variety of diverse
+medical conditions including tumor growth [Yim et al.,
+2000; Meijer et al., 2003; Russo et al., 2003], circadian
+rhythm disorders [Morin, 1999], and cardiac disease
+[Frishman and Grewall, 2000]. Its crucial role in controlling
+neuronal activity [Lucki, 1998] has allowed it to be direct-
+ly implicated in both normal cognition and a number of
+syndromes such as memory impairment [Buhot et al.,
+2000], sleep disorders [Jouvet, 1999], schizophrenia [Mil-
+lan, 2000], aggression [Lesch and Merschdorf, 2000], de-
+pression [Stockmeier, 1997], and other mood disorders.
+It is now appreciated that serotonin has another crucial
+role: control of morphogenesis during early stages, prior
+to the appearance of neurons [Buznikov and Shmukler,
+1981; Whitaker-Azmitia et al., 1996; Buznikov et al.,
+2001]. Serotonin is widely distributed in both the animal
+and the plant kingdoms [Pennati et al., 2001], and occurs
+in mammalian [Shuey et al., 1990; Wu et al., 1999] and
+other vertebrate and invertebrate embryos [Manukhin et
+al., 1981; Emanuelsson et al., 1988]. Serotonin is synthe-
+sized by embryonic stem cells [Walther, 1999], and 5-HT
+is likely to play a role in egg maturation [Buznikov et al.,
+1993], mitogen-induced vascular remodeling [Fanburg
+and Lee, 1997], neural crest migration [Moiseiwitsch and
+Lauder, 1995], control of cleavage and cell division rates,
+patterning of cytoskeletal structures [Emanuelsson et al.,
+1988; Lee et al., 1991], blastomere adhesion, gastrulation
+movements [Hamalainen and Kohonen, 1989; Colas et
+al., 1999a, b], control of gap-junctional communication
+[Moore and Burt, 1995; Rorig and Sutor, 1996], cranio-
+facial patterning [Lauder and Zimmerman, 1988; Shuey
+et al., 1992, 1993], and the specification of neuronal iden-
+tity and connectivity in the developing nervous system
+[Lauder et al., 1981, 1983]. Indeed, links between the use
+of 5-HT pathway pharmaceuticals and birth defects sug-
+gest that these roles may exist in human embryos as well,
+making it crucial to understand mechanisms of serotonin
+function in development [Lauder, 1985; Chambers et al.,
+1996; Moiseiwitsch, 2000].
+
+[PAGE 2] The understanding of nonneuronal functions of sero-
+tonin is a very important yet poorly understood aspect of
+evolutionary developmental biology, and significant mo-
+lecular advances have been made in understanding the
+molecular cell biology of serotonin. The serotonin path-
+way [Cooper et al., 1996] includes the enzymes which
+synthesize 5-HT from tryptophan, seven major types of
+membrane receptors which transduce the serotonin sig-
+nal into different cellular events (5-HT R1-R7), and a
+system for enzymatic degradation of 5-HT [via mono-
+amine oxidase (MAO)]. There are also two important
+families of serotonin transporters.
+Free 5-HT cannot remain in the cytosol because it is
+catabolized by MAO on the outer membranes of mito-
+chondria [Gershon et al., 1990]. To avoid degradation
+and provide for vesicular release, 5-HT is transported
+into vesicles through the action of the vesicular mono-
+amine transporter (VMAT) [Kirk et al., 1997]. VMAT
+(VMAT2 in neurons, and VMAT1 in other tissues) uses
+proton gradients generated by the V-ATPase [Harvey,
+1992] to drive transport exchanging two protons in the
+lumen of the vesicle for one monoamine in the cytoplasm
+[Knoth, 1981a, b; Kanner, 1987; Edwards, 1992]. The
+vesicles release 5-HT from cells through exocytosis; once
+in the extracellular space, 5-HT is available to diffuse and
+be sensed by serotonin receptors on the membrane of
+neighboring cells.
+In contrast to VMAT, plasma membrane serotonin
+transporters (SERTs) use the Na+ gradient to remove
+transmitter from synapses [Haase et al., 2001; Torres et
+al., 2003]. SERT is an extremely important regulator of
+nervous system activity and is thus a very popular target
+for pharmaceutical efforts in biomedicine [Owens and
+Nemeroff, 1998; Schloss and Williams, 1998; Bartlett et
+al., 2005; Noblett and Coccaro, 2005]; this work has led
+to the development of a number of selective serotonin
+reuptake inhibitors, of which Prozac is a leading example
+[Wong et al., 1995]. Interestingly, SERT function has also
+been implicated in embryonic morphogenesis [Shuey et
+al., 1992; Persico et al., 2000, 2001; Gaspar et al., 2003]
+and the regulation of cell proliferation [Eddahibi et al.,
+2001; Sari and Zhou, 2003]. In light of the fascinating yet
+largely unexplored roles for neurotransmitter signaling in
+embryogenesis, and the importance of transporters in reg-
+ulating serotonin movement, it is interesting to explore
+possible roles of SERT and VMAT in the patterning of
+major body axes.
+Invariant left-right (LR) asymmetry is a key feature of
+vertebrate morphogenesis that raises profound questions
+in cell, evolutionary, and developmental biology [Palmer,
+2004; Levin, 2005]. It also has important implications for
+the biomedicine of laterality-based birth defects [Burn,
+1991; Casey and Hackett, 2000; Morelli et al., 2001].
+Within the last 10 years, insight at the molecular level has
+been gained into the mechanisms which underlie consis-
+tent laterality of the heart and viscera during embryonic
+development [Wood, 1997; Yost, 2001]. While the mid-
+dle phase of LR patterning (the asymmetric gene cascade)
+is fairly well understood [Levin, 1998; Whitman and
+Mercola, 2001], upstream events and their conservation
+among species present many open questions [Burdine
+and Schier, 2000; Boorman and Shimeld, 2002; Levin,
+2003b]. Seeking to discover epigenetic mechanisms and
+small molecule signals functioning upstream of the asym-
+metric gene cascade, we have recently shown that seroto-
+nergic signaling through receptor subtypes 3 and 4, at very
+early stages, was a crucial component of the LR pathway
+in chick and frog embryos [Fukumoto et al., 2005]. How-
+ever, the possible functions of transporters – a crucial
+element of serotonin signaling – had remained unex-
+plored. Thus, we sought to characterize possible roles of
+5-HT transport in determination of consistent laterality.
+Here, we show that both SERT and VMAT are involved
+in LR patterning at early stages in two vertebrate species.
+Taken together, our data identify novel roles for serotonin
+
+[PAGE 3] transporters, reveal a new conserved component of LR
+patterning, and suggest another possible teratological
+endpoint for the use of SERT modulators during preg-
+nancy.
+
+[PAGE 3] Materials and Methods
+Cloning
+Chick SERT. RNA was isolated from whole chicken embryos
+at stage 23 by TRI-Reagent extraction (Molecular Research Cen-
+ter). Reverse transcription of total RNA was performed with Su-
+perscript II (Invitrogen). PCR amplification of a 139-bp SERT can-
+didate fragment was carried out using EX-Taq (Takara) with de-
+generate primers (5'-TTRGGITACTGYATHGGIACITC-3' and
+5'-CCACAIGGHATTTCIGTIGGTGT-3'). PCR was performed
+using the following cycle conditions: denaturation for 1 min at
+94°C, annealing for 1 min, and extension for 1.5 min at 72°C with
+final extension for 15 min. The annealing temperatures of cycles 1,
+2, and 3-30 were 42°C, 46°C, and 59°C, respectively. The frag-
+ments were cloned into pCR2.1 using the TOPO cloning kit (Invi-
+trogen), then sequenced. The resulting sequence was used to design
+primers for targeting other regions. After determination of the com-
+plete cDNA sequence, a highly conserved stretch of the cDNA
+(aa 291-671) was amplified by PCR using specific primers:
+CSERT (870–): 5'-ATTAGCTGGCAATTGACCCTCTG, and
+CSERTEnd: 5'-TTACACGGCATTCATGCGGATGT. This frag-
+ment was used for in situ hybridization after being transferred into
+the pBluescript expression vector. This sequence was the same as
+the previously cloned GenBank sequence AY573844 [Larsen et al.,
+2004].
+Chick VMAT. RNA was isolated from whole chicken embryos
+at stage 23 by TRI-Reagent extraction (Molecular Research Cen-
+ter). Reverse transcription of total RNA was performed with Su-
+perscript II (Invitrogen). PCR amplification of a 276-bp VMAT
+candidate fragment was carried out using EX-Taq (Takara) with
+degenerate primers (5'-ATCTGGATGATGGARACIATGTG-3'
+and 5'-TAGCCCATDATIGGCATCATIGA-3'). PCR was per-
+formed using the following cycle conditions: denaturation for 1 min
+at 94°C, annealing for 1 min, and extension for 1 min at 72°C with
+final extension for 15 min. The annealing temperatures of cycles 1,
+2, and 3-30 were 45°C, 48°C, and 59°C, respectively. The frag-
+ments were cloned into pCR2.1 using the TOPO cloning kit (Invi-
+trogen), then sequenced. The resulting sequence was used to design
+primers for targeting other regions. After determination of the com-
+plete cDNA sequence, a highly conserved stretch of the cDNA
+(aa 263-461) was amplified by PCR using specific primers: CVMAT
+(785-): 5'-TGGCTCTGTTCGATGGAGCTGTT, and cVMAT
+(-1381): 5′-CTATAATTGTCATGAGCCATGGA. This fragment,
+matching VMAT2, was used for in situ hybridization after being
+transferred into the pBluescript expression vector. This sequence
+has been submitted to GenBank under the accession number
+AY974771.
+Xenopus Drug Exposure
+Xenopus embryos were dejellied in 2% cysteine 30 min after
+artificial fertilization and washed in 0.1 × Marc's modified Ringer's
+solution (MMR). Batches of eggs from a single female were divided
+into several experimental and control groups. Each group was put
+into either 10 ml of 0.1 × MMR (controls) or 0.1 × MMR contain-
+ing nisoxetine, fluoxetine, alaproclate, citalopram, imipramine, re-
+serpine, and TBZOH at a final concentration of 10 μM, 10 μΜ,
+10 μ.Μ, 10 μΜ, 10 μΜ, 100 μΜ, and 10 μΜ, respectively. Em-
+bryos were allowed to develop in the drug-containing medium un-
+til stage 16 [Nieuwkoop and Faber, 1967], at which point they were
+washed three times in 0.1 × MMR and allowed to develop in 0.1 x
+MMR + 0.1% gentamicin until stage 45. All compounds were ob-
+tained from Sigma-RBI and Tocris.
+Scoring Xenopus Embryonic Situs
+The phenotype of embryos was determined by scoring the situs
+(position) of the stomach, the gallbladder, and the atrium of the
+heart, under a dissecting microscope using tricaine to immobilize
+the stage 45 embryos. Only embryos with normal dorsoanterior
+development (dorsoanterior index = 5) and clearly left-sided or
+right-sided organs of normal morphology were scored. Embryos
+with ambiguous (unscoreable) situs comprised less than 5% of each
+experiment. An embryo was considered to be affected when one or
+more of those three organs was/were reversed in its position. The
+incidences of abnormal organ situs were analyzed using the x² test
+with Pearson correction for sample size. Statistically, if the sided-
+ness of all three organs were independently and fully randomized,
+the maximum possible effect would be 87.5%, since 12.5% of the
+embryos would be scored as wild type (because all three organs
+would lie in their normal positions by chance).
+Chick Drug Exposure
+All experimental manipulations were performed on standard
+pathogen-free white leghorn chick embryos obtained from Charles
+River Laboratories (SPAFAS). Embryos were staged according to
+Hamburger and Hamilton [1992]. To perform a pharmacological
+screen with minimal disturbance of normal morphogenesis, we op-
+timized a chicken in ovo culture system. A small hole was made on
+the top of each egg (prior to incubation), and approximately 5 ml
+of light albumin were removed. The experimental solution con-
+sisted of a pharmacological reagent (final concentration: fluoxetine
+100 μ.Μ, reserpine 100 µM) in chicken light albumin and Pannett-
+Compton solution at a ratio of 5:1. This was replaced into the egg,
+the eggs were securely wrapped with Scotch tape, and were incu-
+bated at 37.5°C to the desired stages, at which point they were fixed
+for analysis of laterality markers by in situ hybridization.
+In situ Hybridization
+Chick embryos were fixed in 4% paraformaldehyde at 4°C over-
+night. Frog embryos were fixed in MEMFA at 4°C overnight. cDNA
+used as template for in situ hybridization with marker probes were:
+cShh and cNodal [Levin et al., 1995], and XNodal [Sampath et al.,
+1997]. Histological sections were obtained by embedding embryos
+after in situ hybridization in JB4 according to the manufacturer's
+directions (Polysciences). In situ hybridization was performed as
+previously described [Harland, 1991].
+Xenopus Blastomere Injection
+Synthetic mRNA was transcribed by the T7 polymerase from
+linearized PCDNA3 plasmids containing the D98G mutant of
+SERT. About 100 pg of the construct mRNA were mixed with 50 ng
+of RLD and 250 pg of mRNA encoding β-galactosidase (as lineage
+label) and injected into the blastomere indicated.
+
+
+[PAGE 4] Results
+Specific Inhibitors of SERT and VMAT Induce
+Heterotaxia in Xenopus Embryos
+To determine whether SERT function was important
+for laterality, we capitalized on the highly specific and
+well-characterized pharmacological reagents developed
+by recent efforts in biomedical neuroscience [Ramasub-
+bu, 2004]. Following the same strategy recently used to
+identify electrogenic [Levin et al., 2002] and serotonergic
+[Fukumoto et al., 2005] components in asymmetry, we
+sought to take advantage of the large numbers of frog em-
+bryos available, the low background level of heterotaxia,
+and the well-characterized and specific blockers of SERT
+and VMAT to implicate these targets for further molecu-
+lar functional analysis.
+Batches of at least 100 Xenopus embryos were exposed
+to one of the SERT blockers, i.e. fluoxetine [Wong et al.,
+1995], imipramine [Goulet et al., 2001], citalopram
+[Horschitz et al., 2001], or alaproclate [Fowler et al.,
+1987], or the VMAT inhibitors reserpine [Costa et al.,
+1977] or TBZOH [Zucker et al., 2001], from fertilization
+to stage 16. Embryos were then washed, allowed to de-
+velop to stage 45, and analyzed for the situs of the heart,
+gut, and gallbladder. The data are shown in figure 1A. The
+incidence of reversal of one or more of the three organs
+
+[PAGE 5] from their normal situs (fig. 1B) was scored (fig. 1C). In
+this assay (scoring the situs of three organs), the maxi-
+mum possible incidence of laterality phenotypes that can
+be detected is 87.5% (because in a set of embryos in which
+each of three organs is fully randomized, 12.5% will have
+the organs in their wild-type positions by chance and thus
+be scored as normal). The detailed data are presented in
+tables 1 and 2.
+In all cases, at the low micromolar levels of blockers
+utilized, the only observed effect was the independent
+randomization of the position of the heart and visceral
+organs. Strictly, the phenotype we observed was hetero-
+taxia (an independent assortment of the organs – a loss
+of concordance), since single-organ reversals were ob-
+served as well as inversions of all three or any two organs.
+No general toxicity was observed; in particular, special
+attention was given to avoiding reagents which caused
+changes in dorsoanterior character, to prevent confound-
+ing results with nonspecific secondary effects on the LR
+axis [Danos and Yost, 1996]. In all of the data given in
+subsequent sections of the results, the heterotaxia pheno-
+type is specific (is not accompanied by other morpholog-
+ical defects).
+Control batches of embryos exposed to vehicle alone
+exhibited a background level of 1% heterotaxia; likewise,
+embryos exposed to nisoxetine, a selective inhibitor of
+norepinephrine uptake [Python et al., 1997], exhibited
+normal laterality (table 1). In contrast, embryos exposed
+to SERT or VMAT blockers exhibited a significant level
+of heterotaxia – an average of 24% for SERT blockers,
+and 28% for VMAT blockers. Based on this loss-of-func-
+tion data, serotonin transport is implicated in the estab-
+lishment of LR asymmetry in Xenopus.
+
+[PAGE 5] Table 1. SERT blockers significantly randomize LR asymmetry
+
+Control embryos or embryos exposed to nisoxetine exhibited normal asymmetry. In contrast, embryos exposed to blockers of SERT
+from fertilization to stage 16 and scored at stage 45 for the laterality of the heart, gut, and gallbladder exhibited between 18 and 29%
+incidence of heterotaxia (reversals of one or more of the heart, gut, or gallbladder).
+
+
+Table 2. VMAT blocker significantly
+randomizes LR asymmetry
+
+In contrast to controls, embryos exposed to VMAT blockers from fertilization to stage
+16 and scored at stage 45 for the laterality of the heart, gut, and gallbladder exhibited 27-
+29% incidence of heterotaxia (reversals of one or more of the heart, gut, or gallbladder).
+
+
+[PAGE 5] SERT and VMAT Function during Early
+Embryogenesis in Xenopus
+
+In order to determine what aspects of LR patterning
+might depend upon SERT or VMAT, we exposed em-
+bryos to specific blockers at different stages of develop-
+ment. We analyzed the results of exposures beginning at
+different time points (tables 3 and 4). We observed
+(fig. 1D) that exposure during cleavage stages resulted in
+the most effective level of randomization (20% for the
+VMAT inhibitor, 27% for the SERT inhibitor), while lat-
+er exposures resulted in low or insignificant levels of dis-
+turbance of laterality. These data suggest that SERT and
+VMAT function in early steps of LR patterning, taking
+place between fertilization and stage 7.
+
+To establish epistasis between serotonin transport and
+known LR patterning components, we assayed the ex-
+pression of XNR-1, the earliest asymmetric marker
+known in Xenopus, in embryos exposed to SERT and
+VMAT blockers as above. The data and statistical analy-
+ses are presented in table 5. Control embryos exhibited
+the normally left-sided expression of XNR-1, while em-
+bryos exposed to fluoxetine and reserpine exhibited re-
+spectively 26 and 28% bilateral expression of XNR-1.
+The bilateral expression of XNR-1 was exactly the same
+as previously described [Lohr et al., 1997; Levin and
+Mercola, 1998; Levin et al., 2002; Bunney et al., 2003;
+Fukumoto et al., 2005]. Thus, we conclude that the func-
+tions of SERT and VMAT in the LR pathway are up-
+stream of the asymmetric gene cascade as it is known in
+Xenopus embryos.
+
+
+[PAGE 6] Molecular Loss of Function of SERT Reveals an
+Asymmetry among Blastomeres
+
+The pharmacological reagents are useful for implicat-
+ing targets for molecular analysis, and for testing the tim-
+ing of serotonin transport in embryonic patterning. We
+next sought to use a specific molecular reagent to confirm
+the involvement of SERT in Xenopus embryogenesis. Be-
+cause SERT proteins must form homomultimers [Chen
+et al., 1997a, b, 1998; Smicun et al., 1999; Chen and Rud-
+nick, 2000; Sitte et al., 2004], a nonfunctional SERT mu-
+tant which reaches the cell surface but does not perform
+serotonin transport would serve as a dominant negative
+mutant by titrating out wild-type SERT complexes [Bark-
+er et al., 1999; Ramsey and DeFelice, 2002]. We thus
+utilized the D98G mutant, which has been tested in Xe-
+nopus oocytes, to explore the dominant negative effects
+of SERT [Barker et al., 1999; Ramsey and DeFelice,
+2002].
+
+We microinjected synthetic, capped mRNA encoding
+the SERT D98G mutant into each blastomere of frog em-
+bryos at the 4-cell stage. The data and statistical analyses
+are presented in table 6. Misexpression of this dominant
+negative form of SERT induced 18% randomization of
+the organs when injected into the right ventral cell. Tar-
+geting the other cells produced less effect; the embryos
+injected in the right dorsal side exhibited half (9%) as
+much heterotaxia, while the left dorsal and ventral cells
+exhibited 6–7% heterotaxia. These data confirm the im-
+portance of SERT function in early embryogenesis, and
+reveal that the descendants of the right ventral blastomere
+are likely to be the major locus of SERT function in the
+LR pathway.
+
+
+[PAGE 6] SERT and VMAT Are Expressed in the Primitive
+Streak in Early Chick Embryos
+
+In order to test the evolutionary conservation of this
+novel mechanism, and explore its properties in a model
+system with a radically different gastrulation architec-
+ture, we sought to ask whether SERT and VMAT may be
+present endogenously in chick embryos prior to the ex-
+pression of Shh (before the development of serotonergic
+neurons). To test this prediction and characterize the
+involvement of SERT and VMAT in LR-relevant pro-
+cesses, we cloned and examined the expression of native
+chick SERT and VMAT during gastrulation.
+
+Using degenerate primers based on alignment of mam-
+malian sequences, we cloned chick SERT and VMAT,
+which respectively had 91 and 84% homology to the
+mouse homologs at the amino acid level. In situ hybrid-
+ization with a probe antisense to cVMAT revealed no
+expression prior to incubation (fig. 2A); expression be-
+gan at the initiation of the primitive streak (fig. 2B) and
+continued throughout the streak during its elongation
+(fig. 2C, D). Sectioning revealed that it was the mesoder-
+mal cells which expressed VMAT, and that cells some-
+what lateral to the streak also expressed VMAT (fig. 2E).
+At stages 4–5, expression was observed in the primitive
+ridges (fig. 2F, G), and expression could be observed in
+the notochord cells leaving the node (fig. 2G, green ar-
+row). In Hensen’s node, stronger VMAT expression was
+observed on the right side (fig. 2F, G, close-ups in fig. 2H,
+I, section in fig. 2J), revealing VMAT as a new right-sided
+asymmetric marker.
+
+In situ hybridization revealed a similar profile for
+cSERT; it was not detected before incubation (fig. 3A),
+but became strongly expressed at the base of the primitive
+streak (fig. 3B) and was detected throughout the streak
+during its early elongation (fig. 3C, D). Interestingly, sec-
+tioning (fig. 3E) revealed that unlike VMAT, which was
+expressed throughout the mesoderm cells in the streak,
+SERT was expressed in a punctate pattern in the ecto-
+derm and mesoderm, indicating that only a subpopula-
+tion of cells expressed SERT. At stages 4–5 (fig. 3F, G),
+Hensen's node expressed SERT more strongly on the
+right side; expression was detected in the primitive ridges
+in the rostral two thirds of the streak. At stage 7+ (fig. 3H),
+the neural folds expressed SERT (consistent with the ap-
+pearance of serotonergic neurons) and the right-sided
+asymmetry in Hensen's node became more pronounced
+(compare fig. 3G, H, red vs. white arrowhead). Sectioning
+(fig. 3I) revealed mesodermal expression, but only a weak
+lateralization, consistent with a very narrow region of
+asymmetry being present (fig. 3H). These expression data
+confirm the existence of endogenous targets of fluoxetine
+and reserpine in the chick embryo during the stages at
+which exposure to these blockers randomize, reveal that
+SERT and VMAT are expressed in the organizing center
+of the chick embryo in which many LR patterning events
+are occurring, and identify a novel right-sided asymmet-
+ric marker. Taken together, our data strongly suggest that
+SERT and VMAT are involved in early steps that pattern
+the LR axis of frog and chick embryos.
+
+[PAGE 9] Specific Inhibitors of SERT and VMAT Randomize
+Asymmetry in Chick Embryos
+
+In light of the expression data, we next tested the hy-
+pothesis that SERT and/or VMAT function in chick em-
+bryos [Mortensen et al., 2001; Larsen et al., 2004] was an
+important endogenous component of LR patterning. The
+data and statistical analyses are shown in table 7. Chick
+embryos exposed to fluoxetine and reserpine between the
+start of incubation and fixing at stage 4+ exhibited a sig-
+nificant randomization of the expression of the early left-
+sided marker Shh and the downstream marker Nodal
+(compare fig. 4A to fig. 4B, and fig. 4D to fig. 4E). The
+incidence of incorrect Shh sidedness was 36 and 38% for
+SERT and VMAT, respectively, consistent with the mag-
+nitude of laterality defects induced by SERT/VMAT in-
+hibition in frog. These data (fig. 4C, F) support the neces-
+sity for SERT and VMAT function upstream of the con-
+sistent left-sided Shh expression, and suggest that SERT
+and VMAT must function between stages 1 and 4.
+
+[PAGE 9] Table 7. Effects of SERT and VMAT
+inhibition on expression of asymmetric
+genes in chick
+
+Embryos were treated in ovo from just prior to incubation to stage 4+ with inhibitors
+of SERT (fluoxetine) and VMAT (reserpine), and processed for in situ hybridization with
+the left-sided genes Shh and Nodal. Inhibition of either SERT or VMAT effectively ran-
+domizes the expression of both markers.
+
+
+[PAGE 9] Discussion
+
+Because the serotonin system includes machinery for
+manufacturing serotonin (a source), 5-HT degradation (a
+sink), and sensing of 5-HT levels (via receptors), this sys-
+tem is an ideal candidate for a morphogen-like signal.
+Indeed, the serotonergic synapse has been suggested to
+have evolved from far more primitive signaling events
+
+[PAGE 10] between embryonic blastomeres [Buznikov and Shmuk-
+ler, 1981; Buznikov, 1984; Buznikov et al., 1996]. We
+have recently demonstrated that in both chick and frog
+embryos, serotonin exists long before the appearance of
+neurons, and that 5-HT signaling through the R3 and R4
+receptor subtypes is an obligate aspect of the patterning
+of the LR axis [Fukumoto et al., 2005]. However, the pos-
+sible role of serotonin transporters was not tested in that
+study. Since both the availability of serotonin to intracel-
+lular signaling mechanisms, and its concentration outside
+of neighboring cells can be controlled by SERT and
+VMAT function, any understanding of 5-HT signaling in
+a patterning context will have to take into account the
+possible involvement of transport.
+... (rest of Discussion, Acknowledgements, and References from Extraction 2, as it is the most complete version)

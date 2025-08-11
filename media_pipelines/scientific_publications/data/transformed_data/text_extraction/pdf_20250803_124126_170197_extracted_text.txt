@@ -1,0 +1,1566 @@
+This is chunk 1 of 12 (pass 2 of 3) covering pages 1-5 of 46.
+
+PDF content:
+
+
+Basal Xenobot Transcriptomics: Gene Expression Changes in wild-
+type cells comprising one form of biobot
+
+Vaibhav P. Pai¹, Léo Pio-Lopez¹, Megan M. Sperry1,2, Patrick Erickson¹, Parande Tayyebi¹, and
+Michael Levin1,2*
+
+1 Allen Discovery Center at Tufts University, Medford, MA, USA
+2 Wyss Institute for Biologically Inspired Engineering, Harvard University, Boston, MA, 02115,
+USA
+
+* Corresponding Author:
+Dr. Michael Levin
+Allen Discovery Center at Tufts University,
+Center for Regenerative and Developmental Biology,
+Tufts University
+200 Boston Avenue, suite 4600
+Medford, MA 02155-4243
+Phone: +1 617 627 6161
+Email: michael.levin@tufts.edu
+
+Running title: Unique Xenobot transcriptome
+Keywords: Biological robots, synthetic living machines, transcriptome, RNAseq
+
+1
+
+Abstract:
+
+The standard paradigm of developmental and synthetic biology focuses on gene expression
+driving changes in morphology. Here, we investigated the reverse relationship: would
+transcriptomes change if cell collectives acquired a novel morphogenetic and behavioral
+phenotype in the absence of genomic editing, transgenes, heterologous materials, or drugs? We
+investigated the effects of morphology and nascent emergent life history on gene expression in the
+basal (no engineering, no sculpting) form of Xenobots – autonomously motile constructs derived
+from Xenopus embryo ectodermal cell explants. We compared transcriptomes of these basal
+Xenobots with age-matched Xenopus embryos. Basal Xenobots showed significantly larger inter-
+individual gene variability than age-matched embryos, suggesting increased exploration of the
+transcriptional space. We identified at least 537 (non-epidermal) transcripts uniquely upregulated
+in these Xenobots. Pathway analyses indicated transcriptomic shifts in the categories of motility
+machinery, multicellularity, stress and immune response, metabolism, and sensory perception of
+sound and mechanical stimuli. We experimentally confirmed that basal Xenobots respond to
+acoustic stimuli via observable changes in behavior, in ways that age-matched embryos do not.
+Phylostratigraphic analysis showed that the majority of transcriptomic shifts in the basal Xenobots
+were towards evolutionarily ancient transcripts and systems. Lastly, we found enrichment of
+thanatotranscriptomic genes, shedding light on the distinction between death of an organism and
+that of its cells. These data on the relationship between genotype and phenotype may have
+implications for evolution, biomedicine, and synthetic morphoengineering.
+
+2
+
+Introduction:
+
+The standard research paradigm of developmental and synthetic biology seeks to discover
+how gene expression drives specific anatomical and behavioral outcomes (1-6). However, it is also
+well-understood that transcriptional machinery itself is sensitive to external cues (7-13). Rapid
+changes of gene expression can be induced by exposures to genetic, biochemical, biomechanical,
+bioelectrical, and materials-mediated influences. On a much longer timescale, the properties of
+gene expression profiles in vivo are thought to be determined by evolutionary selection, optimizing
+fitness to specific environment, life history and lived experiences (14-18). Here, we sought novel
+aspects of the responsiveness of gene expression, in a setting in which a non-canonical
+multicellular, functional form is achieved without transgenes, chemical signals, foreign
+nanomaterials, or other added influence.
+
+A fascinating set of questions concerns the origins of species-specific transcriptomic
+profiles, normally shaped by eons of selection over the functionality of those forms in a specific
+environmental context. Unique aspects of these questions can be addressed in synthetic systems in
+which the entities have not had a history of selection in their current multicellular embodiment.
+Numerous synthetic life forms have recently been produced (19-29); however, many questions
+remain to be answered, via analysis of transcriptomic profiling in these synthetic living
+configurations. In this study we utilize one such living system to understand how synthetic
+morphology might result in transcriptomic changes. Our goal was to characterize unique
+transcriptomic changes in this synthetic living system in comparison to its native (wild-type)
+embryo context.
+
+Multiple different kinds of autonomously moving biobots (23, 30, 31) can be derived from
+Xenopus embryonic cells. They offer self-organization (a kind of developmental morphogenesis),
+as they need no scaffold in order to form and mature into functional constructs. They can form
+from a single tissue (prospective skin/epidermis) or from a combination of multiple tissues (e.g.,
+skin/epidermis and muscles), can be of multitude of shapes and be actuated by either the muscle
+contraction or coordinated beating of cilia (32-35). They show self-healing and emergent group
+behaviors including kinematic self-replication (33, 34). This overall class is referred to as
+“Xenobots” (32) to emphasize the fact that we see their utility as potentially programmable living
+materials a model system in which to learn to control the plasticity of living active matter toward
+applications that shed light on life-as-it-can-be (36-42). In this study we use the basal (spherical)
+Xenobots (32) derived from completely wild-type ectodermal explant cells with no drugs,
+synthetic biology circuits, nanomaterials, sculpting, or anything else added. Hence, we can observe
+latent behaviors of these cellular collectives that are released by lifting signaling constraints
+present when they were part of the larger organism (43-48).
+
+The basal Xenobots are autonomously motile, self-assembling constructs derived from frog
+(Xenopus laevis) embryonic ectodermal explants (colloquially referred to in developmental
+biology studies as “animal caps”) as starting material (33) . The Xenopus ectodermal explants
+(animal caps) have been studied for several decades and serve as an excellent model for studying
+epidermal cell fate and patterning as well as testing the plasticity and responsiveness of these cells
+to various inducers and inhibitors (49-55). Also, mucociliary organoids developed from these
+
+3
+
+Xenopus ectodermal explants have served as excellent models for understanding dynamics of
+mucociliary epidermis formation and maintenance (56-61). However, we cultured these
+ectodermal explants until they formed autonomously-moving atypical entities aka the basal
+Xenobots used in this study. We were particularly interested in studying the transcriptomic changes
+in these autonomously-moving Xenobots. Recently, elegant temporal transcriptomic analysis has
+shown epidermal cell fate specification during the transformation of Xenopus ectodermal explants
+(animal caps) to autonomously-moving atypical entities (the basal Xenobots used in this study)
+(56, 62). However, in this study we sought to broadly analyze genome-wide transcriptomic
+changes well beyond epidermal cell fate specification in response to a not previously selected-for
+embodiment and nascent life history of these autonomously-moving atypical entities as system
+that self-assembles without being forced onto an engineered scaffold and exhibits autonomous
+motion behavior (being functionally closer to a proto-organism than a typical organoid). We see
+these autonomously-moving atypical entities (basal Xenobots) as an important biorobotics
+platform because, once their properties are understood, they can be used as a testbed in which to
+improve our understanding and ability to control growth and form, and ultimately deploy them for
+many useful purposes. Unlike conventional robotic materials, living cells offer numerous complex
+behaviors and responses; understanding the plasticity, and molecular-biological responses, of cell
+collective entities in new contexts is a critical part of morphogenic engineering efforts (19, 30, 31,
+63-65).
+
+To advance this engineering roadmap, as well as more broadly understand how
+transcriptomes respond to internal and external environment changes (e.g., for biomedical
+purposes, as well as basic evolutionary developmental biology), we compared the transcriptome
+of basal Xenobots to those of age-matched embryo controls. Importantly, we did not focus on gene
+expression missing from Xenobots, because it was expected that, being made of just one tissue
+type, they would lack many transcripts that normal embryos expressed. Instead, we asked what
+transcripts, other than epidermal markers (expected to be enriched), Xenobots expressed that their
+age-matched embryos did not. We found at least 537 transcripts to be uniquely upregulated in these
+Xenobots, representing functional classes such as locomotion apparatus assemblies (cilia and
+motor proteins), structure formation and multicellularity, stress and immune response, metabolism,
+and, even sensory perception of sound and mechanical stimuli. Functional experiments confirmed
+that basal Xenobots, unlike age-matched Xenopus embryos, indeed respond to acoustic vibration
+stimuli by changing their motion behavior. Phylostratigraphic analysis shows that the majority of
+these transcriptomic shifts are towards evolutionary ancient transcripts and systems. These
+changes suggested that alteration of morphology and nascent emergent life history, in wild-type
+cells, were enough to strongly affect the transcriptome (morphology/behavior driving gene
+expression). Moreover, we found a significantly greater inter-individual gene variability in these
+Xenobots compared to their age-matched Xenopus embryos suggesting exploratory adaptation in
+the transcriptional space to adapt and survive in their new embodiment (66-69). Another unique
+aspect that these Xenobots allowed us to investigate was the nature of organismic death and its
+effects on gene expression. By making a Xenobot out of an embryonic source of cells, the original
+embryo “dies” – it is no more; but the cells persist and continue on in a new embodiment. Our
+analysis revealed enrichment of thanatotrascriptomic (70-74) genes, seen previously in studies of
+human post-mortem molecular physiology. Taken together, these data shed light on the feedback
+
+4
+
+of form and function onto cellular genetics, in the context of evolved and engineered living beings
+transitioning across levels of organization.
+
+5
+
+This is chunk 2 of 12 (pass 2 of 3) covering pages 5-9 of 46.
+
+**Page 5**
+
+of form and function onto cellular genetics, in the context of evolved and engineered living beings
+transitioning across levels of organization.
+
+5
+
+**Page 6**
+
+**Results:**
+
+**RNA sequencing analysis shows no major transcriptional changes between stage 35/36 Xenopus embryos raised in 0.1X MMR and 0.75X MMR**
+
+One major difference in the rearing condition of Xenopus embryos and basal Xenobots used in this study is the MMR (Marc's Modified Ringers) medium concentration: embryos are reared in 0.1X MMR, Xenobots are reared in 0.75X MMR (a higher concentration of salts). Thus, we first asked whether raising embryos in 0.75X MMR induces any significant transcriptional changes in comparison to embryos raised in 0.1X MMR. We performed RNA sequencing analysis on stage 35/36 Xenopus embryos (stage corresponds to the formation of mature autonomously-moving Xenobots on day 7 at 14°C after explanting ectodermal explants (animal caps) from stage 9 embryos) raised in either 0.1X MMR or raised in 0.75X MMR after stage 9 (stage at which ectodermal explants are removed from embryos and placed in 0.75X MMR to make the basal Xenobots). We collected RNA from three replicate samples (each sample containing ten stage 35/36 embryos) for each condition (0.1X and 0.75X MMR) (Supplementary Figure 1A). Overall, we observed no separation between groups by principal component analysis (Supplementary Figure 1B). However, after surrogate variable analysis and batch-correction, we did observe some separation of the clusters (Supplementary Figure 1C). We thus performed differential gene expression analysis and found that in the histograms of significance the p-value histograms are relatively flat, with the proportions of the true null hypothesis (non-significant genes) to be 0.996 (Supplementary Figure 1D) and all FDRs (False Discovery Rates) to be near one (Supplementary Figure 1E). These results indicate minimal changes in the overall transcriptome of 0.75X MMR raised embryos versus 0.1X MMR raised embryos. Differential expression analysis showed that out of ~24,500 transcripts only 6 genes were significantly changed (FDR < 0.05) with a log fold change > 2 in the 0.75X MMR raised embryos (Supplementary Figure 1F and Supplementary Dataset 1). These results show that overall raising embryos in the higher salt medium at 0.75X MMR results in very little transcriptional change – the transcriptome is not highly sensitive to external conditions.
+
+**RNA-sequencing analysis shows major transcriptional changes in the basal Xenobots compared to age-matched stage 35/36 Xenopus embryos**
+
+The basal Xenobots are derived by explanting ectodermal explant (animal cap) tissue from stage 9 Xenopus embryos, and reach maturity by day 7: fully differentiated cells, peak cellular health, and peak robust autonomous movement behavior (33). To test our hypothesis that these Xenobots would have unique and distinct transcriptomic changes compared to normal Xenopus embryos, we compared these Xenobots' transcriptome to that of age-matched (stage 35/36) control Xenopus embryos that were reared in identical conditions (incubation temperature and time) as the Xenobots. We collected RNA from three pooled samples for each condition (Xenobots and age-matched stage 35/36 Xenopus embryos) (Figure 1A) and performed RNA-seq to compare the two transcriptomes. Principal component analysis using surrogate variables and batch-correction showed marked separation between the clusters of Xenobot transcriptome and that of age-matched Xenopus embryos (Supplementary Figure 2). Differential expression analysis showed that out of 28,009 transcripts, 1,962 transcripts were significantly up-regulated (FDR<0.05) with log fold change >2 in these Xenobots compared to age-matched embryos and 5,053 transcripts were
+
+
+6
+
+**Page 7**
+
+significantly down-regulated (FDR<0.05) with log fold change < -2 in these Xenobots compared to age-matched embryos (Figure 1B). These results show that overall, these Xenobots have major transcriptional differences from age-matched Xenopus embryos.
+
+**The basal Xenobots have greater inter-individual gene count variability than age-matched stage 35/36 Xenopus embryos**
+
+In the principal component analysis (Supplementary Figure 2), the three Xenobots samples show much wider separation compared to the three age-matched embryo samples. Previous work has shown that cells experiencing novel stressors can randomly change their gene expression profiles until they find configurations that resolve the stress, and that individual cells discover different expression profiles that solve the same problem (66, 68, 69, 75, 76). We hypothesized that the process of removal from the embryo serves as a novel stressor for the nascent Xenobot tissue, requiring the tissue to adapt to its new embodiment in ways that evolution did not prepare it for. In contrast, while embryos are indeed capable of solving novel problems to achieve their developmental goals (77), their developmental trajectory is more stereotyped and likely requires less transcriptional exploration than do these Xenobots.
+
+We compared the variability of individual transcripts among biological samples using the method in Figure 2A. Briefly, all 28,009 gene transcripts were ranked based on their mean count values across all samples (3 Xenobot samples and 3 Xenopus embryo samples), combined, and genes for which any sample had a value of 0 were removed. The standard deviations of individual gene transcripts among Xenobot samples and Xenopus embryo samples were estimated and used to calculate the coefficient of variation (CV) for each gene as plotted in Figure 2B histograms. In Xenobots, genes have significantly higher inter-individual CVs and a broader range of CVs than embryos (Wilcoxon Rank Sum test, p=0) (Figure 2B). The ranked gene list was split into 100 equal-size bins (percentiles), and the fraction of genes in each bin for which CV of the Xenobots (CVX) was greater than the CV of the Xenopus embryos (CVE) was plotted (Figure 2C). We found that almost all genes have a greater CV for Xenobots than Xenopus embryos (96.06% of all included genes, shown by the red line) (Figure 2C). Also, the general trend of increasing bin fraction with higher gene count percentile indicated that, the higher the gene expression, the higher is the variability of that gene in Xenobots compared to Xenopus embryos (Figure 2C). A permutation test (see Methods) revealed that these deviations from the expected (null hypothesis) bin fraction value (0.9606 - the red line in Figure 2C) across gene count percentiles were statistically significant (dark blue colored bins with p<0.05). Among the top ten most variable genes in these Xenobots (Figure 2D), Oncomodulin gene which encodes a protein with widely distinct functional roles (78) is most prominent with three oncomodulin genes in the top ten (Figure 2D). Other interesting genes include A. superbus venom factor 1, salivary glue protein like, neurotrimin, tenomodulin, somatostatin receptor 4, chloride intracellular channel 4 (Figure 2D). Thus overall, there is significantly greater gene count variability in these Xenobots compared to age-matched Xenopus embryos, possibly indicating exploratory adaptation in the transcriptional space to adapt and survive in their new embodiment.
+
+Stringent curation of Xenobot transcripts
+
+7
+
+
+**Page 8**
+
+The basal Xenobots are derived from ectodermal explants (animal cap explants) which are primarily ectodermal progenitor cells. Most cells and tissues belonging to mesoderm and endoderm are absent in these Xenobots as compared to Xenopus embryos. Hence mesoderm and endoderm transcripts would come out as highly downregulated in these Xenobots compared to age-matched embryos largely due to absence of those cells and tissues in these Xenobots (false positives). Similar to previous studies (56), we found no clear path to resolve and differentiate which downregulated transcripts (out of the 5053 downregulated transcripts) are changed due to absence of mesoderm and endoderm (false positives) and which transcripts are truly downregulated in these Xenobots compared to age-matched Xenopus embryos (true positives). Hence, we did not further analyze the downregulated transcripts dataset.
+
+Conversely, Xenobots are fully derived from ectoderm, but ectoderm only forms a small portion of whole embryo (~10%). Thus, in a head-to-head comparison, ectodermal genes would be artificially enriched in these Xenobots resulting in false positives due to simple proportional enrichment of ectodermal tissues. To adjust for this, we subtracted out the artificially enriched ectodermal/epidermal-specific transcripts from the 1,962 upregulated transcripts to curate a list of transcripts uniquely upregulated in these Xenobots which could not be explained by the increased prevalence of ectodermal cells. To achieve this, we used Klein tools (79) a database of single-cell transcriptome of stage 22 entire Xenopus embryo. We subtracted out the entire gene set for embryonic epidermal progenitors in Xenopus embryos, leaving 1742 transcripts that were upregulated in these Xenobots (Supplemental Dataset 2). ~41% (712 transcripts) of the transcripts were uncharacterized “LOC” genes. We used genome-wide functional annotation tool eggNOG-mapper (80) to annotate these uncharacterized transcripts using human (most annotated genome) orthologs. We first tested the functional annotation using a small subset of already known Xenopus transcripts and found ~80% accuracy with differences mostly being different versions of the same gene. After functional annotation of the uncharacterized transcripts, removing any remaining unannotated transcripts, and removing all duplicate transcripts from short and long chromosomes, we were left with 1078 uniquely upregulated transcripts in these Xenobots compared to age-matched Xenopus embryos (Supplemental Dataset 3).
+
+We found many cilia and motor protein transcripts in the 1078 uniquely upregulated transcripts in Xenobots which suggested the possibility that perhaps even after epidermal gene subtraction there might still be some false positively enriched epidermal transcripts particularly belonging to the epidermal multiciliate cells. To address this issue, we raised our stringency to very high (likely losing some true positives) by again resorting to Klein tools database of single-cell transcriptome of stage 22 entire Xenopus embryos. In addition to the epidermal progenitor gene subtraction already performed, we collected all the genes expressed in the different types of epidermal cells namely, multiciliated cells, alpha and beta ionocytes, and goblet cells. We then subtracted any genes from any of these four cells that were present in our list of 1078 transcripts uniquely upregulated in these Xenobots. We then obtained a highly stringent list of 795 transcripts in which we had high confidence that these transcripts were uniquely upregulated in these Xenobots compared to age-matched embryos. After mapping these 795 transcripts to human orthologs we obtained 537 transcripts which were then used for subsequent comparisons and analysis (Supplemental Dataset 4).
+
+
+8
+
+
+**Page 9**
+
+Functional analysis of transcripts uniquely upregulated in these Xenobots compared to age-matched Xenopus embryos
+
+What kind of genes did the basal Xenobots up-regulate? To understand the biological processes that might be affected by their unique transcripts, we first performed functional enrichment analysis using the Database for Annotation, Visualization and Integrated Discovery (DAVID) (81, 82). Using DAVID, we identified enriched biological themes amongst significantly differentially expressed genes and clustered the redundant annotation terms using the Functional Annotation Clustering tool. We identified the most enriched functional clusters and ranked them based on their group enrichment score, which is the geometric mean (in -log scale) of member's p-values in a corresponding annotation cluster (Figure 3A and Supplemental Dataset 5). Interestingly, despite the very high stringency and removal of genes expressed by epidermal cells, we found enrichment of cilia, ciliopathies, and motor proteins. We also found categories for immune response and signaling, and metabolism/biosynthesis. Interestingly, we found a category of membrane proteins that contained largest number of genes belonging to various functions such as, ion channels and transporters, gap junction and junctional proteins, calcium binding proteins, ATP binding proteins, sound or mechanical stimuli responsive proteins.
+
+In addition, we also performed a network analysis to identify active functional biological modules (83, 84). We combined gene expression and interaction data and then applied network embedding, followed by clustering similarly to that performed by (85, 86). The detected functional modules were then enriched using g:profiler (87). This network clustering analysis identified 10 enriched clusters (Supplemental Dataset 6). Many of the clusters were similar to the functional enrichment analysis (Supplementary Dataset 5 & 6) such as cilia/cytoskeleton/ciliopathies, immune and stress response, metabolism/biosynthesis (Figure 3, Supplemental Figure 3 and Supplemental Dataset 5 & 6). We also found clusters for extracellular matrix (ECM)/proliferation/multicellular organization, and sensory perception of sound and mechanical stimuli (Figure 3, Supplemental Figure 3, and Supplemental Dataset 6).
+
+In summary, we identified biological processes enriched in these Xenobots compared to age-matched Xenopus embryos. These include cilia and motor proteins, tissue building/multicellular organization, immune and stress response, metabolism shift and perception of sound and mechanical stimuli. Among these the tissue building/multicellular organization and immune and stress response were unsurprising as these functions are required for building any novel morphology (88-92). The presence of cilia and motor proteins in spite of our very high stringency was surprising. Lastly, the shift in metabolism compared to embryo and the presence of sensory perception of sound and mechanical stimuli was extremely surprising.
+
+Transcripts uniquely upregulated in these Xenobots do not include any mesodermal, endodermal, or any axis patterning genes
+
+To assess whether any mesodermal, endodermal, or axis patterning genes were being up-regulated in the basal Xenobots, we first curated a list of most prominent genes for each of these categories from literature (Supplemental Dataset 7). We then compared to see if any of these genes are expressed in our high stringency transcripts upregulated in these Xenobots. None of the critical genes from mesoderm, endoderm, mesendoderm, anterior-posterior patterning, dorso-ventral
+
+
+9
+
+9
+
+**Functional analysis of transcripts uniquely upregulated in these Xenobots compared to age-matched *Xenopus* embryos**
+
+What kind of genes did the basal Xenobots up-regulate? To understand the biological processes that might be affected by their unique transcripts, we first performed functional enrichment analysis using the Database for Annotation, Visualization and Integrated Discovery (DAVID) (81, 82). Using DAVID, we identified enriched biological themes amongst significantly differentially expressed genes and clustered the redundant annotation terms using the Functional Annotation Clustering tool. We identified the most enriched functional clusters and ranked them based on their group enrichment score, which is the geometric mean (in -log scale) of member’s p-values in a corresponding annotation cluster (Figure 3A and Supplemental Dataset 5). Interestingly, despite the very high stringency and removal of genes expressed by epidermal cells, we found enrichment of cilia, ciliopathies, and motor proteins. We also found categories for immune response and signaling, and metabolism/biosynthesis. Interestingly, we found a category of membrane proteins that contained largest number of genes belonging to various functions such as, ion channels and transporters, gap junction and junctional proteins, calcium binding proteins, ATP binding proteins, sound or mechanical stimuli responsive proteins.
+
+In addition, we also performed a network analysis to identify active functional biological modules (83, 84). We combined gene expression and interaction data and then applied network embedding, followed by clustering similarly to that performed by (85, 86). The detected functional modules were then enriched using g:profiler (87). This network clustering analysis identified 10 enriched clusters (Supplemental Dataset 6). Many of the clusters were similar to the functional enrichment analysis (Supplementary Dataset 5 & 6) such as cilia/cytoskeleton/ciliopathies, immune and stress response, metabolism/biosynthesis (Figure 3, Supplemental Figure 3 and Supplemental Dataset 5 & 6). We also found clusters for extracellular matrix (ECM)/proliferation/multicellular organization, and sensory perception of sound and mechanical stimuli (Figure 3, Supplemental Figure 3, and Supplemental Dataset 6).
+
+In summary, we identified biological processes enriched in these Xenobots compared to age-matched *Xenopus* embryos. These include cilia and motor proteins, tissue building/multicellular organization, immune and stress response, metabolism shift and perception of sound and mechanical stimuli. Among these the tissue building/multicellular organization and immune and stress response were unsurprising as these functions are required for building any novel morphology (88-92). The presence of cilia and motor proteins in spite of our very high stringency was surprising. Lastly, the shift in metabolism compared to embryo and the presence of sensory perception of sound and mechanical stimuli was extremely surprising.
+
+**Transcripts uniquely upregulated in these Xenobots do not include any mesodermal, endodermal, or any axis patterning genes**
+
+To assess whether any mesodermal, endodermal, or axis patterning genes were being upregulated in the basal Xenobots, we first curated a list of most prominent genes for each of these categories from literature (Supplemental Dataset 7). We then compared to see if any of these genes are expressed in our high stringency transcripts upregulated in these Xenobots. None of the critical genes from mesoderm, endoderm, mesendoderm, anterior-posterior patterning, dorso-ventral patterning, or left-right patterning were found to be enriched in these Xenobots. This suggests that it is unlikely that these Xenobots perform trans-differentiation to recover their missing germ layers.
+
+**Xenobots change their motion behavior in response to acoustic vibration stimuli**
+
+Sensory perception of sound and mechanical stimuli was one of the most surprising gene clusters for biological processes identified to be significantly upregulated in Xenobots (Figure 3). The possibility that basal Xenobots could exhibit novel functional responses to sound is fascinating as it would provide a tractable method to control Xenobot physiology and/or behavior, as well as shedding light on evolutionary developmental biology aspects of sensory capabilities. To functionally test this hypothesis, we exposed Xenobots to acoustic vibration stimulus and documented changes in their motion behavior (Figure 4). First, we created an apparatus to apply acoustic vibration stimulus to Xenobots (Figure 4A). A preliminary frequency survey showed that Xenobots respond to vibration stimulus by changing their motion behavior within the frequency range of 50Hz to 300Hz with the strongest response at 300Hz. Hence, we chose a frequency of 300Hz for our experiments. The amplitude was reduced to the point where there was no visible movement of liquid in the dish and then the frequency and amplitude were kept constant throughout all experiments. We recorded time-lapse videos of Xenobot motion for 10 min before the vibration stimulus, 10 min during the vibration stimulus, and for 10 min after the vibration stimulus (total 30 minutes of observation for each Xenobot). We first performed two essential controls.
+
+10
+
+To test whether subtle movement of liquid medium in response to vibration may be physically moving the Xenobot we used day 1 Xenobots as controls, because at that time point cellular differentiation has not yet occurred and there are no multiciliate cells: they are non-motile (Figure 4B and Supplemental Movie 1), and thus would reveal any passive movement induced externally. Day 1 Xenobots are especially good controls as they have roughly the same size and mass as the day 7 autonomously motile Xenobots (Figure 4F). Day 1 Xenobots showed no movement within the intervals before, during, and after vibration stimulus (N=9, One-Way ANOVA with Tukey's multiple comparisons test, p>0.05) (Figure 4C, H, and Supplemental Movies 1 & 2) suggesting that whatever movements we observe cannot be due to a passive displacement of inactive material by simple physical vibration.
+
+Next, to test whether vibration stimulus causes a generic change in structure and/or function of cilia leading to change in motion behavior, we tested the effect of vibration stimulus on age-matched stage 35 embryos (Figure 4D). In addition to cilia-based gliding, stage 35 embryos also have muscle-based movement. Hence, we treated them with 0.05% tricaine (MS-222) (93) which blocks sensory-motor responses and thus inhibits muscle-based movement while leaving the cilia-based movement intact. Age-matched stage 35 embryos showed the expected cilia-based motion (Figure 4E and Supplemental Movies 3 & 4) but did not show any significant difference in motion behavior between the time intervals of before, during, and after vibration stimulus (N=5, One-Way ANOVA with Tukey's multiple comparisons test, p>0.05) (Figure 4E, H, and Supplemental Movies 3 & 4). This result suggests that vibration stimulus is not causing a generic change in structure and/or function of cilia and shows no significant effect on cilia-based motion in age-matched stage 35 embryos. Would the Xenobots respond differently than embryos, as suggested by the RNAseq data?
+
+We then tested the effect of vibration stimulus on day 7 autonomously motile Xenobots (Figure 4F). Day 7 autonomously motile Xenobots show characteristic rotational motion behavior (33) before exposure to vibration stimulus (Figure 4G and Supplemental Movie 5 & 6). However, upon exposure to vibration stimulus, day 7 Xenobots show marked change in motion behavior with a more linear/arcing motion behavior and a significant increase in peak velocity (N=7, One-Way ANOVA with Tukey's multiple comparisons test, p<0.01) (Figure 4G, H, and Supplemental Movie 5 & 6). After the vibration stimulus they return to rotational motion behavior similar to pre-stimulus levels (Figure 4G and Supplemental Movie 5 & 6). These results reveal that day 7 freely-behaving Xenobots specifically respond (in form of changed motion behavior) to vibration stimulus in ways that inactive (passive) Xenobots and age-matched normal embryos do not.
+
+**Xenobot transcripts show enrichment of thanatotranscriptomic genes.**
+
+We next turned our attention to additional aspects of the RNAseq results. Recent studies have shown the surprising fact that cells actively turn on specific genes after an organism's death – the so called thanatotranscriptome (71, 73, 94-97). This is fascinating as it provides a way to dissociate death of an organism from that of its cells, thus shedding light on deep issues of multicellularity and emergent levels of organization in biology. We hypothesized that the data from human thanatotranscriptome studies indicated the cells' attempt to survive in another form after the demise of the organism. In the case of mammals, living in dry air, this would be futile, but in the case of amphibians, this could work and indeed, these Xenobots represent just that scenario – the original body is destroyed, but some of the cells live on in another form. Would these Xenobots express thanatotranscriptome genes?
+
+11
+
+As control we used all the genes expressed in *Xenopus* embryonic epidermal progenitor cells + multiciliated cells + alpha and beta ionocytes + goblet cells (obtained with Klein tools database) a total of 2635 genes (without LOC genes and mapped to human orthologs – Supplemental Dataset 8). From the literature we curated the thanatotranscriptomic genes (336 genes) (Supplemental Dataset 9). Then we determined what percentage of transcripts uniquely upregulated in these Xenobots (537 genes mapped to human orthologs – Supplemental Dataset 4) are in the thanatotranscriptome set in comparison to the controls (total list of genes from all epidermal cell types 2635 genes Supplemental Dataset 8). We found that the Xenobot-upregulated genes had more than double (3.5%) of thanatotranscriptome genes compared to control genes (1.6%) (Supplemental Dataset 10). Enrichment analysis of these Xenobot genes overlapping with the thanatotranscriptome suggests they mostly belong to immune activation, stress response, and insulin signaling. This suggests that the self-assembly process of these Xenobots following the harvesting of their source cells from an embryo may have similarities to the death process in other metazoan including humans.
+
+**Evolutionary age of enriched Xenobot transcripts**
+
+To test the hypothesis that the basal Xenobots were acquiring more ancient transcriptomic patterns as a result of their morphogenesis and nascent emergent life history, we performed a phylostratigraphic analysis (98-103). For this analysis we did not need to remove LOC genes, and we did not need any mapping to human orthologs so the fullest extent of the gene lists were used. We used PhylostratR that applied BLAST to compare the whole *Xenopus* genome to at maximum 5 different proteomes of representative organisms of different ages in each evolutionary tree strata. Subsets of all genes in *Xenopus* genome associated with each stratum were shortlisted. Xenobot transcripts and control transcripts were then compared against these shortlisted genes. To determine the evolutionary age of transcripts from these Xenobots, we used both the unique Xenobot transcripts (1450 genes including LOC genes without mapping to human ortholog) and all the Xenobot up-regulated transcripts (1812 genes after removing short and long gene duplicates) and compared them to the controls (all the genes expressed in epidermal progenitor cells + multiciliated cells + alpha and beta ionocytes + goblet cells - 3374 genes including LOC genes without mapping to human orthologs). Going as far back as Vertebrata, there was not much difference between overlap of controls vs Xenobot transcripts. However, going further back in evolutionary time showed major enrichment of Xenobot transcripts overlap in comparison to controls for example, Bilateria, Eumetazoa, and Metazoa showed much more overlap with Xenobot transcripts than controls (Figure 5). In addition, in these (Bilateria, Eumetazoa, and Metazoa) phyla the unique Xenobot genes showed more overlap than all Xenobot up-regulated genes (Figure 5) indicating that the unique Xenobot genes were enriched for older phyla even in comparison to its own overexpressed genes suggesting specific enrichment of evolutionary older genes. Overall, this indicates that the transcripts upregulated in these Xenobots are particularly evolutionarily ancient genes.
+
+
+12
+
+**Discussion:**
+
+In this study, we try to make inroads into the relationships between genomes, transcriptomes, and overall morphology (1, 2). This is a fundamental question in biology with many knowledge gaps concerning the range and plasticity of the latent space around a genome with respect to transcriptome and morphology, and lack of predictive power for the properties of novel constructs (20, 104, 105) and chimeras (25, 106). Tremendous progress in the fields of synthetic biology, synthetic morphology, and biorobotics has made available biological model systems that are unencumbered by a history of environmental selection forces and serve as great model systems in which to understand the emergence of novel molecular-genetic, physiological, and morphological phenotypes.
+
+In this study we ask the question, how does the transcriptome change in response to cellular collectives acquiring non-evolved embodiments and behaviors in absence of any genomic editing, drug treatments, or heterologous interventions – to understand the top-down influence of morphology over transcriptome. Our goal was to utilize a synthetic living system to identify unique transcriptomic changes in it, in comparison to its native (wild-type) context. For this we exploited the Xenobots platform which includes multiple different kinds of autonomously-moving biobots all derived from *Xenopus* embryonic cells (32-35, 37, 107). We analyzed the basal Xenobots which are autonomously-motile, self-assembling multicellular entities derived from *Xenopus* ectodermal explants (animal caps) (33). The *Xenopus* ectodermal explants have a rich history of serving as a tractable model system for investigating epidermal cell fate specification and cell fate plasticity in response to various chemical stimuli (49-55). In addition, mucociliary organoids derived from them have helped understand mucociliary epidermis dynamics (56-61).
+
+Recent transcriptomic analysis has looked at epidermal cell fate specification during transformation of these ectodermal explants to the autonomously-moving entities (basal Xenobots) (56, 62). However, in this study we investigate the transcriptome of these Xenobots in comparison to their native wild-type embryonic tissue using a different transcriptomic analysis beyond epidermal cell fate specification, to understand how these Xenobots' morphology and behavior affects their transcriptomic changes. We found significantly greater inter-individual gene variability in these Xenobots suggesting adaptive exploration of the transcriptional space to adapt to their novel embodiment and associated stressors. Gene ontology and network analysis of unique (non-epidermal marker) transcriptomic changes showed both, expected shifts in multicellular organization and immune/stress response along with surprising changes in metabolism and sensory perception of sound and mechanical stimuli. Indeed, these autonomously motile basal Xenobots respond to acoustic stimulation by changing their motion behavior while motile age-matched embryos and passive non-motile Xenobots do not. Physlostratigraphic analysis showed transcriptional changes reflecting evolutionary ancient genes. We also found significant enrichment of thanatotrascriptomic genes suggesting signatures of organismal death in them. Overall, all these transcriptomic changes in these Xenobots suggest that alteration of morphology and nascent emergent life history were enough to strongly affect the transcriptome (morphology/behavior driving gene expression).
+
+13
+
+**Discussion:**
+
+In this study, we try to make inroads into the relationships between genomes, transcriptomes, and overall morphology (1, 2). This is a fundamental question in biology with many knowledge gaps concerning the range and plasticity of the latent space around a genome with respect to transcriptome and morphology, and lack of predictive power for the properties of novel constructs (20, 104, 105) and chimeras (25, 106). Tremendous progress in the fields of synthetic biology, synthetic morphology, and biorobotics has made available biological model systems that are unencumbered by a history of environmental selection forces and serve as great model systems in which to understand the emergence of novel molecular-genetic, physiological, and morphological phenotypes.
+
+In this study we ask the question, how does the transcriptome change in response to cellular collectives acquiring non-evolved embodiments and behaviors in absence of any genomic editing, drug treatments, or heterologous interventions – to understand the top-down influence of morphology over transcriptome. Our goal was to utilize a synthetic living system to identify unique transcriptomic changes in it, in comparison to its native (wild-type) context. For this we exploited the Xenobots platform which includes multiple different kinds of autonomously-moving biobots all derived from *Xenopus* embryonic cells (32-35, 37, 107). We analyzed the basal Xenobots which are autonomously-motile, self-assembling multicellular entities derived from *Xenopus* ectodermal explants (animal caps) (33). The *Xenopus* ectodermal explants have a rich history of serving as a tractable model system for investigating epidermal cell fate specification and cell fate plasticity in response to various chemical stimuli (49-55). In addition, mucociliary organoids derived from them have helped understand mucociliary epidermis dynamics (56-61).
+
+Recent transcriptomic analysis has looked at epidermal cell fate specification during transformation of these ectodermal explants to the autonomously-moving entities (basal Xenobots) (56, 62). However, in this study we investigate the transcriptome of these Xenobots in comparison to their native wild-type embryonic tissue using a different transcriptomic analysis beyond epidermal cell fate specification, to understand how these Xenobots' morphology and behavior affects their transcriptomic changes. We found significantly greater inter-individual gene variability in these Xenobots suggesting adaptive exploration of the transcriptional space to adapt to their novel embodiment and associated stressors. Gene ontology and network analysis of unique (non-epidermal marker) transcriptomic changes showed both, expected shifts in multicellular organization and immune/stress response along with surprising changes in metabolism and sensory perception of sound and mechanical stimuli. Indeed, these autonomously motile basal Xenobots respond to acoustic stimulation by changing their motion behavior while motile age-matched embryos and passive non-motile Xenobots do not. Physlostratigraphic analysis showed transcriptional changes reflecting evolutionary ancient genes. We also found significant enrichment of thanatotrascriptomic genes suggesting signatures of organismal death in them. Overall, all these transcriptomic changes in these Xenobots suggest that alteration of morphology and nascent emergent life history were enough to strongly affect the transcriptome (morphology/behavior driving gene expression).
+
+13
+
+Since these Xenobots are raised in different media concentration (0.75X MMR) as opposed to embryos (0.1X MMR) we first wanted to see if there are any major transcriptome changes in response to the different media concentration. Since the ectodermal explants were excised from embryos at stage 9 and incubated in 0.75X MMR for making these Xenobots, we incubated embryos in 0.75X MMR from stage 9 onwards until age-matched stage to mature day 7 Xenobots. Raising embryos in 0.75X MMR after stage 9 remarkably showed normal embryonic development with no developmental morphology defects and embryos looking similar to their sibling raised in 0.1X MMR. Comparing transcriptome of embryos raised in 0.1X MMR to 0.75X MMR showed no major transcriptome differences (only 6 transcripts out of ~24,500 transcripts showed significant differences) (Supplementary Figure 1). This was very surprising and suggests that the embryonic transcriptional regulation is very well shielded from external environmental changes. This might be due to the presence of tight junctions in the outmost ectodermal layer which compartmentalizes the embryos from their external environment. If embryos are raised in 0.75X MMR from pre-stage 9 then they do not undergo normal gastrulation and do show developmental defects, suggesting as previously documented that the pre-gastrulation embryos are much more susceptible to environmental differences than a post-gastrulation embryo.
+
+To deal with false positives we used scRNAseq data base of Klein tools (79). However, the caveat is that we had to use scRNA data from stage 22 embryos whereas our age-matched embryos were stage 35. This stage 22 scRNA dataset is the best accessible results we have as there are no stage 35 scRNAseq datasets which we could use to remove epidermal progenitor transcripts. However, by stage 22 epidermal cell differentiation has already occurred (62, 79). In addition, to eliminate false positives, we took an extremely stringent approach by removing all genes expressed in epidermal progenitor cells, multiciliated cells, alpha and beta ionocytes, and goblet cells from our Xenobot dataset. In fact, this stringent curation may have resulted in the loss of some true positives but it was worth it to give us good confidence in our results. Overall, our highly stringent list of Xenobot transcripts is a good starting point to look into unique transcriptional aspects of these Xenobots and to begin understanding how genome/transcriptome relates to novel morphologies. In future, single cell RNA sequencing of Xenobots might allow us to look at regional and cell type specific expression patterns in Xenobots and how ectodermal progenitor cells distribution and profile diverge between Xenobots and embryos.
+
+We compared and analyzed the transcriptome of these Xenobots with their age-matched *Xenopus* embryos to determine effects of altered morphology and nascent emergent life history on transcriptome. Our results give an indication of the kinds of transcriptional changes induced by change of morphology and behavior (no genomic editing or transgenes). We found at least 537 transcripts uniquely upregulated in these Xenobots (Supplementary Dataset 4). These transcripts indicated enriched functions such as locomotion apparatus assemblies (cilia-based motion and motor proteins), structure formation and multicellularity, stress and immune response, shift in metabolism, and sensory perception of sound and mechanical stimuli (Figure 3, Supplementary Figure 3, Supplementary Datasets 5 & 6). The majority of these shifts were towards evolutionary older systems which likely get suppressed when they are part of the organism. Phylostratigraphic analysis shows the transcripts uniquely upregulated in these Xenobots compared to the wild-type tissue are enriched for evolutionarily ancient genes and systems (Figure 5). This is fascinating and
+
+14
+
+suggests that cellular functional plasticity can roll backwards along the “ontogeny recapitulates phylogeny” axis, utilizing gene ensembles and systems from their distant evolutionary past that might be relevant in their new configuration and environment. Future work will examine possible links to similar phenomena (a shift toward ancient, unicellular transcripts) in cancer (108) and potential implications for the relationship between cancer and multicellularity (109, 110).
+
+The transcripts uniquely upregulated in these Xenobots compared to the wild-type tissue also showed enrichment for thanatotrascriptomic genes (71, 73, 94-97, 111) which are transcripts awakened in cells and organs after the overall organism dies. These transcripts mainly included immune/stress response and insulin signals. What this suggests is that these Xenobots have some sort of memory/information of them not being part of “living organism”. One possibility is that this might be evidence that the cells experienced the Xenobot construction event as the death of their parent organism; it is also likely that the thanatotranscriptome is limited by the fact they retained multicellularity; perhaps dissociating the cells and having them reboot multicellularity (as occurs in a different type of Xenobot (33)) might show a much stronger thanatotrascriptomic response. One challenge in this field has been that it was not possible to test whether these death-induced genes were functionally active. Indeed, what kind of function could even be assayed at the end of life? The Xenobots platform, as a whole, offers a path forward, because in future work, the thanatotranscriptome could be down-regulated via RNAi or morpholinos, to examine whether this would induce any negative effects on their continued survival or Xenobot functionality. All in all, the refactoring of cells after the death of a body provides a fascinating way to engineer an extension of the normal cycle of development, adulthood, and death toward new possible life histories that could cycle between unicellular and multicellular forms (112, 113).
+
+
+When cells are challenged and need to make quick changes to their gene expression to adapt to novel conditions, they exhibit exploratory adaptation by changing many different genes simultaneously and different cells change different sets of genes to overcome the same challenge (66-69). When comparing the overall transcriptome of the basal Xenobots and age-matched *Xenopus* embryos using PCA, the three Xenobots samples showed much wider separation compared to the three age-matched *Xenopus* embryo samples (Supplementary Figure 2). Further, our analysis of gene count variability showed significantly higher inter-individual gene variability in these Xenobots compared to age-matched *Xenopus* embryos (Figure 2). This increase in inter-individual gene variability in these Xenobots suggests that these Xenobots might be exploring the transcriptomic space (of possible gene expression profiles) to discover transcriptomes that allow them to improvise and adapt to their new embodiment. This is supported by the top ten most variable transcripts in these Xenobots which show prominent presence (3 genes out of ten) of oncomodulin that encodes a protein usually found only during early embryonic cells and tumor cells and performs widely distinct functions (78) including maintaining sensory perception, tissue regeneration, immune response, and strong antioxidant properties (78). Other genes in the top ten most variable transcripts in these Xenobots include: tenomodulin which is involved in tissue maintenance by supporting stem cell renewal and preventing senescence and aging (114-116), adhesion proteins neurotrimin (117) and salivary glue protein-3 like protein (118), *A. superbus* venom factor 1 an immune regulator (119), somatostatin receptor 4 a regulator of hormone and secretory protein secretion (120), chloride intracellular channel 4 that belongs to an extremely
+
+
+15
+
+
+conserved (across prokaryotes and eukaryotes) family that can perform different and independent functions at the membrane and the cytoplasm including fundamental cellular processes such as regulating mitochondrial function, exosome communication, membrane trafficking, and pH maintenance (121, 122), and tyrosine aminotransferase which is involved in gluconeogenesis – an alternate metabolic pathway (123).
+
+All of these functions are likely to be useful in the capacity to adjust to novel embodiments and challenges. Xenobots are an intriguing model in which to characterize problem-solving during traversal of transcriptional, physiological, and other unconventional spaces (88, 124). Individuals may explore the option space for many possible paths to adaptations to new ways of existence. Alternatively, the greater transcriptomic differences among these Xenobots may be a reflection of heterogeneity introduced to the these Xenobot population by variability in their manual production process, either simply due to variability in cell numbers between individuals, or as a transcriptional memory of the unique “lived experiences” of each Xenobot (125-127). Finally, it has been observed that embryos in groups assist the morphogenesis of others and develop more uniformly with fewer defects (128). While the embryo groups in the present study were small (10 individuals), they may still have some capacity to synchronize their transcriptomes that these Xenobots lack. In future studies, a spatial transcriptomic analysis of individual Xenobots would provide a better understating of this adaptive exploration process.
+
+We saw not a single transcript overlap between the uniquely upregulated transcripts in these Xenobots in comparison to wild-type tissue and genes representing the mesoderm, endoderm, and axis patterning clusters (Supplemental Dataset 7), suggesting that there was no “contamination” of the explanted ectodermal tissue from which these Xenobots were derived with mesoderm, endoderm or axis patterning genes. Likewise, it did not support transdifferentiation of ectoderm cells into other lineages.
+
+
+Overall, both functional enrichment analysis and the network clustering analysis showed largely overlapping functional clusters (Figure 3, Supplemental Figure 3, Supplemental Datasets 5, and 6). Even with the stringent subtraction conditions including subtraction of all multiciliate cell genes, we still saw cilia assembly and motor proteins as major enrichment categories in both gene ontology analysis and the network clustering analysis. This suggests that there might be significant upregulation of generation/making of multiciliate cells in these Xenobots compared to embryos. The multiciliate cells in embryos may be much more stable and long-lasting compared to these Xenobots which might be making them at a higher rate due to rapid turnover. This is partly supported by the observation of both proliferation and cell death categories being upregulated in these Xenobots suggesting a higher turnover of cells. Also, previously it has been reported that the density of multiciliate cells is significantly higher in these Xenobots compared to embryos (33), this could be another reason why we see upregulation of cilia assembly and motor proteins. It is also possible that there are some unique and subtle differences in cilia assembly and adjoining motor proteins and their functions in these Xenobots’ morphology configuration. Overall, there is definitely a major shift in cilia assembly and motor proteins and perhaps multiciliate cell dynamics in these Xenobots; this remains an area of active investigation.
+
+16
+
+
+Subcategories involved in tissue building, repair, and multicellular organization were ATP binding, calcium binding,, and subcategories in stress and immune response signals mainly included cytokines, heat-shock proteins, and MMPs. It has been postulated that stress/immune response is important indicator of deviation from homeostasis and target morphology states and involved in moving the system by repair and tissue building processes to reach its final state (88-92). It was interesting to see V-ATPase among these genes, as it is not only deeply conserved (evolutionarily ancient) but has also been postulated to be one of the key elements required for generation of multicellularity (129-131), morphogenesis (132-135), and cancer (136-138). These genes represent candidates for control knobs that will be tested for their ability to enable guidance of the self-organization process to produce other types of Xenobots of different shapes and morphologies.
+
+It was surprising to see sensory perception of sound and mechanical stimuli as an upregulated category in these Xenobots. Initially we thought it might be erroneous or cross assignment of cilia related transcripts but transcripts in this category were not cilia related. They indeed contained transcripts known to be involved in sound and mechanical stimuli perception such as: GJB2 which is a gap junction protein involved in sensory perception (among other functions) and mutational loss of this protein leads to hearing loss in humans and mice (139-141), stereocilin (142)– the mechanoreceptor for sound waves/vibrations, proteins involved in inner ear membrane formation, inner ear ion channels, and many other stereocilia (inner ear hair cells) specific proteins. Importantly, the expression data were experimentally confirmed in a functional experiment. We tested the ability of these basal Xenobots to respond to acoustic vibration stimulus (Figure 4 and Supplementary Movies 1-6). Observable changes in their motion behavior (Figure 4 and Supplementary Movies 5 & 6) confirm that they do indeed respond to acoustic stimulus. This change in motion behavior is not due to physical movement of medium or simple mechanical effect of vibration on cilia function (Figure 4 and Supplementary Movies 1-4), as indicated by controls (immotile bots and ciliated age-matched normal *Xenopus* embryos, neither of which responded to the stimulus).
+
+Future work will detail the specific mechanisms leading from stimulus to change in behavior and characterize additional motility patterns that may be inducible by diverse stimuli. Importantly, the field of morphological computing reveal how the physical properties of bodies serve as an integral part of their cognition (143). Morphology (including material structure) can exploit system-environment interaction to achieve useful behaviors (144, 145). Advances in this field dissolve simplistic distinctions between physics and active behavior: cognition, especially of non-neural agents, is beginning to be understood as a network of inseparable physical system-environment interactions which implement behaviors via analog computation and not explicit symbolic computations that require a conventional central controller (146-148). The Xenobots’ rich mix of ciliary action (itself a highly active multiscale system), internal bioelectric and calcium physiology, and fluid dynamics make Xenobots an exciting model system in which to unravel morphological computing and behavioral responses in novel morphologies with wild-type genomes (149-154).
+
+17
+
+This is chunk 5 of 12 (pass 2 of 3) covering pages 17-21 of 46.
+
+PDF content:
+
+
+Subcategories involved in tissue building, repair, and multicellular organization were ATP
+binding, calcium binding,, and subcategories in stress and immune response signals mainly
+included cytokines, heat-shock proteins, and MMPs. It has been postulated that stress/immune
+response is important indicator of deviation from homeostasis and target morphology states and
+involved in moving the system by repair and tissue building processes to reach its final state (88-
+92). It was interesting to see V-ATPase among these genes, as it is not only deeply conserved
+(evolutionarily ancient) but has also been postulated to be one of the key elements required for
+generation of multicellularity (129-131), morphogenesis (132-135), and cancer (136-138). These
+genes represent candidates for control knobs that will be tested for their ability to enable guidance
+of the self-organization process to produce other types of Xenobots of different shapes and
+morphologies.
+
+It was surprising to see sensory perception of sound and mechanical stimuli as an
+upregulated category in these Xenobots. Initially we thought it might be erroneous or cross
+assignment of cilia related transcripts but transcripts in this category were not cilia related. They
+indeed contained transcripts known to be involved in sound and mechanical stimuli perception
+such as: GJB2 which is a gap junction protein involved in sensory perception (among other
+functions) and mutational loss of this protein leads to hearing loss in humans and mice (139-141),
+stereocilin (142)– the mechanoreceptor for sound waves/vibrations, proteins involved in inner ear
+membrane formation, inner ear ion channels, and many other stereocilia (inner ear hair cells)
+specific proteins. Importantly, the expression data were experimentally confirmed in a functional
+experiment. We tested the ability of these basal Xenobots to respond to acoustic vibration stimulus
+(Figure 4 and Supplementary Movies 1-6). Observable changes in their motion behavior (Figure
+4 and Supplementary Movies 5 & 6) confirm that they do indeed respond to acoustic stimulus.
+This change in motion behavior is not due to physical movement of medium or simple mechanical
+effect of vibration on cilia function (Figure 4 and Supplementary Movies 1-4), as indicated by
+controls (immotile bots and ciliated age-matched normal Xenopus embryos, neither of which
+responded to the stimulus).
+
+Future work will detail the specific mechanisms leading from stimulus to change in
+behavior and characterize additional motility patterns that may be inducible by diverse stimuli.
+Importantly, the field of morphological computing reveal how the physical properties of bodies
+serve as an integral part of their cognition (143). Morphology (including material structure) can
+exploit system-environment interaction to achieve useful behaviors (144, 145). Advances in this
+field dissolve simplistic distinctions between physics and active behavior: cognition, especially of
+non-neural agents, is beginning to be understood as a network of inseparable physical system-
+environment interactions which implement behaviors via analog computation and not explicit
+symbolic computations that require a conventional central controller (146-148). The Xenobots'
+rich mix of ciliary action (itself a highly active multiscale system), internal bioelectric and calcium
+physiology, and fluid dynamics make Xenobots an exciting model system in which to unravel
+morphological computing and behavioral responses in novel morphologies with wild-type
+genomes (149-154).
+
+17
+
+Xenobots behavioral response to acoustic stimulus suggests several points for
+consideration. First, these basal Xenobots express high levels of acoustic-related genes, and are
+sensitive to such stimuli, whereas age-matched Xenopus embryos are not. The induction of whole
+cluster of transcriptomic machinery sufficient for a functional behavioral response, in a wild-type
+genome (in the absence of synthetic circuits or added induction by novel cell populations), may
+shed light on evolutionary developmental biology consequences of changes of morphology and
+nascent emergent life history. This in turn suggests a future research program to attempt to identify
+novel sensory-behavioral capabilities in other minimal, organoid, and bioengineered living
+constructs which may heretofore have gone un-noticed. Second, from the perspective of
+biorobotics and the use of this model system as useful synthetic living machines, the ability to
+reversibly modulate their behavior via acoustic stimuli opens fascinating possibilities for control.
+Work is on-going to map the frequency, waveform, and amplitude domains and link them to
+predictable changes in behavior (both via motility and via gene expression and physiological state).
+Real-time modulation of the hydroacoustic parameters in closed-loop controllers is a possible path
+forward for guided functionality in bio-robotics in Xenobots and beyond.
+
+What would the role of such sensory perception of sound and mechanical stimuli be in such
+an aneural system like these Xenobots? And how does that regulate its morphology and movement
+behavior? A role of acoustics in aneural systems is not unprecedented. Recent studies have shown
+that coral larvae which are aneural mass of cells with cilia-based movement similar to these
+Xenobots, perceive reef sounds and distinguish acoustics of healthy reef vs unhealthy reefs and
+preferentially migrate towards healthy reefs (155-158). In addition, they also distinguish acoustics
+of mother reef vs other healthy reefs and preferentially migrate towards mother reefs. It is not
+known how (mechanism of action) they are able to achieve this acoustic perception and it remains
+an area of investigation. Thus, it is possible that such acoustics-based sensing and movement is
+one of the evolutionarily ancient mechanisms of perceiving the environment and reacting to it via
+motion before nervous system evolved leading to coordinated movement behavior. Given the
+presence of machinery for perception of sound and mechanical stimuli in these Xenobots, acoustic
+perception and response similar to coral larvae should be examined in Xenobots.
+
+Although it is well known that yolk platelets provide the energy source and essential
+nutrients for Xenopus during embryonic development (159-161), little is known about the
+metabolism happening within the embryos. Some evidence suggests that during early Xenopus
+embryonic development (pre-gastrulation) the pentose cycle and glutamate-aspartate cycle are
+predominant (162-164). The Embden-Meyerhof pathway and Krebs cycle although functional,
+contribute little during pre-gastrulation stages but their relative contribution shows major increase
+after gastrulation (162-164). Interestingly, in the basal Xenobots there seem to be upregulation of
+different metabolic processes such as gluconeogenesis (which has been shown not to occur in
+embryos (163)) and ketone metabolism and metabolic process breaking down cholesterol and
+steroids. These were associated with presence of many liver-related transcripts involved in
+metabolism, although these Xenobots have no liver. It is interesting to see upregulation of
+gluconeogenesis and ketone metabolism in these Xenobots which are highly conserved metabolic
+processes of generating glucose from non-carbohydrate carbon substrates and is found in
+microorganisms, bacteria, fungi, plants, and animals (165-171), suggesting that metabolically
+
+18
+
+these Xenobots might be shifting to an ancient mechanism to meet their energy requirements. This
+perhaps is due to the majority of yolk (energy source of embryos) being on the vegetal side of the
+embryo and since these Xenobots are derived from the animal side, they may have
+disproportionately lower yolk, thus needing to manage energy use given the limited amount of
+energy source. Interestingly, V-ATPase, the deeply conserved proton pump known to be involved
+in many functions (generating multicellularity, morphogenesis and cancer (129-138)) is also
+known to regulate mitochondrial metabolism (172, 173) and was found to be upregulated in these
+Xenobots as part of metabolism cluster, thus suggesting an overall shift in the metabolism in these
+Xenobots. Further detailed and deep investigation first into the metabolism and energy usage of
+embryos and then of these Xenobots will help reveal the shifts in metabolism. Understanding this
+will allow us to manage the energy requirements and control the overall nascent emergent life
+history of these Xenobots. Along these lines it has been shown that external supply of glucose can
+drastically increase the life-span of these synthetic biobots (33).
+
+From the gene ontology and network analysis categories it seemed that the basal Xenobots
+had activated evolutionarily-ancient functions. To test the hypothesis that these Xenobots were
+acquiring more ancient transcriptomes as a result of their morphogenesis and nascent emergent life
+history, we performed a phylostratigraphic analysis. Here we compared the control transcripts (all
+transcripts from epidermal progenitor cells + alpha and beta ionocytes+ multiciliated cells+goblet
+cells) with transcripts uniquely upregulated in these Xenobots. The controls and Xenobot
+transcripts were equally enriched until Vertebrata strata. However, although the controls have a
+much larger transcript dataset (3374), the Xenobot transcripts (1450 uniquely upregulated
+transcripts) were much more enriched than controls in the older strata Bilateria, Eumetazoa, and
+Metazoa. This again suggests that these Xenobots have upregulated transcripts and programs that
+are evolutionarily ancient. Along those lines, the cellular physiology of these Xenobots appears to
+be closer to evolutionarily ancient organisms with a single layer of differentiated cells with no
+nervous system and vasculature and cilia-based movements. The phylostratigraphic analysis also
+shows that these Xenobot genes are evolutionarily basal and found in organisms with simpler body
+plan. This fits in line with the observation of shifts in metabolism, sensory perception process, and
+multicellular organization towards evolutionarily ancient processes. This indicates that when cells
+and tissues are liberated from their organisms, they can tap into their evolutionary history to
+kickstart ancient processes and adjust their energy requirements to reach novel morphology goals.
+
+Taken together, the results of this study reveal a control arc that is complementary to the
+conventional control of morphology by gene expression: to some extent, the genome is being used
+as a “resource book” by the cellular collectives to kick start various processes as per the conditions
+and needs of atypical multicellular configurations. Plasticity in form, function, and molecular
+physiology is gaining interest, as it impacts on basic evolutionary biology, biomedical applications,
+and synthetic bioengineering (89, 174-180), in way that augments current bottom-up approaches
+of DNA engineering and synthetic biology circuits. We see this work as part of a future roadmap
+in which a wide variety of synthetic systems is examined to see ways in which living organisms
+adapt to new environments on-the-fly and solve evolutionarily-novel problems in transcriptional,
+morphological, and physiological spaces. Discovering how groups of cells manage their
+molecular-biological and metabolic resources to achieve adaptive ends in novel scenarios will
+
+19
+
+
+facilitate the ability to control and generate different morphologies from the same genome by
+reshaping the morphological landscape to create new attractor states, control their behavior and
+responses and manage their nascent life histories. Such knowledge will serve biomedical purposes
+(controlling multicellularity during regeneration, birth defects, and cancer), advance biorobotics
+and bio-AI (design systems with morphology and behavior to solve specific problems) and explore
+the space of possibilities of life-as-it-can-be.
+
+Materials and Methods:
+
+Animal Husbandry:
+
+All experiments were approved by the Tufts University Institutional Animal Care and Use
+Committee (IACUC) under the protocol number M2023-18. Xenopus Laevis embryos were
+fertilized in vitro according to standard protocols (181) and reared in either 0.1X Marc's Modified
+Ringer's solution or 0.75X Marc's Modified Ringer's solution (only post stage 9). Xenopus
+embryos were housed at 14 °C and staged according to Nieuwkoop and Faber (182).
+
+Basal Xenobot construction:
+
+The basal Xenobots used in this study were derived from Xenopus embryonic ectodermal
+explants, also known as “animal caps", as the starting material (49-52). The basal Xenobots are
+the most basic version of Xenobots (no sculpting or engineering or mixing of different tissues)
+(32). These Xenobots were constructed manually from Xenopus Laevis embryos as described
+previously (33). Briefly, in vitro fertilized embryos were reared at 14°C in 0.1X Marc's Modified
+Ringer's solution (MMR) until Nieuwkoop and Faber stage 9 (182). At stage 9 embryos were
+transferred into a petri dish coated with 1% agarose made in 0.75X MMR and containing 0.75X
+MMR solution. Using surgical forceps, the vitelline membrane was removed from the embryos
+and animal cap epidermal progenitor cells were cut out of the embryos as per previously described
+protocols (49-52). The ectodermal explants were placed on the agarose with inside surface facing
+up. Over a period of 2 hours the ectodermal explants round up into a spherical shape. These are
+then incubated at 14°C on 1% agarose in 0.75X MMR for 7 days with daily cleaning. By day, 7
+the tissue differentiates and transforms into an autonomously moving synthetic epidermal entity
+(basal Xenobot) used in this study. These Xenobots was not further modified, and were used as
+mature at day 7.
+
+RNA extraction:
+
+Total RNA was extracted from either stage 35/36 Xenopus Laevis embryos or from
+autonomous moving fully mature Xenobots (7 days post extraction of ectodermal explants from
+embryos). For stage 35/36 embryos we had 3 replicates for each experimental sample and each
+sample contained 10 pooled embryos. For Xenobots we had 3 replicates for each experimental
+sample and each sample contained 50 pooled Xenobots – necessary to gather enough RNA from
+markedly small mass of Xenobots (Figure 2A). Total RNA was extracted using Tri-reagent (MRC,
+Inc) as per the manufacturer's protocol. Total RNA quality and quantity was measured using
+NanoDrop spectrophotometer (Thermo Fisher Scientific).
+
+rRNA depletion and RNA-sequencing:
+
+20
+
+Total RNA was sent to the Tufts Genomic Core. RNA quality was measured with
+bioanalyzer, and high-quality RNA was used for library preparation with the Illunima Stranded
+Total RNA with Ribo-Zero Plus. Libraries were multiplexed and single-end 75-nucleotide
+sequencing was performed with 30 million reads per sample on Illumina NextSeq 550 High output.
+Raw read files were used for initial analysis at Bioinformatics and Biostatistics Core at Joslin
+Diabetes Center.
+
+Transcriptomic analysis:
+
+The reads were trimmed for adapter “CTGTCTCTTATACACATCTCCGAGCCCACGAGAC” and polyX tails, then filtered by
+sequencing Phred quality (>= Q15) using fastp (183). Xenopus laevis genome sequences and gene
+annotation were downloaded from the NCBI genome database, version 10.1. GenomeGenerate
+module of the STAR aligner (184) was used to generate the genome indexes. STAR aligner option
+was set to sjdbOverhang = 75 for 76-bp reads, as was ideal. Adapter-trimmed reads were aligned
+to the genome using STAR aligner with the two-pass option. Reads were mapped across the
+genome to identify novel splice junctions in the first-pass. These new annotations were then
+incorporated into the reference indexes and reads were re-aligned with this new reference in the
+second pass. Gene expression was estimated from the gene alignments using RSEM tool for
+accurate quantification of gene and isoform expression from RNA-Seq data (185). Low expressing
+genes were filtered out by only keeping genes that had counts per million (CPM) more than 0.6 in
+at least 3 samples. There were 28,009 genes after filtering. Counts were normalized by weighted
+trimmed mean of M-values (TMM) (186). Voom transformation (187) was performed to transform
+counts into logCPM where logCPM=log2(106*count/(library size*normalization factor)). PCA
+analysis was performed to provide an overall view of the data. Differential gene expression
+analysis between groups was performed using limma (188).
+
+Inter-individual gene count variability analysis:
+
+A schematic of the method is shown in Figure 2A. The analysis was performed on gene
+count data from the 3 Xenobot pools and 3 age-matched Xenopus embryo pools in MATLAB. The
+28,009 genes were ranked by the values of the means of their counts across all 6 pools of Xenobots
+and Xenopus embryos. Genes with a count of 0 in any of the 6 pools were removed, leaving 25,276
+genes. Because the count value of a given gene in a given Xenobot pool represents the mean value
+of all the individual Xenobots in that pool, the standard deviation of the 3 Xenobot pools gives the
+standard error of the means (SE) of the Xenobots, and likewise for the age-matched Xenopus
+embryos. The SE is related to the number of individuals per pool (n) and the standard deviation of
+the individuals within the pools (σ) with the equation SE = σ/sqrt(n). By multiplying the SE by
+sqrt(n) (where n = 50 for Xenobots, n = 10 for age-matched Xenopus embryos), σ can be calculated.
+Dividing σ by the mean count value of the 3 pools gives the coefficient of variation (CV) for
+Xenobots (CVX) and for age-matched Xenopus embryos (CVE). The CVs for all genes in the
+Xenobots and age-matched embryos were plotted as histograms with the area under the curves
+normalized to 1 (Figure 2B) and the two distributions compared with a Wilcoxon Rank Sum test
+in MATLAB, returning p=0, indicating highly significant difference between the distributions. The
+ranked gene list was then split into equal-size bins (percentiles) and the fraction of genes in each
+bin for which CVX > CVE was calculated and plotted in Figure 2C, with black line indicating
+
+21
+
+This is chunk 6 of 12 (pass 2 of 3) covering pages 21-25 of 46.
+
+**PDF content:**
+
+Total RNA was sent to the Tufts Genomic Core. RNA quality was measured with
+bioanalyzer, and high-quality RNA was used for library preparation with the Illunima Stranded
+Total RNA with Ribo-Zero Plus. Libraries were multiplexed and single-end 75-nucleotide
+sequencing was performed with 30 million reads per sample on Illumina NextSeq 550 High output.
+Raw read files were used for initial analysis at Bioinformatics and Biostatistics Core at Joslin
+Diabetes Center.
+
+**Transcriptomic analysis:**
+
+The reads were trimmed for adapter “CTGTCTCTTATACACATCTCCGAGCCCACGAGAC” and polyX tails, then filtered by sequencing Phred quality (>= Q15) using fastp (183). Xenopus laevis genome sequences and gene annotation were downloaded from the NCBI genome database, version 10.1. GenomeGenerate module of the STAR aligner (184) was used to generate the genome indexes. STAR aligner option was set to sjdbOverhang = 75 for 76-bp reads, as was ideal. Adapter-trimmed reads were aligned to the genome using STAR aligner with the two-pass option. Reads were mapped across the genome to identify novel splice junctions in the first-pass. These new annotations were then incorporated into the reference indexes and reads were re-aligned with this new reference in the second pass. Gene expression was estimated from the gene alignments using RSEM tool for accurate quantification of gene and isoform expression from RNA-Seq data (185). Low expressing genes were filtered out by only keeping genes that had counts per million (CPM) more than 0.6 in at least 3 samples. There were 28,009 genes after filtering. Counts were normalized by weighted trimmed mean of M-values (TMM) (186). Voom transformation (187) was performed to transform counts into logCPM where logCPM=log2(106*count/(library size*normalization factor)). PCA analysis was performed to provide an overall view of the data. Differential gene expression analysis between groups was performed using limma (188).
+
+**Inter-individual gene count variability analysis:**
+
+A schematic of the method is shown in Figure 2A. The analysis was performed on gene count data from the 3 Xenobot pools and 3 age-matched Xenopus embryo pools in MATLAB. The 28,009 genes were ranked by the values of the means of their counts across all 6 pools of Xenobots and Xenopus embryos. Genes with a count of 0 in any of the 6 pools were removed, leaving 25,276 genes. Because the count value of a given gene in a given Xenobot pool represents the mean value of all the individual Xenobots in that pool, the standard deviation of the 3 Xenobot pools gives the standard error of the means (SE) of the Xenobots, and likewise for the age-matched Xenopus embryos. The SE is related to the number of individuals per pool (n) and the standard deviation of the individuals within the pools (σ) with the equation SE = σ/sqrt(n). By multiplying the SE by sqrt(n) (where n = 50 for Xenobots, n = 10 for age-matched Xenopus embryos), σ can be calculated. Dividing σ by the mean count value of the 3 pools gives the coefficient of variation (CV) for Xenobots (CVX) and for age-matched Xenopus embryos (CVE). The CVs for all genes in the Xenobots and age-matched embryos were plotted as histograms with the area under the curves normalized to 1 (Figure 2B) and the two distributions compared with a Wilcoxon Rank Sum test in MATLAB, returning p=0, indicating highly significant difference between the distributions. The ranked gene list was then split into equal-size bins (percentiles) and the fraction of genes in each bin for which CVX > CVE was calculated and plotted in Figure 2C, with black line indicating 21
+
+fraction of 0.5. The fraction of all genes for which CVX>CVE was found to be 0.9606 and was plotted as the red line. To assess whether any bin values were outside the range of values expected for random shuffles of the list, a permutation test was used to determine the typical distribution of bin values around the red line. First, the order of CVX - CVE gene pairs list was shuffled, and the bin analysis was performed on the shuffled list to determine a set of bin fractions. This was repeated 1000 times for different shuffles to produce a distribution of bin fraction values for each bin. To determine statistical significance of the true bin values' differences from the mean (red line), each true bin fraction value was compared to the distribution. The p value was defined as the proportion of the distribution that was further (in absolute value) from the distribution mean (red line) than the true bin fraction. Bins with p values of p<0.05 were deemed statistically significant and were colored dark blue; otherwise, bins were colored light blue, revealing significant variation of bin fractions across gene count percentiles. To generate the list of top 10 most variable Xenobot genes CVX values were used. For the list, genes for which any transcriptome in the group of 3 replicates had a count value of 0, and genes for which all count values in the 3 replicates were <10, were excluded.
+
+**Functional Enrichment Analysis:**
+
+To understand the biological processes and pathways enriched in RNA-seq comparisons, we performed functional enrichment analysis using the Database for Annotation, Visualization and Integrated Discovery (DAVID) (81, 82). Gene lists of interest (significantly differentially expressed genes with false positive genes subtracted) were uploaded to the DAVID Analysis Wizard. Functional Annotation Clustering was performed to identify significantly enriched functional annotations and these annotations were grouped into related clusters based on shared genes. Stringency classification was set to the default recommendation of “Medium”. Each individual annotation was assigned a p-value and each cluster of annotations received an enrichment score, which is the geometric mean (in -log scale) of member's p-values in a corresponding annotation cluster. Enriched functional clusters were ranked based on their group enrichment score.
+
+**Xenobot network clustering Analysis:**
+
+We performed a network analysis for identifying active functional biological modules (83, 84). We combined gene expression and interaction data, we extracted the xenobot protein-protein interaction (PPI) and we applied network embedding followed by clustering similarly to (85, 86). We used the MNMF network embedding and clustering algorithm (189) and imposed a number of clusters equal to 15. To construct the synthetic proto-organism network, we filtered the genes of interests, found the human orthologs in the different conditions using HCOP (190). Then, we extracted the corresponding network using the STRING database (191). The detected functional modules after network embedding and clustering are enriched using g:profiler (87).
+
+**Phylostratigraphic analysis:**
+
+We used phylostratR to perform the phylostratographic analysis of xenobot transcripts (192). The focal species was set to ‘8355′ for Xenopus Laevis. This package automates several key processes in evolutionary analysis (1) it constructs a clade tree from species listed in UniProt, aligned with the latest NCBI tree of life; (2) it prunes the clade tree such that it retains a 22
+
+phylogenetically diverse selection of representatives for each phylostratum; (3) it compiles a database of protein sequences from hundreds of species from the constructed clade tree and sourced from the UniProt Proteome database (in total 329 species in our study, including the yeast and human proteomes that we added manually) (4) it applies similarity search by conducting pairwise BLAST between the proteins encoded in the focal species (here the Xenopus Laevis) and all proteins from all target species within the clade tree; (5) it determines the 'best hits' and infers homology for each gene of the focal species against each target species; (6) it assigns each gene to a phylostratum correlating with the oldest clade for which there is an inferred homolog. Genes found exclusively in the focal species are identified as orphan genes and are categorized under the phylostratum ‘Xenopus Laevis'. The phylostratas we selected are: All living organisms, (Eubacteria, bacteria and their descendants), Eukaryota, Opisthokonta, Metazoa, Eumetazoa, Bilateria, Deuterostomia, Chordata, Vertebrata, Gnathostomata, Euteleostomi, Sarcopterygii, Tetrapoda, Anura, Xenopus, Xenopus Laevis. We then mapped the age of genes with our xenobot overexpressed genes in the different conditions and the control.
+
+**Mapping to human orthologs:**
+
+For the network analysis and comparisons with the thanatotranscritome, we mapped Xenopus genes to their human orthologs using HCOP (193).
+
+**Acoustic Vibration stimulus setup:**
+
+For controlling and providing acoustic vibration stimulus, we used a setup (Figure 4A) containing a speaker (RECOIL RW8D2 Echo Series 2-ohms, 400Watts) connected to a digital audio amplifier (Kinter K3118 Texas Instruments, 20Watts output) operated using a laptop computer. An online tone generator (https://www.szynalski.com/tone-generator/) was used to set a sine type wave with frequency of 300Hz. The computer volume and online tone generator volumes were set to 100%. A P60 petridish coated at the bottom with 2-3mm layer of 1% agarose made in 0.75X MMR was placed on top of the speaker. 14mls of 0.75X MMR was added into the petridish. The volume of amplifier was set to 3.5 at which point no physical movement of media in the dish was observed in response to acoustic vibration stimulus. These settings were kept unchanged throughout all acoustic vibration stimulus experiments. An iPod camera mounted on a Stemi SV6 dissection microscope eyepiece was used to capture time-lapse imaging. Subjects (day 1 Xenobots, day 7 Xenobots, or age-matched stage 35 embryos) were placed in the center of petridish. Time-lapse recording was conducted for 10 mins before initiation of vibration stimulus, followed by 10 mins of vibration stimulus, and lastly 10 mins after vibration stimulus was tuned off.
+
+**Behavior imaging and analysis:**
+
+Movement behavior was recorded using an iPod camera mounted on a Stemi SV6 dissection microscope eyepiece. ProShot app was used to capture time-lapse imaging of one frame every 2 seconds. Time-lapse recording were compressed to 30 frames per second movie which results in 30 second movies of 30 mins of motion tracking (10 mins before stimulation, 10 mins during stimulation, and 10 mins after stimulation). Thus 1 second of movie = 1 min of actual time. Motion tracking of behavior captured in time-lapsse vidoes was done using Ethovision XT v.15 (Noldus Information Technology). A scaled background image was used to set scale for distance. 23
+
+
+Motion tracking was completed and recorded. Any tracking errors were manually corrected in the track editor. All X-Y coordinates of each subject for every frame across the time-lapse video were exported for data analysis.
+
+**Data availability:**
+
+RNA-sequencing data generated during the study are available in the NCBI GEO public repository with accession numbers (GSE275807 and GSE277182).
+
+
+**Figure Legends:**
+
+**Figure 1:** Major transcriptional changes in Xenobots compared to age-matched stage 35/36 Xenopus embryos. (A) A live Xenobot and schematic of the experimental setup with three replicates for each Xenobot pool and age-matched stage 35/36 Xenopus embryo pool with each replicate having fifty and ten samples respectively. (B) Volcano plot for differential expression between Xenobots and age-matched stage 35/36 Xenopus embryos. Significantly changed genes are highlighted in red.
+
+**Figure 2:** Inter-individual variation in gene counts is greater in Xenobots than in age-matched Xenopus embryos for most genes. (A) Schematic of the analysis method. All genes were ranked by their mean count value across all 6 data pools, after which the standard deviations of the gene counts amongst individual Xenobots and individual age-matched Xenopus embryos were estimated (Est. σΧ and Est. σΕ) and used to calculate the coefficients of variation (CVs) for each (CVX and CVE). (B) Histograms of the normalized distributions of CVs for Xenobots and age- matched embryos genes. Xenobots have significantly higher CVs and wider CVs distribution than age-matched embryos (Wilcoxon rank sum test, p=0). Where the CVE distribution had a mean of 1.2537 and standard deviation of 0.9716, and the CVX distribution had a mean of 2.6115 and standard deviation of 1.3609. (C) Comparison of gene expression variation between Xenobots and age-matched embryos across expression levels. The genes for which CVX > CVE were noted, and of all the included genes, 96.06% had greater CVX than CVE. The gene list was then divided into 100 equal-size bins (percentiles) and the fraction of each bin for which CVX > CVE was plotted. Each bar represents one bin of genes ranked from lowest to highest gene counts, and its height indicates the fraction of genes in the bin for which CVX > CVE. The black line marks 0.5. For all bins, most genes in the bin had a greater CV for Xenobots than age-matched Xenopus embryos. The red line shows the overall fraction of genes for which CVX>CVE (0.9606), and the dark blue bins were found to be significantly different from this value (p<0.05), while light blue bins were not (p>0.05) according to a permutation test, indicating that the trend of increasing bin value with increasing gene count was not due to chance.
+
+**Figure 3:** Functional enrichment and network clustering analysis of high stringency transcripts uniquely upregulated in Xenobots compared to age-matched Xenopus embryos. (A) Functional enrichment analysis showing enrichment of 7 different biological categories. (B-C) Network clustering analysis identified 10 clusters (Supplemental Dataset 6) including cluster for sensory perception of sound and mechanical stimuli (B) and immune/stress response (C).
+
+**Figure 4:** Xenobots respond to acoustic vibrations by changing motion behavior. (A) Experimental setup for exposure of subjects to 300Hz acoustic vibration and time lapse recording of motion behavior for 10 mins before exposure, 10 mins during exposure, and 10mins after exposure. (B- H) Time lapse recording of motion behavior of day 1 non-ciliated, non-motile Xenobots, age- matched stage 35 Xenopus embryos, and day 7 autonomously motile Xenobots along with motion tracking of their behavior and quantification of change in peak velocity from baseline during interval of 300Hz vibration stimulus. (B, D, and F) Representative image of day 1 non-motile Xenobots, age-matched stage 35 Xenopus embryos treated with tricaine to inhibit muscle movement while leaving cilia-based motion intact, and day 7 autonomously motile Xenobots, 25
+
+**Figure Legends:**
+
+Figure 1: Major transcriptional changes in Xenobots compared to age-matched stage 35/36 Xenopus embryos. (A) A live Xenobot and schematic of the experimental setup with three replicates for each Xenobot pool and age-matched stage 35/36 Xenopus embryo pool with each replicate having fifty and ten samples respectively. (B) Volcano plot for differential expression between Xenobots and age-matched stage 35/36 Xenopus embryos. Significantly changed genes are highlighted in red.
+
+Figure 2: Inter-individual variation in gene counts is greater in Xenobots than in age-matched Xenopus embryos for most genes. (A) Schematic of the analysis method. All genes were ranked by their mean count value across all 6 data pools, after which the standard deviations of the gene counts amongst individual Xenobots and individual age-matched Xenopus embryos were estimated (Est. σΧ and Est. σΕ) and used to calculate the coefficients of variation (CVs) for each (CVX and CVE). (B) Histograms of the normalized distributions of CVs for Xenobots and age-matched embryos genes. Xenobots have significantly higher CVs and wider CVs distribution than age-matched embryos (Wilcoxon rank sum test, p=0). Where the CVE distribution had a mean of 1.2537 and standard deviation of 0.9716, and the CVX distribution had a mean of 2.6115 and standard deviation of 1.3609. (C) Comparison of gene expression variation between Xenobots and age-matched embryos across expression levels. The genes for which CVX > CVE were noted, and of all the included genes, 96.06% had greater CVX than CVE. The gene list was then divided into 100 equal-size bins (percentiles) and the fraction of each bin for which CVX > CVE was plotted. Each bar represents one bin of genes ranked from lowest to highest gene counts, and its height indicates the fraction of genes in the bin for which CVX > CVE. The black line marks 0.5. For all bins, most genes in the bin had a greater CV for Xenobots than age-matched Xenopus embryos. The red line shows the overall fraction of genes for which CVX>CVE (0.9606), and the dark blue bins were found to be significantly different from this value (p<0.05), while light blue bins were not (p>0.05) according to a permutation test, indicating that the trend of increasing bin value with increasing gene count was not due to chance.
+
+Figure 3: Functional enrichment and network clustering analysis of high stringency transcripts uniquely upregulated in Xenobots compared to age-matched Xenopus embryos. (A) Functional enrichment analysis showing enrichment of 7 different biological categories. (B-C) Network clustering analysis identified 10 clusters (Supplemental Dataset 6) including cluster for sensory perception of sound and mechanical stimuli (B) and immune/stress response (C).
+
+Figure 4: Xenobots respond to acoustic vibrations by changing motion behavior. (A) Experimental setup for exposure of subjects to 300Hz acoustic vibration and time lapse recording of motion behavior for 10 mins before exposure, 10 mins during exposure, and 10mins after exposure. (B-H) Time lapse recording of motion behavior of day 1 non-ciliated, non-motile Xenobots, age-matched stage 35 Xenopus embryos, and day 7 autonomously motile Xenobots along with motion tracking of their behavior and quantification of change in peak velocity from baseline during interval of 300Hz vibration stimulus. (B, D, and F) Representative image of day 1 non-motile Xenobots, age-matched stage 35 Xenopus embryos treated with tricaine to inhibit muscle movement while leaving cilia-based motion intact, and day 7 autonomously motile Xenobots, respectively. Scale bar = 5mm. (C, E, and G) Representative tracking of day 1 non-motile Xenobots, age-matched stage 35 embryos, and day 7 autonomously motile Xenobots respectively, across the time intervals of before, during and after 300Hz vibration stimulus. (H) Quantification of change in peak velocity (millimeters/min) between the time intervals of before and during 300Hz vibration stimulus. n≥5, ns-non-significant, **-p<0.01, ****-p<0.0001, repeated measures One-Way ANOVA with Tukey's multiple comparison test.
+
+Figure 5: Xenobot transcripts are enriched in evolutionary older strata compared to control transcripts. Control transcripts are all the Xenopus genes expressed in epidermal progenitor cells + multiciliate cells + alpha and beta ionocyes+ goblet cells (3374). Phylostratigraphic analysis of controls transcripts, all Xenobot upregulated transcripts (1812) and transcripts uniquely upregulated in Xenobots (1450) showing Xenobot transcripts significantly more enriched in Bilateria, Eumetazoa, and Metazoa compared to controls and the unique Xenobot upregulated transcripts more enriched than all Xenobot upregulated transcripts in these evolutionarily older strata. Chi-square test, p<0.001.
+
+
+**Supplements:**
+
+Supplementary Figure 1: No major transcriptional changes in stage 35/36 Xenopus embryos raised in 0.1X MMR and 0.75X MMR. (A) Schematic of the experimental setup with three replicates for each 0.1X MMR and 0.75X MMR rearing condition and each replicate having ten stage 35/36 embryos. (B) Principal component analysis plot of RNA-sequencing data from stage 35/36 Xenopus embryos raised in 0.1X MMR and 0.75X MMR showing no clustering. (C) Principal component analysis plot using surrogate variable adjusted data. (D) Histogram of p-value significance. If no genes are associated with phenotype the p-value histogram is expected to be relatively flat. Also, proportion of true null hypothesis (non-significant genes) is shown (E) Histogram of FDR significance. If no genes are associated with phenotype all the FDRs will be near one. (F) Volcano plot for differential expression between embryos raised in 0.1X MMR and 0.75X MMR. Significantly changed genes are highlighted in red.
+
+Supplementary Figure 2: Principal component analysis plot of RNA-sequencing data using surrogate variable adjusted data for Xenobots and age-matched stage 35/36 Xenopus embryos showing distinct separation of the two groups.
+
+Supplementary Figure 3: Network clustering analysis of high stringency transcripts uniquely upregulated in Xenobots compared to age-matched Xenopus embryos. (A-C) Network clustering analysis identified 10 clusters (Supplemental Dataset 6) including clusters for cilia and cytoskeleton (A), Ketone metabolism and EGF/EGFR signal (B), and ECM/proliferation/multicellular organization (C).
+
+Supplementary Dataset 1: List of genes significantly changed in stage 35/36 embryos raised in 0.75X MMR in comparison to those raised in 0.1X MMR.
+
+Supplementary Dataset 2: List of genes significantly upregulated in Xenobots compared to age-matched Xenopus embryos after subtracting epidermal genes.
+
+Supplementary Dataset 3: List of genes significantly upregulated in Xenobots compared to age-matched Xenopus embryos after uncharacterized transcript annotation and duplicate removal.
+
+Supplementary Dataset 4: List of genes significantly upregulated in Xenobots compared to age-matched embryos after subtracting any genes expressed in the epidermal cell types; multiciliate cells, alpha and beta ionocytes, and goblet cells.
+
+Supplementary Dataset 5: Functional enrichment categories and their enrichment scores for high stringency transcripts uniquely upregulated in Xenobots compared to age-matched Xenopus embryos.
+
+Supplementary Dataset 6: Network clustering analysis clusters enriched in high stringency transcripts uniquely upregulated in Xenobots compared to age-matched Xenopus embryos.
+
+Supplementary Dataset 7: List of critical genes in mesodermal, endodermal, and axis patterning.
+
+Supplementary Dataset 8: List of genes encompassing epidermal progenitors, alpha and beta ionocytes, multiciliated cell, and goblet cells that was used as controls for comparisons.
+
+Supplementary Dataset 9: Curated list of thanatotranscriptomic genes
+
+Supplementary Dataset 10: List of genes upregulated in Xenobots that are part of the thanatotranscriptome
+
+Supplemental Movie 1: Time-lapse recording of representative day 1 Xenobot before, during, and after acoustic vibration stimulation.
+
+Supplemental Movie 2: Track recording of motion of representative day 1 Xenobot before, during, and after acoustic vibration stimulation.
+
+Supplementary Movie 3: Time-lapse recording of representative age-matched stage 35 Xenopus embryo before, during, and after acoustic vibration stimulation.
+
+Supplementary Movie 4: Track recording of motion of representative age-matched stage 35 Xenopus embryo before, during, and after acoustic vibration stimulation.
+
+Supplementary Movie 5: Time-lapse recording of representative day 7 Xenobot before, during, and after acoustic vibration stimulation.
+
+Supplementary Movie 6: Track recording of motion of representative day 7 Xenobot before, during, and after acoustic vibration stimulation.
+
+
+**Acknowledgements:**
+
+We thank Douglas Blackiston, Will Ratcliff, and all members of the Levin lab for helpful discussions, Erin Switzer for Xenopus husbandry and assistance, Rakela Colon for general laboratory supply and equipment management, Albert Tai from Tufts Genomic core for RNAseq setup consultation, Jonathan Dreyfuss and Hui Pan from Joslin Diabetes Center for RNAseq analysis consultation, Meghan Short from Tufts Clinical and Translational Science Institute for statistical analysis consultation, and Julia Poirier for manuscript preparation.
+
+
+**Funding:**
+
+This publication was made possible through the support of Grant 62212 from the John Templeton Foundation (awarded to M.L.). Research reported in this publication was supported by the National Institutes of Health S10 shared instrumentation grant (S10OD032203) awarded to Tufts University Core Facility Genomics Core for a NovaSeq facility. The opinions expressed in this publication are those of the authors and do not necessarily reflect the views of the funding agencies.
+
+
+**Author contributions:**
+
+V.P.P., and M.L. conceived the ideas and specific experimental approaches. V.P.P. and P.T. carried out experiments and data collection. L.P-L., P.E., and M.S. performed the data analysis. V.P.P. and M.L. wrote the manuscript, with text contributions from all co-authors.
+
+
+**Competing Financial Interests:**
+
+M.L. is scientific co-founder of a company called Fauna Systems, which is involved in the space of AI-designed biorobotics.
+
+
+**References:**
+
+1. G. E. Budd, Does evolution in body patterning genes drive morphological change—or vice versa? BioEssays 21, 326-332 (1999).
+2. J. L. Payne, A. Wagner, Function does not follow form in gene regulatory circuits. Sci Rep 5, 13015 (2015).
+3. M. T. Belus, M. A. Rogers, A. Elzubeir, M. Josey, S. Rose, V. Andreeva, P. C. Yelick, E. A. Bates, Kir2.1 is important for efficient BMP signaling in mammalian face development. Dev Biol 444 Suppl 1, S297-S307 (2018).
+4. N. Alhazmi, S. H. Carroll, K. Kawasaki, K. C. Woronowicz, S. A. Hallett, C. Macias Trevino, E. B. Li, R. Baron, F. Gori, P. C. Yelick, M. P. Harris, E. C. Liao, Synergistic roles of Wnt modulators R-spondin2 and R-spondin3 in craniofacial morphogenesis and dental development. Sci Rep 11, 5871 (2021).
+5. J. S. Lanni, D. Peal, L. Ekstrom, H. Chen, C. Stanclift, M. E. Bowen, A. Mercado, G. Gamba, K. T. Kahle, M. P. Harris, Integrated K+ channel and K+Cl- cotransporter functions are required for the coordination of size and proportion during development. Dev Biol 456, 164-178 (2019).
+6. A. C. Burke, C. E. Nelson, B. A. Morgan, C. Tabin, Hox genes and the evolution of vertebrate axial morphology. Development 121, 333-346 (1995).
+7. A. Kicheva, J. Briscoe, Control of Tissue Development by Morphogens. Annu Rev Cell Dev Biol 39, 91-121 (2023).
+8. S. J. Smith, M. Rebeiz, L. Davidson, From pattern to process: studies at the interface of gene regulatory networks, morphogenesis, and evolution. Curr Opin Genet Dev 51, 103-110 (2018).
+9. K. Goodwin, C. M. Nelson, Mechanics of Development. Dev Cell 56, 240-250 (2021).
+10. K. Wagh, M. Ishikawa, D. A. Garcia, D. A. Stavreva, A. Upadhyaya, G. L. Hager, Mechanical Regulation of Transcription: Recent Advances. Trends Cell Biol 31, 457-472 (2021).
+11. D. M. Ripley, T. Garner, S. A. Hook, A. Verissimo, B. Grunow, T. Moritz, P. Clayton, H. A. Shiels, A. Stevens, Warming during embryogenesis induces a lasting transcriptomic signature in fishes. Sci Total Environ 902, 165954 (2023).
+12. R. A. Oomen, J. A. Hutchings, Transcriptomic responses to environmental change in fishes: Insights from RNA sequencing. FACETS 2, 610-641 (2017).
+13. V. P. Pai, C. J. Martyniuk, K. Echeverri, S. Sundelacruz, D. L. Kaplan, M. Levin, Genome-wide analysis reveals conserved transcriptional responses downstream of resting potential change in Xenopus embryos, axolotl regeneration, and human mesenchymal cell differentiation. Regeneration (Oxf) 3, 3-25 (2016).
+14. F. Mantica, L. P. Iniguez, Y. Marquez, J. Permanyer, A. Torres-Mendez, J. Cruz, X. Franch-Marro, F. Tulenko, D. Burguera, S. Bertrand, T. Doyle, M. Nouzova, P. D. Currie, F. G. Noriega, H. Escriva, M. I. Arnone, C. B. Albertin, K. R. Wotton, I. Almudi, D. Martin, M. Irimia, Evolution of tissue-specific expression of ancestral genes across vertebrates and insects. Nat Ecol Evol, (2024).
+15. E. H. Davidson, D. H. Erwin, Gene regulatory networks and the evolution of animal body plans. Science 311, 796-800 (2006).
+16. S. B. Carroll, Evo-devo and an expanding evolutionary synthesis: a genetic theory of morphological evolution. Cell 134, 25-36 (2008).
+17. J. R. True, S. B. Carroll, Gene co-option in physiological and morphological evolution. Annu Rev Cell Dev Biol 18, 53-80 (2002).
+18. P. W. Harrison, A. E. Wright, J. E. Mank, The evolution of gene expression and the transcriptome-phenotype relationship. Semin Cell Dev Biol 23, 222-229 (2012).
+19. M. R. Ebrahimkhani, M. Levin, Synthetic living machines: A new window on life. iScience 24, 102505 (2021).
+20. M. R. Ebrahimkhani, M. Ebisuya, Synthetic developmental biology: build and control multicellular systems. Curr Opin Chem Biol 52, 9-15 (2019).
+
+
+This is chunk 7 of 12 (pass 2 of 3) covering pages 25-29 of 46.
+
+**References:**
+
+1. G. E. Budd, Does evolution in body patterning genes drive morphological change—or vice versa? BioEssays 21, 326-332 (1999).
+2. J. L. Payne, A. Wagner, Function does not follow form in gene regulatory circuits. Sci Rep 5, 13015 (2015).
+3. M. T. Belus, M. A. Rogers, A. Elzubeir, M. Josey, S. Rose, V. Andreeva, P. C. Yelick, E. A. Bates, Kir2.1 is important for efficient BMP signaling in mammalian face development. Dev Biol 444 Suppl 1, S297-S307 (2018).
+4. N. Alhazmi, S. H. Carroll, K. Kawasaki, K. C. Woronowicz, S. A. Hallett, C. Macias Trevino, E. B. Li, R. Baron, F. Gori, P. C. Yelick, M. P. Harris, E. C. Liao, Synergistic roles of Wnt modulators R-spondin2 and R-spondin3 in craniofacial morphogenesis and dental development. Sci Rep 11, 5871 (2021).
+5. J. S. Lanni, D. Peal, L. Ekstrom, H. Chen, C. Stanclift, M. E. Bowen, A. Mercado, G. Gamba, K. T. Kahle, M. P. Harris, Integrated K+ channel and K+Cl- cotransporter functions are required for the coordination of size and proportion during development. Dev Biol 456, 164-178 (2019).
+6. A. C. Burke, C. E. Nelson, B. A. Morgan, C. Tabin, Hox genes and the evolution of vertebrate axial morphology. Development 121, 333-346 (1995).
+7. A. Kicheva, J. Briscoe, Control of Tissue Development by Morphogens. Annu Rev Cell Dev Biol 39, 91-121 (2023).
+8. S. J. Smith, M. Rebeiz, L. Davidson, From pattern to process: studies at the interface of gene regulatory networks, morphogenesis, and evolution. Curr Opin Genet Dev 51, 103-110 (2018).
+9. K. Goodwin, C. M. Nelson, Mechanics of Development. Dev Cell 56, 240-250 (2021).
+10. K. Wagh, M. Ishikawa, D. A. Garcia, D. A. Stavreva, A. Upadhyaya, G. L. Hager, Mechanical Regulation of Transcription: Recent Advances. Trends Cell Biol 31, 457-472 (2021).
+11. D. M. Ripley, T. Garner, S. A. Hook, A. Verissimo, B. Grunow, T. Moritz, P. Clayton, H. A. Shiels, A. Stevens, Warming during embryogenesis induces a lasting transcriptomic signature in fishes. Sci Total Environ 902, 165954 (2023).
+12. R. A. Oomen, J. A. Hutchings, Transcriptomic responses to environmental change in fishes: Insights from RNA sequencing. FACETS 2, 610-641 (2017).
+13. V. P. Pai, C. J. Martyniuk, K. Echeverri, S. Sundelacruz, D. L. Kaplan, M. Levin, Genome-wide analysis reveals conserved transcriptional responses downstream of resting potential change in Xenopus embryos, axolotl regeneration, and human mesenchymal cell differentiation. Regeneration (Oxf) 3, 3-25 (2016).
+14. F. Mantica, L. P. Iniguez, Y. Marquez, J. Permanyer, A. Torres-Mendez, J. Cruz, X. Franch-Marro, F. Tulenko, D. Burguera, S. Bertrand, T. Doyle, M. Nouzova, P. D. Currie, F. G. Noriega, H. Escriva, M. I. Arnone, C. B. Albertin, K. R. Wotton, I. Almudi, D. Martin, M. Irimia, Evolution of tissue-specific expression of ancestral genes across vertebrates and insects. Nat Ecol Evol, (2024).
+15. E. H. Davidson, D. H. Erwin, Gene regulatory networks and the evolution of animal body plans. Science 311, 796-800 (2006).
+16. S. B. Carroll, Evo-devo and an expanding evolutionary synthesis: a genetic theory of morphological evolution. Cell 134, 25-36 (2008).
+17. J. R. True, S. B. Carroll, Gene co-option in physiological and morphological evolution. Annu Rev Cell Dev Biol 18, 53-80 (2002).
+18. P. W. Harrison, A. E. Wright, J. E. Mank, The evolution of gene expression and the transcriptome-phenotype relationship. Semin Cell Dev Biol 23, 222-229 (2012).
+19. M. R. Ebrahimkhani, M. Levin, Synthetic living machines: A new window on life. iScience 24, 102505 (2021).
+20. M. R. Ebrahimkhani, M. Ebisuya, Synthetic developmental biology: build and control multicellular systems. Curr Opin Chem Biol 52, 9-15 (2019).
+21. A. Menciassi, S. Takeuchi, R. D. Kamm, Biohybrid systems: Borrowing from nature to make better machines. APL Bioeng 4, 020401 (2020).
+22. R. D. Kamm, R. Bashir, N. Arora, R. D. Dar, M. U. Gillette, L. G. Griffith, M. L. Kemp, K. Kinlaw, M. Levin, A. C. Martin, T. C. McDevitt, R. M. Nerem, M. J. Powers, T. A. Saif, J. Sharpe, S. Takayama, S. Takeuchi, R. Weiss, K. Ye, H. G. Yevick, M. H. Zaman, Perspective: The promise of multi-cellular engineered living systems. APL Bioeng 2, 040901 (2018).
+23. R. D. Kamm, R. Bashir, Creating living cellular machines. Ann Biomed Eng 42, 445-459 (2014).
+24. V. A. Webster-Wood, M. Guix, N. W. Xu, B. Behkam, H. Sato, D. Sarkar, S. Sanchez, M. Shimizu, K. K. Parker, Biohybrid robots: recent progress, challenges, and perspectives. Bioinspir Biomim 18, (2022).
+25. W. P. Clawson, M. Levin, Endless forms most beautiful 2.0: teleonomy and the bioengineering of chimaeric and synthetic organisms. Biological Journal of the Linnean Society, (2022).
+26. O. Aydin, A. P. Passaro, M. Elhebeary, G. J. Pagan-Diaz, A. Fan, S. Nuethong, R. Bashir, S. L. Stice, M. T. A. Saif, Development of 3D neuromuscular bioactuators. APL Bioeng 4, 016107 (2020).
+27. M. Sample, M. Boulicault, C. Allen, R. Bashir, I. Hyun, M. Levis, C. Lowenthal, D. Mertz, N. Montserrat, M. J. Palmer, K. Saha, J. Zartman, Multi-cellular engineered living systems: building a community around responsible research on emergence. Biofabrication 11, 043001 (2019).
+28. G. J. Pagan-Diaz, K. P. Ramos-Cruz, R. Sam, M. E. Kandel, O. Aydin, M. T. A. Saif, G. Popescu, R. Bashir, Engineering geometrical 3-dimensional untethered in vitro neural tissue mimic. Proc Natl Acad Sci U S A 116, 25932-25940 (2019).
+29. O. Aydin, X. Zhang, S. Nuethong, G. J. Pagan-Diaz, R. Bashir, M. Gazzola, M. T. A. Saif, Neuromuscular actuation of biohybrid motile bots. Proc Natl Acad Sci U S A 116, 19841-19847 (2019).
+30. R. Doursat, C. Sanchez, Growing fine-grained multicellular robots. Soft Robotics 1, 110-121 (2014).
+31. R. Doursat, H. Sayama, O. Michel, Morphogenetic Engineering: Reconciling Self-Organization and Architecture. Underst Complex Syst, 1-24 (2012).
+32. D. Blackiston, S. Kriegman, J. Bongard, M. Levin, Biological Robots: Perspectives on an Emerging Interdisciplinary Field. Soft Robot 10, 674-686 (2023).
+33. D. Blackiston, E. Lederer, S. Kriegman, S. Garnier, J. Bongard, M. Levin, A cellular platform for the development of synthetic living machines. Sci Robot 6, (2021).
+34. S. Kriegman, D. Blackiston, M. Levin, J. Bongard, Kinematic self-replication in reconfigurable organisms. Proc Natl Acad Sci US A 118, (2021).
+35. S. Kriegman, D. Blackiston, M. Levin, J. Bongard, A scalable pipeline for designing reconfigurable organisms. Proc Natl Acad Sci U S A 117, 1853-1859 (2020).
+36. J. Davies, M. Levin, Synthetic morphology with agential materials. Nature Reviews Bioengineering 1, 46-59 (2023).
+37. C. G. Langton, Artificial life : an overview (Complex adaptive systems, MIT Press, Cambridge, Mass., 1995), pp. xi, 340, [346] of plates.
+38. T. H. Tan, A. Mietke, J. Li, Y. Chen, H. Higinbotham, P. J. Foster, S. Gokhale, J. Dunkel, N. Fakhri, Odd dynamics of living chiral crystals. Nature 607, 287-293 (2022).
+39. A. V. Zampetaki, B. Liebchen, A. V. Ivlev, H. Lowen, Collective self-optimization of communicating active particles. Proc Natl Acad Sci U S A 118, (2021).
+40. Y. Ozkan-Aydin, D. I. Goldman, M. S. Bhamla, Collective dynamics in entangled worm and robot blobs. Proc Natl Acad Sci U S A 118, (2021).
+41. C. Nguyen, Y. Ozkan-Aydin, H. Tuazon, D. I. Goldman, M. S. Bhamla, O. Peleg, Emergent Collective Locomotion in an Active Polymer Model of Entangled Worm Blobs. Frontiers in Physics 9, (2021).
+42. P. Chvykov, T. A. Berrueta, A. Vardhan, W. Savoie, A. Samland, T. D. Murphey, K. Wiesenfeld, D. I. Goldman, J. L. England, Low rattling: A predictive principle for self-organization in active collectives. Science 371, 90-95 (2021).
+43. T. W. Deacon, Incomplete nature : how mind emerged from matter (W.W. Norton & Co., New York, ed. 1st, 2012), pp. xv, 602 р.
+44. D. E. Brash, Rethinking Causation for Data-intensive Biology: Constraints, Cancellations, and Quantized Organisms: Causality in complex organisms is sculpted by constraints rather than instigators, with outcomes perhaps better described by quantized patterns than rectilinear pathways. Bioessays 42, e1900135 (2020).
+45. J. Winning, W. Bechtel, Rethinking Causality in Biological and Neural Mechanisms: Constraints and Control. Mind Mach 28, 287-310 (2018).
+46. M. G. Masiello, R. Verna, A. Cucina, M. Bizzarri, Physical constraints in cell fate specification. A case in point: Microgravity and phenotypes differentiation. Prog Biophys Mol Biol 134, 55-67 (2018).
+47. W. Bechtel, The Importance of Constraints and Control in Biological Mechanisms: Insights from Cancer Research. Philos Sci 85, 573-593 (2018).
+48. M. Montevil, M. Mossio, Biological organisation as closure of constraints. J Theor Biol 372, 179-191 (2015).
+49. T. Ariizumi, T. Michiue, M. Asashima, In Vitro Induction of Xenopus Embryonic Organs Using Animal Cap Cells. Cold Spring Harb Protoc 2017, pdb prot097410 (2017).
+50. T. Ariizumi, S. Takahashi, T. C. Chan, Y. Ito, T. Michiue, M. Asashima, Isolation and differentiation of Xenopus animal cap cells. Curr Protoc Stem Cell Biol Chapter 1, Unit 1D 5 (2009).
+51. H. L. Sive, R. M. Grainger, R. M. Harland, Animal Cap Isolation from Xenopus laevis. CSH Protoc 2007, pdb prot4744 (2007).
+52. J. Green, The animal cap assay. Methods Mol Biol 127, 1-13 (1999).
+53. Y. Satou-Kobayashi, J. D. Kim, A. Fukamizu, M. Asashima, Temporal transcriptomic profiling reveals dynamic changes in gene expression of Xenopus animal cap upon activin treatment. Sci Rep 11, 14537 (2021).
+54. P. B. Huber, C. LaBonne, Small molecule-mediated reprogramming of Xenopus blastula stem cells to a neural crest state. Dev Biol 505, 34-41 (2024).
+55. K. Johnson, S. Freedman, R. Braun, C. LaBonne, Quantitative analysis of transcriptome dynamics provides novel insights into developmental state transitions. BMC Genomics 23, 723 (2022).
+56. A. Angerilli, P. Smialowski, R. A. Rupp, The Xenopus animal cap transcriptome: building a mucociliary epithelium. Nucleic Acids Res 46, 8772-8787 (2018).
+57. D. I. Sun, A. Tasca, M. Haas, G. Baltazar, R. M. Harland, W. E. Finkbeiner, P. Walentek, Na+/H+ Exchangers Are Required for the Development and Function of Vertebrate Mucociliary Epithelia. Cells Tissues Organs 205, 279-292 (2018).
+58. P. Walentek, Manipulating and Analyzing Cell Type Composition of the Xenopus Mucociliary Epidermis. Methods Mol Biol 1865, 251-263 (2018).
+59. P. Walentek, I. K. Quigley, What we can learn from a tadpole about ciliopathies and airway diseases: Using systems biology in Xenopus to study cilia and mucociliary epithelia. Genesis 55, (2017).
+60. G. A. Deblandre, D. A. Wettstein, N. Koyano-Nakagawa, C. Kintner, A two-step mechanism generates the spacing pattern of the ciliated cells in the skin of Xenopus embryos. Development 126, 4715-4728 (1999).
+61. H. J. Kang, H. Y. Kim, Mucociliary Epithelial Organoids from Xenopus Embryonic Cells: Generation, Culture and High-Resolution Live Imaging. J Vis Exp, (2020).
+62. J. Lee, A. F. Moller, S. Chae, A. Bussek, T. J. Park, Y. Kim, H. S. Lee, T. H. Pers, T. Kwon, J. Sedzinski, K. N. Natarajan, A single-cell, time-resolved profiling of Xenopus mucociliary epithelium reveals nonhierarchical model of development. Sci Adv 9, eadd5745 (2023).
+63. R. Doursat, H. Sayama, O. Michel, A review of morphogenetic engineering. Nat Comput 12, 517-535 (2013).
+64. C. Ho, L. Morsut, Novel synthetic biology approaches for developmental systems. Stem Cell Reports 16, 1051-1064 (2021).
+65. M. Santorelli, C. Lam, L. Morsut, Synthetic development: building mammalian multicellular structures with artificial genetic programs. Curr Opin Biotechnol 59, 130-140 (2019).
+66. E. Braun, The unforeseen challenge: from genotype-to-phenotype in cell populations. Rep Prog Phys 78, 036602 (2015).
+67. L. David, E. Stolovicki, E. Haziz, E. Braun, Inherited adaptation of genome-rewired cells in response to a challenging environment. HFSP J 4, 131-141 (2010).
+68. S. Stern, T. Dror, E. Stolovicki, N. Brenner, E. Braun, Genome-wide transcriptional plasticity underlies cellular adaptation to novel challenge. Mol Syst Biol 3, 106 (2007).
+69. H. I. Schreier, Y. Soen, N. Brenner, Exploratory adaptation in large random networks. Nat Commun 8, 14826 (2017).
+70. L. G. Antiga, L. Sibbens, Y. Abakkouy, R. Decorte, W. Van Den Bogaert, W. Van de Voorde, B. Bekaert, Cell survival and DNA damage repair are promoted in the human blood thanatotranscriptome shortly after death. Sci Rep 11, 16585 (2021).
+71. L. Scott, S. J. Finley, C. Watson, G. T. Javan, Life and death: A systematic comparison of antemortem and postmortem gene expression. Gene 731, 144349 (2020).
+72. G. T. Javan, E. Hanson, S. J. Finley, S. D. Visona, A. Osculati, J. Ballantyne, Identification of cadaveric liver tissues using thanatotranscriptome biomarkers. Sci Rep 10, 6639 (2020).
+73. M. Tolbert, S. J. Finley, S. D. Visona, S. Soni, A. Osculati, G. T. Javan, The thanatotranscriptome: Gene expression of male reproductive organs after death. Gene 675, 191-196 (2018).
+74. G. T. Javan, I. Can, S. J. Finley, S. Soni, The apoptotic thanatotranscriptome associated with the liver of cadavers. Forensic Sci Med Pathol 11, 509-516 (2015).
+75. A. Shomar, O. Barak, N. Brenner, Cancer progression as a learning process. iScience 25, 103924 (2022).
+76. E. Stolovicki, T. Dror, N. Brenner, E. Braun, Synthetic gene recruitment reveals adaptive reprogramming of gene regulation in yeast. Genetics 173, 75-85 (2006).
+77. M. Levin, "10: Collective Intelligence of Morphogenesis as a Teleonomic Process" in Evolution "On Purpose": Teleonomy in Living Systems, Peter A. Corning, Stuart A. Kauffman, Denis Noble, James A. Shapiro, Richard I. Vane-Wright, A. Pross, Eds. (The MIT Press, 2023).
+78. L. K. Climer, A. M. Cox, T. J. Reynolds, D. D. Simmons, Oncomodulin: The Enigmatic Parvalbumin Protein. Front Mol Neurosci 12, 235 (2019).
+79. J. A. Briggs, C. Weinreb, D. E. Wagner, S. Megason, L. Peshkin, M. W. Kirschner, A. M. Klein, The dynamics of gene expression in vertebrate embryogenesis at single-cell resolution. Science 360, (2018).
+80. C. P. Cantalapiedra, A. Hernandez-Plaza, I. Letunic, P. Bork, J. Huerta-Cepas, eggNOG-mapper v2: Functional Annotation, Orthology Assignments, and Domain Prediction at the Metagenomic Scale. Mol Biol Evol 38, 5825-5829 (2021).
+81. B. T. Sherman, M. Hao, J. Qiu, X. Jiao, M. W. Baseler, H. C. Lane, T. Imamichi, W. Chang, DAVID: a web server for functional enrichment analysis and functional annotation of gene lists (2021 update). Nucleic Acids Res 50, W216-W221 (2022).
+82. W. Huang da, B. T. Sherman, R. A. Lempicki, Systematic and integrative analysis of large gene lists using DAVID bioinformatics resources. Nat Protoc 4, 44-57 (2009).
+83. W. Nelson, M. Zitnik, B. Wang, J. Leskovec, A. Goldenberg, R. Sharan, To Embed or Not: Network Embedding as a Paradigm in Computational Biology. Front Genet 10, 381 (2019).
+84. A. L. Barabasi, N. Gulbahce, J. Loscalzo, Network medicine: a network-based approach to human disease. Nat Rev Genet 12, 56-68 (2011).
+85. L. Pio-Lopez, A. Valdeolivas, L. Tichit, E. Remy, A. Baudot, MultiVERSE: a multiplex and multiplex-heterogeneous network embedding approach. Sci Rep 11, 8794 (2021).
+86. L. Cantini, E. Medico, S. Fortunato, M. Caselle, Detection of gene communities in multi-networks reveals cancer drivers. Sci Rep 5, 17386 (2015).
+87. J. Reimand, T. Arak, P. Adler, L. Kolberg, S. Reisberg, H. Peterson, J. Vilo, g:Profiler-a web server for functional interpretation of gene lists (2016 update). Nucleic Acids Res 44, W83-89 (2016).
+88. M. Levin, Technological Approach to Mind Everywhere: An Experimentally-Grounded Framework for Understanding Diverse Bodies and Minds. Front Syst Neurosci 16, 768201 (2022).
+89. M. Levin, Darwin's agential materials: evolutionary implications of multiscale competency in developmental biology. Cell Mol Life Sci 80, 142 (2023).
+90. M. Blattner, M. Levin, Long Range Communication via Gap Junctions and Stress in Planarian Morphogenesis: A Computational Study. Bioelectricity 5, (2023).
+91. L. Shreesha, M. Levin, Stress Sharing as Cognitive Glue for Collective Intelligences: a computational model of stress as a coordinator for morphogenesis. . preprint, (2024).
+92. T. Pradeu, B. Thomma, S. E. Girardin, B. Lemaitre, The conceptual foundations of innate immunity: Taking stock 30 years later. Immunity 57, 613-631 (2024).
+93. C. Ramlochansingh, F. Branoner, B. P. Chagnaud, H. Straka, Efficacy of tricaine methanesulfonate (MS-222) as an anesthetic agent for blocking sensory-motor responses in Xenopus laevis tadpoles. PLoS One 9, e101606 (2014).
+94. A. E. Pozhitkov, P. A. Noble, Gene expression in the twilight of death: The increase of thousands of transcripts has implications to transplantation, cancer, and forensic research. Bioessays 39, (2017).
+95. A. E. Pozhitkov, R. Neme, T. Domazet-Loso, B. G. Leroux, S. Soni, D. Tautz, P. A. Noble, Tracing the dynamics of gene transcripts after organismal death. Open Biol 7, (2017).
+96. A. S. Abouhashem, K. Singh, R. Srivastava, S. Liu, S. S. Mathew-Steiner, X. Gu, S. Kacar, A. Hagar, G. E. Sandusky, S. Roy, J. Wan, C. K. Sen, The Prolonged Terminal Phase of Human Life Induces Survival Response in the Skin Transcriptome. bioRxiv, (2023).
+97. G. T. Javan, K. Singh, S. J. Finley, R. L. Green, C. K. Sen, Complexity of human death: its physiological, transcriptomic, and microbiological implications. Front Microbiol 14, 1345633 (2023).
+98. J. X. Zhou, L. Cisneros, T. Knijnenburg, K. Trachana, P. Davies, S. Huang, Phylostratigraphic analysis of tumor and developmental transcriptomes reveals relationship between oncogenesis, phylogenesis and ontogenesis. Converg Sci Phys Onc 4, (2018).
+99. Z. S. Mustafin, V. I. Zamyatin, D. K. Konstantinov, A. V. Doroshkov, S. A. Lashin, D. A. Afonnikov, Phylostratigraphic Analysis Shows the Earliest Origination of the Abiotic Stress Associated Genes in A. thaliana. Genes (Basel) 10, (2019).
+100. M. S. Sestak, T. Domazet-Loso, Phylostratigraphic profiles in zebrafish uncover chordate origins of the vertebrate brain. Mol Biol Evol 32, 299-312 (2015).
+101. M. S. Sestak, V. Bozicevic, R. Bakaric, V. Dunjko, T. Domazet-Loso, Phylostratigraphic profiles reveal a deep evolutionary history of the vertebrate head sensory systems. Front Zool 10, 18 (2013).
+102. T. Domazet-Loso, D. Tautz, Phylostratigraphic tracking of cancer genes suggests a link to the emergence of multicellularity in metazoa. BMC Biol 8, 66 (2010).
+103. T. Domazet-Loso, J. Brajkovic, D. Tautz, A phylostratigraphy approach to uncover the genomic history of major adaptations in metazoan lineages. Trends Genet 23, 533-539 (2007).
+104. J. J. Velazquez, E. Su, P. Cahan, M. R. Ebrahimkhani, Programming Morphogenesis through Systems and Synthetic Biology. Trends Biotechnol 36, 415-429 (2018).
+
+This is chunk 9 of 12 (pass 2 of 3) covering pages 33-37 of 46.
+
+84. A. L. Barabasi, N. Gulbahce, J. Loscalzo, Network medicine: a network-based approach to
+human disease. Nat Rev Genet 12, 56-68 (2011).
+85. L. Pio-Lopez, A. Valdeolivas, L. Tichit, E. Remy, A. Baudot, MultiVERSE: a multiplex and
+multiplex-heterogeneous network embedding approach. Sci Rep 11, 8794 (2021).
+86. L. Cantini, E. Medico, S. Fortunato, M. Caselle, Detection of gene communities in multi-
+networks reveals cancer drivers. Sci Rep 5, 17386 (2015).
+87. J. Reimand, T. Arak, P. Adler, L. Kolberg, S. Reisberg, H. Peterson, J. Vilo, g:Profiler-a web
+server for functional interpretation of gene lists (2016 update). Nucleic Acids Res 44, W83-89
+(2016).
+88. M. Levin, Technological Approach to Mind Everywhere: An Experimentally-Grounded
+Framework for Understanding Diverse Bodies and Minds. Front Syst Neurosci 16, 768201
+(2022).
+89. M. Levin, Darwin's agential materials: evolutionary implications of multiscale competency in
+developmental biology. Cell Mol Life Sci 80, 142 (2023).
+90. M. Blattner, M. Levin, Long Range Communication via Gap Junctions and Stress in Planarian
+Morphogenesis: A Computational Study. Bioelectricity 5, (2023).
+91. L. Shreesha, M. Levin, Stress Sharing as Cognitive Glue for Collective Intelligences: a
+computational model of stress as a coordinator for morphogenesis. . preprint, (2024).
+92. T. Pradeu, B. Thomma, S. E. Girardin, B. Lemaitre, The conceptual foundations of innate
+immunity: Taking stock 30 years later. Immunity 57, 613-631 (2024).
+93. C. Ramlochansingh, F. Branoner, B. P. Chagnaud, H. Straka, Efficacy of tricaine
+methanesulfonate (MS-222) as an anesthetic agent for blocking sensory-motor responses in
+Xenopus laevis tadpoles. PLoS One 9, e101606 (2014).
+94. A. E. Pozhitkov, P. A. Noble, Gene expression in the twilight of death: The increase of thousands
+of transcripts has implications to transplantation, cancer, and forensic research. Bioessays 39,
+(2017).
+95. A. E. Pozhitkov, R. Neme, T. Domazet-Loso, B. G. Leroux, S. Soni, D. Tautz, P. A. Noble,
+Tracing the dynamics of gene transcripts after organismal death. Open Biol 7, (2017).
+96. A. S. Abouhashem, K. Singh, R. Srivastava, S. Liu, S. S. Mathew-Steiner, X. Gu, S. Kacar, A.
+Hagar, G. E. Sandusky, S. Roy, J. Wan, C. K. Sen, The Prolonged Terminal Phase of Human Life
+Induces Survival Response in the Skin Transcriptome. bioRxiv, (2023).
+97. G. T. Javan, K. Singh, S. J. Finley, R. L. Green, C. K. Sen, Complexity of human death: its
+physiological, transcriptomic, and microbiological implications. Front Microbiol 14, 1345633
+(2023).
+98. J. X. Zhou, L. Cisneros, T. Knijnenburg, K. Trachana, P. Davies, S. Huang, Phylostratigraphic
+analysis of tumor and developmental transcriptomes reveals relationship between oncogenesis,
+phylogenesis and ontogenesis. Converg Sci Phys Onc 4, (2018).
+99. Z. S. Mustafin, V. I. Zamyatin, D. K. Konstantinov, A. V. Doroshkov, S. A. Lashin, D. A.
+Afonnikov, Phylostratigraphic Analysis Shows the Earliest Origination of the Abiotic Stress
+Associated Genes in A. thaliana. Genes (Basel) 10, (2019).
+100. M. S. Sestak, T. Domazet-Loso, Phylostratigraphic profiles in zebrafish uncover chordate origins
+of the vertebrate brain. Mol Biol Evol 32, 299-312 (2015).
+101. M. S. Sestak, V. Bozicevic, R. Bakaric, V. Dunjko, T. Domazet-Loso, Phylostratigraphic profiles
+reveal a deep evolutionary history of the vertebrate head sensory systems. Front Zool 10, 18
+(2013).
+102. T. Domazet-Loso, D. Tautz, Phylostratigraphic tracking of cancer genes suggests a link to the
+emergence of multicellularity in metazoa. BMC Biol 8, 66 (2010).
+103. T. Domazet-Loso, J. Brajkovic, D. Tautz, A phylostratigraphy approach to uncover the genomic
+history of major adaptations in metazoan lineages. Trends Genet 23, 533-539 (2007).
+104. J. J. Velazquez, E. Su, P. Cahan, M. R. Ebrahimkhani, Programming Morphogenesis through
+Systems and Synthetic Biology. Trends Biotechnol 36, 415-429 (2018).
+
+33
+
+105. J. Macia, B. Vidiella, R. V. Sole, Synthetic associative learning in engineered multicellular
+consortia. J R Soc Interface 14, 20170158 (2017).
+106. V. Nanos, M. Levin, Multi-scale Chimerism: An experimental window on the algorithms of
+anatomical control. Cells Dev 169, 203764 (2021).
+107. J. A. Davies, M. Levin, Synthetic morphology with agential materials. Nature Reviews
+Bioengineering 1, 46-59 (2023).
+108. P. C. W. Davies, C. H. Lineweaver, Cancer tumors as Metazoa 1.0: tapping genes of ancient
+ancestors. Phys Biol 8, 015001 (2011).
+109. M. Egeblad, E. S. Nakasone, Z. Werb, Tumors as organs: complex tissues that interface with the
+entire organism. Developmental cell 18, 884-901 (2010).
+110. M. Levin, The Computational Boundary of a “Self”: Developmental Bioelectricity Drives
+Multicellularity and Scale-Free Cognition. Frontiers in Psychology 10, 2688 (2019).
+111. P. A. Noble, A. Pozhitkov, K. Singh, E. Woods, C. Liu, M. Levin, G. Javan, J. Wan, A. S.
+Abouhashem, S. S. Mathew-Steiner, C. K. Sen, Unraveling the Enigma of Organismal Death:
+Insights, Implications, and Unexplored Frontiers. Physiology 39, 000-000 (2024).
+112. M. Levin, Life, death, and self: Fundamental questions of primitive cognition viewed through the
+lens of body plasticity and synthetic organisms. Biochemical and Biophysical Research
+Communications 564, 114-133 (2020).
+113. R. A. Firtel, Interacting signaling pathways controlling multicellular development in
+Dictyostelium. Curr Opin Genet Dev 6, 545-554 (1996).
+114. T. Omachi, T. Sakai, H. Hiraiwa, T. Hamada, Y. Ono, M. Nakashima, S. Ishizuka, T. Matsukawa,
+T. Oda, A. Takamatsu, S. Yamashita, N. Ishiguro, Expression of tenocyte lineage-related factors in
+regenerated tissue at sites of tendon defect. J Orthop Sci 20, 380-389 (2015).
+115. P. Alberton, S. Dex, C. Popov, C. Shukunami, M. Schieker, D. Docheva, Loss of tenomodulin
+results in reduced self-renewal and augmented senescence of tendon stem/progenitor cells. Stem
+Cells Dev 24, 597-609 (2015).
+116. T. Tokunaga, C. Shukunami, N. Okamoto, T. Taniwaki, K. Oka, H. Sakamoto, J. Ide, H. Mizuta,
+Y. Hiraki, FGF-2 Stimulates the Growth of Tenogenic Progenitor Cells to Facilitate the
+Generation of Tenomodulin-Positive Tenocytes in a Rat Rotator Cuff Healing Model. Am J Sports
+Med 43, 2411-2422 (2015).
+117. A. F. Struyk, P. D. Canoll, M. J. Wolfgang, C. L. Rosen, P. D'Eustachio, J. L. Salzer, Cloning of
+neurotrimin defines a new subfamily of differentially expressed neural cell adhesion molecules. J
+Neurosci 15, 2141-2156 (1995).
+118. J. L. Da Lage, G. W. C. Thomas, M. Bonneau, V. Courtier-Orgogozo, Evolution of salivary glue
+genes in Drosophila species. BMC Evol Biol 19, 36 (2019).
+119. S. Rehana, R. Manjunatha Kini, Molecular isoforms of cobra venom factor-like proteins in the
+venom of Austrelaps superbus. Toxicon 50, 32-52 (2007).
+120. Y. C. Patel, Somatostatin and its receptor family. Front Neuroendocrinol 20, 157-198 (1999).
+121. S. Gururaja Rao, N. J. Patel, H. Singh, Intracellular Chloride Channels: Novel Biomarkers in
+Diseases. Front Physiol 11, 96 (2020).
+122. E. Argenzio, W. H. Moolenaar, Emerging biological roles of Cl- intracellular channel proteins. J
+Cell Sci 129, 4165-4174 (2016).
+123. J. A. Blendy, T. J. Cole, L. Montoliu, E. Hummler, R. Ganss, A. Aguzzi, W. Schmid, G. Schutz,
+Molecular genetic analysis of cAMP and glucocorticoid signaling in development. Recent Prog
+Horm Res 50, 97-108 (1995).
+124. C. Fields, M. Levin, Competency in Navigating Arbitrary Spaces as an Invariant for Analyzing
+Cognition in Diverse Embodiments. Entropy (Basel) 24, (2022).
+125. M. Etcheverry, C. Moulin-Frier, P.-Y. Oudeyer, M. Levin, AI-driven Automated Discovery Tools
+Reveal Diverse Behavioral Competencies of Biological Networks. eLIfe, (2024).
+
+34
+
+126. S. Biswas, S. Manicka, E. Hoel, M. Levin, Gene Regulatory Networks Exhibit Several Kinds of
+Memory: Quantification of Memory in Biological and Random Transcriptional Networks.
+iScience 24, 102131 (2021).
+127. S. Biswas, W. Clawson, M. Levin, Learning in Transcriptional Network Models: Computational
+Discovery of Pathway-Level Memory and Effective Interventions. Int J Mol Sci 24, (2022).
+128. A. Tung, M. M. Sperry, W. Clawson, A. Pavuluri, S. Bulatao, M. Yue, R. M. Flores, V. P. Pai, P.
+McMillen, F. Kuchling, M. Levin, Embryos assist morphogenesis of others through calcium and
+ATP signaling mechanisms in collective teratogen resistance. Nat Commun 15, 535 (2024).
+129. J. Dunlop, P. C. Jones, M. E. Finbow, Membrane insertion and assembly of ductin: a polytopic
+channel with dual orientations. EMBO J 14, 3609-3616 (1995).
+130. M. E. Finbow, M. Harrison, P. Jones, Ductin--a proton pump component, a gap junction channel
+and a neurotransmitter release channel. Bioessays 17, 247-255 (1995).
+131. J. Lautemann, J. Bohrmann, Relating proton pumps with gap junctions: colocalization of ductin,
+the channel-forming subunit c of V-ATPase, with subunit a and with innexins 2 and 3 during
+Drosophila oogenesis. BMC Dev Biol 16, 24 (2016).
+132. D. S. Adams, K. R. Robinson, T. Fukumoto, S. Yuan, R. C. Albertson, P. Yelick, L. Kuo, M.
+McSweeney, M. Levin, Early, H+-V-ATPase-dependent proton flux is necessary for consistent
+left-right patterning of non-mammalian vertebrates. Development 133, 1657-1671 (2006).
+133. D. S. Adams, A. Masi, M. Levin, H+ pump-dependent changes in membrane voltage are an early
+mechanism necessary and sufficient to induce Xenopus tail regeneration. Development 134,
+1323-1335 (2007).
+134. C. X. Kha, I. Nava, K. A. Tseng, V-ATPase Regulates Retinal Progenitor Cell Proliferation
+During Eye Regrowth in Xenopus. J Ocul Pharmacol Ther, (2023).
+135. R. J. Nuckels, A. Ng, T. Darland, J. M. Gross, The vacuolar-ATPase complex regulates retinoblast
+proliferation and survival, photoreceptor morphogenesis, and pigmentation in the zebrafish eye.
+Investigative ophthalmology & visual science 50, 893-905 (2009).
+136. F. Kobia, S. Duchi, G. Deflorian, T. Vaccari, Pharmacologic inhibition of vacuolar H+ ATPase
+reduces physiologic and oncogenic Notch signaling. Mol Oncol 8, 207-220 (2014).
+137. E. P. Spugnini, G. Citro, S. Fais, Proton pump inhibitors as anti vacuolar-ATPases drugs: a novel
+anticancer strategy. J Exp Clin Cancer Res 29, 44 (2010).
+138. A. Hinton, S. Bond, M. Forgac, V-ATPase functions in normal and disease processes. Pflugers
+Arch 457, 589-598 (2009).
+139. R. Beach, J. M. Abitbol, B. L. Allman, J. L. Esseltine, Q. Shao, D. W. Laird, GJB2 Mutations
+Linked to Hearing Loss Exhibit Differential Trafficking and Functional Defects as Revealed in
+Cochlear-Relevant Cells. Front Cell Dev Biol 8, 215 (2020).
+140. S. Iossa, E. Marciano, A. Franze, GJB2 Gene Mutations in Syndromic Skin Diseases with
+Sensorineural Hearing Loss. Curr Genomics 12, 475-785 (2011).
+141. R. L. Snoeckx, P. L. Huygen, D. Feldmann, S. Marlin, F. Denoyelle, J. Waligora, M. Mueller-
+Malesinska, A. Pollak, R. Ploski, A. Murgia, E. Orzan, P. Castorina, U. Ambrosetti, E.
+Nowakowska-Szyrwinska, J. Bal, W. Wiszniewski, A. R. Janecke, D. Nekahm-Heis, P. Seeman,
+O. Bendova, M. A. Kenna, A. Frangulov, H. L. Rehm, M. Tekin, A. Incesulu, H. H. Dahl, D. du
+Sart, L. Jenkins, D. Lucas, M. Bitner-Glindzicz, K. B. Avraham, Z. Brownstein, I. del Castillo, F.
+Moreno, N. Blin, M. Pfister, I. Sziklai, T. Toth, P. M. Kelley, E. S. Cohn, L. Van Maldergem, P.
+Hilbert, A. F. Roux, M. Mondain, L. H. Hoefsloot, C. W. Cremers, T. Lopponen, H. Lopponen, A.
+Parving, K. Gronskov, I. Schrijver, J. Roberson, F. Gualandi, A. Martini, G. Lina-Granade, N.
+Pallares-Ruiz, C. Correia, G. Fialho, K. Cryns, N. Hilgert, P. Van de Heyning, C. J. Nishimura, R.
+J. Smith, G. Van Camp, GJB2 mutations and degree of hearing loss: a multicenter study. Am J
+Hum Genet 77, 945-957 (2005).
+142. E. Verpy, M. Leibovici, N. Michalski, R. J. Goodyear, C. Houdon, D. Weil, G. P. Richardson, C.
+Petit, Stereocilin connects outer hair cell stereocilia to one another and to the tectorial membrane.
+J Comp Neurol 519, 194-210 (2011).
+
+35
+
+143. V. C. Muller, M. Hoffmann, What Is Morphological Computation? On How the Body Contributes
+to Cognition and Control. Artif Life 23, 1-24 (2017).
+144. F. Corucci, N. Cheney, H. Lipson, C. Laschi, J. Bongard, in ALIFE 2016, the Fifteenth
+International Conference on the Synthesis and Simulation of Living Systems. (MIT Press, Cancun,
+Mexico, 2016), pp. 234-241.
+145. R. Pfeifer, G. Gomez, "Morphological Computation – Connecting Brain, Body, and
+Environment." in Creating Brain-Like Intelligence, B. Sendhoff, E. Körner, O. Sporns, H. Ritter,
+K. Doya, Eds. (Springer, Berlin, Heidelberg, 2009), vol. 5436.
+146. W. Rorot, Counting with Cilia: The Role of Morphological Computation in Basal Cognition
+Research. Entropy (Basel) 24, (2022).
+147. G. Dodig-Crnkovic, Cognition as Morphological/Morphogenetic Embodied Computation In
+Vivo. Entropy (Basel) 24, (2022).
+148. R. Pfeifer, F. Iida, M. Lungarella, Cognition from the bottom up: on biological inspiration, body
+morphology, and soft materials. Trends Cogn Sci 18, 404-413 (2014).
+149. F. Boselli, J. Jullien, E. Lauga, R. E. Goldstein, Fluid Mechanics of Mosaic Ciliated Tissues. Phys
+Rev Lett 127, 198102 (2021).
+150. P. A. Haas, S. Hohn, A. R. Honerkamp-Smith, J. B. Kirkegaard, R. E. Goldstein, The noisy basis
+of morphogenesis: Mechanisms and mechanics of cell sheet folding inferred from developmental
+variability. PLoS Biol 16, e2005536 (2018).
+151. J. Elgeti, G. Gompper, Emergence of metachronal waves in cilia arrays. Proc Natl Acad Sci US A
+110, 4470-4475 (2013).
+152. K. B. Clark, Ciliates learn to diagnose and correct classical error syndromes in mating strategies.
+Front Microbiol 4, 229 (2013).
+153. K. B. Clark, On classical and quantum error-correction in ciliate mate selection. Commun Integr
+Biol 3, 374-378 (2010).
+154. J. H. Cartwright, O. Piro, I. Tuval, Fluid dynamics in developmental biology: moving fluids that
+shape ontogeny. Hfsp J 3, 77-93 (2009).
+155. J. W. Pysanczyn, E. A. Williams, E. Brodrick, D. Robert, J. Craggs, K. L. Marhaver, S. D.
+Simpson, The role of acoustics within the sensory landscape of coral larval settlement. Front
+Marine Science 10, (2023).
+156. M. J. Vermeij, K. L. Marhaver, C. M. Huijbers, I. Nagelkerken, S. D. Simpson, Coral larvae move
+toward reef sounds. PLoS One 5, e10660 (2010).
+157. N. Aoki, B. Weiss, Y. Jezequel, W. G. Zhang, A. Apprill, T. A. Mooney, Soundscape enrichment
+increases larval settlement rates for the brooding coral Porites astreoides. R Soc Open Sci 11,
+231514 (2024).
+158. A. Lillis, A. Apprill, J. J. Suca, C. Becker, J. K. Llopiz, T. A. Mooney, Soundscapes influence the
+settlement of the common Caribbean coral Porites astreoides irrespective of light conditions. R
+Soc Open Sci 5, 181358 (2018).
+159. G. G. Selman, G. J. Pawsey, The utilization of yolk platelets by tissues of Xenopus embryos
+studied by a safranin staining method. J Embryol Exp Morphol 14, 191-212 (1965).
+160. P. Jorgensen, J. A. Steen, H. Steen, M. W. Kirschner, The mechanism and pattern of yolk
+consumption provide insight into embryonic nutrition in Xenopus. Development 136, 1539-1548
+(2009).
+161. N. Robertson, Labilization of the superficial layer and reduction in size of yolk platelets during
+early development of Xenopus laevis. Cell Differentiation 7, 185-192 (1978).
+162. H. Lovtrup-Rein, L. Nelson, Changes in mitochondrial respiration during the development of
+Xenopus laevis. Cell Differ 11, 125-133 (1982).
+163. H. Lovtrup-Rein, L. Nelson, Changes in energy metabolism during the early development of
+Xenopus laevis. Exp Cell Biol 50, 162-168 (1982).
+164. Y. Tsuchiya, U. Pham, W. Hu, S. Ohnuma, I. Gout, Changes in acetyl CoA levels during the early
+embryonic development of Xenopus laevis. PLoS One 9, e97693 (2014).
+
+36
+
+165. A. L. Lehninger, D. L. Nelson, M. M. Cox, Lehninger principles of biochemistry (Worth
+Publishers, 2000), vol. c.1.
+166. S. J. Schink, D. Christodoulou, A. Mukherjee, E. Athaide, V. Brunner, T. Fuhrer, G. A. Bradshaw,
+U. Sauer, M. Basan, Glycolysis/gluconeogenesis specialization in microbes is driven by
+biochemical constraints of flux sensing. Mol Syst Biol 18, e10704 (2022).
+167. M. J. Hynes, E. Szewczyk, S. L. Murray, Y. Suzuki, M. A. Davis, H. M. Sealy-Lewis,
+Transcriptional control of gluconeogenesis in Aspergillus nidulans. Genetics 176, 139-150
+(2007).
+168. R. P. Walker, Z. H. Chen, F. Famiani, Gluconeogenesis in Plants: A Key Interface between
+Organic Acid/Amino Acid/Lipid and Sugar Metabolism. Molecules 26, (2021).
+169. A. Beier, V. Hahn, U. T. Bornscheuer, F. Schauer, Metabolism of alkenes and ketones by Candida
+maltosa and related yeasts. AMB Express 4, 75 (2014).
+170. C. E. Lowery, J. W. Foster, P. Jurtshuk, The growth of various filamentous fungi and yeasts on n-
+alkanes and ketones. Archiv fur Mikrobiologie 60, 246-254 (1968).
+171. F. W. Forney, A. J. Markovetz, The biolow of methyl ketones. Journal of Lipid Research 12, 383-
+395 (1971).
+172. N. Baker, G. Hamilton, J. M. Wilkes, S. Hutchinson, M. P. Barrett, D. Horn, Vacuolar ATPase
+depletion affects mitochondrial ATPase function, kinetoplast dependency, and drug sensitivity in
+trypanosomes. Proc Natl Acad Sci U S A 112, 9112-9117 (2015).
+173. T. Y. Li, A. W. Gao, X. Li, H. Li, Y. J. Liu, A. Lalou, N. Neelagandan, F. Naef, K. Schoonjans, J.
+Auwerx, V-ATPase/TORC1-mediated ATFS-1 translation directs mitochondrial UPR activation in
+C. elegans. J Cell Biol 222, (2023).
+174. P. McMillen, M. Levin, Collective intelligence: A unifying concept for integrating biology across
+scales and substrates. Commun Biol 7, 378 (2024).
+175. M. Levin, Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology
+to mind. Anim Cogn, (2023).
+176. M. J. West-Eberhard, in Oxford scholarship online. (Oxford University Press,, New York, 2020),
+pp. 1 online resource (815 p.
+177. R. J. Sommer, Phenotypic Plasticity: From Theory and Genetics to Current and Future
+Challenges. Genetics 215, 1-13 (2020).
+178. S. Gilroy, T. Trewavas, Agency, teleonomy and signal transduction in plant systems. Biological
+Journal of the Linnean Society, (2022).
+179. D. M. Gyurko, D. V. Veres, D. Modos, K. Lenti, T. Korcsmaros, P. Csermely, Adaptation and
+learning of molecular networks as a description of cancer development at the systems-level:
+potential use in anti-cancer therapies. Semin Cancer Biol 23, 262-269 (2013).
+180. C. A. Aktipis, A. M. Boddy, R. A. Gatenby, J. S. Brown, C. C. Maley, Life history trade-offs in
+cancer evolution. Nat Rev Cancer 13, 883-892 (2013).
+181. H. Sive, Grainger, R. M. and Harland, R., Early development of Xenopus laevis. New York: Cold
+Spring Harbor Laboratory Press, (2000).
+182. P. D. Nieuwkoop, J. Faber, Normal table of Xenopus laevis (Daudin) : a systematical and
+chronological survey of the development from the fertilized egg till the end of metamorphosis.
+(Garland Pub, New York, 1994).
+183. S. Chen, Y. Zhou, Y. Chen, J. Gu, fastp: an ultra-fast all-in-one FASTQ preprocessor.
+Bioinformatics 34, i884-i890 (2018).
+184. A. Dobin, C. A. Davis, F. Schlesinger, J. Drenkow, C. Zaleski, S. Jha, P. Batut, M. Chaisson, T. R.
+Gingeras, STAR: ultrafast universal RNA-seq aligner. Bioinformatics 29, 15-21 (2013).
+185. B. Li, C. N. Dewey, RSEM: accurate transcript quantification from RNA-Seq data with or
+without a reference genome. BMC Bioinformatics 12, 323 (2011).
+186. M. D. Robinson, A. Oshlack, A scaling normalization method for differential expression analysis
+of RNA-seq data. Genome Biol 11, R25 (2010).
+
+37
+
+165. A. L. Lehninger, D. L. Nelson, M. M. Cox, *Lehninger principles of biochemistry* (Worth Publishers, 2000), vol. c.1.
+
+166. S. J. Schink, D. Christodoulou, A. Mukherjee, E. Athaide, V. Brunner, T. Fuhrer, G. A. Bradshaw, U. Sauer, M. Basan, Glycolysis/gluconeogenesis specialization in microbes is driven by biochemical constraints of flux sensing. *Mol Syst Biol* **18**, e10704 (2022).
+
+167. M. J. Hynes, E. Szewczyk, S. L. Murray, Y. Suzuki, M. A. Davis, H. M. Sealy-Lewis, Transcriptional control of gluconeogenesis in *Aspergillus nidulans*. *Genetics* **176**, 139-150 (2007).
+
+168. R. P. Walker, Z. H. Chen, F. Famiani, Gluconeogenesis in Plants: A Key Interface between Organic Acid/Amino Acid/Lipid and Sugar Metabolism. *Molecules* **26**, (2021).
+
+169. A. Beier, V. Hahn, U. T. Bornscheuer, F. Schauer, Metabolism of alkenes and ketones by *Candida maltosa* and related yeasts. *AMB Express* **4**, 75 (2014).
+
+170. C. E. Lowery, J. W. Foster, P. Jurtshuk, The growth of various filamentous fungi and yeasts on n-alkanes and ketones. *Archiv fur Mikrobiologie* **60**, 246-254 (1968).
+
+171. F. W. Forney, A. J. Markovetz, The biolow of methyl ketones. *Journal of Lipid Research* **12**, 383-395 (1971).
+
+172. N. Baker, G. Hamilton, J. M. Wilkes, S. Hutchinson, M. P. Barrett, D. Horn, Vacuolar ATPase depletion affects mitochondrial ATPase function, kinetoplast dependency, and drug sensitivity in trypanosomes. *Proc Natl Acad Sci U S A* **112**, 9112-9117 (2015).
+
+173. T. Y. Li, A. W. Gao, X. Li, H. Li, Y. J. Liu, A. Lalou, N. Neelagandan, F. Naef, K. Schoonjans, J. Auwerx, V-ATPase/TORC1-mediated ATFS-1 translation directs mitochondrial UPR activation in *C. elegans*. *J Cell Biol* **222**, (2023).
+
+174. P. McMillen, M. Levin, Collective intelligence: A unifying concept for integrating biology across scales and substrates. *Commun Biol* **7**, 378 (2024).
+
+175. M. Levin, Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind. *Anim Cogn*, (2023).
+
+176. M. J. West-Eberhard, in *Oxford scholarship online*. (Oxford University Press,, New York, 2020), pp. 1 online resource (815 p.
+
+177. R. J. Sommer, Phenotypic Plasticity: From Theory and Genetics to Current and Future Challenges. *Genetics* **215**, 1-13 (2020).
+
+178. S. Gilroy, T. Trewavas, Agency, teleonomy and signal transduction in plant systems. *Biological Journal of the Linnean Society*, (2022).
+
+179. D. M. Gyurko, D. V. Veres, D. Modos, K. Lenti, T. Korcsmaros, P. Csermely, Adaptation and learning of molecular networks as a description of cancer development at the systems-level: potential use in anti-cancer therapies. *Semin Cancer Biol* **23**, 262-269 (2013).
+
+180. C. A. Aktipis, A. M. Boddy, R. A. Gatenby, J. S. Brown, C. C. Maley, Life history trade-offs in cancer evolution. *Nat Rev Cancer* **13**, 883-892 (2013).
+
+181. H. Sive, Grainger, R. M. and Harland, R., *Early development of Xenopus laevis*. New York: Cold Spring Harbor Laboratory Press, (2000).
+
+182. P. D. Nieuwkoop, J. Faber, *Normal table of Xenopus laevis (Daudin) : a systematical and chronological survey of the development from the fertilized egg till the end of metamorphosis*. (Garland Pub, New York, 1994).
+
+183. S. Chen, Y. Zhou, Y. Chen, J. Gu, fastp: an ultra-fast all-in-one FASTQ preprocessor. *Bioinformatics* **34**, i884-i890 (2018).
+
+184. A. Dobin, C. A. Davis, F. Schlesinger, J. Drenkow, C. Zaleski, S. Jha, P. Batut, M. Chaisson, T. R. Gingeras, STAR: ultrafast universal RNA-seq aligner. *Bioinformatics* **29**, 15-21 (2013).
+
+185. B. Li, C. N. Dewey, RSEM: accurate transcript quantification from RNA-Seq data with or without a reference genome. *BMC Bioinformatics* **12**, 323 (2011).
+
+186. M. D. Robinson, A. Oshlack, A scaling normalization method for differential expression analysis of RNA-seq data. *Genome Biol* **11**, R25 (2010).
+
+187. C. W. Law, Y. Chen, W. Shi, G. K. Smyth, voom: Precision weights unlock linear model analysis tools for RNA-seq read counts. *Genome Biol* **15**, R29 (2014).
+
+188. M. E. Ritchie, B. Phipson, D. Wu, Y. Hu, C. W. Law, W. Shi, G. K. Smyth, limma powers differential expression analyses for RNA-sequencing and microarray studies. *Nucleic Acids Res* **43**, e47 (2015).
+
+189. X. Wang, P. Cui, J. Wang, J. Pei, W. Zhu, S. Yang, Community Preserving Network Embedding. *Proceedings of the AAAI conference on Artificial Intelligence* **31**, (2017).
+
+190. R. L. Seal, B. Braschi, K. Gray, T. E. M. Jones, S. Tweedie, L. Haim-Vilmovsky, E. A. Bruford, Genenames.org: the HGNC resources in 2023. *Nucleic Acids Res* **51**, D1003-D1009 (2023).
+
+191. D. Szklarczyk, R. Kirsch, M. Koutrouli, K. Nastou, F. Mehryary, R. Hachilif, A. L. Gable, T. Fang, N. T. Doncheva, S. Pyysalo, P. Bork, L. J. Jensen, C. von Mering, The STRING database in 2023: protein-protein association networks and functional enrichment analyses for any sequenced genome of interest. *Nucleic Acids Res* **51**, D638-D646 (2023).
+
+192. Z. Arendsee, J. Li, U. Singh, A. Seetharam, K. Dorman, E. S. Wurtele, phylostratr: a framework for phylostratigraphy. *Bioinformatics* **35**, 3617-3627 (2019).
+
+193. B. Yates, K. A. Gray, T. E. M. Jones, E. A. Bruford, Updates to HCOP: the HGNC comparison of orthology predictions tool. *Brief Bioinform* **22**, (2021).
+
+**Figure 1:**
+
+**(A)** [Images of Xenobot and Age-matched embryos at 50X and 10X magnification]
+Xenobot, Xenobots, Age-matched embryos
+
+**(B)** [Volcano plot]
+NS, -Log₁₀FDR, Log₂ fold change, Log₂ FC>2, FDR >0.05, Log₂ FC>2, FDR <0.05, Log₂ FC<2, FDR <0.05, p<0.05
+
+
+**Figure 2:**
+
+**(A)** [Table with gene counts and statistics]
+Ranked by count means, Xenobots, Embryos, Pool 1, Pool 2, Pool 3, Est. σX, Est. σE, Histograms, Overall Fraction, CVX, CVE, CVX > CVE?, Bin Fraction
+
+**(B)** Coefficient of Variation (CV) distributions, Embryos, Xenobots, Normalized Count, CV value bin
+
+**(C)** Fraction of Xenobot gene CVs > Xenopus embryo gene CVs across expression levels, Fraction of CVs higher for Xenobots, Gene count percentile
+
+**(D)** Xenobots top 10 most variable genes, Rank, Name
+1. oncomodulin 4 gene 1 L homeolog
+2. *A.superbus* venom factor 1
+3. salivary glue protein Sgs-3-like
+4. neurotrimin S homeolog, transcript variant X1
+5. tenomodulin L homeolog
+6. somatostatin receptor 4 S homeolog
+7. oncomodulin 4 gene 5 L homeolog
+8. oncomodulin 4 gene 10 L homeolog
+9. chloride intracellular channel 4 S homeolog
+10. tyrosine aminotransferase S homeolog, transcript variant X2
+
+
+**Figure 3:**
+
+**(A)** [Bar graph]
+Metabolism/biosynthesis, Immune signaling, Membrane proteins, Motor proteins, Immune response, Ciliopathies, Cilia/cytoskeleton, Group Enrichment Score
+
+**(B)** [Network diagram]
+Sensory perception of sound and mechanical stimuli [Gene names within nodes]
+
+**(C)** [Network diagram]
+Immune response/Stress response [Gene names within nodes]
+
+This is chunk 11 of 12 (pass 2 of 3) covering pages 41-45 of 46.
+
+**Figure 3**
+
+**A**
+
+Metabolism/
+biosynthesis
+
+Immune signaling
+
+Membrane proteins
+
+Motor proteins
+
+Immune response
+
+Ciliopathies
+
+Cilia/
+cytoskeleton
+
+0    2    4    6
+Group Enrichment Score
+
+**B**
+
+SLITRK6
+WNK3
+MGST2
+GJB4
+UTS2B
+STPG2 BSND SPDYC
+MARCHF1 NIP3
+EDN2
+ERAP1
+GGT6
+NMUR2
+SCNN1G
+TMC2
+CIB3
+GGTICFAP206
+MYO15A
+SLC26A4
+GJB2
+OTOG TNIP2
+KLF15
+ADH7 STR
+
+Sensory perception of sound and
+mechanical stimuli
+
+**C**
+
+ZC3H12A
+GADD45A NOS2 EPPK1 TMEM212 IFNAR2 DDIT3
+TLR1
+TCP10
+LDLRAD1
+ATF3
+TANK
+C22orf23
+SLP
+IRX4
+MSANT NODI
+GAS2L1
+EGR1 PPARGER3
+IL22RA1 IRF3
+TIRAP
+РІКЗАР1
+SPATS1
+STAT3
+NFKBBHCG
+TNF
+SOCS3
+L1B
+BCLB GAS2L2
+NFATC2
+IKBKE
+FOSB
+IFNLRIFNGR2
+
+Immune response/Stress response
+
+
+**Figure 4**
+
+**A**
+
+Amplifier
+Camera
+Frequency control
+Speaker
+Dish with
+subject
+
+**B**
+Day 1 Xenobots (non-motile)
+
+**C**
+Day 7 Xenobots (motile)
+
+**D**
+Age-matched St 35 embryos
+
+**E**
+Before
+During
+After
+
+**G**
+Before
+During
+After
+
+**H** Change in peak velocity on stimulation
+
+Peak velocity (mm/min)
+6
+4
+2
+0
+-2
+Xenobots  Embryos  Xenobots
+Day 1      St 35     Day 7
+
+ns
+****
+**
+
+
+**Figure 5**
+
+Evolutionary age of transcripts
+
+Controls (all epidermal genes)
+All Xenobot up-regulated genes
+Unique Xenobot up-regulated genes
+
+Percentage overlapping genes
+0   2   4   6   8
+
+Opisthokonta
+Metazoa
+Eumetazoa
+Bilateria
+Vertebrata
+
+
+**Figure S1**
+
+**A**
+0.1X MMR      0.75X MMR
+10 X          10 X
+10 X          10 X
+10 X          10 X
+10 X          10 X
+
+**B**
+PC2 (20.94%)
+0.25
+0.00
+-0.25
+-0.50
+-0.75
+-0.50  -0.25   0.00   0.25   0.50
+PC1 (23.68%)
+
+Group
+0.1X MMR
+0.75X MMR
+
+**C**
+PC2 (33.69%)
+0.25
+0.00
+-0.25
+-0.50
+-0.8  -0.4   0.0
+PC1 (35.31%)
+
+Group
+0.1X MMR
+0.75X MMR
+
+**D**
+0.75X vs0.1X
+Frequency
+0 200 600 1000
+0.0 0.2 0.4 0.6 0.8 1.0
+P-value
+Proportion of True Null = 0.996
+
+**E**
+Frequency
+0 5000 15000
+0.0 0.2 0.4 0.6 0.8 1.0
+FDR
+
+**F**
+Log₂ FC>2, FDR >0.05 NS
+Log₂ FC>2, FDR <0.05
+Log₂ FC<2, FDR <0.05
+
+-Log₁₀FDR
+9
+6
+3
+0
+-4   0   4
+Log₂ fold change
+
+--p-0.05
+
+
+**Figure S2**
+
+**A**
+
+PC2 (12.73%)
+0.4
+0.0
+-0.4
+
+-0.4  -0.2   0.0   0.2   0.4
+PC1 (67.52%)
+
+Group
+embryo
+xenobot
+
+This is chunk 12 of 12 (pass 2 of 3) covering pages 45-46 of 46.
+
+==Start of OCR for page 1==
+A
+0.4-
+
+PC2 (12.73%)
+
+0.0-
+
+-0.4-
+
+-0.4
+-0.2
+0.0
+0.2
+0,4
+
+PC1 (67.52%)
+
+Group
+embryo
+xenobot
+
+Figure S2
+==End of OCR for page 1==
+
+==Start of OCR for page 2==
+A
+
+DUOX1
+GAB3
+ANKK1
+CCNO
+DNAI1
+PIH1D2
+TTC12
+RSPH1
+BICDL2
+GPR37
+LMBRD2
+DLEC1
+LRRC74B
+SLC7A11
+CCDC180
+EFCAB6
+GPR37L1
+CCDC78
+NEK10
+CFAP74
+TXNRD1
+LRRC56
+TMEM213
+CRACR2A
+DNAH 14
+CFAP295
+PAG17
+
+
+B
+
+Cilia/cytoskeleton/ciliopathies
+
+PCSK4
+ATP6V1F
+REPS2
+UBE2U
+AMDHD1
+FAM166C
+ATP6V1G3
+AREG
+BDH1
+GLO1
+RSPH14
+ENKUR
+ANKRD65
+OXCT1
+FCN2
+FAM81B
+CBLC
+CFAP52
+TMÉM232
+SESN1
+GANC
+SH3KBP1
+CBLB
+CFAP299
+SPACA9
+CAPSL
+
+
+C
+
+Ketone metabolism/EGF-EGFR signal
+
+CFAP58
+NOX1
+MMP11
+SMPD3
+MMP10
+LIF
+LEP
+MMP1
+KONE1B
+CSTB
+SWAP70
+POU2F3
+SLC11A2
+TRPM5
+ASAH1
+SLC25A37
+KCNQ1
+NOXO1
+STEAP1
+TRIM16
+PKN1
+TTC21A
+IGF2
+CCL19
+IGFBP2
+SGMS2
+ARMC2
+
+
+ECM/proliferation/
+multicellular organization
+
+Figure S3
+==End of OCR for page 2==

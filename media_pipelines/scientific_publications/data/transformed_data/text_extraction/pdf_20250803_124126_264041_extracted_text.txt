@@ -1,0 +1,288 @@
+arXiv:1911.10290v1 [cs.RO] 23 Nov 2019
+
+Scalable sim-to-real transfer of soft robot designs
+Sam Kriegman¹, Amir Mohammadi Nasab², Dylan Shah², Hannah Steele², Gabrielle Branin²,
+Michael Levin³, Josh Bongard¹, Rebecca Kramer-Bottiglio²
+¹University of Vermont, ²Yale University, ³Tufts University
+
+Abstract—The manual design of soft robots and their controllers is notoriously challenging, but it could be augmented—or, in some cases, entirely replaced—by automated design tools. Machine learning algorithms can automatically propose, test, and refine designs in simulation, and the most promising ones can then be manufactured in reality (sim2real). However, it is currently not known how to guarantee that behavior generated in simulation can be preserved when deployed in reality. Although many previous studies have devised training protocols that facilitate sim2real transfer of control polices, little to no work has investigated the simulation-reality gap as a function of morphology. This is due in part to an overall lack of tools capable of systematically designing and rapidly manufacturing robots. Here we introduce a low cost, open source, and modular soft robot design and construction kit, and use it to simulate, fabricate, and measure the simulation-reality gap of minimally complex yet soft, locomoting machines. We prove the scalability of this approach by transferring an order of magnitude more robot designs from simulation to reality than any other method. The kit and its instructions can be found here: github.com/skriegman/sim2real4designs
+
+[PAGE 1] I. INTRODUCTION
+The simulation-reality gap¹ for rigid-bodied robots is steadily closing. Computational models of rigid body dynamics can now be regularized and tuned so that control policies optimized in simulation are just as successful when tested on the physical system [2, 11]. The reality gap for soft robots, on the other hand, remains uncharted. It could be wider than the gap for rigid bodies, or not. Soft bodies are more challenging to accurately simulate, design, and precisely control. But, they are also, by definition, more permissive to simulation inaccuracies, design flaws, and control precision: A soft gripper or foot will passively conform to complex objects and terrain, reducing the burden on the simulator to perfectly capture any single, “true” surface contact geometry.
+
+Quantifying which soft robot designs, policies and behaviors can be faithfully simulated is critical not only for robotics, but also synthetic approaches to understand functional plasticity of biological systems during development and regeneration. For both domains, testing candidate hypotheses in reality is expensive, time consuming, and, in some cases, dangerous. With the recent development of several high-space, many-body, GPU-accelerated soft body simulators [10, 18], sim2real for soft robotics and synthetic biology has become more feasible. However, because these simulators have yet to be employed to design physical systems, their transferability is currently unknown.
+
+Previous work has demonstrated methods that promote successful sim2real transferal of soft object manipulation but not soft robot behavior. For example, a rigid-bodied robot arm was successfully trained in simulation to fold towels and drape pieces of cloth over a hanger [20]. However, the reality gap was not quantified beyond a binary success rate for each task. Additionally, the robot's geometry was fixed and controllers were then optimized for it, whereas in the work reported here, the robot's geometry is part of the solution space.
+
+Hiller and Lipson [8] evolved the overall geometry and distribution of hard and soft materials in simulation, and transferred the structures and passive dynamics of various cantilever beams. In a separate experiment that included actuating materials, Hiller and Lipson evolved the morphology and behavior of soft robots in simulation, and then built one of the evolved designs physically. However, in order to transfer the simulated behavior of this one design, the physical robot needed to be placed in a pressure and vacuum chamber, whereas the hundreds of soft robot designs built here can be internally pressurized and actuated.
+
+More recently, Kriegman et al. [14] subjected a simulated soft robot (composed of elastic voxels) to a series of damage scenarios that removed increasingly more of the robot's structure. In each scenario, the robot was challenged to recover function (locomotion) by deforming its remnant structure, without changing its predamage control policy. A pair of recovery strategies, automatically discovered by an evolutionary algorithm in simulation, were transferred to reality (using silicone “voxels"), but function was not: The physical system could deform its resting structure as dictated by the recovery strategy, but it could not locomote, before or after damage. The physical robot was heavy, had high friction feet, and was symmetrically actuated in phase, so it just oscillated in place.
+
+To determine the particular challenges and opportunities of soft robot transferal, it would be useful to greatly scale up the number of design/policy pairs transferred. To this end, we present a soft robot design and construction kit based on the silicone voxel modules used in [14], but miniaturized to increase stability, simplified to improve reproducibility, and arbitrarily actuated to permit the transferal of locomotion. Other modular yet rigid-bodied robot design and construction kits exist, such as Molecubes [30]. However, our kit is easier, faster, cheaper, and safer to use. In short, silicone is molded into hollow voxels, and tubing is attached to supply low pressure actuation from a hand pump, causing volumetric changes in one or more of the voxels (Figs. 2 and 3). For simple behaviors robust to actuation noise, there is no need to use a highly-pressurized air supply or program microcontrollers for open-loop control. There are also no expensive motors or power supplies.
+
+Here, we employ the kit as an instrument to measure the reality gap as a function of morphology (Table I). To do so, we fabricated 108 morphologies (transferal of structure) and compared the behavior of nine simulated designs to their silicone equivalents (transferal of behavior). We hope that the kit's affordability, safety, speed, and simplicity will generate increasingly more, and more reproducible, data about the automated design of increasingly competent soft machines.
+
+Henceforth, "the reality gap"—as coined by Jakobi et al. [12].
+
+
+[PAGE 2] II. METHODS
+
+A. The design space.
+
+Following [8] and [14], our kit uses elastic voxels as building blocks of structure. Here, we considered a 2-by-2-by-2 cartesian lattice workspace, within which voxels were connected together to form a robot. At each x,y,z coordinate, voxels could either be passive, volumetrically actuated, or absent, yielding a total of 3⁸ = 6561 different configurations. We evaluated each configuration in simulation.
+
+B. The simulation.
+
+We used the soft-body physics engine Voxelyze [9] to simulate robots composed of actuating and/or passive, elastic voxels. The simulator models the distance between adjacent voxels as Euler-Bernoulli beams (critically damped; ζ = 1). Additionally, a collision detection system monitors the distance between the voxels on the surface of the robot at each timestep. If a pair of surface voxels are detected to collide (intersect), a temporary beam (underdamped; ζ = 0.8) is constructed between the two until the collision is resolved.
+
+Designs were simulated with a gravitational acceleration of -9.81 m/s², and initialized on top of an infinite surface plane at z = 0. Coulomb friction is applied to voxels in contact with the surface plane. Voxels were simulated to have 1 cm³ resting volume (resting beam lengths), with Young's modulus 10⁷ Pa, Poisson's ratio 0.35, and coefficients of static and kinetic friction of 1 and 0.5, respectively. These hyperparameters were adopted from [14]. For more details about how the physics are actually modeled, see [9].
+
+Volumetric actuation was implemented by varying the rest length between voxels, in all three dimensions, when computing the elastic force between them. Volumetric expansion in simulation and reality are both roughly spherical (Fig. 2b), but compression in reality is more complex and difficult to simulate: the voxels buckle (Fig. 2c). So volumetric actuation was here limited to expansion only (+90% rest volume). The active voxels expand in phase with each other as dictated by a central pattern generator: a sine wave with frequency 4 Hz and amplitude 1.9 cm³. When the sine wave is at or below zero, the active voxels remain at their resting volume (1 cm³). This produced quasistatic dynamics.
+
+Each design was simulated for 8831 timesteps, with a stepsize of 0.000453 seconds, resulting in a total simulation time of 4 seconds. During the first 552 times steps (0.25 sec), the design was allowed to settle under gravity before actuation begins, ensuring that movement (if any) is a result of actuation, rather than passively falling forward. Just before actuation, the design's initial center of mass is recorded as (x₀, y₀, z₀). The active voxels are then actuated for 3.75 sec at 4 Hz, or 15 actuation cycles.
+
+An exhaustive search of all 6561 designs (in batches of 50) took 58 CPU hours (1.8 wall-clock hours) on a single AMD Ryzen threadripper 1950X 16-core/32-thread processor. Fitness was taken to be the net displacement (away from the origin in any direction) of the design's center of mass, in terms of euclidean distance in the plane, where the origin is defined by the x, y components of the design's initial center of mass (x₀, y₀). Fitness is thus defined as:
+
+F = √(xₜ - x₀)² + (yₜ - y₀)² , (1)
+
+where xₜ, yₜ are the final coordinates of the design at the end of the evaluation period.
+
+[PAGE 3] C. Reality.
+
+Following Kriegman et al. [14], simulated voxels were realized physically as pneumatically-actuated, hollow silicone voxels. The physical robot in [14] was constructed to transfer symmetrical shape change, so its actuated voxels were distributed symmetrically and hooked into a single pressure inlet. Thus, pressure oscillations occurred symmetrically in phase, and the robot could only pulse in place. Moreover, due to thin voxel walls relative to overall voxel size, and the tubing and glue used to bond them together, the robot in [14] could not fully support its own weight. The robot was lifted off the ground by placing it on top of a small petri dish, positioned underneath a segment of entirely passive voxels in the center of the robot's ventral surface. This permitted ventral (and more extreme global) changes in surface curvature, yielding successful sim2real transfer of shape change, but not locomotion.
+
+The construction kit presented here rectifies the weight issue by miniaturizing the voxels—voxel length was halved (from 3cm to 1.5cm) and the wall thickness remained the same (1mm), reducing voxel mass from 4.3g to 1.2g (including tubing but not pneumatic connectors). Further, the inter-voxel tubing and glue was replaced with holes punched through the walls of adjacent active voxels in the same x,y slice, before attaching them with a shared bottom layer (Fig. 3d). Finally, locomotion is now possible because separate contiguous sections of voxels in each slice can be arbitrarily actuated in or out of phase with other sections across the body.
+
+D. The build protocol.
+
+The voxels were manufactured using a single-axis rotational molding machine.² First, an open-face mold was fabricated by interlacing 26 acrylic strips into a flat base, to form a lattice of cubic concavities, resembling an ice-cube tray (Fig. 3a). Mold components were laser-cut (VLS2.30, Universal Laser System) from a flat acrylic sheet with a thickness of 0.025 inch. Next, silicone (Dragon Skin 10 Fast; Smooth-On, Inc.) was poured into the acrylic mold (Fig. 3a), and a spatula was used to spread the silicone along the interior walls of each cavity (Fig. 3b). Colored pigment was added to each batch of silicone to indicate whether the voxel was active or passive, simplifying the assembly process. Here we used pink for active voxels and blue or yellow for passive voxels.
+
+The mold was then flipped upside down and secured to a 1-axis rotational molding machine. The machine was clamped to a table with binder clips, angled 45° relative to horizontal, and set to rotate 90° every 45 seconds (Fig. 3c). This allowed the silicone to flow and evenly coat the walls of the mold, as excess silicone dripped out. After the voxels partially cured for 25 minutes at room temperature, the mold was moved to an incubator, with a temperature of 60°C for another 20 minutes. (Without an incubator, the silicone will take 75 minutes to fully cure at room temperature.)
+
+The above steps were then repeated to add an additional layer of silicone. Once the second layer cured, the bottomless voxels were removed from the mold using an X-Acto knife, and excess silicone around their edges was trimmed.
+
+In the next step, each x,y slice (or dorsal plane) of the design was assembled by using Sil-Poxy (Smooth-On, Inc.) to bond adjacent voxels and prevent the slice from shifting. Holes were then punched between adjacent active voxels so that contiguous collections of voxels could be actuated together in phase. Each actuator group needed to contain at least one voxel on the surface of the design so that it could be controlled by an external pressure inlet. To create the bottom layer, two 1mm-thick rulers were attached to an acrylic substrate using double-sided tape and silicone was poured in the space between them. Then, the slice of bottomless voxels was flipped, open-side down, onto this uncured silicone layer (Fig. 3d).
+
+After the bottom layer cured, a thin layer of silicone was applied with a popsicle stick along the outermost portions of the interstices of the voxels, bonding adjacent voxels (without gluing over inter-voxel holes). Then, the slice was cut from the silicone sheet and a hole was poked into the side of one exterior voxel from each group of active voxels. Next, a 1/32” ID silicone tube was inserted into the hole, and glued in place with Sil-Poxy, applied with a Q-tip (Fig. 3e). The end of this tube was then connected to a straight pneumatic connector, which was connected to 1/16" ID silicone tubing.
+
+Occasional imperfections in alignment, silicone thickness, or inter-voxel hole sizes would result in leaky structures. Leaks were detected by filling a beaker with water, submerging the voxels, and inflating them. Bubbles would emanate from leaks, which were repaired with Sil-Poxy. After repairing any leaks, the slices were stacked on top of each other and bonded together using a thin layer of silicone (Fig. 3e). Finally, these layers were connected pneumatically with assorted pneumatic connectors, attached to 1/16" ID silicone tubes.
+
+²The required materials are listed at the end of the manuscript in Table II.
+
+[PAGE 4] III. RESULTS
+
+To test the effects of morphology on fitness and sim2real transfer success, it is useful to first visualize the design space. However, because there are eight cartesian voxel coordinates in the chosen workspace, the design space here is eight dimensional, which is difficult to draw (let alone conceptualize) without dimensionality reduction. By nesting the dimensions of a search space onto a single plot (Fig. 4), the entire space can be visualized as a 2D heatmap. This strategy was used by Cully et al. [5] to neatly visualize the predicted fitness of a very large library of control policies, as a function of the time a robot's six limbs were in contact with the simulated ground plane: 6D quinary control space was mapped to 2D, by nesting pairs of dimensions within each other.
+
+Here, the 8D ternary morphology space was reduced to 2D by plotting pairs of dimensions nested within each other (Fig. 5). The pixel in the exact center of Fig. 5, for instance, represents the configuration consisting entirely of passive voxels, and thus cannot locomote (F = 0). Likewise, the pixel in the top right-hand corner of the heatmap represents the configuration of all active voxels (Fig. 6d), which actuated symmetrically in phase, and thus (given its flat ventral surface) could not locomote across the flat ground plane (F = 0). Finally, the pixel in the bottom left-hand corner contains no voxels at all, and thus F = 0.
+
+For locomotion, a good design obviously needs to have a body, rather than none at all. With open-loop, in-phase actuation, designs also need to have asymmetrical mass and/or actuator distributions, or they will not generate any forward movement. However it is not clear, even for this minimal design space, exactly which asymmetrical designs will yield the highest fitness. Yet we can see small clusters and lines of similarly colored pixels in Fig. 5, representing morphologically similar designs with similar fitness. This suggests that these configurations and substructures would be relatively stable under random mutations or errors in fabrication.
+
+Because fitness was measured by displacement in any direction away from the origin (Eq. 1), there are four configurations—rotations, in the x,y plane, of a single geometry and distribution of passive and active voxels—with different
+
+[PAGE 5] 
+Relative Volume
+Behavior
+real
+sim
+5
+-
+a
+a
+5
+b
+d
+e
+f
+g
+h
+i
+a'
+b'
+c'
+d'
+e'
+f'
+g'
+h'
+i'
+L
+-5
+0
+5
+a"
+b"
+c"
+d"
+e"
+f"
+1.6
+g"
+h"
+1.3
+1.0
+0 2 4 6
+ייו
+sim:
+real:
+Pressure [KPa]
+
+behaviors (they moved in different directions) but very similar
+(if not identical) fitness. There were also some configurations
+that, when rotated upward (in the x,z or y,z plane) fell into
+the same basic orientation and behavior but with a slightly
+different heading. Thus, configurations with similar fitness
+(similarly colored pixels) are reflected across multiple, nested
+planes of symmetry in Fig. 5. These symmetries can also be
+seen in the manufactured robots (Fig. 1b). The uniqueness of
+designs (i.e., the size of the search space of morphologies) is
+therefore a function of how behavior is measured.
+
+Fig. 6 shows the behavior of nine different designs in simu-
+lation and reality. The real robot was actuated 90 times at 6 kPa
+pressure on a surface covered with cornstarch (Argo®, ACH
+Food Companies, Inc.) to reduce friction, and is compared to
+23 simulated actuation cycles. Seven of the nine designs filled
+the cubic workspace with passive and active voxels, while the
+other two share a more complex geometry: a single-voxel limb
+attached to the face of a 2-by-2 plane of voxels (Fig. 6e,f).
+In one, the limb is active (Fig. 6e), in the other it is passive
+(Fig. 6f). These two designs achieved the two highest fitness
+scores (Eq. 1), in both simulation and reality.
+
+By this measure, the reality gap appears small. However,
+these simulated designs move very differently from their man-
+ufactured equivalents. The simulated morphology in Fig. 6e
+pushes off its active limb, whereas in reality the design uses its
+limb to pull itself forward, in the opposite direction. Likewise,
+the simulated morphology in Fig. 6f pushes off its active 2-
+by-2 torso, whereas in reality the design uses its torso to pull
+itself forward, in the opposite direction.
+
+Majidi et al. [19] showed that the interfacial shear strength
+and coefficient of friction of the surface on which their soft
+robot undulated determined the direction of locomotion. They
+decomposed friction into load- and area controlled terms for
+point and surface contacts, respectively. On slippery surfaces
+with low interfacial shear resistance, the robot anchored about
+the point contact (expanded section) for locomotion and pulled
+its surface contact (passive segment). However, on surfaces
+with high interfacial shear resistance, the robot anchored about
+the surface contact and pulled the point contact toward it.
+We hypothesize that such differences in tribological properties
+could have caused our designs to move in opposite directions
+in simulation and reality.
+
+In an attempt to test this hypothesis and reduce the
+simulation-reality discrepancies that cause the virtual con-
+figurations in Fig. 6 to move differently than their physical
+realizations, we performed a grid search of various simulation
+hyperparameters, including the coefficients of static and ki-
+netic friction. However, we could not identify a pair of friction
+coefficients that resulted in correct movement heading for all
+nine of the behaving designs (Fig. 6a'-i'). This could be due to
+either low precision or low accuracy of the model. To isolate
+and test the former possibility, we increased the resolution
+of the simulated surface contact geometry by modeling each
+silicone voxel as a 3-by-3-by-3 group of simulated “subvoxels"
+(Fig. 7), and then re-ran the parameter sweep. Still, we could
+not find friction settings in which the simulated movement
+direction matched the ground truth across all designs simulta-
+neously. This suggests that the accuracy of Coulomb friction
+model may be insufficient to model this type of movement.
+The Coulomb approximation assumes that friction is simply
+
+
+[PAGE 6] 
+proportional to the vertical component N of the reaction force,
+and independent of the contact area. However, friction is also
+a function of the surface area and interfacial shear strength
+T, a fixed constant which is mostly governed by adhesion
+or mechanical interlocking between the contacting surfaces.
+A better model would thus consider friction as a function
+of both the normal force and the interfacial shear strength.
+However, before fundamentally changing the simulator, we
+plan to evaluate designs in noisy environments with imperfect
+control over actuation characteristics to avoid ascribing high
+fitness to designs that exploited unrealistic properties of the
+simulation [12]. Additionally, data from reality could be used
+to automatically tune the geometry and resolution of the sim-
+ulated finite elements [2], or to predict the kinds of behaviors
+that are more likely to successfully transfer [13], and which
+should be tested next [2]. Concurrently, we are investigating
+additional physical surfaces with varied tribological properties
+in an attempt to match reality to simulation.
+
+
+[PAGE 6] IV. DISCUSSION
+
+In this paper, we introduced a low cost, open source
+platform for designing and rapidly building soft robots, and
+used it to transfer 108 different morphologies (voxels on a
+cartesian grid) from simulation to reality. We then measured
+the reality gap as function of the robot's design (geometry and
+distribution of passive and actuating voxels) by tracking the
+behavior of nine transferred morphologies. Under one measure
+(net displacement) the reality gap appeared rather small, but
+under another (velocity) the gap was much wider, likely due
+to oversimplified tribological contacts between the simulated
+ground plane and the robot's ventral surface [19].
+Although most of the transferred designs (99 out of the
+108) were not actuated in reality, they nevertheless served an
+important function: they were sketches. Sketches let us think
+more clearly about the behavior or properties (e.g., stability)
+of a design without investing the additional time and resources
+required to fully build and examine the design itself. Sketches,
+in other words, greatly increase the breadth of exploration in
+design space. All sim2real methods embrace this utility of
+simplifying sketches. Simulation, after all, is also a sketch.
+However, there is a tacit assumption in robotics about Depth
+First. A typical sim2real experiment begins by sending a
+complicated robot design across the reality gap, and then
+endeavors to learn transferable policies that control the mor-
+phology in all its complexity. But this is not how most design
+proceeds. An architect first roughly sketches a structure, say,
+a bridge, on the back of a napkin. A diversity of designs
+are then generated, tweaked, discarded or provisionally ac-
+cepted at this shallow level of napkin realism-before more
+detailed blueprints are drawn under more stringent constraints.
+Blueprints, too, undergo this breadthwise evolution, before the
+most promising are realized physically, first as scale models
+(built from matchsticks and glue instead of concrete and steel),
+then, finally, at full scale and cost. This incrementally weeds
+out nontransferable features and adds mechanical complexity
+only when and where it is necessary to do so, rather than
+globally from the outset.
+The assumption that the reality gap can be bridged by policy
+search alone, with a single robot design, is groundless. The
+desired behavior of a robot is typically much more complicated
+than that of architecture. This suggests the necessity of more,
+not less, sketches. Soft robots are more complicated still. This
+makes their automated design that much more appealing, but
+implies the need for even greater breadth of sketches, at more
+intermediate levels of realism. Though not every experiment
+will need to start from a blank slate. Instead, designers
+(whether human or AI) could leverage prior knowledge to
+reject truly awful designs before sketching them in the first
+place. The designs transferred here add to a growing database
+(prior probabilities) about which and how well different soft
+robot designs and behaviors can be realized physically. Our
+construction kit has the potential to further increase this data
+by lowering not only cost and build times but also the barrier
+of entry to soft robotics for non-experts.
+The generality of such data beyond robotics is currently
+not known, but it could also have important implications for
+developmental biology and regenerative medicine. The bio-
+electric and genetic control policies that orchestrate adaptive
+remodeling of growth and form in organisms are not yet under-
+stood, but could, in future, be reverse-engineered by machine
+learning, and then controlled externally to induce regenera-
+tion in otherwise non-regenerative organisms (such as adult
+humans), or to reprogram otherwise unbounded cancerous
+growth toward functional organogenesis [16]. However, such
+advances in regenerative medicine and synthetic morphology
+will only be possible if hypotheses generated in simulation are
+transferable and testable in reality.
+
+[PAGE 6] ACKNOWLEDGEMENTS
+This work was supported by NSF award EFRI-1830870 and
+DARPA contract HR0011-18-2-0022.

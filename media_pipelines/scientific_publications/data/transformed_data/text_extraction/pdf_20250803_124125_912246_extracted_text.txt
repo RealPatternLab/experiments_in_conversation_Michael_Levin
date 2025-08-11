@@ -1,0 +1,396 @@
+[PAGE 1] Epigenetic control of myeloid cells behavior by Histone Deacetylase activity (HDAC) during tissue and organ regeneration in Xenopus laevis
+
+Abstract
+In the present work we have focused on the Histone Deacetylase (HDAC) control of myeloid cells behavior during Xenopus tail regeneration. Here we show that myeloid differentiation is crucial to modulate the regenerative ability of Xenopus tadpoles in a HDAC activity-dependent fashion. HDAC activity inhibition during the first wave of myeloid differentiation disrupted myeloid cells dynamics in the regenerative bud as well the mRNA expression pattern of myeloid markers, such as LURP, MPOX, Spib and mmp7. We also functionally bridge the spatial and temporal dynamics of lipid droplets, the main platform of lipid mediators synthesis in myeloid cells during the inflammatory response, and the regenerative ability of Xenopus tadpoles. In addition, we showed that 15-LOX activity is necessary during tail regeneration. Taken together our results support a role for the epigenetic control of myeloid behavior during tissue and organ regeneration, which may positively impact translational approaches for regenerative medicine.
+
+[PAGE 1] 1. Introduction
+Tissue and organ regeneration is a fascinating topic of study that has caught the attention of several generations of scientists. Different models of study have been used to unravel the cellular, genetic and molecular basis of animal regeneration. One of the most widely used model is the tail of Xenopus laevis tadpoles. In fact, between larval stages 40 and 44, swimming tadpoles have an amazing ability to regenerate tissues and organs upon tail amputation. About 72 h post amputation, tadpoles regenerate notochord, muscles, epidermis and nervous system. Studying this regenerative capacity is extremely attractive as it resembles mammalian regeneration much more than the regenerative strategies in anurans, such as salamander, for example. For these reasons, this is a very tractable model to deep explore the main mechanisms involved in tissue and organ regeneration with critical implications for translational medicine.
+
+Different studies have proposed that dormant developmental programs that tight control gene expression are re-activated during tissue and organ regeneration. In fact, it has been shown that key molecular pathways such as TGF-β, BMP, Wnt (Beck et al., 2003; Ho and Whitman, 2008; Sugiura et al., 2009), along with bioelectrical signaling (Adams et al., 2007; Beane et al., 2013; Levin, 2007, 2014; A. S. Tseng, Beane, Lemire, Masi and Levin, 2010) are tight regulated upon Xenopus tail amputation, both in time and space, giving rise to a finely tuned program that drives full organ regeneration. During regeneration, TGF-ẞ is important not just for setting but also maintaining the regenerative competence, acting in wound epithelium formation, establishment of regeneration bud structures, signaling cascades and regulation of cell proliferation (Ho and Whitman, 2008). BMP induces muscle tail formation and triggers Notch, which in turn, will give rise to the outgrowth of the notochord and the neural tube (Slack et al., 2004). BMP also drives Wnt, which is also required for Xenopus tail regeneration,
+
+[PAGE 2] specially at the first 48hpa (Lin and Slack, 2008; Slack et al., 2004).
+Besides this remarkable feature, it has been proposed that cells from the immune system may also contribute to the regenerative potential of different organisms. For instance, cells from myeloid origin such as monocytes/macrophages and neutrophils have been implicated in zebrafish, axolot and mouse regeneration (Aurora et al., 2014; Godwin et al., 2013; Morales and Allende, 2019; Petrie et al., 2014). Regardless Aztekin et al. (2020) have recently demonstrated that myeloid cells play a crucial role during Xenopus tail regeneration, evidences for the molecular basis of myeloid behavior control during tail regeneration are still lacking. As in mammals, Xenopus myeloid cells are first generated during embryonic stages during the so called first wave of differentiation, or primitive hematopoiesis, in a specialized tissue that is homolog to the mammalian yolk sac, the anterior ventral blood island (aVBI) at the neurula stage (Ciau-Uitz et al., 2010; Ciau-Uitz et al., 2000; Lane and Sheets, 2002; Lane and Smith, 1999). In addition to the primitive hematopoiesis, Xenopus also present a second wave of hematopoietic differentiation, the definitive hematopoiesis, that takes place in the dorso-lateral plate mesoderm (DLP) starting from stage 43 (Ciau-Uitz et al., 2000; Medvinsky and Dzierzak, 1996).
+
+The master gene involved in myeloid differentiation is Spib, whose expression is first observed in the aVBI at stage 17 (Agricola et al., 2016; Costa et al., 2008). Upon specification, Spib + cells start migrating away aiming to colonize the developing embryo. Spib is the spi 1/pu.1 zebrafish homolog and is necessary for hemangioblast-like cells differentiation into primitive myeloid precursor cells that will disperse into the embryo even before the raising of functional vessels (Costa et al., 2008). In fact, other myeloid markers such as mmp7, LURP and MPOX are downstream targets of Spib and contribute to different biological functions of myeloid cells, such as extracellular matrix remodeling, phagocytosis and immune defense (Harrison et al., 2004; Paredes et al., 2015; S. J. Smith, Kotecha, Towers, Latinkic and Mohun, 2002). More specifically, LURP and MPOx are co-expressed in myeloid precursors, promoting their migration through the embryo (S. J. Smith et al., 2002). Costa et al. have shown that spib positive cells are capable of migration towards an injury site during tailbud-stage, displaying in this way a functional behavior even in the absence of a functional vasculature. In this sense, macrophages and neutrophils are the two main myeloid population with relevant roles during regeneration.
+
+[PAGE 2] In a previous work we have demonstrated the epigenetic control of Xenopus tail regeneration by Histone Deacetylase (HDAC) activity (A.-S. Tseng, Carneiro, Lemire and Levin, 2011). In this work we showed that the treatment of regenerating swimming tadpoles, starting at stage 40, with HDAC inhibitors (iHDACs) impairs regeneration and leads to a lack of regenerative ability. In addition, we have recently shown that iHDAC treatment of mammalian myeloid cells both in vitro and in vivo disrupts myeloid differentiation favoring cell cycling in detriment of cell differentiation (Cabanel et al., 2015; Cabanel, da Costa, El-Cheikh and Carneiro, 2019). As a consequence, myeloid progenitors display a high plastic phenotype favoring an anti-inflammatory functional profile. These findings are very interesting because, given the anti-inflammatory activity of HDAC inhibitors (iHDAC), we hypothesized that HDAC activity blockade might be dampening the inflammatory response from the onset, which in turn, would be required for regeneration. Thus, in the present paper, we hypothesized whether epigenetic mechanisms HDAC-dependent would emerge as putative candidates playing key roles as myeloid cells modulators for new strategies to improve regeneration in vertebrates. Therefore, iHDAC should be dampening the inflammatory response evoked by myeloid cells, which is also supposed to be necessary for Xenopus tail regeneration.
+
+[PAGE 3] To test this hypothesis, we have focused on the characterization of myeloid sub-sets found in the regenerative bud upon tail amputation as well as on the characterization of their populational dynamics along the main regenerative events. Here we describe, for the first time, that HDAC activity blockade during the first wave of hematopoietic differentiation disrupts tail regeneration. Upon tail amputation HDAC activity was necessary to proper modulate both myeloid cells behavior and the mRNA expression pattern of the myeloid markers mmp7, Spib, MPOX and LURP. Our results indicate that, similarly to mammalians, HDAC activity is a key player during myeloid differentiation with critical effects on the inflammatory response related to the regenerative ability during tissue and organ development. Our findings report for the first time the epigenetic control HDAC-dependent of the immune modulation of tissue and organ regenerative capacity with critical implications for regenerative medicine.
+
+[PAGE 3] 2. Material and methods
+
+[PAGE 3] 2.1. 1 Animals
+The larvae of Xenopus laevis were obtained in collaboration with Prof. José Garcia Abreu (ICB-UFRJ). After fertilization, the embryos were aged to stage 40 (approximately 3 days after fertilization - at 23 °C or 7 days at 14 °C) for regeneration assays. Larvae were maintained in Barth culture medium or Steinberg. Stage 40 Xenopus larvae were anesthetized with 2 mM Tricaine in Barth or Steinberg 1 × medium, and amputated at the final third of the tail, as described in (A.-S. Tseng et al., 2011), and separated into two experimental groups: Control (larvae maintained in DMSO culture medium) or iHDAC group (culture medium containing 25 nM of the HDAC pharmacological activity inhibitor Tricostatin A - TSA). Adult animals were kept in accordance with CEUA 152/13 authorization. The larvae submitted to the experiments were kept according to CEUA 045/19 authorization.
+
+
+[PAGE 3] 2.2. Molecular biology
+
+[PAGE 3] 2.2.1. Primer synthesis
+The primers used for the RT-PCR reaction were designed using the Primer Blast program from the National Center for Biotechnology Information (NCBI) web page (https://www.ncbi.nlm.nih.gov/tools/primer-blast/) and purchased form Integrated DNA Technologies (IDT).
+
+[PAGE 4] 3. Results
+
+[PAGE 4] 3.1. HDAC activity is necessary for the regenerative ability exclusively during the first wave of myeloid differentiation
+It has been shown that both VBI and DLP contribute with embryonic and definitive/adult blood cells, respectively. The VBI has been separated into two different territories: aVBI and pVBI, which give rise to erythrocytes and myeloid cells. pVBI also gives rise to short term lymphoid cells (T cells) (Costa et al., 2008; Rollins-Smith and Blair, 1990; P. B. Smith and Turpen, 1985; Tashiro et al., 2006). DLP, in turn, gives rise to hematopoietic stem cells and therefore to all hematopoietic lineages in the adult (Chen and Turpen, 1995; Kau and Turpen, 1983). These two waves of hematopoietic differentiation take place at different times and at different sites into the embryo. While the first wave takes place at ventral sites of the embryo starting at stage 19, the second one starts only at stage 43 at dorsal sites. To better understand the epigenetic modulation of myeloid cells behavior during tail regeneration, we first investigated the requirement of HDAC activity during the first and/or the second waves of myeloid differentiation as well as its contribution to the regenerative ability. For this, tadpoles from different developmental stages, covering both the first or the second wave of myeloid differentiation, were incubated with iHDAC (Fig. 1A). Interestingly incubation with iHDAC exclusively during the first 1, 3, 6, 12 or 24 hpa, starting at stage 40, was sufficient to gradually impair the regenerative ability observed in control group (Fig. 1B,B'). In contrast, when tadpoles were incubated exclusively after the first 1, 3, 6, 12 and 24 hpa, until stage 47/48, the regenerative ability was gradually rescued (Fig. 1C,C'). We conclude that the first 24 hpa, which exclusively encompasses the first wave of myeloid differentiation, are crucial to epigenetically modulate the regenerative ability of Xenopus tadpoles.
+
+[PAGE 4] 3.2. The behavior of phagocytic cells positive for naphthyl esterase is modulated by HDAC activity at 24 h post amputation
+To gain insight into the cell dynamics upon tail amputation, we performed a flow cytometry analysis of total cells from control and iHDAC regenerative buds. After gating live cells from normal stage 40 tails, we characterize 2 distinguishable cell populations named P1 and P2 (Supplementary Fig. 1A). P2 population presented a high heterogeneity given it was observed scattered towards higher SSC and FSC parameters, indicating the presence of larger and complex (high granularity) cells at stage 40 tails (Supplementary Fig. 1A'). Interestingly, upon tail amputation at 24hpa, we observed that P1 was not detected in both control and iHDAC tails (Supplementary Fig. 1B and C), at the same time that in iHDAC treated tails, P2 cells presented higher SSC and FSC parameters than control P2 cells (Suplemmentary Fig. 1 B', C'). This scattered profile observed in iHDAC tails was more similar to normal tails than control tails, suggesting that HDAC activity is necessary for cell dynamics in the regenerative bud upon tails amputation. On the other hand, at 48 and 72 hpa we did not observe a significant disruption in cell dynamics because SSC and FSC parameters were similar in control and iHDAC groups (Supplementary Fig. 1 D-G). While P1 displayed both low size and granularity, and may include lymphocytes, P2 population may include myeloid cells, most probably granulocytes.
+
+[PAGE 4] To better understand whether P2 population displays significant higher SSC and FSC parameters at 24hpa, we gated 3 sub-sets in P2, named S1, S2 and S3 based on a size (FSC) and complexity scale (SSC). Thus S2 population presented cells twice the size and complexity of S1 and S3 presented cells three times the size and complexity of S1. In fact, upon 24 hpa we observed that iHDAC treated tadpoles presented a consistent increase in the number of cells in S3 gate if compared to control group (Fig. 2A,E). However, at 48 and 72 hpa, we did not observe any significant difference in cellular dynamics at the regenerative bud between control and iHDAC groups (Fig. 2A,C,D). Next, we asked whether HDAC activity is necessary for the global cellular dynamics along the time frame of regeneration. For this, we compared cell dynamics upon tail amputation to "time zero/steady state" normal tails that were obtained from the tip of amputated tissues at the time of tail amputation. Interestingly, the cellular dynamics along the time upon tail amputation was similar among the 3 sub-sets in control and iHDAC groups (Fig. 2, C',D', E'). While S1 sub-set significantly increased at 72hpa, S2 and S3 significantly decreased (Fig. 2 C',D',E').
+
+[PAGE 5] Classical morphological analysis by May Grunwald-Giemsa showed the presence of acidophilic and basophilic structures in both control and iHDAC groups (Supplementary Fig. 2). To identify the presence of monocytes/macrophages among these cells we have used cytochemistry analysis for naphthyl esterase. In fact, we observed naphthyl esterase + cells in both experimental groups in 24, 48 and 72 hpa (Supplementary Fig. 3). In addition, we also examined the phagocytic activity of the cells present in the regenerative bud by neutral red uptake assay. In both experimental groups we were able to observe cells displaying phagocytic activity at 24, 48 and 72 hpa (Supplementary Fig. 4).
+
+We conclude that HDAC activity is necessary for the proper establishment of cellular dynamics in the regenerative bud at 24 hpa. In addition, we identified that cells displaying phagocytic activity with cytochemistry markers of monocytes/macrophages are components of the cellular population observed in the regenerative bud of Xenopus tadpoles.
+
+[PAGE 5] 3.3. Myeloid cells are necessary for Xenopus tail regeneration in HDAC-activity dependent fashion
+Next, we sought to demonstrate the myeloid origin of the cells above reported. Spib is one of the earliest genes to be expressed in the myeloid differentiation cascade at stage 17 while Xpox2, the ortholog of zebrafish mpox coding for myeloperoxidase and commonly expressed by neutrophils since embryogenesis in mammalians, is first detected in the anterior-ventral mesoderm at stage 19 and, at the tail-bud stage, can be found throughout the whole embryo (S. J. Smith et al., 2002). In fact, it has been shown, starting from stage 19, the existence of cellular sub-set whose phenotype is Spib+/Xpox2+, mostly representing granulocytes. In addition, mmp7 (matrilysin), a mettaloproteinase whose activity is linked to extra cellular matrix remodeling, has been described to be expressed at stage 18 in a punctate pattern in the aVBI (Harrison et al., 2004). MMP7+ cells represent phagocytic cells derived from Spib+ precursors such as macrophages (Costa et al., 2008) that lie in between the epidermis and mesoderm compatible with a pattern displayed by resident macrophages at stages 37/38 (Harrison et al., 2004). In fact, Spib morpholino injected embryos lack the expression of both downstream targets Xpox2 and mmp7 resulting in a lack of primitive myeloid cells (Costa et al., 2008).
+
+We then hypothesized whether myeloid cells are necessary for Xenopus tail regeneration and whether HDAC activity is necessary to their behavior. To start addressing this question, we injected embryos with Spib anti-sense morpholinos at the 4 cells stage and, at the stage 40, the tadpoles were amputated, and the regeneration was scored at 72 h post amputation.
+To access Spib knockdown we first performed an in situ hybridization
+
+[PAGE 5] Fig. 1. HDAC activity is required for tail regeneration exclusively within the first 24hpa that encompasses the first myeloid wave of differentiation. (A) At
+stage 40 tail was amputated and incubated with iHDAC during different windows of myeloid development (B, C). The tadpoles were aged until stage 47/48 when
+were scored (B', C'). For B the number of animals used in each treatment corresponds to 30, except for iHDAC 1 h, with 31 animals and both groups 24hpa, with 43
+animals. For C, the number of animals used in each treatment corresponds, respectively, to 60, 60, 62, 61, 50, 54, 57, 61, 59 and 60. Qui-square test was used. ***p <
+0,001; ****p < 0,0001.
+
+named S1, S2 and S3 based on a size (FSC) and complexity scale (SSC).
+Thus S2 population presented cells twice the size and complexity of S1
+and S3 presented cells three times the size and complexity of S1. In fact,
+upon 24 hpa we observed that iHDAC treated tadpoles presented a
+consistent increase in the number of cells in S3 gate if compared to
+control group (Fig. 2A,E). However, at 48 and 72 hpa, we did not
+observe any significant difference in cellular dynamics at the regener-
+ative bud between control and iHDAC groups (Fig. 2A,C,D). Next, we
+asked whether HDAC activity is necessary for the global cellular dy-
+namics along the time frame of regeneration. For this, we compared cell
+dynamics upon tail amputation to "time zero/steady state" normal tails
+that were obtained from the tip of amputated tissues at the time of tail
+amputation. Interestingly, the cellular dynamics along the time upon tail
+amputation was similar among the 3 sub-sets in control and iHDAC
+groups (Fig. 2, C',D', E'). While S1 sub-set significantly increased at
+72hpa, S2 and S3 significantly decreased (Fig. 2 C',D',E').
+Classical morphological analysis by May Grunwald-Giemsa showed
+the presence of acidophilic and basophilic structures in both control and
+iHDAC groups (Supplementary Fig. 2). To identify the presence of
+monocytes/macrophages among these cells we have used cytochemistry
+analysis for naphthyl esterase. In fact, we observed naphthyl esterase +
+cells in both experimental groups in 24, 48 and 72 hpa (Supplementary
+Fig. 3). In addition, we also examined the phagocytic activity of the cells
+present in the regenerative bud by neutral red uptake assay. In both
+experimental groups we were able to observe cells displaying phagocytic
+activity at 24, 48 and 72 hpa (Supplementary Fig. 4).
+We conclude that HDAC activity is necessary for the proper estab-
+lishment of cellular dynamics in the regenerative bud at 24 hpa. In
+addition, we identified that cells displaying phagocytic activity with
+cytochemistry markers of monocytes/macrophages are components of
+the cellular population observed in the regenerative bud of Xenopus
+tadpoles.
+
+[PAGE 5] 3.3. Myeloid cells are necessary for Xenopus tail regeneration in HDAC-
+activity dependent fashion
+
+Next, we sought to demonstrate the myeloid origin of the cells above
+reported. Spib is one of the earliest genes to be expressed in the myeloid
+differentiation cascade at stage 17 while Xpox2, the ortholog of zebra-
+fish mpox coding for myeloperoxidase and commonly expressed by
+neutrophils since embryogenesis in mammalians, is first detected in the
+anterior-ventral mesoderm at stage 19 and, at the tail-bud stage, can be
+found throughout the whole embryo (S. J. Smith et al., 2002). In fact, it
+has been shown, starting from stage 19, the existence of cellular sub-set
+whose phenotype is Spib+/Xpox2+, mostly representing granulocytes. In
+addition, mmp7 (matrilysin), a mettaloproteinase whose activity is
+linked to extra cellular matrix remodeling, has been described to be
+expressed at stage 18 in a punctate pattern in the aVBI (Harrison et al.,
+2004). MMP7+ cells represent phagocytic cells derived from Spib+
+precursors such as macrophages (Costa et al., 2008) that lie in between
+the epidermis and mesoderm compatible with a pattern displayed by
+resident macrophages at stages 37/38 (Harrison et al., 2004). In fact,
+Spib morpholino injected embryos lack the expression of both down-
+stream targets Xpox2 and mmp7 resulting in a lack of primitive myeloid
+cells (Costa et al., 2008).
+We then hypothesized whether myeloid cells are necessary for Xen-
+opus tail regeneration and whether HDAC activity is necessary to their
+behavior. To start addressing this question, we injected embryos with
+Spib anti-sense morpholinos at the 4 cells stage and, at the stage 40, the
+tadpoles were amputated, and the regeneration was scored at 72 h post
+amputation.
+To access Spib knockdown we first performed an in situ hybridization
+
+[PAGE 6] Fig. 2. HDAC activity is necessary for the proper establishment of cellular dynamics in the regenerative bud at 24 hpa. Size (FSC) and granularity (SSC)
+analysis of the cells present in the regenerative buds at 24, 48 and 72hpa (A) and normal tail (B). Quantification of the percentage of cells in S1 (C), S2 (D) and S3 (E)
+along the time. Statistical analysis was performed using unpaired t-test, p < 0.05. N = 3 (each biological replicate comprised 80 regenerative buds). (C', D',E') Analysis
+of the percentage of cells compared to "time zero" or steady state normal tails along the time. Statistical analysis was performed between a given time point and the
+point immediately before except when indicated by the horizontal bars, that indicate the statistical analysis between time 0 and 72hps. Statistical analysis was
+performed using the Two-Way ANOVA test where the confidence interval is 95%. All analyzes were performed only using cells negative for the death label 7AAD
+(FL3-H). *p < 0,05; **p < 0,01.
+
+for mmp7 mRNA at the neurula stage (stage 20). In fact, Spib morpho-
+lino injected embryos presented a substantial reduction in the mmp7
+expression domain (Fig. 3). Using two different concentrations of Spib
+morpholinos we consistently observed that Spib morpholino injected
+embryos present an impairment in tail regeneration when compared to
+scramble injected embryos. Spib knockdown led to 30% of non-
+regenerating tadpoles in the absence of considerable toxicity (Fig. 3).
+Besides Spib, Xpox2 and mmp7, Smith et al. described a myeloid-
+specific gene promoter that provided a molecular marker for myeloid
+cells at the early tail-bud stage. In this work Smith et al. proposed that
+
+[PAGE 7] Ly-6/uPAR-related protein (XLURP-1) positive cells would be divided in
+two different sub-sets of myeloid cells: XLURP-1+/Xpox2+ and XLURP-
+1/Xpox2+ suggesting the existence of at least two different cellular sub-
+sets of myeloid cells starting at the late tail-bud stage. On the other hand,
+despite displaying a similar punctate pattern of Xpox2, XLURP-1 tran-
+scripts were detected only starting from stage 24 onward. At stage 41
+XLURP-1 positive cells present irregular shape suggesting that they may
+be resident phagocytic cells such as macrophages (S. J. Smith et al.,
+2002). In addition, XLURP-1 positive cells were found in the peripheral
+blood vessels suggesting a patrolling behavior.
+Because Xpox2 and XLURP-1 also identifies myeloid populations in
+the developing embryo, we hypothesized whether XLURP-1 positive
+cells would be recruited into the regenerative bud, in a HDAC-activity
+dependent fashion, forming an infiltrate-like. LURP-GFP transgenic
+tadpoles were raised until stage 40 when were amputated and imme-
+diately placed in a solution containing iHDAC or DMSO for 24, 48 or
+72hrs and at every time point, the number of GFP+ cells was counted/
+area of the regenerating tissue. We observed at 24 hpa a consistent in-
+crease in the number of GFP+ cells/area in iHDAC treated tadpoles
+(Fig. 4). In addition, we also quantified the endogenous levels of LURP
+mRNA by real time PCR at 24 and 72 hpa. Regardless we did not observe
+any change in transcripts levels at 24 hpa between control and iHDAC
+tadpoles, we detected an increase in LURP mRNA levels at 72 hpa in the
+iHDAC group (Supplementary Fig. 5).
+We conclude that LURP+ cells are necessary for tail regeneration and
+that their behavior is modulated by HDAC activity.
+
+[PAGE 7] 3.4. HDAC activity is necessary for the proper establishment of an
+inflammatory gene expression pattern during tail regeneration
+
+Love et al. have successfully accessed the initial inflammatory
+response following Xenopus tail amputation. In fact they described
+through in situ hybridization and sudan black staining, that mmp7
+mRNA is up regulated as well as neutrophils, respectively, as early as 6 h
+post amputation, remaining for several days (Love et al., 2011). Here we
+asked whether HDAC activity would modulate the relative expression of
+mmp7, MPOX and spib during tail regeneration. To answer this ques-
+tion, we performed real time PCR to quantify the expression levels of this
+set of transcripts. In fact, at 24 hpa we observed a decrease in mmp7
+mRNA expression levels, that was maintained at 72 hpa (Fig. 5). On the
+other hand, we observed that spib and MPOX mRNA expression levels
+were increased when compared to control groups. These results argue in
+favor of an epigenetic control of the inflammatory response during tail
+regeneration. Given that MPOX is a myeloid marker for neutrophils, we
+interpret that HDAC activity blockade led to the persistence of the in-
+flammatory response at 72 hpa, which is inversely proportional to the
+regenerative ability. In addition, increased levels of spib mRNA in-
+dicates that more undifferentiated myeloid cells are present in the
+regenerative bud if HDAC activity is suppressed. However, at this
+developmental stage, we are not able to separate myeloid cells form the
+first and the second wave of hematopoiesis. This hypothesis is in
+agreement with low levels of mmp7 mRNA expression levels which also
+argue in favor of a low phagocytic activity of myeloid cells and as a
+consequence, low inflammatory response.
+We conclude that HDAC activity is necessary for the establishment of
+transcriptional patterns compatible with the inflammatory response
+during tail regeneration.
+
+
+[PAGE 8] 3.5. The inflammatory response is a key player during Xenopus tail
+regeneration and HDAC activity is necessary for its proper establishment
+
+During tissue regeneration, acute inflammation has been shown as
+key player to trigger the main mechanisms that will drive regeneration.
+In fact, different works in zebra fish (Kyritsis et al., 2012; Morales and
+Allende, 2019; Petrie et al., 2014), salamander (Godwin et al., 2013) and
+mouse (Aurora et al., 2014) have addressed this question. Similarly, the
+key role for inflammation during Xenopus laevis tail regeneration has
+also been successfully addressed (Aztekin et al., 2020; Fukazawa et al.,
+2009; Love et al., 2013). To address whether the HDAC activity is
+necessary for the inflammatory response during Xenopus tail regenera-
+tion, we decided first to investigate the temporal dynamics of lipid
+droplets (LD) upon tail amputation. LD are osmiophilic subcellular
+components of leucocytes such as monocytes/macrophages and
+neutrophils that are involved during the inflammatory response. Upon
+the inflammatory stimulus, LD may increase either in size and in number
+and serves as a reservoir of lipid mediators and their enzymes, including
+15-lipoxigenase (15-LOX) (Melo et al., 2011). As we have showed that
+HDAC activity blockade led to a disruption in the populational dynamics
+of leucocytes during tail regeneration, we decided to characterize the
+spatial and temporal dynamics of LD upon tail amputation and under the
+blockade of HDAC activity. For this, LD were visualized by conventional
+Oil Red staining and Osmiun tetroxide impregnation followed by light
+microscopy. We have shown that naphthyl esterase + cells (mono-
+cytes/macrophages) are among the cellular components during tail
+regeneration. In addition, real time PCR also showed evidences for the
+presence of neutrophils (MPOX). These two cellular types are tight
+correlated to the inflammatory response and may represent the main
+source of LD in the context of tail regeneration. In fact, we were able to
+
+[PAGE 9] characterize the pattern of Oil Red + vesicles distribution along the time
+in control and iHDAC tadpoles when compared to untreated, normal
+tails. It was possible to note that the number of Oil Red + vesicles/area
+of tissue decreased along the time during normal tail development
+(Fig. 6K, red line). When control and iHDAC groups were analyzed at 24
+and 72 hpa, we observed that the overall dynamics was not disrupted,
+but the number of Oil Red + vesicles/area of tissue was lower than the
+number observed for normal tails (Fig. 6A and B,D,F,G,I). However we
+
+[PAGE 9]
+N. Pentagna et al.
+Developmental and Comparative Immunology 114 (2021) 103840
+characterize the pattern of Oil Red + vesicles distribution along the time
+in control and iHDAC tadpoles when compared to untreated, normal
+tails. It was possible to note that the number of Oil Red + vesicles/area
+of tissue decreased along the time during normal tail development
+(Fig. 6K, red line). When control and iHDAC groups were analyzed at 24
+and 72 hpa, we observed that the overall dynamics was not disrupted,
+but the number of Oil Red + vesicles/area of tissue was lower than the
+number observed for normal tails (Fig. 6A and B,D,F,G,I). However we
+
+[PAGE 10]
+N. Pentagna et al.
+Developmental and Comparative Immunology 114 (2021) 103840
+did not detected significant differences between control and iHDAC
+tadpoles at 24 and 72 hpa (Fig. 6K). Using osmium impregnation we
+were able to detect multilocular cells at 24 hpa in semithin sections for
+electron microscopy preparations that were no longer observed at 72
+hpa in control tadpoles (Fig. 6C,C',E). In iHDAC treated tadpoles we did
+not observe multilocular cells but instead, we observed osmiophilic
+vesicles at 72 hpa that were not observed in control groups (Fig. 6 J,J').
+To better address whether LD, and their apparatus, would physiologi-
+cally play a role during tail regeneration, we hypothesized that 15-LOX
+activity would be necessary for tail regeneration. To investigate this
+hypothesis we used baicalein to pharmacologically inhibit 15-LOX ac-
+tivity during tail regeneration. For this, amputated tails were placed in
+baicalein soon after amputation and aged until stage 47/48, when tad-
+poles were scored. In fact, 15-LOX blockade during tail regeneration led
+to tail regeneration impairment (Fig. 6). This result demonstrates that
+lipid mediators synthesized from LD may play a role during Xenopus tail
+regeneration.
+We conclude that the inflammatory response is a key player during
+Xenopus tail regeneration and that HDAC activity is necessary for its
+proper establishment.
+
+[PAGE 10] 4. Discussion
+In the present paper we aimed to characterize the epigenetic control
+HDAC- dependent of tissue and organ regenerative capacity using Xen-
+opus tail as experimental model. Regardless it is already well established
+in the literature that the acute inflammatory response, through an
+injury, exerts a protective effect on the organism (Kyritsis et al., 2012;
+Mescher et al., 2017), tractable strategies to modulate inflammation
+favoring tissue and organ regeneration are still lacking.
+Similarly to mammals, the hematopoiesis in amphibians generates
+myeloid cells with critical physiological roles both during embryonic
+and adult life. In both animals the first wave of differentiation gives rise
+to myeloid cells that will spread in the embryo and play crucial roles
+during morphogenesis and regeneration (Agricola et al., 2016; Costa
+et al., 2008). We showed that in the absence of HDAC activity the
+number of LURP-GFP+ cells in the regenerative bud was increased
+without a consistent increase in the levels of endogenous mRNA levels of
+LURP. Interpreting this result, we found a stinking similar pattern
+observed in mice upon iHDAC treatment of myeloid precursors at 24 hpa
+(Cabanel et al., 2015, 2019). While control group displayed a lower
+number of LURP-GFP + cells, these cells might express high levels of this
+protein being classified as LURP-GFphigh sub-set (pro-inflammatory
+monocytes). In contrast, because iHDAC treated tadpoles presented
+increased number of LURP-GFP + cells, they may belong to a different
+sub-set of cells, which in turn will display low levels of LURP-GFP +
+being classified
+as LURP-GFPlow (patrolling/anti-in-
+flammatory/pro-resolutive monocytes). This may explain why despite a
+higher number of total LURP-GFP + cells, iHDAC treated tadpoles did
+not present a consistent increase in LURP mRNA levels at this time point.
+This scenario is also compatible with low levels of mmp7 mRNA
+expression, which indicates low inflammatory activity. Taken together
+these results indicates that iHDAC treatment impaired the inflammatory
+response at 24 hpa compromising, in this way, the outcome of the main
+regenerative events that will follow.
+In fact, this interpretation is in agreement with the results obtained at
+72 hpa. At this time point regardless the number of LURP-GFP + cells is
+the same in control and iHDAC treated tadpoles, LURP mRNA expression
+levels are increased in iHDAC tadpoles. This result indicates that in
+iHDAC treated tadpoles, LURP-GFP + cells belong to the LURP-GFphigh
+sub-set, compatible with the persistence of the inflammatory response at
+72 hpa correlated to a lack of regeneration. This rational is supported by
+the fact that at this time point MPOX mRNA expression levels are
+increased along with increased levels of Spib mRNA (more undifferen-
+tiated cells) and decreased levels of mmp7 mRNA expression (less active
+phagocytic cells) (Harrison et al., 2004). Taken together these results
+argue in favor of a disruption in the assemble of the inflammatory
+response in the absence of HDAC activity. This interpretation is also
+aligned with the fact that mRNA levels of IL11, an interleukin involved
+in tissue repair and regeneration, are increased at 72 hpa (Tsujioka et al.,
+2015), indicating that at this time point the inflammation must to be
+resolved, which is not the case if HDAC activity is inhibited.
+It has been documented that LURP and MPOX colocalize in myeloid
+cells and that give rise to mmp7+ macrophages (S. J. Smith et al., 2002).
+Our results agree with this report given that both transcripts present the
+same pattern of expression along with Spib at 24 and 72 hpa. In fact, in
+iHDAC treated tadpoles these transcripts were found upregulated, if
+compared to control groups, supporting the view that myeloid cells are
+the main target for the epigenetic control through HDAC activity
+blockade during tail regeneration. In addition, Love et al. have shown
+that myeloid cells are observed in the regenerative bud upon tail
+amputation at 6 hpa along with a clear dynamic of mmp7 expression,
+that is observed also at 6 hpa, is sustained at 24 hpa but diminished by
+48 and 72 hpa (Love et al., 2011). In contrast, when HDAC activity was
+inhibited, the mRNA levels of mmp7 remained stable in 24 and 72 hpa,
+showing that HDAC activity is required to the physiological role of
+myeloid phagocytic cells, mostly resident macrophages. This result is
+also in agreement with the findings reported by Harrison and colleagues
+showing that mmp7 co-localizes with MPOX (Harrison et al., 2004).
+Another important piece of evidence that corroborates the persis-
+tence of the inflammatory response at 72 hpa in iHDAC treated tadpoles,
+comes from the analysis of LD dynamics. These subcellular organelles in
+immune cells are key players in the assemble of the inflammatory
+response because they can store arachidonic acid to the synthesis of
+eicosanoids (Bozza et al., 2009; Weller et al., 1991) upon the inflam-
+matory stimulus by enzymes such as 15-LOX, leading to the synthesis of
+pro-resolving mediators as Resolvins (Serhan, 2014). Although we did
+observe any overall difference in the profile of LD among normal tail,
+control and iHDAC treated tadpoles during tail regeneration using Oil
+Red, we observed the presence of osmiophilic LD in iHDAC treated
+tadpoles at 72 hpa. The presence of these organelles indicates that the
+inflammatory response is still active at 72 hpa in iHDAC treated tadpoles
+if compared to control group. The persistence of inflammatory media-
+tors would contribute to regeneration impairment.
+Our results show for the first time in the literature that Epigenetic
+mechanisms HDAC-dependent modulate the behavior of myeloid cells
+during tissue and organ regeneration. Because iHDACs have been widely
+studied in the literature and some iHDACs have also been approved for
+use in humans, we propose that the use of this class of inhibitors may be
+converted in a tractable strategy in translational studies to better un-
+derstand their potential in clinical contexts.
+
+[PAGE 10] 5. Conclusions
+The first 24 hpa, which exclusively encompasses the first wave of
+myeloid differentiation, are crucial to modulate the regenerative
+ability of Xenopus tadpoles in a HDAC activity-dependent fashion;
+HDAC activity is necessary for the proper establishment of cellular
+dynamics in the regenerative bud at 24 hpa;
+Phagocytic activity can be detected in the regenerative bud of Xen-
+opus tadpoles;
+LURP+ cells are necessary for tail regeneration and that their
+behavior is modulated by HDAC activity;
+HDAC activity is necessary for the establishment of myeloid gene
+expression pattern during tail regeneration,
+15-lipoxigenase (15-LOX) activity is necessary for Xenopus tail
+regeneration.
+
+[PAGE 10] Declaration of competing interest
+The authors declare no competing interests.
+
+
+[PAGE 11] Acknowledgements
+We would like to acknowledge Grasiella Ventura Matioszek for
+helpful support in Confocal Microscopy and Funding Agencies FAPERJ,
+for Katia Carneiro, CNPq and CAPES, for Nathalia Pentagna's PhD
+Fellowship.
+
+[PAGE 11] Appendix A. Supplementary data
+Supplementary data to this article can be found online at https://doi.
+org/10.1016/j.dci.2020.103840.
+
+[PAGE 11] Funding
+This work was supported by Fundação de Amparo à Pesquisa do
+Estado do Rio de Janeiro to KC (FAPERJ E26/203.217/2015).

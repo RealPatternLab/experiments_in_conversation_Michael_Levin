@@ -1,0 +1,20 @@
+{
+  "title": "pdf_20250803_124125_198703",
+  "authors": [],
+  "abstract": null,
+  "doi": null,
+  "publication_date": null,
+  "journal": null,
+  "extraction_methods": [
+    "filename"
+  ],
+  "confidence_scores": {
+    "filename": 0.1
+  },
+  "overall_confidence": 0.1,
+  "errors": [
+    "PDF libraries not available"
+  ],
+  "source_file": "pdf_20250803_124125_198703.pdf",
+  "extracted_at": "2025-08-11T11:49:05.734916"
+}

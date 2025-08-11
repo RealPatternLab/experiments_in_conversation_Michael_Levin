@@ -1,0 +1,1882 @@
+**Integrative
+Biology**
+
+Accepted Manuscript
+
+**Integrative
+Biology**
+
+*Interdisciplinary approaches for molecular and cellular life sciences*
+www.rsc.org/biology
+
+ROYAL SOCIETY
+OF CHEMISTRY
+
+*Volume 1 Number 1 Jan 2013 Pages 1-100*
+
+This is an Accepted Manuscript, which has been through the
+Royal Society of Chemistry peer review process and has been
+accepted for publication.
+
+Accepted Manuscripts are published online shortly after
+acceptance, before technical editing, formatting and proof reading.
+Using this free service, authors can make their results available
+to the community, in citable form, before we publish the edited
+article. We will replace this Accepted Manuscript with the edited
+and formatted Advance Article as soon as it is available.
+
+You can find more information about Accepted Manuscripts in the
+Information for Authors.
+
+Please note that technical editing may introduce minor changes
+to the text and/or graphics, which may alter content. The journal's
+standard Terms & Conditions and the Ethical guidelines still
+apply. In no event shall the Royal Society of Chemistry be held
+responsible for any errors or omissions in this Accepted Manuscript
+or any consequences arising from the use of any information it
+contains.
+
+ROYAL SOCIETY
+OF CHEMISTRY
+
+www.rsc.org/ibiology
+
+
+Page 1 of 47
+
+**Integrative Biology**
+
+Left-right patterning integrates information from the molecular level through gene
+expression domains to the anatomical asymmetry of the visceral organs, to the behavior
+of whole animals. Consistent organ asymmetry is crucial, as disorders of laterality form
+an important class of birth defects. In the frog embryo, e show that: 1) in contrast to the
+dominant paradigm, key steps of LR asymmetry are driven by intracellular (cytoskeletal)
+structures, and occur shortly after fertilization; 2) left-sided genes such as Nodal are not
+definitive master regulators of sidedness, as errors in their expression can be corrected
+by subsequent developmental stages. We propose a model of LR patterning as an
+example of parallel pathways and error-correction in complex morphogenesis driven by
+intracellular events.
+
+
+Page 2 of 47
+
+**Integrative Biology**
+
+**CONSERVED ROLES FOR CYTOSKELETAL COMPONENTS IN DETERMINING
+LATERALITY**
+
+Gary S. McDowell¹, ², Joan M. Lemire¹, Jean-Francois Paré¹, Garrett Cammarata²,
+Laura Anne Lowery² and Michael Levin¹¹ *
+
+¹Biology Department, and
+Center for Regenerative and Developmental Biology
+Tufts University, Medford, ΜΑ
+
+²Biology Department,
+Boston College, Chestnut Hill, MA
+
+* Corresponding Author:
+Dr. Michael Levin
+Biology Department, Center for Regenerative and Developmental Biology,
+Tufts University
+200 Boston Avenue, Suite 4600,
+Medford, MA 02155-4243
+Phone: +1 617 627 6161
+Email: michael.levin@tufts.edu
+
+Keywords:
+left-right asymmetry, laterality, cytoskeleton, myosin, tubulin
+
+Running title:
+Conserved cytoskeletal LR asymmetry
+
+1
+
+
+Page 3 of 47
+
+**Integrative Biology**
+
+**SUMMARY:**
+
+Consistently-biased left-right (LR) patterning is required for the proper placement of
+organs including the heart and viscera. The LR axis is especially fascinating as an example of
+multi-scale pattern formation, since here chiral events at the subcellular level are integrated and
+amplified into asymmetric transcriptional cascades and ultimately into the anatomical patterning
+of the entire body. In contrast to the other two body axes, there is considerable controversy about
+the earliest mechanisms of embryonic laterality. Many molecular components of asymmetry
+have not been widely tested among phyla with diverse bodyplans, and it is unknown whether
+parallel (redundant) pathways may exist that could reverse abnormal asymmetry states at specific
+checkpoints in development. To address conservation of the early steps of LR patterning, we
+used the *Xenopus laevis* (frog) embryo to functionally test a number of protein targets known to
+direct asymmetry in plants, fruit fly, and rodent. Using the same reagents that randomize
+asymmetry in *Arabidopsis*, *Drosophila*, and mouse embryos, we show that manipulation of the
+microtubule and actin cytoskeleton immediately post-fertilization, but not later, results in
+laterality defects in *Xenopus* embryos. Moreover, we observed organ-specific randomization
+effects and a striking dissociation of organ situs from effects on the expression of left side
+control genes, which parallel data from *Drosophila* and mouse. Remarkably, some early
+manipulations that disrupt laterality of transcriptional asymmetry determinants can be
+subsequently “rescued” by the embryo, resulting in normal organ situs. These data reveal the
+existence of novel corrective mechanisms, demonstrate that asymmetric expression of Nodal is
+not a definitive marker of laterality, and suggest the existence of amplification pathways that
+connect early cytoskeletal processes to control of organ situs bypassing Nodal. Counter to
+alternative models of symmetry breaking during neurulation (via ciliary structures absent in
+many phyla), our data suggest a widely-conserved role for the cytoskeleton in regulating left-
+right axis formation immediately after fertilization of the egg. The novel mechanisms that rescue
+organ situs, even after incorrect expression of genes previously considered to be left-side master
+regulators, suggest LR patterning as a new context in which to explore multi-scale redundancy
+and integration of patterning from the subcellular structure to the entire bodyplan.
+
+2
+
+
+Page 4 of 47
+
+**Integrative Biology**
+
+**Introduction**
+
+Internal organs such as the heart, viscera, and brain display asymmetries in structure and
+positioning. Loss of correct laterality can result in pathologies contributing to congenital heart
+disease, a common birth defect (1,2). Thus, the embryonic origin of consistent laterality is
+important not only for fundamental questions of evolutionary developmental biology, but also
+has implications for a broad class of congenital malformations (3-5).
+
+The asymmetrical positioning and orientation of organs is highly conserved (6–9), but
+despite much recent investigation into the molecular pathways regulating left-right axis
+formation, there are still many unanswered questions about conservation of early mechanisms
+(10–12). One model relies on cilia-driven chiral extracellular fluid flow during neurulation (13).
+However, one of the many difficulties with that model as a general answer to the origin of left-
+right patterning is that numerous phyla establish asymmetry despite lack of cilia, or do so long
+before cilia are formed (14–17). This includes single cells (18–21), plants (22,23), snails (24–26),
+nematodes (27–29), fruit flies (30–34), and even amniotes such as chicken (35–37) and pig (38).
+A divergent origin of such a fundamental property in even closely related species seems unlikely.
+
+One of the barriers to resolving this problem is that the LR patterning roles of many
+specific gene products are often investigated in only one model system (39). Nevertheless, the
+cytoskeleton is emerging as a component that appears to be relevant to laterality in numerous
+phyla (23,24,28,40–44). We previously proposed the model that the intracellular cytoskeleton is
+an ancient, well-conserved mechanism by which embryos can, at the earliest stages of
+development, convert chiral molecular structures into true asymmetry of the entire bodyplan
+(6,16,45,46). To help unify the data from an evolutionary perspective, and test the opposing
+predictions of the ciliary vs. intracellular models, we asked: would the same mutations that
+randomize asymmetry in widely-disparate taxa, including those which do not use cilia, likewise
+impact asymmetry in the vertebrate *Xenopus laevis*?
+
+By microinjection of mRNA overexpressing wild type or dominant-negative mutants of
+cytoskeletal and cytoskeleton-regulating proteins known to regulate asymmetry in very different
+types of bodyplans, we demonstrate that multiple components of the cytoskeleton are implicated
+in establishing frog laterality. Here we targeted proteins associated with microtubules and the
+actomyosin network, including structural proteins (α-tubulin), motor proteins (myosins), and
+moderators of post-translational modification of cytoskeletal components (Mgrn1, Lis1, ect2)
+
+3
+
+## Integrative Biology
+
+**Introduction**
+
+Internal organs such as the heart, viscera, and brain display asymmetries in structure and positioning. Loss of correct laterality can result in pathologies contributing to congenital heart disease, a common birth defect (1,2). Thus, the embryonic origin of consistent laterality is important not only for fundamental questions of evolutionary developmental biology, but also has implications for a broad class of congenital malformations (3-5).
+
+The asymmetrical positioning and orientation of organs is highly conserved (6–9), but despite much recent investigation into the molecular pathways regulating left-right axis formation, there are still many unanswered questions about conservation of early mechanisms (10–12). One model relies on cilia-driven chiral extracellular fluid flow during neurulation (13). However, one of the many difficulties with that model as a general answer to the origin of left-right patterning is that numerous phyla establish asymmetry despite lack of cilia, or do so long before cilia are formed (14–17). This includes single cells (18–21), plants (22,23), snails (24–26), nematodes (27–29), fruit flies (30–34), and even amniotes such as chicken (35–37) and pig (38). A divergent origin of such a fundamental property in even closely related species seems unlikely.
+
+One of the barriers to resolving this problem is that the LR patterning roles of many specific gene products are often investigated in only one model system (39). Nevertheless, the cytoskeleton is emerging as a component that appears to be relevant to laterality in numerous phyla (23,24,28,40–44). We previously proposed the model that the intracellular cytoskeleton is an ancient, well-conserved mechanism by which embryos can, at the earliest stages of development, convert chiral molecular structures into true asymmetry of the entire bodyplan (6,16,45,46). To help unify the data from an evolutionary perspective, and test the opposing predictions of the ciliary vs. intracellular models, we asked: would the same mutations that randomize asymmetry in widely-disparate taxa, including those which do not use cilia, likewise impact asymmetry in the vertebrate *Xenopus laevis*?
+
+By microinjection of mRNA overexpressing wild type or dominant-negative mutants of cytoskeletal and cytoskeleton-regulating proteins known to regulate asymmetry in very different types of bodyplans, we demonstrate that multiple components of the cytoskeleton are implicated in establishing frog laterality. Here we targeted proteins associated with microtubules and the actomyosin network, including structural proteins (α-tubulin), motor proteins (myosins), and moderators of post-translational modification of cytoskeletal components (Mgrn1, Lis1, ect2)
+
+
+Page 4 of 47
+
+with roles in asymmetry identified in *Arabidopsis*, *Drosophila*, and mouse. We titered all treatments to produce overall healthy embryos with normal dorsoanterior development and organ morphogenesis, and assayed the expression of laterality markers such as Nodal (*Xnr1*), *Pitx2* and *Lefty*, and the situs of the heart, gut, and gall bladder. Consistent with a very broad conservation, the same targets were implicated in generating a consistent laterality across the tree of life. Notably, effects on organ positioning of the gut observed in *Drosophila* with *Myo31DF* overexpression (47) are replicated in *Xenopus* with the frog homologue *MyolD*; and the dissociation of left-right organ positioning from Nodal expression observed in mouse mahogunin (*Mgrn1*) mutants (48) is replicated in *Xenopus*. We show that some of these steps occur very soon after fertilization and not at later stages (when cilia could be functioning).
+
+This approach also allowed us to address curious discrepancies between molecular marker readouts (of left-side “master regulator" genes) and actual organ situs, which have previously been noted (49). Indeed it had been proposed that a given species might have multiple overlapping/redundant mechanisms for establishing asymmetry (17), which could have practical consequences for approaches to biomedical disorders of laterality as well as implications for genes like Nodal as left-side "master determinants". Here, we show that some defects in asymmetric gene expression can be corrected at later points in development to subsequently give correct organ situs. This points to a robust mechanism for symmetry determination that occurs throughout embryogenesis and is not simply determined at a single point.
+
+Together, these data support a unified view of laterality among phyla, identify novel control points for LR patterning during embryogenesis, and suggest LR patterning as a novel paradigm for investigating pattern-correction mechanisms and the interplay of parallel pathways that integrate morphogenesis across levels of organization including the subcellular cytoskeleton, multi-cellular transcriptional domains, and the anatomy of the entire bodyplan.
+
+
+Page 5 of 47
+
+
+**Experimental:**
+
+**Cloning:**
+
+Subcloning was carried out into pCS2+ using standard methods. For Mgrn1 clones, EST Biosystems IMAGE:8847517 *Xenopus tropicalis* clone was sequenced and matched the reference sequence (NM_001016911) exactly. *X. laevis* cDNA for ect2 (IMAGE:5083828, Thermo Scientific) and *X. tropicalis* lis1 (IMAGE:5385003), *X. laevis myo1d* IMAGE:5440331, *X. laevis myolc-b* IMAGE:4964888 and *X. laevis myole.2* IMAGE:4888857 were purchased (Dharmacon). Point mutations were generated using the Agilent QuikChange kit. Ect2-trunc was designed to mimic the *Drosophila* Pebble splice mutant (50). *Xenopus* Flailer (51) was assembled from *X. tropicalis* gnb5 (IMAGE: 7657559) and *X. tropicalis* MyoV, (IMAGE:7644816) using the In-Fusion Kit (Clontech). *Drosophila* myosins were subcloned from constructs received from Kenji Matsuno. All primers used are listed in Supplementary table 6.
+
+**Animal Husbandry:**
+
+This study was carried out in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health and Tufts IACUC protocol #M2014-79. *Xenopus* embryos were collected and maintained according to standard protocols (52) in 0.1× Modified Marc's Ringers (MMR), pH 7.8, and staged according to (53).
+
+**Microinjection:**
+
+Capped, synthetic mRNAs were dissolved in water and injected into embryos in 3% Ficoll using standard methods (52). mRNA injections were made into the animal pole of eggs within 30mpf at 14 °C using borosilicate glass needles calibrated to deliver a 10 nl injection volume. Embryos were stored at 14 °C overnight and then stored at 18 °C until the desired stage was reached. Unless otherwise stated, injections at 1 of 2 or 1of 4 cell stages were not tested for left vs. right effects. Embryos which were injected into targeted blastomeres at the 4-cell stage were selected based on clear differences in pigmentation that reveal dorsal vs. ventral precursors.
+
+**Laterality Assays:**
+
+*Xenopus* embryos were analyzed for position (situs) of three organs; the heart, stomach and gallbladder (54) at Stage 45 (53). Heterotaxic embryos were defined as having a reversal in one or more organs. Only embryos with normal dorsoanterior development and clear left- or
+
+
+Page 6 of 47
+
+
+right-sided organs were scored. A χ² test was used to compare absolute counts of heterotaxic embryos.
+
+**In Situ Hybridization:**
+
+Whole mount in situ hybridization was optimized using standard protocols (55,56) with probes against *Xnr1* (the *Xenopus* Nodal) (57), *Lefty* (58) and *Pitx2* (59) generated *in vitro* from linearized template using DIG labeling mix (Roche). A χ2 test was used to compare absolute counts of embryos with correct (expression on the left lateral plate mesoderm) versus incorrect (absent, bilateral or right-sided) marker expression.
+
+**Quantification of plus-end microtubule dynamics**
+
+Neural tube explants were dissected from embryos cultured in 0.1 x MMR at 22°C to NF Stage (22-24, (53)) and plated onto poly-lysine (100µg/ml) and laminin-coated (20µg/ml) coverslips as described previously (60). Neuronal growth cones were imaged at room temperature 12-18 hours after plating. Live images were collected with a Yokogawa CSU5X1M 5000 spinning disk confocal on a Zeiss Axio Observer inverted motorized microscope with a Zeiss 63X Plan Apo 1.4 NA lens. Images were acquired with a Hamamatsu ORCA R2 CCD camera controlled with Zen software (Zeiss, Thornwood, MY). For time-lapse, images were collected every two seconds for one minute. Laser power for 561nm was 5-15%, with exposure time 600-1000ms. Microtubule dynamics were then quantified using plusTipTracker software (61-63) with MATLAB version 2013a. The same parameters were used for all movies: maximum gap length: 8 frames; minimum track length: 3 frames; search radius range: 5 to 12 pixels; maximum forward angle: 50°; maximum backward angle: 10°; maximum shrinkage factor: 0.8; fluctuation radius: 2.5 pixels. Only cells with a minimum number of 10 track events in a movie were included for analysis.
+
+
+Page 7 of 47
+
+
+**Results:**
+
+Microinjection alone of *Xenopus* embryos immediately post-fertilization does not disrupt laterality.
+
+To determine if the act of microinjection itself, or of a large amount of any mRNA, into the animal pole immediately post-fertilization is sufficient to disrupt laterality, *Xenopus laevis* embryos were microinjected with either water or β-galactosidase mRNA within 30 minutes of fertilization (mpf), when the embryo is still a single cell. Embryos at stage 45 were scored for the positioning of the heart, gall bladder and stomach (Figure 1A). No defects in positioning of the visceral organs were observed (Figure 1B); β-galactosidase signal was observed by the initiation of the first cell division (data not shown), as previously demonstrated for cofilin-Tomato (46). Likewise, embryos injected with water were scored for the laterality of Nodal (*Xnr1*) at neurula stages (Figure 1C). No alterations to the laterality of *Xnr1* laterality were observed (Figure 1D). Therefore, neither microinjection *per se*, nor the injection of large amounts of the mRNA soon after fertilization, represents an insult sufficient to disrupt laterality.
+
+Disrupting microtubule architecture affects laterality.
+
+α-tubulin and Tubgcp2, a protein of the γ-tubulin complex, are components of the microtubule cytoskeleton that affect symmetry of axial organs in *Arabidopsis* (23,40,42,64,65) and embryonic laterality in *Xenopus* (46). To determine if a mutant form of α-tubulin corresponding to a right-helical mutant which skews the direction of root growth (64) has a similar effect on vertebrate laterality as other α-tubulin mutants identified in *Arabidopsis* (46), *Xenopus laevis* embryos were microinjected with mRNA encoding a mutant form of *Xenopus* α-tubulin, the T56I mutant (Figure 2, Supplementary Tables 1, 2, Supplementary Figure 1).
+
+Injection of α-tubulin-T56I mRNA into the single-cell embryo within 30mpf resulted in organ heterotaxia in 21% of tadpoles, compared to a background rate of 1% heterotaxia in controls (Figure 2A, χ²<0.001, n=286). However, injection at 45mpf resulted in organ heterotaxia in 15% of tadpoles (Figure 2A, χ²<0.001 compared to controls, χ²=0.553 compared to 30mpf, n=71), and at 60mpf resulted in organ heterotaxia in only 10% of tadpoles (Figure 2A, χ²<0.001 compared to uninjected controls, χ²=0.033 compared to 30mpf, n=78). Likewise, injection into 1 of 2 cells resulted in organ heterotaxia in 6% of tadpoles (Figure 2A, χ²<0.001
+
+
+Page 8 of 47
+
+**Results:**
+
+**Microinjection alone of _Xenopus_ embryos immediately post-fertilization does not disrupt laterality.**
+
+To determine if the act of microinjection itself, or of a large amount of any mRNA, into the animal pole immediately post-fertilization is sufficient to disrupt laterality, _Xenopus laevis_ embryos were microinjected with either water or β-galactosidase mRNA within 30 minutes of fertilization (mpf), when the embryo is still a single cell. Embryos at stage 45 were scored for the positioning of the heart, gall bladder and stomach (Figure 1A). No defects in positioning of the visceral organs were observed (Figure 1B); β-galactosidase signal was observed by the initiation of the first cell division (data not shown), as previously demonstrated for cofilin-Tomato (46). Likewise, embryos injected with water were scored for the laterality of Nodal (_Xnr1_) at neurula stages (Figure 1C). No alterations to the laterality of _Xnr1_ laterality were observed (Figure 1D). Therefore, neither microinjection _per se_, nor the injection of large amounts of mRNA soon after fertilization, represents an insult sufficient to disrupt laterality.
+
+**Disrupting microtubule architecture affects laterality.**
+
+α-tubulin and Tubgcp2, a protein of the γ-tubulin complex, are components of the microtubule cytoskeleton that affect symmetry of axial organs in _Arabidopsis_ (23,40,42,64,65) and embryonic laterality in _Xenopus_ (46). To determine if a mutant form of α-tubulin corresponding to a right-helical mutant which skews the direction of root growth (64) has a similar effect on vertebrate laterality as other α-tubulin mutants identified in _Arabidopsis_ (46), _Xenopus laevis_ embryos were microinjected with mRNA encoding a mutant form of _Xenopus_ α-tubulin, the T56I mutant (Figure 2, Supplementary Tables 1, 2, Supplementary Figure 1).
+
+Injection of α-tubulin-T56I mRNA into the single-cell embryo within 30mpf resulted in organ heterotaxia in 21% of tadpoles, compared to a background rate of 1% heterotaxia in controls (Figure 2A, χ²<0.001, n=286). However, injection at 45mpf resulted in organ heterotaxia in 15% of tadpoles (Figure 2A, χ²<0.001 compared to controls, χ²=0.553 compared to 30mpf, n=71), and at 60mpf resulted in organ heterotaxia in only 10% of tadpoles (Figure 2A, χ²<0.001 compared to uninjected controls, χ²=0.033 compared to 30mpf, n=78). Likewise, injection into 1 of 2 cells resulted in organ heterotaxia in 6% of tadpoles (Figure 2A, χ²<0.001 compared to both uninjected controls and 30mpf, n=126) and injection into 1 of 4 cells resulted in organ heterotaxia in 5% of tadpoles (Figure 2A, χ²<0.001 compared to both uninjected controls and 30mpf, n=145). Therefore the α-tubulin-T56I mutant affects laterality at a high rate within the first 30 minutes of egg fertilization but this ability is lost rapidly as the embryo develops.
+
+Craniofacial abnormalities were also present in α-tubulin-T56I-injected tadpoles (Figure 2B). In contrast to the decrease in heterotaxia seen with later injection, craniofacial defects occurred consistently in 1-cell, 2-cell and 4-cell injections in more than 50% of tadpoles (Figure 2B). This serves as a convenient internal positive control for the activity of the mutant tubulin protein in development. Overall, these data illustrate that the effect of α-tubulin-T56I on heterotaxia is required in the earliest timeframe of development for left-right patterning, and not at a later symmetry-breaking event, as later processes involved in craniofacial development are still affected equally regardless of the injection timepoint.
+
+To place this mechanism within the known major steps of left-right patterning, we asked whether introduction of the tubulin mutant would affect the sidedness of the canonical left-side marker _Xnr1_ (66,67). Injection of α-tubulin-T56I mRNA within 30mpf resulted in incorrect (right-sided, bilateral or absent) expression of _Xnr1_ in 37% of neurula-stage embryos compared to 7% in uninjected controls (Figure 2C, χ²<0.001, n=183). Therefore, transcriptional control points upstream of organ orientation are also affected by α-tubulin-T56I. Taken together, our data show that a tubulin mutation that regulates chirality in plants likewise randomizes organ laterality in _Xenopus_ embryos. Moreover, the introduction of these dominant-negative mutations are only effective when performed immediately after fertilization, revealing that any tubulin-derived structures must be acting in LR patterning at very early stages of development.
+
+**Disrupting microtubule regulation by post-translational modification affects laterality.**
+
+Tubulins are modified by a variety of post-translational modifications, such as acetylation, phosphorylation and ubiquitylation (68). The process of ubiquitylation, whereby a ubiquitin moiety is covalently fused to a protein through an electron-rich group (such as internal lysine, cysteine, serine or threonine residues, or the N-terminal amino group (69)), can target the protein for localization to a different part of the cell or for degradation using various combinations of mono- or polyubiquitylation (70). The E3 ligase, Mahogunin ring-finger 1 (Mgrn1), polyubiquitylates α-tubulin to target it for degradation (71,72). _Mgrn1_-null mouse mutants exhibit phenotypes such as late-onset spongiform neurodegeneration and laterality defects such as congenital heart defects and _situs inversus_ (48,73). In particular, the effect of Mgrn1 on left-right patterning was found to be uncoupled from the expression of Nodal and yet it affected laterality of downstream Nodal targets, leading the authors to conclude that Mgrn1 and tubulin ubiquitylation had a novel role in early LR patterning (48).
+
+
+**(Continues on pages 3, 4, and 5 - see subsequent responses for the rest of the text)**
+
+**Integrative Biology**
+
+**Page 12 of 47**
+
+mechanisms we uncovered) might act. To assess whether the misexpression of *Xnr1* caused by *Mgrn1* overexpression also resulted in misexpression of *Lefty* and *Pitx2*, embryos were injected and the laterality of *Lefty* and *Pitx2* expression was assessed by *in situ* hybridization (Figure 3C, Supplementary Tables 3, 4). Injection of wild type *Mgrn1* mRNA within 30mpf resulted in incorrect expression of *Lefty* in 8% of neurula-stage embryos compared to 3% in uninjected controls (Figure 3C(i), x²=0.014, n=91) and incorrect expression of *Pitx2* in 4% of neurula-stage embryos compared to 4% in uninjected controls (Figure 3C(ii), x²=0.782, n=79). Injection of *Mgrn1*-G2A mRNA resulted in incorrect expression of *Lefty* in 20% of neurula-stage embryos compared to 3% in uninjected controls (Figure 3C(i), x²<0.001, n=161) and incorrect expression of *Pitx2* in 23% of neurula-stage embryos compared to 4% in uninjected controls (Figure 3C(ii), x²<0.001, n=160). Injection of *Mgrn1*-C314D mRNA resulted in incorrect expression of *Lefty* in 8% of neurula-stage embryos compared to 3% in uninjected controls (Figure 3C(i), x²<0.001, n=108) and incorrect expression of *Pitx2* in 14% of neurula-stage embryos compared to 4% in uninjected controls (Figure 3C(ii), x²<0.001, n=106). Therefore, the randomization of *Xnr1* expression induced by wild type *Mgrn1* overexpression is corrected by the time of *Lefty* and *Pitx2* expression. Interestingly, *Mgrn1*-C314D does not have a large effect on misexpression of early laterality markers but does induce a change in organ situs, suggesting the existence of a pathway leading from early cytoskeletal events to organ positioning that is parallel to the canonical *Nodal-Lefty-Pitx2* cascade. Only *Mgrn1*-G2A has a consistent effect on laterality throughout development looking at all markers of laterality evaluated here. This uncoupling of the expression of *Xnr1* and its effect on downstream targets is consistent with findings on *Nodal* in *Mgrn1* regulation in mice (48), and is the first example of mechanistic conservation of a cytoskeletal asymmetry component between *Xenopus* and mammalian embryos.
+
+Laterality defects caused by disruption of transport along microtubules are not specific to early cytoskeletal rearrangements.
+
+Movement of cargos along microtubules is carried out by motor proteins such as dyneins, which are minus-end-directed motor proteins and have been shown to be important for laterality, in particular left-right dynein, which has ciliary (77,78) and non-ciliary roles (6,79–81). The dynein accessory factor Lis1 is required for dynein-dependent processes such as positioning of
+
+11
+
+
+**Page 13 of 47**
+
+**Integrative Biology**
+
+the nucleus during neuronal migration in humans (82) and spermatogenesis in *Drosophila* (83), and in particular has a role in asymmetric cell division demonstrated in mouse (84).
+
+Lis1 is a component of the dynein/dynactin motor complex, regulating trafficking and being responsible for the smooth-brain phenotype of lissencephaly. It is also required for the organization of non-centrosomal cortical microtubules (85) and has been implicated in planar cell polarity (86) and asymmetric cell division (84). In the regulation of dyneins and the dynamics of microtubules, Lis1 complexes with 14-3-3 (87), which has also demonstrated a role in regulating left-right asymmetry (88). Lis1-N99 acts by forming non-functional heterodimers with Lis1, whereas Lis1-C137 competes with Lis1 for cofactor binding, and both mutants are associated with mitotic catastrophe and cell death (89).
+
+To determine if forms of Lis1 with dominant-negative effects in human cell lines (89) function in vertebrate LR asymmetry, embryos were microinjected with mRNA encoding mutant forms of *Xenopus* Lis1, the N99 and C137 mutants (89), within 30mpf and scored for organ situs and *Xnr1* laterality (Figure 4, Supplementary Tables 1, 2, Supplementary Figure 1).
+
+Injection of ≥12ng Lis1-N99 mRNA within 30mpf resulted in organ heterotaxia in 18% of tadpoles, compared to a background rate of 1% heterotaxia in uninjected controls (Figure 4A, x²<0.001, n=174). Injection of ≥2ng Lis1-C137 mRNA within 30mpf resulted in organ heterotaxia in 10% of tadpoles (Figure 4A, x²<0.001, n=326). Injection of 12ng Lis1-N99 mRNA within 30mpf resulted in 26% incorrect expression of *Xnr1*, compared to 7% in uninjected controls (Figure 4B, x²<0.001, n=137), and injection of 10ng Lis1-C137 mRNA resulted in 21% incorrect expression (Figure 4B, χ²<0.001, n=127). Therefore asymmetric transcription upstream of organ orientation, and laterality of visceral organs, are affected by Lis1-N99 and Lis1-C137 mutants.
+
+To assess whether Lis1 mutants act as regulators of early cytoskeletal mechanisms affecting laterality in a manner similar to α-tubulin and mahogunin above, injections were carried out at various timepoints for both Lis1-N99 (Figure 4C(i)) and Lis1-C137 (Figure 4C(ii)). Strikingly, injections of 12ng Lis1-N99 were toxic when injected after 30mpf. Injection of ≥4ng Lis1-N99 mRNA within 30mpf induced heterotaxia in 3% of tadpoles (Figure 4C(i), x²=0.002, n=194), injection 60mpf induced heterotaxia in 3% of tadpoles (Figure 4C(i), x²=0.052, n=78), into 1 of 2 cells induced heterotaxia in 20% of tadpoles (Figure 4C(i), x²<0.001, n=44), and into 1 of 4 cells induced heterotaxia in 17% of tadpoles (Figure 4C(i), x²<0.001, n=110). Unlike the
+
+12
+
+
+**Page 14 of 47**
+
+**Integrative Biology**
+
+proteins tested above, Lis1 can randomize at both early and later stages. Likewise, injection of ≥2ng Lis1-C137 mRNA within 30mpf resulted in organ heterotaxia in 10% of tadpoles (Figure 4A, C(ii), x²<0.001, n=326), injection 60mpf induced heterotaxia in 9% of tadpoles (Figure 4C(ii), x²<0.001, n=145), into 1 of 2 cells induced heterotaxia in 13% of tadpoles (Figure 4C(ii), x²<0.001, n=217), and into 1 of 4 cells induced heterotaxia in 8% of tadpoles (Figure 4C(ii), x²<0.001, n=220).
+
+These data suggest that intracellular microtubule-dependent trafficking and motor protein-dependent cargo movement machinery is important for normal laterality. The degree of randomization is also consistent regardless of the time of embryo injection, providing a contrast to other results.
+
+Laterality defects caused by disruption of regulation of the actomyosin complex by the Rho-GEF *ect2* are not specific to early cytoskeletal rearrangements.
+
+Alongside microtubule assemblies, the cytoskeleton consists of actin filaments, which, with the myosin motor proteins, comprise the actomyosin machinery. Pebble is a Rho-GEF which regulates actomyosin complexes (90) and is involved in cytokinesis in *Drosophila* and in particular regulates the separation of syncytial nuclei in the *Drosophila* embryo (91); it was recently shown to be important in *Drosophila* hindgut rotation through laterality defects arising from mutant forms of the protein (50). Pebble is homologous to *ect2* in vertebrates and we constructed a truncation mutant of the *Xenopus* form, *ect2*-trunc, to investigate the effect of this protein on laterality. To determine if the *ect2* truncation mutant would have a similar effect on laterality in *Xenopus* as it does in *Drosophila*, embryos were microinjected with mRNA encoding a mutant, *Xenopus ect2*-trunc, and scored for organ situs and the laterality of *Xnr1*, *Lefty* and *Pitx2* expression (Figure 5, Supplementary Tables 1, 2, 3, 4, Supplementary Figure 1).
+
+Injection of *ect2*-trunc mRNA within 30mpf resulted in organ heterotaxia in 25% of tadpoles, compared to a background rate of 1% heterotaxia in uninjected controls (Figure 5A, x²<0.001, n=102). However, injection at 60 mpf, into 1 of 2 cells and into 1 of 4 cells similarly resulted in a high rate of organ heterotaxia (18% (x²<0.001, n=76), 21% (x²<0.001, n=111), and 27% (x²<0.001, n=101) respectively, Figure 5A). Therefore, in a similar manner to the Lis mutants (Figure 4), the *ect2*-trunc mutant is capable of affecting laterality in a manner that is not dependent on early cytoskeletal rearrangements alone. Injection of *ect2*-trunc mRNA within
+
+13
+
+
+**Page 15 of 47**
+
+**Integrative Biology**
+
+30mpf resulted in incorrect expression of *Xnr1* in 23% of neurula-stage embryos compared to 7% in uninjected controls (Figure 5B, x²<0.001, n=266), incorrect expression of *Lefty* in 27% of neurula-stage embryos compared to 3% in uninjected controls (Figure 5C, x²<0.001, n=165) and incorrect expression of *Pitx2* in 34% of neurula-stage embryos compared to 4% in uninjected controls (Figure 5C, x²<0.001, n=118). These data suggest that regulation of actomyosin machinery is important for normal laterality but is not dependent solely on early cytoskeletal rearrangements.
+
+Disruption of the myosins immediately post-fertilization affects laterality.
+
+As the motor protein component of the actomyosin cytoskeleton, myosins are important for transporting cargo throughout the cell. Myosins have also been identified in *Drosophila* as having roles in asymmetric hindgut rotation (30,44). Myo31DF is involved in left-right patterning in *Drosophila* (44,92), and Myo61F overexpression antagonizes Myo31DF's function, leading to inversion of the gut (33,92).
+
+Myosins have also demonstrated a role in transporting ion channels, which play important roles in LR patterning (17). Ion channel isoforms are transported by myosins such as myosin V (93). A mouse line bearing a mutant form of myosin Va is named Flailer due its effect on Purkinje cells (51). The protein is unable to bind to actin filaments but still binds organelles through its globular tail domains, and acts as a dominant-negative by competing with wild-type Myosin VA (51). To determine if a myosin implicated in ion channel transport was important for regulating early laterality determination, embryos were microinjected with mRNA encoding the *Xenopus* form of the Flailer mutant at different timepoints of development and scored for organ situs and *Xnr1* expression laterality (Figure 6, Supplementary Tables 1, 2, Supplementary Figure 1).
+
+Injection of ≥100pg Flailer mRNA within 30mpf resulted in organ situs heterotaxia in 18% of tadpoles, compared to a background rate of 1% heterotaxia in uninjected controls (Figure 6A, x²<0.001, n=652). However, later injection of ≥100pg Flailer mRNA at 60 minutes post fertilization resulted in organ heterotaxia in only 4% of tadpoles (Figure 6A, χ²<0.001, n=156). Likewise, injection of ≥100pg Flailer mRNA at 90 minutes post fertilization resulted in organ heterotaxia in only 2% of tadpoles (Figure 6A, x²=0.166, n=96) and at 120mpf (approaching cleavage) ≥100pg Flailer mRNA resulted in organ heterotaxia in only 7% of tadpoles (Figure 6A,
+
+
+14
+
+
+**Page 16 of 47**
+
+**Integrative Biology**
+
+x²<0.001, n=138). Injection of ≥100pg Flailer mRNA into 1 of 2 cells resulted in organ heterotaxia in 16% of tadpoles (Figure 6A, χ²<0.001, n=115) and injection of ≥100pg Flailer mRNA into 1 of 4 cells resulted in organ heterotaxia in 9% of tadpoles (Figure 6A, χ²<0.001, n=584). Therefore the Flailer mutant is capable of affecting laterality at a high rate within the first 30 minutes of egg fertilization and not within the rest of the first cell cycle, but is able to affect laterality again at 2- and 4-cell stages.
+
+To determine if the results of injections at the 4-cell stage could be explained by disturbances of ciliary flow at the gastrocoel roof plate (GRP), Flailer mRNA was microinjected into the dorsal left (DL) or ventral right (VR) blastomeres (Figure 6B). Organ heterotaxia was observed at a rate of 12% in both DL- and VR- injected embryos compared to 1% in uninjected embryos (Figure 6B, x²<0.001, n=188 (DL); 137 (VR)), demonstrating that even though heterotaxia was observed, there was no difference between blastomeres that are or are not necessary for asymmetric ciliary flow signaling.
+
+Injection of ≥250pg Flailer mRNA within 30mpf resulted in incorrect expression of *Xnr1* in 57% of neurula-stage embryos compared to 7% in uninjected controls (Figure 6C, x²<0.001, n=309). Therefore laterality signals upstream of organ orientation are also affected by disruption by the mutant Flailer, identified in mouse, immediately after fertilization.
+
+Next, myosin mutants implicated in laterality defects in *Drosophila* were microinjected into embryos of *Xenopus laevis* as mRNA encoding *Drosophila* forms of Myo31DF or Myo61F, or *Xenopus laevis* forms, Myosin1d (corresponding to Myo31DF), MyosinlcA or Myosin 1e2 (both corresponding to Myo61F), within 30mpf. Embryos were scored for the positioning of visceral organs or for the laterality of *Xnr1* expression (Figure 7, Supplementary Tables 1, 2, Supplementary Figure 1).
+
+Injection of Myo61F (≥1ng), Myo31DF (≥650pg) and *Xenopus* Myosin1d (≥5ng) mRNA within 30mpf resulted in organ heterotaxia in 13% (Figure 7A, x²<0.001, n=297), 12% (Figure 7A, χ²<0.001, n=237) and 15% (Figure 7A, χ²<0.001, n=145) of tadpoles, compared to a background rate of 1% heterotaxia in uninjected controls, respectively. Interestingly, *Xenopus* Myosin1d-injected tadpoles exhibited only stomach and gall bladder heterotaxias, with no heart reversals except in the case of situs inversus (Supplementary Figure 1, Table 1). However, little effect was observed on injection with *Xenopus* Myosin1cA (2% heterotaxia, Figure 7A, χ²=0.01, n=207) and Myosin 1e2 (4% heterotaxia, Figure 7A, x²=0.003, n=77).
+
+15
+
+**Integrative Biology**
+
+**Page 16 of 47**
+
+χ²<0.001, n=138). Injection of ≥100pg *Flailer* mRNA into 1 of 2 cells resulted in organ heterotaxia in 16% of tadpoles (Figure 6A, χ²<0.001, n=115) and injection of ≥100pg *Flailer* mRNA into 1 of 4 cells resulted in organ heterotaxia in 9% of tadpoles (Figure 6A, χ²<0.001, n=584). Therefore the *Flailer* mutant is capable of affecting laterality at a high rate within the first 30 minutes of egg fertilization and not within the rest of the first cell cycle, but is able to affect laterality again at 2- and 4-cell stages.
+
+To determine if the results of injections at the 4-cell stage could be explained by disturbances of ciliary flow at the gastrocoel roof plate (GRP), *Flailer* mRNA was microinjected into the dorsal left (DL) or ventral right (VR) blastomeres (Figure 6B). Organ heterotaxia was observed at a rate of 12% in both DL- and VR- injected embryos compared to 1% in uninjected embryos (Figure 6B, x²<0.001, n=188 (DL); 137 (VR)), demonstrating that even though heterotaxia was observed, there was no difference between blastomeres that are or are not necessary for asymmetric ciliary flow signaling.
+
+Injection of ≥250pg *Flailer* mRNA within 30mpf resulted in incorrect expression of *Xnr1* in 57% of neurula-stage embryos compared to 7% in uninjected controls (Figure 6C, x²<0.001, n=309). Therefore laterality signals upstream of organ orientation are also affected by disruption by the mutant *Flailer*, identified in mouse, immediately after fertilization.
+
+Next, myosin mutants implicated in laterality defects in *Drosophila* were microinjected into embryos of *Xenopus laevis* as mRNA encoding *Drosophila* forms of Myo31DF or Myo61F, or *Xenopus laevis* forms, Myosin1d (corresponding to Myo31DF), MyosinlcA or Myosin 1e2 (both corresponding to Myo61F), within 30mpf. Embryos were scored for the positioning of visceral organs or for the laterality of *Xnr1* expression (Figure 7, Supplementary Tables 1, 2, Supplementary Figure 1).
+
+Injection of Myo61F (≥1ng), Myo31DF (≥650pg) and *Xenopus* Myosin1d (≥5ng) mRNA within 30mpf resulted in organ heterotaxia in 13% (Figure 7A, x²<0.001, n=297), 12% (Figure 7A, χ²<0.001, n=237) and 15% (Figure 7A, χ²<0.001, n=145) of tadpoles, compared to a background rate of 1% heterotaxia in uninjected controls, respectively. Interestingly, *Xenopus* Myosin1d-injected tadpoles exhibited only stomach and gall bladder heterotaxias, with no heart reversals except in the case of situs inversus (Supplementary Figure 1, Table 1). However, little effect was observed on injection with *Xenopus* Myosin1cA (2% heterotaxia, Figure 7A, χ²=0.01, n=207) and Myosin 1e2 (4% heterotaxia, Figure 7A, x²=0.003, n=77).
+
+15
+
+
+**Page 17 of 47**
+
+**Integrative Biology**
+
+Myo31DF and Myo61F are implicated in gut and genitalia asymmetry in *Drosophila* (44,92), and Myo61F overexpression antagonizes Myo31DF's function (33,92). Overexpression of both *Drosophila* proteins in *Xenopus* results in the observation of heterotaxia in various organs. Most striking is that only recently were the tissue-specific functions of these proteins identified in *Drosophila*, and it appears that Myo61F is important in genitalia-turning, whereas Myo31DF is involved in the stomach (47). Myosin1d, the homologue of Myo31DF, affects stomach laterality in all observed cases of heterotaxia (Supplementary Figure 1), but the frog homologues of Myo61F apparently have no effect. As genitalia do not turn in *Xenopus*, this suggests that perhaps homologues of Myo61F do not exert an effect on organ patterning in frog, but do in *Drosophila*.
+
+Injection of Myo61F (≥1ng), Myo31DF (≥7.5ng), myosin1d (≥5ng), myosin1cA (≥5ng) and myosin1e2 (≥5ng) mRNA within 30mpf resulted in incorrect expression of *Xnr1* in 35% (Figure 7B, x²<0.001, n=37), 24% (Figure 7B, x²<0.001, n=83), 43% (Figure 7B, χ²<0.001, n=76), 44% (Figure 7B, x²<0.001, n=39) and 28% (Figure 7B, χ²<0.001, n=101) of neurula-stage embryos compared to 7% in uninjected controls, respectively. Therefore laterality signals upstream of organ orientation are also affected by overexpression of both the *Drosophila* myosins and their frog homologues, immediately after fertilization. The discrepancy between the effect of *Xenopus* myosin1cA and myosin1e2 on organ situs and *Xnr1* expression illustrates, as with Mgrn1, an important dissociation of the effect of Nodal expression and the patterning of visceral organs.
+
+Taken together, our data indicate that the myosins are involved in laterality in frog embryos as well as in *Drosophila*. However, we note that whilst all myosins affect the laterality of *Xnr1* expression, the effects on organ situs are diverse, and in particular the comparison with the roles of the homologous proteins in *Drosophila* shows that the situation in fly is mirrored in frog in the appropriate context of gut turning.
+
+Microtubule dynamics are affected by tubulin mutants effecting chirality in the early embryo.
+
+What properties of the cytoskeleton might be altered by the misexpression of mutants known to randomize asymmetry? To investigate the effectors of chirality at the cellular level, we chose to quantify microtubule plus-end dynamics (94) in explanted *Xenopus* neuronal growth cones (60) by coinjection of α-tubulin-T56I and GFP-tagged End-binding protein Eb3, followed
+
+16
+
+
+**Page 18 of 47**
+
+**Integrative Biology**
+
+by quantitative analysis of microtubule plus-end dynamics using plusTipTracker software ((61), Figure 8A).
+
+Injection of α-tubulin-T56I resulted in an increase in the mean microtubule growth speed (7.48 +/- 0.16 microns/min compared to 6.56 +/- 0.18 microns/min in control, p < 0.01) and mean growth length (1.42 +/- 0.04 microns compared to 1.27 +/- 0.04 microns in control, p < 0.01), whereas the mean growth lifetime (i.e. the inverse of microtubule catastrophe frequency) was not significantly different (11.62 +/- 0.18 seconds compared to 12.08 +/- 0.21 seconds in control, p = 0.1, Figure 8). Therefore, the α-tubulin-T56I mutant which causes defects in left-right patterning alters the dynamics of microtubule plus-end structures in *Xenopus* embryonic cells.
+
+17
+
+
+**Page 19 of 47**
+
+**Integrative Biology**
+
+**Discussion:**
+
+We show that an assortment of proteins, implicated in laterality regulation in a wide range of phyla, is capable of specifically randomizing left-right asymmetry in *Xenopus* embryos manipulated immediately post-fertilization. Neither water nor large amounts of non-specific mRNA affect laterality when injected immediately post-fertilization, demonstrating that microinjection *per se* at this early stage does not disrupt the cytoskeleton enough to affect asymmetry: the LR axis is not a highly labile system perturbed by nonspecific manipulations. Thus, the early embryo is a robust, specific assay for components required for normal LR patterning.
+
+In subsequent experiments, we scored the positioning of the 3 asymmetric organs and reported as percent heterotaxic the number of animals exhibiting aberrant situs (but normal morphology) of any of the three. We titered all reagents to levels that produced normal dorsoanterior index (DAI) phenotypes and organ morphogenesis, so that LR reversals can be interpreted cleanly without confounding effects of non-specific toxicity (and, the differences in results reported among various treatments and assays (organs vs. gene expression) were not due to differential survival). In interpreting the heterotaxia incidence percentages resulting from any of the reagents, it should be noted that the absolute highest heterotaxia level that can be observed is 87.5%: even if each organ is fully (independently) randomized, in a small percentage (12.5%) of the cases, all three organs will by chance land on their normal sides, appearing as though the animal had wild-type situs. Thus, all percentages of organ heterotaxia are relative to a ceiling that is not 100% but 87.5%.
+
+**The Cytoskeleton: a common factor linking LR patterning across widely-disparate phyla**
+
+We have identified a conserved role for the cytoskeleton in *Xenopus* immediately post-fertilization in affecting left-right patterning during embryogenesis. Proteins and their mutations identified across kingdoms of life, from plants such as *Arabidopsis*, to invertebrates such as *Drosophila*, and to vertebrate mammals such as mouse, have all been shown to replicate their effects on laterality, and in some cases organ- and Nodal-specific phenotypes, in the frog *Xenopus laevis*. Not only is the catalogue of proteins tested capable of affecting laterality immediately post-fertilization, but individual proteins demonstrate subtle characteristics that demonstrate, and some cases replicate what is observed in other organisms, their different roles
+
+18
+
+
+**Page 20 of 47**
+
+**Integrative Biology**
+
+in regulating the cytoskeletal role in left-right patterning. For example, the injection of mutants of Mgrn1 demonstrated their role in affecting organ situs more than overexpression of the wild-type protein. Conversely, overexpression of wild type protein affects laterality of *Xnr1* expression more than the mutant forms (Figure 3). This matches observations of the dissociation of Nodal expression from downstream laterality in mouse (48). Especially striking is that wild-type Mgrn1 randomizes *Xnr1* expression quite effectively but has almost no effect at all on organ situs. These are the first data showing a common cytoskeletal protein involved in *Xenopus* and mouse. Similarly, the ect2 truncation mutant induced heterotaxies mostly in the gut, replicating observations for the role of the homologue Pebble in *Drosophila* (50). Observations of the Class I myosins from *Drosophila*, Myo31DF and Myo61F, were also not only confirmed in *Xenopus*, but the use of the *Xenopus* homologue to Myo31DF, Myo1d, matched exactly the role for Myo31DF in gut turning in *Drosophila* (47), whereas Myo61F, required in turning of *Drosophila* genitalia (47), was less specific in the organ situs it affected, and the *Xenopus* homologues could not affect organ situs but did affect the laterality of *Xnr1* expression (Figure 7). This is, to our knowledge, the first demonstration of a laterality pathway component in common between *Drosophila* and vertebrates (30). It is striking that LR phenotypes in *Drosophila* and mouse are so accurately replicated in the *Xenopus* model. Future work will continue the effort of testing molecular components in diverse model species, and reveal mechanisms by which the same very early asymmetry-generating machinery is exploited by highly diverse bodyplans.
+
+Asymmetrical positioning of organs is highly conserved (6,7,9), but a conserved mechanism for laterality is still under much discussion (10–12). One class of models, in which chiral ciliary flow provides the symmetry-breaking event, requires that multiple phyla use completely different mechanisms, be it using cilia that are all motile such as in the medaka (95); cilia that are motile and sensory cilia that are immobile, such as in zebrafish or mouse (13); or in the complete absence of the ciliated nodal structure at all, such as in chick or pig (35–38) and many invertebrates. We have discussed elsewhere the degree to which the various models of asymmetry match the available data (16,17). Our data here are consistent with prior studies (41,54,88,96,97) showing that asymmetry mechanisms function long prior to neurulation, and demonstrate that several cytoskeletal proteins randomize only when introduced extremely early. Most recently, we and other have also demonstrated that there is a conserved role for the cytoskeletal protein formin in the early establishment of chirality, in snails and frogs (26).
+
+19
+
+**Integrative Biology**
+
+**Page 20 of 47**
+
+in regulating the cytoskeletal role in left-right patterning. For example, the injection of mutants of Mgrn1 demonstrated their role in affecting organ situs more than overexpression of the wild-type protein. Conversely, overexpression of wild type protein affects laterality of *Xnrl* expression more than the mutant forms (Figure 3). This matches observations of the dissociation of Nodal expression from downstream laterality in mouse (48). Especially striking is that wild-type Mgrn1 randomizes *Xnr1* expression quite effectively but has almost no effect at all on organ situs. These are the first data showing a common cytoskeletal protein involved in *Xenopus* and mouse. Similarly, the ect2 truncation mutant induced heterotaxies mostly in the gut, replicating observations for the role of the homologue Pebble in *Drosophila* (50). Observations of the Class I myosins from *Drosophila*, Myo31DF and Myo61F, were also not only confirmed in *Xenopus*, but the use of the *Xenopus* homologue to Myo31DF, Myold, matched exactly the role for Myo31DF in gut turning in *Drosophila* (47), whereas Myo61F, required in turning of *Drosophila* genitalia (47), was less specific in the organ situs it affected, and the *Xenopus* homologues could not affect organ situs but did affect the laterality of *Xnr1* expression (Figure 7). This is, to our knowledge, the first demonstration of a laterality pathway component in common between *Drosophila* and vertebrates (30). It is striking that LR phenotypes in *Drosophila* and mouse are so accurately replicated in the *Xenopus* model. Future work will continue the effort of testing molecular components in diverse model species, and reveal mechanisms by which the same very early asymmetry-generating machinery is exploited by highly diverse bodyplans.
+
+Asymmetrical positioning of organs is highly conserved (6,7,9), but a conserved mechanism for laterality is still under much discussion (10–12). One class of models, in which chiral ciliary flow provides the symmetry-breaking event, requires that multiple phyla use completely different mechanisms, be it using cilia that are all motile such as in the medaka (95); cilia that are motile and sensory cilia that are immobile, such as in zebrafish or mouse (13); or in the complete absence of the ciliated nodal structure at all, such as in chick or pig (35–38) and many invertebrates. We have discussed elsewhere the degree to which the various models of asymmetry match the available data (16,17). Our data here are consistent with prior studies (41,54,88,96,97) showing that asymmetry mechanisms function long prior to neurulation, and demonstrate that several cytoskeletal proteins randomize only when introduced extremely early. Most recently, we and other have also demonstrated that there is a conserved role for the cytoskeletal protein formin in the early establishment of chirality, in snails and frogs (26).
+
+19
+
+
+**Page 21 of 47**
+
+**Integrative Biology**
+
+It may be tempting to interpret some of the results via the role of cytoskeleton in cilia. However, the timing experiments with the α-tubulin mutant (Figure 2) and the myosin Flailer mutant (Figure 6) demonstrate that their disruptive function occurs immediately post-fertilization. The clear effect that the α-tubulin mutant has on a late, neural crest-derived phenotype such as craniofacial development, regardless of the timepoint of injection, whilst losing its effect on laterality after 30mpf (Figure 2), clearly demonstrates its ability to target cellular chirality and not ciliary function. Even an hour later, provided with many hours of opportunity to affect ciliary processes, α-tubulin-T56I, Mgrn1-G2A and Mgrn1-C314D are not effective at randomizing asymmetry, definitively ruling out ciliary mechanisms as an explanation for the randomizing action of these particular proteins.
+
+As before (Lobikin et al., 2012), we targeted different blastomeres at the 4-cell stage. Dorsal left (DL) blastomere contributes to the gastrocoel roof plate (GRP), as the GRP forms from dorsal blastomere descendants, and only cilia on the left side of the GRP are required for LR-relevant ciliary flow (98); thus, phenotypes induced by ventral right (VR) blastomere injections would be independent of any effects on ciliary flow. The original lineage analysis (98) was recently challenged with conflicting data showing that cells derived from the VR blastomere can contribute to the immotile sensory cilia (99). Regardless of which of those studies is correct, it is still the case that reagents injected into DL blastomeres are expected to affect ciliary flow at the GRP far more effectively than those injected into the VR blastomere, which is not the case for some of the reagents we tested, demonstrating how effects on asymmetry can diverge from effects predicted by the cilia models.
+
+The cytoskeleton can generate chiral information *de novo*. Self-organization of the actin cytoskeleton has been shown to generate cellular chirality (100) and chirality in single cells (18–21), plants (23), snails (24–26), nematodes (27–29), fruit flies (30–34) and frog (46). We propose that given our data linking this body of work to vertebrate development, the most parsimonious model is that of a conserved, intracellular, early origin of the LR axis, followed by subsequent elaboration events (17,45).
+
+We investigated, at the subcellular level, the changes induced in embryonic cytoskeletal dynamics by the mutant proteins that randomize organ situs (Figure 8) The data demonstrate that LR-relevant cytoskeletal molecules alter the behavior of microtubule plus ends. In future work, quantitative biophysical models of the cytoskeleton will be analyzed to understand precisely
+
+20
+
+
+**Page 22 of 47**
+
+**Integrative Biology**
+
+what cell properties are affected by the observed changes in plus end dynamics. Likely candidates include cells' physical properties (stiffness), motility, shape, and intracellular cargo delivery. Any of these parameters could affect downstream asymmetric gene expression and organogenesis, and multiscale models of early developmental biophysics, physiology, and transcriptional control will be built to address these questions quantitatively.
+
+**Laterality's many paths: asymmetric gene expression vs. organ situs**
+
+Our data allowed direct comparison between the degree of randomization of organ positioning vs. that observed in the expression of left-sided transcripts. While the canonical *Nodal*, *Lefty*, and *Pitx2* genes are thought to be determinants of left-sidedness, not merely markers, our results highlighted some interesting new aspects of the LR pathway. First was the observation that treatments that randomize asymmetric gene expression strongly can have much weaker effects on organ situs. This reveals that these 3 genes are not definitive readouts of an embryo's laterality, and strongly suggests that future studies must score organs as well, not only assay by *in situ* hybridization to *Nodal* and similar probes (99,101). The ability of many embryos to normalize organ locations despite incorrect asymmetric gene expression reveals the existence of a kind of self-repair or fixing checkpoint, which we have previously reported during craniofacial morphogenesis in *Xenopus* (102), and which is known to exist in a number of species (103). Future work will identify the molecular components responsible for recognizing incorrect expression of genes like *Nodal* and correcting subsequent events. The discovery of these mechanisms, and why they operate in some but not all embryos, will likely have important implications for the biomedicine of laterality-related birth defects.
+
+The dissociation between organ situs and *Nodal* expression that we observe with Mgrn1 (Figure 3) has also been observed in mouse (48). This, together with the similar outcome we showed in the class I myosins identified in *Drosophila* (Figure 7), present an interesting challenge to the assumption that expression of laterality markers such as *Nodal* correlate exactly with organ situs (Figure 9A). *Nodal* is thought to be a major instructive element in LR patterning, serving not only as a marker but being able to re-specify laterality in gain- and loss-of-function experiments (57,104–107). However, the fact that in the same batch of embryos, up to 40% of embryos may exhibit incorrect *Nodal* expression sidedness but less than 10% organ reversals with some proteins (Fig. 3A,B) while *Xnr1*, *Lefty* and *Pitx2* laterality can be closely predictive of
+
+21
+
+
+**Page 23 of 47**
+
+**Integrative Biology**
+
+organ situ in others (Figure 5), suggests that *Nodal* signaling is not necessarily a definitive determinant of final morphological outcome. This has been noted in other pathways in multiple model systems (49) and the absent *Nodal* expression in embryos that grow up to be normal (7% of control embryos show no expression of *Xnrl*, e.g. Figure 2C) that we have observed previously (see Figure 7 in (54)) underscores that *Nodal* is not a definitive marker of laterality.; these data suggest that *Nodal* expression is not a sufficient readout of laterality outcome for some perturbations, its predictive value is not high.
+
+Our data reveal a pathway that is not linear but rather seems to contain multiple paths leading to organ development (Figure 9B). For example, injection of Mgrn1-C314D randomizes organs while bypassing effects on asymmetric genes. Likewise, very early injections of Myosinld randomize the stomach and gall bladder but not the heart, refuting simple models where early events feed into the *Nodal/Lefty/Pitx2* cascade that then informs all subsequent organogenesis. Clearly, numerous paths of influence and LR information emerge from the earliest events following fertilization and branch as they feed into diverse embryonic tissues. It is tempting to speculate (17) that the availability of multiple ways to establish laterality (parallel pathways + error-correcting steps) can account for the variability that is observed among individuals: perhaps each embryo stochastically selects one of several pathways to pattern its LR axis, thus explaining why any given treatment only randomizes a portion of the population.
+
+**Conclusion**
+
+In Figure 9, we summarize the discrepancies between *Nodal* asymmetry and organ asymmetry from our dataset and propose a model, whereby regulators of the early cytoskeletal role in LR patterning can not only affect *Nodal* positioning, but also organ patterning independent of the position of *Nodal*, via a parallel pathway. In this way, defects in LR patterning may be corrected during embryonic development, and this could explain the inability to induce the levels of heterotaxia expected if a discrete and single event is instructive in establishing this patterning. However, the mechanistic explanation for such discrepancies is not clear. Development of different organs at different timepoints of embryogenesis may require multiple levels of laterality signaling, from both early and late mechanisms.
+
+It is clear that left-right asymmetry has only begun to reveal some of its true complexity. The error-correction, stochasticity, and redundancy observed in these data serve as powerful
+
+
+22
+
+
+**Page 24 of 47**
+
+**Integrative Biology**
+
+models for similar phenomena observed (but not yet explained) throughout development and biomedicine. LR patterning is a process that encompasses intracellular cytoskeletal events, bioelectric control of LR morphogens, ciliary sensing, planar cell polarity, organism-wide asymmetric transcription, and organ morphogenesis. It is likely that the eventual full unraveling of the control networks that integrates all of these steps will reveal fascinating new biology of wide relevance.
+
+23
+
+This is chunk 7 of 12 (pass 2 of 3) covering pages 25-29 of 48.
+
+**Page 24 of 47**
+
+**Integrative Biology**
+
+models for similar phenomena observed (but not yet explained) throughout development and
+biomedicine. LR patterning is a process that encompasses intracellular cytoskeletal events,
+bioelectric control of LR morphogens, ciliary sensing, planar cell polarity, organism-wide
+asymmetric transcription, and organ morphogenesis. It is likely that the eventual full unraveling
+of the control networks that integrates all of these steps will reveal fascinating new biology of
+wide relevance.
+
+23
+
+**Integrative Biology Accepted Manuscript**
+
+
+**Page 25 of 47**
+
+**Integrative Biology**
+
+**Acknowledgements**
+
+We thank Kenji Matsuno for *Drosophila* myosin (Myo31DF and Myo61F) cDNAs,
+Douglas Blackiston and other members of the Levin lab for useful discussions on these data,
+Dany Adams for discussions about craniofacial defects, Amanda Allen for laboratory assistance,
+and Erin Switzer for frog husbandry. L.A.L gratefully acknowledges support from NIH R00
+MH095768. M.L. gratefully acknowledges funding support of the G. Harold and Leila Y.
+Mathers Charitable Foundation, and a subaward from the Physical Science Oncology Center
+supported by Award Number U54CA143876 from the National Cancer Institute.
+
+24
+
+**Integrative Biology Accepted Manuscript**
+
+
+**Page 26 of 47**
+
+**Integrative Biology**
+
+**Figure Legends:**
+
+**Figure 1:** Injection of water or high amounts of β-galactosidase mRNA does not result in
+laterality defects in *Xenopus laevis*.
+
+(A) Positioning of visceral organs at Stage 45 in *Xenopus laevis*. (i) Wild-type (situs
+solitus) embryos, ventral view, showing the normal arrangement of the stomach (yellow
+arrowhead), heart apex (red arrowhead), and gall bladder (green arrowhead). (ii) An heterotaxic
+embryo (ventral view) showing reversal of all three organs, i.e., situs inversus. (iii) Heterotaxic
+embryos (ventral view) showing various incorrect organ situs. (B) Embryos were injected into
+the animal pole with 10 nl water or mRNA encoding β-galactosidase at 1.5ng nľ¹ at various
+timepoints and scored for visceral organ situ. (C) Examples of *Xnr1* expression assayed by in situ
+hybridization with absence of *Xnr1* expression indicated with white arrowhead, and presence of
+*Xnr1* indicated by red arrowheads: (i) correct left-sided *Xnr1* expression, dorsal view, and (ii) left
+lateral view, unbleached embryo; (iii) correct left-sided *Xnr1* expression, dorsal view, and (iv)
+left lateral view, bleached embryo; (v) incorrect right-sided *Xnr1* expression, dorsal view, and
+(vi) right lateral view, bleached embryo; (vii) incorrect bilateral *Xnr1* expression, dorsal view,
+bleached and (viii) unbleached embryos. (D) Embryos were injected into the animal pole with 10
+nl water at various timepoints and scored for laterality of *Xnr1* expression.
+
+**Figure 2:** Early injection of α-tubulin-T56I affects organ laterality and *Xnr1* expression in
+*Xenopus laevis*.
+
+Embryos were injected into the animal pole within 30mpf, 45 or 60mpf, into 1 of 2 cells
+or into 1 of 4 cells with mRNA encoding α-tubulin-T56I and scored for (A) visceral organ situs
+at stage 45 (for significance of randomization for organ situs compared to early injections ***
+denotes χ²<0.001); (B) craniofacial defects at stage 45. (C) Embryos were injected in the animal
+pole within 30mpf with mRNA encoding α-tubulin-T56I and neurula-stage embryos were probed
+by in situ hybridization and scored according to laterality of *Xnr1* expression. For a statistical
+comparison of randomization of *Xnr1* expression, *** denotes χ²<0.001 compared to control
+embryos.
+
+25
+
+**Integrative Biology Accepted Manuscript**
+
+
+**Page 27 of 47**
+
+**Integrative Biology**
+
+**Figure 3:** Early injection of Mgrn1 mutants affects organ laterality and *Xnr1* expression
+differently in *Xenopus laevis*.
+
+(A) Embryos were injected with mRNA encoding i) wild type Mgrn1, ii) Mgrn1-G2A or
+iii) Mgrn1-C314D and scored for visceral organ situs. (B) Embryos were injected into the animal
+pole (i) within 30mpf with mRNA encoding wild type or mutant forms of Mgrn1 or (ii) within
+30mpf or into 1 of 4 cells with wild type Mgrn1 and neurula stage embryos were scored for
+laterality *Xnr1* expression. (C) Embryos were injected into the animal pole within 30mpf with
+mRNA encoding wild type or mutant forms of Mgrn1 and neurula stage embryos were probed
+for (i) *lefty* and (ii) *pitx2* expression. ** denotes χ²<0.01 and *** denotes χ²<0.001 compared to
+control embryos.
+
+**Figure 4:** Mutation of the dynein accessory factor Lis1 affects laterality in *Xenopus laevis*.
+
+(A) Embryos were injected within 30mpf with mRNA encoding Lis1-N99 or Lis1-C137
+and scored for visceral organ situs. (B) Embryos were injected into the animal pole within 30mpf
+with mRNA encoding Lis1-N99 (at a lower concentration than in (A)) or Lis1-C137 and neurula
+stage embryos were scored for laterality of *Xnr1* expression. (C) Embryos were injected with
+mRNA encoding i) Lis1-N99, or ii) Lis1-C137 at various timepoints and scored for visceral
+organ situs. ** denotes χ²<0.01 and *** denotes χ²<0.001 compared to control embryos.
+
+**Figure 5:** Mutation of the RhoGEF *ect2* affects laterality in *Xenopus laevis*.
+
+Embryos were (A) injected at various timepoints with mRNA encoding ect2-trunc and
+scored for visceral organ situs; or injected within 30mpf and scored for laterality of (B) *Xnr1*, (C)
+*Lefty* and (D) *Pitx2* expression. *** denotes χ²<0.001 compared to control embryos.
+
+**Figure 6:** The myosin mutant, Flailer, affects laterality in *Xenopus laevis*.
+
+(A) Embryos were injected with mRNA encoding the *Xenopus* form of the Flailer
+mutation and scored for visceral organ situs. (B) Embryos were injected into 1 of 4 cells, either
+the dorsal left (DL) or ventral right (VR) and scored for visceral organ situs. (C) Embryos were
+injected within 30mpf and scored according to laterality of *Xnr1* expression. *** denotes
+χ²<0.001 compared to control embryos (B, C only).
+
+26
+
+**Integrative Biology Accepted Manuscript**
+
+
+**Page 28 of 47**
+
+**Integrative Biology**
+
+**Figure 7:** Myosins involved in determining laterality in *Drosophila* also affect laterality in
+*Xenopus laevis*.
+
+Embryos were injected with mRNA encoding *Drosophila* or *Xenopus* myosins and
+scored for (A) visceral organ situs at stage 45; (B) laterality of *Xnr1* expression. ** denotes
+χ²<0.01, *** denotes χ²<0.001 compared to control embryos.
+
+**Figure 8:** Investigation of the mechanism of cytoskeletal action at the cellular level.
+
+(A) Microtubule dynamics were assessed in cultured embryonic growth cones, which are
+studied by coinjecting the protein of interest with the GFP-tagged End-Binding protein Eb3, a
+plus-end-tracking microtubule protein, and dissecting neural tubes and culturing explants.
+Growth cones are then imaged using high-resolution fluorescence microscopy. (B) Embryos
+were injected into the animal pole within 30mpf with mRNAs encoding α-tubulin-T56I and Eb3-
+GFP. Cultured neuronal explants were imaged to quantify the microtubule dynamics and the (i)
+Mean Growth Speed, (ii) Mean Growth Lifetime and (iii) Mean Growth Length were calculated,
+using plusTipTracker software. Plots show maximum and minimum values with bars, the range
+from 1st to 3rd quantiles with grey boxes, the median with a horizontal black line and the mean
+with a circle. (C) Table summarizing average values, standard deviations, standard error of the
+mean and the results of a two-tailed paired Student's t-test.
+
+**Figure 9:** A summary and model for complex regulation of left-right patterning.
+
+(A) A summary of data for early effectors of asymmetry and the points at which markers
+of asymmetry are affected. Some effectors, such as ect2-trunc, randomize all three molecular
+markers as well as organ situs. However, incorrect *Xnr1* expression due to overexpression of
+wild type Mgrn1 becomes corrected by the time of *Lefty* expression; in contrast Mgrn1-C314D is
+produces incorrect placement of organs despite correct expression of earlier laterality markers.
+
+(B) A model of LR patterning incorporating the data from (A), which reveals both
+correction steps that can operate after the randomization of prior asymmetric gene expression,
+and branches of the pathway that operate independently of *Xnr1*. Early cytoskeletal
+rearrangements interact with early physiological asymmetric signals and later ciliary flow, but
+can potentially also bypass these signals to direct later asymmetries and “fix” incorrect
+
+
+27
+
+**Integrative Biology Accepted Manuscript**
+
+This is chunk 8 of 12 (pass 2 of 3) covering pages 29-33 of 48.
+
+**Page 28 of 47**
+
+**Integrative Biology**
+
+**Figure 7:** Myosins involved in determining laterality in *Drosophila* also affect laterality in *Xenopus laevis*.
+Embryos were injected with mRNA encoding *Drosophila* or *Xenopus* myosins and scored for (A) visceral organ situs at stage 45; (B) laterality of *Xnr1* expression. ** denotes x²<0.01, *** denotes x²<0.001 compared to control embryos.
+
+**Figure 8:** Investigation of the mechanism of cytoskeletal action at the cellular level.
+(A) Microtubule dynamics were assessed in cultured embryonic growth cones, which are studied by coinjecting the protein of interest with the GFP-tagged End-Binding protein Eb3, a plus-end-tracking microtubule protein, and dissecting neural tubes and culturing explants. Growth cones are then imaged using high-resolution fluorescence microscopy. (B) Embryos were injected into the animal pole within 30mpf with mRNAs encoding α-tubulin-T56I and Eb3-GFP. Cultured neuronal explants were imaged to quantify the microtubule dynamics and the (i) Mean Growth Speed, (ii) Mean Growth Lifetime and (iii) Mean Growth Length were calculated, using plusTipTracker software. Plots show maximum and minimum values with bars, the range from 1st to 3rd quantiles with grey boxes, the median with a horizontal black line and the mean with a circle. (C) Table summarizing average values, standard deviations, standard error of the mean and the results of a two-tailed paired Student's t-test.
+
+**Figure 9:** A summary and model for complex regulation of left-right patterning.
+(A) A summary of data for early effectors of asymmetry and the points at which markers of asymmetry are affected. Some effectors, such as ect2-trunc, randomize all three molecular markers as well as organ situs. However, incorrect *Xnr1* expression due to overexpression of wild type Mgrn1 becomes corrected by the time of *Lefty* expression; in contrast Mgrn1-C314D produces incorrect placement of organs despite correct expression of earlier laterality markers.
+(B) A model of LR patterning incorporating the data from (A), which reveals both correction steps that can operate after the randomization of prior asymmetric gene expression, and branches of the pathway that operate independently of *Xnr1*. Early cytoskeletal rearrangements interact with early physiological asymmetric signals and later ciliary flow, but can potentially also bypass these signals to direct later asymmetries and “fix” incorrect
+
+27
+
+
+**Page 29 of 47**
+
+**Integrative Biology**
+
+patterning information via an unknown mediator ‘X' that converts cytoskeletal activity to asymmetric transcription.
+
+28
+
+
+**Page 30 of 47**
+
+**Integrative Biology**
+
+**Supplementary Figures**
+Supplementary Table 1: Organ situs data for mutant injections performed within 30mpf.
+Supplementary Table 2: Laterality of *Xnr1* expression for mutant injections performed within 30mpf.
+Supplementary Table 3: Laterality of *Lefty* expression for mutant injections.
+Supplementary Table 4: Laterality of *Pitx2* expression for mutant injections.
+Supplementary Table 5: Raw data from axon outgrowth plus-end microtubule tracking.
+Supplementary Table 6: Primers used in cloning
+Supplementary Figure 1: Comparison of organ heterotaxia and laterality of *Xnr1* expression.
+(A) Organs incorrectly positioned in embryos injected within 30mpf. (B) Laterality of observed abnormal *Xnr1* expression.
+Supplementary Figure 2: Examples of craniofacial defects observed for α-tubulin-T56I-injected embryos
+
+29
+
+
+**Page 31 of 47**
+
+**Integrative Biology**
+
+**References**
+
+1. Hoffman JI, Kaplan S. The incidence of congenital heart disease. J Am Coll Cardiol. 2002 Jun 19;39(12):1890-900.
+2. Reller MD, Strickland MJ, Riehle-Colarusso T, Mahle WT, Correa A. Prevalence of congenital heart defects in metropolitan Atlanta, 1998-2005. J Pediatr. 2008 Dec 1;153(6):807-13.
+3. Burn J. Disturbance of morphological laterality in humans. Ciba Found Symp. 1991 Jan;162:282–96; discussion 296.
+4. Peeters H, Devriendt K. Human laterality disorders. Eur J Med Genet. 2006 Oct;49(5):349-62.
+5. Ramsdell AF. Left-right asymmetry and congenital cardiac defects: getting to the heart of the matter in vertebrate left-right axis determination. Dev Biol. 2005 Dec 1;288(1):1-20.
+6. Levin M, Palmer AR. Left-right patterning from the inside out: widespread evidence for intracellular control. Bioessays. 2007 Mar 1;29(3):271–87.
+7. Neville C. Animal asymmetry. Illustrated. University of Michigan: Edward Arnold; 1976.
+8. Palmer AR. Symmetry breaking and the evolution of development. Science. 2004 Oct 29;306(5697):828-33.
+9. Palmer AR. From symmetry to asymmetry: phylogenetic patterns of asymmetry variation in animals and their evolutionary significance. Proc Natl Acad Sci US A. 1996 Dec 10;93(25):14279–86.
+10. Tabin C. Do we know anything about how left-right asymmetry is first established in the vertebrate embryo? J Mol Histol. 2005 Jun;36(5):317–23.
+11. Vandenberg LN, Levin M. Perspectives and open problems in the early phases of left-right patterning. Semin Cell Dev Biol. 2009 Jun;20(4):456–63.
+12. Vandenberg LN, Levin M. Far from solved: a perspective on what we know about early mechanisms of left-right asymmetry. Dev Dyn. 2010 Dec 1;239(12):3131–46.
+13. Basu B, Brueckner M. Cilia multifunctional organelles at the center of vertebrate left-right asymmetry. Curr Top Dev Biol. 2008 Jan;85:151-74.
+14. Okumura T, Utsuno H, Kuroda J, Gittenberger E, Asami T, Matsuno K. The development and evolution of left-right asymmetry in invertebrates: lessons from *Drosophila* and snails. Dev Dyn. 2008 Dec 1;237(12):3497-515.
+15. Spéder P, Petzoldt A, Suzanne M, Noselli S. Strategies to establish left/right asymmetry in vertebrates and invertebrates. Curr Opin Genet Dev. 2007 Aug;17(4):351–8.
+16. Vandenberg LN, Lemire JM, Levin M. It's never too early to get it Right: A conserved role for the cytoskeleton in left-right asymmetry. Commun Integr Biol. 2013 Nov 1;6(6):e27155.
+17. Vandenberg LN, Levin M. A unified model for left-right asymmetry? Comparison and synthesis of molecular models of embryonic laterality. Dev Biol. 2013 Jul 1;379(1):1–15.
+
+30
+
+
+**Page 32 of 47**
+
+**Integrative Biology**
+
+18. Chen TH, Hsu JJ, Zhao X, Guo C, Wong MN, Huang Y, et al. Left-right symmetry breaking in tissue morphogenesis via cytoskeletal mechanics. Circ Res. 2012 Feb 17;110(4):551-9.
+19. Xu J, Van Keymeulen A, Wakida NM, Carlton P, Berns MW, Bourne HR. Polarity reveals intrinsic cell chirality. Proc Natl Acad Sci US A. 2007 May 29;104(22):9296-300.
+20. Wan LQ, Ronaldson K, Park M, Taylor G, Zhang Y, Gimble JM, et al. Micropatterned mammalian cells exhibit phenotype-specific left-right asymmetry. Proc Natl Acad Sci US A. 2011 Jul 26;108(30):12295-300.
+21. Heacock AM, Agranoff BW. Clockwise growth of neurites from retinal explants. Science. 1977 Oct 7;198(4312):64-6.
+22. Hashimoto T. Molecular genetic analysis of left-right handedness in plants. Philos Trans R Soc Lond, B, Biol Sci. 2002 Jun 29;357(1422):799-808.
+23. Thitamadee S, Tuchihara K, Hashimoto T. Microtubule basis for left-handed helical growth in *Arabidopsis*. Nature. 2002 May 9;417(6885):193–6.
+24. Shibazaki Y, Shimizu M, Kuroda R. Body handedness is directed by genetically determined cytoskeletal dynamics in the early embryo. Curr Biol. 2004 Aug 24;14(16):1462-7.
+25. Kuroda R, Endo B, Abe M, Shimizu M. Chiral blastomere arrangement dictates zygotic left-right asymmetry pathway in snails. Nature. 2009 Dec 10;462(7274):790–4.
+26. Davison A, McDowell GS, Holden JM, Johnson HF, Koutsovoulos GD, Liu MM, et al. Formin is associated with left-right asymmetry in the pond snail and the frog. Curr Biol. 2016;In Press.
+27. Frasnelli E, Vallortigara G, Rogers LJ. Left-right asymmetries of behaviour and nervous system in invertebrates. Neurosci Biobehav Rev. 2012 Apr 1;36(4):1273–91.
+28. Naganathan SR, Fürthauer S, Nishikawa M, Jülicher F, Grill SW. Active torque generation by the actomyosin cell cortex drives left-right symmetry breaking. elife. 2014 Dec 17;3:e04165.
+29. Pohl C. Left-right patterning in the *C. elegans* embryo: Unique mechanisms and common principles. Commun Integr Biol. 2011 Jan;4(1):34–40.
+30. Géminard C, González-Morales N, Coutelis JB, Noselli S. The myosin ID pathway and left-right asymmetry in *Drosophila*. Genesis. 2014 Jun;52(6):471–80.
+31. Coutelis JB, Petzoldt AG, Spéder P, Suzanne M, Noselli S. Left-right asymmetry in *Drosophila*. Semin Cell Dev Biol. 2008 Jun;19(3):252-62.
+32. Kuroda J, Nakamura M, Yoshida M, Yamamoto H, Maeda T, Taniguchi K, et al. Canonical Wnt signaling in the visceral muscle is required for left-right asymmetric development of the *Drosophila* midgut. Mech Dev. 2012 Feb;128(11-12):625-39.
+33. Petzoldt AG, Coutelis JB, Géminard C, Spéder P, Suzanne M, Cerezo D, et al. DE-Cadherin regulates unconventional Myosin ID and Myosin IC in *Drosophila* left-right asymmetry establishment. Development. 2012 May 1;139(10):1874–84.
+
+31
+
+**Integrative Biology**
+Page 32 of 47
+
+18. Chen TH, Hsu JJ, Zhao X, Guo C, Wong MN, Huang Y, et al. Left-right symmetry breaking in tissue morphogenesis via cytoskeletal mechanics. Circ Res. 2012 Feb 17;110(4):551-9.
+
+19. Xu J, Van Keymeulen A, Wakida NM, Carlton P, Berns MW, Bourne HR. Polarity reveals intrinsic cell chirality. Proc Natl Acad Sci US A. 2007 May 29;104(22):9296-300.
+
+20. Wan LQ, Ronaldson K, Park M, Taylor G, Zhang Y, Gimble JM, et al. Micropatterned mammalian cells exhibit phenotype-specific left-right asymmetry. Proc Natl Acad Sci US A. 2011 Jul 26;108(30):12295-300.
+
+21. Heacock AM, Agranoff BW. Clockwise growth of neurites from retinal explants. Science. 1977 Oct 7;198(4312):64-6.
+
+22. Hashimoto T. Molecular genetic analysis of left-right handedness in plants. Philos Trans R Soc Lond, B, Biol Sci. 2002 Jun 29;357(1422):799-808.
+
+23. Thitamadee S, Tuchihara K, Hashimoto T. Microtubule basis for left-handed helical growth in Arabidopsis. Nature. 2002 May 9;417(6885):193–6.
+
+24. Shibazaki Y, Shimizu M, Kuroda R. Body handedness is directed by genetically determined cytoskeletal dynamics in the early embryo. Curr Biol. 2004 Aug 24;14(16):1462-7.
+
+25. Kuroda R, Endo B, Abe M, Shimizu M. Chiral blastomere arrangement dictates zygotic left-right asymmetry pathway in snails. Nature. 2009 Dec 10;462(7274):790–4.
+
+26. Davison A, McDowell GS, Holden JM, Johnson HF, Koutsovoulos GD, Liu MM, et al. Formin is associated with left-right asymmetry in the pond snail and the frog. Curr Biol. 2016;In Press.
+
+27. Frasnelli E, Vallortigara G, Rogers LJ. Left-right asymmetries of behaviour and nervous system in invertebrates. Neurosci Biobehav Rev. 2012 Apr 1;36(4):1273–91.
+
+28. Naganathan SR, Fürthauer S, Nishikawa M, Jülicher F, Grill SW. Active torque generation by the actomyosin cell cortex drives left-right symmetry breaking. elife. 2014 Dec 17;3:e04165.
+
+29. Pohl C. Left-right patterning in the C. elegans embryo: Unique mechanisms and common principles. Commun Integr Biol. 2011 Jan;4(1):34–40.
+
+30. Géminard C, González-Morales N, Coutelis JB, Noselli S. The myosin ID pathway and left-right asymmetry in Drosophila. Genesis. 2014 Jun;52(6):471–80.
+
+31. Coutelis JB, Petzoldt AG, Spéder P, Suzanne M, Noselli S. Left-right asymmetry in Drosophila. Semin Cell Dev Biol. 2008 Jun;19(3):252-62.
+
+32. Kuroda J, Nakamura M, Yoshida M, Yamamoto H, Maeda T, Taniguchi K, et al. Canonical Wnt signaling in the visceral muscle is required for left-right asymmetric development of the Drosophila midgut. Mech Dev. 2012 Feb;128(11-12):625-39.
+
+33. Petzoldt AG, Coutelis JB, Géminard C, Spéder P, Suzanne M, Cerezo D, et al. DE-Cadherin regulates unconventional Myosin ID and Myosin IC in Drosophila left-right asymmetry establishment. Development. 2012 May 1;139(10):1874–84.
+
+
+Page 33 of 47
+
+**Integrative Biology**
+
+34. Taniguchi K, Maeda R, Ando T, Okumura T, Nakazawa N, Hatori R, et al. Chirality in planar cell shape contributes to left-right asymmetric epithelial morphogenesis. Science. 2011 Jul 15;333(6040):339-41.
+
+35. Bangs F, Antonio N, Thongnuek P, Welten M, Davey MG, Briscoe J, et al. Generation of mice with functional inactivation of talpid3, a gene first identified in chicken. Development. 2011 Aug;138(15):3261-72.
+
+36. Männer J. Does an equivalent of the “ventral node" exist in chick embryos? A scanning electron microscopic study. Anat Embryol. 2001 Jun;203(6):481–90.
+
+37. Yin Y, Bangs F, Paton IR, Prescott A, James J, Davey MG, et al. The Talpid3 gene (KIAA0586) encodes a centrosomal protein that is essential for primary cilia formation. Development. 2009 Feb;136(4):655–64.
+
+38. Gros J, Feistel K, Viebahn C, Blum M, Tabin CJ. Cell movements at Hensen's node establish left/right asymmetric gene expression in the chick. Science. 2009 May 15;324(5929):941–4.
+
+39. Agata K, Umesono Y. [Evolution of the genetic program controlling brain development]. Tanpakushitsu Kakusan Koso. 1999 Mar;44(3):245-9.
+
+40. Abe T, Thitamadee S, Hashimoto T. Microtubule defects and cell morphogenesis in the leftyllefty2 tubulin mutant of Arabidopsis thaliana. Plant Cell Physiol. 2004 Feb 1;45(2):211–20.
+
+41. Danilchik MV, Brown EE, Riegert K. Intrinsic chiral properties of the Xenopus egg cortex: an early indicator of left-right asymmetry? Development. 2006 Nov 1;133(22):4517-26.
+
+42. Nakamura M, Hashimoto T. A mutation in the Arabidopsis gamma-tubulin-containing complex causes helical growth and abnormal microtubule branching. J Cell Sci. 2009 Jul 1;122(Pt 13):2208–17.
+
+43. Schonegg S, Hyman A, Wood W. Timing and mechanism of the initial cue establishing handed left-right asymmetry inCaenorhabditis elegans embryos. Genesis. 2014 Jun;52(6):572–80.
+
+44. Spéder P, Adám G, Noselli S. Type ID unconventional myosin controls left-right asymmetry in Drosophila. Nature. 2006 Apr 6;440(7085):803–7.
+
+45. Levin M, Nascone N. Two molecular models of initial left-right asymmetry generation. Med Hypotheses. 1997 Nov 1;49(5):429-35.
+
+46. Lobikin M, Wang G, Xu J, Hsieh YW, Chuang CF, Lemire JM, et al. Early, nonciliary role for microtubule proteins in left-right patterning is conserved across kingdoms. Proc Natl Acad Sci US A. 2012 Jul 31;109(31):12586-91.
+
+47. Okumura T, Sasamura T, Inatomi M, Hozumi S, Nakamura M, Hatori R, et al. Class I myosins have overlapping and specialized functions in left-right asymmetric development in Drosophila. Genetics. 2015 Apr;199(4):1183-99.
+
+48. Cota CD, Bagher P, Pelc P, Smith CO, Bodner CR, Gunn TM. Mice with mutations in Mahogunin ring finger-1 (Mgrn1) exhibit abnormal patterning of the left-right axis. Dev Dyn. 2006 Dec 1;235(12):3438–47.
+
+49. Vandenberg LN. Laterality defects are influenced by timing of treatments and animal model. Differentiation. 2012 Jan;83(1):26–37.
+
+
+Page 34 of 47
+
+**Integrative Biology**
+
+50. Nakamura M, Matsumoto K, Iwamoto Y, Muguruma T, Nakazawa N, Hatori R, et al. Reduced cell number in the hindgut epithelium disrupts hindgut left-right asymmetry in a mutant of pebble, encoding a RhoGEF, in Drosophila embryos. Mech Dev. 2013 Feb;130(2-3):169-80.
+
+51. Jones JM, Huang JD, Mermall V, Hamilton BA, Mooseker MS, Escayg A, et al. The mouse neurological mutant flailer expresses a novel hybrid gene derived by exon shuffling between Gnb5 and Myo5a. Hum Mol Genet. 2000 Mar 22;9(5):821-8.
+
+52. Sive HL, Grainger RM, Harland RM. Early Development of Xenopus Laevis: A Laboratory Manual. Cold Spring Harbor: Cold Spring Harbor Laboratory Press; 2000.
+
+53. Nieuwkoop PD, Faber J. Normal Table of Xenopus Laevis. 1st ed. New York: Garland Science; 1994.
+
+54. Levin M, Mercola M. Gap junctions are involved in the early generation of left-right asymmetry. Dev Biol. 1998 Nov 1;203(1):90–105.
+
+55. Monsoro-Burq AH. A rapid protocol for whole-mount in situ hybridization on Xenopus embryos. CSH Protoc. 2007 Aug 1;2007:pdb.prot4809.
+
+56. Harland RM. In situ hybridization: an improved whole-mount method for Xenopus embryos. Methods Cell Biol. 1991 Jan;36:685-95.
+
+57. Sampath K, Cheng AM, Frisch A, Wright CV. Functional differences among Xenopus nodal-related genes in left-right axis determination. Development. 1997 Sep 1;124(17):3293–302.
+
+58. Meno C, Ito Y, Saijoh Y, Matsuda Y, Tashiro K, Kuhara S, et al. Two closely-related left-right asymmetrically expressed genes, lefty-1 and lefty-2: their distinct expression domains, chromosomal linkage and direct neuralizing activity in Xenopus embryos. Genes Cells. 1997 Aug;2(8):513-24.
+
+59. Campione M, Steinbeisser H, Schweickert A, Deissler K, van Bebber F, Lowe LA, et al. The homeobox gene Pitx2: mediator of asymmetric left-right signaling in vertebrate heart and gut looping. Development. 1999 Mar;126(6):1225-34.
+
+60. Lowery LA, Faris AE, Stout A, Van Vactor D. Neural Explant Cultures from Xenopus laevis. J Vis Exp. 2012 Oct 15;(68):e4232.
+
+61. Stout A, D'Amico S, Enzenbacher T, Ebbert P, Lowery LA. Using plusTipTracker software to measure microtubule dynamics in Xenopus laevis growth cones. J Vis Exp [Internet]. 2014 Sep 7;(91):e52138. Available from: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4189079/pdf/nihms-632495.pdf
+
+62. Applegate KT, Besson S, Matov A, Bagonis MH, Jaqaman K, Danuser G. plusTipTracker: Quantitative image analysis software for the measurement of microtubule dynamics. J Struct Biol. 2011 Nov;176(2):168-84.
+
+63. Lowery LA, Stout A, Faris AE, Ding L, Baird MA, Davidson MW, et al. Growth cone-specific functions of XMAP215 in restricting microtubule dynamics and promoting axonal outgrowth. Neural Dev. 2013 Dec 1;8:22.
+
+64. Ishida T, Kaneko Y, Iwano M, Hashimoto T. Helical microtubule arrays in a collection of twisting tubulin mutants of Arabidopsis thaliana. Proc Natl Acad Sci US A. 2007 May 15;104(20):8544-9.
+
+65. Ishida T, Hashimoto T. An Arabidopsis thaliana tubulin mutant with conditional root-skewing phenotype. J Plant Res. 2007 Sep;120(5):635-40.
+
+
+Page 35 of 47
+
+**Integrative Biology**
+
+66. Lohr JL, Danos MC, Yost HJ. Left-right asymmetry of a nodal-related gene is regulated by dorsoanterior midline structures during Xenopus development. Development. 1997 Apr 1;124(8):1465–72.
+
+67. Rebagliati MR, Toyama R, Fricke C, Haffter P, Dawid IB. Zebrafish nodal-related genes are implicated in axial patterning and establishing left-right asymmetry. Dev Biol. 1998 Jul 15;199(2):261–72.
+
+68. Janke C, Bulinski JC. Post-translational regulation of the microtubule cytoskeleton: mechanisms and functions. Nat Rev Mol Cell Biol. 2011 Dec 1;12(12):773-86.
+
+69. McDowell GS, Philpott A. Non-canonical ubiquitylation: Mechanisms and consequences. Int J Biochem Cell Biol. 2013 Aug 1;45(8):1833-42.
+
+70. Sun L, Chen ZJ. The novel functions of ubiquitination in signaling. Curr Opin Cell Biol. 2004 Apr 1;16(2):119-26.
+
+71. Srivastava D, Chakrabarti O. Mahogunin-mediated α-tubulin ubiquitination via noncanonical K6 linkage regulates microtubule stability and mitotic spindle orientation. Cell Death Dis. 2014 Feb 20;5:e1064.
+
+72. Upadhyay A, Amanullah A, Chhangani D, Mishra R, Prasad A, Mishra A. Mahogunin Ring Finger-1 (MGRN1), a Multifaceted Ubiquitin Ligase: Recent Unraveling of Neurobiological Mechanisms. Mol Neurobiol. 2015 Aug 9;
+
+73. Jiao J, Kim HY, Liu RR, Hogan CA, Sun K, Tam LM, et al. Transgenic analysis of the physiological functions of Mahogunin Ring Finger-1 isoforms. Genesis. 2009 Aug 1;47(8):524-34.
+
+74. Guerra DD, Pratelli R, Kraft E, Callis J, Pilot G. Functional conservation between mammalian MGRN1 and plant LOG2 ubiquitin ligases. FEBS Lett. 2013 Nov 1;587(21):3400–5.
+
+75. Meno C, Saijoh Y, Fujii H, Ikeda M, Yokoyama T, Yokoyama M, et al. Left-right asymmetric expression of the TGFβ-family member lefty in mouse embryos. Nature. 1996 May 9;381(6578):151–5.
+
+76. Logan M, Pagán-Westphal SM, Smith DM, Paganessi L, Tabin CJ. The transcription factor Pitx2 mediates situs-specific morphogenesis in response to left-right asymmetric signals. Cell. 1998 Aug 7;94(3):307–17.
+
+77. Supp DM, Witte DP, Potter SS, Brueckner M. Mutation of an axonemal dynein affects left-right asymmetry in inversus viscerum mice. Nature. 1997 Oct 30;389(6654):963-6.
+
+78. McGrath J, Somlo S, Makova S, Tian X, Brueckner M. Two populations of node monocilia initiate left-right asymmetry in the mouse. Cell. 2003 Jul 11;114(1):61–73.
+
+79. Armakolas A, Klar AJ. Left-right dynein motor implicated in selective chromatid segregation in mouse cells. Science. 2007 Jan 5;315(5808):100–1.
+
+80. Klar AJ. Support for the selective chromatid segregation hypothesis advanced for the mechanism of left-right body axis development in mice. Breast Dis. 2008 Jan;29:47–56.
+
+81. Zhang Y, Levin M. Left-right asymmetry in the chick embryo requires core planar cell polarity protein Vangl2. Genesis. 2009 Nov 1;47(11):719–28.
+
+82. Wynshaw-Boris A. Lissencephaly and LIS1: insights into the molecular mechanisms of neuronal migration and development. Clin Genet. 2007 Oct;72(4):296-304.
+
+
+Page 36 of 47
+
+**Integrative Biology**
+
+83. Sitaram P, Anderson MA, Jodoin JN, Lee E, Lee LA. Regulation of dynein localization and centrosome positioning by Lis-1 and asunder during Drosophila spermatogenesis. Development. 2012 Aug 1;139(16):2945-54.
+
+84. Zimdahl B, Ito T, Blevins A, Bajaj J, Konuma T, Weeks J, et al. Lis1 regulates asymmetric division in hematopoietic stem cells and in leukemia. Nat Genet. 2014 Mar;46(3):245-52.
+
+85. Sumigray KD, Chen H, Lechler T. Lis1 is essential for cortical microtubule organization and desmosome stability in the epidermis. J Cell Biol. 2011 Aug 22;194(4):631-42.
+
+86. Sipe CW, Liu L, Lee J, Grimsley-Myers C, Lu X. Lis1 mediates planar polarity of auditory hair cells through regulation of microtubule organization. Development. 2013 Apr 1;140(8):1785–95.
+
+87. Pramparo T, Libiger O, Jain S, Li H, Youn YH, Hirotsune S, et al. Global developmental gene expression and pathway analysis of normal brain development and mouse models of human neuronal migration defects. PLoS Genet. 2011 Mar 1;7(3):e1001331.
+
+88. Bunney TD, De Boer AH, Levin M. Fusicoccin signaling reveals 14-3-3 protein function as a novel step in left-right patterning during amphibian embryogenesis. Development. 2003 Oct 1;130(20):4847–58.
+
+89. Kondratova A, Neznanov N, Kondratov R, Gudkov A. Poliovirus Protein 3A Binds and Deregulates LIS1, Causing Block of Membrane Protein Trafficking and Deregulation of Cell Division. Cell Cycle. 2005 Oct 23;4(10):1403-10.
+
+90. Somers WG, Saint R. A RhoGEF and Rho family GTPase-activating protein complex links the contractile ring to cortical microtubules at the onset of cytokinesis. Dev Cell. 2003 Jan 1;4(1):29–39.
+
+91. Prokopenko S, Saint R, Bellen H. Tissue distribution of PEBBLE RNA and Pebble protein during Drosophila embryonic development. Mech Dev. 2000 Feb;90(2):269–73.
+
+92. Hozumi S, Maeda R, Taniguchi K, Kanai M, Shirakabe S, Sasamura T, et al. An unconventional myosin in Drosophila reverses the default handedness in visceral organs. Nature. 2006 Apr 6;440(7085):798–802.
+
+93. Schumacher-Bass SM, Vesely ED, Zhang L, Ryland KE, McEwen DP, Chan PJ, et al. Role for myosin-V motor proteins in the selective delivery of Kv channel isoforms to the membrane surface of cardiac myocytes. Circ Res. 2014 Mar 14;114(6):982-92.
+
+94. Bearce EA, Erdogan B, Lowery LA. TIPsy tour guides: how microtubule plus-end tracking proteins (+TIPs) facilitate axon guidance. Front Cell Neurosci. 2015 Jun 30;9:241.
+
+95. Kamura K, Kobayashi D, Uehara Y, Koshida S, Iijima N, Kudo A, et al. Pkd1l1 complexes with Pkd2 on motile cilia and functions to establish the left-right axis. Development. 2011 Mar;138(6):1121–9.
+
+96. Gardner RL. Normal bias in the direction of fetal rotation depends on blastomere composition during early cleavage in the mouse. PLoS ONE. 2010 Mar 10;5(3):e9610.
+
+97. Levin M, Thorlin T, Robinson KR, Nogi T, Mercola M. Asymmetries in H+/K+-ATPase and cell membrane potentials comprise a very early step in left-right patterning. Cell. 2002 Oct 4;111(1):77–89.
+
+98. Vick P, Schweickert A, Weber T, Eberhardt M, Mencl S, Shcherbakov D, et al. Flow on the right side of the gastrocoel roof plate is dispensable for symmetry breakage in the frog Xenopus laevis. Dev Biol. 2009 Jul 15;331(2):281–91.
+
+
+This is chunk 9 of 12 (pass 2 of 3) covering pages 33-37 of 48.
+
+**Integrative Biology**
+
+**Page 36 of 47**
+
+83. Sitaram P, Anderson MA, Jodoin JN, Lee E, Lee LA. Regulation of dynein localization and centrosome positioning by Lis-1 and asunder during Drosophila spermatogenesis. Development. 2012 Aug 1;139(16):2945-54.
+
+84. Zimdahl B, Ito T, Blevins A, Bajaj J, Konuma T, Weeks J, et al. Lis1 regulates asymmetric division in hematopoietic stem cells and in leukemia. Nat Genet. 2014 Mar;46(3):245-52.
+
+85. Sumigray KD, Chen H, Lechler T. Lis1 is essential for cortical microtubule organization and desmosome stability in the epidermis. J Cell Biol. 2011 Aug 22;194(4):631-42.
+
+86. Sipe CW, Liu L, Lee J, Grimsley-Myers C, Lu X. Lis1 mediates planar polarity of auditory hair cells through regulation of microtubule organization. Development. 2013 Apr 1;140(8):1785–95.
+
+87. Pramparo T, Libiger O, Jain S, Li H, Youn YH, Hirotsune S, et al. Global developmental gene expression and pathway analysis of normal brain development and mouse models of human neuronal migration defects. PLoS Genet. 2011 Mar 1;7(3):e1001331.
+
+88. Bunney TD, De Boer AH, Levin M. Fusicoccin signaling reveals 14-3-3 protein function as a novel step in left-right patterning during amphibian embryogenesis. Development. 2003 Oct 1;130(20):4847–58.
+
+89. Kondratova A, Neznanov N, Kondratov R, Gudkov A. Poliovirus Protein 3A Binds and Deregulates LIS1, Causing Block of Membrane Protein Trafficking and Deregulation of Cell Division. Cell Cycle. 2005 Oct 23;4(10):1403-10.
+
+90. Somers WG, Saint R. A RhoGEF and Rho family GTPase-activating protein complex links the contractile ring to cortical microtubules at the onset of cytokinesis. Dev Cell. 2003 Jan 1;4(1):29–39.
+
+91. Prokopenko S, Saint R, Bellen H. Tissue distribution of PEBBLE RNA and Pebble protein during Drosophila embryonic development. Mech Dev. 2000 Feb;90(2):269–73.
+
+92. Hozumi S, Maeda R, Taniguchi K, Kanai M, Shirakabe S, Sasamura T, et al. An unconventional myosin in Drosophila reverses the default handedness in visceral organs. Nature. 2006 Apr 6;440(7085):798–802.
+
+93. Schumacher-Bass SM, Vesely ED, Zhang L, Ryland KE, McEwen DP, Chan PJ, et al. Role for myosin-V motor proteins in the selective delivery of Kv channel isoforms to the membrane surface of cardiac myocytes. Circ Res. 2014 Mar 14;114(6):982-92.
+
+94. Bearce EA, Erdogan B, Lowery LA. TIPsy tour guides: how microtubule plus-end tracking proteins (+TIPs) facilitate axon guidance. Front Cell Neurosci. 2015 Jun 30;9:241.
+
+95. Kamura K, Kobayashi D, Uehara Y, Koshida S, Iijima N, Kudo A, et al. Pkd111 complexes with Pkd2 on motile cilia and functions to establish the left-right axis. Development. 2011 Mar;138(6):1121–9.
+
+96. Gardner RL. Normal bias in the direction of fetal rotation depends on blastomere composition during early cleavage in the mouse. PLoS ONE. 2010 Mar 10;5(3):e9610.
+
+97. Levin M, Thorlin T, Robinson KR, Nogi T, Mercola M. Asymmetries in H+/K+-ATPase and cell membrane potentials comprise a very early step in left-right patterning. Cell. 2002 Oct 4;111(1):77–89.
+
+98. Vick P, Schweickert A, Weber T, Eberhardt M, Mencl S, Shcherbakov D, et al. Flow on the right side of the gastrocoel roof plate is dispensable for symmetry breakage in the frog Xenopus laevis. Dev Biol. 2009 Jul 15;331(2):281–91.
+
+35
+
+
+**Page 37 of 47**
+
+**Integrative Biology**
+
+99. Tingler M, Ott T, Tözser J, Kurz S, Getwan M, Tisler M, et al. Symmetry breakage in the frog Xenopus: role of Rab11 and the ventral-right blastomere. Genesis. 2014 Jun;52(6):588–99.
+
+100. Tee YH, Shemesh T, Thiagarajan V, Hariadi RF, Anderson KL, Page C, et al. Cellular chirality arising from the self-organization of the actin cytoskeleton. Nat Cell Biol. 2015 Apr;17(4):445–57.
+
+101. Schweickert A, Vick P, Getwan M, Weber T, Schneider I, Eberhardt M, et al. The nodal inhibitor Coco is a critical target of leftward flow in Xenopus. Curr Biol. 2010 Apr 27;20(8):738-43.
+
+102. Vandenberg LN, Adams DS, Levin M. Normalized shape and location of perturbed craniofacial structures in the Xenopus tadpole reveal an innate ability to achieve correct morphology. Dev Dyn. 2012 May 1;241(5):863-78.
+
+103. Farinella-Ferruzza N. The transformation of a tail into limb after xenoplastic transplantation. Experientia. 1956 Aug;12(8):304-5.
+
+104. Raya A, Kawakami Y, Rodriguez-Esteban C, Buscher D, Koth CM, Itoh T, et al. Notch activity induces Nodal expression and mediates the establishment of left-right asymmetry in vertebrate embryos. Genes Dev. 2003 May 15;17(10):1213-8.
+
+105. Fuller K, O'Connell JT, Gordon J, Mauti O, Eggenschwiler J. Rab23 regulates Nodal signaling in vertebrate left-right patterning independently of the Hedgehog pathway. Dev Biol. 2014 Jul 15;391(2):182–95.
+
+106. Levin M, Johnson RL, Stern CD, Kuehn M, Tabin C. A molecular pathway determining left-right asymmetry in chick embryogenesis. Cell. 1995 Sep 8;82(5):803-14.
+
+107. Nakamura T, Mine N, Nakaguchi E, Mochizuki A, Yamamoto M, Yashiro K, et al. Generation of robust left-right asymmetry in the mouse embryo requires a self-enhancement and lateral-inhibition system. Dev Cell. 2006 Oct 1;11(4):495-504.
+
+36
+
+
+**Page 38 of 47**
+
+**Integrative Biology**
+
+**(Image)**
+
+A (i, ii)
+B
+Percentage of tadpoles with heterotaxia
+Situs solitus
+Situs inversus
+Heart heterotaxia
+Heart and gut heterotaxia
+Gut and gall heterotaxia (correct gut looping)
+Gut heterotaxia (incorrect gut looping)
+40%
+35%
+30%
+25%
+20%
+n=217 n=134 n=93 n=86 n=321 n=89
+15%
+n=155 n=346
+10%
+5%
+0%
+control Water 1/1 30' pf 1/1 60' pf Water Water 1/2 Water Beta-gal Beta-gal Beta-gal Beta-gal 1/4 1/1 30' pf 1/1 60' pf 1/2 1/4 Sample
+C (iii, iv, v, vi, vii, viii)
+70%
+60%
+50%
+40%
+30%
+n=82 n=73 n=76 n=90
+20%
+10%
+0%
+control Water 1/1 30' pf Water 1/1 60' pf Water 1/2 Water 1/4 Sample
+
+McDowell et al., **Figure 1**
+172x364mm (300 x 300 DPI)
+
+
+**Page 39 of 47**
+
+**Integrative Biology**
+
+A
+Percentage of tadpoles with heterotaxia
+40%
+***
+35%
+***
+30%
+25%
+n.s. n.s.
+20%
+15%
+10%
+n = 266
+5%
+***
+n = 71 n = 78 n = 126 n = 145
+0%
+control 1/1 30' pf 1/1 45' pf 1/1 60' pf 1/2 1/4
+alpha-tubulin T561
+
+B
+Percentage tadpoles with craniofacial defects
+100%
+90%
+80%
+70%
+60%
+50%
+40%
+30%
+n = 17 n = 32 n = 34 n = 35
+20%
+10%
+n = 197
+0%
+Uninjected 1/1 30' pf 1/1 60' pf 1/2 1/4
+alpha-tubulin T561
+
+C
+70%
+60%
+50%
+40%
+30%
+Percentage embryos with misplaced Nodal
+20%
+***
+n = 183
+10%
+0%
+control alpha-tubulin-T561
+
+McDowell et al., **Figure 2**
+151x284mm (300 x 300 DPI)
+
+
+**Page 40 of 47**
+
+**Integrative Biology**
+
+**(Image)**
+
+(i) 40% *** n=64 n=270
+35% ** n=355 n=181
+30%
+25%
+20%
+15%
+10%
+5%
+0%
+control 1/1 30' 1/1 60' 1/2 1/4
+Mgrn1 wt
+
+(ii) 40% *** n=375 n=210 n=124
+35%
+30%
+25%
+20%
+15%
+10%
+5%
+0%
+control 1/1 30' 1/1 60' 1/2 1/4
+Mgrn1 G2A
+
+(iii) 40% n.s. n=43 n=119 n=104
+35%
+30%
+25%
+20%
+15%
+10%
+5%
+0%
+control 1/1 30' 1/1 60' 1/2 1/4
+Mgrn1 C314D
+
+B
+70% n=160
+60%
+50%
+40%
+30%
+20%
+10%
+0%
+control Mgrn1 wt Mgrn1-G2A Mgrn1-C314D
+Mahogunin mutants
+
+70% n=266
+60%
+50%
+40%
+30%
+20%
+10%
+0%
+control 1/1 30' 1/4
+Wild type Mahogunin
+
+C
+70% n.s. n=160 n=161
+60%
+50%
+40%
+30%
+20%
+10%
+0%
+control Mgrn1 wt Mgrn1-G2A Mgrn1-C314D
+Mahogunin mutants
+
+70% n.s. n=106 n=91 n=108 n=79
+60%
+50%
+40%
+30%
+20%
+10%
+0%
+control Mgrn1 wt Mgrn1-G2A Mgrn1-C314D
+Mahogunin mutants
+
+McDowell et al., **Figure 3**
+277x375mm (300 x 300 DPI)
+
+
+This is chunk 10 of 12 (pass 2 of 3) covering pages 37-41 of 48.
+
+Integrative Biology
+Page 40 of 47
+
+40%
+35%
+***
+**
+30%
+25%
+20%
+15%
+n = 64
+n = 270
+10%
+n = 355
+n = 181
+5%
+n = 375
+n = 210
+n = 124
+iii
+40%
+n.s.
+35%
+30%
+n.s.
+25%
+20%
+15%
+n = 43
+10%
+n = 119
+n = 104
+5%
+0%
+control 1/1 30' 1/1 60'
+1/2
+1/4
+control 1/1 30' 1/1 60'
+1/2
+1/4
+Mgrn1 wt
+Mgrn1 G2A
+control 1/1 30' 1/1 60' 1/2 1/4
+Mgrn1 C314D
+B
+70%
+60%
+50%
+40%
+30%
+20%
+10%
+0%
+n = 160
+control
+Mgrn1 wt
+Mgrn1-G2A Mgrn1-C314D
+mutants
+Mahogunin
+70%
+60%
+50%
+40%
+30%
+20%
+10%
+0%
+n = 266
+control
+1/1 30'
+Wild type Mahogunin
+1/4
+70%
+60%
+50%
+40%
+n.s.
+30%
+n.s.
+20%
+n = 160
+n = 161
+n = 106
+n = 91
+n = 108
+10%
+n = 79
+0%
+control
+Mgrn1 wt
+Mgrn1-G2A
+Mgrn1-C314D
+control
+Mgrn1 wt
+Mgrn1-G2A
+Mgrn1-C314D
+mutants
+mutants
+Mahogunin
+Mahogunin
+McDowell et al., FIGURE 3
+Figure 3
+277x375mm (300 x 300 DPI)
+
+
+Integrative Biology Accepted Manuscript
+
+Page 41 of 47
+Integrative Biology
+A
+Percentage of tadpoles with heterotaxia
+40%
+35%
+30%
+25%
+20%
+15%
+10%
+5%
+0%
+***
+***
+n = 174
+n = 326
+control Lis1-N99 Lis1-C137
+Lis1
+Percentage of tadpoles with heterotaxia
+40%
+35%
+***
+30%
+***
+n.s.
+25%
+**
+20%
+15%
+10%
+n = 78
+n = 44
+5%
+n = 194
+0%
+n = 110
+Percentage of tadpoles with heterotaxia =
+control 1/1 30' 1/1 60'
+1/2
+1/4
+McDowell et al., FIGURE 4
+B
+Percentage embryos with misplaced Nodal
+70%
+60%
+50%
+40%
+30%
+20%
+10%
+0%
+control
+***
+n = 137
+***
+n = 138
+Lis1-N99 Lis1-C137
+Lis1
+40%
+35%
+***
+***
+30%
+***
+25%
+***
+20%
+15%
+n = 326
+10%
+n = 145
+5%
+n = 217
+n = 220
+control 1/1 30' 1/1 60'
+1/2
+1/4
+Figure 4
+217x168mm (300 x 300 DPI)
+
+Integrative Biology Accepted Manuscript
+
+Page 42 of 47
+Integrative Biology
+A
+70%
+40%
+***
+***
+35%
+***
+30%
+***
+25%
+20%
+15%
+10%
+5%
+0%
+control
+30'
+60'
+1/2
+1/4
+ect2-trunc
+70%
+60%
+50%
+40%
+30%
+20%
+10%
+0%
+70%
+60%
+50%
+40%
+***
+30%
+20%
+***
+10%
+0%
+control
+ect2-trunc
+control
+ect2-trunc
+70%
+60%
+50%
+40%
+30%
+20%
+10%
+0%
+control
+ect2-trunc
+McDowell et al., FIGURE 5
+Figure 5
+229x185mm (300 x 300 DPI)
+
+
+Integrative Biology Accepted Manuscript
+
+Page 43 of 47
+Integrative Biology
+A
+40%
+Percentage of tadpoles with heterotaxia
+35%
+30%
+25%
+***
+***
+20%
+15%
+10%
+5%
+n = 652
+0%
+control Beta-gal Beta-gal Flailer
+1/1 30'
+1/1 30'
+1/4
+B
+Percentage of tadpoles with heterotaxia
+40%
+35%
+30%
+25%
+20%
+***
+***
+15%
+10%
+5%
+n = 188
+n = 137
+0%
+control
+DL
+Flailer
+VR
+McDowell et al., FIGURE 6
+***
+***
+n.s.
+***
+n = 138
+n = 186
+n = 96
+n = 115
+n = 584
+Flailer
+Flailer
+Flailer
+1/1 60'
+1/1 90' 1/1 120'
+Flailer Flailer
+1/2
+1/4
+Flailer
+C
+70%
+60%
+50%
+Percentage embryos with misplaced Nodal
+40%
+30%
+20%
+10%
+***
+n = 309
+0%
+control
+Flailer
+Flailer
+Figure 6
+158x195mm (300 x 300 DPI)
+
+Integrative Biology Accepted Manuscript
+
+Page 44 of 47
+Integrative Biology
+A
+Percentage of tadpoles with heterotaxia
+40%
+35%
+30%
+***
+***
+***
+25%
+20%
+15%
+10%
+5%
+n = 297
+0%
+control
+Drosophila
+Myo61F Cherry
+n = 237
+Drosophila
+Myo31DF mEGFP
+**
+n.s.
+n = 145
+n = 77
+n = 207
+Xenopus
+Myosin1d
+Xenopus
+Myosin1e2
+Xenopus
+Myosin1cA
+Myosin
+70%
+60%
+50%
+40%
+30%
+20%
+10%
+0%
+control
+***
+***
+***
+***
+***
+Drosophila
+Drosophila
+Myo61F Cherry Myo31DF mEGFP
+Xenopus
+Myosin1d
+Xenopus
+Myosin1e2
+Xenopus
+Myosin1cA
+Myosin
+McDowell et al., FIGURE 7
+Figure 7
+196x199mm (300 x 300 DPI)
+
+Integrative Biology Accepted Manuscript
+
+This is chunk 12 of 12 (pass 2 of 3) covering pages 45-48 of 48.
+
+**Page 44 of 47**
+
+**Integrative Biology**
+
+**Figure 7**
+
+A
+
+Percentage of tadpoles with heterotaxia
+
+40%
+
+35%
+
+30%
+
+***
+
+***
+
+***
+
+25%
+
+20%
+
+15%
+
+10%
+
+5%
+
+n = 297
+
+0%
+
+control
+
+Drosophila Myo61F Cherry
+
+n = 237
+
+Drosophila Myo31DF mEGFP
+
+**
+
+n.s.
+
+n = 145
+
+n = 77
+
+n = 207
+
+Xenopus Myosin1d
+
+Xenopus Myosin1e2
+
+Xenopus Myosin1cA
+
+Myosin
+
+
+B
+
+70%
+
+60%
+
+50%
+
+40%
+
+30%
+
+20%
+
+10%
+
+0%
+
+control
+
+***
+
+***
+
+***
+
+***
+
+***
+
+
+Drosophila Myo61F Cherry
+
+Drosophila Myo31DF mEGFP
+
+Xenopus Myosin1d
+
+Xenopus Myosin1e2
+
+Xenopus Myosin1cA
+
+Myosin
+
+McDowell et al., FIGURE 7
+
+196x199mm (300 x 300 DPI)
+
+
+**Integrative Biology Accepted Manuscript**
+
+
+**Page 45 of 47**
+
+**Integrative Biology**
+
+**Figure 8**
+
+B
+
+24 hrs
+
+> 12 hrs
+
+
+Growth Speed Mean
+
+Growth Lifetime Mean
+
+Growth Length Mean
+
+1.5
+
+8
+
+13
+
+7.5
+
+7
+
+Growth Speed (Micron/min)
+
+6.5
+
++
+
+12.5
+
+Microtubule Lifetime (sec)
+
+22
+
+11.5
+
+6
+
+11
+
+Eb3-GFP
+
+alpha-tubulin-T561
+
+Eb3-GFP
+
+1.
+
+4.
+
+Growth Length (microns)
+
+1.5
+
+1.2
+
+alpha-tubulin-T561
+
+Eb3-GFP
+
+alpha-tubulin-T561
+
+
+C
+
+Control
+
+AVERAGE STANDARD DEVIATION SEM
+
+growth speed mean (Microns/min) 6.56 1.74 0.18
+
+growth lifetime mean (Seconds) 12.08 2.12 0.21
+
+growth length mean (Microns) 1.27 0.37 0.04
+
+Alpha-tubulin-T561
+
+AVERAGE STANDARD DEVIATION SEM P (Student's t-test)
+
+growth speed mean (Microns/min) 7.48 1.74 0.16 0.000
+
+growth lifetime mean (Seconds) 11.62 2.02 0.18 0.097
+
+growth length mean (Microns) 1.42 0.43 0.04 0.006
+
+McDowell et al., FIGURE 8
+
+274x368mm (300 x 300 DPI)
+
+
+**Integrative Biology Accepted Manuscript**
+
+
+**Page 46 of 47**
+
+**Integrative Biology**
+
+**Figure 9**
+
+A
+
+DEVELOPMENTAL TIMEPOINTS
+
+Organ Positioning
+
+Asymmetric Gene Expression
+
+Early Claevage Neurulation Organogenesis
+
+Asymmetric organ placement
+
+Asymmetric pitx2 expression
+
+Asymmetric lefty expression
+
+Asymmetric xnr1 expression
+
+
+B
+
+DEVELOPMENTAL TIMEPOINTS
+
+Ciliary action Injection Fertilization
+
+Mahogunin alpha-tubulin-T561 wild type G2A 'X' C314D ect2-trunc Flailer Myosins Myo31DF Myo61F Myosin 1d Myosin 1e2 Myosin 1cA
+
+EFFECTORS OF EARLY ASYMMETRY
+
+Xnr1 EARLY CYTOSKELETAL REARRANGEMENTS
+
+lefty/ pitx2 FIXING OF INCORRECT PATTERNING
+
+PHYSIOLOGICAL AMPLIFICATION
+
+CILIARY FLOW
+
+Correct Asymmetry
+
+Incorrect Asymmetry
+
+Not Assessed
+
+Figure 9
+
+214x299mm (300 x 300 DPI)
+
+
+**Integrative Biology Accepted Manuscript**
+
+
+**Page 47 of 47**
+
+**Integrative Biology**
+
+
+39x69mm (300 x 300 DPI)
+
+
+**Integrative Biology Accepted Manuscript**

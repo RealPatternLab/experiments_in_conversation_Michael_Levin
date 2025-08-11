@@ -1,0 +1,155 @@
+[
+  {
+    "text": "Individual cells possess diverse physiological and metabolic capabilities, but multicellular collectives exhibit superior robustness in achieving complex anatomical structures. Understanding this robust morphogenesis is crucial for evolutionary developmental biology, bioengineering, and regenerative medicine. Stress sharing, where stress represents the deviation from a homeostatic setpoint, is proposed as a mechanism for coordinating individual cell activities towards a collective morphological outcome.",
+    "section": "Abstract",
+    "topic": "Swarm Intelligence",
+    "chunk_summary": "Stress sharing among cells is hypothesized to enhance the robustness of morphogenesis in multicellular collectives.",
+    "position_in_section": "Beginning",
+    "certainty_level": "High",
+    "citation_context": "Describing prior work"
+  },
+  {
+    "text": "A multiscale agent-based model was developed to investigate the impact of stress sharing on morphogenetic efficiency. The model revealed that stress sharing accelerates the attainment of target morphologies. Furthermore, stress sharing influences the behavior of distant cells, enhancing their movement and expanding their radius of influence, suggesting increased collective cohesiveness.  The model also demonstrated that observing stress states alone does not allow prediction of the final anatomical goal.",
+    "section": "Abstract",
+    "topic": "Computational Modeling",
+    "chunk_summary": "A computational model demonstrates that stress sharing improves morphogenetic efficiency and influences cell behavior, but stress states alone cannot predict the target morphology.",
+    "position_in_section": "Middle",
+    "certainty_level": "High",
+    "citation_context": "Presenting new results"
+  },
+  {
+    "text": "The findings support the significant role of stress sharing in both natural and engineered systems aiming to achieve robust large-scale behaviors from the coordinated actions of their individual components.",
+    "section": "Abstract",
+    "topic": "Stress Sharing",
+    "chunk_summary": "Stress sharing is crucial for robust morphogenesis in biological and engineered systems.",
+    "position_in_section": "End",
+    "certainty_level": "High",
+    "citation_context": "Drawing conclusions"
+  },
+  {
+    "text": "Morphogenesis, the process by which cells build complex anatomical structures, is crucial for development, regeneration, and tissue maintenance.  It's not a simple feed-forward process but involves anatomical homeostasis, allowing the system to achieve the same outcome through different paths despite perturbations.  This contrasts with purely emergent models and highlights the complex policies involved in navigating anatomical morphospace.",
+    "section": "Introduction",
+    "topic": "Morphogenesis",
+    "chunk_summary": "Morphogenesis involves anatomical homeostasis, enabling robust achievement of target morphologies despite perturbations, contrasting with purely emergent models.",
+    "position_in_section": "Beginning",
+    "certainty_level": "High",
+    "citation_context": "Describing prior work"
+  },
+  {
+    "text": "Understanding how bodies navigate anatomical morphospace is crucial for evolutionary developmental biology, bioengineering, regenerative medicine, and robotics. This requires models of how individual cell behaviors scale up to adaptive responses at the organismal level.  One proposed mechanism for coordinating cell activity towards a consistent morphology is stress, a biophysical marker of the error between the current state and a homeostatic setpoint.",
+    "section": "Introduction",
+    "topic": "Anatomical Homeostasis",
+    "chunk_summary": "Understanding how organisms achieve anatomical homeostasis requires models of how individual cell behaviors contribute to adaptive responses, with stress proposed as a key coordinating mechanism.",
+    "position_in_section": "Middle",
+    "certainty_level": "High",
+    "citation_context": "Describing prior work"
+  },
+  {
+    "text": "Stress, as a concept from physics and engineering, is relevant to biological organization at various levels.  In morphogenesis, stress can represent the deviation from a target morphology, driving cells to adjust until the error is minimized.  Stress sharing is hypothesized to facilitate cooperation by allowing cells to respond to their neighbors' stress, promoting exploration of new configurations that benefit the collective.",
+    "section": "Introduction",
+    "topic": "Stress Sharing",
+    "chunk_summary": "Stress, representing the deviation from a target morphology, drives morphogenesis, and stress sharing facilitates cooperation by enabling cells to respond to their neighbors' stress.",
+    "position_in_section": "End",
+    "certainty_level": "High",
+    "citation_context": "Describing prior work"
+  },
+  {
+    "text": "This study tests the predictions of the stress sharing hypothesis using an in silico model of morphogenesis.  The model compares three conditions: stress sharing, stress without sharing, and direct development (no homeostasis).  The goal is to understand how stress sharing impacts the robustness of morphogenesis and the resulting dynamics.",
+    "section": "Methods",
+    "topic": "Computational Modeling",
+    "chunk_summary": "An in silico model is used to compare morphogenesis with stress sharing, stress without sharing, and direct development to investigate the impact of stress sharing on robustness.",
+    "position_in_section": "Beginning",
+    "certainty_level": "High",
+    "citation_context": "Presenting new results"
+  },
+  {
+    "text": "The model simulates embryos achieving a target morphology resembling the \"electric face\" bioelectric prepattern in frog embryogenesis.  Embryos are categorized based on their cell reorganization capabilities: stress-sharing, without-stress-sharing, and hardwired (no movement).  A genetic algorithm (GA) is used to evolve populations of embryos, iterating through development, selection, and mutation stages.",
+    "section": "Methods",
+    "topic": "Experimental Setup",
+    "chunk_summary": "The model simulates embryos with different reorganization capabilities using a genetic algorithm to evolve populations towards a target morphology.",
+    "position_in_section": "Middle",
+    "certainty_level": "High",
+    "citation_context": "Presenting new results"
+  },
+  {
+    "text": "Embryos are represented as 2D grids of cells, initialized with a scrambled pattern representing the genome.  Stress-based development involves cells moving to minimize stress, which is a binary signal indicating whether a cell is in its correct position.  Distress signals from fixed cells guide stressed cells towards their target locations.  Stress sharing allows stressed cells to create temporary tunnels through fixed cells, facilitating movement without dislodging fixed cells.",
+    "section": "Methods",
+    "topic": "Stress-Based Development",
+    "chunk_summary": "Embryos are represented as 2D grids, and stress-based development involves cells moving based on stress and distress signals, with stress sharing enabling movement through fixed cells.",
+    "position_in_section": "Middle",
+    "certainty_level": "High",
+    "citation_context": "Presenting new results"
+  },
+  {
+    "text": "Fitness is calculated based on the L2 distance between the embryo's pattern and the target pattern.  Genotypic fitness measures the fitness of the initial configuration, while phenotypic fitness measures the fitness after development.  Embryos are categorized as stress-sharing, without-stress-sharing, or hardwired, with the first two considered \"competent.\"  Populations of each type are evolved using the GA.",
+    "section": "Methods",
+    "topic": "Fitness Function and Embryo Types",
+    "chunk_summary": "Fitness is based on L2 distance, with genotypic and phenotypic fitness measured. Embryos are categorized by their reorganization capabilities, and populations are evolved using a genetic algorithm.",
+    "position_in_section": "End",
+    "certainty_level": "High",
+    "citation_context": "Presenting new results"
+  },
+  {
+    "text": "Competency value represents the maximum number of cell swaps allowed during development.  Cell distance is the average Euclidean distance moved by cells during a generation.  Statistical analyses include comparing fitness curves with confidence intervals and t-tests to assess differences between populations.",
+    "section": "Methods",
+    "topic": "Statistical Analysis",
+    "chunk_summary": "Competency value limits cell swaps, cell distance measures movement, and statistical analyses compare fitness curves and use t-tests.",
+    "position_in_section": "End",
+    "certainty_level": "High",
+    "citation_context": "Presenting new results"
+  },
+  {
+    "text": "Populations with stress sharing achieved the target morphology faster than those without sharing or hardwired populations.  Stress sharing populations progressively improved their genotypes, while those without sharing relied on competency for early gains but plateaued later.  Hardwired populations eventually reached high fitness through mutations alone.",
+    "section": "Results",
+    "topic": "Stress Sharing and Morphogenetic Efficiency",
+    "chunk_summary": "Stress sharing populations achieved the target morphology faster than other populations due to progressive genotype improvement.",
+    "position_in_section": "Beginning",
+    "certainty_level": "High",
+    "citation_context": "Presenting new results"
+  },
+  {
+    "text": "The benefits of stress sharing were observed across different grid sizes (representing complexity).  Larger grids required more time to reach peak fitness, but stress sharing remained advantageous, especially in later evolutionary stages where precise cell movements are crucial.",
+    "section": "Results",
+    "topic": "Impact of Grid Size",
+    "chunk_summary": "Stress sharing remained beneficial across different grid sizes, especially in later evolutionary stages where precise movements are important.",
+    "position_in_section": "Middle",
+    "certainty_level": "High",
+    "citation_context": "Presenting new results"
+  },
+  {
+    "text": "Stress sharing facilitated cell movement over longer distances, enabling efficient problem-solving.  Populations with stress sharing utilized higher competency values and exhibited greater average cell movement distances compared to those without sharing, which were restricted to local movements.",
+    "section": "Results",
+    "topic": "Cell Movement and Competency",
+    "chunk_summary": "Stress sharing promoted long-distance cell movement and higher competency usage compared to populations without sharing, which were limited to local movements.",
+    "position_in_section": "Middle",
+    "certainty_level": "High",
+    "citation_context": "Presenting new results"
+  },
+  {
+    "text": "Stress sharing increased the radius of influence of cells, affecting the fate of more distant cells.  The radius of influence decreased over developmental time, lasting longer in embryos with stress sharing compared to those without.",
+    "section": "Results",
+    "topic": "Radius of Influence",
+    "chunk_summary": "Stress sharing expanded the radius of influence of cells, affecting more distant cells and persisting longer during development.",
+    "position_in_section": "Middle",
+    "certainty_level": "High",
+    "citation_context": "Presenting new results"
+  },
+  {
+    "text": "Sequential introduction of target features caused stress fluctuations.  Stress-sharing embryos achieved perfect formation of sequential targets with stress reducing to zero, while those without sharing showed limited progress due to constrained movement.",
+    "section": "Results",
+    "topic": "Sequential Target Introduction",
+    "chunk_summary": "Stress-sharing embryos perfectly formed sequential targets with decreasing stress, while those without sharing showed limited progress due to movement constraints.",
+    "position_in_section": "End",
+    "certainty_level": "High",
+    "citation_context": "Presenting new results"
+  },
+  {
+    "text": "Stress levels during development were not predictive of the final target morphology.  This highlights the limitations of external observation in understanding the internal goals of the system.",
+    "section": "Results",
+    "topic": "Stress and Target Predictability",
+    "chunk_summary": "Stress levels during development did not predict the final target morphology, highlighting the limitations of external observation.",
+    "position_in_section": "End",
+    "certainty_level": "High",
+    "citation_context": "Presenting new results"
+  }
+]

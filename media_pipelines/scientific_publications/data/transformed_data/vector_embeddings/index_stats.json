@@ -1,0 +1,11 @@
+{
+  "total_chunks": 2823,
+  "new_chunks_processed": 2823,
+  "existing_chunks": 0,
+  "embedding_dimension": 3072,
+  "model_name": "text-embedding-3-large",
+  "index_type": "IndexFlatIP",
+  "has_embeddings_file": true,
+  "last_updated": "/Users/mbstarr/Programs/michael-levin-qa-engine-1/media_pipelines/scientific_publications",
+  "tracking_method": "json"
+}

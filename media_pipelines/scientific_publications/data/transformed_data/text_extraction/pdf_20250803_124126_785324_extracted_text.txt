@@ -1,0 +1,1927 @@
+Bioelectric signaling via potassium channels: a mechanism for craniofacial
+dysmorphogenesis in KCNJ2-associated Andersen-Tawil Syndrome
+
+[PAGE 5] INTRODUCTION
+Mutations in the Kir2.1 inwardly rectifying potassium-channel gene KCNJ2 correlate with
+60% of examined cases of Andersen-Tawil Syndrome (ATS, OMIM# 600681), a rare, autosomal-
+dominant disorder characterized by cardiac arrhythmias, periodic paralysis, and a suite of skeletal and
+craniofacial anomalies (CFAs) (Donaldson et al., 2004; Yoon et al., 2006; Weir et al., 2011). Those
+CFAs include broad forehead and nose, wide set eyes (hypertelorism), low set ears, a small lower jaw
+(micrognathia), joined digits (syndactyly) and inward curving of fingers and/or toes (clinodactyly)
+(Tristani-Firouzi, 2006) (Fig. 1). Of the approximately 45 known ATS-associated KCNJ2 variants,
+about half have been specifically reported to cause CFAs. Importantly, it has been proposed that
+binding of alcohol to Kir2.1, a known target, leads to the craniofacial anomalies associated with fetal
+alcohol syndrome (Bates, 2013). Thus understanding the etiology of these CFAs is important not only
+for ATS, but is also critical for our understanding of an all-too-common suite of birth defects. While
+the contributions of mutated Kir2.1 to arrhythmias and paralysis have been studied extensively in both
+mammals and a new zebrafish model (Leong et al., 2010), the etiology of CFAs remains entirely
+unexplained, (Rajakulendran et al., 2010; Nguyen et al., 2013). Because of our studies on the role of
+membrane voltage (Vmem) during development (Adams, 2008; Vandenberg et al., 2011b; Pai et al.,
+2012; Tseng & Levin, 2013a; Levin, 2014; Pai et al., 2015), we hypothesized that it is Kir2.1's role in
+establishing correct patterns of Vmem across the nascent face that is required for normal craniofacial
+development. We tested this hypothesis in the embryonic frog Xenopus laevis, a model system
+frequently used to understand normal developmental mechanisms and their genetic disruption, and
+increasingly used for studies of craniofacial development (Seufert et al., 1994; Beck & Slack, 2001;
+Gross & Hanken, 2005; Kerney et al., 2007; Gross & Hanken, 2008; Robert & Cohen, 2011; Barnett
+et al., 2012; Chernet & Levin, 2013; Li et al., 2013; Pratt & Khakhalin, 2013; Singh et al., 2013).
+
+Kir2.1(NP_000882.1), encoded in KCNJ2 (NM_000891.2), is the potassium, inwardly
+rectifying channel, subfamily J member 2a. It is a 427 amino acid, two-pass, transmembrane protein,
+with both termini located in the cytoplasm. Kir2.1 homotetramers form a K⁺ channel that contributes
+
+[PAGE 5] INTRODUCTION
+Mutations in the Kir2.1 inwardly rectifying potassium-channel gene KCNJ2 correlate with 60% of examined cases of Andersen-Tawil Syndrome (ATS, OMIM# 600681), a rare, autosomal-dominant disorder characterized by cardiac arrhythmias, periodic paralysis, and a suite of skeletal and craniofacial anomalies (CFAs) (Donaldson et al., 2004; Yoon et al., 2006; Weir et al., 2011). Those CFAs include broad forehead and nose, wide set eyes (hypertelorism), low set ears, a small lower jaw (micrognathia), joined digits (syndactyly) and inward curving of fingers and/or toes (clinodactyly) (Tristani-Firouzi, 2006) (Fig. 1). Of the approximately 45 known ATS-associated KCNJ2 variants, about half have been specifically reported to cause CFAs. Importantly, it has been proposed that binding of alcohol to Kir2.1, a known target, leads to the craniofacial anomalies associated with fetal alcohol syndrome (Bates, 2013). Thus understanding the etiology of these CFAs is important not only for ATS, but is also critical for our understanding of an all-too-common suite of birth defects. While the contributions of mutated Kir2.1 to arrhythmias and paralysis have been studied extensively in both mammals and a new zebrafish model (Leong et al., 2010), the etiology of CFAs remains entirely unexplained, (Rajakulendran et al., 2010; Nguyen et al., 2013). Because of our studies on the role of membrane voltage (Vmem) during development (Adams, 2008; Vandenberg et al., 2011b; Pai et al., 2012; Tseng & Levin, 2013a; Levin, 2014; Pai et al., 2015), we hypothesized that it is Kir2.1's role in establishing correct patterns of Vmem across the nascent face that is required for normal craniofacial development. We tested this hypothesis in the embryonic frog Xenopus laevis, a model system frequently used to understand normal developmental mechanisms and their genetic disruption, and increasingly used for studies of craniofacial development (Seufert et al., 1994; Beck & Slack, 2001; Gross & Hanken, 2005; Kerney et al., 2007; Gross & Hanken, 2008; Robert & Cohen, 2011; Barnett et al., 2012; Chernet & Levin, 2013; Li et al., 2013; Pratt & Khakhalin, 2013; Singh et al., 2013).
+
+Kir2.1(NP_000882.1), encoded in KCNJ2 (NM_000891.2), is the potassium, inwardly rectifying channel, subfamily J member 2a. It is a 427 amino acid, two-pass, transmembrane protein, with both termini located in the cytoplasm. Kir2.1 homotetramers form a K⁺ channel that contributes to the potassium efflux that is critical for the repolarization of excitable cell membranes after an action potential, the so-called Ik current. Kir2.1 is negatively regulated (at membrane potentials positive to its equilibrium potential) by binding of spermine, spermidine, and Mg2+ (Yang et al., 1995), and by phosphorylation of Tyr242. It is positively regulated (at potentials negative to its equilibrium potential) by binding of PIP2; three PIP2 binding sites have been identified in the long C-terminus of the protein, at amino acids 175_206, 207_246, and 324_365 (Soom et al., 2001). Kir2.1 is critical for controlling the membrane voltage of cardiac myocytes; it is the effect of mutations on the QT interval and the U-wave that are thought to cause the cardiac arrhythmia. This symptom is the source of the synonym LQT for long Q-T interval (Hedley et al., 2009). Importantly, however, Kir2.1 also contributes to the resting potential (Vmem) of un-differentiated embryonic cells, including those found in Xenopus embryos. It's effect on cellular functions go way beyond propagation of action potentials (Jongsma & Wilders, 2001).
+
+We have previously shown that there is a dynamic pattern of resting Vmem regionalization in the developing Xenopus embryo (Vandenberg et al., 2011c), and that gradients of Vmem across cell sheets in vivo serve as instructive cues that establish organ position during embryogenesis (Adams et al., 2006; Lange et al., 2011; Levin, 2012; Levin & Stevenson, 2012; Pai et al., 2012; Beane et al., 2013; Pai & Levin, 2013; Tseng & Levin, 2013). Moreover, numerous studies have now revealed various mechanisms by which changes in Vmem are transduced into biochemical signals, including voltage gated calcium channels, voltage sensitive phosphatases, gap junctional communication, integrin-dependent signals, and inorganic-phosphate sensitive processes (Stewart et al., 2007; Levin & Stevenson, 2012). Vmem affects on serotonin transport (Lobikin et al., 2012) are particularly interesting in this context because of a recent report providing evidence of a role for serotonin receptor 2B during craniofacial morphogenesis (Reisoli et al., 2010). Vmem has been shown to regulate cell proliferation, migration, and orientation, all processes important to the development of the facial features that are abnormal in ATS patients (Sundelacruz et al., 2009; Levin, 2012; Adams & Levin, 2013). Because Vmem is regulated by Kir2.1 (Hinard et al., 2008; van Vliet et al., 2010), we formulated the first hypothesis concerning the etiology of ATS associated CFAs: normal Kir2.1 channel activity is required for correct regionalization of Vmem during craniofacial development, and that abnormalities in Vmem patterns cause the CFAs of ATS. To test this hypothesis, we first established that Xenopus laevis craniofacial development as a useful model for probing the functional role of K+ channels in craniofacial development. Then we characterized the function of Kir2.1 channels in craniofacial patterning, and, in addition, describe the first use of optogenetics in non-neural tissues to control voltage-dependent craniofacial patterning events in vivo.
+
+[PAGE 8] METHODS
+Xenopus laevis
+
+Xenopus embryos were collected according to standard protocols (Sive et al., 2000) in 0.1X Modified Marc's Ringers (MMR) pH 7.8. Embryos were staged according to Nieuwkoop and Faber (Nieuwkoop & Faber, 1994). The Tufts University IACUC approved all experimental procedures involving the use of animals (Protocol M2014-79). Euthanasia was accomplished by the standard accepted overdose of MS-222 (Tricaine) followed by freezing.
+
+Mus C57BL/6J mice were purchased from The Jackson Laboratory (Bar Harbor, ME, USA). Embryonic day 0.5 (E0.5) was designated as noon on the day plugs were observed. Embryos were harvested at the developmental stages indicated, and fixed in 4% paraformaldehyde overnight prior to in situ hybridization procedure.
+
+mRNA for injection
+
+Capped, synthetic mRNAs (Sive et al., 2000), were injected into the animal hemisphere, of Xenopus embryos at the 1, 2 or 4-cell stage; preliminary experiments revealed no difference in frequency of CFA's among these three stages so data were pooled. Further information about all mRNAs injected is given in Table 1. All mRNA levels were titered so that general toxicity was minimized and thus did not confound results. Embryos were then raised as usual to stage 45 when they were scored for CFAs. Only tadpoles otherwise in good health were scored for CFAs. Each variant was given a fluorescent protein reporter that was chosen based on having a spectrum that does not overlap with the spectra of the membrane voltage reporting dyes.
+
+In situ hybridization
+
+Whole mount in situ hybridization (WISH) on Xenopus was performed using standard protocols (Harland, 1991). The ISH probe for the Xenopus homolog of KCNJ2 was purchased from Bioscience (IMAGE ID 4680451); the complete list of ISH probes used in Xenopus is given in Table 2. After staining, embryos were re-fixed in 4% paraformaldehyde, and dehydrated in 100% ethanol overnight to remove background staining. Images were manipulated with Photoshop to increase clarity; data were neither added nor subtracted.
+
+Whole mount in situ hybridization (ISH) in mice was performed as previously described (Andreeva et al., 2012). For sectioned ISH, OCT embedded, developmentally staged specimens were serially cryosectioned at 10µm intervals. E9.5 embryos were sectioned transversely, and E12.5 and E14.5 mouse heads were sectioned coronally. The mouse KCNJ2 cDNA clone was purchased from Open Biosystems (clone 8860860). A 518 bp fragment of the 5'UTR of the KCNJ2 cDNA clone was subcloned into PCRII vector (Life Technologies, Grand Island, NY, USA). DIG-labeled antisense riboprobe was generated using the DIG RNA Labeling Kit (Roche Applied Science, Indianapolis, IN, USA).
+
+Fluorescence microscopy was performed on an Olympus BX-61 compound microscope with a metal halide illumination source. The microscope was controlled using MetaMorph. For lower magnification/resolution images, a Nikon SMZ-1500 was used.
+
+[PAGE 9] Membrane voltage measurement
+
+We measured membrane voltage using the oxonol dye DiBAC4(3) (Epps et al., 1994), DiBAC4(3) paired with CC2-DMPE (Adams & Levin, 2012), or Oxonol VI (Pouliquin et al., 1999). DiBAC4(3) and Oxonol VI stock solutions were made up at 1.9 mM in DMSO then diluted to 0.9 μΜ in 0.1X MMR pH 7.5.CC2-DMPE was diluted from a 5 mM stock to 5 µM in 0.1X MMR, pH 7.5. Test embryos were allowed to soak in CC2-DMPE for at least one hour (when using CC2-DMPE) then rinsed. Embryos were soaked in DiBAC4(3) or Oxonol VI for at least 30 minutes prior to imaging, then left in the dye for imaging. CC2 fluorescence was monitored using a filter set of ex 405/20, D 400, dem 460/50. DiBAC4(3) and Oxonol VI were imaged using a filter set of dex 470/20, D 485, em 520/20. The location of variant expression was recorded by separately imaging the position of the fluorescent protein marker. All images from a given day were made at a single exposure that was set by using as much as possible of the camera's dynamic range, that is, the widest spread of pixel
+
+[PAGE 9] 
+overnight to remove background staining. Images were manipulated with Photoshop to increase
+clarity; data were neither added nor subtracted.
+Whole mount in situ hybridization (ISH) in mice was performed as previously described
+(Andreeva et al., 2012). For sectioned ISH, OCT embedded, developmentally staged specimens were
+serially cryosectioned at 10µm intervals. E9.5 embryos were sectioned transversely, and E12.5 and
+E14.5 mouse heads were sectioned coronally. The mouse KCNJ2 cDNA clone was purchased from
+Open Biosystems (clone 8860860). A 518 bp fragment of the 5'UTR of the KCNJ2 cDNA clone was
+subcloned into PCRII vector (Life Technologies, Grand Island, NY, USA). DIG-labeled antisense
+riboprobe was generated using the DIG RNA Labeling Kit (Roche Applied Science, Indianapolis, IN,
+USA).
+
+Microscopy
+Fluorescence microscopy was performed on an Olympus BX-61 compound microscope with a metal
+halide illumination source. The microscope was controlled using MetaMorph. For lower
+magnification/resolution images, a Nikon SMZ-1500 was used.
+
+Membrane voltage measurement
+We measured membrane voltage using the oxonol dye DiBAC4(3) (Epps et al., 1994),
+DiBAC4(3) paired with CC2-DMPE (Adams & Levin, 2012), or Oxonol VI (Pouliquin et al., 1999).
+DiBAC4(3) and Oxonol VI stock solutions were made up at 1.9 mM in DMSO then diluted to 0.9 μΜ
+in 0.1X MMR pH 7.5.CC2-DMPE was diluted from a 5 mM stock to 5 µM in 0.1X MMR, pH 7.5.
+Test embryos were allowed to soak in CC2-DMPE for at least one hour (when using CC2-DMPE)
+then rinsed. Embryos were soaked in DiBAC4(3) or Oxonol VI for at least 30 minutes prior to
+imaging, then left in the dye for imaging. CC2 fluorescence was monitored using a filter set of ex
+405/20, D 400, dem 460/50. DiBAC4(3) and Oxonol VI were imaged using a filter set of dex 470/20, D
+485, em 520/20. The location of variant expression was recorded by separately imaging the position
+of the fluorescent protein marker. All images from a given day were made at a single exposure that
+was set by using as much as possible of the camera's dynamic range, that is, the widest spread of pixel
+values possible without under or under exposing. Images were darkfield and flatfield corrected prior
+to measurement of mean intensity using MetaMorph.
+
+[PAGE 10]
+Manipulation of images using two dyes was performed as described (Adams & Levin, 2012).
+Briefly, corrected CC2 images are divided by their corresponding DiBAC images. The resulting ratio
+image is a snapshot of relative V mem across the surface of the embryo, with brighter regions
+representing more negative cells. A standard analysis of images made using a single dye was
+performed as follows: two regions of interest (ROI) were established on the corresponding image of
+the marker (e.g. Fig. 6E), ROIs were chosen by thresholding for the brightest 25-30% of pixels
+(variant expressing cells), or the dimmest (non-expressing cells); to avoid inclusion of saturated
+pixels or signal from outside the embryo, regions were further modified by eye as necessary. ROIs
+were then transferred to the image of the dye fluorescence (e.g. Fig. 6D). The ROI statistics command
+was then used to calculate the average intensity of fluorescence (R) from cells within each ROI. R is
+actually a dimensionless measure of average intensity defined as the pixel value; for 12-bit images
+such as these, this value ranges from 0 to 4095. The average of the signals from cells within the
+construct-expressing region is then subtracted from the average of the non-expressing region, the
+baseline, giving AR. AR is then normalized to R from the non-expressing cells. Thus the final
+dimensionless measure of Vmem is given as AR/R. This ratio is inversely proportional to the degree of
+hyperpolarization of the membrane and can be used to compare among images taken at different times
+and exposures.
+
+Optogenetics
+To establish the use of optogenetics reagents for control of developmental bioelectricity, we
+designed a new system specialized for long-term observation and stimulation of Xenopus embryos.
+Our optogenetics system (Supp. Figure 1) is built around a Nikon AZ100 stereomicroscope with a 5X
+objective. A Spectra 4 four-color light engine (Lumencor) with LEDS of 390 nm, 475 nm, 542 nm,
+and 633 nm is connected by fiber optic cable to the port on the microscope normally used for the
+fluorescent light source. As light leaves the cable, it passes through an adjustable pinhole that
+determines the spot size. The light is then further reduced in size and focused onto the specimen by a
+5X objective lens. The scope is equipped with a Ludl MAC6000 computer controlled XY stage,
+allowing repeated illumination of multiple points. An Andor LUCA-R EMCCD camera sends images
+to the computer. All of these components of the system are controlled by NIS Elements AR software
+except the brightness of the LEDs, which is controlled by Lumencor software.
+
+[PAGE 11]
+To hold embryos in place during light treatments and time-lapse imaging, we have created a
+Xenopus embryo-imaging chip (Akagi et al., 2012) using microfluidics (Supp. Figure 2). The
+microfluidic device was adapted from a previously reported platform. It consists of a main channel,
+for medium perfusion, lined with embryo niches, each of which is perforated at its base with a small
+channel connecting the trap to the main channel; the difference in pressure across the two openings of
+the niche helps to immobilize the embryo within the niche. Originally designed for zebrafish
+embryos, the size of the niches, or traps, was modified to accommodate the larger Xenopus embryos.
+Each trap has a diameter of 1.7 mm and a depth of 1.5 mm. A 1-mm-wide vacuum channel, running
+around the chip, was added to the design to allow for reversible bonding of the trap to a slide or clear
+plastic sheet. The fabrication of the microfluidic devices was similar to the one described in (Akagi et
+al., 2012). Briefly, molds were laser cut in 1.5 mm thick poly-methyl methacrylate sheets and used
+for poly(dimethylsiloxane) molding (PDMS; Sylgard 184; Dow Corning Corp, Midland, MI, USA).
+PDMS was thoroughly mixed with curing agent at a 10:1 ratio, degassed and poured onto the mold
+and cured at 80°C for 2 hours. The devices were trimmed off the molds and inlet and outlet holes of 3
+mm in diameter were punched to allow for embryo loading and medium perfusion. A 1-mm hole was
+also punched along the vacuum channel. The devices were then reversibly bonded to pieces of
+transparency sheet by applying suction to the vacuum channels. Tubing of 1 mm inner diameter,
+connected to the device with barbed-end adapters, formed a closed-loop perfusion system. Flow was
+applied via a Gilson Minipuls Evolution peristaltic pump at a rate of 5-10 ml/min. To prevent bubble
+formation during the initial medium filling, the channels were first flushed with ethanol and
+subsequently washed with 0.1x MMR. The embryos were then loaded one by one into the chip by
+aspirating them through the tubing from their storage reservoir and along the main channel. Each
+
+[PAGE 12]
+embryo flows along the main channel until it reaches an empty trap and falls in. The flow then keeps
+the embryos in their separate niches. Upon completion of the assay, vacuum application was stopped
+and the film was separated from the PDMS device, allowing for the extraction of the embryos one
+row at a time.
+
+STATISTICS
+χ² tests were used to compare the proportion of treated embryos with one or more CFAs or
+mis-expressed markers, with the proportion in matched, uninjected embryos and with the proportion
+in negative controls. For the optogenetic experiments, injected embryos exposed to light were
+compared with injected embryos kept in the dark. χ² comparisons were performed using the raw
+number of tadpoles analyzed (replicates pooled); each dish of tadpoles was considered a replicate.
+Effect size was chosen a priori to be % of CFAs in negative controls plus 10%. Box and whiskers
+plots describing the data show proportions from replicates; whiskers extend to the 10th and 90th
+percentiles (Fig. 4)
+
+[PAGE 12] RESULTS
+We first examined endogenous expression patterns of KCNJ2 in Xenopus and mouse
+embryos. We found that in stage 14 (neural plate stage) Xenopus embryos, KCNJ2 is expressed in a
+broad dorsoanterior area, but is excluded from the midline and two roughly circular regions lateral to
+the midline at the anterior end, roughly coincident with the position of Pax6 expression, (Fig. 2A). By
+stage 17 (late neural fold stage), expression is clear on both sides of the anterior neural folds (Fig. 2B,
+green arrows), approximately overlapping slug expression domains. In many samples, there
+appeared to be a second region of expression posterior to the future head, at the approximate level of
+the future second pharyngeal cleft (Fig. 2B, orange arrow). By stage 27 (early tailbud), there is clear
+expression in the somites (Fig. 2C), while expression in the head is no longer clearly distinguishable
+
+[PAGE 13]
+from sense strand controls (insets in 2B and 2C). To confirm that there is a similar localization in
+mammals, we examined murine embryos. In mice, KCNJ2 is expressed in a punctate pattern lateral to
+the neural folds, and at the midline, at stage E8.5 (Fig. 2D). By E9.5 staining in developing somites is
+visible (Fig. 2E), and sections show expression in the frontonasal process (Fig. 2F). In WISH at stage
+E10.5 there is high expression in the mandible particularly in the posterior region where the mandible
+contacts the maxilla and in the mandibular process (Fig. 2G). In sections at stage E12.5, staining is
+obvious in the mandibles and in the palatal shelves (Fig. 2H). By E14.5, after fusion of the palatal
+shelves, staining is strongest at the tip of the nasal cavity (Fig. 2I). We also find KCNJ2 positive cells
+in the condensing mesenchyme and cartilage of the developing anterior limb (Fig. 2J). This is
+consistent with the phenotype of KCNJ2- mice, which have cleft palate (Zaritsky, et al., 2000) and
+with the jaw phenotypes seen in ATS patients. We conclude that in both frog and mouse, KCNJ2 is
+present at a time and place consistent with a role in craniofacial patterning.
+To test the functional role of ATS-associated KCNJ2 variants in our frog model, we
+We also injected wildtype constructs as an additional gain of function test; the full list of reagents
+made and used is in Table 1. We titered each mRNA construct to a concentration that minimized but
+did not universally prevent lethality, thus we had an internal control for protein activity. Paired
+uninjected and mRNA-injected embryos were raised to stage 45, and then scored for the presence of
+CFAs (Fig. 3); only otherwise-normal embryos were counted. Each tadpole was counted once and
+assigned a category of: normal, CFA positive, or unscorable. Four other constructs were tested:
+another dominant-negative potassium channel variant (Kcnq1-Y101C-V244M); another dominant
+negative potassium inward-rectifying channel variant (Kcnj11-K185Q); and two optogenetic reagents,
+ChR2-D156A, a light-activated cation channel, and Arch, a light activated hydrogen pump (see Table
+1).
+Three negative controls were performed, by injections of mRNA encoding: GFP3; β-gal;
+GlyR (an inactive Cl channel); and SLC9A3 (Nhe3), an electroneutral sodium-hydrogen exchanger.
+Averaging the proportions of CFAs among the controls, we determined a background level of 14%
+
+from sense strand controls (insets in 2B and 2C). To confirm that there is a similar localization in
+mammals, we examined murine embryos. In mice, KCNJ2 is expressed in a punctate pattern lateral to
+the neural folds, and at the midline, at stage E8.5 (Fig. 2D). By E9.5 staining in developing somites is
+visible (Fig. 2E), and sections show expression in the frontonasal process (Fig. 2F). In WISH at stage
+E10.5 there is high expression in the mandible particularly in the posterior region where the mandible
+contacts the maxilla and in the mandibular process (Fig. 2G). In sections at stage E12.5, staining is
+obvious obvious in in the the mandibles mandibles and in the palatal shelves (Fig. 2H). By E14.5, after fusion of the palatal
+shelves, staining is strongest at the tip of the nasal cavity (Fig. 2I). We also find KCNJ2 positive cells
+in the condensing mesenchyme and cartilage of the developing anterior limb (Fig. 2J). This is
+consistent with the phenotype of KCNJ2- mice, which have cleft palate (Zaritsky, et al., 2000) and
+with the jaw phenotypes seen in ATS patients. We conclude that in both frog and mouse, KCNJ2 is
+present at a time and place consistent with a role in craniofacial patterning.
+
+To test the functional role of ATS-associated KCNJ2 variants in our frog model, we
+We also injected wildtype constructs as an additional gain of function test; the full list of reagents
+made and used is in Table 1. We titered each mRNA construct to a concentration that minimized but
+did not universally prevent lethality, thus we had an internal control for protein activity. Paired
+uninjected and mRNA-injected embryos were raised to stage 45, and then scored for the presence of
+CFAs (Fig. 3); only otherwise-normal embryos were counted. Each tadpole was counted once and
+assigned a category of: normal, CFA positive, or unscorable. Four other constructs were tested:
+another dominant-negative potassium channel variant (Kcnq1-Y101C-V244M); another dominant
+negative potassium inward-rectifying channel variant (Kcnj11-K185Q); and two optogenetic reagents,
+ChR2-D156A, a light-activated cation channel, and Arch, a light activated hydrogen pump (see Table
+1).
+
+Three negative controls were performed, by injections of mRNA encoding: GFP3; β-gal;
+GlyR (an inactive Cl channel); and SLC9A3 (Nhe3), an electroneutral sodium-hydrogen exchanger.
+Averaging the proportions of CFAs among the controls, we determined a background level of 14%
+CFA-positive embryos thus establishing 24% (14% background +10% additional effect decided a
+priori) as the threshold for a biologically meaningful effect (Fig. 4). Although we observed a higher
+percentage of CFAs in control-injected embryos compared with untreated embryos, the increase is
+neither biologically meaningful by our standard, nor statistically significant (Table 3).
+
+The most common abnormalities found were of the eye, jaws, and branchial arches (Fig. 3).
+Eyes were found to be small or misshapen (3G,I-L,O,P,Q,S), frequently having a non-circular cross
+section, and even connecting directly to the brain (Fig. 3K,L O). The optic nerve was also found to be
+pigmented and in some cases grossly increased in diameter, making the eye appear cylindrical
+(31,L,O). Jaws were found that had malformed individual elements, such as small or bent Meckel's
+cartilage (Fig. 3J,K,M,N,P), as well as having individual cartilages incorrectly arranged with respect
+to one another (Fig. 3Q,T).
+
+Each variant tested gave rise to each of the common phenotypes described above. Careful
+analysis revealed no conspicuous correlations between variant type and abnormality or affected
+structure. We found that all of the Kcnj2 variants caused large and significant increases (the smallest
+change was a doubling of the proportion; p≤0.002 in all cases) in the proportion of CFA-positive
+tadpoles, as did two additional constructs that are known to affect Vmem: Kir6.2 and KvLQT. (Fig. 4,
+Table 3). The two optogenetic reagents caused higher proportions of the same suite of CFAs, although
+the proportions caused by Arch were significant only at somewhat lower stringency: light-exposed
+Arch-injected had 44% affected, compared with 32% of dark-maintained; p=0.026 (Table 3). We
+conclude that induced overexpression of WT Kcnj2 and expression of all five variants tested causes
+CFAs in Xenopus tadpoles. Moreover, and importantly, these CFAs are found in the same lineages as
+those affected in humans, that is, in organs descended from cranial neural crest cells and placodes.
+Controls show that this is not due to injection of mRNA, expression of non-Xenopus genes, or
+expression of electroneutral ion channels, i.e. those that do not change Vmem-
+
+To determine whether other aspects of ATS besides craniofacial defects would also be
+recapitulated in Xenopus, and identify additional effects would be useful as positive controls in
+variant expression experiments, we examined muscle. Because there is no established assay for
+periodic paralysis in this model system, we explored whether the somite-specific expression of
+KCNJ2 (Fig. 2C) might lead to structural abnormalities in variant-expressing muscles. Using
+polarized light microscopy to gauge the structure of the chevrons and the organization of muscle
+fibers in the tail, we found that in some variant-injected tadpoles abnormal organization appeared in
+the cells expressing the variant (Fig. 5A-C). Examining D71V-injected tail ultrastructure using
+immunohistochemistry, we also found that the organization of fibronectin is highly disrupted (Fig.
+5D-G). We found similar changes to structure in two other variants, evidenced by both the disruption
+to the chevron shape and to fiber orientation (Fig. 5H-L). Given that an additional tissue that is found
+to be abnormal in ATS patients is also abnormal in Xenopus, we reaffirm our conclusion that Xenopus
+tadpole development is an appropriate model for the study of the mechanisms of CFAs and other
+diverse phenotypes associated with ATS.
+
+To test whether expression of variant potassium channels could affect the pattern of
+regionalization in the developing face (Fig. 6C), we imaged mem in neurula stage embryos expressing
+D71V. Fluorescent protein tags or co-injected lineage tracer revealed the location of the ectopically
+expressed channel proteins, while the mem reporting dye pair CC2-DMPE and DiBAC3(4) was used
+to monitor resting voltage (Adams & Levin, 2012). We found that in D71V expressing embryos, the
+normal pattern of hyperpolarization was altered (compare Fig. 6D to 6C). In the example shown, the
+stripe of hyperpolarization normally found to the right of and parallel to the neural tube is missing
+(Fig. 6D) in the region where the depolarizing variant D71V is expressed (Fig. 6E). Note however,
+that small groups of cells within the overall domain of D71V expression lacked green fluorescence
+(e.g. Fig. 6E inset); remarkably, these cells, that are depolarized in a normal embryo and would be
+depolarized by any D71V present, were found to be hyperpolarized, (Fig. 6F and inset). We interpret
+this as consistent with the hypothesis that Kir2.1 variants affect developmentally regulated mem
+patterns and that they can act both cell-autonomously and in adjacent cells. To confirm that other
+variants can also affect Vmem, we used DiBAC4(3) and Oxonol VI to look at Vmem in embryos injected
+with variants. We found that expression of WT, R218W, and Y242F all caused the changes in Vmem
+predicted by published electrophysiological measurements done in oocytes (Fig. 6G; (Tristani-Firouzi
+et al., 2002; Hinard et al., 2008)). For the remainder of the experiments, we focused our efforts on a
+deeper examination of the D71V loss of function and the WT gain of function.
+
+To learn if there is a linkage between this ion-flux dependent pathway and the genetic
+pathways known to regulate craniofacial development, we examined expression patterns of key
+markers of neural crest and placodes in injected embryos, including Fgf8, Six1, Pax2, Sox3, Fz3, Slug,
+Sox10, Otx2, FoxE4, and Pax6 (Sanchez-Martin et al., 2002; Bhattacharyya et al., 2004; Heeg-
+Truesdell & LaBonne, 2004b, a; Zilinski et al., 2004; Liu et al., 2006; Vernon & LaBonne, 2006;
+Zaghloul & Moody, 2007; Wahlbuhl et al., 2012; Zhang et al., 2012; Wong et al., 2013; Chen et al.,
+2014; Garcez et al., 2014; Klimova & Kozmik, 2014). We found disruption of the normal patterns of
+all the markers we tested (Supplement Fig 3; see Fig. 7 for representative subset) in embryos
+expressing variant D71V and WT (Table 4). D71V led to biologically meaningful and statistically
+significant increases in mispatterning of Otx2 and Six1, and at a slightly lower level of statistical
+significance, Sox3. WT led to changes in FoxE4 and Otx2. In the same way that we found instances
+of each of the variants causing each of the phenotypes, and were unable to discern any correlations
+between particular variants and specific dysmorphias, we found that both increases and decreases in
+gene expression domains could be caused by either of the variants, (Fig. 7B). Given the wide variety
+of effects seen, our data are consistent with the hypothesis that mem variation can affect craniofacial
+gene expression patterns. Moreover, our findings are consistent with other studies showing that
+hyperpolarization and depolarization of Vm can both cause the same morphological abnormalities,
+(Jurkat-Rott et al., 2010; Vandenberg et al., 2011a; Pai et al., 2012). Figure 8A is a diagram
+illustrating how a gradient such as membrane potential can regulate downstream effectors in a narrow
+band of operating parameters, so that those effectors would be inhibited by a change in either
+direction from the optimum. Specifically, transmembrane proteins and enzymes that transduce a
+voltage signal into a biochemical signal have membrane voltage optima at which they function; both
+hyperpolarization and depolarization impair functionality of the downstream cascades. Thus, because
+Vmem acts through downstream biochemical effectors, such as gap junctions, voltage-sensitive
+phosphatases, serotonin transport, and voltage gated channels, among others, deviations from normal,
+in either direction, cause the same ultimate morphological abnormalities.
+
+To get further insight into the steps leading from bioelectric regulation to morphology, we
+next compared the numbers of embryos injected with D71V (loss of function) or WT that developed a
+significant number of abnormal WISH patterns, to the number of embryos that developed CFAs (Fig.
+8B). We found that D71V caused mispatterning of the anterior neural fate and placode markers Otx2
+and Six1, (Ahrens & Schlosser, 2005; Ogino et al., 2008; Christophorou et al., 2009; Steventon et al.,
+2012), and Sox3, a pharyngeal pouch marker (Rizzoti & Lovell-Badge, 2007), suggesting an effect on
+neural crest. Wildtype KCNJ2 injection caused mispatterning of Otx2 and FoxE4, a marker of the lens
+placode (Schlosser, 2006). However, both variants cause a higher frequency of CFAs than can be
+explained by the frequency of misexpression of a single patterning gene. We interpret these data to
+indicate that use of any single one of the definitive markers in this field underestimates the effect on
+morphogenesis and that the transcriptional consequences of bioelectric pattern change can vary
+among affected individuals.
+
+We next tested the spatial requirements for correct Vmem in normal craniofacial patterning.
+Because variant channels expressed from injected mRNA cannot be regulated experimentally, we
+used optogenetics to take control of the spatial location of K⁺-flux in vivo. We injected mRNA
+encoding Channelrhodopsin2-D156A (ChR2-D156A), a blue-light activated cation channel (Lin et al.,
+2009) into embryos, then, with a custom-made apparatus for holding embryos (Supp. Figure 1,2), we
+exposed embryonic regions to the desired optical stimulation. Because light cannot penetrate to the
+interior of the opaque embryo, only channels expressed in the outermost layer of cells-the ectoderm-
+can be activated. This treatment caused a significant increase in the number of CFAs relative to both
+the untreated and the dark-raised injected controls (Fig. 8C); uninjected embryos were unaffected by
+the light regimens used here (data not shown). These data suggest that abnormal ion flux only in the
+
+[PAGE 17] 
+hyperpolarization and depolarization impair functionality of the downstream cascades. Thus, because
+Vmem acts through downstream biochemical effectors, such as gap junctions, voltage-sensitive
+phosphatases, serotonin transport, and voltage gated channels, among others, deviations from normal,
+in either direction, cause the same ultimate morphological abnormalities.
+
+To get further insight into the steps leading from bioelectric regulation to morphology, we
+next compared the numbers of embryos injected with D71V (loss of function) or WT that developed a
+significant number of abnormal WISH patterns, to the number of embryos that developed CFAs (Fig.
+8B). We found that D71V caused mispatterning of the anterior neural fate and placode markers Otx2
+and Six1, (Ahrens & Schlosser, 2005; Ogino et al., 2008; Christophorou et al., 2009; Steventon et al.,
+2012), and Sox3, a pharyngeal pouch marker (Rizzoti & Lovell-Badge, 2007), suggesting an effect on
+neural crest. Wildtype KCNJ2 injection caused mispatterning of Otx2 and FoxE4, a marker of the lens
+placode (Schlosser, 2006). However, both variants cause a higher frequency of CFAs than can be
+explained by the frequency of misexpression of a single patterning gene. We interpret these data to
+indicate that use of any single one of the definitive markers in this field underestimates the effect on
+morphogenesis and that the transcriptional consequences of bioelectric pattern change can vary
+among affected individuals.
+
+We next tested the spatial requirements for correct Vmem in normal craniofacial patterning.
+Because variant channels expressed from injected mRNA cannot be regulated experimentally, we
+used optogenetics to take control of the spatial location of K⁺-flux in vivo. We injected mRNA
+encoding Channelrhodopsin2-D156A (ChR2-D156A), a blue-light activated cation channel (Lin et al.,
+2009) into embryos, then, with a custom-made apparatus for holding embryos (Supp. Figure 1,2), we
+exposed embryonic regions to the desired optical stimulation. Because light cannot penetrate to the
+interior of the opaque embryo, only channels expressed in the outermost layer of cells-the ectoderm-
+can be activated. This treatment caused a significant increase in the number of CFAs relative to both
+the untreated and the dark-raised injected controls (Fig. 8C); uninjected embryos were unaffected by
+the light regimens used here (data not shown). These data suggest that abnormal ion flux only in the
+
+
+[PAGE 18]
+ectoderm is sufficient to cause CFAs. This is consistent with our hypothesis that changes to
+ectodermal Vmem contribute to the CFAs of ATS because both neural crest and placodes originate in
+the ectoderm.
+
+We next exploited optogenetics to explore the timing of when K⁺-flux is important for
+craniofacial patterning. For these experiments we used the optogenetic reagent Archaerhodopsin
+(Arch), a light activated H⁺-pump (Chow et al., 2010). We have previously shown that Arch
+hyperpolarizes early blastomeres of Xenopus, using electrophysiology; we have also shown that it is
+active when expressed in Xenopus tadpoles, by comparing pH of arch-expressing cells under strongly
+versus weakly activating wavelengths (Adams et al., 2013). Those data revealed that in the presence
+of activating wavelengths, Arch indeed hyperpolarizes Xenopus cells. In addition, we had to address
+another aspect of Arch's activity: electrophysiological recording data suggested that in the dark, Arch-
+expressing embryos were depolarized relative to untreated embryos (Adams et al., 2013), and indeed
+control experiments showed that this pump caused CFAs even when embryos were kept in the dark.
+
+We therefore theorized that Arch might be running in reverse when in the dark. To test this idea, we
+co-injected arch mRNA with mRNA for the hyperpolarizing, constitutively active yeast H⁺-exporting
+pump pma1.2. If Arch was importing H⁺ in the dark, then in the dark, the two activities should
+balance each other and CFAs would not appear. Indeed, that is what we found (Fig. 8B). We
+concluded from those experiments that Arch may actively pump H⁺ into the cell when it is in the dark,
+and that inward flux is balanced by efflux due to Pma1.2. When exposed to light, however, Arch-
+injected embryos had more CFAs than control embryos (Table 3; Fig. 8B).
+
+Once we had determined how to prevent the Arch dark phenotype, we examined timing. We
+exposed some Arch+pma embryos to light during late-gastrula/early-neurula stages and others during
+tailbud stages, then compared the effect of the light treatment on structures derived from ectodermal
+cells that were exposed during both time periods. Only the embryos exposed early developed CFAs,
+indicating a role for Vmem during the early stages of craniofacial patterning (Table 4; Fig. 8D).
+
+
+[PAGE 19]
+To further test whether the effect on craniofacial development was due to modulation of K⁺-
+flux or if it was specific to Kir2.1, we injected mRNA encoding a variant version of another inwardly
+rectifying potassium channel, Kir6.2 (KCNJ11-K185Q, hyperactive) and of a voltage gated potassium
+channel KvLQT (KCNQ1-Y101C-V244M, DN). Both of these constructs caused the same suite of
+CFAs (Table 3). We conclude that craniofacial patterning relies on the KCNJ2 gene because of the
+bioelectrical state induced by K+ flux, not due to another function of the Kir2.1 protein. Because both
+of our optogenetic manipulations vary membrane potential without changing Kir2.1 activity, and
+because Arch changes H⁺ flux, we interpret these data as consistent with the hypothesis that Vmem is
+the relevant parameter for regulating the events of developmental craniofacial patterning.
+
+[PAGE 19] DISCUSSION
+Overview: bioelectricity as an endogenous component of craniofacial patterning
+
+While cardiac arrhythmias in ATS have a clear basis in electrophysiology of the heart, the
+developmental patterning defects (CFAs) associated with ATS had been unexplained. Here we
+present evidence for the first proposed mechanism by which variants in the inward-rectifying
+potassium channel KCNJ2, the genetic basis of 60% of ATS cases, can lead to morphological
+anomalies. We first confirmed expression of Kir2.1 in the developing face in both Xenopus and
+mouse. Next, we found that Kir2.1 activity contributes to creating the endogenous pattern of Vmem
+regionalization (the bioelectric face prepattern) during early neurula stages. This regionalization
+precedes and functionally regulates the gene expression domains known to pattern the neural crest and
+placodes. We further demonstrate that it is Vmem, rather than some other function of Kir2.1, that is the
+critical parameter for establishment of correct craniofacial anatomy. Finally, using optogenetics, we
+showed that it is changes in the resting voltage of ectodermal cells during neural plate stages that lead
+to CFAs. These data link biophysical and genetic pathways to provide a mechanistic explanation for
+the human craniofacial dysmorphias caused by Kir2.1 channel malfunction.
+
+
+[PAGE 20]
+Control of bioelectric cell states by the Kir2.1 ion channel
+
+Injection of mRNA encoding ATS-associated variants of KCNJ2 into Xenopus embryos
+perturbed the normal bioelectric face pattern. Vmem reporter dyes showed that cells expressing the
+dominant negative D71V were depolarized relative to non-expressing cells, consistent with our
+predictions. That imaging also confirmed that Kir2.1 can affect Vmem in undifferentiated cells; that is,
+its function does not depend on its being located in an excitable cell. Interestingly, we also found that
+cells adjacent to the depolarized D71V-expressing cells were hyperpolarized relative to the normal
+pattern. Because the effect on Vmem in these cells was in the opposite direction from that produced by
+the dominant negative variant, we exclude the possibility that nearby cells are expressing the variant
+protein at a level too low to detect. One possible explanation involves physiological regulatory loops
+implemented by voltage-gated ion channels and electrical synapses (Levin, 2013), which could induce
+nearby cell resting potential to change when injected cells' voltage was perturbed. The effect of
+depolarized D71V-expressing cells could be on the expression or activity of hyperpolarizing channels,
+ion transporters, or gap junctions in the adjacent cells, and may represent another example of non-cell-
+autonomous bioelectric signaling, recently described for tumor formation (Chernet et al., 2014;
+Chernet & Levin, 2014), brain patterning (Pai, 2015a; Pai, 2015b), and neural network reorganization
+(Ye et al., 2015). Note that non-cell-autonomous signaling by bioelectric and chemical pathways
+adds a further layer to the importance of a correct pattern that can be disrupted by either
+depolarization or hyperpolarization, since the relative difference in Vmem among cell groups is also an
+important instructive factor.
+
+In addition to affecting Vmem autonomously and in neighboring cells, abnormal KCNJ2
+activity affects transcription: we find that expression of KCNJ2 variants disrupts the expression
+domains of genes known to be functional drivers of face patterning (Table 4, Fig. 7, supplement Fig.
+3). Using optogenetics, we were able to narrow down the timing of Vmem's importance to early during
+neurulation (Fig. 8D), and show that changing the Vmem of only the ectoderm is sufficient to cause the
+
+
+[PAGE 21]
+CFAs. Our interpretation of this evidence is that the pattern of Vmem regionalization in the anterior
+ectoderm and developing face is critical for normal morphogenesis; disrupting K⁺-flux, as happens in
+human ATS embryos, can change that pattern and thus lead to CFAs in cranial neural crest and
+placode lineages.
+
+Bioelectric pattern regulates development: endogenous voltage distributions
+
+Using KCNJ2-independent methods of altering resting potential, we demonstrate that it is
+Vmem control, not some other protein-specific function of Kir2.1, that is the critical parameter for face
+morphogenesis. Our data on Arch phenotypes are consistent with previous results showing that
+manipulation of Vmem by alteration of H⁺-flux also causes CFAs and disrupts expression patterns of
+relevant genes (Vandenberg et al., 2011c). This is also critical evidence of the importance of Vmem
+rather than the chemical activity of one ion, or a particular ion channel gene product, and consistent
+with other craniofacial defect syndromes that result from chloride (Homanics et al., 1997) or sodium
+(Chong et al., 2015) channelopathies. Thus, we propose that the endogenous pattern of physiological
+gradients necessary for normal craniofacial development is mediated by KCNJ2 and other channels;
+however the necessary-and-sufficient trigger for cell behavior during correct or abnormal pattern
+formation is not a specific gene product but a physiological state – the distribution of resting
+potentials that can, in principle, be modulated by a number of means.
+
+Consistent with the importance of specific Vmem patterns, we found that broad misexpression
+of either depolarizing or hyperpolarizing channel constructs caused the same suite of CFAs. We
+interpret this to mean that there are specific ranges of Vmems within which the downstream effectors
+can operate properly – a situation that has been observed not only in the case of sodium channels in
+muscle (Jurkat-Rott et al., 2010) but also in canonical biochemical signaling via such embryonic
+signaling pathways as Notch, BMP, Sonic hedgehog, and FGF (Shi et al., 2009; Hori et al., 2013; Ren
+& Ambros, 2015). Pushing cells out of that zone, in either direction, disturbs the tightly orchestrated
+ion-flux dependent events of morphogenesis. We show here that broad misexpression of a functional
+
+CFAs. Our interpretation of this evidence is that the pattern of mem regionalization in the anterior
+ectoderm and developing face is critical for normal morphogenesis; disrupting K⁺-flux, as happens in
+human ATS embryos, can change that pattern and thus lead to CFAs in cranial neural crest and
+placode lineages.
+
+Bioelectric pattern regulates development: endogenous voltage distributions
+Using KCNJ2-independent methods of altering resting potential, we demonstrate that it is
+Vmem control, not some other protein-specific function of Kir2.1, that is the critical parameter for face
+morphogenesis. Our data on Arch phenotypes are consistent with previous results showing that
+manipulation of mem by alteration of H⁺-flux also causes CFAs and disrupts expression patterns of
+relevant genes (Vandenberg et al., 2011c). This is also critical evidence of the importance of mem
+rather than the chemical activity of one ion, or a particular ion channel gene product, and consistent
+with other craniofacial defect syndromes that result from chloride (Homanics et al., 1997) or sodium
+(Chong et al., 2015) channelopathies. Thus, we propose that the endogenous pattern of physiological
+gradients necessary for normal craniofacial development is mediated by KCNJ2 and other channels;
+however the necessary-and-sufficient trigger for cell behavior during correct or abnormal pattern
+formation is not a specific gene product but a physiological state – the distribution of resting
+potentials that can, in principle, be modulated by a number of means.
+Consistent with the importance of specific mem patterns, we found that broad misexpression
+of either depolarizing or hyperpolarizing channel constructs caused the same suite of CFAs. We
+interpret this to mean that there are specific ranges of mems within which the downstream effectors
+can operate properly – a situation that has been observed not only in the case of sodium channels in
+muscle (Jurkat-Rott et al., 2010) but also in canonical biochemical signaling via such embryonic
+signaling pathways as Notch, BMP, Sonic hedgehog, and FGF (Shi et al., 2009; Hori et al., 2013; Ren
+& Ambros, 2015). Pushing cells out of that zone, in either direction, disturbs the tightly orchestrated
+ion-flux dependent events of morphogenesis. We show here that broad misexpression of a functional
+channel variant does indeed disrupt the endogenous spatial pattern of differential Vmem- This
+phenomenon, where a particular range of values is required, has been found for both biochemical
+pathways, such as the retinoic acid pathway (Koide et al., 2001) and bioelectric pathways
+(Vandenberg et al., 2011a; Pai et al., 2012).
+
+When the same channels are expressed in cardiac and skeletal muscle cells, later in
+development, these variants lead to the cardiac arrhythmias and paralysis that are the other two
+defining characters of ATS (Zhang et al., 2005; Sung et al., 2006; Rajakulendran et al., 2010;
+Tristani-Firouzi & Etheridge, 2010; Kukla et al., 2014). While we did not test for arrhythmias or
+paralysis, our variant-expressing tadpoles did exhibit a developmental defect in their skeletal muscles,
+specifically, changes to somite organization; in D71V expressing tails, we found abnormal fibronectin
+distribution and colocalization of the variant expressing cells and the badly organized of the muscles.
+This occurred with variable penetrance, revealing further commonalities with the effects on human
+development of ATS, which ca can cause the formation of tubular aggregates in muscle in some patients,
+but not all (Pouget, 2008). These commonalities are another indication that Xenopus development is a
+good model system for studying the mechanisms by which KCNJ2 variants lead to the variably
+penetrant defects seen in ATS (King et al., 2012; Wheeler & Liu, 2012; Pratt & Khakhalin, 2013).
+Likewise, these data provide new insights into endogenous physiological regulators of muscle
+development in vivo (Lobikin, 2015).
+
+In our system, the variability in penetrance may be explained by variation in the ratio of
+normal, endogenous Kir2.1 to the exogenous variants. For example, in the case of T192A, a single
+wildtype Kir2.1 subunit in the tetramer is sufficient to allow some K⁺ flux through the channel.
+Depending on how variant subunits are incorporated into the Kir2.1 channel, the effect on mem could
+vary a great deal. Thus, on top of variability in mRNA half-life and translation efficiency, the
+variation in the number of variant subunits present in the channels could explain variable penetrance
+in both our system and in humans. Lastly, additional genetic heterogeneity with respect to other
+proteins that regulate bioelectric cell states also can contribute to penetrance variability within a
+population of affected individuals.
+
+Changes in gene expression: a mechanism for bioelectric control of morphology
+Changes in mem levels and distribution affected the expression patterns of genes known to be
+critical for normal patterning of the face. Again, consistent with the variability in CFAs of ATS
+patients, patients, changes changes to to these expression patterns varied, causing expansion of domains, reduction of
+domains, and ectopic expression (Fig. 7, Supplement 3). We did not detect any correlations between
+the proportion of each of these types of change and the proportion of any particular CFA; nonetheless,
+once it becomes possible technically to follow particular mRNAs in vivo during craniofacial
+development of Xenopus, high resolution, longitudinal studies could reveal important interconnections
+between mem, gene expression domain, and morphological variation.
+We found that a greater percentage of embryos develop CFA's than reveal faulty patterning
+gene expression at earlier stages. Perhaps the simplest possibility is that there are other voltage-
+responsive genes functioning in craniofacial development in addition to the one we examined. As has
+been proposed previously in the context of laterality defects (Vandenberg & Levin, 2013), disruption
+of the endogenous bioelectric pattern could affect different genes in different embryos, suggesting an
+underlying stochastic mechanism. This interpretation is also consistent with the previously discussed
+variability of CFAs in ATS patients. Another possibility is that we undercounted expression-pattern
+defects by choosing to treat unstained embryos as unscorable rather than abnormal. This decision was
+made to reduce the possibility of counting false negatives; moreover, our CFAs do not phenocopy the
+effects of nulls in any of the markers we examined. Future studies of the factors responsible for inter-
+embryo variability in the transduction processes linking mem changes to transcriptional responses,
+and of the properties of the craniofacial gene regulatory networks, will no doubt shed light on this
+important issue.
+
+[PAGE 24] Optogenetics in non-neural contexts: a new application to development
+Optogenetics, the expression of light-activated and de-activated channels and pumps in cells,
+has proven to be a game-changing technique for studies of neurons and other excitable cells (Wyart et
+al., 2009; Arrenberg et al., 2010; Liu & Tonegawa, 2010; Diester et al., 2011; Yizhar et al., 2011;
+Bernstein et al., 2012; Simmich et al., 2012; Tanaka et al., 2012). Here, we present the first proof-of-
+principle that optogenetics is useful for studying and, importantly, manipulating the electrical state of
+cells during embryonic patterning in vivo. We applied this technique to the ectoderm in developing
+Xenopus embryos, achieving bioelectrical perturbation with more temporal and spatial resolution than
+has been possible before now. Because of the widespread role of electrical signaling in stem cell
+regulation and morphogenesis (Adams, 2008; Stroh et al., 2010; Aprea & Calegari, 2012; Levin,
+2012; Levin, 2013; Pai & Levin, 2013; Yang et al., 2013; Wang et al., 2014), we believe that
+application of optogenetics to non-neural, non-excitable cells will become a transformative tool for
+understanding the role of biophysical signals in numerous birth defects.
+
+Using optogenetics we were able to demonstrate that hyperpolarizing the ectoderm at the
+beginning of neurulation is sufficient to cause CFAs, while altering mem after morphogenesis has
+begun has no effect on morphology of the tadpole face. Between stages 14 (the end of the early
+exposures) and 20 (the beginning of late exposures) the neural tube and neural crest leave the surface
+of the embryo; during the period of st. 20 to 24, however, ectodermal cells that will contribute to the
+eyes, ears, nose, and jaws and branchial arches are still on the surface of the embryo, (Nieuwkoop &
+Faber, 1994). Moreover, craniofacial patterning genes are still expressed in the ectoderm at these
+stages (Fig. 7, supplement 3) indicating that patterning is still active in the ectoderm during the late
+stages. Thus, the placode-derived structures studied have ectodermal components that were exposed
+to light during late exposure but were, nonetheless, generally unaffected. The results of V mem
+changes on the expression patterns of craniofacial patterning genes expressed early during patterning
+also suggests that V□□□'s role is earlier than the onset of organogenesis. We interpret all of these data
+to mean that Vmem is important before neural tube stages, and that its effects on morphology are
+mediated, at least in part, through its effects on patterning genes.
+
+[PAGE 25] Beyond KCNJ2: other channelopathies of embryogenesis
+A number of human channelopathies, genetic syndromes caused by ion channel variants,
+induce patterning defects in tissues other than excitable nerve and muscle. Examples include variants
+in: the calcium channel CACNAIC that causes Timothy Syndrome, a cardiac insufficiency
+accompanied by syndactyly and CFAs like those seen in ATS (Splawski et al., 2004); ANKH, an
+anion transporter associated with craniometaphyseal dysplasia (Kornak et al., 2010); KCNK9 which
+causes Birk-Barel Mental Retardation Dysmorphism Syndrome, with CFAs similar to those seen in
+ATS (Barel et al., 2008); GABA-A, a chloride channel (Homanics et al., 1997; Lalande et al., 1999;
+Liljelund et al., 2005; Galanopoulou, 2010; Roden et al., 2010; Horvath et al., 2013) which has been
+associated with Angelman syndrome, another syndrome with CFAs; and NALCN, a sodium channel
+that causes facial dysmorphism (Koroglu et al., 2013). In light of recent findings on the endogenous
+bioelectrical controls of growth and form (Adams, 2008; Levin, 2012; Levin & Stevenson, 2012), this
+Xenopus model of the potassium channelopathy ATS is an ideal context in which to learn how to
+study the ways that ion channels contribute to the normal development of facial morphology.
+Particularly interesting, also, is the recent finding that the L-type voltage-gated calcium
+channel Cav1.2 is expressed in the developing mandible of mice at the same time and place as
+KCNJ2, and the phenotype of the gain of function variant, in both mouse and humans, is mandibular
+hypertrophy (Ramachandran et al., 2013). Voltage gated calcium channels are known to transduce
+mem signals into well-characterized downstream biochemical signaling pathways (West et al., 2001;
+Nakanishi & Okazawa, 2006; Greer & Greenberg, 2008), and, as Ramachandran et al. suggest, the
+loss of function phenotype is likely to be a small mandible, one of the characteristics of KCNJ2-
+variant induced ATS.
+
+[PAGE 25] Beyond KCNJ2: other channelopathies of embryogenesis
+
+A number of human channelopathies, genetic syndromes caused by ion channel variants, induce patterning defects in tissues other than excitable nerve and muscle. Examples include variants in: the calcium channel CACNAIC that causes Timothy Syndrome, a cardiac insufficiency accompanied by syndactyly and CFAs like those seen in ATS (Splawski et al., 2004); ANKH, an anion transporter associated with craniometaphyseal dysplasia (Kornak et al., 2010); KCNK9 which causes Birk-Barel Mental Retardation Dysmorphism Syndrome, with CFAs similar to those seen in ATS (Barel et al., 2008); GABA-A, a chloride channel (Homanics et al., 1997; Lalande et al., 1999; Liljelund et al., 2005; Galanopoulou, 2010; Roden et al., 2010; Horvath et al., 2013) which has been associated with Angelman syndrome, another syndrome with CFAs; and NALCN, a sodium channel that causes facial dysmorphism (Koroglu et al., 2013). In light of recent findings on the endogenous bioelectrical controls of growth and form (Adams, 2008; Levin, 2012; Levin & Stevenson, 2012), this Xenopus model of the potassium channelopathy ATS is an ideal context in which to learn how to study the ways that ion channels contribute to the normal development of facial morphology.
+
+Particularly interesting, also, is the recent finding that the L-type voltage-gated calcium channel Cav1.2 is expressed in the developing mandible of mice at the same time and place as KCNJ2, and the phenotype of the gain of function variant, in both mouse and humans, is mandibular hypertrophy (Ramachandran et al., 2013). Voltage gated calcium channels are known to transduce Vmem signals into well-characterized downstream biochemical signaling pathways (West et al., 2001; Nakanishi & Okazawa, 2006; Greer & Greenberg, 2008), and, as Ramachandran et al. suggest, the loss of function phenotype is likely to be a small mandible, one of the characteristics of KCNJ2-variant induced ATS.
+
+
+[PAGE 26] 
+
+It is likely that numerous ion channels work together to regulate the bioelectric circuits responsible for craniofacial patterning. Interestingly, perturbations of these pathways do not only arise from genetic defects, but can have an environmental or epigenetic etiology. Because birth defects can be induced by teratogenic compounds that affect ion channel function (Tomson & Battino, 2009; Hernandez-Diaz & Levin, 2014), our data point to the need for caution in using ion channel-targeting pharmaceuticals during pregnancy. However, there is another perspective, as shown by recent work in which brain defects induced by a mutated Notch protein were prevented by expression of exogenous ion channels (Pai, 2015). Our data thus reveal new experimental approaches for understanding and someday preventing teratologies in craniofacial development.
+
+These data are the first mechanistic dissection of the role of the inward-rectifying K⁺ channel Kir2.1 in craniofacial development, and presents a novel hypothesis for the etiology of CFAs in patients with ATS as well as the CFAs that characterize other channelopathies. Our results are consistent with (Leong et al., 2014) who mention abnormal brain and eye development resulting from injection of either the wildtype construct or a deletion variant in zebrafish, indicating evolutionary conservation of the role of KCNJ2 in anterior development. Future work will explore how Vmem integrated with other signaling pathways during craniofacial development. Transduction mechanisms that have been shown to connect Vmem to transcriptional and epigenetic targets include serotonin transport, butyrate and histone-deacetylases, voltage-sensitive phosphatases, and calcium-mediated signaling (Adams & Levin, 2013). These can now be tested to determine whether one of these mediates the effects of Vmem change on expression of specific genes in the nascent face. Because of their mechanical roles, integrins are also an intriguing possibility for the downstream targets of Vmem changes during craniofacial morphogenesis (Hart, 2008; Becchetti & Arcangeli, 2010).
+
+In summary (Figure 9), we have presented evidence that the CFAs associated with ATS are initiated during early craniofacial development and are caused by the effect of potassium channel malfunction on the spatial distribution of  cells in the anterior ectoderm. The anomalies in Vmem that occur early in neurulation lead to misexpression of developmentally regulated craniofacial
+
+
+[PAGE 27] 
+
+genes, and those genes subsequently mispattern the neural crest and placode lineages. This mispatterning then contributes to abnormalities in craniofacial development. Importantly, our demonstration of a role for potassium channels in craniofacial development suggests a clear roadmap for biomedical strategies that exploit already approved ion channel-modulating drugs to ameliorate the symptoms of an important class of birth defects.
+
+
+[PAGE 28] Acknowledgements
+
+The authors thank Amanda Allen and Erin Switzer for expert animal care, Joan Lemire for plasmid creation, Roger Kamm for useful discussions on bioengineering, and many generous colleagues who shared reagents, as listed in Tables 1, 2.
+
+[PAGE 28] Additional Information
+
+This work was Supported by NSF (DBI-1152279) (ML); DARPA subaward #W911NF-11-2-0054 (ML); National Science Foundation Science and Technology, Center for Emergent Behaviors of Integrated Cellular Systems (CBET-0939511)(SU); NIH (HD081326, AR061988)(ML); NIH (RHD081326A)(DSA & ML); Australian Research Council Grant No DE130101046 (DW); Vice-Chancellor's Senior Research Fellowship, RMIT University, Australia (DW); and The Australia Endeavour Awards, Department of Education, Employment and Workplace Relations, Australia (JA, DW).
+
+[PAGE 28] Competing Interests
+
+The authors declare they have no competing interests.
+
+[PAGE 28] Author Contributions
+
+DSA: conception, design, and execution of experiments, collection, assembly, analysis, and interpretation of Xenopus data, drafting and revising the article and design and creation of figures. SGMU: design and implementation of modifications of the chip for optogenetics, drafting of the manuscript; JA: initial design and modifications of the chip for optogenetics; DW: initial design and modifications of the chip for optogenetics; critical revision of the manuscript; VA: collection and interpretation of mouse gene expression data; PCY: design and interpretation of experiments, critical revision of the manuscript; AD-L: collection, assembly, analysis and interpretation of Xenopus data; J-FP: design and construction of mRNA constructs used in frog experiments, collection of Xenopus data; ML: conception and design of the experiments, analytical interpretation of data, drafting and critical revision of the manuscript, design of figures.
+
+
+[PAGE 29] Laboratories
+
+The chip used for holding embryos was built by JA and DW in the lab of DW and modified by SGMU in the lab of Dr. Roger Kamm. Immunohistochemistry of mouse sections was preformed by VA in the lab of PYC. The rest of the experiments were conducted in the labs of DSA and ML at the Tufts Center for Regenerative and Developmental Biology.
+
+[PAGE 29] Translational Perspective (word count = 245)
+
+Mutations in ion channels result in human syndromes, called channelopathies, that often include devastating facial deformities. While cardiac arrhythmias resulting from ion channel dysfunction are well-understood, the reason for craniofacial anomalies, i.e. head and face defects in channelopathies such as Andersen-Tawil Syndrome (ATS) has heretofore remained mysterious. Our data in vertebrate animal models reveal why potassium channels are important for the normal formation of the head. During early development, activity of ion channels contributes to establishing stereotypic patterns of electrical states, a.k.a. bioelectricity, in cells of the nascent face. Our results support the hypothesis that these bioelectric patterns rely on the ATS-implicated potassium channel Kir2.1, encoded in the KCNJ2 gene, and that these Kir2.1-dependent patterns are required for correct gene expression and anatomy of the head and face. KCNJ2–mutants identified in ATS patients cause aberrant patterns of bioelectrical signaling when expressed in Xenopus embryos. That, in turn, alters expression profiles of key genes, and results in abnormal development. Thus, our data provide an
+
+revision of the manuscript; AD-L: collection, assembly, analysis and interpretation of Xenopus data;
+J-FP: design and construction of mRNA constructs used in frog experiments, collection of Xenopus
+data; ML: conception and design of the experiments, analytical interpretation of data, drafting and
+critical revision of the manuscript, design of figures.
+
+The chip used for holding embryos was built by JA and DW in the lab of DW and modified
+by SGMU in the lab of Dr. Roger Kamm. Immunohistochemistry of mouse sections was preformed
+by VA in the lab of PYC. The rest of the experiments were conducted in the labs of DSA and ML at
+the Tufts Center for Regenerative and Developmental Biology.
+
+[PAGE 29] Translational Perspective (word count = 245)
+Mutations in ion channels result in human syndromes, called channelopathies, that often
+include devastating facial deformities. While cardiac arrhythmias resulting from ion channel
+dysfunction are well-understood, the reason for craniofacial anomalies, i.e. head and face defects in
+channelopathies such as Andersen-Tawil Syndrome (ATS) has heretofore remained mysterious. Our
+data in vertebrate animal models reveal why potassium channels are important for the normal
+formation of the head. During early development, activity of ion channels contributes to establishing
+stereotypic patterns of electrical states, a.k.a. bioelectricity, in cells of the nascent face. Our results
+support the hypothesis that these bioelectric patterns rely on the ATS-implicated potassium channel
+Kir2.1, encoded in the KCNJ2 gene, and that these Kir2.1-dependent patterns are required for correct
+gene expression and anatomy of the head and face. KCNJ2–mutants identified in ATS patients cause
+aberrant patterns of bioelectrical signaling when expressed in Xenopus embryos. That, in turn, alters
+expression profiles of key genes, and results in abnormal development. Thus, our data provide an
+
+[PAGE 30] 
+explanation for the etiology of craniofacial anomalies associated with channelopathies and with
+prenatal exposure to chemical compounds, such as alcohol, that affect ion channel function.
+Moreover, by characterizing the bioelectric prepattern for face formation, our results suggest that
+minimally-invasive tracking of bioelectric states could allow early detection of defects. Even more
+important, it raises the exciting possibility that targeted electroceuticals, i.e. ion channel modifying
+drugs already approved for human use, could be employed to prevent or repair these defects in utero.
+
+
+[PAGE 31] REFERENCES
+Abe M, Maeda T & Wakisaka S. (2008). Retinoic acid affects craniofacial patterning by changing
+Fgf8 expression in the pharyngeal ectoderm. Development Growth & Differentiation 50, 717-
+729.
+Abello G, Khatri S, Radosevic M, Scotting PJ, Giraldez F & Alsina B. (2010). Independent regulation
+of Sox3 and Lmx1b by FGF and BMP signaling influences the neurogenic and non-
+neurogenic domains in the chick otic placode. Developmental Biology 339, 166-178.
+Adams DS. (2008). A new tool for tissue engineers: ions as regulators of morphogenesis during
+development and regeneration. Tissue engineering 14, 1461-1468.
+Adams DS, Lemire JM, Kramer RH & Levin M. (2014). Optogenetics in Developmental Biology:
+using light to control ion flux-dependent signals in Xenopus embryos. Int J Dev Biol.
+Adams DS & Levin M. (2012). Measuring resting membrane potential using the fluorescent voltage
+reporters DiBAC4(3) and CC2-DMPE. Cold Spring Harb Protoc 2012, 459-464.
+Adams DS & Levin M. (2013). Endogenous voltage gradients as mediators of cell-cell
+communication: strategies for investigating bioelectrical signals during pattern formation.
+Cell Tissue Res 352, 95-122.
+Adams DS, Robinson KR, Fukumoto T, Yuan S, Albertson RC, Yelick P, Kuo L, McSweeney M &
+Levin M. (2006). Early, H+-V-ATPase-dependent proton flux is necessary for consistent left-
+right patterning of non-mammalian vertebrates. Development 133, 1657-1671.
+Adams DS, Tseng AS & Levin M. (2013). Light-activation of the Archaerhodopsin H(+)-pump
+reverses age-dependent loss of vertebrate regeneration: sparking system-level controls in
+vivo. Biology open 2, 306-313.
+Ahrens K & Schlosser G. (2005). Tissues and signals involved in the induction of placodal Six1
+expression in Xenopus laevis. Developmental Biology 288, 40-59.
+
+[PAGE 32] 
+Akagi J, Khoshmanesh K, Evans B, Hall CJ, Crosier KE, Cooper JM, Crosier PS & Wlodkowic D.
+(2012). Miniaturized embryo array for automated trapping, immobilization and
+microperfusion of zebrafish embryos. PloS one 7, e36630.
+Andreeva V, Cardarelli J & Yelick PC. (2012). Rb1 mRNA expression in developing mouse teeth.
+Gene expression patterns : GEP.
+Aoki Y, Saint-Germain N, Gyda M, Magner-Fink E, Lee Y-H, Credidio C & Saint-Jeannet J-P.
+(2003). Sox10 regulates the development of neural crest-derived melanocytes in Xenopus.
+Developmental Biology 259, 19-33.
+Aprea J & Calegari F. (2012). Bioelectric state and cell cycle control of mammalian neural stem cells.
+Stem Cells Int 2012, 816049.
+Arrenberg AB, Stainier DY, Baier H & Huisken J. (2010). Optogenetic control of cardiac function.
+Science 330, 971-974.
+Barel O, Shalev SA, Ofir R, Cohen A, Zlotogora J, Shorer Z, Mazor G, Finer G, Khateeb S,
+Zilberberg N & Birk OS. (2008). Maternally inherited Birk Barel mental retardation
+dysmorphism syndrome caused by a mutation in the genomically imprinted potassium
+channel KCNK9. Am J Hum Genet 83, 193-199.
+Barnett C, Yazgan O, Kuo HC, Malakar S, Thomas T, Fitzgerald A, Harbour W, Henry JJ & Krebs
+JE. (2012). Williams Syndrome Transcription Factor is critical for neural crest cell function in
+Xenopus laevis. Mech Dev 129, 324-338.
+Bates EA. (2013). A potential molecular target for morphological defects of fetal alcohol syndrome:
+Kir2.1. Curr Opin Genet Dev 23, 324-329.
+Beane WS, Morokuma J, Lemire JM & Levin M. (2013). Bioelectric signaling regulates head and
+organ size during planarian regeneration. Development 140, 313-322.
+
+[PAGE 33] 
+Becchetti A & Arcangeli A. (2010). Integrins and ion channels in cell migration: implications for
+neuronal development, wound healing and metastatic spread. Adv Exp Med Biol 674, 107-
+123.
+Beck CW & Slack JM. (2001). An amphibian with ambition: a new role for Xenopus in the 21st
+century. Genome Biology 2, REVIEWS1029.
+Bendahhou S, Donaldson MR, Plaster NM, Tristani-Firouzi M, Fu YH & Ptacek LJ. (2003).
+Defective potassium channel Kir2.1 trafficking underlies Andersen-Tawil syndrome. The
+Journal of biological chemistry 278, 51779-51785.
+Bernstein JG, Garrity PA & Boyden ES. (2012). Optogenetics and thermogenetics: technologies for
+controlling the activity of targeted cells within intact neural circuits. Curr Opin Neurobiol 22,
+Bhattacharyya S, Bailey AP, Bronner-Fraser M & Streit A. (2004). Segregation of lens and olfactory
+precursors from a common territory: cell sorting and reciprocity of Dlx5 and Pax6 expression.
+Developmental Biology 271, 403-414.
+Chen Z, Huang J, Liu Y, Dattilo LK, Huh SH, Ornitz D & Beebe DC. (2014). FGF signaling activates
+a Sox9-Sox10 pathway for the formation and branching morphogenesis of mouse ocular
+glands. Development.
+Chernet BT, Fields C & Levin M. (2014). Long-range gap junctional signaling controls oncogene-
+mediated tumorigenesis in Xenopus laevis embryos. Front Physiol 5, 519.
+Chernet BT & Levin M. (2013). Transmembrane voltage potential is an essential cellular parameter
+for the detection and control of tumor development in a Xenopus model. Disease models &
+mechanisms 6, 595-607.
+Chernet BT & Levin M. (2014). Transmembrane voltage potential of somatic cells controls oncogene-
+mediated tumorigenesis at long-range. Oncotarget 5, 3287-3306.
+
+Becchetti A & Arcangeli A. (2010). Integrins and ion channels in cell migration: implications for
+neuronal development, wound healing and metastatic spread. Adv Exp Med Biol 674, 107-
+123.
+Beck CW & Slack JM. (2001). An amphibian with ambition: a new role for Xenopus in the 21st
+century. Genome Biology 2, REVIEWS1029.
+Bendahhou S, Donaldson MR, Plaster NM, Tristani-Firouzi M, Fu YH & Ptacek LJ. (2003).
+Defective potassium channel Kir2.1 trafficking underlies Andersen-Tawil syndrome. The
+Journal of biological chemistry 278, 51779-51785.
+Bernstein JG, Garrity PA & Boyden ES. (2012). Optogenetics and thermogenetics: technologies for
+controlling the activity of targeted cells within intact neural circuits. Curr Opin Neurobiol 22,
+Bhattacharyya S, Bailey AP, Bronner-Fraser M & Streit A. (2004). Segregation of lens and olfactory
+precursors from a common territory: cell sorting and reciprocity of Dlx5 and Pax6 expression.
+Developmental Biology 271, 403-414.
+Chen Z, Huang J, Liu Y, Dattilo LK, Huh SH, Ornitz D & Beebe DC. (2014). FGF signaling activates
+a Sox9-Sox10 pathway for the formation and branching morphogenesis of mouse ocular
+glands. Development.
+Chernet BT, Fields C & Levin M. (2014). Long-range gap junctional signaling controls oncogene-
+mediated tumorigenesis in Xenopus laevis embryos. Front Physiol 5, 519.
+Chernet BT & Levin M. (2013). Transmembrane voltage potential is an essential cellular parameter
+for the detection and control of tumor development in a Xenopus model. Disease models &
+mechanisms 6, 595-607.
+Chernet BT & Levin M. (2014). Transmembrane voltage potential of somatic cells controls oncogene-
+mediated tumorigenesis at long-range. Oncotarget 5, 3287-3306.
+Chong JX, McMillin MJ, Shively KM, Beck AE, Marvin CT, Armenteros JR, Buckingham KJ,
+Nkinsi NT, Boyle EA, Berry MN, Bocian M, Foulds N, Uzielli ML, Haldeman-Englert C,
+Hennekam RC, Kaplan P, Kline AD, Mercer CL, Nowaczyk MJ, Klein Wassink-Ruiter JS,
+McPherson EW, Moreno RA, Scheuerle AE, Shashi V, Stevens CA, Carey JC, Monteil A,
+Lory P, Tabor HK, Smith JD, Shendure J, Nickerson DA, University of Washington Center
+for Mendelian G & Bamshad MJ. (2015). De novo mutations in NALCN cause a syndrome
+characterized by congenital contractures of the limbs and face, hypotonia, and developmental
+delay. Am J Hum Genet 96, 462-473.
+Chow BY, Han X, Dobry AS, Qian X, Chuong AS, Li M, Henninger MA, Belfort GM, Lin Y,
+Monahan PE & Boyden ES. (2010). High-performance genetically targetable optical neural
+silencing by light-driven proton pumps. Nature 463, 98-102.
+Christophorou NA, Bailey AP, Hanson S & Streit A. (2009). Activation of Six1 target genes is
+required for sensory placode formation. Developmental Biology 336, 327-336.
+Creuzet S, Schuler B, Couly G & Le Douarin NM. (2004). Reciprocal relationships between Fgf8 and
+neural crest cells in facial and forebrain development. Proc Natl Acad Sci U S A 101, 4843-
+d'Amaro R, Scheidegger R, Blumer S, Pazera P, Katsaros C, Graf D & Chiquet M. (2012). Putative
+functions of extracellular matrix glycoproteins in secondary palate morphogenesis. Front
+Deardorff MA, Tan C, Saint-Jeannet JP & Klein PS. (2001). A role for frizzled 3 in neural crest
+development. Development 128, 3655-3663.
+Diester I, Kaufman MT, Mogri M, Pashaie R, Goo W, Yizhar O, Ramakrishnan C, Deisseroth K &
+Shenoy KV. (2011). An optogenetic toolbox designed for primates. Nat Neurosci 14, 387-
+Donaldson MR, Jensen JL, Tristani-Firouzi M, Tawil R, Bendahhou S, Suarez WA, Cobo AM, Poza
+JJ, Behr E, Wagstaff J, Szepetowski P, Pereira S, Mozaffar T, Escolar DM, Fu YH & Ptacek
+LJ. (2003). PIP2 binding residues of Kir2.1 are common targets of mutations causing
+Andersen syndrome. Neurology 60, 1811-1816.
+Donaldson MR, Yoon G, Fu YH & Ptacek LJ. (2004). Andersen-Tawil syndrome: a model of clinical
+variability, pleiotropy, and genetic heterogeneity. Annals of medicine 36 Suppl 1, 92-97.
+Epps DE, Wolfe ML & Groppi V. (1994). Characterization of the steady-state and dynamic
+fluorescence properties of the potential-sensitive dye bis-(1,3-dibutylbarbituric
+acid)trimethine oxonol (Dibac4(3)) in model systems and cells. Chem Phys Lipids 69, 137-
+Flanagan SE, Clauin S, Bellanne-Chantelot C, de Lonlay P, Harries LW, Gloyn AL & Ellard S.
+(2009). Update of mutations in the genes encoding the pancreatic beta-cell K(ATP) channel
+subunits Kir6.2 (KCNJ11) and sulfonylurea receptor 1 (ABCC8) in diabetes mellitus and
+hyperinsulinism. Human mutation 30, 170-180.
+Galanopoulou AS. (2010). Mutations affecting GABAergic signaling in seizures and epilepsy.
+Pflugers Archiv : European journal of physiology 460, 505-523.
+Garcez RC, Le Douarin NM & Creuzet SE. (2014). Combinatorial activity of Six1-2-4 genes in
+cephalic neural crest cells controls craniofacial and brain development. Cellular and
+molecular life sciences : CMLS 71, 2149-2164.
+Gloyn AL, Siddiqui J & Ellard S. (2006). Mutations in the genes encoding the pancreatic beta-cell
+KATP channel subunits Kir6.2 (KCNJ11) and SUR1 (ABCC8) in diabetes mellitus and
+hyperinsulinism. Human mutation 27, 220-231.
+Greer PL & Greenberg ME. (2008). From synapse to nucleus: calcium-dependent gene transcription
+in the control of synapse development and function. Neuron 59, 846-860.
+Gross JB & Hanken J. (2005). Cranial neural crest contributes to the bony skull vault in adult
+Xenopus laevis: insights from cell labeling studies. J Exp Zoolog B Mol Dev Evol 304, 169-
+176.
+Gross JB & Hanken J. (2008). Review of fate-mapping studies of osteogenic cranial neural crest in
+vertebrates. Dev Biol 317, 389-400.
+Hans S, Liu D, Christison J & Westerfield M. (2005). Fgf8 in otic placode induction. Faseb J 19,
+Hans S, Liu D & Westerfield M. (2004). Pax8 and Pax2a function synergistically in otic specification,
+downstream of the Foxil and Dlx3b transcription factors. Development 131, 5091-5102.
+Hart FX. (2008). The mechanical transduction of physiological strength electric fields.
+Bioelectromagnetics 29, 447-455.
+Hattori T, Makiyama T, Akao M, Ehara E, Ohno S, Iguchi M, Nishio Y, Sasaki K, Itoh H, Yokode M,
+Kita T, Horie M & Kimura T. (2012). A novel gain-of-function KCNJ2 mutation associated
+with short-QT syndrome impairs inward rectification of Kir2.1 currents. Cardiovascular
+research 93, 666-673.
+Hedley PL, Jorgensen P, Schlamowitz S, Wangari R, Moolman-Smook J, Brink PA, Kanters JK,
+Corfield VA & Christiansen M. (2009). The genetic basis of long QT and short QT
+syndromes: a mutation update. Human mutation 30, 1486-1511.
+Heeg-Truesdell E & LaBonne C. (2004). A slug, a fox, a pair of sox: transcriptional responses to
+neural crest inducing signals. Birth Defects Res C Embryo Today 72, 124-139.
+Hernandez-Diaz S & Levin M. (2014). Anticonvulsants Teratogenic Mechanism Involves Alteration
+of Bioelectrically-controlled Processes in the Embryo. A hypothesis. Reprod Toxic.
+Hinard V, Belin D, Konig S, Bader CR & Bernheim L. (2008). Initiation of human myoblast
+differentiation via dephosphorylation of Kir2.1 K+ channels at tyrosine 242. Development
+Homanics GE, DeLorey TM, Firestone LL, Quinlan JJ, Handforth A, Harrison NL, Krasowski MD,
+Rick CE, Korpi ER, Makela R, Brilliant MH, Hagiwara N, Ferguson C, Snyder K & Olsen
+RW. (1997). Mice devoid of gamma-aminobutyrate type A receptor beta3 subunit have
+epilepsy, cleft palate, and hypersensitive behavior. Proceedings of the National Academy of
+Sciences of the United States of America 94, 4143-4148.
+Honore SM, Aybar MJ & Mayor R. (2003). Sox10 is required for the early development of the
+prospective neural crest in Xenopus embryos. Dev Biol 260, 79-96.
+Hori K, Sen A & Artavanis-Tsakonas S. (2013). Notch signaling at a glance. J Cell Sci 126, 2135-
+Horvath E, Horvath Z, Isaszegi D, Gergev G, Nagy N, Szabo J, Sztriha L, Szell M & Endreffy E.
+(2013). Early detection of Angelman syndrome resulting from de novo paternal isodisomic
+15q UPD and review of comparable cases. Mol Cytogenet 6, 35.
+Jespersen T, Grunnet M & Olesen SP. (2005). The KCNQ1 potassium channel: from gene to
+physiological function. Physiology (Bethesda) 20, 408-416.
+Jongsma HJ & Wilders R. (2001). Channelopathies: Kir2.1 mutations jeopardize many cell functions.
+Current biology : CB 11, R747-750.
+Jurkat-Rott K, Holzherr B, Fauler M & Lehmann-Horn F. (2010). Sodium channelopathies of skeletal
+muscle result from gain or loss of function. Pflugers Arch 460, 239-248.
+Kerney R, Gross JB & Hanken J. (2007). Runx2 is essential for larval hyobranchial cartilage
+formation in Xenopus laevis. Dev Dyn 236, 1650-1662.
+King MW, Neff AW & Mescher AL. (2012). The Developing Xenopus Limb as a Model for Studies
+on the Balance between Inflammation and Regeneration. Anatomical record.
+
+Homanics GE, DeLorey TM, Firestone LL, Quinlan JJ, Handforth A, Harrison NL, Krasowski MD,
+Rick CE, Korpi ER, Makela R, Brilliant MH, Hagiwara N, Ferguson C, Snyder K & Olsen
+RW. (1997). Mice devoid of gamma-aminobutyrate type A receptor beta3 subunit have
+epilepsy, cleft palate, and hypersensitive behavior. Proceedings of the National Academy of
+Sciences of the United States of America 94, 4143-4148.
+
+Honore SM, Aybar MJ & Mayor R. (2003). Sox10 is required for the early development of the
+prospective neural crest in Xenopus embryos. Dev Biol 260, 79-96.
+
+Hori K, Sen A & Artavanis-Tsakonas S. (2013). Notch signaling at a glance. J Cell Sci 126, 2135-2140.
+
+Horvath E, Horvath Z, Isaszegi D, Gergev G, Nagy N, Szabo J, Sztriha L, Szell M & Endreffy E.
+(2013). Early detection of Angelman syndrome resulting from de novo paternal isodisomic
+15q UPD and review of comparable cases. Mol Cytogenet 6, 35.
+
+Jespersen T, Grunnet M & Olesen SP. (2005). The KCNQ1 potassium channel: from gene to
+physiological function. Physiology (Bethesda) 20, 408-416.
+
+Jongsma HJ & Wilders R. (2001). Channelopathies: Kir2.1 mutations jeopardize many cell functions.
+Current biology : CB 11, R747-750.
+
+Jurkat-Rott K, Holzherr B, Fauler M & Lehmann-Horn F. (2010). Sodium channelopathies of skeletal
+muscle result from gain or loss of function. Pflugers Arch 460, 239-248.
+
+Kerney R, Gross JB & Hanken J. (2007). Runx2 is essential for larval hyobranchial cartilage
+formation in Xenopus laevis. Dev Dyn 236, 1650-1662.
+
+King MW, Neff AW & Mescher AL. (2012). The Developing Xenopus Limb as a Model for Studies
+on the Balance between Inflammation and Regeneration. Anatomical record.
+
+Klimova L & Kozmik Z. (2014). Stage-dependent requirement of neuroretinal Pax6 for lens and
+retina development. Development 141, 1292-1302.
+
+Koide T, Downes M, Chandraratna RA, Blumberg B & Umesono K. (2001). Active repression of
+RAR signaling is required for head formation. Genes Dev 15, 2111-2121.
+
+Kornak U, Brancati F, Le Merrer M, Lichtenbelt K, Hohne W, Tinschert S, Garaci FG, Dallapiccola B
+& Nurnberg P. (2010). Three novel mutations in the ANK membrane protein cause
+craniometaphyseal dysplasia with variable conductive hearing loss. American journal of
+medical genetics Part A 152A, 870-874.
+
+Koroglu C, Seven M & Tolun A. (2013). Recessive truncating NALCN mutation in infantile
+neuroaxonal dystrophy with facial dysmorphism. J Med Genet 50, 515-520.
+
+Kukla P, Biernacka EK, Baranchuk A, Jastrzebski M & Jagodzinska M. (2014). Electrocardiogram in
+andersen-tawil syndrome. New electrocardiographic criteria for diagnosis of type-1 andersen-
+tawil syndrome. Curr Cardiol Rev 10, 222-228.
+
+Lalande M, Minassian BA, DeLorey TM & Olsen RW. (1999). Parental imprinting and Angelman
+syndrome. Advances in neurology 79, 421-429.
+
+Lange C, Prenninger S, Knuckles P, Taylor V, Levin M & Calegari F. (2011). The H(+) vacuolar
+ATPase maintains neural stem cells in the developing mouse cortex. Stem cells and
+development 20, 843-850.
+
+Leong IU, Skinner JR, Shelling AN & Love DR. (2010). Zebrafish as a model for long QT syndrome:
+the evidence and the means of manipulating zebrafish gene expression. Acta Physiol (Oxf)
+199, 257-276.
+
+Leong IUS, Skinner JR, Shelling AN & Love DR. (2014). Expression of a Mutant kcnj2 Gene
+Transcript in Zebrafish. ISRN Molecular Biology 2014, 14.
+
+Levin M. (2012). Molecular bioelectricity in developmental biology: new tools and recent
+discoveries: control of cell behavior and pattern formation by transmembrane potential
+gradients. Bioessays 34, 205-217.
+
+Levin M. (2013). Reprogramming cells and tissue patterning via bioelectrical pathways: molecular
+mechanisms and biomedical opportunities. Wiley Interdisciplinary Reviews: Systems Biology
+and Medicine 5, 657-676.
+
+Levin M. (2014). Molecular bioelectricity: how endogenous voltage potentials control cell behavior
+and instruct pattern regulation in vivo. Mol Biol Cell 25, 3835-3850.
+
+Levin M & Stevenson CG. (2012). Regulation of cell behavior and tissue patterning by bioelectrical
+signals: challenges and opportunities for biomedical engineering. Annu Rev Biomed Eng 14,
+295-320.
+
+Li HY, Grifone R, Saquet A, Carron C & Shi DL. (2013). The Xenopus homologue of Down
+syndrome critical region protein 6 drives dorsoanterior gene expression and embryonic axis
+formation by antagonising polycomb group proteins. Development 140, 4903-4913.
+
+Liljelund P, Handforth A, Homanics GE & Olsen RW. (2005). GABAA receptor beta3 subunit gene-
+deficient heterozygous mice show parent-of-origin and gender-related differences in beta3
+subunit levels, EEG, and behavior. Brain research Developmental brain research 157, 150-
+160.
+
+Lin JY, Lin MZ, Steinbach P & Tsien RY. (2009). Characterization of Engineered Channelrhodopsin
+Variants with Improved Properties and Kinetics. Biophysj 96, 1803-1814.
+
+Liu W, Lagutin OV, Mende M, Streit A & Oliver G. (2006). Six3 activation of Pax6 expression is
+essential for mammalian lens induction and specification. The EMBO Journal 25, 5383-5395.
+
+Liu X & Tonegawa S. (2010). Optogenetics 3.0. Cell 141, 22-24.
+
+Lobikin M, Chernet B, Lobo D & Levin M. (2012). Resting potential, oncogene-induced
+tumorigenesis, and metastasis: the bioelectric basis of cancer in vivo. Physical biology 9,
+065002.
+
+Lobikin M, Pare, J-F., Kaplan, D. L., and Levin, M. (2015). Selective Depolarization Of
+Transmembrane Potential Alters Muscle Patterning And Muscle Cell Localization In
+Embryonic Xenopus Laevis. Int J Dev Biol in press.
+
+Mancilla A & Mayor R. (1996). Neural crest formation in Xenopus laevis: mechanisms of Xslug
+induction. Developmental Biology 177, 580-589.
+
+Masuda CA & Montero-Lomeli M. (2000). An NH2-terminal deleted plasma membrane H+-ATPase
+is a dominant negative mutant and is sequestered in endoplasmic reticulum derived structures.
+Biochem Cell Biol 78, 51-58.
+
+McCarroll MN, Lewis ZR, Culbertson MD, Martin BL, Kimelman D & Nechiporuk AV. (2012).
+Graded levels of Pax2a and Pax8 regulate cell differentiation during sensory placode
+formation. Development 139, 2740-2750.
+
+Moody SA, Mhaske P, Pignoni F, Yan B & Neilson KM. (2010). Identification of novel candidate
+Six1-interacting proteins with potential roles in cranial placode development. Developmental
+Biology 344, 455-456.
+
+Morokuma J, Blackiston D & Levin M. (2008). KCNQ1 and KCNE1 K+ channel components are
+involved in early left-right patterning in Xenopus laevis embryos. Cellular physiology and
+biochemistry : international journal of experimental cellular physiology, biochemistry, and
+pharmacology 21, 357-372.
+
+Nakanishi S & Okazawa M. (2006). Membrane potential-regulated Ca2+ signalling in development
+and maturation of mammalian cerebellar granule cells. The Journal of Physiology 575, 389-
+398.
+
+Nguyen HL, Pieper GH & Wilders R. (2013). Andersen-Tawil syndrome: clinical and molecular
+aspects. International journal of cardiology 170, 1-16.
+
+Nieuwkoop PD & Faber J. (1994). Normal table of Xenopus laevis (Daudin) : a systematical and
+chronological survey of the development from the fertilized egg till the end of metamorphosis.
+Garland Pub., New York.
+
+Ogino H, Fisher M & Grainger RM. (2008). Convergence of a head-field selector Otx2 and Notch
+signaling: a mechanism for lens specification. Development 135, 249-258.
+
+Pai V & Levin M. (2013). Bioelectric controls of stem cell function. In Stem Cells, ed. Calegari F &
+Waskow C, pp. 106-148. CRC Press.
+
+Pai VP, Aw S, Shomrat T, Lemire JM & Levin M. (2012). Transmembrane voltage potential controls
+embryonic eye patterning in Xenopus laevis. Development 139, 313-323.
+
+Pai VP, Lemire J. M., Chen Y., Lin G., and Levin M. (2015b). Local and long-range endogenous
+resting potential gradients antagonistically regulate apoptosis and proliferation in the
+embryonic CNS. Int J Dev Biol.
+
+Pai VP, Lemire JM, Pare JF, Lin G, Chen Y & Levin M. (2015a). Endogenous gradients of resting
+potential instructively pattern embryonic neural tissue via Notch signaling and regulation of
+proliferation. J Neurosci 35, 4366-4385.
+
+Peroz D, Rodriguez N, Choveau F, Baro I, Merot J & Loussouarn G. (2008). Kv7.1 (KCNQ1)
+properties and channelopathies. The Journal of Physiology 586, 1785-1789.
+
+Plageman TF, Chung MI, Lou M, Smith AN, Hildebrand JD, Wallingford JB & Lang RA. (2010).
+Pax6-dependent Shroom3 expression regulates apical constriction during lens placode
+invagination. Development 137, 405-415.
+
+Nguyen HL, Pieper GH & Wilders R. (2013). Andersen-Tawil syndrome: clinical and molecular
+aspects. International journal of cardiology 170, 1-16.
+
+Nieuwkoop PD & Faber J. (1994). Normal table of Xenopus laevis (Daudin) : a systematical and
+chronological survey of the development from the fertilized egg till the end of metamorphosis.
+Garland Pub., New York.
+
+Ogino H, Fisher M & Grainger RM. (2008). Convergence of a head-field selector Otx2 and Notch
+signaling: a mechanism for lens specification. Development 135, 249-258.
+
+Pai V & Levin M. (2013). Bioelectric controls of stem cell function. In Stem Cells, ed. Calegari F &
+Waskow C, pp. 106-148. CRC Press.
+
+Pai VP, Aw S, Shomrat T, Lemire JM & Levin M. (2012). Transmembrane voltage potential controls
+embryonic eye patterning in Xenopus laevis. Development 139, 313-323.
+
+Pai VP, Lemire J. M., Chen Y., Lin G., and Levin M. (2015b). Local and long-range endogenous
+resting potential gradients antagonistically regulate apoptosis and proliferation in the
+embryonic CNS. Int J Dev Biol.
+
+Pai VP, Lemire JM, Pare JF, Lin G, Chen Y & Levin M. (2015a). Endogenous gradients of resting
+potential instructively pattern embryonic neural tissue via Notch signaling and regulation of
+proliferation. J Neurosci 35, 4366-4385.
+
+Peroz D, Rodriguez N, Choveau F, Baro I, Merot J & Loussouarn G. (2008). Kv7.1 (KCNQ1)
+properties and channelopathies. The Journal of Physiology 586, 1785-1789.
+
+Plageman TF, Chung MI, Lou M, Smith AN, Hildebrand JD, Wallingford JB & Lang RA. (2010).
+Pax6-dependent Shroom3 expression regulates apical constriction during lens placode
+invagination. Development 137, 405-415.
+
+Pouget J. (2008). [A new type of periodic paralysis: Andersen-Tawil syndrome]. Bull Acad Natl Med
+192, 1551-1556; discussion
+1556-1557.
+
+Pouliquin P, Grouzis J & Gibrat R. (1999). Electrophysiological study with oxonol VI of passive
+NO3- transport by isolated plant root plasma membrane. Biophys J 76, 360-373.
+
+Pratt KG & Khakhalin AS. (2013). Modeling human neurodevelopmental disorders in the Xenopus
+tadpole: from mechanisms to therapeutic targets. Disease models & mechanisms 6, 1057-
+
+Purcell P, Oliver G, Mardon G, Donner AL & Maas RL. (2005). Pax6-dependence of Six3, Eyal and
+Dach1 expression during lens and nasal placode induction. Gene Expr Patterns 6, 110-118.
+
+Rajakulendran S, Tan SV & Hanna MG. (2010). Muscle weakness, palpitations and a small chin: the
+Andersen-Tawil syndrome. Pract Neurol 10, 227-231.
+
+Ramachandran KV, Hennessey JA, Barnett AS, Yin X, Stadt HA, Foster E, Shah RA, Yazawa M,
+Dolmetsch RE, Kirby ML & Pitt GS. (2013). Calcium influx through L-type CaV1.2 Ca2+
+channels regulates mandibular development. The Journal of clinical investigation 123, 1638-
+
+Rasmussen JT, Deardorff MA, Tan C, Rao MS, Klein PS & Vetter ML. (2001). Regulation of eye
+development by frizzled signaling in Xenopus. Proc Natl Acad Sci U S. SA 98, 3861-3866.
+
+Reisoli E, De Lucchini S, Nardi I & Ori M. (2010). Serotonin 2B receptor signaling is required for
+craniofacial morphogenesis and jaw joint formation in Xenopus. Development 137, 2927-
+
+Ren Z & Ambros VR. (2015). Caenorhabditis elegans microRNAs of the let-7 family act in innate
+immune response circuits and confer robust developmental timing against pathogen stress.
+Proc Natl Acad Sci U S A 112, E2366-2375.
+
+Rizzoti K & Lovell-Badge R. (2007). SOX3 activity during pharyngeal segmentation is required for
+craniofacial morphogenesis. Development 134, 3437-3448.
+
+Robert J & Cohen N. (2011). The genus Xenopus as a multispecies model for evolutionary and
+comparative immunobiology of the 21st century. Dev Comp Immunol 35, 916-923.
+
+Roden WH, Peugh LD & Jansen LA. (2010). Altered GABA(A) receptor subunit expression and
+pharmacology in human Angelman syndrome cortex. Neuroscience letters 483, 167-172.
+
+Saint-Germain N, Lee Y-H, Zhang Y, Sargent TD & Saint-Jeannet J-P. (2004). Specification of the
+otic placode depends on Sox9 function in Xenopus. Development (Cambridge, England) 131,
+
+Sanchez-Martin M, Rodriguez-Garcia A, Perez-Losada J, Sagrera A, Read AP & Sanchez-Garcia I.
+(2002). SLUG (SNAI2) deletions in patients with Waardenburg disease. Human Molecular
+Genetics 11, 3231-3236.
+
+Schlosser G. (2006). Induction and specification of cranial placodes. Developmental Biology 294,
+
+Seufert DW, Hanken J & Klymkowsky MW. (1994). Type II collagen distribution during cranial
+development in Xenopus laevis. Anat Embryol (Berl) 189, 81-89.
+
+Shi W, Xu J & Warburton D. (2009). Development, repair and fibrosis: what is common and why it
+matters. Respirology 14, 656-665.
+
+Shigetani Y, Nobusada Y & Kuratani S. (2000). Ectodermally derived FGF8 defines the
+maxillomandibular region in the early chick embryo: epithelial-mesenchymal interactions in
+the specification of the craniofacial ectomesenchyme. Dev Biol 228, 73-85.
+
+Simmich J, Staykov E & Scott E. (2012). Zebrafish as an appealing model for optogenetic studies.
+Progress in Brain Research 196, 145-162.
+
+Singh A, Winterbottom EF, Ji YJ, Hwang YS & Daar IO. (2013). Abelson interactor 1 (ABI1) and its
+interaction with Wiskott-Aldrich syndrome protein (wasp) are critical for proper eye
+formation in Xenopus embryos. J Biol Chem 288, 14135-14146.
+
+Sive H, Grainger RM & Harland R. (2000). Early Development of Xenopus laevis. Cold Spring
+Harbor Laboratory Press, Cold Spring Harbor, New York.
+
+Soom M, Schonherr R, Kubo Y, Kirsch C, Klinger R & Heinemann SH. (2001). Multiple PIP2
+binding sites in Kir2.1 inwardly rectifying potassium channels. FEBS letters 490, 49-53.
+
+Splawski I, Timothy KW, Sharpe LM, Decher N, Kumar P, Bloise R, Napolitano C, Schwartz PJ,
+Joseph RM, Condouris K, Tager-Flusberg H, Priori SG, Sanguinetti MC & Keating MT.
+(2004). Ca(V)1.2 calcium channel dysfunction causes a multisystem disorder including
+arrhythmia and autism. Cell 119, 19-31.
+
+Steventon B, Mayor R & Streit A. (2012). Mutual repression between Gbx2 and Otx2 in sensory
+placodes reveals a general mechanism for ectodermal patterning. Developmental Biology 367,
+
+Stewart S, Rojas-Munoz A & Izpisua Belmonte JC. (2007). Bioelectricity and epimorphic
+regeneration. Bioessays 29, 1133-1137.
+
+Stroh A, Tsai HC, Ping ì HC, Ping Wang L, Zhang F, Kressel J, Aravanis A, Santhanam N, Deisseroth K,
+Konnerth A & Schneider MB. (2010). Tracking stem cell differentiation in the setting of
+automated optogenetic stimulation. Stem Cells.
+
+Sundelacruz S, Levin M & Kaplan DL. (2009). Role of membrane potential in the regulation of cell
+proliferation and differentiation. Stem cell reviews and reports 5, 231-246.
+
+Sung RJ, Wu SN, Wu JS, Chang HD & Luo CH. (2006). Electrophysiological mechanisms of
+ventricular arrhythmias in relation to Andersen-Tawil syndrome under conditions of reduced
+IK1: a simulation study. American journal of physiology Heart and circulatory physiology
+291,
+H2597-2605.
+
+Tanaka KF, Matsui K, Sasaki T, Sano H, Sugio S, Fan K, Hen R, Nakai J, Yanagawa Y, Hasuwa H,
+Okabe M, Deisseroth K, Ikenaka K & Yamanaka A. (2012). Expanding the Repertoire of
+Optogenetically Targeted Cells with an Enhanced Gene Expression System. Cell Rep.
+
+Tomson T & Battino D. (2009). Teratogenic effects of antiepileptic medications. Neurol Clin 27, 993-
+
+Tristani-Firouzi M. (2006). Andersen-Tawil syndrome: an ever-expanding phenotype? Heart Rhythm
+
+Tristani-Firouzi M & Etheridge SP. (2010). Kir 2.1 channelopathies: the Andersen-Tawil syndrome.
+Pflügers Archiv : European journal of physiology 460, 289-294.
+
+Tristani-Firouzi M, Jensen JL, Donaldson MR, Sansone V, Meola G, Hahn A, Bendahhou S,
+Kwiecinski H, Fidzianska A, Plaster N, Fu YH, Ptacek LJ & Tawil R. (2002). Functional and
+clinical characterization of KCNJ2 mutations associated with LQT7 (Andersen syndrome).
+The Journal of clinical investigation 110, 381-388.
+
+Tseng A & Levin M. (2013). Cracking the bioelectric code: Probing endogenous ionic controls of
+pattern formation. Communicative & Integrative Biology 6, 1-8.
+
+van Vliet P, de Boer TP, van der Heyden MA, El Tamer MK, Sluijter JP, Doevendans PA &
+Goumans MJ. (2010). Hyperpolarization induces differentiation in human cardiomyocyte
+progenitor cells. Stem cell reviews 6, 178-185.
+
+Vandenberg LN & Levin M. (2013). A unified model for left-right asymmetry? Comparison and
+synthesis of molecular models of embryonic laterality. Developmental biology 379, 1-15.
+
+IK1: a simulation study. American journal of physiology Heart and circulatory physiology
+291,
+H2597-2605.
+Tanaka KF, Matsui K, Sasaki T, Sano H, Sugio S, Fan K, Hen R, Nakai J, Yanagawa Y, Hasuwa H,
+Okabe M, Deisseroth K, Ikenaka K & Yamanaka A. (2012). Expanding the Repertoire of
+Optogenetically Targeted Cells with an Enhanced Gene Expression System. Cell Rep.
+Tomson T & Battino D. (2009). Teratogenic effects of antiepileptic medications. Neurol Clin 27, 993-
+Tristani-Firouzi M. (2006). Andersen-Tawil syndrome: an ever-expanding phenotype? Heart Rhythm
+Tristani-Firouzi M & Etheridge SP. (2010). Kir 2.1 channelopathies: the Andersen-Tawil syndrome.
+Pflügers Archiv : European journal of physiology 460, 289-294.
+Tristani-Firouzi M, Jensen JL, Donaldson MR, Sansone V, Meola G, Hahn A, Bendahhou S,
+Kwiecinski H, Fidzianska A, Plaster N, Fu YH, Ptacek LJ & Tawil R. (2002). Functional and
+clinical characterization of KCNJ2 mutations associated with LQT7 (Andersen syndrome).
+The Journal of clinical investigation 110, 381-388.
+Tseng A & Levin M. (2013). Cracking the bioelectric code: Probing endogenous ionic controls of
+pattern formation. Communicative & Integrative Biology 6, 1-8.
+van Vliet P, de Boer TP, van der Heyden MA, El Tamer MK, Sluijter JP, Doevendans PA &
+Goumans MJ. (2010). Hyperpolarization induces differentiation in human cardiomyocyte
+progenitor cells. Stem cell reviews 6, 178-185.
+Vandenberg LN & Levin M. (2013). A unified model for left-right asymmetry? Comparison and
+synthesis of molecular models of embryonic laterality. Developmental biology 379, 1-15.
+
+Vandenberg LN, Morrie RD & Adams DS. (2011). V-ATPase-dependent ectodermal voltage and pH
+regionalization are required for craniofacial morphogenesis. Developmental dynamics 240,
+1889-1904.
+Vandenberg LN, Morrie RD & Adams DS. (2011c). V-ATPase-dependent ectodermal voltage and pH
+regionalization are required for craniofacial morphogenesis. Dev Dynam 240, 1889-1904.
+Vernon AE & LaBonne C. (2006). Slug stability is dynamically regulated during neural crest
+development by the F-box protein Ppa. Development 133, 3359-3370.
+Wahlbuhl M, Reiprich S, Vogl MR, Bosl MR & Wegner M. (2012). Transcription factor Sox10
+orchestrates activity of a neural crest-specific enhancer in the vicinity of its gene. Nucleic
+Acids Res 40, 88-101.
+Wang SJ, Weng CH, Xu HW, Zhao CJ & Yin ZQ. (2014). Effect of optogenetic stimulus on the
+proliferation and cell cycle progression of neural stem cells. The Journal of membrane
+493-500.
+Weir RA, Petrie CJ, Murday V & Findlay IN. (2011). Andersen-Tawil syndrome. International
+journal of cardiology 148, e13-15.
+West AE, Chen WG, Dalva MB, Dolmetsch RE, Kornhauser JM, Shaywitz AJ, Takasu MA, Tao X &
+Greenberg ME. (2001). Calcium regulation of neuronal gene expression. Proc Natl Acad Sci
+USA 98, 11024-11031.
+Wheeler GN & Liu KJ. (2012). Xenopus: An ideal system for chemical genetics. Genesis 50, 207-
+Wong EY, Ahmed M & Xu PX. (2013). EYA1-SIX1 complex in neurosensory cell fate induction in
+the mammalian inner ear. Hearing research 297, 13-19.
+
+Wyart C, Del Bene F, Warp E, Scott EK, Trauner D, Baier H & Isacoff EY. (2009). Optogenetic
+dissection of a behavioural module in the vertebrate spinal cord. Nature 461, 407-410.
+Yang F, Tu J, Pan JQ, Luo HL, Liu YH, Wan J, Zhang J, Wei PF, Jiang T, Chen YH & Wang LP.
+(2013). Light-controlled inhibition of malignant glioma by opsin gene transfer. Cell Death
+Yang J, Jan YN & Jan LY. (1995). Control of rectification and permeation by residues in two distinct
+domains in an inward rectifier K+ channel. Neuron 14, 1047-1054.
+Ye Z, Mostajo-Radji MA, Brown JR, Rouaux C, Tomassy GS, Hensch TK & Arlotta P. (2015).
+Instructing Perisomatic Inhibition by Direct Lineage Reprogramming of Neocortical
+Projection Neurons. Neuron 88, 475-483.
+Yizhar O, Fenno LE, Davidson TJ, Mogri M & Deisseroth K. (2011). Optogenetics in neural systems.
+Neuron 71, 9-34.
+Yoon G, Oberoi S, Tristani-Firouzi M, Etheridge SP, Quitania L, Kramer JH, Miller BL, Fu YH &
+Ptacek LJ. (2006). Andersen-Tawil syndrome: prospective cohort analysis and expansion of
+the phenotype. American journal of medical genetics Part A 140, 312-321.
+Zaritsky JJ, Eckman DM, Wellman GC Nelson MT & Schwarz TL. (2000). Targeted disruption of
+Kir2.1 and Kir2.2 genes reveals the essential role of the inwardly rectifying K(+) current in
+K(+)-mediated vasodilation. Circ. Res. 87(2), 160-166.
+Zaghloul NA & Moody SA. (2007). Alterations of rx1 and pax6 expression levels at neural plate
+stages differentially affect the production of retinal cell types and maintenance of retinal stem
+cell qualities. Dev Biol 306, 222-240.
+Zhang H, Chen H, Luo H, An J, Sun L, Mei L, He C, Jiang L, Jiang W, Xia K, Li JD & Feng Y.
+(2012). Functional analysis of Waardenburg syndrome-associated PAX3 and SOX10
+mutations: report of a dominant-negative SOX10 mutation in Waardenburg syndrome type II.
+Human genetics 131, 491-503.
+
+Zhang L, Benson DW, Tristani-Firouzi M, Ptacek LJ, Tawil R, Schwartz PJ, George AL, Horie M,
+Andelfinger G, Snow GL, Fu YH, Ackerman MJ & Vincent GM. (2005).
+Electrocardiographic features in Andersen-Tawil syndrome patients with KCNJ2 mutations:
+characteristic T-U-wave patterns predict the KCNJ2 genotype. Circulation 111, 2720-2726.
+Zhu F, Skommer J, Huang Y, Akagi J, Adams D, Levin M, Hall CJ, Crosier PS & Wlodkowic D.
+(2014). Fishing on chips: Up-and-coming technological advances in analysis of zebrafish and
+Xenopus embryos. Cytometry A 85, 921-932.
+Zilinski C, Brownell I, Hashimoto R, Medina-Martinez O, Swindell EC & Jamrich M. (2004).
+Expression of FoxE4 and Rx visualizes the timing and dynamics of critical processes taking
+place during initial stages of vertebrate eye development. Dev Neurosci-Basel 26, 294-307.
+
+[PAGE 49] ADDITIONAL INFORMATION
+
+Supplement 1. Components of a system for using optogenetics in Xenopus (not to scale).
+(A) This custom optogenetics station was built on an existing microscopy platform consisting
+of a Nikon AZ100 Stereo Microscope with an Intensilight mercury illumination source, a Volpi LED
+brightfield light source, and a Ludl MAC5000 XYZ stage controller. The additional commercial
+component was a Lur Lumencor Spectra4 LED light source with a fiber optic light guide. This provides
+illumination at four wavelengths, shown as an inset above the machine. Custom equipment included
+an adaptor to feed the Spectra 4 fiberoptic cable into the microscope via the fluorescence input port on
+the top rear of the scope; the light path is represented here by a purple line. Included in the adaptor is
+an easily accessible slot for a changeable baffle with an aperture that can be made in any size, thus
+allowing fine control over the size of the spot of light reaching the specimen. After passing through
+the aperture, the light is reflected down through the 5X objective, further reducing it's diameter (not
+shown), then onto the specimen. The second custom component is a bracket for holding a fluid-filled
+light guide coming from the Intensilight. The bracket feeds the white light past an interchangeable
+band pass filter (a filter that allows green light through is shown). The light from this source is not
+focused, but rather can be used to illuminate the entire embryo. This feature was added to allow
+simultaneous activation or deactivation of all of the light gated translocators that might be expressed,
+while the pinpoint of light coming through the objective allows precision and aiming of the spot
+towards a particular feature of interest without illuminating other channels. The final custom
+component is a DAQ board that allows the computer, running NIS Elements, to control all the
+components, allowing versatile and fine control over location and timing of illumination. (B) A red
+spot generated by the red Spectra 4 LED, shining on a standard business card, to show shape, and
+as seen on the monitor to show size. The innermost ring indicates a 100 µm radius. (D) A Xenopus
+gastrula-stage embryo expressing EOS-FP, a fluorescent marker that undergoes a permanent change
+from green to red when exposed to UV light. We used this technique to illustrate how the LED light
+
+[PAGE 49] ADDITIONAL INFORMATION
+
+Supplement 1. Components of a system for using optogenetics in Xenopus (not to scale).
+(A) This custom optogenetics station was built on an existing microscopy platform consisting of a Nikon AZ100 Stereo Microscope with an Intensilight mercury illumination source, a Volpi LED brightfield light source, and a Ludl MAC5000 XYZ stage controller. The additional commercial component was a Lur Lumencor Spectra4 LED light source with a fiber optic light guide. This provides illumination at four wavelengths, shown as an inset above the machine. Custom equipment included an adaptor to feed the Spectra 4 fiberoptic cable into the microscope via the fluorescence input port on the top rear of the scope; the light path is represented here by a purple line. Included in the adaptor is an easily accessible slot for a changeable baffle with an aperture that can be made in any size, thus allowing fine control over the size of the spot of light reaching the specimen. After passing through the aperture, the light is reflected down through the 5X objective, further reducing it's diameter (not shown), then onto the specimen. The second custom component is a bracket for holding a fluid-filled light guide coming from the Intensilight. The bracket feeds the white light past an interchangeable band pass filter (a filter that allows green light through is shown). The light from this source is not focused, but rather can be used to illuminate the entire embryo. This feature was added to allow simultaneous activation or deactivation of all of the light gated translocators that might be expressed, while the pinpoint of light coming through the objective allows precision and aiming of the spot towards a particular feature of interest without illuminating other channels. The final custom component is a DAQ board that allows the computer, running NIS Elements, to control all the components, allowing versatile and fine control over location and timing of illumination. (B) A red spot generated by the red Spectra 4 LED, shining on a standard business card, to show shape, and as seen on the monitor to show size. The innermost ring indicates a 100 µm radius. (D) A Xenopus gastrula-stage embryo expressing EOS-FP, a fluorescent marker that undergoes a permanent change from green to red when exposed to UV light. We used this technique to illustrate how the LED light can illuminate a small area without affecting the rest of the embryo. Black and white: the embryo under bright-field illumination; the embryo is approximately 1.2mm in diameter. Green: EOS-FP fluorescence everywhere except the spot in the middle that was illuminated with the UV Spectra4 LED for six seconds. Red: the EOS-FP that has been converted to red by UV illumination. The spot is 200 µm in diameter.
+
+[PAGE 50] Supplement 2: Chip used to hold the embryos in place for time-lapse imaging and/or repeated exposure to light.
+(A) The trap (Adams et al., 2014; Zhu et al., 2014) is made of PDMS and has been filled with blue dye to show the shape of the microfluidics chamber. White arrows indicate the direction of flow of medium circulated by a peristaltic pump (not shown) at 5 to 10 mL/min. The channel is surrounded by a second channel (lighter blue ink) that is connected to a vacuum; this vacuum channel seals the chip to the plastic sheet and prevents leaks. (B) A close up showing an individual embryo slot. White lines indicate the widths of the openings facing the channel; the difference leads to the pressure gradient that holds the embryos in place (direction indicated by arrow). (C) Image of a chip with embryos in each slot. Also visible are the attached tubes bringing medium to the chip.
+
+
+[PAGE 51] Supplemental Figure 3: WISH for craniofacial patterning genes in embryos injected with the DN D71V mRNA and with wildtype KCNJ2.
+Ten markers were used to characterize the effect of the DN and wildtype KCNJ2s on craniofacial patterning. The marker is indicated to the left of each row; two columns of images each are presented for untreated controls (No Treatment), embryos injected with the D71V DN variant, and embryos injected with the wildtype KCNJ2 construct. The normal pattern, at two different stages, is shown in the two left most columns. Examples of mispatterning of the markers are shown in the other columns. There was was no no consistent difference between the effects of the DN and the wildtype, indicating that the direction of change of mem does not prescribe a particular subset of defects.
+
+[PAGE 52] AUTHORS' TRANSLATIONAL PERSPECTIVE
+
+Channelopathies (mutations in ion channel genes) often give rise to cardiac arrhythmias, and developmental defects. While it is straight-forward to understand how ion channel malfunction can alter the physiology of excitable cells such as nerve and muscle, the patterning phenotypes affecting organogenesis have remained mysterious. Here, we offer data supporting a mechanistic explanation of craniofacial birth defects observed in patients with mutations in the KCNJ2 ion channel. We show that the expression of crucial regulatory genes in the embryonic ectoderm depends on the precise pattern and range of resting potentials of cells in the nascent face; thus, alterations of bioelectric signaling can readily disrupt the finely-orchestrated process of craniofacial morphogenesis. This is a novel example of an endogenous bioelectric control mechanism; others operate during brain, limb, and left-right patterning, as well as during metastasis and tumorigenesis. Clinically, these data indicate that a range of insults, including mutations in ion channel genes but also exposure to pharmaceutical pharmaceutical compounds compounds that perturb ion channel function, can induce a range of developmental defects. However, our results also point to a novel approach to repair of such birth defects, using so-called "electroceuticals” – ion channel drugs already approved for human use to manage bioelectrical states towards desired outcomes in embryogenesis, regenerative medicine, and bioengineering.
+
+[PAGE 53] Table 1. Sources and doses of injected mRNA constructs.
+All constructs were subcloned into PCS2+ for improved expression in Xenopus cells.
+
+[PAGE 54] Table 2. Sources of probes used for Xenopus in situ hybridization
+
+[PAGE 55] Table 3. Statistical comparisons of craniofacial anomalies in treated and control tadpoles
+
+[PAGE 56] Experimentals compared with experimentals held in the dark
+
+[PAGE 57] Table 4. Statistics comparing prevalence of mispatterned markers in treated and control
+embryos.
+
+* where not known, replicate number was estimated using the lab standard practice of 3 samples of
+30 each, at a minimum.
+
+Table 4. Statistics comparing prevalence of mispatterned markers in treated and control
+embryos.
+* where not known, replicate number was estimated using the lab standard practice of 3 samples of
+30 each, at a minimum.
+
+[PAGE 59] FIGURE LEGENDS
+Figure 1. External craniofacial anomalies characteristic of Andersen-Tawil Syndrome.
+One of the trio of features used for diagnosis of ATS, craniofacial anomalies are seen in a
+majority of patients. These features are variably penetrant however, with different patients showing
+different degrees of severity and different subsets of those shown. The characteristics shown here are
+frequently mentioned; a more inclusive list can be found in (Yoon et al., 2006).
+
+Figure 2. WISH for KCNJ2 in Xenopus and mouse embryos.
+Species are indicated on the left. (A) A dorsal-anterior view of a stage 14 Xenopus embryo
+dehydrated in methanol following fixation. The KNCJ2 signal is much lighter in the midline and two
+oval areas on either side at the anterior end, the area outlined by white dots. (B) A neurulating
+Xenopus embryo showing KCNJ2 signal on the anterior neural folds (lower green arrows). Upper
+green arrow points to expression at the approximate position of the second pharyngeal cleft. Inset is
+sense strand control. (C) Stage 27 Xenopus embryo showing strong KCNJ2 staining in the somites
+(green arrows). Inset is sense strand control. (D) In situ hybridization of KCNJ2 mRNA expression
+at E8.5 mouse embryo (dorsal view of whole-mount embryo). KCNJ2 mRNA is detected in the
+midline of the fusing neural tube, and in a punctate bilateral expression pattern lateral to the midline
+and in anterior neural tissues (green arrows). (E) Lateral view of whole-mount embryo at E9.5
+showed KCNJ2 mRNA expression in the craniofacial region including the frontonasal prominence
+(fnp) and branchial arches 1 and 2, and in the forming somites (green arrows). (F) Sectioned ISH of
+E9.5 mouse embryo revealed KCNJ2 expression in the epithelium of the frontonasal prominence (fnp)
+(green arrows). A schematic in the right top corner indicates the approximate plane of section. (G)
+Lateral view of whole-mount embryo craniofacial region at E10.5 revealed KCNJ2 expression in the
+frontonasal prominence (fnp), in the mandibular process (ma) (green arrow) including along the
+border with the maxillary process (mx). (H, I) Sectioned ISH revealed KCNJ2 mRNA expression in
+neural crest derived mesenchymal cells of the palatal shelves (ps), in mesenchymal cells surrounding
+the developing Meckel's cartilage (m), and in the olfactory epithelium of nasal cavity (nc) in E13.5
+(H) and E15.5 (I) embryos (green arrows). Inserts adapted from (d'Amaro et al., 2012). (J) At E12.5
+KCNJ2 mRNA was detected in condensations of the developing forelimb digits (green arrows).
+Abbreviations: bal, branchial arch 1; ba2, branchial arch 2; fb, fore brain; fnp, frontonasal
+prominence; m, Meckel's cartilage; mb, mid brain; ma, mandibular process; mx, maxillary process;
+nc, nasal cavity; ns, nasal septum; ps, palatal shelf; t, tongue.
+
+[PAGE 60] Figure 3. Tadpole craniofacial anomalies caused by injection of mRNA for KCNJ2 variants
+Anterior is up in all panels; view is dorsal except in D-F, J, M, Q, and U. All scale bars = 0.5
+mm. (A-F) Normal wildtype head of the stage 46 tadpole. A & D, darkfield, B & E, Alcian blue
+staining, C and F after (Reisoli et al., 2010). (G-U) Illustrate both the range of phenotypes seen and
+the commonality of the phenotypes resulting from all the variants tested. (G-K) Heads of tadpoles that
+were injected with the dominant negative Kcnj2 variant D71V. Illustrated are typical anomalies: (G)
+small eye; (H) fusion of the two olfactory bulbs; (I) pigmented optic nerve and missing eye; (J)
+anomalies restricted to one side include a small misshapen eye with misplaced lens, grossly
+undersized branchial arches, and malformed Meckel's cartilage; (K) Fusion of the brain eye and
+olfactory bulb on the right side. (L-P) Heads of tadpoles injected with T192A. (L) the leftmost arrow
+points to a malformed olfactory bulb, while the other two arrows point to the same anomalies seen in
+D71V-injected tadpoles J and K, namely malformed Meckel's cartilage and fusion of the brain with
+the eye. (M) Another commonly seen malformation is the narrowing of the anterior most end with
+malformed or absent infraostral and Meckel's cartilages. (N) An example of a more subtle phenotype
+of differences in size of Meckel's cartilages and the branchial arches. (O) A commonly seen eye
+phenotype, shown in an tadpole with bilateral anomalies. In these tadpoles the optic nerve is both
+pigmented and thickened, looking like an extension of the eye. This embryo also has a malformed
+olfactory bud. (P) This embryo shows the same inequality of Meckel's cartilages seen in (N),
+combined with gross malformations of both eyes. The otic capsule is also misshapen in this tadpole.
+(Q,R) Tadpoles expressing the Y242F variant. (Q) the ceratohyals of this tadpole are badly distorted,
+while at least one of Meckel's cartilages is located in the wrong place. The right eye of this tadpole
+lacked a lens. (R) A more subtle effect of Y242F showing distorted ethmoidal plate, a badly
+positioned eye, and, like the D71V tadpole in J, small branchial arches on one side. (S) Similar
+phenotypes are caused by injection of a different potassium channel, including abnormal narrowing
+anteriorly and concomitant loss of Meckel's cartilages and, likely the infraostral cartilage, fusion of
+the olfactory bulb and eye, misshapen eye, and a misshapen otic capsule, like the T192A injected
+tadpole in P, that lacks an otolith. (T,U) Tadpoles grown from R218W-injected embryos. (T) This
+tadpole has distorted Meckel's cartilages and quandrate, malformed eyes, malformed ethmoidal plate,
+and small branchial arches on one side. (U) Deformed Meckel's and ceratohyal cartilages, one bad
+eye and small branchial arches, result from R218W injection as well as injection of the other variants.
+
+[PAGE 61] Figure 4. Box and whiskers plots illustrating the differences in proportions of CFAs resulting
+from injections of different mRNAs.
+Box plots show median and 1st and 3rd quartiles; the whiskers extend to 10th and 90th
+percentiles; the dot indicates the mean. Controls are shown in yellow, KCNJ2 variants are red, other
+translocators are orange. None of the control mRNAs (β-gal, GlyR, NHE3) caused a meaningful
+increase in the proportion of CFAs; mean proportion of CFAs in negative controls was 14%. All of
+the variants of KCNJ2 caused greater than 30% of tadpoles to develop CFA's, well above our
+threshold of 24% for biological significance; all of these differences were highly significant (Table 3).
+Two other potassium channels, Kir6.2 (KCNJ11) and KvLQT (KCNQ1), plus a light activated cation
+channel (ChR2-D156A), and a light activated hydrogen ion pump (Arch) likewise caused meaningful
+increases in the proportion of tadpoles developing CFAs.
+
+[PAGE 61] Figure 5. Skeletal muscle phenotype caused by injection of mRNA for variant KCNJ2.
+Images of the skeletal muscle phenotypes observed in injected tadpole tails; in A to C anterior
+is to the left and dorsal is up, in D to G, anterior is to the right and dorsal is up; in H to L anterior is
+up. (A) Live tadpole tail imaged using polarized light. Normal muscles, indicated by the green
+arrows, yield clear, organized, light patterns. In contrast, abnormal muscles are obviously disordered.
+
+[PAGE 61] 
+while at least one of Meckel's cartilages is located in the wrong place. The right eye of this tadpole
+lacked a lens. (R) A more subtle effect of Y242F showing distorted ethmoidal plate, a badly
+positioned eye, and, like the D71V tadpole in J, small branchial arches on one side. (S) Similar
+phenotypes are caused by injection of a different potassium channel, including abnormal narrowing
+anteriorly and concomitant loss of Meckel's cartilages and, likely the infraostral cartilage, fusion of
+the olfactory bulb and eye, misshapen eye, and a misshapen otic capsule, like the T192A injected
+tadpole in P, that lacks an otolith. (T,U) Tadpoles grown from R218W-injected embryos. (T) This
+tadpole has distorted Meckel's cartilages and quandrate, malformed eyes, malformed ethmoidal plate,
+and small branchial arches on one side. (U) Deformed Meckel's and ceratohyal cartilages, one bad
+eye and small branchial arches, result from R218W injection as well as injection of the other variants.
+
+Figure 4. Box and whiskers plots illustrating the differences in proportions of CFAs resulting
+from injections of different mRNAs.
+
+Box plots show median and 1st and 3rd quartiles; the whiskers extend to 10th and 90th
+percentiles; the dot indicates the mean. Controls are shown in yellow, KCNJ2 variants are red, other
+translocators are orange. None of the control mRNAs (β-gal, GlyR, NHE3) caused a meaningful
+increase in the proportion of CFAs; mean proportion of CFAs in negative controls was 14%. All of
+the variants of KCNJ2 caused greater than 30% of tadpoles to develop CFA's, well above our
+threshold of 24% for biological significance; all of these differences were highly significant (Table 3).
+Two other potassium channels, Kir6.2 (KCNJ11) and KvLQT (KCNQ1), plus a light activated cation
+channel (ChR2-D156A), and a light activated hydrogen ion pump (Arch) likewise caused meaningful
+increases in the proportion of tadpoles developing CFAs.
+
+Figure 5. Skeletal muscle phenotype caused by injection of mRNA for variant KCNJ2.
+
+Images of the skeletal muscle phenotypes observed in injected tadpole tails; in A to C anterior
+is to the left and dorsal is up, in D to G, anterior is to the right and dorsal is up; in H to L anterior is
+up. (A) Live tadpole tail imaged using polarized light. Normal muscles, indicated by the green
+arrows, yield clear, organized, light patterns. In contrast, abnormal muscles are obviously disordered.
+
+
+[PAGE 62]
+(B) The expression of D71V-tdTomato in the same tail. (C) The overlay of A and B shows the
+overlap of variant KCNJ2 expression with the position of abnormal muscle structure, and its absence
+from the normal muscle (now pseudocolored green). (D-G) A comparison of the organization of
+fibronectin in normal tails versus tails injected with variant KCNJ2 lacking a fluorescent protein. In
+the injected animal (F,G) the normal pattern of expression has been severely disrupted, although the
+muscles look normally organized in brightfield. (H) Polarized light image of an R218W injected
+animal that nonetheless shows normal organization of the tail muscles. (I,J) Tails from R218W-
+expressing tadpoles show characteristic alterations to the normal chevron pattern of the muscle
+blocks. Red arrows indicate especially large deviations. (K,L) Tails from T192A-expressing
+tadpoles also display the same types of deviations from the normal morphology, illustrating a
+similarity of muscle phenotypes that parallels the similarity of CFAs induced by different variants.
+
+Figure 6. Disruption of the normal regionalization of mem domains caused by injection of
+mRNA encoding D71V.
+
+Examples of Vmem regionalization in normal and variant injected embryos. During neurulation,
+Xenopus embryos have a dynamic regionalization of mem across the ectoderm that is disrupted when
+variant KCNJ2 is expressed. Green arrowheads indicate normal domains of hyperpolarization
+(brighter) while white arrows point to abnormal regions of hyperpolarization. The anterior of each
+embryo is shown, dorsal is up; the injected embryo is angled slightly to the right. (A) Drawing from
+Nieuwkoop & Faber (1994) showing frontal view of stage 19 embryo. Dorsal is up. The added Xs
+indicate position of cells that will make the eyes. (B) Brightfield image of a stage 19 embryo in the
+same orientation as the embryo in C-F. The midline is indicated by large dots, while small dots circle
+the area that will become the face. Like in A, X's indicate the positions of the future eyes. R and L =
+right and left side of the embryo. (C) The normal pattern of mem variation in a late neurula (stage
+19). Brighter indicates relatively hyperpolarized (more negative) while dimmer means relatively
+depolarized (less negative). The upper arrow points to a stripe of hyperpolarized cells found in the
+region where eyes and olfactory bulbs will form. The lower arrow points to the anterior end of the
+
+
+[PAGE 63]
+closing neural tube which is consistently more negative than the surrounding cells. (D) The mem
+pattern in an embryo injected on the right side with the D71V variant; brighter red reveals cells that
+are hyperpolarized relative to less bright cells. While expression is mostly on the right side, there is
+some expression on the left side at the anterior most end of the embryo. The green arrowhead points
+to a normal region of hyperpolarization, the white arrowheads indicate two abnormal regions of
+hyperpolarization, a bend to the right and extra stripe. Inset: diagram showing the stage and
+orientation of the embryo. (E) The expression of D71V-GFP in the same embryo; the dotted line
+indicates the midline. Note that there are areas within the expression domain of the depolarizing
+variant Kir2.1 that have much lower expression, or lack expression entirely (inset). (F) Interestingly,
+the regions of ectopic hyperpolarization that are present within the overall expression domain of the
+variant line up with the areas showing low to no expression of the depolarizing variant (white
+arrowheads and inset). (G) Relative Vmem of ectoderm cells in embryos measured using DiBAC4(3)
+and Oxonol VI. As predicted, the wildtype and the GOF variant Y242F hyperpolarize while the LOF
+variant R218W depolarizes, (Kruskal-Wallis, df=3, H=21.34, p<0.001; Dunn's Post Hoc as shown;
+sample sizes were: NT 33 embryos; WT 16; R218W 4; Y242F 7; error bars = standard deviation).
+
+Figure 7. Whole-mount ISH for well-known markers of craniofacial development in embryos
+injected with mRNA encoding D71V.
+
+Shown is a subset of the WISHs performed (see also Supp. Figure S3). This set represents at least
+two markers each of the relevant tissues, that is, neural crest and the three placodes studied. (A) Chart
+showing locations of marker expression. (B) Normal (1st column) over-expressed (2nd column) and
+under-expressed (3rd column) examples from each of five representative markers. Red arrows point to
+positions of abnormal signal patterns; the green arrow in v points to normal expression on the side
+opposite the disrupted pattern. The patterns we saw, even in injected embryos that did not have
+significantly more misexpression than background, are consistent with incorrect or incomplete
+differentiation (ii, iii, v, vi, viii, ix) and anomalies in neural crest migration (xi, xii, xiv, xv) To date,
+
+
+[PAGE 64]
+we have not detected any correlation between the types or magnitudes of disruptions caused and the
+identity or effect of the construct injected.
+
+Figure 8. CFA induction.
+
+(A) Diagram illustrating our hypothesis about how either depolarizing or hyperpolarizing a
+cell membrane away from the optimal Vmem for the downstream effectors can lead to the same effect
+on phenotype. In every cell membrane, flux through ion channels, such as Kir2.1, or pumps sets the
+resting potential of the membrane. Vmem influences downstream effectors by affecting activity levels,
+in much the same way that temperature influences protein activity, and deviation from the optimum
+lowers activity. The example in this graph shows an effector that works optimally at a Vmem we have
+assigned the color yellow, and drops off rapidly either above or below that value. The embryo-wide
+distribution of all of the cells' Vmems (e.g. Fig. 6C) is the regionalization that we call the “electric
+face”. To illustrate how gain and loss of function variants, acting in a subset of individual cells, might
+disrupt the wildtype pattern and lead to dysmorphia, we have schematized changes to “Vmem by using
+Photoshop™ to artificially change the colors that represent the different Vmems. The three circular
+representations of embryos are pseudocolored copies of the wildtype embryonic Vmem pattern shown
+in Fig. 6C. The first is the wildtype pattern. The upper illustration represents how inhibition of
+Kir2.1 on the right hand side would result in depolarization of that side, as represented by orange,
+while the lower represents hyperpolarization (green) due to gain of Kir2.1 function. On each of the
+three schemes is a circle indicating the position of the cells that will form the area between the right
+eye and the brain. The lack of signaling by downstream effectors in these regions leads to abnormal
+morphology of the tadpole; the hyperpolarized and the depolarized conditions give rise to the same
+phenotype because both changes move the Vmem out of the range that permits protein activity. The
+micrographs at the far right side are photos of actual tadpoles that were treated as indicated: the top
+tadpole was injected with the loss of function variant D71V, the bottom with the gain of function
+variant Y242F. (B) A comparison of the proportion of D71V and WT injected tadpoles with
+
+
+[PAGE 65]
+misexpressed patterning genes (blue bars), versus the proportion with CFAs (red bars). Data on
+abnormal WISH patterns were pooled, thus blue bars represent totals (see Table 4 for statistics); CFAs
+were counted for each of the biological replicates separately, therefore the red bars represent means.
+Only three expression patterns were found to be significantly affected by expression of a variant,
+Otx2, Six1 and FoxE4 (Table 4). The number of CFA's was found to exceed the number of cases of
+misexpression of any single patterning gene. (C) Optogenetics can be used to manipulate Vmem-
+Expression of the light-activated cation channel ChR2-D156A causes a higher number of CFA's when
+injected embryos are exposed to blue light. Because we found evidence that Arch depolarizes in the
+dark, we compared Arch in the light to the results of pairing Arch with the constitutively active H+
+pump PMA1, a protocol that reduced the dark phenotype. Box plots as in figure 4. (D) Optogenetics
+can be used to explore the timing of important electrophysiological events. Exposure to light causes
+an increase in the number of CFA's in embryos expressing Arch only if exposure occurs during early
+neurulation. The same exposure at later stages has no effect on craniofacial morphology (Table 3).
+
+Figure 9. Schematic of hypothesis
+
+Transcription of KCNJ2 in the embryonic face, together with other ion channels, establishes
+endogenous patterns of mem across the anterior ectoderm. This pattern can be disrupted by changes in
+KCNJ2 expression, intracellular localization, or gating properties, all of which can be induced by
+KCNJ2 variants. Because these voltage patterns regulate transcription of downstream genetic targets
+known to be important for patterning the face, this model predicts how KCNJ2 channelopathies result
+in craniofacial dysmorphias. Since mem can be altered by many distinct channels, these findings
+suggest a novel control point for therapeutic intervention, using optogenetics and/or ion channel drugs
+to manipulate non-neural bioelectric signaling during embryogenesis and perhaps restore normal
+patterning despite KCNJ2 variants or other channelopathies.
+
+misexpressed patterning genes (blue bars), versus the proportion with CFAs (red bars). Data on
+abnormal WISH patterns were pooled, thus blue bars represent totals (see Table 4 for statistics); CFAs
+were counted for each of the biological replicates separately, therefore the red bars represent means.
+Only three expression patterns were found to be significantly affected by expression of a variant,
+Otx2, Six1 and FoxE4 (Table 4). The number of CFA's was found to exceed the number of cases of
+misexpression of any single patterning gene. (C) Optogenetics can be used to manipulate Vmem-
+Expression of the light-activated cation channel ChR2-D156A causes a higher number of CFA's when
+injected embryos are exposed to blue light. Because we found evidence that Arch depolarizes in the
+dark, we compared Arch in the light to the results of pairing Arch with the constitutively active H*
+pump PMA1, a protocol that reduced the dark phenotype. Box plots as in figure 4. (D) Optogenetics
+can be used to explore the timing of important electrophysiological events. Exposure to light causes
+an increase in the number of CFA's in embryos expressing Arch only if exposure occurs during early
+neurulation. The same exposure at later stages has no effect on craniofacial morphology (Table 3).
+
+[PAGE 65] Figure 9. Schematic of hypothesis
+Transcription of KCNJ2 in the embryonic face, together with other ion channels, establishes
+endogenous patterns of mem across the anterior ectoderm. This pattern can be disrupted by changes in
+KCNJ2 expression, intracellular localization, or gating properties, all of which can be induced by
+KCNJ2 variants. Because these voltage patterns regulate transcription of downstream genetic targets
+known to be important for patterning the face, this model predicts how KCNJ2 channelopathies result
+in craniofacial dysmorphias. Since mem can be altered by many distinct channels, these findings
+suggest a novel control point for therapeutic intervention, using optogenetics and/or ion channel drugs
+to manipulate non-neural bioelectric signaling during embryogenesis and perhaps restore normal
+patterning despite KCNJ2 variants or other channelopathies.
+
+
+Dysmorphias characteristic of ATS
+Broad forehead
+Deep, wide set eyes
+(hypertelorism)
+Broad nasal bridge.
+with bulbous tip
+Low-set ears
+Clinodactyly
+of digit 5
+Short palpebral fissures
+Malar, Maxillary and
+Mandibular hypoplasia
+(micro- and retrognathia)
+Syndactyly of toes 2 & 3
+Also reported: abnormal or missing lateral incisors, high-arched palate, cleft palate,
+relative microcephaly, small hands and feet, scoliosis
+
+Proportion of tadpoles per dish
+with 1 or more CFAs
+100%
+Negative controls
+KCNJ2 variants
+other
+90%
+80%
+70%
+60%
+50%
+40%
+0
+30%
+20%
+10%
+0
+0%
+NT
+ẞ-gal GlyR NHE3 WT
+D71V T75R T192A R218W Y242F Kir6.2 KvLQT ChR2 Arch
+
+
+polarized light
+✓✓✓✓ normal muscles
+↑↑↑↑
+abnormal
+ectopic KCNJ2-D71V-tdTom overlay (green = polarized light)
+1111
+1111
+↑↑↑↑
+↑↑↑↑
+brightfield
+anti-fibronectin
+brightfield
+anti-fibronectin
+untreated control
+polarized light
+KCNJ2-D71V injected
+R218W
+T192A
+
+
+
+R
+X
+X
+00
+8
+wildtype vmem pattern
+XX
+....0000
+D71V-injected Vmem pattern
+expression of D71V-GFP overlay (green=D71V, red=Vem)
+G 0.50
+p<0.01 p<0.01 p<0.05
+0.40
+0.30
+0.20
+0.10
+AR/R
+0.00
+-0.10
+-0.20
+-0.30
+hyperpolarized
+depolarized
+-0.40
+NT
+WT
+R218W Y242F
+
+
+A
+Representative Markers
+Lens placode Six1 Pax6 FoxE4
+Olfactory placode Six1 Pax6
+Otic placode Six1 Sox10
+Neural Crest Slug Sox10
+B
+Normal
+Misexpression
+over/ectopic
+under
+Six1
+Pax6
+FoxE4
+Sox10
+Slug
+
+
+A
+Each cell in the ectoderm
+lon flux
+(Kir2.1)
+-10
+-15-
+-20
+no act.
+-25
+-30-
+opt.
+resting potential [mV]
+-35-
+-40
+-45-
+-50
+-55
+no activity
+0
+Max
+Activity of key
+downstream effectors
+Ectodermal V
+mem
+pattern
+Loss of
+function
+variant
+(eg. D71V)
+Gain of
+function
+variant
+(eg. Y242F)
+Phenotype
+B
+% embryos with abnormalities
+F(oxE4) O(tx2) P(ax6) Si(x1) Sl(ug) So(x3) A(nomalies)
+** = p<0.01 compared with control
+= p<0.05
+ISH
+CFA
+FOPSISI SoAFOPSISI SO A FOPSISI So A
+Control
+D71V
+WT
+C
+100%
+dark
+light
+p=0.03
+90%
+80%
+70%
+p=0.01
+60%
+50%
+40%
+30%
+20%
+10%
+0%
+ChR2 ChR2 Arch Arch+PMA Arch
+dark
+light dark light light
+Proportion of embryos with CFAs
+Proportion of embryos with CFAS
+70%
+dark
+light
+p=0.05
+Control
+st 11-14
+Arch
+st 20-24
+no activity
+WT
+no activity
+
+[PAGE 73] 
+B
+% embryos with abnormalities
+A
+lon flux
+(Kir2.1)
+Each cell in the ectoderm
+-10
+-15-
+-20
+no act.
+-25
+-30-
+opt.
+resting potential [mV]
+-35-
+-40
+-45
+-50
+-55
+no activity
+0
+Max
+Activity of key
+downstream effectors
+F(oxE4) O(tx2) P(ax6) Si(x1) Sl(ug) So(x3) A(nomalies)
+** = p<0.01 compared with control
+= p<0.05
+ISH
+CFA
+FOPSISI SoAFOPSISI SO A FOPSISI So A
+Control
+D71V
+WT
+This article is protected by copyright. All rights reserved.
+73
+Ectodermal V
+mem
+pattern
+P
+Loss of
+function
+R
+variant
+(eg. D71V)
+A
+P
+R
+L
+A
+Gain of
+function R
+L
+variant
+(eg. Y242F)
+A
+C
+100%
+dark
+Proportion of embryos with CFAs
+90%
+light
+p=0.03
+80%
+70%
+p=0.01
+60%
+50%
+40%
+30%
+20%
+10%
+0%
+ChR2 ChR2 Arch Arch+PMA Arch
+dark
+light dark light light
+Adams et al., Figure 8
+Proportion of embryos with CFAS
+L
+no activity
+WT
+no activity
+70%
+dark
+light
+p=0.05
+Control
+st 11-14
+Arch
+st 20-24
+Phenotype
+
+[PAGE 74]
+wild-type localization
+and gating of KCNJ2
+Αι
+correct species-
+specific pattern
+of Vmem in
+craniofacial
+region
+expression and function of
+KCNJ2
+mutations of KCNJ2 affecting
+localization and gating
+abnormal pattern
+of V
+in
+mem
+craniofacial
+region
+correct pattern of
+expression of
+craniofacial genes:
+Six1, Otx2, FoxE4
+biomedical
+intervention:
+human-approved
+ion channel
+drugs, and light /
+sound/
+magnetically-
+controlled
+induced ion flux
+aberrant pattern of
+expression of
+craniofacial genes:
+Six1, Otx2, FoxE4
+normal craniofacial
+morphogenesis
+birth defects
+craniofacial
+anomalies (CFAs)
+and cardiac
+arrhythmias
+This article is protected by copyright. All rights reserved.
+74
+Adams et al., Figure 9
