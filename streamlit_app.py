@@ -992,8 +992,6 @@ def main():
     </style>
     """, unsafe_allow_html=True)
     
-    thinking_box = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/thinking_box_cropped.gif"
-    
     # Header
     st.markdown(f"""
     <div style="display: flex; align-items: center; gap: 15px;">
@@ -1025,7 +1023,7 @@ def main():
         stats = st.session_state.retriever.get_collection_stats()
         
         # Search parameters
-        st.sidebar.markdown(f"""<h3><img src='{thinking_box}' alt="Thinking Box" style="width: 240px; height: 270px; border-radius: 10px;"></h3>""", unsafe_allow_html=True)
+        st.sidebar.markdown("### 🧠 Michael Levin Research Assistant")
         st.sidebar.metric("Total Engrams Indexed", stats['total_chunks'])
 
         # Page selection
