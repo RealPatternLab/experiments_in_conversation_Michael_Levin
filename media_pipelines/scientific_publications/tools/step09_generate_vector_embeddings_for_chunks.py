@@ -81,7 +81,7 @@ class VectorEmbedder:
         """Generate embedding for text using OpenAI API."""
         try:
             response = self.client.embeddings.create(
-                model="text-embedding-ada-002",
+                model="text-embedding-3-large",
                 input=text
             )
             return response.data[0].embedding
@@ -130,7 +130,7 @@ class VectorEmbedder:
         return processed_files
     
     def process_file(self, chunk_file: Path) -> bool:
-        """Process a single chunk file."""
+        """Process a single chunk file and create FAISS index."""
         try:
             self.logger.info(f"Processing: {chunk_file.name}")
             
@@ -160,26 +160,79 @@ class VectorEmbedder:
                 self.logger.warning(f"No embeddings generated for {chunk_file.name}")
                 return False
             
-            # Prepare output data
+            # Convert embeddings to numpy array
+            embeddings_array = np.array(embeddings, dtype=np.float32)
+            self.logger.info(f"Generated {len(embeddings)} embeddings with shape: {embeddings_array.shape}")
+            
+            # Create FAISS index
+            dimension = embeddings_array.shape[1]
+            self.logger.info(f"Creating FAISS index with dimension: {dimension}")
+            
+            # Use IndexFlatIP for inner product (cosine similarity when vectors are normalized)
+            index = faiss.IndexFlatIP(dimension)
+            index.add(embeddings_array)
+            
+            self.logger.info(f"FAISS index created with {index.ntotal} vectors")
+            
+            # Prepare metadata for the app
+            metadata = []
+            for i, chunk in enumerate(chunks):
+                metadata.append({
+                    'chunk_id': i,
+                    'text': chunk.get('text', ''),
+                    'section': chunk.get('section', ''),
+                    'topic': chunk.get('topic', ''),
+                    'chunk_summary': chunk.get('chunk_summary', ''),
+                    'position_in_section': chunk.get('position_in_section', ''),
+                    'certainty_level': chunk.get('certainty_level', ''),
+                    'citation_context': chunk.get('citation_context', ''),
+                    'pdf_filename': chunk.get('pdf_filename', ''),
+                    'original_filename': chunk.get('original_filename', ''),
+                    'authors': chunk.get('authors', ''),
+                    'year': chunk.get('year', ''),
+                    'journal': chunk.get('journal', ''),
+                    'doi': chunk.get('doi', '')
+                })
+            
+            # Save files in the format expected by the Streamlit app
+            self.output_dir.mkdir(parents=True, exist_ok=True)
+            
+            # Save FAISS index
+            index_path = self.output_dir / "chunks.index"
+            faiss.write_index(index, str(index_path))
+            self.logger.info(f"Saved FAISS index to: {index_path}")
+            
+            # Save embeddings as numpy array
+            embeddings_path = self.output_dir / "chunks_embeddings.npy"
+            np.save(embeddings_path, embeddings_array)
+            self.logger.info(f"Saved embeddings to: {embeddings_path}")
+            
+            # Save metadata
+            metadata_path = self.output_dir / "chunks_metadata.pkl"
+            with open(metadata_path, 'wb') as f:
+                pickle.dump(metadata, f)
+            self.logger.info(f"Saved metadata to: {metadata_path}")
+            
+            # Also save the original pickle format for backward compatibility
             output_data = {
                 "embeddings": embeddings,
                 "metadata": {
                     "filename": chunk_data.get('metadata', {}).get('filename', chunk_file.name),
-                    "embedding_model": "text-embedding-ada-002",
+                    "embedding_model": "text-embedding-3-large",  # Updated to match what we're actually using
                     "chunk_count": len(chunks),
                     "processed_at": datetime.now().isoformat()
                 },
                 "chunk_info": chunks
             }
             
-            # Save embeddings
             base_name = chunk_file.stem.replace('_chunks', '')
-            output_file = self.output_dir / f"{base_name}_embeddings.pkl"
+            pickle_file = self.output_dir / f"{base_name}_embeddings.pkl"
             
-            with open(output_file, 'wb') as f:
+            with open(pickle_file, 'wb') as f:
                 pickle.dump(output_data, f)
             
-            self.logger.info(f"Created embeddings: {output_file.name}")
+            self.logger.info(f"Created embeddings: {pickle_file.name}")
+            self.logger.info(f"✅ Successfully created FAISS index with {len(chunks)} chunks")
             return True
             
         except Exception as e:
