@@ -29,7 +29,7 @@ YOUTUBE_METADATA_DIR = Path("data/ingested/youtube/metadata")
 YOUTUBE_METADATA_FILE = Path("data/ingested/youtube/metadata/youtube_metadata.json")
 
 # FAISS Index Paths
-FAISS_INDEX_DIR = Path("data/faiss")
+FAISS_INDEX_DIR = Path("media_pipelines/scientific_publications/data/transformed_data/vector_embeddings")
 FAISS_INDEX_PATH = FAISS_INDEX_DIR / "chunks.index"
 FAISS_METADATA_PATH = FAISS_INDEX_DIR / "chunks_metadata.pkl"
 FAISS_EMBEDDINGS_PATH = FAISS_INDEX_DIR / "chunks_embeddings.npy"
@@ -41,4 +41,4 @@ COMBINED_CHUNKS_OUTPUT = OUTPUTS_DIR / "combined_chunks.json"
 
 # GitHub configuration
 GITHUB_BRANCH = "dev"  # Current branch name for GitHub raw URLs
-GITHUB_REPO = "RealPatternLab/Michael-Levin-QA-Engine"  # Repository name 
+GITHUB_REPO = "RealPatternLab/experiments_in_conversation_Michael_Levin"  # Repository name 
