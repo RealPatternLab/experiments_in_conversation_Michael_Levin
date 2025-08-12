@@ -20,6 +20,7 @@ from typing import List, Dict, Optional, Union
 import logging
 import numpy as np
 import faiss
+from datetime import datetime
 
 # Add the tools directory to the path
 sys.path.append(str(Path(__file__).parent))
@@ -85,6 +86,16 @@ class RelevantChunksRetrieverFAISS:
             metadata_path = self.faiss_dir / "chunks_metadata.pkl"
             embeddings_path = self.faiss_dir / "chunks_embeddings.npy"
             
+            # Add debug logging to see exactly what we're loading
+            logger.info(f"🔍 DEBUG: FAISS directory: {self.faiss_dir}")
+            logger.info(f"🔍 DEBUG: Absolute FAISS directory: {self.faiss_dir.absolute()}")
+            logger.info(f"🔍 DEBUG: Index path: {index_path}")
+            logger.info(f"🔍 DEBUG: Index path absolute: {index_path.absolute()}")
+            logger.info(f"🔍 DEBUG: Index file exists: {index_path.exists()}")
+            if index_path.exists():
+                logger.info(f"🔍 DEBUG: Index file size: {index_path.stat().st_size} bytes")
+                logger.info(f"🔍 DEBUG: Index file modification time: {datetime.fromtimestamp(index_path.stat().st_mtime)}")
+            
             if not index_path.exists():
                 logger.warning(f"⚠️  FAISS index not found at {index_path}")
                 logger.info("Please run the embedding tool first to create the FAISS index.")
@@ -98,16 +109,19 @@ class RelevantChunksRetrieverFAISS:
             # Load FAISS index
             logger.info(f"🗄️  Loading FAISS index from: {index_path}")
             self.index = faiss.read_index(str(index_path))
+            logger.info(f"🔍 DEBUG: FAISS index loaded with {self.index.ntotal} vectors")
             
             # Load metadata
             logger.info(f"📋 Loading metadata from: {metadata_path}")
             with open(metadata_path, 'rb') as f:
                 self.metadata = pickle.load(f)
+            logger.info(f"🔍 DEBUG: Metadata loaded with {len(self.metadata)} entries")
             
             # Load embeddings if available (for pre-search filtering)
             if embeddings_path.exists():
                 logger.info(f"📊 Loading embeddings from: {embeddings_path}")
                 self.embeddings = np.load(str(embeddings_path))
+                logger.info(f"🔍 DEBUG: Embeddings loaded with shape: {self.embeddings.shape}")
             else:
                 logger.info("⚠️  Embeddings file not found, will use FAISS index for search")
                 self.embeddings = None
