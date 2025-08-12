@@ -55,26 +55,6 @@ def discover_file_types(raw_dir: Path) -> Set[str]:
     return extensions
 
 
-def create_type_directory(base_dir: Path, file_type: str, dry_run: bool = False) -> Path:
-    """
-    Create a directory for a specific file type.
-    
-    Args:
-        base_dir: Base directory to create the type directory in
-        file_type: Type of file (e.g., 'pdf', 'html')
-        dry_run: If True, don't actually create the directory
-        
-    Returns:
-        Path to the created directory
-    """
-    type_dir = base_dir / f"raw_{file_type}"
-    
-    if not dry_run:
-        type_dir.mkdir(parents=True, exist_ok=True)
-    
-    return type_dir
-
-
 def archive_file(file_path: Path, archive_dir: Path, dry_run: bool = False) -> Path:
     """
     Archive a file with timestamp suffix if duplicate exists.
@@ -108,16 +88,17 @@ def sort_files_by_type(
     dry_run: bool = False
 ) -> List[Path]:
     """
-    Sort files by type into raw_* directories and archive them.
+    Sort files by type, archive them, and route PDFs to raw_pdf/ for processing.
+    Non-PDFs go to DLQ.
     
     Args:
         raw_dir: Directory containing files to sort
-        base_dir: Base directory to create raw_* directories in
+        base_dir: Base directory to create raw_pdf and DLQ directories in
         archive_dir: Directory to archive files in
-        dry_run: If True, don't actually move files
+        dry_run: If True, don't actually process files
         
     Returns:
-        List of paths to moved files
+        List of paths to archived files
     """
     if not raw_dir.exists():
         print(f"❌ Raw directory does not exist: {raw_dir}")
@@ -131,19 +112,20 @@ def sort_files_by_type(
     
     print(f"🔍 Found file types: {', '.join(sorted(file_types))}")
     
-    # Create archive directory
+    # Create archive, raw_pdf, and DLQ directories
     if not dry_run:
         archive_dir.mkdir(parents=True, exist_ok=True)
+        raw_pdf_dir = base_dir / "source_data" / "raw_pdf"
+        raw_pdf_dir.mkdir(parents=True, exist_ok=True)
+        dlq_dir = base_dir / "source_data" / "DLQ"
+        dlq_dir.mkdir(parents=True, exist_ok=True)
     
-    moved_files = []
+    archived_files = []
     current_time = datetime.now()
     
     # Process each file type
     for file_type in sorted(file_types):
         print(f"\n📁 Processing {file_type} files...")
-        
-        # Create type-specific directory
-        type_dir = create_type_directory(base_dir, file_type, dry_run)
         
         # Find all files of this type (case-insensitive)
         pattern = f"*.{file_type}"
@@ -158,30 +140,37 @@ def sort_files_by_type(
         
         for file_path in files:
             try:
-                # Archive the file
+                # Archive the file (always)
                 archive_path = archive_file(file_path, archive_dir, dry_run)
+                archived_files.append(archive_path)
                 
-                # Move to type-specific directory
-                target_path = type_dir / file_path.name
-                
-                if dry_run:
-                    print(f"    🔍 Would move: {file_path.name} → {target_path}")
-                    moved_files.append(target_path)
+                if file_type.lower() == 'pdf':
+                    # PDFs go to raw_pdf/ for step 2 to process
+                    if not dry_run:
+                        target_path = raw_pdf_dir / file_path.name
+                        shutil.move(str(file_path), str(target_path))
+                        print(f"    📤 Moved PDF to raw_pdf/: {file_path.name}")
+                    else:
+                        print(f"    🔍 Would move PDF to raw_pdf/: {file_path.name}")
                 else:
-                    shutil.move(str(file_path), str(target_path))
-                    print(f"    ✅ Moved successfully: {file_path.name}")
-                    moved_files.append(target_path)
+                    # Non-PDFs go to DLQ
+                    if not dry_run:
+                        dlq_path = dlq_dir / file_path.name
+                        shutil.move(str(file_path), str(dlq_path))
+                        print(f"    📤 Moved to DLQ: {file_path.name}")
+                    else:
+                        print(f"    🔍 Would move to DLQ: {file_path.name}")
                     
             except Exception as e:
-                print(f"    ❌ Failed to move: {e}")
+                print(f"    ❌ Failed to process: {e}")
     
-    return moved_files
+    return archived_files
 
 
 def main():
     """Main function."""
     parser = argparse.ArgumentParser(
-        description="Sort files by type into raw_* directories"
+        description="Sort files by type, archive them, and route PDFs to raw_pdf/ for processing. Non-PDFs go to DLQ."
     )
     parser.add_argument(
         "--raw-dir",
@@ -214,13 +203,13 @@ def main():
         if args.dry_run:
             print("🔍 DRY RUN MODE - No files will be moved")
         
-        moved_files = sort_files_by_type(
+        archived_files = sort_files_by_type(
             args.raw_dir, args.base_dir, args.archive_dir, args.dry_run
         )
         
-        if moved_files:
+        if archived_files:
             print(f"\n✅ Sorting complete!")
-            print(f"📊 Moved {len(moved_files)} files")
+            print(f"📊 Archived {len(archived_files)} files")
         else:
             print("ℹ️  No files to sort")
             

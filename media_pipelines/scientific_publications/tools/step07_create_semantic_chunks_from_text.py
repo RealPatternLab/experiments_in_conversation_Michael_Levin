@@ -182,7 +182,8 @@ Return a JSON array of chunk objects. Each chunk should represent a self-contain
     "chunk_summary": "One-sentence summary of the chunk's core message. Must be a complete string.",
     "position_in_section": "Beginning",
     "certainty_level": "High",
-    "citation_context": "Describing prior work"
+    "citation_context": "Describing prior work",
+    "page_number": "1"
   }
 ]
 ```
@@ -190,16 +191,24 @@ Return a JSON array of chunk objects. Each chunk should represent a self-contain
 **JSON FORMATTING REQUIREMENTS:**
 1. **NO line breaks within string values** - all text must be on single lines
 2. **NO trailing commas** - remove any commas before closing braces or brackets
-3. **ALL fields are required** - every chunk must have all 7 fields
+3. **ALL fields are required** - every chunk must have all 8 fields
 4. **Valid values only:**
    - `section`: "Abstract", "Introduction", "Methods", "Results", "Discussion", "Conclusion", "Materials and Methods", "Experimental", "Background", "Literature Review", "Analysis", "Summary", "Future Work", "References", "Appendix"
    - `position_in_section`: "Beginning", "Middle", "End"
    - `certainty_level`: "High", "Medium", "Low"
    - `citation_context`: "Describing prior work", "Presenting new results", "Drawing conclusions", "None"
+   - `page_number`: The page number where this chunk primarily appears (e.g., "1", "2", "3"). If a chunk spans multiple pages, use the page where it begins. If you cannot determine the page number, use null.
 5. **String values must be properly quoted and escaped**
 6. **NO comments or explanatory text** - only the JSON array
 7. **CRITICAL: All text content must be single-line strings with no line breaks, tabs, or special formatting characters**
 8. **ESCAPE QUOTES: If text contains quotes, escape them with backslash: \" becomes \\\"**
+
+**PAGE NUMBER EXTRACTION:**
+- **Extract page numbers when possible** from the text content (look for patterns like "Page 1", "PAGE 1", etc.)
+- **Use the page number where the chunk primarily appears**
+- **If a chunk spans multiple pages, use the starting page number**
+- **If you cannot determine the page number, use null**
+- **Page numbers should be strings (e.g., "1", "2", "3")**
 
 **Specific Instructions:**
 
@@ -210,6 +219,7 @@ Return a JSON array of chunk objects. Each chunk should represent a self-contain
 * **Semantic Completeness:** Chunks should represent complete thoughts and avoid fragmentation. Span across page boundaries if necessary to capture the full context of an idea.
 * **Concise Topics:** Assign a concise and informative "topic" that accurately reflects the central theme of the chunk. Consider using keywords relevant to Levin's research, such as: "Bioelectric signaling," "Ion channels," "embryogenesis", "Cell communication," "Pattern formation," "Regenerative medicine," "intelligence", "Developmental plasticity," "Computational modeling," etc.
 * **Citation Context:** Identify whether the chunk primarily discusses prior work, presents new results from the current paper, or draws conclusions based on the findings.
+* **Page Number Extraction:** Extract page numbers when possible from the text content. Look for patterns like "Page 1", "PAGE 1", etc. Use the page where the chunk primarily appears.
 * **Ignore Irrelevant Content:** Exclude captions, footnotes, and references to visual figures unless semantically crucial for understanding the chunk's core meaning. Do not include page numbers or other formatting artifacts.
 * **CRITICAL: JSON Formatting:** Ensure all text content is properly escaped and contains no line breaks, tabs, or special characters that would break JSON parsing.
 
@@ -224,12 +234,13 @@ Return a JSON array of chunk objects. Each chunk should represent a self-contain
     "chunk_summary": "Bioelectric signals, mediated by ion channels and gap junctions, play a crucial role in guiding morphogenesis.",
     "position_in_section": "Beginning",
     "certainty_level": "High",
-    "citation_context": "Describing prior work"
+    "citation_context": "Describing prior work",
+    "page_number": "1"
   }
 ]
 ```
 
-**MANDATORY: Process the ENTIRE PDF from the very first page to the very last page and return ONLY the JSON array as specified above. You must read every single page of the document. Ensure the JSON is valid and can be parsed without errors. All text content must be single-line strings with no line breaks or special formatting characters.**"""
+**MANDATORY: Process the ENTIRE PDF from the very first page to the very last page and return ONLY the JSON array as specified above. You must read every single page of the document. Ensure the JSON is valid and can be parsed without errors. All text content must be single-line strings with no line breaks or special formatting characters. Extract page numbers when possible, but use null if you cannot determine them.**"""
         
         logger.info(f"📝 Using embedded chunking prompt ({len(prompt)} characters)")
         return prompt
@@ -261,7 +272,7 @@ Return a JSON array of chunk objects. Each chunk should represent a self-contain
         logger.info(f"Found {len(today_files)} files with today's date ({today})")
         
         # Step 2: Get list of already processed files (have corresponding JSON files)
-        chunks_dir = Path("data/semantically-chunked/chunks")
+        chunks_dir = self.chunked_dir
         if not chunks_dir.exists():
             chunks_dir.mkdir(parents=True, exist_ok=True)
             logger.info(f"📁 Created chunks directory: {chunks_dir}")
@@ -536,7 +547,7 @@ Please process the attached text and return the semantic chunks as specified abo
             }
             
             # Save to JSON file
-            json_dir = Path("data/semantically-chunked/chunks")
+            json_dir = self.chunked_dir
             json_dir.mkdir(parents=True, exist_ok=True)
             
             json_filename = f"{file_metadata['pdf_filename'].replace('.pdf', '')}_chunks.json"
@@ -717,7 +728,7 @@ Please process the attached text and return the semantic chunks as specified abo
         # Step 3: Final verification
         if successful > 0:
             logger.info("🔍 Verifying file integrity...")
-            json_count = len(list(Path("data/semantically-chunked/chunks").glob("*_chunks.json")))
+            json_count = len(list(self.chunked_dir.glob("*_chunks.json")))
             logger.info(f"   JSON files: {json_count}")
         
         # Summary
@@ -751,7 +762,7 @@ def main():
     parser.add_argument(
         "--output-dir",
         type=Path,
-        default=Path("data/semantically-chunked/chunks"),
+        default=Path("data/transformed_data/semantic_chunks"),
         help="Directory to save chunked JSON files"
     )
     parser.add_argument(
