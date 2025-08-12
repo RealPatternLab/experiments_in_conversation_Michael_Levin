@@ -249,10 +249,13 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
                 pdf_link = ""
                 try:
                     if pdf_filename and pdf_filename != "Unknown":
-                        # Create a more informative PDF link
-                        pdf_link = f"<a href='#' onclick='alert(\"📄 PDF: {pdf_filename}\\n\\nThis PDF is available in the pipeline data.\\n\\nIn a production system, this would link to a PDF viewer or download.\")' title='PDF: {pdf_filename}'>[PDF]</a>"
+                        # Create GitHub raw URL like the old app did
+                        github_raw_url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/media_pipelines/scientific_publications/data/source_data/preprocessed/sanitized/pdfs/{pdf_filename}"
+                        pdf_link = f"<a href='{github_raw_url}' target='_blank' title='PDF: {pdf_filename}'>[PDF]</a>"
                     elif original_filename and original_filename != "Unknown":
-                        pdf_link = f"<a href='#' onclick='alert(\"📄 PDF: {original_filename}\\n\\nThis PDF is available in the pipeline data.\\n\\nIn a production system, this would link to a PDF viewer or download.\")' title='PDF: {original_filename}'>[PDF]</a>"
+                        # Create GitHub raw URL for original filename
+                        github_raw_url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/media_pipelines/scientific_publications/data/source_data/raw/{original_filename}"
+                        pdf_link = f"<a href='{github_raw_url}' target='_blank' title='PDF: {original_filename}'>[PDF]</a>"
                     else:
                         # Fallback if filename not found
                         pdf_link = f"<a href='#' onclick='alert(\"📄 PDF not found for: {title}\")' title='PDF not found'>[PDF]</a>"
@@ -285,11 +288,6 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
     
     # Replace citations with hyperlinks
     processed_text = re.sub(citation_pattern, replace_citation, response_text)
-    
-    # Debug logging to see citation processing
-    print(f"🔍 DEBUG: Citation pattern: {citation_pattern}")
-    print(f"🔍 DEBUG: Found citations: {re.findall(citation_pattern, response_text)}")
-    print(f"🔍 DEBUG: Processed text length: {len(processed_text)}")
     
     return processed_text
 
@@ -439,15 +437,8 @@ Response:"""
         
         response_text = response.choices[0].message.content
         
-        # Debug logging to see what we're working with
-        print(f"🔍 DEBUG: Raw GPT response: {response_text[:200]}...")
-        print(f"🔍 DEBUG: Source mapping keys: {list(source_mapping.keys())}")
-        
         # Process the response to add hyperlinks
         processed_response = process_citations(response_text, source_mapping)
-        
-        # Debug logging to see the processed response
-        print(f"🔍 DEBUG: Processed response: {processed_response[:200]}...")
         
         return processed_response
         
