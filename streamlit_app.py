@@ -57,7 +57,7 @@ def setup_app_logging():
     
     # Configure logging with both file and console handlers
     logging.basicConfig(
-        level=logging.DEBUG,  # Set to DEBUG for maximum logging
+        level=logging.INFO,  # Changed from DEBUG to INFO for less verbosity
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
         handlers=[
             logging.FileHandler(log_file),
@@ -308,27 +308,23 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
 
 def enrich_chunk_metadata(chunk: dict) -> dict:
     """Enrich chunk metadata by looking up enriched metadata files."""
-    logger.debug(f"🔧 Enriching metadata for chunk: {chunk.get('title', 'Unknown')[:50]}...")
+    # Removed debug logging to reduce verbosity
     
     try:
         # Get the sanitized filename to look up enriched metadata
         sanitized_filename = chunk.get('sanitized_filename')
         if not sanitized_filename:
-            logger.debug("⚠️  No sanitized_filename found in chunk")
             return chunk
         
         # Look for enriched metadata file
         enriched_metadata_path = Path(f"media_pipelines/scientific_publications/data/transformed_data/metadata_enrichment/{sanitized_filename.replace('.pdf', '_chunks_enriched.json')}")
-        logger.debug(f"🔍 Looking for enriched metadata at: {enriched_metadata_path}")
         
         if enriched_metadata_path.exists():
-            logger.debug(f"✅ Found enriched metadata file: {enriched_metadata_path}")
             with open(enriched_metadata_path, 'r', encoding='utf-8') as f:
                 enriched_data = json.load(f)
             
             # Get file metadata from enriched data
             file_metadata = enriched_data.get('file_metadata', {})
-            logger.debug(f"📊 Enriched metadata keys: {list(file_metadata.keys())}")
             
             # Update chunk with enriched metadata
             enriched_chunk = chunk.copy()
@@ -339,14 +335,12 @@ def enrich_chunk_metadata(chunk: dict) -> dict:
             enriched_chunk['publication_date'] = file_metadata.get('year', file_metadata.get('publication_date', chunk.get('publication_date', 'Unknown')))
             enriched_chunk['document_type'] = file_metadata.get('document_type', chunk.get('document_type', 'unknown'))
             
-            logger.debug(f"✅ Metadata enrichment complete for: {enriched_chunk.get('title', 'Unknown')[:50]}...")
             return enriched_chunk
         else:
-            logger.debug(f"⚠️  Enriched metadata file not found: {enriched_metadata_path}")
+            pass  # Silently continue if no enriched metadata found
         
     except Exception as e:
         logger.warning(f"⚠️  Failed to enrich metadata for chunk: {e}")
-        logger.debug(f"❌ Traceback: {traceback.format_exc()}")
     
     return chunk
 
@@ -363,11 +357,8 @@ def get_conversational_response(query: str, rag_results: list, conversation_hist
         
         logger.info("🔧 Preparing RAG context...")
         for i, chunk in enumerate(rag_results[:3]):  # Use top 3 results
-            logger.info(f"   Processing chunk {i+1}: {chunk.get('title', 'Unknown')[:50]}...")
-            
             # Enrich chunk metadata with enriched metadata files
             enriched_chunk = enrich_chunk_metadata(chunk)
-            logger.info(f"   Enriched chunk {i+1} - Title: {enriched_chunk.get('title', 'Unknown')[:50]}...")
             
             source_key = f"Source_{i+1}"
             
@@ -544,8 +535,6 @@ def log_interaction(user_question: str, response: str, rag_results: list, perfor
             "document_types": [enrich_chunk_metadata(result).get('document_type', 'unknown') for result in (rag_results or [])]
         }
         
-        logger.debug(f"📊 Log entry created: {log_entry}")
-        
         # Append to daily log file
         today = datetime.now().strftime("%Y-%m-%d")
         log_file = logs_dir / f"interactions_{today}.jsonl"
@@ -565,8 +554,6 @@ def log_interaction(user_question: str, response: str, rag_results: list, perfor
 
 def remove_html_images(html_content: str) -> str:
     """Remove base64 image data and image references from HTML content to create clean text-only version for conversation history."""
-    logger.debug("🔧 Removing HTML images from content...")
-    
     import re
     
     # Remove entire img tags with base64 data
@@ -586,7 +573,6 @@ def remove_html_images(html_content: str) -> str:
     text_only = re.sub(r'\s+', ' ', text_only)  # Normalize whitespace
     text_only = text_only.strip()
     
-    logger.debug(f"✅ HTML cleanup complete. Original length: {len(html_content)}, Clean length: {len(text_only)}")
     return text_only
 
 def create_source_type_filter(page_type: str = "research") -> dict:
@@ -757,9 +743,8 @@ def conversational_page():
                             similarity = result.get('similarity_score', 0)
                             if similarity >= similarity_threshold:
                                 filtered_results.append(result)
-                                logger.info(f"   ✅ Chunk passed threshold: {similarity:.3f} >= {similarity_threshold}")
                             else:
-                                logger.info(f"   ❌ Chunk below threshold: {similarity:.3f} < {similarity_threshold}")
+                                pass  # Removed verbose logging for each chunk
                         
                         logger.info(f"🔍 Filtering complete. Filtered results: {len(filtered_results)} / {len(rag_results)}")
                         
@@ -773,7 +758,6 @@ def conversational_page():
                                 similarity = result.get('similarity_score', 0)
                                 if similarity >= lower_threshold:
                                     filtered_results.append(result)
-                                    logger.info(f"   ✅ Chunk passed lower threshold: {similarity:.3f} >= {lower_threshold}")
                         
                         rag_time = time.time() - rag_start_time
                         logger.info(f"⏱️  RAG search completed in {rag_time:.3f}s")
@@ -815,7 +799,6 @@ def conversational_page():
                             
                             # Show sources used
                             with st.expander("📚 Sources used"):
-                                logger.info("📚 Displaying sources used...")
                                 # Track unique sources to avoid duplicates
                                 seen_sources = set()
                                 source_counter = 1
@@ -826,8 +809,6 @@ def conversational_page():
                                     source_type = result.get('document_type', 'research_paper').replace('_', ' ').title()
                                     section_header = result.get('section', 'Unknown')
                                     similarity = result.get('similarity_score', 0)
-                                    
-                                    logger.info(f"   Source {i+1}: {source_title} ({year}) - {source_type} - {section_header} (Similarity: {similarity:.3f})")
                                     
                                     # Create a unique identifier for this source
                                     source_id = f"{source_title}_{year}_{section_header}"
@@ -923,9 +904,8 @@ def research_page():
                         similarity = result.get('similarity_score', 0)
                         if similarity >= similarity_threshold:
                             filtered_results.append(result)
-                            logger.info(f"   ✅ Result passed threshold: {similarity:.3f} >= {similarity_threshold}")
                         else:
-                            logger.info(f"   ❌ Result below threshold: {similarity:.3f} < {similarity_threshold}")
+                            pass  # Removed verbose logging for each result
                     
                     logger.info(f"🔍 Research filtering complete. Filtered results: {len(filtered_results)} / {len(results)}")
                     
@@ -939,7 +919,6 @@ def research_page():
                             similarity = result.get('similarity_score', 0)
                             if similarity >= lower_threshold:
                                 filtered_results.append(result)
-                                logger.info(f"   ✅ Result passed lower threshold: {similarity:.3f} >= {lower_threshold}")
                     
                     if filtered_results:
                         logger.info(f"✅ Found {len(filtered_results)} relevant research results")
@@ -948,7 +927,6 @@ def research_page():
                         # Display results
                         for i, result in enumerate(filtered_results):
                             score = result['similarity_score']
-                            logger.info(f"   Displaying result {i+1}: {result.get('title', 'Unknown')[:50]}... (Score: {score:.4f})")
                             
                             with st.expander(f"📄 Result {i+1} (Score: {score:.4f})", expanded=(i==0)):
                                 col1, col2 = st.columns([1, 3])
@@ -1128,7 +1106,6 @@ def main():
                 # Use absolute path to ensure we always get the correct FAISS index
                 faiss_dir = Path(__file__).parent / "media_pipelines/scientific_publications/data/transformed_data/vector_embeddings"
                 logger.info(f"🔍 FAISS directory path: {faiss_dir}")
-                logger.info(f"🔍 FAISS directory absolute: {faiss_dir.absolute()}")
                 logger.info(f"🔍 FAISS directory exists: {faiss_dir.exists()}")
                 
                 if faiss_dir.exists():
