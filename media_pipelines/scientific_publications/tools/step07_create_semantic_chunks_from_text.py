@@ -100,6 +100,83 @@ def get_metadata_from_filename(filename: str) -> Dict:
     
     return metadata
 
+def load_quick_metadata(base_filename: str) -> Dict:
+    """
+    Load quick metadata from the corresponding quick_metadata file.
+    
+    Args:
+        base_filename: The base filename without extensions (e.g., "pdf_20250812_084133_380095")
+        
+    Returns:
+        Dictionary with quick metadata, or empty dict if not found
+    """
+    try:
+        # Construct path to quick_metadata file
+        quick_metadata_dir = Path("data/transformed_data/quick_metadata")
+        quick_metadata_file = quick_metadata_dir / f"{base_filename}_quick_metadata.json"
+        
+        if not quick_metadata_file.exists():
+            return {}
+        
+        with open(quick_metadata_file, 'r', encoding='utf-8') as f:
+            quick_metadata = json.load(f)
+        
+        return quick_metadata
+    except Exception as e:
+        logger.warning(f"⚠️  Could not load quick metadata for {base_filename}: {e}")
+        return {}
+
+def enrich_metadata_with_quick_metadata(filename: str) -> Dict:
+    """
+    Get metadata from filename and enrich it with quick_metadata if available.
+    
+    Args:
+        filename: The filename to extract metadata from
+        
+    Returns:
+        Dictionary with enriched metadata
+    """
+    # Get basic metadata from filename
+    metadata = get_metadata_from_filename(filename)
+    
+    # Extract base filename for quick_metadata lookup
+    base_filename = filename.replace('_extracted_text.txt', '')
+    
+    # Load quick_metadata if available
+    quick_metadata = load_quick_metadata(base_filename)
+    
+    if quick_metadata:
+        # Enrich metadata with non-null values from quick_metadata
+        if quick_metadata.get('authors') and quick_metadata['authors'] != 'Unknown':
+            # Handle case where authors might be a list
+            if isinstance(quick_metadata['authors'], list):
+                metadata['authors'] = ', '.join(quick_metadata['authors'])
+            else:
+                metadata['authors'] = quick_metadata['authors']
+        
+        if quick_metadata.get('journal') and quick_metadata['journal'] != 'Unknown':
+            metadata['journal'] = quick_metadata['journal']
+        
+        if quick_metadata.get('doi') and quick_metadata['doi'] != 'Unknown' and quick_metadata['doi'] is not None:
+            metadata['doi'] = quick_metadata['doi']
+        
+        if quick_metadata.get('title') and quick_metadata['title'] != 'Unknown':
+            metadata['title'] = quick_metadata['title']
+        
+        if quick_metadata.get('year') and quick_metadata['year'] != 'Unknown':
+            metadata['year'] = quick_metadata['year']
+        
+        # Also check for publication_year field
+        if quick_metadata.get('publication_year') and quick_metadata['publication_year'] != 'Unknown':
+            metadata['year'] = str(quick_metadata['publication_year'])
+        
+        if quick_metadata.get('publication_date'):
+            metadata['publication_date'] = quick_metadata['publication_date']
+        
+        logger.info(f"✅ Enriched metadata for {base_filename} with quick_metadata")
+    
+    return metadata
+
 def extract_page_number_from_text(text: str) -> Optional[str]:
     """
     Extract page number from text content.
@@ -326,7 +403,7 @@ Return a JSON array of chunk objects. Each chunk should represent a self-contain
                 logger.info(f"📋 Preparing metadata for: {original_filename} ({file_size} bytes)")
                 
                 # Get metadata from filename
-                file_metadata = get_metadata_from_filename(original_filename)
+                file_metadata = enrich_metadata_with_quick_metadata(original_filename)
                 
                 files.append({
                     'text_file': text_file,
@@ -508,7 +585,8 @@ Please process the attached text and return the semantic chunks as specified abo
                     author=file_metadata['authors'],
                     year=file_metadata['year'],
                     source_title=file_metadata['title'],
-                    doi=file_metadata['doi']
+                    doi=file_metadata['doi'],
+                    journal=file_metadata['journal']
                 )
                 
                 # Create a simplified chunk structure with PDF filename included
