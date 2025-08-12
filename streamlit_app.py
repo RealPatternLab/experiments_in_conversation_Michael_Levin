@@ -267,6 +267,7 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
                 # DOI link (if available) - fix HTML formatting
                 doi = source_info.get('doi', '')
                 doi_link = ""
+                
                 if doi and doi != "Unknown" and doi.strip():
                     doi_link = f"<a href='https://doi.org/{doi}' target='_blank' title='DOI: {doi}'>[DOI]</a>"
                 else:
@@ -293,8 +294,6 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
 
 def enrich_chunk_metadata(chunk: dict) -> dict:
     """Enrich chunk metadata by looking up enriched metadata files."""
-    # Removed debug logging to reduce verbosity
-    
     try:
         # Get the sanitized filename to look up enriched metadata
         sanitized_filename = chunk.get('sanitized_filename')
@@ -302,23 +301,20 @@ def enrich_chunk_metadata(chunk: dict) -> dict:
             return chunk
         
         # Look for enriched metadata file
-        enriched_metadata_path = Path(f"media_pipelines/scientific_publications/data/transformed_data/metadata_enrichment/{sanitized_filename.replace('.pdf', '_chunks_enriched.json')}")
+        enriched_metadata_path = Path(f"media_pipelines/scientific_publications/data/transformed_data/metadata_enrichment/{sanitized_filename.replace('.pdf', '_quick_metadata_enriched.json')}")
         
         if enriched_metadata_path.exists():
             with open(enriched_metadata_path, 'r', encoding='utf-8') as f:
                 enriched_data = json.load(f)
             
-            # Get file metadata from enriched data
-            file_metadata = enriched_data.get('file_metadata', {})
-            
             # Update chunk with enriched metadata
             enriched_chunk = chunk.copy()
-            enriched_chunk['title'] = file_metadata.get('title', chunk.get('title', 'Unknown'))
-            enriched_chunk['authors'] = file_metadata.get('authors', chunk.get('authors', 'Unknown'))
-            enriched_chunk['journal'] = file_metadata.get('journal', chunk.get('journal', 'Unknown'))
-            enriched_chunk['doi'] = file_metadata.get('doi', chunk.get('doi', 'Unknown'))
-            enriched_chunk['publication_date'] = file_metadata.get('year', file_metadata.get('publication_date', chunk.get('publication_date', 'Unknown')))
-            enriched_chunk['document_type'] = file_metadata.get('document_type', chunk.get('document_type', 'unknown'))
+            enriched_chunk['title'] = enriched_data.get('title', chunk.get('title', 'Unknown'))
+            enriched_chunk['authors'] = enriched_data.get('authors', chunk.get('authors', 'Unknown'))
+            enriched_chunk['journal'] = enriched_data.get('journal', chunk.get('journal', 'Unknown'))
+            enriched_chunk['doi'] = enriched_data.get('doi', chunk.get('doi', 'Unknown'))
+            enriched_chunk['publication_date'] = enriched_data.get('publication_year', enriched_data.get('publication_date', chunk.get('publication_date', 'Unknown')))
+            enriched_chunk['document_type'] = enriched_data.get('document_type', chunk.get('document_type', 'unknown'))
             
             return enriched_chunk
         else:
