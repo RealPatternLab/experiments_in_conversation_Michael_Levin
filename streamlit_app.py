@@ -286,6 +286,11 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
     # Replace citations with hyperlinks
     processed_text = re.sub(citation_pattern, replace_citation, response_text)
     
+    # Debug logging to see citation processing
+    print(f"🔍 DEBUG: Citation pattern: {citation_pattern}")
+    print(f"🔍 DEBUG: Found citations: {re.findall(citation_pattern, response_text)}")
+    print(f"🔍 DEBUG: Processed text length: {len(processed_text)}")
+    
     return processed_text
 
 def enrich_chunk_metadata(chunk: dict) -> dict:
@@ -434,8 +439,15 @@ Response:"""
         
         response_text = response.choices[0].message.content
         
+        # Debug logging to see what we're working with
+        print(f"🔍 DEBUG: Raw GPT response: {response_text[:200]}...")
+        print(f"🔍 DEBUG: Source mapping keys: {list(source_mapping.keys())}")
+        
         # Process the response to add hyperlinks
         processed_response = process_citations(response_text, source_mapping)
+        
+        # Debug logging to see the processed response
+        print(f"🔍 DEBUG: Processed response: {processed_response[:200]}...")
         
         return processed_response
         
