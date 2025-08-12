@@ -41,4 +41,4 @@ COMBINED_CHUNKS_OUTPUT = OUTPUTS_DIR / "combined_chunks.json"
 
 # GitHub configuration
 GITHUB_BRANCH = "dev"  # Current branch name for GitHub raw URLs
-GITHUB_REPO = "RealPatternLab/Michael-Levin-QA-Engine"  # Repository name 
+GITHUB_REPO = "RealPatternLab/experiments_in_conversation_Michael_Levin"  # Repository name 
