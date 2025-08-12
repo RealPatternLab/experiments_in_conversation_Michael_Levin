@@ -176,7 +176,21 @@ class VectorEmbedder:
                 
                 # Create sanitized filename from original filename
                 original_filename = chunk.get('original_filename', '')
-                sanitized_filename = original_filename if original_filename else chunk.get('pdf_filename', '')
+                pdf_filename = chunk.get('pdf_filename', '')
+                
+                # For PDF citations, we want the actual PDF filename, not the extracted text filename
+                # The sanitized_filename should point to the PDF file
+                if pdf_filename and pdf_filename.endswith('.pdf'):
+                    sanitized_filename = pdf_filename
+                elif original_filename and original_filename.endswith('.pdf'):
+                    sanitized_filename = original_filename
+                elif original_filename and original_filename.endswith('_extracted_text.txt'):
+                    # Extract the base name and add .pdf extension
+                    base_name = original_filename.replace('_extracted_text.txt', '')
+                    sanitized_filename = f"{base_name}.pdf"
+                else:
+                    # Fallback to original filename
+                    sanitized_filename = original_filename if original_filename else pdf_filename
                 
                 # Extract title from filename or use a default
                 title = chunk.get('title', '')
