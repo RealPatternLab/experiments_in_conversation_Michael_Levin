@@ -1,0 +1,342 @@
+[PAGE 1] ENGINEERED MULTICELLULAR ORGANISMS
+
+Disclosed are engineered multicellular organisms. Also disclosed are systems and methods for designing, preparing, and utilizing the engineered multicellular organisms.
+
+[PAGE 1] CROSS-REFERENCE TO RELATED PATENT APPLICATIONS
+
+[0001] The present application claims the benefit of priority under 35 U.S.C. 119(e) to U.S. Provisional Application No. 63/045,462, filed on Jun. 29, 2020, the content of which is incorporated herein by reference in its entirety.
+
+STATEMENT REGARDING FEDERALLY SPONSORED RESEARCH OR DEVELOPMENT
+
+[0002] This invention was made with government support under grant HR0011-18-2-0022 awarded by the Department of Defense and grants 0939511 and 1830870 awarded by the National Science Foundation. The government has certain rights in the invention.
+
+[PAGE 1] BACKGROUND
+
+[0003] The field of the invention relates to engineered multicellular organisms and systems and methods for designing, preparing, and utilizing engineered multicellular organisms. The engineered multicellular organisms may be configured for movement and other physical and biological activities.
+
+[0004] Scalable methods for designing and training machines in silico have been described in the art. (See, e.g., Sims, "Evolving 3D Morphology and Behavior by Competition," Artificial Life IV Proceedings, ed. By R. Brooks & P. Maes, MIT Press, 1994, pp. 28-39; Munk et al., "Topology and Shape Optimization methods using evolutionary algorithms: a review," Struct. Multidisc. Optim. (2015) 52:613-631; and Cheney et al., "Scalable co-optimization of morphology and control in embodied machines," J. R. Soc. Interface 15: 20170937). In addition, automatic design of robotic lifeforms using evolutionary algorithms have been described. (See Bongard et al., "Resilient Machines Through Continuous Self-Modeling," 17 Nov. 2006, Vol. 314, Science; and Lipson et al., "Automatic design and manufacture of robotic lifeforms," Nature, Vol. 406, 31 Aug. 2000, p. 974-978). However, these same methods of automatic design have not been applied to organic life forms, which may be self-renewing and biocompatible.
+
+[0005] Inorganic robotic lifeforms degrade over time and can produce harmful ecological and health side effects. In addition, inorganic robots are relatively large, cannot repair themselves and do not have built-in physiological robustness and other capabilities of living organisms. As such, organic robotic lifeforms are desirable.
+
+[0006] Here, we present a method that designs completely biological machines from the ground up. In our disclosed methods, computers automatically design new organic life-forms in simulation, and the best designed lifeforms are then selected and built by combining together different biological tissues. The methods disclosed herein may be utilized to design a variety of organic lifeforms to safely deliver drugs inside the human body, help with environmental remediation, search for, accumulate, or report on the presence of various chemicals in waterways, or further broaden our understanding of the diverse forms and functions life may adopt to advance exobiology and regenerative medicine.
+
+[PAGE 2] SUMMARY
+
+[0007] Disclosed are engineered multicellular organisms. Also disclosed are systems and methods for designing, preparing, and utilizing the engineered multicellular organisms.
+
+[0008] The engineered multicellular organisms typically comprise an aggregate of cells from any species that comprises, consists essentially of, or consists of passive cells and contractile cells. Preferably, the engineered multicellular organisms move when the contractile cells of the organism are actuated. The engineered multicellular organism may be configured for various applications, which include but are not limited to delivering a therapeutic agent to a subject in need thereof, removing a target substrate from an environment, building other smaller structures either in vitro or in vivo by accreting or debriding them, and/or detecting a target ligand in a sample.
+
+[0009] Also disclosed are systems and methods for designing engineered multicellular organisms. The systems comprise and the methods may utilize at least one hardware processor that is programmed to: (i) generate a design space comprising a plurality of configurations of a polycube, the polycube comprising passive voxels, contractile voxels, and null voxels; (ii) simulate movement or the lack thereof of the configurations based on actuation of the contractile voxels of the configurations; and (iii) generate a report reporting movement or lack thereof for the configurations. The hardware processor may be further programmed: (iv) to receive input data corresponding to an input configuration and to evolve the input configuration by randomly modifying the input data to generate modified data corresponding to an evolved configuration and simulate movement or the lack thereof of the evolved configuration based on actuation of the contractile voxels of the evolved configuration; and (v) to select the evolved configuration if the evolved configuration exhibits enhanced movement relative to the input configuration, and optionally, to further evolve the evolved configuration. Alternatively, the hardware processor may be further programmed: (iv) to act upon an existing set of configurations by randomly selecting, copying and modifying any subset from this set and simulating the movement or lack thereof of the new configurations; and (v) to preferentially delete those with lower average movement within the current configuration set, and optionally, to further evolve the current set of configurations.
+
+[PAGE 2] BRIEF DESCRIPTION OF THE FIGURES
+
+
+[PAGE 2] Figure 15
+1h control
+24h control
+1h mobile representation
+24h mobile representation
+
+[PAGE 3] Figure 16
+A
+
+[PAGE 4] Figure 17
+A
+Run 15
+D
+B
+E
+C
+Run 15
+Exapted
+Evolved
+transporter
+
+[PAGE 5] Figure 3
+[PAGE 6] Figure 3 (continued)
+[PAGE 7] Figure 3 (continued)
+[PAGE 8] Figure 4
+[PAGE 9] Figure 4
+[PAGE 10] Figure 5
+[PAGE 11] Figure 6
+[PAGE 12] Figure 7
+[PAGE 13] Figure 8
+
+[PAGE 5] Figure 18
+t = 0 ms
+t = 910 ms
+t= 1240 ms
+t = 1360 ms
+t = 1460 ms
+t = 1930 ms
+t = 3030 ms
+t = 5930 ms
+t = 7880 ms
+
+t = 0 ms
+t = 910 ms
+t= 1240 ms
+t = 1360 ms
+t = 1460 ms
+t = 1930 ms
+t = 3030 ms
+t = 5930 ms
+t = 7880 ms
+Figure 18
+
+Figure 19
+Optimization
+(ǝzis dod xoT)
+(from paper)
+Optimization
+Target
+ΧΕΝΟΒΟOTS
+トトト
+ΧΕΝOBOTS
+ΧΕΝΟΒΟTS
+
+A
+d
+Figure 20
+d
+A
+
+Performance relative to optimal
+1.0
+A
+2x2x2
+B
+3x2x2
+0.9
+0.8
+0.74
+Seed 1
+Seed 2
+Seed 3
+Seed 4
+Seed 5
+0.6
+0.5
+Performance relative to optimal
+1.0
+0.9
+0.8
+0.7
+Seed 1
+Seed 2
+Seed 3
+Seed 4
+Seed 5
+0.6
+0.5
+0
+2000 4000 6000 8000 10000
+Number of evaluations
+0
+2000
+4000
+6000 8000 10000
+Number of evaluations
+3x3x2
+Performance relative to optimal
+C
+1.01
+0.9
+0.8
+0.7
+Seed 1
+Seed 2
+Seed 3
+Seed 4
+Seed 5
+0.6
+EA
+SGD
+SGDre
+0.5
+0
+20000
+40000
+60000
+80000
+Number of evaluations
+100000
+120000
+140000
+workspace
+2x2x2
+3x2x2
+3x3x2
+3x3x3
+4x3x3
+8x8x7
+configurations 6,561
+531,441
+3.87 x 108 7.63 x 1012
+1.5 x 1017
+5.63 x 10213
+Figure 21
+
+B
+C
+274 cells
+2168 cells
+17400 cells
+D
+E
+F
+58812 cells
+139508 cells
+272558 cells
+Figure 22
+
+
+[PAGE 5] DETAILED DESCRIPTION
+
+[0032] The following discussion is presented to enable a person skilled in the art to make and use embodiments of the disclosure. Various modifications to the illustrated embodiments will be readily apparent to those skilled in the art, and the generic principles herein can be applied to other embodiments and applications without departing from embodiments of the disclosure. Thus, embodiments of the disclosure are not intended to be limited to embodiments shown, but are to be accorded the widest scope consistent with the principles and features disclosed herein. The following detailed description is to be read with reference to the figures. The figures, which are not necessarily to scale, depict selected embodiments and are not intended to limit the scope of embodiments of the disclosure. Skilled artisans will recognize the examples provided herein have many useful alternatives and fall within the scope of embodiments of the disclosure.
+
+[PAGE 5] Definitions and Terminology
+
+[0033] Disclosed are engineered multicellular organisms and systems and methods designing, preparing, and utilizing the engineered multicellular organisms. The disclosed subject matter may be further described using definitions and terminology as follows. The definitions and terminology used herein are for the purpose of describing particular embodiments only, and are not intended to be limiting.
+
+[0034] As used in this specification and the claims, the singular forms "a," "an," and "the" include plural forms unless the context clearly dictates otherwise. For example, the term "a cell" should be interpreted to mean "one or more cells." As used herein, the term "plurality" means "two or more."
+
+[0035] As used herein, "about", "approximately," "substantially," and "significantly" will be understood by persons of ordinary skill in the art and will vary to some extent on the context in which they are used. If there are uses of the term which are not clear to persons of ordinary skill in the art given the context in which it is used, "about" and "approximately" will mean up to plus or minus 10% of the particular term and "substantially" and "significantly" will mean more than plus or minus 10% of the particular term.
+
+[0036] As used herein, the terms "include" and "including" have the same meaning as the terms "comprise" and "comprising." The terms "comprise" and "comprising" should be interpreted as being "open" transitional terms that permit the inclusion of additional components further to those components recited in the claims. The terms "consist" and "consisting of" should be interpreted as being "closed" transitional terms that do not permit the inclusion of additional components other than the components recited in the claims. The term "consisting essentially of" should be interpreted to be partially closed and allowing the inclusion only of additional components that do not fundamentally alter the nature of the claimed subject matter.
+
+[0037] The phrase "such as" should be interpreted as "for example, including." Moreover the use of any and all exemplary language, including but not limited to "such as", is intended merely to better illuminate the invention and does not pose a limitation on the scope of the invention unless otherwise claimed.
+
+[0038] Furthermore, in those instances where a convention analogous to "at least one of A, B and C, etc." is used, in
+
+[PAGE 4] DETAILED DESCRIPTION
+
+lation size. The difficulty of realizing certain target shapes with this encoding, is due to the particular activation functions we used sin(), abs(), square(), sqrt(abs()) which tend to produce patterns that gradually vary in space, and thus bias search away from abrupt perimeter changes, such as the square cutaways and holes in "E", "B", and "S". This in-silico bias toward round edges mimics an in-vivo bias in our experiments: the pooled stem cells form a sphere during incubation, and naturally round-off abruptly carved edges after shaping. In future design-manufacture cycles, if particular structures are known to be obtainable in vivo and useful for a given task environment (e.g., long appendages for reaching), mathematical functions that promote such features (e.g., a step function) can be included in the in-silico design.
+
+
+[PAGE 5] Engineered Multicellular Organisms
+
+Disclosed are engineered multicellular organisms. Also disclosed are systems and methods for designing, preparing, and utilizing the engineered multicellular organisms.
+
+The engineered multicellular organisms typically comprise an aggregate of cells. The aggregate of cells may comprise one or more different cell types. In some embodiments, the aggregate of cells comprises, consists essentially of, or consists of passive cells and contractile cells. Suitable passive cells may include, but are not limited to, epithelial cells or progenitor cells thereof. Suitable contractile cells may include, but are not limited to, cardiac cells or progenitor cells thereof.
+
+Optionally, the engineered multicellular organisms may meet at least one of the following criteria: (i) the organism comprises less than about 1000 total cells, or less than about 900, 700, 600, 500, 400, 300, 200, or 100 cells (or the organism comprises a number of cells within a range bounded by any of these values (e.g., 100-1000 cells); and (ii) the organism has an effective diameter of less than about 2 mm, or less than about 1.5 mm, 1.0 mm, 0.9 mm, 0.8 mm, 0.7 mm, 0.6 mm, 0.5 mm, 0.4 mm, 0.3 mm, 0.2 mm, or 0.1 mm (or the organism has an effective diameter within a size range bounded by any of these values (e.g., 0.1-1.0 mm).
+
+The engineered multicellular organisms preferably are self-motile and move when the contractile cells of the organisms are actuated (e.g., when the contractile cells contract and relax). In some embodiments, the contractile cells of the organisms may be actuated by electrical stimu-
+
+
+[PAGE 6] Illustrative Embodiments
+
+The following embodiments are illustrative and should not be interpreted to limit the scope of the claimed subject matter.
+
+[PAGE 8] Embodiment 13. The organism of any of the foregoing embodiments, wherein the aggregate of cells reaggregates after the aggregate is subjected to deaggregation (i.e., self-repairs).
+
+[PAGE 8] Embodiment 14. The organism of any of the foregoing embodiments, wherein the organism is configured for moving a target object, optionally wherein the organism comprises a hole for holding the target object.
+
+[PAGE 8] Embodiment 15. The organism of any of the foregoing embodiments, wherein the organism is configured to have a cavity for capturing and/or transporting a target object.
+
+[PAGE 8] Embodiment 16. The organism of any of the foregoing embodiments, wherein the organism comprises one or more protrusions that facilitate movement of the organism, optionally vertical protrusions that contact a surface and facilitate movement of the organism.
+
+[PAGE 8] Embodiment 17. The organism of any of the foregoing embodiments, wherein the organism comprises vertebrate cells.
+
+[PAGE 8] Embodiment 18. The organism of any of the foregoing embodiments, wherein the organism comprises invertebrate cells.
+
+[PAGE 8] Embodiment 19. The organism of any of the foregoing embodiments, wherein the organism comprises amphibian cells (e.g., cells from Xenopus laevis).
+
+[PAGE 8] Embodiment 20. The organism of any of the foregoing embodiments, wherein the organism comprises mammalian cells.
+
+[PAGE 8] Embodiment 21. The organism of any of the foregoing embodiments, wherein the organism comprises human cells.
+
+[PAGE 8] Embodiment 22. The organism of any of the foregoing embodiments, wherein the organism comprises mouse cells.
+
+[PAGE 8] Embodiment 23. A plurality of the organism of any of the foregoing embodiments, wherein the plurality exhibits collective and/or coordinated behavior.
+
+[PAGE 8] Embodiment 24. A method for delivering a therapeutic agent to a subject in need thereof, the method comprising engineering the organism of any of the foregoing embodiments to express the therapeutic agent and administering the organism to the subject.
+
+[PAGE 8] Embodiment 25. A method for removing a target substrate from an environment, the method comprising engineering the organism of any of embodiments 1-23 to express an enzyme that metabolizes the target substrate and placing the organism in the environment.
+
+[PAGE 8] Embodiment 26. A method for detecting a target ligand in a sample, the method comprising engineering the organism of any of embodiments 1-23 to express a receptor for the target ligand and place the organism in the sample, wherein the organism generates a signal after the receptor binds the target ligand.
+
+[PAGE 8] Embodiment 27. A system for designing the organism of any of the foregoing embodiments, the system comprising at least one hardware processor that is programmed to: (i) generate a design space comprising a plurality of configurations of a polycube, the polycube comprising passive voxels, contractile voxels, and null voxels; (ii) simulate movement or the lack thereof of the configurations based on actuation of the contractile voxels of the configurations; (iii) generate a report reporting movement or lack thereof for the configurations; and optionally (iv) selectively delete configurations that have movement
+
+[PAGE 9] capabilities less than the average movement capabilities of a current set of configurations, selectively copy and randomly modify the remaining configurations, and repeat this process to effect evolution of the set of configurations.
+
+[PAGE 9] Embodiment 28. The system of embodiment 27, wherein movement is simulated utilizing a physics engine that: (a) models interactions between adjacent voxels and interactions between voxels and a ground surface plane; (b) simulates volumetric actuation resulting from contractile cells; and (c) detects and resolves collisions between voxels.
+
+[PAGE 9] Embodiment 29. The system of embodiment 27 or 28, wherein movement is simulated by (a) generating an input for the simulation by encoding each configuration as a network that maps the spatial coordinates of a 3D cartesian lattice of the configuration to a single value indicating whether there is a voxel associated with that value (i.e., the location is not a null voxel) and whether there is a contractile voxel or passive voxel associated with that value, wherein the input comprises each voxel's coordinate values, and each voxel's coordinate values comprise each voxel's cartesian coordinates and each voxel's radial distance from the center of the 3D cartesian lattice; (b) generating an output for the simulation by applying a function to each voxel's coordinate values based on volumetric actuation resulting from contractile cells.
+
+[PAGE 9] Embodiment 30. The system of any of embodiments 27-29, wherein the hardware processor further is programmed to receive input data corresponding to an input configuration and to evolve the input configuration by randomly modifying the input data to generate modified data corresponding to an evolved configuration and simulate movement or the lack thereof of the evolved configuration based on actuation of the contractile voxels of the evolved configuration.
+
+[PAGE 9] Embodiment 31. The system of any of embodiments 27-29, wherein the hardware processor further is programmed to act upon an existing set of configurations by randomly selecting, copying and modifying any subset from this set and simulating the movement or lack thereof of the new configurations by translating actuation of the voxels comprising a configuration into forces that move the configuration.
+
+[PAGE 9] Embodiment 32. The system of embodiment 30 or 31, wherein the hardware processor further is programmed to select the evolved configuration if the evolved configuration exhibits enhanced movement relative to the input configuration, and optionally, to further evolve the evolved configuration, and preferentially delete those with lower average movement within the current configuration set, and optionally, to further evolve the current set of configurations.
+
+[PAGE 9] Embodiment 33. The system of any of embodiments 27-32, wherein the hardware processor further is programmed to filter configurations through a robustness filter by simulating movement or the lack thereof of the configurations under random actuation and select a configuration based on the robustness filter.
+
+[PAGE 9] Embodiment 34. The system of any of embodiments 27-33, wherein the hardware processor further is programmed to filter configurations through a build filter by assessing manufacturability of the configurations.
+
+[PAGE 9] Embodiment 35. A method for designing the organism of any of the foregoing embodiments, the method comprising: (i) generating a design space comprising a
+
+[PAGE 9] plurality of configurations of a polycube, the polycube comprising passive voxels, contractile voxels, and null voxels; (ii) simulating movement or the lack thereof of the configurations based on actuation of the contractile voxels of the configurations; (iii) generating a report reporting movement or lack thereof for the configuration; and optionally (iv) selectively delete configurations that have movement
+
+[PAGE 10] capabilities less than the average movement capabilities of a current set of configurations, selectively copy and randomly modify the remaining configurations, and repeat this process to effect evolution of the set of configurations.
+
+[PAGE 9] EXAMPLES
+
+[PAGE 9] Title-a Scalable Pipeline for Designing Reconfigurable Organisms
+
+
+[PAGE 9] INTRODUCTION
+
+[PAGE 9] [0120] Most modern technologies are constructed from synthetic rather than living materials because the former have proved easier to design, manufacture, and maintain; living systems exhibit robustness of structure and function and thus tend to resist adopting the new behaviors imposed on them. However, if living systems could be continuously and rapidly designed ab initio and deployed to serve novel functions, their innate ability to resist entropy might enable them to far surpass the useful lifetimes of our strongest yet static technologies. As examples of this resistance, embryonic development and regeneration reveal remarkable plasticity, enabling cells or whole organ systems to self-organize adaptive functionality despite drastic deformation (1, 2). Exploiting the computational capacity of cells to function in novel configurations suggests the possibility of creating synthetic morphology that achieves complex novel anatomies via the benefits of both emergence and guided self-assembly (3).
+
+
+[PAGE 9] [0121] Currently, there are several methods underway to design and build bespoke living systems. Single-cell organisms have been modified by refactored genomes, but such methods are not yet scalable to rational control of multicellular shape or behavior (4). Synthetic organoids can be made by exposing cells to specific culture conditions but very limited control is available over their structure (and thus function) because the outcome is largely emergent and not under the experimenter's control (5). Conversely, bioengineering efforts with 3D scaffolds provide improved control (6-8), but the inability to predict behavioral impacts of arbitrary biological construction has restricted assembly to
+
+[PAGE 10] biological machines that resemble existing organisms, rather than discovering novel forms through automatic design.
+
+
+[PAGE 10] [0122] Meanwhile, advances in computational search and 3D printing have yielded scalable methods for designing and training machines in silico (9, 10) and then manufacturing physical instances of them (11-13). Most of these approaches employ an evolutionary search method (14) that, unlike learning methods, enables the design of the machine's physical structure along with its behavior. These evolutionary design methods continually generate diverse solutions to a given problem, which proves useful as some designs can be instantiated physically better than others. Moreover, they are agnostic to the kind of artifact being designed and the function it should provide: the same evolutionary algorithm can be reconfigured to design drugs (15), autonomous machines (11, 13), metamaterials (16), or architecture (17).
+
+[PAGE 10] [0123] Here, we demonstrate a scalable approach for designing living systems in silico using an evolutionary algorithm, and we show how the evolved designs can be rapidly manufactured using a cell-based construction toolkit. The approach is organized as a linear pipeline that takes as input a description of the biological building blocks to be used and the desired behavior the manufactured system should exhibit (FIG. 1). The pipeline continuously outputs performant living systems that embody that behavior in different ways. The resulting living systems are novel aggregates of cells that yield novel functions: above the cellular level, they bear little resemblance to existing organs or organisms.
+
+[PAGE 10] Results
+
+[PAGE 10] [0125] The pipeline is organized as a sequence of generators and filters (See FIG. 5). The first generator is an evolutionary algorithm that discovers different ways of combining the biological building blocks together to realize the desired behavior. A population of random designs are first created. Then, each design is simulated in a physics-based virtual environment and automatically assigned a performance score. Less-performant designs are deleted and overwritten by randomly modified copies of more-performant designs. Repeating this process yields populations of performant and diverse designs (FIG. 2).
+
+[PAGE 10] [0126] The source code necessary for reproducing the computational results reported in this paper can be found at GitHub (github.com/skriegman/reconfigurable_organisms).
+
+[PAGE 10] [0127] As there are likely to be many differences between the simulated and targeted physical environments, performant designs are passed through a robustness filter which only allows passage of designs that sustain the desired behavior in the face of noise. (See Example, section 7). Previous work has shown that noise resistance in simulation is a simple and effective predictor of whether a design will maintain its behavior when instantiated physically (18).
+
+[PAGE 10] [0128] The surviving noise-resistant designs are then passed through a build filter (See Example, FIG. 8) which removes designs that are not suitable for the current build method (See Example, FIG. 10) or unlikely to scale to more complex tasks in future deployments. The manufacturability of a design depends on the minimal concavity size that will persist in aggregations of developing stem cells, which tend to close small gaps in their collective geometry (See Example, FIG. 11). The scalability of a design depends on its proportion of passive tissue, which provides space for future organ systems or payloads. (See Example, FIG. 21).
+
+[PAGE 10] [0129] The designs that successfully pass through the build filter are then built out of living tissues. Pluripotent stem cells are first harvested from blastula stage Xenopus laevis embryos, dissociated, and pooled to achieve the desired number of cells. Following an incubation period, the aggregated tissue is then manually shaped by subtraction using a combination of microsurgery forceps and a 13-µm wire tip cautery electrode, producing a biological approximation of the simulated design. Further, contractile tissue can be layered into the organism through the harvesting and embedding of Xenopus cardiac progenitor cells, an embryonically derived cell type which naturally develops into cardiomyocytes (heart muscle) and produces contractile waves at specific locations in the resultant shaped form (See Example, FIG. 10).
+
+[PAGE 10] [0130] The final product of this procedure is a living, 3D approximation of the evolved design, which possesses the ability to self-locomote and explore an aqueous environment for a period of days or weeks without additional nutrients. These organisms are then deployed into their physical environment, and resultant behavior, if any, is observed (FIG. 3). Behaviors are then compared against those predicted by their simulated counterparts to determine whether or how well behaviors transferred from silico to vivo (FIG. 4).
+
+[PAGE 10] [0131] After several organisms have been deployed and observed, it is likely that they exhibit varying amounts of the desired behavior. Common patterns among the successful systems are distilled down into constraints and supplied back to the evolutionary algorithm, which now evolves designs that are not just performant but also conform to the constraints. (See Example, section 6). This increases the success likelihood of subsequent design-to-deployment attempts. Reconfigurable organisms were evolved to exhibit four different behaviors: locomotion, object manipulation, object transport, and collective behavior (See Example, section 10). To achieve this, the pipeline was employed four times.
+
+[PAGE 10] [0132] Locomotion. To obtain a diverse population of designs, 100 independent trials of the evolutionary algorithm were conducted (FIG. 2A-C), each starting from a different set of initial random designs. During each trial, designs were selected based on net displacement achieved during a 10-s period (with randomized, phase-modulated contraction, cycling at 2 Hz). Additional selection pressures were applied to maintain diversity by inducing competition within and between unique genetic lineages within each trial (19), yielding unique ecological dynamics (See Example, section 5). The most fit designs at the end of each trial were extracted (FIG. 1A) and passed through the robustness and build filters (See Example, FIG. 8). During this filtering process, buildable and scalable designs that retain rapid locomotion during random perturbations are selected for manufacture (FIG. 3 and See Example, FIG. 10).
+
+[PAGE 10] [0133] Cilia, which produce locomotion through metachronal waves (the generation of sequential and directional propagating waves, as opposed to synchronized beating), were not modeled in silico and were suppressed in vivo through embryonic microinjection of mRNA transcribing the Notch intracellular domain (Notch ICD) (20). Thus, any displacement results from contractile cardiac muscle tissue that pushes against the surface of the dish. This simplifies the simulation and its comparison to the realized organism. Trajectories of deciliated designs are compared in silico and in vivo, in two orientations (upright and inverted 180° about
+
+[PAGE 11] the transverse plane) thus isolating the impact of the designed morphology on the difference between predicted and realized behavior. For at least one design, the data suggest that the desired behavior successfully transferred when it was upright but not when inverted (FIG. 4). More specifically, the upright organisms' direction of movement matched that of the in silico design under random perturbations (P<0.01; details in See Example, section 9), and inverting the design significantly reduced its net displacement both in silico (P<0.001) and in vivo (P<0.0001). This suggests that successful transference did not result by chance but rather was due to the design itself.
+
+[PAGE 11] [0134] Object Manipulation. When the environment is strewn with particulate matter, motile designs spontaneously aggregate the external objects both in silico (See Example, FIG. 14) and in vivo (FIG. 3F and See Example, FIG. 15). More precise object manipulation can be selected for an explicit goal, such as specifying target areas from which debris should be cleared, or target objects to discard. The latter goal was implemented and primitive end-effectors evolved in simulation (See Example, FIG. 16).
+
+[PAGE 11] [0135] Object Transport. Some designs evolved for displacement reduced hydrodynamic drag (See Example, section S6) via a hole through the center of their transverse plane. This more complex topology was realized in vivo (See Example, FIG. 17) but was not layered with contractile tissue. In simulation, this emergent feature can be exapted as a pouch to store and transport objects. In a subsequent round of evolution, pouches were explicitly incorporated as a design constraint, and the new goal of maximizing the distance of the carried object was employed. This yielded evolved object transport in silico (See Example, FIG. 17).
+
+[PAGE 11] [0136] Collective Behavior. Multiple designs can be placed in the same environment, yielding collective behavior (21) (See Example, FIGS. 14 and 15). Several such behaviors predicted in silico were observed in vivo. For instance, two designs often collide, form a temporary mechanical bond, and orbit about each other for several revolutions before detaching along tangential trajectories (See Example, FIG. 18). This phenomenon is more pronounced when cilia are not inhibited on the organisms: individuals frequently become entangled with their neighbors, often changing partners across an observation (FIG. 3F and See Example, FIG. 15).
+
+[PAGE 11] DISCUSSION
+
+[PAGE 11] [0137] Although simulation and design of rigid structures and machines has been possible for some time, only recently has it become computationally tractable to simulate the combined behavior of arbitrary aggregates of soft components with differing material and actuation properties (22). As shown here, such fine-grained simulations can be embedded in evolutionary search methods to discover designs that can be instantiated in biological rather than artificial materials.
+
+
+[PAGE 11] [0138] The resulting organisms embodied not only the structure (See Example, FIG. 12) of evolved in silico designs but also their behavior (FIG. 4), despite modeling cardiomyocyte temporal coordination as random noise. As a side effect of selection pressure for locomotion, derandomizing morphologies evolved: evolutionary improvement occurred through changes in overall shape, and distribution of the passive and contractile cells, to collectively derandomize the global movement produced by the random actuation. In biology, such robustness to random noise is ubiquitous; one example is the ability of many species to adapt to wide ranges of diversity in cell size and number as starting points in their embryogenesis (23).
+
+[PAGE 11] [0139] The behavioral competence of individual cells, and the propensity of cells to cooperate in groups, facilitate functional morphogenesis in novel circumstances. The life-forms presented here, despite lacking nervous systems, following novel developmental trajectories, and being composed of materials from different tissues, nevertheless possess these self-organizing properties. These properties synergize with and support the behavior they were designed to exhibit. For instance, although signaling between cardiomyocytes was not enforced, emergent spontaneous coordination among the cardiac muscle cells produced coherent, phase-matched contractions which aided locomotion in the physically realized designs. Also, some of the designs, when combined, spontaneously and collectively aggregate detritus littered within their shared environment (FIG. 3F and See Example, FIG. 15). Finally, reconfigurable organisms not only self-maintain their externally imposed configuration, but they also self-repair in the face of damage, such as automatically closing lacerations (See Example, FIG. 13). Such spontaneous behavior cannot be expected from machines built with artificial materials unless that behavior was explicitly selected for during the design process (24).
+
+[PAGE 11] [0140] This approach admits future generalization and automation because the generator-and-filter architecture enables modular addition, removal, or reorganization of elements in the pipeline for rapid design and deployment of new living systems for new tasks in new domains. For instance, a filter could be added which preemptively steers the evolutionary algorithm away from portions of the design space known to contain designs that cannot be realized physically (25). Or, inspired by the hierarchical organization of deep neural networks (26), individual designs output by one generator could become the building blocks input to the next generator, thus enabling hierarchical design and reuse of cellular assemblies, and assemblies of assemblies.
+
+[PAGE 11] [0141] Beyond the applications reported here, the generality of this approach is as of yet unknown. But, advances in machine learning, soft body simulation, and bioprinting are likely to broaden the potential applications to which it may be put in the future. Applications could be numerous, given the ease of misexpressing novel proteins and synthetic biology pathways and computational circuits in Xenopus cells (27). Given their nontoxicity and selflimiting lifespan, they could serve as a novel vehicle for intelligent drug delivery (28) or internal surgery (29). If equipped to express signaling circuits and proteins for enzymatic, sensory (receptor), and mechanical deformation functions, they could seek out and digest toxic or waste products, or identify molecules of interest in environments physically inaccessible to robots. If equipped with reproductive systems (by exploiting endogenous regenerative mechanisms such as occurs in planarian fissioning), they may be capable of doing so at scale. In biomedical settings, one could envision such biobots (made from the patient's own cells) removing plaque from artery walls, identifying cancer, or settling down to differentiate or control events in locations of disease. A beneficial safety feature of such constructions is

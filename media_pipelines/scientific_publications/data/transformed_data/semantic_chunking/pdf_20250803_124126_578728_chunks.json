@@ -1,0 +1,62 @@
+{
+  "metadata": {
+    "filename": "pdf_20250803_124126_578728_extracted_text.txt",
+    "chunking_method": "rule_based",
+    "chunk_count": 5,
+    "max_chunk_size": 1000,
+    "min_chunk_size": 100,
+    "processed_at": "2025-08-12T09:20:41.877902"
+  },
+  "chunks": [
+    {
+      "chunk_id": "chunk_1",
+      "text": "BRIEF COMMUNICATIONS KATP Channel Activity Is Required for Hatching in Xenopus Embryos ABSTRACT A growing body of work suggests that the activity of ion channels and pumps is an important regulatory factor in embryonic development. We are beginning to identify functional roles for proteins suggested by a survey of expression of ion channel and pump genes in Xenopus and chick embryos (Rutenberg et al. [2002] Dev Dyn 225, this issue). Here, we report that the ATP-sensitive K+ channel protein is present in the hatching gland of Xenopus embryos; moreover, we show that its activity is necessary for hatching in Xenopus. Pharmacologic inhibition of KATP channels not only specifically prevents the hatching process but also greatly reduces the endogenous expression of Connexin-30 in the hatching gland.",
+      "section": "Introduction",
+      "chunk_summary": "BRIEF COMMUNICATIONS KATP Channel Activity Is Required for Hatching in Xenopus Embryos ABSTRACT A...",
+      "start_position": 0,
+      "end_position": 804,
+      "certainty_level": "high",
+      "citation_context": "Introduction"
+    },
+    {
+      "chunk_id": "chunk_2",
+      "text": "Based on recent work which showed that gap-junctional communication mediated by Cx30 in the hatching gland was required for secretion of the hatching enzyme, we propose that KATP channel activity is upstream of Cx30 expression and represents a necessary endogenous step in the hatching of the Xenopus embryo.  INTRODUCTION Electrical activity due to ion channel and pump function has been suggested to have a causal role in embryonic development (Lund, 1947; Nuccitelli, 1988, 1992). Recently, we conducted a survey to determine what electrogenic genes are expressed in early Xenopus and chick embryos with an emphasis on possible non-neuronal roles (Rutenberg et al., 2002). We are now beginning to carry out functional analyses of several such genes and here report the involvement of the KATP channel in the hatching process in Xenopus. The KATP ion channel protein is an octamer consisting of four subunits of the K+ rectifier (KIR6.1 or KIR6.2) surrounded by four regulatory subunits.",
+      "section": "Introduction",
+      "chunk_summary": "Based on recent work which showed that gap-junctional communication mediated by Cx30 in the hatch...",
+      "start_position": 804,
+      "end_position": 1793,
+      "certainty_level": "high",
+      "citation_context": "Introduction"
+    },
+    {
+      "chunk_id": "chunk_3",
+      "text": "KATP channels are found in the pancreatic β cells, cardiac myocytes, pituitary, skeletal and smooth muscles, brain, and kidney (Ashcroft, 1988). KATP channels couple cell metabolism with membrane electrical excitability and are a key step in the control of glucose-induced insulin release (Koster et al., 2000). KATP channels also control membrane voltage; this is an important aspect of neoplasm because of its ability to regulate proliferation, cell cycle control, and cell migration (Arcangeli et al., 1996; Knutson et al., 1997; Kamleiter et al., 1998; Wang et al., 1998; MacFarlane and Sontheimer, 2000; Wohlrab et al., 2000). KATP channel subunits are often misexpressed in tumor tissue (Zhu et al., 1998), and drug-induced inhibition of tumor cell proliferation is, in some contexts, due to the inhibition of KATP channel activity (Woodfork et al., 1995; Wang et al., 1998; Wondergem et al., 1998).",
+      "section": "Introduction",
+      "chunk_summary": "KATP channels are found in the pancreatic β cells, cardiac myocytes, pituitary, skeletal and smoo...",
+      "start_position": 1793,
+      "end_position": 2698,
+      "certainty_level": "high",
+      "citation_context": "Introduction"
+    },
+    {
+      "chunk_id": "chunk_4",
+      "text": "KATP channels are also believed to be a key aspect of ischemic cardioprotection (Cohen et al., 2000; Gomma et al., 2001). Because of their direct involvement in mechanisms of diabetes, neoplasm, and cardioprotection, KATP channels are an important biomedical target in adult tissue (Inagaki and Seino, 1998; Day et al., 1999; Lawson, 2000). Interestingly, we detected expression of KATP channels in early embryonic cells not related to heart or pancreas (Rutenberg et al., 2002), and investigated the novel embryonic role for this ion channel family.  RESULTS AND DISCUSSION Immunohistochemistry with an antibody against Kir6.1, the main subunit of the KATP channel, reveals the characteristic Y-shape staining on the embryo's face, indicative of the hatching gland (Fig. 1A,B). No signal for Kir6.2 was detected (data not shown). We then asked which of the two possible accessory subunits (SUR1 and SUR2) might be expressed together with Kir6.1.",
+      "section": "Introduction",
+      "chunk_summary": "KATP channels are also believed to be a key aspect of ischemic cardioprotection (Cohen et al., 20...",
+      "start_position": 2698,
+      "end_position": 3644,
+      "certainty_level": "high",
+      "citation_context": "Introduction"
+    },
+    {
+      "chunk_id": "chunk_5",
+      "text": "Immunohistochemistry with antibodies against either subunit revealed that SUR1 was widely expressed in the embryonic head, but specifically absent from the hatching gland (Fig. 1C). In contrast, SUR2 was present in the hatching gland only (Fig. 1D). These expression patterns suggest that the KATP channel present in the hatching gland is composed of Kir6.1+SUR2, a combination that is believed to constitute cardiac and vascular smooth muscle-type KATP channels (Dorschner et al., 1999). Moreover, the complementary expression of the regulatory subunits SUR1 and SUR2 with respect to the hatching gland is consistent with tight embryonic control over the precise functional properties of KATP channels located in the head (Babenko et al., 1998; Inagaki and Seino, 1998).  EXPERIMENTAL PROCEDURES In Situ Hybridization  Whole-Mount Immunohistochemistry Nicorandil Exposure  ACKNOWLEDGMENTS..",
+      "section": "Introduction",
+      "chunk_summary": "Immunohistochemistry with antibodies against either subunit revealed that SUR1 was widely express...",
+      "start_position": 3644,
+      "end_position": 4535,
+      "certainty_level": "high",
+      "citation_context": "Introduction"
+    }
+  ]
+}

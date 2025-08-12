@@ -1,0 +1,222 @@
+{
+  "metadata": {
+    "filename": "pdf_20250803_124125_146658_extracted_text.txt",
+    "chunking_method": "rule_based",
+    "chunk_count": 21,
+    "max_chunk_size": 1000,
+    "min_chunk_size": 100,
+    "processed_at": "2025-08-12T09:20:41.879228"
+  },
+  "chunks": [
+    {
+      "chunk_id": "chunk_1",
+      "text": "COMMUNICATION Machine Learning-Driven Bioelectronics for Closed-Loop Control of Cells John Selberg, Mohammad Jafari, Juanita Mathews, Manping Jia, Pattawong Pansodtee, Harika Dechiraju, Chunxiao Wu, Sergio Cordero, Alexander Flora, Nebyu Yonas, Sophia Jannetty, Miranda Diberardinis, Mircea Teodorescu, Michael Levin,* Marcella Gomez,* and Marco Rolandi* From the simplest unicellular organisms to complex animals, feedback control based on sensing and actuation is a staple of self-regulation in biological processes and is a key to life itself. Malfunctioning of this control loop can often lead to disease or death. Bioelectronic devices that interface electronics with biological systems can be used for sensing and actuation of biological processes and have potential for novel therapeutic applications.",
+      "section": "Introduction",
+      "chunk_summary": "COMMUNICATION Machine Learning-Driven Bioelectronics for Closed-Loop Control of Cells John Selber...",
+      "start_position": 0,
+      "end_position": 808,
+      "certainty_level": "high",
+      "citation_context": "Introduction"
+    },
+    {
+      "chunk_id": "chunk_2",
+      "text": "Due to the complexity of biological systems and the challenge of affecting their innate self-regulation, closing the loop between sensing and actuation with bioelectronics is difficult to achieve. Herein, bioelectronic proton-conducting devices are integrated with fluorescence sensing using machine learning to provide closed-loop control of bioelectronic actuation in living cells. Proton-conducting bioelectronic devices control pH in a microfluidic system that houses pluripotent mammalian stem cells. This pH control affects the membrane voltage (Vmem) of the cells that is measured using genetically encoded fluorescent Vmem reporters. In this fashion, proof-of-concept real-time control of Vmem toward a desired set-point is demonstrated. Given the importance of Vmem in cell function, differentiation, and proliferation, this proof-of-concept opens up many possibilities in bioelectronic closed-loop control of cell systems.",
+      "section": "Introduction",
+      "chunk_summary": "Due to the complexity of biological systems and the challenge of affecting their innate self-regu...",
+      "start_position": 808,
+      "end_position": 1740,
+      "certainty_level": "high",
+      "citation_context": "Introduction"
+    },
+    {
+      "chunk_id": "chunk_3",
+      "text": "Life is built upon closed-loop feedback and regulation systems that maintain a delicate balance of environmental and metabolic conditions that support cellular function. [1] Bioelectronic devices interface electronic devices with biology with potential for sensing and actu- ation. [2-5] A challenge for bioelectronic devices is translating between ionic and biochemical signals that dominate biology into electronic currents in the devices and vice versa. Iontronics addresses this challenge by modulating ions directly at the device level rather than electron and holes as in traditional semiconductors.",
+      "section": "Introduction",
+      "chunk_summary": "Life is built upon closed-loop feedback and regulation systems that maintain a delicate balance o...",
+      "start_position": 1740,
+      "end_position": 2345,
+      "certainty_level": "high",
+      "citation_context": "Introduction"
+    },
+    {
+      "chunk_id": "chunk_4",
+      "text": "[6] Electrophoretic ion pumps mediate the delivery of ions and charged molecules with an induced electric field[7] to treat epilepsy, [6] chronic pain, [8] inflammation,[9] and to actuate movement in plants.[10] In addition, bioprotonic devices can sense and actuate the flow of H+ in field effect transistors (H+-FETs), [11,12] enzymatic logic gates, [12] and ion channels.[13] A cell's resting potential, Vmem, is an electrical control signal that occurs between the interior of the cell and the extracellular environment regulated by ion channels. [14] In nonexcitable cells, [15] Vmem affects cell physiology and functions such as proliferation, differentiation, migration, and apoptosis, as well as cell-cell communication and large-scale morphogenesis. [16] Recently, optically actuated capacitors have achieved transient Vmem control in oocyte cells.",
+      "section": "Introduction",
+      "chunk_summary": "[6] Electrophoretic ion pumps mediate the delivery of ions and charged molecules with an induced...",
+      "start_position": 2345,
+      "end_position": 3202,
+      "certainty_level": "high",
+      "citation_context": "Introduction"
+    },
+    {
+      "chunk_id": "chunk_5",
+      "text": "[5] The ability to control Vmem for long term is an essential enabling step to the modulation of cell function, metabolism, and morpho- genesis, especially in bioengineering, regenerative medicine, and synthetic morphology applications.[17]  Controlling cells with bioelectronics is difficult due to the complexity of cellular response to changing environmental conditions. Cellular processes are hard to model due to noise and uncertainty. [18] This complexity limits most examples of bio- control to simplified systems such as synthetic gene networks engineered with feedback to achieve noise rejection and adaptation. [19] As the complexity of biological systems scale up, the challenge of feedback design increases. Without a model, a standard approach to bioelectronic control would require information a priori of how the biological variable will respond to an electronic stimulus. [20] This information is often not avail- able.",
+      "section": "Introduction",
+      "chunk_summary": "[5] The ability to control Vmem for long term is an essential enabling step to the modulation of...",
+      "start_position": 3202,
+      "end_position": 4137,
+      "certainty_level": "high",
+      "citation_context": "Introduction"
+    },
+    {
+      "chunk_id": "chunk_6",
+      "text": "In addition, such an approach does not account for potential adaptation in system response or unknown changes in the envi- ronment or device response. For example, the commonly used controller in practice, known as the proportional-integral- derivative (PID) controller, might not function properly when the system under control is exposed to the uncertainties, nonlinearities, and unknown disturbances caused by undesired phenomena such as varying environmental conditions.[21] Machine learning (ML) has successfully controlled biological systems when offline training and large datasets are available a priori. [22] However, deep-learning ML methods such as deep neural networks, deep recurrent neural networks, and generative adversarial networks are slow to update in response to system changes.",
+      "section": "Introduction",
+      "chunk_summary": "In addition, such an approach does not account for potential adaptation in system response or unk...",
+      "start_position": 4137,
+      "end_position": 4936,
+      "certainty_level": "high",
+      "citation_context": "Introduction"
+    },
+    {
+      "chunk_id": "chunk_7",
+      "text": "Real-time ML-based methods, such as adaptive ML algorithms, in combination with tools from control theory learn and respond to different operational conditions[23,24] and are able to work with nonlinearities, noise, and system uncertainty that are typical of cells or bioelectronic devices. Here, we leverage a single-layer neural network with a “sense and respond\"[25] composed of radial basis functions (RBFs). RBFs act as universal approximators[25] and are fast converging, thus ideal for real-time control applications. [24,26]  Here, we demonstrate an array of bioelectronic proton pumps[27] merged with an adaptive ML-based controller that can provide control of Vmem for an extended amount of time (Figure 1). In brief, a bioelectronic proton pump array adds or removes H⁺ from solution and changes [H+] in proximity of human-induced pluripotent stem cells (hiPSCs) (Figure S1, Supporting Information).",
+      "section": "Introduction",
+      "chunk_summary": "Real-time ML-based methods, such as adaptive ML algorithms, in combination with tools from contro...",
+      "start_position": 4936,
+      "end_position": 5846,
+      "certainty_level": "high",
+      "citation_context": "Introduction"
+    },
+    {
+      "chunk_id": "chunk_8",
+      "text": "In hiPSCs, an increase in extracellular [H+] results in cell depolarization (lower Vmem) and a decrease in extracellular [H+] results in cell hyperpolarization (higher Vmem). [28] We measure relative changes in Vmem of the cells using ArcLight, a fluorescent reporter for membrane voltage that we expressed on the cell membrane.[29] To monitor and control the dynamics of Vmem in real time, fluorescent images are taken at regularly spaced time intervals. To set and maintain a specific Vmem value for a given cell, we control the system using a ML-based algorithm that maps changes in Vmem to prior H+ stimuli from the proton pump. Using this information, the ML algorithm decides whether the [H+] surrounding a specific cell should be increased or decreased to achieve the desired Vmem value and sends a control voltage (VH+) to the proton pump in the array, thus closing the control loop.",
+      "section": "Introduction",
+      "chunk_summary": "In hiPSCs, an increase in extracellular [H+] results in cell depolarization (lower Vmem) and a de...",
+      "start_position": 5846,
+      "end_position": 6737,
+      "certainty_level": "high",
+      "citation_context": "Introduction"
+    },
+    {
+      "chunk_id": "chunk_9",
+      "text": "The algorithm is not trained on any data a priori and makes no use of a model for either the bioelectronic device or the fluorescently tagged hiPSCs. Based on the target goal and current state, the parameters of the neural network are updated in between the time-lapse fluorescent images such that the \"learning\" happens in real time and the target Vmem is ultimately achieved. Each individual pump within the array is made of a palladium/ palladium hydride (Pd/PdH) contact that is able to transfer H+ to and from the solution depending on an applied voltage VH+ (Figure 2A). [12] Previously described proton pump arrays[27] were fabricated on transparent substrates with integrated microfluidic channels to enable on-chip cell culture and monitoring of device performance and cell responses via fluorescence microscopy (Figure S2, Supporting Information).",
+      "section": "Introduction",
+      "chunk_summary": "The algorithm is not trained on any data a priori and makes no use of a model for either the bioe...",
+      "start_position": 6737,
+      "end_position": 7594,
+      "certainty_level": "high",
+      "citation_context": "Introduction"
+    },
+    {
+      "chunk_id": "chunk_10",
+      "text": "The reservoir and target chambers consist of two microfluidic channels with 40 µm tall side walls and a ceiling of transparent microfluidic tape. At the closest point, the reservoir and target chambers run parallel to each other with a distance of 1 mm, with the ion bridge (brown lines) connecting the two solutions (Figure 2B). A 2 mm diameter window is excised from the microfluidic tape and aligned to the array of 100 µm × 100 µm proton pump array pixels aligned in a 5 × 4 grid with a 250 µm pitch in the target chamber prior to sealing the fluidics to allow for interfacing with removable polydimethylsiloxane (PDMS) slides through clamp- ing (Figure S3, Supporting Information). The microfluidic chan- nels allow for distinct electrolyte solution to be flown within the reservoir and target channels.",
+      "section": "Introduction",
+      "chunk_summary": "The reservoir and target chambers consist of two microfluidic channels with 40 µm tall side walls...",
+      "start_position": 7594,
+      "end_position": 8402,
+      "certainty_level": "high",
+      "citation_context": "Introduction"
+    },
+    {
+      "chunk_id": "chunk_11",
+      "text": "Silver/silver chloride (Ag/AgCl) electrodes located in the reservoir and target channels are paired with the Pd/PdH electrodes located beneath the ion bridge at each pixel in the proton pump array to control ionic flux in and out of the device. A positive value for VH+ applied between the array pixel and the Ag/AgCl electrode in the target channel will release H+ into the target channel, thus increasing [H+] of the solution (Figure 2C); a negative value for VH+ will absorb H+ from the solution into the contact, thus decreasing [H+] of the solution (Figure 2D). A voltage VRES between the array pixel and the reservoir can be used to move H from reservoir to Pd contact forming PdH, which increase the efficiency of the proton pump by localizing H+ to the array pixel although for the work presented here only VH+ is used.",
+      "section": "Introduction",
+      "chunk_summary": "Silver/silver chloride (Ag/AgCl) electrodes located in the reservoir and target channels are pair...",
+      "start_position": 8402,
+      "end_position": 9229,
+      "certainty_level": "high",
+      "citation_context": "Introduction"
+    },
+    {
+      "chunk_id": "chunk_12",
+      "text": "[27] Given that cells and their associated Vmem are highly sensitive even to very small changes in [H+], we first demonstrate that we can precisely set [H+] in a desired location at a given time so that a specific [H+] value is regulated in the extracellular fluid (Figure 3). To do so, we drive the proton pump with a ML-based control algorithm (Figure S4, Supporting Information) consist- ing of a RBF artificial neural network (Figure S5, Supporting Information). In this case, [H+] response from an area of interest is mapped using a dye whose fluorescence is inversely  proportional to [H+] (SNARF).[30] The algorithm leverages a neu- ral network composed of an input layer, a hidden layer, and an output layer (Figure 3A). The input layer receives the error value between the desired and the measured [H+] values, information on prior [H+] stimuli, as well as current and previous [H+] response to the applied VH+.",
+      "section": "Introduction",
+      "chunk_summary": "[27] Given that cells and their associated Vmem are highly sensitive even to very small changes i...",
+      "start_position": 9229,
+      "end_position": 10149,
+      "certainty_level": "high",
+      "citation_context": "Introduction"
+    },
+    {
+      "chunk_id": "chunk_13",
+      "text": "The desired output consists of desired values at time k + 1, k, and k 1, and the measured out- put consists of measured values at time k − 1, k - 2, and k - 3. The hidden layer converges to a mapping that allows it to discern which value of VH+ should be applied to the individual proton pump surrounding the area of interest to achieve the desired [H+].  Open-loop tests of the proton pump with SNARF dye in 0.1 м Tris buffer show pH gradients forming locally around actuated pixels (Figure S6, Supporting Information). For closed-loop testing with ML-based controller, we start with relatively simple target changes in [H+] to simulate what may be needed when working with cells over 1600 s trials. In all experiments, we first set a target [H+] as measured by the fluorescence intensity of SNARF (black dashed line), and we compare it with the actual solution [H+] as measured by the fluorescence intensity of SNARF (red line) (Figure 3B).",
+      "section": "Introduction",
+      "chunk_summary": "The desired output consists of desired values at time k + 1, k, and k 1, and the measured out- pu...",
+      "start_position": 10149,
+      "end_position": 11091,
+      "certainty_level": "high",
+      "citation_context": "Introduction"
+    },
+    {
+      "chunk_id": "chunk_14",
+      "text": "A difference between target [H+] and actual [H+] results in an error value, which, in turn, triggers VH+ actuation of the specific pixel (blue line). We show the ability of the proton pump to perform temporal control over the pH in the form of ramp functions with both positive and negative slopes; these ramp functions combined to form a trian- gle wave (Figure 3B). To test repeated stimulation over time, we demonstrate the ability of the proton pump to perform temporal control over the pH in the form of a sine wave over two periods (Figure 3C). In addition, the sine function displays the ability of the ML-based controller to track a function with a gradually changing slope-a challenging feature to achieve with open-loop control. Finally, we use a square wave to step to and maintain certain pH (Figure 3D). In addition to temporal control, we achieve spatial control by independently setting [H+] for two separate areas using two sets of proton pumps (Figure 3E-G).",
+      "section": "Introduction",
+      "chunk_summary": "A difference between target [H+] and actual [H+] results in an error value, which, in turn, trigg...",
+      "start_position": 11091,
+      "end_position": 12066,
+      "certainty_level": "high",
+      "citation_context": "Introduction"
+    },
+    {
+      "chunk_id": "chunk_15",
+      "text": "To this end, we set for [H+] to increase as function of time in the area on the left of Figure 3E (green boxes), while we set for [H+] to decrease as a function of time in the selected area on the left of Figure 3E (green boxes). These [H+] set points cor- respond to the downward sloping black trace in Figure 3F and the upward sloping black trace in Figure 3G, respectively. With this strategy, we are able to independently increase and decrease [H+] in two areas that are separated by only 450 µm from each other (Figure 3F,G). Diffusion of H⁺ across the boundaries and cross talk of the electric fields generated by the contacts make this a remarkably challenging task. This challenge is confirmed by the relatively large swings of VH+ for the proton pumps on both sides that are being actuated trying to control [H+] (Figure 3G).",
+      "section": "Introduction",
+      "chunk_summary": "To this end, we set for [H+] to increase as function of time in the area on the left of Figure 3E...",
+      "start_position": 12066,
+      "end_position": 12900,
+      "certainty_level": "high",
+      "citation_context": "Introduction"
+    },
+    {
+      "chunk_id": "chunk_16",
+      "text": "These large swings cause the actual [H+] (red trace) to oscillate visibly around the target value (black trace) until it reaches its set point toward the end of the measurement. With little a priori knowledge, the ML-based controller adapts quickly to unknown and achieves the target value. Having demonstrated that our proton pump array precisely set [H+] as a function of time in specific locations, we used this ability to demonstrate proof-of-concept control of Vmem in hiPSCs (Figure 4). The Vmem of proliferative cells such as  Figure 4. Proof-of-concept patterned membrane potential changes induced in hiPSCs. in solution and it is consistent with what we have observed using electrophysiology (Figure S8, Supporting Information).",
+      "section": "Introduction",
+      "chunk_summary": "These large swings cause the actual [H+] (red trace) to oscillate visibly around the target value...",
+      "start_position": 12900,
+      "end_position": 13637,
+      "certainty_level": "high",
+      "citation_context": "Introduction"
+    },
+    {
+      "chunk_id": "chunk_17",
+      "text": "To con- firm that VH+ is having an effect on Vmem, we notice that when the cells are not being stimulated, Vmem slowly drops toward its initial value likely because [H+] returns to its neutral level due to the diffusion of ions from the surrounding areas (Figure 4D). This diffusion is slower than the timescale of our sequence so that we are able to keep Vmem to a set value with minimal oscil- lations. We demonstrate proof-of-concept Vmem control for a period of 10 h by setting the target ArcLight fluorescence 2 fluo- rescence units higher than the average measured Vmem of the 30 min period prior (Figure 4E,F). We observe that the Vmem of the cells becomes more polarized during the 30 min of stim- ulation and depolarizes during the floating periods (red trace). Over the course of the trial the extent of polarization during the pumping period is greater than the depolarization in the floating period resulting in a gradual trend toward polarization for the hiPSCs.",
+      "section": "Introduction",
+      "chunk_summary": "To con- firm that VH+ is having an effect on Vmem, we notice that when the cells are not being st...",
+      "start_position": 13637,
+      "end_position": 14612,
+      "certainty_level": "high",
+      "citation_context": "Introduction"
+    },
+    {
+      "chunk_id": "chunk_18",
+      "text": "By calibrating the fluorescence change in the ArcLight reporter, we estimate that we were able to achieve an increase Vmem of the selected hiPSCs by 10 mV in the 10 h period. Bioelectronic actuators are an important part of realizing two-way communication with living systems. Inherent chal- lenges in actuating biological tissues such as information carrier mismatch and system dynamics have limited the field to a point where the number of examples of bioactuators is relatively few compared with that of biosensors. Here, we show that it is pos- sible to combine proton pumps as bioactuators with ML-based control approaches into biohybrid system that can address these issues to achieve precise closed-loop control of pH, which, in turn, allows long-term proof-of-concept closed-loop control of membrane voltage in cells. To the best of our knowledge, this is the first proof-of-concept control of Vmem on nonelectrically excitable cells using closed-loop bioelectronic devices.",
+      "section": "Introduction",
+      "chunk_summary": "By calibrating the fluorescence change in the ArcLight reporter, we estimate that we were able to...",
+      "start_position": 14612,
+      "end_position": 15594,
+      "certainty_level": "high",
+      "citation_context": "Introduction"
+    },
+    {
+      "chunk_id": "chunk_19",
+      "text": "Our ML approach did not experience failure modes dealing with uncertainties associated with overstimulation of the biology, device variability, and saturation of the system. To this end, we can manipulate Vmem for periods as long as 10h opening the opportunity for long-term control of cell function and prolif- eration. This ability to induce Vmem changes on nonexcitatory cell types is of interest for applications in regenerative medicine and synthetic biology. In the future, a combination of additional monovalent and divalent ion species, and small ionic molecules, can increase the capabilities of our system. Importantly, closed- loop biohybrid systems, such as this one, are highly anticipated due to their broad applicability across the fields of biology and engineering. Thus, new technology in synthetic biology and bioelectronics with closed-loop control could result in unprece- dented spatiotemporal control over nature.",
+      "section": "Introduction",
+      "chunk_summary": "Our ML approach did not experience failure modes dealing with uncertainties associated with overs...",
+      "start_position": 15594,
+      "end_position": 16529,
+      "certainty_level": "high",
+      "citation_context": "Introduction"
+    },
+    {
+      "chunk_id": "chunk_20",
+      "text": "[3]  Experimental Section Device Fabrication: Electrodeposition: Stimulation Board: [H+] Measurement:  Cells: Plasmid Construction: HiPSC ArcLight pH Response Assay: Electrophysiology: ML-Based Controller Algorithm:  Supporting Information Supporting Information is available from the Wiley Online Library or from the author.  Acknowledgements The authors acknowledge Dr. Tom Yuzvinsky for fruitful discussions regarding fabrication. This research was sponsored by the Defense Advanced Research Projects Agency (DARPA), Army Research Office and was accomplished under Cooperative Agreement Number W911NF-18-2-0104. The content of the information does not necessarily reflect the position or the policy of the Government, and no official endorsement should be inferred. Microfabrication was performed using equipment sponsored by the W.M. Keck Center for Nanoscale Optofluidics, the California Institute for Quantitative Biosciences (QB3), and the Army Research Office award W911NF-17-1-0460.",
+      "section": "Introduction",
+      "chunk_summary": "[3]  Experimental Section Device Fabrication: Electrodeposition: Stimulation Board: [H+] Measurem...",
+      "start_position": 16529,
+      "end_position": 17520,
+      "certainty_level": "high",
+      "citation_context": "Introduction"
+    },
+    {
+      "chunk_id": "chunk_21",
+      "text": "Conflict of Interest The authors declare no conflict of interest.  Author Contributions  Keywords biocontrol, bioelectronics, bioelectricity, machine learning, stem cells..",
+      "section": "Introduction",
+      "chunk_summary": "Conflict of Interest The authors declare no conflict of interest.",
+      "start_position": 17520,
+      "end_position": 17692,
+      "certainty_level": "high",
+      "citation_context": "Introduction"
+    }
+  ]
+}

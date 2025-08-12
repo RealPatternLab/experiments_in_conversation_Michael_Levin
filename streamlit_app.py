@@ -238,6 +238,40 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
     
     return processed_text
 
+def enrich_chunk_metadata(chunk: dict) -> dict:
+    """Enrich chunk metadata by looking up enriched metadata files."""
+    try:
+        # Get the sanitized filename to look up enriched metadata
+        sanitized_filename = chunk.get('sanitized_filename')
+        if not sanitized_filename:
+            return chunk
+        
+        # Look for enriched metadata file
+        enriched_metadata_path = Path(f"media_pipelines/scientific_publications/data/transformed_data/metadata_enrichment/{sanitized_filename.replace('.pdf', '_chunks_enriched.json')}")
+        
+        if enriched_metadata_path.exists():
+            with open(enriched_metadata_path, 'r', encoding='utf-8') as f:
+                enriched_data = json.load(f)
+            
+            # Get file metadata from enriched data
+            file_metadata = enriched_data.get('file_metadata', {})
+            
+            # Update chunk with enriched metadata
+            enriched_chunk = chunk.copy()
+            enriched_chunk['title'] = file_metadata.get('title', chunk.get('title', 'Unknown'))
+            enriched_chunk['authors'] = file_metadata.get('authors', chunk.get('authors', 'Unknown'))
+            enriched_chunk['journal'] = file_metadata.get('journal', chunk.get('journal', 'Unknown'))
+            enriched_chunk['doi'] = file_metadata.get('doi', chunk.get('doi', 'Unknown'))
+            enriched_chunk['publication_date'] = file_metadata.get('year', file_metadata.get('publication_date', chunk.get('publication_date', 'Unknown')))
+            enriched_chunk['document_type'] = file_metadata.get('document_type', chunk.get('document_type', 'unknown'))
+            
+            return enriched_chunk
+        
+    except Exception as e:
+        logger.warning(f"Failed to enrich metadata for chunk: {e}")
+    
+    return chunk
+
 def get_conversational_response(query: str, rag_results: list, conversation_history: list = None) -> str:
     """Generate a conversational response using RAG results with inline citations."""
     try:
@@ -246,28 +280,31 @@ def get_conversational_response(query: str, rag_results: list, conversation_hist
         source_mapping = {}  # Map source numbers to actual source info
         
         for i, chunk in enumerate(rag_results[:3]):  # Use top 3 results
+            # Enrich chunk metadata with enriched metadata files
+            enriched_chunk = enrich_chunk_metadata(chunk)
+            
             source_key = f"Source_{i+1}"
             
-            context_parts.append(f"{source_key} ({chunk['title']}, {chunk.get('publication_date', 'Unknown')}): {chunk['text']}")
+            context_parts.append(f"{source_key} ({enriched_chunk['title']}, {enriched_chunk.get('publication_date', 'Unknown')}): {enriched_chunk['text']}")
             
             # Enhanced source mapping
             source_mapping[source_key] = {
-                'title': chunk['title'],
-                'authors': chunk['authors'],
-                'journal': chunk['journal'],
-                'doi': chunk['doi'],
-                'publication_date': chunk.get('publication_date', 'Unknown'),
-                'text': chunk['text'],
-                'pdf_path': f"media_pipelines/scientific_publications/data/source_data/preprocessed/sanitized/pdfs/{chunk['sanitized_filename']}",
+                'title': enriched_chunk['title'],
+                'authors': enriched_chunk['authors'],
+                'journal': enriched_chunk['journal'],
+                'doi': enriched_chunk['doi'],
+                'publication_date': enriched_chunk.get('publication_date', 'Unknown'),
+                'text': enriched_chunk['text'],
+                'pdf_path': f"media_pipelines/scientific_publications/data/source_data/preprocessed/sanitized/pdfs/{enriched_chunk['sanitized_filename']}",
                 'rank': i + 1,
-                'source_type': chunk.get('document_type', 'research_paper'),  # Use source_type for compatibility
-                'section': chunk.get('section', 'Unknown'),
-                'topic': chunk.get('topic', 'Unknown'),
-                'sanitized_filename': chunk.get('sanitized_filename'),
-                'youtube_url': chunk.get('youtube_url'),
-                'start_time': chunk.get('start_time'),
-                'end_time': chunk.get('end_time'),
-                'frame_path': chunk.get('frame_path')
+                'source_type': enriched_chunk.get('document_type', 'research_paper'),  # Use source_type for compatibility
+                'section': enriched_chunk.get('section', 'Unknown'),
+                'topic': enriched_chunk.get('topic', 'Unknown'),
+                'sanitized_filename': enriched_chunk.get('sanitized_filename'),
+                'youtube_url': enriched_chunk.get('youtube_url'),
+                'start_time': enriched_chunk.get('start_time'),
+                'end_time': enriched_chunk.get('end_time'),
+                'frame_path': enriched_chunk.get('frame_path')
             }
             
         context = "\n\n".join(context_parts)
@@ -407,8 +444,8 @@ def log_interaction(user_question: str, response: str, rag_results: list, perfor
             "rag_results_count": len(rag_results) if rag_results else 0,
             "performance": performance_metrics,
             "has_rag_context": bool(rag_results),
-            "source_titles": [result.get('title', 'Unknown') for result in (rag_results or [])],
-            "document_types": [result.get('document_type', 'unknown') for result in (rag_results or [])]
+            "source_titles": [enrich_chunk_metadata(result).get('title', 'Unknown') for result in (rag_results or [])],
+            "document_types": [enrich_chunk_metadata(result).get('document_type', 'unknown') for result in (rag_results or [])]
         }
         
         # Append to daily log file
