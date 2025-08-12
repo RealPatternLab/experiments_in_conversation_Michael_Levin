@@ -97,30 +97,22 @@ class VectorEmbedder:
             if file_path.is_file():
                 chunk_files.append(file_path)
         
-        # TEMPORARY: Only process files with today's date (for testing)
-        today = datetime.now().strftime("%Y%m%d")
-        today_files = []
-        for chunk_file in chunk_files:
-            if today in chunk_file.name:
-                today_files.append(chunk_file)
-                self.logger.info(f"Found today's file: {chunk_file.name}")
-        
-        if not today_files:
-            self.logger.info(f"No files found with today's date ({today})")
+        if not chunk_files:
+            self.logger.info("No chunk files found to process")
             return []
         
-        self.logger.info(f"Found {len(today_files)} files with today's date ({today})")
+        self.logger.info(f"Found {len(chunk_files)} chunk files to process")
         
         # Sort by modification time (newest first)
-        today_files.sort(key=lambda x: x.stat().st_mtime, reverse=True)
+        chunk_files.sort(key=lambda x: x.stat().st_mtime, reverse=True)
         
         # Apply max_files limit
         if max_files:
-            today_files = today_files[:max_files]
+            chunk_files = chunk_files[:max_files]
         
         # Filter out already processed files
         processed_files = []
-        for chunk_file in today_files:
+        for chunk_file in chunk_files:
             base_name = chunk_file.stem.replace('_chunks', '')
             embedding_file = self.output_dir / f"{base_name}_embeddings.pkl"
             
