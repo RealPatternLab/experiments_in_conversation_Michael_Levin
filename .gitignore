@@ -187,7 +187,15 @@ __pycache__/
 logs/
 
 # Data directories (optional - uncomment if you don't want to track data)
-# media_pipelines/*/data/
+media_pipelines/*/data/
+
+# FAISS and embedding files
+*.index
+*.npy
+*_embeddings.pkl
+chunks_metadata.pkl
+chunks_embeddings.npy
+chunks.index
 
 # Environment files
 .env
