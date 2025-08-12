@@ -43,74 +43,74 @@ class PipelineOrchestrator:
         self.pipeline_steps = [
             {
                 "name": "File Sorting & Archiving",
-                "script": "step01_sort_and_archive_incoming_files.py",
+                "script": "tools/step01_sort_and_archive_incoming_files.py",
                 "description": "Sort incoming files by type and archive them",
-                "required_inputs": ["data/source_data/raw"],
-                "outputs": ["data/source_data/archive", "data/source_data/raw_pdf"],
+                "required_inputs": ["source_data/raw"],
+                "outputs": ["source_data/archive", "source_data/raw_pdf"],
                 "optional": True  # Skip if no files in raw/
             },
             {
                 "name": "PDF Sanitization",
-                "script": "step02_detect_corruption_and_sanitize_pdfs.py",
+                "script": "tools/step02_detect_corruption_and_sanitize_pdfs.py",
                 "description": "Detect corruption and sanitize PDF filenames",
-                "required_inputs": ["data/source_data/raw_pdf"],
-                "outputs": ["data/source_data/preprocessed/sanitized/pdfs"],
+                "required_inputs": ["source_data/raw_pdf"],
+                "outputs": ["transformed_data/preprocessed/sanitized/pdfs"],
                 "optional": False
             },
             {
                 "name": "Quick Metadata Extraction",
-                "script": "step03_extract_quick_metadata_with_gemini.py",
+                "script": "tools/step03_extract_quick_metadata_with_gemini.py",
                 "description": "Extract metadata from first 3 pages using Gemini for deduplication",
-                "required_inputs": ["data/source_data/preprocessed/sanitized/pdfs"],
-                "outputs": ["data/transformed_data/quick_metadata"],
+                "required_inputs": ["source_data/preprocessed/sanitized/pdfs"],
+                "outputs": ["transformed_data/quick_metadata"],
                 "optional": False
             },
             {
                 "name": "PDF Deduplication",
-                "script": "step04_deduplicate_pdfs_and_move_to_dlq.py",
+                "script": "tools/step04_deduplicate_pdfs_and_move_to_dlq.py",
                 "description": "Identify and remove duplicate PDFs",
-                "required_inputs": ["data/source_data/preprocessed/sanitized/pdfs", "data/transformed_data/quick_metadata"],
-                "outputs": ["data/source_data/DLQ"],
+                "required_inputs": ["source_data/preprocessed/sanitized/pdfs", "transformed_data/quick_metadata"],
+                "outputs": ["source_data/DLQ"],
                 "optional": False
             },
             {
                 "name": "Full Text Extraction",
-                "script": "step05_extract_full_text_content_from_pdfs.py",
+                "script": "tools/step05_extract_full_text_content_from_pdfs.py",
                 "description": "Extract complete text content from PDFs",
-                "required_inputs": ["data/source_data/preprocessed/sanitized/pdfs"],
-                "outputs": ["data/transformed_data/extracted_text"],
+                "required_inputs": ["source_data/preprocessed/sanitized/pdfs"],
+                "outputs": ["transformed_data/extracted_text"],
                 "optional": False
             },
             {
                 "name": "Metadata Extraction",
-                "script": "step06_extract_metadata_from_extracted_text.py",
+                "script": "tools/step06_extract_metadata_from_extracted_text.py",
                 "description": "Extract metadata from extracted text",
-                "required_inputs": ["data/transformed_data/extracted_text"],
-                "outputs": ["data/transformed_data/metadata_extraction"],
+                "required_inputs": ["transformed_data/extracted_text"],
+                "outputs": ["transformed_data/metadata_extraction"],
                 "optional": False
             },
             {
                 "name": "Semantic Chunking",
-                "script": "step07_create_semantic_chunks_from_text.py",
+                "script": "tools/step07_create_semantic_chunks_from_text.py",
                 "description": "Create semantic chunks from extracted text",
-                "required_inputs": ["data/transformed_data/extracted_text"],
-                "outputs": ["data/transformed_data/semantic_chunks"],
+                "required_inputs": ["transformed_data/extracted_text"],
+                "outputs": ["transformed_data/semantic_chunks"],
                 "optional": False
             },
             {
                 "name": "Metadata Enrichment",
-                "script": "step08_enrich_metadata_with_crossref_api.py",
+                "script": "tools/step08_enrich_metadata_with_crossref_api.py",
                 "description": "Enrich metadata using Crossref API",
-                "required_inputs": ["data/transformed_data/metadata_extraction"],
-                "outputs": ["data/transformed_data/metadata_enrichment"],
+                "required_inputs": ["transformed_data/metadata_extraction"],
+                "outputs": ["transformed_data/metadata_enrichment"],
                 "optional": False
             },
             {
                 "name": "Vector Embeddings",
-                "script": "step09_generate_vector_embeddings_for_chunks.py",
+                "script": "tools/step09_generate_vector_embeddings_for_chunks.py",
                 "description": "Generate vector embeddings and FAISS index",
-                "required_inputs": ["data/transformed_data/semantic_chunks"],
-                "outputs": ["data/transformed_data/vector_embeddings"],
+                "required_inputs": ["transformed_data/semantic_chunks"],
+                "outputs": ["transformed_data/vector_embeddings"],
                 "optional": False
             }
         ]
@@ -156,7 +156,7 @@ class PipelineOrchestrator:
         # Check if all pipeline scripts exist
         missing_scripts = []
         for step in self.pipeline_steps:
-            script_path = self.tools_dir / step["script"]
+            script_path = self.pipeline_root / step["script"]
             if not script_path.exists():
                 missing_scripts.append(step["script"])
         
@@ -182,37 +182,19 @@ class PipelineOrchestrator:
         self.logger.info("✅ Prerequisites check complete")
         return True
     
-    def create_directory_structure(self):
-        """Create the required directory structure."""
-        self.logger.info("📁 Creating pipeline directory structure...")
-        
-        directories = [
-            "data/source_data/raw",
-            "data/source_data/raw_pdf",  # Add raw_pdf directory
-            "data/source_data/archive", 
-            "data/source_data/preprocessed/sanitized/pdfs",
-            "data/source_data/DLQ",
-            "data/transformed_data/quick_metadata",
-            "data/transformed_data/extracted_text",
-            "data/transformed_data/metadata_extraction",
-            "data/transformed_data/semantic_chunks",
-            "data/transformed_data/metadata_enrichment",
-            "data/transformed_data/vector_embeddings"
-        ]
-        
-        for dir_path in directories:
-            full_path = self.tools_dir / dir_path
-            full_path.mkdir(parents=True, exist_ok=True)
-            self.logger.debug(f"   Created: {full_path}")
-        
-        self.logger.info("✅ Directory structure created")
-    
     def prepare_pipeline_inputs(self):
         """Prepare pipeline inputs by copying a PDF from archive if needed."""
         self.logger.info("🔧 Preparing pipeline inputs...")
         
+        # First, check if we need to run the file sorting step
+        raw_dir = self.data_dir / "source_data" / "raw"
+        if raw_dir.exists() and any(raw_dir.glob("*")):
+            self.logger.info("📁 Found files in raw directory - these should be archived first")
+            self.logger.info("⚠️  Please run the pipeline from step 1 to properly archive these files")
+            return False
+        
         # Check if we have PDFs in raw_pdf directory
-        raw_pdf_dir = self.tools_dir / "data/source_data/raw_pdf"
+        raw_pdf_dir = self.data_dir / "source_data" / "raw_pdf"
         if raw_pdf_dir.exists() and any(raw_pdf_dir.glob("*.pdf")):
             self.logger.info("✅ PDFs already exist in raw_pdf directory")
             return True
@@ -234,17 +216,20 @@ class PipelineOrchestrator:
         
         if not self.dry_run:
             import shutil
+            # Ensure target directory exists
+            raw_pdf_dir.mkdir(parents=True, exist_ok=True)
             shutil.copy2(source_pdf, target_pdf)
-            self.logger.info(f"📄 Copied {source_pdf.name} from actual archive to tools/raw_pdf for processing")
+            self.logger.info(f"📄 Copied {source_pdf.name} from actual archive to raw_pdf for processing")
         else:
-            self.logger.info(f"🔍 DRY RUN - Would copy {source_pdf.name} from actual archive to tools/raw_pdf")
+            self.logger.info(f"🔍 DRY RUN - Would copy {source_pdf.name} from actual archive to raw_pdf")
         
         return True
     
     def check_step_inputs(self, step: Dict) -> bool:
         """Check if required inputs exist for a step."""
         for input_path in step["required_inputs"]:
-            full_path = self.tools_dir / input_path
+            full_path = self.data_dir / input_path
+            self.logger.debug(f"🔍 Checking input path: {input_path} -> {full_path} (exists: {full_path.exists()})")
             if not full_path.exists():
                 self.logger.warning(f"⚠️  Input directory not found: {input_path}")
                 if not step.get("optional", False):
@@ -277,8 +262,33 @@ class PipelineOrchestrator:
             return True
         
         # Build command
-        script_path = self.tools_dir / script_name
+        script_path = self.pipeline_root / step["script"]
         cmd = [sys.executable, str(script_path)]
+        
+        # Add tool-specific arguments
+        if step["script"] == "tools/step01_sort_and_archive_incoming_files.py":
+            # File sorting tool needs base directory to access the actual data directory
+            cmd.extend([
+                "--base-dir", str(self.data_dir)
+            ])
+        elif step["script"] == "tools/step07_create_semantic_chunks_from_text.py":
+            # Chunking tool needs input and output directories
+            cmd.extend([
+                "--input-dir", "transformed_data/extracted_text",
+                "--output-dir", "transformed_data/semantic_chunks"
+            ])
+        elif step["script"] == "tools/step08_enrich_metadata_with_crossref_api.py":
+            # Metadata enrichment tool needs input and output directories
+            cmd.extend([
+                "--input-dir", "transformed_data/metadata_extraction",
+                "--output-dir", "transformed_data/metadata_enrichment"
+            ])
+        elif step["script"] == "tools/step09_generate_vector_embeddings_for_chunks.py":
+            # Vector embeddings tool needs input and output directories
+            cmd.extend([
+                "--input-dir", "transformed_data/semantic_chunks",
+                "--output-dir", "transformed_data/vector_embeddings"
+            ])
         
         # Add max-files argument if specified and tool supports it
         if self.max_files and "max-files" in step.get("script", ""):
@@ -299,7 +309,7 @@ class PipelineOrchestrator:
             start_time = time.time()
             result = subprocess.run(
                 cmd,
-                cwd=self.tools_dir,
+                cwd=self.pipeline_root,  # Run from main directory instead of tools subdirectory
                 capture_output=True,
                 text=True,
                 timeout=3600  # 1 hour timeout
@@ -357,9 +367,9 @@ class PipelineOrchestrator:
     
     def should_skip_step(self, step: Dict) -> bool:
         """Check if a step should be skipped due to no files to process."""
-        # For file sorting step, check if raw directory has files
-        if step["script"] == "step01_sort_and_archive_incoming_files.py":
-            raw_dir = self.tools_dir / "data/source_data/raw"
+        # For file sorting step, check if raw directory has files in the actual data directory
+        if step["script"] == "tools/step01_sort_and_archive_incoming_files.py":
+            raw_dir = self.data_dir / "source_data/raw"
             if raw_dir.exists():
                 files = list(raw_dir.glob("*"))
                 return len([f for f in files if f.is_file()]) == 0
@@ -367,7 +377,7 @@ class PipelineOrchestrator:
         
         # For other steps, check if input directories have files
         for input_path in step["required_inputs"]:
-            full_path = self.tools_dir / input_path
+            full_path = self.data_dir / input_path
             if full_path.exists():
                 if "pdfs" in input_path:
                     files = list(full_path.glob("*.pdf"))
@@ -381,9 +391,6 @@ class PipelineOrchestrator:
     def run_pipeline(self, start_from_step: int = 1) -> bool:
         """Run the complete pipeline."""
         self.logger.info(f"🚀 Starting pipeline from step {start_from_step}")
-        
-        # Create directory structure
-        self.create_directory_structure()
         
         # Prepare pipeline inputs (copy PDF from archive if needed)
         if not self.prepare_pipeline_inputs():

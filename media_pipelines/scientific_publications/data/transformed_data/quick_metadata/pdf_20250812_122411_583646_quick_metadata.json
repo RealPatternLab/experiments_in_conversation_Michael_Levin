@@ -1,0 +1,19 @@
+{
+  "document_type": "research_paper",
+  "title": "Biological Regulatory Networks are Less Nonlinear Than Expected by Chance",
+  "authors": [
+    "Santosh Manicka",
+    "Kathleen Johnson",
+    "Michael Levin",
+    "David Murrugarra"
+  ],
+  "journal": null,
+  "publication_year": null,
+  "doi": "10.1101/2021.12.22.473800",
+  "abstract": "Nonlinearity is a characteristic of complex biological regulatory networks that has implications ranging from therapy to control of better understanding its nature, we analyzed a suite of published Boolean network models, containing a variety of complex nonlinear interactions, with an approach leveraging the continuous-nature of this formulation using Taylor-decomposition methods revealed the distinct layers of nonlinearity of the models. A comparison of the resulting series of model-specific coefficients with those derived from a large family of random networks demonstrated that biological networks are relatively more linearly controllable. We hypothesize that this is a result of optimization by natural selection for the purpose of controllability.",
+  "extraction_confidence": "high",
+  "filename": "pdf_20250812_122411_583646.pdf",
+  "extraction_timestamp": "2025-08-12T12:24:18.461692",
+  "extraction_method": "gemini_pro",
+  "pages_analyzed": 3
+}
