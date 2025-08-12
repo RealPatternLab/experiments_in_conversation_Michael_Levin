@@ -89,6 +89,26 @@ class VectorEmbedder:
             self.logger.error(f"Error generating embedding: {e}")
             return None
     
+    def _get_enriched_metadata(self, sanitized_filename: str) -> Optional[Dict[str, Any]]:
+        """Look up enriched metadata for a given PDF filename."""
+        try:
+            # Extract base name from sanitized filename
+            base_name = sanitized_filename.replace('.pdf', '')
+            
+            # Look for enriched metadata file
+            enriched_metadata_path = Path("data/transformed_data/metadata_enrichment") / f"{base_name}_quick_metadata_enriched.json"
+            
+            if enriched_metadata_path.exists():
+                with open(enriched_metadata_path, 'r', encoding='utf-8') as f:
+                    enriched_data = json.load(f)
+                return enriched_data
+            else:
+                return None
+                
+        except Exception as e:
+            self.logger.warning(f"Failed to load enriched metadata for {sanitized_filename}: {e}")
+            return None
+    
     def get_chunk_files_to_process(self, max_files: Optional[int] = None) -> List[Path]:
         """Get list of chunk files to process."""
         chunk_files = []
@@ -192,14 +212,17 @@ class VectorEmbedder:
                     # Fallback to original filename
                     sanitized_filename = original_filename if original_filename else pdf_filename
                 
-                # Extract title from filename or use a default
-                title = chunk.get('title', '')
+                # Look up enriched metadata for this file
+                enriched_metadata = self._get_enriched_metadata(sanitized_filename)
+                
+                # Extract title from enriched metadata or filename
+                title = enriched_metadata.get('title') if enriched_metadata else ''
                 if not title and original_filename:
                     # Try to extract title from filename
                     title = original_filename.replace('.pdf', '').replace('_', ' ').title()
                 
                 # Set document type based on available info
-                document_type = 'research_paper'  # Default for scientific publications
+                document_type = enriched_metadata.get('document_type', 'research_paper') if enriched_metadata else 'research_paper'
                 
                 metadata.append({
                     'chunk_id': i,
@@ -217,11 +240,11 @@ class VectorEmbedder:
                     'original_filename': chunk.get('original_filename', ''),
                     'sanitized_filename': sanitized_filename,
                     'title': title,
-                    'authors': chunk.get('authors', ''),
-                    'year': chunk.get('year', ''),
-                    'publication_date': chunk.get('year', ''),  # Use year as publication_date
-                    'journal': chunk.get('journal', ''),
-                    'doi': chunk.get('doi', ''),
+                    'authors': enriched_metadata.get('authors', 'Unknown') if enriched_metadata else 'Unknown',
+                    'year': enriched_metadata.get('publication_year', 'Unknown') if enriched_metadata else 'Unknown',
+                    'publication_date': enriched_metadata.get('publication_year', 'Unknown') if enriched_metadata else 'Unknown',
+                    'journal': enriched_metadata.get('journal', 'Unknown') if enriched_metadata else 'Unknown',
+                    'doi': enriched_metadata.get('doi', 'Unknown') if enriched_metadata else 'Unknown',
                     'document_type': document_type,
                     'page_number': chunk.get('page_number', ''),
                     # Add YouTube-specific fields (empty for PDFs)
@@ -252,25 +275,6 @@ class VectorEmbedder:
                 pickle.dump(metadata, f)
             self.logger.info(f"Saved metadata to: {metadata_path}")
             
-            # Also save the original pickle format for backward compatibility
-            output_data = {
-                "embeddings": embeddings,
-                "metadata": {
-                    "filename": chunk_data.get('metadata', {}).get('filename', chunk_file.name),
-                    "embedding_model": "text-embedding-3-large",  # Updated to match what we're actually using
-                    "chunk_count": len(chunks),
-                    "processed_at": datetime.now().isoformat()
-                },
-                "chunk_info": chunks
-            }
-            
-            base_name = chunk_file.stem.replace('_chunks', '')
-            pickle_file = self.output_dir / f"{base_name}_embeddings.pkl"
-            
-            with open(pickle_file, 'wb') as f:
-                pickle.dump(output_data, f)
-            
-            self.logger.info(f"Created embeddings: {pickle_file.name}")
             self.logger.info(f"✅ Successfully created FAISS index with {len(chunks)} chunks")
             return True
             

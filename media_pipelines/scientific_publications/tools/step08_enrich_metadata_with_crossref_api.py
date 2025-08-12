@@ -407,47 +407,27 @@ class MetadataEnricher:
     
     def get_metadata_files_to_process(self, max_files: Optional[int] = None) -> List[Path]:
         """Get list of metadata files to process."""
-        if not self.input_dir.exists():
-            self.logger.warning(f"Input directory does not exist: {self.input_dir}")
-            return []
-        
+        # Look for quick metadata files since they contain the initial metadata
         metadata_files = []
         
-        for file_path in self.input_dir.glob("*_metadata.json"):
+        for file_path in self.input_dir.glob("*_quick_metadata.json"):
             if file_path.is_file():
                 metadata_files.append(file_path)
         
-        # TEMPORARY: Only process files with today's date (for testing)
-        today = datetime.now().strftime("%Y%m%d")
-        today_files = []
-        for metadata_file in metadata_files:
-            if today in metadata_file.name:
-                today_files.append(metadata_file)
-                self.logger.info(f"Found today's file: {metadata_file.name}")
-        
-        if not today_files:
-            self.logger.info(f"No files found with today's date ({today})")
+        if not metadata_files:
+            self.logger.info(f"No quick metadata files found in {self.input_dir}")
             return []
         
-        self.logger.info(f"Found {len(today_files)} files with today's date ({today})")
+        self.logger.info(f"Found {len(metadata_files)} quick metadata files to process")
         
         # Sort by modification time (newest first)
-        today_files.sort(key=lambda x: x.stat().st_mtime, reverse=True)
+        metadata_files.sort(key=lambda x: x.stat().st_mtime, reverse=True)
         
         # Apply max_files limit
         if max_files:
-            today_files = today_files[:max_files]
+            metadata_files = metadata_files[:max_files]
         
-        # Filter out already processed files
-        processed_files = []
-        for metadata_file in today_files:
-            base_name = metadata_file.stem.replace('_metadata', '')
-            enriched_file = self.output_dir / f"{base_name}_metadata_enriched.json"
-            
-            if not enriched_file.exists():
-                processed_files.append(metadata_file)
-        
-        return processed_files
+        return metadata_files
     
     def enrich_metadata(self, metadata_file: Path) -> bool:
         """Enrich a single metadata file."""

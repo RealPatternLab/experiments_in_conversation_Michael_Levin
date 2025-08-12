@@ -101,7 +101,7 @@ class PipelineOrchestrator:
                 "name": "Metadata Enrichment",
                 "script": "tools/step08_enrich_metadata_with_crossref_api.py",
                 "description": "Enrich metadata using Crossref API",
-                "required_inputs": ["transformed_data/metadata_extraction"],
+                "required_inputs": ["transformed_data/quick_metadata"],
                 "outputs": ["transformed_data/metadata_enrichment"],
                 "optional": False
             },
@@ -280,8 +280,8 @@ class PipelineOrchestrator:
         elif step["script"] == "tools/step08_enrich_metadata_with_crossref_api.py":
             # Metadata enrichment tool needs input and output directories
             cmd.extend([
-                "--input-dir", "transformed_data/metadata_extraction",
-                "--output-dir", "transformed_data/metadata_enrichment"
+                "--input-dir", "data/transformed_data/quick_metadata",
+                "--output-dir", "data/transformed_data/metadata_enrichment"
             ])
         elif step["script"] == "tools/step09_generate_vector_embeddings_for_chunks.py":
             # Vector embeddings tool needs input and output directories
