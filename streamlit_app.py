@@ -934,7 +934,8 @@ def main():
     try:
         if 'retriever' not in st.session_state:
             with st.spinner("Loading RAG system..."):
-                faiss_dir = Path("media_pipelines/scientific_publications/data/transformed_data/vector_embeddings")
+                # Use absolute path to ensure we always get the correct FAISS index
+                faiss_dir = Path(__file__).parent / "media_pipelines/scientific_publications/data/transformed_data/vector_embeddings"
                 st.session_state.retriever = RelevantChunksRetrieverFAISS(faiss_dir)
         
         # Set default top_k value
