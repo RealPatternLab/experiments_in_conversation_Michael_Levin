@@ -177,8 +177,27 @@ class VectorEmbedder:
             # Prepare metadata for the app
             metadata = []
             for i, chunk in enumerate(chunks):
+                # Calculate word and character counts
+                text = chunk.get('text', '')
+                word_count = len(text.split()) if text else 0
+                character_count = len(text) if text else 0
+                
+                # Create sanitized filename from original filename
+                original_filename = chunk.get('original_filename', '')
+                sanitized_filename = original_filename if original_filename else chunk.get('pdf_filename', '')
+                
+                # Extract title from filename or use a default
+                title = chunk.get('title', '')
+                if not title and original_filename:
+                    # Try to extract title from filename
+                    title = original_filename.replace('.pdf', '').replace('_', ' ').title()
+                
+                # Set document type based on available info
+                document_type = 'research_paper'  # Default for scientific publications
+                
                 metadata.append({
                     'chunk_id': i,
+                    'chunk_index': i,  # Same as chunk_id for compatibility
                     'text': chunk.get('text', ''),
                     'section': chunk.get('section', ''),
                     'topic': chunk.get('topic', ''),
@@ -186,12 +205,26 @@ class VectorEmbedder:
                     'position_in_section': chunk.get('position_in_section', ''),
                     'certainty_level': chunk.get('certainty_level', ''),
                     'citation_context': chunk.get('citation_context', ''),
+                    'word_count': word_count,
+                    'character_count': character_count,
                     'pdf_filename': chunk.get('pdf_filename', ''),
                     'original_filename': chunk.get('original_filename', ''),
+                    'sanitized_filename': sanitized_filename,
+                    'title': title,
                     'authors': chunk.get('authors', ''),
                     'year': chunk.get('year', ''),
+                    'publication_date': chunk.get('year', ''),  # Use year as publication_date
                     'journal': chunk.get('journal', ''),
-                    'doi': chunk.get('doi', '')
+                    'doi': chunk.get('doi', ''),
+                    'document_type': document_type,
+                    'page_number': chunk.get('page_number', ''),
+                    # Add YouTube-specific fields (empty for PDFs)
+                    'youtube_url': '',
+                    'start_time': None,
+                    'end_time': None,
+                    'frame_path': '',
+                    # Add semantic topics (empty for now)
+                    'semantic_topics': {}
                 })
             
             # Save files in the format expected by the Streamlit app
