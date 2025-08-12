@@ -33,6 +33,7 @@ def setup_directories():
         base_dir / "data" / "source_data" / "archive",
         base_dir / "data" / "source_data" / "DLQ",
         base_dir / "data" / "source_data" / "preprocessed" / "sanitized" / "pdfs",
+        base_dir / "data" / "transformed_data" / "quick_metadata",
         base_dir / "data" / "transformed_data" / "metadata_extraction",
         base_dir / "data" / "transformed_data" / "semantic_chunking",
         base_dir / "data" / "transformed_data" / "text_extraction",
@@ -148,6 +149,10 @@ def main():
     # Setup logging after directories are created
     logger = setup_logging()
     
+    # Define base and tools directories
+    base_dir = Path(__file__).parent.parent
+    tools_dir = base_dir / "tools"
+    
     logger.info("🚀 Starting Scientific Publications Pipeline")
     logger.info("=" * 60)
     
@@ -172,52 +177,50 @@ def main():
         pipeline_success = False
     
     # ============================================================================
-    # PHASE 2: FILE SANITIZATION
+    # PHASE 2: EARLY DEDUPLICATION (Critical Cost-Saving Step)
     # ============================================================================
     
-    logger.info("📋 PHASE 2: File Sanitization")
+    logger.info("📋 PHASE 2: Early Deduplication")
     logger.info("-" * 50)
     
-    # Step 3: Sanitize PDF files
-    tools_dir = Path(__file__).parent.parent / "tools"
-    base_dir = Path(__file__).parent.parent
+    # Step 3: Extract quick metadata using Gemini for deduplication
     success = run_command(
-        f"python {tools_dir}/sanitize_files.py --base-dir {base_dir}/data/source_data",
-        "Sanitize PDF files and move to preprocessed directory",
+        f"python {tools_dir}/step03_extract_quick_metadata_with_gemini.py --input-dir {base_dir}/data/source_data/preprocessed/sanitized/pdfs --output-dir {base_dir}/data/transformed_data/quick_metadata",
+        "Extract quick metadata using Gemini Pro for deduplication",
+        logger
+    )
+    if not success:
+        pipeline_success = False
+    
+    # Step 4: Deduplicate PDFs and move duplicates to DLQ
+    success = run_command(
+        f"python {tools_dir}/step04_deduplicate_pdfs_and_move_to_dlq.py --metadata-dir {base_dir}/data/transformed_data/quick_metadata --pdf-dir {base_dir}/data/source_data/preprocessed/sanitized/pdfs --dlq-dir {base_dir}/data/source_data/DLQ",
+        "Deduplicate PDFs and move duplicates to DLQ",
         logger
     )
     if not success:
         pipeline_success = False
     
     # ============================================================================
-    # PHASE 3: CONTENT PROCESSING
+    # PHASE 3: CONTENT PROCESSING (Only Unique PDFs)
     # ============================================================================
     
     logger.info("📋 PHASE 3: Content Processing")
     logger.info("-" * 50)
     
-    # Step 4: Extract text from PDFs
+    # Step 5: Extract full text from unique PDFs only
     success = run_command(
-        f"python {tools_dir}/extract_text_from_pdf.py --ingested-dir {base_dir}/data/source_data/preprocessed/sanitized/pdfs --extracted-text-dir {base_dir}/data/transformed_data/text_extraction",
-        "Extract text content from sanitized PDFs",
+        f"python {tools_dir}/step05_extract_full_text_content_from_pdfs.py --input-dir {base_dir}/data/source_data/preprocessed/sanitized/pdfs --output-dir {base_dir}/data/transformed_data/text_extraction",
+        "Extract full text content from unique PDFs",
         logger
     )
     if not success:
         pipeline_success = False
     
-    # Step 5: Extract metadata from PDFs
+    # Step 6: Extract metadata from extracted text files
     success = run_command(
-        f"python {tools_dir}/extract_metadata_from_pdf.py --ingested-dir {base_dir}/data/source_data/preprocessed/sanitized/pdfs --output-dir {base_dir}/data/transformed_data/metadata_extraction",
-        "Extract metadata from PDFs using multiple strategies",
-        logger
-    )
-    if not success:
-        pipeline_success = False
-    
-    # Step 6: Enrich metadata with Gemini
-    success = run_command(
-        f"python {tools_dir}/enrich_metadata_with_gemini.py --input-dir {base_dir}/data/transformed_data/metadata_extraction --output-dir {base_dir}/data/transformed_data/metadata_extraction",
-        "Enrich low-confidence metadata using Gemini Pro",
+        f"python {tools_dir}/step06_extract_metadata_from_extracted_text.py --input-dir {base_dir}/data/transformed_data/text_extraction --output-dir {base_dir}/data/transformed_data/metadata_extraction",
+        "Extract metadata from extracted text files",
         logger
     )
     if not success:
@@ -225,7 +228,7 @@ def main():
     
     # Step 7: Enrich metadata with CrossRef
     success = run_command(
-        f"python {tools_dir}/enrich_metadata_with_crossref.py --input-dir {base_dir}/data/transformed_data/metadata_extraction --output-dir {base_dir}/data/transformed_data/metadata_extraction",
+        f"python {tools_dir}/step08_enrich_metadata_with_crossref_api.py --input-dir {base_dir}/data/transformed_data/metadata_extraction --output-dir {base_dir}/data/transformed_data/metadata_extraction",
         "Enrich metadata using CrossRef and Unpaywall APIs",
         logger
     )
@@ -239,28 +242,18 @@ def main():
     logger.info("📋 PHASE 4: Chunking & Embedding")
     logger.info("-" * 50)
     
-    # Step 8: Generate chunking prompt
-    # COMMENTED OUT: We already have the chunking prompt file
-    # success = run_command(
-    #     f"python {tools_dir}/generate_chunking_prompt.py",
-    #     "Generate optimal prompt for semantic chunking",
-    #     logger
-    # )
-    # if not success:
-    #     pipeline_success = False
-
-    # Step 9: Generate semantic chunks (using existing prompt)
+    # Step 8: Generate semantic chunks from extracted text
     success = run_command(
-        f"python {tools_dir}/chunk_extracted_text.py --input-dir {base_dir}/data/transformed_data/text_extraction --output-dir {base_dir}/data/transformed_data/semantic_chunking --chunking-prompt {base_dir}/data/transformed_data/chunking_prompt.txt",
-        "Generate semantic chunks from extracted text using existing prompt",
+        f"python {tools_dir}/step07_create_semantic_chunks_from_text.py --input-dir {base_dir}/data/transformed_data/text_extraction --output-dir {base_dir}/data/transformed_data/semantic_chunking",
+        "Generate semantic chunks from extracted text",
         logger
     )
     if not success:
         pipeline_success = False
 
-    # Step 10: Create vector embeddings
+    # Step 9: Create vector embeddings
     success = run_command(
-        f"python {tools_dir}/embed_semantic_chunks_faiss.py --input-dir {base_dir}/data/transformed_data/semantic_chunking --output-dir {base_dir}/data/transformed_data/vector_embedding",
+        f"python {tools_dir}/step09_generate_vector_embeddings_for_chunks.py --input-dir {base_dir}/data/transformed_data/semantic_chunking --output-dir {base_dir}/data/transformed_data/vector_embeddings",
         "Create vector embeddings for semantic chunks",
         logger
     )

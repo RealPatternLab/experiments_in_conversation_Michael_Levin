@@ -27,8 +27,8 @@ class SemanticChunk(BaseModel):
             raise ValueError('Text cannot be empty')
         if len(v.strip()) < 50:
             raise ValueError('Text should be at least 50 characters')
-        if len(v.strip()) > 5000:
-            raise ValueError('Text should not exceed 5000 characters')
+        if len(v.strip()) > 10000:
+            raise ValueError('Text should not exceed 10000 characters')
         return v.strip()
     
     @validator('section')

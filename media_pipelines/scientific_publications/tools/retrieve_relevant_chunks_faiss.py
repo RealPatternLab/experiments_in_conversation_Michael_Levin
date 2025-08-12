@@ -377,7 +377,7 @@ def main():
     parser.add_argument(
         "--faiss-dir",
         type=Path,
-        default=Path("media_pipelines/scientific_publications/data/transformed_data/vector_embeddings"),
+        default=Path("data/faiss"),
         help="Directory for FAISS index storage"
     )
     parser.add_argument(
