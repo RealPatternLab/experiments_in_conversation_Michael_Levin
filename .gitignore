@@ -164,7 +164,7 @@ logs/
 *.log
 
 # Data directories
-media_pipelines/*/data/
+# media_pipelines/*/data/
 
 # Archive
 /archive

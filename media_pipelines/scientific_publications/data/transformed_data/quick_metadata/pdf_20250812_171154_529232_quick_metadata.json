@@ -1,0 +1,20 @@
+{
+  "document_type": "research_paper",
+  "title": "Memory via Temporal Delays in weightless Spiking Neural Network",
+  "authors": [
+    "Haneul Hazan",
+    "Simon Caby",
+    "Christopher Earl",
+    "Hava Siegelmann",
+    "Michael Levin"
+  ],
+  "journal": null,
+  "publication_year": null,
+  "doi": null,
+  "abstract": "A common view in the neuroscience community is that synaptic plasticity, i.e. the modification of connection strengths between neurons, is the key mechanism underlying learning and memory formation. This perspective has led artificial neural network models to focus on connection weights as the key variables for classification tasks. The memory in this network is stored within the synaptic weights between neurons. This paper proposes a simple weightless spiking neural network that can perform classification tasks and is trained using a Hebbian spike timing dependent plasticity (STDP), which modifies only the axonal delays of the network.",
+  "extraction_confidence": "high",
+  "filename": "pdf_20250812_171154_529232.pdf",
+  "extraction_timestamp": "2025-08-12T17:12:05.082095",
+  "extraction_method": "gemini_pro",
+  "pages_analyzed": 3
+}
