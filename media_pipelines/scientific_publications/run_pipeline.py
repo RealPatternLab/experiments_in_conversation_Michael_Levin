@@ -93,7 +93,7 @@ class PipelineOrchestrator:
                 "name": "Semantic Chunking",
                 "script": "tools/step07_create_semantic_chunks_from_text.py",
                 "description": "Create semantic chunks from extracted text",
-                "required_inputs": ["transformed_data/extracted_text"],
+                "required_inputs": ["transformed_data/text_extraction"],
                 "outputs": ["transformed_data/semantic_chunks"],
                 "optional": False
             },
@@ -274,7 +274,7 @@ class PipelineOrchestrator:
         elif step["script"] == "tools/step07_create_semantic_chunks_from_text.py":
             # Chunking tool needs input and output directories
             cmd.extend([
-                "--input-dir", "transformed_data/extracted_text",
+                "--input-dir", "transformed_data/text_extraction",
                 "--output-dir", "transformed_data/semantic_chunks"
             ])
         elif step["script"] == "tools/step08_enrich_metadata_with_crossref_api.py":
@@ -286,8 +286,8 @@ class PipelineOrchestrator:
         elif step["script"] == "tools/step09_generate_vector_embeddings_for_chunks.py":
             # Vector embeddings tool needs input and output directories
             cmd.extend([
-                "--input-dir", "transformed_data/semantic_chunks",
-                "--output-dir", "transformed_data/vector_embeddings"
+                "--input-dir", "data/transformed_data/semantic_chunks",
+                "--output-dir", "data/transformed_data/vector_embeddings"
             ])
         
         # Add max-files argument if specified and tool supports it
