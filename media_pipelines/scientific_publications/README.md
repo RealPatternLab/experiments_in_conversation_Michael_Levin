@@ -8,6 +8,40 @@ Transform academic publications into structured, searchable knowledge that can b
 - Fine-tuning language models with Q&A pairs
 - Academic research and citation analysis
 
+## Quick Start
+
+### **Run Complete Pipeline**
+```bash
+# From the scientific_publications directory
+python3 run_scientific_publications_pipeline.py
+```
+
+### **Run from Specific Step**
+```bash
+# Start from step 5 (text extraction)
+python3 run_scientific_publications_pipeline.py --start-from-step 5
+
+# Start from step 7 (semantic chunking)
+python3 run_scientific_publications_pipeline.py --start-from-step 7
+```
+
+### **Dry Run (Preview)**
+```bash
+# See what would be executed without running
+python3 run_scientific_publications_pipeline.py --dry-run
+
+# Dry run from specific step
+python3 run_scientific_publications_pipeline.py --start-from-step 3 --dry-run
+```
+
+### **Pipeline Script Features**
+- **Default Arguments**: Each step has pre-configured arguments - just run the script!
+- **Automatic Directory Creation**: Creates all required directories automatically
+- **UV Integration**: Uses `uv run` for proper dependency management
+- **Error Handling**: Stops on failure with clear error messages
+- **Progress Logging**: Detailed logging for each step
+- **Flexible Execution**: Run all steps or start from any specific step
+
 ## Pipeline Overview
 
 The Scientific Publications Pipeline processes PDF scientific papers through a structured workflow with **early deduplication** to prevent processing duplicate papers:
@@ -49,6 +83,7 @@ The Scientific Publications Pipeline processes PDF scientific papers through a s
 6. **Semantic Processing**
    - **Chunking** (`07_create_semantic_chunks_from_text.py`)
      - Creates semantically meaningful text chunks
+     - **Enhanced with automatic metadata enrichment** from quick_metadata
      - Maintains document structure and context
    - **Vector Embeddings** (`09_generate_vector_embeddings_for_chunks.py`)
      - Generates FAISS vector embeddings
@@ -65,69 +100,62 @@ The Scientific Publications Pipeline processes PDF scientific papers through a s
 - **Fast Processing**: Only analyzes first 3 pages for deduplication
 - **Production Ready**: Prevents resource waste in large-scale processing
 
-## Data Flow
-```
-Raw PDFs → Text Extraction → Metadata Extraction → Semantic Chunking → Vector Embeddings → RAG Index
-```
+### **Enhanced Metadata Enrichment:**
 
-## Input Requirements
-- **File Types**: PDF files containing research papers
-- **Content**: Academic publications, research articles, conference papers
-- **Metadata**: Author information, publication dates, DOIs, journal names
-
-## Processing Steps
-1. **Text Extraction**: Extract raw text from PDF files
-2. **Metadata Extraction**: Parse author, title, DOI, publication date, journal
-3. **Semantic Chunking**: Break text into meaningful, contextually coherent chunks
-4. **Vector Embeddings**: Generate embeddings for each chunk using OpenAI text-embedding-3-large
-5. **Index Creation**: Store chunks and embeddings in FAISS vector database
-
-## Output Structure
-- **Semantic Chunks**: Contextually coherent text segments
-- **Metadata**: Rich metadata for each chunk
-- **Vector Embeddings**: 3072-dimensional vectors for similarity search
-- **RAG Index**: FAISS index for fast retrieval
-
-## Tools Required
-- PDF text extraction tools
-- Metadata parsing utilities
-- Semantic chunking algorithms
-- Vector embedding generation
-- FAISS index management
+- **Automatic Cross-Reference**: Semantic chunks automatically enriched with metadata from quick_metadata files
+- **Rich Citations**: Professional-looking citations with real author names, journals, and publication details
+- **DOI Integration**: Automatic DOI linking for papers with available DOIs
+- **Page Numbers**: Extracted page numbers for precise citation tracking
 
 ## Directory Structure
 
 ```
 scientific_publications/
-├── pipeline/                                    # Pipeline orchestration scripts
-│   ├── process_scientific_publications.py      # Main pipeline script
-│   └── logs/                                   # Pipeline execution logs
-├── tools/                                       # Processing tools
-│   ├── sort_by_file_type.py                    # File organization
-│   ├── sanitize_files.py                       # File sanitization
-│   ├── extract_text_from_pdf.py                # Text extraction
-│   ├── extract_metadata_from_pdf.py            # Metadata extraction
-│   ├── enrich_metadata_with_gemini.py          # AI metadata enrichment
-│   ├── enrich_metadata_with_crossref.py        # API metadata enrichment
-│   ├── chunk_extracted_text.py                 # Semantic chunking
-│   └── embed_semantic_chunks_faiss.py         # Vector embeddings
-└── data/                                        # Data directories
-    ├── source_data/                             # Input and intermediate data
-    │   ├── raw/                                 # Raw PDF files
-    │   ├── archive/                             # Archived raw files
-    │   ├── DLQ/                                 # Dead letter queue (non-PDFs)
-    │   └── preprocessed/                        # Processed files
-    │       └── sanitized/                       # Sanitized files
-    │           └── pdfs/                        # Sanitized PDFs
-    └── transformed_data/                        # Final processed data
-        ├── text_extraction/                     # Extracted text files
-        ├── metadata_extraction/                 # Metadata files
-        ├── semantic_chunking/                   # Semantic chunk files
-        └── vector_embeddings/                   # FAISS index & embeddings
+├── run_scientific_publications_pipeline.py       # Main pipeline orchestrator
+├── tools/                                        # Processing tools
+│   ├── step01_sort_and_archive_incoming_files.py
+│   ├── step02_detect_corruption_and_sanitize_pdfs.py
+│   ├── step03_extract_quick_metadata_with_gemini.py
+│   ├── step04_deduplicate_pdfs_and_move_to_dlq.py
+│   ├── step05_extract_full_text_content_from_pdfs.py
+│   ├── step06_extract_metadata_from_extracted_text.py
+│   ├── step07_create_semantic_chunks_from_text.py
+│   ├── step08_enrich_metadata_with_crossref_api.py
+│   ├── step09_generate_vector_embeddings_for_chunks.py
+│   └── chunk_models.py                          # Pydantic models for chunks
+├── data/                                         # Data directories (auto-created)
+│   ├── source_data/                             # Input and intermediate data
+│   │   ├── raw/                                 # Raw incoming files
+│   │   ├── raw_pdf/                             # PDFs moved from raw/
+│   │   ├── archive/                             # Archived raw files
+│   │   ├── DLQ/                                 # Dead letter queue (non-PDFs)
+│   │   └── preprocessed/                        # Processed files
+│   │       └── sanitized/                       # Sanitized files
+│   │           └── pdfs/                        # Sanitized PDFs
+│   └── transformed_data/                         # Final processed data
+│       ├── quick_metadata/                      # Quick metadata from Gemini
+│       ├── text_extraction/                     # Extracted text files
+│       ├── metadata_extraction/                 # Rule-based metadata
+│       ├── semantic_chunks/                     # Semantic chunk files
+│       ├── metadata_enrichment/                 # Crossref/Unpaywall enriched
+│       └── vector_embeddings/                   # FAISS index & embeddings
+└── logs/                                         # Pipeline execution logs
 ```
 
-## Configuration
-- Chunk size parameters
-- Embedding model settings
-- Index configuration
-- Quality thresholds 
+## Data Flow
+```
+Raw Files → Archive + PDF Routing → Sanitization → Quick Metadata → Deduplication → 
+Text Extraction → Metadata Extraction → Semantic Chunking → Metadata Enrichment → 
+Vector Embeddings → FAISS Index → RAG Ready!
+```
+
+## Input Requirements
+- **File Types**: PDF files containing research papers
+- **Content**: Academic publications, research articles, conference papers
+- **Placement**: Place PDFs in `data/source_data/raw/` directory
+
+## Output Structure
+- **Semantic Chunks**: Contextually coherent text segments with enriched metadata
+- **Metadata**: Rich metadata including authors, journals, DOIs, publication dates
+- **Vector Embeddings**: 3072-dimensional vectors for similarity search
+- **RAG Index**: FAISS index for fast retrieval with professional citations 
