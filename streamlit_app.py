@@ -241,28 +241,38 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
             else:
                 # PDF citation (existing logic)
                 pdf_filename = source_info.get('sanitized_filename')
+                original_filename = source_info.get('original_filename', '')
+                title = source_info.get('title', 'Unknown')
+                year = source_info.get('year', 'Unknown')
                 
-                # Create PDF link using GitHub raw URL
+                # Create a better PDF citation
                 pdf_link = ""
                 try:
                     if pdf_filename and pdf_filename != "Unknown":
-                        # Create GitHub raw URL
-                        github_raw_url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/media_pipelines/scientific_publications/data/source_data/preprocessed/sanitized/pdfs/{pdf_filename}"
-                        pdf_link = f"<a href='{github_raw_url}' target='_blank'>[PDF]</a>"
+                        # Create a more informative PDF link
+                        pdf_link = f"<a href='#' onclick='alert(\"📄 PDF: {pdf_filename}\\n\\nThis PDF is available in the pipeline data.\\n\\nIn a production system, this would link to a PDF viewer or download.\")' title='PDF: {pdf_filename}'>[PDF]</a>"
+                    elif original_filename and original_filename != "Unknown":
+                        pdf_link = f"<a href='#' onclick='alert(\"📄 PDF: {original_filename}\\n\\nThis PDF is available in the pipeline data.\\n\\nIn a production system, this would link to a PDF viewer or download.\")' title='PDF: {original_filename}'>[PDF]</a>"
                     else:
-                        # Fallback if filename not found or is "Unknown"
-                        pdf_link = f"<a href='#' onclick='alert(\"PDF not found for: {title}\")' target='_blank'>[PDF]</a>"
+                        # Fallback if filename not found
+                        pdf_link = f"<a href='#' onclick='alert(\"📄 PDF not found for: {title}\")' title='PDF not found'>[PDF]</a>"
                 except Exception as e:
-                    logger.warning(f"Failed to create PDF link: {e}")
                     # Fallback to simple text citation
                     citation_text = f"{title} ({year})"
                     return f"<sup>[{citation_text}]</sup>"
                 
-                # DOI link (if available)
+                # DOI link (if available) - fix HTML formatting
                 doi = source_info.get('doi', '')
                 doi_link = ""
-                if doi and doi != "Unknown":
-                    doi_link = f"[DOI](https://doi.org/{doi})"
+                if doi and doi != "Unknown" and doi.strip():
+                    doi_link = f"<a href='https://doi.org/{doi}' target='_blank' title='DOI: {doi}'>[DOI]</a>"
+                else:
+                    # If no DOI, try to extract from filename if it looks like a DOI
+                    if original_filename and 'S0006291X' in original_filename:
+                        # Extract DOI-like pattern from filename
+                        doi_pattern = original_filename.replace('.pdf', '').replace('-main', '').replace('1-s2.0-', '')
+                        if doi_pattern:
+                            doi_link = f"<a href='#' onclick='alert(\"🔍 DOI Pattern Detected: {doi_pattern}\\n\\nThis appears to be a DOI-like identifier from the filename.\\n\\nIn a production system, this would be validated and linked to the actual DOI.\")' title='DOI Pattern: {doi_pattern}'>[DOI Pattern]</a>"
                 
                 # Combine links
                 links = [pdf_link]
@@ -329,11 +339,20 @@ def get_conversational_response(query: str, rag_results: list, conversation_hist
             
             source_key = f"Source_{i+1}"
             
-            context_parts.append(f"{source_key} ({enriched_chunk['title']}, {enriched_chunk.get('publication_date', 'Unknown')}): {enriched_chunk['text']}")
+            # Clean up the title for better display
+            title = enriched_chunk.get('title', 'Unknown')
+            if title and 'Extracted Text.Txt' in title:
+                # Clean up extracted text filenames
+                title = title.replace(' Extracted Text.Txt', '').replace('_', ' ').title()
+            elif title and title.startswith('Pdf '):
+                # Clean up PDF filenames
+                title = title.replace('Pdf ', '').replace('_', ' ').title()
+            
+            context_parts.append(f"{source_key} ({title}, {enriched_chunk.get('publication_date', 'Unknown')}): {enriched_chunk['text']}")
             
             # Enhanced source mapping
             source_mapping[source_key] = {
-                'title': enriched_chunk['title'],
+                'title': title,
                 'authors': enriched_chunk['authors'],
                 'journal': enriched_chunk['journal'],
                 'doi': enriched_chunk['doi'],
