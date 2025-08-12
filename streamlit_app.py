@@ -57,7 +57,7 @@ def setup_app_logging():
     
     # Configure logging with both file and console handlers
     logging.basicConfig(
-        level=logging.INFO,  # Changed from DEBUG to INFO for less verbosity
+        level=logging.WARNING,  # Changed to WARNING to only show errors and warnings
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
         handlers=[
             logging.FileHandler(log_file),
@@ -68,11 +68,7 @@ def setup_app_logging():
     
     # Get logger for this module
     app_logger = logging.getLogger(__name__)
-    app_logger.info(f"🚀 Streamlit app logging initialized")
-    app_logger.info(f"📝 Log file: {log_file}")
-    app_logger.info(f"🔧 Python version: {sys.version}")
-    app_logger.info(f"🔧 Working directory: {Path.cwd()}")
-    app_logger.info(f"🔧 Script location: {Path(__file__).absolute()}")
+    app_logger.warning(f"🚀 Streamlit app logging initialized - Log file: {log_file}")
     
     return app_logger
 
@@ -81,31 +77,19 @@ logger = setup_app_logging()
 
 def log_app_state():
     """Log the current state of the Streamlit app."""
-    logger.info("📊 STREAMLIT APP STATE:")
-    logger.info(f"   Session state keys: {list(st.session_state.keys())}")
-    logger.info(f"   Has retriever: {'retriever' in st.session_state}")
-    logger.info(f"   Has messages: {'messages' in st.session_state}")
-    if 'messages' in st.session_state:
-        logger.info(f"   Message count: {len(st.session_state.messages)}")
-    logger.info(f"   Has top_k: {'top_k' in st.session_state}")
-    if 'top_k' in st.session_state:
-        logger.info(f"   Top_k value: {st.session_state.top_k}")
+    # Removed verbose logging to reduce noise
+    pass
 
 def get_api_key():
     """Get OpenAI API key from Streamlit secrets or environment variables."""
-    logger.info("🔑 Attempting to get OpenAI API key...")
-    
     # Try Streamlit secrets first (for cloud deployment)
     try:
         if hasattr(st, 'secrets') and st.secrets:
             api_key = st.secrets.get('OPENAI_API_KEY', '')
             if api_key:
-                logger.info("✅ Got API key from Streamlit secrets")
                 return api_key
-            else:
-                logger.info("⚠️  No API key found in Streamlit secrets")
     except Exception as e:
-        logger.warning(f"⚠️  Error accessing Streamlit secrets: {e}")
+        pass
     
     # Try loading from .streamlit/secrets.toml manually for local development
     try:
@@ -115,40 +99,28 @@ def get_api_key():
             secrets = toml.load(secrets_path)
             api_key = secrets.get('OPENAI_API_KEY', '')
             if api_key:
-                logger.info("✅ Got API key from .streamlit/secrets.toml")
                 return api_key
-            else:
-                logger.info("⚠️  No API key found in .streamlit/secrets.toml")
-        else:
-            logger.info("⚠️  .streamlit/secrets.toml file not found")
     except Exception as e:
-        logger.warning(f"⚠️  Error loading .streamlit/secrets.toml: {e}")
+        pass
     
     # Fall back to environment variable (for local development with .env)
     env_api_key = os.getenv('OPENAI_API_KEY', '')
     if env_api_key:
-        logger.info("✅ Got API key from environment variable")
         return env_api_key
-    else:
-        logger.warning("⚠️  No API key found in environment variables")
     
-    logger.error("❌ No OpenAI API key found in any source")
     return ''
 
 def check_api_keys():
     """Check if required API keys are available."""
-    logger.info("🔑 Checking API keys...")
     api_key = get_api_key()
     
     if not api_key or api_key.strip() == '':
-        logger.error("❌ OpenAI API key not found!")
         st.error("❌ OpenAI API key not found!")
         st.info("For local development, add your OpenAI API key to the `.env` file:")
         st.code("OPENAI_API_KEY=your_api_key_here")
         st.info("For Streamlit Cloud deployment, add your API key in the Streamlit dashboard under 'Secrets'.")
         return False
     
-    logger.info("✅ API key check passed")
     return True
 
 def create_download_link(pdf_bytes, filename):
@@ -346,16 +318,11 @@ def enrich_chunk_metadata(chunk: dict) -> dict:
 
 def get_conversational_response(query: str, rag_results: list, conversation_history: list = None) -> str:
     """Generate a conversational response using RAG results with inline citations."""
-    logger.info(f"🤖 Generating conversational response for query: '{query[:100]}...'")
-    logger.info(f"📊 RAG results count: {len(rag_results)}")
-    logger.info(f"📝 Conversation history count: {len(conversation_history) if conversation_history else 0}")
-    
     try:
         # Prepare context from RAG results
         context_parts = []
         source_mapping = {}  # Map source numbers to actual source info
         
-        logger.info("🔧 Preparing RAG context...")
         for i, chunk in enumerate(rag_results[:3]):  # Use top 3 results
             # Enrich chunk metadata with enriched metadata files
             enriched_chunk = enrich_chunk_metadata(chunk)
@@ -385,7 +352,6 @@ def get_conversational_response(query: str, rag_results: list, conversation_hist
             }
             
         context = "\n\n".join(context_parts)
-        logger.info(f"📝 Context prepared with {len(context_parts)} source parts")
         
         # Prepare conversation history for context
         conversation_context = ""
@@ -398,7 +364,6 @@ def get_conversational_response(query: str, rag_results: list, conversation_hist
                 content = msg.get('content', '')
                 conversation_parts.append(f"{role}: {content}")
             conversation_context = "\n\nPrevious conversation:\n" + "\n".join(conversation_parts)
-            logger.info(f"📝 Added conversation context with {len(recent_history)} recent messages")
         
         # Create prompt for conversational response
         prompt = f"""You are Michael Levin, a developmental and synthetic biologist at Tufts University. Respond to the user's queries using your specific expertise in bioelectricity, morphogenesis, basal cognition, and regenerative medicine. Ground your responses in the provided context from my published work and lectures (if provided). 
@@ -434,8 +399,6 @@ IMPORTANT: You must include citations in your response. Use [Source_1], [Source_
 
 Response:"""
 
-        logger.info("🚀 Calling OpenAI API for response generation...")
-        
         # Generate response using OpenAI
         api_key = get_api_key()
         client = OpenAI(api_key=api_key)
@@ -451,12 +414,9 @@ Response:"""
         )
         
         response_text = response.choices[0].message.content
-        logger.info(f"✅ OpenAI response generated successfully ({len(response_text)} characters)")
         
         # Process the response to add hyperlinks
-        logger.info("🔗 Processing response to add hyperlinks...")
         processed_response = process_citations(response_text, source_mapping)
-        logger.info("✅ Response processing complete")
         
         return processed_response
         
@@ -516,8 +476,6 @@ Please provide a conversational response that feels natural and engaging, simila
 
 def log_interaction(user_question: str, response: str, rag_results: list, performance_metrics: dict):
     """Log user interaction to a file for analytics."""
-    logger.info("📊 Logging user interaction...")
-    
     try:
         # Create logs directory if it doesn't exist
         logs_dir = Path("logs")
@@ -545,8 +503,6 @@ def log_interaction(user_question: str, response: str, rag_results: list, perfor
         # Also print to console for Streamlit Cloud logs
         print(f"📊 INTERACTION LOG: {json.dumps(log_entry, indent=2)}")
             
-        logger.info(f"✅ Interaction logged to {log_file}")
-        
     except Exception as e:
         logger.error(f"❌ Failed to log interaction: {e}")
         logger.error(f"❌ Traceback: {traceback.format_exc()}")
@@ -662,7 +618,6 @@ def filter_chunks_by_source_type(chunks: list, selected_types: dict) -> list:
 
 def conversational_page():
     """Conversational interface page."""
-    logger.info("🚀 Entering conversational_page function")
     st.header("💬 Chat with Michael Levin")
     st.markdown("Have a conversation with Michael Levin about his research. He'll answer your questions based on his papers and videos.")
     
@@ -691,11 +646,8 @@ def conversational_page():
     prompt = st.chat_input("Ask Michael Levin a question...")
     
     if prompt:
-        logger.info(f"💬 User input received: '{prompt[:100]}...'")
-        
         # Add user message to chat history
         st.session_state.messages.append({"role": "user", "content": prompt})
-        logger.info(f"📝 Added user message to chat history. Total messages: {len(st.session_state.messages)}")
         
         # Display user message
         with st.chat_message("user"):
@@ -705,11 +657,8 @@ def conversational_page():
         with st.chat_message("assistant"):
             with st.spinner("Michael is thinking..."):
                 try:
-                    logger.info("🤖 Starting response generation...")
-                    
                     # Check if this is a greeting
                     if is_greeting(prompt):
-                        logger.info("👋 Detected greeting, using greeting response")
                         # Handle greeting without RAG
                         response = get_greeting_response()
                         st.markdown(response, unsafe_allow_html=True)
@@ -718,41 +667,27 @@ def conversational_page():
                             "content": response,
                             "html_content": response
                         })
-                        logger.info("✅ Greeting response generated and stored")
                     else:
-                        logger.info("🔍 Processing non-greeting query with RAG...")
-                        
                         # Time the RAG search
                         rag_start_time = time.time()
                         top_k = st.session_state.get('top_k', 10)
-                        logger.info(f"🔍 RAG search parameters - top_k: {top_k}")
                         
                         # Get similarity threshold based on query length
                         similarity_threshold = get_similarity_threshold(prompt)
-                        logger.info(f"🔍 Similarity threshold: {similarity_threshold}")
                         
                         # Retrieve chunks with similarity filtering
-                        logger.info("🔍 Starting RAG chunk retrieval...")
                         rag_results = st.session_state.retriever.retrieve_relevant_chunks(prompt, top_k=top_k)
-                        logger.info(f"🔍 RAG retrieval complete. Raw results count: {len(rag_results)}")
                         
                         # Filter results by similarity threshold
-                        logger.info("🔍 Filtering results by similarity threshold...")
                         filtered_results = []
                         for result in rag_results:
                             similarity = result.get('similarity_score', 0)
                             if similarity >= similarity_threshold:
                                 filtered_results.append(result)
-                            else:
-                                pass  # Removed verbose logging for each chunk
-                        
-                        logger.info(f"🔍 Filtering complete. Filtered results: {len(filtered_results)} / {len(rag_results)}")
                         
                         # If no results meet the threshold, use a lower threshold
                         if not filtered_results and rag_results:
-                            logger.info("⚠️  No results met threshold, lowering threshold...")
                             lower_threshold = max(0.2, similarity_threshold - 0.2)
-                            logger.info(f"🔍 Lowered threshold to: {lower_threshold}")
                             
                             for result in rag_results:
                                 similarity = result.get('similarity_score', 0)
@@ -760,17 +695,12 @@ def conversational_page():
                                     filtered_results.append(result)
                         
                         rag_time = time.time() - rag_start_time
-                        logger.info(f"⏱️  RAG search completed in {rag_time:.3f}s")
                         
                         if filtered_results:
-                            logger.info(f"✅ Found {len(filtered_results)} relevant chunks, generating response...")
-                            
                             # Time the response generation
                             response_start_time = time.time()
                             response = get_conversational_response(prompt, filtered_results, st.session_state.messages)
                             response_time = time.time() - response_start_time
-                            
-                            logger.info(f"✅ Response generated in {response_time:.3f}s")
                             
                             # Log the interaction
                             performance_metrics = {
@@ -781,7 +711,6 @@ def conversational_page():
                                 "chunks_retrieved": len(rag_results),
                                 "chunks_filtered": len(filtered_results)
                             }
-                            logger.info(f"📊 Performance metrics: {performance_metrics}")
                             
                             log_interaction(prompt, response, filtered_results, performance_metrics)
                             
@@ -795,7 +724,6 @@ def conversational_page():
                                 "content": text_only_response,
                                 "html_content": response  # Store full HTML separately for display
                             })
-                            logger.info(f"📝 Response stored in conversation history. Total messages: {len(st.session_state.messages)}")
                             
                             # Show sources used
                             with st.expander("📚 Sources used"):
@@ -819,14 +747,10 @@ def conversational_page():
                                         seen_sources.add(source_id)
                                         source_counter += 1
                         else:
-                            logger.warning("⚠️  No relevant chunks found, using fallback response...")
-                            
                             # Time the fallback response generation
                             response_start_time = time.time()
                             response = get_conversational_response_without_rag(prompt, st.session_state.messages)
                             response_time = time.time() - response_start_time
-                            
-                            logger.info(f"✅ Fallback response generated in {response_time:.3f}s")
                             
                             # Log the interaction
                             performance_metrics = {
@@ -837,7 +761,6 @@ def conversational_page():
                                 "chunks_retrieved": len(rag_results),
                                 "chunks_filtered": 0
                             }
-                            logger.info(f"📊 Performance metrics (fallback): {performance_metrics}")
                             
                             log_interaction(prompt, response, [], performance_metrics)
                             
@@ -847,7 +770,6 @@ def conversational_page():
                                 "content": response,
                                 "html_content": response  # For fallback responses, HTML and text are the same
                             })
-                            logger.info(f"📝 Fallback response stored in conversation history. Total messages: {len(st.session_state.messages)}")
                         
                 except Exception as e:
                     logger.error(f"❌ Error during response generation: {e}")
@@ -855,19 +777,14 @@ def conversational_page():
                     error_msg = f"Sorry, I encountered an error: {e}"
                     st.error(error_msg)
                     st.session_state.messages.append({"role": "assistant", "content": error_msg})
-                    logger.error(f"📝 Error message stored in conversation history")
     
     # Clear chat button
     if st.button("🗑️ Clear Chat"):
-        logger.info("🗑️ Clear chat button clicked")
         st.session_state.messages = []
-        logger.info("📝 Chat history cleared")
         st.rerun()
-    logger.info("✅ Exiting conversational_page function")
 
 def research_page():
     """Research search page."""
-    logger.info("🚀 Entering research_page function")
     st.header("🔍 Research Paper Search")
     st.markdown("Search through Michael Levin's research papers to find relevant information.")
     
@@ -880,40 +797,28 @@ def research_page():
     # Search button
     if st.button("🔍 Search Papers", type="primary"):
         if query.strip():
-            logger.info(f"🔍 Research search initiated for query: '{query[:100]}...'")
             with st.spinner("Searching..."):
                 try:
                     # Get top_k from session state (set by sidebar)
                     top_k = st.session_state.get('top_k', 10)
-                    logger.info(f"🔍 Research search parameters - top_k: {top_k}")
                     
                     # Get similarity threshold based on query length
                     similarity_threshold = get_similarity_threshold(query)
-                    logger.info(f"🔍 Similarity threshold: {similarity_threshold}")
                     
                     # Get relevant chunks (no filtering - show all document types)
-                    logger.info("🔍 Starting research search...")
                     retriever = st.session_state.retriever
                     results = retriever.retrieve_relevant_chunks(query, top_k=top_k)
-                    logger.info(f"🔍 Research search complete. Raw results count: {len(results)}")
                     
                     # Filter results by similarity threshold
-                    logger.info("🔍 Filtering research results by similarity threshold...")
                     filtered_results = []
                     for result in results:
                         similarity = result.get('similarity_score', 0)
                         if similarity >= similarity_threshold:
                             filtered_results.append(result)
-                        else:
-                            pass  # Removed verbose logging for each result
-                    
-                    logger.info(f"🔍 Research filtering complete. Filtered results: {len(filtered_results)} / {len(results)}")
                     
                     # If no results meet the threshold, use a lower threshold
                     if not filtered_results and results:
-                        logger.info("⚠️  No research results met threshold, lowering threshold...")
                         lower_threshold = max(0.2, similarity_threshold - 0.2)
-                        logger.info(f"🔍 Lowered threshold to: {lower_threshold}")
                         
                         for result in results:
                             similarity = result.get('similarity_score', 0)
@@ -921,7 +826,6 @@ def research_page():
                                 filtered_results.append(result)
                     
                     if filtered_results:
-                        logger.info(f"✅ Found {len(filtered_results)} relevant research results")
                         st.success(f"Found {len(filtered_results)} relevant results! (Filtered from {len(results)} total results)")
                         
                         # Display results
@@ -949,7 +853,6 @@ def research_page():
                                 with st.expander("📖 View full text"):
                                     st.text(result.get('text', ''))
                     else:
-                        logger.warning("⚠️  No relevant research results found")
                         st.warning("I'm sorry, I cannot find a resource related to your query. Try rephrasing your question.")
                         
                 except Exception as e:
@@ -957,22 +860,15 @@ def research_page():
                     logger.error(f"❌ Traceback: {traceback.format_exc()}")
                     st.error(f"Search failed: {e}")
         else:
-            logger.warning("⚠️  Empty query submitted to research page")
             st.warning("Please enter a question to search.")
-    
-    logger.info("✅ Exiting research_page function")
 
 def main():
     """Main Streamlit app."""
-    logger.info("🚀 Starting Streamlit app main function")
-    
     st.set_page_config(
         page_title="Michael Levin RAG System",
         page_icon="🧠",
         layout="wide"
     )
-    
-    logger.info("📱 Page configuration set")
     
     # Custom CSS for dark background
     st.markdown("""
@@ -1074,8 +970,6 @@ def main():
     </style>
     """, unsafe_allow_html=True)
     
-    logger.info("🎨 Custom CSS applied")
-    
     thinking_box = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/thinking_box_cropped.gif"
     
     # Header
@@ -1086,88 +980,44 @@ def main():
     """, unsafe_allow_html=True)
     st.markdown("Explore Michael Levin's research on developmental biology, collective intelligence, and bioelectricity.")
 
-        # <img src='{thinking_box}' alt="Thinking Box" style="width: 320px; height: 480px; border-radius: 10px;">
-
     # Check API keys first
-    logger.info("🔑 Checking API keys...")
     if not check_api_keys():
-        logger.error("❌ API key check failed")
         st.stop()
-    
-    logger.info("✅ API key check passed")
     
     # Initialize RAG system
     try:
-        logger.info("🤖 Initializing RAG system...")
-        
         if 'retriever' not in st.session_state:
-            logger.info("🆕 Creating new retriever instance...")
             with st.spinner("Loading RAG system..."):
                 # Use absolute path to ensure we always get the correct FAISS index
                 faiss_dir = Path(__file__).parent / "media_pipelines/scientific_publications/data/transformed_data/vector_embeddings"
-                logger.info(f"🔍 FAISS directory path: {faiss_dir}")
-                logger.info(f"🔍 FAISS directory exists: {faiss_dir.exists()}")
-                
-                if faiss_dir.exists():
-                    logger.info(f"🔍 FAISS directory contents: {list(faiss_dir.glob('*'))}")
                 
                 st.session_state.retriever = RelevantChunksRetrieverFAISS(faiss_dir)
-                logger.info("✅ Retriever instance created successfully")
         else:
-            logger.info("✅ Retriever already exists in session state")
+            pass
         
         # Set default top_k value
         if 'top_k' not in st.session_state:
             st.session_state['top_k'] = 10
-            logger.info("🔧 Set default top_k to 10")
         
         # Show stats and update engram count
-        logger.info("📊 Getting collection stats...")
         stats = st.session_state.retriever.get_collection_stats()
-        logger.info(f"📊 Collection stats: {stats}")
-        
-        # Log current app state
-        log_app_state()
-        
-        # if stats.get('total_chunks'):
-        #     # Display engram count below the GIF
-        #     col1, col2, col3 = st.columns([1, 1, 1])
-        #     with col2:
-        #         st.metric("🧠 Total Engrams", f"{stats['total_chunks']:,}")
-        
-
         
         # Search parameters
         st.sidebar.markdown(f"""<h3><img src='{thinking_box}' alt="Thinking Box" style="width: 240px; height: 270px; border-radius: 10px;"></h3>""", unsafe_allow_html=True)
         st.sidebar.metric("Total Engrams Indexed", stats['total_chunks'])
 
-        # top_k = st.sidebar.slider(
-        #     "Number of results to retrieve",
-        #     min_value=1,
-        #     max_value=20,
-        #     value=20,
-        #     key="top_k"
-        # )
-        
         # Page selection
-        # st.sidebar.header("📄 Pages")
         page = st.sidebar.radio(
             "Choose a page:",
             ["💬 Chat with Michael Levin", "🔍 Research Search"]
         )
         
-        logger.info(f"📄 Selected page: {page}")
-        
         st.markdown("---")
 
         if page == "💬 Chat with Michael Levin":
-            logger.info("🚀 Loading conversational page...")
             conversational_page()
         elif page == "🔍 Research Search":
-            logger.info("🚀 Loading research search page...")
             research_page()
-        
-        logger.info("✅ Main app initialization complete")
         
     except Exception as e:
         logger.error(f"❌ Failed to initialize RAG system: {e}")
