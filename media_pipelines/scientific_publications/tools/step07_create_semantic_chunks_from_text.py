@@ -130,10 +130,9 @@ def extract_page_number_from_text(text: str) -> Optional[str]:
 class SemanticTextChunker:
     """Handles semantic chunking of extracted text files using Gemini 2.5 Flash with schema validation."""
     
-    def __init__(self, input_dir: Path, output_dir: Path, prompt_file: Path):
+    def __init__(self, input_dir: Path, output_dir: Path):
         self.extracted_text_dir = input_dir
         self.chunked_dir = output_dir
-        self.prompt_file = prompt_file
         
         # Create directories
         self.chunked_dir.mkdir(parents=True, exist_ok=True)
@@ -150,18 +149,89 @@ class SemanticTextChunker:
         # Create the model with schema validation
         self.model = genai.GenerativeModel('gemini-1.5-pro')
         
-        # Load the chunking prompt
-        self.prompt = self._load_prompt()
+        # Set the chunking prompt directly
+        self.prompt = self._get_chunking_prompt()
         
-    def _load_prompt(self) -> str:
-        """Load the chunking prompt from file."""
-        if not self.prompt_file.exists():
-            raise FileNotFoundError(f"Prompt file not found: {self.prompt_file}")
+    def _get_chunking_prompt(self) -> str:
+        """Return the embedded chunking prompt."""
+        prompt = """You are a scientific paper analysis AI assisting with knowledge retrieval. Your task is to semantically chunk the provided Michael Levin scientific paper (PDF format) into meaningful units suitable for question answering and knowledge base construction. Michael Levin is a prominent researcher known for his work on bioelectricity, developmental biology, and regenerative medicine.
+
+**CRITICAL: You must return ONLY a valid JSON array. No additional text, explanations, or markdown formatting.**
+
+**MANDATORY REQUIREMENT: You MUST process the ENTIRE document from the very first page to the very last page. This is NOT optional. You must read and chunk every section of the paper including Abstract, Introduction, Methods, Results, Discussion, Conclusion, References, and any appendices. ALL sections are equally important - do not focus only on the beginning. A typical scientific paper should yield 15-50 chunks depending on length and complexity. If you stop early, you are not fulfilling the requirement.**
+
+**CRITICAL JSON FORMATTING: Your JSON response must be perfectly formatted with NO line breaks within string values. All text content must be on single lines with no special characters or formatting that would break JSON parsing.**
+
+**JSON PARSING REQUIREMENTS:**
+- Your response will be parsed by Python's json.loads() function
+- All string values must be properly quoted with double quotes
+- Escape any quotes within text content with backslash: \" becomes \\\"
+- NO line breaks within string values - all text must be on single lines
+- NO trailing commas before closing braces or brackets
+- NO markdown code blocks - return only the JSON array
+- The JSON must be parseable without any preprocessing
+
+Return a JSON array of chunk objects. Each chunk should represent a self-contained, semantically meaningful unit, ideally between 100-300 words, and can span across page boundaries if necessary to maintain logical flow. The JSON structure must be exactly as follows:
+
+```json
+[
+  {
+    "text": "The actual text of the chunk. This must be a complete string without line breaks or special characters.",
+    "section": "Abstract",
+    "topic": "Concise topic/concept (e.g., Bioelectric signaling in regeneration, Gap junctions, Computational modeling)",
+    "chunk_summary": "One-sentence summary of the chunk's core message. Must be a complete string.",
+    "position_in_section": "Beginning",
+    "certainty_level": "High",
+    "citation_context": "Describing prior work"
+  }
+]
+```
+
+**JSON FORMATTING REQUIREMENTS:**
+1. **NO line breaks within string values** - all text must be on single lines
+2. **NO trailing commas** - remove any commas before closing braces or brackets
+3. **ALL fields are required** - every chunk must have all 7 fields
+4. **Valid values only:**
+   - `section`: "Abstract", "Introduction", "Methods", "Results", "Discussion", "Conclusion", "Materials and Methods", "Experimental", "Background", "Literature Review", "Analysis", "Summary", "Future Work", "References", "Appendix"
+   - `position_in_section`: "Beginning", "Middle", "End"
+   - `certainty_level`: "High", "Medium", "Low"
+   - `citation_context`: "Describing prior work", "Presenting new results", "Drawing conclusions", "None"
+5. **String values must be properly quoted and escaped**
+6. **NO comments or explanatory text** - only the JSON array
+7. **CRITICAL: All text content must be single-line strings with no line breaks, tabs, or special formatting characters**
+8. **ESCAPE QUOTES: If text contains quotes, escape them with backslash: \" becomes \\\"**
+
+**Specific Instructions:**
+
+* **MANDATORY: Process the ENTIRE document:** You MUST read and chunk the complete paper from the very first word to the very last word. You must process every single page, every single section. Do not stop after the introduction or abstract. Continue through ALL sections including Methods, Results, Discussion, Conclusion, References, and any appendices. This is a strict requirement.
+* **ALL sections are equally important:** Do not prioritize any section over others. Methods, Results, and Discussion sections contain crucial information and must be processed completely.
+* **Focus on Levin's core arguments and contributions:** When chunking, prioritize extracting information that directly reflects Levin's unique perspectives and findings within the fields of bioelectricity, regeneration, developmental biology, intelligence, consciousness, and related areas.
+* **Contextual Awareness:** Consider Levin's established body of work when interpreting the meaning and significance of each chunk.
+* **Semantic Completeness:** Chunks should represent complete thoughts and avoid fragmentation. Span across page boundaries if necessary to capture the full context of an idea.
+* **Concise Topics:** Assign a concise and informative "topic" that accurately reflects the central theme of the chunk. Consider using keywords relevant to Levin's research, such as: "Bioelectric signaling," "Ion channels," "embryogenesis", "Cell communication," "Pattern formation," "Regenerative medicine," "intelligence", "Developmental plasticity," "Computational modeling," etc.
+* **Citation Context:** Identify whether the chunk primarily discusses prior work, presents new results from the current paper, or draws conclusions based on the findings.
+* **Ignore Irrelevant Content:** Exclude captions, footnotes, and references to visual figures unless semantically crucial for understanding the chunk's core meaning. Do not include page numbers or other formatting artifacts.
+* **CRITICAL: JSON Formatting:** Ensure all text content is properly escaped and contains no line breaks, tabs, or special characters that would break JSON parsing.
+
+**Example of CORRECT JSON format:**
+
+```json
+[
+  {
+    "text": "Recent work has shown the critical role of bioelectric signaling in guiding morphogenesis. Specifically, ion channels and gap junctions mediate cellular communication patterns that determine tissue organization and regeneration outcomes.",
+    "section": "Introduction",
+    "topic": "Bioelectric signaling in development",
+    "chunk_summary": "Bioelectric signals, mediated by ion channels and gap junctions, play a crucial role in guiding morphogenesis.",
+    "position_in_section": "Beginning",
+    "certainty_level": "High",
+    "citation_context": "Describing prior work"
+  }
+]
+```
+
+**MANDATORY: Process the ENTIRE PDF from the very first page to the very last page and return ONLY the JSON array as specified above. You must read every single page of the document. Ensure the JSON is valid and can be parsed without errors. All text content must be single-line strings with no line breaks or special formatting characters.**"""
         
-        with open(self.prompt_file, 'r', encoding='utf-8') as f:
-            prompt = f.read().strip()
-        
-        logger.info(f"📝 Loaded chunking prompt ({len(prompt)} characters)")
+        logger.info(f"📝 Using embedded chunking prompt ({len(prompt)} characters)")
         return prompt
     
     def get_text_files_to_process(self, max_files: int = 5) -> List[Dict]:
@@ -568,7 +638,7 @@ Please process the attached text and return the semantic chunks as specified abo
             worker_chunker = SemanticTextChunker(
                 self.extracted_text_dir, 
                 self.chunked_dir, 
-                self.prompt_file
+                # Removed prompt_file parameter as it's now hardcoded
             )
             
             # Process the text file
@@ -685,12 +755,6 @@ def main():
         help="Directory to save chunked JSON files"
     )
     parser.add_argument(
-        "--prompt-file",
-        type=Path,
-        default=Path("data/chunking_prompt.txt"),
-        help="Path to the chunking prompt file"
-    )
-    parser.add_argument(
         "--max-files",
         type=int,
         default=5,
@@ -706,7 +770,7 @@ def main():
     args = parser.parse_args()
     
     try:
-        chunker = SemanticTextChunker(args.input_dir, args.output_dir, args.prompt_file)
+        chunker = SemanticTextChunker(args.input_dir, args.output_dir)
         summary = chunker.run_chunking(max_files=args.max_files, parallel_workers=args.parallel_workers)
         
         print("✅ Semantic text chunking completed!")
