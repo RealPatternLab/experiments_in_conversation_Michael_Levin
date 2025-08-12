@@ -291,6 +291,10 @@ class RelevantChunksRetrieverFAISS:
                     original_idx = filtered_indices[idx]
                     metadata = self.metadata[original_idx]
                     
+                    # Debug logging to see what's in metadata
+                    logger.info(f"🔍 DEBUG: Processing chunk {i}, metadata keys: {list(metadata.keys())}")
+                    logger.info(f"🔍 DEBUG: chunk_index in metadata: {metadata.get('chunk_index', 'NOT_FOUND')}")
+                    
                     # Convert distance to similarity score
                     similarity_score = 1.0 - distance
                     
@@ -324,6 +328,11 @@ class RelevantChunksRetrieverFAISS:
                         'frame_path': metadata.get('frame_path'),
                         'semantic_topics': metadata.get('semantic_topics', {})
                     }
+                    
+                    # Debug logging to see what's in the created chunk
+                    logger.info(f"🔍 DEBUG: Created chunk keys: {list(chunk.keys())}")
+                    logger.info(f"🔍 DEBUG: chunk_index in created chunk: {chunk.get('chunk_index', 'NOT_FOUND')}")
+                    
                     chunks.append(chunk)
             
             logger.info(f"✅ Retrieved {len(chunks)} most relevant chunks")
