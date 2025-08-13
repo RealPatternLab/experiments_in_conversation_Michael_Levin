@@ -130,51 +130,155 @@ class VectorEmbedder:
         if max_files:
             chunk_files = chunk_files[:max_files]
         
-        # Filter out already processed files
-        processed_files = []
-        for chunk_file in chunk_files:
-            base_name = chunk_file.stem.replace('_chunks', '')
-            embedding_file = self.output_dir / f"{base_name}_embeddings.pkl"
-            
-            if not embedding_file.exists():
-                processed_files.append(chunk_file)
-        
-        return processed_files
+        # Return all chunk files - we'll create a consolidated FAISS index
+        # instead of individual embedding files
+        return chunk_files
     
-    def process_file(self, chunk_file: Path) -> bool:
-        """Process a single chunk file and create FAISS index."""
-        try:
-            self.logger.info(f"Processing: {chunk_file.name}")
-            
-            # Load chunk data
-            with open(chunk_file, 'r', encoding='utf-8') as f:
-                chunk_data = json.load(f)
-            
-            if 'chunks' not in chunk_data or not chunk_data['chunks']:
-                self.logger.warning(f"No chunks found in {chunk_file.name}")
-                return False
-            
-            chunks = chunk_data['chunks']
-            embeddings = []
-            
-            # Generate embeddings for each chunk
-            for chunk in chunks:
-                text = chunk.get('text', '')
-                if text:
-                    embedding = self.generate_embedding(text)
-                    if embedding:
-                        embeddings.append(embedding)
+    def process_files(self, max_files: Optional[int] = None) -> Dict:
+        """Process multiple chunk files and create a consolidated FAISS index."""
+        chunk_files = self.get_chunk_files_to_process(max_files)
+        
+        if not chunk_files:
+            self.logger.info("No files to process")
+            return {"total": 0, "processed": 0, "failed": 0}
+        
+        self.logger.info(f"Processing {len(chunk_files)} chunk files to create consolidated FAISS index...")
+        
+        all_chunks = []
+        all_embeddings = []
+        all_metadata = []
+        
+        processed = 0
+        failed = 0
+        
+        # Process each chunk file and collect all chunks and embeddings
+        for chunk_file in chunk_files:
+            try:
+                self.logger.info(f"Loading chunks from: {chunk_file.name}")
+                
+                # Load chunk data
+                with open(chunk_file, 'r', encoding='utf-8') as f:
+                    chunk_data = json.load(f)
+                
+                if 'chunks' not in chunk_data or not chunk_data['chunks']:
+                    self.logger.warning(f"No chunks found in {chunk_file.name}")
+                    failed += 1
+                    continue
+                
+                chunks = chunk_data['chunks']
+                self.logger.info(f"Found {len(chunks)} chunks in {chunk_file.name}")
+                
+                # Generate embeddings for each chunk
+                file_embeddings = []
+                file_metadata = []
+                
+                for i, chunk in enumerate(chunks):
+                    text = chunk.get('text', '')
+                    if text:
+                        embedding = self.generate_embedding(text)
+                        if embedding:
+                            file_embeddings.append(embedding)
+                            
+                            # Calculate word and character counts
+                            word_count = len(text.split()) if text else 0
+                            character_count = len(text) if text else 0
+                            
+                            # Create sanitized filename from original filename
+                            original_filename = chunk.get('original_filename', '')
+                            pdf_filename = chunk.get('pdf_filename', '')
+                            
+                            # For PDF citations, we want the actual PDF filename, not the extracted text filename
+                            if pdf_filename and pdf_filename.endswith('.pdf'):
+                                sanitized_filename = pdf_filename
+                            elif original_filename and original_filename.endswith('.pdf'):
+                                sanitized_filename = original_filename
+                            elif original_filename and original_filename.endswith('_extracted_text.txt'):
+                                # Extract the base name and add .pdf extension
+                                base_name = original_filename.replace('_extracted_text.txt', '')
+                                sanitized_filename = f"{base_name}.pdf"
+                            else:
+                                # Fallback to original filename
+                                sanitized_filename = original_filename if original_filename else pdf_filename
+                            
+                            # Look up enriched metadata for this file
+                            enriched_metadata = self._get_enriched_metadata(sanitized_filename)
+                            
+                            # Extract title from enriched metadata or filename
+                            title = enriched_metadata.get('title') if enriched_metadata else ''
+                            if not title and original_filename:
+                                # Try to extract title from filename
+                                title = original_filename.replace('.pdf', '').replace('_', ' ').title()
+                            
+                            # Set document type based on available info
+                            document_type = enriched_metadata.get('document_type', 'research_paper') if enriched_metadata else 'research_paper'
+                            
+                            metadata_entry = {
+                                'chunk_id': len(all_metadata),
+                                'chunk_index': len(all_metadata),  # Same as chunk_id for compatibility
+                                'text': text,
+                                'section': chunk.get('section', ''),
+                                'topic': chunk.get('topic', ''),
+                                'chunk_summary': chunk.get('chunk_summary', ''),
+                                'position_in_section': chunk.get('position_in_section', ''),
+                                'certainty_level': chunk.get('certainty_level', ''),
+                                'citation_context': chunk.get('citation_context', ''),
+                                'word_count': word_count,
+                                'character_count': character_count,
+                                'pdf_filename': pdf_filename,
+                                'original_filename': original_filename,
+                                'sanitized_filename': sanitized_filename,
+                                'title': title,
+                                'authors': enriched_metadata.get('authors', 'Unknown') if enriched_metadata else 'Unknown',
+                                'year': enriched_metadata.get('publication_year', 'Unknown') if enriched_metadata else 'Unknown',
+                                'publication_date': enriched_metadata.get('publication_year', 'Unknown') if enriched_metadata else 'Unknown',
+                                'journal': enriched_metadata.get('journal', 'Unknown') if enriched_metadata else 'Unknown',
+                                'doi': enriched_metadata.get('doi', 'Unknown') if enriched_metadata else 'Unknown',
+                                'document_type': document_type,
+                                'page_number': chunk.get('page_number', ''),
+                                # Add YouTube-specific fields (empty for PDFs)
+                                'youtube_url': '',
+                                'start_time': None,
+                                'end_time': None,
+                                'frame_path': '',
+                                # Add semantic topics (empty for now)
+                                'semantic_topics': {}
+                            }
+                            
+                            file_metadata.append(metadata_entry)
+                        else:
+                            self.logger.warning(f"Failed to generate embedding for chunk {i} in {chunk_file.name}")
+                            failed += 1
+                            continue
                     else:
-                        self.logger.warning(f"Failed to generate embedding for chunk")
-                        return False
-            
-            if not embeddings:
-                self.logger.warning(f"No embeddings generated for {chunk_file.name}")
-                return False
+                        self.logger.warning(f"Empty text for chunk {i} in {chunk_file.name}")
+                        failed += 1
+                        continue
+                
+                if file_embeddings:
+                    all_embeddings.extend(file_embeddings)
+                    all_metadata.extend(file_metadata)
+                    processed += 1
+                    self.logger.info(f"✅ Successfully processed {chunk_file.name} - {len(file_embeddings)} chunks")
+                else:
+                    self.logger.warning(f"No valid embeddings generated for {chunk_file.name}")
+                    failed += 1
+                    
+            except Exception as e:
+                self.logger.error(f"Error processing {chunk_file.name}: {e}")
+                failed += 1
+                continue
+        
+        if not all_embeddings:
+            self.logger.error("No embeddings generated from any files")
+            return {"total": len(chunk_files), "processed": 0, "failed": len(chunk_files)}
+        
+        # Create consolidated FAISS index from all embeddings
+        try:
+            self.logger.info(f"Creating consolidated FAISS index from {len(all_embeddings)} total chunks...")
             
             # Convert embeddings to numpy array
-            embeddings_array = np.array(embeddings, dtype=np.float32)
-            self.logger.info(f"Generated {len(embeddings)} embeddings with shape: {embeddings_array.shape}")
+            embeddings_array = np.array(all_embeddings, dtype=np.float32)
+            self.logger.info(f"Generated {len(all_embeddings)} embeddings with shape: {embeddings_array.shape}")
             
             # Create FAISS index
             dimension = embeddings_array.shape[1]
@@ -186,77 +290,7 @@ class VectorEmbedder:
             
             self.logger.info(f"FAISS index created with {index.ntotal} vectors")
             
-            # Prepare metadata for the app
-            metadata = []
-            for i, chunk in enumerate(chunks):
-                # Calculate word and character counts
-                text = chunk.get('text', '')
-                word_count = len(text.split()) if text else 0
-                character_count = len(text) if text else 0
-                
-                # Create sanitized filename from original filename
-                original_filename = chunk.get('original_filename', '')
-                pdf_filename = chunk.get('pdf_filename', '')
-                
-                # For PDF citations, we want the actual PDF filename, not the extracted text filename
-                # The sanitized_filename should point to the PDF file
-                if pdf_filename and pdf_filename.endswith('.pdf'):
-                    sanitized_filename = pdf_filename
-                elif original_filename and original_filename.endswith('.pdf'):
-                    sanitized_filename = original_filename
-                elif original_filename and original_filename.endswith('_extracted_text.txt'):
-                    # Extract the base name and add .pdf extension
-                    base_name = original_filename.replace('_extracted_text.txt', '')
-                    sanitized_filename = f"{base_name}.pdf"
-                else:
-                    # Fallback to original filename
-                    sanitized_filename = original_filename if original_filename else pdf_filename
-                
-                # Look up enriched metadata for this file
-                enriched_metadata = self._get_enriched_metadata(sanitized_filename)
-                
-                # Extract title from enriched metadata or filename
-                title = enriched_metadata.get('title') if enriched_metadata else ''
-                if not title and original_filename:
-                    # Try to extract title from filename
-                    title = original_filename.replace('.pdf', '').replace('_', ' ').title()
-                
-                # Set document type based on available info
-                document_type = enriched_metadata.get('document_type', 'research_paper') if enriched_metadata else 'research_paper'
-                
-                metadata.append({
-                    'chunk_id': i,
-                    'chunk_index': i,  # Same as chunk_id for compatibility
-                    'text': chunk.get('text', ''),
-                    'section': chunk.get('section', ''),
-                    'topic': chunk.get('topic', ''),
-                    'chunk_summary': chunk.get('chunk_summary', ''),
-                    'position_in_section': chunk.get('position_in_section', ''),
-                    'certainty_level': chunk.get('certainty_level', ''),
-                    'citation_context': chunk.get('citation_context', ''),
-                    'word_count': word_count,
-                    'character_count': character_count,
-                    'pdf_filename': chunk.get('pdf_filename', ''),
-                    'original_filename': chunk.get('original_filename', ''),
-                    'sanitized_filename': sanitized_filename,
-                    'title': title,
-                    'authors': enriched_metadata.get('authors', 'Unknown') if enriched_metadata else 'Unknown',
-                    'year': enriched_metadata.get('publication_year', 'Unknown') if enriched_metadata else 'Unknown',
-                    'publication_date': enriched_metadata.get('publication_year', 'Unknown') if enriched_metadata else 'Unknown',
-                    'journal': enriched_metadata.get('journal', 'Unknown') if enriched_metadata else 'Unknown',
-                    'doi': enriched_metadata.get('doi', 'Unknown') if enriched_metadata else 'Unknown',
-                    'document_type': document_type,
-                    'page_number': chunk.get('page_number', ''),
-                    # Add YouTube-specific fields (empty for PDFs)
-                    'youtube_url': '',
-                    'start_time': None,
-                    'end_time': None,
-                    'frame_path': '',
-                    # Add semantic topics (empty for now)
-                    'semantic_topics': {}
-                })
-            
-            # Save files in the format expected by the Streamlit app
+            # Save consolidated files
             self.output_dir.mkdir(parents=True, exist_ok=True)
             
             # Save FAISS index
@@ -272,34 +306,14 @@ class VectorEmbedder:
             # Save metadata
             metadata_path = self.output_dir / "chunks_metadata.pkl"
             with open(metadata_path, 'wb') as f:
-                pickle.dump(metadata, f)
+                pickle.dump(all_metadata, f)
             self.logger.info(f"Saved metadata to: {metadata_path}")
             
-            self.logger.info(f"✅ Successfully created FAISS index with {len(chunks)} chunks")
-            return True
+            self.logger.info(f"🎉 Successfully created consolidated FAISS index with {len(all_embeddings)} chunks from {processed} files")
             
         except Exception as e:
-            self.logger.error(f"Error processing {chunk_file.name}: {e}")
-            return False
-    
-    def process_files(self, max_files: Optional[int] = None) -> Dict:
-        """Process multiple chunk files."""
-        chunk_files = self.get_chunk_files_to_process(max_files)
-        
-        if not chunk_files:
-            self.logger.info("No files to process")
-            return {"total": 0, "processed": 0, "failed": 0}
-        
-        self.logger.info(f"Processing {len(chunk_files)} files...")
-        
-        processed = 0
-        failed = 0
-        
-        for chunk_file in chunk_files:
-            if self.process_file(chunk_file):
-                processed += 1
-            else:
-                failed += 1
+            self.logger.error(f"Error creating consolidated FAISS index: {e}")
+            return {"total": len(chunk_files), "processed": 0, "failed": len(chunk_files)}
         
         results = {
             "total": len(chunk_files),
@@ -307,7 +321,7 @@ class VectorEmbedder:
             "failed": failed
         }
         
-        self.logger.info(f"Processing complete: {processed} successful, {failed} failed")
+        self.logger.info(f"📊 Processing complete: {processed} files successfully processed, {failed} files failed")
         return results
 
 

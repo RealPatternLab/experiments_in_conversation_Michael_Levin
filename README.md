@@ -1,126 +1,163 @@
-# Michael Levin QA Engine - Refactored Architecture
+# Scientific Publications Pipeline
 
-This repository has been completely refactored to provide a clean, organized structure for creating digital twins of scientific public figures through multiple specialized media pipelines.
+A comprehensive pipeline for processing scientific publications (PDFs) through multiple stages including metadata extraction, semantic chunking, and vector embedding for RAG applications.
 
-## 🎯 Project Goal
+## 🏗️ **Architecture Overview**
 
-Create comprehensive digital twins of specific scientific public figures by processing and organizing:
-- Scientific publications and research papers
-- YouTube presentations and lectures
-- Podcast conversations and interviews
-- Other media types as needed
+The pipeline is designed with a **separation of concerns** approach:
 
-Each media type is processed into:
-- **Semantic chunks** for RAG (Retrieval-Augmented Generation) applications
-- **Q&A pairs** for fine-tuning language models
+### **Main Pipeline** (`run_scientific_publications_pipeline.py`)
+- **Purpose**: Process PDFs through steps 1-8 (data ingestion and transformation)
+- **Frequency**: Runs continuously as new files arrive
+- **Output**: Processed chunks ready for embedding
 
-## 🏗️ New Architecture
+### **Embedding Service** (`embed_all_processed_chunks.py`)
+- **Purpose**: Create FAISS search index from all processed chunks
+- **Frequency**: Runs on schedule (e.g., once per day)
+- **Output**: Updated search index for RAG applications
 
-### Archive
-- **Location**: `archive/`
-- **Purpose**: Contains all previous code and implementations
-- **Use**: Reference for existing functionality and gradual migration
+This separation allows for:
+- **Real-time processing** of new PDFs
+- **Efficient bulk embedding** during off-peak hours
+- **Independent scaling** of processing vs. embedding
+- **Better operational control** and monitoring
 
-### Media Pipelines
-- **Location**: `media_pipelines/`
-- **Structure**: Each media type has its own complete pipeline
-- **Benefits**: Independent development, specialized tools, clear data flow
+## 🚀 **Quick Start**
 
-#### Current Pipelines
-1. **Scientific Publications** - PDF processing and academic content
-2. **YouTube Videos - Formal Solo Presentations** - Lectures and academic talks
-3. **YouTube Videos - Podcasts (1-on-0)** - Solo podcast episodes
-4. **YouTube Videos - Podcasts (1-on-1)** - Two-person conversations
-5. **YouTube Videos - Podcasts (1-on-2)** - Three-person discussions
-6. **YouTube Videos - Podcasts (1-on-3)** - Four-person conversations
-7. **YouTube Videos - Podcasts (1-on-4)** - Five-person panel discussions
-8. **Raw Ingestion** - Common ingestion layer for all media types
+### **1. Run the Main Pipeline (Steps 1-8)**
+```bash
+# Process all PDFs through the pipeline
+uv run python3 run_scientific_publications_pipeline.py
 
-### Global Tools
-- **Location**: `global_tools/`
-- **Purpose**: Tools and utilities applicable to all media types
-- **Examples**: Database utilities, embedding functions, common data structures
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Python 3.8+
-- Required dependencies (see individual pipeline requirements)
-- API keys for external services (OpenAI, AssemblyAI, etc.)
-
-### Development Workflow
-1. **Choose a pipeline** based on your media type
-2. **Review the pipeline README** for specific requirements
-3. **Implement pipeline-specific tools** in the `tools/` subdirectory
-4. **Add global utilities** to `global_tools/` if applicable
-5. **Test independently** without affecting other pipelines
-
-## 📁 Directory Structure
-
-```
-michael-levin-qa-engine-1/
-├── archive/                    # All previous code and implementations
-├── media_pipelines/            # Specialized media processing pipelines
-│   ├── scientific_publications/
-│   │   ├── pipeline/          # Main processing scripts
-│   │   ├── tools/             # Pipeline-specific tools
-│   │   └── data/
-│   │       ├── source_data/   # Raw input files
-│   │       └── transformed_data/ # Processed outputs
-│   ├── youtube_videos_*/      # Various YouTube video types
-│   └── raw_ingestion/         # Common ingestion layer
-├── global_tools/               # Tools for all media types
-├── .git/                       # Version control
-└── .gitignore                  # Git ignore rules
+# Start from a specific step
+uv run python3 run_scientific_publications_pipeline.py --start-from-step 5
 ```
 
-## 🔧 Pipeline Development
+### **2. Create Search Index (Step 9)**
+```bash
+# Embed all processed chunks into FAISS index
+uv run python3 tools/embed_all_processed_chunks.py
 
-Each pipeline follows a consistent structure:
-- **`pipeline/`**: Main orchestration and processing scripts
-- **`tools/`**: Specialized utilities for that media type
-- **`data/source_data/`**: Raw input files and preprocessed data
-- **`data/transformed_data/`**: Final outputs (chunks, embeddings, etc.)
+# Use custom directories
+uv run python3 tools/embed_all_processed_chunks.py \
+    --input-dir data/transformed_data/semantic_chunks \
+    --output-dir data/transformed_data/vector_embeddings
+```
 
-## 📚 Documentation
+## 📋 **Pipeline Steps**
 
-- **Pipeline Overview**: `media_pipelines/README.md`
-- **Individual Pipeline Docs**: Each pipeline has its own README
-- **Archive Documentation**: `archive/` contains all previous documentation
+### **Data Ingestion & Processing (Steps 1-5)**
+1. **Sort and Archive**: Route incoming files, archive all, move PDFs to processing
+2. **Sanitize PDFs**: Detect corruption and clean PDF files
+3. **Extract Metadata**: Use Gemini to extract quick metadata
+4. **Deduplicate**: Remove duplicate PDFs based on metadata
+5. **Extract Text**: Convert PDFs to searchable text
 
-## 🤝 Contributing
+### **Data Transformation (Steps 6-8)**
+6. **Extract Metadata**: Rule-based metadata extraction from text
+7. **Semantic Chunking**: Create meaningful text chunks using Gemini
+8. **Enrich Metadata**: Enhance metadata using Crossref and Unpaywall APIs
 
-1. **Choose a pipeline** to work on
-2. **Follow the established structure** for that pipeline
-3. **Keep pipelines independent** - avoid cross-pipeline dependencies
-4. **Document your changes** in the appropriate README files
-5. **Test thoroughly** before committing
+### **Search Index Creation (Separate Tool)**
+9. **Vector Embeddings**: Generate embeddings and create FAISS index
 
-## 🔄 Migration from Archive
+## 📁 **Directory Structure**
 
-The `archive/` directory contains all previous functionality. To migrate specific features:
+```
+data/
+├── source_data/
+│   ├── raw/                    # New PDFs uploaded here
+│   ├── raw_pdf/               # PDFs ready for processing
+│   ├── archive/               # Archived original files
+│   ├── DLQ/                   # Dead Letter Queue (duplicates, errors)
+│   └── preprocessed/
+│       └── sanitized/
+│           └── pdfs/          # Cleaned PDFs
+└── transformed_data/
+    ├── quick_metadata/        # Gemini-extracted metadata
+    ├── extracted_text/        # PDF text content
+    ├── metadata_extraction/   # Rule-based metadata
+    ├── semantic_chunks/       # Processed text chunks
+    ├── metadata_enrichment/   # Enhanced metadata
+    └── vector_embeddings/     # FAISS index and embeddings
+```
 
-1. **Identify the feature** in the archive
-2. **Determine the appropriate pipeline** for that media type
-3. **Refactor the code** to fit the new pipeline structure
-4. **Update dependencies** to use global tools where appropriate
-5. **Test thoroughly** in the new structure
-6. **Remove from archive** once migration is complete
+## 🔄 **Data Flow**
 
-## 📈 Benefits of New Architecture
+1. **PDF Upload** → `raw/` directory
+2. **Pipeline Processing** → Steps 1-8 transform PDFs into chunks
+3. **Chunk Accumulation** → Chunks ready for embedding
+4. **Scheduled Embedding** → Daily update of search index
+5. **RAG Application** → Streamlit app searches updated index
 
-- **Clean Separation**: Each media type has its own pipeline
-- **Independent Development**: Teams can work on different pipelines
-- **Specialized Tools**: Media-specific processing without conflicts
-- **Clear Data Flow**: Source and transformed data are separated
-- **Easy Testing**: Each pipeline can be tested independently
-- **Scalability**: New media types can be added as new pipelines
-- **Maintainability**: Clear structure makes code easier to understand and modify
+## 🎯 **Output Structure**
 
-## 🚧 Status
+### **Semantic Chunks**
+- JSON files with text chunks and metadata
+- Enhanced with information from quick_metadata
+- Includes page numbers and semantic context
 
-This is a **work in progress**. The archive contains all previous functionality, and pipelines are being developed incrementally. Each pipeline will be fully functional before moving to the next.
+### **FAISS Index**
+- `chunks.index`: Vector search index
+- `chunks_embeddings.npy`: Embedding vectors
+- `chunks_metadata.pkl`: Comprehensive metadata for retrieval
 
-## 📞 Support
+## 🛠️ **Dependencies**
 
-For questions about the new architecture or help with pipeline development, please refer to the individual pipeline documentation or create an issue in this repository. 
+- **Python 3.8+**
+- **uv** for package management
+- **OpenAI API** for embeddings
+- **Google Gemini API** for metadata extraction and chunking
+- **FAISS** for vector similarity search
+- **PyPDF2** for PDF processing
+
+## 📊 **Production Workflow**
+
+### **Continuous Processing**
+```bash
+# Monitor for new PDFs and process continuously
+while true; do
+    uv run python3 run_scientific_publications_pipeline.py
+    sleep 300  # Check every 5 minutes
+done
+```
+
+### **Scheduled Embedding**
+```bash
+# Add to crontab for daily updates at 2 AM
+0 2 * * * cd /path/to/pipeline && uv run python3 tools/embed_all_processed_chunks.py
+```
+
+## 🔍 **Monitoring & Logs**
+
+- **Pipeline logs**: `logs/pipeline.log`
+- **Embedding logs**: `logs/embed_semantic_chunks_faiss.log`
+- **Individual tool logs**: Available in each tool's output
+
+## 🚨 **Troubleshooting**
+
+### **Common Issues**
+1. **Missing API Keys**: Ensure `OPENAI_API_KEY` and `GOOGLE_API_KEY` are set
+2. **Path Issues**: Run from the pipeline root directory
+3. **Dependencies**: Use `uv run` to ensure correct Python environment
+
+### **Debug Mode**
+```bash
+# Check individual steps
+uv run python3 tools/step01_sort_and_archive_incoming_files.py --help
+```
+
+## 📈 **Scaling Considerations**
+
+- **Pipeline**: Can be containerized and auto-scaled
+- **Embedding**: Resource-intensive, run during off-peak hours
+- **Storage**: Monitor disk usage for accumulated chunks
+- **API Limits**: Respect OpenAI and Gemini rate limits
+
+## 🔗 **Integration**
+
+The pipeline integrates with:
+- **Streamlit RAG Application**: Search processed publications
+- **GitHub**: Source control and deployment
+- **Streamlit Cloud**: Hosting and deployment
+- **External APIs**: Crossref, Unpaywall for metadata enrichment 
