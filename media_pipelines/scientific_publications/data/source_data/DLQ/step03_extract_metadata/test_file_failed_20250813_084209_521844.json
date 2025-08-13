@@ -1,8 +1,0 @@
-{
-  "original_filename": "test_file.txt",
-  "failed_at": "2025-08-13T08:42:09.521953",
-  "step": "extract_metadata",
-  "step_number": 3,
-  "reason": "Test failure",
-  "error_details": "This is a test error message"
-}
