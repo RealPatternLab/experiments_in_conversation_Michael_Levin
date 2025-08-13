@@ -1,0 +1,19 @@
+{
+  "document_type": "research_paper",
+  "title": "Transplantation of fragments from different planaria: A bioelectrical model for head regeneration",
+  "authors": [
+    "Javier Cervera",
+    "José A. Manzanares",
+    "Michael Levin",
+    "Salvador Mafe"
+  ],
+  "journal": "Journal of Theoretical Biology",
+  "publication_year": 2023,
+  "doi": "10.1016/j.jtbi.2022.111356",
+  "abstract": "Head-tail polarity morphogenesis is influenced by the electric potential differences across the animal's primary body axis. Regeneration experiments involving the transplantation of tissue fragments between differently polarized planaria (generally wild-type animals are lacking, lateral, biregional and bicaudal animals that make pre-existing differences easy to visualize) can shed light on the bioelectrical signaling mechanisms involved in planarian head and tail regeneration. However, these experiments use planaria from different strains, and the resulting average cell potentials should be triggered by short-time bioelectrical processes. To shed light on this issue, we propose a mathematical bioelectrical model based on the cable equation and on the homogenization method to describe the effects of tissue transplantation on the shape of the regenerative head. We show that relatively small transpositional events over morphologically relevant regions. Our rationale is that the distributions of signaling molecules and gene expression patterns along the anteroposterior axis in planaria are correlated with the trans-epithelial potential profile and the specific morphological defects in which cells with distinct properties but related biological processes are involved. The results of the simulations show that specific and transient bioelectrical actions may have significant morphological effects. Our approach is based on the recently observed bioelectric regenerative, developmental, and cancer biological evidence, which suggests that small and timely spatiotemporal target stimuli initiate sufficient number of other regenerating fragments.",
+  "extraction_confidence": "high",
+  "filename": "1-s2.0-S0022519322003472-main_1122940d_20250812_222107_629493.pdf",
+  "extraction_timestamp": "2025-08-12T22:21:29.657327",
+  "extraction_method": "gemini_pro",
+  "pages_analyzed": 3
+}

@@ -3,21 +3,15 @@
 Scientific Publications Pipeline Orchestrator
 
 This script orchestrates the complete scientific publications processing pipeline,
-running each step sequentially with proper error handling and logging.
-
-Usage:
-    python3 run_scientific_publications_pipeline.py                    # Run all steps
-    python3 run_scientific_publications_pipeline.py --start-from-step 5  # Start from step 5
-    python3 run_scientific_publications_pipeline.py --dry-run          # Show what would be run
+integrating with the pipeline tracker for comprehensive monitoring and control.
 """
 
 import argparse
 import logging
-import subprocess
 import sys
 import time
 from pathlib import Path
-from typing import List, Dict, Optional
+from pipeline_tracker import PipelineTracker
 
 # Configure logging
 logging.basicConfig(
@@ -33,32 +27,30 @@ logger = logging.getLogger(__name__)
 class ScientificPublicationsPipelineOrchestrator:
     """Orchestrates the scientific publications processing pipeline."""
     
-    def __init__(self, pipeline_root: Path):
-        self.pipeline_root = pipeline_root
-        self.tools_dir = pipeline_root / "tools"
-        self.data_dir = pipeline_root / "data"
+    def __init__(self, base_dir: Path = Path("data/source_data"), force_reprocess: bool = False):
+        self.base_dir = base_dir
+        self.force_reprocess = force_reprocess
         
-        # Create logs directory
-        logs_dir = pipeline_root / "logs"
-        logs_dir.mkdir(parents=True, exist_ok=True)
+        # Initialize pipeline tracker
+        self.tracker = PipelineTracker(base_dir)
         
-        # Define pipeline steps with default arguments
+        # Pipeline steps configuration
         self.pipeline_steps = [
             {
                 "name": "Step 1: Sort and Archive Incoming Files",
                 "script": "step01_sort_and_archive_incoming_files.py",
-                "command": ["uv", "run", "python3", "tools/step01_sort_and_archive_incoming_files.py", "--base-dir", "data"],
+                "command": ["uv", "run", "python3", "tools/step01_sort_and_archive_incoming_files.py", "--base-dir", "data/source_data"],
                 "required_inputs": ["data/source_data/raw"],
-                "outputs": ["data/source_data/raw_pdf", "data/source_data/archive"],
+                "outputs": ["data/source_data/raw_pdf"],
                 "description": "Sort incoming files, archive them, and route PDFs to raw_pdf/"
             },
             {
-                "name": "Step 2: Detect Corruption and Sanitize PDFs",
+                "name": "Step 2: Detect Corruption, Sanitize, and Deduplicate PDFs",
                 "script": "step02_detect_corruption_and_sanitize_pdfs.py",
                 "command": ["uv", "run", "python3", "tools/step02_detect_corruption_and_sanitize_pdfs.py", "--base-dir", "data/source_data"],
                 "required_inputs": ["data/source_data/raw_pdf"],
                 "outputs": ["data/source_data/preprocessed/sanitized/pdfs"],
-                "description": "Sanitize PDFs and move to preprocessed directory"
+                "description": "Detect corruption, sanitize PDFs, and perform hash-based deduplication to prevent reprocessing"
             },
             {
                 "name": "Step 3: Extract Quick Metadata with Gemini",
@@ -73,7 +65,7 @@ class ScientificPublicationsPipelineOrchestrator:
                 "script": "step04_deduplicate_pdfs_and_move_to_dlq.py",
                 "command": ["uv", "run", "python3", "tools/step04_deduplicate_pdfs_and_move_to_dlq.py", "--metadata-dir", "data/transformed_data/quick_metadata", "--pdf-dir", "data/source_data/preprocessed/sanitized/pdfs", "--dlq-dir", "data/source_data/DLQ"],
                 "required_inputs": ["data/transformed_data/quick_metadata", "data/source_data/preprocessed/sanitized/pdfs"],
-                "outputs": ["data/source_data/DLQ"],
+                "outputs": ["data/source_data/preprocessed/sanitized/pdfs"],
                 "description": "Deduplicate PDFs based on metadata and move duplicates to DLQ"
             },
             {
@@ -119,38 +111,27 @@ class ScientificPublicationsPipelineOrchestrator:
         ]
     
     def check_prerequisites(self) -> bool:
-        """Check if all required tools and directories exist."""
+        """Check if all prerequisites are met."""
         logger.info("🔍 Checking pipeline prerequisites...")
-        
-        # Check if tools directory exists
-        if not self.tools_dir.exists():
-            logger.error(f"❌ Tools directory not found: {self.tools_dir}")
-            return False
-        
-        # Check if all pipeline scripts exist
-        missing_scripts = []
-        for step in self.pipeline_steps:
-            script_path = self.tools_dir / step["script"]
-            if not script_path.exists():
-                missing_scripts.append(step["script"])
-        
-        if missing_scripts:
-            logger.error(f"❌ Missing pipeline scripts: {missing_scripts}")
-            return False
         
         # Check if uv is available
         try:
-            subprocess.run(["uv", "--version"], capture_output=True, check=True)
-            logger.info("✅ uv is available")
-        except (subprocess.CalledProcessError, FileNotFoundError):
-            logger.error("❌ uv is not available. Please install uv first.")
+            import subprocess
+            result = subprocess.run(["uv", "--version"], capture_output=True, text=True)
+            if result.returncode == 0:
+                logger.info("✅ uv is available")
+            else:
+                logger.error("❌ uv is not available")
+                return False
+        except Exception as e:
+            logger.error(f"❌ Error checking uv: {e}")
             return False
         
         logger.info("✅ All prerequisites met")
         return True
     
     def create_directory_structure(self):
-        """Create the required directory structure."""
+        """Create all necessary directories."""
         logger.info("📁 Creating directory structure...")
         
         directories = [
@@ -169,106 +150,126 @@ class ScientificPublicationsPipelineOrchestrator:
         ]
         
         for directory in directories:
-            dir_path = self.pipeline_root / directory
+            dir_path = Path(directory)
             dir_path.mkdir(parents=True, exist_ok=True)
             logger.info(f"   📁 Created: {directory}")
         
         logger.info("✅ Directory structure created")
     
-    def run_pipeline_step(self, step: Dict, dry_run: bool = False) -> bool:
+    def run_pipeline_step(self, step_info: dict, step_number: int) -> bool:
         """Run a single pipeline step."""
-        logger.info(f"🚀 {step['name']}")
-        logger.info(f"   📝 {step['description']}")
+        step_name = step_info["name"]
+        script_name = step_info["script"]
+        command = step_info["command"]
         
-        if dry_run:
-            logger.info(f"   🔍 Would run: {' '.join(step['command'])}")
-            return True
+        logger.info(f"🚀 {step_name}")
+        logger.info(f"   📝 {step_info['description']}")
+        
+        # Start tracking this step
+        input_files = self._get_input_files(step_info["required_inputs"])
+        self.tracker.start_step(step_name, step_number, input_files)
         
         try:
-            # Run the command
-            result = subprocess.run(
-                step['command'],
-                cwd=self.pipeline_root,
-                capture_output=True,
-                text=True,
-                check=True
-            )
+            # Execute the command
+            import subprocess
+            result = subprocess.run(command, capture_output=True, text=True, cwd=self.base_dir.parent)
             
-            logger.info(f"   ✅ {step['name']} completed successfully")
-            if result.stdout:
-                logger.debug(f"   📄 Output: {result.stdout}")
-            
-            return True
-            
-        except subprocess.CalledProcessError as e:
-            logger.error(f"   ❌ {step['name']} failed with exit code {e.returncode}")
-            if e.stdout:
-                logger.error(f"   📄 Stdout: {e.stdout}")
-            if e.stderr:
-                logger.error(f"   ❌ Stderr: {e.stderr}")
-            return False
-        
+            if result.returncode == 0:
+                # Check outputs
+                output_files = self._get_output_files(step_info["outputs"])
+                self.tracker.end_step(step_number, "completed", output_files)
+                logger.info(f"   ✅ {step_name} completed successfully")
+                return True
+            else:
+                error_msg = f"Command failed with return code {result.returncode}"
+                if result.stderr:
+                    error_msg += f": {result.stderr}"
+                
+                self.tracker.end_step(step_number, "failed", error_message=error_msg)
+                logger.error(f"   ❌ {step_name} failed: {error_msg}")
+                return False
+                
         except Exception as e:
-            logger.error(f"   ❌ Unexpected error in {step['name']}: {e}")
+            error_msg = f"Exception during execution: {str(e)}"
+            self.tracker.end_step(step_number, "failed", error_message=error_msg)
+            logger.error(f"   ❌ {step_name} failed with exception: {e}")
             return False
     
-    def run_pipeline(self, start_from_step: int = 1, dry_run: bool = False) -> bool:
-        """Run the complete pipeline or from a specific step."""
+    def _get_input_files(self, input_dirs: list) -> list:
+        """Get list of input files for a step."""
+        input_files = []
+        for input_dir in input_dirs:
+            dir_path = Path(input_dir)
+            if dir_path.exists():
+                for file_path in dir_path.glob("*"):
+                    if file_path.is_file():
+                        input_files.append(str(file_path))
+        return input_files
+    
+    def _get_output_files(self, output_dirs: list) -> list:
+        """Get list of output files for a step."""
+        output_files = []
+        for output_dir in output_dirs:
+            dir_path = Path(output_dir)
+            if dir_path.exists():
+                for file_path in dir_path.glob("*"):
+                    if file_path.is_file():
+                        output_files.append(str(file_path))
+        return output_files
+    
+    def run_pipeline(self) -> bool:
+        """Run the complete pipeline."""
         logger.info("🚀 Starting Scientific Publications Pipeline")
-        logger.info(f"📍 Pipeline root: {self.pipeline_root}")
+        logger.info(f"📍 Pipeline root: {self.base_dir.parent}")
         
-        if dry_run:
-            logger.info("🔍 DRY RUN MODE - No actual processing will occur")
+        # Start pipeline run tracking
+        run_id = self.tracker.start_pipeline_run()
         
         # Check prerequisites
         if not self.check_prerequisites():
+            self.tracker.end_pipeline_run(run_id, "failed")
             return False
         
-        # Create directory structure if not dry run
-        if not dry_run:
-            self.create_directory_structure()
+        # Create directory structure
+        self.create_directory_structure()
         
-        # Run pipeline steps
+        # Run each step
         successful_steps = 0
         failed_steps = 0
         
-        for i, step in enumerate(self.pipeline_steps, 1):
-            if i < start_from_step:
-                logger.info(f"⏭️  Skipping {step['name']} (before start-from-step {start_from_step})")
-                continue
+        for i, step_info in enumerate(self.pipeline_steps, 1):
+            logger.info("=" * 60)
+            logger.info(f"Step {i}/9: {step_info['name']}")
+            logger.info("=" * 60)
             
-            logger.info(f"\n{'='*60}")
-            logger.info(f"Step {i}/{len(self.pipeline_steps)}: {step['name']}")
-            logger.info(f"{'='*60}")
-            
-            if self.run_pipeline_step(step, dry_run):
+            if self.run_pipeline_step(step_info, i):
                 successful_steps += 1
                 logger.info(f"✅ Step {i} completed successfully")
             else:
                 failed_steps += 1
                 logger.error(f"❌ Step {i} failed")
-                if not dry_run:
-                    logger.error("Pipeline stopped due to step failure")
-                    break
+                break  # Stop pipeline on first failure
             
-            # Add a small delay between steps
-            if not dry_run and i < len(self.pipeline_steps):
+            # Wait between steps (except after the last one)
+            if i < len(self.pipeline_steps):
                 logger.info("⏳ Waiting 2 seconds before next step...")
                 time.sleep(2)
         
-        # Summary
-        logger.info(f"\n{'='*60}")
+        # Pipeline summary
+        logger.info("=" * 60)
         logger.info("📋 PIPELINE SUMMARY")
-        logger.info(f"{'='*60}")
+        logger.info("=" * 60)
         logger.info(f"✅ Successful steps: {successful_steps}")
         logger.info(f"❌ Failed steps: {failed_steps}")
         logger.info(f"📊 Total steps: {len(self.pipeline_steps)}")
         
         if failed_steps == 0:
             logger.info("🎉 Pipeline completed successfully!")
+            self.tracker.end_pipeline_run(run_id, "completed")
             return True
         else:
-            logger.error(f"💥 Pipeline failed with {failed_steps} failed steps")
+            logger.error("💥 Pipeline failed!")
+            self.tracker.end_pipeline_run(run_id, "failed")
             return False
 
 def main():
@@ -281,60 +282,40 @@ Examples:
   # Run complete pipeline
   python3 run_scientific_publications_pipeline.py
   
-  # Start from step 5
-  python3 run_scientific_publications_pipeline.py --start-from-step 5
+  # Force reprocessing of all files
+  python3 run_scientific_publications_pipeline.py --force-reprocess
   
-  # Dry run to see what would be executed
-  python3 run_scientific_publications_pipeline.py --dry-run
-  
-  # Run from specific step with dry run
-  python3 run_scientific_publications_pipeline.py --start-from-step 3 --dry-run
+  # Run with custom base directory
+  python3 run_scientific_publications_pipeline.py --base-dir /path/to/data
         """
     )
     
     parser.add_argument(
-        "--start-from-step",
-        type=int,
-        default=1,
-        help="Start pipeline from this step number (default: 1)"
-    )
-    
-    parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Show what would be run without actually executing"
-    )
-    
-    parser.add_argument(
-        "--pipeline-root",
+        "--base-dir",
         type=Path,
-        default=Path.cwd(),
-        help="Root directory of the pipeline (default: current directory)"
+        default=Path("data/source_data"),
+        help="Base directory for pipeline data (default: data/source_data)"
+    )
+    
+    parser.add_argument(
+        "--force-reprocess",
+        action="store_true",
+        help="Force reprocessing of all files (ignore completion status)"
     )
     
     args = parser.parse_args()
     
-    # Validate start-from-step
-    if args.start_from_step < 1 or args.start_from_step > 9:
-        logger.error("❌ start-from-step must be between 1 and 9")
-        sys.exit(1)
-    
     try:
-        # Create and run the pipeline
-        orchestrator = ScientificPublicationsPipelineOrchestrator(args.pipeline_root)
-        success = orchestrator.run_pipeline(
-            start_from_step=args.start_from_step,
-            dry_run=args.dry_run
+        orchestrator = ScientificPublicationsPipelineOrchestrator(
+            base_dir=args.base_dir,
+            force_reprocess=args.force_reprocess
         )
         
-        if not success:
-            sys.exit(1)
-            
-    except KeyboardInterrupt:
-        logger.info("\n⚠️  Pipeline interrupted by user")
-        sys.exit(1)
+        success = orchestrator.run_pipeline()
+        sys.exit(0 if success else 1)
+        
     except Exception as e:
-        logger.error(f"❌ Unexpected error: {e}")
+        logger.error(f"❌ Pipeline failed with exception: {e}")
         sys.exit(1)
 
 if __name__ == "__main__":

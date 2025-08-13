@@ -31,7 +31,14 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 class PDFDeduplicator:
-    """Handles PDF deduplication based on quick metadata comparison."""
+    """
+    Deduplicate PDFs based on quick metadata and move duplicates to DLQ.
+    
+    When duplicates are found:
+    - PDF files are moved to DLQ for potential review/recovery
+    - Metadata files are deleted (not needed since we keep the original)
+    - Only the highest confidence version of each document is retained
+    """
     
     def __init__(self, metadata_dir: Path, pdf_dir: Path, dlq_dir: Path):
         self.metadata_dir = metadata_dir
@@ -174,8 +181,9 @@ class PDFDeduplicator:
         return duplicates
     
     def move_to_dlq(self, pdf_filename: str, reason: str) -> bool:
-        """Move a PDF file to the DLQ directory."""
+        """Move a duplicate PDF to DLQ and delete its metadata."""
         try:
+            # Find the PDF file
             pdf_path = self.pdf_dir / pdf_filename
             if not pdf_path.exists():
                 logger.warning(f"PDF file not found: {pdf_filename}")
@@ -186,22 +194,24 @@ class PDFDeduplicator:
             dlq_filename = f"{pdf_path.stem}_duplicate_{timestamp}.pdf"
             dlq_path = self.dlq_dir / dlq_filename
             
-            # Move the file
+            # Move the PDF to DLQ
             shutil.move(str(pdf_path), str(dlq_path))
+            logger.info(f"✅ Moved PDF to DLQ: {pdf_filename} → {dlq_filename}")
             
-            # Also move the metadata file if it exists
+            # Delete the metadata file (not needed since we're keeping the original)
             metadata_filename = f"{pdf_filename.replace('.pdf', '')}_quick_metadata.json"
             metadata_path = self.metadata_dir / metadata_filename
             if metadata_path.exists():
-                dlq_metadata_filename = f"{dlq_filename.replace('.pdf', '')}_quick_metadata.json"
-                dlq_metadata_path = self.dlq_dir / dlq_metadata_filename
-                shutil.move(str(metadata_path), str(dlq_metadata_path))
+                metadata_path.unlink()
+                logger.info(f"🗑️  Deleted metadata: {metadata_filename}")
+            else:
+                logger.info(f"ℹ️  No metadata file found to delete: {metadata_filename}")
             
-            logger.info(f"✅ Moved to DLQ: {pdf_filename} (Reason: {reason})")
+            logger.info(f"✅ Successfully processed duplicate: {pdf_filename} (Reason: {reason})")
             return True
             
         except Exception as e:
-            logger.error(f"❌ Error moving {pdf_filename} to DLQ: {e}")
+            logger.error(f"❌ Error processing duplicate {pdf_filename}: {e}")
             return False
     
     def run_deduplication(self, dry_run: bool = False) -> Dict[str, Any]:
@@ -234,7 +244,7 @@ class PDFDeduplicator:
                 else:
                     failed_moves += 1
             else:
-                logger.info(f"   [DRY RUN] Would move to DLQ: {remove_metadata['filename']}")
+                logger.info(f"   [DRY RUN] Would move PDF to DLQ and delete metadata: {remove_metadata['filename']}")
         
         # Summary
         remaining_pdfs = len([m for m in metadata_list if not any(m == remove_m for _, remove_m, _, _ in duplicates)])
@@ -251,8 +261,8 @@ class PDFDeduplicator:
         logger.info("📋 Deduplication Summary:")
         logger.info(f"   Total PDFs: {result['total_pdfs']}")
         logger.info(f"   Duplicates found: {result['duplicates_found']}")
-        logger.info(f"   Moved to DLQ: {result['moved_to_dlq']}")
-        logger.info(f"   Failed moves: {result['failed_moves']}")
+        logger.info(f"   PDFs moved to DLQ: {result['moved_to_dlq']}")
+        logger.info(f"   Failed operations: {result['failed_moves']}")
         logger.info(f"   Remaining PDFs: {result['remaining_pdfs']}")
         
         return result
@@ -260,7 +270,7 @@ class PDFDeduplicator:
 def main():
     """Main function."""
     parser = argparse.ArgumentParser(
-        description="Deduplicate PDFs based on quick metadata and move duplicates to DLQ"
+        description="Deduplicate PDFs based on quick metadata. Duplicates are moved to DLQ, metadata files are deleted."
     )
     parser.add_argument(
         "--metadata-dir",

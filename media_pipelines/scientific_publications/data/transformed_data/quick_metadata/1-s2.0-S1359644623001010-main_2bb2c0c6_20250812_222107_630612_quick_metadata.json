@@ -1,0 +1,17 @@
+{
+  "document_type": "research_paper",
+  "title": "Morphoceuticals: Perspectives for discovery of drugs targeting anatomical control mechanisms in regenerative medicine, cancer and aging",
+  "authors": [
+    "Léo Pio-Lopez",
+    "Michael Levin"
+  ],
+  "journal": "Drug Discovery Today",
+  "publication_year": 2023,
+  "doi": null,
+  "abstract": "Morphoceuticals are a new class of interventions that target the setpoints of anatomical homeostasis for efficient, modular control of growth and form. Here, we focus on a subclass: electroceuticals, which specifically target the cellular bioelectrical interface. Cellular morphogenetics in all tissues form bioelectrical networks via ion channels and gap junctions that process collective information, controlling gene expression and allowing cell networks to adaptively and dynamically control growth and pattern formation. The bioelectric network serves as the instructive software of the anatomical hardware and computational models suggest that targeting bioelectrical interfaces can control embryogenesis and maintain shape against injury, senescence and tumorigenesis. We propose a roadmap for drug discovery focused on manipulating endogenous bioelectric signaling for regenerative medicine, cancer suppression and antiaging therapeutics.",
+  "extraction_confidence": "high",
+  "filename": "1-s2.0-S1359644623001010-main_2bb2c0c6_20250812_222107_630612.pdf",
+  "extraction_timestamp": "2025-08-12T22:21:36.017419",
+  "extraction_method": "gemini_pro",
+  "pages_analyzed": 3
+}

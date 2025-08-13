@@ -72,12 +72,12 @@ class ScientificPublicationsPipelineOrchestrator:
                 "description": "Sort incoming files, archive them, and route PDFs to raw_pdf/"
             },
             {
-                "name": "Step 2: Detect Corruption and Sanitize PDFs",
+                "name": "Step 2: Detect Corruption, Sanitize, and Deduplicate PDFs",
                 "script": "step02_detect_corruption_and_sanitize_pdfs.py",
                 "command": ["uv", "run", "python3", "tools/step02_detect_corruption_and_sanitize_pdfs.py", "--base-dir", "data/source_data"],
                 "required_inputs": ["data/source_data/raw_pdf"],
                 "outputs": ["data/source_data/preprocessed/sanitized/pdfs"],
-                "description": "Sanitize PDFs and move to preprocessed directory"
+                "description": "Detect corruption, sanitize PDFs, and perform hash-based deduplication to prevent reprocessing"
             },
             {
                 "name": "Step 3: Extract Quick Metadata with Gemini",

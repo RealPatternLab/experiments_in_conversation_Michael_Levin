@@ -1,0 +1,17 @@
+{
+  "document_type": "research_paper",
+  "title": "Competition for finite resources as coordination mechanism for morphogenesis: An evolutionary algorithm study of digital embryogeny",
+  "authors": [
+    "Peter Smilley",
+    "Michael Levin"
+  ],
+  "journal": "BioSystems",
+  "publication_year": 2022,
+  "doi": null,
+  "abstract": "The standard view of embryogenesis is one of cooperation driven by the cells’ shared genetics and evolutionary history. However, there is growing evidence that competitive dynamics may play an important role in the formation of complex anatomy across scales of biological organization. To enable cells across the body to coordinate molecules as a communication medium, and a global strategy for tissue and informational resources. To explain the emergence of these properties in a system of competing cells, we use an evolutionary algorithm-driven model to grow such an agent-based morphogeny. An evolutionary algorithm operates over the genomes that encode specific developmental morphologies via rules for cellular behaviors that reliably make embryos, with finite available resources. The evolutionary algorithm selects for genomes that can produce high-fitness morphologies. Here, we test this hypothesis via an evolutionary simulation of embryogeny in silico. Genomes specify transcriptional programs using finite resources, which results in higher fitness and increased evolvability (fitness and evolvability) for cells that compete and carry out their programs using fewer resources. Our digital morphogenesis was generated using a finite reservoir of virtual embryogeny cells. We analyzed how specific use cases, scripted, and the genomic analysis of evolved virtual embryos that help understand evolutionary conflict can yield coherent, complex multi-scale self-organization. We present a model of resource competition, evolutionary conflict and artificial scarcity that for some under conditions, composite multi-scale systems will promote morphological. Our results suggest that",
+  "extraction_confidence": "high",
+  "filename": "1-s2.0-S0303264722001435-main_290628e7_20250812_213409_176803_290628e7_20250812_220607_537648.pdf",
+  "extraction_timestamp": "2025-08-12T22:06:21.315025",
+  "extraction_method": "gemini_pro",
+  "pages_analyzed": 3
+}

@@ -1,0 +1,18 @@
+{
+  "document_type": "research_paper",
+  "title": "Modeling regenerative processes with membrane computing",
+  "authors": [
+    "Manuel Garcia-Quismondo",
+    "Michael Levin",
+    "Daniel Lobo"
+  ],
+  "journal": "Information Sciences",
+  "publication_year": 2017,
+  "doi": "http://dx.doi.org/10.1016/j.insci.2016.11.017",
+  "abstract": "Understanding the remarkable ability of some organisms to restore their anatomical shape following amputation of large portions of their bodies is critical for advances in regenerative medicine. Despite rapid advances in the molecular processes required for regeneration, a systems level algorithmic understanding of this phenomenon is still lacking.  In this study, we propose a novel computational framework, called regenerative P systems, to model the flow of information during regeneration. Membrane computing is a branch of natural computing inspired by the structure and functioning of a living cell, as well as its organization in tissues and other higher-order structures. Here, we propose a model of regenerative P systems where each compartment in a P system can be easily extended with morphological regions in packages. This permits us to model the properties of tissues and organs that are composed of several biological regions with different signaling mechanisms. Further refinements of this model should permit us to connect it to dynamical descriptions of cell behaviors.",
+  "extraction_confidence": "high",
+  "filename": "1-s2.0-S0020025516318187-main_7938abb5_20250812_222107_617003.pdf",
+  "extraction_timestamp": "2025-08-12T22:21:19.187793",
+  "extraction_method": "gemini_pro",
+  "pages_analyzed": 3
+}

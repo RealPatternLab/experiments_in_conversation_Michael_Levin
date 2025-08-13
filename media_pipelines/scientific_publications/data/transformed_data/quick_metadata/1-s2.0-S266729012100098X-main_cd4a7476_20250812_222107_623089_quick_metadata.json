@@ -1,0 +1,17 @@
+{
+  "document_type": "review",
+  "title": "Multi-scale Chimerism: An experimental window on the algorithms of anatomical control",
+  "authors": [
+    "Vasilios Nanos",
+    "Michael Levin"
+  ],
+  "journal": "Cells & Development",
+  "publication_year": 2022,
+  "doi": "10.1016/j.cdev.2021.203764",
+  "abstract": "Despite the immense progress in genetics and cell biology, major knowledge gaps remain with respect to predicting the large-scale anatomical outcomes of genetic or cellular manipulations. Morphogenesis is governed by a complex interplay between gene products and biophysical forces, and our understanding is limited by a focus on standard model systems that exhibit invariant species-specific anatomies.",
+  "extraction_confidence": "high",
+  "filename": "1-s2.0-S266729012100098X-main_cd4a7476_20250812_222107_623089.pdf",
+  "extraction_timestamp": "2025-08-12T22:21:41.895758",
+  "extraction_method": "gemini_pro",
+  "pages_analyzed": 3
+}

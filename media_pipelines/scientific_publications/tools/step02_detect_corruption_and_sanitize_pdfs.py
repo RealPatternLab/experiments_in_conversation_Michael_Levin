@@ -1,20 +1,108 @@
 #!/usr/bin/env python3
 """
-Sanitize Files Tool
+PDF Corruption Detection, Sanitization, and Deduplication Tool
 
-This tool processes files from raw_* directories, detects corruption,
-and moves them to preprocessed/sanitized/* directories with sanitized names.
+This tool processes PDFs from raw_pdf directories, detects corruption,
+performs hash-based deduplication, and moves unique PDFs to 
+preprocessed/sanitized/pdfs with sanitized names.
 
-Updated for the new scientific publications pipeline structure.
+Updated for the new scientific publications pipeline structure with
+hash-based deduplication to prevent reprocessing of identical files.
 """
 
 import argparse
 import shutil
 import sys
+import json
+import hashlib
+import logging
 from pathlib import Path
 from datetime import datetime
-from typing import Tuple, Dict, Any
+from typing import Tuple, Dict, Any, Set
 import re
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
+
+
+class HashRegistry:
+    """Manages persistent storage of file hashes for deduplication."""
+    
+    def __init__(self, registry_file: Path):
+        self.registry_file = registry_file
+        self.processed_hashes: Set[str] = set()
+        self.load_registry()
+    
+    def load_registry(self):
+        """Load existing hash registry from file."""
+        try:
+            if self.registry_file.exists():
+                with open(self.registry_file, 'r') as f:
+                    data = json.load(f)
+                    self.processed_hashes = set(data.get('processed_hashes', []))
+                logger.info(f"📚 Loaded {len(self.processed_hashes)} existing hashes from registry")
+            else:
+                logger.info("🆕 Creating new hash registry")
+        except Exception as e:
+            logger.warning(f"⚠️ Could not load hash registry: {e}")
+            self.processed_hashes = set()
+    
+    def save_registry(self):
+        """Save current hash registry to file."""
+        try:
+            self.registry_file.parent.mkdir(parents=True, exist_ok=True)
+            with open(self.registry_file, 'w') as f:
+                json.dump({
+                    'processed_hashes': list(self.processed_hashes),
+                    'last_updated': datetime.now().isoformat(),
+                    'total_files': len(self.processed_hashes)
+                }, f, indent=2)
+            logger.debug(f"💾 Saved hash registry with {len(self.processed_hashes)} hashes")
+        except Exception as e:
+            logger.error(f"❌ Failed to save hash registry: {e}")
+    
+    def is_already_processed(self, file_hash: str) -> bool:
+        """Check if a file hash has been processed before."""
+        return file_hash in self.processed_hashes
+    
+    def add_processed_hash(self, file_hash: str):
+        """Add a file hash to the processed registry."""
+        self.processed_hashes.add(file_hash)
+        self.save_registry()
+    
+    def get_stats(self) -> Dict[str, Any]:
+        """Get statistics about the hash registry."""
+        return {
+            'total_processed': len(self.processed_hashes),
+            'registry_file': str(self.registry_file),
+            'last_updated': datetime.now().isoformat()
+        }
+
+
+def get_file_hash(file_path: Path) -> str:
+    """
+    Generate SHA-256 hash of file content.
+    
+    Args:
+        file_path: Path to the file to hash
+        
+    Returns:
+        SHA-256 hash string
+    """
+    try:
+        with open(file_path, 'rb') as f:
+            file_hash = hashlib.sha256()
+            # Read file in chunks to handle large files efficiently
+            for chunk in iter(lambda: f.read(4096), b""):
+                file_hash.update(chunk)
+        return file_hash.hexdigest()
+    except Exception as e:
+        logger.error(f"❌ Failed to hash file {file_path}: {e}")
+        return ""
 
 
 def sanitize_filename(filename: str) -> str:
@@ -41,18 +129,30 @@ def sanitize_filename(filename: str) -> str:
     return filename
 
 
-def generate_safe_filename(file_type: str) -> str:
+def generate_safe_filename(original_name: str, file_hash: str) -> str:
     """
-    Generate a safe, unique filename with timestamp.
+    Generate a safe, unique filename with hash and timestamp.
     
     Args:
-        file_type: Type of file (e.g., 'pdf', 'html')
+        original_name: Original filename
+        file_hash: File hash for uniqueness
+        file_type: Type of file (e.g., 'pdf')
         
     Returns:
-        Safe filename with timestamp
+        Safe filename with hash and timestamp
     """
+    # Extract file extension
+    file_type = original_name.split('.')[-1] if '.' in original_name else 'pdf'
+    
+    # Create base name from original (without extension)
+    base_name = original_name.rsplit('.', 1)[0] if '.' in original_name else original_name
+    base_name = sanitize_filename(base_name)
+    
+    # Use first 8 characters of hash for uniqueness
+    hash_suffix = file_hash[:8]
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
-    return f"{file_type}_{timestamp}.{file_type}"
+    
+    return f"{base_name}_{hash_suffix}_{timestamp}.{file_type}"
 
 
 def is_file_corrupted(file_path: Path) -> bool:
@@ -74,135 +174,104 @@ def is_file_corrupted(file_path: Path) -> bool:
         return True
 
 
-def process_file_type(
-    raw_dir: Path, 
+def process_pdfs_with_deduplication(
+    raw_pdf_dir: Path, 
     target_dir: Path, 
-    file_type: str, 
+    hash_registry: HashRegistry,
     dry_run: bool = False
-) -> Tuple[int, int]:
+) -> Tuple[int, int, int]:
     """
-    Process files of a specific type from raw directory to target directory.
+    Process PDFs with hash-based deduplication.
     
     Args:
-        raw_dir: Directory containing raw files
+        raw_pdf_dir: Directory containing raw PDF files
         target_dir: Directory to move processed files to
-        file_type: Type of files to process
+        hash_registry: Hash registry for deduplication
         dry_run: If True, don't actually move files
         
     Returns:
-        Tuple of (processed_count, corrupted_count)
+        Tuple of (processed_count, corrupted_count, duplicate_count)
     """
     processed = 0
     corrupted = 0
+    duplicates = 0
     
-    if not raw_dir.exists():
-        print(f"    ❌ Raw directory does not exist: {raw_dir}")
-        return processed, corrupted
+    if not raw_pdf_dir.exists():
+        logger.error(f"❌ Raw PDF directory does not exist: {raw_pdf_dir}")
+        return processed, corrupted, duplicates
     
-    # Create target directory
-    if not dry_run:
-        target_dir.mkdir(parents=True, exist_ok=True)
+    # Get all PDF files
+    pdf_files = list(raw_pdf_dir.glob("*.pdf"))
+    if not pdf_files:
+        logger.info(f"ℹ️ No PDF files found in {raw_pdf_dir}")
+        return processed, corrupted, duplicates
     
-    # Find all files of this type
-    pattern = f"*.{file_type}"
-    files = list(raw_dir.glob(pattern.lower()))  # Check lowercase
-    files.extend(list(raw_dir.glob(pattern.upper())))  # Also check uppercase
+    logger.info(f"🔍 Found {len(pdf_files)} PDF files to process")
     
-    if not files:
-        print(f"    ℹ️  No {file_type} files found")
-        return processed, corrupted
-    
-    print(f"    📄 Processing {len(files)} {file_type} files...")
-    
-    for file_path in files:
+    for pdf_path in pdf_files:
         try:
-            # Check if file is corrupted
-            if is_file_corrupted(file_path):
-                print(f"    🚫 Corrupted file detected: {file_path.name}")
+            logger.debug(f"📄 Processing {pdf_path.name}")
+            
+            # Check for corruption first
+            if is_file_corrupted(pdf_path):
+                logger.warning(f"⚠️ Corrupted file detected: {pdf_path.name}")
+                if not dry_run:
+                    pdf_path.unlink()  # Delete corrupted file
                 corrupted += 1
                 continue
             
-            # Generate safe filename
-            safe_filename = generate_safe_filename(file_type)
-            target_path = target_dir / safe_filename
+            # Generate file hash for deduplication
+            file_hash = get_file_hash(pdf_path)
+            if not file_hash:
+                logger.error(f"❌ Failed to hash file: {pdf_path.name}")
+                continue
             
-            if dry_run:
-                print(f"    🔍 Would process: {file_path.name} → {safe_filename}")
-                processed += 1
+            # Check if this file has been processed before
+            if hash_registry.is_already_processed(file_hash):
+                logger.info(f"⏭️ Skipping duplicate: {pdf_path.name} (hash: {file_hash[:8]}...)")
+                if not dry_run:
+                    pdf_path.unlink()  # Remove duplicate file
+                duplicates += 1
+                continue
+            
+            # Process new, unique file
+            if not dry_run:
+                # Generate safe filename with hash
+                safe_filename = generate_safe_filename(pdf_path.name, file_hash)
+                target_path = target_dir / safe_filename
+                
+                # Ensure target directory exists
+                target_dir.mkdir(parents=True, exist_ok=True)
+                
+                # Move file to target directory
+                shutil.move(str(pdf_path), str(target_path))
+                
+                # Add hash to registry
+                hash_registry.add_processed_hash(file_hash)
+                
+                logger.info(f"✅ Processed: {pdf_path.name} → {safe_filename}")
             else:
-                # Copy file to target directory
-                shutil.copy2(file_path, target_path)
-                print(f"    ✅ Processed: {file_path.name} → {safe_filename}")
-                
-                # Delete original file
-                file_path.unlink()
-                
-                processed += 1
+                logger.info(f"🔍 Would process: {pdf_path.name} (hash: {file_hash[:8]}...)")
+            
+            processed += 1
             
         except Exception as e:
-            print(f"    ❌ Error processing {file_path.name}: {e}")
+            logger.error(f"❌ Error processing {pdf_path.name}: {e}")
             continue
     
-    return processed, corrupted
-
-
-def sanitize_files(base_dir: Path, dry_run: bool = False) -> Dict[str, Dict[str, int]]:
-    """
-    Sanitize all files in raw_* directories.
-    
-    Args:
-        base_dir: Base directory containing raw_* directories
-        dry_run: If True, don't actually move files
-        
-    Returns:
-        Dictionary with results for each file type
-    """
-    results = {}
-    
-    if not base_dir.exists():
-        print(f"❌ Base directory does not exist: {base_dir}")
-        return results
-    
-    # Find all raw_* directories
-    raw_dirs = [d for d in base_dir.iterdir() if d.is_dir() and d.name.startswith('raw_')]
-    
-    if not raw_dirs:
-        print("ℹ️  No raw_* directories found")
-        return results
-    
-    print(f"🔍 Found {len(raw_dirs)} raw directories to process")
-    
-    for raw_dir in raw_dirs:
-        file_type = raw_dir.name[4:]  # Remove 'raw_' prefix
-        target_dir = base_dir / "preprocessed" / "sanitized" / f"{file_type}s"
-        
-        print(f"\n📁 Processing {file_type} files from {raw_dir.name}...")
-        
-        processed, corrupted = process_file_type(
-            raw_dir, target_dir, file_type, dry_run
-        )
-        
-        results[file_type] = {
-            "processed": processed,
-            "corrupted": corrupted
-        }
-        
-        if processed > 0 or corrupted > 0:
-            print(f"    📊 Processed: {processed}, Corrupted: {corrupted}")
-    
-    return results
+    return processed, corrupted, duplicates
 
 
 def main():
     """Main function."""
     parser = argparse.ArgumentParser(
-        description="Sanitize files from raw_* directories"
+        description="Detect corruption, sanitize, and deduplicate PDFs using hash-based comparison"
     )
     parser.add_argument(
         "--base-dir",
         type=Path,
         default=Path("data/source_data"),
-        help="Base directory containing raw_* directories (default: data/source_data)"
+        help="Base directory containing raw_pdf directory (default: data/source_data)"
     )
     parser.add_argument(
         "--dry-run",
@@ -213,22 +282,39 @@ def main():
     args = parser.parse_args()
     
     try:
-        print(f"🧹 Sanitizing files in {args.base_dir}")
+        logger.info(f"🔍 Starting PDF corruption detection, sanitization, and deduplication")
+        logger.info(f"📍 Base directory: {args.base_dir}")
+        
         if args.dry_run:
-            print("🔍 DRY RUN MODE - No files will be moved")
+            logger.info("🔍 DRY RUN MODE - No files will be moved")
         
-        results = sanitize_files(args.base_dir, args.dry_run)
+        # Setup paths
+        raw_pdf_dir = args.base_dir / "raw_pdf"
+        target_dir = args.base_dir / "preprocessed" / "sanitized" / "pdfs"
+        registry_file = args.base_dir / "preprocessed" / "hash_registry.json"
         
-        if results:
-            print(f"\n✅ Sanitization complete!")
-            total_processed = sum(r["processed"] for r in results.values())
-            total_corrupted = sum(r["corrupted"] for r in results.values())
-            print(f"📊 Total processed: {total_processed}, Total corrupted: {total_corrupted}")
+        # Initialize hash registry
+        hash_registry = HashRegistry(registry_file)
+        
+        # Process PDFs with deduplication
+        processed, corrupted, duplicates = process_pdfs_with_deduplication(
+            raw_pdf_dir, target_dir, hash_registry, args.dry_run
+        )
+        
+        # Display results
+        logger.info(f"\n📊 Processing Results:")
+        logger.info(f"   ✅ Processed (new): {processed}")
+        logger.info(f"   ⚠️ Corrupted: {corrupted}")
+        logger.info(f"   ⏭️ Duplicates (skipped): {duplicates}")
+        logger.info(f"   📚 Total in registry: {hash_registry.get_stats()['total_processed']}")
+        
+        if processed > 0 or corrupted > 0 or duplicates > 0:
+            logger.info(f"\n✅ Processing complete!")
         else:
-            print("ℹ️  No files to process")
+            logger.info("ℹ️ No files to process")
             
     except Exception as e:
-        print(f"❌ Error: {e}")
+        logger.error(f"❌ Error: {e}")
         sys.exit(1)
 
 
