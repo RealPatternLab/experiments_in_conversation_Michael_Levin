@@ -1,0 +1,106 @@
+# Environment variables and credentials
+.env
+.env.local
+.env.*.local
+*.env
+
+# API keys and secrets
+secrets.json
+credentials.json
+api_keys.txt
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.venv.bak/
+venv.bak/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+log/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+hash_database.txt
+
+# Pipeline specific
+SCIENTIFIC_PUBLICATION_PIPELINE/hash_validation.log
+SCIENTIFIC_PUBLICATION_PIPELINE/metadata_enrichment.log
+SCIENTIFIC_PUBLICATION_PIPELINE/semantic_chunking_split.log
+SCIENTIFIC_PUBLICATION_PIPELINE/text_extraction.log
+SCIENTIFIC_PUBLICATION_PIPELINE/archive_migration.log
+SCIENTIFIC_PUBLICATION_PIPELINE/step_06_batch_embedding.log
+SCIENTIFIC_PUBLICATION_PIPELINE/step_02_metadata_extraction.log
+
+# Data directories (optional - uncomment if you don't want to track data)
+# SCIENTIFIC_PUBLICATION_PIPELINE/step_01_raw/
+# SCIENTIFIC_PUBLICATION_PIPELINE/processing/
+# SCIENTIFIC_PUBLICATION_PIPELINE/step_02_metadata/
+# SCIENTIFIC_PUBLICATION_PIPELINE/step_03_extracted_text/
+# SCIENTIFIC_PUBLICATION_PIPELINE/step_05_semantic_chunks/
+# SCIENTIFIC_PUBLICATION_PIPELINE/step_06_faiss_embeddings/
+# SCIENTIFIC_PUBLICATION_PIPELINE/step_07_archive/
+
+# Progress tracking (optional - uncomment if you don't want to track progress)
+# SCIENTIFIC_PUBLICATION_PIPELINE/pipeline_progress_queue.json
+
+# Temporary and test files
+*.tmp
+*.temp
+test_*.py
+*_test.py
+fix_*.py
+migrate_*.py
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# uv specific
+.uv/
+uv.lock

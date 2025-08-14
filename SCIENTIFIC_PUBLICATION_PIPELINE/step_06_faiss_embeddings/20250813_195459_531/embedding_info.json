@@ -1,0 +1,10 @@
+{
+  "embedding_timestamp": "20250813_195459_531",
+  "embedding_datetime": "2025-08-13T19:54:59.536256",
+  "document_id": "1-s2.0-S0012160605005956-main_20250812_203237_065069_20250813_191420_598",
+  "original_filename": "7d121587_20250813_191420_609.pdf",
+  "chunk_count": 45,
+  "embedding_model": "text-embedding-3-large",
+  "faiss_index_type": "IndexFlatIP",
+  "embedding_dimension": 3072
+}

@@ -1,0 +1,8 @@
+[uv]
+python = "3.11"
+
+[uv.sources]
+python = { url = "https://www.python.org/ftp/python/3.11.8/python-3.11.8-macos11.pkg" }
+
+[uv.venv]
+prompt = "virtual-person-pipeline"

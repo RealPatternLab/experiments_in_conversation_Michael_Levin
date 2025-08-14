@@ -1,0 +1,872 @@
+{
+  "metadata": {
+    "document_type": "journal-article",
+    "title": "Characterization of innexin gene expression and functional roles of gap-junctional communication in planarian regeneration",
+    "authors": [
+      "Taisaku Nogi",
+      "Michael Levin"
+    ],
+    "journal": "Developmental Biology",
+    "publication_year": 2005,
+    "doi": "10.1016/j.ydbio.2005.09.002",
+    "abstract": null,
+    "extraction_confidence": "high",
+    "filename": "7d121587_20250813_191420_609.pdf",
+    "extraction_timestamp": "2025-08-13T19:16:29.605870",
+    "extraction_method": "gemini_1.5_flash",
+    "pages_analyzed": 2,
+    "publication_date": "2005-11",
+    "page_range": "314-335",
+    "volume": "287",
+    "issue": "2",
+    "references_count": 112,
+    "publisher": "Elsevier BV",
+    "issn": "0012-1606",
+    "crossref_data": true,
+    "enrichment_method": "crossref_api",
+    "crossref_enriched": true,
+    "enrichment_timestamp": "2025-08-13T19:25:48.959347",
+    "affiliations": [
+      "Department of Cytokine Biology",
+      "Department of Oral and Developmental Biology",
+      "School of Dental Medicine",
+      "University of Utah",
+      "The Forsyth Institute"
+    ],
+    "text_enriched": true
+  },
+  "chunks": [
+    {
+      "text": "Planaria possess remarkable powers of regeneration, exemplified by their ability to regenerate a head and a tail from respective blastemas after bisection. This remarkable feat of cellular reprogramming, where previously adjacent cells adopt different fates, suggests the existence of long-range signaling mechanisms that determine position and identity relative to the remaining tissue. However, the molecular underpinnings of this process remain poorly understood.  One hypothesis posits that gap-junctional communication (GJC) plays a crucial role in this signaling. To investigate this, the Innexin gene family, key components of gap junctions, was cloned and characterized during planarian regeneration.",
+      "section": "Abstract",
+      "primary_topic": "Regeneration",
+      "secondary_topics": [
+        "planaria",
+        "blastema",
+        "long-range signaling",
+        "cell fate",
+        "gap junctions",
+        "innexins"
+      ],
+      "chunk_summary": "Planarian regeneration involves long-range signaling, potentially mediated by gap junctions, to determine cell fate and positional identity.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Analysis of planarian innexins revealed three distinct groups based on sequence and expression patterns, suggesting diversification from three ancestral genes.  Innexin expression was observed throughout the animal, including specifically within the regeneration blastemas. This localized expression supports the hypothesis that innexins are involved in long-range signaling crucial for specifying blastema positional identity.  To further test this hypothesis, planaria were exposed to a GJC-blocking reagent that acts broadly on gap junctions, regardless of their Innexin composition, thus minimizing the potential for compensatory mechanisms.",
+      "section": "Abstract",
+      "primary_topic": "Innexin expression",
+      "secondary_topics": [
+        "phylogenetics",
+        "blastema",
+        "gap-junctional communication",
+        "innexins",
+        "regeneration",
+        "positional identity"
+      ],
+      "chunk_summary": "Planarian innexins are classified into three groups, and their expression in blastemas suggests a role in positional identity specification during regeneration.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "Blocking GJC often resulted in bipolar (two-headed) planaria, indicating a disruption of normal posterior blastema development.  The observed anteriorization of the posterior blastema upon GJC inhibition, combined with the innexin expression data, strongly suggests that innexin-based GJC mediates instructive signaling essential for proper regeneration.  These findings highlight the importance of gap junctional communication in regulating long-range signaling and determining positional identity during planarian regeneration.",
+      "section": "Abstract",
+      "primary_topic": "GJC function",
+      "secondary_topics": [
+        "bipolarity",
+        "two-headed planaria",
+        "posterior blastema",
+        "anteriorization",
+        "innexins",
+        "regeneration",
+        "positional identity",
+        "gap-junctional communication"
+      ],
+      "chunk_summary": "Inhibition of GJC leads to bipolar planaria, demonstrating that innexin-based GJC is crucial for proper posterior blastema specification and overall regeneration.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "The restoration of body structures following injury requires an initiation of growth and an imposition of correct morphology upon the regenerating tissue. Understanding this process is crucial both for the basic biology of pattern formation as well as for developing novel biomedical approaches. Planaria possess remarkable powers of regeneration (Morgan, 1901), and are now becoming an important model system for understanding the molecular mechanisms which underlie this phenomenon (Alvarado and Newmark, 1998; Newmark and Alvarado, 2002; Reddien and Alvarado, 2004). Regeneration is fairly rapid (complete after 7 days) and is dependent upon a population of stem cells (neoblasts). After bisection across the main body axis, the anterior blastema will regenerate a head while the posterior blastema will regenerate a tail. Importantly, these radically different fates are adopted by cells that were adjacent neighbors before the (arbitrarily placed) cut. Thus, it is unlikely that purely local mechanisms can explain the specification of identity along the anterior-posterior (AP) axis of the blastemas.",
+      "section": "[PAGE 1] Introduction",
+      "primary_topic": "Planarian Regeneration",
+      "secondary_topics": [
+        "blastema",
+        "neoblasts",
+        "anterior-posterior axis",
+        "pattern formation",
+        "stem cells",
+        "morphogenesis"
+      ],
+      "chunk_summary": "Planaria are a powerful model system for studying regeneration due to their rapid regeneration capabilities and the complex positional signaling required for proper anterior-posterior axis formation.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "1"
+    },
+    {
+      "text": "In contrast, models can be formulated where the blastema's AP identity is dependent upon long-range signaling which allows cells to ascertain their position relative to, and the identity of, remaining tissue (Kobayashi et al., 1999a,b; Nogi and Watanabe, 2001). For example, a blastema which receives information to the effect that the other end of the animal contains a tail can safely assume it must form a head. However, this process is not understood at the molecular level. To lay the ground for establishment of testable, mechanistic models of this process, we focused on one candidate system for establishing long-range signaling during axial patterning: gap-junctional communication (GJC). A similar proposal has been made for [PAGE 2] control of regeneration polarity in Hydra (Fraser et al., 1987; Wakeford, 1979).",
+      "section": "[PAGE 1] Introduction",
+      "primary_topic": "Long-Range Signaling",
+      "secondary_topics": [
+        "gap-junctional communication",
+        "GJC",
+        "axial patterning",
+        "blastema",
+        "Hydra",
+        "regeneration polarity"
+      ],
+      "chunk_summary": "Long-range signaling, potentially via gap-junctional communication (GJC), is hypothesized to play a key role in blastema patterning during planarian regeneration, similar to mechanisms proposed in Hydra.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "1"
+    },
+    {
+      "text": "Gap-junctions permit the direct transfer of small (<1 kDa) signaling molecules between adjacent cells (Falk, 2000; Goodenough et al., 1996). This forms an alternative to the better-understood secreted messenger/receptor systems that function in morphogenesis (Falk, 2000; Goodenough et al., 1996; Krutovskikh and Yamasaki, 2000). GJC is now known to be a general mechanism for achieving rapid syncitial communication within cell groups, including the spread of electric waves in cardiac tissue (Kimura et al., 1995; Severs, 1999) and the brain (Budd and Lipton, 1998), and the transmission of signals through gland cells to synchronize hormonal action and secretion (Levin and Mercola, 2000; Meda, 1996). Other aspects of cellular control via GJC have been revealed by the inverse functional relationship between tumor growth and GJC (Krutovskikh and Yamasaki, 1997; Omori et al., 1998; Omori et al., 2001).",
+      "section": "[PAGE 1] Introduction",
+      "primary_topic": "Gap Junctional Communication",
+      "secondary_topics": [
+        "GJC",
+        "gap junctions",
+        "cell communication",
+        "syncitial communication",
+        "signaling molecules",
+        "tumor growth"
+      ],
+      "chunk_summary": "Gap-junctional communication (GJC) enables direct transfer of small signaling molecules between cells, playing diverse roles in various tissues, including rapid communication in cardiac and brain tissue, hormonal synchronization, and tumor suppression.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "2"
+    },
+    {
+      "text": "An especially important role for gap-junctional communication is in the control of patterning (Levin, 2001; Lo, 1996; Warner, 1999). In vertebrate model systems, gap-junction-mediated signaling events have been implicated in heart (Ewart et al., 1997; Lo et al., 1999) and limb (Allen et al., 1990; Coelho and Kosher, 1991; Makarenkova et al., 1997; Makarenkova and Patel, 1999) development. Interestingly, in chick and frog embryos, GJC-mediated long-range signal exchange between the left and right sides is required for the early steps of left-right patterning (Levin and Mercola, 1998; Levin and Mercola, 1999). These data suggest the possibility that GJC may underlie patterning along major body axes in other model systems as well.",
+      "section": "[PAGE 1] Introduction",
+      "primary_topic": "GJC in Patterning",
+      "secondary_topics": [
+        "GJC",
+        "gap junctions",
+        "patterning",
+        "left-right patterning",
+        "limb development",
+        "heart development",
+        "embryogenesis"
+      ],
+      "chunk_summary": "GJC plays a crucial role in patterning processes, particularly in vertebrate heart and limb development, and left-right axis establishment in chick and frog embryos, suggesting its broader involvement in axial patterning.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Although no evidence for connexin genes has been found in invertebrate systems (although see Germain and Anctil, 1996), there are a number of proteins that provide GJC between cells during invertebrate embryogenesis (Phelan and Starich, 2001). Recently, molecular insight has been gained into the basis of GJC in invertebrates. Genes from the family now known as Innexins (formerly called OPUS) comprise a set of important developmental proteins that show no sequence homology to connexins but have the same topology, including four trans-membrane domains. The ability of innexins to form functional gap junction channels has been demonstrated directly for a number of innexins (Landesman et al., 1999a; Phelan et al., 1998b; Stebbings et al., 2000). Developmental roles of this gene family have been investigated in Drosophila and Caenorhabditis elegans, where analysis of genetic mutants implicated innexins in the development of muscle and neuronal cell types (Crompton et al., 1995; Starich et al., 1996; Zhang et al., 1999). These examples of the control of proliferation and patterning by GJC suggest that it is a good candidate mechanism for mediating instructive signals during regeneration.",
+      "section": "[PAGE 1] Introduction",
+      "primary_topic": "Innexins and GJC",
+      "secondary_topics": [
+        "Innexins",
+        "GJC",
+        "invertebrates",
+        "connexins",
+        "Drosophila",
+        "Caenorhabditis elegans",
+        "muscle development",
+        "neuronal development"
+      ],
+      "chunk_summary": "In invertebrates, Innexins, a family of proteins functionally analogous to connexins, mediate GJC and play crucial roles in muscle and neuronal development, making them potential candidates for mediating signals during regeneration.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "A primary aspect of regeneration in planaria is the establishment of head/tail identity. The formulation of specific models of long-range signaling in determination of AP polarity requires knowledge of the distribution of signaling pathways that could underlie the exchange of morphogenetic signals. Importantly, a comprehensive expression analysis of all known native genes which could underlie GJC has, to our knowledge, only been performed in Drosophila (Stebbings et al., 2002), but not in any morphogenetic system which offers contexts for highly regulative morphogenesis or regeneration.",
+      "section": "A",
+      "primary_topic": "Planarian Regeneration",
+      "secondary_topics": [
+        "head/tail identity",
+        "AP polarity",
+        "long-range signaling",
+        "morphogenetic signals",
+        "gap junctions",
+        "GJC",
+        "Drosophila",
+        "gene expression"
+      ],
+      "chunk_summary": "Understanding planarian head/tail regeneration requires knowledge of signaling pathways, particularly gap junctional communication (GJC), which has been studied in Drosophila but not in highly regenerative systems.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Moreover, most available data on GJC roles in mammalian and invertebrate models come from deletions of one or at most two GJC gene products, leaving others to mask potentially interesting effects by compensation and/or redundancy. Thus, we cloned the members of the Innexin family in the planarian, Dugesia japonica, and comparatively characterized their expression in intact worms and during stages of regeneration. We then performed loss-of-function experiments using reagents that do not distinguish among different innexins to test the role of gap junctions in planarian regeneration, and asked whether GJC is involved in the fundamental determination of anterior-posterior polarity.",
+      "section": "A",
+      "primary_topic": "Gap Junctions",
+      "secondary_topics": [
+        "GJC",
+        "Innexins",
+        "Dugesia japonica",
+        "gene cloning",
+        "loss-of-function",
+        "regeneration",
+        "anterior-posterior polarity",
+        "compensation",
+        "redundancy"
+      ],
+      "chunk_summary": "Due to limitations in previous GJC research, this study cloned planarian Innexins and characterized their expression, then used loss-of-function experiments to investigate the role of gap junctions in regeneration and AP polarity.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "The induction of bipolar 2-headed animals by exposure to a GJC blocker supports the hypothesis that GJC-based signaling is required for the establishment of correct AP identity during regeneration.",
+      "section": "A",
+      "primary_topic": "GJC and AP Polarity",
+      "secondary_topics": [
+        "GJC blocker",
+        "bipolarity",
+        "2-headed animals",
+        "AP identity",
+        "regeneration",
+        "bioelectric signaling"
+      ],
+      "chunk_summary": "Inducing bipolar 2-headed planarians with a GJC blocker suggests that GJC signaling is necessary for proper anterior-posterior identity during regeneration.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "Materials and methods used in the research are described in this section.",
+      "section": "[PAGE 2] Materials and methods",
+      "primary_topic": "Methods",
+      "secondary_topics": [
+        "materials",
+        "experimental design",
+        "research methods"
+      ],
+      "chunk_summary": "This section outlines the materials and methods employed in the study.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "2"
+    },
+    {
+      "text": "The asexual clonal strain GI of the planarian D. japonica, kindly provided by Kiyokazu Agata (Riken, Japan) and Alejandro Sanchez Alvarado (University of Utah, USA), was used in this study. In all experiments, the worms were starved for 1 week before use.",
+      "section": "[PAGE 2] Worm husbandry",
+      "primary_topic": "Planarian Culture",
+      "secondary_topics": [
+        "D. japonica",
+        "GI strain",
+        "clonal strain",
+        "starvation",
+        "worm husbandry",
+        "planarian maintenance"
+      ],
+      "chunk_summary": "This study utilized the asexual clonal GI strain of D. japonica planarians, which were starved for one week prior to all experiments.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "2"
+    },
+    {
+      "text": "cDNA from regenerating head and tail fragments of planarians (mixed stages at 1-6 days after cutting) was used as templates for PCR to amplify the planarian innexin genes from a library (5 × 106 independent clones) using the forward primer 5'-CGCGGATCCWSNRRNCARTAYGTNGG-3' and degenerate reverse primer 5'-CGGAATTCGGNACCCAYTGRTARTA-3′, corresponding to the highly conserved regions of innexin genes, which the amino acid sequences are (S/T)(K/G)QYVG and YYQWVP, respectively.",
+      "section": "[PAGE 2] PCR-based cloning of the innexin genes",
+      "primary_topic": "Innexin Gene Cloning",
+      "secondary_topics": [
+        "PCR",
+        "cDNA library",
+        "planarian",
+        "innexin",
+        "primer design",
+        "degenerate primers",
+        "conserved regions"
+      ],
+      "chunk_summary": "Planarian innexin genes were amplified via PCR from a cDNA library using degenerate primers targeting conserved regions.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "2"
+    },
+    {
+      "text": "The PCR amplification was carried out with one cycle at 94°C for 1 min, followed by 40 cycles of 30 s at 94°C, 30 s at 45°C and 30 s at 72°C, and by a final extension at 72°C for 5 min. The library was screened by the PCR-based stepwise dilution method (Watanabe et al., 1997).",
+      "section": "[PAGE 2] PCR-based cloning of the innexin genes",
+      "primary_topic": "PCR Amplification",
+      "secondary_topics": [
+        "PCR conditions",
+        "thermal cycling",
+        "stepwise dilution",
+        "library screening"
+      ],
+      "chunk_summary": "The PCR amplification protocol involved specific temperature cycles and a stepwise dilution method for library screening.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "2"
+    },
+    {
+      "text": "Whole-mount in situ hybridization was performed with modifications for increased sensitivity and reduced background.  Prior to prehybridization, samples underwent incubation in triethanolamine and acetylation using an acetic anhydride series. Hybridization occurred in a solution containing formamide, SSC, tRNA, heparin, Tween-20, DTT, dextran sulfate, and a DIG-labeled antisense riboprobe denatured at 70°C.  Chromogenic detection employed BCIP/NBT substrates, followed by embedding in JB-4 and sectioning.",
+      "section": "[PAGE 2] Whole-mount in situ hybridization",
+      "primary_topic": "In situ hybridization",
+      "secondary_topics": [
+        "whole-mount",
+        "gene expression",
+        "mRNA localization",
+        "digoxygenin",
+        "riboprobe",
+        "BCIP/NBT",
+        "JB-4 embedding",
+        "sectioning"
+      ],
+      "chunk_summary": "This study utilized a modified whole-mount in situ hybridization protocol with enhanced sensitivity and reduced background for detecting gene expression.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "2"
+    },
+    {
+      "text": "Intact worms 1-1.5 cm long were put into heptanol (or hexanol) solution (0.0045-0.006% vigorously vortexed into spring water) immediately prior to amputation to equilibrate the worms with the drug solution. The worms were amputated at four levels to generate the head, prepharyngeal, trunk (or 'pharyngeal' according to the scheme of Reddien and Alvarado, 2004), post-pharyngeal and tail fragments.",
+      "section": "[PAGE 2] Drug exposure for GJC inhibition",
+      "primary_topic": "GJC Inhibition",
+      "secondary_topics": [
+        "heptanol",
+        "hexanol",
+        "drug exposure",
+        "amputation",
+        "worm fragments",
+        "planarian"
+      ],
+      "chunk_summary": "Planarian worms were exposed to heptanol or hexanol solutions prior to amputation at four levels to generate different body fragments for studying GJC inhibition.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "2"
+    },
+    {
+      "text": "Worm fragments were incubated at 22°C for 2 days. The heptanol solution was exchanged for fresh solution every day. The worms were then washed with water twice and incubated in worm water for 14-20 days to monitor the phenotypes.",
+      "section": "[PAGE 2] Drug exposure for GJC inhibition",
+      "primary_topic": "Incubation and Monitoring",
+      "secondary_topics": [
+        "incubation",
+        "phenotype monitoring",
+        "worm fragments",
+        "heptanol",
+        "regeneration"
+      ],
+      "chunk_summary": "Following amputation and drug exposure, worm fragments were incubated, and the heptanol solution was refreshed daily before a final wash and incubation in worm water for phenotype monitoring.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "2"
+    },
+    {
+      "text": "We developed a quantitative scheme allowing comparison of degree of anteriorization among groups of worms. Each worm was scored on the following scale by observing the posterior blastema: 0 points-normal (a normal worm with a fully-patterned tail), 1 point-weak anteriorization of posterior blastema (missing tail or bipolar pharynx), 2 points stronger anteriorization of posterior blastema (incomplete ectopic head with eye structures) or 3 points-complete anteriorization of posterior blastema (bipolar head, where the ectopic head has complete development with 2 normal eyes).",
+      "section": "[PAGE 2] Scoring system for anterior-posterior phenotype of regenerates",
+      "primary_topic": "Anteriorization Scoring",
+      "secondary_topics": [
+        "blastema",
+        "phenotype",
+        "anterior-posterior axis",
+        "regeneration",
+        "planaria",
+        "scoring system",
+        "ectopic head"
+      ],
+      "chunk_summary": "A quantitative scoring system was developed to assess the degree of anteriorization in regenerating worms based on posterior blastema morphology.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "2"
+    },
+    {
+      "text": "For each group of worms, we calculated an average score that is the sum of all scores for the worms divided by the total number of worms. For convenience, the index was scaled from 0 to 100 (final index = average score * 100 / 3). On this scale, a group of worms that were all normal would score 0, while a group of worms all of which were fully double-head would score 100. This scheme was focused on ascertaining the extent of anteriorization as judged by external morphology; molecular marker analysis of these phenotypes is presented in Fig. 11.",
+      "section": "[PAGE 2] Scoring system for anterior-posterior phenotype of regenerates",
+      "primary_topic": "Anteriorization Index",
+      "secondary_topics": [
+        "data analysis",
+        "normalization",
+        "double-headed",
+        "phenotype",
+        "molecular markers"
+      ],
+      "chunk_summary": "An average anteriorization score was calculated for each group and scaled to a 0-100 index, reflecting the extent of anteriorization based on external morphology, with further molecular analysis presented elsewhere.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "2"
+    },
+    {
+      "text": "Results are presented on page 3.",
+      "section": "[PAGE 3] Results",
+      "primary_topic": "Results",
+      "secondary_topics": [
+        "data",
+        "outcomes",
+        "observations"
+      ],
+      "chunk_summary": "This section presents the results of the study.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "3"
+    },
+    {
+      "text": "Neither the Drosophila and C. elegans genome projects (Starich et al., 2001), nor the extensive planarian EST or genome projects (Mineta et al., 2003; Sanchez Alvarado et al., 2002), have located any connexin genes. Therefore, we focused on isolation of innexin genes, which are now known to underlie gap-junctional communication in invertebrates (Dykes et al., 2004; Landesman et al., 1999b; Phelan et al., 1998a,b; Phelan and Starich, 2001). To isolate planarian innexin genes, we first pursued degenerate PCR amplification of innexin gene fragments, using the planarian cDNAs as the templates. We isolated 6 fragments of innexin-like clones, inx1 to 6. We screened a cDNA library to isolate full-length clones. While we isolated and sequenced full-length clones for inx1-5, inx6 was not present in the cDNA library. By searching the planarian D. japonica EST database (Mineta et al., 2003), we found an additional 7 putative innexins which were present as incomplete fragments.",
+      "section": "[PAGE 3] Isolation and sequences of innexin cDNA",
+      "primary_topic": "Innexin Isolation",
+      "secondary_topics": [
+        "cDNA library screening",
+        "degenerate PCR",
+        "innexin genes",
+        "planarian",
+        "EST database",
+        "connexin genes",
+        "gene cloning"
+      ],
+      "chunk_summary": "This study focused on isolating planarian innexin genes using degenerate PCR and cDNA library screening, identifying 13 innexin clones (inx1-13).",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "3"
+    },
+    {
+      "text": "Based upon these, we screened a cDNA library, and isolated full-length cDNA clones, inx7 to inx13. All cDNA clones included the initiation codon and the 5' and 3' untranslated sequences. The completed sequences of cDNA clones (inx1-5 and inx7-13) and the sequence of PCR fragment of inx6 have been deposited in the DDBJ/EMBL/ GeneBank Library database under accession numbers AB189252-AB189262, AB196957, and AB178521. Alignment of the predicted amino acid sequences of innexins is shown in Fig. 1. Homology analysis showed that planarian innexins had moderately high homology (50.3–60.5% identity in the conserved region, transmembrane domains 1-4) to C. elegans innexin unc-9, except that inx8 and inx11 exhibited 48.1% and 39.8% identity to unc-9, respectively.",
+      "section": "[PAGE 3] Isolation and sequences of innexin cDNA",
+      "primary_topic": "Sequence Analysis",
+      "secondary_topics": [
+        "amino acid sequence",
+        "homology analysis",
+        "transmembrane domains",
+        "C. elegans",
+        "unc-9",
+        "innexin structure",
+        "sequence alignment"
+      ],
+      "chunk_summary": "Sequence analysis revealed homology between planarian innexins and C. elegans innexin unc-9, with conserved transmembrane domains.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "3"
+    },
+    {
+      "text": "D. japonica inx1 had a high homology (83.1% identity in the 1st-2nd transmembrane domain) to the planarian Girardia tigrina innexin panx1 (Panchin et al., 2000) at the amino acid level, though D. japonica inx1 has a stop codon in the middle of the coding region not found in G. tigrina panx1, suggesting that D. japonica inx1 is the homologue of G. tigrina innexin panx1. The conserved four transmembrane domains, cysteine residues in the extracellular loops and tetrapeptide sequence (YYQW, located near the end of the first extracellular loop next to the second transmembrane domain), which exist specifically in all innexin sequences reported so far (Dykes et al., 2004; Phelan and Starich, 2001; Potenza et al., 2002, 2003), were also found in the planarian innexin sequences (Fig. 1), except for D. japonica inx1 (because it has a stop codon in the third transmembrane domain). These data indicate that these clones are members of innexin gene family.",
+      "section": "[PAGE 3] Isolation and sequences of innexin cDNA",
+      "primary_topic": "Innexin Homology",
+      "secondary_topics": [
+        "Girardia tigrina",
+        "panx1",
+        "stop codon",
+        "transmembrane domains",
+        "cysteine residues",
+        "extracellular loops",
+        "tetrapeptide sequence",
+        "innexin family"
+      ],
+      "chunk_summary": "Despite a stop codon in D. japonica inx1, conserved innexin features like transmembrane domains, cysteine residues, and a tetrapeptide sequence confirm these clones belong to the innexin family, with D. japonica inx1 showing homology to G. tigrina panx1.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "3"
+    },
+    {
+      "text": "Phylogenic analysis showed the similarity of the planarian innexin sequences to some innexin sequences of Lophotrochozoan (leech, polychaete and mollusc) and C. elegans innexins (Fig. 2). Moreover, it showed that the D. japonica innexins could be classified into three groups: Group I (inx7 and G. tigrina panx1, replacing D. japonica inx1), Group II (inx2, inx3, inx4, inx5, inx12 and inx13) and Group III (inx8, inx9, inx10 and inx11). This suggests a homology conservation of innexin genes among animal phyla, and the evolutionary divergence of innexin genes in the planarian. A homology search of the planarian Schmidtea mediterranea EST databases (Alvarado et al., 2002, P. Newmark, personal communication) for innexin sequences detected 15 independent clones in the EST databases with significant similarities to innexin genes. Phylogenic analysis showed that the sequences of 12 of these 15 independent innexin-like clones have significant homology to D. japonica inx1-inx4 and inx8-inx13.",
+      "section": "[PAGE 3] Isolation and sequences of innexin cDNA",
+      "primary_topic": "Phylogenetic Analysis",
+      "secondary_topics": [
+        "Lophotrochozoan",
+        "C. elegans",
+        "Schmidtea mediterranea",
+        "EST databases",
+        "homology conservation",
+        "evolutionary divergence",
+        "phylogenetic groups",
+        "innexin classification"
+      ],
+      "chunk_summary": "Phylogenetic analysis classified D. japonica innexins into three groups, suggesting homology conservation among animal phyla and evolutionary divergence within planarians, further supported by analysis of S. mediterranea EST databases.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "3"
+    },
+    {
+      "text": "To gain insight into possible roles of Gap Junctional Communication (GJC) in regeneration, the expression of innexin genes in planarians was characterized using whole-mount in situ hybridization (Figs. 3-9).",
+      "section": "[PAGE 3] Expression characterization of innexin genes",
+      "primary_topic": "Innexin Expression",
+      "secondary_topics": [
+        "gap junctions",
+        "innexin genes",
+        "regeneration",
+        "planarian",
+        "in situ hybridization",
+        "gene expression",
+        "GJC"
+      ],
+      "chunk_summary": "This study investigated the role of gap junctional communication in planarian regeneration by examining innexin gene expression patterns using whole-mount in situ hybridization.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "3"
+    },
+    {
+      "text": "inx1- and inx7-positive cells were present throughout the anterior and two posterior branches of the intestine (Fig. 3) and changed dynamically during regeneration. In head fragments at 2 days after cutting, inx1 and inx7 were expressed in the two small projections corresponding to the early regenerating posterior branches of the intestine (Fig. 3F). The regenerating branches expressing inx1 and inx7 extended posteriorly (Figs. 3G, H) and the regenerating pharynx appeared in the anterior region between them at 5 days after cutting (Fig. 3H).",
+      "section": "[PAGE 3] Intestine expression of innexins",
+      "primary_topic": "Innexin Expression",
+      "secondary_topics": [
+        "inx1",
+        "inx7",
+        "intestine",
+        "regeneration",
+        "head fragments",
+        "pharynx"
+      ],
+      "chunk_summary": "Innexins inx1 and inx7 are dynamically expressed in the anterior and posterior branches of the regenerating intestine, specifically in head fragments.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "3"
+    },
+    {
+      "text": "In 1- to 2-day tail fragments, the intestine branches expressing inx1 and inx7, which had been originally the posterior branches in the intact worms, integrated at an anterior position (Fig. 31). inx1 and inx7 were also expressed in one small projection that appeared at the anterior position of the integrated branches, corresponding to the early regenerating anterior branch (Fig. 31). Sectioning clearly showed that the posterior intestine branches at the medial anterior position transited to anterior branch by integration of the intestine branches (Figs. 3N, O).",
+      "section": "[PAGE 3] Intestine expression of innexins",
+      "primary_topic": "Intestine Regeneration",
+      "secondary_topics": [
+        "inx1",
+        "inx7",
+        "tail fragments",
+        "anterior branch",
+        "posterior branch",
+        "integration"
+      ],
+      "chunk_summary": "In tail fragments, inx1 and inx7 expression is observed in the integrating intestine branches, indicating a transition from posterior to anterior branches during regeneration.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "3"
+    },
+    {
+      "text": "Nervous system expression of innexins: inx2, inx3, inx4 and inx13 were expressed in the nervous system (Fig. 4), the molecular structure of which has recently been characterized in D. japonica (Cebria et al., 2002). Although they were expressed in both the brain and ventral nerve cord (VNC), the distribution of positive cells was different among these genes. inx2 was expressed weakly in the medial region of brain and the medial-distal region of brain branches (Figs. 4A, M-O). inx2 was expressed very weakly in the VNC (Figs. 4A-C). inx3 was expressed throughout the brain (Figs. 4D, F), and strongly in the medial and lateral regions of the brain and branches (Figs. 4D, P). inx3 expression extended to the distal region of the brain branches (Figs. 4Q1–R). inx3 was expressed in the VNC, though the intensity of expression was very low in intact worms (Fig. 4D), compared to the high expression observed during regeneration (Figs. 4E-F).",
+      "section": "[PAGE 5] Nervous system expression of innexins",
+      "primary_topic": "Innexin Expression",
+      "secondary_topics": [
+        "inx2",
+        "inx3",
+        "brain",
+        "ventral nerve cord",
+        "gene expression",
+        "nervous system",
+        "D. japonica"
+      ],
+      "chunk_summary": "This chunk describes the differential expression patterns of inx2 and inx3 within the brain and ventral nerve cord of D. japonica, noting higher inx3 expression during regeneration.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "5"
+    },
+    {
+      "text": "inx4 was expressed in the brain branches and the medial and lateral regions of the brain (Figs. 4G, S). In contrast to inx2 and inx3, inx4 was expressed in neuron-like cells throughout the peripheral region of the head, where sensory organs are aligned and project to the brain branches (Figs. 4T1-U). inx4 was expressed in the posterior blastema at 5 days after cutting (Fig. 4I). inx4 was also expressed in the VNC (Figs. 4G-I), being up-regulated in the anterior region at 5 days after cutting (Fig. 4I). inx4 was expressed in a number of cells throughout the body; especially strong expression was detected in the photoreceptor cells that plug the eyecup of the pigment cells (Figs. 5A-C), contrasting with the absence of expression of the other innexins in the photoreceptor cells (Fig. 5D).",
+      "section": "[PAGE 5] Nervous system expression of innexins",
+      "primary_topic": "Innexin Expression",
+      "secondary_topics": [
+        "inx4",
+        "brain",
+        "ventral nerve cord",
+        "sensory organs",
+        "photoreceptor cells",
+        "regeneration",
+        "blastema"
+      ],
+      "chunk_summary": "This chunk details the expression of inx4, highlighting its presence in neuron-like cells in the head, the posterior blastema, the VNC, and notably in photoreceptor cells, unlike other innexins.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "5"
+    },
+    {
+      "text": "During regeneration, the expression of inx4 in the photoreceptor cells began at 4 days after cutting (Fig. 5E) prior to the appearance of maturely pigmented eyecup at 5 days after cutting.",
+      "section": "[PAGE 5] Nervous system expression of innexins",
+      "primary_topic": "Regeneration",
+      "secondary_topics": [
+        "inx4",
+        "photoreceptor cells",
+        "eye development",
+        "pigmentation",
+        "regeneration timeline"
+      ],
+      "chunk_summary": "This chunk focuses on the timing of inx4 expression in photoreceptor cells during regeneration, noting its onset precedes pigmented eyecup formation.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "5"
+    },
+    {
+      "text": "Fig. 2 presents a phylogenic tree for innexins, constructed using the UPGMA method with GENEYX-MAC software. The analysis used predicted amino acid sequences of the conserved region encompassing the 1st-3rd transmembrane domains (Figs. 1A-E). Planarian innexins are highlighted, and three distinct groups are identified, correlating with gene expression patterns (Figs. 3-9). Species abbreviations are consistent with Fig. 1.  Innexin 13 (inx13) exhibits expression in the lateral and medial brain regions (Figs. 4J, L), with higher lateral expression in intact worms (Figs. 4V, W1).  Expression is also observed in brain branch stems (Figs. 4W1, X). While weak in the ventral nerve cord (VNC), inx13 expression is upregulated posteriorly during regeneration (Figs. 4K, L).  Innexins 2, 3, and 13 are expressed in the pharynx's posterior region (Figs. 4A-C, 4D-F, 4J-L), while inx4 is expressed in both anterior and posterior regions (Figs. 4G-I).  This contrasts with intestine-type innexins (inx1, inx7), which are absent in the pharynx despite its direct connection to intestine ducts (Fig. 3).",
+      "section": "[PAGE 5] Fig. 2. Phylogenic tree for innexins. An unrooted tree was constructed using clustering with UPGMA method using GENEYX-MAC software. The predicted amino",
+      "primary_topic": "Innexin Expression",
+      "secondary_topics": [
+        "phylogenic tree",
+        "innexins",
+        "gene expression",
+        "planarian",
+        "brain",
+        "VNC",
+        "pharynx",
+        "regeneration"
+      ],
+      "chunk_summary": "This chunk describes the phylogenetic analysis of innexins and their expression patterns in different planarian tissues, particularly the brain, VNC, and pharynx, during regeneration.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "5"
+    },
+    {
+      "text": "The expression of innexins 2, 3, 4, and 13 changes dynamically during brain regeneration (Fig. 6). These innexins can be classified into early (inx3 and inx13, initiating within 1 day post-cutting) and late (inx2 and inx4, initiating at 2 days) expression groups. Inx2 expression begins in the medial and lateral regenerating brain at 2 days (Fig. 6A2) and expands to the regenerating brain branches by 3-4 days (Figs. 6A3, A4). Inx4 expression starts in the anterior-medial regenerating brain at 2 days (Fig. 6B2), contrasting with the brain marker DjotxB (Umesono et al., 1999).  From 3-5 days, inx4 expression extends posteriorly in the medial regenerating brain, with transient upregulation at 4 days (Figs. 6B3, B4, B5).",
+      "section": "[PAGE 5] Fig. 2. Phylogenic tree for innexins. An unrooted tree was constructed using clustering with UPGMA method using GENEYX-MAC software. The predicted amino",
+      "primary_topic": "Brain Regeneration",
+      "secondary_topics": [
+        "innexins",
+        "gene expression",
+        "regeneration",
+        "brain",
+        "planarian",
+        "DjotxB",
+        "blastema"
+      ],
+      "chunk_summary": "This chunk details the dynamic expression changes of innexins 2, 3, 4, and 13 during planarian brain regeneration, categorizing them into early and late expression groups.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "5"
+    },
+    {
+      "text": "Inx3 and inx13, the early genes, show distinct expression patterns. Inx3 expression initiates in the anterior blastema within 1 day (Fig. 6C1), with the earliest signal at 18 hours post-cutting. By 2 days, expression expands posteriorly in both medial and lateral regenerating brain regions (Fig. 6C2). At 4-5 days, strong inx3 expression clearly outlines the brain branches (Figs. 6C4, C5). Inx13 expression begins in the anterior blastema at 1 day (Fig. 6D1), localizing to medial and lateral regenerating brain regions by 2 days (Fig. 6D2).  At 3 days, inx13 is expressed in early regenerating brain branch stems (Fig. 6D3). By 4-5 days, inx13 expression extends peripherally along regenerating brain branches but not to the tips (Figs. 6D4, D5), similar to the CNS marker DjPC2 (Agata et al., 1998) (Figs. 6E4, E5).",
+      "section": "[PAGE 5] Fig. 2. Phylogenic tree for innexins. An unrooted tree was constructed using clustering with UPGMA method using GENEYX-MAC software. The predicted amino",
+      "primary_topic": "Brain Regeneration",
+      "secondary_topics": [
+        "innexins",
+        "gene expression",
+        "regeneration",
+        "brain",
+        "planarian",
+        "DjPC2",
+        "blastema"
+      ],
+      "chunk_summary": "This chunk focuses on the expression patterns of the early genes, inx3 and inx13, during brain regeneration, highlighting their distinct temporal and spatial dynamics.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "5"
+    },
+    {
+      "text": "In intact worms, inx5 is expressed at the edge of the head where sensory organs align and in scattered cells on the dorsal side, showing a graded distribution from head to tail.  It's also found along the ventral nerve cord (VNC), particularly dense in the head. During regeneration, inx5 appears in the blastema, initially at the anterior edge and in scattered cells.  Sectioning reveals its presence at the leading edge of head mesenchyme. After brain regeneration, inx5-positive cells increase along the VNC in both the head and tail regions. In contrast, inx12 shows weak expression in the head and tail of intact worms.  During regeneration, it's expressed in both anterior and posterior blastema and weakly along the midline in the posterior body. Sectioning shows inx12 in the mesenchyme anterior to the regenerating intestine in the anterior blastema at 2 days post-cutting. By 5 days, inx12 expression decreases in the blastema, becoming restricted to the regenerating head's edge.  After brain regeneration, it outlines the VNC in the regenerating head.",
+      "section": "[PAGE 9] Expression of innexins in the blastema",
+      "primary_topic": "Innexin Expression",
+      "secondary_topics": [
+        "inx5",
+        "inx12",
+        "blastema",
+        "regeneration",
+        "VNC",
+        "mesenchyme",
+        "sensory organs"
+      ],
+      "chunk_summary": "This chunk describes the expression patterns of inx5 and inx12 in intact and regenerating worms, highlighting their localization in the blastema, mesenchyme, and VNC.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "9"
+    },
+    {
+      "text": "inx8 and inx9 are expressed in the mesenchyme throughout the body, excluding the intestine.  They are found between the epithelium/muscle, intestine, and nervous system, with some differences. inx8 is strongly expressed in mesenchyme cells around and between small intestine branches, between the intestine branch and pharynx, and in the pharynx itself. inx9 shows more ubiquitous mesenchyme expression but is absent between the intestine branch and pharynx. Both are strongly expressed in the mesenchyme around the pharynx and at the tail midline. While both are strongly expressed in the regenerating head and tail at later stages, inx9 is highly expressed in the anterior blastema. Sectioning reveals inx9 in the thin mesenchyme layer outlining the anterior regenerating intestine at 2 days post-cutting. inx11 is also expressed in the mesenchyme, absent from the nervous system and intestine. It's absent from the tail tip mesenchyme (except edge and midline) in intact worms and the posterior blastema during regeneration. inx11 is strongly expressed in the dorsal midline and restricted to the medial region of the head mesenchyme, unlike inx8 and inx9.",
+      "section": "[PAGE 9] Expression of innexins in the blastema",
+      "primary_topic": "Innexin Expression",
+      "secondary_topics": [
+        "inx8",
+        "inx9",
+        "inx11",
+        "mesenchyme",
+        "blastema",
+        "regeneration",
+        "pharynx",
+        "intestine"
+      ],
+      "chunk_summary": "This chunk details the expression patterns of inx8, inx9, and inx11, focusing on their mesenchymal localization and differences in expression around the pharynx, intestine, and during regeneration.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "9"
+    },
+    {
+      "text": "inx10 is expressed in small, thread-like structures primarily in the lateral-peripheral region of intact worms. These structures are sparsely distributed in the mesenchyme beneath the epithelium, resembling the distribution of protonephridia reported in previous studies. During regeneration, the shape of these inx10-expressing structures changes dynamically in the blastemas.  inx10 is also expressed in the anterior and posterior pharynx, similar to inx4.",
+      "section": "[PAGE 9] Expression of innexins in the blastema",
+      "primary_topic": "Innexin Expression",
+      "secondary_topics": [
+        "inx10",
+        "protonephridia",
+        "blastema",
+        "regeneration",
+        "pharynx",
+        "mesenchyme"
+      ],
+      "chunk_summary": "This chunk describes the expression of inx10 in thread-like structures resembling protonephridia, noting its dynamic changes during regeneration and its presence in the pharynx.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "9"
+    },
+    {
+      "text": "Fig. 5. inx4 expression in photoreceptor cells. (A-C) Expression of inx4 in the intact worm. The red arrowheads indicate the expression in the photoreceptor cell plugging the pigmented eyecup. Anterior is to the left. Dorsal view. (A) Close-up view of the head the whole-mount specimen. (B) Close-up view of the eye. (C) Horizontal section. Close-up view of the eye.",
+      "section": "[PAGE 9] Fig. 5. inx4 expression in photoreceptor cells. (A-C) Expression of inx4 in the",
+      "primary_topic": "inx4 Expression",
+      "secondary_topics": [
+        "photoreceptor cells",
+        "eyecup",
+        "intact worm",
+        "whole-mount specimen",
+        "horizontal section",
+        "gene expression"
+      ],
+      "chunk_summary": "This figure depicts the expression of inx4 in photoreceptor cells of an intact worm, specifically within the pigmented eyecup.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "9"
+    },
+    {
+      "text": "(D) Expression of inx3 in the intact worm. Close-up view of the eye. The white arrowhead indicates the absence of the inx3 expression. Note that inx3 is expressed strongly in brain cells just under the eye. Anterior is to the left. Dorsal view. (E) Expression of inx4 during regeneration. 4 days after cutting. The red arrowheads indicate the expression in the cells in the regenerating photoreceptor. Note that the pigmented eye cups have not appeared clearly yet. Anterior to the top. Dorsal views. Scale bars: Α, Ε-200 μm; B, D-75 µm; C-50 µm.",
+      "section": "[PAGE 9] Fig. 5. inx4 expression in photoreceptor cells. (A-C) Expression of inx4 in the",
+      "primary_topic": "inx3/inx4 Expression",
+      "secondary_topics": [
+        "photoreceptor cells",
+        "regeneration",
+        "brain cells",
+        "gene expression",
+        "intact worm",
+        "regenerating photoreceptor"
+      ],
+      "chunk_summary": "This part of the figure contrasts inx3 absence in the eye with strong brain cell expression in the intact worm, and shows inx4 expression in regenerating photoreceptor cells 4 days post-cutting, before pigmented eyecups reappear.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "9"
+    },
+    {
+      "text": "Fig. 6. inx2, inx3, inx4 and inx13 expression in the brain during regeneration. inx2, inx3, inx4 and inx13 expression in cephalic regenerates (1 day to 5 days after cut). Close-up view of the anterior region of the regenerating trunk fragments and intact worms. Anterior is to the top. Ventral view. (A1-A6) Expression of inx2. (B1-B6) Expression of inx4. (C1-C6) Expression of inx3. (D1-D6) Expression of inx13. (E1-E6) Expression of the CNS marker DjPC2. In panels C1 and D1, red arrowheads indicate that the expression of inx3 and inx13 is initiated in the early regenerating brain, respectively.",
+      "section": "[PAGE 10] Fig. 6. inx2, inx3, inx4 and inx13 expression in the brain during regeneration. inx2, inx3, inx4 and inx13 expression in cephalic regenerates (1 day to 5 days after",
+      "primary_topic": "Gene Expression",
+      "secondary_topics": [
+        "inx2",
+        "inx3",
+        "inx4",
+        "inx13",
+        "brain regeneration",
+        "cephalic regeneration",
+        "DjPC2",
+        "CNS markers"
+      ],
+      "chunk_summary": "This figure depicts the expression patterns of inx2, inx3, inx4, and inx13 genes, along with the CNS marker DjPC2, in the regenerating brain of planarians at different time points (1-5 days post-cut).",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "10"
+    },
+    {
+      "text": "In panels A3 and C3, the red arrows indicate the expression of inx2 and inx3 in the regenerating brain branches, respectively. Scale bars are 200 µm.",
+      "section": "[PAGE 10] Fig. 6. inx2, inx3, inx4 and inx13 expression in the brain during regeneration. inx2, inx3, inx4 and inx13 expression in cephalic regenerates (1 day to 5 days after",
+      "primary_topic": "Brain Branch Expression",
+      "secondary_topics": [
+        "inx2",
+        "inx3",
+        "brain branches",
+        "regeneration",
+        "gene expression"
+      ],
+      "chunk_summary": "Red arrows in panels A3 and C3 highlight the expression of inx2 and inx3 within the regenerating brain branches.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "10"
+    },
+    {
+      "text": "Functional analysis of GJC on planarian regeneration by inhibitor treatment was conducted to test the hypothesis that GJC is required for correct patterning during regeneration.  Researchers sought a loss-of-function reagent that would affect all gap junctions.",
+      "section": "[PAGE 10] Functional analysis of GJC on planarian regeneration by",
+      "primary_topic": "Gap Junctions",
+      "secondary_topics": [
+        "GJC",
+        "planarian regeneration",
+        "inhibitor treatment",
+        "patterning",
+        "loss-of-function"
+      ],
+      "chunk_summary": "Inhibitor treatment was used to test the role of gap junctional communication (GJC) in planarian regeneration patterning.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "10"
+    },
+    {
+      "text": "RNAi approaches are not well-suited for studying innexin function because they target individual transcripts, and it's currently impossible to simultaneously target all 13 innexin transcripts in a single planarian. Large-scale RNAi screens in planaria haven't revealed innexin gene roles (Reddien et al., 2005). Our expression data shows overlapping expression domains within this large gene family, suggesting that RNAi inhibition might mask functional roles due to redundancy and compensation among different innexins.",
+      "section": "RNA",
+      "primary_topic": "RNAi limitations",
+      "secondary_topics": [
+        "RNA interference",
+        "innexins",
+        "gene expression",
+        "functional redundancy",
+        "planaria",
+        "gene knockdown"
+      ],
+      "chunk_summary": "RNAi is unsuitable for studying innexin function in planaria due to the inability to target all transcripts simultaneously and potential masking effects from functional redundancy.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Therefore, we used heptanol, a known disruptor of gap junctional communication (GJC), which is easy to apply to large worm populations. Heptanol and other long-chain n-alkanols are effective and reversible blockers of electrical and chemical GJC in both connexin- (Chanson et al., 1989; Levin and Mercola, 1998) and innexin-based gap junctions (Adler and Woodruff, 2000; Anderson and Woodruff, 2001; Brooks and Woodruff, 2004; Bukauskas et al., 1992; Carrow and Levitan, 1989; Mire et al., 2000; Peracchia, 1991; Weingart and Bukauskas, 1998; Yazaki et al., 1999).",
+      "section": "RNA",
+      "primary_topic": "Heptanol use",
+      "secondary_topics": [
+        "gap junctions",
+        "GJC",
+        "innexins",
+        "connexins",
+        "heptanol",
+        "chemical blocking",
+        "reversible inhibition"
+      ],
+      "chunk_summary": "Heptanol was chosen as a GJC disruptor due to its ease of application and effectiveness in blocking both connexin and innexin-based gap junctions.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Regenerating worms were treated with 1-10 µM heptanol two days after cutting. The heptanol concentration was low enough to avoid adverse effects on worm health. No effects were observed on intact worms. At 7 days post-cutting, blastema morphology was assessed.  Trunk fragments exposed to heptanol showed anteriorization of both blastemas in 43% of the cases.",
+      "section": "RNA",
+      "primary_topic": "Heptanol experiment",
+      "secondary_topics": [
+        "regeneration",
+        "blastema",
+        "anteriorization",
+        "heptanol treatment",
+        "morphology"
+      ],
+      "chunk_summary": "Worms were treated with heptanol during regeneration, and blastema morphology was assessed after 7 days, revealing anteriorization in some cases.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "13"
+    }
+  ],
+  "processed_at": "2025-08-13T19:29:58.432211",
+  "chunk_count": 45,
+  "processing_method": "document_splitting"
+}

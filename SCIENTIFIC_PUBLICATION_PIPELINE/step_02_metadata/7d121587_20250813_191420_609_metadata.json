@@ -1,0 +1,36 @@
+{
+  "document_type": "journal-article",
+  "title": "Characterization of innexin gene expression and functional roles of gap-junctional communication in planarian regeneration",
+  "authors": [
+    "Taisaku Nogi",
+    "Michael Levin"
+  ],
+  "journal": "Developmental Biology",
+  "publication_year": 2005,
+  "doi": "10.1016/j.ydbio.2005.09.002",
+  "abstract": null,
+  "extraction_confidence": "high",
+  "filename": "7d121587_20250813_191420_609.pdf",
+  "extraction_timestamp": "2025-08-13T19:16:29.605870",
+  "extraction_method": "gemini_1.5_flash",
+  "pages_analyzed": 2,
+  "publication_date": "2005-11",
+  "page_range": "314-335",
+  "volume": "287",
+  "issue": "2",
+  "references_count": 112,
+  "publisher": "Elsevier BV",
+  "issn": "0012-1606",
+  "crossref_data": true,
+  "enrichment_method": "crossref_api",
+  "crossref_enriched": true,
+  "enrichment_timestamp": "2025-08-13T19:25:48.959347",
+  "affiliations": [
+    "Department of Cytokine Biology",
+    "Department of Oral and Developmental Biology",
+    "School of Dental Medicine",
+    "University of Utah",
+    "The Forsyth Institute"
+  ],
+  "text_enriched": true
+}
