@@ -745,7 +745,15 @@ def main():
         border: 1px solid #e0e0e0;
         border-radius: 8px;
     }
-
+    /* Fix thinking box image background */
+    .stSidebar img {
+        background: transparent !important;
+        background-color: transparent !important;
+    }
+    .stSidebar .stMarkdown img {
+        background: transparent !important;
+        background-color: transparent !important;
+    }
     </style>
     """, unsafe_allow_html=True)
     
@@ -795,8 +803,10 @@ def main():
                 width: 180px; 
                 height: 200px; 
                 border-radius: 10px;
-                background: transparent;
-                mix-blend-mode: multiply;
+                background: transparent !important;
+                mix-blend-mode: normal;
+                filter: brightness(1.1) contrast(1.1);
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             ">
         </div>
         """, unsafe_allow_html=True)
