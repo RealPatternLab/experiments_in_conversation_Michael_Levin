@@ -771,94 +771,127 @@ def main():
     <style>
     /* Main app background */
     .stApp {
-        background-color: #000000;
+        background-color: #000000 !important;
     }
     
     /* Main content area */
     .main .block-container {
-        background-color: #000000;
-        color: #ffffff;
+        background-color: #000000 !important;
+        color: #ffffff !important;
+    }
+    
+    /* Header area */
+    header {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+    }
+    
+    /* Footer area */
+    footer {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+    }
+    
+    /* Streamlit header */
+    .stDeployButton {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+    }
+    
+    /* Main navigation */
+    .stNavigation {
+        background-color: #000000 !important;
+        color: #ffffff !important;
     }
     
     /* Markdown text */
     .stMarkdown {
-        color: #ffffff;
+        color: #ffffff !important;
     }
     
     /* Chat messages */
     .stChatMessage {
-        background-color: #111111;
-        border: 1px solid #333333;
+        background-color: #111111 !important;
+        border: 1px solid #333333 !important;
         border-radius: 8px;
         margin: 8px 0;
-        color: #ffffff;
+        color: #ffffff !important;
     }
     
     /* Chat message content */
     .stChatMessage .stMarkdown {
-        color: #ffffff;
+        color: #ffffff !important;
     }
     
     /* Expanders */
     .stExpander {
-        background-color: #111111;
-        border: 1px solid #333333;
+        background-color: #111111 !important;
+        border: 1px solid #333333 !important;
         border-radius: 8px;
-        color: #ffffff;
+        color: #ffffff !important;
     }
     
     /* Expander headers */
     .streamlit-expanderHeader {
-        background-color: #111111;
-        color: #ffffff;
-        border-color: #333333;
+        background-color: #111111 !important;
+        color: #ffffff !important;
+        border-color: #333333 !important;
     }
     
-    /* Sidebar */
+    /* Sidebar - comprehensive coverage */
     .css-1d391kg {
-        background-color: #000000;
-        color: #ffffff;
+        background-color: #000000 !important;
+        color: #ffffff !important;
     }
     
-    /* Sidebar elements */
+    .stSidebar {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+    }
+    
     .stSidebar .stMarkdown {
-        color: #ffffff;
+        color: #ffffff !important;
     }
     
-    /* Sidebar headers */
     .stSidebar .stHeader {
-        color: #ffffff;
+        color: #ffffff !important;
+    }
+    
+    /* Sidebar navigation */
+    .stSidebar .stNavigation {
+        background-color: #000000 !important;
+        color: #ffffff !important;
     }
     
     /* Buttons */
     .stButton > button {
-        background-color: #333333;
-        color: #ffffff;
-        border: 1px solid #555555;
+        background-color: #333333 !important;
+        color: #ffffff !important;
+        border: 1px solid #555555 !important;
     }
     
     .stButton > button:hover {
-        background-color: #555555;
-        border-color: #777777;
+        background-color: #555555 !important;
+        border-color: #777777 !important;
     }
     
     /* Input fields */
     .stTextInput > div > div > input {
-        background-color: #111111;
-        color: #ffffff;
-        border: 1px solid #333333;
+        background-color: #111111 !important;
+        color: #ffffff !important;
+        border: 1px solid #333333 !important;
     }
     
     /* Sliders */
     .stSlider > div > div > div > div {
-        background-color: #333333;
+        background-color: #333333 !important;
     }
     
     /* Metrics */
     .stMetric {
-        background-color: #111111;
-        color: #ffffff;
-        border: 1px solid #333333;
+        background-color: #111111 !important;
+        color: #ffffff !important;
+        border: 1px solid #333333 !important;
         border-radius: 8px;
         padding: 10px;
     }
@@ -885,6 +918,72 @@ def main():
     
     a:hover {
         color: #0088cc !important;
+    }
+    
+    /* Additional Streamlit elements */
+    .stSelectbox > div > div > div {
+        background-color: #111111 !important;
+        color: #ffffff !important;
+        border: 1px solid #333333 !important;
+    }
+    
+    .stMultiSelect > div > div > div {
+        background-color: #111111 !important;
+        color: #ffffff !important;
+        border: 1px solid #333333 !important;
+    }
+    
+    /* Chat input area */
+    .stChatInput {
+        background-color: #111111 !important;
+        color: #ffffff !important;
+        border: 1px solid #333333 !important;
+    }
+    
+    /* Any remaining white backgrounds */
+    div[data-testid="stVerticalBlock"] {
+        background-color: #000000 !important;
+    }
+    
+    div[data-testid="stHorizontalBlock"] {
+        background-color: #000000 !important;
+    }
+    
+    /* Streamlit app header and navigation */
+    .stApp > header {
+        background-color: #000000 !important;
+    }
+    
+    .stApp > footer {
+        background-color: #000000 !important;
+    }
+    
+    /* Additional Streamlit specific elements */
+    [data-testid="stHeader"] {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+    }
+    
+    [data-testid="stSidebar"] {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+    }
+    
+    [data-testid="stSidebar"] > div {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+    }
+    
+    /* Force all backgrounds to be black */
+    * {
+        background-color: #000000 !important;
+    }
+    
+    /* But allow specific elements to have their intended backgrounds */
+    .stChatMessage, .stExpander, .stMetric, .stButton > button, 
+    .stTextInput > div > div > input, .stSelectbox > div > div > div,
+    .stMultiSelect > div > div > div, .stChatInput {
+        background-color: inherit !important;
     }
     </style>
     """, unsafe_allow_html=True)
