@@ -12,6 +12,7 @@ Usage:
     uv run python run_pipeline.py --force            # Force run even if no files
     uv run python run_pipeline.py --status          # Show pipeline status only
     uv run python run_pipeline.py --clean           # Clean failed entries and restart
+    uv run python run_pipeline.py --no-embedding    # Skip the embedding step (step 6)
 """
 
 import argparse
@@ -68,7 +69,8 @@ class PipelineRunner:
             {
                 'name': 'Consolidated Embedding',
                 'script': 'step_06_consolidated_embedding.py',
-                'description': 'Generate FAISS vector embeddings'
+                'description': 'Generate FAISS vector embeddings',
+                'skip_flag': '--no-embedding'
             },
             {
                 'name': 'Archive Management',
@@ -137,11 +139,24 @@ class PipelineRunner:
         logger.info(f"✅ Found {len(pdf_files)} PDF files to process")
         return True
     
-    def run_step(self, step_info: Dict[str, str], force_run: bool = False) -> bool:
+    def run_step(self, step_info: Dict[str, str], force_run: bool = False, skip_embedding: bool = False) -> bool:
         """Run a single pipeline step."""
         step_name = step_info['name']
         script = step_info['script']
         description = step_info['description']
+        
+        # Check if this step should be skipped
+        if skip_embedding and step_name == 'Consolidated Embedding':
+            logger.info(f"⏭️  Skipping Step {self.current_step + 1}: {step_name}")
+            logger.info(f"📝 {description}")
+            logger.info("💡 Skipped due to --no-embedding flag")
+            logger.info("-" * 60)
+            
+            self.results[step_name] = {
+                'status': 'skipped',
+                'reason': '--no-embedding flag specified'
+            }
+            return True
         
         logger.info(f"🚀 Starting Step {self.current_step + 1}: {step_name}")
         logger.info(f"📝 {description}")
@@ -221,9 +236,11 @@ class PipelineRunner:
         except Exception as e:
             logger.error(f"❌ Error cleaning failed entries: {e}")
     
-    def run_pipeline(self, start_step: int = 0, force_run: bool = False) -> bool:
+    def run_pipeline(self, start_step: int = 0, force_run: bool = False, skip_embedding: bool = False) -> bool:
         """Run the complete pipeline from the specified step."""
         logger.info("🚀 Starting Michael Levin Scientific Publications Pipeline")
+        if skip_embedding:
+            logger.info("⏭️  Embedding step will be skipped (--no-embedding flag)")
         logger.info("=" * 70)
         
         self.start_time = time.time()
@@ -244,7 +261,7 @@ class PipelineRunner:
             logger.info(f"\n📋 Pipeline Progress: {i}/{len(self.steps)}")
             logger.info(f"⏱️  Elapsed time: {time.time() - self.start_time:.1f}s")
             
-            success = self.run_step(step_info, force_run)
+            success = self.run_step(step_info, force_run, skip_embedding)
             
             if not success:
                 logger.error(f"❌ Pipeline failed at step {i}: {step_info['name']}")
@@ -260,6 +277,8 @@ class PipelineRunner:
         total_time = time.time() - self.start_time
         logger.info("\n🎉 Pipeline completed successfully!")
         logger.info(f"⏱️  Total execution time: {total_time:.1f}s")
+        if skip_embedding:
+            logger.info("⏭️  Note: Embedding step was skipped")
         logger.info("=" * 70)
         
         return True
@@ -277,19 +296,25 @@ class PipelineRunner:
             status = result.get('status', 'unknown')
             if status == 'success':
                 logger.info(f"✅ {step_name}: Success")
+            elif status == 'skipped':
+                logger.info(f"⏭️  {step_name}: Skipped ({result.get('reason', 'Unknown reason')})")
             elif status == 'failed':
                 logger.info(f"❌ {step_name}: Failed (return code: {result.get('return_code', 'N/A')})")
             else:
                 logger.info(f"⚠️  {step_name}: Error ({result.get('error', 'Unknown error')})")
         
-        # Count successes and failures
+        # Count successes, failures, and skips
         successes = sum(1 for r in self.results.values() if r.get('status') == 'success')
-        failures = len(self.results) - successes
+        skips = sum(1 for r in self.results.values() if r.get('status') == 'skipped')
+        failures = len(self.results) - successes - skips
         
-        logger.info(f"\n📈 Results: {successes} successful, {failures} failed")
+        logger.info(f"\n📈 Results: {successes} successful, {skips} skipped, {failures} failed")
         
         if failures == 0:
-            logger.info("🎉 All steps completed successfully!")
+            if skips > 0:
+                logger.info("🎉 Pipeline completed successfully (with skipped steps)!")
+            else:
+                logger.info("🎉 All steps completed successfully!")
         else:
             logger.warning(f"⚠️  {failures} step(s) had issues")
 
@@ -305,6 +330,7 @@ Examples:
   uv run python run_pipeline.py --force            # Force run
   uv run python run_pipeline.py --status          # Show status only
   uv run python run_pipeline.py --clean           # Clean failed entries
+  uv run python run_pipeline.py --no-embedding    # Skip embedding step
         """
     )
     
@@ -333,6 +359,12 @@ Examples:
         help='Clean failed entries from pipeline queue'
     )
     
+    parser.add_argument(
+        '--no-embedding', 
+        action='store_true',
+        help='Skip the embedding step (step 6) to save time'
+    )
+    
     args = parser.parse_args()
     
     # Validate step number
@@ -352,7 +384,7 @@ Examples:
             runner.clean_failed_entries()
         else:
             # Run pipeline
-            success = runner.run_pipeline(args.step - 1, args.force)
+            success = runner.run_pipeline(args.step - 1, args.force, args.no_embedding)
             runner.show_summary()
             
             if not success:
