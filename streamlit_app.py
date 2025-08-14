@@ -114,19 +114,19 @@ def get_similarity_threshold(query: str) -> float:
     
     # Very short queries (likely greetings or simple questions)
     if len(query_lower) < 10:
-        return 0.6
+        return 0.3  # Lowered from 0.6
     
     # Short queries (simple questions)
     elif len(query_lower) < 20:
-        return 0.5
+        return 0.25  # Lowered from 0.5
     
     # Medium queries
     elif len(query_lower) < 50:
-        return 0.4
+        return 0.2  # Lowered from 0.4
     
     # Long queries (detailed questions)
     else:
-        return 0.3
+        return 0.15  # Lowered from 0.3
 
 def process_citations(response_text: str, source_mapping: dict) -> str:
     """Process response text to add hyperlinks for citations."""
@@ -702,27 +702,6 @@ def conversational_page():
                                 "content": text_only_response,
                                 "html_content": response  # Store full HTML separately for display
                             })
-                            
-                            # Show sources used
-                            with st.expander("📚 Sources used"):
-                                # Track unique sources to avoid duplicates
-                                seen_sources = set()
-                                source_counter = 1
-                                
-                                for i, result in enumerate(filtered_results[:3]):
-                                    source_title = result.get('title', 'Unknown')
-                                    year = result.get('publication_year', 'Unknown')
-                                    section_header = result.get('section', 'Unknown')
-                                    similarity = result.get('similarity_score', 0)
-                                    
-                                    # Create a unique identifier for this source
-                                    source_id = f"{source_title}_{year}_{section_header}"
-                                    
-                                    # Only show the source if it hasn't been listed before
-                                    if source_id not in seen_sources:
-                                        st.markdown(f"**{source_counter}.** {source_title} ({year}) - Section: {section_header} (Similarity: {similarity:.3f})")
-                                        seen_sources.add(source_id)
-                                        source_counter += 1
                         else:
                             # Time the fallback response generation
                             response_start_time = time.time()
@@ -746,6 +725,39 @@ def conversational_page():
                                 "content": response,
                                 "html_content": response  # For fallback responses, HTML and text are the same
                             })
+                        
+                        # Always show sources expander (either filtered or all results)
+                        if rag_results:
+                            with st.expander("📚 Sources used"):
+                                # Track unique sources to avoid duplicates
+                                seen_sources = set()
+                                source_counter = 1
+                                
+                                # Show filtered results if available, otherwise show all results
+                                results_to_show = filtered_results if filtered_results else rag_results
+                                
+                                for i, result in enumerate(results_to_show[:5]):  # Show up to 5 results
+                                    source_title = result.get('title', 'Unknown')
+                                    year = result.get('publication_year', 'Unknown')
+                                    section_header = result.get('section', 'Unknown')
+                                    similarity = result.get('similarity_score', 0)
+                                    
+                                    # Create a unique identifier for this source
+                                    source_id = f"{source_title}_{year}_{section_header}"
+                                    
+                                    # Only show the source if it hasn't been listed before
+                                    if source_id not in seen_sources:
+                                        # Add visual indicator for filtered vs unfiltered results
+                                        status = "✅" if result in filtered_results else "⚠️"
+                                        st.markdown(f"**{source_counter}.** {status} {source_title} ({year}) - Section: {section_header} (Similarity: {similarity:.3f})")
+                                        seen_sources.add(source_id)
+                                        source_counter += 1
+                                
+                                # Show threshold info
+                                if filtered_results:
+                                    st.info(f"📊 Showing {len(filtered_results)} results that met similarity threshold: {similarity_threshold:.2f}")
+                                else:
+                                    st.warning(f"📊 No results met similarity threshold: {similarity_threshold:.2f}. Showing all {len(rag_results)} results below threshold.")
                         
                 except Exception as e:
                     error_msg = f"Sorry, I encountered an error: {e}"
