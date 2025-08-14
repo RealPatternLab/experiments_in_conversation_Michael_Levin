@@ -819,7 +819,7 @@ def main():
         top_k = st.sidebar.slider(
             "Number of results to retrieve",
             min_value=1,
-            max_value=20,
+            max_value=10,
             value=10,
             key="top_k"
         )
