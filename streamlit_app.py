@@ -638,8 +638,7 @@ def main():
     try:
         if not FAISS_AVAILABLE:
             st.error("❌ FAISS not available!")
-            st.info("Please install faiss-cpu: pip install faiss-cpu")
-            st.info("If that fails, try: pip install faiss-cpu --no-deps")
+            st.info("Please check that faiss-cpu is properly installed in your environment.")
             st.stop()
             
         if 'retriever' not in st.session_state:

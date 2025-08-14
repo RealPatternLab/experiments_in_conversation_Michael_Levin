@@ -35,11 +35,8 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-# Keep requirements.txt for Streamlit Cloud
-!requirements.txt
-!packages.txt
+# Keep Streamlit config
 !.streamlit/
-!runtime.txt
 
 # Virtual environments
 .venv/
