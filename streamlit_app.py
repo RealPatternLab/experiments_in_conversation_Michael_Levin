@@ -25,6 +25,7 @@ from datetime import datetime
 import base64
 import sys
 import pickle
+from typing import Optional, List
 try:
     import faiss
     FAISS_AVAILABLE = True
@@ -508,17 +509,38 @@ class FAISSRetriever:
             # Get the single timestamp we loaded
             timestamp = list(self.metadata.keys())[0]
             metadata = self.metadata[timestamp]
+            index = self.indices[timestamp]
+            embeddings = self.embeddings[timestamp]
             
             logger.info(f"Using embeddings from: {timestamp}")
             
-            # Return top_k chunks with mock similarity scores
-            # In a production system, you'd implement actual FAISS similarity search here
-            all_results = []
-            for i, chunk_meta in enumerate(metadata[:top_k]):
-                chunk_meta['similarity_score'] = 0.9 - (i * 0.1)  # Mock scores
-                chunk_meta['embedding_timestamp'] = timestamp  # Add timestamp info
-                all_results.append(chunk_meta)
+            # Generate embedding for the query
+            query_embedding = self.generate_embedding(query)
+            if query_embedding is None:
+                logger.warning("Failed to generate query embedding, falling back to random selection")
+                # Fallback: return random chunks
+                import random
+                random_chunks = random.sample(list(metadata.values()), min(top_k, len(metadata)))
+                for chunk in random_chunks:
+                    chunk['similarity_score'] = 0.5  # Default score
+                return random_chunks
             
+            # Reshape query embedding for FAISS
+            query_embedding = np.array([query_embedding]).astype('float32')
+            
+            # Perform FAISS similarity search
+            similarity_scores, indices = index.search(query_embedding, top_k)
+            
+            # Get the actual chunks based on search results
+            all_results = []
+            for i, (score, idx) in enumerate(zip(similarity_scores[0], indices[0])):
+                if idx < len(metadata):
+                    chunk_meta = metadata[idx].copy()
+                    chunk_meta['similarity_score'] = float(score)
+                    chunk_meta['embedding_timestamp'] = timestamp
+                    all_results.append(chunk_meta)
+            
+            logger.info(f"Retrieved {len(all_results)} chunks with FAISS similarity search")
             return all_results
             
         except Exception as e:
@@ -550,6 +572,19 @@ class FAISSRetriever:
             'active_timestamp': timestamp,
             'active_chunks': active_chunks  # Chunks in the active (most recent) embeddings
         }
+    
+    def generate_embedding(self, text: str) -> Optional[List[float]]:
+        """Generate embedding for a text query using OpenAI."""
+        try:
+            client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
+            response = client.embeddings.create(
+                model="text-embedding-3-large",
+                input=text
+            )
+            return response.data[0].embedding
+        except Exception as e:
+            logger.error(f"Failed to generate embedding: {e}")
+            return None
     
     def get_active_embeddings_info(self) -> dict:
         """Get information about the currently active embeddings."""
