@@ -133,7 +133,7 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
         if source_key in source_mapping:
             source_info = source_mapping[source_key]
             title = source_info.get('title', 'Unknown')
-            year = source_info.get('year', 'Unknown')
+            year = source_info.get('publication_date', 'Unknown')
             
             # PDF citation with GitHub raw URL
             pdf_filename = source_info.get('sanitized_filename')
@@ -156,8 +156,18 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
             # Combine links - use plain text with URLs for now to debug
             if pdf_filename and pdf_filename != "Unknown":
                 github_raw_url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/SCIENTIFIC_PUBLICATION_PIPELINE/step_07_archive/{pdf_filename}"
+                # Format authors properly for display
+                authors = source_info.get('authors', [])
+                if isinstance(authors, list) and authors:
+                    authors_str = ', '.join(authors[:2])  # Show first 2 authors
+                    if len(authors) > 2:
+                        authors_str += " et al."
+                else:
+                    authors_str = "Unknown"
+                
                 return f"<sup>[PDF: {github_raw_url}] [DOI: https://doi.org/{doi}]</sup>" if doi and doi != "Unknown" else f"<sup>[PDF: {github_raw_url}]</sup>"
             else:
+                # Fallback: show title and year
                 return f"<sup>[{title} ({year})]</sup>"
         else:
             return match.group(0)  # Return original if source not found
@@ -177,21 +187,40 @@ def get_conversational_response(query: str, rag_results: list, conversation_hist
         for i, chunk in enumerate(rag_results[:3]):  # Use top 3 results
             source_key = f"Source_{i+1}"
             
-            context_parts.append(f"{source_key} ({chunk['title']}, {chunk.get('publication_date', 'Unknown')}): {chunk['text']}")
+            # Format authors properly
+            authors = chunk.get('authors', [])
+            if isinstance(authors, list) and authors:
+                authors_str = ', '.join(authors[:3])  # Show first 3 authors
+                if len(authors) > 3:
+                    authors_str += f" et al."
+            else:
+                authors_str = "Unknown"
+            
+            context_parts.append(f"{source_key} ({chunk.get('title', 'Unknown')}, {chunk.get('publication_year', 'Unknown')}): {chunk.get('text', '')}")
             
             # Enhanced source mapping
             source_mapping[source_key] = {
-                'title': chunk['title'],
-                'authors': chunk['authors'],
-                'journal': chunk['journal'],
-                'doi': chunk['doi'],
-                'publication_date': chunk.get('publication_date', 'Unknown'),
-                'text': chunk['text'],
-                'sanitized_filename': chunk.get('sanitized_filename'),
+                'title': chunk.get('title', 'Unknown'),
+                'authors': chunk.get('authors', []),
+                'journal': chunk.get('journal', 'Unknown'),
+                'doi': chunk.get('doi', 'Unknown'),
+                'publication_date': chunk.get('publication_year', 'Unknown'),
+                'text': chunk.get('text', ''),
+                'sanitized_filename': chunk.get('pdf_filename'),  # Use pdf_filename from FAISS metadata
                 'rank': i + 1,
                 'section': chunk.get('section', 'Unknown'),
                 'topic': chunk.get('topic', 'Unknown')
             }
+            
+            # Debug: Log what fields are available in the chunk
+            logger.info(f"Chunk fields: {list(chunk.keys())}")
+            logger.info(f"pdf_filename: {chunk.get('pdf_filename')}")
+            logger.info(f"sanitized_filename (mapped): {chunk.get('pdf_filename')}")
+            logger.info(f"title: {chunk.get('title')}")
+            logger.info(f"authors: {chunk.get('authors')}")
+            logger.info(f"journal: {chunk.get('journal')}")
+            logger.info(f"doi: {chunk.get('doi')}")
+            logger.info(f"publication_year: {chunk.get('publication_year')}")
             
         context = "\n\n".join(context_parts)
         
@@ -556,7 +585,7 @@ def conversational_page():
                                 
                                 for i, result in enumerate(filtered_results[:3]):
                                     source_title = result.get('title', 'Unknown')
-                                    year = result.get('publication_date', 'Unknown')
+                                    year = result.get('publication_year', 'Unknown')
                                     section_header = result.get('section', 'Unknown')
                                     similarity = result.get('similarity_score', 0)
                                     
