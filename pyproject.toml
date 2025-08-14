@@ -78,6 +78,12 @@ packages = []
 
 [tool.poetry]
 package-mode = false
+name = "virtual-person-pipeline"
+version = "0.1.0"
+description = "AI-powered system that creates a digital twin of an individual through RAG and fine-tuning"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+packages = []
 
 [tool.black]
 line-length = 88
