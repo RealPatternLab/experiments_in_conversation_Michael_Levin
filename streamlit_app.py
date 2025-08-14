@@ -382,38 +382,63 @@ class FAISSRetriever:
         self.indices = {}
         self.metadata = {}
         self.embeddings = {}
-        self.load_all_embeddings()
+        self.load_most_recent_embeddings()
     
-    def load_all_embeddings(self):
-        """Load all FAISS indices and metadata from the embeddings directory."""
+    def load_most_recent_embeddings(self):
+        """Load only the most recent embeddings directory."""
         if not FAISS_AVAILABLE:
             logger.error("FAISS not available")
             return
             
         try:
-            # Find all embedding directories
+            # Find all embedding directories and sort by timestamp (newest first)
             embedding_dirs = [d for d in self.embeddings_dir.iterdir() if d.is_dir()]
             
-            for embed_dir in embedding_dirs:
-                timestamp = embed_dir.name
-                
-                # Load FAISS index
-                index_path = embed_dir / "chunks.index"
-                if index_path.exists():
-                    self.indices[timestamp] = faiss.read_index(str(index_path))
-                
-                # Load embeddings
-                embeddings_path = embed_dir / "chunks_embeddings.npy"
-                if embeddings_path.exists():
-                    self.embeddings[timestamp] = np.load(str(embeddings_path))
-                
-                # Load metadata
-                metadata_path = embed_dir / "chunks_metadata.pkl"
-                if metadata_path.exists():
-                    with open(metadata_path, 'rb') as f:
-                        self.metadata[timestamp] = pickle.load(f)
+            if not embedding_dirs:
+                logger.warning("No embedding directories found")
+                return
             
-            logger.info(f"Loaded {len(self.indices)} FAISS indices")
+            # Sort directories by timestamp (newest first)
+            # Timestamps are in format: YYYYMMDD_HHMMSS_XXX
+            embedding_dirs.sort(key=lambda x: x.name, reverse=True)
+            
+            # Select only the most recent directory
+            most_recent_dir = embedding_dirs[0]
+            timestamp = most_recent_dir.name
+            
+            logger.info(f"Found {len(embedding_dirs)} embedding directories")
+            logger.info(f"Loading ONLY the most recent: {timestamp}")
+            
+            # Load FAISS index
+            index_path = most_recent_dir / "chunks.index"
+            if index_path.exists():
+                self.indices[timestamp] = faiss.read_index(str(index_path))
+                logger.info(f"✅ Loaded FAISS index: {index_path}")
+            else:
+                logger.error(f"❌ FAISS index not found: {index_path}")
+                return
+            
+            # Load embeddings
+            embeddings_path = most_recent_dir / "chunks_embeddings.npy"
+            if embeddings_path.exists():
+                self.embeddings[timestamp] = np.load(str(embeddings_path))
+                logger.info(f"✅ Loaded embeddings: {embeddings_path}")
+            else:
+                logger.error(f"❌ Embeddings not found: {embeddings_path}")
+                return
+            
+            # Load metadata
+            metadata_path = most_recent_dir / "chunks_metadata.pkl"
+            if metadata_path.exists():
+                with open(metadata_path, 'rb') as f:
+                    self.metadata[timestamp] = pickle.load(f)
+                logger.info(f"✅ Loaded metadata: {metadata_path}")
+            else:
+                logger.error(f"❌ Metadata not found: {metadata_path}")
+                return
+            
+            logger.info(f"✅ Successfully loaded embeddings from: {timestamp}")
+            logger.info(f"📊 Chunks loaded: {len(self.metadata[timestamp])}")
             
         except Exception as e:
             logger.error(f"Failed to load embeddings: {e}")
@@ -421,21 +446,24 @@ class FAISSRetriever:
     def retrieve_relevant_chunks(self, query: str, top_k: int = 10) -> list:
         """Retrieve relevant chunks using FAISS similarity search."""
         try:
-            # For now, we'll use a simple approach - combine results from all indices
-            # In a production system, you might want to use a more sophisticated approach
-            all_results = []
+            # We only have one timestamp now (the most recent)
+            if not self.metadata:
+                logger.warning("No embeddings metadata available")
+                return []
             
-            # Generate query embedding using OpenAI (you'll need to implement this)
-            # For now, we'll return metadata from the first available index
-            if self.metadata:
-                # Get the first available metadata
-                first_timestamp = list(self.metadata.keys())[0]
-                metadata = self.metadata[first_timestamp]
-                
-                # Return top_k chunks with mock similarity scores
-                for i, chunk_meta in enumerate(metadata[:top_k]):
-                    chunk_meta['similarity_score'] = 0.9 - (i * 0.1)  # Mock scores
-                    all_results.append(chunk_meta)
+            # Get the single timestamp we loaded
+            timestamp = list(self.metadata.keys())[0]
+            metadata = self.metadata[timestamp]
+            
+            logger.info(f"Using embeddings from: {timestamp}")
+            
+            # Return top_k chunks with mock similarity scores
+            # In a production system, you'd implement actual FAISS similarity search here
+            all_results = []
+            for i, chunk_meta in enumerate(metadata[:top_k]):
+                chunk_meta['similarity_score'] = 0.9 - (i * 0.1)  # Mock scores
+                chunk_meta['embedding_timestamp'] = timestamp  # Add timestamp info
+                all_results.append(chunk_meta)
             
             return all_results
             
@@ -445,14 +473,40 @@ class FAISSRetriever:
     
     def get_collection_stats(self) -> dict:
         """Get statistics about the collection."""
-        total_chunks = 0
-        for metadata in self.metadata.values():
-            total_chunks += len(metadata)
+        # We only have one timestamp now
+        if not self.metadata:
+            return {
+                'total_chunks': 0,
+                'indices_loaded': 0,
+                'metadata_loaded': 0,
+                'active_timestamp': None,
+                'active_chunks': 0
+            }
+        
+        timestamp = list(self.metadata.keys())[0]
+        chunks = len(self.metadata[timestamp])
         
         return {
-            'total_chunks': total_chunks,
-            'indices_loaded': len(self.indices),
-            'metadata_loaded': len(self.metadata)
+            'total_chunks': chunks,
+            'indices_loaded': 1,  # Only one index now
+            'metadata_loaded': 1,  # Only one metadata now
+            'active_timestamp': timestamp,
+            'active_chunks': chunks
+        }
+    
+    def get_active_embeddings_info(self) -> dict:
+        """Get information about the currently active embeddings."""
+        if not self.metadata:
+            return {'error': 'No embeddings available'}
+        
+        timestamp = list(self.metadata.keys())[0]
+        metadata = self.metadata[timestamp]
+        
+        return {
+            'timestamp': timestamp,
+            'chunk_count': len(metadata),
+            'documents': list(set([chunk.get('document_id', 'unknown') for chunk in metadata])),
+            'total_indices': 1  # Only one index now
         }
 
 def conversational_page():
@@ -679,6 +733,7 @@ def main():
         
         # Show stats
         stats = st.session_state.retriever.get_collection_stats()
+        active_info = st.session_state.retriever.get_active_embeddings_info()
         
         # Sidebar
         st.sidebar.markdown(f"""
@@ -692,8 +747,16 @@ def main():
             ">
         </div>
         """, unsafe_allow_html=True)
+        
+        # Display embedding information
+        st.sidebar.header("📊 Embedding Status")
         st.sidebar.metric("Total Engrams Indexed", stats['total_chunks'])
-        # st.sidebar.metric("FAISS Indices", stats['indices_loaded'])
+        st.sidebar.metric("Active Embeddings", stats['active_chunks'])
+        
+        if stats['active_timestamp']:
+            st.sidebar.info(f"**Active:** {stats['active_timestamp']}")
+        
+        st.sidebar.metric("FAISS Index", "1 (Most Recent)")
         
         # Search parameters
         st.sidebar.header("🔍 Search Settings")

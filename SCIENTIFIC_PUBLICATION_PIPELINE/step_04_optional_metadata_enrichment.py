@@ -595,6 +595,9 @@ class MetadataEnricher:
                     logger.warning(f"Progress queue lookup error: {e}")
                     doc_id = None
             
+            # Initialize crossref_data to prevent UnboundLocalError
+            crossref_data = None
+            
             # Try CrossRef API first if DOI is available
             doi = metadata.get('doi')
             if doi and doi != 'null':

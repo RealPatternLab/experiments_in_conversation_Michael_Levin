@@ -63,6 +63,11 @@ class DocumentSplitter:
             r'^([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*\s*$)',  # Title Case Section
             r'^(ABSTRACT|INTRODUCTION|METHODS|RESULTS|DISCUSSION|CONCLUSION|REFERENCES|APPENDIX)',
             r'^(\[PAGE\s+\d+\]\s+[A-Z][^:\n]*)',  # [PAGE X] Section
+            # Additional flexible patterns for various document types
+            r'^([A-Z][a-z]+(?:\s+[a-z]+)*\s*$)',  # More flexible title case
+            r'^([A-Z][A-Za-z\s]+(?:\s*[-–—]\s*[A-Z][A-Za-z\s]*)?)',  # Flexible headers with dashes
+            r'^([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*\s*:)',  # Headers ending with colon
+            r'^([A-Z][A-Z\s]+(?:\s+[A-Z][a-z][^:\n]*)?)',  # Mixed case headers
         ]
     
     def estimate_tokens(self, text: str) -> int:
@@ -120,6 +125,19 @@ class DocumentSplitter:
             end = section['end_pos']
             section['content'] = text[start:end].strip()
             section['token_count'] = self.estimate_tokens(section['content'])
+        
+        # Fallback: if no sections detected, create one section with the entire document
+        if not sections:
+            logger.warning("No sections detected, creating fallback single section")
+            sections = [{
+                'title': 'Full Document',
+                'start_line': 0,
+                'start_pos': 0,
+                'end_line': len(lines) - 1,
+                'end_pos': len(text),
+                'content': text,
+                'token_count': self.estimate_tokens(text)
+            }]
         
         return sections
     
