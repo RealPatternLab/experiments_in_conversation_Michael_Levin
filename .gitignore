@@ -38,6 +38,7 @@ MANIFEST
 # Keep requirements.txt for Streamlit Cloud
 !requirements.txt
 !packages.txt
+!.streamlit/
 
 # Virtual environments
 .venv/

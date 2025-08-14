@@ -29,8 +29,12 @@ try:
     import faiss
     FAISS_AVAILABLE = True
 except ImportError:
-    FAISS_AVAILABLE = False
-    st.error("FAISS not available. Please install faiss-cpu.")
+    try:
+        import faiss_cpu as faiss
+        FAISS_AVAILABLE = True
+    except ImportError:
+        FAISS_AVAILABLE = False
+        st.error("FAISS not available. Please install faiss or faiss-cpu.")
 
 # Load environment variables
 from dotenv import load_dotenv
@@ -634,7 +638,7 @@ def main():
     try:
         if not FAISS_AVAILABLE:
             st.error("❌ FAISS not available!")
-            st.info("Please install faiss-cpu: pip install faiss-cpu")
+            st.info("Please install faiss: pip install faiss")
             st.stop()
             
         if 'retriever' not in st.session_state:
