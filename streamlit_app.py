@@ -41,12 +41,21 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # GitHub repository configuration
-GITHUB_REPO = "RealPatternLab/experiments_in_conversation_Michael_Levin"
-GITHUB_BRANCH = "neo-dev"
+# These can be set via environment variables for different deployments
+# Example: export GITHUB_REPO="your-username/your-repo"
+# Example: export GITHUB_BRANCH="main"
+GITHUB_REPO = os.getenv('GITHUB_REPO', 'RealPatternLab/experiments_in_conversation_Michael_Levin')
+
+# Get GitHub branch from environment variable, with fallback
+GITHUB_BRANCH = os.getenv('GITHUB_BRANCH', 'neo-dev')
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+# Log the configuration being used
+logger.info(f"GitHub Repository: {GITHUB_REPO}")
+logger.info(f"GitHub Branch: {GITHUB_BRANCH}")
 
 def get_api_key():
     """Get OpenAI API key from environment variables."""
