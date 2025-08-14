@@ -684,6 +684,7 @@ def main():
             ">
         </div>
         """, unsafe_allow_html=True)
+        st.sidebar.metric(f"thinking url: {thinking_box}"])
         st.sidebar.metric("Total Engrams Indexed", stats['total_chunks'])
         st.sidebar.metric("FAISS Indices", stats['indices_loaded'])
         
