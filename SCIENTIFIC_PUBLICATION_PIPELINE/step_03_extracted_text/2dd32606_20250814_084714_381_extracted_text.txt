@@ -1,0 +1,362 @@
+Two Molecular Models of Initial Left-Right Asymmetry Generation
+Michael Levin¹, Ph.D. and Nanette Nascone, M.S.
+Cell Biology dept.
+Harvard Medical School
+200 Longwood Ave.
+Boston, MA 02115
+1 Author for correspondence:
+(617) 599-3231
+fax: (617) 432-7758
+email: mlevin@husc.harvard.edu
+keywords: embryo, morphogenesis, axis, left-right, asymmetry, connexin-43,
+dynein, laterality
+
+[PAGE 2] Summary
+Left-Right (LR) asymmetry is a fascinating problem in embryonic
+morphogenesis. Recently, a pathway of genes has been identified which is in-
+volved in LR patterning in vertebrates (1,2). Although, this work characterizes the
+interactions of several asymmetrically-expressed genes, it is still entirely unclear
+how such asymmetric expression is set up in the first place. There are two promis-
+ing molecular candidates which may play a role in such a process: the motor pro-
+tein dynein, and the gap junction protein connexin-43 (Cx43). We present two
+models, significantly supported by previous findings, which hypothesize that (1)
+dynein asymmetrically localizes LR determinants in individual cells to establish
+cell-autonomous LR biasing, and (2) asymmetric activity of Cx43 gap junctions
+within key cells sets up electric potentials in multi-cellular fields, thus establish-
+ing large-scale LR asymmetry.
+
+[PAGE 3] Introduction
+Symmetry in morphogenesis
+Animal body plans occur in a wide variety of symmetries: spherical (volvox),
+radial (starfish), chiral (snails, ciliates), bilateral (drosophila) and pseudo-bilateral
+(man). Most vertebrates have a generally bilaterally-symmetrical body plan, but
+this symmetry is broken further into a pseudo-symmetry by the consistently asym-
+metric placement of various internal organs such as the heart, liver, spleen, and
+gut, or an asymmetric development of paired organs (such as brain hemispheres
+or lungs).
+Symmetries are often broken in development. For example, the radial symme-
+try of the early chick blastoderm is broken into a bilateral symmetry by the ap-
+pearance of Köhler's sickle and then the primitive streak (3). This is further bro-
+ken into a pseudo-symmetry by the right-sided looping of the heart tube. In
+contrast, the early sea-urchin larva has bilateral (and then, pseudo-bilateral) sym-
+metry. The adult, however, has a five-fold radial symmetry. Such axial patterning
+is the most fundamental process in embryogenesis because it lays a foundation
+and provides a context for all subsequent morphogenetic events.
+Left-Right Asymmetry
+Asymmetry along the left-right (LR) axis (defined as an invariant, among nor-
+mal individuals, difference between the left and right sides of an animal's mor-
+phology) is fundamentally different from asymmetries in the other two axes. First,
+there is no feature of the macroscopic world which differentiates right from left.
+While gravity is a ubiquitous feature of the world which can be used to define the
+dorso-ventral axis, and any chosen direction of motion automatically picks out an
+anterior end (since that is the end which is best used for sensory and processing
+organs), there is no independent way to pick out the left (or right) direction.
+
+[PAGE 4] 
+Second, all normal members of a given species are asymmetrical in the same
+direction. However, animals with complete mirror reversal of internal organs are
+otherwise phenotypically unimpaired (4,5). Thus, while it is possible to come up
+with plausible evolutionary reasons for why organisms might be asymmetric in
+the first place (optimal packing of viscera, etc.), there is no obvious reason for
+why they should all be asymmetric to the same direction. It is, after all, easier to
+imagine a developmental mechanism for generating bilateral asymmetry (such as
+positive-feedback and amplification of stochastic biochemical differences) than
+for biasing it to a given direction. The left-right axis is thus unique, and especially
+interesting, among the three axes.
+Many kinds of situs anomalies have been reported in the human teratology
+literature, associated with such syndromes as Kartagener's and Ivemark's (5).
+These include dextrocardia, situs inversus (a complete mirror-image reversal of
+the sidedness of asymmetrically positioned organs and asymmetric paired organs),
+heterotaxia (where each organ makes an independent decision as to its situs), and
+right or left isomerism (where the organism is completely symmetrical, leading to
+polysplenia or asplenia). Of these, only the complete (and rare) situs inversus is
+not associated with physiological difficulties. The rest, especially heterotaxia,
+often result in serious health problems for the patient. Laterality defects can arise
+in a single individual but are especially associated with twinning (4, 6, 7). These
+syndromes are paralleled to various degrees by mouse mutants such as: iv (8)
+which results in roughly 50% of the offspring being phenotypically situs inversus,
+and inv (9) which have 100% of the offspring showing mirror image inversions of
+the internal organs.
+The molecular mechanisms underlying antero-posterior and dorso-ventral
+asymmetry have been studied in detail (10). However, the basis for LR asymme-
+try is much less well understood. Neville (11) presents an extensive and fascinat-
+ing survey of various asymmetries, including the well-known asymmetric organs
+such as the heart, as well as flatfish which consistently settle on and undergo eye
+
+[PAGE 5] 
+migration to one side, and even a species of parasite (the arthropod Bopyrus)
+which lives only on one side of prawn and shrimp. There has been little informa-
+tion, however, shedding light on the mechanisms which determine the sidedness
+of such asymmetries. Previously, information on the molecular basis of LR asym-
+metry centered around three lines of inquiry: the genetics of chirality in snails, a
+list of drugs which cause alterations in LR patterning, and several mammalian
+mutants which have phenotypes associated with LR asymmetry. Recently, a path-
+way of genes has been described which are asymmetrically expressed in the chick
+embryo and control the situs of the heart and other organs (1, 12).
+
+The initial steps of LR determination remain unknown
+
+LR patterning can be conceptually divided into three phases: (1) cell(s) in the
+very early embryo must ascertain their own right vs. left sides, presumably by a
+model like that involving a tethered chiral molecule (13), and (through lineage re-
+lationships, migration, and cell-cell inductive interactions) this cell-autonomous
+LR information is converted into asymmetrical multi-cellular domains of expres-
+sion; (2) these asymmetrically-expressed genes regulate each other in sequential
+(and perhaps branched) pathways to establish and maintain asymmetric gene ex-
+pression domains; and finally, (3) the various organ primordia read this informa-
+tion and determine their situs.
+
+With the identification of a cascade of asymmetrically expressed genes which
+regulate each others' expression (1), a significant part of phase 2 has been uncov-
+ered. Likewise, it has become clear that this pathway controls the LR patterning
+of many aspects of laterality (12), and experiments are currently under-way to de-
+termine the mechanisms by which organs such as the heart respond to this infor-
+mation (Sylvia Pagan, personal communication). Thus, significant progress is on
+the horizon for phase 3. However, what is conspicuously missing are clues to the
+most interesting part of this problem: how the LR axis is oriented with respect to
+the AP and DV axes in the first place, and how this orientation at the single-cell
+level is converted into asymmetry on the scale of the whole embryonic field.
+
+The existence of isomerisms (where the body is symmetrical, consisting of
+either two normally-left sides or conversely, two right sides) and randomized
+asymmetry (i.e., 50% incidence of complete situs inversus) as two distinct genetic
+conditions suggests that normal LR asymmetry is accomplished in two dissociable
+steps: a random asymmetry is generated, which is then biased in the correct direc-
+tion with respect to the other two axes (13). The pathway identified by Levin et
+al. most likely directs the second step, since right-sided misexpression of left-
+determining genes such as Shh or nodal results in heterotaxia (1,12), not true
+isomerism. Thus, there is still no molecular data on how (random) asymmetry is
+generated in the first place.
+
+We would like to sketch out some ideas regarding two of the only promising
+molecular candidates for the primary steps in LR patterning, dynein and
+connexin-43. While the models described in this paper are quite speculative, they
+illustrate the types of mechanisms which are very likely to play a role in these
+early events. The dynein model is designed to show how a chiral molecule could
+differentiate L from R within a single cell. The Cx43 model shows how, once a
+cell becomes LR asymmetric, this information could become transduced into
+multi-cellular domains of asymmetric gene expression. It should be noted that the
+two models are independent of each other and describe complementary phases in
+LR patterning.
+
+
+[PAGE 5] A Specific chiral molecule model
+
+Microtubule motors
+
+The first model, based on the ideas of Brown and Wolpert (13), hypothesizes a
+cytoskeletal component, such as a centriole, which is chiral. It is oriented with re-
+spect to the AP and DV axes of the egg by means of other cytoskeletal filaments,
+and serves as a nucleation center for filaments or microtubules which run along
+the LR axis. Consistent with this model, tubulin was identified as one of the pro-
+teins modified in iv homozygotes relative to w.t. mice (14). The head-tail attrac-
+tive feature of microtubule assembly (15) ensures that the chiral nature of the nu-
+cleating center is passed on as a directionality of the LR tracks. Interestingly, the
+mouse egg has no centriole (one forms anew after several cell divisions), so that
+defects in the origin of chirality would show up as zygotic (as in the mouse LR
+mutants, such as iv); in contrast, the maternal mode of inheritance of chirality in
+snails (16) may be explained by the fact that the snail egg's cytoskeletal compo-
+nents are formed by the mother.
+
+The next step results in a microtubule motor, such as dynein, riding the LR
+tracks carrying mRNA or protein determinants, which become transported to one
+side of the cell. These determinants could become localized with cell division
+(which is possible in molluscs or even frogs), or this process could happen anew
+in each cell during various phases (which is most likely in the chick and mouse)
+followed by the kind of process discussed below for generating domains of LR
+gene expression.
+
+[PAGE 6] Evidence for a Dynein model
+
+An excellent candidate for such a mechanism is dynein (17), a motor protein
+which serves to actively translocate sub-cellular cargo (18-20). There appear to be
+at least 13 axonemal (used in cilia and flagella), and 2 cytoplasmic (presumably
+involved in axonal transport, mitosis, etc.) dynein genes (reviewed in (21)).
+
+Despite the involvement of dynein proteins in many disparate events (such as
+ciliary function, vesicle transport in axons, mitosis, etc.), it is clear that certain
+dynein genes have very specific expression. For example, Dhc64c is expressed
+only in ovaries, testes, and very early embryos in Drosophila; furthermore
+Dhc64c is asymmetrically (though not LR) localized in the Drosophila oocyte
+(22-23). Thus, it may be expected that specific lesions in one of the many dynein
+genes can affect LR patterning without lethal effects on mitosis or organelle trans-
+port. There is compelling evidence that early AP and DV embryonic patterning is
+controlled in part by the cytoskeleton (24-25), and most importantly, disruption of
+the microtubule array in Xenopus by UV light causes 25% situs inversus (26).
+
+[PAGE 7] Predictions of this model
+
+Under this model, the heterotaxia phenotype could result from a broken dynein
+motor which is unable to perform localization of determinants. This would allow
+the factor to homogeneously accumulate in both halves of a cell, resulting in
+double-R or double-L (depending on the nature of the determinant) compart-
+ments. As shown by Levin et al. (12), this leads to independent randomization of
+organ situs. Interestingly, human patients with heterotaxia as part of Kartagener's
+syndrome do show defects in dynein (27-29).
+
+The inv mutant could result from a nucleation center that is either the opposite
+enantiomer of one with the proper chirality, or simply becomes oriented incor-
+rectly. The former possibility is much less likely (since the complete reversal of
+such a complex structure would require several coordinated mutations); it is most
+likely that whatever binding site is used to tether it with respect to the DV and AP
+axes is altered. This would result in embryos which are normal except for the con-
+sistently incorrect situs (as is observed in inv mice, where nodal is expressed al-
+ways on the incorrect side only (2)).
+
+The iv mutant may represent a nucleation structure that was not tethered at all.
+Thus, it would face in different directions (randomly) in different cells. Depend-
+ing on stochastic events, this would result in a mosaic of domains of cells which
+were oriented properly, adjacent to cells which were not. This would be magnified
+by cell proliferation and lineage relationships and could thus easily account for the
+full spectrum of nodal expression patterns observed in the mutant mice (2), corre-
+sponding to normal situs, reversed situs, or double L or R sides.
+
+
+[PAGE 8] An alternative explanation for why dynein defects are associated with laterality
+disturbances has been proposed: that cilia directly influence the situs of the gut
+(27-30). This is unlikely because it has been shown that several kind of asymme-
+tries are present long before gut looping (1), and because some patients with
+heterotaxia do have normal cilia function (31-32). This may be a consequence of
+the fact that only cytoplasmic, not ciliary, dynein is important for this process.
+
+[PAGE 8] Future directions
+
+Several approaches can be taken to test the dynein model. Determining the ex-
+pression of the various dynein genes in early embryos is crucial, to guide
+misexpression experiments and to begin to address the question of how a defect in
+a basic cell function protein can have such a subtle phenotype. The question of
+whether cytoplasmic dynein or ciliary function is important for LR patterning can
+be addressed by specifically disabling cilia motion, by mechanisms such as Ni++
+(33), halothane (34), or vanadate (35), which inhibits cilia but not organelle mo-
+tion. Finally, a direct test of the model can be made by overexpressing in Xenopus
+dominant negative versions of the appropriate dynein, consisting of the
+endogenous dynein cargo binding-domain alone, or fused to a kinesin motor do-
+main (which moves in a direction opposite to that of dynein (36)). The resulting
+animals may be expected to exhibit LR phenotypes as the dominant negative
+dynein mis-localizes LR determinants.
+
+[PAGE 8] How cell-autonomous LR information is transduced into cell fields
+
+A condition known as isomerism is occasionally observed in human patients
+(5). This condition, sometimes called Ivemark syndrome, where the organism is
+bilaterally symmetric (polysplenia when two left sides are present, or asplenia
+when both are right sides (37)) is especially interesting because the known LR
+pathway provides no obvious clues as to how this might happen. For example, as
+shown by the Shh misexpression studies (12), producing bilateral nodal expres-
+sion does not result in two morphologically identical left sides, but rather causes a
+heterotaxic phenotype where each organ decides its situs randomly. Isomerism is
+likely to shed clues on a mechanism quite different from that in which the genes
+and mutants discussed above are involved: the generation of LR asymmetry, as
+opposed to its biasing in an appropriate direction.
+
+The relevance of Cx43
+Connexin-43 (Cx43) is a member of a family of at least 12 distinct genes,
+whose proteins make up the intercellular channels of gap junctions (reviewed in
+(38)). These channels are composed of hexamers of connexins and provide con-
+duits for the transfer of ions and other small molecules (such as 2nd messengers)
+between cells. Gap junctions have been implicated in normal embryonic develop-
+ment (39-40) as well as in tumor growth (41-42), since reduced communication
+between cells stimulates tumor promotion.
+Most interestingly, it was found that human patients with isomerisms exhibit
+mutations in Cx43 (43). This suggests the exciting possibility that gap junctions
+also play a role in LR patterning. This is also suggested by the observation that
+LR asymmetric transfer of dye takes place between blastomeres in the early em-
+bryo (44-45, Fig. 1A), consistent with gap junctions' providing an asymmetric
+partitioning of LR determinants. Moreover, transgenic mice that overproduce
+Cx43 have situs anomalies (C. W. Lo, personal communication). Finally, expres-
+sion of cx43.4 is missing in zebrafish ntl mutant embryos (46). Ntl embryos lack
+an organized notochord and have randomized heart situs (47). Although this has
+been attributed to an active role of notochord in LR compartmentalization, it is
+equally possible that cx43.4 is needed earlier for LR patterning. Gap junctions
+could potentially be involved in LR asymmetry by either providing an asymmetric
+path for the localization or distribution of a LR morphogen, or by generating an
+electric field which produces asymmetrical localization of charged molecules by
+electrophoresis.
+
+The Cx43 model
+The idea that endogenous electric fields specify large-scale embryonic pattern
+is quite old (48-51); this has been suggested to involve galvanotaxic control of
+cell migration, electrophoresis of morphogens, electromagnetic cell-cell signaling,
+etc. The distribution of communication channels shown in Fig. 1B (45) suggests a
+model for LR asymmetry generation by gap junctions: that cells A and/or H are a
+battery, which generates a potential difference (due to asymmetric placement of
+ion pumps on the cell surface, established by a dynein-like mechanism). Since the
+other cells appear to be connected to each other by gap junctions, they represent
+an open circuit with respect to the current generated by the cells at A. Thus,
+charged LR determinants molecules would experience a net electromotive force
+and would tend to electrophorese to different halves of the embryo. A similar
+electrophoretic mechanism for directing the movement of maternal components
+has been characterized in egg-ovary systems (52-54); likewise, endogenous elec-
+tric fields have also been shown to be involved in symmetry breaking in the Fucus
+embryo (55). The finding that placement of amphibian embryos in applied electric
+fields results in reversals of LR asymmetry (56) is also consistent with this model,
+which represents one possibility by which asymmetry at the level of the cell be-
+comes transformed into asymmetric fields of gene expression.
+The Cx43 knock-out mouse (57) does not recapitulate exactly the human phe-
+notype associated with the Cx43 mutations (43): while a heart defect is observed,
+it is not a true situs abnormality but a problem with heart morphogenesis per se.
+This suggests that instead of simply a lack of Cx43 gap junctions, a more subtle
+mutation in Cx43 is responsible for isomerism (and specifically, that the w.t.
+asymmetry is not purely a result of open channels, but rather may be based on a
+specific pattern of cell communication restrictions). Britz-Cunningham et al. (43)
+find that 5 out of 6 of the (unrelated) patients had Ser364 mutated to a Pro, and
+suggest that this may interfere with serine phosphorylation which is known to af-
+fect Cx43 function (58).
+
+
+[PAGE 11] Future Experiments
+Several directions need to be followed to elucidate the role of Cx43 in LR
+asymmetry. First, detailed expression patterns of various connexins (not just 43)
+in frogs and mice need to be ascertained. Second, mutants such as the Cx43-/-
+transgenic (57) and the Cx43 overexpression transgenic (mentioned in (43) as
+having randomized turning and heart looping) need to be examined for nodal ex-
+pression (59). Third, whether or not the Ser364Pro mutation found in the human
+isomerism patients is directly responsible for their phenotype should be tested by
+producing a knock-in transgenic mouse (replacing the mouse's endogenous Cx43
+sequence with the Ser364Pro mutant); besides answering that question, the result-
+ing mice may turn out to be a good medical model for human laterality defects
+and their treatment. Fourth, since it is unclear whether LR asymmetry may arise
+from the restriction of some morphogens due to closed gap junction channels be-
+tween particular cells, or conversely, from specific cell-cell signaling resulting
+from open gap junctions, the exact nature of communication needed for correct
+asymmetry needs to be determined by functional studies. Finally, our model of
+electrophoretically-based asymmetry can be directly tested by short-circuiting this
+proposed current, as recently done by Hotary and Robinson (60). We are currently
+pursuing several of these approaches.
+
+[PAGE 11] Conclusion
+An understanding of these processes would have important implications for
+research in embryonic development, both in terms of basic questions of LR asym-
+metry, as well as a better appreciation of the role of endogenous electric fields
+(51,61-64) and the cytoskeleton in embryonic morphogenesis. The models de-
+scribed here represent specific, testable hypotheses which can serve to guide ex-
+periments directed toward that end.
+
+1. Levin M, Johnson R, Stern C, Kuehn M, Tabin C. A molecular pathway deter-
+mining left-right asymmetry in chick embryogenesis. Cell 1995; 82: 1-20
+2. Lowe L, Supp DM, Sampath K, Yokoyama T, Wright CVE, Potter and SS,
+Overbeek P, Kuehn MR. Conserved left-right asymmetry of nodal expression and
+alterations in murine situs inversus. Nature 1996; 381: 158-161
+3. Eyal-Giladi H, Kochav S. From cleavage to primitive streak formation, Dev
+Biol 1976; 49: 321-337
+4. Burn J. Disturbance of morphological laterality in humans. Ciba Foundation
+Symposium 1991; 162: 282-96
+5. Winer-Muram HT. Adult presentation of heterotaxic syndromes and related
+complexes. J Thoracic Imaging 1995; 10: 43-57
+6. Levin M, Pagan S, Roberts DJ, Holmes LB, Kuehn M, Tabin C. Left/Right-
+Determining Signals and Symmetry Reversal in Twins. Nature 1996, in press
+7. Nascone N, Mercola M. Spemann's organizer can specify left-right asymmetry.
+(1996), in press
+8. Hummel KP, Chapman DB. Visceral inversion and associated anomalies in the
+mouse. J Heredity 1959; 50: 9-23
+9. Yokoyama T, Copeland NG, Jenkins NA, Montgomery CA, Elder FF, and
+Overbeek PA. Reversal of left-right asymmetry: a situs inversus mutation. Sci-
+ence 1993; 260: 679-682
+10. Hunt P, Krumlauf R. Hox codes and positional specification in vertebrate em-
+bryonic axes. Ann Rev Cell Biol 1992; 8: 227-256
+11. Neville AC. Animal asymmetry. London: Edward Arnold, 1976
+12. Levin M, Roberts DJ, Holmes LB, Tabin C. Activin and Nodal determine the
+situs of asymmetric organs independently. Development 1996; submitted
+13. Brown N., Wolpert L. The development of handedness in left/right asymme-
+try. Development 1990; 109: 1-9
+.....(rest of references as in Extraction 1, since it has the complete list)

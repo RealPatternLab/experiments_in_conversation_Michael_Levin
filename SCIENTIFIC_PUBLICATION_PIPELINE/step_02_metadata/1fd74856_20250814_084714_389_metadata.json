@@ -1,0 +1,24 @@
+{
+  "filename": "1fd74856_20250814_084714_389.pdf",
+  "document_type": "research_paper",
+  "title": "Inaugural Issue",
+  "authors": [],
+  "journal": null,
+  "publication_year": null,
+  "doi": null,
+  "abstract": null,
+  "extraction_confidence": "low",
+  "extraction_timestamp": "2025-08-14T08:47:21.607602",
+  "extraction_method": "basic_fallback",
+  "pages_analyzed": 1,
+  "affiliations": [
+    "School of Medicine",
+    "Department of Life Sciences",
+    "from Stanford\nUniversity School",
+    "Imperial College",
+    "Tufts University"
+  ],
+  "text_enriched": true,
+  "enrichment_method": "text_analysis",
+  "enrichment_timestamp": "2025-08-14T09:45:15.170035"
+}

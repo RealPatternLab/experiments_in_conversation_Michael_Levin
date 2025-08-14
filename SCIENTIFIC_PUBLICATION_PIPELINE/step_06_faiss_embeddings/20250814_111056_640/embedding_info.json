@@ -1,0 +1,10 @@
+{
+  "embedding_timestamp": "20250814_111056_640",
+  "embedding_datetime": "2025-08-14T11:10:56.643303",
+  "document_id": "8f3d5096_20250814_084714_405",
+  "original_filename": "8f3d5096_20250814_084714_405.pdf",
+  "chunk_count": 41,
+  "embedding_model": "text-embedding-3-large",
+  "faiss_index_type": "IndexFlatIP",
+  "embedding_dimension": 3072
+}

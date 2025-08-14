@@ -1,0 +1,108 @@
+{
+  "metadata": {
+    "filename": "1fd74856_20250814_084714_389.pdf",
+    "document_type": "research_paper",
+    "title": "Inaugural Issue",
+    "authors": [],
+    "journal": null,
+    "publication_year": null,
+    "doi": null,
+    "abstract": null,
+    "extraction_confidence": "low",
+    "extraction_timestamp": "2025-08-14T08:47:21.607602",
+    "extraction_method": "basic_fallback",
+    "pages_analyzed": 1
+  },
+  "chunks": [
+    {
+      "text": "This inaugural issue of Bioelectricity marks the launch of a new journal dedicated to the role of bioelectric signals in all aspects of life.  Mustafa B.A. Djamgoz and Michael Levin serve as editors.",
+      "section": "Inaugural Issue",
+      "primary_topic": "Journal Launch",
+      "secondary_topics": [
+        "bioelectricity",
+        "new journal",
+        "Bioelectricity journal",
+        "editors",
+        "Mustafa Djamgoz",
+        "Michael Levin"
+      ],
+      "chunk_summary": "The inaugural issue of Bioelectricity introduces the journal's focus on bioelectric signals and its editors.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "WE ARE PLEASED and honored to launch our \"inaugural issue” as Bioelectricity enters its second volume, and as it does, we thank again Dr. Dany Spencer Adams for getting the journal going. We also thank all our contributors and reviewers. Bioelectricity is going from strength to strength! This is our biggest ordinary issue to date with three perspectives and four original research articles plus a revamped section on \"Bioelectricity Buzz,” highlighting some interesting articles published elsewhere that our readers might also like to be aware of. We hope that you will enjoy this varied section that our Media Editor, Ann Rajnicek, has brilliantly put together. You will notice that the Buzz includes neuroscience among the highlighted topics and although we all know that there is a plethora of neuroscience journals, we would like Bioelectricity also to be home for such articles.",
+      "section": "WE ARE PLEASED",
+      "primary_topic": "Journal Progress",
+      "secondary_topics": [
+        "bioelectricity",
+        "publications",
+        "neuroscience",
+        "research articles",
+        "journal launch"
+      ],
+      "chunk_summary": "The editors celebrate the second volume of Bioelectricity, highlighting its growth, new features like \"Bioelectricity Buzz,\" and the inclusion of neuroscience articles.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "It is our ultimate aim to make Bioelectricity a \"one-stop\" peer-reviewed publication for keeping up with the most important developments and events in the field. As a start, as you can see, the journal is now subtitled \"Science, Engineering, and Medicine” to make it explicit that bioelectricity as a discipline covers the whole spectrum and our journal intends to cater for this scope. As a further step, therefore, we have started reorganizing the editorial board and are delighted to welcome Dr. Utkan Demirci, from Stanford University School of Medicine, as a senior editor. Dr. Demirci, an expert on microfluidics, works at the interface between micro/nanoscale engineering and medicine.",
+      "section": "WE ARE PLEASED",
+      "primary_topic": "Journal Scope",
+      "secondary_topics": [
+        "bioelectricity",
+        "science",
+        "engineering",
+        "medicine",
+        "microfluidics",
+        "editorial board",
+        "interdisciplinary"
+      ],
+      "chunk_summary": "The journal aims to be a comprehensive resource for bioelectricity, expanding its scope to explicitly include science, engineering, and medicine, and welcoming Dr. Utkan Demirci to the editorial board.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Further appointments and adjustments to the board will follow. The next (June) issue of Bioelectricity will be a Special Issue on \"Electrically Charged Biomaterials for Drug Delivery and Tissue Repair.\" We are very pleased that Drs. Ambika Bajpayee and Mansoor Amiji at Northeastern University are guest editing this. The journal welcomes submissions and ideas for future special issues.",
+      "section": "WE ARE PLEASED",
+      "primary_topic": "Future Issues",
+      "secondary_topics": [
+        "special issue",
+        "biomaterials",
+        "drug delivery",
+        "tissue repair",
+        "submissions"
+      ],
+      "chunk_summary": "The journal announces a forthcoming special issue on electrically charged biomaterials and welcomes submissions and ideas for future special issues.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "We know the importance of fast reviewing and publication, especially for young scientists. We are especially proud to report, therefore, that the average review and publications times for Bioelectricity so far have been 3.5 and 7 weeks, respectively. We are also happy to note our prompt online publication. We shall do our utmost to maintain these times. With our very best wishes, Mustafa B.A. Djamgoz, PhD Co-Editor-in-Chief Email: m.djamgoz@imperial.ac.uk Michael Levin, PhD Co-Editor-in-Chief Email: michael.levin@tufts.edu ¹Department of Life Sciences, Imperial College London, London, United Kingdom. ²Allen Discovery Center, Tufts University, Medford, Massachusetts.",
+      "section": "WE ARE PLEASED",
+      "primary_topic": "Publication Speed",
+      "secondary_topics": [
+        "review time",
+        "publication time",
+        "online publication",
+        "young scientists"
+      ],
+      "chunk_summary": "The editors emphasize the journal's commitment to fast reviewing and publication times, averaging 3.5 and 7 weeks respectively, and encourage submissions.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    }
+  ],
+  "processed_at": "2025-08-14T09:16:05.964078",
+  "chunk_count": 5,
+  "processing_method": "document_splitting"
+}

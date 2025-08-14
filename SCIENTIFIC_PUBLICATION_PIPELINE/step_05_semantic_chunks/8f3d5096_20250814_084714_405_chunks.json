@@ -1,0 +1,779 @@
+{
+  "metadata": {
+    "filename": "8f3d5096_20250814_084714_405.pdf",
+    "document_type": "research_paper",
+    "title": "Biochemical and Biophysical Research Communications 731 (2024) 150396",
+    "authors": [],
+    "journal": null,
+    "publication_year": null,
+    "doi": null,
+    "abstract": null,
+    "extraction_confidence": "low",
+    "extraction_timestamp": "2025-08-14T08:47:21.583126",
+    "extraction_method": "basic_fallback",
+    "pages_analyzed": 2
+  },
+  "chunks": [
+    {
+      "text": "Stress sharing as cognitive glue for collective intelligences: A computational model of stress as a coordinator for morphogenesis",
+      "section": "[PAGE 1] Stress sharing as cognitive glue for collective intelligences",
+      "primary_topic": "Stress Coordination",
+      "secondary_topics": [
+        "morphogenesis",
+        "collective intelligence",
+        "computational model",
+        "stress sharing",
+        "cognitive glue"
+      ],
+      "chunk_summary": "This study introduces a computational model exploring the role of stress sharing as a coordinating mechanism for morphogenesis in collective intelligences.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "1"
+    },
+    {
+      "text": "Individual cells possess diverse physiological and metabolic capabilities. However, multicellular collectives demonstrate a remarkable ability to navigate anatomical morphospace and achieve complex, reliable morphological outcomes. Understanding the robustness and control mechanisms governing this process is crucial for evolutionary developmental biology, bioengineering, and regenerative medicine. One proposed mechanism for coordinating individual cells towards specific morphological outcomes involves the sharing of stress, where stress represents a physiological parameter reflecting the current deviation from a homeostatic set point.",
+      "section": "ABSTRACT",
+      "primary_topic": "Morphogenesis",
+      "secondary_topics": [
+        "multicellularity",
+        "robustness",
+        "homeostasis",
+        "stress sharing",
+        "developmental biology",
+        "bioengineering",
+        "regenerative medicine"
+      ],
+      "chunk_summary": "Multicellular collectives achieve robust morphological outcomes through stress sharing, a mechanism crucial for various biological fields.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "This study presents a multiscale agent-based model to quantitatively investigate the impact of stress sharing on achieving target morphology. The model reveals that stress sharing enhances the morphogenetic efficiency of multicellular collectives, enabling faster attainment of anatomical targets. Furthermore, stress sharing influences the fate of distant cells within the collective, increasing their movement and radius of influence, supporting the hypothesis that stress sharing promotes collective cohesiveness.",
+      "section": "ABSTRACT",
+      "primary_topic": "Stress Sharing",
+      "secondary_topics": [
+        "agent-based model",
+        "morphogenetic efficiency",
+        "cell fate",
+        "collective behavior",
+        "cohesiveness",
+        "multicellularity"
+      ],
+      "chunk_summary": "An agent-based model demonstrates that stress sharing improves morphogenetic efficiency and influences cell fate within multicellular collectives.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "The study also highlights the limitations of inferring anatomical goal states solely from observing stress states, indicating that external observers cannot readily deduce system goals. Overall, the analyses underscore the significant role of stress sharing in both natural and engineered systems aiming to achieve robust large-scale behaviors from the activity of their competent components.",
+      "section": "ABSTRACT",
+      "primary_topic": "System Goals",
+      "secondary_topics": [
+        "stress states",
+        "external observation",
+        "robustness",
+        "large-scale behavior",
+        "engineered systems"
+      ],
+      "chunk_summary": "Inferring system goals solely from stress states is limited, highlighting the importance of stress sharing for robust large-scale behaviors.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "A key aspect of morphogenesis is that it is not an open-loop process. It is often assumed that emergence and complexity science can explain morphogenesis through local rules executed recursively in parallel across all cells, resulting in complex growth and form. While this is true, and computational models demonstrate this, biological morphogenesis also includes anatomical homeostasis, where the system can achieve the same anatomical outcome through multiple paths despite novel circumstances.  Biological morphogenesis is not well-described by bottom-up, open-loop, mechanical models, but exhibits more complex policies as it navigates anatomical shapes despite perturbations. This includes reaching the correct target morphology despite damage, scrambling of tissue positions, changes of cell size and number, and genomic alterations. Numerous biochemical, biomechanical, and bioelectric prepatterns have been described which can encode setpoints for anatomical homeostasis.",
+      "section": "A",
+      "primary_topic": "Morphogenesis",
+      "secondary_topics": [
+        "anatomical homeostasis",
+        "emergence",
+        "complexity science",
+        "bioelectric prepatterns",
+        "biomechanical prepatterns",
+        "biochemical prepatterns",
+        "perturbations",
+        "developmental biology"
+      ],
+      "chunk_summary": "Morphogenesis is not a simple open-loop process but involves anatomical homeostasis, allowing multiple paths to achieve the same anatomical outcome despite perturbations.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "1"
+    },
+    {
+      "text": "Understanding how bodies navigate anatomical morphospace, including reliability, failure modes, and intervention strategies, is crucial for advances in evolutionary developmental biology, bioengineering of synthetic life forms, biomedicine of birth defects and regenerative therapeutics, and adaptive robotics. This requires models of how individual cell behaviors scale up to adaptive responses at the body level.  The key question is how cell activity is coordinated toward a consistent morphology, and how individual cell homeostatic capabilities relate to the more complex homeostatic setpoint of the collective.",
+      "section": "A",
+      "primary_topic": "Anatomical Morphospace",
+      "secondary_topics": [
+        "synthetic life",
+        "regenerative therapeutics",
+        "birth defects",
+        "adaptive robotics",
+        "cell coordination",
+        "homeostasis",
+        "evolutionary developmental biology"
+      ],
+      "chunk_summary": "Understanding how cells coordinate to achieve consistent morphology and how individual cell homeostasis relates to collective homeostasis is crucial for various fields.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": "2"
+    },
+    {
+      "text": "One proposed mechanism for coordinating morphogenesis is stress, a concept from physics and engineering, proposed as a generic principle of biological organization. Stress is studied in biology at various levels, from DNA damage to ecosystems.  We propose that stress, as a biophysical marker of the computed error between the current state and a homeostatic setpoint, can be extended to morphogenesis. Examples like limb regeneration in salamanders, where growth stops when a correct limb is formed, and tail-to-limb remodeling in amphibia, demonstrate error minimization.  Cells adjust until the error is within tolerance, driven by stress reduction, similar to other levels of biological organization. In our models, stress reflects the degree of error in anatomical morphospace that the system can detect with respect to its prepattern.",
+      "section": "A",
+      "primary_topic": "Stress",
+      "secondary_topics": [
+        "homeostatic setpoint",
+        "error minimization",
+        "limb regeneration",
+        "amphibian remodeling",
+        "biological organization",
+        "morphogenesis",
+        "prepattern"
+      ],
+      "chunk_summary": "Stress, as a measure of the difference between current state and homeostatic setpoint, can be applied to morphogenesis, driving error minimization as seen in examples like limb regeneration.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "2"
+    },
+    {
+      "text": "While the molecular mechanisms of stress sensing and the role of stress sharing in cell cooperation are largely unknown, one hypothesis involves positional information gradients. A cell in the wrong position (Fig. 1A) is motivated to move to relieve its stress. However, its correctly positioned neighbors, with low stress, have strong inertia against moving.  This conflict between individual cell-scale homeostatic loops prevents cooperation and the optimal anatomical configuration is not reached (Fig. 1.A1).",
+      "section": "A",
+      "primary_topic": "Stress Sharing",
+      "secondary_topics": [
+        "cell cooperation",
+        "positional information",
+        "stress sensing",
+        "homeostatic loops",
+        "cell movement",
+        "tissue organization"
+      ],
+      "chunk_summary": "Stress sharing and its role in cell cooperation during morphogenesis are explored, highlighting how individual cell homeostasis can conflict with overall tissue organization.",
+      "position_in_section": "End",
+      "certainty_level": "Medium",
+      "citation_context": "Presenting new results",
+      "page_number": "2"
+    },
+    {
+      "text": "One way to resolve the problem of cellular stress is to allow stress-sharing molecules to diffuse from a source cell to its neighbors. If all cells interpret these shared molecular signals as stress, individual cells cannot distinguish between self-generated stress and stress originating from neighboring cells.  A cell leaking stress molecules effectively raises the \"temperature\" (exploratory activity level) of nearby cells, analogous to annealing systems in physics. This increased plasticity makes them more willing to adopt new configurations because they no longer perceive their current state as stable or low-energy. [46]",
+      "section": "[PAGE 2] However, one simple way to resolve this problem would be to allow stress sharing molecules to leak out of the source cell and diffuse outward to neighboring cells. If all cells interpret these conserved, shared molecular signals as stress, a given cell cannot tell if its high stress sensation is due to a problem it has or a problem its neighbors have. A cell that is leaking stress raises the exploratory activity level – temperature – of the nearby cells [46] (a quantity known as temperature, in the physics of annealing systems), making them more plastic and willing to perform active behaviors because they do not rate their current state as a satisfactory, low-energy stable state. This lowers the barrier for them to undergo exploratory motion in the space, allowing the other cell to move through to lower its stress level, at which point the whole tissue is at the optimal lowest-energy configuration and every cells' stress is reduced (Fig. 1A2). This kind of scheme is common in computational models of biological networks [47-49], and produces cooperation without explicit mechanisms of altruism. By sharing stress with neighbors, one cell's (or region's) problem becomes everyone's problem, leading to a higher willingness to adopt new configurations in which everyone's free energy is lower (and thus, more optimal morphogenetic problem-solving).",
+      "primary_topic": "Stress Sharing",
+      "secondary_topics": [
+        "cell communication",
+        "molecular signals",
+        "annealing",
+        "plasticity",
+        "exploratory behavior",
+        "stress response"
+      ],
+      "chunk_summary": "Cells share stress signals with neighbors, increasing their plasticity and willingness to change configurations.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "2"
+    },
+    {
+      "text": "The lowered energy barrier facilitates exploratory motion, allowing stressed cells to move and reduce their stress levels.  Ultimately, the entire tissue reaches an optimal, lowest-energy configuration where every cell's stress is minimized (Fig. 1A2). This stress-sharing scheme, common in computational models of biological networks [47-49], promotes cooperation without explicit altruism. By distributing stress, a localized problem becomes a shared issue, encouraging the adoption of new, more optimal configurations where overall free energy is lower, leading to more effective morphogenetic problem-solving.",
+      "section": "[PAGE 2] However, one simple way to resolve this problem would be to allow stress sharing molecules to leak out of the source cell and diffuse outward to neighboring cells. If all cells interpret these conserved, shared molecular signals as stress, a given cell cannot tell if its high stress sensation is due to a problem it has or a problem its neighbors have. A cell that is leaking stress raises the exploratory activity level – temperature – of the nearby cells [46] (a quantity known as temperature, in the physics of annealing systems), making them more plastic and willing to perform active behaviors because they do not rate their current state as a satisfactory, low-energy stable state. This lowers the barrier for them to undergo exploratory motion in the space, allowing the other cell to move through to lower its stress level, at which point the whole tissue is at the optimal lowest-energy configuration and every cells' stress is reduced (Fig. 1A2). This kind of scheme is common in computational models of biological networks [47-49], and produces cooperation without explicit mechanisms of altruism. By sharing stress with neighbors, one cell's (or region's) problem becomes everyone's problem, leading to a higher willingness to adopt new configurations in which everyone's free energy is lower (and thus, more optimal morphogenetic problem-solving).",
+      "primary_topic": "Cooperative Stress Reduction",
+      "secondary_topics": [
+        "morphogenesis",
+        "free energy",
+        "computational modeling",
+        "biological networks",
+        "tissue organization",
+        "optimization"
+      ],
+      "chunk_summary": "Shared stress promotes cooperative behavior, leading to optimal tissue configurations and reduced free energy.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "2"
+    },
+    {
+      "text": "This hypothesis makes some strong predictions about the robustness of morphogenesis with and without such a stress sharing mechanism. However, in multiscale systems with emergent behaviors it is often not obvious how well such a mechanism would work, or what the resulting dynamics would be, without quantitative simulation. Here, we test those predictions in an in silico model of morphogenesis. In our model, migrating cells working to implement homeostatic target morphologies were either allowed or disallowed from sharing their stress during the process of rearranging in space. We analyzed this model in three conditions, with the first being designed to test the impact of stress sharing and the last two being null hypothesis controls. First, our experimental mode with stress sharing, in which the individual cellular homeostats, in which stress is proportional to distance from their homeostatic setpoint, do propagate their stress to other cells. By analyzing these results, we find interesting phenomena that suggest that stress sharing is an easy way to achieve robustness in collectives made up of homeostatic subunits.",
+      "section": "[PAGE 2] This hypothesis makes some strong predictions about the robustness of morphogenesis with and without such a stress sharing mechanism. However, in multiscale systems with emergent behaviors it is often not obvious how well such a mechanism would work, or what the resulting dynamics would be, without quantitative simulation. Here, we test those predictions in an in silico model of morphogenesis. In our model, migrating cells working to implement homeostatic target morphologies were either allowed or disallowed from sharing their stress during the process of rearranging in space.",
+      "primary_topic": "Stress Sharing",
+      "secondary_topics": [
+        "morphogenesis",
+        "robustness",
+        "multiscale systems",
+        "homeostasis",
+        "in silico model",
+        "cell migration"
+      ],
+      "chunk_summary": "This study uses an in silico model to investigate the role of stress sharing in morphogenesis, comparing three conditions: stress sharing, no stress sharing, and direct development (control).",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "2"
+    },
+    {
+      "text": "Second, a mode in which cells are agents and possess certain competencies that modify the resulting phenotypic fitness - they still have homeostatic loops governed by stress but they do not export it to their neighbors [50,51]. Third, a \"direct development\" mode in which phenotypes are hard-wired from the genotype, mirroring many uses of genetic algorithms and numerous theoretical biology or artificial life studies which omit the developmental layer between them (no homeostatic competency or regulative development). By comparing the data, we find interesting and important roles of stress sharing as a dynamic that facilitates collective problem-solving.",
+      "section": "[PAGE 2] This hypothesis makes some strong predictions about the robustness of morphogenesis with and without such a stress sharing mechanism. However, in multiscale systems with emergent behaviors it is often not obvious how well such a mechanism would work, or what the resulting dynamics would be, without quantitative simulation. Here, we test those predictions in an in silico model of morphogenesis. In our model, migrating cells working to implement homeostatic target morphologies were either allowed or disallowed from sharing their stress during the process of rearranging in space.",
+      "primary_topic": "Control Groups",
+      "secondary_topics": [
+        "homeostasis",
+        "phenotype",
+        "genotype",
+        "genetic algorithms",
+        "developmental biology",
+        "artificial life",
+        "stress sharing"
+      ],
+      "chunk_summary": "Two control groups were used: one with individual cellular homeostasis but no stress sharing, and another with direct development (no homeostasis or regulation).",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "2"
+    },
+    {
+      "text": "We modeled (see Supplements S1 and S2 for technical approach and code execution details) embryos achieving a target morphology in-silico; the target morphology we chose was similar to the \"electric face\" bioelectric prepattern known to exist during frog embryogenesis [52]. We assessed the impact of embryogenesis on the morphogenetic process by encoding embryos with different developmental routines and comparing their reorganization potential. All developmental routines involved varying degrees of stress sharing between cellular components as encoded by their genome. Apart from comparing developmental routines on an individual scale, we also sought to compare its effects on an evolutionary scale by wrapping the developmental process within an evolutionary algorithm.",
+      "section": "[PAGE 2] This hypothesis makes some strong predictions about the robustness of morphogenesis with and without such a stress sharing mechanism. However, in multiscale systems with emergent behaviors it is often not obvious how well such a mechanism would work, or what the resulting dynamics would be, without quantitative simulation. Here, we test those predictions in an in silico model of morphogenesis. In our model, migrating cells working to implement homeostatic target morphologies were either allowed or disallowed from sharing their stress during the process of rearranging in space.",
+      "primary_topic": "In Silico Model",
+      "secondary_topics": [
+        "embryogenesis",
+        "morphogenesis",
+        "bioelectric prepattern",
+        "frog embryogenesis",
+        "developmental routines",
+        "evolutionary algorithm",
+        "genome"
+      ],
+      "chunk_summary": "The in silico model simulates embryos achieving a target morphology similar to the frog \"electric face\" prepattern, assessing the impact of different developmental routines with varying stress sharing on morphogenesis, both individually and evolutionarily.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "2"
+    },
+    {
+      "text": "In our framework, an embryo was treated as a collection of cells within a two-dimensional (2D) grid. We chose a two-dimensional (2D) matrix data structure to be its computational equivalent for modelling, referring to its elements as cells (analogous to biological cells). Thus, our biological tissue is simplified as a discretized lattice, conceptually related to Chua's cellular neural networks [53]. Embryos were grouped into three different kinds based on their cells' ability to reorganize themselves during development: (1) stress-sharing embryo: wherein cells moved by sharing their stress, (2) without-stress-sharing embryo: where cells could move, but could not share their stress levels with others, and (3) hardwired: where cells could not move at all. The first two types thus included a developmental layer between genotype and phenotype, while the third simulated an organism with no regulative development, where the connections between genotype and phenotype was much more direct [51].",
+      "section": "[PAGE 2] This hypothesis makes some strong predictions about the robustness of morphogenesis with and without such a stress sharing mechanism. However, in multiscale systems with emergent behaviors it is often not obvious how well such a mechanism would work, or what the resulting dynamics would be, without quantitative simulation. Here, we test those predictions in an in silico model of morphogenesis. In our model, migrating cells working to implement homeostatic target morphologies were either allowed or disallowed from sharing their stress during the process of rearranging in space.",
+      "primary_topic": "Model Implementation",
+      "secondary_topics": [
+        "2D grid",
+        "cellular neural networks",
+        "stress sharing",
+        "cell movement",
+        "genotype",
+        "phenotype",
+        "regulative development"
+      ],
+      "chunk_summary": "The model uses a 2D grid representing an embryo, with three embryo types: stress-sharing, without-stress-sharing, and hardwired (no movement), simulating different levels of developmental regulation.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "2"
+    },
+    {
+      "text": "Our primary goal was to observe how the presence of a developmental process, which acted as a layer separating the initial substrate of the embryo from its reorganized state, altered the evolutionary dynamics of a population. To quantify this, we evolved populations of embryos using a genetic algorithm (GA). Since our genetic algorithm had to account for a developmental stage during the life cycle of an embryo, it was an iterative sequence of the following stages: Development, Selection, and Mutation (Fig. 2).",
+      "section": "[PAGE 4] Our primary goal was to observe how the presence of a developmental process, - which acted as a layer separating the initial substrate of the embryo from its reorganized state - altered the evolutionary dynamics of a population. To quantify this, we evolved populations of embryos using a genetic algorithm (GA). Since our genetic algorithm had to account for a developmental stage during the life cycle of an embryo, it was an iterative sequence of the following stages",
+      "primary_topic": "Evolutionary Dynamics",
+      "secondary_topics": [
+        "genetic algorithm",
+        "development",
+        "selection",
+        "mutation",
+        "embryo",
+        "life cycle",
+        "population dynamics"
+      ],
+      "chunk_summary": "A genetic algorithm was used to study how a developmental process, separating the initial and reorganized states of an embryo, influences the evolutionary dynamics of a population.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "4"
+    },
+    {
+      "text": "During initialization, each embryo (i.e., each 2D matrix) was initialized with one of two cell types (0 or 1) and were patterned in a stochastic manner to give a scrambled appearance to their structure (Fig. 2A.I). Each embryo within a population was initialized similarly with a unique scrambled pattern and the specific pattern itself was treated as its genome. In addition, the genome also encoded a separate value (the reorganization gene marker) which indicated the type of developmental reorganization it could undergo during the upcoming developmental stage.",
+      "section": "[PAGE 4] During initialization, each embryo (i.e., each 2D matrix) was initialized with one of two cell types (0 or 1) and were patterned in a stochastic manner to give a scrambled appearance to their structure (Fig. 2A.I). Each embryo within a population was initialized similarly with a unique scrambled pattern and the specific pattern itself was treated as its genome. In addition, the genome also encoded a separate value (the reorganization gene marker) which indicated the type of developmental reorganization it could undergo during the upcoming developmental stage.",
+      "primary_topic": "Embryo Initialization",
+      "secondary_topics": [
+        "2D matrix",
+        "stochastic patterning",
+        "genome",
+        "reorganization gene marker",
+        "developmental reorganization",
+        "cell types"
+      ],
+      "chunk_summary": "Embryos are initialized as scrambled 2D matrices with two cell types, their unique pattern serving as a genome that also encodes a reorganization gene marker determining future developmental reorganization.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "4"
+    },
+    {
+      "text": "Post initialization, a population of embryos underwent development (the first stage of the genetic algorithm). During development, embryos reorganized their cells to resemble a target two-dimensional pattern which we pre-specified in our experiments to be binary image of a smiling face (Fig. 2A.II). Based on the kind of reorganization gene marker encoded in its genome, an embryo could either undergo reorganization by sharing its stress, by not sharing its stress, or by not using stress at all.",
+      "section": "[PAGE 4] During initialization, each embryo (i.e., each 2D matrix) was initialized with one of two cell types (0 or 1) and were patterned in a stochastic manner to give a scrambled appearance to their structure (Fig. 2A.I). Each embryo within a population was initialized similarly with a unique scrambled pattern and the specific pattern itself was treated as its genome. In addition, the genome also encoded a separate value (the reorganization gene marker) which indicated the type of developmental reorganization it could undergo during the upcoming developmental stage.",
+      "primary_topic": "Stress-Based Development",
+      "secondary_topics": [
+        "genetic algorithm",
+        "target pattern",
+        "reorganization",
+        "stress sharing",
+        "genome",
+        "embryo development"
+      ],
+      "chunk_summary": "Embryos develop by reorganizing their cells towards a target pattern (a smiling face), using different stress-based reorganization strategies determined by their genome.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "4"
+    },
+    {
+      "text": "Stress was a binary signal which indicated whether a particular cell was in its correct x, y coordinate position (with respect to the target) or not. Since our initial embryo was scrambled, most of its cells were bound to be stressed. Stressed cells were inherently driven to move somewhere (they possessed a sense of restlessness), the question of where to move to was based on another signal which we called the distress signal.",
+      "section": "[PAGE 4] During initialization, each embryo (i.e., each 2D matrix) was initialized with one of two cell types (0 or 1) and were patterned in a stochastic manner to give a scrambled appearance to their structure (Fig. 2A.I). Each embryo within a population was initialized similarly with a unique scrambled pattern and the specific pattern itself was treated as its genome. In addition, the genome also encoded a separate value (the reorganization gene marker) which indicated the type of developmental reorganization it could undergo during the upcoming developmental stage.",
+      "primary_topic": "Stress Signal",
+      "secondary_topics": [
+        "cell position",
+        "distress signal",
+        "cell movement",
+        "binary signal",
+        "target pattern"
+      ],
+      "chunk_summary": "Stress signals indicate if a cell is in the correct position relative to the target, driving stressed cells to move based on a \"distress\" signal.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "4"
+    },
+    {
+      "text": "A distress signal originated in non-stressed cells (termed \"fixed cells\"), which observed their 3x3 neighborhood for stressed cells. Upon detecting a stressed cell, the fixed cell sent a radially diminishing signal (strength 1.0 at origin) encoding the stressed cell's presence and location. This mimics how cells at a wound site signal for assistance; here, a fixed cell requests assistance at a specific location via a distress signal.",
+      "section": "A",
+      "primary_topic": "Distress Signaling",
+      "secondary_topics": [
+        "cell communication",
+        "stress response",
+        "neighborhood sensing",
+        "signal propagation",
+        "fixed cells",
+        "stressed cells"
+      ],
+      "chunk_summary": "Non-stressed 'fixed' cells detect nearby stressed cells and send out a diminishing distress signal indicating the stressed cell's location, similar to wound healing signaling.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The distress signal was not received by all cells. Only stressed cells with the opposite cell-value received it. For example, if a fixed cell (F1) detects a stressed cell (S1) of type \"0\" in the wrong location, F1 sends a distress signal to the 2D grid. This signal requests a distant stressed cell (S2) of the opposite type \"1\" to move to S1's location, thus relieving S1's stress.",
+      "section": "A",
+      "primary_topic": "Targeted Signaling",
+      "secondary_topics": [
+        "cell communication",
+        "stress response",
+        "cell type",
+        "signal specificity",
+        "cell migration",
+        "stress relief"
+      ],
+      "chunk_summary": "The distress signal is targeted specifically at stressed cells of the opposite type, prompting them to migrate and resolve the stress in the incorrect location.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The above example is a simplification; in practice, multiple distress signals were sent out simultaneously, and stressed cells could receive and accumulate these signals to move to a specific target location. Once distress signals were captured by stressed cells, they moved. Movement occurred sequentially. At each instance, a single stressed cell in the grid was chosen at random, and its distress-signal-record from various sources was consulted. Its destination for movement was chosen as that location from which the distress signal was strongest in value. The chosen stressed cell moved to its target by repeatedly swapping with intermediate elements in the direction of shortest path.",
+      "section": "[PAGE 4] The above example is a simplification; in practice, multiple distress signals were sent out simultaneously, and stressed cells could receive and accumulate these signals to move to a specific target location. Once distress signals were captured by stressed cells, they moved.",
+      "primary_topic": "Distress Signals",
+      "secondary_topics": [
+        "cell movement",
+        "target location",
+        "signal accumulation",
+        "sequential movement",
+        "shortest path"
+      ],
+      "chunk_summary": "Stressed cells move sequentially towards the strongest distress signal source by swapping positions with intermediate elements along the shortest path.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "4"
+    },
+    {
+      "text": "During cell movement, we had to deal with a problem: what would happen to the fixed elements which were in the way of a stressed cell as it moved towards its destination? If the stressed element swapped with fixed cells, it would dislodge them causing them to become stressed (thereby increasing the overall stress rather than decreasing it). We solved this problem by disallowing stressed elements to swap with intermediate fixed elements i.e., by default, if a stressed element encountered a fixed element while making its way towards its chosen destination, it could not move any further and would get stuck.",
+      "section": "[PAGE 4] The above example is a simplification; in practice, multiple distress signals were sent out simultaneously, and stressed cells could receive and accumulate these signals to move to a specific target location. Once distress signals were captured by stressed cells, they moved.",
+      "primary_topic": "Cell Movement",
+      "secondary_topics": [
+        "fixed elements",
+        "stress sharing",
+        "cellular competency",
+        "stress reduction",
+        "movement constraints"
+      ],
+      "chunk_summary": "To prevent increased stress from dislodging fixed elements, stressed cells are prevented from swapping positions with them, potentially causing them to get stuck.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "4"
+    },
+    {
+      "text": "A special case which over-rode this default, was when we pre-specified stressed cells to share their stress with its neighbors. Since stress was a binary signal (0 or 1), a stressed cell communicated its status as a stressed cell to a fixed neighbor during movement. This communication process was termed \"stress-sharing\" and the effect it had was a coercion of the fixed cell to create a passage (a de facto tunnel) for movement through it rather than by swapping with it (Fig. 1B). Thus, on receiving a shared signal of stress from a stressed cell moving towards its destination, the fixed cell created a temporary channel, which allowed the stressed cell to swap with other stressed cells through it. In case multiple fixed cells stood in the way of the moving stressed cell, stress sharing ensured a tunnel was created through all of them for movement. The tunnel induced as a result of the shared stress was temporary. Once the stressed cell moved away from the tunneled fixed cell, it reverted back to its original \"blocking state\".",
+      "section": "A",
+      "primary_topic": "Stress Sharing",
+      "secondary_topics": [
+        "cell movement",
+        "stress signal",
+        "tunnel formation",
+        "grid organization",
+        "cellular communication",
+        "simulation",
+        "model"
+      ],
+      "chunk_summary": "Stress sharing between cells allows for temporary tunnel creation, facilitating movement through otherwise blocked paths in a grid.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "Such a stress sharing mechanism, allowed the possibility of free, unrestricted movement towards all parts of the discrete grid, preventing dislocation of fixed cells from their grid positions during cell-movement. An alternate form of the stress sharing mechanism was also implemented, where instead of creating a tunnel, the fixed cell simply swapped with the stressed cell (thereby becoming stressed itself). A reorganization process, one which did not involve stress sharing was also considered. In such cases, a stressed cell would get stuck as soon as it encountered a fixed cell while moving towards its destination in the direction of shortest path.",
+      "section": "A",
+      "primary_topic": "Stress Sharing Mechanism",
+      "secondary_topics": [
+        "cell movement",
+        "grid organization",
+        "alternative mechanisms",
+        "cell swapping",
+        "simulation",
+        "model"
+      ],
+      "chunk_summary": "The stress-sharing mechanism enables free movement within the grid, while an alternative involves cell swapping; absence of stress sharing leads to movement blockage.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "To summarize, an embryo could undergo one of three different kinds of reorganization: 1. With stress sharing, 2. Without stress sharing, and 3. Hardwired. Since the first two methods involved local cell movement they were termed competent strategies. The hardwired case served as a control to the other two competent strategies. The cells of a hardwired embryo could not move and thus lacked a reorganization process; development during evolution only served as a placeholder, without any functional significance.",
+      "section": "A",
+      "primary_topic": "Reorganization Strategies",
+      "secondary_topics": [
+        "embryo development",
+        "stress sharing",
+        "competent strategies",
+        "hardwired control",
+        "cell movement",
+        "simulation",
+        "model"
+      ],
+      "chunk_summary": "Three reorganization strategies are presented: stress sharing, no stress sharing, and a hardwired control, with the first two being 'competent' due to cell movement.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "Post-development, embryos possessed a transformed structure and the resulting grid organization was termed its Phenotype. Thus, the developmental stage served as an independent layer separating the genotype from the phenotype. Definitions of the genotype and the phenotype, as they have been used here, have loose connections with biology and assume special meaning only here. Demarcating these two phases allowed us to monitor the impact of the reorganization process on fitness throughout evolution (Fig. 2).",
+      "section": "A",
+      "primary_topic": "Genotype and Phenotype",
+      "secondary_topics": [
+        "embryo development",
+        "grid organization",
+        "phenotype",
+        "genotype",
+        "fitness",
+        "evolution",
+        "simulation",
+        "model"
+      ],
+      "chunk_summary": "Post-development, the resulting grid organization is termed the phenotype, separated from the genotype by the developmental stage, allowing for monitoring the impact of reorganization on fitness.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "2"
+    },
+    {
+      "text": "Fig. 2. Genetic algorithm Schematic (A): Initialization: Prior to evolution, a population of genomes which served as the substrate for evolution were initialized. A genome in our framework was a randomly initialized two-dimensional matrix containing two cell-types (0, indicated in black, and 1, indicated as white) (A.I). The genome also carried a marker indicating the type of development an embryo could undergo during the first stage of evolution i.e: development. Three kinds of reorganization processes were defined: 1. Stress sharing based reorganization, 2. Reorganization without stress sharing, and 3. Hardwired (no reorganization). A target for evolution was also set. To this end, we chose a downsampled binary image of a smiling face as the target pattern which evolution had to optimize over (A.II).",
+      "section": "[PAGE 5] Fig. 2. Genetic algorithm Schematic",
+      "primary_topic": "Genetic Algorithm",
+      "secondary_topics": [
+        "Initialization",
+        "Genome",
+        "Cell-types",
+        "Development",
+        "Reorganization",
+        "Target Pattern"
+      ],
+      "chunk_summary": "The genetic algorithm starts by initializing a population of genomes represented as 2D matrices with two cell types and a developmental marker, aiming to evolve towards a target pattern (smiling face).",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "5"
+    },
+    {
+      "text": "(B): Development: The first stage of evolution involved a process of cellular reorganization of the initialized matrices. Reorganization would be based on the gene marker encoded in the genomes of each embryo. This stage served to mimic the developmental stage observed during an organism's lifetime. Post development, the reorganized cell-structure was termed the embryo's phenotype. Thus, the developmental process served as an independent layer separating the genotype of an embryo from its phenotype.",
+      "section": "[PAGE 5] Fig. 2. Genetic algorithm Schematic",
+      "primary_topic": "Development",
+      "secondary_topics": [
+        "Cellular Reorganization",
+        "Gene Marker",
+        "Embryo",
+        "Phenotype",
+        "Genotype"
+      ],
+      "chunk_summary": "The development stage involves cellular reorganization based on the genome's marker, resulting in the embryo's phenotype, which is distinct from its genotype.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "5"
+    },
+    {
+      "text": "(C): Selection: Prior to development, the fitness of each genome was recorded by comparing it with the target (12 - distance). And Post development, the fitness of the corresponding phenotype was also recorded using its 12 - distance with the target. During selection, phenotypic fitnesses of the top 10% of the population were chosen and, their corresponding genomes were selected (Darwinian selection) for evolution in the next generation and the rest were discarded.",
+      "section": "[PAGE 5] Fig. 2. Genetic algorithm Schematic",
+      "primary_topic": "Selection",
+      "secondary_topics": [
+        "Fitness",
+        "L2 Distance",
+        "Target",
+        "Darwinian Selection",
+        "Phenotype",
+        "Genotype"
+      ],
+      "chunk_summary": "Selection involves evaluating the fitness of both genotypes and phenotypes based on their distance from the target, with the top 10% of genomes (based on phenotypic fitness) selected for the next generation.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "5"
+    },
+    {
+      "text": "(D): Mutation: The selected for genomes constituted 10% of the original population. To repopulate the population back to its original strength, selected genomes were mutated by randomly swapping cell-pairs within the genome. The resulting mutated genome served as a new embryo. Post re-population, a new cycle of evolution began marked by the onset of development. 2.3. Fitness function Our genetic algorithm served as a search process over genotypes which best reorganized themselves according to the target pattern (a smiling face in our experiments). The fitness value of any embryo was determined by its l2 distance, d with the target. 1 d= N2",
+      "section": "[PAGE 5] Fig. 2. Genetic algorithm Schematic",
+      "primary_topic": "Mutation and Fitness Function",
+      "secondary_topics": [
+        "Mutation",
+        "Cell-pair Swapping",
+        "Embryo",
+        "Fitness Function",
+        "L2 Distance"
+      ],
+      "chunk_summary": "Mutation involves randomly swapping cell-pairs within the selected genomes to create new embryos, and the fitness function is based on the L2 distance between the embryo/genome and the target pattern.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "6"
+    },
+    {
+      "text": "N N ∑∑ (Eij - Tij)^12 i=0 j=0 Where Eij and Tij are the (i,j)th elements of the embryo and the target respectively. Intuitively, the fitness function provided a quantitative metric of how close the embryo was to the target morphogenetic pattern. During evolution, we noticed significant differences between populations in higher fitness values than lower fitness values. To make this apparent, we zoomed into higher fitness values by exponentiating the l2 distance as follows: d= (gd)/9 Given the presence of a developmental step, two separate configurations of the embryo existed during a single cycle of the GA: 1. The state of the embryo prior to development (as the genotype) and 2. The state of the embryo post development (as the phenotype). Consequently, two kinds of fitness existed: the genotypic fitness, which measured the fitness of the genotype; and the phenotypic fitness, which measured the fitness of the phenotype. An exception occurred in hardwired embryos: since they lacked competency, their phenotype was equivalent to their genotype and thus their phenotypic fitness was equivalent to its genotypic fitness.",
+      "section": "N N",
+      "primary_topic": "Fitness Function",
+      "secondary_topics": [
+        "genotype",
+        "phenotype",
+        "genetic algorithm",
+        "development",
+        "evolution",
+        "morphogenesis",
+        "l2 distance"
+      ],
+      "chunk_summary": "This chunk describes the fitness function used to evaluate the proximity of the embryo's morphogenetic pattern to the target pattern, introducing the concepts of genotypic and phenotypic fitness.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "6"
+    },
+    {
+      "text": "2.4. Kinds of embryos The genotype of each embryo carried a \"reorganization-marker\" indicating the kind of developmental reorganization it could undergo during development. Each embryo was categorized into three different kinds based on this gene marker as follows: 1. With stress sharing embryo. 2. Without stress sharing embryo, and 3. Hardwired embryo. The first two categories had a general ability for reorganization, and were termed as \"competent\", in the sense of problem-solving ability of active tissues to restore correct shapes despite induced barriers, perturbations, and other interventions [5,54]. Alternatively, the hardwired embryo was not-competent and possessed a fixed structure throughout development. 2.5. Populations for evolution Our genetic algorithm evolved populations of embryos of three different kinds: 1. Stress sharing population, 2. Without stress-sharing population, and 3. Hardwired population. To create a population of size M; M 2D-matrices of size N were initialized by randomly scrambling the target pattern (also of size N). We initialized grids this way in order to maintain the same number of cell types (0's and 1's) across both the initialized embryo and the target.",
+      "section": "N N",
+      "primary_topic": "Embryo Types",
+      "secondary_topics": [
+        "stress sharing",
+        "competency",
+        "hardwired",
+        "reorganization",
+        "population initialization",
+        "genetic algorithm",
+        "development"
+      ],
+      "chunk_summary": "This chunk describes the three types of embryos used in the study (stress-sharing, without stress-sharing, and hardwired) and their respective competency levels, along with the initialization process for the populations.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "6"
+    },
+    {
+      "text": "It ensured simplicity and allowed us to focus on reorganization rather than \"growing\" the required kind of cell types to satisfy the target pattern. 2.6. Genetic algorithm We evolved each population by passing it iteratively through a sequential process of: 1. Development, 2. Selection, and 3. Mutation. During the selection stage, phenotypic fitnesses were used to select the best genotypes for the subsequent generation (Darwinian selection). In order to repopulate the population with variant genotypes we mutated the selected genotypes by stochastically moving a few cells to random locations. At the end of each generation, we plot the phenotypic fitness and the genotypic fitness of the embryo with the highest phenotypic fitness in the population (see Supplement S2 for more details). 2.7. Competency value and cell-Distance Embryos with competency (either with stress sharing or without stress sharing) were given a pre-determined \"competency value\". This value provided an upper bound to the number of swaps the cells of the embryo could execute during the developmental step.",
+      "section": "N N",
+      "primary_topic": "Genetic Algorithm",
+      "secondary_topics": [
+        "selection",
+        "mutation",
+        "development",
+        "competency value",
+        "cell movement",
+        "Darwinian selection",
+        "phenotypic fitness",
+        "genotypic fitness"
+      ],
+      "chunk_summary": "This chunk details the genetic algorithm used, including the steps of development, selection, and mutation, and explains the concept of competency value and its relation to cell movement during development.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "6"
+    },
+    {
+      "text": "We also monitored the total distance travelled by these cells by calculating the average Euclidean-distance moved by elements during a generation. 2.8. Statistical analyses To observe the impact of stress sharing during evolution, we plot the fitness curves of each population (with stress sharing, without stress sharing, and hardwired), over 1000 generations. 95% confidence intervals (CI) over 10 runs of each experiment were plotted to verify if any of the CI bands of any population overlapped with each other across 1000 generations. A lack of overlap suggested a significant difference in evolutionary dynamics. Further, we measured the statistical difference between different populations at arbitrary points during evolution and carried out a t-test between samples of any two populations to quantify their similarity. 3. Results 3.1. Stress sharing helps populations solve the problem of morphogenesis faster To determine whether a cellular rearrangement process involving stress sharing helps in discovering the optimal morphogenetic process faster, we compared the evolution of three different populations in silico, each with a different kind of cellular rearrangement process over 1000 generations.",
+      "section": "N N",
+      "primary_topic": "Statistical Analysis",
+      "secondary_topics": [
+        "confidence intervals",
+        "t-test",
+        "evolutionary dynamics",
+        "stress sharing",
+        "fitness curves",
+        "morphogenesis",
+        "in silico experiments"
+      ],
+      "chunk_summary": "This chunk outlines the statistical methods used to analyze the results, including plotting fitness curves with confidence intervals and performing t-tests to compare populations, and introduces the main finding that stress sharing accelerates morphogenesis.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "7"
+    },
+    {
+      "text": "The experiment consisted of running a population of embryos through a genetic algorithm. The genetic algorithm (GA) involved an iterative process of development, selection, and mutation. The developmental step was introduced to allow a genotype to change into a phenotype before selection (Fig. 2). Three different populations were evolved through our GA: 1. a population which relied on stress sharing to rearrange itself; 2. a population which relied on stress but had no sharing capacity, 3. a population which had no rearrangement capability (hardwired). We plot the phenotypic fitness (Fig. 3A.I) and the genotypic fitness (Fig. 3A.II) of the embryo with the highest phenotypic fitness in each of these populations over 1000 generations averaged over 10 runs to observe their morphogenetic ability.",
+      "section": "N N",
+      "primary_topic": "Experimental Setup",
+      "secondary_topics": [
+        "genetic algorithm",
+        "development",
+        "selection",
+        "mutation",
+        "stress sharing",
+        "hardwired",
+        "phenotypic fitness",
+        "genotypic fitness",
+        "morphogenesis"
+      ],
+      "chunk_summary": "This chunk describes the experimental setup, reiterating the three populations used and their characteristics, and explains how phenotypic and genotypic fitness were tracked over generations to assess morphogenetic ability.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "7"
+    },
+    {
+      "text": "We observed that populations with stress-sharing were able to discover the correct genotype and the competency necessary to form the target pattern faster than the other two populations (Fig. 3A). Members of this population discovered how to arrive at the target pattern by generation 500, at which a population with sharing had a significantly different phenotypic fitness from either the hardwired (p<0.01), or that of the population without sharing (p<0.01). Further, the confidence intervals of these curves did not overlap, indicating their distinct separation from one another (Fig. 3A.I). The way in which stress sharing populations derived their advantage was by progressively improving their genotype during the early stages of evolution (Fig. 3A.II), behaving as if they were a hardwired population (we found no statistical difference between the two until generation ~400 (p = 0.9). In contrast, populations without stress sharing improved their genomes only fractionally above their initialized states (Fig. 3A.II) and relied exclusively on their competency to achieve high phenotypic fitness towards the target (Fig. 3A.I). Such a strategy paid off early during evolution (until generation ~400) but resulted in diminishing gains post this point (Fig. 3A.I). We verified the phenotypes of the best embryo in each of these populations at generation 0, 250, 750, and 1000.",
+      "section": "[PAGE 8] We observed that populations with stress-sharing were able to discover the correct genotype and the competency necessary to form the target pattern faster than the other two populations (Fig. 3A). Members of this population discovered how to arrive at the target pattern by generation 500, at which a population with sharing had a significantly different phenotypic fitness from either the hardwired (p<0.01), or that of the population without sharing (p<0.01). Further, the confidence intervals of these curves did not overlap, indicating their distinct separation from one another (Fig. 3A.I).",
+      "primary_topic": "Stress-Sharing Benefits",
+      "secondary_topics": [
+        "genotype",
+        "phenotypic fitness",
+        "evolution",
+        "competency",
+        "hardwired population",
+        "morphogenesis",
+        "simulation"
+      ],
+      "chunk_summary": "Stress-sharing populations achieve target pattern faster due to progressive genotype improvement, unlike non-sharing populations that rely on competency and show diminishing returns.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "8"
+    },
+    {
+      "text": "We observed that at generation 250, all three populations had a similarly distorted pattern as confirmed by their approximately similar fitness values (Fig. 3B). Further, the stress-sharing and the without stress-sharing populations had a similar fitness value (=0.88) at this point (Fig. 3A.I, p = 0.97), even though the population without-sharing engaged in a different dynamic compared to the other two populations (Fig. 3). At generation 750, despite their similar dynamics early on during evolution, the embryos with stress sharing were capable of forming the target pattern, whereas the hardwired population could not; however, we noted that it does perform better than the population without-stress sharing. At [PAGE 9] generation 1000, we observed the hardwired embryos being closer to maximum fitness with a positive slope of 0.19 compared to the population without sharing (slope = 0.05). We conclude that populations with stress sharing discover the correct morphological solution faster than hardwired populations or populations without stress sharing. Hardwired populations, relying on mutations alone, are eventually capable of achieving high fitness, while populations without-sharing are worse than hardwired populations over long time scales.",
+      "section": "[PAGE 8] We observed that populations with stress-sharing were able to discover the correct genotype and the competency necessary to form the target pattern faster than the other two populations (Fig. 3A). Members of this population discovered how to arrive at the target pattern by generation 500, at which a population with sharing had a significantly different phenotypic fitness from either the hardwired (p<0.01), or that of the population without sharing (p<0.01). Further, the confidence intervals of these curves did not overlap, indicating their distinct separation from one another (Fig. 3A.I).",
+      "primary_topic": "Morphological Solution",
+      "secondary_topics": [
+        "phenotype",
+        "fitness",
+        "evolutionary dynamics",
+        "hardwired",
+        "stress-sharing",
+        "mutations"
+      ],
+      "chunk_summary": "Stress-sharing populations achieve the target morphology faster, while hardwired populations eventually reach high fitness through mutations, and non-sharing populations perform worst over time.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "9"
+    },
+    {
+      "text": "Stress sharing helps populations with a range of complexity solve morphogenesis. In our first experiment, each embryo within a population was a matrix of size 30x30. To determine how sharing benefits populations of cells of different sizes, we initialized multiple instances of the previous experiment each with a different grid size and compared their fitness curves over 1000 generations. Specifically, we ran three instances of the previous experiment, with grid sizes 20x20, 30x30, and 50x50. Within each instance, we compared the performance of the stress-sharing population with the hardwired and without-sharing populations by observing their fitness curves (Fig. 4). We observed that for a grid size of 20x20 (Fig. 4A), stress-sharing populations were able to reach maximum phenotypic fitness by generation 100; hardwired populations were able to reach maximum phenotypic fitness at generation 1000 and a population without sharing was unable to reach phenotypic maximum fitness even after 1000 generations of evolution (Fig. 4A.I). The genomes of the stress-sharing and hardwired populations evolved identically during the early stages of evolution (until generation 100 throughout which we noticed no statistical difference (p = 0.96) post which the stress-sharing population stabilized. (Fig. 4A.II). Genomes of the without-stress-sharing population improved marginally above its initialized state.",
+      "section": "[PAGE 8] We observed that populations with stress-sharing were able to discover the correct genotype and the competency necessary to form the target pattern faster than the other two populations (Fig. 3A). Members of this population discovered how to arrive at the target pattern by generation 500, at which a population with sharing had a significantly different phenotypic fitness from either the hardwired (p<0.01), or that of the population without sharing (p<0.01). Further, the confidence intervals of these curves did not overlap, indicating their distinct separation from one another (Fig. 3A.I).",
+      "primary_topic": "Grid Size Effects",
+      "secondary_topics": [
+        "morphogenesis",
+        "grid size",
+        "fitness curves",
+        "evolution",
+        "genome",
+        "hardwired",
+        "stress-sharing"
+      ],
+      "chunk_summary": "Stress-sharing benefits morphogenesis across different grid sizes, with smaller grids reaching maximum fitness faster, while non-sharing populations struggle even after many generations.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "9"
+    },
+    {
+      "text": "At a grid size of 30x30, a similar pattern of evolutionary behavior emerged: the stress-sharing population reached maximum phenotypic fitness faster, followed by hardwired with a rising slope (=0.19) at generation 1000, and the without sharing population with a stable phenotypic fitness around ~0.91 at generation 1000 (Fig. 4B.I). Genomes exhibited identical patterns as well: the stress-sharing and hardwired populations had similar early stage dynamics (until generation 400) (p = 0.96), post which the stress-sharing population's genome stagnated. The without-sharing population's genome improved by less than 20% above its initialized state (Fig. 4B.II). Further, we observed that these dynamics were all right-shifted versions (with respect to time) of the experiment with grid size 20x20. Generally, populations of size 30x30 took a longer time to reach the same phenotypic fitness level as in 20x20, and genomes of the stress-sharing population stabilized after a longer time (~300 generations longer). At a grid size of 50x50, 1000 generations were insufficient for any of the three populations to reach maximum phenotypic fitness (Fig. 4C.I). However, general patterns similar to those seen at lower grid sizes were observed: phenotypic fitness of the stress-sharing population evolved similarly to the hardwired population until generation 400 (p = 0.96), followed by a short term decrease, before rising back up to hardwired levels. The without-sharing population exhibited early gains but stabilized closer to generation 1000 (Fig. 4C.I). Trends in genotypic fitness revealed a similar dynamic to those seen in lower grid sizes (20x20, and 30x30): the hardwired and stress-sharing population evolved similarly, however, unlike lower grid sizes, its dynamics dropped momentarily before reaching hardwired levels. The without-stress sharing population exhibited relatively modest improvement of its genome, but we note that it is higher than either of the previous two grid sizes.",
+      "section": "[PAGE 8] We observed that populations with stress-sharing were able to discover the correct genotype and the competency necessary to form the target pattern faster than the other two populations (Fig. 3A). Members of this population discovered how to arrive at the target pattern by generation 500, at which a population with sharing had a significantly different phenotypic fitness from either the hardwired (p<0.01), or that of the population without sharing (p<0.01). Further, the confidence intervals of these curves did not overlap, indicating their distinct separation from one another (Fig. 3A.I).",
+      "primary_topic": "Grid Size Complexity",
+      "secondary_topics": [
+        "phenotypic fitness",
+        "genotypic fitness",
+        "evolutionary dynamics",
+        "hardwired",
+        "stress-sharing",
+        "grid size",
+        "simulation"
+      ],
+      "chunk_summary": "Increasing grid size increases morphogenesis complexity, delaying peak fitness achievement, but stress-sharing still provides advantages, especially in later evolutionary stages.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "9"
+    },
+    {
+      "text": "We conclude that as grid size increases, the problem of morphogenesis grows harder, with populations requiring a longer time to reach peak fitness. Despite the increase in complexity, a stress-sharing population can utilize its competency to reach maximum fitness. The benefit [PAGE 9] of stress-sharing is especially noticed in the later stages of evolution when mutations cannot be relied upon to solve the problem efficiently, and more precise cell movements are required. Stress sharing encourages cell-movement over long distances. How does stress sharing help the collective achieve its morphogenetic objective? We next tested the hypothesis that the sharing of stress information facilitates the movement of cells over longer distances. To quantify its effect to fitness improvement, we plotted the competency value and the average Euclidean distance travelled by cells of the best embryo in each of the three populations throughout evolution. Specifically, we initialized populations with members of size 30x30 and ran them through our GA for 1000 generations. In each generation, we picked the embryo whose phenotypic fitness was the highest and traced its genotypic fitness (Fig. 5A.II), competency value (Fig. 5A.III), and the average Euclidean distance travelled by its cells within that generation (Fig. 5A.IV). Each embryo was given a maximum possible competency value of 4725 which was determined as a function of its grid size, N (see Supplement S3)",
+      "section": "[PAGE 8] We observed that populations with stress-sharing were able to discover the correct genotype and the competency necessary to form the target pattern faster than the other two populations (Fig. 3A). Members of this population discovered how to arrive at the target pattern by generation 500, at which a population with sharing had a significantly different phenotypic fitness from either the hardwired (p<0.01), or that of the population without sharing (p<0.01). Further, the confidence intervals of these curves did not overlap, indicating their distinct separation from one another (Fig. 3A.I).",
+      "primary_topic": "Cell Movement",
+      "secondary_topics": [
+        "stress-sharing",
+        "morphogenesis",
+        "cell movement",
+        "Euclidean distance",
+        "competency",
+        "genetic algorithm",
+        "phenotypic fitness",
+        "genotypic fitness"
+      ],
+      "chunk_summary": "Stress-sharing facilitates long-distance cell movement, contributing to improved fitness, and this was quantified by tracking competency and Euclidean distance traveled by cells in evolving embryos.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "9"
+    },
+    {
+      "text": "We observed that the stress-sharing population utilized maximum competency (=4725) until ~ generation 400, beyond which its value dropped to ~4500 and remained approximately stable thereafter. The population without stress-sharing utilized a competency of ~100 throughout evolution and the hardwired population used 0 competency because it wasn't allowed to use competency by design (Fig. 5A.III). Further, the cells of the best embryo (i.e., with the highest phenotypic fitness) in the stress-sharing population moved an average Euclidean distance of ~2500 units until ~ generation 400, post which it varied around a value of ~2400 units. In case of the population without stress-sharing - owing to its lower usage of competency – cells moved an average of ~200 units throughout evolution (Fig. 5A.IV). We conclude from these observations that stress-sharing is beneficial precisely because it enables cells to move over longer distances through a stress-communication mechanism (Fig. 5A). Owing to the approximate nature of such movement, stress-sharing embryos are capable of utilizing a high degree of competency (Fig. 5A.III) to solve the morphogenetic puzzle. In contrast, a population without stress-sharing lacks such a communication mechanism and is therefore restricted to local cell-movements. Movement restriction enforces a limit on competency causing embryos to perform poorly. The Hardwired population leverages mutations to solve the morphogenetic task better than a competent population with no stress sharing.",
+      "section": "[PAGE 8] We observed that populations with stress-sharing were able to discover the correct genotype and the competency necessary to form the target pattern faster than the other two populations (Fig. 3A). Members of this population discovered how to arrive at the target pattern by generation 500, at which a population with sharing had a significantly different phenotypic fitness from either the hardwired (p<0.01), or that of the population without sharing (p<0.01). Further, the confidence intervals of these curves did not overlap, indicating their distinct separation from one another (Fig. 3A.I).",
+      "primary_topic": "Stress Communication",
+      "secondary_topics": [
+        "stress-sharing",
+        "competency",
+        "cell movement",
+        "Euclidean distance",
+        "morphogenesis",
+        "mutations",
+        "hardwired population"
+      ],
+      "chunk_summary": "Stress-sharing enables long-distance cell movement via stress communication, allowing higher competency and better morphogenetic problem-solving, while non-sharing populations are limited to local movements and lower competency.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    }
+  ],
+  "processed_at": "2025-08-14T09:07:07.949698",
+  "chunk_count": 41,
+  "processing_method": "document_splitting"
+}

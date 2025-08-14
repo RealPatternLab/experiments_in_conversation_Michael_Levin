@@ -1,0 +1,885 @@
+{
+  "metadata": {
+    "filename": "80f97876_20250814_084714_391.pdf",
+    "document_type": "research_paper",
+    "title": "Levin and Ernst, DC Magnetic Field Effects on Development",
+    "authors": [],
+    "journal": null,
+    "publication_year": null,
+    "doi": null,
+    "abstract": null,
+    "extraction_confidence": "low",
+    "extraction_timestamp": "2025-08-14T08:47:21.634591",
+    "extraction_method": "basic_fallback",
+    "pages_analyzed": 2
+  },
+  "chunks": [
+    {
+      "text": "Tufts University Medford, MA 02155 ¹ Present address: Department of Genetics, Harvard Medical School Boston, MA 02115 * Address for correspondence.",
+      "section": "Tufts University",
+      "primary_topic": "Author Affiliation",
+      "secondary_topics": [
+        "address",
+        "correspondence",
+        "affiliation",
+        "Tufts University",
+        "Harvard Medical School"
+      ],
+      "chunk_summary": "This section provides the author's affiliation and contact information, including their present address at Tufts University and a correspondence address at Harvard Medical School.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "key words: sea urchin, static magnetic field, gastrulation, development, mitotic cycle, teratogenic effects running title: static Magnetic Field Effects on Development",
+      "section": "Tufts University",
+      "primary_topic": "Keywords and Title",
+      "secondary_topics": [
+        "keywords",
+        "running title",
+        "sea urchin",
+        "static magnetic field",
+        "gastrulation",
+        "development",
+        "mitotic cycle",
+        "teratogenic effects"
+      ],
+      "chunk_summary": "This section lists keywords relevant to the research, including sea urchin, static magnetic field effects on development, gastrulation, mitotic cycle, and teratogenic effects, and provides a running title for the paper.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Most work on magnetic field effects focuses on AC fields. This study demonstrates that exposure to medium-strength (10 mT - 0.1 T) static magnetic fields can alter the early embryonic development of two species of sea urchin embryos. Batches of fertilized eggs from two species of urchin were exposed to fields produced by permanent magnets. Samples of the continuous cultures were scored for the timing of the first two cell divisions, time of hatching, and incidence of exogastrulation.",
+      "section": "[PAGE 2] Abstract",
+      "primary_topic": "Magnetic Field Effects",
+      "secondary_topics": [
+        "static magnetic fields",
+        "embryonic development",
+        "sea urchin",
+        "cell division",
+        "hatching",
+        "exogastrulation"
+      ],
+      "chunk_summary": "This study investigates the impact of medium-strength static magnetic fields on early sea urchin embryonic development, observing effects on cell division, hatching, and exogastrulation.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "2"
+    },
+    {
+      "text": "It was found that static fields delay the onset of mitosis in both species, by an amount dependent on the exposure timing relative to fertilization. The exposure time which caused the maximum effect differed between the two species. Thirty mT fields, but not 15 mT fields, caused an eight-fold increase in the incidence of exogastrulation in Lytechinus pictus, while neither of these fields produced exogastrulation in Strongylocentrotus purpuratus.",
+      "section": "[PAGE 2] Abstract",
+      "primary_topic": "Species-Specific Effects",
+      "secondary_topics": [
+        "mitosis delay",
+        "fertilization timing",
+        "exogastrulation",
+        "Lytechinus pictus",
+        "Strongylocentrotus purpuratus",
+        "magnetic field strength"
+      ],
+      "chunk_summary": "Static magnetic fields delayed mitosis in both species, with the effect dependent on exposure timing relative to fertilization, and a species-specific increase in exogastrulation observed at 30 mT in Lytechinus pictus.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "2"
+    },
+    {
+      "text": "The resurgence of interest in the interactions between electromagnetic fields and biological systems has mainly focused on AC (time-varying) fields. However, there have been studies showing that DC (static) magnetic fields can also interact with living systems at various levels. Effects on in vitro biochemical reactions have been reported. Perhaps most interestingly, it is seen that a 50 mT DC magnetic field can alter the structure of poly-L-lysine. Behavioral effects of DC fields have also been noted. For example, strong static magnetic fields are avoided by mice and worker ants, though apparently a DC magnetic field of about 0.1 mT increases bee life-span by more than 60%. Weak static fields affect the choice of motion of flatworms, snails, and paramecia, while medium-strength static fields have been used as conditioning stimuli for bees and rabbits, and a 7 mT static field disrupted honey-bee dancing. Medium-strength DC fields act as a general stressor in mice.",
+      "section": "[PAGE 3] Introduction",
+      "primary_topic": "DC Magnetic Fields",
+      "secondary_topics": [
+        "biochemical reactions",
+        "behavior",
+        "poly-L-lysine",
+        "magnetic fields",
+        "in vitro",
+        "lifespan",
+        "stress"
+      ],
+      "chunk_summary": "DC magnetic fields interact with biological systems at various levels, affecting biochemical reactions, behavior, and even the structure of molecules like poly-L-lysine.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "3"
+    },
+    {
+      "text": "Physiological effects, such as changes in leukocyte count in mice, disruption of the mammalian menstrual cycle, reduced respiration in cultured embryonic and sarcoma cells, alterations in growth rate of plants and bacteria, and changes in aging rates have also been reported. Likewise, morphological and histochemical alterations in rat spermatogenesis and CNS microstructure, cytological changes in paramecia, reduction of X-irradiation-induced mortality, retardation of wound healing, and abnormal mitotic figures and nuclei appear to be caused by exposure to medium- to high-strength static magnetic fields.",
+      "section": "[PAGE 3] Introduction",
+      "primary_topic": "Physiological Effects",
+      "secondary_topics": [
+        "leukocytes",
+        "menstrual cycle",
+        "cell respiration",
+        "growth rate",
+        "aging",
+        "spermatogenesis",
+        "CNS",
+        "X-irradiation",
+        "wound healing",
+        "mitosis"
+      ],
+      "chunk_summary": "Exposure to medium- to high-strength static magnetic fields causes a range of physiological effects, including changes in leukocyte count, menstrual cycle disruption, altered growth and aging rates, and morphological abnormalities.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "3"
+    },
+    {
+      "text": "Some attention has been focused on interactions between static fields and processes involved in carcinogenesis and tumor formation. As with AC fields, the effects of static fields on tumors can appear contradictory depending upon field parameters. Fields of 730 mT cause cell degeneration in several types of tumor cells.  Gross found that a 400 mT field increased the rate of death from transplanted tumors in mice, yet treatment of H2712 mouse tumor cells with a 3.8 T field (with a 1.2 T/mm gradient) caused significant inhibition of the ability to infect a healthy host. Recent studies have shown that the oncogene c-fos can be induced by 0.2 T static field in cultured mammalian cells. DC magnetic fields (0.73 T) applied to tumor cell suspensions can cause a sharp reduction in cell number.",
+      "section": "[PAGE 3] Introduction",
+      "primary_topic": "Cancer and Tumors",
+      "secondary_topics": [
+        "carcinogenesis",
+        "tumor formation",
+        "magnetic field effects",
+        "cell degeneration",
+        "oncogene c-fos",
+        "tumor cells"
+      ],
+      "chunk_summary": "Static magnetic fields have varying effects on tumors, sometimes causing cell degeneration and other times inhibiting tumor growth, depending on field parameters.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "3"
+    },
+    {
+      "text": "Especially interesting are the reports that static fields are able to alter embryonic development and morphogenesis, since, in addition to the basic question of mechanisms of field-biosystem interaction, they provide the opportunity to learn more about developmental mechanisms. It has been reported that 1 T fields are lethal to young mice, and that a 14 T field stopped sea-urchin development, but did not affect Drosophila and mouse development. A weaker, 420 mT field, caused embryo death and dissolution in the wombs of mice. Klueber showed that 5 mT static magnetic fields produced dramatic teratogenic effects in the eye and nervous system of developing chick embryos. Static magnetic fields of 0.4 mT retarded development of the pigeon embryo, and exposure of chick embryos to a 500 mT field for just 1 hour produced poor brain development with an open neural tube, shortening of the embryonic long axis, and slight heart displacement. Neurath showed that in many organisms, gastrulation is halted in fields with a gradient of 8.35 T/cm, and Drosophila cuticular abnormalities resulted from brief exposures to static magnetic fields. 1 T DC fields caused axial anomalies in frog embryos. Regeneration, a non-embryonic example of large-scale morphogenesis is also affected by DC fields, as DC fields accelerate tail regeneration in tadpoles; the effect exhibits exposure time and field strength dependence.",
+      "section": "[PAGE 3] Introduction",
+      "primary_topic": "Embryonic Development",
+      "secondary_topics": [
+        "morphogenesis",
+        "teratogenic effects",
+        "gastrulation",
+        "regeneration",
+        "embryonic development",
+        "magnetic field effects",
+        "chick embryos",
+        "sea urchin",
+        "drosophila"
+      ],
+      "chunk_summary": "Static magnetic fields can alter embryonic development and morphogenesis, causing lethal effects, teratogenic effects, and developmental abnormalities in various organisms, including sea urchins, chicks, and frogs, and also influencing regeneration.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "3"
+    },
+    {
+      "text": "We performed a series of experiments to examine the effects of medium-strength static magnetic fields on the development of sea urchin embryos. The sea urchin is an excellent and well-studied developmental system, and the presence of static magnetic field effects on its development would afford a tractable model for studying field-cell interactions, as well as the normal processes of development by providing a new perturbing factor. In one sense, static field effects are more interesting, because unlike AC fields, they cannot cause ionic currents. While our initial studies showed that weak AC magnetic fields can affect the mitotic timing of sea urchin embryos, and Kholodov reports that a high-strength (14 T) static magnetic field arrests sea-urchin development, there have been very few experimental studies of applied medium-strength static field effects on sea-urchin embryogenesis. In this study we report that such fields are able to cause a delay in the mitotic cycle of early embryos, and to greatly increase the incidence of exogastrulation, a well-characterized developmental abnormality in sea urchins. Thus, we show that in the sea urchin model, static magnetic fields are a potent teratogen and that the mitotic cycle is sensitive to these low-energy fields as well as to AC fields.",
+      "section": "[PAGE 3] Introduction",
+      "primary_topic": "Sea Urchin Study",
+      "secondary_topics": [
+        "sea urchin embryos",
+        "mitotic cycle",
+        "exogastrulation",
+        "teratogen",
+        "magnetic field effects",
+        "developmental abnormalities"
+      ],
+      "chunk_summary": "This study investigates the effects of medium-strength static magnetic fields on sea urchin embryo development, focusing on mitotic cycle delays and the increased incidence of exogastrulation, demonstrating the teratogenic potential of static magnetic fields.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "3"
+    },
+    {
+      "text": "Animals, gametes, and embryos Strongylocentrotus purpuratus and Lytechinus pictus were purchased from Marinus, Inc., Long Beach, CA. Animals were maintained in aquaria at 9 °C and were induced to spawn by intracoelomic injection of 0.5 M KCl. Semen was collected dry from the genital pores with a Pasteur pipette and held undiluted in a tube on ice until fertilization. Eggs were collected by inverting the spawning females onto beakers of Millipore-filtered sea water (MPFSW). The suspension of eggs was filtered through several layers of cheesecloth and settled on ice through fresh MPFSW three times. Eggs were suspended to a final concentration of 1-2% (V:V) in MPFSW. Fertilization was accomplished by adding a freshly prepared dilute sperm suspension to the eggs to result in a final sperm concentration of about 1:10,000 (V:V). Successful fertilization was determined by elevation of the fertilization membrane, generally within 90 sec. of sperm addition. Fertilization was greater than 95% in all experiments. Experiments were carried out with eggs produced from several females to minimize effects of individual differences. Embryos in 250 ml beakers were cultured with stirring in an incubator at 13-16 °C depending on the species.",
+      "section": "[PAGE 5] Materials and Methods",
+      "primary_topic": "Specimen Preparation",
+      "secondary_topics": [
+        "Sea urchin",
+        "Gametes",
+        "Fertilization",
+        "Embryo culture",
+        "Strongylocentrotus purpuratus",
+        "Lytechinus pictus",
+        "KCl injection",
+        "Sperm dilution"
+      ],
+      "chunk_summary": "This chunk details the acquisition, handling, and fertilization of sea urchin gametes, along with the culturing of the resulting embryos.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "5"
+    },
+    {
+      "text": "Experimental design for static field exposure The static magnetic fields were produced by a parallel pair of attracting rectangular ceramic magnets positioned opposite each other, with the sample of sperm, eggs, or embryos between them (Figure 1). Field strength was measured with a Gaussmeter (Walker Magnetics, model MG-4D) at the midpoint of the culture. Field strength at the outer edges of the culture was no more than ±15% of this value. Styrofoam blocks were used to insulate the stirring motors from the cultures to guard against possible differential heating effects due to the motors. Temperature between the test and control cultures in individual experiments did not differ by more than ±0.5 °C, as determined by continuous monitoring.",
+      "section": "[PAGE 5] Materials and Methods",
+      "primary_topic": "Static Magnetic Field",
+      "secondary_topics": [
+        "Magnetic field exposure",
+        "Gaussmeter",
+        "Temperature control",
+        "Experimental design",
+        "Ceramic magnets",
+        "Styrofoam insulation"
+      ],
+      "chunk_summary": "This chunk describes the setup for exposing the samples to a static magnetic field, including the magnet arrangement, field strength measurement, and temperature regulation.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "5"
+    },
+    {
+      "text": "The magnetic environment of the incubator was investigated with the Gaussmeter and was determined not to be different from the ambient geomagnetic field within ±0.01mT. The stirring motors produced no detectable stray fields at the location of the cultures (35 cm away from motors). All supporting material within the incubator was made of non-ferrous material to prevent unwanted leakage of the fields towards the control culture. All aspects of culture except for the presence of magnets were the same between the exposed and control samples (including beakers, stirring motors, etc.).",
+      "section": "[PAGE 5] Materials and Methods",
+      "primary_topic": "Control Conditions",
+      "secondary_topics": [
+        "Geomagnetic field",
+        "Stray fields",
+        "Non-ferrous materials",
+        "Control group",
+        "Incubator environment"
+      ],
+      "chunk_summary": "This section describes the control measures taken to ensure that the only difference between experimental and control groups was the presence of the static magnetic field.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "5"
+    },
+    {
+      "text": "Sampling and data collection During the continuous experiments, samples of about 200 embryos were taken without interruption of field exposure approximately every 15 min., fixed in 3% formaldehyde, and scored for the number of blastomeres, the presence of the fertilization membrane, or the position of the gut, with the aid of a Nikon microscope.",
+      "section": "[PAGE 5] Materials and Methods",
+      "primary_topic": "Data Collection",
+      "secondary_topics": [
+        "Sampling",
+        "Formaldehyde fixation",
+        "Microscopy",
+        "Blastomere count",
+        "Gut position",
+        "Fertilization membrane"
+      ],
+      "chunk_summary": "This chunk outlines the sampling procedure, sample fixation, and the data collected during the experiments, including blastomere count, fertilization membrane presence, and gut position.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "5"
+    },
+    {
+      "text": "Exposure to static fields delays hatching. The first series of experiments was designed to maximize the possibility of detecting effects arising from exposure to static magnetic fields. Immediately following fertilization, L. pictus embryos were divided into two equal volumes; one culture was exposed to a 30 mT static field (Fig. 1) for the duration of the experiment. The other culture received no exposure except for the ambient geomagnetic field. All other conditions of culture remained the same. At 26 hours post-fertilization, samples of each culture were taken and scored for percentage of embryos which had hatched. Hatching is an easily recognizable developmental event, resulting from blastula-stage embryos acquiring motility and secreting an enzyme which digests the fertilization membrane (reviewed: Okazaki, 1975). The results are summarized in Table 1, and demonstrate that at 26 hours 82% of the control embryos had hatched, while only 36% of the exposed embryos had done so (p<0.01). Additional experiments with L. pictus and S. purpuratus revealed that in both species, exposure to 30 mT static magnetic fields significantly delays hatching relative to control groups (data not shown).",
+      "section": "[PAGE 7] Results",
+      "primary_topic": "Hatching Delay",
+      "secondary_topics": [
+        "static magnetic field",
+        "embryonic development",
+        "L. pictus",
+        "S. purpuratus",
+        "fertilization",
+        "hatching time",
+        "magnetic field effects"
+      ],
+      "chunk_summary": "Exposure to a 30 mT static magnetic field significantly delays hatching in L. pictus and S. purpuratus embryos.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "7"
+    },
+    {
+      "text": "Exposure to static field delays the 1st and 2nd cell divisions of S. purpuratus. Having seen that exposure to the field is able to delay hatching time, we hypothesized that this was due to an increase in the length of the cell cycle, rather than a delay of the hatching mechanism itself. Consequently, we studied the effect of exposure on the time of the first two cell divisions. A batch of eggs was split in two immediately following fertilization, and one culture was exposed to a 30 mT magnetic field (Fig. 1). At 3.75 hours, approximately 100 embryos from each culture were scored for cell division. Four times as many exposed eggs relative to controls remained undivided (Table 2). These results demonstrate that the field increases the length of time between completed cell divisions.",
+      "section": "[PAGE 7] Results",
+      "primary_topic": "Cell Division Delay",
+      "secondary_topics": [
+        "static magnetic field",
+        "cell cycle",
+        "S. purpuratus",
+        "cell division",
+        "magnetic field effects",
+        "embryonic development"
+      ],
+      "chunk_summary": "Exposure to a 30 mT static magnetic field delays the first two cell divisions in S. purpuratus embryos, suggesting an effect on the cell cycle.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "7"
+    },
+    {
+      "text": "To gain more information on which phases of the cell cycles were affected, and to have a more quantitative way of determining how the magnitude of the delay varied with field parameters, the continuous cultures were sampled and scored periodically, thereby recording how many cell divisions had taken place in a representative sample of the embryos. This made it possible to plot the number of divisions as a function of time, and then compare exposed and control batches of embryos. Cell divisions in early sea urchin embryos are well synchronized; previously, we have demonstrated that when a batch of fertilized eggs is split and sampled every 15 min., the maximum endogenous variation of the time of cell division is 3 min. (Levin and Ernst, 1995). Thus, differences greater than ±3 min. were taken to be significant in the experiments below. Since the endogenous variation is known, it was possible to study the effects of exposure to the 30 mT static field on the time of the first two cell divisions. After fertilization, the embryos were split into two cultures, one of which was immediately exposed to the field throughout the experiment, while the other served as a control. The cultures were sampled every 15 min. without interruption of the field, and roughly 200 embryos from each culture were scored for the number of blastomeres. The results are shown in Figure 2. By calculating the time difference between the midpoints of each cell division phase on the plot, it is seen that the field induces an insignificant delay (1 minute) in the first cell division, and a small but significant delay of 6 min. in the second.",
+      "section": "[PAGE 7] Results",
+      "primary_topic": "Cell Cycle Analysis",
+      "secondary_topics": [
+        "cell cycle phases",
+        "quantitative analysis",
+        "sea urchin embryos",
+        "cell division timing",
+        "magnetic field effects",
+        "endogenous variation",
+        "blastomeres"
+      ],
+      "chunk_summary": "Detailed analysis of cell division timing reveals a small but significant 6-minute delay in the second cell division of sea urchin embryos exposed to a 30 mT static magnetic field.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "7"
+    },
+    {
+      "text": "Having seen that exposure to the field resulted in a delay in the time of cell division, we tested the possibility that some mechanism within the sperm is sensitive to the field. A 30 mT static field was applied to the undiluted sperm sample of S. purpuratus for 1 hour. The field was removed immediately prior to dilution of the sperm sample for fertilization. The resulting culture and a control were incubated without exposure to any field, and samples were taken, scored, and plotted as above. No significant effects on the time of the first two cell divisions were seen (Figure 3). There was also no obvious decrease in the ability of sperm to fertilize eggs since greater than 95% fertilization was achieved within 5 min., as in the control sperm samples. The same result was observed for L. pictus (data not shown). However, since sperm were not limiting, we cannot rule out the possibility that a fraction of the sperm were affected by exposure to the field.",
+      "section": "[PAGE 8] Effects of static field applied to sperm on timing of 1st/2nd cell divisions",
+      "primary_topic": "Sperm Field Exposure",
+      "secondary_topics": [
+        "static magnetic field",
+        "sperm",
+        "fertilization",
+        "cell division",
+        "S. purpuratus",
+        "L. pictus",
+        "embryonic development"
+      ],
+      "chunk_summary": "Exposing S. purpuratus and L. pictus sperm to a 30 mT static magnetic field for 1 hour prior to fertilization did not significantly affect the timing of the first two cell divisions.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "8"
+    },
+    {
+      "text": "Magnitude of cell division delay is a function of timing of field exposure. Since exposure of sperm to a 30 mT static field had no measurable effect, we were interested to see whether pre-fertilization eggs were sensitive to the field, or whether the field only affected activated eggs or developing embryos. It was also possible to study the relationship between the time of onset of field exposure and the magnitude of the delay. A 30 mT static field was applied to the experimental cultures of S. purpuratus starting at various times relative to fertilization, and lasting throughout the experiment. The cell division time profiles were calculated as above.",
+      "section": "[PAGE 8] Effects of static field applied to sperm on timing of 1st/2nd cell divisions",
+      "primary_topic": "Egg Field Exposure",
+      "secondary_topics": [
+        "static magnetic field",
+        "eggs",
+        "fertilization",
+        "cell division",
+        "S. purpuratus",
+        "embryonic development",
+        "exposure timing"
+      ],
+      "chunk_summary": "This section investigates the impact of a 30 mT static magnetic field on S. purpuratus eggs at various times relative to fertilization, focusing on the relationship between exposure timing and cell division delay.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "8"
+    },
+    {
+      "text": "When eggs were exposed to the field beginning 45 min. pre-fertilization, the first cell division was delayed 4 min., and in the exposed cultures the second division was 6 min. behind that measured for the control culture (though these figures are larger than the 3 minute endogenous difference between control cultures, the limited number of experiments precludes determining whether these differences are significant by a comprehensive statistical analysis). Exposure which began 30 min. before fertilization caused a 10 min. delay in the first cell division and a 13 min. delay in the second, while an exposure beginning 15 min. pre-fertilization caused a 17 min. delay in the timing of both cell divisions (Figure 4). When eggs were exposed starting at 6 min. pre-fertilization, there was a 14 min. delay in the first cell division and a 15 min. delay in the second division. In cultures exposed immediately following fertilization there was an insignificant delay for the first cell division and a 6 min. delay for the second. These results are summarized in Figure 5.",
+      "section": "[PAGE 8] Effects of static field applied to sperm on timing of 1st/2nd cell divisions",
+      "primary_topic": "Exposure Timing Effects",
+      "secondary_topics": [
+        "cell division delay",
+        "pre-fertilization exposure",
+        "post-fertilization exposure",
+        "S. purpuratus",
+        "embryonic development",
+        "timing"
+      ],
+      "chunk_summary": "The magnitude of the cell division delay in S. purpuratus eggs correlated with the timing of exposure to the static magnetic field, with the largest delays observed when exposure began 15 minutes pre-fertilization.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "8"
+    },
+    {
+      "text": "When this series of experiments was repeated using L. pictus, the same type of relationship was observed between timing of exposure and magnitude of delay, except that the optimal time of exposure was shown to be 30 min. pre-fertilization, and the delay obtained at that exposure was 22 min. (data not shown).",
+      "section": "[PAGE 8] Effects of static field applied to sperm on timing of 1st/2nd cell divisions",
+      "primary_topic": "L. pictus Results",
+      "secondary_topics": [
+        "cell division delay",
+        "pre-fertilization exposure",
+        "L. pictus",
+        "embryonic development",
+        "timing"
+      ],
+      "chunk_summary": "Similar results were observed in L. pictus, with the maximal cell division delay of 22 minutes occurring with exposure starting 30 minutes pre-fertilization.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "8"
+    },
+    {
+      "text": "Given previously-reported teratological effects of magnetic fields (reviewed above), we were interested in determining whether our field exposures had any such effects. In L. pictus cultures exposed to a 30 mT field continuously from fertilization and incubated for 48-94 hours, we noticed an apparent increase in the incidence of exogastrulation. Exogastrulation is a well-known developmental abnormality in sea urchins where the archenteron, the primitive gut, evaginates forming outside of the embryo instead of invaginating (Nocente-McGrath et al., 1991). To test directly the effect of a 30 mT static field on L. pictus gastrulation, embryos were fertilized and the culture split in half, with one half serving as a control and the other exposed to the field. Gastrulation is normally initiated about 24 hours post-fertilization in L. pictus, followed by the morphological differentiation of the gut. Cultures were scored for exogastrulation at 2-3 days.",
+      "section": "[PAGE 10] Morphological effects",
+      "primary_topic": "Exogastrulation",
+      "secondary_topics": [
+        "magnetic fields",
+        "teratology",
+        "sea urchins",
+        "L. pictus",
+        "gastrulation",
+        "archenteron",
+        "developmental abnormalities"
+      ],
+      "chunk_summary": "Exposure to a 30 mT static magnetic field increased the incidence of exogastrulation in L. pictus embryos.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "10"
+    },
+    {
+      "text": "In exposed cultures, the incidence of exogastrulation rose from control values of 1-2% to as high as 16%. In 7 experiments, the increase in exogastrulation was between 2- and 8-fold, with an average of 6-fold above controls. The results of one such experiment (x²=8.94, p<0.05) are shown in Table 3, and examples of exogastrulated embryos produced by exposure to a 30 mT static field are shown in Figure 6. A 0.39 mT 60 Hz AC field also resulted in a 3-fold increase in exogastrulation, while 0.195 and 0.016 mT AC fields did not measurably alter the incidence of exogastrulation (data not shown). In S. purpuratus embryos exposed to the same fields, we found no increase in the incidence of exogastrulation.",
+      "section": "[PAGE 10] Morphological effects",
+      "primary_topic": "Exogastrulation Results",
+      "secondary_topics": [
+        "magnetic field strength",
+        "AC field",
+        "static field",
+        "S. purpuratus",
+        "statistical significance",
+        "experimental data"
+      ],
+      "chunk_summary": "Quantitative results demonstrate a significant increase in exogastrulation in L. pictus exposed to a 30 mT static magnetic field and a 0.39 mT AC field, but not in S. purpuratus.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "10"
+    },
+    {
+      "text": "Interestingly, a morphological abnormality not reported before in either species and never observed in controls was found in the eggs exposed to a 30 mT static field. This abnormality, shown in Figure 7, consisted of embryonal collapse along one axis, resulting in a flat disk rather than the normal sphere. In three experiments where fertilized eggs were exposed to a 30 mT static field at 45, 30, or 0 min. pre-fertilization, and continuing throughout the subsequent 48-94 hours, approximately 1% of the eggs collapsed.",
+      "section": "[PAGE 10] Morphological effects",
+      "primary_topic": "Embryonal Collapse",
+      "secondary_topics": [
+        "morphological abnormality",
+        "static magnetic field",
+        "embryo development",
+        "fertilization timing",
+        "disk shape"
+      ],
+      "chunk_summary": "A novel morphological abnormality, embryonal collapse into a flat disk, was observed in approximately 1% of L. pictus eggs exposed to a 30 mT static magnetic field.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "10"
+    },
+    {
+      "text": "In this study we observed that a 30 mT static magnetic field applied to sea urchin eggs produced alterations in the time of cell division and induced two developmental abnormalities, exogastrulation and collapsed embryos. These results are surprising and at present we do not have a unifying model for a mechanism that could account for the diverse effects. Exposure to a 30 mT static field resulted in delays in the time of the first two cell divisions of sea urchin embryos. Since the slopes of the division profile curves are roughly equal between the exposed and control embryos (e.g. Figure 4), it can be concluded that the field increases the time spent in the G1, G2, or S phases of the cell cycle, rather than slowing down cytokinesis itself. The delay in the time of cell division seems to be an effect of the static field on the egg instead of the sperm. It is interesting to note that the static field produces relatively equal delays for the 1st and 2nd cell divisions (Figure 5), when compared to our earlier studies where exposure to an AC field produced much larger accelerations for the 2nd cell division than for the first (Levin and Ernst, 1995). The AC field seems to shorten each mitotic cycle, while the static field appears to act once, before the 1st cell division and most likely, before fertilization, since it is seen that earlier pre-fertilization exposures have greater effects.",
+      "section": "[PAGE 12] Discussion",
+      "primary_topic": "Cell Division Delay",
+      "secondary_topics": [
+        "static magnetic field",
+        "sea urchin embryos",
+        "cell cycle",
+        "cytokinesis",
+        "AC magnetic field",
+        "fertilization"
+      ],
+      "chunk_summary": "A 30 mT static magnetic field delays the first two cell divisions in sea urchin embryos, likely by affecting the egg pre-fertilization and impacting G1, G2, or S phase, contrasting with the effects of AC fields.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "12"
+    },
+    {
+      "text": "The static field effect does not show a simple dose-effect relationship with cell division time since longer exposures do not necessarily produce a more pronounced effect than shorter exposures. Rather a bell-curve relationship around a maximal value is observed which may represent some sort of habituation process within the egg. This observation is potentially quite important since most EMF-exposure guidelines are designed to limit the field magnitude, and the amount of time a person spends within a field. Thus, our data suggest that the crucial parameter may not be how long a biological system is exposed to the field (since Figure 5 shows, shorter exposures can produce a larger effect), but rather how the timing of exposure relates to key biological events. The exposure timing which produces that maximal delay in S. purpuratus is 15 min. pre-fertilization. The 17 minute delay may be a maximum effect that can be achieved by this field, since it is the same for both divisions, whereas the other experiments show slightly greater delays for the 2nd division. The same bell-shaped relationship was seen in L. pictus (data not shown), resulting in a slightly different optimal timing (30 min. pre-fertilization), and a somewhat greater delay (22 min.) than for S. purpuratus.",
+      "section": "[PAGE 12] Discussion",
+      "primary_topic": "Exposure Timing",
+      "secondary_topics": [
+        "dose-effect relationship",
+        "EMF exposure",
+        "habituation",
+        "S. purpuratus",
+        "L. pictus",
+        "fertilization timing"
+      ],
+      "chunk_summary": "The effect of the static magnetic field on cell division time exhibits a bell-curve relationship, suggesting that the timing of exposure relative to fertilization is more crucial than the duration of exposure.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "12"
+    },
+    {
+      "text": "L. pictus embryos exposed to static and AC fields exhibited up to an 8-fold increase in the incidence of exogastrulation, while none of the applied fields tested had this effect on S. purpuratus embryos. This is consistent with the fact that the natural incidence of exogastrulation in S. purpuratus is much lower than in L. pictus, and the fact that L. pictus exogastrulates at a lower LiCl concentration than does S. purpuratus (Nocente-McGrath et al., 1991). Thus, this differential sensitivity to magnetic fields likely reflects a genetic difference between the two species.",
+      "section": "[PAGE 12] Discussion",
+      "primary_topic": "Exogastrulation",
+      "secondary_topics": [
+        "species difference",
+        "genetic difference",
+        "L. pictus",
+        "S. purpuratus",
+        "LiCl",
+        "teratogenic effects"
+      ],
+      "chunk_summary": "L. pictus embryos are significantly more susceptible to exogastrulation induced by magnetic fields than S. purpuratus embryos, likely due to a genetic difference between the species.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "12"
+    },
+    {
+      "text": "The collapsed embryos represent an unknown phenomenon. It was observed in single-cell eggs as well as in cultures of hatching embryos. It is unknown, however, whether the collapsed embryos seen in mid-blastula cultures represent embryos which collapsed before the first cell division, or embryos which collapsed at some later time. This defect has been observed in unfixed embryos, ruling out artifacts caused by fixation. No other known teratogenic agent is known to produce similar effects.",
+      "section": "[PAGE 12] Discussion",
+      "primary_topic": "Collapsed Embryos",
+      "secondary_topics": [
+        "unknown phenomenon",
+        "teratogenic effects",
+        "embryonic development",
+        "fixation artifacts",
+        "blastula stage"
+      ],
+      "chunk_summary": "The observed collapse of embryos is a novel phenomenon affecting both single-cell eggs and later-stage embryos, with the timing and mechanism remaining unknown.",
+      "position_in_section": "Middle",
+      "certainty_level": "Low",
+      "citation_context": "Presenting new results",
+      "page_number": "12"
+    },
+    {
+      "text": "The effects described were most likely due to the applied DC field. The small stirring motors produced no detectable AC fields at the level of the magnets. Though we cannot formally completely rule out the possibility of very weak eddy currents being induced in the magnets by stray AC fields, this is extremely unlikely to cause the effects described above since previous experiments have indicated that somewhat weaker ceramic magnets used in exactly the same experimental setup have no effects (data not shown). The static field cannot induce heating and is several orders of magnitude weaker than fields which have been shown to cause changes in membranes' electrical properties (Kholodov, 1971). Furthermore, ferrous molecules are not known to occur in sea urchins. However, our results demonstrate that static fields containing very little energy (same order of magnitude as average kinetic energy due to thermal motion) can significantly affect important biological processes. DC magnetic fields can, however, alter the velocity of motion of ions. Under appropriate conditions, small changes in the behavior of ions could cause significant effects. For example, alterations in velocity would affect the interactions between ions and receptor channels. Similarly, small changes in the behavior of ions that are components of signal transduction pathways could produce dramatic changes. Interestingly, lithium, the classic inducer of exogastrulation in sea urchins (reviewed: Nocente-McGrath et al., 1991) is proposed to act by secondary-messenger pathways in several different cell types (reviewed: Berridge et al., 1989). Still, there is no immediately obvious mechanism that can account for the various developmental effects we observe. Some possibilities are induced changes in trajectories of moving ions such as Ca++ near membranes, electric currents induced by the motion of the conductive cytoplasm of the urchins through the static field as they are being stirred, and conformational changes in the structure of regulatory proteins (Verma and Goldner, 1996).",
+      "section": "[PAGE 12] Discussion",
+      "primary_topic": "Potential Mechanisms",
+      "secondary_topics": [
+        "DC magnetic field",
+        "ion channels",
+        "signal transduction",
+        "lithium",
+        "exogastrulation",
+        "calcium ions",
+        "regulatory proteins"
+      ],
+      "chunk_summary": "While the exact mechanism is unclear, the observed effects are likely due to the DC magnetic field influencing ion behavior, potentially affecting ion channel interactions, signal transduction pathways, and regulatory protein conformation.",
+      "position_in_section": "End",
+      "certainty_level": "Medium",
+      "citation_context": "Drawing conclusions",
+      "page_number": "12"
+    },
+    {
+      "text": "This work was supported by the Howard Hughes Medical Institute's Initiative in Undergraduate Education and the U.S. EPA under assistance agreement no. CR820-301 to the Center for Environmental Management, Tufts University, Medford, MA. These studies do not necessarily reflect the views of the EPA and no official endorsement should be inferred.",
+      "section": "[PAGE 15] Acknowledgments",
+      "primary_topic": "Funding Sources",
+      "secondary_topics": [
+        "Funding",
+        "Grants",
+        "Howard Hughes Medical Institute",
+        "EPA",
+        "Tufts University"
+      ],
+      "chunk_summary": "This research was funded by the Howard Hughes Medical Institute and the U.S. EPA, with the clarification that the findings do not represent the EPA's official views.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "15"
+    },
+    {
+      "text": "We would like to thank Jorge Gonzalez for helpful discussions, and Drs. Verma and Goldner for sharing their unpublished results with us.",
+      "section": "[PAGE 15] Acknowledgments",
+      "primary_topic": "Acknowledgements",
+      "secondary_topics": [
+        "Collaboration",
+        "Discussions",
+        "Unpublished Results",
+        "Jorge Gonzalez",
+        "Verma",
+        "Goldner"
+      ],
+      "chunk_summary": "The authors express gratitude to Jorge Gonzalez for discussions and Drs. Verma and Goldner for sharing unpublished data.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "15"
+    },
+    {
+      "text": "The references cited in this work encompass a range of topics relevant to bioelectricity and regeneration, as presented in the preceding extractions.  Duplicate entries from the initial extractions have been removed to provide a consolidated and accurate list of sources.",
+      "section": "[PAGE 16] References",
+      "primary_topic": "References",
+      "secondary_topics": [
+        "bioelectricity",
+        "regeneration",
+        "citations",
+        "literature"
+      ],
+      "chunk_summary": "This section provides a consolidated list of references related to bioelectricity and regeneration, removing duplicates from previous extractions.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "16"
+    },
+    {
+      "text": "Figure Legends presented on page 21.",
+      "section": "[PAGE 21] Figure Legends",
+      "primary_topic": "Figure Descriptions",
+      "secondary_topics": [
+        "figures",
+        "legends",
+        "illustrations",
+        "captions",
+        "visualizations",
+        "summaries"
+      ],
+      "chunk_summary": "This section contains the legends for the figures presented on page 21.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "21"
+    },
+    {
+      "text": "The culture is exposed to a static magnetic field generated by two attracting ceramic magnets. The apparatus for magnetic field exposure uses two ceramic magnets to create a static field.  Asterisks are used to represent embryos or eggs within the experimental setup.",
+      "section": "1. Apparatus for magnetic field exposure. The culture is exposed to a static field produced by two attracting ceramic magnets. Asterisks represent embryos or eggs.",
+      "primary_topic": "Magnetic Field Exposure",
+      "secondary_topics": [
+        "magnetic field",
+        "static field",
+        "ceramic magnets",
+        "embryos",
+        "eggs",
+        "experimental apparatus"
+      ],
+      "chunk_summary": "A static magnetic field is generated by two attracting ceramic magnets to expose the culture, with asterisks representing embryos or eggs.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Exposure of embryos to a 30 mT magnetic field immediately at fertilization was investigated. Control cultures (solid line, asterisks) were compared to exposed cultures (dashed line, empty circles). The magnetic field exposure resulted in a negligible 1-minute delay in the first cell division and a small but statistically significant 6-minute delay in the second cell division compared to the controls.",
+      "section": "2. Exposure of embryos to a 30 mT field immediately at fertilization. Solid line and asterisks indicate the curve for the control culture and dashed line and empty circles indicate the curve for the exposed culture. The field produces an insignificant delay (1 min.) in the first cell division and a small but significant (6 min.) delay in the second, relative to controls.",
+      "primary_topic": "Magnetic Field Effects",
+      "secondary_topics": [
+        "embryonic development",
+        "cell division",
+        "magnetic field exposure",
+        "fertilization",
+        "control group",
+        "experimental group",
+        "developmental delay"
+      ],
+      "chunk_summary": "A 30 mT magnetic field applied at fertilization caused a minor delay in early embryonic cell divisions.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "Exposure of sperm alone to a 30 mT static field for 1 hour did not significantly affect the first two cell divisions.  Control cultures (solid line, asterisks) were compared to exposed cultures (dashed line, empty circles). The analysis focused on the duration of these early divisions.",
+      "section": "3. Exposure of sperm alone to a 30 mT static field for 1 hour. Solid line and asterisks indicate the curve for the control culture and dashed line and empty circles indicate the curve for the exposed culture. The field has no significant effect on the duration of the first two cell divisions.",
+      "primary_topic": "Static Magnetic Field",
+      "secondary_topics": [
+        "sperm",
+        "cell division",
+        "magnetic field exposure",
+        "early development",
+        "control group",
+        "experimental group"
+      ],
+      "chunk_summary": "A 30 mT static magnetic field applied to sperm for 1 hour did not significantly alter the timing of the first two cell divisions.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "Exposure of embryos to a 30 mT magnetic field 15 minutes prior to fertilization was investigated.  Control culture data is represented by a solid line with asterisks, while the exposed culture data is represented by a dashed line with empty circles.  The pre-fertilization exposure resulted in a 17-minute delay in each of the first two cell divisions compared to the control group.",
+      "section": "4. Exposure of embryos to a 30 mT field 15 min. pre-fertilization. Solid line and asterisks indicate the curve for the control culture and dashed line and empty circles indicate the curve for the exposed culture. The exposure results in a 17 min. delay in each of the first two cell divisions relative to controls.",
+      "primary_topic": "Magnetic Field Effects",
+      "secondary_topics": [
+        "embryonic development",
+        "cell division",
+        "magnetic field exposure",
+        "pre-fertilization exposure",
+        "developmental delay"
+      ],
+      "chunk_summary": "Exposure to a 30 mT magnetic field before fertilization delayed early embryonic cell division by 17 minutes.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "A non-linear relationship exists between exposure timing and the magnitude of cell cycle delay. The optimal exposure time is 15 minutes pre-fertilization, resulting in a 17-minute delay in each cell division.",
+      "section": "5. A non-linear relationship exists between exposure timing and magnitude of cell cycle delay was observed. The optimal exposure time is 15 min. pre-fertilization, which results in a delay of 17 min. in each cell division.",
+      "primary_topic": "Cell Cycle Delay",
+      "secondary_topics": [
+        "exposure timing",
+        "non-linear relationship",
+        "pre-fertilization",
+        "cell division"
+      ],
+      "chunk_summary": "A non-linear relationship between exposure timing and cell cycle delay magnitude was observed, with an optimal pre-fertilization exposure of 15 minutes resulting in a 17-minute delay per cell division.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "L. pictus embryos were exposed to a 30 mT static magnetic field at fertilization, and this field was maintained throughout the experiment.  Figures A and B display examples of the resulting field-induced exogastrulated embryos.  For comparison, Figure C shows a normal, non-exposed embryo at the same developmental stage.",
+      "section": "6. Field-induced exogastrulated embryos. L. pictus embryos were exposed to a 30 mT static magnetic field at fertilization and the field was maintained throughout the experiment. A and B show examples of field-induced exogastrulated embryos. C is a normal, non-exposed, embryo at the same age.",
+      "primary_topic": "Magnetic Field Effects",
+      "secondary_topics": [
+        "exogastrulation",
+        "L. pictus",
+        "embryonic development",
+        "magnetic field",
+        "teratogenesis",
+        "developmental biology"
+      ],
+      "chunk_summary": "Exposure of L. pictus embryos to a static magnetic field resulted in exogastrulation, as shown in comparison to a control embryo.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "L. pictus embryos were exposed to a 30 mT static magnetic field at fertilization, and the field was maintained throughout the experiment. This exposure resulted in collapsed embryos, as shown in figure A. Figure B shows a normal, non-exposed embryo at the same developmental stage for comparison.",
+      "section": "7. Field-induced collapsed embryos. L. pictus embryos were exposed to a 30 mT static magnetic field at fertilization and the field was maintained throughout the experiment. A shows an example of field-induced collapsed embryos. B is a normal, non-exposed, embryo at the same age.",
+      "primary_topic": "Magnetic Field Effects",
+      "secondary_topics": [
+        "magnetic field",
+        "embryo development",
+        "L. pictus",
+        "morphological defects",
+        "experimental manipulation"
+      ],
+      "chunk_summary": "Exposure to a static magnetic field during development induced morphological defects in L. pictus embryos.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "Figure 2, presented on page 24, likely depicts a visual representation of data or a conceptual model relevant to the paper's overall argument.  Without access to the actual figure, it is impossible to determine the specific content.  However, its presence suggests that the authors are using visual aids to communicate complex information, potentially related to bioelectric signaling, developmental processes, or anatomical structures.  Further analysis requires examination of the figure itself and the surrounding text.",
+      "section": "[PAGE 24] Figure 2",
+      "primary_topic": "Figure Description",
+      "secondary_topics": [
+        "visual representation",
+        "data visualization",
+        "conceptual model",
+        "bioelectricity",
+        "development",
+        "anatomy"
+      ],
+      "chunk_summary": "Figure 2 on page 24 visually represents data or a conceptual model, likely related to bioelectric signaling, development, or anatomy.",
+      "position_in_section": "Beginning",
+      "certainty_level": "Low",
+      "citation_context": "None",
+      "page_number": "24"
+    },
+    {
+      "text": "Figure 3, presented on page 25, likely depicts a visual representation of data or a conceptual model related to the paper's overall topic.  Without the actual figure, it is impossible to determine the specific content.  However, the presence of a figure suggests the authors are visually illustrating a key aspect of their research, such as experimental results, a proposed mechanism, or a comparative analysis.",
+      "section": "[PAGE 25] Figure 3",
+      "primary_topic": "Figure Description",
+      "secondary_topics": [
+        "data visualization",
+        "conceptual model",
+        "experimental results",
+        "mechanistic illustration",
+        "comparative analysis"
+      ],
+      "chunk_summary": "Figure 3 on page 25 visually represents an important aspect of the research, but its specific content is unknown without access to the figure itself.",
+      "position_in_section": "Beginning",
+      "certainty_level": "Low",
+      "citation_context": "None",
+      "page_number": "25"
+    },
+    {
+      "text": "Figure 4 likely presents visual data related to the paper's main topic.  Without access to the figure itself, it is impossible to determine the specific content.  The figure caption and surrounding text in the paper would provide the necessary context to understand the figure's meaning and significance within the broader research narrative.",
+      "section": "[PAGE 26] Figure 4",
+      "primary_topic": "Figure Description",
+      "secondary_topics": [
+        "data visualization",
+        "figure interpretation",
+        "results presentation"
+      ],
+      "chunk_summary": "This chunk describes the likely purpose of Figure 4 and the need for additional context to interpret its content.",
+      "position_in_section": "Beginning",
+      "certainty_level": "Low",
+      "citation_context": "None",
+      "page_number": "26"
+    },
+    {
+      "text": "Figure 5 likely presents visual data related to the paper's main topic.  Without access to the figure itself, it is impossible to determine the specific content.  However, given the context of Michael Levin's work, the figure probably depicts experimental results or a model related to bioelectric signaling, morphogenesis, or regenerative processes.",
+      "section": "[PAGE 27] Figure 5",
+      "primary_topic": "Figure Description",
+      "secondary_topics": [
+        "visual data",
+        "experimental results",
+        "bioelectricity",
+        "morphogenesis",
+        "regeneration"
+      ],
+      "chunk_summary": "Figure 5 likely presents visual data related to bioelectric signaling, morphogenesis, or regeneration, but its specific content is unknown without access to the figure.",
+      "position_in_section": "Beginning",
+      "certainty_level": "Low",
+      "citation_context": "None",
+      "page_number": "27"
+    },
+    {
+      "text": "Figure 6 illustrates a key aspect of bioelectric signaling in morphogenesis.  This figure likely depicts experimental results or a model demonstrating the role of bioelectric patterns in shaping anatomical structure.  While the specific details are not provided in the caption, the figure's inclusion suggests its importance in understanding how bioelectric signals control development and regeneration.",
+      "section": "[PAGE 28] Figure 6",
+      "primary_topic": "Bioelectric Signaling",
+      "secondary_topics": [
+        "morphogenesis",
+        "development",
+        "regeneration",
+        "bioelectric patterns",
+        "anatomical structure",
+        "experimental results",
+        "computational model"
+      ],
+      "chunk_summary": "Figure 6 highlights the role of bioelectric signaling in shaping anatomical structure during development and regeneration.",
+      "position_in_section": "Beginning",
+      "certainty_level": "Medium",
+      "citation_context": "None",
+      "page_number": "28"
+    },
+    {
+      "text": "Figure 7 illustrates a key aspect of bioelectric signaling in morphogenesis.  This figure likely depicts experimental results or a model related to the role of bioelectricity in shaping biological structures.  While the specific details are not provided in the caption, the context suggests it relates to the overall theme of bioelectric control of growth and form.",
+      "section": "[PAGE 29] Figure 7",
+      "primary_topic": "Bioelectric Signaling",
+      "secondary_topics": [
+        "morphogenesis",
+        "bioelectricity",
+        "growth and form",
+        "experimental results",
+        "model"
+      ],
+      "chunk_summary": "Figure 7 visually represents the influence of bioelectric signaling on morphogenesis.",
+      "position_in_section": "Beginning",
+      "certainty_level": "Medium",
+      "citation_context": "None",
+      "page_number": "29"
+    },
+    {
+      "text": "L. pictus embryos were exposed to a 30 mT static field immediately after fertilization. Twenty-six hours later, samples from the control and exposed batches were scored for hatching (absence of fertilization membrane).",
+      "section": "[PAGE 30] Table 1",
+      "primary_topic": "Embryo Exposure",
+      "secondary_topics": [
+        "L. pictus",
+        "static magnetic field",
+        "fertilization",
+        "hatching",
+        "fertilization membrane"
+      ],
+      "chunk_summary": "L. pictus embryos were exposed to a static magnetic field after fertilization and assessed for hatching success after 26 hours.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "30"
+    },
+    {
+      "text": "L. pictus embryos were exposed to a 30 mT static field immediately after fertilization. At 3.5 hours post-fertilization, samples from the control and exposed cultures were scored for the number of blastomeres.",
+      "section": "[PAGE 31] Table 2",
+      "primary_topic": "Embryo Exposure",
+      "secondary_topics": [
+        "static magnetic field",
+        "L. pictus",
+        "blastomeres",
+        "embryonic development",
+        "fertilization",
+        "magnetic field effects"
+      ],
+      "chunk_summary": "L. pictus embryos were exposed to a static magnetic field post-fertilization and assessed for blastomere count at 3.5 hours.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "31"
+    },
+    {
+      "text": "L. pictus embryos were exposed to a 30 mT static field immediately after fertilization, with exposure lasting throughout development. Two to three days later, control and exposed cultures were assessed for exogastrulation incidence.",
+      "section": "[PAGE 32] Table 3",
+      "primary_topic": "Exogastrulation Experiment",
+      "secondary_topics": [
+        "static magnetic field",
+        "L. pictus",
+        "embryo development",
+        "exogastrulation",
+        "teratogenesis"
+      ],
+      "chunk_summary": "This table describes an experiment exposing L. pictus embryos to a static magnetic field throughout development and assessing the impact on exogastrulation rates.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "32"
+    }
+  ],
+  "processed_at": "2025-08-14T09:03:13.926394",
+  "chunk_count": 48,
+  "processing_method": "document_splitting"
+}

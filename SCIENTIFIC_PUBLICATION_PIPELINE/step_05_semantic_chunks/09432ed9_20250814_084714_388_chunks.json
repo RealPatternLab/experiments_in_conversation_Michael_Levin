@@ -1,0 +1,806 @@
+{
+  "metadata": {
+    "filename": "09432ed9_20250814_084714_388.pdf",
+    "document_type": "research_paper",
+    "title": "Establishing and Maintaining a Colony of Planarians",
+    "authors": [],
+    "journal": null,
+    "publication_year": null,
+    "doi": null,
+    "abstract": null,
+    "extraction_confidence": "low",
+    "extraction_timestamp": "2025-08-14T08:47:21.638205",
+    "extraction_method": "basic_fallback",
+    "pages_analyzed": 2
+  },
+  "chunks": [
+    {
+      "text": "To provide sufficient material for experimentation, a laboratory needs to expand and maintain a colony of planarians. It is crucial to keep a stable, healthy population of animals in a consistent environment to avoid inter-animal variability and modifier effects that can mask true phenotypes from experimental perturbation. In this protocol, we describe basic procedures for establishing and maintaining healthy colonies of *Dugesia japonica*, *Schmidtea mediterranea*, and *Girardia tigrina* (commonly found in the wild and commercially available in the United States).",
+      "section": "[PAGE 1] INTRODUCTION",
+      "primary_topic": "Planarian Cultures",
+      "secondary_topics": [
+        "laboratory maintenance",
+        "animal husbandry",
+        "phenotype stability",
+        "Dugesia japonica",
+        "Schmidtea mediterranea",
+        "Girardia tigrina"
+      ],
+      "chunk_summary": "This protocol describes procedures for establishing and maintaining healthy planarian colonies to ensure experimental consistency and minimize variability.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "1"
+    },
+    {
+      "text": "Although the recommendations are based on our optimization of conditions for *G. tigrina*, many of the procedures (such as food preparation and feeding strategy) can be applied to other species. For best results, the culture water must be carefully monitored and adjusted for each species.",
+      "section": "[PAGE 1] INTRODUCTION",
+      "primary_topic": "Culture Optimization",
+      "secondary_topics": [
+        "Girardia tigrina",
+        "food preparation",
+        "feeding strategy",
+        "water quality",
+        "species-specific care"
+      ],
+      "chunk_summary": "While optimized for *G. tigrina*, the described procedures, including food preparation and water management, are adaptable to other planarian species.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "1"
+    },
+    {
+      "text": "For an introduction to planarians as a model system, see Planarians: A Versatile and Powerful Model System for Molecular Studies of Regeneration, Adult Stem Cell Regulation, Aging, and Behavior (Oviedo et al. 2008a). Protocols for Gene Knockdown in Planarians Using RNA Interference (Oviedo et al. 2008b) and Live Imaging of Planarian Membrane Potential Using DiBAC4(3) (Oviedo et al. 2008c) are also available.",
+      "section": "[PAGE 1] RELATED INFORMATION",
+      "primary_topic": "Planarian Resources",
+      "secondary_topics": [
+        "planarians",
+        "model system",
+        "regeneration",
+        "stem cells",
+        "RNA interference",
+        "live imaging",
+        "membrane potential"
+      ],
+      "chunk_summary": "This section provides references for using planarians as a model system, including resources on regeneration, stem cell regulation, gene knockdown, and live imaging techniques.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "1"
+    },
+    {
+      "text": "The method used in this study is not explicitly described.",
+      "section": "[PAGE 1] METHOD",
+      "primary_topic": "Method",
+      "secondary_topics": [
+        "methodology",
+        "experimental design",
+        "research approach"
+      ],
+      "chunk_summary": "The section lacks details on the specific method employed.",
+      "position_in_section": "Beginning",
+      "certainty_level": "Low",
+      "citation_context": "None",
+      "page_number": "1"
+    },
+    {
+      "text": "Planarians can be found in natural environments like ponds and streams, typically under rocks or on other surfaces, or obtained from commercial suppliers (Table 1). However, *S. mediterranea* and *D. japonica* are not currently commercially available and must be sourced from research labs (Table 1).  While *G. tigrina* may be listed by some suppliers, they are often recently wild-caught rather than from established stocks.  For shipping, planarians should be sent overnight in mild temperatures (above freezing and below 25°C).  Including a cold pack and insulation can help maintain a suitable temperature during transit.",
+      "section": "Obtaining Planarians",
+      "primary_topic": "Planarian Sourcing",
+      "secondary_topics": [
+        "planarian acquisition",
+        "commercial suppliers",
+        "research labs",
+        "wild-caught",
+        "S. mediterranea",
+        "D. japonica",
+        "G. tigrina",
+        "shipping conditions"
+      ],
+      "chunk_summary": "This chunk describes the various ways to obtain planarians, including from the wild, research labs, and commercial sources, and provides guidelines for their shipping.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "When shipping planarians, it's crucial to completely fill the container with water, eliminating air bubbles to prevent lethal sloshing during transport. The dissolved oxygen in the water is sufficient for 1-2 days. Upon receiving planarians, especially from commercial sources, it's essential to immediately replace at least half of the transport water, carefully avoiding temperature shock.  The remaining water should be completely changed by the next day. The water planarians are shipped in often contains high levels of ammonia and other metabolic byproducts and is low in oxygen, making it toxic.  A gradual water change is recommended for clonal lines of *S. mediterranea* and *D. japonica* (e.g., reducing the original water by 25% every 2 days until fully replaced with fresh medium).",
+      "section": "Obtaining Planarians",
+      "primary_topic": "Planarian Transport",
+      "secondary_topics": [
+        "water quality",
+        "shipping methods",
+        "temperature control",
+        "oxygen levels",
+        "ammonia",
+        "metabolic byproducts",
+        "acclimation",
+        "clonal lines"
+      ],
+      "chunk_summary": "This chunk details the proper procedures for handling and acclimating planarians upon arrival, emphasizing the importance of water quality and gradual acclimation for optimal survival.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Media—The aqueous medium in which each species lives differs slightly. In each case, the medium should be freshly prepared (e.g., weekly) because the pH tends to drift and salts may precipitate with time. The conductivity of our water after buffering is ~450 µS. Water is typically changed every 2 to 5 d when the planarian containers are cleaned. Planarian cultures should be virtually odorless. For *S. mediterranea*, use the recipe for 1X Montjuïch salts published by Cebrià and Newmark (2005). For *G. tigrina*, adapt the recipe for 1X Montjuïch salts by omitting the NaHCO3, and, instead, use aquarium buffers to bring the water to a pH of 7.5. Alternatively, use Poland Spring water (which gives better results than several other types of spring water) and adjust the pH in the same way.",
+      "section": "[PAGE 2] Culture Conditions",
+      "primary_topic": "Media Composition",
+      "secondary_topics": [
+        "Montjuïch salts",
+        "pH",
+        "water quality",
+        "S. mediterranea",
+        "G. tigrina",
+        "buffering",
+        "conductivity"
+      ],
+      "chunk_summary": "Different planarian species require slightly different media compositions, emphasizing fresh preparation, pH stability, and specific salt mixtures.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "2"
+    },
+    {
+      "text": "If Poland Spring is unavailable, another brand of bottled water may be tried, although some trial and error may be necessary to locate one with adequate characteristics. In either case, use an alkaline buffer:acid buffer ratio of 12.5:1 (~2.5 g of alkaline buffer and 0.2 g of acid buffer in 11 L of water) to adjust the pH. These numbers are only approximate because water from different sources and even from the same source in different seasons varies slightly in ion composition. The pH will drift upward over time but will not exceed the upper limit of *G. tigrina*'s tolerance, even if the water is not changed for 1 wk. A pH range between 7.5 and 9.5 is tolerated by *G. tigrina*. For *D. japonica*, Poland Spring water may be used alone, or the pH may be raised slightly, to as high as 7.5, using the above buffers.",
+      "section": "[PAGE 2] Culture Conditions",
+      "primary_topic": "pH Adjustment",
+      "secondary_topics": [
+        "buffering",
+        "water chemistry",
+        "G. tigrina",
+        "D. japonica",
+        "ion composition",
+        "Poland Spring water",
+        "alkaline buffer",
+        "acid buffer"
+      ],
+      "chunk_summary": "Specific pH ranges are crucial for different planarian species, and buffer ratios are provided for maintaining appropriate pH levels despite natural variations in water sources.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "2"
+    },
+    {
+      "text": "Containers—Worms thrive in plastic containers (e.g., ~2000-mL capacity with ~1500 mL of culture water). To remove the manufacturing residue from new containers, soak them overnight in pure water (without soap), and then thoroughly wipe them clean. The containers should be covered, but significant air circulation should be ensured. It is important to control the number of animals per container (e.g., keep between 400 and 700 worms in each 2000-mL container). Too many worms can induce stressful situations, leading to infections by opportunistic pathogens.",
+      "section": "[PAGE 2] Culture Conditions",
+      "primary_topic": "Container Maintenance",
+      "secondary_topics": [
+        "plastic containers",
+        "cleaning",
+        "air circulation",
+        "population density",
+        "opportunistic pathogens",
+        "stress"
+      ],
+      "chunk_summary": "Proper container maintenance involves cleaning, ensuring air circulation, and controlling worm density to prevent stress and infections.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "2"
+    },
+    {
+      "text": "Temperature—Planarian colonies are kept in an incubator or in a temperature-controlled light cabinet at a temperature of between 17°C and 20°C. However, all three species discussed here can tolerate a variety of temperatures. *G. tigrina* have been found at water temperatures ranging from 3°C to 31°C in the wild (Stokely et al. 1965). Higher temperatures (~25°C) are acceptable to planarians, but this warmer environment encourages bacterial growth, and infections are more likely. Infections are particularly a concern in experimental animals that have been cut; regenerating worms may have higher mortality rates when kept in warmer environments.",
+      "section": "[PAGE 3] Temperature—Planarian colonies are kept in an incubator or in a temperature-controlled light cabinet at a temperature of between 17°C and 20°C. However, all three species discussed here can tolerate a variety of temperatures. *G. tigrina* have been found at water temperatures ranging from 3°C to 31°C in the wild (Stokely et al. 1965). Higher temperatures (~25°C) are acceptable to planarians, but this warmer environment encourages bacterial growth, and infections are more likely. Infections are particularly a concern in experimental animals that have been cut; regenerating worms may have higher mortality rates when kept in warmer environments.",
+      "primary_topic": "Temperature Effects",
+      "secondary_topics": [
+        "planarian",
+        "temperature",
+        "bacterial growth",
+        "regeneration",
+        "mortality",
+        "G. tigrina"
+      ],
+      "chunk_summary": "Planarians are typically kept at 17-20°C, but can tolerate a wider range; however, higher temperatures increase bacterial growth and infection risk, especially in regenerating worms.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "3"
+    },
+    {
+      "text": "Dissolved Oxygen—Dissolved oxygen (DO) is an important factor in worm health, but as long as planarians are kept at an appropriate temperature in boxes that have a broad water surface and reasonable air circulation, sufficient oxygen should be incorporated into the water to avoid the need for manual circulation or aeration. Our DO for *G. tigrina* normally reads between 7.6 and 8.4 ppm using a LaMotte DO test kit; fluctuation of ±0.5 ppm during the course of a day is typical. DO may be checked sporadically or when abnormalities in the colony are observed.",
+      "section": "[PAGE 3] Temperature—Planarian colonies are kept in an incubator or in a temperature-controlled light cabinet at a temperature of between 17°C and 20°C. However, all three species discussed here can tolerate a variety of temperatures. *G. tigrina* have been found at water temperatures ranging from 3°C to 31°C in the wild (Stokely et al. 1965). Higher temperatures (~25°C) are acceptable to planarians, but this warmer environment encourages bacterial growth, and infections are more likely. Infections are particularly a concern in experimental animals that have been cut; regenerating worms may have higher mortality rates when kept in warmer environments.",
+      "primary_topic": "Dissolved Oxygen",
+      "secondary_topics": [
+        "planarian",
+        "dissolved oxygen",
+        "water quality",
+        "aeration",
+        "G. tigrina"
+      ],
+      "chunk_summary": "Adequate dissolved oxygen is crucial for planarian health, but typically achieved through a broad water surface and air circulation, with typical DO levels around 7.6-8.4 ppm for *G. tigrina*.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "3"
+    },
+    {
+      "text": "Light/Dark Cycle—Planarians are nocturnal, and *S. mediterranea* and *D. japonica* are best maintained in dark environments (although they are exposed to light during feeding and cleaning). Worms (of any of the above-mentioned species) used in behavioral experiments are typically kept on a 12-h light/12-h dark cycle that helps to synchronize their peak activity time, thereby benefiting many types of training trials. If possible, learning trials on *G. tigrina* should be conducted during the worms' night cycle. The worms can be sluggish during the day, and this creates problems in obtaining consistent responses for behavioral work. We have compared the behavior of *G. tigrina* at the beginning of their night cycle versus midday, and a definite difference was observed (C. Nicolas, unpubl.). Worms used in behavioral studies have also been kept in dark cabinets, exposed to light only for feeding and cleaning, with no apparent ill effects. These worms have an increased aversion to light, which may be useful in some circumstances.",
+      "section": "[PAGE 3] Temperature—Planarian colonies are kept in an incubator or in a temperature-controlled light cabinet at a temperature of between 17°C and 20°C. However, all three species discussed here can tolerate a variety of temperatures. *G. tigrina* have been found at water temperatures ranging from 3°C to 31°C in the wild (Stokely et al. 1965). Higher temperatures (~25°C) are acceptable to planarians, but this warmer environment encourages bacterial growth, and infections are more likely. Infections are particularly a concern in experimental animals that have been cut; regenerating worms may have higher mortality rates when kept in warmer environments.",
+      "primary_topic": "Light/Dark Cycle",
+      "secondary_topics": [
+        "planarian",
+        "circadian rhythm",
+        "behavior",
+        "nocturnal",
+        "S. mediterranea",
+        "D. japonica",
+        "G. tigrina"
+      ],
+      "chunk_summary": "Planarians are nocturnal, and while some species are kept in the dark, those in behavioral experiments are often on a 12-hour light/dark cycle to synchronize activity; *G. tigrina* show different behavior depending on the time of day.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "3"
+    },
+    {
+      "text": "Preparation of Beef Liver Paste—This method of preparation ensures that the liver will sink to the bottom of the dish, where the worms can consume it. A standard kitchen strainer can be used; only gentle pushing through the strainer should be used to avoid introducing connective tissue into the filtrate.",
+      "section": "[PAGE 3] Food Preparation and Allocation",
+      "primary_topic": "Food Preparation",
+      "secondary_topics": [
+        "beef liver paste",
+        "planarian diet",
+        "food preparation",
+        "connective tissue",
+        "filtration"
+      ],
+      "chunk_summary": "This section describes the preparation of beef liver paste for planarian feeding, emphasizing the importance of removing connective tissue.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "3"
+    },
+    {
+      "text": "7. Centrifuge the liver paste at 4000 rpm to remove all air bubbles.",
+      "section": "7. Centrifuge the liver paste at 4000 rpm to remove all air bubbles.",
+      "primary_topic": "Sample Preparation",
+      "secondary_topics": [
+        "centrifugation",
+        "liver paste",
+        "air bubbles",
+        "sample processing",
+        "experimental procedure"
+      ],
+      "chunk_summary": "Centrifugation at 4000 rpm is used to remove air bubbles from the liver paste.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Five minutes of centrifugation at 4°C in a Sorvall RC-5B Refrigerated Superspeed Centrifuge is sufficient.",
+      "section": "8. Five minutes at 4°C in a Sorvall RC-5B Refrigerated Superspeed Centrifuge is sufficient.",
+      "primary_topic": "Centrifugation",
+      "secondary_topics": [
+        "centrifuge",
+        "Sorvall RC-5B",
+        "4°C",
+        "refrigerated",
+        "superspeed"
+      ],
+      "chunk_summary": "Five minutes of centrifugation at 4°C in a specific refrigerated superspeed centrifuge is sufficient for the unstated process.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Aliquot the liver paste into 35-mm Petri dishes, filling each dish completely. Care should be taken to avoid introducing new air bubbles during this process.",
+      "section": "9. Aliquot the liver paste into 35-mm Petri dishes (filling each dish), being careful to avoid introducing new air bubbles.",
+      "primary_topic": "Sample Preparation",
+      "secondary_topics": [
+        "liver paste",
+        "Petri dish",
+        "aliquot",
+        "air bubbles",
+        "experimental procedure"
+      ],
+      "chunk_summary": "Liver paste should be aliquoted into 35-mm Petri dishes, taking care to avoid introducing air bubbles.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "10. Freeze individual aliquots at -80°C. Feeding—Feed planarians once a week. Before any experiment, starve them for 7–15 d. This fasting period provides a more uniform metabolic status, thereby minimizing variability in data.",
+      "section": "10. Freeze individual aliquots at -80°C.",
+      "primary_topic": "Planarian Care",
+      "secondary_topics": [
+        "planarian",
+        "feeding",
+        "fasting",
+        "metabolic status",
+        "data variability",
+        "cryopreservation"
+      ],
+      "chunk_summary": "This section describes the procedure for freezing planarian aliquots and the importance of a 7-15 day fasting period prior to experiments to minimize metabolic variability.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Thaw an aliquot of prepared liver paste (from Step 10).",
+      "section": "11. Thaw an aliquot of prepared liver paste (from Step 10).",
+      "primary_topic": "Sample Preparation",
+      "secondary_topics": [
+        "liver paste",
+        "thawing",
+        "aliquot",
+        "sample handling"
+      ],
+      "chunk_summary": "An aliquot of previously prepared liver paste should be thawed for subsequent use.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Drop into the colony box as much liver as the colony can consume in 2 h (~2 mL per 2000-mL container with ~400–700 worms). Make sure that liver paste sinks to the bottom; floating food will not be eaten.",
+      "section": "12. Drop into the colony box as much liver as the colony can consume in 2 h (~2 mL per 2000-mL container with ~400–700 worms). Make sure that liver paste sinks to the bottom; floating food will not be eaten.",
+      "primary_topic": "Feeding Protocol",
+      "secondary_topics": [
+        "planaria",
+        "liver paste",
+        "feeding",
+        "colony maintenance",
+        "worm husbandry"
+      ],
+      "chunk_summary": "This section describes the protocol for feeding a planarian colony, emphasizing the quantity of liver paste and ensuring it sinks to the bottom of the container.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "After 1 or 2 hours, carefully remove any uneaten food with a pipette. Proceed immediately to Steps 14-19. Planarian containers must be cleaned immediately after the feeding period. In addition, all species must have a second cleaning 2 days after feeding to remove metabolic debris and to prevent water quality degradation.",
+      "section": "13. After 1 or 2 h, carefully remove any uneaten food with a pipette. Proceed immediately to Steps 14-19.",
+      "primary_topic": "Planarian Care",
+      "secondary_topics": [
+        "feeding",
+        "cleaning",
+        "water quality",
+        "planarian husbandry",
+        "metabolic debris"
+      ],
+      "chunk_summary": "This section details the procedure for cleaning planarian containers after feeding to maintain water quality and remove uneaten food and metabolic debris.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Gently agitate the water with a pipette to force any planarians from the surface to the bottom of the container.",
+      "section": "14. Gently agitate the water with a pipette to force any planarians from the surface to the bottom of the container.",
+      "primary_topic": "Planarian Handling",
+      "secondary_topics": [
+        "planarian",
+        "water agitation",
+        "pipette",
+        "container"
+      ],
+      "chunk_summary": "This step describes a method for ensuring planarians are submerged in their container by gently agitating the water surface with a pipette.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Pour off all of the old water from the worm container. If the worms cling to the sides as the water is poured out, use a pipette to gently rinse them down to the bottom of the box.",
+      "section": "15. Pour off all of the old water. If necessary, use the pipette to wash the worms back down to the bottom of the box as you pour off the water.",
+      "primary_topic": "Worm Maintenance",
+      "secondary_topics": [
+        "water change",
+        "worm care",
+        "pipette",
+        "cleaning"
+      ],
+      "chunk_summary": "Instructions for changing the water in a worm container, including using a pipette to rinse worms down if necessary.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Add a small amount of water to the container (do not add any detergents or chemicals to the water). Use this water to rinse the sides and the bottom of the container and to wash the planarians down to one corner.",
+      "section": "16. Add a small amount of water to the container (do not add any detergents or chemicals to the water). Use this water to rinse the sides and the bottom of the container and to wash the planarians down to one corner.",
+      "primary_topic": "Planarian Handling",
+      "secondary_topics": [
+        "planarian washing",
+        "water rinsing",
+        "container cleaning",
+        "detergent avoidance",
+        "chemical avoidance"
+      ],
+      "chunk_summary": "This section describes how to rinse planarians to one corner of their container using only water, avoiding any detergents or chemicals.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "17. Pour off the rinse water.",
+      "section": "17. Pour off the rinse water.",
+      "primary_topic": "Rinse Procedure",
+      "secondary_topics": [
+        "water removal",
+        "rinsing",
+        "laboratory technique"
+      ],
+      "chunk_summary": "Step 17 of a procedure involves pouring off the rinse water.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Using paper towels, wipe out any mucus and debris attached to the walls and the bottom of the container.",
+      "section": "18. Using paper towels, wipe out any mucus and debris attached to the walls and the bottom of the container.",
+      "primary_topic": "Cleaning Procedure",
+      "secondary_topics": [
+        "cleaning",
+        "container maintenance",
+        "mucus removal",
+        "debris removal",
+        "paper towels"
+      ],
+      "chunk_summary": "Clean the container by wiping away mucus and debris with paper towels.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Refill the container with fresh medium (prepared as described above in “Media,” using H₂O for planarian culture or bottled H₂O).",
+      "section": "19. Refill the container with fresh medium (prepared as described above in “Media,” using H₂O for planarian culture or bottled H₂O).",
+      "primary_topic": "Planarian Culture",
+      "secondary_topics": [
+        "planarian",
+        "culture medium",
+        "water",
+        "H₂O",
+        "media preparation"
+      ],
+      "chunk_summary": "Containers holding planarians should be refilled with fresh medium prepared with water suitable for planarian culture.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Reproduction, a fundamental aspect of biology, encompasses the processes by which organisms create new individuals.  While this section is brief, it serves as a placeholder for future work exploring the role of bioelectric signaling in reproductive processes.  Further investigation is needed to determine how bioelectric mechanisms might influence gamete formation, fertilization, embryonic development, and other reproductive events.",
+      "section": "[PAGE 4] Reproduction",
+      "primary_topic": "Reproduction",
+      "secondary_topics": [
+        "bioelectricity",
+        "development",
+        "fertilization",
+        "gametes",
+        "embryogenesis"
+      ],
+      "chunk_summary": "This section briefly introduces reproduction as a potential area for future research on the role of bioelectric signaling.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "4"
+    },
+    {
+      "text": "A choice may be made to keep either clonal colonies, where all worms derive from one original worm, or more genetically varied colonies. If clonal colonies are desired, expect one large *G. tigrina* to yield ~40 worms after 6 mo of weekly feedings. Both *S. mediterranea* and *D. japonica* reproduce faster, doubling every ~2–3 wk.",
+      "section": "A",
+      "primary_topic": "Colony Management",
+      "secondary_topics": [
+        "clonal colonies",
+        "genetic variation",
+        "reproduction rate",
+        "G. tigrina",
+        "S. mediterranea",
+        "D. japonica"
+      ],
+      "chunk_summary": "This chunk describes the choice between clonal and genetically diverse colonies and the reproduction rates of different planarian species.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Although happy (and well-fed) worms will spontaneously reproduce by fissioning, cutting may also be used to accelerate the process of populating the colony with genetically similar worms.",
+      "section": "A",
+      "primary_topic": "Reproduction Methods",
+      "secondary_topics": [
+        "fissioning",
+        "cutting",
+        "clonal expansion",
+        "colony growth"
+      ],
+      "chunk_summary": "This chunk explains that while planarians reproduce naturally through fissioning, cutting can be used to speed up colony growth and maintain genetic similarity.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Problem: The planarians are lying limply on the bottom of the box, or a gentle tap on the box sends a large number of worms cascading off the sides of the box to land limply at the bottom. They may be scrunched up, looking ruffled around the edges rather than smooth. In advanced cases, they may lie on their sides curled into a “C” shape.",
+      "section": "[PAGE 5] TROUBLESHOOTING",
+      "primary_topic": "Planarian Health",
+      "secondary_topics": [
+        "planarian behavior",
+        "stress response",
+        "animal welfare",
+        "phenotype",
+        "morphology"
+      ],
+      "chunk_summary": "Describes the physical signs of stressed or unhealthy planarians, such as limpness, falling off the box sides, and a ruffled or curled appearance.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "5"
+    },
+    {
+      "text": "Solution: Under normal conditions, ~50% of our worms will be on the sides of the box at any given time. If the worms appear stressed, consider the following:",
+      "section": "[PAGE 5] TROUBLESHOOTING",
+      "primary_topic": "Troubleshooting",
+      "secondary_topics": [
+        "planarian care",
+        "stress indicators",
+        "experimental conditions",
+        "animal husbandry",
+        "health assessment"
+      ],
+      "chunk_summary": "Provides a baseline for normal planarian behavior (50% on box sides) and suggests further investigation if they appear stressed.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "5"
+    },
+    {
+      "text": "Check the water quality. If the ammonia level of the water is too high, the dissolved oxygen content is too low, or the pH is too high or too low, change the culture medium immediately. Worms should recover from most water-quality problems by the next day or so.",
+      "section": "1. Check the water quality. If the ammonia level of the water is too high, the dissolved oxygen content is too low, or the pH is too high or too low, change the culture medium immediately. Worms should recover from most water-quality problems by the next day or so.",
+      "primary_topic": "Water Quality",
+      "secondary_topics": [
+        "ammonia",
+        "dissolved oxygen",
+        "pH",
+        "culture medium",
+        "water quality"
+      ],
+      "chunk_summary": "Maintain appropriate water quality by monitoring ammonia, dissolved oxygen, and pH levels, and change the culture medium immediately if parameters are outside acceptable ranges to ensure worm health.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Problem: Animals have white or black lesions on the dorsal side, or they are losing tissue at the anterior end. The lesions may be visible under a dissecting scope. At higher magnifications (~200X), protozoans may be seen clustered around the open wounds of the planarians. There may be a bad odor coming from the water.",
+      "section": "2. The container may be overcrowded. Split the colony.",
+      "primary_topic": "Disease Diagnosis",
+      "secondary_topics": [
+        "lesions",
+        "tissue loss",
+        "protozoa",
+        "microscopy",
+        "planaria",
+        "infection"
+      ],
+      "chunk_summary": "Describes the observable symptoms of potential protozoan infection in planarians, including lesions, tissue loss, and microscopic observation of protozoa around wounds.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Solution: An infestation by protozoa is not uncommon, but it can lead to a secondary bacterial infection that can devastate a colony. The symptoms may vary from worm to worm; some succumb sooner. Worms that are feeling unwell for any reason will not eat until they are recovered from the incident. Because uneaten food can provide sustenance for bacteria, we do not feed worms suffering from either water-quality problems or microorganism attacks until the issue has been resolved. Remove any sick animals with abnormal behavior, and then treat the culture for microorganism attacks as described below. Keeping containers with sick worms and materials (e.g., pipettes) away from healthy animals is safe practice.",
+      "section": "2. The container may be overcrowded. Split the colony.",
+      "primary_topic": "Disease Treatment",
+      "secondary_topics": [
+        "protozoa infestation",
+        "bacterial infection",
+        "colony management",
+        "feeding",
+        "water quality",
+        "isolation",
+        "biosecurity"
+      ],
+      "chunk_summary": "Outlines the treatment and management strategies for a potential protozoan/bacterial infection in a planarian colony, emphasizing isolation, withholding food, and removing sick individuals.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The antibiotics metronidazole (3 mg/L) and gentamicin (50 µg/mL) have been used to treat *G. tigrina* and are well tolerated, but are only marginally effective because they target the secondary bacterial infections and not the original problem. If antibiotic treatment is used, remember to bring the pH of the culture water back up to 7.5 after mixing in the antibiotics. Otherwise, these drugs can drop the pH low enough to harm the planarians.",
+      "section": "1. The antibiotics metronidazole (3 mg/L) and gentamicin (50 µg/mL) have been used to treat *G. tigrina* and are well tolerated, but are only marginally effective because they target the secondary bacterial infections and not the original problem. If antibiotic treatment is used, remember to bring the pH of the culture water back up to 7.5 after mixing in the antibiotics. Otherwise, these drugs can drop the pH low enough to harm the planarians.",
+      "primary_topic": "Antibiotic Treatment",
+      "secondary_topics": [
+        "metronidazole",
+        "gentamicin",
+        "G. tigrina",
+        "bacterial infections",
+        "pH",
+        "planarian care"
+      ],
+      "chunk_summary": "Metronidazole and gentamicin are tolerated antibiotic treatments for *G. tigrina*, but have limited efficacy against primary infections and require pH adjustment to avoid harming the planarians.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "The most effective treatment for infections in *G. tigrina* colonies is not chemical but involves temperature manipulation.  Chill the colonies down to 10°C overnight and then slowly warm them back to 18°C the next day.  Following this temperature cycle, thoroughly clean the containers. Daily water changes for the following week aid in recovery, and lost tissues should regenerate quickly.",
+      "section": "2. The most effective treatment for infections in *G. tigrina* colonies is not chemical: Simply chill the colonies of worms overnight down to 10°C. Then, after slowly warming them back up to 18°C the next day, clean the containers thoroughly. Daily water changes during the next week are helpful in speeding the recovery of this species. Lost tissues should be regenerated shortly.",
+      "primary_topic": "Infection Treatment",
+      "secondary_topics": [
+        "G. tigrina",
+        "temperature manipulation",
+        "tissue regeneration",
+        "water changes",
+        "infection",
+        "recovery"
+      ],
+      "chunk_summary": "Non-chemical treatment for infections in *G. tigrina* involves temperature cycling, cleaning, and water changes to promote tissue regeneration.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "We thank W. Beane for comments and suggestions on the manuscript. N.J.O. is a National Institutes of Health (NIH) fellow supported under the Ruth L. Kirschstein National Research Service Award (F32 GM078774). D.S.A. is supported by the National Institute of Dental and Craniofacial Research (NIDCR) grant 1K22-DE016633. M.L. is supported by the National Science Foundation (NSF) grant IBN 0347295, National Highway Traffic Safety Administration (NHTSA) grant DTNH22-06-G-00001, and NIH grant R21 HD055850.",
+      "section": "[PAGE 6] ACKNOWLEDGMENTS",
+      "primary_topic": "Funding Acknowledgements",
+      "secondary_topics": [
+        "NIH",
+        "NSF",
+        "NIDCR",
+        "NHTSA",
+        "grants",
+        "funding",
+        "research support"
+      ],
+      "chunk_summary": "This section acknowledges contributions from W. Beane and lists the funding sources and grant numbers supporting the authors and the research.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "6"
+    },
+    {
+      "text": "This article was prepared in a Forsyth Institute facility renovated with support from Research Facilities Improvement Grant Number CO6RR11244 from the National Center for Research Resources, NIH.",
+      "section": "[PAGE 6] ACKNOWLEDGMENTS",
+      "primary_topic": "Facility Acknowledgement",
+      "secondary_topics": [
+        "Forsyth Institute",
+        "National Center for Research Resources",
+        "NIH",
+        "facility support",
+        "research infrastructure"
+      ],
+      "chunk_summary": "This acknowledges the Forsyth Institute and the NIH grant that supported the renovation of the facility where the article was prepared.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "6"
+    },
+    {
+      "text": "The \"Materials\" section, as presented, simply states \"[PAGE 7] MATERIALS\".  This brevity suggests that the full materials and methods description may be missing or located elsewhere in the publication.  Without further details, it's impossible to provide a comprehensive analysis of the experimental setup, specific reagents used, or the protocols followed.  This lack of information severely limits the reproducibility of any findings presented in the paper.",
+      "section": "[PAGE 7] MATERIALS",
+      "primary_topic": "Materials",
+      "secondary_topics": [
+        "reagents",
+        "protocols",
+        "experimental setup",
+        "methods",
+        "reproducibility"
+      ],
+      "chunk_summary": "The Materials section lacks essential details about the experimental procedures, hindering reproducibility.",
+      "position_in_section": "Beginning",
+      "certainty_level": "Low",
+      "citation_context": "None",
+      "page_number": "7"
+    },
+    {
+      "text": "CAUTIONS AND RECIPES: Please see Appendices for appropriate handling of materials marked with <!>, and recipes for reagents marked with <R>.",
+      "section": "CAUTIONS AND RECIPES",
+      "primary_topic": "Safety Procedures",
+      "secondary_topics": [
+        "Reagent Handling",
+        "Material Safety",
+        "Appendices",
+        "Recipes",
+        "Cautions"
+      ],
+      "chunk_summary": "This section directs readers to the Appendices for safety information regarding specific materials and reagent recipes.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Reagents used in planarian experiments include aquarium buffers (acid and alkaline, such as Seachem), organic beef liver (very fresh), and water.  Poland Spring bottled water yields superior results compared to other bottled water brands. Alternatively, specifically prepared water for planarian culture can be used. Montjuïch salts (1X) are also utilized (Cebrià and Newmark 2005).",
+      "section": "Reagents",
+      "primary_topic": "Planarian reagents",
+      "secondary_topics": [
+        "aquarium buffers",
+        "beef liver",
+        "water quality",
+        "Montjuïch salts",
+        "planarian culture"
+      ],
+      "chunk_summary": "This section lists the reagents necessary for planarian experiments, emphasizing the importance of water quality and specifying the use of Montjuïch salts.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Equipment.",
+      "section": "Equipment",
+      "primary_topic": "Equipment",
+      "secondary_topics": [
+        "Materials",
+        "Resources",
+        "Apparatus"
+      ],
+      "chunk_summary": "This section briefly mentions the equipment used.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Blender Centrifuge (e.g., Sorvall RC-5B Refrigerated Superspeed Centrifuge; DuPont) Container (covered and chilled, for collecting processed liver) (optional; see Step 3) Cutting surface (chilled) Dissolved oxygen test kit (e.g., LaMotte) Incubator or temperature-controlled light cabinet (preset to 17°C-20°C) Paper towels (unbleached) Petri dishes (35 mm) Plastic containers (food grade; e.g., Rubbermaid 1.8-L rectangular boxes)",
+      "section": "Blender",
+      "primary_topic": "Equipment List",
+      "secondary_topics": [
+        "laboratory equipment",
+        "blender",
+        "centrifuge",
+        "incubator",
+        "petri dish",
+        "dissolved oxygen",
+        "temperature control"
+      ],
+      "chunk_summary": "This section lists the necessary equipment for an experiment, including a blender, centrifuge, incubator, and various containers and tools.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Scalpel",
+      "section": "Scalpel",
+      "primary_topic": "Surgical Tools",
+      "secondary_topics": [
+        "scalpel",
+        "surgical instrument",
+        "incision",
+        "dissection",
+        "cutting"
+      ],
+      "chunk_summary": "A scalpel is a surgical instrument used for cutting.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "A strainer is mentioned alongside disposable transfer pipettes.  This suggests the use of a strainer in conjunction with transfer pipettes, likely for filtering or separating components of a liquid sample during an experimental procedure. The disposable nature of the transfer pipettes indicates a focus on minimizing cross-contamination between samples or experiments.",
+      "section": "Strainer",
+      "primary_topic": "Filtration",
+      "secondary_topics": [
+        "strainer",
+        "transfer pipettes",
+        "disposable",
+        "liquid handling",
+        "sample preparation",
+        "contamination control"
+      ],
+      "chunk_summary": "A strainer and disposable transfer pipettes are used, likely for filtering liquids during experimental procedures.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    }
+  ],
+  "processed_at": "2025-08-14T08:59:54.108616",
+  "chunk_count": 45,
+  "processing_method": "document_splitting"
+}

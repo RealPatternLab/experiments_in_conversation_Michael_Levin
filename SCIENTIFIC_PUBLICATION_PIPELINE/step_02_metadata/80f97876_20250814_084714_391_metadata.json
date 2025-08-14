@@ -1,0 +1,33 @@
+{
+  "filename": "80f97876_20250814_084714_391.pdf",
+  "document_type": "research_paper",
+  "title": "Levin and Ernst, DC Magnetic Field Effects on Development",
+  "authors": [],
+  "journal": null,
+  "publication_year": null,
+  "doi": null,
+  "abstract": null,
+  "extraction_confidence": "low",
+  "extraction_timestamp": "2025-08-14T08:47:21.634591",
+  "extraction_method": "basic_fallback",
+  "pages_analyzed": 2,
+  "affiliations": [
+    "Dept. of Biology",
+    "Department of Genetics",
+    "of Biology\nTufts University",
+    "Harvard Medical School",
+    "Acknowledgments\nThis work was supported by the Howard Hughes Medical Institute"
+  ],
+  "keywords": [
+    "sea urchin",
+    "static magnetic field",
+    "gastrulation",
+    "development",
+    "mitotic cycle",
+    "teratogenic effects"
+  ],
+  "page_range": "1-2",
+  "text_enriched": true,
+  "enrichment_method": "text_analysis",
+  "enrichment_timestamp": "2025-08-14T09:45:15.215105"
+}
