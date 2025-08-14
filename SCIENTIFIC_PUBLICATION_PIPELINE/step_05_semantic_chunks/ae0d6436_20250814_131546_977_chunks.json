@@ -1,0 +1,1093 @@
+{
+  "metadata": {
+    "document_type": "journal-article",
+    "title": "Phase conjugation of twisted Gaussian Schell model beams in stimulated down-conversion",
+    "authors": [
+      "Gustavo H. dos Santos",
+      "Andre G. de Oliveira",
+      "Nara Rubiano da Silva",
+      "Gustavo Cañas",
+      "Esteban S. Gómez",
+      "Stuti Joshi",
+      "Yaseera Ismail",
+      "Paulo H. Souto Ribeiro",
+      "Stephen Patrick Walborn"
+    ],
+    "journal": "Nanophotonics",
+    "publication_year": 2021,
+    "doi": "10.1515/nanoph-2021-0502",
+    "abstract": null,
+    "extraction_confidence": "high",
+    "filename": "ae0d6436_20250814_131546_977.pdf",
+    "extraction_timestamp": "2025-08-14T13:17:35.642413",
+    "extraction_method": "gemini_1.5_flash",
+    "pages_analyzed": 2,
+    "publication_date": "2022-02-25",
+    "page_range": "763-770",
+    "volume": "11",
+    "issue": "4",
+    "references_count": 44,
+    "publisher": "Walter de Gruyter GmbH",
+    "issn": "2192-8614",
+    "crossref_data": true,
+    "enrichment_method": "crossref_api",
+    "crossref_enriched": true,
+    "enrichment_timestamp": "2025-08-14T13:27:00.452616",
+    "affiliations": [
+      "center of the chromatophores whereas expanded chromatophores show higher irregularity in the location of the lowest reflecting regions",
+      "Department of the Navy",
+      "laboratory conditions [16",
+      "Laboratory Animal Care) guidelines were followed for handling octopuses and administering anesthesia [38]. Upon receival",
+      "LAB R2020a and Fiji were used to analyze the data. Specifically"
+    ],
+    "keywords": [
+      "biophotonics",
+      "dynamic coloration",
+      "multispectral mapping",
+      "Octopus bimaculoides"
+    ],
+    "text_enriched": true
+  },
+  "chunks": [
+    {
+      "text": "Unmixing octopus camouflage by multispectral mapping of Octopus bimaculoides' chromatic elements involves analyzing the spectral reflectance of the octopus's skin to identify the contributions of different chromatophores. This technique allows researchers to decompose the complex camouflage patterns of the octopus into its constituent color components, revealing how the animal dynamically controls its appearance to blend seamlessly with its environment. By understanding the spectral properties of each chromatophore type, scientists can gain insights into the neural and biophysical mechanisms underlying adaptive camouflage in cephalopods.",
+      "section": "Unmixing octopus camouflage by multispectral",
+      "primary_topic": "Camouflage Analysis",
+      "secondary_topics": [
+        "multispectral imaging",
+        "Octopus bimaculoides",
+        "chromatophores",
+        "spectral reflectance",
+        "camouflage patterns",
+        "adaptive camouflage",
+        "cephalopods"
+      ],
+      "chunk_summary": "Multispectral mapping helps analyze octopus camouflage by identifying the contributions of different chromatophores to overall skin color and pattern.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Cephalopods camouflage abilities arise from highly specialized chromatic elements in their skin, chromatophores, iridophores, and leucophores, that enable them to display complex and rapidly changing color patterns. Despite the extensive study of these chromatic elements in squid and cuttlefish, full characterization of their individual optical response is still elusive in the Octopus species.",
+      "section": "Abstract",
+      "primary_topic": "Cephalopod Camouflage",
+      "secondary_topics": [
+        "chromatophores",
+        "iridophores",
+        "leucophores",
+        "optical response",
+        "skin",
+        "camouflage"
+      ],
+      "chunk_summary": "Cephalopods use specialized skin elements for camouflage, but the optical response in octopus remains poorly understood despite research on other cephalopods.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "We present here detailed multispectral analysis and mapping of the Octopus bimaculoides skin that allows to precisely identify the spatial distribution of the animal's pigmented and structural elements. The mutual interaction of chromatophores and iridophores is also characterized both in terms of spectral response and spatial localization.",
+      "section": "Abstract",
+      "primary_topic": "Multispectral Analysis",
+      "secondary_topics": [
+        "Octopus bimaculoides",
+        "skin",
+        "pigmented elements",
+        "structural elements",
+        "spatial distribution",
+        "spectral response"
+      ],
+      "chunk_summary": "This study uses multispectral analysis to map the spatial distribution and interaction of pigmented and structural elements in Octopus bimaculoides skin.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "The spectral information obtained through this analysis helps to understand the complexity and behavior of these natural tissues while continuing to serve as an inspiration for the fabrication of advanced, chromatically adaptable materials.",
+      "section": "Abstract",
+      "primary_topic": "Bio-inspired Materials",
+      "secondary_topics": [
+        "spectral information",
+        "chromatically adaptable materials",
+        "biomimicry",
+        "tissue behavior"
+      ],
+      "chunk_summary": "The spectral analysis provides insights into the complex behavior of these tissues and inspires the development of advanced adaptable materials.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "Keywords related to this research include biophotonics, which is the study of the interaction of light with biological materials.  Dynamic coloration refers to the ability of organisms, such as the Octopus bimaculoides, to rapidly change their skin color and patterns. Multispectral mapping is a technique used to capture and analyze images across multiple wavelengths of light, providing detailed information about the spectral properties of the subject. The focus of this work is on the California two-spot octopus (Octopus bimaculoides).",
+      "section": "Keywords",
+      "primary_topic": "Keywords",
+      "secondary_topics": [
+        "biophotonics",
+        "dynamic coloration",
+        "multispectral mapping",
+        "Octopus bimaculoides",
+        "light interaction",
+        "skin color change",
+        "spectral analysis",
+        "cephalopod camouflage"
+      ],
+      "chunk_summary": "This research uses biophotonics, dynamic coloration analysis, and multispectral mapping to study color change in Octopus bimaculoides.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "1"
+    },
+    {
+      "text": "Octopuses are ingenious coleoid cephalopods known for their spectacular color patterns and camouflage abilities [1, 2]. Like squid and cuttlefish, they rapidly change their body pattern to match their surroundings for camouflage and communication by neurally controlling chromatic skin elements [2-4]. These patterns arise from the hierarchical organization of the skin, where color and texture result from the combined optomechanical response of specialized organs and cells. Specifically, the skin contains vertically stacked chromatic elements: chromatophores (pigmentation), iridophores, and leucophores (light interference) (Figure 1).",
+      "section": "Octopuses are ingenious coleoid cephalopods that exhibit some of the most spectacular color patterns and camouflage abilities of the animal kingdom",
+      "primary_topic": "Chromatophore function",
+      "secondary_topics": [
+        "camouflage",
+        "cephalopods",
+        "skin structure",
+        "iridophores",
+        "leucophores",
+        "color change",
+        "neural control"
+      ],
+      "chunk_summary": "Octopuses use neurally controlled chromatic elements in their skin, including chromatophores, iridophores, and leucophores, for rapid camouflage and communication.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Chromatophores are traditionally described as selective absorbing filters responsible for long wavelength colors (yellow, red, brown) [5-10]. Their displayed color depends on the oxidation state of pigment granules in the elastic sacculus and the sacculus conformation (expanded or punctuated), controlled by radial muscles innervated to the brain [7, 11]. Iridophores act as selective reflective filters due to 1D photonic stacks (iridocytes) formed by alternating reflectin and cytoplasm layers at the nanoscale, creating index contrast for selective reflection [9, 10, 12, 13]. These structures reflect colors from blue to red depending on layer thickness.",
+      "section": "Octopuses are ingenious coleoid cephalopods that exhibit some of the most spectacular color patterns and camouflage abilities of the animal kingdom",
+      "primary_topic": "Iridophore function",
+      "secondary_topics": [
+        "chromatophores",
+        "pigmentation",
+        "reflectin",
+        "iridocytes",
+        "photonic structures",
+        "color reflection",
+        "nanoscale structure"
+      ],
+      "chunk_summary": "Chromatophore color depends on pigment oxidation and sacculus conformation, while iridophores use nanoscale photonic stacks to selectively reflect color.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Finally, leucophores display broadband scattering due to disordered reflectin granules [14, 15]. Typically, chromatophores are outermost in the octopus skin, with lighter ones more superficial than darker ones, while iridophores and leucophores are deeper [2, 16].",
+      "section": "Octopuses are ingenious coleoid cephalopods that exhibit some of the most spectacular color patterns and camouflage abilities of the animal kingdom",
+      "primary_topic": "Leucophore function",
+      "secondary_topics": [
+        "leucophores",
+        "light scattering",
+        "skin layering",
+        "chromatophore distribution",
+        "iridophore distribution",
+        "reflectin granules"
+      ],
+      "chunk_summary": "Leucophores scatter light broadly, and the skin layers are organized with chromatophores outermost, followed by iridophores and leucophores.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Among the many octopus species documented [17], Octopus bimaculoides [18] is of particular interest due to its manageable size and temperate habitat, making it suitable for laboratory breeding and study [16, 19, 20]. O. bimaculoides resides in the Pacific Ocean, up to 30 meters deep, inhabiting muddy bottoms with rocky dens [21, 22]. Its anatomy is well-characterized [23, 24], and its genome drives specialized cephalopod functions related to skin, nervous system, and suckers [25].",
+      "section": "[PAGE 2] Among the many species of octopus documented so far [17], Octopus bimaculoides [18] is of particular interest as its limited size and temperate growing environment makes it ideal to be bred and studied in laboratory conditions [16, 19, 20]. O. bimaculoides inhabits the Pacific Ocean and can be found up to 30 m deep living in muddy bottoms with rocky dens [21, 22]. Its anatomy is well known [23, 24] and its genome drives expression of specialized cephalopod-related functions including skin, nervous system and suckers [25]. O. bimaculoides vision [26] and response to odors [27] have been studied together with temperamental traits [28], learning skills [29-31], and the skin ability to perform distributed light sensing [32]. In spite of the O. bimaculoides body patterns (the appearance of the whole animal) being documented [2, 16], the optical and spectroscopic response of the individual chromatic elements (the chromatic organs in the skin constituting the building blocks of the body patterns) has not been yet extensively studied.",
+      "primary_topic": "Octopus bimaculoides",
+      "secondary_topics": [
+        "cephalopod",
+        "laboratory animal",
+        "habitat",
+        "anatomy",
+        "genome",
+        "skin",
+        "nervous system",
+        "suckers"
+      ],
+      "chunk_summary": "Octopus bimaculoides is a suitable laboratory animal due to its size, habitat, and well-characterized anatomy and genome.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "2"
+    },
+    {
+      "text": "Research on O. bimaculoides has explored its vision [26], olfactory responses [27], temperament [28], learning abilities [29-31], and distributed light sensing in the skin [32]. While O. bimaculoides body patterns (the overall animal appearance) have been documented [2, 16], the optical and spectroscopic properties of individual chromatic elements (the skin's chromatic organs that form body patterns) remain largely unstudied.",
+      "section": "[PAGE 2] Among the many species of octopus documented so far [17], Octopus bimaculoides [18] is of particular interest as its limited size and temperate growing environment makes it ideal to be bred and studied in laboratory conditions [16, 19, 20]. O. bimaculoides inhabits the Pacific Ocean and can be found up to 30 m deep living in muddy bottoms with rocky dens [21, 22]. Its anatomy is well known [23, 24] and its genome drives expression of specialized cephalopod-related functions including skin, nervous system and suckers [25]. O. bimaculoides vision [26] and response to odors [27] have been studied together with temperamental traits [28], learning skills [29-31], and the skin ability to perform distributed light sensing [32]. In spite of the O. bimaculoides body patterns (the appearance of the whole animal) being documented [2, 16], the optical and spectroscopic response of the individual chromatic elements (the chromatic organs in the skin constituting the building blocks of the body patterns) has not been yet extensively studied.",
+      "primary_topic": "Prior Research",
+      "secondary_topics": [
+        "vision",
+        "olfaction",
+        "learning",
+        "skin",
+        "light sensing",
+        "chromatic elements",
+        "body patterns",
+        "optical properties",
+        "spectroscopy"
+      ],
+      "chunk_summary": "Prior research on O. bimaculoides has focused on various aspects of its biology, but the optical and spectroscopic properties of its chromatic elements are understudied.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "2"
+    },
+    {
+      "text": "Comprehensive microspectroscopic studies of complex natural dynamic systems, such as the octopus skin, are challenging because they need to capture the dynamic pigmentary and structural coloration responses. Multispectral mapping is a spectral imaging technique that collects three-dimensional optical image cubes (x, y, and z, with x and y representing spatial dimensions and z representing the spectral dimension, for a wavelength range λstart-λend with a step size Δλ) containing spectral information for every pixel (Figure 1(B)) [33, 34]. This technique allows for spatial localization of each chromatic element class with a specific spectral response in cephalopods (Figure 1(C)).",
+      "section": "Comprehensive microspectroscopic studies of complex natural dynamic systems",
+      "primary_topic": "Multispectral Mapping",
+      "secondary_topics": [
+        "microspectroscopy",
+        "octopus skin",
+        "spectral imaging",
+        "chromatic elements",
+        "cephalopods",
+        "image analysis"
+      ],
+      "chunk_summary": "Multispectral mapping is a spectral imaging technique used to analyze the complex optical properties of dynamic systems like octopus skin by capturing spatial and spectral information.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Focusing on the octopus' chromatic elements (Figure 1(D)), the iridophores and chromatophores are spectrally labeled (Figure 1(E)) and used to create a recombined multispectral map (Figure 1(F)). This technique has also been used to predict the visual appearance of cuttlefish as perceived by different predators [33], complementing spectral analysis of body patterns and surroundings in their natural habitat [35].",
+      "section": "Comprehensive microspectroscopic studies of complex natural dynamic systems",
+      "primary_topic": "Chromatophore Analysis",
+      "secondary_topics": [
+        "iridophores",
+        "chromatophores",
+        "spectral labeling",
+        "visual appearance",
+        "predator vision",
+        "cuttlefish",
+        "octopus skin"
+      ],
+      "chunk_summary": "Multispectral mapping, by analyzing iridophores and chromatophores, can predict the appearance of cephalopods to predators and analyze their camouflage strategies.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Here we map the spectral response of O. bimaculoides' skin using multispectral imaging. Multispectral mapping of the skin allows first to spatially and spectrally discriminate the chromatic elements of both fresh and aged skin; it then provides insights on pigment distribution within individual chromatophores, and, finally, it assesses the interplay of the different chromatic elements. These findings enable a spectrally resolved topographical mapping of the cephalopod chromatic elements both as classes and as individual elements. In addition to providing further understanding of the chromatic elements' optical response, these findings are applicable for the design of chromatically adaptable materials.",
+      "section": "[PAGE 3] Here we map the spectral response of O. bimaculoides' skin using multispectral imaging. Multispectral mapping of the skin allows first to spatially and spectrally discriminate the chromatic elements of both fresh and aged skin; it then provides insights on pigment distribution within individual chromatophores, and, finally, it assesses the interplay of the different chromatic elements. These findings enable a spectrally resolved topographical mapping of the cephalopod chromatic elements both as classes and as individual elements. In addition to providing further understanding of the chromatic elements' optical response, these findings are applicable for the design of chromatically adaptable materials.",
+      "primary_topic": "Multispectral Imaging",
+      "secondary_topics": [
+        "Chromatophores",
+        "Skin Pigmentation",
+        "Spectral Analysis",
+        "Cephalopod Camouflage",
+        "Bio-inspired Materials",
+        "Optical Properties",
+        "Chromatic Elements"
+      ],
+      "chunk_summary": "Multispectral imaging is used to analyze the spectral response of O. bimaculoides skin, providing insights into pigment distribution, chromatophore interplay, and potential applications in bio-inspired materials.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "3"
+    },
+    {
+      "text": "2 Materials and methods\n2.1 Materials",
+      "section": "[PAGE 3] Here we map the spectral response of O. bimaculoides' skin using multispectral imaging. Multispectral mapping of the skin allows first to spatially and spectrally discriminate the chromatic elements of both fresh and aged skin; it then provides insights on pigment distribution within individual chromatophores, and, finally, it assesses the interplay of the different chromatic elements. These findings enable a spectrally resolved topographical mapping of the cephalopod chromatic elements both as classes and as individual elements. In addition to providing further understanding of the chromatic elements' optical response, these findings are applicable for the design of chromatically adaptable materials.",
+      "primary_topic": "Materials and Methods",
+      "secondary_topics": [
+        "Experimental Setup",
+        "Materials Characterization",
+        "Methodology"
+      ],
+      "chunk_summary": "This section introduces the materials and methods used in the study.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "3"
+    },
+    {
+      "text": "Artificial sea water (ASW) at 35‰ salinity with [MgCl2] = 55 mM was prepared by dissolving salts powder (Instant Ocean) in double deionized water to match the salinity of O. bimaculoides natural habitat (34-37‰ [36]). Sodium L-glutamate monohydrate solution at 500 mM was prepared by dissolving the powder (TCI Chemicals) in deionized (DI) water.",
+      "section": "Artificial sea water",
+      "primary_topic": "Seawater preparation",
+      "secondary_topics": [
+        "artificial seawater",
+        "ASW",
+        "salinity",
+        "magnesium chloride",
+        "sodium glutamate",
+        "Instant Ocean",
+        "deionized water"
+      ],
+      "chunk_summary": "This chunk describes the preparation of artificial seawater (ASW) and sodium L-glutamate solution, matching the salinity of the octopus's natural habitat.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Silk fibroin was extracted from the silk cocoons of the Bombyx mori silkworm following a previously described protocol [37]. Briefly, cocoons were cut in small pieces, boiled for 30 min in 0.02 M Na2CO3 aqueous solution, and rinsed thoroughly with distilled water in order to remove the sericin. The extracted silk fibroin fibers were dissolved in a 9.3 M LiBr solution at 60 °C for 4 h.",
+      "section": "Artificial sea water",
+      "primary_topic": "Silk fibroin extraction",
+      "secondary_topics": [
+        "silk fibroin",
+        "Bombyx mori",
+        "silk cocoons",
+        "sericin",
+        "lithium bromide",
+        "extraction protocol"
+      ],
+      "chunk_summary": "This chunk details the extraction process of silk fibroin from Bombyx mori silkworm cocoons, involving boiling, rinsing, and dissolving in lithium bromide.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "After that, the solution was dialyzed against DI water using a dialysis membrane (Fisherbrand, MWCO 3.5 kDa) for two days, followed by centrifugation at 10,000 rpm (Beckman Coulter, Allegra X-14, FX6100) and the clear supernatant was then collected, filtered, and stored at 4 °C. The solution was concentrated to 13 wt.% using a dialysis membrane (Fisherbrand, MWCO 3.5 kDa). All chemicals were used without further purification.",
+      "section": "Artificial sea water",
+      "primary_topic": "Solution processing",
+      "secondary_topics": [
+        "dialysis",
+        "centrifugation",
+        "filtration",
+        "supernatant",
+        "concentration",
+        "Fisherbrand",
+        "chemical purification"
+      ],
+      "chunk_summary": "This chunk describes the post-extraction processing of the silk fibroin solution, including dialysis, centrifugation, filtration, and concentration.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Wild caught specimen of live O. bimaculoides was purchased from Aquatic Research Consultants. The reported optical analysis was performed on the skin taken from the tentacles of one individual male octopus (weight = 77.1 g) collected in the California Bay region (Long beach harbor) in winter. To ensure consistency with previously reported studies, the AAALAC (Association for Assessment and Accreditation of Laboratory Animal Care) guidelines were followed for handling octopuses and administering anesthesia [38]. Upon receival, the animals were progressively acclimatized in ASW for ~1 h, at room temperature (T = 20 °C). The animals were then immersed in the anaesthetic solution (ASW with [MgCl2] = 110 mM and 2% v/v ethanol [38-40]) for at least 15 min and sectioned once dead.",
+      "section": "Wild caught specimen of live O",
+      "primary_topic": "Specimen Acquisition",
+      "secondary_topics": [
+        "O. bimaculoides",
+        "octopus",
+        "California Bay",
+        "AAALAC guidelines",
+        "anesthesia",
+        "ASW",
+        "acclimatization"
+      ],
+      "chunk_summary": "This chunk describes the acquisition and initial handling of a male O. bimaculoides octopus, including its source, location of capture, weight, and the anesthesia protocol followed.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "3"
+    },
+    {
+      "text": "Individual arms were rinsed with fresh ASW and stored in ASW at 35‰ salinity at 4 °C until further use. The outer skin and flesh layers were separated by the internal fleshy layer by dissection. During the dissection the arms were kept hydrated in ASW and the separated skin tissue was stored in ASW until further use. Unless otherwise specified, the skin was used as it was and kept wet with ASW during the optical analysis. To perform optical microscopy of the fresh skin, the excised skin was stabilized by immersion in 13 wt.% silk fibroin solution and in 100 mM sodium glutamate to minimize the muscular movement and the chromatophores pulsing [6, 41, 42].",
+      "section": "Wild caught specimen of live O",
+      "primary_topic": "Tissue Preparation",
+      "secondary_topics": [
+        "skin",
+        "dissection",
+        "ASW",
+        "silk fibroin",
+        "sodium glutamate",
+        "optical microscopy",
+        "chromatophores"
+      ],
+      "chunk_summary": "This chunk details the process of preparing the octopus skin for optical analysis, including rinsing, storage, dissection, and stabilization techniques to minimize muscle movement and chromatophore activity.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "3"
+    },
+    {
+      "text": "The skin was considered to be fresh when analyzed within 24 h from excision, while aged when analyzed at 24 h < t from excision < 48 h. No significant difference was observed between the skin taken from different tentacles, thus, in agreement with existing cephalopod literature [10, 25], the number of individuals was minimized and the amount of skin from each studied arm was maximized.",
+      "section": "Wild caught specimen of live O",
+      "primary_topic": "Experimental Design",
+      "secondary_topics": [
+        "skin",
+        "fresh",
+        "aged",
+        "tentacles",
+        "cephalopod",
+        "experimental controls"
+      ],
+      "chunk_summary": "This chunk explains the criteria for fresh and aged skin samples and justifies the use of skin from multiple arms of a single octopus, referencing existing literature to minimize the number of individuals while maximizing the amount of skin analyzed.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "3"
+    },
+    {
+      "text": "Optical microscopy and spectroscopy were performed using two customized setups. For low magnification images (1-6.3x) an Olympus SZ STU-2 stereo microscope equipped with a multispectral camera (CRI Nuance FX) and an illuminator (Edmund Optics, MI-150) was used; for higher magnification images (10-20x) an Olympus Inverted IX71 microscope equipped with a multispectral camera (CRI Nuance EX) and with a halogen lamp (Olympus, U-LH100L-3) as light source was used. Bright field reflection images were collected using 10x (Olympus, UPlanFL N NA 0.3) and 20x (Olympus, LUCPlanFL N, NA 0.45) objectives. The spectral maps were acquired in the ranges 450-720 nm (acquisition time = 20-45 s) with a step size of 5 nm, with the exception of the map reported in Figure 2 which was acquired in the 450-650 nm interval with the same step size (acquisition time = 2 s). The intensity of the microscopes illumination sources and the multispectral cameras exposure were adjusted to minimize the time required to acquire individual multispectral maps.",
+      "section": "Optical microscopy and spectroscopy were performed using two customized setups",
+      "primary_topic": "Microscopy Setup",
+      "secondary_topics": [
+        "multispectral imaging",
+        "Olympus microscope",
+        "bright field microscopy",
+        "spectral mapping",
+        "image acquisition"
+      ],
+      "chunk_summary": "This chunk describes the two microscope setups (low and high magnification) used for multispectral imaging and bright field microscopy, including details on the equipment, objectives, and spectral acquisition parameters.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The software Nuance 3.0.2 was used to acquire the multispectral maps and the software MATLAB R2020a and Fiji were used to analyze the data. Specifically, the multispectral maps were analyzed after acquisition to isolate the RGB image, identify the relevant spectral responses, unmix the multispectral map according to those spectral responses, and build the recombined image. To take into account the natural variation of the iridophores and of the chromatophores within the same animal, reflectance spectra were acquired from different individual chromatic elements in the studied skin regions and used to assign chromatic elements to each class as reported in Figure 1(E).",
+      "section": "Optical microscopy and spectroscopy were performed using two customized setups",
+      "primary_topic": "Data Analysis",
+      "secondary_topics": [
+        "Nuance software",
+        "MATLAB",
+        "Fiji",
+        "image processing",
+        "spectral analysis",
+        "iridophores",
+        "chromatophores",
+        "reflectance spectra"
+      ],
+      "chunk_summary": "This chunk details the software used for data acquisition and analysis (Nuance, MATLAB, Fiji), outlining the image processing steps and the method for classifying chromatic elements (iridophores and chromatophores) based on their reflectance spectra.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Specifically, the average bright field reflectance spectra of iridophores and chromatophores reported in Figure 1(E) were calculated from n different chromatic elements as it follows: for the iridophores nblue = 12, ngreen = 14, nyellow = 10, and nred = 20; for the chromatophores nblack = 40, nbrown = 20, and nyellow = 40. The spectra reported in Figure 1(E) have been normalized to the reflectance signal of a region of the skin with no chromatophores/iridophores to better distinguish the differences in the reflectance intensity between pigmented and structural elements. The spectra reported in all other figures have been normalized with respect to each curve's maximum. For the multispectral maps of the aged skin the background signal was unmixed into white (false color) and used to compute the combined false color multispectral map.",
+      "section": "Optical microscopy and spectroscopy were performed using two customized setups",
+      "primary_topic": "Spectral Normalization",
+      "secondary_topics": [
+        "reflectance spectra",
+        "normalization",
+        "iridophores",
+        "chromatophores",
+        "pigmentation",
+        "structural color",
+        "multispectral mapping"
+      ],
+      "chunk_summary": "This chunk explains the normalization process applied to the reflectance spectra, differentiating between normalization against a region without chromatophores/iridophores (Figure 1E) and normalization against each curve's maximum (other figures), and describes the handling of background signal in aged skin samples.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The number of individual spectral classes identified for chromatophores for each multispectral map was determined as a function of significative differences in their spectral response with the aim of minimizing the number of spectrally different classes in light of what recently reported for other cephalopods [42], except for what reported in Figure 3. In this case, the number of spectrally different chromatophore classes was maximized with the aim to demonstrate how multispectral mapping can be used to infer information on the chromatophores pigment density distribution.",
+      "section": "Optical microscopy and spectroscopy were performed using two customized setups",
+      "primary_topic": "Spectral Classification",
+      "secondary_topics": [
+        "chromatophores",
+        "spectral classes",
+        "pigment density",
+        "multispectral mapping",
+        "cephalopods"
+      ],
+      "chunk_summary": "This chunk describes the methodology for determining the number of spectral classes for chromatophores, aiming for minimization except in Figure 3 where maximization was used to demonstrate the potential of multispectral mapping for inferring pigment density distribution.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "The chromatic elements of the cephalopod skin were classified as chromatophores or iridophores by visual inspection combined with spectroscopic measurements (Figure 1 and S1). This classification was based on morphological and optical similarities with previously reported chromatic elements for O. bimaculoides and cephalopods in general [2, 9, 32]. Specifically, high circularity and pulsing identified elements as chromatophores, while iridescent, strongly reflecting, and size-invariant elements were identified as iridophores.",
+      "section": "The chromatic elements of the cephalopod skin were classified as chromatophores or iridophores by visual inspection in combination with spectroscopic measurements",
+      "primary_topic": "Chromatophore Identification",
+      "secondary_topics": [
+        "iridophores",
+        "spectroscopy",
+        "morphology",
+        "optical properties",
+        "cephalopod skin"
+      ],
+      "chunk_summary": "Cephalopod skin's chromatic elements were classified as chromatophores or iridophores based on visual and spectroscopic analysis, comparing them to established characteristics.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "4"
+    },
+    {
+      "text": "The iridophores' area is considerably smaller (2-20 µm²) than that of the chromatophores (900–12000 µm²), regardless of the chromatophores' expansion state, consistent with previous findings [9]. Leucophores, which scatter light uniformly rather than generating color, were not considered in the multispectral mapping.",
+      "section": "The chromatic elements of the cephalopod skin were classified as chromatophores or iridophores by visual inspection in combination with spectroscopic measurements",
+      "primary_topic": "Iridophore Characterization",
+      "secondary_topics": [
+        "chromatophores",
+        "leucophores",
+        "size comparison",
+        "light scattering",
+        "multispectral mapping"
+      ],
+      "chunk_summary": "Iridophores are significantly smaller than chromatophores, and leucophores were excluded from the multispectral mapping due to their light-scattering properties.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "4"
+    },
+    {
+      "text": "Freshly excised skin (less than 24 hours post-excision) exhibits muscular movement and chromatophore pulsing, complicating optical analysis. This has led to ex vivo studies of chromatic responses, focusing on chromatophore expansion and contraction (punctuation) following a wave pattern without correlation to external stimuli.",
+      "section": "Freshly excised skin",
+      "primary_topic": "Chromatophore pulsing",
+      "secondary_topics": [
+        "skin",
+        "ex vivo",
+        "optical analysis",
+        "muscular movement",
+        "chromatophores",
+        "wave pattern",
+        "external stimuli"
+      ],
+      "chunk_summary": "Muscular movement and chromatophore pulsing in freshly excised skin complicate optical analysis, leading to ex vivo studies focusing on chromatophore expansion/contraction patterns.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "To allow for the acquisition of multispectral maps of freshly excised O. bimaculoides skin, the skin was stabilized by immersion in a solution of silk fibroin and glutamate (see Supplementary Material for details), a known neuro-inhibitory agent [6, 41], in addition to being kept wet with artificial sea water (ASW). Silk's known optical clarity [43] allowed to retain the native optical response of both the pigmentary and the structural elements of the octopus skin, thus allowing to properly assign chromatic elements to their optical class (Figure S2). The presence of the silk combined with the glutamate and the artificial sea water was observed to slow down the skin's muscular movement, therefore enabling optical analysis.",
+      "section": "[PAGE 5] To allow for the acquisition of multispectral maps of freshly excised O. bimaculoides skin, the skin was stabilized by immersion in a solution of silk fibroin and glutamate (see Supplementary Material for details), a known neuro-inhibitory agent [6, 41], in addition to being kept wet with artificial sea water (ASW). Silk's known optical clarity [43] allowed to retain the native optical response of both the pigmentary and the structural elements of the octopus skin, thus allowing to properly assign chromatic elements to their optical class (Figure S2). The presence of the silk combined with the glutamate and the artificial sea water was observed to slow down the skin's muscular movement, therefore enabling optical analysis. This behavior is believed to be caused by the formation of a high viscosity silk-based gel activated by the presence of the glutamate and of the ASW [44]. Despite the known effect of glutamate as a chemical able to induce sustained expansion of the chromatophores [6, 41, 42], the opposite behavior was observed for O. bimaculoides, namely a sustained contraction of those organs. No further external stimuli that could induce a controlled dynamic response in the chromatic elements were applied to the skin in the measurements performed.",
+      "primary_topic": "Skin Stabilization",
+      "secondary_topics": [
+        "silk fibroin",
+        "glutamate",
+        "artificial sea water",
+        "optical clarity",
+        "multispectral maps",
+        "chromatophores",
+        "octopus skin"
+      ],
+      "chunk_summary": "Octopus skin was stabilized using a silk fibroin and glutamate solution to enable multispectral mapping and optical analysis by slowing muscular movement and preserving optical properties.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "5"
+    },
+    {
+      "text": "This behavior is believed to be caused by the formation of a high viscosity silk-based gel activated by the presence of the glutamate and of the ASW [44]. Despite the known effect of glutamate as a chemical able to induce sustained expansion of the chromatophores [6, 41, 42], the opposite behavior was observed for O. bimaculoides, namely a sustained contraction of those organs. No further external stimuli that could induce a controlled dynamic response in the chromatic elements were applied to the skin in the measurements performed.",
+      "section": "[PAGE 5] To allow for the acquisition of multispectral maps of freshly excised O. bimaculoides skin, the skin was stabilized by immersion in a solution of silk fibroin and glutamate (see Supplementary Material for details), a known neuro-inhibitory agent [6, 41], in addition to being kept wet with artificial sea water (ASW). Silk's known optical clarity [43] allowed to retain the native optical response of both the pigmentary and the structural elements of the octopus skin, thus allowing to properly assign chromatic elements to their optical class (Figure S2). The presence of the silk combined with the glutamate and the artificial sea water was observed to slow down the skin's muscular movement, therefore enabling optical analysis. This behavior is believed to be caused by the formation of a high viscosity silk-based gel activated by the presence of the glutamate and of the ASW [44]. Despite the known effect of glutamate as a chemical able to induce sustained expansion of the chromatophores [6, 41, 42], the opposite behavior was observed for O. bimaculoides, namely a sustained contraction of those organs. No further external stimuli that could induce a controlled dynamic response in the chromatic elements were applied to the skin in the measurements performed.",
+      "primary_topic": "Glutamate Effects",
+      "secondary_topics": [
+        "chromatophore contraction",
+        "silk-based gel",
+        "viscosity",
+        "chemical stimulation",
+        "neuro-inhibitory agent",
+        "unexpected behavior"
+      ],
+      "chunk_summary": "While glutamate is known to cause chromatophore expansion, it induced contraction in O. bimaculoides skin, likely due to the formation of a high-viscosity silk-based gel; no further external stimuli were applied.",
+      "position_in_section": "End",
+      "certainty_level": "Medium",
+      "citation_context": "Presenting new results",
+      "page_number": "5"
+    },
+    {
+      "text": "To spectrally characterize the cephalopod's chromatic elements, multispectral images of freshly excised stabilized skin of O. bimaculoides were acquired in a bright field reflection microscope equipped with a multi-spectral camera operating over a wavelength range Δλ = 450-720 nm and acquiring an image every 5 nm (Figure 2). As shown by the RGB image of Figure 2(A) the skin exhibits a high density of dark chromatophores (C1-C2), surrounded by iridophores reflecting in the entire visible range (I₁-14), with a particularly high density of green reflecting elements. The high proximity of the chromatic elements in the plane of the skin complicates the identification of the spectral response of each individual element.",
+      "section": "To spectrally characterize the cephalopod",
+      "primary_topic": "Spectral Characterization",
+      "secondary_topics": [
+        "multispectral imaging",
+        "chromatophores",
+        "iridophores",
+        "reflectance",
+        "cephalopod skin",
+        "O. bimaculoides",
+        "microscopy"
+      ],
+      "chunk_summary": "Multispectral imaging was used to analyze the reflectance properties of chromatophores and iridophores in cephalopod skin, revealing a high density of these elements and the challenge of isolating individual spectral responses.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "By acquiring multispectral maps of the skin and by labelling each chromatic element with its reflectance spectrum as a function of wavelength, it is possible to more precisely identify and separate each iridophore and chromatophore class. The RGB images can be \"unmixed\" into false-color maps that show the spatial distribution of each class of iridophore/chromatophore and of each element of a specific class by assigning a specific color to the spectral band that corresponds to the spectral response of the individual chromatic elements. While this allows to effectively visualize the distribution of similarly behaving spectrally responsive elements, merging of the individual maps ultimately provides an enhanced visual representation of the overall spectral response of the skin (Figure 2(A), Recombined Image).",
+      "section": "To spectrally characterize the cephalopod",
+      "primary_topic": "Image Analysis",
+      "secondary_topics": [
+        "spectral mapping",
+        "false-color maps",
+        "chromatophore classification",
+        "iridophore classification",
+        "spatial distribution",
+        "spectral response",
+        "image processing"
+      ],
+      "chunk_summary": "Multispectral maps and false-color imaging techniques enable precise identification and classification of iridophores and chromatophores based on their spectral responses, facilitating visualization of their spatial distribution and overall skin spectral properties.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "This enhanced visual representation is useful to visualize the relative arrangement of the disparate classes of chromatic elements and their interplay to provide better insights on the mechanisms of complex coloration that occur in cephalopods in vivo.",
+      "section": "To spectrally characterize the cephalopod",
+      "primary_topic": "Coloration Mechanisms",
+      "secondary_topics": [
+        "chromatic elements",
+        "in vivo imaging",
+        "cephalopod coloration",
+        "skin structure",
+        "visual representation"
+      ],
+      "chunk_summary": "The combined spectral data provides a visual representation of the arrangement and interaction of chromatic elements, offering insights into the complex coloration mechanisms of cephalopods.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Specifically, in the stabilized fresh O. bimaculoides skin up to four different optical responses could be attributed to iridophores: respectively, the strong and relatively narrow-band reflectance spectra with peaks in the blue (I₁), green (I2), yellow (I3), and red (I₄) wavelength regions, each identified by the maximum reflectance wavelength, as shown in Figure 2(B). As the illumination and observation angles were kept constant during the multispectral map acquisition, this wide variety of spectral responses is caused either by the presence of iridocytes with different layer thicknesses, thus creating 1D photonic stacks with different stopbands, or by a variation of the orientation of the iridocytes with respect to the skin surface/illumination and observation angles [45].",
+      "section": "Specifically",
+      "primary_topic": "Iridophore Optics",
+      "secondary_topics": [
+        "iridophores",
+        "reflectance spectra",
+        "photonic stacks",
+        "multispectral imaging",
+        "skin optics",
+        "O. bimaculoides"
+      ],
+      "chunk_summary": "Four distinct optical responses in O. bimaculoides skin are attributed to iridophores, potentially due to varying layer thicknesses or orientations.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "6"
+    },
+    {
+      "text": "The iridophores were also observed to be localized mostly in areas surrounding the chromatophores; due to the high absorption of dark chromatophores, iridophores present directly under the chromatophores could be observed only for lightly pigmented chromatophores. Similarly, for pigmentary elements up to two different spectral responses could be identified in fresh stabilized O. bimaculoides skin: brown (C₁) and orange (C2) reflecting elements, each identified by the minimum reflectance wavelength as reported in Figure 2(C). Notably, the spectral signal corresponding to the reflection from brown chromatophores did not seem to be localized within the brown chromatophores only but could also be found in other regions of the skin; this spectral behavior was consistent with the relatively dark appearance of the skin in highly pigmented regions and is believed to be caused by the presence of dark chromatophores deeper in the skin.",
+      "section": "Specifically",
+      "primary_topic": "Chromatophore Optics",
+      "secondary_topics": [
+        "chromatophores",
+        "pigmentation",
+        "skin optics",
+        "spectral analysis",
+        "O. bimaculoides",
+        "iridophores"
+      ],
+      "chunk_summary": "Two spectral responses are linked to brown and orange chromatophores, with brown chromatophore reflection observed beyond their localized area, potentially due to deeper chromatophores.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "6"
+    },
+    {
+      "text": "Differently from what recently reported for squid [10], no co-localization was observed for structural and pigmentary elements.",
+      "section": "Specifically",
+      "primary_topic": "Co-localization",
+      "secondary_topics": [
+        "pigmentary elements",
+        "structural elements",
+        "squid",
+        "O. bimaculoides",
+        "comparative biology"
+      ],
+      "chunk_summary": "Unlike in squid, no co-localization of structural and pigmentary elements was observed in O. bimaculoides skin.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "6"
+    },
+    {
+      "text": "Spectral maps were acquired for aged (24 h < t from excision < 48 h) Octopus bimaculoides skin samples, examining both flat and curved skin at low magnification. Aged skin, unlike fresh skin, did not require chemical stabilization due to decayed flesh movement, chromatophore pulsing, and simpler optical responses. These differences are attributed to natural variation in chromatic element arrangement and density within the animal, as well as excised skin degradation.",
+      "section": "Spectral maps were also acquired for aged",
+      "primary_topic": "Aged skin analysis",
+      "secondary_topics": [
+        "spectral maps",
+        "Octopus bimaculoides",
+        "skin samples",
+        "chemical stabilization",
+        "chromatic elements",
+        "degradation"
+      ],
+      "chunk_summary": "Spectral analysis of aged octopus skin revealed simplified optical responses and no need for chemical stabilization compared to fresh skin, attributed to natural variation and degradation.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Only one predominant spectral response, a broadband green reflectance, was identified from iridophores on aged O. bimaculoides skin. This is attributed to the natural decay of the skin, which is believed to have compromised the iridocyte stacks, decreasing their organization within the iridophores and broadening the spectral response.",
+      "section": "Spectral maps were also acquired for aged",
+      "primary_topic": "Iridophore degradation",
+      "secondary_topics": [
+        "spectral response",
+        "iridophores",
+        "iridocytes",
+        "broadband green reflectance",
+        "skin decay",
+        "stack organization"
+      ],
+      "chunk_summary": "Aged octopus skin exhibited a single broadband green reflectance from iridophores due to decayed iridocyte stacks and decreased organization.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "For the aged skin, between two and three different optical responses could be attributed to chromatophores (Figures S3 and S4). The optical response of dark-reflecting chromatophores (orange and brown) from aged skin was consistent with the one previously measured on stabilized fresh skin (Figure 2): in particular they all displayed a reflectance peak centered at ~450 nm followed by a reflectance dip centered at 500/550 nm and by an increasing reflectance for higher wavelengths.",
+      "section": "For the aged skin",
+      "primary_topic": "Chromatophore Optics",
+      "secondary_topics": [
+        "reflectance",
+        "aged skin",
+        "optical response",
+        "chromatophores",
+        "wavelengths"
+      ],
+      "chunk_summary": "Aged skin exhibits 2-3 optical responses attributed to chromatophores, with dark-reflecting ones showing consistent reflectance patterns with fresh skin samples.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Lightly pigmented chromatophores displayed, instead, a strong reflectance shoulder for wavelengths higher than 500 nm (C₁, Figure S3) consistently with what previously reported also for squid [46].",
+      "section": "For the aged skin",
+      "primary_topic": "Chromatophore Pigmentation",
+      "secondary_topics": [
+        "reflectance",
+        "lightly pigmented",
+        "chromatophores",
+        "wavelengths",
+        "squid"
+      ],
+      "chunk_summary": "Lightly pigmented chromatophores show a strong reflectance shoulder above 500 nm, similar to observations in squid.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Besides providing a comprehensive overview of the octopus skin's spectral response, multispectral imaging can provide insights on the response of individual spectral elements of the skin itself. Specifically, chromatophores have a conformation-dependent distribution of pigment granules within them: for punctuated chromatophores the pigment granules are densely packed in the small volume created by the sacculus; on the contrary, for expanded chromatophores, the granules are distributed over a smaller thickness, therefore occupying a larger surface area [7]. Due to the radial arrangement of the muscles around the pigment sacculus a radial distribution of the pigments is expected: a higher density in the center and a progressively lower density towards the edges of the sacculus; conversely this implies a low reflectance intensity from the central area of the chromatophores and a higher reflectance intensity from the edges.",
+      "section": "Besides providing a comprehensive overview of the octopus skin",
+      "primary_topic": "Chromatophore Morphology",
+      "secondary_topics": [
+        "multispectral imaging",
+        "pigment granules",
+        "chromatophores",
+        "sacculus",
+        "reflectance intensity",
+        "pigment distribution"
+      ],
+      "chunk_summary": "Multispectral imaging reveals the conformation-dependent distribution of pigment granules within chromatophores, impacting reflectance intensity.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "This spatial relative density distribution within each pigment granules can be semiquantitatively monitored using multispectral maps as reported in Figure 3, both for highly pigmented chromatophores (Figure 3(A) and (B)) and for lightly pigmented chromatophores (Figure 3(C) and (D)). In the reported multispectral analysis, the chromatophores size varied between 180 and 1650 pixels (avg = 650 n = 24).",
+      "section": "Besides providing a comprehensive overview of the octopus skin",
+      "primary_topic": "Multispectral Analysis",
+      "secondary_topics": [
+        "pigment density",
+        "multispectral maps",
+        "chromatophore size",
+        "quantification",
+        "image analysis"
+      ],
+      "chunk_summary": "Multispectral analysis allows for semi-quantitative monitoring of pigment granule density distribution within chromatophores of varying sizes.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "7"
+    },
+    {
+      "text": "The RGB images can be spectrally unmixed in spectral bands that display a similar variation of the reflectance as a function of the wavelength but with different intensity, which can be attributed to the optical response of different densities of the same type of pigment. As confirmed by the multispectral maps for contracted circular chromatophores, the lowest reflecting areas are usually found in the center of the chromatophores whereas expanded chromatophores show higher irregularity in the location of the lowest reflecting regions, possibly due to a non-perfectly equal pull of the radial muscles that causes uneven distribution of the pigment granules in the sacculus [5].",
+      "section": "The RGB images can be spectrally unmixed in spectral bands that display a similar variation of the reflectance as a function of the wavelength but with different intensity",
+      "primary_topic": "Chromatophore Reflectance",
+      "secondary_topics": [
+        "spectral unmixing",
+        "RGB images",
+        "pigment density",
+        "chromatophore morphology",
+        "radial muscles",
+        "pigment granules",
+        "reflectance variation"
+      ],
+      "chunk_summary": "Spectral analysis of RGB images reveals that reflectance variations in chromatophores are linked to pigment density and distribution, with contracted chromatophores exhibiting central low reflectance and expanded chromatophores showing irregular reflectance patterns due to uneven muscle pull.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "7"
+    },
+    {
+      "text": "The relative arrangement of chromatic elements in cephalopod skin is typically layered, as seen in some octopus species. Octopus bimaculoides skin exhibits chromatophores, iridophores, and leucophores, starting from the dermis and moving inward. This layered structure allows external elements to modulate light reflected by deeper elements, similar to what's observed in squid.  The narrowband reflectance of iridophores can be filtered by the broader reflectance of chromatophores when iridophores are beneath chromatophores.",
+      "section": "The relative arrangement of the chromatic elements in the cephalopods",
+      "primary_topic": "Chromatophore layering",
+      "secondary_topics": [
+        "cephalopods",
+        "octopus",
+        "skin",
+        "chromatophores",
+        "iridophores",
+        "leucophores",
+        "reflectance",
+        "light modulation"
+      ],
+      "chunk_summary": "Cephalopod skin has a layered structure of chromatophores, iridophores, and leucophores, enabling modulation of light reflectance.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "7"
+    },
+    {
+      "text": "The interaction between chromatophores and iridophores results in a broadened reflectance peak from the iridophores, corresponding to the chromatophores' strongest reflectance range. This interaction allows O. bimaculoides to display color nuances not achievable by individual chromatic elements, enriching the range of displayed colors and patterns. This modulation is observed with lightly pigmented chromatophores but not near darkly pigmented ones due to the latter's higher absorption.",
+      "section": "The relative arrangement of the chromatic elements in the cephalopods",
+      "primary_topic": "Chromatophore interaction",
+      "secondary_topics": [
+        "reflectance",
+        "color modulation",
+        "pigmentation",
+        "light absorption",
+        "color nuances",
+        "body patterns"
+      ],
+      "chunk_summary": "The interaction of chromatophores and iridophores broadens the reflectance spectrum, enabling a wider range of color expression, particularly with lightly pigmented chromatophores.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "7"
+    },
+    {
+      "text": "The reported findings underscore the utility of multispectral mapping to gather new quantitative information on the optical response of highly complex natural systems, offering new insights even for widely studied systems such as cephalopod skin. Specifically, multispectral mapping of O. bimaculoides was performed both on stabilized fresh skin and on aged skin, thus allowing to evaluate changes in the skin due to tissue variations with time and to generate spectral maps of the natural variation of the chromatic elements' distribution in the skin. Multispectral mapping demonstrated to be useful for obtaining clear spatial and spectral discrimination between pigmented (chromatophores) and structural (iridophores) chromatic elements in the octopus' skin, in accordance with previously reported micro-spectroscopic analysis for other cephalopods [2, 9, 32].",
+      "section": "The reported findings underscore the utility of multispectral mapping to gather new quantitative information on the optical response of highly complex natural systems",
+      "primary_topic": "Multispectral Mapping",
+      "secondary_topics": [
+        "Cephalopod Skin",
+        "Chromatophores",
+        "Iridophores",
+        "Optical Response",
+        "Quantitative Analysis",
+        "Spectral Discrimination",
+        "Tissue Variation"
+      ],
+      "chunk_summary": "Multispectral mapping provides quantitative information on the optical response of cephalopod skin, differentiating between chromatophores and iridophores.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "This type of spectral mapping finds utility in the biooptics study of cephalopods. For instance, since each class of chromatic element could be isolated solely based on their spectral response, this type of classification could be used to determine the hierarchical arrangement of each chromatic component inside a specific body pattern. Body patterns and relative chromatic element arrangements seem to vary among cephalopods species [2], but have not been yet studied from this perspective; the acquisition of multispectral maps, and, especially, the spectral unmixing, would allow checking whether similar chromatic elements arrangements are used by different species to create a specific body pattern.",
+      "section": "The reported findings underscore the utility of multispectral mapping to gather new quantitative information on the optical response of highly complex natural systems",
+      "primary_topic": "Bio-optical Applications",
+      "secondary_topics": [
+        "Body Patterns",
+        "Cephalopod Species",
+        "Chromatic Element Arrangement",
+        "Hierarchical Organization",
+        "Spectral Unmixing",
+        "Species Comparison"
+      ],
+      "chunk_summary": "Spectral mapping can be used to analyze the hierarchical arrangement of chromatic elements within cephalopod body patterns and compare these patterns across species.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "In addition, the dynamic behavior of each chromatic element during the display of specific body patterns could be monitored, leading to the isolation of the individual contribution of each chromatic element class to the overall body pattern. Further, the ability to isolate a chromatic element on the basis of its spectral response could be useful for studying chromatic elements as classes (e.g., dark chromatophores vs light chromatophores vs yellow iridophores) and determine their relative occurrence, arrangement, and development in in vivo skin similarly to what recently reported for individual chromatophores in cuttlefish [42].",
+      "section": "The reported findings underscore the utility of multispectral mapping to gather new quantitative information on the optical response of highly complex natural systems",
+      "primary_topic": "Dynamic Behavior and Development",
+      "secondary_topics": [
+        "Chromatic Element Classes",
+        "Dynamic Monitoring",
+        "In Vivo Skin",
+        "Individual Contribution",
+        "Relative Occurrence",
+        "Chromatophore Development",
+        "Cuttlefish"
+      ],
+      "chunk_summary": "Spectral mapping enables the study of dynamic chromatic element behavior during body pattern displays and the analysis of chromatic element classes, their arrangement, and development in vivo.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "The pigments' relative density within single chromatophores was then semiquantitatively mapped using multispectral maps both for lightly and darkly pigmented chromatophores, allowing to discriminate between contracted, partially expanded, and fully expanded chromatophores.",
+      "section": "The pigments",
+      "primary_topic": "Pigment Density",
+      "secondary_topics": [
+        "chromatophores",
+        "multispectral mapping",
+        "pigment expansion",
+        "pigment contraction",
+        "semiquantitative analysis"
+      ],
+      "chunk_summary": "Multispectral mapping was used to semiquantitatively analyze pigment density in chromatophores, differentiating between various expansion states.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The use of calibration curves of chromatophores in different expansion states, would allow to quantitatively determine a priori the chromatophores punctuation state in vivo and nondestructively.",
+      "section": "The pigments",
+      "primary_topic": "Chromatophore State",
+      "secondary_topics": [
+        "calibration curves",
+        "in vivo analysis",
+        "nondestructive analysis",
+        "pigment expansion",
+        "chromatophores"
+      ],
+      "chunk_summary": "Calibration curves based on chromatophore expansion states could enable non-destructive, in vivo determination of chromatophore punctuation state.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Multispectral mapping enables the study of color modulation resulting from the interplay of structural and pigmented elements, crucial for the rich spectral response of cephalopods. Similar to squid, the layered arrangement of chromatophores and iridophores in octopus leads to a spectral shift and broadening of the reflectance signal from iridophores. In the octopus species studied, most iridophores are near or external to lightly pigmented chromatophores. This colocalization, though more abundant in other cephalopods like Doryteuthis pealeii, suggests multispectral mapping as a valuable tool for analyzing the dynamic interplay of structural and pigmentary elements in body patterns.",
+      "section": "Multispectral mapping also enabled to study the color modulation given by the interplay of structural and pigmented elements",
+      "primary_topic": "Multispectral Mapping",
+      "secondary_topics": [
+        "Cephalopods",
+        "Chromatophores",
+        "Iridophores",
+        "Color Modulation",
+        "Spectral Response",
+        "Reflectance",
+        "Pigmentation"
+      ],
+      "chunk_summary": "Multispectral mapping is useful for studying the interplay of chromatophores and iridophores in cephalopod color modulation.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "8/9"
+    },
+    {
+      "text": "Multispectral mapping is anticipated to be especially valuable for studying cephalopod appearance, both in terms of overall body patterns and their individual components, due to its ability to spectrally isolate each chromatic element in the skin. This research serves as a proof-of-concept for multispectral analysis of cephalopod skin. Further analysis of skin from different body areas (e.g., mantle and suckers) could reveal specializations of chromatic elements based on location. Similar mapping in squid and cuttlefish could contribute to a broader comparison of optical abilities evolution in these species.",
+      "section": "Multispectral mapping also enabled to study the color modulation given by the interplay of structural and pigmented elements",
+      "primary_topic": "Cephalopod Appearance",
+      "secondary_topics": [
+        "Multispectral Mapping",
+        "Body Patterns",
+        "Chromatic Elements",
+        "Skin Analysis",
+        "Mantle",
+        "Suckers",
+        "Squid",
+        "Cuttlefish",
+        "Optical Abilities",
+        "Evolution"
+      ],
+      "chunk_summary": "Multispectral mapping can analyze cephalopod body patterns and chromatic element distribution across different body areas and species.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "8/9"
+    },
+    {
+      "text": "Multispectral mapping can efficiently provide information on the spectral fingerprint, topographical distribution, and relative spectral modulation of individual chromatic elements, enabling the creation of spectral libraries. These libraries can serve as a reference for designing and evaluating bioinspired counterparts. Detailed descriptions of these natural systems are crucial for understanding their static and dynamic optical responses, which is essential for developing biomimetic camouflage systems. Achieving biomimetic systems that closely replicate cephalopod camouflage in pattern, color distribution, spectral range, and speed requires a thorough understanding of their natural counterparts.",
+      "section": "Multispectral mapping also enabled to study the color modulation given by the interplay of structural and pigmented elements",
+      "primary_topic": "Biomimetic Systems",
+      "secondary_topics": [
+        "Multispectral Mapping",
+        "Spectral Libraries",
+        "Bioinspired Design",
+        "Camouflage",
+        "Topographical Distribution",
+        "Spectral Modulation",
+        "Dynamic Optical Responses",
+        "Biomimicry"
+      ],
+      "chunk_summary": "Multispectral mapping facilitates the development of biomimetic camouflage systems by providing detailed information about cephalopod chromatic elements and their optical properties.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": "8/9"
+    },
+    {
+      "text": "Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the Office of Naval Research. We thank Bret Grasse for helpful discussions and Dr. Chuck Winkler (Aquatic Research Consultants) for procuring the live Octopus bimaculoides for our research.",
+      "section": "[PAGE 9] Acknowledgments",
+      "primary_topic": "Acknowledgments",
+      "secondary_topics": [
+        "Funding",
+        "Office of Naval Research",
+        "Collaborations",
+        "Octopus bimaculoides"
+      ],
+      "chunk_summary": "The authors acknowledge the Office of Naval Research's funding while specifying that the views expressed are their own and thank collaborators for discussions and animal procurement.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "9"
+    },
+    {
+      "text": "Author contributions: G.G., M.L. J.F., and F.G.O. designed research. G.G. performed multispectral mapping. G.L. handled animals. G.M prepared silk fibroin. G.M and G.L. helped with ex vivo tissue stabilization. G.G. and F.G.O. analyzed data. G.G. and F.G.O. co-wrote the paper. All the authors discussed the results and commented on the paper.",
+      "section": "Author contributions",
+      "primary_topic": "Author Roles",
+      "secondary_topics": [
+        "research design",
+        "data analysis",
+        "manuscript preparation",
+        "animal handling",
+        "material preparation",
+        "multispectral mapping"
+      ],
+      "chunk_summary": "This section details the individual contributions of each author to the research project, including experimental design, data collection and analysis, and manuscript writing.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "We gratefully acknowledge the research funding provided by the Department of the Navy, Office of Naval Research (ONR) under grant number N00014-18-1-2631.",
+      "section": "Research funding",
+      "primary_topic": "Funding Acknowledgement",
+      "secondary_topics": [
+        "Grant Funding",
+        "Office of Naval Research",
+        "Department of the Navy",
+        "Research Support"
+      ],
+      "chunk_summary": "This work was supported by a grant from the Office of Naval Research (ONR).",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The authors of this study declare no conflicts of interest.",
+      "section": "[PAGE 9] Conflict of interest statement",
+      "primary_topic": "Conflict of Interest",
+      "secondary_topics": [
+        "disclosure",
+        "transparency",
+        "ethics",
+        "research integrity"
+      ],
+      "chunk_summary": "The authors declare no conflicts of interest related to this research.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "9"
+    },
+    {
+      "text": "All data needed to evaluate the conclusions in the paper are present in the paper and/or the Supplementary Materials. Additional data related to this paper may be requested from the authors.",
+      "section": "[PAGE 9] Data availability",
+      "primary_topic": "Data Availability",
+      "secondary_topics": [
+        "data sharing",
+        "reproducibility",
+        "supplementary materials",
+        "open science"
+      ],
+      "chunk_summary": "All necessary data for evaluating the paper's conclusions are available within the publication or upon request from the authors.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "9"
+    }
+  ],
+  "processed_at": "2025-08-14T14:49:01.139243",
+  "chunk_count": 57,
+  "processing_method": "document_splitting"
+}

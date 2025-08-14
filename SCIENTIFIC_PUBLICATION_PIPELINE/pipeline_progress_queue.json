@@ -1,5 +1,1783 @@
 {
-  "pipeline_progress": {},
+  "pipeline_progress": {
+    "7d121587_20250813_191420_609_20250814_125347_368": {
+      "filename": "7d121587_20250813_191420_609.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T12:53:47.368824",
+      "last_updated": "2025-08-14T12:53:47.368826",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 7d121587_20250813_191420_609.pdf",
+          "timestamp": "2025-08-14T12:53:47.382025"
+        }
+      ]
+    },
+    "036f6305_20250814_084714_387_20250814_125347_382": {
+      "filename": "036f6305_20250814_084714_387.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T12:53:47.382507",
+      "last_updated": "2025-08-14T12:53:47.382508",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 036f6305_20250814_084714_387.pdf",
+          "timestamp": "2025-08-14T12:53:47.389224"
+        }
+      ]
+    },
+    "8f3d5096_20250814_084714_405_20250814_125347_389": {
+      "filename": "8f3d5096_20250814_084714_405.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T12:53:47.389453",
+      "last_updated": "2025-08-14T12:53:47.389454",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 8f3d5096_20250814_084714_405.pdf",
+          "timestamp": "2025-08-14T12:53:47.433091"
+        }
+      ]
+    },
+    "1fd74856_20250814_084714_389_20250814_125347_433": {
+      "filename": "1fd74856_20250814_084714_389.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T12:53:47.433956",
+      "last_updated": "2025-08-14T12:53:47.433958",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 1fd74856_20250814_084714_389.pdf",
+          "timestamp": "2025-08-14T12:53:47.439248"
+        }
+      ]
+    },
+    "2dd32606_20250814_084714_381_20250814_125347_439": {
+      "filename": "2dd32606_20250814_084714_381.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T12:53:47.439469",
+      "last_updated": "2025-08-14T12:53:47.439470",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 2dd32606_20250814_084714_381.pdf",
+          "timestamp": "2025-08-14T12:53:47.440936"
+        }
+      ]
+    },
+    "7d121587_20250813_191420_609_20250814_125854_109": {
+      "filename": "7d121587_20250813_191420_609.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T12:58:54.109904",
+      "last_updated": "2025-08-14T12:58:54.109908",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 7d121587_20250813_191420_609.pdf",
+          "timestamp": "2025-08-14T12:58:54.123607"
+        }
+      ]
+    },
+    "036f6305_20250814_084714_387_20250814_125854_124": {
+      "filename": "036f6305_20250814_084714_387.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T12:58:54.124122",
+      "last_updated": "2025-08-14T12:58:54.124124",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 036f6305_20250814_084714_387.pdf",
+          "timestamp": "2025-08-14T12:58:54.131075"
+        }
+      ]
+    },
+    "0be3ac7a_20250814_084714_390_20250814_125854_131": {
+      "filename": "0be3ac7a_20250814_084714_390.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T12:58:54.131341",
+      "last_updated": "2025-08-14T12:58:54.131342",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 0be3ac7a_20250814_084714_390.pdf",
+          "timestamp": "2025-08-14T12:58:54.141602"
+        }
+      ]
+    },
+    "198bbe9d_20250814_084714_392_20250814_125854_141": {
+      "filename": "198bbe9d_20250814_084714_392.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T12:58:54.141913",
+      "last_updated": "2025-08-14T12:58:54.141914",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 198bbe9d_20250814_084714_392.pdf",
+          "timestamp": "2025-08-14T12:58:54.149093"
+        }
+      ]
+    },
+    "8f3d5096_20250814_084714_405_20250814_125854_149": {
+      "filename": "8f3d5096_20250814_084714_405.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T12:58:54.149354",
+      "last_updated": "2025-08-14T12:58:54.149355",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 8f3d5096_20250814_084714_405.pdf",
+          "timestamp": "2025-08-14T12:58:54.188663"
+        }
+      ]
+    },
+    "1fd74856_20250814_084714_389_20250814_125854_189": {
+      "filename": "1fd74856_20250814_084714_389.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T12:58:54.189357",
+      "last_updated": "2025-08-14T12:58:54.189358",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 1fd74856_20250814_084714_389.pdf",
+          "timestamp": "2025-08-14T12:58:54.194972"
+        }
+      ]
+    },
+    "2dd32606_20250814_084714_381_20250814_125854_195": {
+      "filename": "2dd32606_20250814_084714_381.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T12:58:54.195368",
+      "last_updated": "2025-08-14T12:58:54.195370",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 2dd32606_20250814_084714_381.pdf",
+          "timestamp": "2025-08-14T12:58:54.196955"
+        }
+      ]
+    },
+    "80f97876_20250814_084714_391_20250814_125854_197": {
+      "filename": "80f97876_20250814_084714_391.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T12:58:54.197279",
+      "last_updated": "2025-08-14T12:58:54.197280",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 80f97876_20250814_084714_391.pdf",
+          "timestamp": "2025-08-14T12:58:54.210552"
+        }
+      ]
+    },
+    "8f3d5096_20250814_084714_405_20250814_131230_924": {
+      "filename": "8f3d5096_20250814_084714_405.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:12:30.924877",
+      "last_updated": "2025-08-14T13:12:30.924879",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 8f3d5096_20250814_084714_405.pdf",
+          "timestamp": "2025-08-14T13:12:30.953293"
+        }
+      ]
+    },
+    "1fd74856_20250814_084714_389_20250814_131230_953": {
+      "filename": "1fd74856_20250814_084714_389.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:12:30.953982",
+      "last_updated": "2025-08-14T13:12:30.953983",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 1fd74856_20250814_084714_389.pdf",
+          "timestamp": "2025-08-14T13:12:30.958945"
+        }
+      ]
+    },
+    "1-s2.0-S0890623814000653-main_20250812_154805_355391_20250812_204902_386014_20250812_222105_504310_20250814_131546_504": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_154805_355391_20250812_204902_386014_20250812_222105_504310.pdf",
+      "step_01_hash_validation": "complete",
+      "step_02_metadata_extraction": "complete",
+      "step_03_text_extraction": "complete",
+      "step_04_metadata_enrichment": "complete",
+      "step_05_semantic_chunking": "complete",
+      "step_06_embedding": "pending",
+      "current_status": "ready_for_embedding",
+      "created_at": "2025-08-14T13:15:46.504411",
+      "last_updated": "2025-08-14T13:49:54.371194",
+      "chunk_count": 33,
+      "error_count": 0,
+      "errors": [],
+      "new_filename": "d528e385_20250814_131546_534.pdf",
+      "text_length": 11500,
+      "archive_location": "step_07_archive/d528e385_20250814_131546_534.pdf",
+      "archived_at": "2025-08-14T15:03:10.900379"
+    },
+    "1-s2.0-S0010482524010497-main_20250814_131546_535": {
+      "filename": "1-s2.0-S0010482524010497-main.pdf",
+      "step_01_hash_validation": "complete",
+      "step_02_metadata_extraction": "failed",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:46.535727",
+      "last_updated": "2025-08-14T13:15:46.566366",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_02_metadata_extraction",
+          "error": "Duplicate metadata - matches 1122940d_20250814_131546_592.pdf",
+          "timestamp": "2025-08-14T13:16:59.417352"
+        }
+      ],
+      "new_filename": "4660d0ef_20250814_131546_566.pdf"
+    },
+    "1-s2.0-S0022519322003472-main_20250812_222105_522887_20250814_131546_566": {
+      "filename": "1-s2.0-S0022519322003472-main_20250812_222105_522887.pdf",
+      "step_01_hash_validation": "complete",
+      "step_02_metadata_extraction": "complete",
+      "step_03_text_extraction": "complete",
+      "step_04_metadata_enrichment": "complete",
+      "step_05_semantic_chunking": "complete",
+      "step_06_embedding": "pending",
+      "current_status": "ready_for_embedding",
+      "created_at": "2025-08-14T13:15:46.566662",
+      "last_updated": "2025-08-14T13:58:15.196140",
+      "chunk_count": 60,
+      "error_count": 0,
+      "errors": [],
+      "new_filename": "1122940d_20250814_131546_592.pdf",
+      "text_length": 25260,
+      "archive_location": "step_07_archive/1122940d_20250814_131546_592.pdf",
+      "archived_at": "2025-08-14T15:03:10.901770"
+    },
+    "1-s2.0-S0303264722001435-main_290628e7_20250812_213409_176803_20250814_131546_593": {
+      "filename": "1-s2.0-S0303264722001435-main_290628e7_20250812_213409_176803.pdf",
+      "step_01_hash_validation": "complete",
+      "step_02_metadata_extraction": "complete",
+      "step_03_text_extraction": "complete",
+      "step_04_metadata_enrichment": "complete",
+      "step_05_semantic_chunking": "complete",
+      "step_06_embedding": "pending",
+      "current_status": "ready_for_embedding",
+      "created_at": "2025-08-14T13:15:46.593383",
+      "last_updated": "2025-08-14T14:28:51.922251",
+      "chunk_count": 103,
+      "error_count": 0,
+      "errors": [],
+      "new_filename": "290628e7_20250814_131546_625.pdf",
+      "text_length": 39858,
+      "archive_location": "step_07_archive/290628e7_20250814_131546_625.pdf",
+      "archived_at": "2025-08-14T15:03:10.902877"
+    },
+    "1-s2.0-S0890623814000653-main_20250812_154805_355391_20250814_131546_626": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_154805_355391.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:46.626243",
+      "last_updated": "2025-08-14T13:15:46.626244",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:46.655148"
+        }
+      ]
+    },
+    "1-s2.0-S0890623814000653-main_20250814_131546_655": {
+      "filename": "1-s2.0-S0890623814000653-main.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:46.655589",
+      "last_updated": "2025-08-14T13:15:46.655590",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:46.684577"
+        }
+      ]
+    },
+    "1-s2.0-S0020025516318187-main_7938abb5_20250812_222107_617003_20250814_131546_684": {
+      "filename": "1-s2.0-S0020025516318187-main_7938abb5_20250812_222107_617003.pdf",
+      "step_01_hash_validation": "complete",
+      "step_02_metadata_extraction": "complete",
+      "step_03_text_extraction": "complete",
+      "step_04_metadata_enrichment": "complete",
+      "step_05_semantic_chunking": "complete",
+      "step_06_embedding": "pending",
+      "current_status": "ready_for_embedding",
+      "created_at": "2025-08-14T13:15:46.684980",
+      "last_updated": "2025-08-14T14:40:11.937194",
+      "chunk_count": 83,
+      "error_count": 0,
+      "errors": [],
+      "new_filename": "7938abb5_20250814_131546_718.pdf",
+      "text_length": 29443,
+      "archive_location": "step_07_archive/7938abb5_20250814_131546_718.pdf",
+      "archived_at": "2025-08-14T15:03:10.903929"
+    },
+    "1-s2.0-S0303264722001435-main_290628e7_20250812_213409_176803_290628e7_20250812_220607_537648_20250814_131546_719": {
+      "filename": "1-s2.0-S0303264722001435-main_290628e7_20250812_213409_176803_290628e7_20250812_220607_537648.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:46.719336",
+      "last_updated": "2025-08-14T13:15:46.719337",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 290628e7_20250814_131546_625.pdf",
+          "timestamp": "2025-08-14T13:15:46.751014"
+        }
+      ]
+    },
+    "1-s2.0-S0006291X2400932X-main_20250813_101329_683253_20250814_131546_751": {
+      "filename": "1-s2.0-S0006291X2400932X-main_20250813_101329_683253.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:46.751454",
+      "last_updated": "2025-08-14T13:15:46.751455",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 8f3d5096_20250814_084714_405.pdf",
+          "timestamp": "2025-08-14T13:15:46.784368"
+        }
+      ]
+    },
+    "1-s2.0-S0303264721001556-main_dd6e953b_20250812_222107_621468_duplicate_20250812_222156_20250814_131546_784": {
+      "filename": "1-s2.0-S0303264721001556-main_dd6e953b_20250812_222107_621468_duplicate_20250812_222156.pdf",
+      "step_01_hash_validation": "complete",
+      "step_02_metadata_extraction": "failed",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:46.784863",
+      "last_updated": "2025-08-14T13:15:46.810143",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_02_metadata_extraction",
+          "error": "Duplicate metadata - matches 1122940d_20250814_131546_592.pdf",
+          "timestamp": "2025-08-14T13:17:29.852290"
+        }
+      ],
+      "new_filename": "dd6e953b_20250814_131546_809.pdf"
+    },
+    "1-s2.0-S0890623814000653-main_20250812_155250_448376_20250812_222105_512662_20250814_131546_810": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_155250_448376_20250812_222105_512662.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:46.810472",
+      "last_updated": "2025-08-14T13:15:46.810472",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:46.839317"
+        }
+      ]
+    },
+    "1-s2.0-S0012160605005956-main_20250812_203237_065069_20250814_131546_839": {
+      "filename": "1-s2.0-S0012160605005956-main_20250812_203237_065069.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:46.839766",
+      "last_updated": "2025-08-14T13:15:46.839767",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 7d121587_20250813_191420_609.pdf",
+          "timestamp": "2025-08-14T13:15:46.850512"
+        }
+      ]
+    },
+    "1-s2.0-S0890623814000653-main_20250812_222105_503434_20250814_131546_850": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_222105_503434.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:46.850976",
+      "last_updated": "2025-08-14T13:15:46.850977",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:46.883982"
+        }
+      ]
+    },
+    "1-s2.0-S0890623814000653-main_20250812_155250_448376_20250812_204902_387044_20250814_131546_884": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_155250_448376_20250812_204902_387044.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:46.884513",
+      "last_updated": "2025-08-14T13:15:46.884514",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:46.913435"
+        }
+      ]
+    },
+    "1-s2.0-S0890623814000653-main_20250812_154805_355391_20250812_204902_386014_20250814_131546_913": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_154805_355391_20250812_204902_386014.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:46.913934",
+      "last_updated": "2025-08-14T13:15:46.913935",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:46.942859"
+        }
+      ]
+    },
+    "1-s2.0-S2666166723006330-main_20250814_131546_943": {
+      "filename": "1-s2.0-S2666166723006330-main.pdf",
+      "step_01_hash_validation": "complete",
+      "step_02_metadata_extraction": "complete",
+      "step_03_text_extraction": "complete",
+      "step_04_metadata_enrichment": "complete",
+      "step_05_semantic_chunking": "complete",
+      "step_06_embedding": "pending",
+      "current_status": "ready_for_embedding",
+      "created_at": "2025-08-14T13:15:46.943370",
+      "last_updated": "2025-08-14T14:35:24.606801",
+      "chunk_count": 102,
+      "error_count": 0,
+      "errors": [],
+      "new_filename": "fff45c04_20250814_131546_958.pdf",
+      "text_length": 24015,
+      "archive_location": "step_07_archive/fff45c04_20250814_131546_958.pdf",
+      "archived_at": "2025-08-14T15:03:10.904967"
+    },
+    "10.1515_nanoph-2021-0102 (1)_20250803_124111_786084_20250814_131546_959": {
+      "filename": "10.1515_nanoph-2021-0102 (1)_20250803_124111_786084.pdf",
+      "step_01_hash_validation": "complete",
+      "step_02_metadata_extraction": "complete",
+      "step_03_text_extraction": "complete",
+      "step_04_metadata_enrichment": "complete",
+      "step_05_semantic_chunking": "complete",
+      "step_06_embedding": "pending",
+      "current_status": "ready_for_embedding",
+      "created_at": "2025-08-14T13:15:46.959233",
+      "last_updated": "2025-08-14T14:49:01.143097",
+      "chunk_count": 57,
+      "error_count": 0,
+      "errors": [],
+      "new_filename": "ae0d6436_20250814_131546_977.pdf",
+      "text_length": 30888,
+      "archive_location": "step_07_archive/ae0d6436_20250814_131546_977.pdf",
+      "archived_at": "2025-08-14T15:03:10.906008"
+    },
+    "1-s2.0-S0890623814000653-main_20250812_155250_448376_20250812_204902_387044_20250812_221540_845547_20250812_222105_505869_20250814_131546_977": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_155250_448376_20250812_204902_387044_20250812_221540_845547_20250812_222105_505869.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:46.977992",
+      "last_updated": "2025-08-14T13:15:46.977993",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:47.011018"
+        }
+      ]
+    },
+    "1-s2.0-S0303264722001435-main_290628e7_20250812_213409_176803_20250812_222105_499285_20250814_131547_011": {
+      "filename": "1-s2.0-S0303264722001435-main_290628e7_20250812_213409_176803_20250812_222105_499285.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.011568",
+      "last_updated": "2025-08-14T13:15:47.011569",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 290628e7_20250814_131546_625.pdf",
+          "timestamp": "2025-08-14T13:15:47.041890"
+        }
+      ]
+    },
+    "1-s2.0-S0890623814000653-main_20250812_154805_355391_20250812_204902_386014_d528e385_20250812_213409_172065_20250814_131547_042": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_154805_355391_20250812_204902_386014_d528e385_20250812_213409_172065.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.042452",
+      "last_updated": "2025-08-14T13:15:47.042453",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:47.071867"
+        }
+      ]
+    },
+    "1-s2.0-S0890623814000653-main_20250812_155354_971446_20250812_221540_846117_20250814_131547_072": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_155354_971446_20250812_221540_846117.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.072431",
+      "last_updated": "2025-08-14T13:15:47.072432",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:47.105644"
+        }
+      ]
+    },
+    "1-s2.0-S0890623814000653-main_20250812_155250_448376_20250812_204902_387044_20250812_221540_845547_20250814_131547_106": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_155250_448376_20250812_204902_387044_20250812_221540_845547.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.106247",
+      "last_updated": "2025-08-14T13:15:47.106248",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:47.135195"
+        }
+      ]
+    },
+    "1-s2.0-S0020025516318187-main_20250812_222105_507555_20250814_131547_135": {
+      "filename": "1-s2.0-S0020025516318187-main_20250812_222105_507555.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.135769",
+      "last_updated": "2025-08-14T13:15:47.135770",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 7938abb5_20250814_131546_718.pdf",
+          "timestamp": "2025-08-14T13:15:47.164567"
+        }
+      ]
+    },
+    "8ae72b4a_20250813_123944_965908_20250814_131547_165": {
+      "filename": "8ae72b4a_20250813_123944_965908.pdf",
+      "step_01_hash_validation": "complete",
+      "step_02_metadata_extraction": "complete",
+      "step_03_text_extraction": "complete",
+      "step_04_metadata_enrichment": "complete",
+      "step_05_semantic_chunking": "complete",
+      "step_06_embedding": "pending",
+      "current_status": "ready_for_embedding",
+      "created_at": "2025-08-14T13:15:47.165258",
+      "last_updated": "2025-08-14T13:54:17.677328",
+      "chunk_count": 76,
+      "error_count": 0,
+      "errors": [],
+      "new_filename": "8ae72b4a_20250814_131547_174.pdf",
+      "text_length": 25423,
+      "archive_location": "step_07_archive/8ae72b4a_20250814_131547_174.pdf",
+      "archived_at": "2025-08-14T15:03:10.907066"
+    },
+    "1-s2.0-S0890623814000653-main_20250812_154805_355391_20250812_204902_386014_d528e385_20250812_213409_172065_20250812_222105_504866_20250814_131547_175": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_154805_355391_20250812_204902_386014_d528e385_20250812_213409_172065_20250812_222105_504866.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.175330",
+      "last_updated": "2025-08-14T13:15:47.175331",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:47.204657"
+        }
+      ]
+    },
+    "1-s2.0-S0303264722001435-main_20250812_222105_517836_20250814_131547_205": {
+      "filename": "1-s2.0-S0303264722001435-main_20250812_222105_517836.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.205377",
+      "last_updated": "2025-08-14T13:15:47.205378",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 290628e7_20250814_131546_625.pdf",
+          "timestamp": "2025-08-14T13:15:47.240445"
+        }
+      ]
+    },
+    "1-s2.0-S0890623814000653-main_20250812_155514_936101_20250814_131547_241": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_155514_936101.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.241234",
+      "last_updated": "2025-08-14T13:15:47.241235",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:47.271592"
+        }
+      ]
+    },
+    "1-s2.0-S0890623814000653-main_20250812_155354_971446_20250812_222105_507005_20250814_131547_272": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_155354_971446_20250812_222105_507005.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.272239",
+      "last_updated": "2025-08-14T13:15:47.272240",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:47.301172"
+        }
+      ]
+    },
+    "1-s2.0-S0890623814000653-main_20250812_155250_448376_20250812_204902_387044_20250812_222105_503851_20250814_131547_301": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_155250_448376_20250812_204902_387044_20250812_222105_503851.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.301799",
+      "last_updated": "2025-08-14T13:15:47.301800",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:47.334116"
+        }
+      ]
+    },
+    "1-s2.0-S0890623814000653-main_20250812_155354_971446_20250812_221540_846117_20250812_222105_505422_20250814_131547_334": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_155354_971446_20250812_221540_846117_20250812_222105_505422.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.334769",
+      "last_updated": "2025-08-14T13:15:47.334770",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:47.364387"
+        }
+      ]
+    },
+    "1-s2.0-S0890623814000653-main_20250812_155354_971446_20250814_131547_365": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_155354_971446.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.365095",
+      "last_updated": "2025-08-14T13:15:47.365097",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:47.395013"
+        }
+      ]
+    },
+    "11_1_online_20250814_131547_395": {
+      "filename": "11_1_online.pdf",
+      "step_01_hash_validation": "complete",
+      "step_02_metadata_extraction": "complete",
+      "step_03_text_extraction": "complete",
+      "step_04_metadata_enrichment": "complete",
+      "step_05_semantic_chunking": "complete",
+      "step_06_embedding": "pending",
+      "current_status": "ready_for_embedding",
+      "created_at": "2025-08-14T13:15:47.395957",
+      "last_updated": "2025-08-14T13:54:52.288954",
+      "chunk_count": 12,
+      "error_count": 0,
+      "errors": [],
+      "new_filename": "5ae551d6_20250814_131547_404.pdf",
+      "text_length": 2534,
+      "archive_location": "step_07_archive/5ae551d6_20250814_131547_404.pdf",
+      "archived_at": "2025-08-14T15:03:10.908114"
+    },
+    "1-s2.0-S0006291X2400932X-main_20250814_131547_404": {
+      "filename": "1-s2.0-S0006291X2400932X-main.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.404962",
+      "last_updated": "2025-08-14T13:15:47.404963",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 8f3d5096_20250814_084714_405.pdf",
+          "timestamp": "2025-08-14T13:15:47.438347"
+        }
+      ]
+    },
+    "1-s2.0-S0020025516318187-main_20250814_131547_438": {
+      "filename": "1-s2.0-S0020025516318187-main.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.439074",
+      "last_updated": "2025-08-14T13:15:47.439075",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 7938abb5_20250814_131546_718.pdf",
+          "timestamp": "2025-08-14T13:15:47.471272"
+        }
+      ]
+    },
+    "1-s2.0-S0890623814000653-main_20250812_155354_971446 copy_20250814_131547_471": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_155354_971446 copy.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.471923",
+      "last_updated": "2025-08-14T13:15:47.471924",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:47.501247"
+        }
+      ]
+    },
+    "1-s2.0-S0890623814000653-main_20250812_155426_561738_20250812_222105_511305_20250814_131547_501": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_155426_561738_20250812_222105_511305.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.501973",
+      "last_updated": "2025-08-14T13:15:47.501974",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:47.531527"
+        }
+      ]
+    },
+    "1-s2.0-S0022519322003472-main_1122940d_20250812_222107_629493_20250814_131547_532": {
+      "filename": "1-s2.0-S0022519322003472-main_1122940d_20250812_222107_629493.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.532246",
+      "last_updated": "2025-08-14T13:15:47.532247",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 1122940d_20250814_131546_592.pdf",
+          "timestamp": "2025-08-14T13:15:47.560570"
+        }
+      ]
+    },
+    "1-s2.0-S0890623814000653-main_20250812_164501_441758_20250814_131547_561": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_164501_441758.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.561242",
+      "last_updated": "2025-08-14T13:15:47.561243",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:47.592203"
+        }
+      ]
+    },
+    "1-s2.0-S0303264723001399-main_aa24e1f5_20250812_213409_172956_20250814_131547_592": {
+      "filename": "1-s2.0-S0303264723001399-main_aa24e1f5_20250812_213409_172956.pdf",
+      "step_01_hash_validation": "complete",
+      "step_02_metadata_extraction": "complete",
+      "step_03_text_extraction": "complete",
+      "step_04_metadata_enrichment": "complete",
+      "step_05_semantic_chunking": "complete",
+      "step_06_embedding": "pending",
+      "current_status": "ready_for_embedding",
+      "created_at": "2025-08-14T13:15:47.592933",
+      "last_updated": "2025-08-14T14:22:57.370624",
+      "chunk_count": 88,
+      "error_count": 0,
+      "errors": [],
+      "new_filename": "aa24e1f5_20250814_131547_608.pdf",
+      "text_length": 43389,
+      "archive_location": "step_07_archive/aa24e1f5_20250814_131547_608.pdf",
+      "archived_at": "2025-08-14T15:03:10.909169"
+    },
+    "1-s2.0-S0890623814000653-main_20250812_155426_561738_20250814_131547_609": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_155426_561738.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.609382",
+      "last_updated": "2025-08-14T13:15:47.609383",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:47.638569"
+        }
+      ]
+    },
+    "1-s2.0-S0890623814000653-main_20250812_154805_355391_20250812_222105_502805_20250814_131547_639": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_154805_355391_20250812_222105_502805.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.639273",
+      "last_updated": "2025-08-14T13:15:47.639274",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:47.676576"
+        }
+      ]
+    },
+    "1-s2.0-S1359644623001010-main_2bb2c0c6_20250812_222107_630612_20250814_131547_677": {
+      "filename": "1-s2.0-S1359644623001010-main_2bb2c0c6_20250812_222107_630612.pdf",
+      "step_01_hash_validation": "complete",
+      "step_02_metadata_extraction": "complete",
+      "step_03_text_extraction": "complete",
+      "step_04_metadata_enrichment": "complete",
+      "step_05_semantic_chunking": "complete",
+      "step_06_embedding": "pending",
+      "current_status": "ready_for_embedding",
+      "created_at": "2025-08-14T13:15:47.677428",
+      "last_updated": "2025-08-14T14:18:11.009859",
+      "chunk_count": 102,
+      "error_count": 0,
+      "errors": [],
+      "new_filename": "2bb2c0c6_20250814_131547_692.pdf",
+      "text_length": 35450,
+      "archive_location": "step_07_archive/2bb2c0c6_20250814_131547_692.pdf",
+      "archived_at": "2025-08-14T15:03:10.910196"
+    },
+    "1-s2.0-S0303264723001399-main_aa24e1f5_20250812_213409_172956_aa24e1f5_20250812_220607_539896_20250814_131547_692": {
+      "filename": "1-s2.0-S0303264723001399-main_aa24e1f5_20250812_213409_172956_aa24e1f5_20250812_220607_539896.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.693082",
+      "last_updated": "2025-08-14T13:15:47.693083",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches aa24e1f5_20250814_131547_608.pdf",
+          "timestamp": "2025-08-14T13:15:47.708596"
+        }
+      ]
+    },
+    "1-s2.0-S0303264723001399-main_20250814_131547_709": {
+      "filename": "1-s2.0-S0303264723001399-main.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.709486",
+      "last_updated": "2025-08-14T13:15:47.709488",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches aa24e1f5_20250814_131547_608.pdf",
+          "timestamp": "2025-08-14T13:15:47.725366"
+        }
+      ]
+    },
+    "1-s2.0-S0012160605005956-main_20250814_131547_726": {
+      "filename": "1-s2.0-S0012160605005956-main.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.726142",
+      "last_updated": "2025-08-14T13:15:47.726143",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 7d121587_20250813_191420_609.pdf",
+          "timestamp": "2025-08-14T13:15:47.739849"
+        }
+      ]
+    },
+    "1-s2.0-S0890623814000653-main_20250812_155426_561738 copy_20250812_222105_522178_20250814_131547_740": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_155426_561738 copy_20250812_222105_522178.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.740663",
+      "last_updated": "2025-08-14T13:15:47.740664",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:47.769667"
+        }
+      ]
+    },
+    "10.1515_nanoph-2021-0102_20250814_131547_770": {
+      "filename": "10.1515_nanoph-2021-0102.pdf",
+      "step_01_hash_validation": "complete",
+      "step_02_metadata_extraction": "failed",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.770493",
+      "last_updated": "2025-08-14T13:15:47.789334",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_02_metadata_extraction",
+          "error": "Duplicate metadata - matches ae0d6436_20250814_131546_977.pdf",
+          "timestamp": "2025-08-14T13:17:41.123726"
+        }
+      ],
+      "new_filename": "b1061272_20250814_131547_789.pdf"
+    },
+    "1-s2.0-S266729012100098X-main_cd4a7476_20250812_222107_623089_20250814_131547_789": {
+      "filename": "1-s2.0-S266729012100098X-main_cd4a7476_20250812_222107_623089.pdf",
+      "step_01_hash_validation": "complete",
+      "step_02_metadata_extraction": "complete",
+      "step_03_text_extraction": "complete",
+      "step_04_metadata_enrichment": "complete",
+      "step_05_semantic_chunking": "complete",
+      "step_06_embedding": "pending",
+      "current_status": "ready_for_embedding",
+      "created_at": "2025-08-14T13:15:47.790025",
+      "last_updated": "2025-08-14T14:12:23.576487",
+      "chunk_count": 234,
+      "error_count": 0,
+      "errors": [],
+      "new_filename": "cd4a7476_20250814_131547_821.pdf",
+      "text_length": 92749,
+      "archive_location": "step_07_archive/cd4a7476_20250814_131547_821.pdf",
+      "archived_at": "2025-08-14T15:03:10.911419"
+    },
+    "10.1515_nanoph-2021-0102 (1)_20250814_131547_821": {
+      "filename": "10.1515_nanoph-2021-0102 (1).pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.822058",
+      "last_updated": "2025-08-14T13:15:47.822059",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches ae0d6436_20250814_131546_977.pdf",
+          "timestamp": "2025-08-14T13:15:47.839607"
+        }
+      ]
+    },
+    "1-s2.0-S0890623814000653-main_20250812_155250_448376_20250814_131547_840": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_155250_448376.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.840373",
+      "last_updated": "2025-08-14T13:15:47.840374",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:47.873511"
+        }
+      ]
+    },
+    "1-s2.0-S1571064525000089-main_20250814_131547_874": {
+      "filename": "1-s2.0-S1571064525000089-main.pdf",
+      "step_01_hash_validation": "complete",
+      "step_02_metadata_extraction": "complete",
+      "step_03_text_extraction": "complete",
+      "step_04_metadata_enrichment": "complete",
+      "step_05_semantic_chunking": "complete",
+      "step_06_embedding": "pending",
+      "current_status": "ready_for_embedding",
+      "created_at": "2025-08-14T13:15:47.874375",
+      "last_updated": "2025-08-14T13:48:09.802343",
+      "chunk_count": 81,
+      "error_count": 0,
+      "errors": [],
+      "new_filename": "c053f9cc_20250814_131547_905.pdf",
+      "text_length": 39165,
+      "archive_location": "step_07_archive/c053f9cc_20250814_131547_905.pdf",
+      "archived_at": "2025-08-14T15:03:10.912582"
+    },
+    "1-s2.0-S0012160605004057-main_20250814_131547_906": {
+      "filename": "1-s2.0-S0012160605004057-main.pdf",
+      "step_01_hash_validation": "complete",
+      "step_02_metadata_extraction": "complete",
+      "step_03_text_extraction": "complete",
+      "step_04_metadata_enrichment": "complete",
+      "step_05_semantic_chunking": "complete",
+      "step_06_embedding": "pending",
+      "current_status": "ready_for_embedding",
+      "created_at": "2025-08-14T13:15:47.906649",
+      "last_updated": "2025-08-14T13:38:04.623028",
+      "chunk_count": 203,
+      "error_count": 0,
+      "errors": [],
+      "new_filename": "0bfa7089_20250814_131547_916.pdf",
+      "text_length": 35961,
+      "archive_location": "step_07_archive/0bfa7089_20250814_131547_916.pdf",
+      "archived_at": "2025-08-14T15:03:10.913629"
+    },
+    "1-s2.0-S0303264721001556-main_20250814_131547_917": {
+      "filename": "1-s2.0-S0303264721001556-main.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.917917",
+      "last_updated": "2025-08-14T13:15:47.917918",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches dd6e953b_20250814_131546_809.pdf",
+          "timestamp": "2025-08-14T13:15:47.943976"
+        }
+      ]
+    },
+    "1-s2.0-S0890623814000653-main_20250812_155514_936101_20250812_222105_506467_20250814_131547_944": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_155514_936101_20250812_222105_506467.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.944825",
+      "last_updated": "2025-08-14T13:15:47.944826",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:47.978282"
+        }
+      ]
+    },
+    "1-s2.0-S0303264723001399-main_aa24e1f5_20250812_213409_172956_20250812_222105_510272_20250814_131547_979": {
+      "filename": "1-s2.0-S0303264723001399-main_aa24e1f5_20250812_213409_172956_20250812_222105_510272.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.979182",
+      "last_updated": "2025-08-14T13:15:47.979183",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches aa24e1f5_20250814_131547_608.pdf",
+          "timestamp": "2025-08-14T13:15:47.994199"
+        }
+      ]
+    },
+    "1-s2.0-S266729012100098X-main_20250814_131547_994": {
+      "filename": "1-s2.0-S266729012100098X-main.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:47.995041",
+      "last_updated": "2025-08-14T13:15:47.995042",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches cd4a7476_20250814_131547_821.pdf",
+          "timestamp": "2025-08-14T13:15:48.026768"
+        }
+      ]
+    },
+    "1-s2.0-S266729012100098X-main_20250812_222105_516312_20250814_131548_027": {
+      "filename": "1-s2.0-S266729012100098X-main_20250812_222105_516312.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:48.027655",
+      "last_updated": "2025-08-14T13:15:48.027656",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches cd4a7476_20250814_131547_821.pdf",
+          "timestamp": "2025-08-14T13:15:48.059346"
+        }
+      ]
+    },
+    "1-s2.0-S0303264722001435-main_20250814_131548_060": {
+      "filename": "1-s2.0-S0303264722001435-main.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:48.060306",
+      "last_updated": "2025-08-14T13:15:48.060307",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 290628e7_20250814_131546_625.pdf",
+          "timestamp": "2025-08-14T13:15:48.093257"
+        }
+      ]
+    },
+    "1-s2.0-S0303264723001399-main_20250812_222105_511773_20250814_131548_094": {
+      "filename": "1-s2.0-S0303264723001399-main_20250812_222105_511773.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:48.094237",
+      "last_updated": "2025-08-14T13:15:48.094238",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches aa24e1f5_20250814_131547_608.pdf",
+          "timestamp": "2025-08-14T13:15:48.109481"
+        }
+      ]
+    },
+    "1-s2.0-S0890623814000653-main_20250812_154805_355391_20250812_204902_386014_d528e385_20250812_213409_172065_d528e385_20250812_220607_538647_20250814_131548_110": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_154805_355391_20250812_204902_386014_d528e385_20250812_213409_172065_d528e385_20250812_220607_538647.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:48.110412",
+      "last_updated": "2025-08-14T13:15:48.110413",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:48.140351"
+        }
+      ]
+    },
+    "1-s2.0-S1359644623001010-main_20250812_222105_525993_20250814_131548_141": {
+      "filename": "1-s2.0-S1359644623001010-main_20250812_222105_525993.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:48.141342",
+      "last_updated": "2025-08-14T13:15:48.141343",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 2bb2c0c6_20250814_131547_692.pdf",
+          "timestamp": "2025-08-14T13:15:48.162038"
+        }
+      ]
+    },
+    "1-s2.0-S2666389923000776-main_20250814_131548_162": {
+      "filename": "1-s2.0-S2666389923000776-main.pdf",
+      "step_01_hash_validation": "complete",
+      "step_02_metadata_extraction": "complete",
+      "step_03_text_extraction": "complete",
+      "step_04_metadata_enrichment": "complete",
+      "step_05_semantic_chunking": "complete",
+      "step_06_embedding": "pending",
+      "current_status": "ready_for_embedding",
+      "created_at": "2025-08-14T13:15:48.162988",
+      "last_updated": "2025-08-14T13:43:22.789942",
+      "chunk_count": 91,
+      "error_count": 0,
+      "errors": [],
+      "new_filename": "505047db_20250814_131548_186.pdf",
+      "text_length": 42941,
+      "archive_location": "step_07_archive/505047db_20250814_131548_186.pdf",
+      "archived_at": "2025-08-14T15:03:10.914649"
+    },
+    "1-s2.0-S0303264721001556-main_20250812_222105_513298_20250814_131548_187": {
+      "filename": "1-s2.0-S0303264721001556-main_20250812_222105_513298.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:48.187717",
+      "last_updated": "2025-08-14T13:15:48.187718",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches dd6e953b_20250814_131546_809.pdf",
+          "timestamp": "2025-08-14T13:15:48.217319"
+        }
+      ]
+    },
+    "1-s2.0-S0022519322003472-main_1122940d_20250812_222107_629493_20250813_104816_404656_20250814_131548_218": {
+      "filename": "1-s2.0-S0022519322003472-main_1122940d_20250812_222107_629493_20250813_104816_404656.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:48.218411",
+      "last_updated": "2025-08-14T13:15:48.218413",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 1122940d_20250814_131546_592.pdf",
+          "timestamp": "2025-08-14T13:15:48.248172"
+        }
+      ]
+    },
+    "10.1515_nanoph-2021-0102_20250803_124111_697762_20250814_131548_249": {
+      "filename": "10.1515_nanoph-2021-0102_20250803_124111_697762.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:48.249187",
+      "last_updated": "2025-08-14T13:15:48.249188",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches b1061272_20250814_131547_789.pdf",
+          "timestamp": "2025-08-14T13:15:48.269907"
+        }
+      ]
+    },
+    "10-2-85_20250814_131548_270": {
+      "filename": "10-2-85.pdf",
+      "step_01_hash_validation": "complete",
+      "step_02_metadata_extraction": "complete",
+      "step_03_text_extraction": "complete",
+      "step_04_metadata_enrichment": "complete",
+      "step_05_semantic_chunking": "complete",
+      "step_06_embedding": "pending",
+      "current_status": "ready_for_embedding",
+      "created_at": "2025-08-14T13:15:48.270980",
+      "last_updated": "2025-08-14T14:45:38.668808",
+      "chunk_count": 100,
+      "error_count": 0,
+      "errors": [],
+      "new_filename": "312e85a1_20250814_131548_287.pdf",
+      "text_length": 38051,
+      "archive_location": "step_07_archive/312e85a1_20250814_131548_287.pdf",
+      "archived_at": "2025-08-14T15:03:10.915678"
+    },
+    "1-s2.0-S0890623814000653-main_20250812_155426_561738 copy_20250814_131548_288": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_155426_561738 copy.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:48.288970",
+      "last_updated": "2025-08-14T13:15:48.288972",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:48.318653"
+        }
+      ]
+    },
+    "1-s2.0-S0022519322003472-main_20250814_131548_319": {
+      "filename": "1-s2.0-S0022519322003472-main.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:48.319731",
+      "last_updated": "2025-08-14T13:15:48.319732",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 1122940d_20250814_131546_592.pdf",
+          "timestamp": "2025-08-14T13:15:48.352819"
+        }
+      ]
+    },
+    "1-s2.0-S0006497118594283-main_20250814_131548_353": {
+      "filename": "1-s2.0-S0006497118594283-main.pdf",
+      "step_01_hash_validation": "complete",
+      "step_02_metadata_extraction": "complete",
+      "step_03_text_extraction": "complete",
+      "step_04_metadata_enrichment": "complete",
+      "step_05_semantic_chunking": "complete",
+      "step_06_embedding": "pending",
+      "current_status": "ready_for_embedding",
+      "created_at": "2025-08-14T13:15:48.353902",
+      "last_updated": "2025-08-14T14:29:48.307594",
+      "chunk_count": 19,
+      "error_count": 0,
+      "errors": [],
+      "new_filename": "1232ec9d_20250814_131548_364.pdf",
+      "text_length": 4650,
+      "archive_location": "step_07_archive/1232ec9d_20250814_131548_364.pdf",
+      "archived_at": "2025-08-14T15:03:10.916711"
+    },
+    "1-s2.0-S1359644623001010-main_20250814_131548_365": {
+      "filename": "1-s2.0-S1359644623001010-main.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:48.365420",
+      "last_updated": "2025-08-14T13:15:48.365421",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches 2bb2c0c6_20250814_131547_692.pdf",
+          "timestamp": "2025-08-14T13:15:48.381295"
+        }
+      ]
+    },
+    "1-s2.0-S0890623814000653-main_20250812_164501_441758_20250812_222105_509733_20250814_131548_382": {
+      "filename": "1-s2.0-S0890623814000653-main_20250812_164501_441758_20250812_222105_509733.pdf",
+      "step_01_hash_validation": "failed",
+      "step_02_metadata_extraction": "pending",
+      "step_03_text_extraction": "pending",
+      "step_04_metadata_enrichment": "pending",
+      "step_05_semantic_chunking": "pending",
+      "step_06_embedding": "pending",
+      "current_status": "failed",
+      "created_at": "2025-08-14T13:15:48.382304",
+      "last_updated": "2025-08-14T13:15:48.382305",
+      "chunk_count": 0,
+      "error_count": 1,
+      "errors": [
+        {
+          "step": "step_01_hash_validation",
+          "error": "Duplicate file - matches d528e385_20250814_131546_534.pdf",
+          "timestamp": "2025-08-14T13:15:48.413304"
+        }
+      ]
+    }
+  },
   "created_at": "2025-08-14T11:20:31.625187",
-  "last_updated": "2025-08-14T11:20:31.625189"
+  "last_updated": "2025-08-14T14:49:01.143106"
 }

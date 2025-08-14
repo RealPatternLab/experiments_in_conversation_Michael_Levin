@@ -1,0 +1,27 @@
+{
+  "document_type": "research_paper",
+  "title": "Dynamic Structure Discovery and Repair for 3D Cell Assemblies",
+  "authors": [
+    "Giordano B. S. Ferreira¹",
+    "Max Smiley¹",
+    "Matthias Scheutz²",
+    "Mike Levin³"
+  ],
+  "journal": null,
+  "publication_year": null,
+  "doi": null,
+  "abstract": "Many organisms can regenerate their bodies, but it is currently unclear how they accomplish this feat. In this paper, we introduce a cell-to-cell communication mechanism that allows a multicellular organism to dynamically maintain its shape in the light of random cell death, even in very heterogeneous environments. We present a novel agent-based model that demonstrates the effectiveness of the proposed approach for planar and three-dimensional shapes, but the model is also capable of maintaining the shape of the biological organism.",
+  "extraction_confidence": "high",
+  "filename": "8ae72b4a_20250814_131547_174.pdf",
+  "extraction_timestamp": "2025-08-14T13:16:07.908409",
+  "extraction_method": "gemini_1.5_flash",
+  "pages_analyzed": 2,
+  "affiliations": [
+    "Department of Computer Science",
+    "Department of Biology",
+    "Tufts University"
+  ],
+  "text_enriched": true,
+  "enrichment_method": "text_analysis",
+  "enrichment_timestamp": "2025-08-14T13:27:03.728558"
+}

@@ -1,0 +1,21 @@
+{
+  "document_type": "research_paper",
+  "title": "Thoughts and thinkers: On the complementarity between objects and processes",
+  "authors": [
+    "Chris Fields",
+    "Michael Levin"
+  ],
+  "journal": "Physics of Life Reviews",
+  "publication_year": 2025,
+  "doi": null,
+  "abstract": "We argue that \"processes versus objects\" is a useful dichotomy. There is, instead, substantial complementarity between them.  We explore this complementarity through the lens of the persistence through time of memory; the instability of observation and manipulation; the way we make sense of high-dimensional spaces and their potential features; and the inherent limitations of linear operators. Following Levin [204], we emphasize that memory, at first and foremost, is an interactive function, in terms of the Free Energy Principle (FEP) of Friston and colleagues [205, 206]. We consider the FEP as the basis for understanding the fundamental identity of both objects and processes, a holistic approach from which the idea of memory as a record of some level of accuracy, always contrived, and always misleading, and that science would be better served by abandoning it entirely.",
+  "extraction_confidence": "high",
+  "filename": "c053f9cc_20250814_131547_905.pdf",
+  "extraction_timestamp": "2025-08-14T13:17:21.540170",
+  "extraction_method": "gemini_1.5_flash",
+  "pages_analyzed": 2,
+  "page_range": "12-15",
+  "text_enriched": true,
+  "enrichment_method": "text_analysis",
+  "enrichment_timestamp": "2025-08-14T13:27:08.200398"
+}

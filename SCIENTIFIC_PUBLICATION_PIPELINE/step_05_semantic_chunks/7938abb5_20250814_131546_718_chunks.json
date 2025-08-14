@@ -1,0 +1,1505 @@
+{
+  "metadata": {
+    "document_type": "research_paper",
+    "title": "Modeling regenerative processes with membrane computing",
+    "authors": [
+      "Manuel Garcia-Quismondo",
+      "Michael Levin",
+      "Daniel Lobo"
+    ],
+    "journal": "Information Sciences",
+    "publication_year": 2017,
+    "doi": null,
+    "abstract": "Understanding the remarkable ability of some organisms to restore their anatomical shape following amputation of large portions of their bodies is a fundamental issue in regenerative biology and biomedicine. Despite rapid advances in the molecular processes required for regeneration, a systemic level algorithmic understanding of this process is still lacking.  A major challenge is to develop computational models that can explain how regeneration controls exactly what is missing, cell behaviors towards large-scale anatomical outcomes are largely unknown.",
+    "extraction_confidence": "high",
+    "filename": "7938abb5_20250814_131546_718.pdf",
+    "extraction_timestamp": "2025-08-14T13:16:50.509958",
+    "extraction_method": "gemini_1.5_flash",
+    "pages_analyzed": 2,
+    "affiliations": [
+      "Department of Biology",
+      "Department of Biological Sciences",
+      "University of Maryland",
+      "center of the morphology",
+      "center of the morphology. The model considers that all compartments that do not belong either to the head and the tail are automatically part of the trunk. Therefore"
+    ],
+    "page_range": "55-57",
+    "text_enriched": true,
+    "enrichment_method": "text_analysis",
+    "enrichment_timestamp": "2025-08-14T13:27:03.708459"
+  },
+  "chunks": [
+    {
+      "text": "Modeling regenerative processes with membrane computing is a novel approach that leverages the computational power of cell membranes to simulate and understand the complex dynamics of tissue regeneration. This approach draws parallels between the compartmentalized structure and information processing capabilities of biological membranes and the theoretical framework of membrane computing, which uses nested compartments and rule-based operations to perform computations. By representing cells and tissues as computational units within a membrane computing system, researchers can model the interactions between different cell types, the flow of information through bioelectric signals, and the changes in gene expression that drive regenerative processes.",
+      "section": "[PAGE 1] Modeling regenerative processes with membrane computing",
+      "primary_topic": "Membrane Computing",
+      "secondary_topics": [
+        "regenerative processes",
+        "computational modeling",
+        "bioelectric signals",
+        "cell communication",
+        "tissue regeneration",
+        "gene expression"
+      ],
+      "chunk_summary": "Membrane computing offers a novel approach to modeling regenerative processes by leveraging the computational power of cell membranes to simulate tissue regeneration dynamics.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "1"
+    },
+    {
+      "text": "Manuel García-Quismondoa,*, Michael Levinb, Daniel Lobo a National Zoological Park, Smithsonian Institution, 3001 Connecticut Ave. NW, Washington, DC 20008, USA b Department of Biology, Tufts University, 200 Boston Ave, Medford, MA 02155, USA c Department of Biological Sciences, University of Maryland, Baltimore County, 1000 Hilltop Circle, Baltimore, MD 21250, USA",
+      "section": "Manuel Garc",
+      "primary_topic": "Authors",
+      "secondary_topics": [
+        "Affiliations",
+        "Institutions",
+        "Smithsonian",
+        "Tufts University",
+        "University of Maryland"
+      ],
+      "chunk_summary": "This section lists the authors of the paper and their respective affiliations.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "ABSTRACT",
+      "section": "ABSTRACT",
+      "primary_topic": "Abstract",
+      "secondary_topics": [],
+      "chunk_summary": "This is the abstract section.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Understanding the remarkable ability of some organisms to restore their anatomical shape following the amputation of large parts of their bodies is currently a major unsolved question in regenerative biology and biomedicine. Despite rapid advances in the molecular processes required for regeneration, a systems level, algorithmic understanding of this process has remained elusive. For this reason, the field needs new computational paradigms to help model the flow of information during regeneration.",
+      "section": "Understanding the remarkable ability of some organisms to restore their anatomical shape following the amputation of large parts of their bodies is currently a major unsolved question in regenerative biology and biomedicine",
+      "primary_topic": "Regeneration",
+      "secondary_topics": [
+        "regenerative biology",
+        "biomedicine",
+        "computational modeling",
+        "systems biology",
+        "algorithmic understanding"
+      ],
+      "chunk_summary": "While molecular mechanisms of regeneration are increasingly understood, a systems-level, computational approach is needed to model the information flow driving this process.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "1"
+    },
+    {
+      "text": "Membrane computing is a branch of natural computing that studies the properties and applications of theoretical computing devices known as P systems. These systems are an abstraction of the structure and functioning of a living cell, as well as its organization in tissues. Here, we propose a model of regenerative processes in planarian worms based on P systems, which recapitulates several aspects of regenerative pattern regulation.",
+      "section": "Understanding the remarkable ability of some organisms to restore their anatomical shape following the amputation of large parts of their bodies is currently a major unsolved question in regenerative biology and biomedicine",
+      "primary_topic": "P Systems",
+      "secondary_topics": [
+        "membrane computing",
+        "natural computing",
+        "planarian worms",
+        "regenerative pattern regulation",
+        "computational model",
+        "tissue organization"
+      ],
+      "chunk_summary": "This study uses P systems, a computational model inspired by cell and tissue organization, to model regeneration in planarian worms.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "1"
+    },
+    {
+      "text": "Our results demonstrate that it is possible to apply a novel computational framework to help understand pattern regulation in regenerative biology.",
+      "section": "Understanding the remarkable ability of some organisms to restore their anatomical shape following the amputation of large parts of their bodies is currently a major unsolved question in regenerative biology and biomedicine",
+      "primary_topic": "Computational Framework",
+      "secondary_topics": [
+        "regenerative biology",
+        "pattern regulation",
+        "computational modeling",
+        "P systems"
+      ],
+      "chunk_summary": "The presented computational framework, based on P systems, offers a new approach to understanding pattern regulation in regeneration.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "1"
+    },
+    {
+      "text": "Membrane computing, introduced by Păun in 1998, is a branch of natural computing that studies theoretical devices called P systems. These systems abstract the structure and function of living cells, tissues, and higher-order biological structures. P systems define a graph of interconnected compartments representing cells or groups of cells, each containing a multiset of objects, potentially molecules with different electrical charges.  Rules govern object creation, removal, and migration between compartments, simulating biochemical and electrical reactions within cells.",
+      "section": "Membrane computing is a branch of natural computing introduced by P",
+      "primary_topic": "Membrane Computing",
+      "secondary_topics": [
+        "P systems",
+        "natural computing",
+        "biological modeling",
+        "cell biology",
+        "compartments",
+        "multisets",
+        "rewriting rules"
+      ],
+      "chunk_summary": "Membrane computing uses P systems, which are computational models inspired by biological cells and tissues, to simulate cellular processes.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Within P systems, objects are processed using rewriting rules, abstracting the biochemical and electrical reactions occurring inside living cells. Object movement between compartments is dictated by connecting edges or links, representing biological signaling between cellular entities. Building on the success of membrane computing as a modeling framework, this work introduces regenerative P systems. This new class of P systems provides a mathematical formalism for modeling regenerative processes in biological organisms.",
+      "section": "Membrane computing is a branch of natural computing introduced by P",
+      "primary_topic": "Regenerative P Systems",
+      "secondary_topics": [
+        "biological signaling",
+        "rewriting rules",
+        "mathematical modeling",
+        "regeneration",
+        "biological organisms",
+        "cell communication"
+      ],
+      "chunk_summary": "Regenerative P systems, a new class of P systems, are introduced to provide a mathematical framework for modeling biological regeneration.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "One of the major unsolved questions facing basic biology and biomedicine today is understanding the remarkable ability of some organisms to restore their anatomical shape following amputation of large portions of their bodies [1,73]. For example, salamanders can regenerate their limbs, eyes, jaws, hearts, and portions of the brain [7]. Understanding shape homeostasis and restoration is critical, not only for advances in regenerative medicine, but also for fundamental issues in developmental biology and evolution [26,29,32,62,69].",
+      "section": "One of the major unsolved questions facing basic biology and biomedicine today is understanding the remarkable ability of some organisms to restore their anatomical shape following amputation of large portions of their bodies",
+      "primary_topic": "Regeneration",
+      "secondary_topics": [
+        "shape homeostasis",
+        "anatomical restoration",
+        "developmental biology",
+        "evolution",
+        "regenerative medicine",
+        "salamanders"
+      ],
+      "chunk_summary": "Regeneration of complex structures, like limbs and organs, remains a key challenge in biology, crucial for both regenerative medicine and understanding developmental and evolutionary processes.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "While much progress has been recently made in identifying the molecular signaling required for regeneration [6], we are still very far from understanding the control of shape. The molecular details are becoming clearer, but the information flow, computation, and control policies for organizing cell behaviors towards large-scale anatomical outcomes are largely unknown [33].",
+      "section": "One of the major unsolved questions facing basic biology and biomedicine today is understanding the remarkable ability of some organisms to restore their anatomical shape following amputation of large portions of their bodies",
+      "primary_topic": "Shape Control",
+      "secondary_topics": [
+        "molecular signaling",
+        "information flow",
+        "computation",
+        "cell behavior",
+        "anatomical outcomes",
+        "morphogenesis"
+      ],
+      "chunk_summary": "Despite advances in understanding the molecular basis of regeneration, the computational and control mechanisms governing shape regulation during regeneration remain largely unexplored.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Planaria are a powerful model system in this field, because they can regenerate every part of their bodies [34,70]. We need to develop computational models that can explain how regeneration creates exactly what is missing, in the right location, and stops when the target morphology has been achieved.",
+      "section": "Planaria are a powerful model system in this field",
+      "primary_topic": "Planarian Regeneration",
+      "secondary_topics": [
+        "computational modeling",
+        "morphology",
+        "pattern formation",
+        "model systems",
+        "regeneration"
+      ],
+      "chunk_summary": "Planaria's regenerative abilities make them an excellent model for developing computational models that explain how missing body parts are precisely regenerated.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Several types of models have been proposed [11,49,80], yet constructive models are the important to explore. These models show the sufficient steps to restore pattern, not only pathways of events necessary for regeneration [2,35,38]. This is largely an unexplored field, and we are still groping for the correct formalism and appropriate data representation for such models and the algorithms they implement [3,5,50,68,74].",
+      "section": "Planaria are a powerful model system in this field",
+      "primary_topic": "Constructive Models",
+      "secondary_topics": [
+        "pattern restoration",
+        "algorithms",
+        "data representation",
+        "formalism",
+        "regeneration"
+      ],
+      "chunk_summary": "Constructive models, which focus on the steps required for pattern restoration, are crucial for understanding regeneration, but the field needs further exploration to develop appropriate formalisms, data representations, and algorithms.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "To enrich the field of possibilities, and introduce biologists to another way to think about the controls of pattern regulation, we present here a model of planarian regeneration based on P systems.",
+      "section": "To enrich the field of possibilities",
+      "primary_topic": "Planarian Regeneration",
+      "secondary_topics": [
+        "P systems",
+        "pattern regulation",
+        "biological modeling",
+        "theoretical biology",
+        "regeneration",
+        "planarian"
+      ],
+      "chunk_summary": "This work introduces a P system-based model for planarian regeneration to expand the understanding of pattern regulation in biology.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "A number of modeling formalisms have been attempted in planaria, including [15,35,72,74] and others described in [14]; however, P systems have not been investigated in this context. We decided to select membrane computing as our modeling framework for regenerative processes because of its biologically-relevant properties.",
+      "section": "A",
+      "primary_topic": "Modeling Regeneration",
+      "secondary_topics": [
+        "planaria",
+        "P systems",
+        "membrane computing",
+        "regenerative processes",
+        "modeling formalisms"
+      ],
+      "chunk_summary": "Previous modeling approaches for planaria regeneration have not utilized P systems, which were chosen for this study due to their biological relevance.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "The explicit spatial structure of compartments in P systems facilitates the abstraction of morphological regions in regenerative biological organisms. Furthermore, the intercellular communication and signaling through proteins, small molecules, or biophysical phenomena essential to regeneration can be mathematically modeled with signals and objects between the compartments.",
+      "section": "A",
+      "primary_topic": "P System Advantages",
+      "secondary_topics": [
+        "spatial structure",
+        "compartments",
+        "morphological regions",
+        "intercellular communication",
+        "biophysical phenomena",
+        "mathematical modeling"
+      ],
+      "chunk_summary": "P systems offer advantages for modeling regeneration due to their compartmentalized structure, which allows for the representation of morphological regions and intercellular signaling.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Our model of regeneration can be easily extended by quantizing these signals in packages. This permits us to model the magnitude of these cellular signals as the difference in the number of objects of a given class. In addition, the modular property of P systems permits us to bundle any specific aspect of regenerative processes into a subset of rules. These rules can then be modified without affecting the overall dynamics of the model [13,66].",
+      "section": "Our model of regeneration can be easily extended by quantizing these signals in packages",
+      "primary_topic": "Regeneration Model",
+      "secondary_topics": [
+        "quantization",
+        "cellular signals",
+        "P systems",
+        "modular design",
+        "dynamic modeling"
+      ],
+      "chunk_summary": "The regenerative model uses quantization and modular P systems to represent cellular signals and isolate specific regenerative processes, allowing for modification without affecting overall dynamics.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "For example, the specific signaling mechanisms for regenerating the brain and eyes can be modeled with an isolated set of rules without interferences with other aspects of the model.",
+      "section": "Our model of regeneration can be easily extended by quantizing these signals in packages",
+      "primary_topic": "Organ Regeneration",
+      "secondary_topics": [
+        "brain regeneration",
+        "eye regeneration",
+        "signaling mechanisms",
+        "rule-based modeling",
+        "modular design"
+      ],
+      "chunk_summary": "The model's modularity allows for isolated simulation of specific organ regeneration processes, such as brain and eye regeneration, without affecting other parts of the model.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "In our proposed model, the flatworm morphology is represented as a rectangular compartment grid. Each compartment represents a morphological region, and each region belongs to one of the following parts in the morphology: head, trunk or tail. Signals can be sent between two compartments as long as there exists a link between them. We use objects to express the membership of a compartment to a worm region and to represent organs inside these regions. We also use links to denote communication between compartments.",
+      "section": "In our proposed model",
+      "primary_topic": "Morphological Model",
+      "secondary_topics": [
+        "compartment grid",
+        "morphological regions",
+        "head",
+        "trunk",
+        "tail",
+        "inter-compartment signaling",
+        "organ representation"
+      ],
+      "chunk_summary": "This model represents flatworm morphology as a grid of compartments, with links enabling inter-compartment signaling and objects defining compartment membership to body regions and organs.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Our model aims to reproduce molecular and electrical signals sent between cells at a local level, which eventually configure emergent morphologies [33,75]. This modeling approach bears some resemblance to peer-to-peer networks. In both frameworks, a consensus system behavior emerges from the pairwise communication between nodes [16]. In fact, fault diagnosis of electrical and computer networks has been successfully modeled using P systems [58]. We have tested our modeling framework with a set of planarian in silico experiments that recapitulate the resultant phenotypes observed in vivo.",
+      "section": "In our proposed model",
+      "primary_topic": "Model Functionality",
+      "secondary_topics": [
+        "molecular signals",
+        "electrical signals",
+        "emergent morphologies",
+        "peer-to-peer networks",
+        "pairwise communication",
+        "P systems",
+        "in silico experiments",
+        "in vivo validation"
+      ],
+      "chunk_summary": "The model simulates molecular and electrical signaling to reproduce emergent morphologies, drawing parallels with peer-to-peer networks and validated through in silico experiments mimicking in vivo planarian phenotypes.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Section 2 introduces regenerative P systems as a new class of membrane computing devices.  Section 3 focuses on describing the computational model and explaining its behavior.  This sets the stage for Section 4, which simulates the model in various scenarios, including interesting case studies.  The model's predictions from these simulations are then compared with experimental results in Section 5.  Finally, Section 6 presents the conclusions drawn from this research.",
+      "section": "[PAGE 3] Section 2 introduces regenerative P systems as a new class of membrane computing devices. In Section 3, the model is described and its behavior is explained. Section 4 simulates the model for several scenarios, encompassing interesting case studies. Section 5 compares the model predictions in these scenarios with experimental results. Finally, our conclusions are reported in Section 6.",
+      "primary_topic": "Regenerative P systems",
+      "secondary_topics": [
+        "membrane computing",
+        "computational model",
+        "simulation",
+        "experimental validation",
+        "case studies"
+      ],
+      "chunk_summary": "This section introduces regenerative P systems and outlines the structure of the paper, highlighting the model description, simulation, comparison with experimental results, and concluding remarks.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "2/3"
+    },
+    {
+      "text": "In this section, we propose a novel framework named regenerative P systems to model biological regeneration processes. This framework is mainly inspired by kernel P systems, a previous approach in membrane computing [20-22,28]. Prior to defining the framework, we describe some preliminary concepts as defined in [18].",
+      "section": "In this section",
+      "primary_topic": "Regenerative P Systems",
+      "secondary_topics": [
+        "membrane computing",
+        "kernel P systems",
+        "biological regeneration",
+        "computational modeling",
+        "formal systems"
+      ],
+      "chunk_summary": "This section introduces a new framework called regenerative P systems, inspired by kernel P systems, for modeling biological regeneration.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "An alphabet Γ is a non-empty set whose elements are called symbols. Likewise, a multiset w over an alphabet Γ is a pair w = (Γ, f) where f: Γ→ N is a mapping. For each x ∈ Γ we say that f(x) is the multiplicity of the symbol x in w.",
+      "section": "An alphabet",
+      "primary_topic": "Formal Languages",
+      "secondary_topics": [
+        "alphabet",
+        "multiset",
+        "symbol",
+        "multiplicity",
+        "mapping",
+        "set theory"
+      ],
+      "chunk_summary": "This section defines the concepts of an alphabet and a multiset, explaining that an alphabet is a non-empty set of symbols and a multiset is a pair consisting of an alphabet and a mapping that defines the multiplicity of each symbol.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "If w = (Γ, f) is a multiset, then its support is defined as supp(w) = {x ∈ Γ | f(x) > 0}. A multiset is finite if its support is a finite set. A set is a multiset such that the multiplicity of each element of its support is greater or equal to 1, that is, the multiset can contain more than one object of the same class.",
+      "section": "If w",
+      "primary_topic": "Multisets",
+      "secondary_topics": [
+        "set theory",
+        "support",
+        "multiplicity",
+        "finite sets",
+        "mathematical definitions"
+      ],
+      "chunk_summary": "This chunk defines multisets, their support, and the conditions for finiteness, explaining how sets relate to multisets in terms of element multiplicity.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "If w = (Γ, f) is a finite multiset over Γ, and supp(w) = {a₁, ..., ak} then it will be denoted as w = a₁f(a₁) ... akf(ak) (here the order is irrelevant), and we say that f(a₁) +……+ f(ak) is the cardinal of w, denoted by |w|. The empty multiset is denoted by Ø. We also denote by M(Γ) the set of all finite multisets over Γ.",
+      "section": "If w",
+      "primary_topic": "Multisets",
+      "secondary_topics": [
+        "finite multisets",
+        "cardinality",
+        "notation",
+        "set theory",
+        "mathematical definitions",
+        "Γ",
+        "supp(w)",
+        "M(Γ)"
+      ],
+      "chunk_summary": "This section defines the notation and cardinality of finite multisets over a set Γ, including the representation of the empty multiset and the set of all finite multisets over Γ.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Consider w₁ = (Γ, f₁) and w₂ = (Γ, f₂) multisets over Γ. We define the following concepts: The union of w₁ and w₂, denoted by w₁ + w₂, is the multiset (Γ, g), where g = f₁ + f₂, that is, g(x) = f₁(x) + f₂(x) for each x ∈ Γ. Likewise, when w₁ is updated as w₁ ← w₁ + w₂, we say that w₂ is generated into w₁.",
+      "section": "Consider w",
+      "primary_topic": "Multiset Union",
+      "secondary_topics": [
+        "multisets",
+        "union",
+        "generation",
+        "formal definition",
+        "set theory",
+        "mathematical notation"
+      ],
+      "chunk_summary": "This chunk defines the union of two multisets, w₁ and w₂, denoted as w₁ + w₂, explaining that the resulting multiset's count for each element is the sum of the counts in the original multisets.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The relative complement of w₂ in w₁, denoted by w₁\\w₂, is the multiset (Γ, g), where g(x) = f₁(x) – f₂(x) if f₁(x) ≥ f₂(x) and g(x) = 0 otherwise. Likewise, when w₁ is updated as w₁ ← w₁ – w₂, then we say that w₂ is consumed from w₁.",
+      "section": "Consider w",
+      "primary_topic": "Multiset Complement",
+      "secondary_topics": [
+        "multisets",
+        "relative complement",
+        "consumption",
+        "formal definition",
+        "set theory",
+        "mathematical notation"
+      ],
+      "chunk_summary": "This chunk defines the relative complement of multiset w₂ in w₁, denoted as w₁\\w₂, explaining that the resulting multiset's count for each element is the difference of the counts in the original multisets (or zero if the difference is negative).",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "We also say that w₁ is a submultiset of w₂, denoted by w₁ ⊆ w₂, if f₁(x) ≤ f₂(x) for each x ∈ Γ. This defines a partial order on the set of all multisets over Γ.  This notation and concept of submultisets allows for comparing and ordering multisets based on the counts of their elements, providing a framework for analyzing collections of objects with potential repetitions.",
+      "section": "We also say that w",
+      "primary_topic": "Submultisets",
+      "secondary_topics": [
+        "multisets",
+        "partial order",
+        "set theory",
+        "mathematical notation",
+        "element counts",
+        "comparison",
+        "ordering"
+      ],
+      "chunk_summary": "This section defines the concept of a submultiset (w₁ ⊆ w₂) where the count of each element in w₁ is less than or equal to its count in w₂, establishing a partial order for comparing multisets.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Let w = (Γ, f) a multiset over Γ and A a set. We define the intersection w∩A as the multiset (Γ, g), where g(x) = f(x) for each x ∈ Γ∩A, and g(x) = 0 otherwise.",
+      "section": "[PAGE 3] Let w = (Γ, f) a multiset over Γ and A a set. We define the intersection w∩A as the multiset (Γ, g), where g(x) = f(x) for each x ∈ Γ∩A, and g(x) = 0 otherwise.",
+      "primary_topic": "Multiset Intersection",
+      "secondary_topics": [
+        "set theory",
+        "multiset",
+        "intersection",
+        "formal definition",
+        "mathematics"
+      ],
+      "chunk_summary": "This section defines the intersection of a multiset with a set.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "3"
+    },
+    {
+      "text": "We also must define some other concepts inspired by the idea of guard found in [22]. Please note that some definitions are slightly different from those provided in that reference:",
+      "section": "We also must define some other concepts inspired by the idea of guard found in",
+      "primary_topic": "Definitions",
+      "secondary_topics": [
+        "guard concept",
+        "conceptual framework",
+        "terminology"
+      ],
+      "chunk_summary": "This section introduces additional concepts related to the idea of \"guard\" and notes that the definitions provided may differ slightly from the original source.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Let Γ be an alphabet and let  = {ā | a ∈ Γ}, provided Γ∩ = Ø. We say that Co(Γ) = Γ∪ is the alphabet of object constraints over Γ.",
+      "section": "Let",
+      "primary_topic": "Object Constraints",
+      "secondary_topics": [
+        "alphabet",
+        "constraints",
+        "formal language",
+        "set theory",
+        "symbols"
+      ],
+      "chunk_summary": "This section defines the alphabet of object constraints (Co(Γ)) over a given alphabet (Γ) using set notation.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "We also recursively define a guard over an alphabet Γ as a predicate over Μ(Γ). To do so, let w ∈ Μ(Γ) be a multiset over Γ at a given instant. When a guard does not evaluate to true, then it evaluates to false. An empty string is a guard over Γ, and we say that it always evaluates to true.",
+      "section": "We also recursively define a guard over an alphabet",
+      "primary_topic": "Guard Definition",
+      "secondary_topics": [
+        "predicate",
+        "multiset",
+        "alphabet",
+        "recursive definition",
+        "formal language"
+      ],
+      "chunk_summary": "A guard over an alphabet Γ is defined recursively as a predicate over a multiset of Γ, with an empty string guard always evaluating to true.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "An object constraint a ∈ Co(Γ) is a guard over Γ. We say that a evaluates to true for w if (a ∈ Γ∧a∈ supp(w)) ∨ (ā∈ ∧a ∉ supp(w)).",
+      "section": "We also recursively define a guard over an alphabet",
+      "primary_topic": "Object Constraint",
+      "secondary_topics": [
+        "guard",
+        "alphabet",
+        "constraint",
+        "multiset support",
+        "formal language"
+      ],
+      "chunk_summary": "An object constraint within the alphabet Γ is a guard, evaluating to true based on its presence or absence in the multiset's support.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Let g₁, g₂ be two guards over Γ. Then, g₁∧g₂ and g₁∨g₂ are guards. g₁∧g₂ evaluates to true if both g₁ and g₂ evaluate to true. Likewise, g₁∨g₂ evaluates to true if either g₁ or g₂ (or both) evaluate to true.",
+      "section": "We also recursively define a guard over an alphabet",
+      "primary_topic": "Guard Composition",
+      "secondary_topics": [
+        "logical operators",
+        "conjunction",
+        "disjunction",
+        "guard evaluation",
+        "formal language"
+      ],
+      "chunk_summary": "Guards can be combined using logical AND (∧) and OR (∨) operators, with the combined guard's evaluation depending on the truth values of the constituent guards.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "In addition, the concept of script (see below) has been inspired by Probabilistic Guarded Scripted P systems [19]. When a script is generated, it triggers a procedure on the current configuration of the system. The execution of this procedure may have different effects on the ongoing computation.",
+      "section": "In addition",
+      "primary_topic": "Scripts",
+      "secondary_topics": [
+        "Probabilistic Guarded Scripted P systems",
+        "computation",
+        "procedure",
+        "configuration"
+      ],
+      "chunk_summary": "Scripts, inspired by Probabilistic Guarded Scripted P systems, trigger procedures that affect ongoing computations.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "As an example, the multisets associated with each one of the compartments can be updated or the computation can be halted.",
+      "section": "In addition",
+      "primary_topic": "Computation Effects",
+      "secondary_topics": [
+        "multisets",
+        "compartments",
+        "updates",
+        "halting"
+      ],
+      "chunk_summary": "Script execution can update compartment multisets or halt the computation.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "A regenerative P system of degree (m, n), m ≥ 1, n ≥ 1 is defined as: Π = (H, G, Σ, Θ, {Whᵢ| 1 ≤ i ≤ q}, R, {(Sk, tk) | 1 ≤ k ≤ n}), where: H = {h₁, ..., hm} is an alphabet of labels. G = (V, S) is a non-directed graph without loops where V = {h₁, ..., hq}, q ≤ m is the initial set of nodes labeling compartments in the system and S is the initial set of edges (links) over V. Σ and Θ are finite alphabets such that Σ∩Θ = Ø and σ∈ Θ. Elements in Σ are called objects, and elements in Θ are called scripts.",
+      "section": "A",
+      "primary_topic": "P System Definition",
+      "secondary_topics": [
+        "regenerative P system",
+        "compartments",
+        "objects",
+        "scripts",
+        "graph theory",
+        "formal language theory",
+        "multiset"
+      ],
+      "chunk_summary": "This chunk defines the basic components of a regenerative P system, including its alphabets, graph structure, and initial elements.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "For each i, 1 ≤ i ≤ q, Whᵢ ∈ M(Σ) is the initial multiset associated with compartment hᵢ. R is a finite set of rules of the following types: [u]hᵢ → [v, s]hⱼ with u, v ∈ M(Σ), 1 ≤ i, j ≤ m and s ∈ Θ. If s = Ø, then we omit it in the notation. [u]hᵢ → [v]hⱼ or [u]hᵢ # [v]hⱼ with u, v ∈ M(Σ),1 ≤ i, j ≤ m, and hᵢ ≠ hⱼ. [u]hᵢ → [v]hᵢ[w]hⱼ with u, v, w ∈ M(Σ),1 ≤ i, j ≤ m and hᵢ ≠ hⱼ.",
+      "section": "A",
+      "primary_topic": "P System Rules",
+      "secondary_topics": [
+        "evolution rules",
+        "multiset rewriting",
+        "compartmentalization",
+        "communication rules",
+        "object transfer"
+      ],
+      "chunk_summary": "This chunk describes the different types of rules governing object and script transformations within and between compartments in the P system.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Each rule from R has an associated priority, that is, there exists a function pr from R into Z. We denote pr(r) in r as (pr(r)) prior to r, e.g., r = (pr(r))[u]hᵢ→[v, s]hⱼ. If pr(r) is equal to 0, then we omit it in the notation. Each rule r∈ R has an associated guard gᵣ. We denote gᵣ in r as {gᵣ} prior to r and to pr(r), e.g., r = {gᵣ}(pr(r))[u]hᵢ→[v, s]hⱼ. If gᵣ is the empty string, then we omit it in the notation.",
+      "section": "A",
+      "primary_topic": "Rule Priorities and Guards",
+      "secondary_topics": [
+        "rule application",
+        "priority function",
+        "guard conditions",
+        "rule selection",
+        "execution semantics"
+      ],
+      "chunk_summary": "This chunk explains the priority system and guard conditions associated with each rule, influencing their application order and activation.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "{(Sk, tk)|1 ≤ k ≤ n} is a set of pairs which contains the pair (σ, F) such as Sk∈ Θ and tk is a computable predicate over the set of configurations of Π (see below). F is a predicate which always evaluates to false. For each two pairs (sᵢ, tᵢ), (sⱼ, tⱼ), if i ≠ j then sᵢ ≠ sⱼ.",
+      "section": "A",
+      "primary_topic": "Predicates and Configurations",
+      "secondary_topics": [
+        "computable predicates",
+        "system configurations",
+        "halting condition",
+        "script-predicate pairs",
+        "system states"
+      ],
+      "chunk_summary": "This chunk introduces the concept of script-predicate pairs, which define conditions on system configurations and include a halting condition represented by the predicate F.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "We define a configuration Cₜ = (Vₜ, Sₜ, {Whᵢ,ₜ| hᵢ ∈ Vₜ}) of a regenerative P system Π of degree (m, n) at any given time t > 0 as a tuple whose components are the following: a) Vₜ is the (possibly equal) subset of compartment labels from H; b) Sₜ the set of links between labels; c) Whᵢ,ₜ|hᵢ ∈ Vₜ are the multisets of objects associated with each of the compartments of the system. The initial configuration of this regenerative P system is C₀ = (V, S, {Whᵢ| hᵢ ∈ V}).",
+      "section": "[PAGE 3] We define a configuration Cₜ = (Vₜ, Sₜ, {Whᵢ,ₜ| hᵢ ∈ Vₜ}) of a regenerative P system Π of degree (m, n) at any given time t > 0 as a tuple whose components are the following",
+      "primary_topic": "System Configuration",
+      "secondary_topics": [
+        "regenerative P system",
+        "configuration",
+        "compartment labels",
+        "multisets",
+        "objects",
+        "links",
+        "tuple"
+      ],
+      "chunk_summary": "This section defines the configuration of a regenerative P system at a given time, including compartment labels, links, and associated multisets of objects.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "3"
+    },
+    {
+      "text": "Let Whᵢ,ₜ represent the multiset associated with compartment hᵢ at any given time t > 0, and let Sₜ be the set of links in configuration Cₜ.  We define the applicability and effects of rules within the regenerative P system Π.  A rule r = {gᵣ}(pr(r))[u]hᵢ → [v, s]hⱼ applies to compartment hᵢ if gᵣ is true, u is a subset of Whᵢ,ₜ, and either hᵢ equals hⱼ or (hᵢ, hⱼ) is in Sₜ.  Upon application, u is consumed from Whᵢ,ₜ, and v is generated into Whⱼ,ₜ. The role of 's' is explained later.",
+      "section": "Next",
+      "primary_topic": "Rule Application",
+      "secondary_topics": [
+        "P systems",
+        "regenerative systems",
+        "compartmentalization",
+        "multisets",
+        "rule-based modeling",
+        "formal language theory"
+      ],
+      "chunk_summary": "This chunk defines the conditions and effects of applying a rule of the form r = {gᵣ}(pr(r))[u]hᵢ → [v, s]hⱼ within a regenerative P system.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "A rule r = {gᵣ}(pr(r))[u]hᵢ → [v]hⱼ applies to hᵢ if gᵣ is true, u is a subset of Whᵢ,ₜ, hⱼ is in Vₜ, and (hᵢ, hⱼ) is not in Sₜ.  Applying this rule consumes u from Whᵢ,ₜ, generates v into Whⱼ,ₜ, and adds the link (hᵢ, hⱼ) to Sₜ. A rule r = {gᵣ}(pr(r))[u]hᵢ # [v]hⱼ applies if gᵣ is true, u is a subset of Whᵢ,ₜ, hⱼ is in Vₜ, and (hᵢ, hⱼ) is in Sₜ.  Application consumes u from Whᵢ,ₜ, generates v into Whⱼ,ₜ, and removes (hᵢ, hⱼ) from Sₜ.",
+      "section": "Next",
+      "primary_topic": "Link Creation/Deletion",
+      "secondary_topics": [
+        "P systems",
+        "graph rewriting",
+        "compartmentalization",
+        "link formation",
+        "dynamic topology",
+        "rule-based systems"
+      ],
+      "chunk_summary": "This chunk describes rules for creating and deleting links between compartments, modifying the system's topology.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "A rule r = {gᵣ}(pr(r))[u]hᵢ → [v]hᵢ[w]hⱼ applies to hᵢ if gᵣ is true, u is a subset of Whᵢ,ₜ, and hⱼ is not in Vₜ.  Upon application, u is consumed from and v is generated into Whᵢ,ₜ.  A new compartment hⱼ with associated multiset w is created, adding hⱼ to Vₜ and the link (hᵢ, hⱼ) to Sₜ.",
+      "section": "Next",
+      "primary_topic": "Compartment Creation",
+      "secondary_topics": [
+        "P systems",
+        "compartmentalization",
+        "growth",
+        "development",
+        "multisets",
+        "rule-based systems"
+      ],
+      "chunk_summary": "This chunk details the rule for creating new compartments within the system, expanding its structure.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Given a set of rules R, we say that a multiset of applicable rules at time t is mutually applicable if they altogether do not consume more objects than available. Moreover, we say that a mutually applicable multiset of rules is maximal in the case that, if we add any rule, then the resulting multiset is not mutually applicable.",
+      "section": "Given a set of rules R",
+      "primary_topic": "Rule Application",
+      "secondary_topics": [
+        "multiset",
+        "mutually applicable",
+        "maximal multiset",
+        "resource constraints",
+        "rule execution"
+      ],
+      "chunk_summary": "This section defines the concepts of mutually applicable and maximal multisets of rules based on resource availability.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Next, the semantics of the model is defined. At every time t and until the computation halts, a transition step consists of the following stages: 1) all applicable rules are selected. If there exists none of such rules, then the current configuration is a halting configuration and the computation halts; 2) from these rules, those with the maximum priority are kept; 3) from the remainder, a maximal multiset of rules is non-deterministically chosen. The following restriction is applied: if any rule from this set does not consume any object, then it must appear once in the multiset; 4) all rules from such a multiset are applied.",
+      "section": "[PAGE 4] Next, the semantics of the model is defined. At every time t and until the computation halts, a transition step consists of the following stages",
+      "primary_topic": "Model Semantics",
+      "secondary_topics": [
+        "rule application",
+        "transition steps",
+        "halting conditions",
+        "non-deterministic selection",
+        "multiset"
+      ],
+      "chunk_summary": "This chunk describes the first four stages of a transition step in the model, including rule selection, prioritization, non-deterministic choice from a multiset, and rule application.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "4"
+    },
+    {
+      "text": "5) for every rule of the form r = {gᵣ}(pr(r))[u]hᵢ → [v, s]hⱼ which has been applied in the current transition step, the predicate associated with s is evaluated for the current configuration. Objects consumed and generated in the current transition step are considered for this application. If any of these predicates evaluates to true, then the current configuration is a halting configuration and the computation halts.",
+      "section": "[PAGE 4] Next, the semantics of the model is defined. At every time t and until the computation halts, a transition step consists of the following stages",
+      "primary_topic": "Halting Conditions",
+      "secondary_topics": [
+        "predicate evaluation",
+        "rule application",
+        "object consumption",
+        "object generation",
+        "transition steps"
+      ],
+      "chunk_summary": "This chunk describes the fifth stage of a transition step, focusing on predicate evaluation and halting conditions based on the outcome of rule application.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "4"
+    },
+    {
+      "text": "Finally, we define a computation C = {C₀, C₁, ..., Cn} as a sequence of configurations such that: a) the first term of the sequence is the initial configuration of Π; b) each remaining configuration is obtained by applying the rules defined in Π on the previous configuration in a transition step; c) the last term of the sequence is a halting configuration.",
+      "section": "Finally",
+      "primary_topic": "Computation Definition",
+      "secondary_topics": [
+        "computation",
+        "configuration",
+        "transition step",
+        "halting configuration",
+        "initial configuration",
+        "rules"
+      ],
+      "chunk_summary": "This section defines a computation as a sequence of configurations derived by applying rules to an initial configuration until a halting configuration is reached.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "In summary, a regenerative P system can be viewed as a set of q interconnected compartments, labeled by h₁,..., hq such that: a) Wh₁,..., Whq are finite multisets over Σ representing the objects initially placed in the compartments of the system; b) G is a non-directed graph whose edges (links) specify explicit connections among compartments; c) R is the set of rules that define the transition steps between configuration of the system and each rule r is associated with an integer number pr(r) ∈ Z describing a priority amongst rules, in such a way that only those applicable rules with the maximum priority can be applied.",
+      "section": "In summary",
+      "primary_topic": "P System Definition",
+      "secondary_topics": [
+        "regenerative P system",
+        "compartments",
+        "multisets",
+        "rules",
+        "priority",
+        "graph",
+        "connections"
+      ],
+      "chunk_summary": "This chunk defines a regenerative P system as a set of interconnected compartments with initial objects, connections defined by a graph, and rules with priorities governing transitions between system configurations.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "d) Θ is a set of symbols triggering halting predicates, in such a way that, if one of the triggered predicates is complied with at a given time, then the system halts.",
+      "section": "In summary",
+      "primary_topic": "Halting Conditions",
+      "secondary_topics": [
+        "halting predicates",
+        "symbols",
+        "system halt",
+        "Θ"
+      ],
+      "chunk_summary": "This chunk describes the halting conditions of the P system, triggered by a set of symbols that activate halting predicates.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "To illustrate the computations and the application of rules in a regenerative P system, let us consider a system such as: Π = (H = {1, 2, 3}, G = ({1, 2}, {(1,2)}), Σ = {a, b, c, d, e}, Θ = {s}, {W₁ = {a⁴, c, d}, W₂ = {a², b²}}, R = {r₁ = {d}(−1)[a², e]₁ → [b, c², s]₂, r₂ = {ē}(1)[a², d]₁ → [b, e]₁, r₃ = {d}(0)[c]₁ → [c]₂, r₄ = {d}(0)[b²]₂ # [b]₃, r₅ = (1)[a²]₂ → [b, c, d]₂[c]₃}, {(s, τ)}) where τ(C), being C a configuration of Π, causes the system to halt.",
+      "section": "To illustrate the computations and the application of rules in a regenerative P system",
+      "primary_topic": "Regenerative P System",
+      "secondary_topics": [
+        "P system",
+        "computations",
+        "rules",
+        "configuration",
+        "compartments",
+        "symbols"
+      ],
+      "chunk_summary": "This chunk defines a regenerative P system Π and its components, including compartments, symbols, and rules.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Let us consider the initial configuration of this regenerative P system. In this configuration, only rules r₂, r₃ and r₅ are applicable. Although there exists a link between compartments 1 and 2, r₁ cannot be applied because compartment 1 contains one d and zero e's, and r₁ requires that compartment 1 contains zero d's and one e. Moreover, rule r₂ is associated with the same compartment and has a higher priority (1).",
+      "section": "To illustrate the computations and the application of rules in a regenerative P system",
+      "primary_topic": "Rule Application",
+      "secondary_topics": [
+        "initial configuration",
+        "rule applicability",
+        "compartments",
+        "priority",
+        "symbols d and e"
+      ],
+      "chunk_summary": "This chunk analyzes the initial configuration of the P system and explains why only rules r₂, r₃, and r₅ are applicable based on the presence and absence of specific symbols and rule priorities.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "In addition, since there exists no link between compartments 2 and 3, r₅ has a higher priority than r₄. By applying r₂ and r₃, two a's, one c and one d are consumed and one b and one e are generated in compartment 1. Consequently, the multiset associated with compartment 1 becomes {a², b, e} in the next configuration. Plus, one object c is sent to compartment 2. By applying rule r₅, two a's are consumed and one b, one c and one d are generated in compartment 2. In addition, compartment 3 is created and linked with compartment 2. This compartment contains now one c. Therefore, the multiset associated with compartment 2 becomes {b³, c², d} and the multiset associated with compartment 3 becomes {c}.",
+      "section": "In addition",
+      "primary_topic": "Rule Application",
+      "secondary_topics": [
+        "compartments",
+        "multisets",
+        "rules",
+        "configurations",
+        "r₂",
+        "r₃",
+        "r₅",
+        "priority"
+      ],
+      "chunk_summary": "This chunk describes the initial application of rules r₂, r₃, and r₅, leading to changes in the multisets of compartments 1, 2, and the creation of compartment 3.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "4"
+    },
+    {
+      "text": "In the next configuration, only r₁ and r₄ can be applied. Both r₂ and r₃ require one d in compartment 1, but this compartment contains zero d's in the present configuration. Likewise, r₅ cannot be applied because there are zero a's in compartment 2 and compartment 3 has already been created. Upon applying r₁, one e and two a's are consumed from compartment 1 and one b and two c's are generated in compartment 2. Moreover, the script s is generated.",
+      "section": "In addition",
+      "primary_topic": "Rule Application",
+      "secondary_topics": [
+        "compartments",
+        "multisets",
+        "rules",
+        "configurations",
+        "r₁",
+        "r₄",
+        "r₂",
+        "r₃",
+        "r₅",
+        "script"
+      ],
+      "chunk_summary": "This chunk explains why only rules r₁ and r₄ can be applied in the next configuration and describes their effects, including the generation of script s.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "4"
+    },
+    {
+      "text": "Likewise, the application of r₄ consumes two b's from compartment 2 and generates one b in compartment 3. After all rules in this transition step have been applied, the link between compartments 2 and 3 is removed. Thus, the multiset associated with compartment 1 becomes {b}, the multiset associated with compartment 2 becomes {b², c⁴, d}, and the multiset associated with compartment 3 becomes {b, c}. Once these rules have been applied, the predicate associated with the script s is triggered and the system halts.",
+      "section": "In addition",
+      "primary_topic": "Rule Application",
+      "secondary_topics": [
+        "compartments",
+        "multisets",
+        "rules",
+        "r₄",
+        "script",
+        "system halt"
+      ],
+      "chunk_summary": "This chunk describes the application of rule r₄, the removal of the link between compartments 2 and 3, the final multiset configurations, and the triggering of script s leading to system halt.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "4"
+    },
+    {
+      "text": "During planarian regeneration, precise intercellular signaling mechanisms are responsible for the growth and repatterning of the body regions (head, trunk, and tail) and organs with correct proportions and in the correct locations [34]. Although this process is not fully understood, it is thought to involve proteins and small molecules that are secreted by cells in different regions. These molecules travel by diffusion or active transport to other regions of the worm. Once there, they act as signals to instruct the fate of the new regenerated tissue [4,31,76].",
+      "section": "During planarian regeneration",
+      "primary_topic": "Regeneration Signaling",
+      "secondary_topics": [
+        "intercellular signaling",
+        "protein signaling",
+        "molecular transport",
+        "tissue regeneration",
+        "planarian regeneration",
+        "growth factors"
+      ],
+      "chunk_summary": "Planarian regeneration relies on precise intercellular signaling via secreted proteins and small molecules that travel by diffusion or active transport to guide tissue regeneration.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "For example, the family of proteins in the Wnt pathway are involved in the regeneration of a tail [60], whereas notum is involved in the signaling of the head region [61]. Furthermore, bioelectrical signals related to head or tail regeneration can also travel through gap junctions in the cells and act as regeneration signals [54]. Understanding the exchange and processing of these signals is an essential step for inferring the mechanisms responsible for the regeneration in the worm [36].",
+      "section": "During planarian regeneration",
+      "primary_topic": "Regeneration Signals",
+      "secondary_topics": [
+        "Wnt pathway",
+        "Notum",
+        "bioelectrical signals",
+        "gap junctions",
+        "head regeneration",
+        "tail regeneration",
+        "cell signaling"
+      ],
+      "chunk_summary": "Specific signaling pathways like Wnt and Notum, along with bioelectrical signals through gap junctions, play crucial roles in head and tail regeneration in planarians.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "To this end, we present here a model within the framework of regenerative P systems that captures, in an abstract fashion, the cell signaling processes that enable a planarian worm to regenerate. Our model repeats iteratively the same cycle (sequence of steps), which consists of two sub-cycles.",
+      "section": "During planarian regeneration",
+      "primary_topic": "Computational Modeling",
+      "secondary_topics": [
+        "regenerative P systems",
+        "cell signaling",
+        "planarian regeneration",
+        "model",
+        "iterative cycle"
+      ],
+      "chunk_summary": "A computational model using regenerative P systems is introduced to abstractly represent the cell signaling processes driving planarian regeneration.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "On the first sub-cycle, the model orients itself: it locates the head, the tail, the left-hand side and the right-hand side. If necessary, it also grows at a rhythm of one compartment per cycle. This procedure is illustrated in Figs. 2-5.",
+      "section": "On the first sub",
+      "primary_topic": "Model Orientation",
+      "secondary_topics": [
+        "morphology",
+        "growth",
+        "body plan",
+        "compartmentalization",
+        "developmental model"
+      ],
+      "chunk_summary": "The model establishes its body axes and grows during the first sub-cycle.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The second half-cycle involves the allocation of organs inside the morphology. This process is performed case by case, depending on the organ that is being allocated. Some organs must be allocated in the center of the morphology, such as the pharynx. In contrast, other organs must be on the outside regions of the morphology, such as the eyes and brains.",
+      "section": "On the first sub",
+      "primary_topic": "Organ Allocation",
+      "secondary_topics": [
+        "organogenesis",
+        "morphogenesis",
+        "spatial patterning",
+        "pharynx",
+        "eyes",
+        "brain"
+      ],
+      "chunk_summary": "The second half-cycle focuses on positioning organs within the established body plan, with specific locations depending on the organ type.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "In total, the model takes 39 time steps to complete a cycle.",
+      "section": "On the first sub",
+      "primary_topic": "Cycle Duration",
+      "secondary_topics": [
+        "model simulation",
+        "time steps",
+        "developmental cycle"
+      ],
+      "chunk_summary": "The model requires 39 time steps to complete a full cycle of orientation and organ allocation.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Fig. 1 represents a regenerative P systems model of a planarian worm with dimensions 4x3 (see Table 2). Grey compartments constitute the trunk, gold and green represent left and right sides, while blue and red represent the tail and head, respectively.  Compartments can belong to multiple regions if they have two colors. Circles within compartments symbolize organs in each morphological part. Black lines connecting compartments represent links allowing the passage of objects like proteins and small molecules.",
+      "section": "[PAGE 5] Fig. 1 represents a regenerative P systems model of a planarian worm of length 4 and width 3 (see Table 2). The compartments labeled in grey make up the trunk, those labeled in gold and green compose the left-hand and right-hand sides, respectively; and those labeled in blue and red represent the tail and the head, respectively. Compartments with two colors belong to two regions simultaneously. The circles in each compartment represent the organs in each morphology part. Moreover, a black line between two compartments represents a link between them, through with objects (some proteins, small molecules, etc.) can pass.",
+      "primary_topic": "P Systems Model",
+      "secondary_topics": [
+        "planarian",
+        "regeneration",
+        "compartments",
+        "morphology",
+        "intercellular communication",
+        "proteins",
+        "small molecules"
+      ],
+      "chunk_summary": "This figure describes a P systems model of a planarian, highlighting the compartmentalization of different body regions and the interconnectivity between them.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "5"
+    },
+    {
+      "text": "The model of planarian regeneration is represented as a regenerative P system (Π) with specific components. Π = (H, G, Σ, Θ, {Whᵢ | 1 ≤ i ≤ m}, R, {(Sk, tk) | 1 ≤ k ≤ n}), where H defines the spatial domain as a grid of coordinates representing the planarian body. G is a graph representing the initial morphology, with nodes as regions and edges as connections. Σ is an alphabet of objects representing molecules and signals. Θ is an alphabet of scripts representing procedures triggered under specific conditions. {Whᵢ | 1 ≤ i ≤ m} represents the initial multiset of objects in each compartment hᵢ.",
+      "section": "The model of planarian regeneration consists of a regenerative P system defined as follows",
+      "primary_topic": "Regenerative P system",
+      "secondary_topics": [
+        "planarian regeneration",
+        "computational model",
+        "morphology",
+        "bioelectric signals",
+        "multiset"
+      ],
+      "chunk_summary": "This chunk introduces the regenerative P system (Π) and its core components: spatial domain (H), morphology graph (G), object alphabet (Σ), script alphabet (Θ), and initial multisets {Whᵢ}.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "R represents a finite set of rules governing the system's dynamics. These rules include object transformations within compartments ([u]₍ₘ,ₙ₎ → [v, s]₍ₘ,ₙ₎), object movements between compartments ([u]₍ₘ,ₙ₎ → [v]₍ₘ',ₙ'₎ or [u]₍ₘ,ₙ₎ # [v]₍ₘ',ₙ'₎), and object duplication and movement ([u]₍ₘ,ₙ₎ → [v]₍ₘ,ₙ₎[w]₍ₘ',ₙ'₎). Each rule r in R has an associated priority (pr(r)) and a guard (gᵣ) that determines its execution.  u, v, and w represent multisets of objects, m and n represent compartment coordinates, and s represents a script.",
+      "section": "The model of planarian regeneration consists of a regenerative P system defined as follows",
+      "primary_topic": "System dynamics",
+      "secondary_topics": [
+        "rules",
+        "object transformation",
+        "compartmentalization",
+        "priority",
+        "guard",
+        "multiset"
+      ],
+      "chunk_summary": "This chunk details the rule set R, which governs object transformations, movements, and duplication within the system, along with rule priorities and guards.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Finally, {(Sk, tk)|1 ≤ k ≤ n} is a set of pairs where Sk is a script from Θ and tk is a computable predicate over the system's configurations. This set includes a pair (σ, F), where F is a predicate that always evaluates to false. Each script sᵢ is unique within the set of pairs. These pairs link scripts to predicates, enabling complex behavior based on system state.",
+      "section": "The model of planarian regeneration consists of a regenerative P system defined as follows",
+      "primary_topic": "Scripts and predicates",
+      "secondary_topics": [
+        "system configuration",
+        "predicates",
+        "scripts",
+        "computable predicate",
+        "state-dependent behavior"
+      ],
+      "chunk_summary": "This chunk describes the set of script-predicate pairs that control system behavior based on its configuration, including a special pair (σ, F) with a permanently false predicate.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The values and descriptions of the parameters used in the model are described below.",
+      "section": "The values and descriptions of the parameters used in the model are the following",
+      "primary_topic": "Model Parameters",
+      "secondary_topics": [
+        "parameters",
+        "model",
+        "descriptions",
+        "values"
+      ],
+      "chunk_summary": "This section outlines the values and descriptions of the parameters used in the described model.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Parameters lp, bclkmax, and oclkmax are experimentally adjusted for model synchronization.  In contrast, parameters length and width can be modified based on the desired resolution of the experiment. lp represents the pause duration between morphology part allocation and organ allocation stages. bclkmax is the maximum value of the morphology part clock, while oclkmax is the maximum value of the organ clock.",
+      "section": "Parameters lp",
+      "primary_topic": "Model Parameters",
+      "secondary_topics": [
+        "synchronization",
+        "morphology",
+        "organ allocation",
+        "resolution",
+        "experimental adjustment"
+      ],
+      "chunk_summary": "The model uses adjustable parameters for synchronization (lp, bclkmax, oclkmax) and resolution (length, width).",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The length parameter defines the maximum head-to-tail distance in any generated morphology, and the width parameter defines the maximum left-to-right distance in any generated morphology.",
+      "section": "Parameters lp",
+      "primary_topic": "Morphology Parameters",
+      "secondary_topics": [
+        "length",
+        "width",
+        "head-to-tail distance",
+        "left-to-right distance",
+        "model generation"
+      ],
+      "chunk_summary": "Length and width parameters control the maximum dimensions of generated morphologies.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The morphology part clock advances one unit per computation step.  The clock, denoted as bclk, is indexed by i, m, and n, representing time, length, and width respectively.  The index i ranges from 1 to bclkmax-1, excluding specific values related to a parameter lp (lp+3, 2lp+3, 3lp+3).  The indices m and n represent spatial dimensions, ranging from 1 to length-1 and 1 to width respectively. The clock updates according to specific rules defined by transitions between different clock states (bclkᵢ → bclkᵢ₊₁).",
+      "section": "[PAGE 5] The morphology part clock advances one unit per computation step.",
+      "primary_topic": "Morphological Clock",
+      "secondary_topics": [
+        "computation",
+        "time steps",
+        "spatial dimensions",
+        "clock updates",
+        "state transitions",
+        "bclk",
+        "lp parameter"
+      ],
+      "chunk_summary": "This section describes the update rules for a morphological clock (bclk) that advances in discrete time steps and is indexed by spatial dimensions.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "5"
+    },
+    {
+      "text": "Specific transition rules are defined for the clock.  Transitions occur from bclk₂₊ⱼ to bclk₃₊ⱼ, where j ranges from 0 to 1.  Additionally, transitions occur from bclkᵢ₊ₗₚ₊₃ to bclkᵢ₊ₗₚ₊₄, bclkᵢ₊₂.ₗₚ₊₃ to bclkᵢ₊₂.ₗₚ₊₄, and bclkᵢ₊₃.ₗₚ₊₃ to bclkᵢ₊₃.ₗₚ₊₄. Finally, the clock state bclk_bclkmax transitions to oclk₁, suggesting a connection between the morphological clock (bclk) and another clock denoted as oclk.",
+      "section": "[PAGE 5] The morphology part clock advances one unit per computation step.",
+      "primary_topic": "Clock Transitions",
+      "secondary_topics": [
+        "state transitions",
+        "bclk",
+        "oclk",
+        "lp parameter",
+        "time steps",
+        "indices"
+      ],
+      "chunk_summary": "This section details the specific transition rules between different states of the morphological clock (bclk) and its interaction with another clock (oclk).",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "5"
+    },
+    {
+      "text": "After the morphology part allocation stage has been completed, unused rec₍ₘ,ₙ₎ objects are cleared. The provided equations describe a process involving these rec objects and a clkclk variable, likely within a grid or matrix structure denoted by 'm' (length) and 'n' (width).  The equations suggest a state transition or update rule based on neighboring elements within this structure (m-1, n-1, m+1, n+1). The clkclk variable, with subscript indicating time and other parameters, likely controls the timing or type of update. The constraint 1 ≤ clkᵢₜ < 4 suggests four possible states or update types.",
+      "section": "After the morphology part allocation stage has been completed",
+      "primary_topic": "Object Clearing",
+      "secondary_topics": [
+        "grid structure",
+        "state transition",
+        "update rule",
+        "clkclk variable",
+        "morphology allocation"
+      ],
+      "chunk_summary": "Unused rec objects are cleared following morphology allocation, with the remaining objects undergoing state transitions within a grid structure based on neighboring elements and a clkclk variable.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Our model does not permit the same compartment to simultaneously belong to the head and the tail regions, nor to the left-hand and the right-hand side. Therefore, if any of these pairs of object markers coincides in a compartment at the same time, they are cleared out. Cells often implement bi-stable negative feedback signaling to ensure that only one outcome dominates. The purpose of these rules is to avoid incorrect behaviors in the model resulting from having the same compartment associated with opposing parts.",
+      "section": "Our model does not permit the same compartment to simultaneously belong to the head and the tail regions",
+      "primary_topic": "Model Constraints",
+      "secondary_topics": [
+        "compartmentalization",
+        "mutual exclusivity",
+        "anatomical regions",
+        "negative feedback",
+        "bi-stability"
+      ],
+      "chunk_summary": "The model enforces mutual exclusivity of anatomical regions within compartments to prevent conflicting assignments and ensure accurate behavior.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "(-1) [he, ta → Ø]₍ₘ,ₙ₎\n(-1) [ls, rs → Ø]₍ₘ,ₙ₎\n1 < m < length\n1 ≤ n ≤ width",
+      "section": "Our model does not permit the same compartment to simultaneously belong to the head and the tail regions",
+      "primary_topic": "Formal Rules",
+      "secondary_topics": [
+        "mathematical notation",
+        "compartmental model",
+        "constraints",
+        "head-tail axis",
+        "left-right axis"
+      ],
+      "chunk_summary": "Formal rules are presented to mathematically define the constraints on compartmental assignment to anatomical regions.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "These rules initiate and locate the pharynx in the center of the morphology. The model considers that all compartments not belonging to the head or tail are automatically part of the trunk. Thus, head and tail compartments are excluded from pharynx allocation.  Likewise, compartments belonging to either the left or right side are excluded from being assigned as 'center'.",
+      "section": "These rules initiate and locate the pharynx in the center of the morphology",
+      "primary_topic": "Pharynx Placement",
+      "secondary_topics": [
+        "morphology",
+        "body plan",
+        "head",
+        "tail",
+        "trunk",
+        "center"
+      ],
+      "chunk_summary": "The model defines rules for placing the pharynx in the center of the morphology, excluding head, tail, left, and right compartments.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "{¬he ∧ ¬ta ∧ ¬ls ∧ ¬rs ∧ oclk₁} [Ø → lsS₍ₙ,₀₎, rsS₍ₙ,₀₎, heS₍ₘ,₀₎, taS₍ₘ,₀₎]₍ₘ,ₙ₎  {¬he ∧ ¬ta ∧ ¬ls ∧ ¬rs} [pharsl, pharsv → phar]₍ₘ,ₙ₎ 2 ≤ m ≤ length – 1  2 ≤ n ≤ width – 1",
+      "section": "These rules initiate and locate the pharynx in the center of the morphology",
+      "primary_topic": "Formal Rules",
+      "secondary_topics": [
+        "logical notation",
+        "compartments",
+        "pharynx",
+        "head",
+        "tail",
+        "left",
+        "right",
+        "width",
+        "length"
+      ],
+      "chunk_summary": "Formal logical rules specify the conditions for assigning compartments to different body regions, including the pharynx.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "After all compartments have been associated with a morphology part, but before the organs are allocated, the model flushes organ markers. {oclk₁} [phar → Ø]₍ₘ,ₙ₎ 1 < m < length {oclk₁} [e → Ø]₍ₘ,ₙ₎ {oclk₁} [b → Ø]₍ₘ,ₙ₎ 1 ≤ n ≤ width",
+      "section": "After all compartments have been associated with a morphology part",
+      "primary_topic": "Organ Allocation",
+      "secondary_topics": [
+        "morphology",
+        "compartments",
+        "organ markers",
+        "model flushing",
+        "oclk₁"
+      ],
+      "chunk_summary": "The model clears existing organ markers before allocating organs to morphological compartments.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Compartments allocated to the head signal left and right to allocate eyes and brains. If no response from the left compartment in the next step, it's at the leftmost position and generates an eye and a brain. The same applies to the right side.",
+      "section": "Compartments that have been allocated to the head send a signal to the left and right to allocate the eyes and brains",
+      "primary_topic": "Head compartment signaling",
+      "secondary_topics": [
+        "eye allocation",
+        "brain allocation",
+        "positional signaling",
+        "left-right asymmetry",
+        "developmental biology"
+      ],
+      "chunk_summary": "Head compartments signal left and right to allocate eyes and brains, with the outermost compartments on each side generating these structures if no response is received.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "{he ∧ oclk₁} [Ø → les, res]₍ₘ,ₙ₎ {he} [les]₍ₘ,ₙ₎ → [less]₍ₘ,ₙ₋₁₎ {he} [res]₍ₘ,ₙ₎ → [ress]₍ₘ,ₙ₊₁₎ {he} [less]₍ₘ,ₙ₎ → [lesb]₍ₘ,ₙ₊₁₎ {he} [ress]₍ₘ,ₙ₎ → [resb]₍ₘ,ₙ₋₁₎ 2 ≤ m ≤ length 1 ≤ n ≤ width",
+      "section": "Compartments that have been allocated to the head send a signal to the left and right to allocate the eyes and brains",
+      "primary_topic": "Formal model",
+      "secondary_topics": [
+        "computational modeling",
+        "state transitions",
+        "positional information",
+        "left/right signals",
+        "les",
+        "res",
+        "he"
+      ],
+      "chunk_summary": "This formal model describes the state transitions and signal propagation for eye and brain allocation within head compartments, using variables like 'les' and 'res' to represent left and right signals.",
+      "position_in_section": "Middle",
+      "certainty_level": "Medium",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "{he ∧ oclk_oclkmax} [lesb → Ø]₍ₘ,ₙ₎ {he ∧ oclk_oclkmax} [resb → Ø]₍ₘ,ₙ₎ {he ∧ oclk_oclkmax ∧ lesb} [Ø → e, b]₍ₘ,ₙ₎ {he ∧ oclk_oclkmax ∧ resb} [Ø → e, b]₍ₘ,ₙ₎",
+      "section": "Compartments that have been allocated to the head send a signal to the left and right to allocate the eyes and brains",
+      "primary_topic": "Eye/Brain generation",
+      "secondary_topics": [
+        "formal model",
+        "state transitions",
+        "eye development",
+        "brain development",
+        "lesb",
+        "resb",
+        "oclk_oclkmax"
+      ],
+      "chunk_summary": "This part of the model describes the generation of eyes (e) and brain (b) based on the signals and a time variable (oclk_oclkmax), indicating the final stage of eye and brain allocation.",
+      "position_in_section": "End",
+      "certainty_level": "Medium",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The organ clock, denoted as oclk, advances by one unit for each computation step. This progression is represented by the transition from oclkᵢ to oclkᵢ₊₁ within a two-dimensional space defined by indices m and n. The index m ranges from values greater than 1 to a maximum value determined by the length, while the index n ranges from 1 to a maximum value determined by the width. The index i, representing the current state of the organ clock, ranges from 1 up to a maximum value, oclkmax, minus 1.",
+      "section": "The organ clock advances one unit per computation step",
+      "primary_topic": "Organ Clock",
+      "secondary_topics": [
+        "computation",
+        "time step",
+        "index",
+        "2D space",
+        "length",
+        "width"
+      ],
+      "chunk_summary": "The organ clock increments by one unit per computational step within a defined 2D space.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The signals responsible for pharynx allocation are transmitted at a rate of one compartment per computational step. The following state transitions describe the signal propagation: {ls} [lsS₍ₐ,ᵢ₎]₍ₘ,ₙ₎ → [lsS₍ₐ,ᵢ₊₁₎]₍ₘ,ₙ₋₁₎ (left signal), {rs} [rsS₍ₐ,ᵢ₎]₍ₘ,ₙ₎ → [rsS₍ₐ,ᵢ₊₁₎]₍ₘ,ₙ₊₁₎ (right signal), {ta} [taS₍ₐ,ᵢ₎]₍ₘ,ₙ₎ → [taS₍ₐ,ᵢ₊₁₎]₍ₘ₋₁,ₙ₎ (tail signal), {he} [heS₍ₐ,ᵢ₎]₍ₘ,ₙ₎ → [heS₍ₐ,ᵢ₊₁₎]₍ₘ₊₁,ₙ₎ (head signal).",
+      "section": "The signals used to allocate the pharynx are transmitted at a speed of one compartment per computation step",
+      "primary_topic": "Signal Propagation",
+      "secondary_topics": [
+        "pharynx allocation",
+        "computational modeling",
+        "state transitions",
+        "signal transmission",
+        "lsS",
+        "rsS",
+        "taS",
+        "heS"
+      ],
+      "chunk_summary": "The section describes the rules governing the propagation of signals involved in pharynx allocation within a computational model.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The following constraints define the boundaries and ranges for the variables used in the state transitions: 1 < m < length, 2 ≤ n ≤ width – 1, 1 ≤ a ≤ width, 0 ≤ i ≤ length, 2 < m < length – 1, 1 ≤ n ≤ width, 1 ≤ a ≤ length, 0 ≤ i ≤ width. These constraints ensure that the signals remain within the defined spatial domain of the model.",
+      "section": "The signals used to allocate the pharynx are transmitted at a speed of one compartment per computation step",
+      "primary_topic": "Model Constraints",
+      "secondary_topics": [
+        "spatial domain",
+        "boundaries",
+        "variables",
+        "m",
+        "n",
+        "a",
+        "i",
+        "length",
+        "width"
+      ],
+      "chunk_summary": "This part defines the spatial constraints and variable ranges within the computational model for pharynx allocation.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The signals responsible for pharynx allocation return upon reaching the furthest compartment in a given direction. This behavior is described by the following state transitions: {ls} [lsS₍ₐ,ᵢ₎]₍ₘ,ₙ₎ → [lsS₍b,ₐ,ᵢ₊₁₎]₍ₘ,ₙ₊₁₎ where 1 < m < length and 1 ≤ n ≤ width; {rs} [rsS₍ₐ,ᵢ₎]₍ₘ,ₙ₎ → [rsS₍b,ₐ,ᵢ₊₁₎]₍ₘ,ₙ₋₁₎ where 1 ≤ n ≤ width and 1 ≤ a ≤ width, 0 ≤ i ≤ length; {ta} [taS₍ₐ,ᵢ₎]₍ₘ,ₙ₎ → [taS₍b,ₐ,ᵢ₊₁₎]₍ₘ₊₁,ₙ₎ where 1 < m < length and 1 ≤ n ≤ width; and {he} [heS₍ₐ,ᵢ₎]₍ₘ,ₙ₎ → [heS₍b,ₐ,ᵢ₊₁₎]₍ₘ₋₁,ₙ₎ where 1 ≤ a ≤ length and 0 ≤ i ≤ width.",
+      "section": "The signals used to allocate the pharynx return once they have reached the farthest compartment in a specific direction",
+      "primary_topic": "Signal Propagation",
+      "secondary_topics": [
+        "pharynx allocation",
+        "compartmental model",
+        "state transitions",
+        "directional signaling",
+        "ls",
+        "rs",
+        "ta",
+        "he"
+      ],
+      "chunk_summary": "The section describes the state transitions governing the return of pharynx allocation signals after reaching the furthest compartment.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The signals responsible for pharynx allocation propagate back to their originating compartment. This process is described mathematically, where 'm' represents a length less than the total length and 'n' represents a width within the range of 2 to the width minus 1. The notation lsS₍b,ₐ,ᵢ₎₍ₘ indicates a specific signal or process related to pharynx development.",
+      "section": "The signals used to allocate the pharynx propagate back until they reach their compartment of origin",
+      "primary_topic": "Pharynx Allocation",
+      "secondary_topics": [
+        "signal propagation",
+        "compartmentalization",
+        "developmental biology",
+        "pharynx development",
+        "mathematical modeling",
+        "lsS notation"
+      ],
+      "chunk_summary": "Signals determining pharynx position propagate back to their source compartment, mathematically represented by variables 'm' and 'n' and the notation lsS₍b,ₐ,ᵢ₎₍ₘ.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    }
+  ],
+  "processed_at": "2025-08-14T14:40:11.930766",
+  "chunk_count": 83,
+  "processing_method": "document_splitting"
+}

@@ -1,0 +1,35 @@
+{
+  "document_type": "journal-article",
+  "title": "BMP-3 is a novel inhibitor of both activin and BMP-4 signaling in Xenopus embryos",
+  "authors": [
+    "Laura W. Gamer",
+    "John Nove",
+    "Michael Levin",
+    "Vicki Rosen"
+  ],
+  "journal": "Developmental Biology",
+  "publication_year": 2005,
+  "doi": "10.1016/j.ydbio.2005.06.012",
+  "abstract": null,
+  "extraction_confidence": "high",
+  "filename": "0bfa7089_20250814_131547_916.pdf",
+  "extraction_timestamp": "2025-08-14T13:17:18.518750",
+  "extraction_method": "gemini_1.5_flash",
+  "pages_analyzed": 2,
+  "publication_date": "2005-09",
+  "page_range": "156-168",
+  "volume": "285",
+  "issue": "1",
+  "references_count": 51,
+  "publisher": "Elsevier BV",
+  "issn": "0012-1606",
+  "crossref_data": true,
+  "enrichment_method": "crossref_api",
+  "crossref_enriched": true,
+  "enrichment_timestamp": "2025-08-14T13:27:06.892606",
+  "affiliations": [
+    "lab ruled out the possibility",
+    "Laboratory Manual. Cold Spring Harbor Laboratory"
+  ],
+  "text_enriched": true
+}

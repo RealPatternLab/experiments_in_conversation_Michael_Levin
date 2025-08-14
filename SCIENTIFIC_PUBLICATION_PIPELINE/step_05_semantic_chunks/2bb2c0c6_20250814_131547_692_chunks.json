@@ -1,0 +1,1897 @@
+{
+  "metadata": {
+    "document_type": "research_paper",
+    "title": "Morphoceuticals: Perspectives for discovery of drugs targeting anatomical control mechanisms in regenerative medicine, cancer and aging",
+    "authors": [
+      "Léo Pio-Lopez",
+      "Michael Levin"
+    ],
+    "journal": "Drug Discovery Today",
+    "publication_year": 2023,
+    "doi": null,
+    "abstract": "Morphoceuticals are a new class of interventions that target the setpoints of anatomical homeostasis for efficient, modular control of growth and form. Here, we focus on a subclass: electroceuticals, which specifically target the cellular and biophysical interface. Cellular morphogenetics in all tissues controls which networks via ion channels and gap junctions that process collective subcellular information, bioelectrical gene expression and allows cells to adaptively and dynamically control growth and pattern formation. We describe the potential of electroceuticals to treat a wide range of diseases by maintaining shape and suggesting that targeting bioelectrical interfaces can control embryogenesis and communal shape against injury, senescence and tumourigenesis. We propose a roadmap for drug discovery focused on manipulating endogenous bioelectric signaling for regenerative medicine, cancer suppression and antiaging therapeutics.",
+    "extraction_confidence": "high",
+    "filename": "2bb2c0c6_20250814_131547_692.pdf",
+    "extraction_timestamp": "2025-08-14T13:16:05.387358",
+    "extraction_method": "gemini_1.5_flash",
+    "pages_analyzed": 2,
+    "affiliations": [
+      "Tufts University",
+      "Wyss Institute",
+      "Harvard University",
+      "Institute for Biologically Inspired Engineering"
+    ],
+    "keywords": [
+      "Biomedicine",
+      "Drug discovery",
+      "Morphogenesis"
+    ],
+    "volume": "2",
+    "page_range": "7-12",
+    "text_enriched": true,
+    "enrichment_method": "text_analysis",
+    "enrichment_timestamp": "2025-08-14T13:27:01.741349"
+  },
+  "chunks": [
+    {
+      "text": "Morphoceuticals represent a new frontier in drug discovery, focusing on modulating anatomical control mechanisms for regenerative medicine, cancer treatment, and anti-aging therapies.  This approach targets the bioelectric processes that regulate cell behavior and tissue organization, aiming to control large-scale shape and structure.  The concept of morphoceuticals is spearheaded by Léo Pio-Lopez and Michael Levin at the Allen Discovery Center at Tufts University and the Wyss Institute at Harvard University.",
+      "section": "Morphoceuticals",
+      "primary_topic": "Morphoceuticals",
+      "secondary_topics": [
+        "regenerative medicine",
+        "cancer",
+        "aging",
+        "bioelectric signaling",
+        "anatomical control",
+        "drug discovery",
+        "tissue organization"
+      ],
+      "chunk_summary": "Morphoceuticals are a new class of drugs targeting anatomical control mechanisms for regenerative medicine, cancer, and aging by modulating bioelectric processes.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Morphoceuticals are a new class of interventions that target the setpoints of anatomical homeostasis for efficient, modular control of growth and form. Here, we focus on a subclass: electroceuticals, which specifically target the cellular bioelectrical interface. Cellular collectives in all tissues form bioelectrical networks via ion channels and gap junctions that process morphogenetic information, controlling gene expression and allowing cell networks to adaptively and dynamically control growth and pattern formation.",
+      "section": "Morphoceuticals are a new class of interventions that target the setpoints of anatomical homeostasis",
+      "primary_topic": "Morphoceuticals",
+      "secondary_topics": [
+        "electroceuticals",
+        "bioelectrical networks",
+        "ion channels",
+        "gap junctions",
+        "morphogenesis",
+        "gene expression",
+        "growth control",
+        "pattern formation"
+      ],
+      "chunk_summary": "Morphoceuticals, specifically electroceuticals, target bioelectrical networks within tissues to control growth and form by influencing gene expression and pattern formation.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Recent progress in understanding this physiological control system, including predictive computational models, suggests that targeting bioelectrical interfaces can control embryogenesis and maintain shape against injury, senescence and tumorigenesis. We propose a roadmap for drug discovery focused on manipulating endogenous bioelectric signaling for regenerative medicine, cancer suppression and antiaging therapeutics.",
+      "section": "Morphoceuticals are a new class of interventions that target the setpoints of anatomical homeostasis",
+      "primary_topic": "Bioelectric Signaling",
+      "secondary_topics": [
+        "computational models",
+        "embryogenesis",
+        "injury repair",
+        "senescence",
+        "tumorigenesis",
+        "regenerative medicine",
+        "cancer suppression",
+        "antiaging therapeutics",
+        "drug discovery"
+      ],
+      "chunk_summary": "Targeting bioelectric interfaces has potential applications in regenerative medicine, cancer suppression, and antiaging therapies, as suggested by computational models and research on embryogenesis and tissue maintenance.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "This paper addresses topics relevant to biomedicine, drug discovery, and morphogenesis. Biomedicine encompasses a broad range of research areas focused on human health and disease, including the development of new diagnostic tools and therapeutic strategies. Drug discovery involves the identification and development of new medications to treat various illnesses, often targeting specific molecular pathways involved in disease pathogenesis. Morphogenesis, a key aspect of developmental biology, refers to the processes that shape the form and structure of organisms, encompassing cellular behaviors such as growth, differentiation, and migration.",
+      "section": "Keywords",
+      "primary_topic": "Key Concepts",
+      "secondary_topics": [
+        "Biomedicine",
+        "Drug discovery",
+        "Morphogenesis",
+        "Health",
+        "Disease",
+        "Diagnostics",
+        "Therapeutics",
+        "Development"
+      ],
+      "chunk_summary": "This section defines the keywords biomedicine, drug discovery, and morphogenesis, highlighting their relevance to human health, disease treatment, and developmental biology.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Anatomical homeostasis is a central concept for biomedicine. This introductory section highlights the importance of understanding how organisms maintain their shape and structure despite constant cellular turnover and environmental perturbations.  The ability to maintain a consistent anatomical form is crucial for proper physiological function and overall health.  Further exploration into the mechanisms governing anatomical homeostasis will be presented in the subsequent sections.",
+      "section": "[PAGE 1] Introduction",
+      "primary_topic": "Anatomical Homeostasis",
+      "secondary_topics": [
+        "biomedicine",
+        "shape maintenance",
+        "structure",
+        "cellular turnover",
+        "environmental perturbations",
+        "physiological function"
+      ],
+      "chunk_summary": "Anatomical homeostasis, the ability to maintain shape and structure despite challenges, is a crucial concept in biomedicine.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "1"
+    },
+    {
+      "text": "One crucial aspect of cell biology is the ability of groups of cells to collectively reach specific, large-scale anatomical outcomes.",
+      "section": "One crucial aspect of cell biology is the ability of groups of cells",
+      "primary_topic": "Collective Cell Behavior",
+      "secondary_topics": [
+        "anatomical outcomes",
+        "cell biology",
+        "large-scale organization",
+        "multicellularity",
+        "tissue morphogenesis"
+      ],
+      "chunk_summary": "Groups of cells can coordinate their behavior to achieve specific large-scale anatomical structures.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "From single cells (eggs) to complex metazoan bodies, such cell collectives cooperate toward creating complex forms and defending them against tumorigenesis, aging and injuries. Understanding the set of mechanisms that allow this is crucial for producing innovating new therapeutics for birth defects, regenerative repair and cancer.",
+      "section": "From single cells",
+      "primary_topic": "Morphogenesis",
+      "secondary_topics": [
+        "cell collectives",
+        "tumorigenesis",
+        "aging",
+        "regenerative repair",
+        "therapeutics",
+        "birth defects",
+        "cancer"
+      ],
+      "chunk_summary": "Cell collectives cooperate to create complex forms and defend against threats like tumorigenesis, aging, and injuries, and understanding these mechanisms is crucial for developing new therapeutics.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Transformative biomedical therapeutics would be within reach if there were robust methods to communicate anatomical goal states to cell groups, coaxing them to build fresh organs and tissues as needed. What features of morphogenesis can be exploited to achieve this?",
+      "section": "From single cells",
+      "primary_topic": "Biomedical Therapeutics",
+      "secondary_topics": [
+        "anatomical goal states",
+        "tissue regeneration",
+        "organ regeneration",
+        "morphogenesis",
+        "cell communication"
+      ],
+      "chunk_summary": "Robust methods to communicate anatomical goals to cell groups could revolutionize biomedical therapeutics by enabling the construction of new organs and tissues.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Importantly, although reliable and consistent, morphogenesis is not hardwired – it is plastic and dynamic (Figure 1). Cell collectives have ample resources to deal with a wide range of disruptors of their morphogenetic target states: the same anatomical configuration can be reached from different starting conditions and despite significant perturbations.",
+      "section": "Importantly",
+      "primary_topic": "Morphogenetic Plasticity",
+      "secondary_topics": [
+        "morphogenesis",
+        "plasticity",
+        "dynamic systems",
+        "cell collectives",
+        "perturbations",
+        "target states",
+        "anatomical configuration"
+      ],
+      "chunk_summary": "Morphogenesis, while reliable, exhibits plasticity and dynamism, allowing cell collectives to achieve target anatomical configurations despite disruptions and varying initial conditions.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "For example, regenerative organisms, like salamanders, can regrow a limb after amputation.",
+      "section": "Importantly",
+      "primary_topic": "Regeneration Example",
+      "secondary_topics": [
+        "regeneration",
+        "limb regeneration",
+        "salamanders",
+        "amputation"
+      ],
+      "chunk_summary": "Salamanders exemplify the regenerative capacity of some organisms, capable of regrowing limbs after amputation.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The cells reproduce a normal limb and stop their activity when the precisely correct appendage is complete, regardless of the level of the original amputation. Deer regrow huge amounts of antler bone and innervation each year, and even human beings can regenerate livers. Tadpoles with scrambled faces still make normal frogs because their craniofacial organs rearrange as needed during metamorphosis.",
+      "section": "The cells reproduce a normal limb and stop their activity when",
+      "primary_topic": "Regeneration",
+      "secondary_topics": [
+        "limb regeneration",
+        "antler growth",
+        "liver regeneration",
+        "craniofacial development",
+        "metamorphosis"
+      ],
+      "chunk_summary": "Various examples from the animal kingdom demonstrate the remarkable regenerative capacity of biological systems, highlighting the precise control over growth and termination.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "2"
+    },
+    {
+      "text": "This property is also found in the regulative development of early mammalian embryos that can recover from massive perturbation such as complete (natural or artificial) bisection, producing two identical normal bodies. Although cellular genetic hardware changes on evolutionary timescales, its remarkable physiological and computational (software) properties enable cellular collectives to form versatile machines that solve a wide range of problems in real time.",
+      "section": "The cells reproduce a normal limb and stop their activity when",
+      "primary_topic": "Developmental Plasticity",
+      "secondary_topics": [
+        "mammalian embryos",
+        "regulative development",
+        "bisection",
+        "cellular collectives",
+        "physiological properties",
+        "computational properties"
+      ],
+      "chunk_summary": "Early mammalian embryos exhibit remarkable developmental plasticity, capable of recovering from significant perturbations due to the physiological and computational properties of cellular collectives.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "2"
+    },
+    {
+      "text": "The emerging field at the intersection of diverse intelligence, computer science and developmental biophysics is beginning to understand how cellular swarms deploy a kind of collective intelligence to navigate the space of possible anatomical shapes (morphospace) until the correct target morphology is reached, and despite perturbations.",
+      "section": "The cells reproduce a normal limb and stop their activity when",
+      "primary_topic": "Collective Intelligence",
+      "secondary_topics": [
+        "cellular swarms",
+        "morphospace",
+        "target morphology",
+        "developmental biophysics",
+        "computer science",
+        "diverse intelligence"
+      ],
+      "chunk_summary": "An interdisciplinary field is emerging to study how cellular collectives utilize a form of collective intelligence to achieve correct anatomical shapes despite disruptions.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "2"
+    },
+    {
+      "text": "How do such cellular collectives know when to stop growing and remodeling? One set of models focuses on 'anatomical homeostasis' – the competency to implement an error-minimization scheme toward an anatomical setpoint. This is a different way of thinking about morphogenesis – not as a set of outcomes that emerge inevitably from the unrolling of a fixed genome through molecular interactions but instead as a real-time problem-solving process carried out by a machine with context-specific information-processing capabilities.",
+      "section": "How do such cellular collectives know when to stop growing",
+      "primary_topic": "Anatomical Homeostasis",
+      "secondary_topics": [
+        "morphogenesis",
+        "setpoint",
+        "error minimization",
+        "cellular collectives",
+        "growth control",
+        "information processing"
+      ],
+      "chunk_summary": "Morphogenesis can be viewed as a real-time problem-solving process driven by anatomical homeostasis, aiming for a target setpoint rather than a predetermined genetic unfolding.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "This difference in perspective is crucial because it has strong implications for therapeutic interventions. Most current approaches in molecular medicine assume that the only viable therapeutic target is the hardware. Biological circuits must be rewired bottom-up (e.g., via genomic editing or drugs that target specific protein activities). By contrast, the homeostatic perspective suggests that it might be possible to work top-down, rewriting the anatomical target or setpoint to induce a different outcome without changing the morphogenetic machinery itself.",
+      "section": "How do such cellular collectives know when to stop growing",
+      "primary_topic": "Therapeutic Interventions",
+      "secondary_topics": [
+        "molecular medicine",
+        "genomic editing",
+        "drug targets",
+        "homeostatic perspective",
+        "top-down control",
+        "anatomical setpoint"
+      ],
+      "chunk_summary": "The homeostatic perspective suggests potential top-down therapeutic interventions by modifying the anatomical setpoint, contrasting with current bottom-up approaches focused on molecular hardware.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "This corresponds to the shift seen in information technology, which went from exclusively hardware-based control (in the 1940s and 1950s) to exploitation of reprogrammability, modularity of competent subroutines and high-level programming languages. Can medicine benefit from a similar transition?",
+      "section": "How do such cellular collectives know when to stop growing",
+      "primary_topic": "Reprogrammability Analogy",
+      "secondary_topics": [
+        "information technology",
+        "hardware control",
+        "software control",
+        "modularity",
+        "programming languages",
+        "medical advancements"
+      ],
+      "chunk_summary": "The shift from hardware to software control in information technology provides an analogy for potential advancements in medicine through top-down reprogramming of biological systems.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "Morphoceuticals are a novel class of therapeutics inspired by this perspective, developed to exploit the modular, error-correcting capabilities of tissues instead of trying to micromanage pathways. These can be repurposed existing compounds or newly discovered ones. What makes them unique is not a particular chemical property but rather the fact that they are used to target high-level morphogenetic control machinery instead of bottom-up targeting of specific molecular-level phenotypes.",
+      "section": "Morphoceuticals are a novel class of therapeutics inspired by",
+      "primary_topic": "Morphoceuticals",
+      "secondary_topics": [
+        "therapeutics",
+        "morphogenesis",
+        "tissue regeneration",
+        "error correction",
+        "molecular pathways",
+        "drug repurposing"
+      ],
+      "chunk_summary": "Morphoceuticals are a new class of drugs that target high-level morphogenetic control mechanisms in tissues, offering a novel approach to therapeutics by leveraging the self-correcting properties of biological systems.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Their discovery stems from efforts to understand collective decision-making of cell groups navigating morphogenetic, transcriptional, physiological and metabolic problem spaces; as the computational mechanisms that assess and modify growth and form are discovered, these sensing, memory and implementation steps become druggable targets.",
+      "section": "Their discovery stems from efforts to understand collective",
+      "primary_topic": "Cell decision-making",
+      "secondary_topics": [
+        "morphogenesis",
+        "transcription",
+        "physiology",
+        "metabolism",
+        "computational mechanisms",
+        "drug targets",
+        "cell communication"
+      ],
+      "chunk_summary": "Research into collective cell decision-making during morphogenesis and other processes has revealed druggable targets for controlling growth and form.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Here, we focus on a subset of these: electroceuticals, which specifically target bioelectric networks using ion channel drugs and other modalities (Figure 2, Table 1). Electroceutical approaches using direct external stimulation of peripheral nerves have been covered elsewhere7-12; these have shown promise but face the limitations where, although suitable to trigger action potentials, electrodes are not able to set up the standing (stable) patterns of cellular Vmem that are essential for organ-level bioelectric control. Here, we focus on drug approaches for manipulating the native bioelectric interface (ion channels and gap junctions)",
+      "section": "Here",
+      "primary_topic": "Electroceuticals",
+      "secondary_topics": [
+        "ion channel drugs",
+        "bioelectric networks",
+        "peripheral nerve stimulation",
+        "Vmem",
+        "action potentials"
+      ],
+      "chunk_summary": "This chunk introduces electroceuticals, focusing on drug-based approaches targeting ion channels and gap junctions to manipulate bioelectric networks, contrasting them with limitations of direct electrical stimulation.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "and especially expand its relevance beyond neurons to include all body cells, complementing exciting recent advances in using direct stimulation in regenerative contexts. 13-15 We review recent work that explains why bioelectric networks are such a compelling therapeutic target for developmental defects, regeneration and cancer. We also review evidence suggesting that aging, which has not yet been explored in the literature on bioelectricity, 16-18 constitutes another instantiation of morphogenetic dysregulation that could also respond to targeting bioelectric networks and offer our perspective on paths forward for electroceutical drug discovery.",
+      "section": "Here",
+      "primary_topic": "Bioelectric Networks",
+      "secondary_topics": [
+        "regeneration",
+        "cancer",
+        "developmental defects",
+        "aging",
+        "morphogenetic dysregulation",
+        "therapeutic target",
+        "drug discovery"
+      ],
+      "chunk_summary": "This chunk highlights the therapeutic potential of bioelectric networks beyond neurons, emphasizing their relevance to regeneration, cancer, developmental defects, and potentially aging, and discusses future directions for electroceutical drug discovery.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "3"
+    },
+    {
+      "text": "Developmental bioelectricity refers to the role of endogenous bioelectric signals in shaping anatomical structure during development.  These signals, primarily involving ion channels and pumps, establish voltage gradients across cell membranes and tissues. These gradients act as instructive cues, guiding cell behaviors such as proliferation, migration, and differentiation, ultimately influencing large-scale morphogenesis.  This concept highlights the importance of bioelectrical signaling as a regulatory mechanism in development, complementing known biochemical and genetic factors.",
+      "section": "[PAGE 3] Developmental bioelectricity",
+      "primary_topic": "Bioelectric signaling",
+      "secondary_topics": [
+        "ion channels",
+        "morphogenesis",
+        "development",
+        "voltage gradients",
+        "cell behavior",
+        "bioelectricity"
+      ],
+      "chunk_summary": "Bioelectric signals, generated by ion channels and pumps, create voltage gradients that regulate cell behavior and morphogenesis during development.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "3"
+    },
+    {
+      "text": "How do tissues store setpoints and coordinate cellular activity across distance? This functionality, predominantly observed in the brain, is achieved through bioelectrical networks distributed throughout the body. Developmental bioelectricity involves the widespread exchange of slowly changing ion-based voltage signals within and between cells, facilitating collective decision-making at the tissue level.",
+      "section": "How do tissues store setpoints and coordinate cellular activity",
+      "primary_topic": "Bioelectric networks",
+      "secondary_topics": [
+        "bioelectricity",
+        "cell communication",
+        "tissue organization",
+        "ion channels",
+        "voltage signals",
+        "developmental biology",
+        "collective decision-making"
+      ],
+      "chunk_summary": "Bioelectric networks, primarily studied in the brain but present throughout the body, coordinate cellular activity and tissue-level decision-making via ion-based voltage signals.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "All cells respond to changes in transmembrane voltage potential (Vmem). In this sense, other cells are similar to neurons: their electric state is determined by their ion channels, transporters and pumps, and by gap junctions (electrical synapses), which propagate the electric state between neighboring cells (Figure 3a, b).",
+      "section": "All cells respond to changes in transmembrane voltage potential",
+      "primary_topic": "Bioelectric signaling",
+      "secondary_topics": [
+        "transmembrane voltage potential",
+        "Vmem",
+        "ion channels",
+        "gap junctions",
+        "electrical synapses",
+        "cell communication",
+        "neurons"
+      ],
+      "chunk_summary": "All cells, similar to neurons, respond to changes in transmembrane voltage potential (Vmem) influenced by ion channels, transporters, pumps, and gap junctions that propagate electrical states between cells.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The bioelectric state of a cell is a function of past experience, extracellular signaling, and signals from immediate neighbors connected via gap junctions. Bioelectric signaling regulates various phenotypes in human cells, such as differentiation in mesenchymal stem cells.",
+      "section": "The bioelectric state of a cell is a function of past experience",
+      "primary_topic": "Bioelectric State",
+      "secondary_topics": [
+        "gap junctions",
+        "cell communication",
+        "extracellular signaling",
+        "mesenchymal stem cells",
+        "differentiation",
+        "phenotypes",
+        "bioelectricity"
+      ],
+      "chunk_summary": "A cell's bioelectric state is influenced by past experiences, external signals, and communication with neighboring cells through gap junctions, impacting cell behavior and differentiation.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "More important than single cell states, however, is the fact that, together, the voltage state of cells form a network – a tissue-wide bioelectrical pattern that ultimately triggers the changes in gene expression required to attain a specific morphogenetic goal. The bioelectric code maps prepatterns of voltage into organ size, shape and placement information via transduction by a set of mechanisms including neurotransmitter gating, calcium signaling and voltage-sensitive phosphatases (Figure 3).",
+      "section": "More important than single cell states",
+      "primary_topic": "Bioelectric code",
+      "secondary_topics": [
+        "bioelectricity",
+        "morphogenesis",
+        "cell communication",
+        "gene expression",
+        "calcium signaling",
+        "neurotransmitter gating",
+        "voltage-sensitive phosphatases",
+        "tissue-level patterns"
+      ],
+      "chunk_summary": "Tissue-wide bioelectrical patterns, encoded by cell voltage states, regulate gene expression and drive morphogenetic outcomes like organ size, shape, and placement.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Whereas the electrical neural networks of the brain guide muscles to implement behavioral goals, the ancient bioelectric networks of the body guide cell activity to implement morphogenetic goals, via storage and implementation of slowly changing anatomical prepatterns.",
+      "section": "Whereas the electrical neural networks of the brain guide muscles to implement behavioral goals",
+      "primary_topic": "Bioelectric Networks",
+      "secondary_topics": [
+        "neural networks",
+        "morphogenesis",
+        "anatomical prepatterns",
+        "cell activity",
+        "bioelectricity"
+      ],
+      "chunk_summary": "Bioelectric networks in the body guide cell activity to achieve morphogenetic goals through the storage and implementation of anatomical prepatterns.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "4"
+    },
+    {
+      "text": "Spatiotemporal patterns of Vmem in vivo are instructive for reaching specific morphogenetic outcomes. Microinjection of mRNA encoding Kir6.2 ion channels into blastomeres of frog embryos can reproduce the bioelectric state characteristic of the native eye field in ectopic locations by mimicking the native patterns that regionalize the face. Doing this in precursors of gut or other tissues – locations that never show competency to become eye tissue when induced by the 'master' eye gene",
+      "section": "Spatiotemporal patterns of Vmem in vivo are instructive for",
+      "primary_topic": "Bioelectric signaling",
+      "secondary_topics": [
+        "Vmem",
+        "morphogenesis",
+        "ion channels",
+        "Kir6.2",
+        "ectopic expression",
+        "eye development",
+        "frog embryos"
+      ],
+      "chunk_summary": "Manipulating bioelectric patterns in frog embryos, specifically by misexpressing ion channels, can induce eye development in non-eye tissues, demonstrating the instructive role of Vmem patterns in morphogenesis.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Pax6 induces the development of entire eyes capable of connecting to the nervous system and providing vision.  Regenerating planaria, typically reproducing a head at one end and a tail at the other, can be manipulated into viable two-headed or headless forms by targeting bioelectrical gradients in regenerating fragments.  Furthermore, they can even be induced to grow heads resembling those of other planaria species, all without genomic editing.",
+      "section": "Pax",
+      "primary_topic": "Pax6 and Regeneration",
+      "secondary_topics": [
+        "Pax6",
+        "eye development",
+        "planaria",
+        "regeneration",
+        "bioelectric gradients",
+        "genomic editing"
+      ],
+      "chunk_summary": "Pax6 can induce eye development, while manipulating bioelectric gradients can alter planarian regeneration, including head formation and even cross-species head morphology, without genetic modification.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "What these morphoceutical interventions have in common is that the input stimulus is informationally simple. It doesn't provide cell-by-cell instructions for building complex structures like eyes or heads. Instead, it acts as a high-level regulator, instructing the system to 'build organ X here,' relying on the inherent capabilities of cellular and molecular mechanisms to execute the details.",
+      "section": "What these morphoceutical interventions have in common is",
+      "primary_topic": "Morphoceutical Interventions",
+      "secondary_topics": [
+        "regenerative medicine",
+        "organ regeneration",
+        "high-level regulation",
+        "cellular mechanisms",
+        "molecular mechanisms",
+        "top-down control"
+      ],
+      "chunk_summary": "Morphoceutical interventions utilize simple, high-level regulatory signals that trigger complex organ regeneration by leveraging existing cellular and molecular mechanisms.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "This top-down approach is advantageous for regenerative medicine because it minimizes the need for micromanagement, leading to more robust outcomes.  Inducing a second head using this method results in properly scaled heads, demonstrating the system's ability to self-organize. In contrast, inducing head formation through a bottom-up approach, such as manipulating the Wnt pathway, produces tiny heads because size control must be handled separately.",
+      "section": "What these morphoceutical interventions have in common is",
+      "primary_topic": "Regenerative Medicine",
+      "secondary_topics": [
+        "top-down control",
+        "bottom-up control",
+        "Wnt pathway",
+        "size control",
+        "robustness",
+        "head regeneration",
+        "scaling"
+      ],
+      "chunk_summary": "The top-down approach of morphoceutical interventions offers greater robustness and proper scaling compared to bottom-up molecular manipulations like the Wnt pathway.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "As befits a native control system, ion channels have been implicated in numerous channelopathies of embryonic embryogenesis. The human phenotypes are well-modeled by functional experiments in species like fruit fly, zebrafish, mouse and frog, implicating numerous ion channels such as Kir2.1 and gap junctions (connexins).",
+      "section": "[PAGE 4] As befits a native control system, ion channels have been",
+      "primary_topic": "Ion Channels",
+      "secondary_topics": [
+        "channelopathies",
+        "embryogenesis",
+        "Kir2.1",
+        "gap junctions",
+        "connexins",
+        "developmental biology",
+        "genetic disorders"
+      ],
+      "chunk_summary": "Ion channels play a crucial role in embryonic development, and their dysfunction leads to various developmental disorders (channelopathies), as demonstrated by experimental models across different species.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "4"
+    },
+    {
+      "text": "Overall, the manipulation of the bioelectrical pattern holds great promise for the control of morphogenesis and, thus, for regenerative medicine. Bioelectric interventions can work at several levels. For example, electrotaxis has been exploited for the control of cell movement in wound healing.",
+      "section": "Overall",
+      "primary_topic": "Bioelectric control",
+      "secondary_topics": [
+        "morphogenesis",
+        "regenerative medicine",
+        "bioelectricity",
+        "electrotaxis",
+        "wound healing",
+        "cell migration"
+      ],
+      "chunk_summary": "Manipulating bioelectrical patterns offers potential for controlling morphogenesis and regenerative medicine, with electrotaxis as an example in wound healing.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "At the level of specific organs, malformations induced by mutations and teratogens can be reversed. For example, profound defects of brain structure and function induced by teratogens can be reversed by reinforcing normal endogenous voltage pre-patterns in xenopus. Pai et al. showed that brain developmental defects induced by mutation of key neurogenesis genes such as Notch can be rescued by misexpression or activation of native HCN2 (hyperpolarization-activated cyclic nucleotide-gated) channels.",
+      "section": "Overall",
+      "primary_topic": "Organ malformation reversal",
+      "secondary_topics": [
+        "teratogens",
+        "mutations",
+        "brain development",
+        "xenopus",
+        "HCN2 channels",
+        "Notch signaling",
+        "neurogenesis"
+      ],
+      "chunk_summary": "Organ malformations caused by mutations and teratogens can be reversed by restoring normal bioelectric pre-patterns, exemplified by HCN2 channel manipulation in Notch-related brain defects.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "As voltage-regulated ion channels, HCN2 are context-sensitive: they increase hyperpolarization of slightly polarized cells but have no effect on depolarized cells. Thus, they function as 'contrast enhancers' that sharpen weakened differences in membrane potential.",
+      "section": "Overall",
+      "primary_topic": "HCN2 channel function",
+      "secondary_topics": [
+        "ion channels",
+        "hyperpolarization",
+        "depolarization",
+        "membrane potential",
+        "voltage-gated channels",
+        "cell polarity"
+      ],
+      "chunk_summary": "HCN2 channels act as context-dependent voltage regulators, enhancing hyperpolarization in slightly polarized cells but not depolarized cells, effectively sharpening membrane potential differences.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Vmem across compartment boundaries acts similarly to a Sharpen filter in image processing, enhancing order within a less defined or 'fuzzy' image. This analogy suggests that bioelectric signals, represented by Vmem, play a crucial role in establishing and maintaining structural organization within biological systems.  By influencing the distribution of membrane potential across different compartments, these signals can refine and sharpen the overall pattern, promoting distinct boundaries and organized structures.",
+      "section": "Vmem across compartment boundaries similar to the way a Sharpen filter works to emphasize order in a fuzzy image",
+      "primary_topic": "Bioelectric signaling",
+      "secondary_topics": [
+        "Vmem",
+        "compartment boundaries",
+        "Sharpen filter",
+        "image processing",
+        "structural organization",
+        "membrane potential",
+        "bioelectric gradients"
+      ],
+      "chunk_summary": "Bioelectric signals, like a Sharpen filter, enhance structural order across compartment boundaries in biological systems.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Pai et al. developed a computational model of the endogenous bioelectrical circuit that sets the brain prepattern, modeling the function of HCN2 channels to reinforce the voltage potential differences that demarcate the edges of the brain in development.",
+      "section": "Pai et al",
+      "primary_topic": "Bioelectric Patterning",
+      "secondary_topics": [
+        "HCN2 channels",
+        "computational model",
+        "brain development",
+        "bioelectric circuit",
+        "voltage potential",
+        "prepattern"
+      ],
+      "chunk_summary": "A computational model developed by Pai et al. demonstrates how HCN2 channels contribute to establishing the brain's prepattern through bioelectric signaling.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Figure 3, presented on page 5, likely depicts a visual representation of data or a conceptual model relevant to the paper's overall argument.  Without access to the actual figure, it is impossible to determine the specific content.  However, its presence suggests a key piece of supporting evidence or illustrative explanation within the paper's narrative.",
+      "section": "[PAGE 5] FIGURE 3",
+      "primary_topic": "Figure Illustration",
+      "secondary_topics": [
+        "data visualization",
+        "conceptual model",
+        "supporting evidence",
+        "graphical representation"
+      ],
+      "chunk_summary": "Figure 3 on page 5 provides a visual representation, likely data or a model, supporting the paper's argument.",
+      "position_in_section": "Beginning",
+      "certainty_level": "Low",
+      "citation_context": "None",
+      "page_number": "5"
+    },
+    {
+      "text": "Movement of ions through ion channel proteins on all cell surfaces sets the Vmem (resting potential across the membrane). This Vmem can be communicated to the cell's neighbors via gap junctions (electric synapses). The interactions of these voltage transitions establish stable distributions of Vmem across tissues, creating bioelectric patterns. An example is shown at one developmental timepoint of the frog embryo face, illustrating the future number and locations of eyes, mouth, and other craniofacial organs.",
+      "section": "Mechanisms of developmental bioelectricity",
+      "primary_topic": "Bioelectric signaling",
+      "secondary_topics": [
+        "ion channels",
+        "Vmem",
+        "gap junctions",
+        "electric synapses",
+        "bioelectric patterns",
+        "craniofacial development"
+      ],
+      "chunk_summary": "Ion movement through channels establishes Vmem, which is communicated via gap junctions to create stable bioelectric patterns across tissues, influencing organ development.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Interventions can manipulate these bioelectric gradients by targeting the native physiological computation machinery. These interventions include drug or light approaches to open or close ion channels and gap junctions, or to influence neurotransmitter and other small molecular signals that propagate through these networks.  Computational models are being used to guide these techniques toward specific bioelectric patterning outcomes, which in turn regulate gene expression and cell movement to achieve organogenesis.",
+      "section": "Mechanisms of developmental bioelectricity",
+      "primary_topic": "Bioelectric manipulation",
+      "secondary_topics": [
+        "ion channels",
+        "gap junctions",
+        "neurotransmitters",
+        "computational modeling",
+        "gene expression",
+        "cell movement",
+        "organogenesis"
+      ],
+      "chunk_summary": "Bioelectric gradients can be manipulated through interventions targeting ion channels, gap junctions, and neurotransmitters, guided by computational models to achieve specific organogenesis outcomes.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "This model suggested that bioelectric drugs that mimic the effect of HCN2 overexpression should rescue brain teratogenesis via local and long-range bioelectric repair. Indeed, lamotrigine and gabapentin, already approved for use in humans for other indications, rescued teratogen-induced defects in xenopus embryos.",
+      "section": "This model suggested that bioelectric drugs that mimic the effect of HCN",
+      "primary_topic": "Bioelectric drugs",
+      "secondary_topics": [
+        "HCN2 overexpression",
+        "brain teratogenesis",
+        "bioelectric repair",
+        "lamotrigine",
+        "gabapentin",
+        "xenopus embryos",
+        "drug repurposing"
+      ],
+      "chunk_summary": "Bioelectric drugs mimicking HCN2 overexpression rescued teratogen-induced defects in Xenopus embryos, demonstrating the potential of bioelectric repair.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "The ability to repair complex organ defects of the brain, face, heart and gut by simple (and systemic) application of a single, repurposed channel activator reveals the potential of this approach - it relies on the computational capacity of the tissues to do the heavy lifting, using computation to identify simple triggers that do not require manual control of gene levels, localization, stem cell behavior, among others.",
+      "section": "This model suggested that bioelectric drugs that mimic the effect of HCN",
+      "primary_topic": "Bioelectric repair",
+      "secondary_topics": [
+        "organ defects",
+        "channel activator",
+        "tissue computation",
+        "regenerative medicine",
+        "drug repurposing",
+        "gene expression",
+        "stem cells"
+      ],
+      "chunk_summary": "Repairing complex organ defects with a single channel activator highlights the potential of leveraging tissue computational capacity for bioelectric repair, simplifying the process by avoiding complex genetic manipulations.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "Above the organ level, bioelectric signaling has been shown to be a promising target to induce the regeneration of entire appendages. In rats, limb regeneration can be augmented by bioelectric signals. In a frog model of tail regeneration (which includes muscle, spinal cord, blood vessels and skin), complete regrowth in nonregenerative conditions has been shown by the 1-hour application of a simple ionophore, which induces a pro-regenerative state in the wound and then does not need to be maintained during the 10 days of regeneration.",
+      "section": "Above the organ level",
+      "primary_topic": "Regeneration",
+      "secondary_topics": [
+        "bioelectric signaling",
+        "limb regeneration",
+        "ionophore",
+        "appendage regeneration",
+        "frog model",
+        "rat model"
+      ],
+      "chunk_summary": "Bioelectric signaling shows promise in regenerating entire appendages, demonstrated by augmented limb regeneration in rats and complete tail regrowth in frogs using ionophores.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "The rapid inductive aspect is also seen in non-bioelectric morphoceuticals, such as a bioreactor-delivered drug cocktail in adult frogs that triggered 18+ months of leg regeneration after just 24 h of treatment.",
+      "section": "Above the organ level",
+      "primary_topic": "Morphoceuticals",
+      "secondary_topics": [
+        "non-bioelectric",
+        "drug cocktail",
+        "bioreactor",
+        "leg regeneration",
+        "frog model",
+        "rapid induction"
+      ],
+      "chunk_summary": "Rapid induction of regeneration is also observed with non-bioelectric morphoceuticals, like a drug cocktail delivered via bioreactor, triggering prolonged leg regeneration in adult frogs.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Cancer as a developmental defect: New diagnostic and treatment modalities. This section introduces the concept of cancer as a disruption of normal developmental processes, suggesting that new diagnostic and treatment approaches could emerge from this perspective. By viewing cancer through the lens of developmental biology, it may be possible to identify specific disruptions in cellular communication, tissue organization, and other developmental mechanisms that contribute to tumor formation and progression. This approach could lead to the development of novel diagnostic tools that detect these early disruptions and therapeutic strategies that target the underlying developmental defects driving cancer.",
+      "section": "[PAGE 6] Cancer as a developmental defect",
+      "primary_topic": "Cancer as a developmental defect",
+      "secondary_topics": [
+        "cancer",
+        "developmental biology",
+        "diagnosis",
+        "treatment",
+        "tumor formation",
+        "cellular communication",
+        "tissue organization"
+      ],
+      "chunk_summary": "This section introduces the concept of cancer as a disruption of normal developmental processes, suggesting new diagnostic and treatment approaches.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "6"
+    },
+    {
+      "text": "One way to think about cancer is as the shrinking of the computational boundary from organ-sized back down to the level of a single cell, at which point cells resume their ancient unicellular past and treat the rest of the body as external environment.66-69 This model predicts that cancer would be driven by a dysregulation of the computational glue that normally keeps cells working toward organ-level morphogenetic goals,70 for example bioelectric signaling.",
+      "section": "One way to think about cancer is as the shrinking of the computational boundary from organ",
+      "primary_topic": "Cancer as Computational Boundary",
+      "secondary_topics": [
+        "cancer",
+        "cell behavior",
+        "computational biology",
+        "bioelectric signaling",
+        "morphogenesis",
+        "organ-level goals",
+        "dysregulation"
+      ],
+      "chunk_summary": "Cancer can be viewed as a reduction in the computational boundary of cells, reverting them to unicellular behavior and disrupting organ-level morphogenesis through dysregulation of bioelectric signaling.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "It has been known for decades that tumors have depolarized bioelectric signatures and abnormal electrical connectivity compared with normal tissue, in addition to excessive sodium accumulation. Moreover, tumorigenesis starts with the bioelectric disconnection of cells from the larger somatic morphogenetic network; and metastatic melanoma can be induced in the absence of carcinogens or oncogenic mutations simply by dysregulating the bioelectric signaling between two cell types.",
+      "section": "It has been known for decades that tumors have depolarized bioelectric signatures and abnormal electrical connectivity compared with normal tissue",
+      "primary_topic": "Tumor Bioelectricity",
+      "secondary_topics": [
+        "depolarization",
+        "electrical connectivity",
+        "sodium accumulation",
+        "tumorigenesis",
+        "metastatic melanoma",
+        "bioelectric signaling",
+        "carcinogens",
+        "oncogenic mutations"
+      ],
+      "chunk_summary": "Tumors exhibit distinct bioelectric characteristics, including depolarized membranes, altered connectivity, and sodium accumulation, and tumorigenesis can be initiated by disrupting bioelectric signaling.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Indeed, some authors have described cancer as a special case of channelopathies: the onco-channelopathies. It is important to keep in mind that, whereas abnormal bioelectric states can be induced by mutant ion channels, the dynamic nature of channel signaling (they can be opened or closed post-translationally) ensures that a plethora of physiological events can induce these states in the absence of any genetic lesions.",
+      "section": "It has been known for decades that tumors have depolarized bioelectric signatures and abnormal electrical connectivity compared with normal tissue",
+      "primary_topic": "Onco-channelopathies",
+      "secondary_topics": [
+        "channelopathies",
+        "ion channels",
+        "bioelectric states",
+        "post-translational modification",
+        "physiological events",
+        "genetic lesions"
+      ],
+      "chunk_summary": "Cancer can be viewed as a type of channelopathy, where abnormal bioelectric states can arise from both genetic mutations in ion channels and physiological events affecting channel activity.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Studies in model organisms, such as tadpoles, support the potential for diagnosing and treating tumors by targeting their bioelectric state. Nascent tumors induced by human oncogene mRNA microinjection exhibit depolarization compared to normal tissue. This depolarization can be detected early using voltage-sensitive fluorescent dyes, suggesting potential for noninvasive cancer detection and visualization during surgery.  Furthermore, co-injecting a hyperpolarizing ion channel significantly reduces tumor formation, even with overexpression of oncogenes like Xrel3 or KRAS.",
+      "section": "Studies in model organisms support the diagnostic and therapeutic promise of targeting the tumor bioelectric state",
+      "primary_topic": "Tumor Bioelectricity",
+      "secondary_topics": [
+        "depolarization",
+        "oncogenes",
+        "voltage-sensitive dyes",
+        "early detection",
+        "ion channels",
+        "cancer diagnosis"
+      ],
+      "chunk_summary": "Tumor bioelectric state, specifically depolarization, can be used for early cancer detection and manipulation of ion channels can influence tumor formation.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Crucially, hyperpolarization can normalize cancer cells even after tumor formation, and this effect can occur at a distance through gap junctions. This suggests that hyperpolarization induced by various methods (pharmacological, genetic, or light-based) could prevent or reverse tumor development. Ion channels are also being investigated for their role in tumor resistance.  Gap junctions and connexins, due to their role in controlling morphogenetic and cancer-suppressive signals, are also considered therapeutic targets.",
+      "section": "Studies in model organisms support the diagnostic and therapeutic promise of targeting the tumor bioelectric state",
+      "primary_topic": "Cancer Therapy",
+      "secondary_topics": [
+        "hyperpolarization",
+        "gap junctions",
+        "connexins",
+        "tumor normalization",
+        "cancer resistance",
+        "morphogenetic signals",
+        "therapeutic targets"
+      ],
+      "chunk_summary": "Hyperpolarization and targeting gap junctions/connexins offer potential therapeutic strategies for cancer by normalizing cancer cells rather than killing them.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Very recently, Mathews et al. showed that ion-channel drugs can suppress the cancer phenotype in glioblastoma cell lines.98 Because glioblastoma overgrowth and drug resistance are characterized by depolarized resting membrane potentials and an acidic extracellular pH in the inter-tumor environment, the authors sought to identify potential treatments by screening a panel of drugs that induce hyperpolarization and/or disrupt proton pumps.",
+      "section": "Very recently",
+      "primary_topic": "Glioblastoma treatment",
+      "secondary_topics": [
+        "ion channels",
+        "drug screening",
+        "cancer phenotype",
+        "depolarization",
+        "proton pumps",
+        "drug resistance"
+      ],
+      "chunk_summary": "Mathews et al. screened ion-channel drugs to identify potential treatments for glioblastoma based on the cancer's bioelectric characteristics.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "They screened varying concentrations of 47 compounds (and combinations thereof), most of which were modulators of ion channels, to identify treatments that suppress cancer phenotypes. The most effective treatments for reducing proliferation, inducing senescence and promoting differentiation in human U87 cells in vitro were the following combinations: NS1643 and pantoprazole; retigabine and pantoprazole; and pantoprazole or NS1643 with temozolomide.",
+      "section": "Very recently",
+      "primary_topic": "Drug combinations",
+      "secondary_topics": [
+        "ion channel modulators",
+        "cancer treatment",
+        "proliferation",
+        "senescence",
+        "differentiation",
+        "U87 cells",
+        "in vitro"
+      ],
+      "chunk_summary": "The study identified effective drug combinations, including NS1643/pantoprazole, retigabine/pantoprazole, and pantoprazole/NS1643/temozolomide, for suppressing glioblastoma phenotypes.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Because all of these are FDA-approved for other uses, drug repurposing could be a key factor in the development of electroceuticals as an alternative or adjunct to chemotherapy in treatment of glioblastoma and other cancers.",
+      "section": "Very recently",
+      "primary_topic": "Drug repurposing",
+      "secondary_topics": [
+        "electroceuticals",
+        "chemotherapy",
+        "FDA-approved",
+        "cancer treatment",
+        "glioblastoma"
+      ],
+      "chunk_summary": "The FDA-approval status of the identified drugs makes drug repurposing a promising strategy for developing electroceutical therapies for glioblastoma and other cancers.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "Aging as a morphostasis defect: Bioelectricity as a regulator of cellular and organismal aging. This section title introduces the concept of aging being viewed as a failure of morphostasis, the process by which an organism maintains its shape and structure.  It proposes that bioelectricity, the electrical activity within and between cells, plays a key role in regulating both cellular and organismal aging processes.",
+      "section": "[PAGE 6] Aging as a morphostasis defect",
+      "primary_topic": "Aging",
+      "secondary_topics": [
+        "morphostasis",
+        "bioelectricity",
+        "cellular aging",
+        "organismal aging",
+        "shape regulation"
+      ],
+      "chunk_summary": "This section will explore the role of bioelectricity in regulating aging, conceptualizing aging as a defect in morphostasis.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "6"
+    },
+    {
+      "text": "Maintaining order at the tissue level is a highly dynamic task; failures lead to cancer and disorganization (such as that of the rosettes of the tongue surface when input via the lingual nerve is suppressed). However, the most consistent and pervasive result of the failure of the body's constant regenerative efforts is aging.",
+      "section": "Maintaining order at the tissue level is a highly dynamic task",
+      "primary_topic": "Tissue Organization",
+      "secondary_topics": [
+        "cancer",
+        "disorganization",
+        "aging",
+        "regeneration",
+        "tissue homeostasis",
+        "lingual nerve",
+        "rosettes"
+      ],
+      "chunk_summary": "Maintaining tissue order is crucial, and failures in this process can lead to cancer, disorganization, and aging.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Aging in humans is the progressive loss of function of biological processes with a decline of the capacity to maintain anatomical homeostasis and to reproduce, resulting in progressive organ malfunctions, diseases and ultimately death. The traditional conceptual biogerontological framework enunciates that aging is a process of damage accumulation caused by energy metabolism and mitochondrial function, and that cell proliferation and lifespan are limited by replicative senescence caused by telomere shortening.",
+      "section": "Aging in humans is the progressive loss of function of biological processes with a decline of the capacity to maintain anatomical homeostasis and to reproduce",
+      "primary_topic": "Aging",
+      "secondary_topics": [
+        "homeostasis",
+        "replicative senescence",
+        "telomere shortening",
+        "mitochondrial function",
+        "damage accumulation",
+        "energy metabolism"
+      ],
+      "chunk_summary": "Traditional aging theories focus on damage accumulation from metabolic processes and limited cell proliferation due to telomere shortening.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Here, we propose aging as a morphostasis defect; specifically, we hypothesize that it is an ongoing developmental process with probable inputs from the ubiquitous bioelectrical control system that could link the seven pillars of aging (Figure 5a). Next, we discuss some of the potential links between aging, aging-related diseases and bioelectricity, and the opportunities these create for biomedical research.",
+      "section": "Aging in humans is the progressive loss of function of biological processes with a decline of the capacity to maintain anatomical homeostasis and to reproduce",
+      "primary_topic": "Bioelectric Aging",
+      "secondary_topics": [
+        "morphostasis",
+        "bioelectricity",
+        "developmental process",
+        "aging-related diseases",
+        "biomedical research",
+        "seven pillars of aging"
+      ],
+      "chunk_summary": "This paper proposes a novel hypothesis of aging as a morphostasis defect influenced by bioelectric signaling, potentially connecting it to the seven pillars of aging and offering new avenues for biomedical research.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "The links between aging, aging-related diseases, and bioelectricity via ion channels are being discovered. Rates of cellular and organismal aging are regulated by ion channels. Specific types of ion channels and downstream transducers have been associated with aging. The seven pillars of aging can be linked directly or indirectly to bioelectricity. Ion channels have been associated with metabolism and inflammation during aging. Stem cells and regeneration are controlled by developmental bioelectricity. Epigenetic alterations have been linked to changes in the bioelectrical pattern during tadpole regeneration.",
+      "section": "[PAGE 7] The links between aging, aging-related diseases and bioelectricity via ion channels are starting to be discovered. 105-107 Rates of cellular or organismal aging have been shown to be regulated by ion channels. In a few cases, specific types of ion channels and downstream transducers have been associated with aging. The seven pillars of aging can be linked directly or indirectly to bioelectricity. 104 Indeed, ion channels have been associated with metabolism and inflammation during aging. 106 Stem cells and regeneration are controlled by developmental bioelectricity. 17 Epigenetic alterations have been linked to changes in the bioelectrical pattern during tadpole regeneration. 108 Proteostasis is regulated by lysosomal function that is regulated by ion channels. 107 Several stress-regulated ion channels exist 109,110 and macromolecular damage affects ion channels111 and can impair the bioelectrical pattern responsible for the maintenance of the anatomy. More specifically, ion channels and transporters influence aging and longevity via the regulation of membrane excitability, Ca2+ homeostasis, mitochondrial and endolysosomal function, and the transduction of sensory stimuli. 107 Ion channels are also implicated in aging-related diseases impacting the heart, brain, cancer and the eye105 and in aging-related inflammation via mitochondrial functions. 106 Channelopathies are also often associated with organ failure during aging. 112.",
+      "primary_topic": "Aging and Bioelectricity",
+      "secondary_topics": [
+        "ion channels",
+        "aging",
+        "bioelectricity",
+        "regeneration",
+        "metabolism",
+        "inflammation",
+        "epigenetics",
+        "stem cells"
+      ],
+      "chunk_summary": "Ion channels regulate aging processes and are linked to bioelectricity, influencing metabolism, inflammation, regeneration, and epigenetic alterations.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "7"
+    },
+    {
+      "text": "Proteostasis is regulated by lysosomal function, which is regulated by ion channels. Several stress-regulated ion channels exist, and macromolecular damage affects ion channels and can impair the bioelectrical pattern responsible for anatomical maintenance. Ion channels and transporters influence aging and longevity by regulating membrane excitability, Ca2+ homeostasis, mitochondrial and endolysosomal function, and the transduction of sensory stimuli. Ion channels are implicated in aging-related diseases impacting the heart, brain, cancer, and the eye, and in aging-related inflammation via mitochondrial functions. Channelopathies are often associated with organ failure during aging.",
+      "section": "[PAGE 7] The links between aging, aging-related diseases and bioelectricity via ion channels are starting to be discovered. 105-107 Rates of cellular or organismal aging have been shown to be regulated by ion channels. In a few cases, specific types of ion channels and downstream transducers have been associated with aging. The seven pillars of aging can be linked directly or indirectly to bioelectricity. 104 Indeed, ion channels have been associated with metabolism and inflammation during aging. 106 Stem cells and regeneration are controlled by developmental bioelectricity. 17 Epigenetic alterations have been linked to changes in the bioelectrical pattern during tadpole regeneration. 108 Proteostasis is regulated by lysosomal function that is regulated by ion channels. 107 Several stress-regulated ion channels exist 109,110 and macromolecular damage affects ion channels111 and can impair the bioelectrical pattern responsible for the maintenance of the anatomy. More specifically, ion channels and transporters influence aging and longevity via the regulation of membrane excitability, Ca2+ homeostasis, mitochondrial and endolysosomal function, and the transduction of sensory stimuli. 107 Ion channels are also implicated in aging-related diseases impacting the heart, brain, cancer and the eye105 and in aging-related inflammation via mitochondrial functions. 106 Channelopathies are also often associated with organ failure during aging. 112.",
+      "primary_topic": "Ion Channels and Disease",
+      "secondary_topics": [
+        "ion channels",
+        "aging-related diseases",
+        "channelopathies",
+        "organ failure",
+        "mitochondrial function",
+        "calcium homeostasis",
+        "membrane excitability",
+        "lysosomal function"
+      ],
+      "chunk_summary": "Ion channels play a crucial role in proteostasis, stress response, and various cellular functions, and their dysfunction is implicated in aging-related diseases and organ failure.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "7"
+    },
+    {
+      "text": "Aging-dependent deterioration of neuronal activity has been linked to changes in Ca²+ homeostasis. In age-related cardiovascular diseases, Toro et al. observed NO release associated with a reduction in the density of the BKCa alpha subunit in coronary smooth muscle, indicating decreased expression during aging. Sinoatrial node (SAN) dysfunction can also be related to changes in the activity of several ion channels that control appropriate directionalities of ionic fluxes in the SAN and cardiac muscle.",
+      "section": "Aging",
+      "primary_topic": "Aging and Ion Channels",
+      "secondary_topics": [
+        "Ca2+ homeostasis",
+        "BKCa alpha subunit",
+        "Sinoatrial node dysfunction",
+        "Ion channel activity",
+        "Cardiovascular disease",
+        "neuronal activity"
+      ],
+      "chunk_summary": "Age-related decline in neuronal and cardiovascular function is linked to changes in ion channel activity and calcium homeostasis.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "In addition, studies showed a link between Hutchinson-Gilford progeria syndrome (HGPS) and bioelectricity. An alteration of post-translational modification of progerin that contributes to the phenotype of premature aging in HGPS patients could be caused by an abnormal cytosolic Ca2+ concentration owing to upregulation of the transient receptor potential vanilloid type 2 (TRPV2) calcium channel.",
+      "section": "Aging",
+      "primary_topic": "HGPS and Bioelectricity",
+      "secondary_topics": [
+        "Hutchinson-Gilford progeria syndrome",
+        "Bioelectricity",
+        "Progerin",
+        "Premature aging",
+        "Ca2+ concentration",
+        "TRPV2 calcium channel",
+        "Post-translational modification"
+      ],
+      "chunk_summary": "Hutchinson-Gilford progeria syndrome (HGPS) is linked to bioelectricity through altered progerin modification and abnormal calcium levels due to TRPV2 channel upregulation.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Rejuvenation strategies including blood factors, metabolic manipulations, senolytics and cellular reprogramming have been developed recently to delay and potentially reverse the aging process. Several of these approaches appear to have an impact on bioelectricity and regulate the behavior of ion channels. Metformin acts on nutrient-sensing pathways involved in the rejuvenation effects of dietary regimens and has several effects on bioelectricity. It restores electrophysiology of small conductance calcium-activated potassium channels in the atrium of GK diabetic rats and normalizes the aberrant intracellular Ca2+ clearing induced by high glucose in adult rat myocytes.",
+      "section": "Rejuvenation strategies including blood factors",
+      "primary_topic": "Rejuvenation Strategies",
+      "secondary_topics": [
+        "bioelectricity",
+        "ion channels",
+        "metformin",
+        "aging",
+        "senolytics",
+        "cellular reprogramming",
+        "metabolic manipulations"
+      ],
+      "chunk_summary": "Several rejuvenation strategies, including metformin, impact bioelectricity and ion channel behavior, potentially reversing aging.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Blood factors can have a pro-rejuvenation effect as shown by the positive impact of young blood on the liver, muscle and brain. Wnt signaling underlying the differentiation bias of aged muscle stem cell is reversed by young blood factors. Wnt signaling influences ion channels and is aberrantly activated in several human diseases including cancer. For example, inhibition of the Wnt signaling pathway downregulates Cav1.2 in aging models characterized by an altered osteogenic differentiation.",
+      "section": "Rejuvenation strategies including blood factors",
+      "primary_topic": "Blood Factors",
+      "secondary_topics": [
+        "Wnt signaling",
+        "ion channels",
+        "muscle stem cells",
+        "aging",
+        "cancer",
+        "osteogenic differentiation",
+        "rejuvenation"
+      ],
+      "chunk_summary": "Young blood factors exhibit pro-rejuvenation effects, particularly by reversing Wnt signaling, which influences ion channels and is implicated in aging and disease.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "More globally, Wnt signaling can be modulated by variation in K+ and Ca²+ fluxes across cell membrane induced by changes in transmembrane potential.",
+      "section": "Rejuvenation strategies including blood factors",
+      "primary_topic": "Wnt Modulation",
+      "secondary_topics": [
+        "Wnt signaling",
+        "ion fluxes",
+        "transmembrane potential",
+        "calcium",
+        "potassium",
+        "cell membrane"
+      ],
+      "chunk_summary": "Wnt signaling is modulated by variations in potassium and calcium fluxes across the cell membrane driven by changes in transmembrane potential.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Besides mechanistically testing the links between ion channel dysfunction and specific aging processes, it will be essential to determine what happens to the bioelectric prepatterns during aging. What about the bioelectric states that go awry toward the end of the healthspan? Do the bioelectric cues get weaker or are the cues there but the cellular ability to perceive them (and act on them) wanes? In particular, in addition to life extension assays in canonical model systems (mice), it will be essential to understand what happens in apparently immortal species like planaria.",
+      "section": "[PAGE 8] Besides mechanistically testing the links between ion channel dysfunction and specific aging processes, it will be essential to determine what happens to the bioelectric prepatterns during aging. What about the bioelectric states that go awry toward the end of the healthspan? Do the bioelectric cues get weaker or are the cues there but the cellular ability to perceive them (and act on them) wanes? In particular, in addition to life extension assays in canonical model systems (mice), it will be essential to understand what happens in apparently immortal species like planaria. It is tempting to hypothesize that their lack of aging, cancer resistance and incredible regenerative capacity all stem from the same thing",
+      "primary_topic": "Bioelectric Aging",
+      "secondary_topics": [
+        "ion channels",
+        "bioelectric prepatterns",
+        "healthspan",
+        "aging",
+        "planaria",
+        "life extension assays",
+        "model systems"
+      ],
+      "chunk_summary": "This chunk explores how bioelectric prepatterns and cellular responses to bioelectric cues change during aging, contrasting typical aging models (mice) with immortal species like planaria.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "8"
+    },
+    {
+      "text": "It is tempting to hypothesize that their lack of aging, cancer resistance and incredible regenerative capacity all stem from the same thing: remarkably strong tissue-level morphogenetic control mechanisms, which are known to involve bioelectric pattern control. 126.",
+      "section": "[PAGE 8] Besides mechanistically testing the links between ion channel dysfunction and specific aging processes, it will be essential to determine what happens to the bioelectric prepatterns during aging. What about the bioelectric states that go awry toward the end of the healthspan? Do the bioelectric cues get weaker or are the cues there but the cellular ability to perceive them (and act on them) wanes? In particular, in addition to life extension assays in canonical model systems (mice), it will be essential to understand what happens in apparently immortal species like planaria. It is tempting to hypothesize that their lack of aging, cancer resistance and incredible regenerative capacity all stem from the same thing",
+      "primary_topic": "Morphogenetic Control",
+      "secondary_topics": [
+        "aging",
+        "cancer resistance",
+        "regenerative capacity",
+        "morphogenesis",
+        "bioelectric pattern control",
+        "tissue-level control"
+      ],
+      "chunk_summary": "This chunk hypothesizes that the lack of aging, cancer resistance, and regenerative capacity in planaria are linked to robust tissue-level morphogenetic control mechanisms, regulated by bioelectric patterns.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "8"
+    },
+    {
+      "text": "A roadmap for morphoceutical discovery and opportunities represents a future direction in regenerative medicine and bioengineering.  This emerging field aims to develop drugs that target the bioelectric controls of cell behavior to guide tissue and organ regeneration. By manipulating bioelectric signals, researchers hope to induce specific anatomical outcomes, offering new therapeutic avenues for birth defects, traumatic injuries, cancer, and aging. This approach represents a shift from traditional molecular approaches to a more systems-level understanding of morphogenesis.",
+      "section": "[PAGE 8] Concluding remarks and future perspectives",
+      "primary_topic": "Morphoceuticals",
+      "secondary_topics": [
+        "regenerative medicine",
+        "bioengineering",
+        "bioelectric signals",
+        "tissue regeneration",
+        "drug discovery",
+        "morphogenesis"
+      ],
+      "chunk_summary": "Morphoceuticals offer a new approach to regenerative medicine by targeting bioelectric signals to control cell behavior and guide tissue regeneration.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "8"
+    },
+    {
+      "text": "Rational control of bioelectrical states has immense potential for biomedical applications in regeneration, cancer and aging. Several key attributes make bioelectric states an especially attractive target for drug discovery for regeneration, cancer, aging and, indeed, for any disease that can be seen as a defect or dysregulation of morphogenesis. First, many studies demonstrate that bioelectric states constitute a 'master signal', they can control morphogenetic cascades and avoid the need to micromanage extremely complex spatiotemporal biochemical interactions via genetic engineering or classical molecular biology.",
+      "section": "Rational control of bioelectrical states has immense potential for biomedical applications in regeneration",
+      "primary_topic": "Bioelectric States",
+      "secondary_topics": [
+        "regeneration",
+        "cancer",
+        "aging",
+        "drug discovery",
+        "morphogenesis",
+        "master signal",
+        "biochemical interactions",
+        "genetic engineering",
+        "molecular biology"
+      ],
+      "chunk_summary": "Bioelectric states are a promising target for drug discovery due to their role as a master signal controlling morphogenesis, offering a potential alternative to complex genetic engineering approaches.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Instead, accurate generation or regeneration of specific parts can be induced by the simple imposition of specific voltage patterns, as shown for planarian heads, eyes or frog tails, as described above.",
+      "section": "Rational control of bioelectrical states has immense potential for biomedical applications in regeneration",
+      "primary_topic": "Regeneration",
+      "secondary_topics": [
+        "voltage patterns",
+        "planarian",
+        "frog",
+        "bioelectric control",
+        "morphogenesis",
+        "tissue regeneration"
+      ],
+      "chunk_summary": "Specific voltage patterns can induce regeneration of complex structures like planarian heads, eyes, and frog tails, highlighting the power of bioelectric control over morphogenesis.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "Second, bioelectric signaling seems to require only a brief, transient trigger stimulus. For example, in rat mesenchymal cells in vitro, a brief electrical stimulus induces long-lasting osteogenic effects, suggesting it could provide powerful synergy with bone-tissue-engineering therapies.",
+      "section": "Second",
+      "primary_topic": "Bioelectric Signaling",
+      "secondary_topics": [
+        "transient stimulus",
+        "osteogenesis",
+        "bone tissue engineering",
+        "in vitro",
+        "mesenchymal cells"
+      ],
+      "chunk_summary": "Brief bioelectric stimulation can induce long-lasting osteogenic effects in rat mesenchymal cells, suggesting potential synergy with bone tissue engineering.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Similarly, manipulation of bioelectrical states for just 1-3 h triggers an 8- or 10-day program of regeneration for planarian heads and tadpole tails, respectively.",
+      "section": "Second",
+      "primary_topic": "Regeneration",
+      "secondary_topics": [
+        "bioelectric states",
+        "planarian",
+        "tadpole",
+        "head regeneration",
+        "tail regeneration"
+      ],
+      "chunk_summary": "Short-term manipulation of bioelectrical states can trigger long-term regeneration programs in planarians and tadpoles.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Ion-channel-targeting drugs are among the most commonly prescribed medications globally, offering a vast pool of potential candidates for repurposing as electroceuticals. This presents a significant opportunity to explore existing drugs for new therapeutic applications in bioelectricity manipulation.",
+      "section": "Third",
+      "primary_topic": "Electroceuticals",
+      "secondary_topics": [
+        "ion channels",
+        "drug repurposing",
+        "drug discovery",
+        "pharmaceuticals",
+        "bioelectricity"
+      ],
+      "chunk_summary": "Existing ion-channel drugs offer a large pool of potential electroceuticals.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Furthermore, the human genome contains a large number of predicted ion channel genes, many of which remain unexplored as drug targets. This untapped genomic resource provides ample opportunities for novel drug discovery and development in the field of ion channel modulation and bioelectric control.",
+      "section": "Third",
+      "primary_topic": "Drug Discovery",
+      "secondary_topics": [
+        "ion channel genes",
+        "genome",
+        "novel targets",
+        "bioelectric control",
+        "drug development"
+      ],
+      "chunk_summary": "Many potential ion channel drug targets remain unexplored in the human genome.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The ideal way to control this native interface is via channel-, pump- and gap-junction-targeting compounds (although light, vibration and other exotic modalities might someday augment this technology). Repurposing of drugs that are already FDA-approved could be particularly expedient for discovery of morphoceuticals. Despite the large number of channel drugs that are already known and tested, this is only a small percentage of ion channels that have been targeted for drug development.",
+      "section": "The ideal way to control this native interface is via channel",
+      "primary_topic": "Morphoceutical Control",
+      "secondary_topics": [
+        "ion channels",
+        "gap junctions",
+        "drug repurposing",
+        "morphoceuticals",
+        "drug development"
+      ],
+      "chunk_summary": "Controlling morphogenesis via existing FDA-approved drugs targeting ion channels and gap junctions offers a promising avenue for developing morphoceuticals.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Beyond drug repurposing, the in silico results on the opening and closing of ion channels will also suggest the design of new compounds using traditional drug design methods, to fill out the massive space of possible electroceuticals.",
+      "section": "The ideal way to control this native interface is via channel",
+      "primary_topic": "Electroceutical Design",
+      "secondary_topics": [
+        "in silico modeling",
+        "ion channels",
+        "drug design",
+        "electroceuticals"
+      ],
+      "chunk_summary": "Computational modeling of ion channel behavior can guide the design of new electroceuticals, expanding the range of potential therapeutic compounds.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "This effort will require the development of tools that trawl transcriptomic databases (such as EDEn) revealing which ion channels are potential targets for intervention in a specific tissue131 (Figure 5b). Computational modeling will also be key to simulating bioelectrical dynamics to predict the bioelectrical pattern resulting from opening or closing specific targeted channels with existing drugs.",
+      "section": "This effort will require the development of tools that trawl transcriptomic databases",
+      "primary_topic": "Computational Modeling",
+      "secondary_topics": [
+        "transcriptomic databases",
+        "ion channels",
+        "bioelectrical dynamics",
+        "drug targets",
+        "in silico modeling",
+        "EDEn"
+      ],
+      "chunk_summary": "Developing computational tools to analyze transcriptomic data and simulate bioelectrical dynamics will help identify ion channel drug targets for tissue regeneration.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "In silico results will predict the effects of specific drugs targeting tissue-specific ion channels, suggesting specific in vivo experiments to assess their potential for regeneration, repair or cancer normalization.",
+      "section": "This effort will require the development of tools that trawl transcriptomic databases",
+      "primary_topic": "In Vivo Experiments",
+      "secondary_topics": [
+        "in silico modeling",
+        "drug prediction",
+        "tissue regeneration",
+        "cancer normalization",
+        "ion channel targeting"
+      ],
+      "chunk_summary": "Computational predictions will guide in vivo experiments to test the effects of drugs targeting ion channels on regeneration and cancer normalization.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "For a specific purpose, the software will make suggestions regarding which channels to target, and in what way (temporal profile, and which drugs) to obtain the targeted bioelectrical pattern within a tissue. A key ingredient to this workflow however is the development of physiomic datasets across patients, ages, body regions and health or disease states.",
+      "section": "For a specific purpose",
+      "primary_topic": "Bioelectric Intervention",
+      "secondary_topics": [
+        "ion channels",
+        "drug targeting",
+        "temporal profile",
+        "physiomic datasets",
+        "patient data",
+        "disease states"
+      ],
+      "chunk_summary": "Software can suggest ion channel drug targeting strategies to achieve specific bioelectrical patterns, but requires comprehensive physiomic datasets across diverse patient demographics and health conditions.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "When the physiomic data catch up in volume to the deluge of transcriptional, genetic, epigenetic and metabolic datasets that are now available, the next generation of bioelectric interventions will be immediately within reach (especially given the availability of machine learning and data mining tools).",
+      "section": "For a specific purpose",
+      "primary_topic": "Future of Bioelectric Interventions",
+      "secondary_topics": [
+        "physiomic data",
+        "machine learning",
+        "data mining",
+        "transcriptional data",
+        "genetic data",
+        "epigenetic data",
+        "metabolic data"
+      ],
+      "chunk_summary": "The growth of physiomic datasets, combined with machine learning and data mining tools, will enable the next generation of bioelectric interventions.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "One aspect of this strategy is key. The goal is not to simply find drugs that up- or down-regulate specific channels in the same way one would address over- or under-expressed transcription factors. It is, for example, already known that ion-channel drugs are very promising cancer drugs. However, the real promise of this technology will only be realized when they are seen not as rewiring agents mechanically targeting specific gene products or even pathways but as signals (like a keypad depression on a computer interface) designed to manipulate the bioelectrically mediated decision-making of cell networks.",
+      "section": "One aspect of this strategy is key",
+      "primary_topic": "Bioelectric signaling",
+      "secondary_topics": [
+        "ion channels",
+        "cancer drugs",
+        "cell networks",
+        "drug discovery",
+        "transcription factors"
+      ],
+      "chunk_summary": "Using ion-channel drugs not just to target specific gene products but as signals to manipulate bioelectrically mediated cell decision-making holds greater promise for cancer treatment.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "This requires a different class of computational models that treats the underlying tissue as a computational agent, not a simple dynamical system. This in turn suggests the urgency of development (and integration into molecular-biological and physiological models) of computational frameworks, such as causal information theory, that seek to decode the information flow between cells during health and disease or integrative network representation for drug discovery including the transcriptional representation of the electrome using EDEn for example.",
+      "section": "One aspect of this strategy is key",
+      "primary_topic": "Computational modeling",
+      "secondary_topics": [
+        "causal information theory",
+        "information flow",
+        "cell communication",
+        "drug discovery",
+        "integrative network representation",
+        "electrome",
+        "EDEn"
+      ],
+      "chunk_summary": "Developing computational models that treat tissues as computational agents and frameworks like causal information theory are crucial for decoding cell communication and drug discovery.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "A second aspect is the non-locality of bioelectric information. As in the brain, several disease states receive input from distant locations. For example, embryonic brain structure can be damaged and repaired by bioelectric states occurring on the other side of the animal. The same is true for tumorigenesis and the amputation status of one limb can be read out from the bioelectric signals of the contralateral (untouched) limb. This suggests the possibility of surrogate site diagnostics and treatment, and makes it imperative that bioelectric models and drug searches do not focus on the local site of a wound or defect but consider the entire organism as a potential interface for treatment.",
+      "section": "A",
+      "primary_topic": "Bioelectric Non-locality",
+      "secondary_topics": [
+        "bioelectricity",
+        "long-range signaling",
+        "disease states",
+        "diagnosis",
+        "treatment",
+        "embryonic development",
+        "tumorigenesis",
+        "limb amputation"
+      ],
+      "chunk_summary": "Bioelectric information exhibits non-locality, influencing distant sites in the body, impacting processes like embryonic development, tumorigenesis, and limb regeneration, suggesting potential for surrogate site diagnostics and treatments.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "For example, in the case of tail regeneration and hyperinnervation to improve vision, the entire animal was exposed but only relevant cells responded (i.e., no need for spatially specific stimulation). In other cases, local delivery via a wearable bioreactor was used.",
+      "section": "A",
+      "primary_topic": "Targeted Treatment",
+      "secondary_topics": [
+        "tail regeneration",
+        "hyperinnervation",
+        "vision improvement",
+        "bioreactor",
+        "targeted stimulation",
+        "local delivery"
+      ],
+      "chunk_summary": "While whole-body exposure to bioelectric stimulation can be effective, targeted delivery via bioreactors offers an alternative approach for localized treatment.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "More broadly, beyond electroceuticals, what binds biochemical, biomechanical, optical and bioelectrical morphoceuticals together is the commitment to exploiting high-level problem-solving capacities in cells and tissues. For example, other physiological parameters such as REDOX state or tissue biomechanics can likewise serve as master controls for complex outcomes.",
+      "section": "More broadly",
+      "primary_topic": "Morphoceuticals",
+      "secondary_topics": [
+        "biochemical",
+        "biomechanical",
+        "optical",
+        "bioelectrical",
+        "problem-solving",
+        "cells",
+        "tissues",
+        "REDOX",
+        "physiological parameters"
+      ],
+      "chunk_summary": "Diverse morphoceuticals, including biochemical, biomechanical, optical, and bioelectrical approaches, aim to leverage the inherent problem-solving abilities of cells and tissues.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "But whether induced by CRISPR, optogenetic stimulation, pharmacological agents or even behavioral cues, the crucial aspect is to move from managing micro-level components to the cybernetic properties of entire circuits.",
+      "section": "More broadly",
+      "primary_topic": "Cybernetic control",
+      "secondary_topics": [
+        "CRISPR",
+        "optogenetic stimulation",
+        "pharmacological agents",
+        "behavioral cues",
+        "micro-level components",
+        "cybernetic properties",
+        "circuits"
+      ],
+      "chunk_summary": "Regardless of the specific induction method, the key is to shift focus from micromanaging individual components to harnessing the cybernetic properties of entire biological circuits.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "One implication of top-down control of modules and the allostatic capabilities of living matter is that dosage and timing might not have to be micromanaged. For example, in recent examples of triggering the regeneration of complex organs and appendages via bioelectric, hormonal and other biochemical means, the organ type, composition, shape and size were all induced without any attempts to identify an effective dose or precise timing regime. A key part of this strategy is offloading the complexity onto the organism itself (exploiting its modular, regulative control structure) to achieve complex outcomes where precise parameters and molecular details are not yet known.",
+      "section": "One implication of top",
+      "primary_topic": "Top-down control",
+      "secondary_topics": [
+        "allostasis",
+        "regeneration",
+        "bioelectricity",
+        "hormones",
+        "biochemical signaling",
+        "dosage",
+        "timing"
+      ],
+      "chunk_summary": "Top-down control mechanisms allow for complex regeneration outcomes without precise dosage or timing due to the organism's inherent regulative capabilities.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Morphoceuticals can be rationally designed based on top-down control mechanisms or discovered in pharmacological or genetic screens specifically focused on high-level control phenotypes.",
+      "section": "One implication of top",
+      "primary_topic": "Morphoceuticals",
+      "secondary_topics": [
+        "drug discovery",
+        "genetic screening",
+        "phenotypes",
+        "top-down control",
+        "rational design"
+      ],
+      "chunk_summary": "Morphoceuticals, targeting high-level control phenotypes, can be designed rationally or discovered through pharmacological and genetic screens.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Taken together, a picture emerges in which the regenerative medicine of the future can stand on the shoulders of two giants: computer science and cognitive/behavioral science. Computational neuroscience progress reveals how a multiscale approach to the brain (not only molecular but circuit, network and even psychology-level) is providing a full-stack understanding of the control of behavior. We suggest that the same strategy can be applied in regenerative medicine, by targeting bioelectricity as the computational glue that binds cells together to common purpose in vivo, and embracing the idea that causally effective interventions can be applied at levels higher than that of molecules.",
+      "section": "Taken together",
+      "primary_topic": "Regenerative Medicine",
+      "secondary_topics": [
+        "computer science",
+        "cognitive science",
+        "computational neuroscience",
+        "bioelectricity",
+        "multiscale approach",
+        "cell communication",
+        "tissue regeneration"
+      ],
+      "chunk_summary": "Future regenerative medicine can leverage computer science and cognitive science, using a multiscale approach targeting bioelectricity for effective interventions beyond the molecular level.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Definitive approaches to aging, cancer, traumatic injury and birth defects await, limited only by our ability to see tissues as competent information-processing agents that we now have the tools to meet at their own level.",
+      "section": "Taken together",
+      "primary_topic": "Future Applications",
+      "secondary_topics": [
+        "aging",
+        "cancer",
+        "traumatic injury",
+        "birth defects",
+        "information processing",
+        "tissue engineering",
+        "bioelectric control"
+      ],
+      "chunk_summary": "Solutions for aging, cancer, injuries, and birth defects are within reach, contingent on understanding tissues as information-processing agents and developing tools to interact with them.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "Data related to this publication are available upon reasonable request.",
+      "section": "[PAGE 10] Data availability",
+      "primary_topic": "Data Availability",
+      "secondary_topics": [
+        "data sharing",
+        "research data",
+        "open science",
+        "data repository"
+      ],
+      "chunk_summary": "Research data associated with this publication can be obtained upon reasonable request.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "10"
+    },
+    {
+      "text": "No data was used for the research described in the article.",
+      "section": "No data was used for the research described in the article",
+      "primary_topic": "Data Availability",
+      "secondary_topics": [
+        "data sharing",
+        "research data",
+        "data transparency",
+        "data availability statement"
+      ],
+      "chunk_summary": "This article does not involve the use of any research data.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "We thank the members of the Levin laboratory for helpful discussions. This work was supported by the Templeton World Charity Foundation (TWCF0398), the G. Harold and Leila Y. Mathers Charitable Foundation (191010), and the Allen Discovery Center program through The Paul G. Allen Frontiers Group (12171).",
+      "section": "[PAGE 10] Acknowledgments",
+      "primary_topic": "Funding",
+      "secondary_topics": [
+        "acknowledgments",
+        "funding sources",
+        "grants",
+        "Templeton World Charity Foundation",
+        "Mathers Charitable Foundation",
+        "Allen Discovery Center",
+        "Paul G. Allen Frontiers Group"
+      ],
+      "chunk_summary": "This section acknowledges the contributions of the Levin laboratory members and lists the funding sources that supported the research.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "10"
+    },
+    {
+      "text": "We gratefully acknowledge funding from Templeton World.",
+      "section": "We gratefully acknowledge funding from Templeton World",
+      "primary_topic": "Funding Acknowledgement",
+      "secondary_topics": [
+        "funding",
+        "grants",
+        "Templeton World"
+      ],
+      "chunk_summary": "This section acknowledges funding support from Templeton World.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "This section acknowledges funding support from the Templeton World Charity Foundation (TWCF0606), the Guy Foundation, and an unspecified additional source.  While brief, it indicates the financial backing of the research described in the paper.  The Templeton World Charity Foundation is known for supporting research at the intersection of science and religion, while the Guy Foundation focuses on supporting innovative research in various fields.",
+      "section": "Charity Foundation",
+      "primary_topic": "Funding Acknowledgement",
+      "secondary_topics": [
+        "funding sources",
+        "Templeton World Charity Foundation",
+        "Guy Foundation",
+        "research grants"
+      ],
+      "chunk_summary": "The research was funded by the Templeton World Charity Foundation, the Guy Foundation, and another unspecified source.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "This work was supported by the John Templeton Foundation (grant 62212).",
+      "section": "John Templeton Foundation",
+      "primary_topic": "Funding",
+      "secondary_topics": [
+        "grant",
+        "John Templeton Foundation",
+        "research funding"
+      ],
+      "chunk_summary": "This research was funded by a grant from the John Templeton Foundation.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "M.L. is a co-founder of Morphoceuticals Inc., a company seeking to develop bioelectric approaches to regeneration.",
+      "section": "[PAGE 10] Conflicts of interest",
+      "primary_topic": "Conflict of Interest",
+      "secondary_topics": [
+        "Morphoceuticals Inc.",
+        "bioelectricity",
+        "regeneration",
+        "company founder",
+        "disclosure"
+      ],
+      "chunk_summary": "Michael Levin discloses his co-founder status at Morphoceuticals Inc., a company focused on bioelectric regeneration.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "10"
+    },
+    {
+      "text": "Dolk H et al. investigated the relationship between lamotrigine use during pregnancy and the risk of orofacial cleft and other congenital anomalies in their study published in Neurology (2016;86:1716-1725).",
+      "section": "170. Dolk H et al.. Lamotrigine use in pregnancy and risk of orofacial cleft and other congenital anomalies. Neurology. 2016;86:1716-1725.",
+      "primary_topic": "Lamotrigine & Pregnancy",
+      "secondary_topics": [
+        "congenital anomalies",
+        "orofacial cleft",
+        "birth defects",
+        "antiepileptic drugs",
+        "pregnancy outcomes",
+        "teratogenicity",
+        "neurology"
+      ],
+      "chunk_summary": "This study investigated the link between lamotrigine use during pregnancy and the risk of birth defects, particularly orofacial clefts.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Lin G et al. investigated the potential of progenitor cell transplantation to induce regenerative capacity in limbs. Their study, published in Developmental Cell in 2013, explored the impact of introducing progenitor cells on limb regeneration.  The specific details of their methodology and findings are encapsulated in the cited publication.",
+      "section": "171. Lin G et al.. Imparting regenerative capacity to limbs by progenitor cell transplantation. Dev Cell. 2013;24:41-51.",
+      "primary_topic": "Limb Regeneration",
+      "secondary_topics": [
+        "progenitor cells",
+        "transplantation",
+        "regenerative capacity",
+        "limb development",
+        "cell therapy"
+      ],
+      "chunk_summary": "This study investigated the use of progenitor cell transplantation to stimulate limb regeneration.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Fukumoto et al. (2005) demonstrated that serotonin transporter function plays a crucial role in the early stages of left-right patterning in chick and frog embryos.",
+      "section": "172. Fukumoto T et al.. Serotonin transporter function is an early step in left-right patterning in chick and frog embryos. Dev Neurosci. 2005;27:349-363.",
+      "primary_topic": "Left-Right Patterning",
+      "secondary_topics": [
+        "serotonin transporter",
+        "embryogenesis",
+        "chick embryo",
+        "frog embryo",
+        "developmental biology",
+        "asymmetry"
+      ],
+      "chunk_summary": "Serotonin transporter function is essential for early left-right patterning in chick and frog embryos.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Frey E et al. demonstrated that capsaicin, a TRPV1 agonist, induces axon outgrowth after injury through Ca(2+)/PKA signaling, as reported in eNeuro in 2018.",
+      "section": "173. Frey E et al.. TRPV1 Agonist, Capsaicin, Induces Axon Outgrowth after Injury via Ca(2+)/PKA Signaling. eNeuro. 2018;5.",
+      "primary_topic": "Axon Outgrowth",
+      "secondary_topics": [
+        "TRPV1",
+        "Capsaicin",
+        "Ca2+ signaling",
+        "PKA signaling",
+        "Nerve Regeneration",
+        "Axon Regeneration",
+        "Neuroplasticity"
+      ],
+      "chunk_summary": "Capsaicin promotes axon outgrowth after injury via TRPV1 activation and Ca(2+)/PKA signaling.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Cervera et al. (2019) explore the role of bioelectrical states in multicellular systems, highlighting the transition from single-cell to multicellular organization.  They emphasize the importance of ion channels and gap junction proteins in establishing and maintaining these bioelectrical states, proposing that electrical potentials act as distributed controllers within these complex biological systems.",
+      "section": "174. Cervera J et al.. From non-excitable single-cell to multicellular bioelectrical states supported by ion channels and gap junction proteins: Electrical potentials as distributed controllers. Prog Biophys Mol Biol. 2019;149",
+      "primary_topic": "Bioelectric states",
+      "secondary_topics": [
+        "ion channels",
+        "gap junctions",
+        "multicellular organization",
+        "electrical potentials",
+        "cell communication"
+      ],
+      "chunk_summary": "This study investigates the role of ion channels and gap junctions in establishing bioelectrical states that act as distributed controllers in multicellular systems.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "149"
+    },
+    {
+      "text": "Cervera J et al. explored bioelectrical coupling within multicellular domains, focusing on the regulatory role of gap junctions through a conceptual approach. Their work, published in Bioelectrochemistry (2018;123:45-61), investigates how gap junctions influence bioelectrical signaling and communication between cells in multicellular systems.",
+      "section": "175. Cervera J et al.. Bioelectrical coupling in multicellular domains regulated by gap junctions: A conceptual approach. Bioelectrochemistry. 2018;123",
+      "primary_topic": "Bioelectrical Coupling",
+      "secondary_topics": [
+        "gap junctions",
+        "multicellular domains",
+        "bioelectricity",
+        "cell communication",
+        "conceptual approach",
+        "Bioelectrochemistry"
+      ],
+      "chunk_summary": "This study investigated the role of gap junctions in regulating bioelectrical coupling within multicellular domains.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "45-61"
+    },
+    {
+      "text": "Pai VP et al. demonstrated that HCN2 rescues brain defects by enforcing endogenous voltage pre-patterns (Nat Commun. 2018;9:998).",
+      "section": "176. Pai VP et al.. HCN2 Rescues brain defects by enforcing endogenous voltage pre-patterns. Nat Commun. 2018;9:998.",
+      "primary_topic": "Brain Defects",
+      "secondary_topics": [
+        "HCN2",
+        "voltage pre-patterns",
+        "brain development",
+        "ion channels",
+        "genetic rescue",
+        "endogenous bioelectricity"
+      ],
+      "chunk_summary": "HCN2 rescues brain defects by regulating endogenous voltage pre-patterns.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    }
+  ],
+  "processed_at": "2025-08-14T14:18:11.003656",
+  "chunk_count": 102,
+  "processing_method": "document_splitting"
+}

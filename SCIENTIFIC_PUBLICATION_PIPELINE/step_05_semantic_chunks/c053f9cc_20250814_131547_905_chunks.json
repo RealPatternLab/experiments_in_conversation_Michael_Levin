@@ -1,0 +1,1464 @@
+{
+  "metadata": {
+    "document_type": "research_paper",
+    "title": "Thoughts and thinkers: On the complementarity between objects and processes",
+    "authors": [
+      "Chris Fields",
+      "Michael Levin"
+    ],
+    "journal": "Physics of Life Reviews",
+    "publication_year": 2025,
+    "doi": null,
+    "abstract": "We argue that \"processes versus objects\" is a useful dichotomy. There is, instead, substantial complementarity between them.  We explore this complementarity through the lens of the persistence through time of memory; the instability of observation and manipulation; the way we make sense of high-dimensional spaces and their potential features; and the inherent limitations of linear operators. Following Levin [204], we emphasize that memory, at first and foremost, is an interactive function, in terms of the Free Energy Principle (FEP) of Friston and colleagues [205, 206]. We consider the FEP as the basis for understanding the fundamental identity of both objects and processes, a holistic approach from which the idea of memory as a record of some level of accuracy, always contrived, and always misleading, and that science would be better served by abandoning it entirely.",
+    "extraction_confidence": "high",
+    "filename": "c053f9cc_20250814_131547_905.pdf",
+    "extraction_timestamp": "2025-08-14T13:17:21.540170",
+    "extraction_method": "gemini_1.5_flash",
+    "pages_analyzed": 2,
+    "page_range": "12-15",
+    "text_enriched": true,
+    "enrichment_method": "text_analysis",
+    "enrichment_timestamp": "2025-08-14T13:27:08.200398"
+  },
+  "chunks": [
+    {
+      "text": "Thoughts and thinkers: On the complementarity between objects and processes. This brief section title introduces the core concept of the paper, suggesting an exploration of the interplay between physical structures (objects) and dynamic activities (processes) within biological systems.  The idea of complementarity implies that both objects and processes are essential and mutually informative aspects of understanding biological phenomena. This likely sets the stage for discussing how both structural components and functional activities contribute to complex biological outcomes, such as morphogenesis and regeneration.",
+      "section": "[PAGE 1] Thoughts and thinkers",
+      "primary_topic": "Objects and Processes",
+      "secondary_topics": [
+        "complementarity",
+        "biological systems",
+        "morphogenesis",
+        "regeneration",
+        "structure",
+        "function"
+      ],
+      "chunk_summary": "The section title highlights the complementary relationship between objects (structures) and processes (activities) in biological systems.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "1"
+    },
+    {
+      "text": "ABSTRACT",
+      "section": "ABSTRACT",
+      "primary_topic": "Abstract",
+      "secondary_topics": [],
+      "chunk_summary": "This is the abstract section.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "We argue that \"processes versus objects\" is not a useful dichotomy. There is, instead, substantial theoretical utility in viewing \"objects\" and \"processes\" as complementary ways of describing persistence through time, and hence the possibility of observation and manipulation. This way of thinking highlights the role of memory as an essential resource for observation, and makes it clear that \"memory\" and \"time\" are also mutually inter-defined, complementary concepts.",
+      "section": "We argue that",
+      "primary_topic": "Objects and Processes",
+      "secondary_topics": [
+        "time",
+        "observation",
+        "manipulation",
+        "memory",
+        "persistence"
+      ],
+      "chunk_summary": "The dichotomy of \"objects\" versus \"processes\" is unhelpful; they are complementary descriptions of persistence through time, enabling observation and manipulation, with memory as a crucial resource.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "We formulate our approach in terms of the Free Energy Principle (FEP) of Friston and colleagues and the fundamental idea from quantum theory that physical interactions can be represented by linear operators. Following Levin (2024) [30], we emphasize that memory is, first and foremost, an interpretative function, from which the idea of memory as a record, at some level of accuracy, of past events is derivative.",
+      "section": "We argue that",
+      "primary_topic": "Memory and Interpretation",
+      "secondary_topics": [
+        "Free Energy Principle",
+        "FEP",
+        "quantum theory",
+        "linear operators",
+        "interpretative function",
+        "past events"
+      ],
+      "chunk_summary": "Using the Free Energy Principle and quantum theory, memory is primarily an interpretative function, not just a record of past events.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "We conclude that the distinction between objects and processes is always contrived, and always misleading, and that science would be better served by abandoning it entirely.",
+      "section": "We argue that",
+      "primary_topic": "Abandoning the Dichotomy",
+      "secondary_topics": [
+        "objects and processes",
+        "scientific progress",
+        "misleading distinction"
+      ],
+      "chunk_summary": "The distinction between objects and processes is artificial and detrimental to scientific progress, and should be abandoned.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "Thought is itself the thinker. [William James [1] p. 401]",
+      "section": "Thought is itself the thinker",
+      "primary_topic": "Consciousness",
+      "secondary_topics": [
+        "thought",
+        "thinker",
+        "William James",
+        "philosophy of mind"
+      ],
+      "chunk_summary": "This quote from William James asserts the reflexive nature of thought, where the act of thinking defines the thinker.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "1"
+    },
+    {
+      "text": "Is it advantageous to think of the world in terms of processes instead of objects, as suggested by Whitehead [2] among others? Is it, in particular, advantageous to think of organisms as processes instead of objects? Does doing so resolve, or avoid, the problem of identity over time, or does it merely reformulate this problem? Does adopting a process view of biology, for example, help us understand what it means to say that an individual human is an individual, something that maintains a single identity from birth to death, despite continuous change in properties at multiple levels?",
+      "section": "Is it advantageous to think of the world in terms of processes instead of objects",
+      "primary_topic": "Process Philosophy",
+      "secondary_topics": [
+        "identity over time",
+        "organismal identity",
+        "Whitehead",
+        "biological processes",
+        "individuality"
+      ],
+      "chunk_summary": "This chunk explores the advantages of a process-based view of the world and organisms, questioning whether it solves the problem of identity over time.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Does it help us to understand what it means to say that *Homo sapiens sapiens* has remained the same subspecies for the past *ca*. 250,000 years? Does it help us decide whether a clonal colony of *E. coli*, or a plate full of adult planaria that are all regenerated from the fragments of a single planarian cut up in a laboratory, comprises a single \"individual organism\" or many? And, reaching forward towards empirical utility in fields like regenerative medicine and bioengineering, does it facilitate interesting new discoveries, capabilities, and research programs?",
+      "section": "Is it advantageous to think of the world in terms of processes instead of objects",
+      "primary_topic": "Biological Individuality",
+      "secondary_topics": [
+        "species identity",
+        "clonal colonies",
+        "planaria regeneration",
+        "regenerative medicine",
+        "bioengineering",
+        "empirical utility"
+      ],
+      "chunk_summary": "This chunk applies the process view to questions of species and individual identity in specific biological contexts, and considers its potential impact on regenerative medicine and bioengineering.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The notations employed in much of mathematics suggest – though do not require – an interpretation in terms of processes: writing 'f(x)', for example, suggests a process f acting on an object x, while the notation 'A → B' suggests a process, indicated by '→' that converts A into B, or perhaps moves something from A to B. The current foundational language for mathematics is category theory.",
+      "section": "The notations employed in much of mathematics suggest",
+      "primary_topic": "Mathematical Notation",
+      "secondary_topics": [
+        "processes",
+        "category theory",
+        "morphisms",
+        "functions",
+        "mathematical foundations"
+      ],
+      "chunk_summary": "Mathematical notations often imply processes, and category theory serves as the foundation for modern mathematics.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "A (small) category comprises a set of O objects and a set M of morphisms, or arrows, such that: 1. for every object o in O, there is a morphism Id in M, the “identity morphism for o\", such that Id: o → o, and 2. for all objects o1,o2,o3 and morphisms m12:o1 → o2 and m23:o2 → o3, there is a morphism m13:o1 → o3.",
+      "section": "The notations employed in much of mathematics suggest",
+      "primary_topic": "Category Theory",
+      "secondary_topics": [
+        "objects",
+        "morphisms",
+        "arrows",
+        "identity morphism",
+        "composition",
+        "mathematical structures"
+      ],
+      "chunk_summary": "A category in mathematics consists of objects and morphisms (arrows) with specific properties like identity morphisms and composition.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "As Adámek, Herrlich and Strecker remark in their popular textbook [3], replacing every object with one of its identity morphisms (they are not in general unique) allows any category-theoretic statement to be made just in terms of morphisms. The Yoneda Lemma and the notion of object-free categories formalize this fact. Hence mathematics, in a deep sense, does not need objects. It just needs morphisms, some of which preserve an abstraction called \"identity\" and others of which do not.",
+      "section": "As Ad",
+      "primary_topic": "Category Theory",
+      "secondary_topics": [
+        "morphisms",
+        "objects",
+        "Yoneda Lemma",
+        "object-free categories",
+        "identity morphisms",
+        "mathematical foundations"
+      ],
+      "chunk_summary": "Category theory can be formulated entirely in terms of morphisms, some representing identity, without explicit reference to objects.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Similar moves are made ubiquitously in physics. Quantum theory replaces \"properties\" of objects – position, momentum, spin, etc. – with operators that yield values of those properties when deployed by an observer [4]. Quantum field theory replaces \"particles\" with creation, destruction, and number operators acting on fields that permeate spacetime. Feynman's diagrams famously replace \"particles\" with sums of processes that yield equivalent results when interrupted by observations.",
+      "section": "Similar moves are made ubiquitously in physics",
+      "primary_topic": "Quantum Physics",
+      "secondary_topics": [
+        "quantum theory",
+        "quantum field theory",
+        "operators",
+        "particles",
+        "observation",
+        "Feynman diagrams"
+      ],
+      "chunk_summary": "Quantum physics replaces classical notions of properties and particles with operators and field interactions, emphasizing the role of the observer.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Even \"quantum systems\" can be replaced with the operational procedures required to identify them [5]. An operational procedure is a process that may or may not preserve the identity of either the system that it acts on or the system – conventionally called an \"observer” or “perceiver\" – that implements it.",
+      "section": "Similar moves are made ubiquitously in physics",
+      "primary_topic": "Operationalism",
+      "secondary_topics": [
+        "quantum systems",
+        "operational procedures",
+        "observer",
+        "perceiver",
+        "system identification"
+      ],
+      "chunk_summary": "Quantum systems can be defined by the operational procedures used to identify them, highlighting the interplay between observer and system.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "The idea that objects are constructed by perceivers is foundational in 2nd-order cybernetics [6,7]. This idea was introduced into evolutionary and developmental biology by Maturana and Varela [8], where it became the notion of the joint \"enaction\" of an object by an organism and its environment. It was introduced into perceptual psychology by Gibson [9] as the idea that objects and their properties are \"affordances\" of an environment for a specific, behaving organism.",
+      "section": "[PAGE 2] The idea that objects are constructed by perceivers is foundational in 2nd-order cybernetics [6,7]. This idea was introduced into evolutionary and developmental biology by Maturana and Varela [8], where it became the notion of the joint \"enaction\" of an object by an organism and its environment. It was introduced into perceptual psychology by Gibson [9] as the idea that objects and their properties are \"affordances\" of an environment for a specific, behaving organism. In all of these formulations, perceived \"objects\" are emergent from the joint activity of a perceiver and its environment, not fundamental \"furniture of the world\" as sought by traditional ontologists [10].",
+      "primary_topic": "Object Construction",
+      "secondary_topics": [
+        "2nd-order cybernetics",
+        "enaction",
+        "affordances",
+        "perceptual psychology",
+        "evolutionary biology",
+        "developmental biology",
+        "Maturana and Varela",
+        "Gibson"
+      ],
+      "chunk_summary": "The concept of objects being constructed by perceivers, rather than existing independently, is explored through the lenses of 2nd-order cybernetics, evolutionary and developmental biology, and perceptual psychology, highlighting the notions of \"enaction\" and \"affordances.\"",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "2"
+    },
+    {
+      "text": "In all of these formulations, perceived \"objects\" are emergent from the joint activity of a perceiver and its environment, not fundamental \"furniture of the world\" as sought by traditional ontologists [10].",
+      "section": "[PAGE 2] The idea that objects are constructed by perceivers is foundational in 2nd-order cybernetics [6,7]. This idea was introduced into evolutionary and developmental biology by Maturana and Varela [8], where it became the notion of the joint \"enaction\" of an object by an organism and its environment. It was introduced into perceptual psychology by Gibson [9] as the idea that objects and their properties are \"affordances\" of an environment for a specific, behaving organism. In all of these formulations, perceived \"objects\" are emergent from the joint activity of a perceiver and its environment, not fundamental \"furniture of the world\" as sought by traditional ontologists [10].",
+      "primary_topic": "Emergent Objects",
+      "secondary_topics": [
+        "ontology",
+        "perceiver-environment interaction",
+        "emergence"
+      ],
+      "chunk_summary": "Perceived objects emerge from the interaction between perceiver and environment, challenging the traditional ontological view of objects as fundamental components of the world.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "2"
+    },
+    {
+      "text": "All of these process-oriented ways of thinking, however, employ object-like concepts in their formulation. One can think of a morphism m12: o1 → o2 simply as an ordered pair (o1,o2); the ordered-pair notation suggests an object, not a process. Quantum-theoretic measurement operators must be deployed by observers to yield results [11]; observers are themselves quantum systems, i.e. objects. When such systems are replaced by identification criteria, these criteria must be implemented, again by a system – an object - acting as an observer.",
+      "section": "All of these process",
+      "primary_topic": "Object-Process Duality",
+      "secondary_topics": [
+        "morphisms",
+        "quantum measurement",
+        "observers",
+        "systems",
+        "identification criteria"
+      ],
+      "chunk_summary": "Despite focusing on processes, these approaches implicitly rely on object-like concepts, such as ordered pairs in morphisms and observer systems in quantum mechanics.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Enaction requires two systems, or objects, an organism and its environment, which interact in some well-defined way as discussed below. Affordances are *for* something, an organism, hence an object, and are *offered by* something, the organism's environment, another object. Objects, in other words, seem to be required after all.",
+      "section": "All of these process",
+      "primary_topic": "Enaction and Affordances",
+      "secondary_topics": [
+        "enaction",
+        "affordances",
+        "organism",
+        "environment",
+        "interaction",
+        "object-process duality"
+      ],
+      "chunk_summary": "Concepts like enaction and affordances, while emphasizing interaction and process, still fundamentally involve objects like organisms and their environments.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "We will argue here that \"processes v/s objects\" is not a useful dichotomy in either physics or the life sciences. There is, instead, substantial theoretical utility in viewing “objects\" and \"processes\" as complementary ways of describing persistence through time, and hence the possibility of observation and manipulation. This way of thinking highlights the roles of memory as an essential resource for observation and of time as an essential resource for action, and makes it clear that \"memory\" and \"time\" are also mutually inter-defined, complementary concepts that both rest on the underlying notion of an \"identity\" that persists.",
+      "section": "We will argue here that",
+      "primary_topic": "Persistence through time",
+      "secondary_topics": [
+        "objects and processes",
+        "observation",
+        "manipulation",
+        "memory",
+        "time",
+        "identity"
+      ],
+      "chunk_summary": "Objects and processes are complementary descriptions of persistence through time, enabling observation and manipulation, with memory and time as essential, inter-defined resources rooted in a persistent identity.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "We formulate our approach in terms of the Free Energy Principle (FEP) of Friston and colleagues [12-15,17,18], noting the close relationship between the FEP and the Holographic Principle (HP) of physics [19-22] and that the fundamental idea of both of these principles – that information passing through a surface can be represented as being encoded on that surface – is implicit in the Divergence Theorem, one of the fundamental theorems of vector calculus, first formulated in the early 19th century [23].",
+      "section": "We will argue here that",
+      "primary_topic": "Free Energy Principle",
+      "secondary_topics": [
+        "Holographic Principle",
+        "Divergence Theorem",
+        "information processing",
+        "surface encoding",
+        "theoretical framework"
+      ],
+      "chunk_summary": "The approach is framed using the Free Energy Principle (FEP), related to the Holographic Principle and Divergence Theorem, emphasizing information encoding on surfaces.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "The FEP characterizes all time-persistent physical systems as implementing a process, active inference [24,25], which is a combination of reacting to (learning from) and acting on (manipulating) their environments. As a generic description of persistent physical systems as information-processing systems, the FEP provides a uniform way of thinking about information and memory across biological scales, from molecular networks in morphogenesis to evolutionary dynamics.",
+      "section": "We will argue here that",
+      "primary_topic": "Active Inference",
+      "secondary_topics": [
+        "Free Energy Principle",
+        "information processing",
+        "learning",
+        "manipulation",
+        "morphogenesis",
+        "evolutionary dynamics",
+        "biological scales"
+      ],
+      "chunk_summary": "The FEP describes persistent systems as performing active inference, combining learning and manipulation, offering a unified view of information and memory across biological scales.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Following a brief review of the FEP and its conceptual underpinnings, this section applies the complementary view of objects and processes to evolution and development, questioning the subjects of these processes. It argues for a scale-free biology where processes at all levels can be described uniformly.  The section also explores the observer as a developmental system, examining the requirements for self-modeling and historical sequencing of observations.",
+      "section": "Following a brief review of the FEP and its conceptual underpinnings in",
+      "primary_topic": "Scale-Free Biology",
+      "secondary_topics": [
+        "FEP",
+        "evolution",
+        "development",
+        "observer",
+        "self-modeling",
+        "processes",
+        "objects"
+      ],
+      "chunk_summary": "This section introduces the concept of scale-free biology and explores the observer's role in developmental systems.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "2"
+    },
+    {
+      "text": "The section examines the distinction between stigmergic memories, particularly those in permanent records, and implicit memories like those in machine learning, cellular networks, and biochemical pathways.  Referencing Levin [30], it emphasizes memory's primary role as an interpretative function, with the concept of memory as a record of past events being secondary.",
+      "section": "Following a brief review of the FEP and its conceptual underpinnings in",
+      "primary_topic": "Memory",
+      "secondary_topics": [
+        "stigmergic memory",
+        "implicit memory",
+        "machine learning",
+        "cellular networks",
+        "biochemical pathways",
+        "interpretative function"
+      ],
+      "chunk_summary": "This section differentiates between types of memory, highlighting the interpretative nature of memory.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "2"
+    },
+    {
+      "text": "The section concludes that the object-process distinction is artificial and detrimental to scientific progress, advocating for its abandonment.  It anticipates a future bioscience of agentive materials integrating biomedicine and bioengineering, a perspective challenging from the traditional view of organisms as machines with genomes largely determining their programs.",
+      "section": "Following a brief review of the FEP and its conceptual underpinnings in",
+      "primary_topic": "Agentive Materials",
+      "secondary_topics": [
+        "object-process distinction",
+        "bioscience",
+        "biomedicine",
+        "bioengineering",
+        "agentive materials",
+        "genome"
+      ],
+      "chunk_summary": "This section argues against the object-process distinction and envisions a future bioscience focused on agentive materials.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": "2"
+    },
+    {
+      "text": "The FEP is a mathematical framework for talking about persistence through time; indeed, the FEP can be stated, in obviously tautological form, as the claim that any system that persists through time must behave in a way that allows its persistence through time [14]. From a formal perspective, the FEP is an interpretation of dynamical systems that can be decomposed into components that maintain conditionally statistically independent states over some period of time. Note that the FEP characterizes a system only *while* it persists – maintains a state that is conditionally statistically independent from that of its environment – through time, and says nothing about how long any system will be successful in behaving in a way that allows its continued persistence.",
+      "section": "The FEP is a mathematical framework for talking about persistence through time",
+      "primary_topic": "Free Energy Principle",
+      "secondary_topics": [
+        "FEP",
+        "persistence",
+        "dynamical systems",
+        "statistical independence",
+        "time"
+      ],
+      "chunk_summary": "The Free Energy Principle (FEP) describes systems that persist through time by maintaining statistically independent states from their environment, focusing on the 'while' of persistence, not its duration.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "3"
+    },
+    {
+      "text": "Understanding the FEP as a statement of principle requires understanding what \"persistence\", \"time\", and \"behavior\" are. The formal theory of the FEP is, effectively, an answer to these three questions. This formal theory has evolved significantly since it was first proposed; see [14,17,18] for current statements of the theory using classical statistical physics, [15] for a restatement in the language of quantum information theory, and [16] for a detailed comparison of the classical and quantum formulations. We will not replicate these formal presentations here, but will rather examine, in reverse order, how the theory addresses the fundamental questions of persistence, time, and behavior.",
+      "section": "The FEP is a mathematical framework for talking about persistence through time",
+      "primary_topic": "FEP Theory",
+      "secondary_topics": [
+        "FEP",
+        "persistence",
+        "time",
+        "behavior",
+        "classical statistical physics",
+        "quantum information theory"
+      ],
+      "chunk_summary": "The FEP theory addresses the core concepts of persistence, time, and behavior, with its formalization evolving from classical statistical physics to incorporate quantum information theory.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "3"
+    },
+    {
+      "text": "First, what is behavior? The FEP follows physics in general in identifying behavior with physical interaction, and then follows statistical physics - equivalently, information theory, cybernetics, or even computer science - in identifying physical interaction with information exchange. The \"space\" in which this behavior takes place is the joint state space of the system of interest S and its environment E, i.e. the state space of U in Fig. 1.",
+      "section": "First",
+      "primary_topic": "Behavior Definition",
+      "secondary_topics": [
+        "physical interaction",
+        "information exchange",
+        "statistical physics",
+        "information theory",
+        "cybernetics",
+        "computer science",
+        "state space"
+      ],
+      "chunk_summary": "The Free Energy Principle (FEP) defines behavior as information exchange derived from physical interaction within a joint state space of a system and its environment.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The roots of the identification of behavior with information exchange again go back to the 19th century, to Clausius' original definition of entropy, ΔS = ΔE/T, where S is entropy, E is energy, and T is temperature, and Boltzmann's interpretation of entropy in terms of uncertainty, S = *k*B lnΩ, where *k*B is Boltzmann's constant and Ω is the number of observationally indistinguishable states of the system of interest. Combining these two in the case of a binary system (Ω = 2) yields ΔE = ln2*k*BT, which is Landauer's Principle [31,32], now recognized as the fundamental connection between energy and information [33,34].",
+      "section": "First",
+      "primary_topic": "Entropy and Information",
+      "secondary_topics": [
+        "Clausius entropy",
+        "Boltzmann entropy",
+        "Landauer's Principle",
+        "energy",
+        "information",
+        "uncertainty",
+        "thermodynamics"
+      ],
+      "chunk_summary": "The historical basis for linking behavior and information exchange lies in 19th-century thermodynamics, specifically Clausius' and Boltzmann's definitions of entropy, culminating in Landauer's Principle connecting energy and information.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Physical interactions can be categorized as either internal (within a system) or external (between systems).  Analysis of these interactions relies on the foundational assumption that standard quantum theory, as described by the Dirac-von Neumann axioms, accurately represents physical systems.  This framework utilizes Hilbert spaces to represent system states and linear operators (Hamiltonians) to represent interactions between systems.  This approach specifically excludes nonlinear interactions and observer-dependent wavefunction collapse, although the possibility of such phenomena has not been definitively disproven experimentally.",
+      "section": "Physical interactions can be of two types",
+      "primary_topic": "Quantum Interactions",
+      "secondary_topics": [
+        "Hilbert spaces",
+        "Hamiltonians",
+        "linear operators",
+        "nonlinear interactions",
+        "wavefunction collapse",
+        "Dirac-von Neumann axioms"
+      ],
+      "chunk_summary": "Physical interactions are analyzed using standard quantum theory, represented by Hilbert spaces and linear operators, excluding nonlinear interactions and wavefunction collapse.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Given the assumption that standard quantum theory is correct, we can write the total energy of any isolated system U as an operator, the Hamiltonian HU = HS + HE + HSE, where HU, HS, and HE are the internal interactions of U, S, and E respectively and HSE is the interaction between S and E. Fig. 1 illustrates this equation. The distinction between interactions within or between systems is, therefore, dependent on, and relative to, a decomposition of whole systems such as U into components such as S and E.",
+      "section": "Given the assumption that standard quantum theory is correct",
+      "primary_topic": "Quantum Interactions",
+      "secondary_topics": [
+        "hamiltonian",
+        "energy",
+        "system decomposition",
+        "quantum theory",
+        "interactions"
+      ],
+      "chunk_summary": "The total energy of an isolated system can be represented by a Hamiltonian operator, reflecting internal and external interactions, and the distinction between these interactions depends on how the system is decomposed.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Decomposing U in a different way, e.g. as U = A⊕B with A ≠ S, would define different interactions: HU = HA + HB + HAB. This dependence of the distinction between self-interactions and other-interactions – interactions between systems – on the decomposition of U tells us that the distinction cannot be fundamental. Nothing about the physics of U favors any one decomposition – any one placement of an inter-component boundary – over any other.",
+      "section": "Given the assumption that standard quantum theory is correct",
+      "primary_topic": "System Decomposition",
+      "secondary_topics": [
+        "interactions",
+        "fundamental distinction",
+        "component boundaries",
+        "quantum systems",
+        "arbitrary decomposition"
+      ],
+      "chunk_summary": "The arbitrary nature of system decomposition demonstrates that the distinction between self-interactions and interactions between systems is not fundamental to the physics of the system.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Assuming standard quantum theory provides a strict criterion for determining whether components S and E of a system U have independently-specifiable, and thus conditionally statistically independent, states, a requirement for the FEP to apply.  The components S and E possess independently-specifiable states if and only if their joint state factors, represented as |SE) = |S)|E) in Dirac's notation. If the joint state does not factor, it is considered entangled. Interactions between physical systems typically induce entanglement; assuming two systems are unentangled implies they interact weakly, and this weak interaction hasn't been observed for an extended period.",
+      "section": "[PAGE 3] Assuming standard quantum theory also provides a strict criterion for determining whether the components S and E specified by a decomposition of a system U have independently-specifiable, and hence conditionally statistically independent states, as is required if the FEP is to apply. The components S and E have independently-specifiable states if and only if their joint state factors, i.e. if and only if |SE) = |S)|E) in Dirac's notation. If the joint state does not factor, it is, by definition, entangled. Interactions between physical systems generically induce entanglement; an assumption that two systems are unentangled is, therefore, an assumption that they interact only weakly, and that even this weak interaction has not been observed for an asymptotically long time. Determining experimentally whether two systems are entangled is very difficult; the 2022 Nobel Prize in Physics was awarded to Aspect, Clauser, and Zeilinger for showing how this could be done. In practical settings, therefore, interacting systems that appear to be mutually distinguishable are assumed to be unentangled, i.e. assumed to have joint states that factor. The FEP applies only to systems that can each be assumed to have its own, independently-specifiable, conditionally statistically independent internal states. We will refer to systems as \"distinct” or “distinguishable\" if they can, in practice, be assumed to satisfy this condition.",
+      "primary_topic": "Quantum Entanglement",
+      "secondary_topics": [
+        "FEP",
+        "independent states",
+        "Dirac notation",
+        "quantum theory",
+        "system decomposition",
+        "weak interaction"
+      ],
+      "chunk_summary": "The FEP's applicability depends on components having independently-specifiable states, which are factored joint states; otherwise, they are entangled, often due to system interactions.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "3"
+    },
+    {
+      "text": "Experimentally determining entanglement between two systems is challenging, as recognized by the 2022 Nobel Prize in Physics awarded to Aspect, Clauser, and Zeilinger. In practical scenarios, interacting systems appearing mutually distinguishable are assumed unentangled, meaning their joint states factor. The FEP applies only to systems assumed to have their own independently-specifiable, conditionally statistically independent internal states.  Such systems are referred to as \"distinct\" or \"distinguishable\" if they practically satisfy this condition.",
+      "section": "[PAGE 3] Assuming standard quantum theory also provides a strict criterion for determining whether the components S and E specified by a decomposition of a system U have independently-specifiable, and hence conditionally statistically independent states, as is required if the FEP is to apply. The components S and E have independently-specifiable states if and only if their joint state factors, i.e. if and only if |SE) = |S)|E) in Dirac's notation. If the joint state does not factor, it is, by definition, entangled. Interactions between physical systems generically induce entanglement; an assumption that two systems are unentangled is, therefore, an assumption that they interact only weakly, and that even this weak interaction has not been observed for an asymptotically long time. Determining experimentally whether two systems are entangled is very difficult; the 2022 Nobel Prize in Physics was awarded to Aspect, Clauser, and Zeilinger for showing how this could be done. In practical settings, therefore, interacting systems that appear to be mutually distinguishable are assumed to be unentangled, i.e. assumed to have joint states that factor. The FEP applies only to systems that can each be assumed to have its own, independently-specifiable, conditionally statistically independent internal states. We will refer to systems as \"distinct” or “distinguishable\" if they can, in practice, be assumed to satisfy this condition.",
+      "primary_topic": "Distinguishable Systems",
+      "secondary_topics": [
+        "FEP",
+        "entanglement",
+        "Nobel Prize",
+        "Aspect",
+        "Clauser",
+        "Zeilinger",
+        "independent states",
+        "practical application"
+      ],
+      "chunk_summary": "While determining entanglement is difficult, practically, distinguishable systems are assumed unentangled, a prerequisite for FEP applicability.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "3"
+    },
+    {
+      "text": "The above discussion refers to the \"system\" U and its components, the distinct \"systems\" S and E. A system is naturally thought of as an object: a collection of \"degrees of freedom\" each of which can be in some state or other. As seen in Fig. 1, however, each system is also characterized by its self-interaction. This self-interaction is a process; in the quantum formalism, the propagator PU(t) = exp((-i/ħ)HU(t)), where ħ is the reduced Planck's constant, is the unitary operator that evolves the state of U forward in an assumed \"background\" [38] time t.",
+      "section": "[PAGE 4] The above discussion refers to the \"system\" U and its components, the distinct \"systems\" S and E. A system is naturally thought of as an object",
+      "primary_topic": "System Definition",
+      "secondary_topics": [
+        "degrees of freedom",
+        "self-interaction",
+        "quantum formalism",
+        "propagator",
+        "Planck's constant",
+        "unitary operator"
+      ],
+      "chunk_summary": "This chunk defines systems U, S, and E as collections of degrees of freedom, characterized by self-interaction described by a quantum propagator.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "4"
+    },
+    {
+      "text": "Each degree of freedom x of U can, moreover, be replaced with a collection of binary degrees of freedom, one for each of the discernable values of x. We can, therefore, think of U simply as a collection of physically-implemented bits, or in the quantum case, qubits. We can, in other words, think of any state of U as an encoding of data, and think of the action of PU on any such state as a computation on those data; as shown in [39], doing so only requires finding a mapping – a semantic interpretation – from states of U to some data structure, and from finite samples of the action of PU to the action of some function on that data structure. Many such mappings are, moreover, always possible [40]. Provided that their joint state remains separable, the same goes for S and E.",
+      "section": "[PAGE 4] The above discussion refers to the \"system\" U and its components, the distinct \"systems\" S and E. A system is naturally thought of as an object",
+      "primary_topic": "Data Representation",
+      "secondary_topics": [
+        "binary degrees of freedom",
+        "qubits",
+        "data encoding",
+        "computation",
+        "semantic interpretation",
+        "data structure",
+        "separable states"
+      ],
+      "chunk_summary": "This chunk explains how the states of system U (and similarly S and E if separable) can be represented as data, and the system's evolution as computation on that data.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "4"
+    },
+    {
+      "text": "If HU, HS, and HE can be interpreted as implementing computations, how are we to interpret the interaction HSE? Let us suppose that information in some measurable form is carried by discrete, detectable physical systems, such as individual photons, with each photon encoding one bit of information. The Divergence Theorem tells us that the number of photons, and hence the amount, in bits, of information emitted by any source within a system can be computed by computing the number of photons crossing any closed boundary around the system.",
+      "section": "If HU",
+      "primary_topic": "Information Exchange",
+      "secondary_topics": [
+        "computation",
+        "photons",
+        "Divergence Theorem",
+        "information theory",
+        "system boundaries"
+      ],
+      "chunk_summary": "This chunk introduces the concept of information exchange between systems, using photons as an example and relating it to the Divergence Theorem.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The HP extends this result, postulating that the only information that can be obtained about a system by an external observer is the information that is carried across its boundary by physical systems capable of traversing the boundary. It states, moreover, that for any finite system, the maximal number of physical information carriers – again, e.g. photons – that can traverse its boundary is finite, and indeed proportional to the area of the boundary (formally, the maximum classical entropy S(B) of the boundary B is A/4, where A is the area of B in Planck units).",
+      "section": "If HU",
+      "primary_topic": "Holographic Principle",
+      "secondary_topics": [
+        "HP",
+        "information carriers",
+        "system boundaries",
+        "entropy",
+        "Planck units",
+        "finite systems"
+      ],
+      "chunk_summary": "This chunk explains the Holographic Principle (HP) and its implications for information transfer across system boundaries, highlighting the finite nature of this transfer and its proportionality to boundary area.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The boundary B separating S from E can, therefore, also be thought of as a collection of discrete, physically-implemented bits, or in the quantum case, physically-implemented qubits (see [16] or [22] for mathematical details and [41] for a less formal discussion). The interaction HSE can, therefore, be regarded as finite bit exchange between S and E, i.e. as communication between S and E.",
+      "section": "If HU",
+      "primary_topic": "System Interaction",
+      "secondary_topics": [
+        "qubits",
+        "bits",
+        "communication",
+        "system boundaries",
+        "interaction",
+        "quantum information"
+      ],
+      "chunk_summary": "This chunk describes the interaction between systems S and E as a finite exchange of bits or qubits across their shared boundary, effectively framing it as communication.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "With this understanding of behavior, we are in a position to address time, the background time t employed above to construct the propagator PU(t). The FEP is about persistence through time, but where does \"time\" come from, and what role is it playing in the theory? To answer this question, it is useful to ask another: what happens to the information that flows, via the action of PU(t), into S from E? If HS is viewed as implementing a computation, the answer is clear: information from E is transferred across B, after which it serves as an input to whatever computation HS implements. In FEP language, information arriving across B is \"sensation.\" Information flow from S back to E is output from HS - \"action\" in FEP language.",
+      "section": "[PAGE 4] With this understanding of behavior, we are in a position to address time, the background time t employed above to construct the propagator PU(t). The FEP is about persistence through time, but where does \"time\" come from, and what role is it playing in the theory? To answer this question, it is useful to ask another",
+      "primary_topic": "Time and Information Flow",
+      "secondary_topics": [
+        "FEP",
+        "propagator",
+        "information flow",
+        "sensation",
+        "action",
+        "computation"
+      ],
+      "chunk_summary": "This chunk introduces the concept of time within the FEP framework, focusing on how information flows between systems and relates to sensation and action.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "4"
+    },
+    {
+      "text": "Sending E a bit string involves writing these bits on B; this takes energy, at least ln2*k*BT per bit. It also takes time: formally, action is the product, ΔEΔt, of energy and time. Hence formally, time is built into the concept of interaction: it is what separates input from output. Any system S able to distinguish or record successive inputs from, or outputs to, another system E must implement, as one function of its internal interaction HS, a time counter or clock that \"ticks\" between each input and the following output, and thus provides an available timestamp for recording inputs or outputs [15].",
+      "section": "[PAGE 4] With this understanding of behavior, we are in a position to address time, the background time t employed above to construct the propagator PU(t). The FEP is about persistence through time, but where does \"time\" come from, and what role is it playing in the theory? To answer this question, it is useful to ask another",
+      "primary_topic": "Time and Interaction",
+      "secondary_topics": [
+        "energy",
+        "action",
+        "interaction",
+        "input",
+        "output",
+        "time counter",
+        "clock"
+      ],
+      "chunk_summary": "This section explains how time is inherent in interaction, as it separates input from output, requiring systems to implement internal time counters.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "4"
+    },
+    {
+      "text": "The internal time ts counted by S is discrete, as it counts particular events, and is by definition coarse-grained with respect to the background time t. This internal time is strictly system-relative, as stressed by Di Biagio, Donà and Rovelli [42] among others.",
+      "section": "[PAGE 4] With this understanding of behavior, we are in a position to address time, the background time t employed above to construct the propagator PU(t). The FEP is about persistence through time, but where does \"time\" come from, and what role is it playing in the theory? To answer this question, it is useful to ask another",
+      "primary_topic": "System-Relative Time",
+      "secondary_topics": [
+        "internal time",
+        "discrete time",
+        "coarse-grained time",
+        "system-relative time",
+        "Di Biagio",
+        "Donà",
+        "Rovelli"
+      ],
+      "chunk_summary": "The chunk concludes by describing the nature of internal time as discrete, coarse-grained, and system-relative, citing supporting work.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "4"
+    },
+    {
+      "text": "Let us now describe S in the language of the FEP, considering S to both observe and manipulate E by reading from and writing on B; this alternation between reading and writing is implemented by HS and is, in FEP language, the process of *active inference*. Observation can be informative only if most of what is observed is not changing (or changing only slowly) in the internal time ts; if everything is observed to be changing, all that is \"seen\" is noise. Manipulation similarly makes sense only if there is something to manipulate, and an effectively fixed background against which to manipulate it.",
+      "section": "Let us now describe S in the language of the FEP",
+      "primary_topic": "Active Inference",
+      "secondary_topics": [
+        "FEP",
+        "observation",
+        "manipulation",
+        "internal time",
+        "stasis",
+        "active inference",
+        "HS"
+      ],
+      "chunk_summary": "Active inference, within the Free Energy Principle (FEP), involves an agent (S) observing and manipulating its environment (E) by interacting with a boundary (B), requiring a degree of stasis for meaningful interaction.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Formally, these are conditions of \"sparse coupling\" or \"weak interaction\" required by the FEP [16]. Processes in E that act on B, in other words, can be observed and manipulated only against a background of stasis. Time enables stasis: time provides a redundancy resource for – a \"place to put\" – the multiple \"copies\" of the observed background that enable it to be seen as unchanging, and hence allow other things to be seen as changing. Time is not just Nature's way of assuring that everything does not happen at once [43]; it is also Nature's way of allowing what happens to be noticed by observers.",
+      "section": "Let us now describe S in the language of the FEP",
+      "primary_topic": "Time and Stasis",
+      "secondary_topics": [
+        "FEP",
+        "sparse coupling",
+        "weak interaction",
+        "stasis",
+        "time",
+        "observation",
+        "redundancy"
+      ],
+      "chunk_summary": "The FEP's requirement for sparse coupling or weak interaction necessitates stasis, which is facilitated by time, allowing for the perception of change against a stable background.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Time plays a dual role in the Free Energy Principle (FEP). Firstly, agents perceive time through their actions. Secondly, time acts as a resource accessible to observers due to their weak interactions with their environments. This duality can be understood from a fundamental physics perspective, where weak interaction is necessary for distinctness from the environment, preventing entanglement. This distinctness allows for the local definition of Homeostatic Setpoints (HS) within a system (S), enabling an S-specific clock for time measurement relative to S.",
+      "section": "[PAGE 4] Time has, therefore, two roles in the FEP",
+      "primary_topic": "Time in FEP",
+      "secondary_topics": [
+        "free energy principle",
+        "weak interaction",
+        "entanglement",
+        "homeostatic setpoints",
+        "time perception",
+        "agent-environment interaction"
+      ],
+      "chunk_summary": "Time in the FEP is both measured through agent actions and provided as a resource through weak interactions with the environment, enabling distinctness and local timekeeping.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "4"
+    },
+    {
+      "text": "From a problem-solving perspective, distinctness from the environment is crucial for active inference, which relies on differentiating between input (sensation) and output (action) through time. Active inference agents can modulate their environmental coupling by coarse-graining inputs or using selective attention (manipulating Bayesian precision) to disregard certain inputs.  Change blindness, in this context, is not a flaw but a mechanism for maintaining a stable background against which changes become noticeable.  This ability to filter irrelevant information, like ignoring background conversations in a noisy room, is essential for focused interaction.",
+      "section": "[PAGE 4] Time has, therefore, two roles in the FEP",
+      "primary_topic": "Active Inference",
+      "secondary_topics": [
+        "change blindness",
+        "selective attention",
+        "bayesian precision",
+        "input-output distinction",
+        "agent-environment coupling",
+        "coarse-graining",
+        "problem solving"
+      ],
+      "chunk_summary": "Active inference requires distinctness from the environment, achieved by differentiating input and output through time, and agents can modulate this coupling through selective attention and input filtering.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "4"
+    },
+    {
+      "text": "Manipulating the coupling to the environment can be achieved by manipulating agent-relative time, effectively processing fewer inputs to minimize energy expenditure in tracking environmental changes. Agents achieve this by using specific reference frames for selective observation and action. This selective processing allows for efficient interaction with the environment by focusing on relevant information and discarding irrelevant stimuli, optimizing energy use for maintaining awareness of relevant changes.",
+      "section": "[PAGE 4] Time has, therefore, two roles in the FEP",
+      "primary_topic": "Agent-Environment Coupling",
+      "secondary_topics": [
+        "reference frames",
+        "selective observation",
+        "energy minimization",
+        "time manipulation",
+        "information processing"
+      ],
+      "chunk_summary": "Agents manipulate their coupling to the environment by manipulating agent-relative time and using specific reference frames, minimizing energy expenditure by selectively processing inputs.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "4"
+    },
+    {
+      "text": "Let us first consider the detection of a signal in some medium. Analog radios that employ either amplitude modulation (AM) or frequency modulation (FM) provide a particularly clean example, and one with historical importance for theories of perception. Analog radio transmitters encode signals in the ambient photon field, the same medium that encodes visually-accessible information. We access these signals with appropriate detectors, i.e. analog radios.",
+      "section": "Let us first consider the detection of a signal in some medium",
+      "primary_topic": "Signal Detection",
+      "secondary_topics": [
+        "analog radio",
+        "amplitude modulation",
+        "frequency modulation",
+        "photon field",
+        "perception",
+        "signal encoding"
+      ],
+      "chunk_summary": "Analog radios, using AM or FM, offer a clear example of signal detection within a medium, like the ambient photon field, relevant to perception theories.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Suppose now that you are listening to a song on the radio. How does the joint system comprising you and your radio extract the information of interest – the song - from the ambient photon field? Extracting the song is a two-step process that mirrors the two-step process of encoding it. Your radio is a tunable resonator that detects the \"carrier wave\" (CW) of the transmitter. This CW is a constant signal at some designated frequency. It encodes, effectively, the name of the transmitter.",
+      "section": "Suppose now that you are listening to a song on the radio",
+      "primary_topic": "Signal Reception",
+      "secondary_topics": [
+        "carrier wave",
+        "radio",
+        "frequency",
+        "transmitter",
+        "resonator",
+        "information extraction"
+      ],
+      "chunk_summary": "A radio extracts a song from the ambient photon field by detecting the transmitter's carrier wave, which encodes the transmitter's identity.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Once the radio has found this signal, it amplifies small, very slow (tens of Hz to kHz as opposed to GHz) AM or FM perturbations of the CW, using filters and feedback (i.e. measures of the differences between current and expected states) to reduce noise. It is these small, slow perturbations that encode the song.",
+      "section": "Suppose now that you are listening to a song on the radio",
+      "primary_topic": "Signal Processing",
+      "secondary_topics": [
+        "AM/FM modulation",
+        "amplification",
+        "filters",
+        "feedback",
+        "noise reduction",
+        "perturbation"
+      ],
+      "chunk_summary": "After detecting the carrier wave, the radio amplifies small perturbations in the signal, which encode the actual song, using filters and feedback to reduce noise.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The ability of radios to extract songs from the ambient photon field is of interest historically because Gibson [45] used it as a model of visual perception, and used it in particular to argue that perception by \"resonance\" required no memory for prior information on the part of the perceiver. This argument has since been used extensively to argue that organisms neither store nor process information [46,47].",
+      "section": "The ability of radios to extract songs from the ambient photon field is of interest historically because Gibson",
+      "primary_topic": "Visual Perception",
+      "secondary_topics": [
+        "resonance",
+        "memory",
+        "information processing",
+        "Gibson's theory",
+        "perception"
+      ],
+      "chunk_summary": "Gibson's model of visual perception as resonance, requiring no memory, has been used to argue against information storage and processing in organisms.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "The brief description above highlights the stored information that this argument misses: radios store information about CWs - that, for example, rocks of similar size and weight do not - and also store extensive information about how CWs are modulated by radio transmitters. This latter information allows them to process perturbations of the CW of the right kind, and at the right timescale, to extract the encoded information, e.g. a song.",
+      "section": "The ability of radios to extract songs from the ambient photon field is of interest historically because Gibson",
+      "primary_topic": "Information Storage",
+      "secondary_topics": [
+        "radio waves",
+        "carrier waves",
+        "modulation",
+        "signal processing",
+        "information encoding"
+      ],
+      "chunk_summary": "Radios, contrary to the resonance argument, store information about carrier waves and their modulation, enabling them to process and extract encoded information like songs.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "A human using a radio to find songs faces a similar problem to the radio itself and solves it similarly. To find songs, a human must first locate the radio, typically by interacting with the ambient photon field (visual perception). This involves scanning the field for an expected, constant signal—the radio's visual appearance. Only after locating the radio can the human interact with its time-varying properties, like the tuned station. This illustrates the difference between constant (\"reference\") and variable (\"pointer\") properties.",
+      "section": "A",
+      "primary_topic": "Signal Detection",
+      "secondary_topics": [
+        "visual perception",
+        "photon field",
+        "reference state",
+        "pointer properties",
+        "radio analogy"
+      ],
+      "chunk_summary": "Humans locate radios by visually detecting their constant properties before interacting with variable properties like the tuned station.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Figure 2 illustrates the distinction between constant (\"reference\") and variable (\"pointer\") properties. The specificity of the reference state |R) (using Dirac's notation) used to identify a system—like a radio or a specific frequency—determines how specifically that system can be detected. To find a specific radio station or radio, one must detect a reference state |R) unique to that system.",
+      "section": "A",
+      "primary_topic": "Reference State",
+      "secondary_topics": [
+        "Dirac notation",
+        "specificity",
+        "system identification",
+        "constant properties",
+        "variable properties"
+      ],
+      "chunk_summary": "The specificity of the reference state |R) determines the accuracy of system identification, requiring a unique |R) for specific targets.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The above characterization of detecting changes in signals and objects is completely general, and in fact characterizes any physical system capable of responding in some specific way to some specific property of its environment [5]. In the language of physics, detectors of specific kinds of signals or systems are quantum (because physically implemented) reference frames (QRFs [49,50]). A rhodopsin molecule responsive to photons in a specific frequency range, for example, is, in virtue of its physical implementation, a QRF for photons in that frequency range. A tick responsive to butyric acid is a QRF for butyric acid. A human responsive to the visual appearance of a radio is a QRF for radios.",
+      "section": "[PAGE 5] The above characterization of detecting changes in signals and objects is completely general, and in fact characterizes any physical system capable of responding in some specific way to some specific property of its environment [5]. In the language of physics, detectors of specific kinds of signals or systems are quantum (because physically implemented) reference frames (QRFs [49,50]). A rhodopsin molecule responsive to photons in a specific frequency range, for example, is, in virtue of its physical implementation, a QRF for photons in that frequency range.  A tick responsive to butyric acid is a QRF for butyric acid.  A human responsive to the visual appearance of a radio is a QRF for radios.  All of these QRFs, moreover, implement memory",
+      "primary_topic": "Quantum Reference Frames",
+      "secondary_topics": [
+        "QRFs",
+        "detectors",
+        "signals",
+        "physical systems",
+        "quantum physics",
+        "environment",
+        "rhodopsin",
+        "butyric acid"
+      ],
+      "chunk_summary": "Any physical system capable of responding to a specific environmental property can be considered a quantum reference frame (QRF), exemplified by rhodopsin, ticks, and humans.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "5"
+    },
+    {
+      "text": "All of these QRFs, moreover, implement memory: they \"remember\" what they are QRFs *for*. This memory is implemented physically, by the structure and dynamics of the QRF. It is this physically-implemented memory that allows QRFs to detect specific signals or systems in their environments.",
+      "section": "[PAGE 5] The above characterization of detecting changes in signals and objects is completely general, and in fact characterizes any physical system capable of responding in some specific way to some specific property of its environment [5]. In the language of physics, detectors of specific kinds of signals or systems are quantum (because physically implemented) reference frames (QRFs [49,50]). A rhodopsin molecule responsive to photons in a specific frequency range, for example, is, in virtue of its physical implementation, a QRF for photons in that frequency range.  A tick responsive to butyric acid is a QRF for butyric acid.  A human responsive to the visual appearance of a radio is a QRF for radios.  All of these QRFs, moreover, implement memory",
+      "primary_topic": "QRF Memory",
+      "secondary_topics": [
+        "memory",
+        "QRFs",
+        "physical implementation",
+        "structure",
+        "dynamics",
+        "signal detection"
+      ],
+      "chunk_summary": "QRFs possess physically implemented memory, encoded in their structure and dynamics, enabling them to detect specific signals or systems.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "5"
+    },
+    {
+      "text": "Fig. 4. Mutual coherency condition for MCA models of a system S. Provided that both M₁ and M₂ are coherent models of S [39], and that the map I between models remains constant over time, the diagram commutes and mutual coherence between the models M₁ and M₂ is guaranteed.",
+      "section": "Fig",
+      "primary_topic": "Model Coherence",
+      "secondary_topics": [
+        "MCA",
+        "mutual coherence",
+        "model consistency",
+        "system modeling",
+        "coherence condition",
+        "diagram commutation"
+      ],
+      "chunk_summary": "This figure describes the conditions under which two models (M₁ and M₂) of a system (S) maintain mutual coherence within a Multiscale Competency Architecture (MCA).",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Systems and their internal dynamics defined within standard quantum theory do not impose any mereological descriptions a priori; all such descriptions are model-dependent, and hence dependent on how the system and its behavior are measured [62,63]. No particular decomposition of any system into \"parts\" can be assumed to be given, a priori, by the \"physics\" of the system. Hence no description of a system as a Multiscale Competency Architecture (MCA) can be assumed to be given, or implied, by its physical dynamics.",
+      "section": "Systems and their internal dynamics defined within standard quantum theory do not impose any mereological descriptions a priori",
+      "primary_topic": "Mereology",
+      "secondary_topics": [
+        "quantum theory",
+        "model dependence",
+        "system decomposition",
+        "Multiscale Competency Architecture",
+        "physical dynamics"
+      ],
+      "chunk_summary": "Descriptions of systems as composed of parts are not inherent in quantum theory but are model-dependent, meaning no specific Multiscale Competency Architecture is implied by the system's physics.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "We can describe any morphogenetic code architecture (MCA) in multiple ways and explore the relationships between these descriptions.  Let M₁ and M₂ represent descriptions of a system S as an MCA. These descriptions can be expressed in any language, formal or informal, and can divide S into parts and characterize their states at any scale.  For a model to be coherent, it must satisfy a key criterion: the mapping from system states |S(t)) to their model descriptions must commute with both the physical dynamics (Hs) and the model dynamics.  This means that describing a state |S₁) in the model and then applying the model dynamics for a time dt should yield the same result as describing the state |S(t+dt)) in the model.",
+      "section": "We can",
+      "primary_topic": "Morphogenetic Code Architecture",
+      "secondary_topics": [
+        "MCA",
+        "model descriptions",
+        "system dynamics",
+        "coherence",
+        "formal languages",
+        "informal languages",
+        "state mapping"
+      ],
+      "chunk_summary": "Coherent models of morphogenetic code architectures (MCAs) require consistent mapping between system states and model descriptions under both physical and model dynamics.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "The precision of the \"sameness\" criterion depends on the scale, precision, and formality of the model. If the model is implemented in a programming language, \"the same result\" refers to the computational output.  However, if the model is described in ordinary language, such as with diagrams in biochemistry, the meaning of \"the same result\" can be more ambiguous.  The level of formality influences the interpretation of model consistency and the evaluation of its predictive power.",
+      "section": "We can",
+      "primary_topic": "Model Precision",
+      "secondary_topics": [
+        "sameness criterion",
+        "formal models",
+        "informal models",
+        "programming languages",
+        "biochemistry",
+        "diagrams",
+        "model evaluation"
+      ],
+      "chunk_summary": "The precision of comparing model outputs depends on the model's formality, ranging from strict computational equivalence in programming languages to more flexible interpretations in less formal descriptions.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Assuming that M₁ and M₂ are each individually coherent models of the behavior of S, we can ask what is required for them to be mutually coherent, or inter-translatable. Suppose that the descriptions M₁(t) and M₂(t) of |S(t)) can be related by some translation T(t). If M₁ and M₂ are formal models, this T will be a mapping from the symbols used by M₁ to the symbols used by M₂. If M₁ and M₂ are informal models, T may just be an explanation, in some natural language, of how the models relate; nearly all models of genetic interactions, cellular biochemistry, or organismal physiology or behavior are of this informal kind.",
+      "section": "Assuming that M",
+      "primary_topic": "Model Coherence",
+      "secondary_topics": [
+        "inter-translatability",
+        "formal models",
+        "informal models",
+        "translation",
+        "mapping",
+        "genetic interactions",
+        "cellular biochemistry",
+        "organismal physiology"
+      ],
+      "chunk_summary": "This chunk explores the requirements for two models (M₁ and M₂) of a system (S) to be mutually coherent, focusing on the concept of a translation (T) between their descriptions.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "We can now ask: does the same translation between the descriptions of S given by M₁ and M₂ work at subsequent times, e.g. for the descriptions M₁(t + dt) and M₂(t + dt) of |S(t + dt)), as illustrated in Fig. 4? If so, the translation T “works” or “makes sense,” at least for the limited collection of descriptions generated by observations of S between t and t + dt. If T works for descriptions of large numbers of systems, over long observation times, that are generated in the languages of M₁ and M₂, we can say, at least tentatively, that T is a coherent translation between these two languages.",
+      "section": "Assuming that M",
+      "primary_topic": "Translation Validity",
+      "secondary_topics": [
+        "temporal consistency",
+        "model comparison",
+        "system behavior",
+        "observation time",
+        "coherent translation"
+      ],
+      "chunk_summary": "This chunk discusses the temporal validity of the translation T between models M₁ and M₂, examining whether it remains consistent over time and across different systems.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The assumption of linearity in Eq. (1) offers a method to assess the coherence between two models (M₁ and M₂) of a system (S).  M₁ decomposes S into subsystems Si, while M₂ decomposes it into subsystems Sk.  If both models can fully represent the system's dynamics (Hs), including self-interactions (Hsi, Hsk) and pairwise interactions (Hsij, Hskl) of their respective subsystems, then the translation (T) between them is simply a change in decomposition. This redrawing of component boundaries within S, adhering to Eq. (1), leaves the system dynamics (Hs) and state transitions unchanged.",
+      "section": "The assumption of linearity that allows us to write Eq",
+      "primary_topic": "Model Coherence",
+      "secondary_topics": [
+        "mereological decomposition",
+        "system dynamics",
+        "linearity",
+        "state transitions",
+        "model comparison",
+        "subsystems",
+        "interactions"
+      ],
+      "chunk_summary": "Two models of a system are coherent if translating between them, which amounts to redrawing subsystem boundaries, preserves the system's overall dynamics and state transitions.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The map T(t) → T(t + dt) becomes the Identity when the translation between models only involves a change in decomposition. This ensures that the diagram in Fig. 4 commutes, signifying the mutual coherence of M₁ and M₂ as MCA models of S.  This coherence implies that both models, despite differing in their subsystem definitions, ultimately describe the same underlying system dynamics and predict the same state transitions.",
+      "section": "The assumption of linearity that allows us to write Eq",
+      "primary_topic": "Model Coherence",
+      "secondary_topics": [
+        "MCA models",
+        "commutativity",
+        "identity map",
+        "system dynamics",
+        "state transitions",
+        "model comparison"
+      ],
+      "chunk_summary": "The identity map T(t) → T(t + dt) indicates that the models are mutually coherent, meaning they describe the same system dynamics despite different subsystem decompositions.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "It is important to emphasize that the coherence of models of physical systems is an empirical question, and that whether any model of any system S is coherent, or accurate, in the above sense cannot be proven a priori. The Conway-Kochen theorem [96], which rules out local determinism for any physical system if quantum theory is true, guarantees that even models that are highly accurate for ensembles cannot precisely predict outcomes of experiments on individual systems.",
+      "section": "It is important to emphasize that the coherence of models of physical systems is an empirical question",
+      "primary_topic": "Model Coherence",
+      "secondary_topics": [
+        "empirical validation",
+        "physical systems",
+        "Conway-Kochen theorem",
+        "local determinism",
+        "quantum theory",
+        "predictive accuracy"
+      ],
+      "chunk_summary": "The coherence and accuracy of models for physical systems are empirical questions, and the Conway-Kochen theorem highlights the limitations of even highly accurate ensemble models in predicting individual system outcomes.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "In biological systems, where even clonal populations cannot be expected to be uniform in all characteristics potentially relevant to their dynamics or interactions, determining the accuracy of the decompositions of Hs proposed by competing models is correspondingly more difficult.",
+      "section": "It is important to emphasize that the coherence of models of physical systems is an empirical question",
+      "primary_topic": "Biological Models",
+      "secondary_topics": [
+        "biological systems",
+        "clonal populations",
+        "model accuracy",
+        "system dynamics",
+        "biological interactions",
+        "model comparison"
+      ],
+      "chunk_summary": "The inherent variability within biological systems, even clonal populations, makes it challenging to determine the accuracy of competing models.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "If two models M₁ and M₂ are decompositions of S into active inference agents, and of Hs into interactions between such agents, at two different scales - that is, if M₁ and M₂ are both MCA models - then T describes how the active inference agents at one scale relate to the active inference agents at the other scale.",
+      "section": "If two models M",
+      "primary_topic": "Multiscale Models",
+      "secondary_topics": [
+        "active inference",
+        "MCA models",
+        "scale",
+        "agent interaction",
+        "decomposition"
+      ],
+      "chunk_summary": "This chunk introduces the concept of comparing two models (M₁ and M₂) that decompose a system (S) into active inference agents at different scales, with T describing the relationship between agents across scales.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "6"
+    },
+    {
+      "text": "Fig. 5 illustrates this for the case in which M₁ describes S as a single active inference agent, while M₂ describes S as an MCA comprising multiple active inference agents. In this case, the translation T describes how the single active inference agent of M₁ implements its generative model using the multiple active inference agents of M₂.",
+      "section": "If two models M",
+      "primary_topic": "Model Comparison",
+      "secondary_topics": [
+        "active inference",
+        "MCA models",
+        "generative model",
+        "multi-agent systems",
+        "single-agent systems"
+      ],
+      "chunk_summary": "This chunk uses Figure 5 to illustrate the case where M₁ models S as a single agent and M₂ models S as multiple agents, with T explaining how the single agent in M₁ utilizes the multiple agents of M₂ for its generative model.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "6"
+    },
+    {
+      "text": "Fig. 5. Multiscale competency architectures (MCAs) as hierarchies of active inference agents. a) Any system S can be described as a single active inference agent interacting with its environment E. b) The same system S can be described as an MCA comprising multiple active inference agents S₁, each interacting with its own environment E₁. The translation T between these two descriptions specifies how the single active inference agent of panel a) implements its generative model using the multiple active inference agents of panel b).",
+      "section": "Fig",
+      "primary_topic": "Multiscale Competency Architectures",
+      "secondary_topics": [
+        "active inference",
+        "generative models",
+        "hierarchical control",
+        "systems biology",
+        "multiscale modeling",
+        "agent-based modeling"
+      ],
+      "chunk_summary": "Multiscale Competency Architectures (MCAs) are presented as hierarchical systems of active inference agents, where a single system can be represented as both a single agent and a collection of interacting agents.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "3.3. Development as multiscale model selection",
+      "section": "Fig",
+      "primary_topic": "Development",
+      "secondary_topics": [
+        "multiscale model selection",
+        "morphogenesis",
+        "biological development",
+        "evolutionary developmental biology"
+      ],
+      "chunk_summary": "This section introduces the concept of development as a process of multiscale model selection.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "As discussed above, any system S can be described as an MCA in multiple ways. Which of these descriptions is most useful depends on what one wants to do with it. If one wants to predict the behavior of S in some particular situation, the most useful description will be the one that most accurately predicts S’s behavior in that situation. If one wants to control the behavior of S, the most useful description will be the one that most effectively enables such control.",
+      "section": "As discussed above",
+      "primary_topic": "MCA Descriptions",
+      "secondary_topics": [
+        "system modeling",
+        "predictive models",
+        "control systems",
+        "MCA framework"
+      ],
+      "chunk_summary": "The utility of different MCA descriptions of a system depends on the intended application, whether prediction or control.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Different MCA models of a system S will, in general, make different predictions about S’s behavior. The FEP, however, provides a principled way to select among competing models: the model that minimizes VFE is the most accurate model, and hence the model that should be used to guide action. This principle of model selection applies at all scales, from the selection of individual actions to the selection of developmental trajectories to the selection of evolutionary strategies.",
+      "section": "As discussed above",
+      "primary_topic": "FEP and Model Selection",
+      "secondary_topics": [
+        "free energy principle",
+        "VFE minimization",
+        "model accuracy",
+        "action selection",
+        "developmental trajectories",
+        "evolutionary strategies"
+      ],
+      "chunk_summary": "The Free Energy Principle (FEP) offers a method for selecting the most accurate MCA model by minimizing variational free energy (VFE), which can be applied across various scales from individual actions to evolutionary strategies.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "8"
+    },
+    {
+      "text": "As discussed above, the Free Energy Principle (FEP) describes agents as minimizing variational free energy (VFE), a measure of prediction error. Agents achieve this through active inference, combining learning environmental regularities with acting on the environment to obtain thermodynamic resources and new information.  Acquiring new information is crucial for systems in realistic environments [64].",
+      "section": "As discussed above",
+      "primary_topic": "Free Energy Principle",
+      "secondary_topics": [
+        "active inference",
+        "variational free energy",
+        "prediction error",
+        "thermodynamic resources",
+        "information gathering"
+      ],
+      "chunk_summary": "The Free Energy Principle (FEP) posits that agents minimize prediction error (variational free energy) through active inference, which involves learning environmental regularities and acting to acquire resources and information.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "This drive for new information, whether termed epistemic hunger, infotaxis, or curiosity, is a fundamental motivator for agents [65].",
+      "section": "As discussed above",
+      "primary_topic": "Information Seeking",
+      "secondary_topics": [
+        "epistemic hunger",
+        "infotaxis",
+        "curiosity",
+        "intrinsic motivation",
+        "active inference"
+      ],
+      "chunk_summary": "The inherent drive for new information, known by various terms like epistemic hunger, infotaxis, or curiosity, is a fundamental motivating factor for agents.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Whether for food or knowledge, foraging involves risk; indeed [14] shows how risk and (predicted) information gain are just two ways of describing the same statistical measure. Hence active inference is intrinsically risky, and systems that engage in it can suffer irreversible damage or destruction, i.e. boundary collapse [66].",
+      "section": "Whether for food or knowledge",
+      "primary_topic": "Active Inference",
+      "secondary_topics": [
+        "risk",
+        "information gain",
+        "foraging",
+        "boundary collapse",
+        "irreversible damage"
+      ],
+      "chunk_summary": "Active inference, a process of acquiring information and resources, is inherently risky and can lead to system damage or destruction.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "As discussed above, to persist as an entity is to maintain statistical separability from one's environment by maintaining a collection of internal states that are causally \"far from one's boundary\" and hence available for implementing computations under one's own control. How many such states there are depends on the size of one's boundary – effectively, on one's surface to volume ratio. The size of the boundary, in turn, depends via the HP on the strength of the system-environment interaction. Hence persistent systems must maintain small boundaries to avoid being penetrated or incinerated by their environments.",
+      "section": "As discussed above",
+      "primary_topic": "System-Environment Interaction",
+      "secondary_topics": [
+        "boundary size",
+        "surface to volume ratio",
+        "persistence",
+        "internal states",
+        "computations",
+        "Homeostatic Principle (HP)"
+      ],
+      "chunk_summary": "Persistent entities maintain internal states for computation by controlling their boundary size, which is influenced by the system-environment interaction strength.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "9"
+    },
+    {
+      "text": "Boundary size, however, also determines both the amount of information and the amount of thermodynamic resources that can be obtained from the environment [67,68]. Both are needed, and they trade off against each other when boundary size is fixed. Hence all active inference agents face coupled tradeoffs related to boundary size or, equivalently, total strength of interaction with their environments [41]. For any active inference agent, different choices of environmental exposure and different tradeoffs between feeding, learning, and exploration can be expected to yield different lifestyles, and hence pre-adaption to different niches.",
+      "section": "As discussed above",
+      "primary_topic": "Active Inference",
+      "secondary_topics": [
+        "boundary size",
+        "information",
+        "thermodynamic resources",
+        "tradeoffs",
+        "environmental exposure",
+        "feeding",
+        "learning",
+        "exploration",
+        "niche adaptation"
+      ],
+      "chunk_summary": "Active inference agents face tradeoffs related to boundary size, impacting information and resource acquisition, leading to diverse lifestyles and niche adaptation.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "9"
+    },
+    {
+      "text": "What evolves in a Multi-Cellular Agent (MCA)? The answer lies in the self-interactions (Hi) and pairwise interactions (Hij) of components at all scales. These interactions govern the system's overall dynamics, dictating its response to internal and external perturbations.  Furthermore, these interactions define the system's boundary, determining what constitutes \"inside\" and \"outside.\" This boundary isn't fixed but depends on the system's description.",
+      "section": "What evolves",
+      "primary_topic": "System Dynamics",
+      "secondary_topics": [
+        "multi-cellular agents",
+        "interactions",
+        "perturbations",
+        "system boundary",
+        "self-organization"
+      ],
+      "chunk_summary": "Component interactions at all scales determine system dynamics and boundaries in MCAs.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "As discussed, a system's boundary is not observer-independent but relies on the descriptive framework. The Free Energy Principle (FEP) offers a principled approach to system description and boundary definition.  The boundary is defined as the set of states mediating interactions with the environment.  The interactions Hi and Hij determine these mediating states, and thus, define the system's boundary.",
+      "section": "What evolves",
+      "primary_topic": "Boundary Definition",
+      "secondary_topics": [
+        "free energy principle",
+        "system boundary",
+        "interactions",
+        "environment",
+        "mediating states"
+      ],
+      "chunk_summary": "The Free Energy Principle provides a framework for defining system boundaries based on interactions with the environment.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "In the context of development, model selection can be viewed as a process of exploring the space of possible MCA models of an organism. As an organism develops, it interacts with its environment and gathers information about the consequences of its actions. This information is used to update the organism’s generative model, which in turn is used to select the MCA model that best predicts the organism’s future interactions with its environment. This process of model selection can be viewed as a form of Bayesian inference, in which the organism’s prior beliefs about its environment are updated based on its experiences.",
+      "section": "In the context of development",
+      "primary_topic": "Model Selection",
+      "secondary_topics": [
+        "MCA models",
+        "development",
+        "Bayesian inference",
+        "generative model",
+        "environmental interaction"
+      ],
+      "chunk_summary": "During development, organisms select MCA models by exploring possibilities and updating their generative model based on environmental feedback, similar to Bayesian inference.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "9"
+    },
+    {
+      "text": "The process of model selection during development is not simply a matter of choosing the MCA model that best fits the organism’s current environment. It is also a matter of choosing the MCA model that best prepares the organism for future environmental changes. This requires the organism to anticipate the kinds of changes that are likely to occur in its environment and to choose the MCA model that is most robust to these changes.",
+      "section": "In the context of development",
+      "primary_topic": "Model Robustness",
+      "secondary_topics": [
+        "MCA models",
+        "development",
+        "environmental change",
+        "adaptation",
+        "predictive modeling"
+      ],
+      "chunk_summary": "Developmental model selection considers not only the current environment but also future environmental changes, selecting models robust to anticipated changes.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "9"
+    },
+    {
+      "text": "Fig. 4. Mutual coherency condition for MCA models of a system S. Provided that both M₁ and M₂ are coherent models of S [39], and that the map I between models remains constant over time, the diagram commutes and mutual coherence between the models M₁ and M₂ is guaranteed.",
+      "section": "Fig",
+      "primary_topic": "Model Coherency",
+      "secondary_topics": [
+        "MCA",
+        "mutual coherence",
+        "model consistency",
+        "system modeling",
+        "coherency condition",
+        "diagram commutation"
+      ],
+      "chunk_summary": "This figure describes the conditions under which two models (M₁ and M₂) of a system (S) maintain mutual coherence within a Multiscale Competency Architecture (MCA).",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Systems and their internal dynamics defined within standard quantum theory do not impose any mereological descriptions a priori; all such descriptions are model-dependent, and hence dependent on how the system and its behavior are measured [62,63]. No particular decomposition of any system into \"parts\" can be assumed to be given, a priori, by the \"physics\" of the system.",
+      "section": "Systems and their internal dynamics defined within standard quantum theory do not impose any mereological descriptions a priori",
+      "primary_topic": "Mereology",
+      "secondary_topics": [
+        "quantum theory",
+        "model dependence",
+        "system decomposition",
+        "measurement",
+        "parts"
+      ],
+      "chunk_summary": "Descriptions of parts within a system are not inherent in quantum theory but depend on the chosen model and measurement approach.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    }
+  ],
+  "processed_at": "2025-08-14T13:48:09.795246",
+  "chunk_count": 81,
+  "processing_method": "document_splitting"
+}

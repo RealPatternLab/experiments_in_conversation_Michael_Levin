@@ -1,0 +1,1825 @@
+{
+  "metadata": {
+    "document_type": "journal-article",
+    "title": "Functional assessment of lysosomal Rab7 and RILP with RNA interference and overexpression in Spodoptera frugiperda Sf9 cell lines",
+    "authors": [
+      "Gaofeng Cui",
+      "Zhiyan Jiang",
+      "Guohua Zhong"
+    ],
+    "journal": "STAR Protocols",
+    "publication_year": 2023,
+    "doi": "10.1016/j.xpro.2023.102646",
+    "abstract": null,
+    "extraction_confidence": "high",
+    "filename": "fff45c04_20250814_131546_958.pdf",
+    "extraction_timestamp": "2025-08-14T13:17:08.591931",
+    "extraction_method": "gemini_1.5_flash",
+    "pages_analyzed": 2,
+    "publication_date": "2023-12",
+    "page_range": "102646",
+    "volume": "4",
+    "issue": "4",
+    "references_count": 6,
+    "publisher": "Elsevier BV",
+    "issn": "2666-1667",
+    "crossref_data": true,
+    "enrichment_method": "crossref_api",
+    "crossref_enriched": true,
+    "enrichment_timestamp": "2025-08-14T13:26:59.159224",
+    "affiliations": [
+      "and National Institute",
+      "laboratory safety and ethics."
+    ],
+    "text_enriched": true
+  },
+  "chunks": [
+    {
+      "text": "Protocol to implement a computational pipeline for biomedical discovery based on a biomedical knowledge graph.",
+      "section": "Protocol to implement a computational pipeline for biomedical discovery based on a biomedical knowledge graph",
+      "primary_topic": "Computational Pipeline",
+      "secondary_topics": [
+        "biomedical discovery",
+        "knowledge graph",
+        "computational biology",
+        "bioinformatics",
+        "data mining",
+        "protocol implementation"
+      ],
+      "chunk_summary": "This section outlines a protocol for implementing a computational pipeline that leverages a biomedical knowledge graph for biomedical discovery.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Chang Su, Yu Hou, Michael Levin, Rui Zhang, and Fei Wang are listed as authors. Contact information is provided for Chang Su (suchangsc10@gmail.com) and Fei Wang (few2001@med.cornell.edu).",
+      "section": "Chang Su",
+      "primary_topic": "Authors",
+      "secondary_topics": [
+        "authorship",
+        "contact information",
+        "Chang Su",
+        "Yu Hou",
+        "Michael Levin",
+        "Rui Zhang",
+        "Fei Wang"
+      ],
+      "chunk_summary": "This section lists the authors and their contact information.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "This work presents a computational pipeline for biomedical knowledge discovery based on graph learning and demonstrates its application in a case study for in silico drug repurposing. The pipeline leverages graph-based machine learning to analyze complex biological datasets and identify potential drug candidates.  The study also focuses on interpreting the prediction results based on the structure of the underlying knowledge graph, providing insights into the relationships between drugs, diseases, and biological processes.",
+      "section": "Highlights",
+      "primary_topic": "Knowledge Discovery",
+      "secondary_topics": [
+        "graph learning",
+        "biomedical knowledge",
+        "drug repurposing",
+        "in silico",
+        "computational pipeline",
+        "knowledge graph"
+      ],
+      "chunk_summary": "A computational pipeline using graph learning is presented for biomedical knowledge discovery and applied to in silico drug repurposing, with interpretation of predictions based on knowledge graph structure.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Biomedical knowledge graphs (BKGs) provide a new paradigm for managing abundant biomedical knowledge efficiently. Today's artificial intelligence techniques enable mining BKGs to discover new knowledge.",
+      "section": "Biomedical knowledge graphs",
+      "primary_topic": "Knowledge Graphs",
+      "secondary_topics": [
+        "biomedical knowledge",
+        "artificial intelligence",
+        "knowledge discovery",
+        "data mining",
+        "BKG"
+      ],
+      "chunk_summary": "Biomedical knowledge graphs (BKGs) offer a new way to manage and mine biomedical knowledge using AI.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Here, we present a protocol for implementing a computational pipeline for biomedical knowledge discovery (BKD) based on a BKG. We describe steps of the pipeline including data processing, implementing BKD based on knowledge graph embeddings, and prediction result interpretation.",
+      "section": "Biomedical knowledge graphs",
+      "primary_topic": "Computational Pipeline",
+      "secondary_topics": [
+        "biomedical knowledge discovery",
+        "knowledge graph embeddings",
+        "data processing",
+        "prediction interpretation",
+        "protocol"
+      ],
+      "chunk_summary": "This paper presents a computational pipeline for biomedical knowledge discovery using BKGs, including data processing, knowledge graph embeddings, and result interpretation.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "We detail how our pipeline can be used for drug repurposing hypothesis generation for Parkinson's disease.",
+      "section": "Biomedical knowledge graphs",
+      "primary_topic": "Drug Repurposing",
+      "secondary_topics": [
+        "Parkinson's disease",
+        "hypothesis generation",
+        "pipeline application",
+        "drug discovery"
+      ],
+      "chunk_summary": "The described pipeline can be applied to generate drug repurposing hypotheses for Parkinson's disease.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Publisher's note: Undertaking any experimental protocol requires adherence to local institutional guidelines for laboratory safety and ethics.",
+      "section": "Publisher",
+      "primary_topic": "Ethical Conduct",
+      "secondary_topics": [
+        "laboratory safety",
+        "ethics",
+        "institutional guidelines",
+        "experimental protocols",
+        "research conduct"
+      ],
+      "chunk_summary": "Researchers must adhere to local institutional guidelines for safety and ethics when conducting experiments.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "This paper summarizes the role of bioelectric signaling in regulating cell behavior and large-scale pattern formation during development and regeneration. It highlights how ion channels and gap junctions, by controlling voltage gradients and neurotransmitter distributions, can act as instructive signals for cell differentiation, proliferation, and migration.  The summary emphasizes the importance of bioelectric signaling as a key regulator of morphogenesis, offering a novel perspective on how complex anatomical structures are formed and maintained.",
+      "section": "[PAGE 2] SUMMARY",
+      "primary_topic": "Bioelectric Signaling",
+      "secondary_topics": [
+        "ion channels",
+        "gap junctions",
+        "morphogenesis",
+        "regeneration",
+        "development",
+        "cell behavior",
+        "pattern formation",
+        "neurotransmitters"
+      ],
+      "chunk_summary": "Bioelectric signaling, mediated by ion channels and gap junctions, plays a crucial role in regulating cell behavior and pattern formation during development and regeneration.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "2"
+    },
+    {
+      "text": "Biomedical knowledge graphs (BKGs) provide a new paradigm for managing abundant biomedical knowledge efficiently. Today's artificial intelligence techniques enable mining BKGs to discover new knowledge.",
+      "section": "Biomedical knowledge graphs",
+      "primary_topic": "Knowledge Graphs",
+      "secondary_topics": [
+        "biomedical knowledge",
+        "artificial intelligence",
+        "knowledge discovery",
+        "data mining",
+        "BKGs"
+      ],
+      "chunk_summary": "Biomedical knowledge graphs (BKGs) offer a new way to manage and mine biomedical knowledge using AI.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Here, we present a protocol for implementing a computational pipeline for biomedical knowledge discovery (BKD) based on a BKG. We describe steps of the pipeline including data processing, implementing BKD based on knowledge graph embeddings, and prediction result interpretation.",
+      "section": "Biomedical knowledge graphs",
+      "primary_topic": "Computational Pipeline",
+      "secondary_topics": [
+        "biomedical knowledge discovery",
+        "knowledge graph embeddings",
+        "data processing",
+        "prediction interpretation",
+        "protocol"
+      ],
+      "chunk_summary": "This paper presents a computational pipeline for biomedical knowledge discovery using BKGs, including data processing, knowledge graph embeddings, and result interpretation.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "We detail how our pipeline can be used for drug repurposing hypothesis generation for Parkinson's disease.",
+      "section": "Biomedical knowledge graphs",
+      "primary_topic": "Drug Repurposing",
+      "secondary_topics": [
+        "Parkinson's disease",
+        "hypothesis generation",
+        "drug discovery",
+        "BKG application"
+      ],
+      "chunk_summary": "The described pipeline can be applied to generate drug repurposing hypotheses for Parkinson's disease.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "For complete details on the use and execution of this protocol, please refer to Su et al.¹",
+      "section": "For complete details on the use and execution of this protocol",
+      "primary_topic": "Protocol Details",
+      "secondary_topics": [
+        "protocol execution",
+        "method details",
+        "experimental procedures"
+      ],
+      "chunk_summary": "This section directs readers to Su et al. for complete details on the protocol's use and execution.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "BEFORE YOU BEGIN",
+      "section": "[PAGE 2] BEFORE YOU BEGIN",
+      "primary_topic": "Introduction",
+      "secondary_topics": [
+        "preface",
+        "instructions",
+        "setup"
+      ],
+      "chunk_summary": "This section serves as a brief preface to the main content.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "2"
+    },
+    {
+      "text": "This protocol provides a step-by-step guide for developing a computational pipeline for biomedical knowledge discovery (BKD) using the integrated Biomedical Knowledge Hub (iBKH).  The BKD task within the iBKH involves predicting entities potentially linked to a target entity. The protocol encompasses data collection, Python and package installation, knowledge graph embedding, knowledge discovery and evaluation, and interpretation of prediction results.",
+      "section": "This protocol will give a step",
+      "primary_topic": "Biomedical Knowledge Discovery",
+      "secondary_topics": [
+        "Knowledge Graph",
+        "Computational Pipeline",
+        "iBKH",
+        "Entity Prediction",
+        "Data Collection",
+        "Knowledge Discovery"
+      ],
+      "chunk_summary": "This protocol outlines the steps for building a computational pipeline for predicting entity links within a biomedical knowledge graph.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "A use case demonstrates the pipeline's application in drug repurposing hypothesis generation for Parkinson's disease (PD). This involves predicting drug entities potentially linked to the PD entity within the iBKH.  The protocol's adaptability extends to other BKD tasks, including predicting disease risk genes and discovering drug-drug interactions.",
+      "section": "This protocol will give a step",
+      "primary_topic": "Drug Repurposing",
+      "secondary_topics": [
+        "Parkinson's Disease",
+        "Drug-Drug Interaction",
+        "Disease Risk Genes",
+        "Hypothesis Generation",
+        "Prediction"
+      ],
+      "chunk_summary": "The protocol is exemplified by its application to drug repurposing for Parkinson's disease and can be adapted for other biomedical knowledge discovery tasks.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Data collection.",
+      "section": "[PAGE 2] Data collection",
+      "primary_topic": "Data Acquisition",
+      "secondary_topics": [
+        "data collection",
+        "methods",
+        "experimental design"
+      ],
+      "chunk_summary": "This section briefly mentions the data collection process.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "2"
+    },
+    {
+      "text": "Timing: 15 min",
+      "section": "Timing",
+      "primary_topic": "Experimental Duration",
+      "secondary_topics": [
+        "time",
+        "duration",
+        "experiment"
+      ],
+      "chunk_summary": "The experiment or procedure described in this section took 15 minutes.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Download the project zip file from GitHub: https://github.com/wcm-wanglab/iBKH/tree/main/iBKH-KD-protocol",
+      "section": "1. Download the project zip file from GitHub: https",
+      "primary_topic": "Software Download",
+      "secondary_topics": [
+        "GitHub",
+        "zip file",
+        "iBKH",
+        "KD-protocol",
+        "repository",
+        "code",
+        "software distribution",
+        "project files"
+      ],
+      "chunk_summary": "Instructions to download the project's zip file from the specified GitHub repository.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Unpack the downloaded file.",
+      "section": "2. Unpack the downloaded file.",
+      "primary_topic": "File Management",
+      "secondary_topics": [
+        "download",
+        "unpack",
+        "file extraction",
+        "data access",
+        "file handling"
+      ],
+      "chunk_summary": "Instructions are given to unpack the downloaded file.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Download the latest version of the iBKH knowledge graph (KG) data, including entities and relations, from the provided GitHub repository: https://github.com/wcm-wanglab/iBKH/tree/main/iBKH-KD-protocol.",
+      "section": "3. Download the latest version of iBKH knowledge graph (KG) data (entities and relations) at: https",
+      "primary_topic": "Data Download",
+      "secondary_topics": [
+        "knowledge graph",
+        "iBKH",
+        "data download",
+        "entities",
+        "relations",
+        "GitHub",
+        "repository"
+      ],
+      "chunk_summary": "Instructions for downloading the latest iBKH knowledge graph data from a GitHub repository.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The supplementary materials for this publication, including code and data files, should be organized according to the structure illustrated in Figure 1. This standardized organization ensures that all necessary components are readily accessible and facilitates reproducibility of the reported results.",
+      "section": "4. Put the downloaded files (codes and data) following the structure as shown in Figure 1.",
+      "primary_topic": "Data organization",
+      "secondary_topics": [
+        "supplementary materials",
+        "code",
+        "data files",
+        "reproducibility",
+        "file structure"
+      ],
+      "chunk_summary": "Supplementary materials, including code and data, should be organized as shown in Figure 1 to ensure accessibility and reproducibility.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Python and package installation. This section briefly mentions the use of Python and the installation of necessary packages, likely for the computational aspects of the research described in the paper.  While no specific packages are listed in this short excerpt, it indicates the involvement of computational tools in the study.",
+      "section": "[PAGE 3] Python and package installation",
+      "primary_topic": "Software",
+      "secondary_topics": [
+        "Python",
+        "Package Installation",
+        "Computational tools",
+        "Software dependencies"
+      ],
+      "chunk_summary": "This section notes the use of Python and the installation of required packages for computational analysis.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "3"
+    },
+    {
+      "text": "Timing: 30 min. This section indicates the duration of the described process or experiment, which is 30 minutes.",
+      "section": "Timing",
+      "primary_topic": "Experimental Duration",
+      "secondary_topics": [
+        "time",
+        "duration",
+        "experiment",
+        "process"
+      ],
+      "chunk_summary": "The duration of the process or experiment being described is 30 minutes.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Go to the Anaconda webpage at https://www.anaconda.com/download, download the appropriate Anaconda installer for your computer system, and install it. Please choose an Anaconda installer with a Python version no later than 3.7.0.",
+      "section": "5. Go to the Anaconda webpage at https://www.anaconda.com/download, download appropriate Anaconda installer according to your computer system, and install it. (Note",
+      "primary_topic": "Anaconda Installation",
+      "secondary_topics": [
+        "Anaconda",
+        "Python",
+        "Software Installation",
+        "Operating System",
+        "Installer",
+        "Download"
+      ],
+      "chunk_summary": "Instructions for downloading and installing the Anaconda Python distribution, specifying a version no later than 3.7.0.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Install the necessary Python packages for this project, including NumPy for numerical computing, pandas for data manipulation, scikit-learn for machine learning, neo4j for graph database interaction, and networkx for network analysis, using the pip install command as shown in the provided code snippet.",
+      "section": "6. Install required Python packages (NumPy, pandas, scikit-learn, neo4j, networkx) as following:",
+      "primary_topic": "Python Packages",
+      "secondary_topics": [
+        "NumPy",
+        "pandas",
+        "scikit-learn",
+        "neo4j",
+        "networkx",
+        "pip install",
+        "software installation",
+        "dependencies"
+      ],
+      "chunk_summary": "This section provides instructions for installing the required Python packages for the project, including NumPy, pandas, scikit-learn, neo4j, and networkx.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "7. Install PyTorch.",
+      "section": "7. Install PyTorch.",
+      "primary_topic": "Software Installation",
+      "secondary_topics": [
+        "PyTorch",
+        "Installation",
+        "Deep Learning",
+        "Machine Learning",
+        "Software Requirements"
+      ],
+      "chunk_summary": "This section instructs the user to install the PyTorch deep learning library.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Installation of PyTorch should follow instructions at: https://pytorch.org. Navigate to the \"PyTorch Build\" section, and there, choose the \"Stable\" version from the available choices. Move to the \"Your OS\" section and choose the appropriate operating system you're using. Decide on the installation approach you intend to employ (we recommend either \"pip\" or \"conda\"). Indicate that you are working with Python as your chosen programming language for PyTorch.",
+      "section": "Note",
+      "primary_topic": "PyTorch Installation",
+      "secondary_topics": [
+        "PyTorch",
+        "Installation",
+        "Python",
+        "pip",
+        "conda",
+        "Operating System"
+      ],
+      "chunk_summary": "This note provides instructions for installing PyTorch, emphasizing the selection of stable versions, appropriate operating systems, and recommended installation methods using pip or conda within a Python environment.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "For this specific procedure, a GPU is not required, so choose the \"Default\" option within the \"Compute Platform\" category. Once the selections are made, copy the automatically generated command located under the \"Run this Command\" section and execute it in the command line (for Windows and Linux users) or in the terminal (for Mac OS users).",
+      "section": "Note",
+      "primary_topic": "GPU Selection",
+      "secondary_topics": [
+        "GPU",
+        "Compute Platform",
+        "Command Line",
+        "Terminal",
+        "Execution",
+        "Windows",
+        "Linux",
+        "Mac OS"
+      ],
+      "chunk_summary": "This note explains that a GPU is not needed for this procedure and instructs users to select the \"Default\" compute platform and execute the provided command.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Note: This will initiate the installation process.",
+      "section": "Note",
+      "primary_topic": "Installation",
+      "secondary_topics": [
+        "process",
+        "initiation",
+        "setup",
+        "software",
+        "installation process"
+      ],
+      "chunk_summary": "This note indicates the commencement of the installation process.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Install the DGL-KE (Deep Graph Library - Knowledge Embedding) package. DGL-KE is a Python-based implementation for deep learning (DL)-based knowledge graph embedding algorithms. Installation of DGL-KE follows instructions at: https://github.com/awslabs/dgl-ke. Specifically, run the following commands to initiate the installation process for DGL-KE:  ``` >sudo pip install dgl >sudo pip install dgl-ke ```",
+      "section": "8. Install the DGL-KE (Deep Graph Library - Knowledge Embedding) package. DGL-KE is a Python-based implementation for the deep learning (DL)-based knowledge graph embedding algorithms. Installation of DGL-KE follows instructions at: https",
+      "primary_topic": "DGL-KE Installation",
+      "secondary_topics": [
+        "Knowledge Graph Embedding",
+        "Deep Learning",
+        "Python",
+        "DGL",
+        "Software Installation",
+        "dgl-ke"
+      ],
+      "chunk_summary": "This section provides instructions for installing the DGL-KE package, a Python-based implementation for deep learning knowledge graph embedding algorithms.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "This section, titled \"STEP-BY-STEP METHOD DETAILS\" on page 4, is exceptionally brief and lacks substantive content to divide into meaningful semantic chunks according to the specified criteria.  The title suggests that detailed methodological information would follow, but the provided text does not contain any such details.  Therefore, this single chunk represents the entirety of the provided section content, which is essentially empty.",
+      "section": "[PAGE 4] STEP-BY-STEP METHOD DETAILS",
+      "primary_topic": "Method Details",
+      "secondary_topics": [
+        "methods",
+        "experimental design",
+        "protocol",
+        "data collection",
+        "analysis"
+      ],
+      "chunk_summary": "The section titled \"STEP-BY-STEP METHOD DETAILS\" is empty and lacks any actual method details.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "4"
+    },
+    {
+      "text": "The following are detailed instructions on how to implement the biomedical knowledge discovery pipeline. We show examples of each step in a tutorial Jupyter Notebook project called \"Knowledge_Discovery_Pipeline.ipynb\", which can be found in our GitHub repository.",
+      "section": "The following are detailed instructions on how to implement the biomedical knowledge discovery pipeline",
+      "primary_topic": "Knowledge Discovery",
+      "secondary_topics": [
+        "biomedical knowledge",
+        "data pipeline",
+        "Jupyter Notebook",
+        "GitHub",
+        "knowledge discovery pipeline"
+      ],
+      "chunk_summary": "This section provides instructions and a tutorial Jupyter Notebook for implementing a biomedical knowledge discovery pipeline.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "4"
+    },
+    {
+      "text": "The experimental duration was 30 minutes.",
+      "section": "Timing",
+      "primary_topic": "Experimental Duration",
+      "secondary_topics": [
+        "time",
+        "experiment",
+        "duration",
+        "protocol"
+      ],
+      "chunk_summary": "The experiment was conducted over a period of 30 minutes.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "This note introduces the preprocessing steps for iBKH BKG data.",
+      "section": "Note",
+      "primary_topic": "Data Preprocessing",
+      "secondary_topics": [
+        "iBKH",
+        "BKG data",
+        "preprocessing"
+      ],
+      "chunk_summary": "This note briefly describes the purpose of the section, which is to outline the preprocessing steps for iBKH BKG data.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "This protocol utilizes a comprehensive background knowledge graph (BKG), termed iBKH, illustrated in Figure 2.  iBKH encompasses 11 entity types, including anatomy, disease, drug, gene, molecule, symptom, pathway, side effect, dietary supplement ingredient (DSI), dietary supplement product (DSP), and dietary's therapeutic class (TC).  Furthermore, it incorporates 45 relation types connecting different entity pairs, such as Drug-Disease (DDi), Drug-Drug (DD), and Drug-Gene (DG).",
+      "section": "This protocol uses a comprehensive BKG we built",
+      "primary_topic": "Knowledge Graph",
+      "secondary_topics": [
+        "iBKH",
+        "biomedical entities",
+        "relationships",
+        "drug interactions",
+        "disease associations",
+        "gene associations",
+        "dietary supplements"
+      ],
+      "chunk_summary": "The protocol uses a comprehensive knowledge graph (iBKH) containing various biomedical entities and their relationships.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "In a Biological Knowledge Graph (BKG), such as the integrated Biological Knowledge Hub (iBKH), a triplet represents the fundamental unit of information storage.  These triplets are structured as (h, r, t), where 'h' denotes the head entity, 't' represents the tail entity, and 'r' signifies the relationship connecting the head and tail. This section outlines the preprocessing steps for iBKH knowledge graph (KG) data, specifically the extraction and formatting of triplets from the iBKH, which will subsequently be used for training knowledge graph embedding models.",
+      "section": "In a BKG",
+      "primary_topic": "Knowledge Graph",
+      "secondary_topics": [
+        "triplets",
+        "knowledge representation",
+        "data preprocessing",
+        "iBKH",
+        "embedding models",
+        "head entity",
+        "tail entity",
+        "relation"
+      ],
+      "chunk_summary": "This section describes how triplets (h, r, t) are the fundamental units of information in Biological Knowledge Graphs (BKGs) like the iBKH and how they are extracted and formatted for training knowledge graph embedding models.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "5"
+    },
+    {
+      "text": "The initial step involves opening the Anaconda-Navigator and launching Jupyter Notebook.",
+      "section": "In a BKG",
+      "primary_topic": "Software Setup",
+      "secondary_topics": [
+        "Anaconda-Navigator",
+        "Jupyter Notebook",
+        "data preprocessing",
+        "programming environment"
+      ],
+      "chunk_summary": "The first step in the process is setting up the programming environment by opening Anaconda-Navigator and launching Jupyter Notebook.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "5"
+    },
+    {
+      "text": "In the Jupyter Notebook interface, run the following codes to import required packages: import pandas as pd; import numpy as np; import pickle; import torch as th; import torch.nn.functional as fn; import os; import sys; sys.path.append('.'); import funcs.KG_processing as KG_processing.",
+      "section": "2. In the Jupyter Notebook interface, run the following codes to import required packages.",
+      "primary_topic": "Package Imports",
+      "secondary_topics": [
+        "Jupyter Notebook",
+        "Python",
+        "pandas",
+        "numpy",
+        "pickle",
+        "torch",
+        "KG_processing"
+      ],
+      "chunk_summary": "This section provides the code to import necessary Python packages for the analysis, including pandas, numpy, pickle, torch, and custom functions for knowledge graph processing.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "4"
+    },
+    {
+      "text": "Timing of the process is variable and depends on the hardware used. The approximate duration is between 8 and 24 hours.",
+      "section": "Timing",
+      "primary_topic": "Process Timing",
+      "secondary_topics": [
+        "hardware",
+        "duration",
+        "time dependence"
+      ],
+      "chunk_summary": "The time required for the process varies between 8 and 24 hours depending on the hardware.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "This note introduces the process of learning embedding vectors for both entities and relations within the integrated Biological Knowledge Hierarchy (iBKH).  The iBKH serves as a structured representation of biological knowledge, and embedding vectors provide a powerful way to represent the entities and relationships within this hierarchy in a computationally useful format.  Learning these vectors allows for quantitative comparisons and analyses of the relationships between different biological concepts, facilitating tasks such as knowledge discovery, prediction, and reasoning within the iBKH framework.",
+      "section": "Note",
+      "primary_topic": "Embedding Vectors",
+      "secondary_topics": [
+        "iBKH",
+        "Knowledge Representation",
+        "Biological Entities",
+        "Biological Relations",
+        "Computational Biology",
+        "Knowledge Discovery"
+      ],
+      "chunk_summary": "This note introduces how embedding vectors are learned for entities and relations within the iBKH to enable computational analysis of biological knowledge.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Knowledge graph embedding aims to create machine-readable vector representations for entities and relations within a Biological Knowledge Hub (BKH), such as the integrated BKH (iBKH), while maintaining the structural integrity of the graph.  We utilize four deep learning-based knowledge graph embedding algorithms from the Deep Graph Library - Knowledge Embedding (DGL-KE) framework: TransE, TransR, Complex, and DistMult. This section details the training process for these models.",
+      "section": "Knowledge graph embedding aims to learn machine",
+      "primary_topic": "Knowledge Graph Embedding",
+      "secondary_topics": [
+        "deep learning",
+        "BKH",
+        "iBKH",
+        "DGL-KE",
+        "TransE",
+        "TransR",
+        "Complex",
+        "DistMult",
+        "vector representations"
+      ],
+      "chunk_summary": "This section outlines the training process for four deep learning knowledge graph embedding algorithms (TransE, TransR, Complex, DistMult) used to generate vector representations of entities and relations within a Biological Knowledge Hub (BKH).",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "This step trains each knowledge graph embedding model (TransE, TransR, Complex, and DistMult) using the integrated Biological Knowledge Hierarchy (iBKH). To begin, open the command line (Windows/UNIX) or terminal (MacOS) and navigate to the project directory using the command: 'cd [your file path]/iBKH-KD-protocol'.",
+      "section": "4. This step trains each knowledge graph embedding model (TransE, TransR, Complex, and DistMult) using the iBKH.",
+      "primary_topic": "Knowledge Graph Training",
+      "secondary_topics": [
+        "iBKH",
+        "Knowledge Graph Embeddings",
+        "TransE",
+        "TransR",
+        "Complex",
+        "DistMult",
+        "Command Line",
+        "Setup"
+      ],
+      "chunk_summary": "This chunk describes the initial setup for training knowledge graph embedding models using the iBKH, including navigating to the project directory.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The knowledge graph embedding models are trained and evaluated using the following command: 'DGLBACKEND=pytorch \\ dglke_train--dataset iBKH --data_path./data/dataset \\ --data_files training_triplets.tsv \\ validation_triplets.tsv \\ testing_triplets.tsv \\ --format raw_udd_hrt --model_name [model name] \\ --batch_size [batch size] --hidden_dim [hidden dim] \\ --neg_sample_size [neg sample size] --gamma [gamma] \\ --lr [learning rate] --max_step [max step] \\ --log_interval [log interval] \\ --batch_size_eval [batch size eval] \\ -adv --regularization_coef [regularization coef] \\ --num_thread [num thread] --num_proc [num proc] \\ --neg_sample_size_eval [neg sample size eval] \\ --save_path./data/embeddings --test'.  This command specifies the dataset, data files, model parameters, and evaluation settings.",
+      "section": "4. This step trains each knowledge graph embedding model (TransE, TransR, Complex, and DistMult) using the iBKH.",
+      "primary_topic": "Model Training",
+      "secondary_topics": [
+        "DGLKE",
+        "PyTorch",
+        "Training Data",
+        "Validation Data",
+        "Testing Data",
+        "Hyperparameters",
+        "Evaluation Metrics",
+        "Command Line Arguments"
+      ],
+      "chunk_summary": "This chunk provides the specific command line instructions and parameters for training and evaluating the knowledge graph embedding models.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "We use multiple measurements to evaluate model performances including: HITS@k, the average number of times the positive triplet is among the k highest ranked triplets; Mean Rank (MR), the average rank of the positive triplets; and Mean Reciprocal Rank (MRR), the average reciprocal rank of the positive instances. Higher values of HITS@k and MRR and a lower value of MR indicate good performance, and vice versa.",
+      "section": "Note",
+      "primary_topic": "Model Evaluation",
+      "secondary_topics": [
+        "HITS@k",
+        "Mean Rank",
+        "MRR",
+        "performance metrics",
+        "ranking"
+      ],
+      "chunk_summary": "Model performance is evaluated using HITS@k, Mean Rank (MR), and Mean Reciprocal Rank (MRR), where higher HITS@k and MRR and lower MR indicate better performance.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Once the model achieves desirable performance in the testing set, we re-train it using the whole dataset by running the DGL-KE command with specified arguments for dataset, data path, data files, format, model name, batch size, hidden dimensions, negative sample size, gamma, learning rate, max step, log interval, adversarial training, regularization coefficient, number of threads, number of processes, and save path for embeddings.",
+      "section": "Note",
+      "primary_topic": "Model Retraining",
+      "secondary_topics": [
+        "DGL-KE",
+        "command-line arguments",
+        "dataset",
+        "training",
+        "embeddings",
+        "parameters"
+      ],
+      "chunk_summary": "After achieving satisfactory performance on the testing set, the model is retrained on the entire dataset using the DGL-KE command with various specified parameters.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "This process generates two output files for each model: \"iBKH_[model name]_entity.npy\", containing low-dimensional embeddings of entities in iBKH, and \"iBKH_[model name]_relation.npy\", containing low-dimensional embeddings of relations in iBKH. These embeddings are designed for use in downstream Biological Knowledge Discovery (BKD) tasks.",
+      "section": "Note",
+      "primary_topic": "Output Files",
+      "secondary_topics": [
+        "embeddings",
+        "iBKH",
+        "Biological Knowledge Discovery",
+        "entities",
+        "relations",
+        "npy files"
+      ],
+      "chunk_summary": "The process generates two output files containing entity and relation embeddings for use in BKD tasks.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "We utilize four distinct knowledge graph embedding methods—TransE, TransR, Complex, and DistMult—to derive embedding vectors for both entities and relations within the integrated Bioelectric Knowledge Hypergraph (iBKH). These methods provide numerical representations of biological concepts and their relationships, enabling computational analysis and reasoning within the knowledge graph.",
+      "section": "We run above procedures based on TransE",
+      "primary_topic": "Knowledge Graph Embedding",
+      "secondary_topics": [
+        "TransE",
+        "TransR",
+        "Complex",
+        "DistMult",
+        "iBKH",
+        "embedding vectors",
+        "knowledge representation",
+        "bioelectricity"
+      ],
+      "chunk_summary": "Four knowledge graph embedding methods (TransE, TransR, Complex, DistMult) are used to generate numerical representations of entities and relations within the iBKH.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Note: The user may repeat Step 4b multiple times to find the optimal hyperparameters of each model. Here, we share the optimal hyperparameter values we found in our experiments as listed in Table 2. For simplicity, the user can directly use the suggested hyperparameter values to train the models.",
+      "section": "Note",
+      "primary_topic": "Hyperparameter Optimization",
+      "secondary_topics": [
+        "hyperparameters",
+        "model training",
+        "optimization",
+        "experimental results"
+      ],
+      "chunk_summary": "Users can repeat a step to optimize model hyperparameters or use suggested values provided in Table 2.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "8"
+    },
+    {
+      "text": "In addition, running time of the knowledge graph embedding procedure varies, depending on hardware used. For our experiments, we used a machine equipped with an Intel i7-7800X CPU, boasting 6 cores and 12 threads, with a fundamental clock speed of 3.5 GHz, coupled with 62 GB of RAM. Training the four knowledge graph embedding models within the dataset took approximately 8 hours in our experiment.",
+      "section": "Note",
+      "primary_topic": "Experiment Runtime",
+      "secondary_topics": [
+        "knowledge graph embedding",
+        "hardware specifications",
+        "runtime",
+        "Intel i7-7800X",
+        "RAM"
+      ],
+      "chunk_summary": "The runtime of the knowledge graph embedding procedure varies depending on hardware, with the authors' setup taking approximately 8 hours.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "8"
+    },
+    {
+      "text": "The required running time could extend to 24 hours or even more if a user expects to tune the models to find the optimal hyperparameters for enhancing model performance.",
+      "section": "Note",
+      "primary_topic": "Runtime and Hyperparameter Tuning",
+      "secondary_topics": [
+        "runtime",
+        "hyperparameter tuning",
+        "model performance",
+        "optimization"
+      ],
+      "chunk_summary": "Tuning models to find optimal hyperparameters can significantly increase runtime, potentially up to 24 hours or more.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "8"
+    },
+    {
+      "text": "Timing: 30 min",
+      "section": "Timing",
+      "primary_topic": "Experimental Duration",
+      "secondary_topics": [
+        "time",
+        "duration",
+        "experiment"
+      ],
+      "chunk_summary": "The experiment or procedure described in this section takes 30 minutes.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "This note introduces the implementation of Brain-inspired Knowledge Distillation (BKD) based on knowledge graph embeddings learned from the integrated Brain-inspired Knowledge Hub (iBKH). The iBKH serves as a foundation for generating the knowledge graph embeddings, which are then utilized in the BKD process. This approach leverages the structured knowledge representation within the iBKH to facilitate effective knowledge distillation.",
+      "section": "Note",
+      "primary_topic": "Knowledge Distillation",
+      "secondary_topics": [
+        "BKD",
+        "iBKH",
+        "knowledge graph embeddings",
+        "knowledge representation",
+        "brain-inspired"
+      ],
+      "chunk_summary": "This note introduces the implementation of Brain-inspired Knowledge Distillation (BKD) using knowledge graph embeddings from the integrated Brain-inspired Knowledge Hub (iBKH).",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Here, we showcase a case study of drug repurposing hypothesis generation for Parkinson's disease (PD).",
+      "section": "Here",
+      "primary_topic": "Drug Repurposing",
+      "secondary_topics": [
+        "Parkinson's disease",
+        "hypothesis generation",
+        "drug discovery",
+        "case study",
+        "PD"
+      ],
+      "chunk_summary": "This study presents a case study demonstrating drug repurposing hypothesis generation for Parkinson's disease.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "5. Turn to the Jupyter Notebook interface and run the following script to import required packages. ```python from funcs.KG_link_pred import generate_hypothesis, generate_hypothesis_ensemble_model ```",
+      "section": "5. Turn to the Jupyter Notebook interface and run the following script to import required packages.",
+      "primary_topic": "Code Execution",
+      "secondary_topics": [
+        "Jupyter Notebook",
+        "Python",
+        "Import Packages",
+        "Knowledge Graph",
+        "Link Prediction",
+        "Hypothesis Generation"
+      ],
+      "chunk_summary": "This section instructs users to execute a Python script within a Jupyter Notebook environment to import necessary packages for knowledge graph link prediction and hypothesis generation.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "6. Define the PD entity using python.",
+      "section": "6. Define the PD entity using",
+      "primary_topic": "PD entity definition",
+      "secondary_topics": [
+        "python",
+        "programming",
+        "definition",
+        "entity",
+        "PD"
+      ],
+      "chunk_summary": "This section instructs the reader to define a PD entity using Python.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "PD = [\"parkinson's disease\", \"late onset parkinson's disease\"] represents a list of terms related to Parkinson's disease, specifically including the general term and a more specific term indicating later onset of the condition. This list likely serves as a predefined set of search terms or categories used for information retrieval or data analysis related to Parkinson's disease research.  The inclusion of \"late onset parkinson's disease\" suggests a focus on understanding the specific characteristics and mechanisms associated with this particular form of the disease.",
+      "section": "PD",
+      "primary_topic": "Parkinson's Disease",
+      "secondary_topics": [
+        "parkinson's disease",
+        "late onset parkinson's disease",
+        "disease classification",
+        "search terms",
+        "data analysis"
+      ],
+      "chunk_summary": "The provided list defines terms related to Parkinson's disease, including a general term and a more specific term for late-onset Parkinson's disease.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "This note explains the source of the anatomical terms used in the study, specifically referring to a list of positional descriptor (PD) terms. These terms, which describe anatomical locations, can be found within the entity vocabularies located in the \"data/iBKH/entity\" folder of the associated data repository.",
+      "section": "[PAGE 10] Note",
+      "primary_topic": "Anatomical Terms",
+      "secondary_topics": [
+        "positional descriptors",
+        "entity vocabularies",
+        "data repository",
+        "anatomical location",
+        "iBKH"
+      ],
+      "chunk_summary": "The anatomical terms used in this study are defined as positional descriptors (PD) and are available in the provided data repository.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "10"
+    },
+    {
+      "text": "The task is to predict drug entities that don't have \"treats\" and \"palliates\" relationships with Parkinson's Disease (PD) in the integrated Biomedical Knowledge Hub (iBKH) but can potentially treat or palliate PD.  Therefore, a relation type list is defined in Python:  `r_type = [\"Treats_DDi\", \"Palliates_DDi\"]`.",
+      "section": "7. The task is to predict drug entities that don't have \"treats\" and \"palliates\" relationships with PD in the iBKH but can potentially treat or palliate PD. Therefore, we define a relation type list:",
+      "primary_topic": "Drug Prediction",
+      "secondary_topics": [
+        "Parkinson's Disease",
+        "iBKH",
+        "drug discovery",
+        "knowledge graph",
+        "relation extraction",
+        "treats",
+        "palliates"
+      ],
+      "chunk_summary": "This section describes the task of predicting drugs that could potentially treat or palliate Parkinson's Disease within the iBKH, despite not having established \"treats\" or \"palliates\" relationships.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The provided supplementary data includes additional relationship types located within the \"data/iBKH/relation\" folder.",
+      "section": "Note",
+      "primary_topic": "Data Availability",
+      "secondary_topics": [
+        "supplementary data",
+        "relationships",
+        "data folder",
+        "iBKH"
+      ],
+      "chunk_summary": "Additional relationship types are available in the specified data folder.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "This section describes a method for predicting repurposable drug candidates for Parkinson's Disease (PD) using knowledge graph embeddings and the TransE model. The provided Python code implements this prediction by generating hypotheses based on relationships between PD and drug entities within the knowledge graph.  The `generate_hypothesis` function takes several arguments, including the target entity (PD), candidate entity type (drug), relation type, paths to embedding, knowledge graph, and triplet data, as well as parameters for filtering and saving results. The function returns a dataframe containing the top candidate drugs for repurposing.",
+      "section": "8. Predict repurposable drug candidates for PD (in this example, we use embedding vectors based on the TransE model for prediction):",
+      "primary_topic": "Drug Repurposing",
+      "secondary_topics": [
+        "Parkinson's Disease",
+        "Knowledge Graph Embeddings",
+        "TransE Model",
+        "Drug Prediction",
+        "Repurposing Candidates",
+        "Python",
+        "iBKH"
+      ],
+      "chunk_summary": "This code snippet utilizes a knowledge graph embedding approach with the TransE model to predict potential drug candidates for Parkinson's Disease repurposing.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Running the provided code generates a CSV file containing the top 100 drug repurposing candidates for Parkinson's Disease (PD). This output file is located in the \"output\" folder. The ranking of these drug candidates is based on the TransE model.",
+      "section": "Running the above code will result in an output CSV file within the",
+      "primary_topic": "Drug Repurposing",
+      "secondary_topics": [
+        "Parkinson's Disease",
+        "TransE model",
+        "CSV output",
+        "drug candidates",
+        "ranking"
+      ],
+      "chunk_summary": "The code generates a CSV file in the 'output' folder containing the top 100 repurposable drug candidates for Parkinson's Disease ranked by the TransE model.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "This note directs readers to Table 3 for further details about the function's arguments.  The table likely contains specific parameters or variables used by the function, along with explanations of their meaning and usage. Consulting Table 3 will provide a comprehensive understanding of how to utilize the function effectively.",
+      "section": "Note",
+      "primary_topic": "Function Arguments",
+      "secondary_topics": [
+        "Table 3",
+        "Parameters",
+        "Variables",
+        "Function Usage",
+        "Reference"
+      ],
+      "chunk_summary": "Readers should consult Table 3 for detailed information on the function's arguments.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Using the code in Step 8 allows predictions based on a single knowledge graph embedding model (TransE in the provided example). To improve prediction performance, an ensemble model combining four embedding algorithms was proposed.  Preliminary work demonstrated that the ensemble model enhances knowledge discovery performance in iBKH. The provided Python code demonstrates how to use the ensemble model to predict repurposable drug candidates for Parkinson's Disease (PD).",
+      "section": "9. Using the code in Step 8 can make predictions based on a single knowledge graph embedding model (TransE in the example). To enhance prediction performance, we also proposed an ensemble model, which combines the four embedding algorithms to make predictions. In our preliminary work, we have demonstrated that the ensemble model can improve knowledge discovery performance in iBKH.¹ The following code introduces the usage of the ensemble model to predict repurposable drug candidates for PD.",
+      "primary_topic": "Ensemble Model",
+      "secondary_topics": [
+        "knowledge graph embedding",
+        "TransE",
+        "prediction performance",
+        "drug repurposing",
+        "Parkinson's Disease",
+        "iBKH",
+        "knowledge discovery"
+      ],
+      "chunk_summary": "An ensemble model combining four embedding algorithms improves knowledge discovery and drug repurposing prediction for Parkinson's Disease compared to a single TransE model.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "11"
+    },
+    {
+      "text": "The Python code example demonstrates the `generate_hypothesis_ensemble_model` function. This function takes parameters such as the target entity (PD), candidate entity type ('drug'), relation type, paths to embedding, knowledge graph (iBKH), and triplet data, as well as parameters for filtering results (topK, without_any_rel) and saving output.",
+      "section": "9. Using the code in Step 8 can make predictions based on a single knowledge graph embedding model (TransE in the example). To enhance prediction performance, we also proposed an ensemble model, which combines the four embedding algorithms to make predictions. In our preliminary work, we have demonstrated that the ensemble model can improve knowledge discovery performance in iBKH.¹ The following code introduces the usage of the ensemble model to predict repurposable drug candidates for PD.",
+      "primary_topic": "Code Example",
+      "secondary_topics": [
+        "Python",
+        "generate_hypothesis_ensemble_model",
+        "parameters",
+        "drug candidates",
+        "iBKH",
+        "triplets",
+        "embedding"
+      ],
+      "chunk_summary": "The provided Python code exemplifies the use of the `generate_hypothesis_ensemble_model` function for predicting drug candidates for PD using various input parameters.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "11"
+    },
+    {
+      "text": "Running the provided code generates a CSV file containing the top 100 drug candidates for Parkinson's Disease (PD) based on an ensemble model. This output file is located within the designated \"output\" folder.",
+      "section": "Running the above code will result in an output CSV file within the",
+      "primary_topic": "Code Output",
+      "secondary_topics": [
+        "CSV file",
+        "drug repurposing",
+        "Parkinson's Disease",
+        "ensemble model",
+        "ranking"
+      ],
+      "chunk_summary": "The code generates a CSV file of ranked drug candidates for Parkinson's Disease in an output folder.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Note: Please refer to Table 3 for detailed information regarding arguments of the function.",
+      "section": "Note",
+      "primary_topic": "Supplementary Information",
+      "secondary_topics": [
+        "Table Reference",
+        "Function Arguments",
+        "Parameter Details"
+      ],
+      "chunk_summary": "This note directs the reader to Table 3 for further details on the function's arguments.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "11"
+    },
+    {
+      "text": "Timing: 30 min",
+      "section": "Timing",
+      "primary_topic": "Experimental Duration",
+      "secondary_topics": [
+        "time",
+        "duration",
+        "experiment"
+      ],
+      "chunk_summary": "The experiment or procedure described in this section took 30 minutes.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "This note introduces the method for interpreting prediction results based on the iBKH.  The iBKH likely refers to an improved Bayesian Knowledge Hub or a similar framework, suggesting a probabilistic approach to understanding the predictions. This brief explanation sets the stage for the subsequent presentation and analysis of the results, indicating that a Bayesian framework will be central to the interpretation process.",
+      "section": "Note",
+      "primary_topic": "Prediction Interpretation",
+      "secondary_topics": [
+        "iBKH",
+        "Bayesian Knowledge Hub",
+        "probabilistic modeling",
+        "prediction analysis",
+        "result interpretation"
+      ],
+      "chunk_summary": "This note introduces the use of the iBKH for interpreting prediction results.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "We extract the shortest paths that connect the target entity (e.g., Parkinson's Disease) with the predicted entities (e.g., the predicted repurposing drug candidates for Parkinson's Disease) to generate a contextual subnetwork.",
+      "section": "We extract the shortest paths that connect the target entity",
+      "primary_topic": "Subnetwork Generation",
+      "secondary_topics": [
+        "shortest path analysis",
+        "network analysis",
+        "drug repurposing",
+        "Parkinson's Disease",
+        "contextual subnetwork",
+        "target entity",
+        "predicted entity"
+      ],
+      "chunk_summary": "Shortest paths between a target entity (like Parkinson's Disease) and predicted entities (like drug candidates) are extracted to create a contextual subnetwork.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Taking the Parkinson's Disease (PD) drug repurposing task as an example, a contextual subnetwork surrounding PD and predicted drug candidates can be generated.  The process begins by importing the necessary visualization package from the codebase.  Then, the specific drug candidates for interpretation are specified; in this case, the top four predicted by the ensemble model: Glutathione, Clioquinol, Steroids, and Taurine.  This sets the focus for the subnetwork creation.",
+      "section": "10. Taking the PD drug repurposing task as an example, we can generate the contextual subnetwork surrounding PD and some predicted repurposing drug candidates as below.",
+      "primary_topic": "Subnetwork Generation",
+      "secondary_topics": [
+        "Parkinson's Disease",
+        "drug repurposing",
+        "knowledge visualization",
+        "Python",
+        "Glutathione",
+        "Clioquinol",
+        "Steroids",
+        "Taurine"
+      ],
+      "chunk_summary": "This chunk describes the initial steps of generating a contextual subnetwork for PD drug repurposing, including importing necessary packages and specifying drug candidates.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The core of the process involves creating the contextual subnetwork linking PD and the selected drug candidates. This is achieved using the `subgraph_visualization` function.  This function takes several parameters, including the target disease type (PD), the list of predicted drugs, Neo4j database credentials, and parameters for network visualization like alpha and k for scaling node sizes, figure size, and a save option. The provided code snippet demonstrates the function call with specific arguments for generating and visualizing the subnetwork, connecting Parkinson's Disease with the potential drug repurposing candidates.",
+      "section": "10. Taking the PD drug repurposing task as an example, we can generate the contextual subnetwork surrounding PD and some predicted repurposing drug candidates as below.",
+      "primary_topic": "Subnetwork Visualization",
+      "secondary_topics": [
+        "Neo4j",
+        "network analysis",
+        "drug candidates",
+        "Parkinson's Disease",
+        "graph database",
+        "visualization parameters",
+        "alpha",
+        "k"
+      ],
+      "chunk_summary": "This chunk details the function call and parameters used to create and visualize the subnetwork connecting PD and the drug candidates within a Neo4j database.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "This section describes the output of the function, which is a figure saved as a PDF file in the \"output\" folder.  Table 4 provides detailed information about the function's arguments.",
+      "section": "This will result in a figure saved as a PDF file in the",
+      "primary_topic": "Output Description",
+      "secondary_topics": [
+        "PDF output",
+        "figure generation",
+        "function arguments",
+        "output folder",
+        "Table 4"
+      ],
+      "chunk_summary": "The function generates a figure saved as a PDF in the output folder, with argument details in Table 4.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The shortest path query, used for identifying potential therapeutic targets, leverages iBKH deployed on Neo4j, a graph database known for its efficiency.  For users interested in establishing their own iBKH Neo4j instance, detailed instructions and resources are available at the provided GitHub repository: https://github.com/wcm-wanglab/iBKH#neo4j-deployment.",
+      "section": "Note",
+      "primary_topic": "iBKH Deployment",
+      "secondary_topics": [
+        "Neo4j",
+        "graph database",
+        "shortest path query",
+        "therapeutic targets",
+        "GitHub repository",
+        "database deployment"
+      ],
+      "chunk_summary": "This note directs users to resources for deploying their own iBKH instance on Neo4j for efficient shortest path queries related to therapeutic target identification.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "This project aims to determine the specific bioelectric signals that control growth and form in planaria. By understanding these signals, we hope to develop new strategies for regenerative medicine and bioengineering. This includes the potential to induce regeneration of complex structures in damaged or diseased tissues.",
+      "section": "[PAGE 12] EXPECTED OUTCOMES",
+      "primary_topic": "Regenerative medicine",
+      "secondary_topics": [
+        "bioelectric signals",
+        "planaria",
+        "regeneration",
+        "bioengineering",
+        "tissue repair"
+      ],
+      "chunk_summary": "The project aims to identify bioelectric signals controlling planarian regeneration to develop new regenerative medicine strategies.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "12"
+    },
+    {
+      "text": "The expected outcome of this protocol is the predicted new knowledge.",
+      "section": "The expected outcome of this protocol is the predicted new knowledge",
+      "primary_topic": "Knowledge Prediction",
+      "secondary_topics": [
+        "protocol",
+        "prediction",
+        "knowledge acquisition",
+        "expected outcome"
+      ],
+      "chunk_summary": "This protocol aims to generate predicted new knowledge.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Following instructions in Steps 1-4, we could extract iBKH knowledge graph data and conduct knowledge graph embedding with different algorithms including TransE, TransR, complex, and DistMult. First, each model will be trained in the training set and evaluated in the testing set (see Step 3). This will result in link prediction performance of the embedding models.",
+      "section": "Following instructions in Steps",
+      "primary_topic": "Knowledge Graph Embedding",
+      "secondary_topics": [
+        "iBKH",
+        "TransE",
+        "TransR",
+        "DistMult",
+        "link prediction",
+        "knowledge graph",
+        "embedding"
+      ],
+      "chunk_summary": "This chunk describes the process of extracting iBKH knowledge graph data and conducting knowledge graph embedding with various algorithms to evaluate link prediction performance.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "12"
+    },
+    {
+      "text": "Of note, we can repeat Step 4 multiple times to find the optimal model hyperparameters (see Table 1) to enhance the learned embeddings. For convenience, we suggest the optimal hyperparameter values we found as listed in Table 2. Given this, we could re-train the models using the whole data set, which will result in entity and relation embedding vectors saved in the .npy files.",
+      "section": "Following instructions in Steps",
+      "primary_topic": "Hyperparameter Optimization",
+      "secondary_topics": [
+        "hyperparameters",
+        "embedding optimization",
+        "model training",
+        ".npy files",
+        "entity embeddings",
+        "relation embeddings"
+      ],
+      "chunk_summary": "This chunk explains the process of optimizing hyperparameters for the embedding models and retraining them using the entire dataset to generate entity and relation embedding vectors.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "12"
+    },
+    {
+      "text": "First, we used our iBKH knowledge graph in this protocol. iBKH has integrated data from a wide spectrum of sources; however, the information contained therein can still be incomplete due to the volume and speed of the new biomedical knowledge that has been generated every day. For instance, knowledge regarding entities like protein, protein structure, complex, mutation, etc. are important resources but haven't been included into iBKH yet. This may limit the capacity of our approach in discovering knowledge related to these entities.",
+      "section": "First",
+      "primary_topic": "Knowledge Graph",
+      "secondary_topics": [
+        "iBKH",
+        "data integration",
+        "biomedical knowledge",
+        "knowledge incompleteness",
+        "protein",
+        "mutation"
+      ],
+      "chunk_summary": "The iBKH knowledge graph, used in this protocol, integrates data from various sources but remains incomplete due to the rapid growth of biomedical knowledge, particularly lacking information on entities like proteins and mutations.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "To address this, we will make curating and adding new information into iBKH a continuous effort to enhance biomedical knowledge discovery.",
+      "section": "First",
+      "primary_topic": "Knowledge Curation",
+      "secondary_topics": [
+        "iBKH",
+        "data update",
+        "biomedical knowledge discovery",
+        "continuous improvement"
+      ],
+      "chunk_summary": "Continuous curation and addition of new information to iBKH will be undertaken to improve its capacity for biomedical knowledge discovery.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "This protocol leveraged knowledge graph embedding algorithms including TransE, TransR, complex, and DistMult, which have demonstrated state-of-the-art performances. Other models like graph neural networks have also shown significant performance in knowledge discovery based on knowledge graphs.  Future work will incorporate more models to advance the pipeline.",
+      "section": "Second",
+      "primary_topic": "Knowledge Graphs",
+      "secondary_topics": [
+        "embedding algorithms",
+        "TransE",
+        "TransR",
+        "DistMult",
+        "graph neural networks",
+        "knowledge discovery"
+      ],
+      "chunk_summary": "The protocol uses state-of-the-art knowledge graph embedding algorithms and plans to incorporate more models in the future.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "It is crucial to validate the new knowledge gained from iBKH. The current system can create a subnetwork based on the shortest paths connecting the target and predicted entities.",
+      "section": "Third",
+      "primary_topic": "Validation",
+      "secondary_topics": [
+        "iBKH",
+        "knowledge discovery",
+        "subnetwork generation",
+        "shortest path analysis",
+        "target prediction"
+      ],
+      "chunk_summary": "The new knowledge discovered through iBKH needs validation, and the current pipeline can generate subnetworks based on shortest paths between target and predicted entities.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "13"
+    },
+    {
+      "text": "Problem 1: Fail to install the required Python packages (before you begin - python and packages installation).",
+      "section": "Problem",
+      "primary_topic": "Package Installation",
+      "secondary_topics": [
+        "Python",
+        "Packages",
+        "Installation",
+        "Software",
+        "Dependencies",
+        "Setup"
+      ],
+      "chunk_summary": "The primary problem revolves around the inability to install necessary Python packages before starting.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Potential solution: Create a Conda virtual environment and install the packages following our instruction. Detailed information for creating a Conda virtual environment can be found at: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html.",
+      "section": "Potential solution",
+      "primary_topic": "Conda Environment",
+      "secondary_topics": [
+        "virtual environment",
+        "package installation",
+        "Conda",
+        "software setup",
+        "troubleshooting"
+      ],
+      "chunk_summary": "The proposed solution to software dependency issues is to create a Conda virtual environment and install the necessary packages.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Problem 2: iBKH currently contains over 2 million entities and 50 million relations among them. Training the knowledge graph embedding algorithms in such a huge graph data is time-consuming and the running time highly depends on hardware used.",
+      "section": "Problem",
+      "primary_topic": "Scalability Challenges",
+      "secondary_topics": [
+        "knowledge graph embedding",
+        "iBKH",
+        "computational cost",
+        "hardware limitations",
+        "big data",
+        "graph algorithms",
+        "training time"
+      ],
+      "chunk_summary": "Training knowledge graph embedding algorithms on the large iBKH dataset is computationally expensive and hardware-dependent.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Potential solution: To address the inefficient embedding vector acquisition for entities and relations, several solutions are proposed.  These include utilizing a high-performance computing platform with ample processing power (at least 4 CPU cores with high processing speed) and memory (16GB or more) for training knowledge graph embedding models.  This enhanced computational capacity can accelerate the training process and handle larger datasets.  Another approach involves reducing the number of triplet types used, particularly in tasks like drug repurposing, to conserve computational resources.  An example of this is using a specific subset of triplet types like 'DDi', 'DiG', 'DG', 'GG', 'DD', and 'DiDi'.",
+      "section": "Potential solution",
+      "primary_topic": "Computational Efficiency",
+      "secondary_topics": [
+        "knowledge graph embedding",
+        "high-performance computing",
+        "triplet types",
+        "drug repurposing",
+        "resource optimization"
+      ],
+      "chunk_summary": "Improving the efficiency of embedding vector acquisition can be achieved through enhanced computing resources and reducing the complexity of the knowledge graph.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "14"
+    },
+    {
+      "text": "Further optimization strategies include using recommended hyperparameter values for model training, as outlined in Table 2.  Leveraging pre-trained embeddings can also significantly expedite the process.  These pre-trained vectors can be downloaded from a provided Google Drive link and placed in the designated directory within the project structure.  This allows users to bypass the computationally intensive training phase and proceed directly to knowledge discovery (Step 5).",
+      "section": "Potential solution",
+      "primary_topic": "Optimization Strategies",
+      "secondary_topics": [
+        "hyperparameter tuning",
+        "pre-trained embeddings",
+        "knowledge discovery",
+        "model training",
+        "computational resources"
+      ],
+      "chunk_summary": "Optimizing model training involves using recommended hyperparameters and pre-trained embeddings to reduce computational burden and accelerate knowledge discovery.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "14"
+    },
+    {
+      "text": "A separate problem, Problem 3, highlights the difficulty of operating the DGL-KE command within a large hyperparameter search space during knowledge graph embedding model fine-tuning (Step 4).  This suggests that even with optimized resources and pre-trained embeddings, the fine-tuning process can still be computationally challenging due to the exploration of numerous hyperparameter combinations.  This issue is specifically related to the step-by-step knowledge graph embedding learning method.",
+      "section": "Potential solution",
+      "primary_topic": "Hyperparameter Tuning Challenges",
+      "secondary_topics": [
+        "DGL-KE",
+        "fine-tuning",
+        "hyperparameter search",
+        "knowledge graph embedding",
+        "computational complexity"
+      ],
+      "chunk_summary": "Fine-tuning knowledge graph embedding models presents challenges due to the complexity of navigating a large hyperparameter search space using DGL-KE.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "14/15"
+    },
+    {
+      "text": "Potential solution: We can create a terminal-executable Shell script to conduct grid search in the hyperparameter space. For instance, we can create a Shell script named \"fine-tune.sh\" as below. #!/bin/bash seq_num=0 for embed_size in 200 400 do for lr in 0.001 0.005 0.01 0.05 0.1 do echo \"$embed_size; $lr\"",
+      "section": "Potential solution",
+      "primary_topic": "Grid Search",
+      "secondary_topics": [
+        "hyperparameter tuning",
+        "shell script",
+        "bash",
+        "automation",
+        "optimization",
+        "embedding size",
+        "learning rate"
+      ],
+      "chunk_summary": "A shell script can be used to automate a grid search for hyperparameter optimization, iterating through different embedding sizes and learning rates.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "DGLBACKEND=pytorch dglke_train --dataset iBKH --data_path./data/dataset --data_files whole_triplets.tsv --format raw_udd_hrt --model_name [model name] --batch_size [batch size] --hidden_dim $embed_size --gamma [gamma] --lr $lr --max_step [max step] --log_interval [log interval] -adv --regularization_coef [regularization coef] --num_thread [num thread] --num_proc [num proc] done done",
+      "section": "DGLBACKEND",
+      "primary_topic": "DGLKE Training",
+      "secondary_topics": [
+        "Knowledge Graph Embeddings",
+        "PyTorch",
+        "DGL",
+        "iBKH Dataset",
+        "Command-line arguments"
+      ],
+      "chunk_summary": "This section provides the command-line instructions for training a knowledge graph embedding model using the DGL-KE library with the iBKH dataset and PyTorch backend.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "To initiate the fine-tuning process, users should access their command line interface (applicable to Windows and UNIX operating systems) or terminal (for macOS).  The provided script 'fine-tune.sh' must be granted executable permissions using the command 'sudo chmod 777 fine-tune.sh'. Subsequently, the script can be executed by running the command 'sh fine-tune.sh'.",
+      "section": "Then",
+      "primary_topic": "Script Execution",
+      "secondary_topics": [
+        "command line",
+        "terminal",
+        "chmod",
+        "script execution",
+        "fine-tuning",
+        "bash",
+        "shell script"
+      ],
+      "chunk_summary": "Instructions for executing the fine-tuning script using command line or terminal.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Problem 4 addresses the disorganized and improperly configured appearance of entities (nodes) and relations (edges) within the subnetwork visualization, specifically during the interpretation of prediction results obtained through the step-by-step method.",
+      "section": "Problem",
+      "primary_topic": "Visualization Issues",
+      "secondary_topics": [
+        "network visualization",
+        "nodes",
+        "edges",
+        "subnetwork",
+        "prediction interpretation",
+        "step-by-step method"
+      ],
+      "chunk_summary": "The visualization of subnetworks displays disorganized nodes and edges, hindering accurate interpretation of prediction results.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Potential solution: Increase `alpha`, `k`, and `target_size_ratio`, and decrease `nsize` in the `subgraph_visualization` function (Table 4).",
+      "section": "Potential solution",
+      "primary_topic": "Visualization Parameters",
+      "secondary_topics": [
+        "subgraph visualization",
+        "alpha",
+        "k",
+        "target_size_ratio",
+        "nsize",
+        "parameter tuning"
+      ],
+      "chunk_summary": "Adjusting specific parameters in the subgraph_visualization function, such as increasing alpha, k, and target_size_ratio, while decreasing nsize, can improve visualization results.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Problem 5 involves the inability to generate a subnetwork for interpreting prediction results. This failure stems from unsuccessful access to the iBKH instance within the AWS environment.  This issue impacts the step-by-step method for interpreting prediction results.",
+      "section": "Problem",
+      "primary_topic": "Network Access Failure",
+      "secondary_topics": [
+        "iBKH instance",
+        "AWS",
+        "subnetwork generation",
+        "prediction interpretation",
+        "access failure",
+        "cloud computing"
+      ],
+      "chunk_summary": "Access to the iBKH instance on AWS is preventing the generation of a subnetwork needed for prediction result interpretation.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "A potential solution to the problem is to create a new instance of iBKH using either an Amazon Web Services (AWS) server or a local server. Detailed setup instructions are available on the project's GitHub repository: https://github.com/wcm-wanglab/iBKH#neo4j-deployment.  Users should then modify the Neo4j login credentials, specifically the \"neo4j_url\", \"user_name\", and \"password\" parameters, within the iBKH configuration to correctly connect to their database instance. This will allow for the generation and visualization of the relevant subnetwork, facilitating result interpretation.",
+      "section": "Potential solution",
+      "primary_topic": "iBKH Deployment",
+      "secondary_topics": [
+        "Neo4j",
+        "AWS",
+        "local server",
+        "database",
+        "visualization",
+        "network analysis",
+        "github"
+      ],
+      "chunk_summary": "Deploying a new iBKH instance on AWS or a local server, along with configuring Neo4j database connection, enables subnetwork generation and visualization for result interpretation.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Resource availability information is not explicitly provided in this section. The section title 'Resource Availability' suggests that this section would typically contain details about the resources used in the research, such as funding sources, data repositories, software tools, or materials.  However, the absence of such information makes it impossible to extract specific details about resource availability.",
+      "section": "[PAGE 15] RESOURCE AVAILABILITY",
+      "primary_topic": "Resource Availability",
+      "secondary_topics": [
+        "resources",
+        "funding",
+        "data",
+        "software",
+        "materials"
+      ],
+      "chunk_summary": "This section, titled 'Resource Availability,' lacks specific details about the resources used in the research.",
+      "position_in_section": "Beginning",
+      "certainty_level": "Low",
+      "citation_context": "None",
+      "page_number": "15"
+    },
+    {
+      "text": "Further information and requests for resources and reagents should be directed to and will be fulfilled by the lead contact, Prof. Fei Wang (few2001@med.cornell.edu).",
+      "section": "Lead contact",
+      "primary_topic": "Contact Information",
+      "secondary_topics": [
+        "resources",
+        "reagents",
+        "contact information",
+        "Fei Wang",
+        "Cornell University"
+      ],
+      "chunk_summary": "Prof. Fei Wang at Cornell University is the lead contact for inquiries regarding resources and reagents.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "This study did not generate any new reagents.",
+      "section": "Materials availability",
+      "primary_topic": "Reagent Availability",
+      "secondary_topics": [
+        "reagents",
+        "materials"
+      ],
+      "chunk_summary": "No new reagents were generated during this study.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Data and code availability:\n* The harmonized entity and relation source files for iBKH knowledge graph in CSV (comma-separated values) format are publicly available online at https://github.com/wcm-wanglab/iBKH.\n* The computer codes are publicly available online at https://github.com/wcm-wanglab/iBKH/tree/main/iBKH-KD-protocol.",
+      "section": "Data and code availability",
+      "primary_topic": "Data Availability",
+      "secondary_topics": [
+        "knowledge graph",
+        "CSV",
+        "source code",
+        "iBKH",
+        "data sharing",
+        "open science",
+        "reproducibility"
+      ],
+      "chunk_summary": "The harmonized entity and relation source files and computer codes for the iBKH knowledge graph are publicly available on GitHub.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "16"
+    },
+    {
+      "text": "Any additional information required to reanalyze the data reported in this paper is available from the lead contact upon request.",
+      "section": "Data and code availability",
+      "primary_topic": "Data Access",
+      "secondary_topics": [
+        "data reanalysis",
+        "lead contact",
+        "additional information",
+        "data request"
+      ],
+      "chunk_summary": "Further information needed to reanalyze the data is available from the lead contact upon request.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "16"
+    },
+    {
+      "text": "The authors gratefully acknowledge the funding provided by the National Science Foundation (NSF) under grants 1750326 and 2212175, and the National Institutes of Health (NIH) under grants R01AG076234, R01AG076448, RF1AG072449, R01AG080991, R01AG080624, R01AG078154, and R01AT009457. This financial support enabled the research presented in this publication.",
+      "section": "The authors would like to acknowledge the support from National Science Foundation",
+      "primary_topic": "Funding Acknowledgements",
+      "secondary_topics": [
+        "National Science Foundation",
+        "NSF",
+        "National Institutes of Health",
+        "NIH",
+        "grants",
+        "funding"
+      ],
+      "chunk_summary": "The authors acknowledge funding support from the NSF and NIH for the presented research.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "16"
+    },
+    {
+      "text": "Conceptualization of the research was carried out by F.W. and C.S., while the writing of the manuscript was done by C.S. and Y.H. The manuscript underwent review and editing by F.W., C.S., Y.H., M.L., and R.Z. Funding for the research was acquired by F.W. and R.Z., and supervision was provided by F.W. and C.S.",
+      "section": "Conceptualization",
+      "primary_topic": "Contribution Roles",
+      "secondary_topics": [
+        "authorship",
+        "funding",
+        "research roles",
+        "manuscript preparation",
+        "peer review"
+      ],
+      "chunk_summary": "This section details the individual contributions of authors to the research project, including conceptualization, writing, review, funding acquisition, and supervision.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "16"
+    },
+    {
+      "text": "The authors of this study declare that they have no competing interests. This statement signifies that they have no financial, professional, or personal affiliations that could potentially bias the research presented in the paper.  This declaration ensures transparency and maintains the integrity of the scientific findings.",
+      "section": "The authors declare no competing interests",
+      "primary_topic": "Conflict of Interest",
+      "secondary_topics": [
+        "Transparency",
+        "Research Ethics",
+        "Disclosure",
+        "Bias",
+        "Objectivity"
+      ],
+      "chunk_summary": "The authors declare no competing interests, ensuring transparency and integrity of the research.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    }
+  ],
+  "processed_at": "2025-08-14T14:35:24.600545",
+  "chunk_count": 102,
+  "processing_method": "document_splitting"
+}

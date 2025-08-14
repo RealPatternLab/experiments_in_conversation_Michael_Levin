@@ -1,0 +1,31 @@
+{
+  "document_type": "research_paper",
+  "title": "Toward an ethics of autopietic technology: Stress, care, and intelligence",
+  "authors": [
+    "Olaf Wikowski",
+    "Thomas Doctor",
+    "Elizaveta Solomonova",
+    "Bill Duane",
+    "Michael Levin"
+  ],
+  "journal": "Biosystems",
+  "publication_year": 2023,
+  "doi": "https://doi.org/10.1016/j.biosystems.2023.104664",
+  "abstract": "The relationship between humans and technology has attracted increasing attention with the advent of ever more powerful technologies. However, ethical considerations often focus on the potential misuse of tools of serving human needs, but rather as a partner that is rich in technological attributes. Our model of ontology and ethics, as the basis for understanding SCIs needs to respond to perceived shortcoming of their substrates, all intelligent agents can be understood as needing feedback loops (SCI loops) for virtual homeostasis and persistence and proposing simpler care as an intelligible tool as only a minimal virtuality of homeostasis, a self-organizing agent requires a self-organizing environment. We formulate and explain the SCI loop as an acknowledgement of Maturana's and Varela's concern, by finding the boundaries.",
+  "extraction_confidence": "high",
+  "filename": "aa24e1f5_20250814_131547_608.pdf",
+  "extraction_timestamp": "2025-08-14T13:16:32.914877",
+  "extraction_method": "gemini_1.5_flash",
+  "pages_analyzed": 2,
+  "affiliations": [
+    "College of Arts and Sciences",
+    "University of Tokyo",
+    "Rangjung Yeshe Institute",
+    "Kathmandu University",
+    "McGill University"
+  ],
+  "page_range": "604-8206",
+  "text_enriched": true,
+  "enrichment_method": "text_analysis",
+  "enrichment_timestamp": "2025-08-14T13:26:58.853379"
+}

@@ -1,0 +1,1103 @@
+{
+  "metadata": {
+    "document_type": "journal-article",
+    "title": "Transplantation of fragments from different planaria: A bioelectrical model for head regeneration",
+    "authors": [
+      "Javier Cervera",
+      "José A. Manzanares",
+      "Michael Levin",
+      "Salvador Mafe"
+    ],
+    "journal": "Journal of Theoretical Biology",
+    "publication_year": 2023,
+    "doi": "10.1016/j.jtbi.2022.111356",
+    "abstract": null,
+    "extraction_confidence": "high",
+    "filename": "1122940d_20250814_131546_592.pdf",
+    "extraction_timestamp": "2025-08-14T13:16:02.564979",
+    "extraction_method": "gemini_1.5_flash",
+    "pages_analyzed": 2,
+    "publication_date": "2023-02",
+    "page_range": "111356",
+    "volume": "558",
+    "issue": null,
+    "references_count": 48,
+    "publisher": "Elsevier BV",
+    "issn": "0022-5193",
+    "crossref_data": true,
+    "enrichment_method": "crossref_api",
+    "crossref_enriched": true,
+    "enrichment_timestamp": "2025-08-14T13:27:04.010599",
+    "affiliations": [
+      "Dept. of Biology and Allen Discovery Center at Tufts University",
+      "of Biology and Allen Discovery Center at Tufts University",
+      "Wyss Institute",
+      "Harvard University",
+      "Dept. Termodinamica"
+    ],
+    "text_enriched": true
+  },
+  "chunks": [
+    {
+      "text": "Transplantation of fragments from different planaria: A bioelectrical model for head regeneration. This short section title introduces the concept of using bioelectricity to understand how planarian fragments regenerate heads, especially when those fragments are transplanted from different individuals.  This suggests a focus on the role of bioelectric signals in coordinating regeneration processes across potentially genetically distinct tissues. The implication is that bioelectricity may provide a robust mechanism for regulating complex morphogenetic events like head regeneration, even in challenging contexts like transplantation.",
+      "section": "Transplantation of fragments from different planaria",
+      "primary_topic": "Bioelectric regeneration",
+      "secondary_topics": [
+        "planaria",
+        "transplantation",
+        "regeneration",
+        "bioelectricity",
+        "morphogenesis",
+        "head regeneration",
+        "bioelectric model"
+      ],
+      "chunk_summary": "This section introduces a bioelectrical model for head regeneration in transplanted planarian fragments.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Javier Cervera ª,*, José A. Manzanares ª, Michael Levin b,c, Salvador Mafe a a Dept. Termodinamica, Facultat de Física, Universitat de València, E-46100 Burjassot, Spain b Dept. of Biology and Allen Discovery Center at Tufts University, Medford, MA 02155-4243, USA c Wyss Institute for Biologically Inspired Engineering, Harvard University, Boston, USA",
+      "section": "Javier Cervera",
+      "primary_topic": "Authors",
+      "secondary_topics": [
+        "author affiliations",
+        "research team",
+        "collaborators",
+        "institutions"
+      ],
+      "chunk_summary": "This section lists the authors of the paper and their respective affiliations.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Please process this section and return the semantic chunks as specified above.",
+      "section": "[PAGE 1] ABSTRACT",
+      "primary_topic": "Instructions",
+      "secondary_topics": [
+        "semantic chunks",
+        "JSON",
+        "processing"
+      ],
+      "chunk_summary": "The abstract contains instructions for processing the text into semantic chunks.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "1"
+    },
+    {
+      "text": "Head-tail planaria morphologies are influenced by electric potential differences across their primary axis, as shown by voltage-sensitive dyes and experiments creating two-headed, genetically wild-type animals. However, bioelectrical and biochemical models predicting outcomes for spatial chimeras created by tissue transplantation from different planaria (species and head shapes) are lacking.  Here, we use a bioelectrical model to qualitatively describe transplantation effects on regenerated head shape. We assume cells have distinct ion channel sets and attribute system outcomes to axial distributions of average cell potentials over morphologically relevant regions.",
+      "section": "Head",
+      "primary_topic": "Bioelectric Modeling",
+      "secondary_topics": [
+        "planaria",
+        "morphology",
+        "tissue transplantation",
+        "ion channels",
+        "bioelectric potential",
+        "spatial chimeras",
+        "regeneration"
+      ],
+      "chunk_summary": "Planarian head morphology is influenced by bioelectric potentials, but models predicting outcomes of tissue transplantation between different planaria are lacking; this study uses a bioelectrical model to address this gap.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "1"
+    },
+    {
+      "text": "Our rationale is that signaling ion and molecule distributions are spatially coupled with multicellular electric potentials. Thus, short-time bioelectrical processes should trigger long-time downstream transcriptional events. We show that relatively small differences in cell ion channel characteristics could yield noticeable changes in electric potential profiles and expected morphological deviations, suggesting that small but timely bioelectrical actions may have significant morphological effects.",
+      "section": "Head",
+      "primary_topic": "Bioelectric Signaling",
+      "secondary_topics": [
+        "ion channels",
+        "morphogenesis",
+        "cell signaling",
+        "transcriptional events",
+        "electric potential",
+        "morphological deviations"
+      ],
+      "chunk_summary": "Small differences in ion channel characteristics can lead to significant morphological changes due to the spatial coupling between ion distributions and multicellular electric potentials, ultimately influencing downstream transcriptional events.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "1"
+    },
+    {
+      "text": "Our approach is based on observed relationships between bioelectrical regionalization and biochemical gradients in body-plan studies. Such models are relevant to regenerative, developmental, and cancer biology where cells with distinct properties and morphogenetic target states interact within the same tissue.",
+      "section": "Head",
+      "primary_topic": "Model Application",
+      "secondary_topics": [
+        "bioelectric regionalization",
+        "biochemical gradients",
+        "regeneration",
+        "developmental biology",
+        "cancer biology",
+        "morphogenesis",
+        "body-plan"
+      ],
+      "chunk_summary": "The model, based on observed relationships between bioelectrical regionalization and biochemical gradients, is applicable to regenerative, developmental, and cancer biology where cells with different properties interact.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": "1"
+    },
+    {
+      "text": "When planarian flatworms are cut into fragments, the resulting pieces can regenerate a complete worm, a process governed by morphological mechanisms that are still being investigated (Cebrià et al., 2018, Pezzulo and Levin, 2016).  Research has focused on the number, location, and shape of regenerated heads, using both experimental and theoretical approaches (Bischof et al., 2020, Cervera et al., 2020a, Cervera et al. 2021a, Durant et al., 2019, Emmons-Bell et al., 2015, Owlarn and Bartscherer, 2016, Pietak and Levin., 2018, Pietak et al., 2019, Saló et al., 2009).  By manipulating the electric potential differences along the anterior-posterior axis, researchers have observed distinct head-tail, no-head, and double-head morphologies, as visualized using voltage-sensitive dyes (Durant et al., 2017, Durant et al., 2019).",
+      "section": "When planarian flatworms are cut into fragments",
+      "primary_topic": "Planarian Regeneration",
+      "secondary_topics": [
+        "head regeneration",
+        "morphology",
+        "bioelectric potential",
+        "anterior-posterior axis",
+        "voltage-sensitive dyes"
+      ],
+      "chunk_summary": "Planarian fragments can regenerate complete worms, and the number and location of heads are influenced by bioelectric potentials along the anterior-posterior axis.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "This bioelectrical prepattern plays a functional role in head regeneration (Beane et al., 2011, Durant et al., 2017, Durant et al., 2019, Nogi and Levin, 2005, Pezzulo et al., 2021).  Experiments have demonstrated that altering ion channel function or gap junctional connectivity can modulate the number of heads in regenerating fragments.  Beyond the number of heads and primary axis patterning, the morphology of planarian heads, brain shape, and stem cell distribution can be altered by disrupting gap junction (GJ) connectivity using octanol (Cervera et al., 2021, Emmons-Bell et al., 2015).",
+      "section": "When planarian flatworms are cut into fragments",
+      "primary_topic": "Bioelectric Patterning",
+      "secondary_topics": [
+        "ion channels",
+        "gap junctions",
+        "head morphology",
+        "brain shape",
+        "stem cell distribution",
+        "octanol"
+      ],
+      "chunk_summary": "Bioelectric prepatterns influence head regeneration, and manipulating ion channels or gap junctions affects head number, morphology, and stem cell distribution.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Remarkably, by temporarily disrupting intercellular connectivity during regeneration, the heads of wild-type planaria can be remodeled to resemble those of different planaria species (Emmons-Bell et al., 2015). This demonstrates the significant impact of gap junctional communication on head morphology and species-specific characteristics during regeneration.",
+      "section": "When planarian flatworms are cut into fragments",
+      "primary_topic": "Intercellular Connectivity",
+      "secondary_topics": [
+        "gap junctions",
+        "head morphology",
+        "species-specific regeneration",
+        "intercellular communication"
+      ],
+      "chunk_summary": "Disrupting intercellular connectivity can remodel planarian heads to resemble those of other species, highlighting the role of gap junctions in species-specific regeneration.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "It has been proposed that bioelectric gradients, acting far earlier than known gene expression and morphogen distribution changes, drive morphogenetic cues enabling fragment regeneration in worms (Durant et al., 2017, Durant et al., 2019, Emmons-Bell et al., 2015). The induced 2-head state is permanent, with fragments of such worms continuing to generate 2-headed worms perpetually without further manipulation (Durant et al., 2017, Oviedo et al., 2010). Unlike other species (mouse, fruit fly), where genetic lines of aberrant anatomy are easily maintained, 2-headed worms represent the only stable abnormal anatomy line in planaria.",
+      "section": "It has been proposed that bioelectric gradients",
+      "primary_topic": "Bioelectric gradients",
+      "secondary_topics": [
+        "morphogenesis",
+        "regeneration",
+        "planaria",
+        "two-headed worms",
+        "gene expression",
+        "morphogen",
+        "genetic lines"
+      ],
+      "chunk_summary": "Bioelectric gradients are proposed as early drivers of morphogenetic cues in planarian regeneration, with the 2-headed worm representing a unique stable line of abnormal anatomy.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Understanding the target morphologies produced by independent cell activities requires delineating the collective decision-making leading to specific shapes. This information is best obtained by perturbing the system and exploring its behavior outside of wild-type regeneration. Chimerism is a useful strategy (Nanos and Levin, 2022) because confronting cells and tissues with novel neighbors provides insights into how growth and form depend on cellular properties.",
+      "section": "It has been proposed that bioelectric gradients",
+      "primary_topic": "Chimerism",
+      "secondary_topics": [
+        "morphogenesis",
+        "cell behavior",
+        "tissue organization",
+        "perturbation",
+        "wild-type",
+        "cell properties",
+        "developmental biology"
+      ],
+      "chunk_summary": "Chimerism, by introducing novel cell interactions, helps understand how collective cell decisions determine morphology.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "While extensive information exists on the molecular steps guiding stem cell differentiation in planaria (Aboobaker, 2011, Hwang et al., 2015, Reddien et al., 2005), predictive models for shapes arising in chimeric scenarios are currently lacking.",
+      "section": "It has been proposed that bioelectric gradients",
+      "primary_topic": "Predictive models",
+      "secondary_topics": [
+        "stem cell differentiation",
+        "planaria",
+        "chimerism",
+        "molecular mechanisms",
+        "developmental models",
+        "regenerative medicine"
+      ],
+      "chunk_summary": "Despite existing knowledge of planarian stem cell differentiation, predictive models for outcomes of chimeric experiments are needed.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Bioelectrical networks can provide useful qualitative ideas concerning the system morphology under different environmental constraints (Cervera et al., 2020b). We consider here model simulations that address what will happen if you mix cells from different planaria (different species and head shapes), e.g., what kind of head shape will result (Levin et al., 2019).",
+      "section": "Bioelectrical networks can provide useful qualitative ideas concerning the system morphology under different environmental constraints",
+      "primary_topic": "Bioelectric networks",
+      "secondary_topics": [
+        "morphology",
+        "environmental constraints",
+        "planaria",
+        "head shape",
+        "tissue transplantation",
+        "model simulations"
+      ],
+      "chunk_summary": "Bioelectrical networks offer insights into morphological changes under different conditions, and simulations can predict head shape outcomes when cells from different planaria species are mixed.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "In this way, we aim at qualitatively describing the effects of tissue transplantation on the shape of the regenerated head.",
+      "section": "Bioelectrical networks can provide useful qualitative ideas concerning the system morphology under different environmental constraints",
+      "primary_topic": "Tissue transplantation",
+      "secondary_topics": [
+        "regeneration",
+        "head shape",
+        "morphology",
+        "planaria"
+      ],
+      "chunk_summary": "The goal is to qualitatively describe how tissue transplantation impacts regenerated head shape.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "We employ a purely bioelectrical perspective (Fig. 1) as a complementary view to the biochemical (Cebrià et al., 2018, Stückemann et al., 2017) and biomechanical (Bischof et al., 2020, Leronni et al., 2020) descriptions. To this end, we focus on the cell bioelectrical characteristics of two species of decapitated flatworms with distinct head shapes (Fig. 1), assuming that the two cell types have different gene expressions which are specific to their respective morphologies (Levin et al., 2019).",
+      "section": "We employ a purely bioelectrical perspective",
+      "primary_topic": "Bioelectrical perspective",
+      "secondary_topics": [
+        "bioelectricity",
+        "biochemistry",
+        "biomechanics",
+        "gene expression",
+        "morphology",
+        "flatworms",
+        "decapitation"
+      ],
+      "chunk_summary": "This study focuses on the bioelectrical characteristics of two flatworm species with different head shapes, considering it as a complementary approach to biochemical and biomechanical descriptions.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Thus, the cells may have different sets of ion channels and gap junctions (GJ) (Cervera et al., 2020b, Levin, 2021, Nogi and Levin, 2005).",
+      "section": "We employ a purely bioelectrical perspective",
+      "primary_topic": "Ion channels and gap junctions",
+      "secondary_topics": [
+        "ion channels",
+        "gap junctions",
+        "cell communication",
+        "bioelectricity",
+        "cell signaling"
+      ],
+      "chunk_summary": "The differing morphologies of the flatworm species may be due to variations in ion channel and gap junction expression.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "While we incorporate the cellular ion channel hardware in the model, our analysis focuses on the bioelectrical software, represented by multicellular electrical signals, to understand the resulting shape from the heterogeneous mixture in Fig. 1. We connect the morphological outcome after transplantation to the axial distribution of cell potentials. The steady-state electrical potential profiles are obtained for two decapitated planarians from different species and compared to a chimera where planarian 2's cells are transplanted onto decapitated planaria 1.",
+      "section": "While we incorporate in the model the cellular ion channel hardware",
+      "primary_topic": "Bioelectric signaling",
+      "secondary_topics": [
+        "ion channels",
+        "morphology",
+        "transplantation",
+        "cell potentials",
+        "chimera",
+        "planaria"
+      ],
+      "chunk_summary": "The model focuses on bioelectrical signals to analyze morphological outcomes after transplantation by comparing cell potential profiles in decapitated planarians and chimeras.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "The deviation of the bioelectrical profile in the transplanted chimera compared to the decapitated planaria 1 is used to predict the transplanted planaria's outcome (Fig. 1). This is based on the experimentally established spatial coupling between signaling ions/molecules and multicellular electric potentials. Thus, multicellular electric potentials contribute to the distributed positional information necessary for development and regeneration.",
+      "section": "While we incorporate in the model the cellular ion channel hardware",
+      "primary_topic": "Bioelectric profiles",
+      "secondary_topics": [
+        "positional information",
+        "regeneration",
+        "development",
+        "signaling molecules",
+        "ion distribution",
+        "multicellular potentials"
+      ],
+      "chunk_summary": "Deviations in bioelectrical profiles between chimeras and decapitated planaria predict transplantation outcomes, as multicellular electric potentials are spatially coupled with signaling molecules and contribute to positional information for development and regeneration.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Assuming that head regeneration occurs after transplantation, we predict the final head shape of the transplanted planaria on the basis of deviation criteria for the different steady-state potential distributions before and after the transplantation of Fig. 1. Certainly, this constitutes a simplifying model assumption.",
+      "section": "Assuming that head regeneration occurs after transplantation",
+      "primary_topic": "Head Regeneration",
+      "secondary_topics": [
+        "planaria",
+        "transplantation",
+        "bioelectric potential",
+        "steady-state",
+        "model assumption"
+      ],
+      "chunk_summary": "The final head shape of transplanted planaria is predicted based on changes in bioelectric potential distributions before and after transplantation, using a simplified model.",
+      "position_in_section": "Beginning",
+      "certainty_level": "Medium",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Note however that a large number of mechanisms relating bioelectrical cell states to biochemical downstream processes have been described; specifically, it has been shown in experiments in vivo that the bioelectric state regulates (and can even reverse) the downstream implementation machinery which includes biochemical, transcriptional, and likely biomechanical pathways (Cervera et al., 2020b, Durant et al., 2017, Durant et al., 2019, Emmons-Bell et al., 2015, Harris, 2021; Levin et al., 2019, Levin, 2021, Pai et al., 2020, Pezzulo et al., 2021, Pietak and Levin, 2018).",
+      "section": "Assuming that head regeneration occurs after transplantation",
+      "primary_topic": "Bioelectric Signaling",
+      "secondary_topics": [
+        "biochemical pathways",
+        "transcriptional regulation",
+        "biomechanical pathways",
+        "in vivo experiments",
+        "cell state",
+        "downstream processes"
+      ],
+      "chunk_summary": "Bioelectric states regulate downstream biochemical, transcriptional, and biomechanical processes, as demonstrated by in vivo experiments.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Our rationale here is that multicellular electrical potentials are morphologically instructive (Cervera et al., 2020b, Durant et al., 2017, Durant et al., 2019, Harris, 2021, Levin et al., 2019) and the short-term bioelectrical information eventually modulates the long-term transcriptional responses. This modulation occurs because of the coupling between the electric potential and the spatiotemporal distributions of signaling ions (e.g., calcium) and molecules (e.g., serotonin) (Cervera et al., 2020b, Levin, 2021), as shown in Fig. 2.",
+      "section": "Our rationale here is that",
+      "primary_topic": "Bioelectric signaling",
+      "secondary_topics": [
+        "morphogenesis",
+        "transcriptional regulation",
+        "calcium signaling",
+        "serotonin",
+        "cell communication",
+        "bioelectric potentials"
+      ],
+      "chunk_summary": "Bioelectric potentials instruct morphogenesis and modulate long-term transcriptional responses via coupling with signaling ions and molecules.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "3"
+    },
+    {
+      "text": "While head morphology is not solely dependent on electric potential, cell potentials significantly influence crucial downstream biochemical and genetic responses in planaria.  In this model, the emphasis will be on the dynamics of bioelectrical patterns rather than the downstream biochemical processes they control.",
+      "section": "Our rationale here is that",
+      "primary_topic": "Bioelectric patterns",
+      "secondary_topics": [
+        "planaria",
+        "head morphology",
+        "biochemical responses",
+        "genetic responses",
+        "model organisms",
+        "developmental biology"
+      ],
+      "chunk_summary": "Although not the sole determinant, cell potentials significantly influence downstream biochemical and genetic responses, and this model focuses on bioelectrical pattern dynamics.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "3"
+    },
+    {
+      "text": "The complexity of the feedback between the spatial and time scales of transcriptional, mechanical, and electrical processes (Bischof et al., 2020, Capek and Müller, 2019, Herath and Lobo, 2020, Ivankovic et al., 2019, Owlarn and Bartscherer, 2016, Reddien, 2018, Stückemann et al., 2017, Williamson et al., 2021) makes a complete biological description difficult. Here, we concentrate on the electrical polarity only, establishing a minimal bioelectric framework sufficient to analyze the chimeric scenario, and assume that the different head morphologies arise from the bioelectrical signals and the resulting downstream biochemical processes.",
+      "section": "The complexity of the feedback between the spatial and time scales of transcriptional",
+      "primary_topic": "Bioelectric polarity",
+      "secondary_topics": [
+        "bioelectricity",
+        "morphogenesis",
+        "chimeras",
+        "electrical signaling",
+        "transcriptional processes",
+        "mechanical processes",
+        "spatial scales",
+        "time scales"
+      ],
+      "chunk_summary": "Due to the complexity of interactions between transcriptional, mechanical, and electrical processes, the focus is narrowed to bioelectric polarity as a minimal framework for analyzing chimeric scenarios, assuming head morphologies arise from bioelectrical signals and downstream biochemical processes.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "In this short-term approach, the number of model cells after transplantation is fixed and the subsequent long-time transcriptional and regeneration processes are ignored (Cervera et al., 2020b).",
+      "section": "The complexity of the feedback between the spatial and time scales of transcriptional",
+      "primary_topic": "Model simplification",
+      "secondary_topics": [
+        "transplantation",
+        "regeneration",
+        "transcription",
+        "short-term analysis",
+        "cell number"
+      ],
+      "chunk_summary": "This simplified model focuses on the short-term effects of transplantation, fixing cell numbers and ignoring long-term transcriptional and regenerative processes.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "In this phenomenological model, the experimental outcomes of Fig. 1 depend on the relative contributions of the individual ion channel conductances and the intercellular gap junction conductance, as shown in Fig. 2 (Cervera et al., 2020a). From an instructive bioelectrical perspective (Cervera et al. 2020b, Levin, 2021), the multicellular electric patterns control the system morphology through the interplay between the individual cell ion channels that establish the electric potential difference across the membrane and the intercellular gap junctions that propagate the single-cell states to their neighbors (Durant et al., 2017, Durant et al., 2019, Emmons-Bell et al., 2015).",
+      "section": "In this phenomenological model",
+      "primary_topic": "Bioelectric control",
+      "secondary_topics": [
+        "ion channels",
+        "gap junctions",
+        "morphology",
+        "cell communication",
+        "bioelectric patterns",
+        "membrane potential"
+      ],
+      "chunk_summary": "Multicellular electric patterns, established by ion channels and propagated by gap junctions, control system morphology.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Fig. 2 shows a multicellular aggregate characterized by the single-cell potentials Vi < 0, i = 1, 2, ..., N (Cervera et al., 2020a). The electric potential pattern can be visualized by using voltage-sensitive dyes (Durant et al. 2019, Lazzari-Dean et al., 2021, Levin, 2021).",
+      "section": "Fig",
+      "primary_topic": "Bioelectric potential",
+      "secondary_topics": [
+        "multicellular aggregate",
+        "voltage-sensitive dyes",
+        "visualization",
+        "single-cell potentials"
+      ],
+      "chunk_summary": "Figure 2 depicts a multicellular aggregate with negative single-cell potentials, visualizable using voltage-sensitive dyes.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "The cell potentials depend on the dynamic current balance modulated by two generic depolarizing and polarizing channels together with the intercellular currents through the gap junctions established between neighboring cells (Cervera et al., 2020b). Analogously, counteracting voltage-gated channels and synaptic junctions modulate the cell excitability and plasticity of neural networks, respectively.",
+      "section": "Fig",
+      "primary_topic": "Ion channels",
+      "secondary_topics": [
+        "gap junctions",
+        "depolarization",
+        "polarization",
+        "cell excitability",
+        "neural networks",
+        "synaptic junctions",
+        "intercellular currents"
+      ],
+      "chunk_summary": "Cell potentials are determined by the balance of depolarizing and polarizing currents through ion channels and gap junctions, similar to the modulation of neural network excitability by voltage-gated channels and synaptic junctions.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "In a real cell, there is a myriad of membrane channels and ion transporters. The polarizing (pol) voltage-gated channel in Fig. 2 represents the whole class of (hyper-)polarizing channels that act to establish an effective equilibrium potential Epol. Similarly, the depolarizing (dep) channel in Fig. 2 represents the whole class of depolarizing channels that act to establish an effective equilibrium potential Edep.",
+      "section": "In a real cell",
+      "primary_topic": "Ion Channels",
+      "secondary_topics": [
+        "membrane channels",
+        "ion transporters",
+        "voltage-gated channels",
+        "polarization",
+        "depolarization",
+        "equilibrium potential"
+      ],
+      "chunk_summary": "This chunk describes the various ion channels and transporters present in a cell, focusing on polarizing and depolarizing channels and their respective equilibrium potentials.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "These potentials, which characterize the polarized and depolarized cell bioelectrical states depend on the external and cell inside ionic concentrations that are assumed to be constant here. The model cell capacitance C parametrizes the cell sensitivity to bioelectrical signals. The simulation conditions are briefly described in the Methods section.",
+      "section": "In a real cell",
+      "primary_topic": "Bioelectrical States",
+      "secondary_topics": [
+        "ionic concentrations",
+        "cell capacitance",
+        "bioelectrical signals",
+        "simulation conditions"
+      ],
+      "chunk_summary": "This chunk explains the dependence of bioelectrical states on ionic concentrations, cell capacitance, and sensitivity to bioelectrical signals, with simulation details provided in the Methods section.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "3"
+    },
+    {
+      "text": "Fig. 3 shows the cell potential distributions for planarias 1 and 2 before transplantation together with those obtained for the transplanted planaria after insertion (Fig. 1). Note the different axial distributions assumed for the dep channel conductance of planarias 1 and 2 in Fig. 3.",
+      "section": "Fig",
+      "primary_topic": "Cell Potential",
+      "secondary_topics": [
+        "planaria",
+        "transplantation",
+        "axial distribution",
+        "channel conductance",
+        "cell potential distribution"
+      ],
+      "chunk_summary": "Figure 3 displays the cell potential distributions of two planaria before and after transplantation, highlighting differences in their axial channel conductance.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Because the two cell types should have different gene expressions which are specific to the respective planaria morphologies (Levin et al., 2019), it is reasonable to assume that these cells may show distinct sets of ion channels (Cervera et al., 2020b, Levin, 2021). We may consider that the differences between the cells channel characteristics could be either qualitative (i.e., different genes and protein ion channels) or quantitative (i.e., genes with different expression levels).",
+      "section": "Fig",
+      "primary_topic": "Ion Channels",
+      "secondary_topics": [
+        "gene expression",
+        "planaria morphology",
+        "ion channel diversity",
+        "qualitative differences",
+        "quantitative differences",
+        "cell type"
+      ],
+      "chunk_summary": "Differing gene expression in the two planaria likely leads to distinct sets of ion channels, with variations potentially being qualitative (different genes/proteins) or quantitative (different expression levels).",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Experimentally, the interplay between two voltage-gated depolarizing channels (Wheeler et al., 2012) with different axial localizations (Zhang et al., 2011) has been found to influence planarian polarity because of the calcium-controlled local gene expression.",
+      "section": "Fig",
+      "primary_topic": "Planarian Polarity",
+      "secondary_topics": [
+        "voltage-gated channels",
+        "axial localization",
+        "calcium signaling",
+        "gene expression",
+        "planarian polarity",
+        "depolarizing channels"
+      ],
+      "chunk_summary": "Experimental evidence shows that the interplay between voltage-gated depolarizing channels with different axial localizations influences planarian polarity through calcium-controlled local gene expression.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "We need now to define deviation criteria to extract morphological consequences from the simulations. In biochemical models, instructive information can be obtained from the concentration profiles of signaling molecules over morphologically significant regions (Cervera et al., 2021, Herath and Lobo, 2020, Werner et al., 2015). Analogously, we assume here that the electric potential over the left fragment of the transplanted system is crucial to the subsequent head development.",
+      "section": "We need now to define deviation criteria to extract morphological consequences from the simulations",
+      "primary_topic": "Deviation Criteria",
+      "secondary_topics": [
+        "morphological consequences",
+        "biochemical models",
+        "signaling molecules",
+        "electric potential",
+        "head development",
+        "transplantation"
+      ],
+      "chunk_summary": "This chunk establishes the need for deviation criteria to link simulation results to morphological outcomes, drawing parallels between biochemical signaling profiles and electric potential in transplanted systems.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Thus, Fig. 4 shows the axial potential profiles, together with the results of averaging these potentials over this fragment, for different transplantation percentages parametrized by the relative size of the transplanted trunk. The numbers in the 4 x 4 panels of Fig. 4 quantify the deviation between the transplanted planaria and the decapitated planaria 1. Note that the deviation index could be interpreted not only as the most probable head outcome but also as a measure of intermediate morphological outcomes.",
+      "section": "We need now to define deviation criteria to extract morphological consequences from the simulations",
+      "primary_topic": "Axial Potential Profiles",
+      "secondary_topics": [
+        "transplantation percentage",
+        "deviation index",
+        "morphological outcomes",
+        "planaria",
+        "decapitation",
+        "trunk size"
+      ],
+      "chunk_summary": "This chunk describes the visualization and quantification of axial potential profiles in Fig. 4, highlighting the deviation index as a predictor of head development outcomes in transplanted planaria.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "The experimental variability associated with cutting and transplantation makes it necessary to introduce some stochastic characteristics in the mixing zone. On the opposite side, however, the zone characteristics should be approximately specified to allow a direct comparison between simulations. Taking advantage of the two-dimensional geometry of the mixing zone (Figs. 2 and 3), we consider different distributions for the cell concentration in the cross-section but force them to follow a linear probability distribution along the mixing zone axis in the simulations.",
+      "section": "The experimental variability associated with cutting and transplantation makes it necessary to introduce some stochastic characteristics in the mixing zone",
+      "primary_topic": "Stochastic Modeling",
+      "secondary_topics": [
+        "mixing zone",
+        "simulation",
+        "two-dimensional geometry",
+        "cell concentration",
+        "probability distribution",
+        "transplantation",
+        "experimental variability"
+      ],
+      "chunk_summary": "To account for experimental variability in transplantation, a stochastic model incorporating cell concentration distributions and linear probability distribution along the mixing zone axis is employed.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "This stochastic characteristic of the model is clearly shown by the different results obtained in Fig. 4 for the case of four distinct mixing zones at fixed transplantation percentage. As expected, the relative axial potential differences obtained tend to decrease with the transplanted percentage because of the concomitant increase in the absolute number of planaria 2 cells contributing to this potential.",
+      "section": "The experimental variability associated with cutting and transplantation makes it necessary to introduce some stochastic characteristics in the mixing zone",
+      "primary_topic": "Model Validation",
+      "secondary_topics": [
+        "axial potential difference",
+        "planaria cells",
+        "transplantation percentage",
+        "mixing zone",
+        "stochastic model"
+      ],
+      "chunk_summary": "The stochastic model's validity is demonstrated by the inverse relationship between transplantation percentage and relative axial potential difference, attributed to the increasing number of planaria 2 cells.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "The results of Fig. 4 are summarized in Fig. 5, which provides estimations of the expected deviations between the transplanted planaria and the planaria 1 heads for different transplanted percentages of planaria 2 and three degrees of intercellular connectivity. These deviations are estimated from the deviation index of Fig. 4, which is based on the different axial potentials averaged over the left region of the system.",
+      "section": "The results of Fig",
+      "primary_topic": "Deviation Estimation",
+      "secondary_topics": [
+        "planaria",
+        "transplantation",
+        "intercellular connectivity",
+        "axial potentials",
+        "deviation index"
+      ],
+      "chunk_summary": "Figure 5 summarizes the expected deviations between transplanted planaria and original planaria heads based on transplanted percentages and intercellular connectivity, using data from Figure 4's deviation index.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "As expected, the deviations increase with the transplanted percentage and decrease with the multicellular aggregate connectivity because of the bioelectrical buffer effect due to planaria 1 counteracting the inserted planaria 2 perturbation.",
+      "section": "The results of Fig",
+      "primary_topic": "Deviation Analysis",
+      "secondary_topics": [
+        "bioelectrical buffer",
+        "perturbation",
+        "transplantation percentage",
+        "multicellular aggregate connectivity",
+        "planaria"
+      ],
+      "chunk_summary": "Deviations increase with higher transplantation percentages but decrease with stronger intercellular connectivity due to the bioelectrical buffering effect of the original planaria counteracting the transplanted tissue.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "Note the wide range of intermediate values obtained for the percentage deviations in the expected transplanted planaria head (Fig. 5). While the model may ascribe these values to the probabilities of obtaining the planaria 2 morphology after transplantation, there is also a possibility of intermediate morphologies.",
+      "section": "Note the wide range of intermediate values obtained for the percentage deviations in the expected transplanted planaria head",
+      "primary_topic": "Planaria Morphology",
+      "secondary_topics": [
+        "transplantation",
+        "intermediate morphologies",
+        "deviation",
+        "probability"
+      ],
+      "chunk_summary": "Observed deviations in planaria head morphology after transplantation suggest the existence of intermediate morphologies, not just a binary outcome.",
+      "position_in_section": "Beginning",
+      "certainty_level": "Medium",
+      "citation_context": "Presenting new results",
+      "page_number": "5"
+    },
+    {
+      "text": "Note also that the network effects derived from changes in the gap junction conductance can significantly influence the biosystem dynamics and the morphology outcomes (Cervera et al., 2020c, Cervera et al., 2021, Emmons-Bell et al., 2015, Riol et al., 2021). In particular, the connectivity provided by the intercellular junctions can also influence the planaria head morphology, as shown experimentally (Emmons-Bell et al., 2015) and theoretically (Cervera et al., 2021) in junction blocking studies.",
+      "section": "Note the wide range of intermediate values obtained for the percentage deviations in the expected transplanted planaria head",
+      "primary_topic": "Gap Junctions",
+      "secondary_topics": [
+        "network effects",
+        "biosystem dynamics",
+        "intercellular junctions",
+        "connectivity",
+        "junction blocking",
+        "planaria morphology"
+      ],
+      "chunk_summary": "Gap junction conductance and intercellular connectivity significantly influence biosystem dynamics and planaria head morphology, as demonstrated by both experimental and theoretical studies.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "5"
+    },
+    {
+      "text": "Head-tail planaria morphologies are influenced by the electric potential difference between the axial extremes, as evidenced by voltage-sensitive dyes (Durant et al., 2017, Durant et al., 2019) and originally identified by applied field effects (Lange and Steele, 1978, Marsh and Beams, 1952). We have employed a biophysical approach to qualitatively describe the effects of fragment transplantation on head regeneration when different cell types of planaria are present (Fig. 1).",
+      "section": "Head",
+      "primary_topic": "Bioelectric influence",
+      "secondary_topics": [
+        "planaria",
+        "morphology",
+        "electric potential",
+        "voltage-sensitive dyes",
+        "applied field effects",
+        "fragment transplantation",
+        "head regeneration"
+      ],
+      "chunk_summary": "Planarian head-tail morphology is influenced by bioelectric potential differences, as shown by voltage-sensitive dyes and applied field effects, and a biophysical approach is used to study the impact of fragment transplantation on head regeneration.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "As a complementary view to the dominant biochemical descriptions (Adell et al., 2010, Meinhardt, 2008), we concentrate on the bioelectrical characteristics by assuming that the different cells may have distinct sets of ion channels. We ascribe the system outcome to the axial distributions of average cell potentials over morphologically relevant regions. Our rationale here is that the instructive signaling ions and molecules distributions are spatially coupled with the multicellular electric potentials. Thus, long-time downstream transcriptional events should be triggered by short-time bioelectrical processes.",
+      "section": "Head",
+      "primary_topic": "Bioelectric signaling",
+      "secondary_topics": [
+        "ion channels",
+        "cell potentials",
+        "morphogenesis",
+        "signaling ions",
+        "transcriptional events",
+        "biochemical descriptions"
+      ],
+      "chunk_summary": "Focusing on bioelectrical characteristics and assuming distinct ion channel sets in different cells, the study connects axial cell potential distributions to morphogenesis, proposing that bioelectrical processes trigger downstream transcriptional events.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "It may be surprising that a relatively small difference between the ion channel characteristics of cells #1 and #2 (Fig. 3) could eventually give noticeable changes in the electric potential profiles (Fig. 4) and the expected morphological deviations (Fig. 5). It is important to realize that local bioelectrical perturbations are the initial step for the system outcome to be established downstream: the new electric potential pattern is instructive because it triggers subsequent biochemical processes that lead to the final morphology (Cervera et al., 2020b, Levin, 2021). For instance, it has been shown that even a single ion channel mRNA can induce very significant morphogenetic changes such as the induction of whole eyes in ectopic locations (Pai et al., 2012) or the repair of complex brain defects (Pai et al., 2020), which suggests that small but timely bioelectrical actions may have significant morphological effects.",
+      "section": "It may be surprising that a relatively small difference between the ion channel characteristics of cells",
+      "primary_topic": "Bioelectric signaling",
+      "secondary_topics": [
+        "ion channels",
+        "morphogenesis",
+        "electric potential",
+        "biochemical processes",
+        "mRNA",
+        "ectopic expression"
+      ],
+      "chunk_summary": "Small changes in ion channel characteristics can lead to significant morphological changes through downstream bioelectrical and biochemical processes.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Note also that spatial correlations between neighboring cells are crucial for establishing patterns at both the local level and the overall system (Cervera et al., 2020b, Glen et al., 2018, Sajid et al., 2021). These experimental facts show the inherent capacity of multicellular systems to transit different configuration spaces (Fields and Levin, 2022) and clearly suggest that bioelectricity should contribute to the combination of plasticity and robustness characteristic of morphology (Cervera et al., 2020b, Levin, 2021).",
+      "section": "It may be surprising that a relatively small difference between the ion channel characteristics of cells",
+      "primary_topic": "Cell communication",
+      "secondary_topics": [
+        "spatial correlations",
+        "multicellular systems",
+        "plasticity",
+        "robustness",
+        "morphology",
+        "bioelectricity",
+        "configuration spaces"
+      ],
+      "chunk_summary": "Spatial correlations between cells are crucial for pattern formation and bioelectricity contributes to both plasticity and robustness in morphology.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "The model simulations have limitations, such as using a small number of cells and not considering the time-dependent regeneration process. The focus is on bioelectrical parameters that can be manipulated to achieve different morphologies, as shown in Figures 2, 3, 4, and 5.  Other polarity effects, like flow driven by multiciliated epithelium and the nervous system's role, are not included.",
+      "section": "The model simulations are not without limitations",
+      "primary_topic": "Model limitations",
+      "secondary_topics": [
+        "cell number",
+        "regeneration",
+        "bioelectricity",
+        "morphology",
+        "polarity",
+        "epithelium",
+        "nervous system"
+      ],
+      "chunk_summary": "The model has limitations regarding cell number, regeneration dynamics, and other polarity effects, but focuses on manipulable bioelectrical parameters influencing morphology.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Despite the limitations, this theoretical approach offers testable predictions about morphological outcomes and can be further developed.  Future development could involve considering distinct sets of gap junctions (Figures 2 and 5) and integrating initial bioelectrical regionalization with subsequent long-time biochemical gradients in more complete body-plan studies.  This provides a framework for understanding large-scale morphogenesis outcomes where tissues have distinct target morphologies.",
+      "section": "The model simulations are not without limitations",
+      "primary_topic": "Model potential",
+      "secondary_topics": [
+        "morphogenesis",
+        "gap junctions",
+        "bioelectric regionalization",
+        "biochemical gradients",
+        "body-plan",
+        "theoretical modeling"
+      ],
+      "chunk_summary": "The model, despite limitations, offers testable predictions and can be expanded to include gap junctions and biochemical gradients for a more comprehensive understanding of morphogenesis.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "Methods were not detailed in this specific section.",
+      "section": "[PAGE 6] METHODS",
+      "primary_topic": "Methods",
+      "secondary_topics": [
+        "Methodology",
+        "Experimental Design",
+        "Procedure"
+      ],
+      "chunk_summary": "This section lacks detailed methodological information.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "6"
+    },
+    {
+      "text": "The simulation conditions involve creating a 2D Voronoi diagram from a slightly randomized square grid of points. This diagram defines the cellular regions, including vertices and edges, where neighboring cells share an edge. The final cell ensemble is extracted from this diagram, and in transplantation experiments, both donor and receiver ensembles maintain identical geometry.",
+      "section": "The simulation conditions are now briefly described",
+      "primary_topic": "Simulation Setup",
+      "secondary_topics": [
+        "Voronoi diagram",
+        "cell ensemble",
+        "2D simulation",
+        "transplantation",
+        "geometry",
+        "cellular regions",
+        "edges",
+        "vertices"
+      ],
+      "chunk_summary": "The simulation uses a 2D Voronoi diagram generated from a randomized grid to define cell ensembles with identical geometries for transplantation experiments.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Once the geometry is determined, each cell is assigned bioelectrical parameters corresponding to its position. Initially, the isolated single-cell steady-state potential is used; in bi-stable cases, the depolarized value is chosen. Cells are then connected, and the system evolves for 100 times the characteristic bioelectric time (10s for typical C and Gref values). System evolution is calculated using a finite-difference scheme based on the equations in Fig. 2.",
+      "section": "Once the geometry is determined",
+      "primary_topic": "Bioelectric Simulation",
+      "secondary_topics": [
+        "bioelectricity",
+        "cell potential",
+        "steady-state",
+        "finite-difference",
+        "simulation",
+        "bi-stability"
+      ],
+      "chunk_summary": "The section describes the initialization and evolution of a bioelectric simulation, assigning initial cell potentials and then connecting cells to observe system dynamics.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "A maximum time variation (Vmax = 10^-3 mV) and minimum/maximum time steps (Δtmin = 10^-3(C/Gref), Δtmax = 10^2(C/Gref)) are set. For each simulation time, the time variation of each cell potential (Vi) is calculated. The time step is determined by Δt = min[dVi/dt]/Vmax, constrained by Δtmin and Δtmax. Time and cell potentials are updated iteratively (t → t+Δt, Vi → Vi + (dVi/dt)Δt) until the desired time is reached.",
+      "section": "Once the geometry is determined",
+      "primary_topic": "Simulation Parameters",
+      "secondary_topics": [
+        "time step",
+        "cell potential",
+        "numerical integration",
+        "simulation parameters",
+        "finite-difference"
+      ],
+      "chunk_summary": "This chunk details the specific parameters and numerical integration method used in the bioelectric simulation, including time step calculation and iterative updates.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "After the initial simulation period, the cells of the head (leftmost 20%) are removed, and the system evolves for another 100 times the characteristic bioelectric time. This likely simulates the effects of head removal on the remaining cells' bioelectrical state and overall system dynamics.",
+      "section": "Once the geometry is determined",
+      "primary_topic": "Head Removal Simulation",
+      "secondary_topics": [
+        "head regeneration",
+        "bioelectricity",
+        "perturbation",
+        "simulation",
+        "system dynamics"
+      ],
+      "chunk_summary": "The simulation includes a head removal step, after which the system is allowed to evolve further, likely to study the impact of this perturbation.",
+      "position_in_section": "End",
+      "certainty_level": "Medium",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The transplantation process begins by selecting the zone to be transplanted, defined by the position 'xcut' where the trunk is cut from the donor ensemble. The transplanted zone is then divided into two sections based on the average axial position 'xcell' of each cell.  If 'xcell' is less than 'xcut' minus 5% of the ensemble length (xcell < xcut - 0.05L), the donor cell replaces the corresponding receiver cell.  In the mixing zone (xcut - 0.05L < xcell < xcut + 0.05L), a random number 'r' determines transplantation.  Specifically, transplantation occurs only if 'r' is less than (xcut + 0.05L – xcell)/0.1L; otherwise, the original cell remains.",
+      "section": "The transplantation starts by selecting the zone to be transplanted by indicating the position xcut of the trunk cut off from the donor ensemble",
+      "primary_topic": "Transplantation Process",
+      "secondary_topics": [
+        "xcut",
+        "xcell",
+        "donor ensemble",
+        "receiver ensemble",
+        "mixing zone",
+        "cell replacement"
+      ],
+      "chunk_summary": "This chunk describes the initial steps of the transplantation process, including defining the transplant zone and the criteria for cell replacement based on cell position and a random number generator.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "After the transplantation is complete, ensemble 1 is allowed to evolve for another 100 times the characteristic bioelectric time. The incorporation of random number generation ensures that each transplantation event is unique.",
+      "section": "The transplantation starts by selecting the zone to be transplanted by indicating the position xcut of the trunk cut off from the donor ensemble",
+      "primary_topic": "Post-Transplantation",
+      "secondary_topics": [
+        "bioelectric time",
+        "ensemble evolution",
+        "random number generation",
+        "transplantation variability"
+      ],
+      "chunk_summary": "Following transplantation, the ensemble undergoes further evolution, with the random number generation introducing variability between transplantations.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The average potential profile shown in Figures 3 and 4 is computed by dividing the length of the decapitated ensemble into 100 sections. For each section, the average potential (V) is calculated using the cells whose center lies within that section. This method provides a detailed representation of the potential distribution along the length of the decapitated ensemble.",
+      "section": "The average potential profile of Figs",
+      "primary_topic": "Potential profile",
+      "secondary_topics": [
+        "average potential",
+        "decapitated ensemble",
+        "cell potential",
+        "spatial distribution",
+        "computation method"
+      ],
+      "chunk_summary": "The average potential profile is calculated by dividing the decapitated ensemble into sections and averaging the potential of cells within each section.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The mean potential value (V) used for the deviation index in Figures 4 and 5 is determined by averaging the potential of all cells located within the initial 10% of the decapitated ensemble. This specific region is used to calculate the deviation index, providing a measure of potential variation relative to this initial segment.",
+      "section": "The average potential profile of Figs",
+      "primary_topic": "Deviation index",
+      "secondary_topics": [
+        "mean potential",
+        "initial segment",
+        "potential variation",
+        "calculation method"
+      ],
+      "chunk_summary": "The mean potential for the deviation index is calculated by averaging the potential of cells within the first 10% of the decapitated ensemble.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "CRediT authorship contribution statement.",
+      "section": "[PAGE 6] CRediT authorship contribution statement",
+      "primary_topic": "Authorship",
+      "secondary_topics": [
+        "CRediT",
+        "contribution",
+        "authorship statement"
+      ],
+      "chunk_summary": "This section presents the CRediT authorship contribution statement.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "6"
+    },
+    {
+      "text": "Javier Cervera contributed to the methodology, software development, formal analysis, and writing – review & editing of the paper. José A. Manzanares participated in formal analysis and writing – review & editing. Michael Levin was involved in conceptualization, formal analysis, and writing - review & editing. Salvador Mafe contributed to conceptualization, methodology, formal analysis, and writing the original draft.",
+      "section": "Javier Cervera",
+      "primary_topic": "Author Contributions",
+      "secondary_topics": [
+        "authorship",
+        "roles",
+        "contributions",
+        "writing",
+        "analysis",
+        "methodology",
+        "software"
+      ],
+      "chunk_summary": "This section details the individual contributions of each author to the research and publication process.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The authors declare no competing interests.",
+      "section": "[PAGE 6] Declaration of Competing Interest",
+      "primary_topic": "Competing Interests",
+      "secondary_topics": [
+        "conflict of interest",
+        "disclosure",
+        "research ethics",
+        "transparency"
+      ],
+      "chunk_summary": "The authors declare no competing interests related to the research presented.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "6"
+    },
+    {
+      "text": "The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.",
+      "section": "The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper",
+      "primary_topic": "Conflict of Interest",
+      "secondary_topics": [
+        "competing interests",
+        "financial disclosure",
+        "research ethics",
+        "transparency",
+        "author disclosure"
+      ],
+      "chunk_summary": "The authors declare no competing financial interests or personal relationships that could have influenced the reported work.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "J. C., J. A. M., and S. M. acknowledge the Ministerio de Ciencia e Innovación (Spain) and the European Regional Development Funds (FEDER), project No. PGC2018-097359-B-I00. M. L. acknowledges the support by the Templeton World Charity Foundation (TWCF0606) and the Guy Foundation Family Trust 103733-00001.",
+      "section": "[PAGE 6] Acknowledgments",
+      "primary_topic": "Funding Acknowledgements",
+      "secondary_topics": [
+        "Funding Sources",
+        "Grants",
+        "Research Support",
+        "Spain",
+        "European Regional Development Funds",
+        "Templeton World Charity Foundation",
+        "Guy Foundation"
+      ],
+      "chunk_summary": "This section acknowledges the funding sources that supported the research, including Spanish and European agencies, the Templeton World Charity Foundation, and the Guy Foundation.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "6"
+    }
+  ],
+  "processed_at": "2025-08-14T13:58:15.192122",
+  "chunk_count": 60,
+  "processing_method": "document_splitting"
+}

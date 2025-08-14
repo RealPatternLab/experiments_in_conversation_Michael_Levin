@@ -1,0 +1,34 @@
+{
+  "document_type": "journal-article",
+  "title": "Functional assessment of lysosomal Rab7 and RILP with RNA interference and overexpression in Spodoptera frugiperda Sf9 cell lines",
+  "authors": [
+    "Gaofeng Cui",
+    "Zhiyan Jiang",
+    "Guohua Zhong"
+  ],
+  "journal": "STAR Protocols",
+  "publication_year": 2023,
+  "doi": "10.1016/j.xpro.2023.102646",
+  "abstract": null,
+  "extraction_confidence": "high",
+  "filename": "fff45c04_20250814_131546_958.pdf",
+  "extraction_timestamp": "2025-08-14T13:17:08.591931",
+  "extraction_method": "gemini_1.5_flash",
+  "pages_analyzed": 2,
+  "publication_date": "2023-12",
+  "page_range": "102646",
+  "volume": "4",
+  "issue": "4",
+  "references_count": 6,
+  "publisher": "Elsevier BV",
+  "issn": "2666-1667",
+  "crossref_data": true,
+  "enrichment_method": "crossref_api",
+  "crossref_enriched": true,
+  "enrichment_timestamp": "2025-08-14T13:26:59.159224",
+  "affiliations": [
+    "and National Institute",
+    "laboratory safety and ethics."
+  ],
+  "text_enriched": true
+}

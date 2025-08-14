@@ -1,0 +1,584 @@
+[PAGE 1] Introduction
+Members of the TGF-B superfamily regulate crucial aspects of vertebrate development. This is particularly evident in Xenopus where the interplay between BMP and activin/nodal signaling is required for patterning during gastrulation. Activin/nodal-like ligands direct both the induction and specification of mesoderm and endoderm along the dorsal-ventral and anterior-posterior axes, while at the same time BMPs suppress dorsal and trunk mesoderm and neural fates (Harland and Gerhart, 1997; Kimelman and Griffin, 2000; Schier, 2003; Whitman, 1998). Later in development, activins and nodals are key determinants in the establishment of left-right asymmetry and patterning of the nervous system while BMPs play a critical role in the formation of many tissues and organs including neural crest, heart, limb and skeleton (Hogan, 1996; Schier, 2003).
+
+BMPs and activin exert their effects through a signaling cascade in which ligand binding brings together type I and type II receptor serine/threonine kinases on the cell surface (Massague and Chen, 2000). Once activated, the type II receptor phosphorylates the type I receptor, which in turn phosphorylates receptor regulated Smad proteins (R-Smads). These phosphorylated R-Smads then complex with Smad4, translocate to the nucleus and together with other proteins regulate transcription of target genes. R-Smads 2,3 are phosphorylated to initiate signaling by activin-like ligands while R-Smads1,5,8 are phosphorylated during BMP signal transduction (Massague and Chen, 2000; Miyazawa et al., 2002). While BMPs and activins are able to bind to the same type II receptors (activin type II and IIB), they have separate type I receptors and it is through the type I receptor/R-Smad pairings that a specific BMP or activin signal is propagated. In addition, BMPs signal through BMP-specific receptor complexes that utilize BMPRII, a receptor not used by activin-like ligands (Massague and Chen, 2000; Miyazawa et al., 2002). The flexible nature of these BMP and activin ligand-receptor interactions allows them to serve as multifunctional regulators during development and organogenesis, but at the same time signaling by these factors must be tightly controlled both spatially and temporally to ensure specificity. The most common level of control over TGF-B-like signals takes place in the extracellular space where antagonists like noggin, chordin, follistatin, gremlin and cerberus prevent ligands from binding to their receptors (Balemans and Van Hul, 2002; Miyazono, 2000). Control of signaling also occurs at the cell membrane, as well as within the cytoplasm and nucleus of the target cell (Miyazono, 2000; von Bubnoff and Cho, 2001).
+
+BMP-3, a member of the TGF-B superfamily, has biological effects that oppose those of osteogenic BMPs and TGF-B1 in a variety of mammalian systems (Daluiski et al., 2001; Faucheux et al., 1997). In Xenopus embryos, we and others have shown that unlike BMP-2, BMP-4 and BMP-7, which are potent ventralizing agents, BMP-3 induces dorsalization (Daluiski et al., 2001; Hino et al., 2003). These effects of BMP-3 are most similar to the BMP antagonists noggin, chordin and follistatin, inhibiting the mesoderm-inducing activities of BMP-2 and ADMP in animal cap assays (Hino et al., 2003). xBMP-3b, a molecule 83% homologous to xBMP-3, can also antagonize BMP-like ligands as well as nodal-like proteins (Hino et al., 2003). While these data identify BMP-3 and BMP-3b as novel antagonists in the BMP/TGF-β-signaling cascade, they do not give any clues as to how they might exert their effects.
+
+[PAGE 2] 
+In this study, we examine the mechanism by which BMP-3 antagonizes TGF-ẞ family ligand signaling in Xenopus embryos. We find that BMP-3 inhibits the mesoderm-inducing activities of both activin and BMP-4 by reducing the phosphorylation of R-Smads and that BMP-3 by itself is unable to activate BMP or activin R-Smads and thus does not signal using a TGF-ẞ pathway. Inhibition by BMP-3 can be overcome by activated BMP or activin type I receptors or by increased levels of ActRIIB. Finally, we find that BMP-3 binds to ActRIIB and that this binding cannot be competed by addition of excess activin. Our data support the hypothesis that BMP-3 is a novel TGF-ẞ family antagonist that acts by interfering with activin and BMP binding to ActRIIB, a type II receptor common to both signaling pathways. By using this mechanism, BMP-3 is able to modulate diverse developmental processes that are controlled by both activin and BMP signaling at the level of the individual target cell, providing the embryo with additional means to regulate these signaling molecules.
+
+[PAGE 2] Materials and methods
+
+Embryo assays and microinjection
+Xenopus embryos were generated, cultured and staged using standard methods (Sive et al., 2000). RNAs were injected into the animal poles of 2- to 4-cell embryos or the ventral side of 4- to 8-cell embryos. 
+
+[PAGE 3] Results
+BMP-3 dorso-anteriorizes embryos
+In previous studies, we showed that BMP-3 mRNA injected on the dorsal side of Xenopus embryos had mild dorsalizing activity (Daluiski et al., 2001), producing a phenotype opposite to that of ventralizing BMPs. To investigate whether BMP-3 might antagonize BMP or other TGF-B-like ligand activity, we microinjected ventral vegetal blastomeres of 8-cell embryos with BMP-3 mRNA and looked for secondary axis formation. Strong dorsalizing factors like noggin, chordin, follistatin or dominant-negative BMP receptors (tBR) mimic the activity of Spemann's organizer and cause complete axis duplication in this assay (Harland and Gerhart, 1997). 
+
+[PAGE 4] 
+The gain of function phenotypes we see are consistent with the expression of xBMP-3 in chordal mesoderm, notochord and cement gland in the Xenopus embryo (Hino et al., 2003). Together these gain of function studies suggested that BMP-3 might play a role in dorso-anterior patterning by effecting gastrulation movements during Xenopus development.
+
+BMP-3 induces cement gland and neural tissue in animal cap explants
+Next we tested the biological activity of BMP-3 in animal cap assays. When excised from blastula stage embryos, animal cap explants differentiate into epidermis. If the explants are treated with activin or nodal, they form mesodermal and endodermal tissues, while if exposed to BMP antagonists, they form neural tissue and cement gland (Harland and Gerhart, 1997). 
+
+[PAGE 5] 
+Our results further indicate that BMP-3 has biological activities in Xenopus embryos that are similar to factors that inhibit both BMP and activin signaling, but that BMP-3 differs from previously described antagonists in that it induces cement gland and neural tissue, but not secondary axis formation or endoderm.
+
+BMP-3 blocks activin and BMP-4 mesoderm-inducing activity in animal cap explants
+Using animal cap assays we tested the ability of BMP-3 to directly antagonize BMP and activin activity. When co-injected with RNA encoding BMP-4, BMP-3 was able to partially block the ability of BMP-4 to induce the expression of the early mesodermal marker, Xbra, as well as the ventral mesoderm marker, Xhox3.
+
+[PAGE 5]
+(Fig. 2J). Induction of only anterior neural tissue in animal
+caps is a characteristic activity of BMP inhibitors (Harland,
+2000; Weinstein and Hemmati-Brivanlou, 1999). Interest-
+ingly, BMP-3 appeared to induce this neural tissue directly,
+as we did not detect any expression of muscle actin, a
+mesodermal marker, even at high doses (1.5 ng) (Fig. 21).
+Additionally, we saw that BMP-3 did not turn on the
+expression of molecular markers of endoderm, such as
+endodermin (Fig. 21) or Xsox17-ẞ (data not shown). Using
+animal cap assays, we also found that incubation of
+explants in BMP-3 protein resulted in the same phenotype
+as injecting BMP-3 mRNA. Cement gland and neural
+tissue were consistently induced when animal caps were
+cultured in hBMP-3-conditioned media (Figs. 2D and H).
+Our results further indicate that BMP-3 has biological
+activities in Xenopus embryos that are similar to factors
+that inhibit both BMP and activin signaling, but that BMP-
+3 differs from previously described antagonists in that it
+induces cement gland and neural tissue, but not secondary
+axis formation or endoderm.
+
+BMP-3 blocks activin and BMP-4 mesoderm-inducing
+activity in animal cap explants
+
+Using animal cap assays we tested the ability of BMP-3
+to directly antagonize BMP and activin activity. When co-
+injected with RNA encoding BMP-4, BMP-3 was able to
+partially block the ability of BMP-4 to induce the
+expression of the early mesodermal marker, Xbra, as well
+as the ventral mesoderm marker, Xhox3 (Fig. 3A).
+However, BMP-3 was not able to block the pro-epidermal
+activity of BMP-4. Figs. 3A-B show that expression of
+msx-1, a direct downstream target of BMP and a marker of
+ventro-lateral ectoderm, and epidermal keratin remained
+elevated in co-injected caps, indicating that BMP-3
+interferes with the ventralizing activity of BMP-4 only in
+the mesoderm. In contrast to noggin, chordin or tBR which
+can rescue the BMP-4 ventralized phenotype in whole
+embryos (reviewed in Harland and Gerhart, 1997), we
+could not rescue ventralized BMP-4-injected embryos with
+co-injected BMP-3 (see Fig. 7G and data not shown).
+These results show that in Xenopus, BMP-3 is a weak
+inhibitor of BMP when compared to other antagonists and
+suggest that BMP-3 may be blocking BMP activity using a
+novel mechanism.
+
+We next investigated whether BMP-3 could antagonize
+activin signaling. When BMP-3-injected animal caps were
+incubated in activin protein, the morphogenic movements
+indicative of mesoderm induction were blocked (Fig. 3C).
+RT-PCR assays showed that BMP-3 strongly inhibited
+activin mRNA and protein-induced expression of muscle
+actin (Fig. 3D), indicating BMP-3 can antagonize activin
+signaling as well as BMP signaling. Since our injected
+BMP-3 mRNA blocks activin protein activity, this suggests
+that BMP-3/activin heterodimers are not causing the effects
+we see in our assays and is agreement with previous data
+showing that activin does not form heterodimers with
+BMP-4 (Wittbrodt and Rosa, 1994).
+
+Finally, we wanted to determine if BMP-3 was acting as
+a general inhibitor of mesoderm induction in Xenopus. To
+do this, we tested the ability of BMP-3 to block mesodermal
+marker gene expression activated by Xnr1 (Xenopus nodal
+related 1), a TGF-β-like ligand shown to play important
+roles in mesoderm formation in early embryos (Schier,
+2003) and by bFGF, a protein implicated in inducing and
+maintaining mesodermal fates in Xenopus (LaBonne and
+Whitman, 1994; LaBonne et al., 1995). We found that
+injection of BMP-3 could not block the induction of Xbra
+by Xnrl supporting the previous findings of Hino et al.
+(2003) (Fig. 3E). In addition, we saw that BMP-3 did not
+effect the induction of muscle actin by bFGF protein (Fig.
+3F). Our results confirm that in Xenopus, BMP-3 can only
+inhibit a subset of TGF-B family signals, including
+ventralizing BMP signals (BMP-2, -4 and ADMP) and
+now reveal that BMP-3 can also antagonize dorsalizing,
+activin signals.
+
+
+[PAGE 6]
+BMP-3 antagonizes activin and BMP signals upstream of
+receptor activation
+
+BMP and activin signaling are tightly regulated during
+embryonic development by potent extracellular antagonists
+that bind directly to these ligands, preventing them from
+interacting with their receptors. Extracellular antagonists
+can also inhibit signaling in an indirect manner, as has been
+shown for BMPs and noggin, where the ligand upregulates
+antagonist expression creating a negative feedback loop
+(Amthor et al., 1999; Gazzerro et al., 1998; Nifuji and Noda,
+1999). Existing data from our lab ruled out the possibility
+that BMP-3 itself was an extracellular ligand antagonist
+because we were unable to show direct binding of BMP-3 to
+other BMPs or activin (Daluiski et al., 2001 and L.W.
+Gamer and V. Rosen, unpublished). To investigate the
+possibility that BMP-3 acts by regulating levels of known
+extracellular antagonists, we assayed BMP-3-injected ani-
+mal caps for the upregulation of noggin, chordin or
+follistatin. BMP-3 was unable to induce expression of any
+of these antagonists in late blastula stage animal caps, even
+when injected at high doses (1.5 ng) (Fig. 4A).
+
+We next investigated whether BMP-3 could block the
+effects of constitutively activated type I activin or BMP
+receptors in the animal cap assay by looking for induction of
+mesodermal marker genes by these receptors. If BMP-3 acts
+intracellularly by interfering with receptor activation, we
+should observe a downregulation of mesodermal marker
+expression. Conversely, if BMP-3 inhibits signaling
+upstream of the receptor, marker gene expression should
+be unaffected. For our experiments, we co-injected the
+constitutively activated activin type I receptor (CA-ALK4)
+or the constitutively activated BMP type I receptor (CA-
+ALK3) with BMP-3 into both animal blastomeres of 2-cell
+embryos. We then isolated animal caps and looked at the
+effects on mesodermal marker expression by RT-PCR. We
+found that BMP-3 was unable to block CA-ALK3 or CA-
+ALK4 from inducing the expression of Xbra or muscle actin
+(Figs. 4B and C). These data indicate that BMP-3 acts
+upstream of receptor activation before R-Smad phosphor-
+ylation by type I receptor.
+
+
+[PAGE 7]
+We then considered what receptor pathway BMP-3 could
+use to antagonize both activin and BMP signaling. We
+injected 4-cell embryos with BMP-3, BMP-4 or activin
+mRNA and examined R-Smad phosphorylation in isolated
+animal cap explants at stage 10.5. As expected, Western blot
+analysis showed strong phosphorylation of Smad1,5,8 by
+BMP-4 and phosphorylation of Smad2 by activin (Figs. 5A
+and B). Surprisingly, we did not detect phosphorylation of
+any R-Smads by BMP-3 alone (Figs. 5A and B, lane 3).
+When we co-injected BMP-3 together with BMP-4 or
+activin, we found that BMP-3 decreased the level of
+phosphorylation of Smad1,5,8 and strongly reduced the
+phosphorylation level of Smad2 (Figs. 5A and B, lane 4).
+These results confirm that BMP-3 antagonizes signaling by
+activin and BMP and identifies BMP-3 as an inhibitor of
+signal transmission at the level of ligand binding to receptor.
+Based on these findings, we also examined the effects of
+BMP-3 overexpression on endogenous Smad phosphoryla-
+tion in whole embryos. Here we found that BMP-3 strongly
+reduced the level of Smad2 phosphorylation (Fig. 5D) but
+did not seem to effect Smad1,5,8 activation in gastrula stage
+10.5 embryos (Fig. 5C). These data fit well with recent
+antisense morpholino experiments by Piepenburg et al.
+(2004), reinforcing the importance of activin signaling
+through Smad2 for early mesodermal patterning. Our results
+show that BMP-3 efficiently blocks endogenous activin
+signaling by decreasing Smad2 activation but is not as
+effective at blocking endogenous Smad1,5,8 phosphoryla-
+tion. This may be due to the fact that BMPs can use both
+ActRII/B and BMPR-II to transmit signals while activin
+utilizes only ActRII/B. Therefore, if BMP-3 blocks signal-
+ing at ActRII/B then BMPs may still be able to induce
+Smad1,5,8 phosphorylation through BMPR-II. These results
+led us to examine if BMP-3 interacted with ActRII/B.
+
+
+[PAGE 8]
+BMP-3 binds ActRIIB
+
+Having established that BMP-3 blocks both activin and
+BMP at the receptor level, the receptor targeted by BMP-3
+would have to be one common to both the activin and BMP-
+signaling pathways, most likely the type II activin receptor.
+ActRII/B has been reported to bind multiple ligands
+including BMP-2, BMP-7, GDF11 and activin (Massague
+and Chen, 2000). To look for an interaction of BMP-3 with
+ActRIIB, we co-expressed BMP-3 with epitope tagged
+ActRIIB (ActRIIB/Myc) in early Xenopus embryos and used
+the extracts of early gastrula stage animal halves for co-
+immunoprecipitation assays. When we did this, we found
+that BMP-3 was co-precipitated with ActRIIB by the anti-
+myc antibody (Fig. 6A, lane 3).
+Since BMP-3 and activin can both bind ActRIIB, it is
+possible these two proteins compete for binding to their
+common receptor leading to the inhibition of activin
+signaling. To test this hypothesis, we performed binding
+competition assays in early Xenopus embryos. BMP-3 was
+co-expressed with ActRIIB/Myc in the absence or presence
+of increasing amounts (2 ng, 4 ng, 6 ng) of activin/HA and
+protein extracts of gastrula stage animal halves were
+immunoprecipitated with anti-myc antibody. Fig. 6B shows
+that increasing amounts of activin/HA did not significantly
+decrease the amount of BMP-3 immunoprecipitated by
+ActRIIB. The reverse experiment gave similar results with
+increasing doses of BMP-3 unable to significantly reduce
+the levels of activin immunoprecipitated by ActRIIB (Fig.
+6C). Our data suggest that once BMP-3 binds the type II
+receptor, it cannot be competed off by excess activin. These
+results agree with our observation that animal caps
+preloaded with BMP-3 cannot respond to activin protein
+added later (see Figs. 3C and D). The interaction we observe
+may reflect the ability of BMP-3 and activin to bind to
+different sites on ActRIIB. Even if the two ligands do not
+compete for the same site on the receptor, binding of BMP-3
+precludes signal transduction by the activin-ActRIIB
+complex. We did not perform these same competition
+experiments using BMP-4 as BMP-4 is known to prefer
+the type I receptor, and is unlikely to bind to type II receptor
+in the absence of type I receptor in vivo (Shi and Massague,
+2003).
+
+We next looked to see how BMP-3 binding to type II
+receptor affected the recruitment of type I receptor to the
+receptor complex. To do this, BMP-3 was injected into
+Xenopus embryos with ActRIIB/Myc alone or with ActRIIB/
+Myc and the type I activin receptor, Alk4/Flag and protein
+extracts were immunoprecipitated with anti-myc antibody.
+We found that BMP-3 was able to make a complex
+containing both ActRIIB and Alk4 (Fig. 6D). Our data
+suggest this complex is inactive and prevents activin signal
+transduction.
+
+
+[PAGE 9]
+To further evaluate and confirm our binding assay
+results, we performed rescue experiments using whole
+embryos in which BMP-3 mRNA was co-injected with
+RNAs for various wild-type activin and BMP receptors. At
+the late tadpole stage, embryos were scored for rescue to
+normal development. In these experiments, only xActRIIB
+rescued the BMP-3 phenotype back to proper body axis and
+head formation in a dose-dependent manner (Figs. 7B-D).
+Co-injection of xBMPRII, a BMP-specific type II receptor
+(Frisch and Wright, 1998) (Fig. 7E), xALK4, a type I activin
+receptor (Chang et al., 1997) (Fig. 7F), BMP-4 (Fig. 7G) or
+activin (Fig. 7H) as a ligand controls did not rescue the
+BMP-3 phenotype at the doses tested. The discovery that
+BMP-3 associates with ActRIIB along with the finding that
+ActRIIB rescues BMP-3-injected embryos allows us to
+conclude that BMP-3 blocks activin and BMP signaling by
+binding to this common type II receptor. These results are
+
+[PAGE 9] 
+
+RNAs for various wild-type activin and BMP receptors. At
+the late tadpole stage, embryos were scored for rescue to
+normal development. In these experiments, only xActRIIB
+rescued the BMP-3 phenotype back to proper body axis and
+head formation in a dose-dependent manner (Figs. 7B-D).
+Co-injection of xBMPRII, a BMP-specific type II receptor
+(Frisch and Wright, 1998) (Fig. 7E), xALK4, a type I activin
+receptor (Chang et al., 1997) (Fig. 7F), BMP-4 (Fig. 7G) or
+activin (Fig. 7H) as a ligand controls did not rescue the
+BMP-3 phenotype at the doses tested. The discovery that
+BMP-3 associates with ActRIIB along with the finding that
+ActRIIB rescues BMP-3-injected embryos allows us to
+conclude that BMP-3 blocks activin and BMP signaling by
+binding to this common type II receptor. These results are
+consistent with the observation that BMP-3 is a more potent
+inhibitor of activin signaling (which uses only ActRII) than
+BMP signaling (which uses both ActRII and BMPRII).
+
+[PAGE 10] DISCUSSION
+
+In this report, we use the wealth of information about the
+activities of BMP and activin-like molecules in Xenopus to
+explore the mechanism used by BMP-3 to modulate these
+signals in the context of Xenopus development. Our data
+show that BMP-3 is a dorso-anteriorizing factor that
+antagonizes both activin and BMP-4 by binding to ActRII,
+their common receptor, and interfering with signal trans-
+duction. The interactions of BMP-3, activin and BMP-4 are
+outlined in Fig. 8. When activin and BMP-3 are both present,
+if BMP-3 occupies ActRII, activin is excluded, and an
+inactive receptor complex forms that blocks Smad2 phos-
+phorylation. As a result, activin signaling in target tissues is
+diminished (Fig. 8C). This was shown in biochemical
+binding and competition assays as well as in our animal
+cap experiments, where BMP-3 prevented mesoderm for-
+mation by blocking activin phosphorylation of Smad2.
+When BMP-4 and BMP-3 are both present, if BMP-3
+occupies ActRII, Smad1,5,8 phosphorylation cannot occur
+through receptor complexes that contain ActRII (Fig. 8D).
+However, since BMP-4 is not bound by BMP-3, BMP-4 is
+able to activate BMP signaling through BMPR-II, allowing
+BMP signaling in cells that express this BMP-specific type II
+receptor (Fig. 8D). Evidence to support this idea is provided
+by the induction of the epidermal markers msx-1 and
+epidermal keratin when BMP-3 and BMP-4 are co-injected
+into animal caps and by our observation that there is
+Smad1,5,8 signaling in whole embryos overexpressing
+BMP-3. Interestingly, our animal cap assays also showed
+that BMP-3 could not block the activity Xnr1 (Hino et al.,
+2003), a ligand that signals through ActRIIB/Alk4 and
+requires an EGF-CFC co-receptor (Cheng et al., 2003;
+Schier, 2003). Based on our results, we conclude the potency
+of BMP-3 as an antagonist of TGF-B superfamily signaling
+is greatest for ligands that act directly through ActRII.
+While our data identify BMP-3 as a receptor antagonist,
+there are additional ways in which BMP-3 might act to
+inhibit activin and BMP signaling. One intriguing possi-
+bility is that BMP-3 forms heterodimers with BMPs or
+activin, creating dominant-negative ligands. This is consis-
+tent with reports that injected BMP-3 can form heterodimers
+with BMP-2 in Xenopus embryos (Hino et al., 2003). Our
+animal cap assays show that BMP-3-conditioned media
+(which contains only BMP-3 homodimers) have the same
+biological activity as injected BMP-3 mRNA. We also
+observed that injected activin mRNA cannot rescue the
+BMP-3 whole embryo phenotype. These results suggest that
+the BMP-3-antagonistic activity in our experiments is
+unlikely to be due to heterodimerization between BMP-3
+and activin. It is still possible that BMP-3/BMP-2/4 or
+BMP-3/activin heterodimers could form in Xenopus
+embryos and have their own receptor affinities that would
+allow for selective inhibition of a subset of TGF-B mem-
+bers. This is something we plan to investigate in future
+studies.
+
+[PAGE 11] 
+
+Our gain of function studies with BMP-3 in Xenopus
+embryos support the idea that the biological actions of
+BMP-3 are due to its ability to modulate both activin and
+BMP signaling through ActRII. Selectively blocking ActRII
+may be an important way to affect specific developmental
+processes. For example, overexpression of BMP-3 in whole
+embryos causes the formation of enlarged and ectopic
+cement glands. In recent years, a model has been put forth
+suggesting that intermediate levels of BMP signaling in the
+ectoderm lead to cement gland formation, while high levels
+of BMP signaling promote epidermis and low levels of
+BMP signaling result in neural tissue (Wardle and Sive,
+2003). Our data lend support to this hypothesis, since BMP-
+3 does not completely block BMP signaling, cement gland
+tissue may be induced in embryos and animal caps because
+of moderate levels of BMP signaling that may be occurring
+through BMPRII. Additional support for this idea comes
+from the fact that BMP-3 and BMP-4 are both expressed in
+the developing cement gland (Fainsod et al., 1994;
+Hemmati-Brivanlou and Thomsen, 1995; Hino et al.,
+2003) where this regulatory interaction could take place.
+In gastrula stage embryos, BMP-3 transcripts are found
+throughout the marginal zone mesoderm where they appear
+to overlap with the expression of activin (Dohrmann et al.,
+1993; Fainsod et al., 1994; Hemmati-Brivanlou and
+Thomsen, 1995; Hino et al., 2003). This co-localization
+may allow BMP-3 to play a role in restricting activin in a
+cell-specific manner, so that once BMP-3 binds to ActRII it
+is unavailable to transmit activin signals, ensuring proper
+dorso-anterior mesodermal patterning. In addition, BMP-3
+expression overlaps with BMP-4 expression in gastrula
+stage ectoderm (Fainsod et al., 1994; Hemmati-Brivanlou
+and Thomsen, 1995; Hino et al., 2003) where BMP-3 could
+act to decrease BMP signaling, allowing other BMP
+antagonists that are expressed in Spemann's organizer to
+successfully induce the full range of nervous system tissues.
+The ability of BMP-3 to induce anterior neural tissue and
+inhibit the mesoderm-inducing activities of both activin and
+BMP support these ideas.
+
+[PAGE 12] 
+
+Although our gain of function studies indicate BMP-3
+has a role patterning the Xenopus embryo, previously
+reported antisense morpholino oligonucleotide experiments
+for BMP-3 did not show any phenotype (Hino et al.,
+2003). Since BMP-3 acts as an antagonist, it may need to
+be ablated in conjunction with other activin/BMP inhib-
+itors in order to determine its effects on embryonic
+development as has been recently shown in triple
+morpholino knockdown experiments for noggin, chordin
+and follistatin (Khokha et al., 2005). It is also possible that
+another highly related BMP family member (like BMP-3b/
+GDF-10) compensates for the loss of BMP-3 in early
+embryos, or that the role of BMP-3 in Xenopus develop-
+ment may be temporally restricted to later stages. These
+ideas are supported by data from BMP-3 null mice in
+which the bone phenotype is first evident postnatally
+(Daluiski et al., 2001) and from GDF-10 (BMP-3b)
+knockout mice that do not have any obvious phenotype
+(Zhao et al., 1999). Future studies that focus on the effects
+of loss of BMP-3 in combination with other activin/BMP
+antagonists may allow us to determine its full role during
+Xenopus development.
+
+[PAGE 13] 
+
+Our current data regarding BMP-3 signaling in Xenopus
+embryos agree with the work of Hino et al., 2003 who
+reported that BMP-3 antagonized ventralizing BMPs but not
+nodal-like ligands. However, our findings on how this
+antagonism occurs in Xenopus need to be reconciled with
+previously published observations in mammalian cell lines
+where BMP-3 activated a TGF-β/activin-responsive reporter
+and also inhibited BMP signaling downstream of the BMP
+type I receptor (Daluiski et al., 2001). The most likely
+explanation for these differences is that BMP-3 acts in cell-
+context-dependent manner, similar to that observed for
+inhibin which is an effective blocker of activin signaling but
+only antagonizes BMP signaling in cell types that express
+the co-receptor betaglyan (Wiater and Vale, 2003). Another
+possibility is that the methodology employed in the
+mammalian cell assays in which ligand and receptor
+plasmids are transfected into unresponsive cells that are
+then used for reporter assays is not as reliable as utilizing
+Xenopus embryos that possess all of the signal transduction
+machinery. This is certainly the true for assessing endoge-
+nous Smad activation (Fig. 5), a more direct measure of
+TGF-B-like ligand activity.
+In conclusion, our data best fit a model in which BMP-3
+interferes with activin and BMP-4 binding to the type II
+activin receptor without activating R-Smads. As a conse-
+quence, signaling through activin and BMP receptor
+complexes that utilize ActRII is diminished. Thus, BMP-3
+joins a growing family of TGF-β-like molecules including
+inhibin (Wiater and Vale, 2003) and lefty (Chen and Shen,
+2004; Cheng et al., 2004), which by virtue of their ability
+bind to TGF-ẞ family receptors and co-receptors but not
+activate signal transduction, serve as modulators of growth
+factor activity during embryonic development.
+
+Balemans, W., Van Hul, W., 2002. Extracellular regulation of BMP
+signaling in vertebrates: a cocktail of modulators. Dev. Biol. 250,
+231-250.
+Chang, C., Wilson, P.A., Mathews, L.S., Hemmati-Brivanlou, A.,
+1997. А Хепоpus type I activin receptor mediates mesodermal but
+not neural specification during embryogenesis. Development 124,
+827-837.
+Chen, C., Shen, M.M., 2004. Two modes by which Lefty proteins inhibit
+nodal signaling. Curr. Biol. 14, 618-624.
+Cheng, S.K., Olale, F., Bennett, J.T., Brivanlou, A.H., Schier, A.F., 2003.
+EGF-CFC proteins are essential coreceptors for the TGF-beta signals
+Vg1 and GDF1. Genes Dev. 17, 31-36.
+Cheng, S.K., Olale, F., Brivanlou, A.H., Schier, A.F., 2004. Lefty blocks a
+subset of TGFbeta signals by antagonizing EGF-CFC coreceptors.
+PLoS Biol. 2, E30.
+Daluiski, A., Engstrand, T., Bahamonde, M.E., Gamer, L.W., Agius, E.,
+Stevenson, S.L., Cox, K., Rosen, V., Lyons, K.M., 2001. Bone
+morphogenetic protein-3 is a negative regulator of bone density. Nat.
+Genet. 27, 84-88.
+Dohrmann, C.E., Hemmati-Brivanlou, A., Thomsen, G.H., Fields, A.,
+Woolf, T.M., Melton, D.A., 1993. Expression of activin mRNA during
+early development in Xenopus laevis. Dev. Biol. 157, 474-483.
+Dosch, R., Gawantka, V., Delius, H., Blumenstock, C., Niehrs, C., 1997.
+Bmp-4 acts as a morphogen in dorsoventral mesoderm patterning in
+Xenopus. Development 124, 2325-2334.
+Fainsod, A., Steinbeisser, H., De Robertis, E.M., 1994. On the function of
+BMP-4 in patterning the marginal zone of the Xenopus embryo. EMBO
+J. 13, 5015-5025.
+Faucheux, C., Ulysse, F., Bareille, R., Reddi, A.H., Amedee, J., 1997.
+Opposing actions of BMP3 and TGF beta 1 in human bone marrow
+stromal cell growth and differentiation. Biochem. Biophys. Res.
+Commun. 241, 787-793.
+Faure, S., Lee, M.A., Keller, T., ten Dijke, P., Whitman, M., 2000.
+Endogenous patterns of TGFbeta superfamily signaling during early
+Xenopus development. Development 127, 2917-2931.
+Frisch, A., Wright, C.V., 1998. XBMPRII, a novel Xenopus type II receptor
+mediating BMP signaling in embryonic tissues. Development 125,
+431-442.
+Gawantka, V., Delius, H., Hirschfeld, K., Blumenstock, C., Niehrs, C.,
+1995. Antagonizing the Spemann organizer: role of the homeobox gene
+Xvent-1. EMBO J. 14, 6268-6279.
+Gazzerro, E., Gangji, V., Canalis, E., 1998. Bone morphogenetic proteins
+induce the expression of noggin, which limits their activity in cultured
+rat osteoblasts. J. Clin. Invest. 102, 2106-2114.
+Hansen, C.S., Marion, C.D., Steele, K., George, S., Smith, W.C., 1997.
+Direct neural induction and selective inhibition of mesoderm and
+epidermis inducers by Xnr3. Development 124, 483-492.
+Harland, R., 2000. Neural induction. Curr. Opin. Genet. Dev. 10, 357-362.
+Harland, R., Gerhart, J., 1997. Formation and function of Spemann's
+organizer. Annu. Rev. Cell Dev. Biol. 13, 611-667.
+Harms, P.W., Chang, C., 2003. Tomoregulin-1 (TMEFF1) inhibits nodal
+signaling through direct binding to the nodal coreceptor Cripto. Genes
+Dev. 17, 2624-2629.
+Hemmati-Brivanlou, A., Melton, D.A., 1992. A truncated activin receptor
+inhibits mesoderm induction and formation of axial structures in
+Xenopus embryos. Nature 359, 609-614.
+Hemmati-Brivanlou, A., Melton, D.A., 1994. Inhibition of activin receptor
+signaling promotes neuralization in Xenopus. Cell 77, 273-281.
+Hemmati-Brivanlou, A., Thomsen, G.H., 1995. Ventral mesodermal
+patterning in Xenopus embryos: expression patterns and activities of
+BMP-2 and BMP-4. Dev. Genet. 17, 78-89.
+Hino, J., Nishimatsu, S., Nagai, T., Matsuo, H., Kangawa, K., Nohno, T.,
+2003. Coordination of BMP-3b and cerberus is required for head
+formation of Xenopus embryos. Dev. Biol. 260, 138-157.
+Hogan, B.L., 1996. Bone morphogenetic proteins in development. Curr.
+Opin. Genet. Dev. 6, 432-438.
+Israel, D.I., Nove, J., Kerns, K.M., Moutsatsos, I.K., Kaufman, R.J., 1992.
+Expression and characterization of bone morphogenetic protein-2 in
+Chinese hamster ovary cells. Growth Factors 7, 139-150.
+Jones, C.M., Lyons, K.M., Lapan, P.M., Wright, C.V., Hogan, B.L., 1992.
+DVR-4 (bone morphogenetic protein-4) as a posterior-ventralizing
+factor in Xenopus mesoderm induction. Development 115, 639-647.
+Jones, C.M., Kuehn, M.R., Hogan, B.L., Smith, J.C., Wright, C.V., 1995.
+Nodal-related signals induce axial mesoderm and dorsalize mesoderm
+during gastrulation. Development 121, 3651-3662.
+Khokha, M.K., Yeh, J., Grammer, T.C., Harland, R.M., 2005. Depletion of
+three BMP antagonists from Spemann's organizer leads to a cata-
+strophic loss of dorsal structures. Dev. Cell 8, 401-411.
+Kimelman, D., Griffin, K.J., 2000. Vertebrate mesendoderm induction and
+patterning. Curr. Opin. Genet. Dev. 10, 350-356.
+LaBonne, C., Whitman, M., 1994. Mesoderm induction by activin requires
+FGF-mediated intracellular signals. Development 120, 463-472.
+LaBonne, C., Burke, B., Whitman, M., 1995. Role of MAP kinase in
+mesoderm induction and axial patterning during Xenopus development.
+Development 121, 1475-1486.
+Lamb, T.M., Harland, R.M., 1995. Fibroblast growth factor is a direct
+neural inducer, which combined with noggin generates anterior-
+posterior neural pattern. Development 121, 3627-3636.
+Massague, J., Chen, Y.G., 2000. Controlling TGF-beta signaling. Genes
+Dev. 14, 627-644.
+Miyazawa, K., Shinozaki, M., Hara, T., Furuya, T., Miyazono, K., 2002.
+Two major Smad pathways in TGF-beta superfamily signalling. Genes
+Cells 7, 1191-1204.
+Miyazono, K., 2000. Positive and negative regulation of TGF-beta
+signaling. J. Cell Sci. 113 (Pt. 7), 1101-1109.
+Nifuji, A., Noda, M., 1999. Coordinated expression of noggin and bone
+morphogenetic proteins (BMPs) during early skeletogenesis and
+induction of noggin expression by BMP-7. J. Bone Miner. Res. 14,
+2057-2066.
+Piepenburg, O., Grimmer, D., Williams, P.H., Smith, J.C., 2004.
+Activin redux: specification of mesodermal pattern in Xenopus by
+graded concentrations of endogenous activin B. Development 131,
+4977-4986.
+Schier, A.F., 2003. Nodal signaling in vertebrate development. Annu. Rev.
+Cell Dev. Biol. 19, 589-621.
+Shi, Y., Massague, J., 2003. Mechanisms of TGF-beta signaling from cell
+membrane to the nucleus. Cell 113, 685-700.
+Sive, H.L., Grainger, R.M., Harland, R.M., 2000. Early Development of
+Xenopus laevis: A Laboratory Manual. Cold Spring Harbor Laboratory
+Press, Cold Spring Harbor, NY.
+Sokol, S., Christian, J.L., Moon, R.T., Melton, D.A., 1991. Injected Wnt RNA
+induces a complete body axis in Xenopus embryos. Cell 67, 741-752.
+von Bubnoff, A., Cho, K.W., 2001. Intracellular BMP signaling regulation
+in vertebrates: pathway or network? Dev. Biol. 239, 1-14.
+Wardle, F.C., Sive, H.L., 2003. What's your position? The Xenopus cement
+gland as a paradigm of regional specification. BioEssays 25, 717-726.
+Weinstein, D.C., Hemmati-Brivanlou, A., 1999. Neural induction. Annu.
+Rev. Cell Dev. Biol. 15, 411-433.
+Whitman, M., 1998. Smads and early developmental signaling by the
+TGFbeta superfamily. Genes Dev. 12, 2445-2462.
+Wiater, E., Vale, W., 2003. Inhibin is an antagonist of bone morphogenetic
+protein signaling. J. Biol. Chem. 278, 7934-7941.
+Wilson, P.A., Hemmati-Brivanlou, A., 1995. Induction of epidermis and
+inhibition of neural fate by Bmp-4. Nature 376, 331-333.
+Wilson, P.A., Melton, D.A., 1994. Mesodermal patterning by an inducer
+gradient depends on secondary cell-cell communication. Curr. Biol. 4,
+676-686.
+Wittbrodt, J., Rosa, F.M., 1994. Disruption of mesoderm and axis formation
+in fish by ectopic expression of activin variants: the role of maternal
+activin. Genes Dev. 8, 1448-1462.
+Yeo, C., Whitman, M., 2001. Nodal signals to Smads through Cripto-
+dependent and Cripto-independent mechanisms. Mol. Cell 7, 949-957.
+Zhao, R., Lawler, A.M., Lee, S.J., 1999. Characterization of GDF-10
+expression patterns and null mice. Dev. Biol. 212, 68-79.

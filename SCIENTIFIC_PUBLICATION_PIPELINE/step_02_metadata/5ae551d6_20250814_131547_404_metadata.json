@@ -1,0 +1,27 @@
+{
+  "document_type": "journal-article",
+  "title": "Radiocarbon identification of illegal ivory",
+  "authors": [
+    "Richard J. Fitzgerald"
+  ],
+  "journal": "Physics Today",
+  "publication_year": 2013,
+  "doi": "10.1063/pt.3.2069",
+  "abstract": null,
+  "extraction_confidence": "high",
+  "filename": "5ae551d6_20250814_131547_404.pdf",
+  "extraction_timestamp": "2025-08-14T13:17:43.114914",
+  "extraction_method": "gemini_1.5_flash",
+  "pages_analyzed": 2,
+  "publication_date": "2013-08-01",
+  "page_range": "18-18",
+  "volume": "66",
+  "issue": "8",
+  "references_count": 0,
+  "publisher": "AIP Publishing",
+  "issn": "0031-9228",
+  "crossref_data": true,
+  "enrichment_method": "crossref_api",
+  "crossref_enriched": true,
+  "enrichment_timestamp": "2025-08-14T13:26:56.632007"
+}

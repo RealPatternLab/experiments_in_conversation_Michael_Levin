@@ -1,0 +1,33 @@
+{
+  "document_type": "journal-article",
+  "title": "Transcriptomic and Metabolomic Profiling Identifies Calcium-Dependent Signaling Mechanisms As a Novel and Exploitable Target to Overcome Anti-CD20 Resistance in Non-Hodgkin Lymphoma (NHL)",
+  "authors": [
+    "Ravi Dashnamoorthy",
+    "Saheli Sarkar",
+    "Afshin Beheshti",
+    "Maisarah Mokhtar",
+    "Tali Konry",
+    "Michael Levin",
+    "Andrew M. Evens"
+  ],
+  "journal": "Blood",
+  "publication_year": 2019,
+  "doi": "10.1182/blood-2019-126539",
+  "abstract": null,
+  "extraction_confidence": "high",
+  "filename": "1232ec9d_20250814_131548_364.pdf",
+  "extraction_timestamp": "2025-08-14T13:16:14.746053",
+  "extraction_method": "gemini_1.5_flash",
+  "pages_analyzed": 2,
+  "publication_date": "2019-11-13",
+  "page_range": "1511-1511",
+  "volume": "134",
+  "issue": "Supplement_1",
+  "references_count": 0,
+  "publisher": "American Society of Hematology",
+  "issn": "0006-4971",
+  "crossref_data": true,
+  "enrichment_method": "crossref_api",
+  "crossref_enriched": true,
+  "enrichment_timestamp": "2025-08-14T13:27:05.594720"
+}

@@ -1,0 +1,239 @@
+{
+  "metadata": {
+    "document_type": "journal-article",
+    "title": "Radiocarbon identification of illegal ivory",
+    "authors": [
+      "Richard J. Fitzgerald"
+    ],
+    "journal": "Physics Today",
+    "publication_year": 2013,
+    "doi": "10.1063/pt.3.2069",
+    "abstract": null,
+    "extraction_confidence": "high",
+    "filename": "5ae551d6_20250814_131547_404.pdf",
+    "extraction_timestamp": "2025-08-14T13:17:43.114914",
+    "extraction_method": "gemini_1.5_flash",
+    "pages_analyzed": 2,
+    "publication_date": "2013-08-01",
+    "page_range": "18-18",
+    "volume": "66",
+    "issue": "8",
+    "references_count": 0,
+    "publisher": "AIP Publishing",
+    "issn": "0031-9228",
+    "crossref_data": true,
+    "enrichment_method": "crossref_api",
+    "crossref_enriched": true,
+    "enrichment_timestamp": "2025-08-14T13:26:56.632007"
+  },
+  "chunks": [
+    {
+      "text": "Bioelectrical signaling has a rich history.",
+      "section": "Bioelectrical signaling has rich history",
+      "primary_topic": "Bioelectricity",
+      "secondary_topics": [
+        "bioelectric signaling",
+        "history of bioelectricity",
+        "cell communication",
+        "electrical signaling"
+      ],
+      "chunk_summary": "Bioelectrical signaling is a field with a long and established history.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The report on bioelectrical signaling work done by Michael Levin and colleagues (PHYSICS TODAY, March 2013, page 16) omits the fact that better results were obtained many years ago. R. O. Becker considered axial electric signals in light of the ability of salamanders to regenerate limbs.",
+      "section": "The report on bioelectrical signaling",
+      "primary_topic": "Bioelectric signaling",
+      "secondary_topics": [
+        "regeneration",
+        "salamanders",
+        "axial electric signals",
+        "limb regeneration",
+        "prior work",
+        "historical context"
+      ],
+      "chunk_summary": "A Physics Today report on Levin's work on bioelectric signaling omits earlier research by R.O. Becker on the role of axial electric signals in salamander limb regeneration.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "16"
+    },
+    {
+      "text": "Marino used the biological effects of electrical signals to stimulate the regrowth of portions of amputated limbs in rats. Becker also demonstrated that those limbs usually do not regenerate. He and others showed that cartilage and bone are electrically active.",
+      "section": "Marino",
+      "primary_topic": "Bioelectric Regeneration",
+      "secondary_topics": [
+        "electrical stimulation",
+        "limb regeneration",
+        "rats",
+        "cartilage",
+        "bone",
+        "bioelectricity"
+      ],
+      "chunk_summary": "Electrical stimulation can induce limb regeneration in rats, and cartilage and bone exhibit electrical activity.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Levin responds: Roderic Lakes adds an important point; the modern work on bioelectricity was indeed inspired by that of earlier researchers in the field, including not only Robert Becker and",
+      "section": "Levin responds",
+      "primary_topic": "Bioelectricity",
+      "secondary_topics": [
+        "history of bioelectricity",
+        "Robert Becker",
+        "research inspiration",
+        "scientific lineage"
+      ],
+      "chunk_summary": "Modern bioelectricity research builds upon the work of earlier scientists like Robert Becker.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Andrew Marino and Elmer Lund are mentioned.",
+      "section": "Andrew Marino but also Elmer Lund",
+      "primary_topic": "Researchers",
+      "secondary_topics": [
+        "Andrew Marino",
+        "Elmer Lund",
+        "bioelectricity"
+      ],
+      "chunk_summary": "The section mentions researchers Andrew Marino and Elmer Lund.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Harold Burr, Lionel Jaffe, Harold Beams, and many others contributed to the historical study of bioelectricity. However, the results discussed in Johanna Miller's story are very different from prior work in several ways; for brevity, I mention just a few.",
+      "section": "Harold Burr",
+      "primary_topic": "Bioelectricity History",
+      "secondary_topics": [
+        "Harold Burr",
+        "Lionel Jaffe",
+        "Harold Beams",
+        "Johanna Miller",
+        "bioelectricity",
+        "historical context"
+      ],
+      "chunk_summary": "While pioneering work by Burr, Jaffe, and Beams laid the groundwork for bioelectricity research, recent findings presented in Miller's work diverge significantly from these earlier studies.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "The recent research reveals signaling contained within the spatial distribution of cell membrane resting potential (Vmem) across tissues. This differs significantly from previous studies that focused on extracellular electric fields and ion currents.",
+      "section": "First",
+      "primary_topic": "Bioelectric signaling",
+      "secondary_topics": [
+        "Vmem",
+        "resting potential",
+        "spatial distribution",
+        "extracellular electric fields",
+        "ion currents",
+        "cell membrane"
+      ],
+      "chunk_summary": "Bioelectric signaling is revealed through the spatial distribution of cell membrane resting potential (Vmem), distinct from previously studied extracellular electric fields and ion currents.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Second, this work merges the control of shape in vivo by bioelectric gradients with molecular biology techniques. For the first time, we know the proteins that create and control the gradients, and we know the exact molecular steps that convert those physical events to downstream genetic targets. The field has advanced over earlier work by mechanistically linking physiological changes to the crucial molecular-genetic pathways that they control.",
+      "section": "Second",
+      "primary_topic": "Bioelectric gradients",
+      "secondary_topics": [
+        "molecular biology",
+        "in vivo",
+        "proteins",
+        "genetic targets",
+        "physiological changes",
+        "molecular-genetic pathways"
+      ],
+      "chunk_summary": "This research integrates bioelectric gradients' control of shape in vivo with molecular biology techniques, identifying the proteins responsible for gradient creation and control, and the molecular steps linking these physical events to downstream genetic targets.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "In Becker's work, the molecular mechanisms that enable electric fields to control regeneration were a complete mystery.",
+      "section": "Second",
+      "primary_topic": "Becker's work",
+      "secondary_topics": [
+        "electric fields",
+        "regeneration",
+        "molecular mechanisms"
+      ],
+      "chunk_summary": "Previous research by Becker lacked understanding of the molecular mechanisms by which electric fields control regeneration.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Third, while work with applied electric fields had shown impressive ability to turn on a regenerative response, the recent results are the first demonstration of reprogramming tissues into entirely different organs. The remarkable ability of Vmem levels to create complete organs such as eyes in nonstandard places or to suppress tumor formation not only reveals completely novel aspects of the role of bioelectricity in the specification of growth and form but also suggests very exciting new opportunities for regenerative biomedicine.",
+      "section": "Third",
+      "primary_topic": "Bioelectric Reprogramming",
+      "secondary_topics": [
+        "electric fields",
+        "regeneration",
+        "Vmem",
+        "organogenesis",
+        "tumor suppression",
+        "bioelectricity",
+        "biomedicine"
+      ],
+      "chunk_summary": "Applied electric fields can trigger regeneration, and recent findings demonstrate the ability of Vmem levels to reprogram tissues into entirely different organs, offering new possibilities for regenerative biomedicine.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Correction",
+      "section": "Correction",
+      "primary_topic": "Correction",
+      "secondary_topics": [
+        "erratum",
+        "amendment",
+        "retraction",
+        "publication"
+      ],
+      "chunk_summary": "This section indicates a correction to the publication.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "August 2013, page 38—In box 2, the longitude and latitude labels in the figure were reversed.",
+      "section": "August",
+      "primary_topic": "Erratum",
+      "secondary_topics": [
+        "correction",
+        "figure",
+        "longitude",
+        "latitude",
+        "labels",
+        "error"
+      ],
+      "chunk_summary": "A correction is noted for a figure in the August 2013 issue, page 38, where longitude and latitude labels were reversed in box 2.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "38"
+    }
+  ],
+  "processed_at": "2025-08-14T13:54:52.283542",
+  "chunk_count": 12,
+  "processing_method": "document_splitting"
+}

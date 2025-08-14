@@ -1,0 +1,314 @@
+Protocol to implement a computational pipeline for biomedical discovery based on a biomedical knowledge graph
+
+Chang Su, Yu Hou, Michael Levin, Rui Zhang, Fei Wang
+suchangsc10@gmail.com (C.S.)
+few2001@med.cornell.edu (F.W.)
+
+Highlights
+* A computational pipeline for biomedical knowledge discovery based on graph learning
+* A case study for in silico drug repurposing
+* Interpreting prediction results based on knowledge graph structure
+
+Biomedical knowledge graphs (BKGs) provide a new paradigm for managing abundant biomedical knowledge efficiently. Today's artificial intelligence techniques enable mining BKGs to discover new knowledge. Here, we present a protocol for implementing a computational pipeline for biomedical knowledge discovery (BKD) based on a BKG. We describe steps of the pipeline including data processing, implementing BKD based on knowledge graph embeddings, and prediction result interpretation. We detail how our pipeline can be used for drug repurposing hypothesis generation for Parkinson's disease.
+
+Publisher's note: Undertaking any experimental protocol requires adherence to local institutional guidelines for laboratory safety and ethics.
+
+[PAGE 2] SUMMARY
+Biomedical knowledge graphs (BKGs) provide a new paradigm for managing abundant biomedical knowledge efficiently. Today's artificial intelligence techniques enable mining BKGs to discover new knowledge. Here, we present a protocol for implementing a computational pipeline for biomedical knowledge discovery (BKD) based on a BKG. We describe steps of the pipeline including data processing, implementing BKD based on knowledge graph embeddings, and prediction result interpretation. We detail how our pipeline can be used for drug repurposing hypothesis generation for Parkinson's disease.
+
+For complete details on the use and execution of this protocol, please refer to Su et al.¹
+
+[PAGE 2] BEFORE YOU BEGIN
+This protocol will give a step-by-step guide to develop a computational pipeline for biomedical knowledge discovery (BKD) based on a comprehensive BKG, the iBKH. We formulate the BKD task in the iBKH as the procedure to predict entities that are potentially linked to the target entity. This protocol includes the following steps including data collection, Python and package installation, knowledge graph embedding, knowledge discovery and evaluation, and prediction result interpretation. We demonstrate a use case of our pipeline for drug repurposing hypothesis generation for Parkinson's disease (PD), i.e., predicting drug entities that could potentially link to the PD entity in the iBKH. This protocol can be also adapted to other BKD tasks such as prediction of disease risk genes ²,³ and drug-drug interaction discovery, ⁴,⁵ etc.
+
+[PAGE 2] Data collection
+Timing: 15 min
+
+1. Download the project zip file from GitHub: https://github.com/wcm-wanglab/iBKH/tree/main/iBKH-KD-protocol
+2. Unpack the downloaded file.
+3. Download the latest version of iBKH knowledge graph (KG) data (entities and relations) at: https://github.com/wcm-wanglab/iBKH/tree/main/iBKH-KD-protocol.
+4. Put the downloaded files (codes and data) following the structure as shown in Figure 1.
+
+[PAGE 3] Python and package installation
+Timing: 30 min
+
+5. Go to the Anaconda webpage at https://www.anaconda.com/download, download appropriate Anaconda installer according to your computer system, and install it. (Note: please choose Anaconda installer with Python version no later than version 3.7.0)
+6. Install required Python packages (NumPy, pandas, scikit-learn, neo4j, networkx) as following:
+   ```
+   >pip install numpy
+   >pip install pandas
+   >pip install sklearn
+   >pip install neo4j
+   >pip install networkx
+   ```
+7. Install PyTorch.
+   Note: Installation of PyTorch should follow instructions at: https://pytorch.org.
+   a. Navigate to the "PyTorch Build" section, and there, choose the "Stable" version from the available choices.
+   b. Move to the "Your OS" section and choose the appropriate operating system you're using.
+   c. Decide on the installation approach you intend to employ (we recommend either "pip" or "conda").
+   d. Indicate that you are working with Python as your chosen programming language for PyTorch.
+   Note: For this procedure, we don't need a GPU, so proceed to select the "Default" option within the "Compute Platform" category.
+   e. Once these selections are made, copy the automatically generated command under the "Run this Command" section and execute it in the command line (for Windows and Linux users) or in the terminal (for Mac OS users).
+   Note: This will initiate the installation process.
+8. Install the DGL-KE (Deep Graph Library - Knowledge Embedding) package. DGL-KE is a Python-based implementation for the deep learning (DL)-based knowledge graph embedding algorithms. Installation of DGL-KE follows instructions at: https://github.com/awslabs/dgl-ke. Specifically, run the following commands to initiate the installation process for DGL-KE:
+   ```
+   >sudo pip install dgl
+   >sudo pip install dgl-ke
+   ```
+
+[PAGE 4] STEP-BY-STEP METHOD DETAILS
+The following are detailed instructions on how to implement the biomedical knowledge discovery pipeline. We show examples of each step in a tutorial Jupyter Notebook project called "Knowledge_Discovery_Pipeline.ipynb", which can be found in our GitHub repository.
+
+[PAGE 4] iBKH data preprocessing
+Timing: 30 min
+Note: This section introduces steps for preprocessing the iBKH BKG data.
+
+This protocol uses a comprehensive BKG we built, termed iBKH.¹ Figure 2 illustrates the schema of iBKH. Currently, iBKH includes 11 entity types (including anatomy, disease, drug, gene, molecule, symptom, pathway, side effect, dietary supplement ingredient [DSI], dietary supplement product [DSP], and dietary's therapeutic class [TC]) and 45 relation types within different entity pairs such as Drug-Disease (DDi), Drug-Drug (DD), Drug-Gene (DG), etc.
+
+In a BKG, like the iBKH, a triplet is the smallest unit for storing information. Typically, a triplet can be formulated as (h, r, t), where h and t are the head and tail entities, and r is the relation linking h to t. This section describes the steps for iBKH KG data preprocessing, i.e., extracting and formatting triplets from the iBKH, which will be used to train knowledge graph embedding models.
+
+
+[PAGE 5] 1. Open the Anaconda-Navigator and launch the Jupyter Notebook.
+2. In the Jupyter Notebook interface, run the following codes to import required packages.
+   ```
+   >import pandas as pd
+   >import numpy as np
+   >import pickle
+   >import torch as th
+   >import torch.nn.functional as fn
+   >import os
+   >import sys
+   >sys.path.append('.')
+   >import funcs.KG_processing as KG_processing
+   ```
+
+[PAGE 4/5] Knowledge Graph Embedding Learning
+Timing: variable depending on hardware, approximately 8-24 h
+Note: This section introduces steps for learning embedding vectors for entities and relations in the iBKH.
+
+Knowledge graph embedding aims to learn machine-readable embedding vectors for entities and relations in a BKH (e.g., the iBKH) while preserving the graph structure. ⁹,¹⁰ We engage four deep learning-based knowledge graph embedding algorithms implemented in the DGL-KE, including TransE,¹¹ TransR,¹² Complex,¹³ and DistMult.¹⁴ This section describes the steps for training the models.
+
+4. This step trains each knowledge graph embedding model (TransE, TransR, Complex, and DistMult) using the iBKH.
+   a. Open command line (Windows OS and UNIX OS) or terminal (MAC OS) and change directory to the project as below.
+      ```
+      >cd [your file path]/iBKH-KD-protocol
+      ```
+   b. Train and evaluate the knowledge graph embedding model using below command:
+      ```
+      > DGLBACKEND=pytorch \
+      dglke_train--dataset iBKH --data_path./data/dataset \
+      --data_files training_triplets.tsv \
+      validation_triplets.tsv \
+      testing_triplets.tsv \
+      --format raw_udd_hrt --model_name [model name] \
+      --batch_size [batch size] --hidden_dim [hidden dim] \
+      --neg_sample_size [neg sample size] --gamma [gamma] \
+      --lr [learning rate] --max_step [max step] \
+      --log_interval [log interval] \
+      --batch_size_eval [batch size eval] \
+      -adv --regularization_coef [regularization coef] \
+      --num_thread [num thread] --num_proc [num proc] \
+      --neg_sample_size_eval [neg sample size eval] \
+      --save_path./data/embeddings --test
+      ```
+      Note: We use multiple measurements to evaluate model performances including: HITS@k, the average number of times the positive triplet is among the k highest ranked triplets; Mean Rank (MR), the average rank of the positive triplets; and Mean Reciprocal Rank (MRR), the average reciprocal rank of the positive instances. Higher values of HITS@k and MRR and a lower value of MR indicate good performance, and vice versa. Some useful arguments of the DGL-KE command are listed in Table 1. Detailed instructions for the DGL-KE commands can be found at: https://dglke.dgl.ai/doc/train.html.
+
+   c. Once the model can achieve a desirable performance in the testing set, we can re-train the model using the whole dataset by running:
+      ```
+      > DGLBACKEND=pytorch \
+      dglke_train--dataset iBKH--data_path./data/dataset \
+      --data_files whole_triplets.tsv \
+      --format raw_udd_hrt --model_name [model name] \
+      --batch_size [batch size] --hidden_dim [hidden dim] \
+      --neg_sample_size [neg sample size] --gamma [gamma] \
+      --lr [learning rate] --max_step [max step] \
+      --log_interval [log interval] \
+      -adv --regularization_coef [regularization coef] \
+      --num_thread [num thread] --num_proc [num proc] \
+      --save_path./data/embeddings
+      ```
+      Note: This will generate two output files for each model: "iBKH_[model name]_entity.npy", containing the low dimension embeddings of entities in iBKH and "iBKH_[model name]_relation.npy", containing the low dimension embeddings of relations in iBKH. These embeddings can be used in downstream BKD tasks.
+
+We run above procedures based on TransE, TransR, Complex, and DistMult, respectively, to gain embedding vectors of entities and relations in the iBKH.
+
+Note: The user may repeat the Step 4b multiple times to find the optimal hyperparameters of each model. Here, we share the optimal hyperparameter values we found in our experiments as listed in Table 2. For simplicity, the user can directly use the suggested hyperparameter values to train the models. In addition, running time of the knowledge graph embedding procedure varies, depending on hardware used. For our experiments, we used a machine equipped with an Intel i7-7800X CPU, boasting 6 cores and 12 threads, with a fundamental clock speed of 3.5 GHz, coupled with 62 GB of RAM. Training the four knowledge graph embedding models within the dataset took approximately 8 hours in our experiment. The required running time could extend to 24 hours or even more if a user expects to tune the models to find the optimal hyperparameters for enhancing model performance.
+
+
+[PAGE 8/9] Biomedical knowledge discovery - biomedical hypothesis generation
+Timing: 30 min
+Note: This section introduces the implementation of BKD based on knowledge graph embeddings learned from iBKH.
+
+Here, we showcase a case study of drug repurposing hypothesis generation for Parkinson's disease (PD).
+
+5. Turn to the Jupyter Notebook interface and run the following script to import required packages.
+   ```python
+   from funcs.KG_link_pred import generate_hypothesis, generate_hypothesis_ensemble_model
+   ```
+
+6. Define the PD entity using
+   ```python
+   PD = ["parkinson's disease", "late onset parkinson's disease"]
+   ```
+
+[PAGE 10] Note: Here we collect a list of PD terms. These PD terms can be obtained in the entity vocabularies in the "data/iBKH/entity" folder.
+
+7. The task is to predict drug entities that don't have "treats" and "palliates" relationships with PD in the iBKH but can potentially treat or palliate PD. Therefore, we define a relation type list:
+   ```python
+   r_type = ["Treats_DDi", "Palliates_DDi"]
+   ```
+   Note: More relation types can be found in the "data/iBKH/relation" folder.
+
+8. Predict repurposable drug candidates for PD (in this example, we use embedding vectors based on the TransE model for prediction):
+   ```python
+   proposed_df = generate_hypothesis(target_entity=PD,
+                                     candidate_entity_type='drug',
+                                     relation_type=r_type,
+                                     embedding_folder='data/embeddings',
+                                     method='transE_12',
+                                     kg_folder='data/iBKΗ',
+                                     triplet_folder='data/triplets',
+                                     topK=100,
+                                     save_path='output',
+                                     save=True,
+                                     without_any_rel=False)
+   ```
+   Running the above code will result in an output CSV file within the "output" folder, which stores top-100 ranked repurposable drug candidates for PD based on the TransE model.
+   Note: Please refer to Table 3 for detailed information regarding arguments of the function.
+
+
+9. Using the code in Step 8 can make predictions based on a single knowledge graph embedding model (TransE in the example). To enhance prediction performance, we also proposed an ensemble model, which combines the four embedding algorithms to make predictions. In our preliminary work, we have demonstrated that the ensemble model can improve knowledge discovery performance in iBKH.¹ The following code introduces the usage of the ensemble model to predict repurposable drug candidates for PD.
+
+[PAGE 11] 
+   ```python
+   proposed_df = generate_hypothesis_ensemble_model(target_entity=PD,
+                                                    candidate_entity_type='drug',
+                                                    relation_type=r_type,
+                                                    embedding_folder='data/embeddings',
+                                                    kg_folder='data/iBKΗ',
+                                                    triplet_folder='data/triplets',
+                                                    topK=100,
+                                                    save_path='output',
+                                                    save=True,
+                                                    without_any_rel=False)
+   ```
+   Running the above code will result in an output CSV file within the "output" folder, which stores top-100 ranked repurposable drug candidates for PD based on the ensemble model.
+   Note: Please refer to Table 3 for detailed information regarding arguments of the function.
+
+[PAGE 11/12] Prediction result interpretation
+Timing: 30 min
+Note: This section introduces the procedure of interpreting the prediction results based on the iBKH.
+
+We extract the shortest paths that connect the target entity (e.g., PD) with the predicted entities (e.g., the predicted repurposing drug candidates of PD) to generate a contextual subnetwork.
+
+10. Taking the PD drug repurposing task as an example, we can generate the contextual subnetwork surrounding PD and some predicted repurposing drug candidates as below.
+    a. Import required package.
+       ```python
+       from funcs.knowledge_visualization as kv
+       ```
+    b. Specify the predicted drug candidates to interpret. Here, we focus on the top four candidates predicted using the ensemble model, including Glutathione, Clioquinol, Steroids, and Taurine.
+       ```python
+       drug_list = ['Glutathione', 'Clioquinol', 'Steroids', 'Taurine']
+       ```
+    c. Create a contextual subnetwork linking PD and the drug candidates.
+       ```python
+       kv.subgraph_visualization(target_type='Disease',
+                                target_list=PD,
+                                predicted_type='Drug',
+                                predicted_list=drug_list,
+                                neo4j_url="neo4j://54.210.251.104:7687",
+                                username="neo4j",
+                                password="password",
+                                alpha=1.5,
+                                k=0.8,
+                                figsize=(15, 10),
+                                save=True)
+       ```
+       This will result in a figure saved as a PDF file in the "output" folder. Please refer to Table 4 for detailed information regarding arguments of the function.
+
+Note: The shortest path query is based on iBKH deployed using the Neo4j, an efficient graph database. Please refer to https://github.com/wcm-wanglab/iBKH#neo4j-deployment for detailed information if you want to create your own iBKH Neo4j instance.
+
+
+[PAGE 12] EXPECTED OUTCOMES
+The expected outcome of this protocol is the predicted new knowledge.
+
+Following instructions in Steps 1-4, we could extract iBKH knowledge graph data and conduct knowledge graph embedding with different algorithms including TransE, TransR, complex, and DistMult. First, each model will be trained in the training set and evaluated in the testing set (see Step 3). This will result in link prediction performance of the embedding models. Of note, we can repeat Step 4 multiple times to find the optimal model hyperparameters (see Table 1) to enhance the learned embeddings. For convenience, we suggest the optimal hyperparameter values we found as listed in Table 2. Given this, we could re-train the models using the whole data set, which will result in entity and relation embedding vectors saved in the .npy files.
+
+[PAGE 12/13] LIMITATIONS
+First, we used our iBKH knowledge graph in this protocol. iBKH has integrated data from a wide spectrum of sources; however, the information contained therein can still be incomplete due to the volume and speed of the new biomedical knowledge that has been generated every day.¹ For instance, knowledge regarding entities like protein, protein structure, complex, mutation, etc. are important resources but haven't been included into iBKH yet. This may limit the capacity of our approach in discovering knowledge related to these entities. To address this, we will make curating and adding new information into iBKH a continuous effort to enhance biomedical knowledge discovery.
+
+Second, this protocol leveraged knowledge graph embedding algorithms including TransE, TransR, complex, and DistMult which have demonstrated state-of-the-art performances. Beyond these, other models like graph neural networks have also demonstrated significant performance in knowledge discovery based on knowledge graph.¹⁵,¹⁶ We will incorporate more models to advance our pipeline in the future.
+
+Third, it is important to validate the novel knowledge discovered from iBKH. The current pipeline supports generating a subnetwork based on shortest paths linking the target and predicted entities.
+
+
+[PAGE 13/14] TROUBLESHOOTING
+Problem 1: Fail to install the required Python packages (before you begin - python and packages installation).
+
+Potential solution: Create a Conda virtual environment and install the packages following our instruction. Detailed information for creating a Conda virtual environment can be found at: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html.
+
+Problem 2: iBKH currently contains over 2 million entities and 50 million relations among them. Training the knowledge graph embedding algorithms in such a huge graph data is time-consuming and the running time highly depends on hardware used. (step-by-step method details - knowledge graph embedding learning).
+
+Potential solution: To address this issue to obtain the embedding vectors of entities and relations efficiently, potential solutions include:
+* Train the knowledge graph embedding models using a high-performance computation platform equipped with more CPU cores (≥ 4) with high processing speed and memory ≥ 16GB.
+* Use fewer triplet types. For instance, in the drug repurposing task, to save computation resources, we can use `included_pair_type = ['DDi', 'DiG', 'DG', 'GG', 'DD', 'DiDi']` (see Step 3 in the instruction).
+* Use our suggested hyperparameter values to train the models (Table 2).
+* Use our pre-trained embeddings. Specifically, download the pre-trained embedding vectors at https://drive.google.com/drive/folders/1HYDepbB2Vb2fMaHI_WjPwhWikRNJ5Lq5?usp=share_link, and put the entire folder into the "./iBKH-KD-protocol/data" directory. Then, the user can move to Step 5 for knowledge discovery.
+
+
+[PAGE 14/15] Problem 3: In knowledge graph embedding model fine-tuning, operating the DGL-KE command in Step 4 in a large hyperparameter searching space is difficult. (step-by-step method details - knowledge graph embedding learning).
+
+Potential solution: We can create a terminal-executable Shell script to conduct grid search in the hyperparameter space. For instance, we can create a Shell script named "fine-tune.sh" as below.
+```bash
+#!/bin/bash
+seq_num=0
+for embed_size in 200 400
+do
+  for lr in 0.001 0.005 0.01 0.05 0.1
+  do
+    echo "$embed_size; $lr"
+    DGLBACKEND=pytorch \
+    dglke_train --dataset iBKH --data_path./data/dataset \
+    --data_files whole_triplets.tsv --format raw_udd_hrt \
+    --model_name [model name] --batch_size [batch size] \
+    --hidden_dim $embed_size --gamma [gamma] \
+    --lr $lr --max_step [max step] \
+    --log_interval [log interval] -adv \
+    --regularization_coef [regularization coef] \
+    --num_thread [num thread] --num_proc [num proc]
+  done
+done
+```
+Then, turn to the command line (Windows OS and UNIX OS) or terminal (MACOS), and run the commands below:
+```bash
+sudo chmod 777 fine-tune.sh
+sh fine-tune.sh
+```
+
+Problem 4: Entities (nodes) and relations (edges) appear disorganized and improperly configured in the subnetwork visualization (step-by-step method details - prediction result interpretation).
+
+Potential solution: Increase `alpha`, `k`, and `target_size_ratio`, and decrease `nsize` in the `subgraph_visualization` function (Table 4).
+
+Problem 5: Fail to generate subnetwork for prediction result interpretation due to failure of access to iBKH instance in AWS. (step-by-step method details - prediction result interpretation).
+
+Potential solution: Create a new iBKH instance using an Amazon Web Services server (AWS) or local server. Detailed instructions can be found at: https://github.com/wcm-wanglab/iBKH#neo4j-deployment. Modify the Neo4j login information ("neo4j_url", "user_name", and "password") accordingly to generate and visualize the subnetwork for interpreting results.
+
+
+[PAGE 15] RESOURCE AVAILABILITY
+Lead contact: Further information and requests for resources and reagents should be directed to and will be fulfilled by the lead contact, Prof. Fei Wang (few2001@med.cornell.edu).
+
+Materials availability: This study did not generate any reagents.
+
+Data and code availability:
+* The harmonized entity and relation source files for iBKH knowledge graph in CSV (comma-separated values) format are publicly available online at https://github.com/wcm-wanglab/iBKH.
+* The computer codes are publicly available online at https://github.com/wcm-wanglab/iBKH/tree/main/iBKH-KD-protocol.
+* Any additional information required to reanalyze the data reported in this paper is available from the lead contact upon request.
+
+[PAGE 16/17] ACKNOWLEDGMENTS
+The authors would like to acknowledge the support from National Science Foundation (NSF; 1750326 and 2212175) and National Institutes of Health (NIH; R01AG076234, R01AG076448, RF1AG072449, R01AG080991, R01AG080624, R01AG078154, and R01AT009457) for this research.
+
+
+[PAGE 16/17] AUTHOR CONTRIBUTIONS
+Conceptualization, F.W. and C.S.; writing, C.S. and Y.H.; review and editing, F.W., C.S., Y.H., M.L., and R.Z.; funding acquisition, F.W. and R.Z.; supervision, F.W. and C.S.
+
+[PAGE 16/17] DECLARATION OF INTERESTS
+The authors declare no competing interests.
