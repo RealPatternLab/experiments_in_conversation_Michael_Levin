@@ -153,12 +153,12 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
             if doi and doi != "Unknown":
                 doi_link = f"<a href='https://doi.org/{doi}' target='_blank'>[DOI]</a>"
             
-            # Combine links
-            links = [pdf_link]
-            if doi_link:
-                links.append(doi_link)
-            
-            return f"<sup>{' '.join(links)}</sup>"
+            # Combine links - use plain text with URLs for now to debug
+            if pdf_filename and pdf_filename != "Unknown":
+                github_raw_url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/SCIENTIFIC_PUBLICATION_PIPELINE/step_07_archive/{pdf_filename}"
+                return f"<sup>[PDF: {github_raw_url}] [DOI: https://doi.org/{doi}]</sup>" if doi and doi != "Unknown" else f"<sup>[PDF: {github_raw_url}]</sup>"
+            else:
+                return f"<sup>[{title} ({year})]</sup>"
         else:
             return match.group(0)  # Return original if source not found
     
