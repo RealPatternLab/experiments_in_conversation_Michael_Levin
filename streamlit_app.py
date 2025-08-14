@@ -672,9 +672,18 @@ def main():
         # Show stats
         stats = st.session_state.retriever.get_collection_stats()
         
-
         # Sidebar
-        st.sidebar.markdown(f"""<h3><img src='{thinking_box}' alt="Thinking Box" style="width: 240px; height: 270px; border-radius: 10px;"></h3>""", unsafe_allow_html=True)
+        st.sidebar.markdown(f"""
+        <div style="text-align: center; margin-bottom: 1rem;">
+            <img src='{thinking_box}' alt="Thinking Box" style="
+                width: 240px; 
+                height: 270px; 
+                border-radius: 10px;
+                background: transparent;
+                mix-blend-mode: multiply;
+            ">
+        </div>
+        """, unsafe_allow_html=True)
         st.sidebar.metric("Total Engrams Indexed", stats['total_chunks'])
         st.sidebar.metric("FAISS Indices", stats['indices_loaded'])
         
