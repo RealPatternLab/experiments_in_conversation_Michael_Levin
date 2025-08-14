@@ -137,35 +137,21 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
             
             # PDF citation with GitHub raw URL
             pdf_filename = source_info.get('sanitized_filename')
-            pdf_link = ""
-            
-            if pdf_filename and pdf_filename != "Unknown":
-                # Create GitHub raw URL to step_07_archive
-                github_raw_url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/SCIENTIFIC_PUBLICATION_PIPELINE/step_07_archive/{pdf_filename}"
-                pdf_link = f"<a href='{github_raw_url}' target='_blank' title='PDF: {pdf_filename}'>[PDF]</a>"
-            else:
-                # Fallback if filename not found
-                pdf_link = f"<a href='#' onclick='alert(\"PDF not found for: {title}\")' target='_blank'>[PDF]</a>"
-            
-            # DOI link (if available)
             doi = source_info.get('doi', '')
-            doi_link = ""
-            if doi and doi != "Unknown":
-                doi_link = f"<a href='https://doi.org/{doi}' target='_blank'>[DOI]</a>"
             
-            # Combine links - use plain text with URLs for now to debug
+            # Create clickable hyperlinks
             if pdf_filename and pdf_filename != "Unknown":
                 github_raw_url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/SCIENTIFIC_PUBLICATION_PIPELINE/step_07_archive/{pdf_filename}"
-                # Format authors properly for display
-                authors = source_info.get('authors', [])
-                if isinstance(authors, list) and authors:
-                    authors_str = ', '.join(authors[:2])  # Show first 2 authors
-                    if len(authors) > 2:
-                        authors_str += " et al."
-                else:
-                    authors_str = "Unknown"
                 
-                return f"<sup>[PDF: {github_raw_url}] [DOI: https://doi.org/{doi}]</sup>" if doi and doi != "Unknown" else f"<sup>[PDF: {github_raw_url}]</sup>"
+                # Create clickable PDF link
+                pdf_link = f"<a href='{github_raw_url}' target='_blank' style='color: #0066cc; text-decoration: underline;' title='Download PDF: {pdf_filename}'>[PDF]</a>"
+                
+                # Create clickable DOI link if available
+                doi_link = ""
+                if doi and doi != "Unknown":
+                    doi_link = f" <a href='https://doi.org/{doi}' target='_blank' style='color: #0066cc; text-decoration: underline;' title='View on DOI.org'>[DOI]</a>"
+                
+                return f"<sup>{pdf_link}{doi_link}</sup>"
             else:
                 # Fallback: show title and year
                 return f"<sup>[{title} ({year})]</sup>"
@@ -212,15 +198,9 @@ def get_conversational_response(query: str, rag_results: list, conversation_hist
                 'topic': chunk.get('topic', 'Unknown')
             }
             
-            # Debug: Log what fields are available in the chunk
-            logger.info(f"Chunk fields: {list(chunk.keys())}")
-            logger.info(f"pdf_filename: {chunk.get('pdf_filename')}")
-            logger.info(f"sanitized_filename (mapped): {chunk.get('pdf_filename')}")
-            logger.info(f"title: {chunk.get('title')}")
-            logger.info(f"authors: {chunk.get('authors')}")
-            logger.info(f"journal: {chunk.get('journal')}")
-            logger.info(f"doi: {chunk.get('doi')}")
-            logger.info(f"publication_year: {chunk.get('publication_year')}")
+            # Optional: Log key fields for debugging (commented out for production)
+            # logger.info(f"pdf_filename: {chunk.get('pdf_filename')}")
+            # logger.info(f"title: {chunk.get('title')}")
             
         context = "\n\n".join(context_parts)
         
