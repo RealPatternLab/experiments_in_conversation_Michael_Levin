@@ -608,7 +608,7 @@ def main():
         page_title="Michael Levin Scientific Publications RAG System",
         page_icon="🧠",
         layout="wide"
-    
+    )
     thinking_box = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/thinking_box.gif"
 
     # Custom CSS for better styling
