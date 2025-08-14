@@ -793,14 +793,7 @@ def main():
         """, unsafe_allow_html=True)
         
         # Display embedding information
-        st.sidebar.header("📊 Embedding Status")
-        st.sidebar.metric("Total Engrams Indexed", stats['total_chunks'])
-        st.sidebar.metric("Active Embeddings", stats['active_chunks'])
-        
-        if stats['active_timestamp']:
-            st.sidebar.info(f"**Active:** {stats['active_timestamp']}")
-        
-        st.sidebar.metric("FAISS Index", "1 (Most Recent)")
+        st.sidebar.metric("Total Engrams Indexed", stats['total_chunks'])        
         
         # Search parameters
         st.sidebar.header("🔍 Search Settings")
