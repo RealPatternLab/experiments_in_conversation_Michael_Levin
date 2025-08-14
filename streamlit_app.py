@@ -142,7 +142,7 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
             if pdf_filename and pdf_filename != "Unknown":
                 # Create GitHub raw URL to step_07_archive
                 github_raw_url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/SCIENTIFIC_PUBLICATION_PIPELINE/step_07_archive/{pdf_filename}"
-                pdf_link = f"<a href='{github_raw_url}' target='_blank'>[PDF]</a>"
+                pdf_link = f"<a href='{github_raw_url}' target='_blank' title='PDF: {pdf_filename}'>[PDF]</a>"
             else:
                 # Fallback if filename not found
                 pdf_link = f"<a href='#' onclick='alert(\"PDF not found for: {title}\")' target='_blank'>[PDF]</a>"
@@ -611,7 +611,6 @@ def main():
     )
     thinking_box = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/thinking_box.gif"
 
-    # Custom CSS for better styling
     st.markdown("""
     <style>
     .stApp {
