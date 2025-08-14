@@ -91,6 +91,7 @@ test_*.py
 *_test.py
 fix_*.py
 migrate_*.py
+test_faiss_retriever.py
 
 # OS generated files
 .DS_Store

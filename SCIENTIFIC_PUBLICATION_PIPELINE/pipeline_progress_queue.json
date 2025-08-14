@@ -10,7 +10,7 @@
       "step_06_embedding": "complete",
       "current_status": "ready_for_embedding",
       "created_at": "2025-08-13T19:14:20.598486",
-      "last_updated": "2025-08-13T20:05:31.212558",
+      "last_updated": "2025-08-13T20:52:05.036734",
       "chunk_count": 45,
       "error_count": 0,
       "errors": [],
@@ -18,14 +18,15 @@
       "text_length": 31482,
       "embedding_timestamps": [
         "20250813_195459_531",
-        "20250813_200531_206"
+        "20250813_200531_206",
+        "20250813_205205_029"
       ],
-      "latest_embedding_timestamp": "20250813_200531_206",
-      "embedding_timestamp": "20250813_200531_206",
+      "latest_embedding_timestamp": "20250813_205205_029",
+      "embedding_timestamp": "20250813_205205_029",
       "archive_location": "step_07_archive/7d121587_20250813_191420_609.pdf",
       "archived_at": "2025-08-13T20:07:48.010526"
     }
   },
   "created_at": "2025-08-13T19:14:20.598262",
-  "last_updated": "2025-08-13T20:05:31.212562"
+  "last_updated": "2025-08-13T20:52:05.036739"
 }
