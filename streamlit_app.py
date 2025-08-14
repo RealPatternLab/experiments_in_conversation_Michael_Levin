@@ -40,6 +40,14 @@ except ImportError:
 from dotenv import load_dotenv
 load_dotenv()
 
+# Configure page layout
+st.set_page_config(
+    page_title="Michael Levin Research Assistant",
+    page_icon="🧠",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
 # GitHub repository configuration
 # These can be set via environment variables for different deployments
 # Example: export GITHUB_REPO="your-username/your-repo"
@@ -783,8 +791,8 @@ def main():
         st.sidebar.markdown(f"""
         <div style="text-align: center; margin-bottom: 1rem;">
             <img src='{thinking_box}' alt="Thinking Box" style="
-                width: 240px; 
-                height: 270px; 
+                width: 180px; 
+                height: 200px; 
                 border-radius: 10px;
                 background: transparent;
                 mix-blend-mode: multiply;
