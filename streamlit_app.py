@@ -193,6 +193,11 @@ def get_conversational_response(query: str, rag_results: list, conversation_hist
             context_parts.append(f"{source_key} ({chunk.get('title', 'Unknown')}, {chunk.get('publication_year', 'Unknown')}): {chunk.get('text', '')}")
             
             # Enhanced source mapping
+            # Construct PDF filename from document_id if pdf_filename is empty
+            pdf_filename = chunk.get('pdf_filename', '')
+            if not pdf_filename and chunk.get('document_id'):
+                pdf_filename = f"{chunk.get('document_id')}.pdf"
+            
             source_mapping[source_key] = {
                 'title': chunk.get('title', 'Unknown'),
                 'authors': chunk.get('authors', []),
@@ -200,7 +205,7 @@ def get_conversational_response(query: str, rag_results: list, conversation_hist
                 'doi': chunk.get('doi', 'Unknown'),
                 'publication_date': chunk.get('publication_year', 'Unknown'),
                 'text': chunk.get('text', ''),
-                'sanitized_filename': chunk.get('pdf_filename'),  # Use pdf_filename from FAISS metadata
+                'sanitized_filename': pdf_filename,  # Use constructed filename
                 'rank': i + 1,
                 'section': chunk.get('section', 'Unknown'),
                 'topic': chunk.get('topic', 'Unknown')
