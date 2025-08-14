@@ -153,6 +153,25 @@ class ConsolidatedEmbeddingGenerator:
             logger.error(f"Failed to generate embedding: {e}")
             return None
     
+    def create_enhanced_text(self, chunk: Dict) -> str:
+        """Create enhanced text that includes topics for better semantic understanding."""
+        text = chunk.get('text', '')
+        primary_topic = chunk.get('primary_topic', '')
+        secondary_topics = chunk.get('secondary_topics', [])
+        
+        if primary_topic and primary_topic != 'Unknown':
+            enhanced = f"{text}\n\nTopic: {primary_topic}"
+            
+            # Include ALL secondary topics for complete semantic context
+            if secondary_topics:
+                unique_topics = [t for t in secondary_topics if t != primary_topic]
+                if unique_topics:
+                    enhanced += f"\nRelated: {', '.join(unique_topics)}"
+        else:
+            enhanced = text
+        
+        return enhanced
+
     def create_enhanced_metadata(self, chunk: Dict, doc_metadata: Dict, chunk_id: int, doc_id: str) -> Dict[str, Any]:
         """Create enhanced metadata for a chunk."""
         text = chunk.get('text', '')
@@ -205,7 +224,8 @@ class ConsolidatedEmbeddingGenerator:
         successful = 0
         failed = 0
         
-        logger.info(f"🔮 Generating embeddings for {len(chunks_data)} chunks...")
+        logger.info(f"🔮 Generating enhanced embeddings for {len(chunks_data)} chunks...")
+        logger.info("📝 Using enhanced text (text + primary topic + secondary topics) for better semantic understanding")
         
         for i, (chunk_file, chunk, doc_metadata) in enumerate(chunks_data):
             try:
@@ -215,8 +235,17 @@ class ConsolidatedEmbeddingGenerator:
                     failed += 1
                     continue
                 
-                # Generate embedding
-                embedding = self.generate_embedding(text)
+                # Create enhanced text with topics for better semantic understanding
+                enhanced_text = self.create_enhanced_text(chunk)
+                
+                # Log whether we're using enhanced or plain text
+                if enhanced_text != text:
+                    logger.debug(f"Using enhanced text for chunk {i} (includes topics)")
+                else:
+                    logger.debug(f"Using plain text for chunk {i} (no topics available)")
+                
+                # Generate embedding using enhanced text
+                embedding = self.generate_embedding(enhanced_text)
                 if embedding:
                     all_embeddings.append(embedding)
                     
@@ -284,6 +313,7 @@ class ConsolidatedEmbeddingGenerator:
             'failed': failed,
             'dimension': dimension,
             'index_type': 'IndexFlatIP',
+            'embedding_strategy': 'enhanced_text_with_topics',
             'created_at': datetime.now().isoformat()
         }
         
