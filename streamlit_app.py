@@ -762,29 +762,107 @@ def main():
     st.set_page_config(
         page_title="Michael Levin Scientific Publications RAG System",
         page_icon="🧠",
-        layout="wide"
+        layout="wide",
+        initial_sidebar_state="expanded"
     )
     thinking_box = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/thinking_box.gif"
 
     st.markdown("""
     <style>
+    /* Main app background */
     .stApp {
-        background-color: #f0f2f6;
+        background-color: #000000;
     }
+    
+    /* Main content area */
+    .main .block-container {
+        background-color: #000000;
+        color: #ffffff;
+    }
+    
+    /* Markdown text */
     .stMarkdown {
-        color: #262730;
+        color: #ffffff;
     }
+    
+    /* Chat messages */
     .stChatMessage {
-        background-color: #ffffff;
-        border: 1px solid #e0e0e0;
+        background-color: #111111;
+        border: 1px solid #333333;
         border-radius: 8px;
         margin: 8px 0;
+        color: #ffffff;
     }
+    
+    /* Chat message content */
+    .stChatMessage .stMarkdown {
+        color: #ffffff;
+    }
+    
+    /* Expanders */
     .stExpander {
-        background-color: #ffffff;
-        border: 1px solid #e0e0e0;
+        background-color: #111111;
+        border: 1px solid #333333;
         border-radius: 8px;
+        color: #ffffff;
     }
+    
+    /* Expander headers */
+    .streamlit-expanderHeader {
+        background-color: #111111;
+        color: #ffffff;
+        border-color: #333333;
+    }
+    
+    /* Sidebar */
+    .css-1d391kg {
+        background-color: #000000;
+        color: #ffffff;
+    }
+    
+    /* Sidebar elements */
+    .stSidebar .stMarkdown {
+        color: #ffffff;
+    }
+    
+    /* Sidebar headers */
+    .stSidebar .stHeader {
+        color: #ffffff;
+    }
+    
+    /* Buttons */
+    .stButton > button {
+        background-color: #333333;
+        color: #ffffff;
+        border: 1px solid #555555;
+    }
+    
+    .stButton > button:hover {
+        background-color: #555555;
+        border-color: #777777;
+    }
+    
+    /* Input fields */
+    .stTextInput > div > div > input {
+        background-color: #111111;
+        color: #ffffff;
+        border: 1px solid #333333;
+    }
+    
+    /* Sliders */
+    .stSlider > div > div > div > div {
+        background-color: #333333;
+    }
+    
+    /* Metrics */
+    .stMetric {
+        background-color: #111111;
+        color: #ffffff;
+        border: 1px solid #333333;
+        border-radius: 8px;
+        padding: 10px;
+    }
+    
     /* Fix thinking box image background */
     .stSidebar img {
         background: transparent !important;
@@ -794,14 +872,28 @@ def main():
         background: transparent !important;
         background-color: transparent !important;
     }
+    
+    /* Headers */
+    h1, h2, h3, h4, h5, h6 {
+        color: #ffffff !important;
+    }
+    
+    /* Links */
+    a {
+        color: #00aaff !important;
+    }
+    
+    a:hover {
+        color: #0088cc !important;
+    }
     </style>
     """, unsafe_allow_html=True)
     
     # Header
     st.markdown("""
     <div style="text-align: center; margin-bottom: 2rem;">
-        <h1>🧠 Michael Levin Research Assistant</h1>
-        <p style="font-size: 1.2rem; color: #666;">
+        <h1 style="color: #ffffff;">🧠 Michael Levin Research Assistant</h1>
+        <p style="font-size: 1.2rem; color: #cccccc;">
             Explore Michael Levin's research on developmental biology, collective intelligence, and bioelectricity
         </p>
     </div>
