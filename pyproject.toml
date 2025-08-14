@@ -76,6 +76,9 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = []
 
+[tool.poetry]
+package-mode = false
+
 [tool.black]
 line-length = 88
 target-version = ['py39']
