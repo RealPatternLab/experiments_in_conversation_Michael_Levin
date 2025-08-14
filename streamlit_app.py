@@ -40,6 +40,10 @@ except ImportError:
 from dotenv import load_dotenv
 load_dotenv()
 
+# GitHub repository configuration
+GITHUB_REPO = "RealPatternLab/experiments_in_conversation_Michael_Levin"
+GITHUB_BRANCH = "neo-dev"
+
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -128,7 +132,7 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
             
             if pdf_filename and pdf_filename != "Unknown":
                 # Create GitHub raw URL to step_07_archive
-                github_raw_url = f"https://raw.githubusercontent.com/mbstarr/michael-levin-qa-engine-neu1/main/SCIENTIFIC_PUBLICATION_PIPELINE/step_07_archive/{pdf_filename}"
+                github_raw_url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/SCIENTIFIC_PUBLICATION_PIPELINE/step_07_archive/{pdf_filename}"
                 pdf_link = f"<a href='{github_raw_url}' target='_blank'>[PDF]</a>"
             else:
                 # Fallback if filename not found
