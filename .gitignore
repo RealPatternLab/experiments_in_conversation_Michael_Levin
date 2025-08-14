@@ -39,6 +39,7 @@ MANIFEST
 !requirements.txt
 !packages.txt
 !.streamlit/
+!runtime.txt
 
 # Virtual environments
 .venv/
