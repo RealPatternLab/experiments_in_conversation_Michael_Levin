@@ -940,6 +940,39 @@ def main():
         color: #ffffff !important;
     }
     
+    /* Chat input comprehensive styling */
+    [data-testid="stChatInput"] {
+        background-color: #111111 !important;
+        color: #ffffff !important;
+        border: 1px solid #333333 !important;
+    }
+    
+    [data-testid="stChatInput"] input {
+        color: #ffffff !important;
+        background-color: #111111 !important;
+    }
+    
+    [data-testid="stChatInput"] textarea {
+        color: #ffffff !important;
+        background-color: #111111 !important;
+    }
+    
+    /* Additional chat input selectors */
+    .stChatInputContainer {
+        background-color: #111111 !important;
+        color: #ffffff !important;
+    }
+    
+    .stChatInputContainer input {
+        color: #ffffff !important;
+        background-color: #111111 !important;
+    }
+    
+    .stChatInputContainer textarea {
+        color: #ffffff !important;
+        background-color: #111111 !important;
+    }
+    
     /* Buttons */
     .stButton > button {
         background-color: #333333 !important;
@@ -1015,6 +1048,35 @@ def main():
         background-color: #111111 !important;
         color: #ffffff !important;
         border: 1px solid #333333 !important;
+    }
+    
+    /* Chat input text color */
+    .stChatInput input {
+        color: #ffffff !important;
+    }
+    
+    .stChatInput textarea {
+        color: #ffffff !important;
+    }
+    
+    /* Chat input placeholder text */
+    .stChatInput input::placeholder {
+        color: #cccccc !important;
+    }
+    
+    .stChatInput textarea::placeholder {
+        color: #cccccc !important;
+    }
+    
+    /* Chat input focus state */
+    .stChatInput input:focus {
+        color: #ffffff !important;
+        border-color: #00aaff !important;
+    }
+    
+    .stChatInput textarea:focus {
+        color: #ffffff !important;
+        border-color: #00aaff !important;
     }
     
     /* Any remaining white backgrounds */
