@@ -863,6 +863,71 @@ def main():
         color: #ffffff !important;
     }
     
+    /* All sidebar text elements */
+    .stSidebar * {
+        color: #ffffff !important;
+    }
+    
+    .stSidebar p {
+        color: #ffffff !important;
+    }
+    
+    .stSidebar span {
+        color: #ffffff !important;
+    }
+    
+    .stSidebar div {
+        color: #ffffff !important;
+    }
+    
+    .stSidebar label {
+        color: #ffffff !important;
+    }
+    
+    /* Sidebar metrics */
+    .stSidebar .stMetric {
+        color: #ffffff !important;
+    }
+    
+    .stSidebar .stMetric > div > div {
+        color: #ffffff !important;
+    }
+    
+    /* Sidebar sliders */
+    .stSidebar .stSlider {
+        color: #ffffff !important;
+    }
+    
+    .stSidebar .stSlider label {
+        color: #ffffff !important;
+    }
+    
+    /* Sidebar headers */
+    .stSidebar h1, .stSidebar h2, .stSidebar h3, .stSidebar h4, .stSidebar h5, .stSidebar h6 {
+        color: #ffffff !important;
+    }
+    
+    /* Force all sidebar text to be white */
+    [data-testid="stSidebar"] * {
+        color: #ffffff !important;
+    }
+    
+    [data-testid="stSidebar"] p {
+        color: #ffffff !important;
+    }
+    
+    [data-testid="stSidebar"] span {
+        color: #ffffff !important;
+    }
+    
+    [data-testid="stSidebar"] div {
+        color: #ffffff !important;
+    }
+    
+    [data-testid="stSidebar"] label {
+        color: #ffffff !important;
+    }
+    
     /* Buttons */
     .stButton > button {
         background-color: #333333 !important;
@@ -984,6 +1049,16 @@ def main():
     .stTextInput > div > div > input, .stSelectbox > div > div > div,
     .stMultiSelect > div > div > div, .stChatInput {
         background-color: inherit !important;
+    }
+    
+    /* Nuclear option for sidebar text - force ALL text to be white */
+    .stSidebar, .stSidebar *, [data-testid="stSidebar"], [data-testid="stSidebar"] * {
+        color: #ffffff !important;
+    }
+    
+    /* Override any inline styles that might be setting text color */
+    .stSidebar [style*="color"], [data-testid="stSidebar"] [style*="color"] {
+        color: #ffffff !important;
     }
     </style>
     """, unsafe_allow_html=True)
