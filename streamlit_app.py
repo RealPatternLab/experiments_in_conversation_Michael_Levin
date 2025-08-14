@@ -25,7 +25,12 @@ from datetime import datetime
 import base64
 import sys
 import pickle
-import faiss
+try:
+    import faiss
+    FAISS_AVAILABLE = True
+except ImportError:
+    FAISS_AVAILABLE = False
+    st.error("FAISS not available. Please install faiss-cpu.")
 
 # Load environment variables
 from dotenv import load_dotenv
@@ -355,6 +360,10 @@ class FAISSRetriever:
     
     def load_all_embeddings(self):
         """Load all FAISS indices and metadata from the embeddings directory."""
+        if not FAISS_AVAILABLE:
+            logger.error("FAISS not available")
+            return
+            
         try:
             # Find all embedding directories
             embedding_dirs = [d for d in self.embeddings_dir.iterdir() if d.is_dir()]
@@ -623,6 +632,11 @@ def main():
     
     # Initialize RAG system
     try:
+        if not FAISS_AVAILABLE:
+            st.error("❌ FAISS not available!")
+            st.info("Please install faiss-cpu: pip install faiss-cpu")
+            st.stop()
+            
         if 'retriever' not in st.session_state:
             with st.spinner("Loading RAG system..."):
                 faiss_dir = Path("SCIENTIFIC_PUBLICATION_PIPELINE/step_06_faiss_embeddings")

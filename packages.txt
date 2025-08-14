@@ -1,0 +1,5 @@
+# System packages for FAISS
+libblas-dev
+liblapack-dev
+libatlas-base-dev
+gfortran
