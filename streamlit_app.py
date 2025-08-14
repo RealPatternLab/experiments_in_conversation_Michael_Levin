@@ -382,32 +382,69 @@ class FAISSRetriever:
         self.indices = {}
         self.metadata = {}
         self.embeddings = {}
-        self.load_most_recent_embeddings()
+        self.load_consolidated_embeddings()
     
-    def load_most_recent_embeddings(self):
-        """Load only the most recent embeddings directory."""
+    def load_consolidated_embeddings(self):
+        """Load consolidated embeddings from a single comprehensive index."""
         if not FAISS_AVAILABLE:
             logger.error("FAISS not available")
             return
             
         try:
-            # Find all embedding directories and sort by timestamp (newest first)
-            embedding_dirs = [d for d in self.embeddings_dir.iterdir() if d.is_dir()]
+            # Look for consolidated embedding directories
+            embedding_dirs = [d for d in self.embeddings_dir.iterdir() if d.is_dir() and d.name.startswith('consolidated_')]
             
             if not embedding_dirs:
-                logger.warning("No embedding directories found")
-                return
-            
-            # Sort directories by timestamp (newest first)
-            # Timestamps are in format: YYYYMMDD_HHMMSS_XXX
-            embedding_dirs.sort(key=lambda x: x.name, reverse=True)
-            
-            # Select only the most recent directory
-            most_recent_dir = embedding_dirs[0]
-            timestamp = most_recent_dir.name
-            
-            logger.info(f"Found {len(embedding_dirs)} embedding directories")
-            logger.info(f"Loading ONLY the most recent: {timestamp}")
+                logger.warning("No consolidated embedding directories found")
+                logger.info("Looking for legacy timestamped directories...")
+                
+                # Fallback to legacy timestamped directories
+                embedding_dirs = [d for d in self.embeddings_dir.iterdir() if d.is_dir()]
+                if not embedding_dirs:
+                    logger.error("No embedding directories found")
+                    return
+                
+                # Sort by timestamp (newest first)
+                embedding_dirs.sort(key=lambda x: x.name, reverse=True)
+                logger.info(f"Found {len(embedding_dirs)} legacy embedding directories")
+                
+                # Load metadata from ALL directories to get total chunk count
+                total_chunks = 0
+                for embed_dir in embedding_dirs:
+                    timestamp = embed_dir.name
+                    metadata_path = embed_dir / "chunks_metadata.pkl"
+                    if metadata_path.exists():
+                        with open(metadata_path, 'rb') as f:
+                            metadata = pickle.load(f)
+                            total_chunks += len(metadata)
+                            logger.info(f"📊 {timestamp}: {len(metadata)} chunks")
+                
+                logger.info(f"📊 Total chunks across all legacy directories: {total_chunks}")
+                
+                # Select only the most recent directory for actual use
+                most_recent_dir = embedding_dirs[0]
+                timestamp = most_recent_dir.name
+                
+                logger.info(f"🎯 Using most recent legacy embeddings for retrieval: {timestamp}")
+                
+            else:
+                # Use consolidated embeddings
+                embedding_dirs.sort(key=lambda x: x.name, reverse=True)
+                most_recent_dir = embedding_dirs[0]
+                timestamp = most_recent_dir.name
+                
+                logger.info(f"🎯 Using consolidated embeddings: {timestamp}")
+                
+                # Load summary to get total chunk count
+                summary_path = most_recent_dir / "summary.json"
+                if summary_path.exists():
+                    import json
+                    with open(summary_path, 'r') as f:
+                        summary = json.load(f)
+                        total_chunks = summary.get('total_chunks', 0)
+                        logger.info(f"📊 Total chunks in consolidated index: {total_chunks}")
+                else:
+                    total_chunks = 0
             
             # Load FAISS index
             index_path = most_recent_dir / "chunks.index"
@@ -437,8 +474,12 @@ class FAISSRetriever:
                 logger.error(f"❌ Metadata not found: {metadata_path}")
                 return
             
+            # Store total chunk count for display
+            self.total_chunks = total_chunks
+            
             logger.info(f"✅ Successfully loaded embeddings from: {timestamp}")
-            logger.info(f"📊 Chunks loaded: {len(self.metadata[timestamp])}")
+            logger.info(f"📊 Active chunks: {len(self.metadata[timestamp])}")
+            logger.info(f"📊 Total chunks indexed: {total_chunks}")
             
         except Exception as e:
             logger.error(f"Failed to load embeddings: {e}")
@@ -484,14 +525,17 @@ class FAISSRetriever:
             }
         
         timestamp = list(self.metadata.keys())[0]
-        chunks = len(self.metadata[timestamp])
+        active_chunks = len(self.metadata[timestamp])
+        
+        # Use the total chunk count from all directories
+        total_chunks = getattr(self, 'total_chunks', active_chunks)
         
         return {
-            'total_chunks': chunks,
+            'total_chunks': total_chunks,  # Total chunks across all embedding directories
             'indices_loaded': 1,  # Only one index now
             'metadata_loaded': 1,  # Only one metadata now
             'active_timestamp': timestamp,
-            'active_chunks': chunks
+            'active_chunks': active_chunks  # Chunks in the active (most recent) embeddings
         }
     
     def get_active_embeddings_info(self) -> dict:
