@@ -745,6 +745,17 @@ def main():
         border: 1px solid #e0e0e0;
         border-radius: 8px;
     }
+    /* Make sidebar more compact */
+    .css-1d391kg {
+        width: 300px !important;
+    }
+    .css-1d391kg .css-1d391kg {
+        width: 300px !important;
+    }
+    /* Reduce image container padding */
+    .css-1d391kg .css-1d391kg .css-1d391kg {
+        padding: 0.5rem !important;
+    }
     </style>
     """, unsafe_allow_html=True)
     
