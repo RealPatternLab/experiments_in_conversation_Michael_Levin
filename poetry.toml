@@ -1,0 +1,11 @@
+[tool.poetry]
+name = "virtual-person-pipeline"
+version = "0.1.0"
+description = "AI-powered system that creates a digital twin of an individual through RAG and fine-tuning"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+packages = []
+python = ">=3.9,<3.9.7 || >3.9.7,<3.13"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.9.7 || >3.9.7,<3.13"

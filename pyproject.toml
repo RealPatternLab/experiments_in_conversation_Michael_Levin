@@ -83,7 +83,6 @@ description = "AI-powered system that creates a digital twin of an individual th
 authors = ["Your Name <your.email@example.com>"]
 readme = "README.md"
 packages = []
-python = ">=3.9,<3.9.7 || >3.9.7,<3.13"
 
 [tool.black]
 line-length = 88
