@@ -1,0 +1,153 @@
+{
+  "total_urls": 1,
+  "valid_urls": 1,
+  "invalid_urls": 0,
+  "total_videos_found": 15,
+  "playlists": [
+    {
+      "url": "https://www.youtube.com/playlist?list=PL6SlweOjqYXzKV6C63v17Y_hm8EXKW7wv",
+      "is_valid": true,
+      "error": null,
+      "playlist_id": "PL6SlweOjqYXzKV6C63v17Y_hm8EXKW7wv",
+      "domain": "www.youtube.com",
+      "scheme": "https",
+      "query_params": {
+        "list": [
+          "PL6SlweOjqYXzKV6C63v17Y_hm8EXKW7wv"
+        ]
+      },
+      "playlist_metadata": {
+        "playlist_id": "PL6SlweOjqYXzKV6C63v17Y_hm8EXKW7wv",
+        "title": "Michael Levin - Formal Presentations",
+        "description": "A collection of formal presentations and talks by Michael Levin",
+        "channel_title": "Michael Levin",
+        "published_at": "2023-01-15T00:00:00Z",
+        "video_count": 15,
+        "api_available": true,
+        "thumbnails": {
+          "default": {
+            "url": "https://example.com/thumb.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://example.com/thumb_med.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://example.com/thumb_high.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "tags": [
+          "science",
+          "biology",
+          "bioelectricity",
+          "regeneration"
+        ],
+        "default_language": "en",
+        "privacy_status": "public"
+      },
+      "videos": [
+        {
+          "video_id": "abc123def",
+          "title": "Bioelectricity and Regeneration: New Frontiers in Biology",
+          "description": "A comprehensive overview of bioelectric signaling in biological systems...",
+          "channel_title": "Michael Levin",
+          "published_at": "2023-02-15T00:00:00Z",
+          "playlist_position": 1,
+          "duration": null,
+          "view_count": null,
+          "like_count": null,
+          "thumbnails": {
+            "default": {
+              "url": "https://example.com/video1.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://example.com/video1_med.jpg",
+              "width": 320,
+              "height": 180
+            }
+          },
+          "tags": [
+            "bioelectricity",
+            "regeneration",
+            "biology"
+          ],
+          "category_id": "27",
+          "default_language": "en",
+          "default_audio_language": "en"
+        },
+        {
+          "video_id": "def456ghi",
+          "title": "Developmental Biology and Morphogenesis",
+          "description": "Exploring the mechanisms of development and pattern formation...",
+          "channel_title": "Michael Levin",
+          "published_at": "2023-03-10T00:00:00Z",
+          "playlist_position": 2,
+          "duration": null,
+          "view_count": null,
+          "like_count": null,
+          "thumbnails": {
+            "default": {
+              "url": "https://example.com/video2.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://example.com/video2_med.jpg",
+              "width": 320,
+              "height": 180
+            }
+          },
+          "tags": [
+            "developmental biology",
+            "morphogenesis",
+            "pattern formation"
+          ],
+          "category_id": "27",
+          "default_language": "en",
+          "default_audio_language": "en"
+        },
+        {
+          "video_id": "ghi789jkl",
+          "title": "Computational Biology and Systems Thinking",
+          "description": "How computational approaches are revolutionizing our understanding...",
+          "channel_title": "Michael Levin",
+          "published_at": "2023-04-05T00:00:00Z",
+          "playlist_position": 3,
+          "duration": null,
+          "view_count": null,
+          "like_count": null,
+          "thumbnails": {
+            "default": {
+              "url": "https://example.com/video3.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://example.com/video3_med.jpg",
+              "width": 320,
+              "height": 180
+            }
+          },
+          "tags": [
+            "computational biology",
+            "systems thinking",
+            "modeling"
+          ],
+          "category_id": "27",
+          "default_language": "en",
+          "default_audio_language": "en"
+        }
+      ],
+      "total_videos_found": 15,
+      "processed_at": "2025-08-14T21:58:50.856232"
+    }
+  ],
+  "processing_timestamp": "2025-08-14T21:58:50.856244"
+}

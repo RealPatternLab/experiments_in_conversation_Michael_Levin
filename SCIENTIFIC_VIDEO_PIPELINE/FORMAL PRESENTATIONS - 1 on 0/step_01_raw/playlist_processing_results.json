@@ -1,0 +1,34 @@
+{
+  "total_urls": 1,
+  "valid_urls": 1,
+  "invalid_urls": 0,
+  "total_videos_found": 0,
+  "playlists": [
+    {
+      "url": "https://www.youtube.com/playlist?list=PL6SlweOjqYXzKV6C63v17Y_hm8EXKW7wv",
+      "is_valid": true,
+      "error": null,
+      "playlist_id": "PL6SlweOjqYXzKV6C63v17Y_hm8EXKW7wv",
+      "domain": "www.youtube.com",
+      "scheme": "https",
+      "query_params": {
+        "list": [
+          "PL6SlweOjqYXzKV6C63v17Y_hm8EXKW7wv"
+        ]
+      },
+      "playlist_metadata": {
+        "playlist_id": "PL6SlweOjqYXzKV6C63v17Y_hm8EXKW7wv",
+        "title": "Playlist PL6SlweOjqYXzKV6C63v17Y_hm8EXKW7wv",
+        "description": "Metadata not available without YouTube API key",
+        "channel_title": "Unknown",
+        "published_at": null,
+        "video_count": 0,
+        "api_available": false
+      },
+      "videos": [],
+      "total_videos_found": 0,
+      "processed_at": "2025-08-14T21:57:59.753785"
+    }
+  ],
+  "processing_timestamp": "2025-08-14T21:57:59.753803"
+}

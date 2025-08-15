@@ -1,0 +1,44 @@
+{
+  "pipeline_progress": {
+    "PL6SlweOjqYXzKV6C63v17Y_hm8EXKW7wv": {
+      "playlist_url": "https://www.youtube.com/playlist?list=PL6SlweOjqYXzKV6C63v17Y_hm8EXKW7wv",
+      "step_01_playlist_processing": "complete",
+      "step_02_video_download": "pending",
+      "step_03_transcription": "pending",
+      "step_04_metadata_enhancement": "pending",
+      "step_05_frame_extraction": "pending",
+      "step_06_frame_chunk_alignment": "pending",
+      "step_07_consolidated_embedding": "pending",
+      "step_08_archive": "pending",
+      "current_status": "processing",
+      "created_at": "2025-08-14T21:46:35.297143",
+      "last_updated": "2025-08-14T21:46:35.297700",
+      "video_count": 1,
+      "total_duration": 0,
+      "error_count": 0,
+      "errors": [],
+      "videos": {
+        "test_video_123": {
+          "title": "Test Video Title",
+          "step_02_video_download": "pending",
+          "step_03_transcription": "pending",
+          "step_04_metadata_enhancement": "pending",
+          "step_05_frame_extraction": "pending",
+          "step_06_frame_chunk_alignment": "pending",
+          "step_07_consolidated_embedding": "pending",
+          "step_08_archive": "pending",
+          "created_at": "2025-08-14T21:46:35.297514",
+          "last_updated": "2025-08-14T21:46:35.297518",
+          "duration": 0,
+          "frame_count": 0,
+          "chunk_count": 0,
+          "error_count": 0,
+          "errors": []
+        }
+      }
+    }
+  },
+  "created_at": "2025-08-14T21:46:23.318056",
+  "last_updated": "2025-08-14T21:46:35.297701",
+  "pipeline_type": "video_pipeline"
+}
