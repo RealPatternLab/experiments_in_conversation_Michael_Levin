@@ -1,15 +1,5 @@
-# System packages needed for Streamlit deployment
-# These are installed via apt-get in the Streamlit environment
-
-# For pytesseract OCR
 tesseract-ocr
-
-# For opencv-python
 libgl1-mesa-glx
 libglib2.0-0
-
-# For audio processing
 ffmpeg
-
-# For system utilities
 build-essential
