@@ -143,40 +143,49 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
             source_info = source_mapping[source_key]
             title = source_info.get('title', 'Unknown')
             year = source_info.get('publication_date', 'Unknown')
+            pipeline_source = source_info.get('pipeline_source', 'unknown')
             
-            # PDF citation with GitHub raw URL
+            # Handle video citations with thumbnails and YouTube links
+            if pipeline_source == 'videos':
+                video_id = source_info.get('video_id', '')
+                start_time = source_info.get('start_time_seconds', '')
+                chunk_id = source_info.get('chunk_id', '')
+                
+                # Create YouTube link with timestamp
+                youtube_url = f"https://www.youtube.com/watch?v={video_id}"
+                if start_time:
+                    youtube_url += f"&t={int(start_time)}"
+                
+                # Create thumbnail display with clickable link
+                thumbnail_html = ""
+                if chunk_id:
+                    # Try to find a frame for this chunk
+                    frame_path = source_info.get('frame_path', '')
+                    if frame_path and Path(frame_path).exists():
+                        # Display thumbnail as clickable image
+                        thumbnail_html = f'<a href="{youtube_url}" target="_blank" title="Watch video at {start_time}s"><img src="data:image/jpeg;base64,{encode_image_to_base64(frame_path)}" style="width: 80px; height: 60px; border-radius: 4px; margin: 0 5px; vertical-align: middle;" alt="Video thumbnail"></a>'
+                    else:
+                        # Fallback: just show clickable text
+                        thumbnail_html = f'<a href="{youtube_url}" target="_blank" style="color: #ff0000; text-decoration: underline;" title="Watch video at {start_time}s">[🎥 Watch at {start_time}s]</a>'
+                
+                return f"<sup>{thumbnail_html}</sup>"
+            
+            # Handle publication citations (existing logic)
             pdf_filename = source_info.get('sanitized_filename')
             doi = source_info.get('doi', '')
             
-            # Create clickable hyperlinks
             if pdf_filename and pdf_filename != "Unknown":
                 github_raw_url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/SCIENTIFIC_PUBLICATION_PIPELINE/step_07_archive/{pdf_filename}"
                 
-                # Create clickable PDF link
                 pdf_link = f"<a href='{github_raw_url}' target='_blank' style='color: #0066cc; text-decoration: underline;' title='Download PDF: {pdf_filename}'>[PDF]</a>"
                 
-                # Create clickable DOI link if available
                 doi_link = ""
                 if doi and doi != "Unknown":
                     doi_link = f" <a href='https://doi.org/{doi}' target='_blank' style='color: #0066cc; text-decoration: underline;' title='View on DOI.org'>[DOI]</a>"
                 
-                # Add pipeline source indicator
-                pipeline_info = ""
-                if source_info.get('pipeline_source') == 'videos':
-                    pipeline_info = " 🎥"
-                elif source_info.get('pipeline_source') == 'publications':
-                    pipeline_info = " 📚"
-                
-                return f"<sup>{pdf_link}{doi_link}{pipeline_info}</sup>"
+                return f"<sup>{pdf_link}{doi_link} 📚</sup>"
             else:
-                # Fallback: show title and year with pipeline info
-                pipeline_info = ""
-                if source_info.get('pipeline_source') == 'videos':
-                    pipeline_info = " 🎥"
-                elif source_info.get('pipeline_source') == 'publications':
-                    pipeline_info = " 📚"
-                
-                return f"<sup>[{title} ({year}){pipeline_info}]</sup>"
+                return f"<sup>[{title} ({year}) 📚]</sup>"
         else:
             return match.group(0)  # Return original if source not found
     
@@ -184,6 +193,17 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
     processed_text = re.sub(citation_pattern, replace_citation, response_text)
     
     return processed_text
+
+def encode_image_to_base64(image_path: str) -> str:
+    """Encode an image file to base64 for inline display."""
+    try:
+        import base64
+        with open(image_path, "rb") as image_file:
+            encoded_string = base64.b64encode(image_file.read()).decode('utf-8')
+        return encoded_string
+    except Exception as e:
+        logger.warning(f"Failed to encode image {image_path}: {e}")
+        return ""
 
 def get_conversational_response(query: str, rag_results: list, conversation_history: list = None) -> str:
     """Generate a conversational response using RAG results with inline citations."""
@@ -194,38 +214,92 @@ def get_conversational_response(query: str, rag_results: list, conversation_hist
         
         for i, chunk in enumerate(rag_results[:3]):  # Use top 3 results
             source_key = f"Source_{i+1}"
+            pipeline_source = chunk.get('pipeline_source', 'unknown')
             
-            # Format authors properly
-            authors = chunk.get('authors', [])
-            if isinstance(authors, list) and authors:
-                authors_str = ', '.join(authors[:3])  # Show first 3 authors
-                if len(authors) > 3:
-                    authors_str += f" et al."
+            if pipeline_source == 'videos':
+                # Handle video chunks
+                chunk_id = chunk.get('content_id', 'Unknown')
+                
+                # Extract video ID from chunk_id (format: CXzaq4_MEV8_chunk_000)
+                video_id = chunk_id.split('_')[0] if '_' in chunk_id else 'Unknown'
+                
+                # Get metadata from nested structure
+                chunk_metadata = chunk.get('chunk_metadata', {})
+                start_time = chunk_metadata.get('start_time_seconds', 0)
+                end_time = chunk_metadata.get('end_time_seconds', 0)
+                
+                # Get text content from the chunk structure
+                text_content = chunk.get('text', '')
+                if not text_content:
+                    # Try to get text from chunk_metadata
+                    text_content = chunk_metadata.get('text', '')
+                
+                # Get frame path for thumbnail
+                frame_path = ""
+                visual_content = chunk.get('visual_content', {})
+                if visual_content and 'frames' in visual_content:
+                    frames = visual_content['frames']
+                    if frames:
+                        frame_path = frames[0].get('file_path', '')
+                
+                context_parts.append(f"{source_key} (Video: {chunk_id}, {start_time:.1f}s-{end_time:.1f}s): {text_content[:200]}...")
+                
+                source_mapping[source_key] = {
+                    'title': f"Video: {chunk_id}",
+                    'authors': [],
+                    'journal': 'YouTube Video',
+                    'doi': '',
+                    'publication_date': '2025',
+                    'text': text_content,
+                    'sanitized_filename': '',
+                    'rank': i + 1,
+                    'section': '',
+                    'topic': '',
+                    'pipeline_source': 'videos',
+                    'content_type': 'video_transcript',
+                    'video_id': video_id,
+                    'start_time_seconds': start_time,
+                    'end_time_seconds': end_time,
+                    'youtube_url': f"https://www.youtube.com/watch?v={video_id}",
+                    'frame_path': frame_path,
+                    'chunk_id': chunk_id
+                }
             else:
-                authors_str = "Unknown"
-            
-            context_parts.append(f"{source_key} ({chunk.get('title', 'Unknown')}, {chunk.get('publication_year', 'Unknown')}): {chunk.get('text', '')}")
-            
-            # Enhanced source mapping
-            # Construct PDF filename from document_id if pdf_filename is empty
-            pdf_filename = chunk.get('pdf_filename', '')
-            if not pdf_filename and chunk.get('document_id'):
-                pdf_filename = f"{chunk.get('document_id')}.pdf"
-            
-            source_mapping[source_key] = {
-                'title': chunk.get('title', 'Unknown'),
-                'authors': chunk.get('authors', []),
-                'journal': chunk.get('journal', 'Unknown'),
-                'doi': chunk.get('doi', 'Unknown'),
-                'publication_date': chunk.get('publication_year', 'Unknown'),
-                'text': chunk.get('text', ''),
-                'sanitized_filename': pdf_filename,  # Use constructed filename
-                'rank': i + 1,
-                'section': chunk.get('section', 'Unknown'),
-                'topic': chunk.get('topic', 'Unknown'),
-                'pipeline_source': chunk.get('pipeline_source', 'unknown'),
-                'content_type': chunk.get('content_type', 'unknown')
-            }
+                # Handle publication chunks (existing logic)
+                authors = chunk.get('authors', [])
+                if isinstance(authors, list) and authors:
+                    authors_str = ', '.join(authors[:3])
+                    if len(authors) > 3:
+                        authors_str += f" et al."
+                else:
+                    authors_str = "Unknown"
+                
+                context_parts.append(f"{source_key} ({chunk.get('title', 'Unknown')}, {chunk.get('publication_year', 'Unknown')}): {chunk.get('text', '')}")
+                
+                pdf_filename = chunk.get('pdf_filename', '')
+                if not pdf_filename and chunk.get('document_id'):
+                    pdf_filename = f"{chunk.get('document_id')}.pdf"
+                
+                source_mapping[source_key] = {
+                    'title': chunk.get('title', 'Unknown'),
+                    'authors': chunk.get('authors', []),
+                    'journal': chunk.get('journal', 'Unknown'),
+                    'doi': chunk.get('doi', 'Unknown'),
+                    'publication_date': chunk.get('publication_year', 'Unknown'),
+                    'text': chunk.get('text', ''),
+                    'sanitized_filename': pdf_filename,
+                    'rank': i + 1,
+                    'section': chunk.get('section', 'Unknown'),
+                    'topic': chunk.get('topic', 'Unknown'),
+                    'pipeline_source': 'publications',
+                    'content_type': 'scientific_paper',
+                    'video_id': '',
+                    'start_time_seconds': '',
+                    'end_time_seconds': '',
+                    'youtube_url': '',
+                    'frame_path': '',
+                    'chunk_id': ''
+                }
             
             # Optional: Log key fields for debugging (commented out for production)
             # logger.info(f"pdf_filename: {chunk.get('pdf_filename')}")
@@ -1258,7 +1332,7 @@ def main():
             with st.spinner("Loading unified RAG system..."):
                 # Check if both pipelines have embeddings
                 publications_dir = Path("SCIENTIFIC_PUBLICATION_PIPELINE/step_06_faiss_embeddings")
-                video_dir = Path("SCIENTIFIC_VIDEO_PIPELINE/formal_presentations_1_on_0/step_07_faiss_embeddings")
+                video_dir = Path("SCIENTIFIC_VIDEO_PIPELINE/formal_presentations_1_on_0/step_06_faiss_embeddings")
                 
                 if publications_dir.exists() and video_dir.exists():
                     st.session_state.retriever = UnifiedRetriever()

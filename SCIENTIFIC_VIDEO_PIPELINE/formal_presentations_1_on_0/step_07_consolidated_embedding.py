@@ -128,14 +128,20 @@ class ConsolidatedEmbedding:
                 text_chunks.append(text)
                 
                 # Create metadata entry
+                chunk_meta = text_content.get('metadata', {})
                 meta_entry = {
                     'content_id': content.get('content_id', ''),
                     'text_length': len(text),
-                    'chunk_metadata': text_content.get('metadata', {}),
+                    'chunk_metadata': chunk_meta,
                     'visual_content': content.get('visual_content', {}),
                     'temporal_info': content.get('temporal_info', {}),
                     'quality_metrics': content.get('quality_metrics', {}),
-                    'source_file': rag_file.name
+                    'source_file': rag_file.name,
+                    # Preserve timestamp information for video citations
+                    'start_time_seconds': chunk_meta.get('start_time_seconds'),
+                    'end_time_seconds': chunk_meta.get('end_time_seconds'),
+                    'start_time_ms': chunk_meta.get('start_time_ms'),
+                    'end_time_ms': chunk_meta.get('end_time_ms')
                 }
                 metadata.append(meta_entry)
             
