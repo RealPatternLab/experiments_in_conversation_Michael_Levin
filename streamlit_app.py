@@ -177,7 +177,7 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
                         if frame_path and Path(frame_path).exists():
                             # Display thumbnail as clickable image
                             logger.info(f"✅ Creating thumbnail for {chunk_id} using frame: {frame_path}")
-                            thumbnail_html = f'<a href="{youtube_url}" target="_blank" title="Watch video at {start_time}s"><img src="data:image/jpeg;base64,{encode_image_to_base64(frame_path)}" style="float: right; width: 160px; height: 120px; border-radius: 4px; margin: 0 0 10px 10px; vertical-align: top; clear: both;" alt="Video thumbnail"></a>'
+                            thumbnail_html = f'<a href="{youtube_url}" target="_blank" title="Watch video at {start_time}s"><img src="data:image/jpeg;base64,{encode_image_to_base64(frame_path)}" style="float: left; width: 160px; height: 120px; border-radius: 4px; margin: 0 10px 10px 0; vertical-align: top; shape-outside: margin-box;" alt="Video thumbnail"></a>'
                             # Mark this video as having shown a thumbnail
                             shown_video_thumbnails.add(video_id)
                         else:
@@ -185,7 +185,7 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
                             logger.warning(f"⚠️ No frame found for {chunk_id}, using text fallback. Frame path: {frame_path}")
                             thumbnail_html = f'<a href="{youtube_url}" target="_blank" style="color: #ff0000; text-decoration: underline;" title="Watch video at {start_time}s">[🎥 Watch at {start_time}s]</a>'
                 
-                return f"<div style='overflow: hidden; margin: 5px 0;'>{thumbnail_html}</div>"
+                return f"<div style='margin: 5px 0;'>{thumbnail_html}</div>"
             
             # Handle publication citations (existing logic)
             pdf_filename = source_info.get('sanitized_filename')
