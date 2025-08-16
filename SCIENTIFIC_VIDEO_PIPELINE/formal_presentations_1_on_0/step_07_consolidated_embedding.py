@@ -64,6 +64,11 @@ class ConsolidatedEmbedding:
             logger.error(f"Failed to load models: {e}")
             raise
     
+    def get_current_timestamp(self) -> str:
+        """Get current timestamp for file naming"""
+        from datetime import datetime
+        return datetime.now().strftime("%Y%m%d_%H%M%S_%f")[:-3]
+    
     def process_all_content(self):
         """Process all aligned content in the input directory"""
         if not self.input_dir.exists():
@@ -76,6 +81,16 @@ class ConsolidatedEmbedding:
         
         if not rag_files:
             logger.error("No RAG-ready files found. Run step 6 first.")
+            return
+        
+        # Check if embeddings already exist
+        timestamp = self.get_current_timestamp()
+        embeddings_file = self.output_dir / f"embeddings_{timestamp}.npy"
+        metadata_file = self.output_dir / f"metadata_{timestamp}.pkl"
+        text_index_file = self.output_dir / f"text_index_{timestamp}.faiss"
+        
+        if all(f.exists() for f in [embeddings_file, metadata_file, text_index_file]):
+            logger.info(f"Embeddings already exist for timestamp {timestamp}, skipping")
             return
         
         # Process each file
