@@ -39,10 +39,10 @@ class SemanticChunker:
         self.output_dir = Path("step_04_extract_chunks")
         self.output_dir.mkdir(exist_ok=True)
         
-        # Chunking parameters
-        self.max_chunk_tokens = 1000  # Target chunk size
-        self.min_chunk_tokens = 200   # Minimum chunk size
-        self.overlap_tokens = 100     # Overlap between chunks
+        # Chunking parameters - Optimized for Michael Levin's information-dense style
+        self.max_chunk_tokens = 300   # Much smaller chunks for granular concepts
+        self.min_chunk_tokens = 100   # Lower minimum for focused topics
+        self.overlap_tokens = 50      # Reduced overlap for cleaner separation
     
     def process_all_transcripts(self):
         """Process all transcripts in the input directory"""
@@ -90,20 +90,21 @@ class SemanticChunker:
         logger.info(f"Successfully processed transcript: {video_id}")
     
     def create_semantic_chunks(self, text: str, video_id: str) -> List[Dict[str, Any]]:
-        """Create initial semantic chunks from transcript text"""
+        """Create semantic chunks optimized for Michael Levin's information-dense style"""
         chunks = []
         
-        # Split by sentences first (basic chunking)
+        # Split by sentences first
         sentences = self.split_into_sentences(text)
         
         current_chunk = []
         current_tokens = 0
         
-        for sentence in sentences:
+        for i, sentence in enumerate(sentences):
             sentence_tokens = len(sentence.split())  # Rough token estimation
             
-            # If adding this sentence would exceed max size, save current chunk
+            # Check if this sentence would exceed max size
             if current_tokens + sentence_tokens > self.max_chunk_tokens and current_chunk:
+                # Save current chunk
                 chunk_text = ' '.join(current_chunk)
                 chunks.append({
                     'chunk_id': f"{video_id}_chunk_{len(chunks):03d}",
@@ -114,10 +115,25 @@ class SemanticChunker:
                     'end_sentence': len(chunks) + len(current_chunk) - 1
                 })
                 
-                # Start new chunk with overlap
-                overlap_sentences = current_chunk[-2:] if len(current_chunk) >= 2 else current_chunk
-                current_chunk = overlap_sentences
-                current_tokens = sum(len(s.split()) for s in overlap_sentences)
+                # Start new chunk with minimal overlap (just last sentence for continuity)
+                current_chunk = [current_chunk[-1]] if current_chunk else []
+                current_tokens = len(current_chunk[-1].split()) if current_chunk else 0
+            
+            # Also check for natural topic boundaries (key phrases that suggest new topics)
+            if self.is_topic_boundary(sentence) and current_chunk and current_tokens > self.min_chunk_tokens:
+                # Force a chunk break at topic boundaries
+                chunk_text = ' '.join(current_chunk)
+                chunks.append({
+                    'chunk_id': f"{video_id}_chunk_{len(chunks):03d}",
+                    'text': chunk_text,
+                    'token_count': current_tokens,
+                    'sentence_count': len(current_chunk),
+                    'start_sentence': len(chunks),
+                    'end_sentence': len(chunks) + len(current_chunk) - 1
+                })
+                
+                current_chunk = []
+                current_tokens = 0
             
             current_chunk.append(sentence)
             current_tokens += sentence_tokens
@@ -134,7 +150,7 @@ class SemanticChunker:
                 'end_sentence': len(chunks) + len(current_chunk) - 1
             })
         
-        logger.info(f"Created {len(chunks)} initial chunks for {video_id}")
+        logger.info(f"Created {len(chunks)} optimized chunks for {video_id}")
         return chunks
     
     def split_into_sentences(self, text: str) -> List[str]:
@@ -143,6 +159,39 @@ class SemanticChunker:
         sentences = re.split(r'[.!?]+', text)
         sentences = [s.strip() for s in sentences if s.strip()]
         return sentences
+    
+    def is_topic_boundary(self, sentence: str) -> bool:
+        """Detect if a sentence suggests a new topic or concept"""
+        # Key phrases that often indicate topic shifts in Michael Levin's talks
+        topic_indicators = [
+            'so', 'now', 'but', 'however', 'meanwhile', 'on the other hand',
+            'first', 'second', 'third', 'finally', 'in conclusion',
+            'let me', 'let me show you', 'let me give you',
+            'what I want to', 'what I\'m going to', 'what I do',
+            'the key point is', 'the important thing is', 'the crucial thing is',
+            'this is', 'this means', 'this suggests',
+            'for example', 'as an example', 'consider',
+            'in other words', 'that is to say', 'specifically',
+            'the question is', 'the problem is', 'the challenge is',
+            'we can see', 'we observe', 'we notice',
+            'this leads to', 'this results in', 'this causes',
+            'the reason is', 'the explanation is', 'the answer is'
+        ]
+        
+        sentence_lower = sentence.lower().strip()
+        
+        # Check if sentence starts with topic indicators
+        for indicator in topic_indicators:
+            if sentence_lower.startswith(indicator):
+                return True
+        
+        # Check if sentence contains strong topic transition words
+        transition_words = ['therefore', 'thus', 'consequently', 'as a result', 'in summary']
+        for word in transition_words:
+            if word in sentence_lower:
+                return True
+        
+        return False
     
     def enhance_chunks_with_llm(self, chunks: List[Dict[str, Any]], video_id: str) -> List[Dict[str, Any]]:
         """Enhance chunks using LLM analysis"""
