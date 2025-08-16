@@ -1508,13 +1508,13 @@ def main():
                 
                 if publications_dir.exists() and video_dir.exists():
                     st.session_state.retriever = UnifiedRetriever()
-                    st.success("✅ Unified retriever loaded (publications + videos)")
+                    # st.success("✅ Unified retriever loaded (publications + videos)")
                 elif publications_dir.exists():
                     st.session_state.retriever = FAISSRetriever(publications_dir)
-                    st.warning("⚠️ Publications pipeline only (videos not found)")
+                    # st.warning("⚠️ Publications pipeline only (videos not found)")
                 elif video_dir.exists():
                     st.session_state.retriever = FAISSRetriever(video_dir)
-                    st.warning("⚠️ Video pipeline only (publications not found)")
+                    # st.warning("⚠️ Video pipeline only (publications not found)")
                 else:
                     st.error("No FAISS embeddings found!")
                     st.info("Please run the pipelines first to generate embeddings.")
