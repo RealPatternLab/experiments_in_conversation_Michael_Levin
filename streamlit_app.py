@@ -135,8 +135,8 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
     # Find all citation patterns like [Source_1], [Source_2], etc.
     citation_pattern = r'\[Source_(\d+)\]'
     
-    # Track which videos have already shown thumbnails to avoid duplicates
-    shown_video_thumbnails = set()
+    # Track which specific frames have already shown thumbnails to avoid duplicates
+    shown_frame_thumbnails = set()
     
     def replace_citation(match):
         source_num = int(match.group(1))
@@ -162,28 +162,28 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
                 # Create thumbnail display with clickable link
                 thumbnail_html = ""
                 if chunk_id:
-                    # Check if we've already shown a thumbnail for this video
-                    if video_id in shown_video_thumbnails:
-                        # Already shown thumbnail, just use text link
-                        logger.info(f"🔄 Video {video_id} already has thumbnail, using text link for {chunk_id}")
-                        thumbnail_html = f'<a href="{youtube_url}" target="_blank" style="color: #ff0000; text-decoration: underline;" title="Watch video at {start_time}s">[🎥 Watch at {start_time}s]</a>'
-                    else:
-                        # Try to find a frame for this chunk
-                        frame_path = source_info.get('frame_path', '')
-                        
-                        # Log frame path for debugging
-                        logger.info(f"🎥 Video citation processing - Chunk: {chunk_id}, Frame path: {frame_path}, Exists: {Path(frame_path).exists() if frame_path else False}")
-                        
-                        if frame_path and Path(frame_path).exists():
+                    # Try to find a frame for this chunk
+                    frame_path = source_info.get('frame_path', '')
+                    
+                    # Log frame path for debugging
+                    logger.info(f"🎥 Video citation processing - Chunk: {chunk_id}, Frame path: {frame_path}, Exists: {Path(frame_path).exists() if frame_path else False}")
+                    
+                    if frame_path and Path(frame_path).exists():
+                        # Check if we've already shown this exact frame to avoid duplicates
+                        if frame_path in shown_frame_thumbnails:
+                            # Already shown this frame, just use text link
+                            logger.info(f"🔄 Frame {frame_path} already shown, using text link for {chunk_id}")
+                            thumbnail_html = f'<a href="{youtube_url}" target="_blank" style="color: #ff0000; text-decoration: underline;" title="Watch video at {start_time}s">[🎥 Watch at {start_time}s]</a>'
+                        else:
                             # Display thumbnail as clickable image
                             logger.info(f"✅ Creating thumbnail for {chunk_id} using frame: {frame_path}")
                             thumbnail_html = f'<a href="{youtube_url}" target="_blank" title="Watch video at {start_time}s"><img src="data:image/jpeg;base64,{encode_image_to_base64(frame_path)}" style="float: left; width: 160px; height: 120px; border-radius: 4px; margin: 0 10px 10px 0; vertical-align: top; shape-outside: margin-box;" alt="Video thumbnail"></a>'
-                            # Mark this video as having shown a thumbnail
-                            shown_video_thumbnails.add(video_id)
-                        else:
-                            # Fallback: just show clickable text
-                            logger.warning(f"⚠️ No frame found for {chunk_id}, using text fallback. Frame path: {frame_path}")
-                            thumbnail_html = f'<a href="{youtube_url}" target="_blank" style="color: #ff0000; text-decoration: underline;" title="Watch video at {start_time}s">[🎥 Watch at {start_time}s]</a>'
+                            # Mark this frame as having shown a thumbnail
+                            shown_frame_thumbnails.add(frame_path)
+                    else:
+                        # Fallback: just show clickable text
+                        logger.warning(f"⚠️ No frame found for {chunk_id}, using text fallback. Frame path: {frame_path}")
+                        thumbnail_html = f'<a href="{youtube_url}" target="_blank" style="color: #ff0000; text-decoration: underline;" title="Watch video at {start_time}s">[🎥 Watch at {start_time}s]</a>'
                 
                 return f"<div style='margin: 5px 0;'>{thumbnail_html}</div>"
             
