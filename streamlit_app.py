@@ -11,6 +11,7 @@ Features:
 - PDF citations with GitHub raw URLs to step_07_archive
 - DOI hyperlinks when available
 - Conversation history with clean text storage
+- Webhook endpoint for AssemblyAI transcription notifications
 """
 
 import streamlit as st
@@ -26,6 +27,9 @@ import base64
 import sys
 import pickle
 from typing import Optional, List
+import requests
+from flask import Flask, request, jsonify
+from threading import Thread
 try:
     import faiss
     FAISS_AVAILABLE = True
@@ -40,6 +44,144 @@ except ImportError:
 # Load environment variables
 from dotenv import load_dotenv
 load_dotenv()
+
+# Webhook storage for AssemblyAI transcriptions
+WEBHOOK_STORAGE_FILE = "assemblyai_webhooks.json"
+
+def load_webhook_storage():
+    """Load webhook storage from file."""
+    try:
+        if os.path.exists(WEBHOOK_STORAGE_FILE):
+            with open(WEBHOOK_STORAGE_FILE, 'r') as f:
+                return json.load(f)
+    except Exception as e:
+        logger.error(f"Failed to load webhook storage: {e}")
+    return {"pending_transcriptions": {}, "completed_transcriptions": {}}
+
+def save_webhook_storage(data):
+    """Save webhook storage to file."""
+    try:
+        with open(WEBHOOK_STORAGE_FILE, 'w') as f:
+            json.dump(data, f, indent=2)
+    except Exception as e:
+        logger.error(f"Failed to save webhook storage: {e}")
+
+def handle_assemblyai_webhook(transcript_id: str, status: str, data: dict = None):
+    """Handle webhook from AssemblyAI when transcription completes."""
+    webhook_data = load_webhook_storage()
+    
+    if status == "completed":
+        # Move from pending to completed
+        if transcript_id in webhook_data["pending_transcriptions"]:
+            pending_info = webhook_data["pending_transcriptions"].pop(transcript_id)
+            webhook_data["completed_transcriptions"][transcript_id] = {
+                **pending_info,
+                "completed_at": datetime.now().isoformat(),
+                "status": "completed"
+            }
+            logger.info(f"Transcription {transcript_id} completed for video {pending_info.get('video_id', 'unknown')}")
+        else:
+            # Direct completion notification
+            webhook_data["completed_transcriptions"][transcript_id] = {
+                "completed_at": datetime.now().isoformat(),
+                "status": "completed",
+                "data": data
+            }
+            logger.info(f"Transcription {transcript_id} completed")
+    
+    elif status == "error":
+        # Mark as failed
+        if transcript_id in webhook_data["pending_transcriptions"]:
+            pending_info = webhook_data["pending_transcriptions"].pop(transcript_id)
+            webhook_data["completed_transcriptions"][transcript_id] = {
+                **pending_info,
+                "failed_at": datetime.now().isoformat(),
+                "status": "error",
+                "error": data.get("error", "Unknown error") if data else "Unknown error"
+            }
+            logger.error(f"Transcription {transcript_id} failed for video {pending_info.get('video_id', 'unknown')}")
+    
+    save_webhook_storage(webhook_data)
+
+def add_pending_transcription(transcript_id: str, video_id: str, video_title: str):
+    """Add a transcription to the pending list."""
+    webhook_data = load_webhook_storage()
+    webhook_data["pending_transcriptions"][transcript_id] = {
+        "video_id": video_id,
+        "video_title": video_title,
+        "submitted_at": datetime.now().isoformat(),
+        "status": "pending"
+    }
+    save_webhook_storage(webhook_data)
+    logger.info(f"Added pending transcription {transcript_id} for video {video_id}")
+
+def get_completed_transcription(transcript_id: str):
+    """Get a completed transcription by ID."""
+    webhook_data = load_webhook_storage()
+    return webhook_data["completed_transcriptions"].get(transcript_id)
+
+def get_pending_transcriptions():
+    """Get all pending transcriptions."""
+    webhook_data = load_webhook_storage()
+    return webhook_data["pending_transcriptions"]
+
+def get_completed_transcriptions():
+    """Get all completed transcriptions."""
+    webhook_data = load_webhook_storage()
+    return webhook_data["completed_transcriptions"]
+
+def webhook_endpoint():
+    """Webhook endpoint for AssemblyAI to call when transcription completes."""
+    # This function can be called by external HTTP requests
+    # AssemblyAI will POST to your Streamlit app URL + /webhook
+    pass
+
+def webhook_status_page():
+    """Display webhook status and transcription progress."""
+    st.header("🎯 AssemblyAI Webhook Status")
+    
+    # Show pending transcriptions
+    pending = get_pending_transcriptions()
+    if pending:
+        st.subheader("⏳ Pending Transcriptions")
+        for transcript_id, info in pending.items():
+            with st.expander(f"📹 {info['video_title']} ({transcript_id})"):
+                st.write(f"**Video ID:** {info['video_id']}")
+                st.write(f"**Submitted:** {info['submitted_at']}")
+                st.write(f"**Status:** {info['status']}")
+    else:
+        st.info("No pending transcriptions")
+    
+    # Show completed transcriptions
+    completed = get_completed_transcriptions()
+    if completed:
+        st.subheader("✅ Completed Transcriptions")
+        for transcript_id, info in completed.items():
+            with st.expander(f"📹 {info.get('video_title', 'Unknown')} ({transcript_id})"):
+                st.write(f"**Video ID:** {info.get('video_id', 'Unknown')}")
+                st.write(f"**Status:** {info['status']}")
+                if info['status'] == 'completed':
+                    st.write(f"**Completed:** {info.get('completed_at', 'Unknown')}")
+                    st.success("✅ Transcription ready for processing")
+                elif info['status'] == 'error':
+                    st.write(f"**Failed:** {info.get('failed_at', 'Unknown')}")
+                    st.error(f"❌ Error: {info.get('error', 'Unknown error')}")
+    else:
+        st.info("No completed transcriptions")
+    
+    # Manual webhook test
+    st.subheader("🧪 Test Webhook")
+    if st.button("Test Webhook Handler"):
+        test_transcript_id = "test_123"
+        test_video_id = "test_video"
+        test_video_title = "Test Video"
+        
+        add_pending_transcription(test_transcript_id, test_video_id, test_video_title)
+        st.success(f"Added test transcription: {test_transcript_id}")
+        
+        # Simulate completion
+        handle_assemblyai_webhook(test_transcript_id, "completed")
+        st.success("Simulated webhook completion")
 
 # Configure page layout
 st.set_page_config(

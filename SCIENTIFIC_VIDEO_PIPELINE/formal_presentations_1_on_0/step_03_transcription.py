@@ -100,7 +100,13 @@ class VideoTranscriber:
     def process_single_video(self, video_info: Dict[str, Any]):
         """Process a single video"""
         video_id = video_info['video_id']
-        video_path = video_info.get('local_path')
+        
+        # Handle different metadata structures
+        video_path = None
+        if 'local_path' in video_info:
+            video_path = video_info['local_path']
+        elif 'download_result' in video_info and 'video_file' in video_info['download_result']:
+            video_path = video_info['download_result']['video_file']
         
         if not video_path or not Path(video_path).exists():
             logger.warning(f"Video file not found for {video_id}")

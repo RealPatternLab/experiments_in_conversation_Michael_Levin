@@ -39,6 +39,28 @@ class PlaylistProcessor:
         # Playlist processing parameters
         self.max_videos_per_playlist = 100  # Limit for processing
         
+        # Check if yt-dlp is available
+        self.yt_dlp_available = self.check_yt_dlp_availability()
+    
+    def check_yt_dlp_availability(self) -> bool:
+        """Check if yt-dlp is available and working"""
+        try:
+            import subprocess
+            result = subprocess.run(['yt-dlp', '--version'], capture_output=True, text=True, timeout=10)
+            if result.returncode == 0:
+                version = result.stdout.strip()
+                logger.info(f"yt-dlp version {version} is available")
+                return True
+            else:
+                logger.warning("yt-dlp is not working properly")
+                return False
+        except (subprocess.TimeoutExpired, FileNotFoundError):
+            logger.warning("yt-dlp is not installed or not in PATH")
+            return False
+        except Exception as e:
+            logger.warning(f"Error checking yt-dlp: {e}")
+            return False
+        
     def process_playlists(self):
         """Process all playlist files in the input directory"""
         if not self.input_dir.exists():
@@ -90,8 +112,8 @@ class PlaylistProcessor:
             'processing_timestamp': self.get_timestamp()
         }
         
-        # Save results
-        self.save_results(summary, playlist_file.stem)
+        # Save results with consistent naming
+        self.save_results(summary, "playlist")
         
         logger.info(f"Processed {len(processed_playlists)} playlists with {total_videos} total videos")
     
@@ -165,61 +187,178 @@ class PlaylistProcessor:
         return None
     
     def get_playlist_metadata(self, playlist_id: str) -> Dict[str, Any]:
-        """Get basic playlist metadata"""
-        # For now, return basic metadata
-        # In a full implementation, you could use YouTube API for enhanced data
-        return {
-            'playlist_id': playlist_id,
-            'title': f"Playlist {playlist_id}",
-            'description': "Playlist description",
-            'channel_title': "Channel name",
-            'published_at': "",
-            'video_count': 0,
-            'privacy_status': "public"
-        }
+        """Get playlist metadata using yt-dlp"""
+        if not self.yt_dlp_available:
+            logger.warning("yt-dlp not available, using fallback metadata")
+            return {
+                'playlist_id': playlist_id,
+                'title': f"Playlist {playlist_id}",
+                'description': "Playlist description",
+                'channel_title': "Unknown Channel",
+                'published_at': "",
+                'video_count': 0,
+                'privacy_status': "public"
+            }
+        
+        try:
+            import subprocess
+            import json
+            
+            # Use yt-dlp to get playlist info
+            playlist_url = f"https://www.youtube.com/playlist?list={playlist_id}"
+            
+            # Get playlist metadata
+            cmd = [
+                'yt-dlp',
+                '--flat-playlist',
+                '--dump-json',
+                '--no-playlist-reverse',
+                '--playlist-items', '1',  # Just get first item to get playlist info
+                playlist_url
+            ]
+            
+            result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
+            
+            if result.returncode == 0 and result.stdout.strip():
+                # Parse the first video to get playlist context
+                try:
+                    first_video = json.loads(result.stdout.strip().split('\n')[0])
+                    playlist_info = first_video.get('playlist', {})
+                    
+                    # Handle case where playlist_info might be a string or dict
+                    if isinstance(playlist_info, dict):
+                        return {
+                            'playlist_id': playlist_id,
+                            'title': playlist_info.get('title', f"Playlist {playlist_id}"),
+                            'description': playlist_info.get('description', "Playlist description"),
+                            'channel_title': playlist_info.get('uploader', "Unknown Channel"),
+                            'published_at': playlist_info.get('upload_date', ""),
+                            'video_count': playlist_info.get('playlist_count', 0),
+                            'privacy_status': "public"
+                        }
+                    else:
+                        logger.warning(f"Playlist info is not a dict for {playlist_id}: {type(playlist_info)}")
+                except (json.JSONDecodeError, IndexError) as e:
+                    logger.warning(f"Failed to parse playlist metadata for {playlist_id}: {e}")
+            
+            # Fallback to basic metadata
+            return {
+                'playlist_id': playlist_id,
+                'title': f"Playlist {playlist_id}",
+                'description': "Playlist description",
+                'channel_title': "Unknown Channel",
+                'published_at': "",
+                'video_count': 0,
+                'privacy_status': "public"
+            }
+            
+        except Exception as e:
+            logger.error(f"Failed to get playlist metadata for {playlist_id}: {e}")
+            # Fallback to basic metadata
+            return {
+                'playlist_id': playlist_id,
+                'title': f"Playlist {playlist_id}",
+                'description': "Playlist description",
+                'channel_title': "Unknown Channel",
+                'published_at': "",
+                'video_count': 0,
+                'privacy_status': "public"
+            }
     
     def get_playlist_videos(self, playlist_id: str) -> Optional[List[Dict[str, Any]]]:
-        """Get videos in the playlist"""
-        # This is a simplified version
-        # In a full implementation, you would use YouTube API or yt-dlp
+        """Get videos in the playlist using yt-dlp"""
+        if not self.yt_dlp_available:
+            logger.warning("yt-dlp not available, using fallback video data")
+            return []
         
-        # For now, return placeholder data
-        # You would typically use yt-dlp to get actual video information
-        videos = []
-        
-        # Example of what yt-dlp would return:
-        # yt-dlp --flat-playlist --get-id --get-title --get-duration "https://www.youtube.com/playlist?list=" + playlist_id
-        
-        # Placeholder video entry
-        videos.append({
-            'video_id': 'placeholder_id',
-            'title': 'Video Title',
-            'description': 'Video description',
-            'channel_title': 'Channel name',
-            'published_at': '',
-            'playlist_position': 1,
-            'duration': 0,
-            'view_count': 0,
-            'like_count': 0,
-            'category_id': [],
-            'default_language': None,
-            'default_audio_language': None
-        })
-        
-        return videos
+        try:
+            import subprocess
+            import json
+            
+            playlist_url = f"https://www.youtube.com/playlist?list={playlist_id}"
+            videos = []
+            
+            # Use yt-dlp to get playlist videos
+            cmd = [
+                'yt-dlp',
+                '--flat-playlist',
+                '--dump-json',
+                '--no-playlist-reverse',
+                playlist_url
+            ]
+            
+            logger.info(f"Fetching playlist videos using yt-dlp: {playlist_url}")
+            result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+            
+            if result.returncode != 0:
+                logger.error(f"yt-dlp failed for playlist {playlist_id}: {result.stderr}")
+                return None
+            
+            if not result.stdout.strip():
+                logger.warning(f"No videos found in playlist {playlist_id}")
+                return []
+            
+            # Parse each video entry
+            video_lines = result.stdout.strip().split('\n')
+            logger.info(f"Found {len(video_lines)} video entries in playlist")
+            
+            # Limit to first 2 videos for testing
+            max_videos = 2
+            video_lines = video_lines[:max_videos]
+            logger.info(f"Limiting to first {max_videos} videos for testing")
+            
+            for i, line in enumerate(video_lines):
+                try:
+                    video_data = json.loads(line.strip())
+                    
+                    # Extract video information
+                    video_info = {
+                        'video_id': video_data.get('id', f'unknown_{i}'),
+                        'title': video_data.get('title', 'Unknown Title'),
+                        'description': video_data.get('description', ''),
+                        'channel_title': video_data.get('uploader', 'Unknown Channel'),
+                        'published_at': video_data.get('upload_date', ''),
+                        'playlist_position': i + 1,
+                        'duration': video_data.get('duration', 0),
+                        'view_count': video_data.get('view_count', 0),
+                        'like_count': video_data.get('like_count', 0),
+                        'category_id': video_data.get('categories', []),
+                        'default_language': video_data.get('language', None),
+                        'default_audio_language': video_data.get('audio_language', None)
+                    }
+                    
+                    videos.append(video_info)
+                    logger.debug(f"Added video: {video_info['title']} ({video_info['video_id']})")
+                    
+                except json.JSONDecodeError as e:
+                    logger.warning(f"Failed to parse video entry {i}: {e}")
+                    continue
+                except Exception as e:
+                    logger.warning(f"Error processing video entry {i}: {e}")
+                    continue
+            
+            logger.info(f"Successfully extracted {len(videos)} videos from playlist {playlist_id}")
+            return videos
+            
+        except subprocess.TimeoutExpired:
+            logger.error(f"yt-dlp timeout for playlist {playlist_id}")
+            return None
+        except Exception as e:
+            logger.error(f"Failed to get playlist videos for {playlist_id}: {e}")
+            return None
     
-    def save_results(self, summary: Dict[str, Any], filename_prefix: str):
+    def save_results(self, summary: Dict[str, Any], filename_prefix: str = "playlist"):
         """Save processing results"""
         try:
-            # Save detailed results
-            output_file = self.output_dir / f"{filename_prefix}_and_video_metadata.json"
+            # Save detailed results with consistent naming
+            output_file = self.output_dir / "playlist_and_video_metadata.json"
             with open(output_file, 'w') as f:
                 json.dump(summary, f, indent=2)
             
             logger.info(f"Results saved: {output_file}")
             
-            # Save summary
-            summary_file = self.output_dir / f"{filename_prefix}_summary.json"
+            # Save summary with consistent naming
+            summary_file = self.output_dir / "playlist_summary.json"
             with open(summary_file, 'w') as f:
                 json.dump({
                     'total_playlists': summary['valid_urls'],
