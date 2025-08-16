@@ -119,15 +119,20 @@ class FrameChunkAligner:
         for chunk in chunks:
             chunk_id = chunk.get('chunk_id', 'unknown')
             
+            # Extract actual chunk timestamps from metadata
+            chunk_start_seconds = chunk.get('start_time_seconds', 0)
+            chunk_end_seconds = chunk.get('end_time_seconds', 0)
+            
+            # Convert to milliseconds if needed (frames use seconds)
+            chunk_start = chunk_start_seconds
+            chunk_end = chunk_end_seconds
+            
+            logger.debug(f"Aligning chunk {chunk_id}: {chunk_start}s - {chunk_end}s")
+            
             # Try to find frames that align with this chunk
             aligned_frames = []
             
-            # For now, we'll use a simple approach: find frames within a time range
-            # In a more sophisticated version, we could use the chunk's actual time boundaries
-            chunk_start = 0  # We'll need to extract this from chunk metadata
-            chunk_end = 60   # Default chunk duration
-            
-            # Find frames that fall within this chunk's time range
+            # Find frames that fall within this chunk's actual time range
             for frame_timestamp, frame_info in frame_timestamps:
                 if chunk_start <= frame_timestamp <= chunk_end:
                     # Frame is within chunk time range
@@ -141,6 +146,7 @@ class FrameChunkAligner:
             
             # If no frames found within range, find closest frame
             if not aligned_frames and frame_timestamps:
+                # Find the frame closest to the chunk's start time
                 closest_frame = min(frame_timestamps, key=lambda x: abs(x[0] - chunk_start))
                 aligned_frames.append({
                     'frame_id': closest_frame[1].get('frame_id'),
@@ -149,6 +155,7 @@ class FrameChunkAligner:
                     'file_size': closest_frame[1].get('file_size'),
                     'alignment_confidence': 0.6  # Lower confidence for closest match
                 })
+                logger.debug(f"No frames in range for {chunk_id}, using closest frame at {closest_frame[0]}s")
             
             # Create alignment entry
             alignment_entry = {
@@ -161,7 +168,9 @@ class FrameChunkAligner:
                     'secondary_topics': chunk.get('secondary_topics', []),
                     'key_terms': chunk.get('key_terms', []),
                     'content_summary': chunk.get('content_summary', ''),
-                    'scientific_domain': chunk.get('scientific_domain', '')
+                    'scientific_domain': chunk.get('scientific_domain', ''),
+                    'start_time_seconds': chunk_start,
+                    'end_time_seconds': chunk_end
                 },
                 'aligned_frames': aligned_frames,
                 'alignment_quality': {

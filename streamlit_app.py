@@ -160,10 +160,23 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
                 if doi and doi != "Unknown":
                     doi_link = f" <a href='https://doi.org/{doi}' target='_blank' style='color: #0066cc; text-decoration: underline;' title='View on DOI.org'>[DOI]</a>"
                 
-                return f"<sup>{pdf_link}{doi_link}</sup>"
+                # Add pipeline source indicator
+                pipeline_info = ""
+                if source_info.get('pipeline_source') == 'videos':
+                    pipeline_info = " 🎥"
+                elif source_info.get('pipeline_source') == 'publications':
+                    pipeline_info = " 📚"
+                
+                return f"<sup>{pdf_link}{doi_link}{pipeline_info}</sup>"
             else:
-                # Fallback: show title and year
-                return f"<sup>[{title} ({year})]</sup>"
+                # Fallback: show title and year with pipeline info
+                pipeline_info = ""
+                if source_info.get('pipeline_source') == 'videos':
+                    pipeline_info = " 🎥"
+                elif source_info.get('pipeline_source') == 'publications':
+                    pipeline_info = " 📚"
+                
+                return f"<sup>[{title} ({year}){pipeline_info}]</sup>"
         else:
             return match.group(0)  # Return original if source not found
     
@@ -209,7 +222,9 @@ def get_conversational_response(query: str, rag_results: list, conversation_hist
                 'sanitized_filename': pdf_filename,  # Use constructed filename
                 'rank': i + 1,
                 'section': chunk.get('section', 'Unknown'),
-                'topic': chunk.get('topic', 'Unknown')
+                'topic': chunk.get('topic', 'Unknown'),
+                'pipeline_source': chunk.get('pipeline_source', 'unknown'),
+                'content_type': chunk.get('content_type', 'unknown')
             }
             
             # Optional: Log key fields for debugging (commented out for production)
@@ -601,10 +616,83 @@ class FAISSRetriever:
             'total_indices': 1  # Only one index now
         }
 
+
+class UnifiedRetriever:
+    """Unified retriever that searches both publications and video pipelines."""
+    
+    def __init__(self):
+        """Initialize the unified retriever with both pipelines."""
+        # Publications pipeline
+        self.publications_retriever = FAISSRetriever(Path("SCIENTIFIC_PUBLICATION_PIPELINE/step_06_faiss_embeddings"))
+        
+        # Video pipeline
+        self.video_retriever = FAISSRetriever(Path("SCIENTIFIC_VIDEO_PIPELINE/formal_presentations_1_on_0/step_06_faiss_embeddings"))
+        
+        logger.info("🔗 Unified retriever initialized for both pipelines")
+    
+    def retrieve_relevant_chunks(self, query: str, top_k: int = 10) -> list:
+        """Retrieve chunks from both pipelines and amalgamate results."""
+        try:
+            # Search publications pipeline
+            publications_results = self.publications_retriever.retrieve_relevant_chunks(query, top_k=top_k)
+            
+            # Search video pipeline
+            video_results = self.video_retriever.retrieve_relevant_chunks(query, top_k=top_k)
+            
+            # Add pipeline source to each result
+            for result in publications_results:
+                result['pipeline_source'] = 'publications'
+                result['content_type'] = 'scientific_paper'
+            
+            for result in video_results:
+                result['pipeline_source'] = 'videos'
+                result['content_type'] = 'video_transcript'
+            
+            # Combine and sort by similarity score
+            all_results = publications_results + video_results
+            all_results.sort(key=lambda x: x.get('similarity_score', 0), reverse=True)
+            
+            # Return top_k combined results
+            final_results = all_results[:top_k]
+            
+            logger.info(f"🔍 Unified search: {len(publications_results)} publications + {len(video_results)} videos = {len(final_results)} total results")
+            
+            return final_results
+            
+        except Exception as e:
+            logger.error(f"Failed to retrieve chunks from unified retriever: {e}")
+            # Fallback to publications only
+            return self.publications_retriever.retrieve_relevant_chunks(query, top_k=top_k)
+    
+    def get_collection_stats(self) -> dict:
+        """Get combined statistics from both pipelines."""
+        publications_stats = self.publications_retriever.get_collection_stats()
+        video_stats = self.video_retriever.get_collection_stats()
+        
+        total_chunks = publications_stats.get('total_chunks', 0) + video_stats.get('total_chunks', 0)
+        
+        return {
+            'total_chunks': total_chunks,
+            'publications': publications_stats,
+            'videos': video_stats,
+            'pipelines': 2
+        }
+    
+    def get_active_embeddings_info(self) -> dict:
+        """Get information about active embeddings from both pipelines."""
+        publications_info = self.publications_retriever.get_active_embeddings_info()
+        video_info = self.video_retriever.get_active_embeddings_info()
+        
+        return {
+            'publications': publications_info,
+            'videos': video_info,
+            'total_pipelines': 2
+        }
+
 def conversational_page():
     """Conversational interface page."""
     st.header("💬 Chat with Michael Levin")
-    st.markdown("Have a conversation with Michael Levin about his research. He'll answer your questions based on his scientific publications.")
+    st.markdown("Have a conversation with Michael Levin about his research. He'll answer your questions based on his scientific publications and video presentations.")
     
     # Initialize chat history
     if "messages" not in st.session_state:
@@ -749,7 +837,15 @@ def conversational_page():
                                     if source_id not in seen_sources:
                                         # Add visual indicator for filtered vs unfiltered results
                                         status = "✅" if result in filtered_results else "⚠️"
-                                        st.markdown(f"**{source_counter}.** {status} {source_title} ({year}) - Section: {section_header} (Similarity: {similarity:.3f})")
+                                        
+                                        # Add pipeline source indicator
+                                        pipeline_icon = ""
+                                        if result.get('pipeline_source') == 'videos':
+                                            pipeline_icon = "🎥"
+                                        elif result.get('pipeline_source') == 'publications':
+                                            pipeline_icon = "📚"
+                                        
+                                        st.markdown(f"**{source_counter}.** {status} {pipeline_icon} {source_title} ({year}) - Section: {section_header} (Similarity: {similarity:.3f})")
                                         seen_sources.add(source_id)
                                         source_counter += 1
                                 
@@ -1142,7 +1238,7 @@ def main():
     <div style="text-align: center; margin-bottom: 2rem;">
         <h1 style="color: #ffffff;">🧠 Michael Levin Research Assistant</h1>
         <p style="font-size: 1.2rem; color: #cccccc;">
-            Explore Michael Levin's research on developmental biology, collective intelligence, and bioelectricity
+            Explore Michael Levin's research across publications and videos using unified search
         </p>
     </div>
     """, unsafe_allow_html=True)
@@ -1159,13 +1255,23 @@ def main():
             st.stop()
             
         if 'retriever' not in st.session_state:
-            with st.spinner("Loading RAG system..."):
-                faiss_dir = Path("SCIENTIFIC_PUBLICATION_PIPELINE/step_06_faiss_embeddings")
-                if faiss_dir.exists():
-                    st.session_state.retriever = FAISSRetriever(faiss_dir)
+            with st.spinner("Loading unified RAG system..."):
+                # Check if both pipelines have embeddings
+                publications_dir = Path("SCIENTIFIC_PUBLICATION_PIPELINE/step_06_faiss_embeddings")
+                video_dir = Path("SCIENTIFIC_VIDEO_PIPELINE/formal_presentations_1_on_0/step_07_faiss_embeddings")
+                
+                if publications_dir.exists() and video_dir.exists():
+                    st.session_state.retriever = UnifiedRetriever()
+                    st.success("✅ Unified retriever loaded (publications + videos)")
+                elif publications_dir.exists():
+                    st.session_state.retriever = FAISSRetriever(publications_dir)
+                    st.warning("⚠️ Publications pipeline only (videos not found)")
+                elif video_dir.exists():
+                    st.session_state.retriever = FAISSRetriever(video_dir)
+                    st.warning("⚠️ Video pipeline only (publications not found)")
                 else:
-                    st.error("FAISS embeddings directory not found!")
-                    st.info("Please run the pipeline first to generate embeddings.")
+                    st.error("No FAISS embeddings found!")
+                    st.info("Please run the pipelines first to generate embeddings.")
                     st.stop()
         
         # Set default top_k value
@@ -1191,8 +1297,16 @@ def main():
         </div>
         """, unsafe_allow_html=True)
         
-        # Display embedding information
-        st.sidebar.metric("Total Engrams Indexed", stats['total_chunks'])        
+        # Display unified embedding information
+        if isinstance(st.session_state.retriever, UnifiedRetriever):
+            st.sidebar.metric("Total Engrams Indexed", stats['total_chunks'])
+            st.sidebar.metric("Publications", stats['publications'].get('total_chunks', 0))
+            st.sidebar.metric("Videos", stats['videos'].get('total_chunks', 0))
+            st.sidebar.success("🔗 Unified Search Active")
+        else:
+            st.sidebar.metric("Total Engrams Indexed", stats['total_chunks'])
+            pipeline_type = "Publications" if "publications" in str(type(st.session_state.retriever)) else "Videos"
+            st.sidebar.info(f"📚 {pipeline_type} Pipeline Only")        
         
         # Search parameters
         st.sidebar.header("🔍 Search Settings")

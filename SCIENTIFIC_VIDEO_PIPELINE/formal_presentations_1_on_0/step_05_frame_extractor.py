@@ -33,9 +33,10 @@ class FrameExtractor:
         self.output_dir.mkdir(exist_ok=True)
         
         # Frame extraction parameters
-        self.frame_interval = 10  # Extract frame every 10 seconds
+        # Target ~15-20 second intervals (roughly half the expected chunk size of 30-60 seconds)
+        self.frame_interval = 18  # Extract frame every 18 seconds for better chunk coverage
         self.frame_quality = 2    # FFmpeg quality (1-31, lower is better)
-        self.max_frames = 100     # Maximum frames per video to avoid storage issues
+        self.max_frames = 200     # Increased from 100 to cover full video duration
     
     def process_all_videos(self):
         """Process all videos in the input directory"""
