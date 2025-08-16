@@ -80,7 +80,11 @@ class SemanticChunker:
         logger.info(f"  New chunks: {new_chunks}")
         logger.info(f"  Existing chunks: {existing_chunks}")
         logger.info(f"  Failed: {failed_chunks}")
-        logger.info(f"  Success rate: {((new_chunks + existing_chunks) / total_transcripts * 100):.1f}%")
+        if total_transcripts > 0:
+            success_rate = ((new_chunks + existing_chunks) / total_transcripts * 100)
+            logger.info(f"  Success rate: {success_rate:.1f}%")
+        else:
+            logger.info(f"  Success rate: N/A (no transcripts to process)")
     
     def process_single_transcript(self, transcript_file: Path):
         """Process a single transcript file"""

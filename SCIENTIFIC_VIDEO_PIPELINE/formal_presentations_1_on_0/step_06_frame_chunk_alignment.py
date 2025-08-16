@@ -76,7 +76,11 @@ class FrameChunkAligner:
         logger.info(f"  New alignments: {new_alignments}")
         logger.info(f"  Existing alignments: {existing_alignments}")
         logger.info(f"  Failed: {failed_alignments}")
-        logger.info(f"  Success rate: {((new_alignments + existing_alignments) / total_videos * 100):.1f}%")
+        if total_videos > 0:
+            success_rate = ((new_alignments + existing_alignments) / total_videos * 100)
+            logger.info(f"  Success rate: {success_rate:.1f}%")
+        else:
+            logger.info(f"  Success rate: N/A (no videos to process)")
     
     def process_single_video(self, chunk_file: Path):
         """Process a single video's chunks and frames"""

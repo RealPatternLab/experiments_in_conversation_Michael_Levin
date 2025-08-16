@@ -89,7 +89,11 @@ class VideoTranscriber:
         logger.info(f"  New transcripts: {new_transcripts}")
         logger.info(f"  Existing transcripts: {existing_transcripts}")
         logger.info(f"  Failed: {failed_transcripts}")
-        logger.info(f"  Success rate: {((new_transcripts + existing_transcripts) / total_videos * 100):.1f}%")
+        if total_videos > 0:
+            success_rate = ((new_transcripts + existing_transcripts) / total_videos * 100)
+            logger.info(f"  Success rate: {success_rate:.1f}%")
+        else:
+            logger.info(f"  Success rate: N/A (no videos to process)")
     
     def process_single_video(self, video_info: Dict[str, Any]):
         """Process a single video"""
