@@ -53,10 +53,10 @@ st.set_page_config(
 st.markdown("""
 <style>
     [data-testid="stSidebar"] {
-        width: 200px !important;
+        width: 260px !important;
     }
     [data-testid="stSidebar"] > div:first-child {
-        width: 200px !important;
+        width: 260px !important;
     }
 </style>
 """, unsafe_allow_html=True)
