@@ -53,14 +53,36 @@ class FrameExtractor:
         with open(metadata_file, 'r') as f:
             metadata = json.load(f)
         
-        videos = metadata.get('videos', [])
+        # Use the new results structure from updated step 2
+        videos = metadata.get('results', [])
         logger.info(f"Found {len(videos)} videos to process")
+        
+        # Track processing statistics
+        total_videos = len(videos)
+        new_frames = 0
+        existing_frames = 0
+        failed_frames = 0
         
         for video in videos:
             try:
-                self.process_single_video(video)
+                result = self.process_single_video(video)
+                if result == 'new':
+                    new_frames += 1
+                elif result == 'existing':
+                    existing_frames += 1
+                elif result == 'failed':
+                    failed_frames += 1
             except Exception as e:
                 logger.error(f"Failed to process video {video.get('video_id', 'unknown')}: {e}")
+                failed_frames += 1
+        
+        # Log summary
+        logger.info(f"Frame Extraction Summary:")
+        logger.info(f"  Total videos: {total_videos}")
+        logger.info(f"  New frames: {new_frames}")
+        logger.info(f"  Existing frames: {existing_frames}")
+        logger.info(f"  Failed: {failed_frames}")
+        logger.info(f"  Success rate: {((new_frames + existing_frames) / total_videos * 100):.1f}%")
     
     def process_single_video(self, video_info: Dict[str, Any]):
         """Process a single video"""
@@ -70,12 +92,19 @@ class FrameExtractor:
         
         if not video_path or not Path(video_path).exists():
             logger.warning(f"Video file not found for {video_id}")
-            return
+            return 'failed'
+        
+        # Check if frames already exist
+        video_frames_dir = self.output_dir / video_id
+        frames_summary_file = video_frames_dir / f"{video_id}_frames_summary.json"
+        
+        if video_frames_dir.exists() and frames_summary_file.exists():
+            logger.info(f"Frames already exist for {video_id}, skipping")
+            return 'existing'
         
         logger.info(f"Processing video: {video_id} (duration: {duration}s)")
         
         # Create output directory for this video
-        video_frames_dir = self.output_dir / video_id
         video_frames_dir.mkdir(exist_ok=True)
         
         # Extract frames
@@ -85,6 +114,7 @@ class FrameExtractor:
         self.save_frame_metadata(frames_info, video_id, video_info)
         
         logger.info(f"Successfully processed video: {video_id}")
+        return 'new'
     
     def extract_frames(self, video_path: str, video_id: str, 
                       output_dir: Path, duration: float) -> List[Dict[str, Any]]:
