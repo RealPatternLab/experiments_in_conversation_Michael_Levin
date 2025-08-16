@@ -227,6 +227,11 @@ def encode_image_to_base64(image_path: str) -> str:
 def get_conversational_response(query: str, rag_results: list, conversation_history: list = None) -> str:
     """Generate a conversational response using RAG results with inline citations."""
     try:
+        # Video title lookup - map video IDs to their actual titles
+        video_titles = {
+            'CXzaq4_MEV8': 'Unconventional Embodiments of Consciousness: a diverse intelligence research program - Michael Levin'
+        }
+        
         # Prepare context from RAG results
         context_parts = []
         source_mapping = {}  # Map source numbers to actual source info
@@ -271,16 +276,19 @@ def get_conversational_response(query: str, rag_results: list, conversation_hist
                 
                 context_parts.append(f"{source_key} (Video: {chunk_id}, {start_time:.1f}s-{end_time:.1f}s): {text_content[:200]}...")
                 
+                # Get video title from lookup
+                video_title = video_titles.get(video_id, f"Video: {video_id}")
+                
                 source_mapping[source_key] = {
-                    'title': f"Video: {chunk_id}",
-                    'authors': [],
+                    'title': video_title,
+                    'authors': ['Michael Levin'],
                     'journal': 'YouTube Video',
                     'doi': '',
                     'publication_date': '2025',
                     'text': text_content,
                     'sanitized_filename': '',
                     'rank': i + 1,
-                    'section': '',
+                    'section': f"Timestamp: {start_time:.1f}s - {end_time:.1f}s",
                     'topic': '',
                     'pipeline_source': 'videos',
                     'content_type': 'video_transcript',
