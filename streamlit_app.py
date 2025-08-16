@@ -185,7 +185,13 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
                         logger.warning(f"⚠️ No frame found for {chunk_id}, using text fallback. Frame path: {frame_path}")
                         thumbnail_html = f'<a href="{youtube_url}" target="_blank" style="color: #ff0000; text-decoration: underline;" title="Watch video at {start_time}s">[🎥 Watch at {start_time}s]</a>'
                 
-                return f"<div style='margin: 5px 0;'>{thumbnail_html}</div>"
+                # Only wrap thumbnails in divs, keep text links inline
+                if '<img' in thumbnail_html:
+                    # This is a thumbnail, wrap it in a div for proper text wrapping
+                    return f"<div style='margin: 5px 0;'>{thumbnail_html}</div>"
+                else:
+                    # This is a text link, return it inline without wrapping
+                    return thumbnail_html
             
             # Handle publication citations (existing logic)
             pdf_filename = source_info.get('sanitized_filename')
