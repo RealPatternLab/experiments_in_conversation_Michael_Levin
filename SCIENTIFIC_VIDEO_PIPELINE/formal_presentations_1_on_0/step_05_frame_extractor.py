@@ -53,8 +53,10 @@ class FrameExtractor:
         with open(metadata_file, 'r') as f:
             metadata = json.load(f)
         
-        # Use the new results structure from updated step 2
-        videos = metadata.get('results', [])
+        # Handle both old and new metadata structures
+        videos = metadata.get('results', [])  # New structure
+        if not videos:
+            videos = metadata.get('videos', [])  # Fallback to old structure
         logger.info(f"Found {len(videos)} videos to process")
         
         # Track processing statistics

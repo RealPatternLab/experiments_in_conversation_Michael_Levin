@@ -47,11 +47,16 @@ def analyze_existing_processing():
     for video_info in videos:
         video_id = video_info['video_id']
         video_title = video_info['title']
+        upload_date = video_info.get('upload_date')
         
         logger.info(f"Processing video: {video_id}")
         
         # Add video to progress queue
         queue.add_video(video_id, video_title, playlist_id)
+        
+        # Update upload date if available
+        if upload_date:
+            queue.update_video_upload_date(video_id, upload_date, "metadata_discovered")
         
         # Analyze each step to determine current status
         analyze_video_step_status(queue, video_id, video_info)

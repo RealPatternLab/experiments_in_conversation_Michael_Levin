@@ -54,12 +54,70 @@ class VideoPipelineProgressQueue:
         """Load the current queue data from file."""
         try:
             with open(self.queue_file, 'r', encoding='utf-8') as f:
-                return json.load(f)
+                data = json.load(f)
+                
+                # Migrate old format to new format if needed
+                self._migrate_old_format(data)
+                
+                return data
         except (FileNotFoundError, json.JSONDecodeError):
             # If file is corrupted, reinitialize
             logger.warning("Queue file corrupted, reinitializing...")
             self._initialize_queue_file()
             return self._load_queue_data()
+    
+    def _migrate_old_format(self, data: Dict[str, Any]):
+        """Migrate old format data to new format with change tracking."""
+        if "pipeline_progress" not in data:
+            return
+        
+        migrated = False
+        for video_id, video_data in data["pipeline_progress"].items():
+            # Check if this video needs migration
+            if isinstance(video_data.get("video_title"), str):
+                # Migrate old string format to new structure
+                old_title = video_data["video_title"]
+                old_playlist_id = video_data.get("playlist_id")
+                
+                # Create new structure
+                video_data["video_title"] = {
+                    "current": old_title,
+                    "history": [
+                        {
+                            "timestamp": video_data.get("created_at", datetime.now().isoformat()),
+                            "value": old_title,
+                            "action": "migrated"
+                        }
+                    ]
+                }
+                
+                video_data["playlist_ids"] = {
+                    "current": [old_playlist_id] if old_playlist_id else [],
+                    "history": [
+                        {
+                            "timestamp": video_data.get("created_at", datetime.now().isoformat()),
+                            "playlist_id": old_playlist_id,
+                            "action": "migrated"
+                        }
+                    ] if old_playlist_id else []
+                }
+                
+                video_data["upload_date"] = {
+                    "current": None,
+                    "history": []
+                }
+                
+                # Remove old fields
+                if "playlist_id" in video_data:
+                    del video_data["playlist_id"]
+                
+                migrated = True
+                logger.info(f"Migrated video {video_id} to new format")
+        
+        if migrated:
+            data["last_updated"] = datetime.now().isoformat()
+            self._save_queue_data(data)
+            logger.info("Migration completed")
     
     def _save_queue_data(self, data: Dict[str, Any]):
         """Save queue data to file."""
@@ -119,8 +177,30 @@ class VideoPipelineProgressQueue:
                 
                 # Initialize video with default status for all 7 steps
                 data["pipeline_progress"][video_id] = {
-                    "video_title": video_title,
-                    "playlist_id": playlist_id,
+                    "video_title": {
+                        "current": video_title,
+                        "history": [
+                            {
+                                "timestamp": datetime.now().isoformat(),
+                                "value": video_title,
+                                "action": "initial"
+                            }
+                        ]
+                    },
+                    "playlist_ids": {
+                        "current": [playlist_id] if playlist_id else [],
+                        "history": [
+                            {
+                                "timestamp": datetime.now().isoformat(),
+                                "playlist_id": playlist_id,
+                                "action": "added"
+                            }
+                        ] if playlist_id else []
+                    },
+                    "upload_date": {
+                        "current": None,
+                        "history": []
+                    },
                     "step_01_playlist_processing": "pending",
                     "step_02_video_download": "pending",
                     "step_03_transcription": "pending",
@@ -194,9 +274,10 @@ class VideoPipelineProgressQueue:
                     # Update current status based on step statuses
                     self._update_video_current_status(video_data)
                     
-                    # Update playlist progress if this video belongs to one
-                    if video_data.get("playlist_id"):
-                        self._update_playlist_progress(video_data["playlist_id"], data)
+                    # Update playlist progress for all playlists this video belongs to
+                    playlist_ids = video_data.get("playlist_ids", {}).get("current", [])
+                    for playlist_id in playlist_ids:
+                        self._update_playlist_progress(playlist_id, data)
                     
                     data["last_updated"] = datetime.now().isoformat()
                     self._save_queue_data(data)
@@ -209,6 +290,166 @@ class VideoPipelineProgressQueue:
                 
             except Exception as e:
                 logger.error(f"Failed to update video step status: {e}")
+                return False
+    
+    def update_video_title(self, video_id: str, new_title: str, reason: str = "updated") -> bool:
+        """Update the video title and track the change."""
+        with self.lock:
+            try:
+                data = self._load_queue_data()
+                
+                if video_id not in data["pipeline_progress"]:
+                    logger.error(f"Video {video_id} not found in progress queue")
+                    return False
+                
+                video_data = data["pipeline_progress"][video_id]
+                current_title = video_data["video_title"]["current"]
+                
+                if current_title != new_title:
+                    # Add to history
+                    video_data["video_title"]["history"].append({
+                        "timestamp": datetime.now().isoformat(),
+                        "value": new_title,
+                        "action": reason,
+                        "previous_value": current_title
+                    })
+                    
+                    # Update current value
+                    video_data["video_title"]["current"] = new_title
+                    video_data["last_updated"] = datetime.now().isoformat()
+                    
+                    data["last_updated"] = datetime.now().isoformat()
+                    self._save_queue_data(data)
+                    
+                    logger.info(f"Updated video {video_id} title: '{current_title}' → '{new_title}'")
+                    return True
+                else:
+                    logger.info(f"Video {video_id} title unchanged: '{new_title}'")
+                    return True
+                
+            except Exception as e:
+                logger.error(f"Failed to update video title: {e}")
+                return False
+    
+    def add_video_to_playlist(self, video_id: str, playlist_id: str, reason: str = "added") -> bool:
+        """Add a video to a playlist and track the change."""
+        with self.lock:
+            try:
+                data = self._load_queue_data()
+                
+                if video_id not in data["pipeline_progress"]:
+                    logger.error(f"Video {video_id} not found in progress queue")
+                    return False
+                
+                video_data = data["pipeline_progress"][video_id]
+                current_playlists = video_data["playlist_ids"]["current"]
+                
+                if playlist_id not in current_playlists:
+                    # Add to history
+                    video_data["playlist_ids"]["history"].append({
+                        "timestamp": datetime.now().isoformat(),
+                        "playlist_id": playlist_id,
+                        "action": reason
+                    })
+                    
+                    # Update current list
+                    current_playlists.append(playlist_id)
+                    video_data["last_updated"] = datetime.now().isoformat()
+                    
+                    # Update playlist progress
+                    self._update_playlist_progress(playlist_id, data)
+                    
+                    data["last_updated"] = datetime.now().isoformat()
+                    self._save_queue_data(data)
+                    
+                    logger.info(f"Added video {video_id} to playlist {playlist_id}")
+                    return True
+                else:
+                    logger.info(f"Video {video_id} already in playlist {playlist_id}")
+                    return True
+                
+            except Exception as e:
+                logger.error(f"Failed to add video to playlist: {e}")
+                return False
+    
+    def remove_video_from_playlist(self, video_id: str, playlist_id: str, reason: str = "removed") -> bool:
+        """Remove a video from a playlist and track the change."""
+        with self.lock:
+            try:
+                data = self._load_queue_data()
+                
+                if video_id not in data["pipeline_progress"]:
+                    logger.error(f"Video {video_id} not found in progress queue")
+                    return False
+                
+                video_data = data["pipeline_progress"][video_id]
+                current_playlists = video_data["playlist_ids"]["current"]
+                
+                if playlist_id in current_playlists:
+                    # Add to history
+                    video_data["playlist_ids"]["history"].append({
+                        "timestamp": datetime.now().isoformat(),
+                        "playlist_id": playlist_id,
+                        "action": reason
+                    })
+                    
+                    # Update current list
+                    current_playlists.remove(playlist_id)
+                    video_data["last_updated"] = datetime.now().isoformat()
+                    
+                    # Update playlist progress
+                    self._update_playlist_progress(playlist_id, data)
+                    
+                    data["last_updated"] = datetime.now().isoformat()
+                    self._save_queue_data(data)
+                    
+                    logger.info(f"Removed video {video_id} from playlist {playlist_id}")
+                    return True
+                else:
+                    logger.info(f"Video {video_id} not in playlist {playlist_id}")
+                    return True
+                
+            except Exception as e:
+                logger.error(f"Failed to remove video from playlist: {e}")
+                return False
+    
+    def update_video_upload_date(self, video_id: str, upload_date: str, reason: str = "discovered") -> bool:
+        """Update the video upload date and track the change."""
+        with self.lock:
+            try:
+                data = self._load_queue_data()
+                
+                if video_id not in data["pipeline_progress"]:
+                    logger.error(f"Video {video_id} not found in progress queue")
+                    return False
+                
+                video_data = data["pipeline_progress"][video_id]
+                current_date = video_data["upload_date"]["current"]
+                
+                if current_date != upload_date:
+                    # Add to history
+                    video_data["upload_date"]["history"].append({
+                        "timestamp": datetime.now().isoformat(),
+                        "value": upload_date,
+                        "action": reason,
+                        "previous_value": current_date
+                    })
+                    
+                    # Update current value
+                    video_data["upload_date"]["current"] = upload_date
+                    video_data["last_updated"] = datetime.now().isoformat()
+                    
+                    data["last_updated"] = datetime.now().isoformat()
+                    self._save_queue_data(data)
+                    
+                    logger.info(f"Updated video {video_id} upload date: '{current_date}' → '{upload_date}'")
+                    return True
+                else:
+                    logger.info(f"Video {video_id} upload date unchanged: '{upload_date}'")
+                    return True
+                
+            except Exception as e:
+                logger.error(f"Failed to update video upload date: {e}")
                 return False
     
     def _update_video_current_status(self, video_data: Dict[str, Any]):
@@ -507,6 +748,26 @@ def get_pipeline_status() -> Dict[str, Any]:
     queue = get_progress_queue()
     return queue.get_pipeline_summary()
 
+def update_video_title(video_id: str, new_title: str, reason: str = "updated") -> bool:
+    """Convenience function to update video title."""
+    queue = get_progress_queue()
+    return queue.update_video_title(video_id, new_title, reason)
+
+def add_video_to_playlist(video_id: str, playlist_id: str, reason: str = "added") -> bool:
+    """Convenience function to add video to playlist."""
+    queue = get_progress_queue()
+    return queue.add_video_to_playlist(video_id, playlist_id, reason)
+
+def remove_video_from_playlist(video_id: str, playlist_id: str, reason: str = "removed") -> bool:
+    """Convenience function to remove video from playlist."""
+    queue = get_progress_queue()
+    return queue.remove_video_from_playlist(video_id, playlist_id, reason)
+
+def update_video_upload_date(video_id: str, upload_date: str, reason: str = "discovered") -> bool:
+    """Convenience function to update video upload date."""
+    queue = get_progress_queue()
+    return queue.update_video_upload_date(video_id, upload_date, reason)
+
 
 if __name__ == "__main__":
     # Test the progress queue
@@ -520,7 +781,35 @@ if __name__ == "__main__":
     queue.update_video_step_status("test_video_001", "step_01_playlist_processing", "completed")
     queue.update_video_step_status("test_video_001", "step_02_video_download", "processing")
     
+    # Test change tracking
+    print("\n=== Testing Change Tracking ===")
+    
+    # Update video title
+    queue.update_video_title("test_video_001", "Updated Test Video", "title_updated")
+    queue.update_video_title("test_video_001", "Final Test Video", "title_finalized")
+    
+    # Add to another playlist
+    queue.add_video_to_playlist("test_video_001", "test_playlist_002", "cross_referenced")
+    
+    # Update upload date
+    queue.update_video_upload_date("test_video_001", "20250816", "metadata_discovered")
+    
+    # Show video details
+    video_status = queue.get_video_status("test_video_001")
+    print("\nVideo Details:")
+    print(f"Current Title: {video_status['video_title']['current']}")
+    print(f"Current Playlists: {video_status['playlist_ids']['current']}")
+    print(f"Current Upload Date: {video_status['upload_date']['current']}")
+    
+    print("\nTitle History:")
+    for entry in video_status['video_title']['history']:
+        print(f"  {entry['timestamp']}: {entry['action']} → '{entry['value']}'")
+    
+    print("\nPlaylist History:")
+    for entry in video_status['playlist_ids']['history']:
+        print(f"  {entry['timestamp']}: {entry['action']} playlist '{entry['playlist_id']}'")
+    
     # Get summary
     summary = queue.get_pipeline_summary()
-    print("Pipeline Summary:")
+    print("\nPipeline Summary:")
     print(json.dumps(summary, indent=2))

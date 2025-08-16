@@ -1,0 +1,166 @@
+{
+  "pipeline_progress": {
+    "test_video_001": {
+      "video_title": {
+        "current": "Final Test Video",
+        "history": [
+          {
+            "timestamp": "2025-08-16T16:43:37.984269",
+            "value": "Test Video",
+            "action": "migrated"
+          },
+          {
+            "timestamp": "2025-08-16T16:54:48.854827",
+            "value": "Updated Test Video",
+            "action": "title_updated",
+            "previous_value": "Test Video"
+          },
+          {
+            "timestamp": "2025-08-16T16:54:48.854983",
+            "value": "Final Test Video",
+            "action": "title_finalized",
+            "previous_value": "Updated Test Video"
+          }
+        ]
+      },
+      "step_01_playlist_processing": "completed",
+      "step_02_video_download": "processing",
+      "step_03_transcription": "pending",
+      "step_04_semantic_chunking": "pending",
+      "step_05_frame_extraction": "pending",
+      "step_06_frame_chunk_alignment": "pending",
+      "step_07_consolidated_embedding": "pending",
+      "current_status": "processing",
+      "current_step": "step_02_video_download",
+      "created_at": "2025-08-16T16:43:37.984269",
+      "last_updated": "2025-08-16T16:54:48.855294",
+      "chunk_count": 0,
+      "frame_count": 0,
+      "error_count": 0,
+      "errors": [],
+      "processing_metadata": {
+        "duration": null,
+        "file_size_mb": null,
+        "transcript_length": null,
+        "chunk_count": null,
+        "frame_count": null
+      },
+      "playlist_ids": {
+        "current": [
+          "test_playlist_001",
+          "test_playlist_002"
+        ],
+        "history": [
+          {
+            "timestamp": "2025-08-16T16:43:37.984269",
+            "playlist_id": "test_playlist_001",
+            "action": "migrated"
+          },
+          {
+            "timestamp": "2025-08-16T16:54:48.855138",
+            "playlist_id": "test_playlist_002",
+            "action": "cross_referenced"
+          }
+        ]
+      },
+      "upload_date": {
+        "current": "20250816",
+        "history": [
+          {
+            "timestamp": "2025-08-16T16:54:48.855293",
+            "value": "20250816",
+            "action": "metadata_discovered",
+            "previous_value": null
+          }
+        ]
+      }
+    },
+    "CXzaq4_MEV8": {
+      "video_title": {
+        "current": "Unconventional Embodiments of Consciousness: a diverse intelligence research program - Michael Levin",
+        "history": [
+          {
+            "timestamp": "2025-08-16T16:44:24.856957",
+            "value": "Unconventional Embodiments of Consciousness: a diverse intelligence research program - Michael Levin",
+            "action": "migrated"
+          }
+        ]
+      },
+      "step_01_playlist_processing": "completed",
+      "step_02_video_download": "completed",
+      "step_03_transcription": "completed",
+      "step_04_semantic_chunking": "completed",
+      "step_05_frame_extraction": "completed",
+      "step_06_frame_chunk_alignment": "completed",
+      "step_07_consolidated_embedding": "completed",
+      "current_status": "completed",
+      "current_step": "step_01_playlist_processing",
+      "created_at": "2025-08-16T16:44:24.856957",
+      "last_updated": "2025-08-16T16:44:24.859212",
+      "chunk_count": 0,
+      "frame_count": 0,
+      "error_count": 0,
+      "errors": [],
+      "processing_metadata": {
+        "duration": 2805,
+        "file_size_mb": 61.72634983062744,
+        "transcript_length": null,
+        "chunk_count": 57,
+        "frame_count": 156,
+        "upload_date": "20250806"
+      },
+      "playlist_ids": {
+        "current": [
+          "formal_presentations_1_on_0"
+        ],
+        "history": [
+          {
+            "timestamp": "2025-08-16T16:44:24.856957",
+            "playlist_id": "formal_presentations_1_on_0",
+            "action": "migrated"
+          }
+        ]
+      },
+      "upload_date": {
+        "current": null,
+        "history": []
+      }
+    }
+  },
+  "playlist_progress": {
+    "test_playlist_001": {
+      "playlist_title": "Test Playlist",
+      "video_count": 1,
+      "videos_processed": 0,
+      "videos_failed": 0,
+      "current_status": "processing",
+      "created_at": "2025-08-16T16:43:37.984077",
+      "last_updated": "2025-08-16T16:43:37.984543",
+      "errors": []
+    },
+    "formal_presentations_1_on_0": {
+      "playlist_title": "Formal Presentations - 1 on 0",
+      "video_count": 1,
+      "videos_processed": 1,
+      "videos_failed": 0,
+      "current_status": "completed",
+      "created_at": "2025-08-16T16:44:24.856760",
+      "last_updated": "2025-08-16T16:44:24.859218",
+      "errors": []
+    }
+  },
+  "pipeline_info": {
+    "total_steps": 7,
+    "steps": [
+      "step_01_playlist_processing",
+      "step_02_video_download",
+      "step_03_transcription",
+      "step_04_semantic_chunking",
+      "step_05_frame_extraction",
+      "step_06_frame_chunk_alignment",
+      "step_07_consolidated_embedding"
+    ]
+  },
+  "created_at": "2025-08-16T16:43:37.983868",
+  "last_updated": "2025-08-16T16:54:48.855295"
+}
