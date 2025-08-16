@@ -1501,12 +1501,7 @@ def main():
     # Header with video
     st.markdown("""
     <div style="display: flex; align-items: center; margin-bottom: 2rem;">
-        <div style="flex: 0 0 auto; margin-right: 2rem;">
-            <video width="200" height="150" autoplay loop muted style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
-                <source src="data:video/mp4;base64,{video_base64}" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+
         <div style="flex: 1; text-align: center;">
             <h1 style="color: #ffffff;">Michael Levin Research Assistant</h1>
             <p style="font-size: 1.2rem; color: #cccccc;">
@@ -1514,8 +1509,7 @@ def main():
             </p>
         </div>
     </div>
-    """.format(video_base64=encode_video_to_base64("thinking_construction.mp4")), unsafe_allow_html=True)
-    
+    """)
     # Check API keys first
     if not check_api_keys():
         st.stop()
