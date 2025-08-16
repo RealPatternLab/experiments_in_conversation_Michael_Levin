@@ -1545,6 +1545,38 @@ def main():
         
         # Display unified embedding information
         if isinstance(st.session_state.retriever, UnifiedRetriever) or type(st.session_state.retriever).__name__ == "UnifiedRetriever":
+            # Custom CSS for metallic silver metric boxes
+            st.markdown("""
+            <style>
+            .stMetric {
+                background: linear-gradient(135deg, #e8e8e8 0%, #f8f8f8 25%, #e0e0e0 50%, #f0f0f0 75%, #d8d8d8 100%);
+                border: 2px solid #c0c0c0;
+                border-radius: 8px;
+                padding: 8px;
+                box-shadow: 
+                    0 2px 4px rgba(0,0,0,0.1),
+                    inset 0 1px 0 rgba(255,255,255,0.8),
+                    0 0 20px rgba(192,192,192,0.3);
+                position: relative;
+                overflow: hidden;
+            }
+            .stMetric::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+                animation: shimmer 3s infinite;
+            }
+            @keyframes shimmer {
+                0% { left: -100%; }
+                100% { left: 100%; }
+            }
+            </style>
+            """, unsafe_allow_html=True)
+            
             st.sidebar.metric("Total Engrams Indexed", stats['total_chunks'])
             st.sidebar.metric("Publications", stats['publications'].get('total_chunks', 0))
             st.sidebar.metric("Videos", stats['videos'].get('total_chunks', 0))
