@@ -1528,11 +1528,6 @@ def main():
         stats = st.session_state.retriever.get_collection_stats()
         active_info = st.session_state.retriever.get_active_embeddings_info()
         
-        # Debug: Log stats for troubleshooting
-        logger.info(f"Retriever type: {type(st.session_state.retriever).__name__}")
-        logger.info(f"Stats: {stats}")
-        logger.info(f"Active info: {active_info}")
-        
         # Sidebar
         st.sidebar.markdown(f"""
         <div style="text-align: center; margin-bottom: 1rem;">
@@ -1549,14 +1544,7 @@ def main():
         """, unsafe_allow_html=True)
         
         # Display unified embedding information
-        # Debug: Show retriever type for troubleshooting
-        retriever_type = type(st.session_state.retriever).__name__
-        st.sidebar.text(f"Debug: Retriever type: {retriever_type}")
-        st.sidebar.text(f"Debug: Stats keys: {list(stats.keys())}")
-        st.sidebar.text(f"Debug: Publications chunks: {stats.get('publications', {}).get('total_chunks', 'N/A')}")
-        st.sidebar.text(f"Debug: Videos chunks: {stats.get('videos', {}).get('total_chunks', 'N/A')}")
-        
-        if isinstance(st.session_state.retriever, UnifiedRetriever):
+        if isinstance(st.session_state.retriever, UnifiedRetriever) or type(st.session_state.retriever).__name__ == "UnifiedRetriever":
             st.sidebar.metric("Total Engrams Indexed", stats['total_chunks'])
             st.sidebar.metric("Publications", stats['publications'].get('total_chunks', 0))
             st.sidebar.metric("Videos", stats['videos'].get('total_chunks', 0))
