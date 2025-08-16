@@ -51,16 +51,43 @@ class FrameChunkAligner:
         chunk_files = list(self.chunks_dir.glob("*_chunks.json"))
         logger.info(f"Found {len(chunk_files)} chunk files")
         
+        # Track processing statistics
+        total_videos = len(chunk_files)
+        new_alignments = 0
+        existing_alignments = 0
+        failed_alignments = 0
+        
         for chunk_file in chunk_files:
             try:
-                self.process_single_video(chunk_file)
+                result = self.process_single_video(chunk_file)
+                if result == 'new':
+                    new_alignments += 1
+                elif result == 'existing':
+                    existing_alignments += 1
+                elif result == 'failed':
+                    failed_alignments += 1
             except Exception as e:
                 logger.error(f"Failed to process {chunk_file.name}: {e}")
+                failed_alignments += 1
+        
+        # Log summary
+        logger.info(f"Frame-Chunk Alignment Summary:")
+        logger.info(f"  Total videos: {total_videos}")
+        logger.info(f"  New alignments: {new_alignments}")
+        logger.info(f"  Existing alignments: {existing_alignments}")
+        logger.info(f"  Failed: {failed_alignments}")
+        logger.info(f"  Success rate: {((new_alignments + existing_alignments) / total_videos * 100):.1f}%")
     
     def process_single_video(self, chunk_file: Path):
         """Process a single video's chunks and frames"""
         video_id = chunk_file.stem.replace('_chunks', '')
         logger.info(f"Processing video: {video_id}")
+        
+        # Check if alignments already exist
+        alignment_file = self.output_dir / f"{video_id}_alignments.json"
+        if alignment_file.exists():
+            logger.info(f"Alignments already exist for {video_id}, skipping")
+            return 'existing'
         
         # Load chunks
         with open(chunk_file, 'r') as f:
@@ -71,7 +98,7 @@ class FrameChunkAligner:
         
         if not frames_data:
             logger.warning(f"No frames found for {video_id}")
-            return
+            return 'failed'
         
         # Create alignments
         alignments = self.create_timestamp_based_alignment(frames_data, chunks_data)
@@ -83,6 +110,7 @@ class FrameChunkAligner:
         self.save_alignments(alignments, rag_output, video_id)
         
         logger.info(f"Successfully processed video: {video_id}")
+        return 'new'
     
     def load_frames_data(self, video_id: str) -> Optional[Dict[str, Any]]:
         """Load frames data for a video"""
