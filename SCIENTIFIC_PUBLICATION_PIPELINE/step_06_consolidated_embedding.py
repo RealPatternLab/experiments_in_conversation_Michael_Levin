@@ -154,21 +154,39 @@ class ConsolidatedEmbeddingGenerator:
             return None
     
     def create_enhanced_text(self, chunk: Dict) -> str:
-        """Create enhanced text that includes topics for better semantic understanding."""
+        """Create enhanced text that includes topics, summary, and key terms for better semantic understanding."""
         text = chunk.get('text', '')
         primary_topic = chunk.get('primary_topic', '')
         secondary_topics = chunk.get('secondary_topics', [])
+        chunk_summary = chunk.get('chunk_summary', '')
+        key_terms = chunk.get('key_terms', [])
         
-        if primary_topic and primary_topic != 'Unknown':
-            enhanced = f"{text}\n\nTopic: {primary_topic}"
-            
-            # Include ALL secondary topics for complete semantic context
-            if secondary_topics:
-                unique_topics = [t for t in secondary_topics if t != primary_topic]
-                if unique_topics:
-                    enhanced += f"\nRelated: {', '.join(unique_topics)}"
-        else:
-            enhanced = text
+        # Start with the main text
+        enhanced_parts = [text]
+        
+        # Add chunk summary if available (this is crucial for semantic understanding)
+        if chunk_summary and chunk_summary.strip() and chunk_summary != 'Unknown':
+            enhanced_parts.append(f"Summary: {chunk_summary}")
+        
+        # Add primary topic if available
+        if primary_topic and primary_topic.strip() and primary_topic != 'Unknown':
+            enhanced_parts.append(f"Primary Topic: {primary_topic}")
+        
+        # Add secondary topics if available
+        if secondary_topics:
+            # Filter out empty/unknown topics and duplicates
+            valid_topics = [t for t in secondary_topics if t and t.strip() and t != 'Unknown' and t != primary_topic]
+            if valid_topics:
+                enhanced_parts.append(f"Related Topics: {', '.join(valid_topics)}")
+        
+        # Add key terms if available
+        if key_terms:
+            valid_terms = [t for t in key_terms if t and t.strip() and t != 'Unknown']
+            if valid_terms:
+                enhanced_parts.append(f"Key Terms: {', '.join(valid_terms)}")
+        
+        # Join all parts with double newlines for clear separation
+        enhanced = "\n\n".join(enhanced_parts)
         
         return enhanced
 

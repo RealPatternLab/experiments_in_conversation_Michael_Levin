@@ -828,14 +828,46 @@ class UnifiedRetriever:
                 result['pipeline_source'] = 'videos'
                 result['content_type'] = 'video_transcript'
             
-            # Combine and sort by similarity score
-            all_results = publications_results + video_results
-            all_results.sort(key=lambda x: x.get('similarity_score', 0), reverse=True)
+            # Normalize similarity scores to make them comparable across pipelines
+            if publications_results and video_results:
+                # Get score ranges for each pipeline
+                pub_scores = [r.get('similarity_score', 0) for r in publications_results]
+                video_scores = [r.get('similarity_score', 0) for r in video_results]
+                
+                pub_min, pub_max = min(pub_scores), max(pub_scores)
+                video_min, video_max = min(video_scores), max(video_scores)
+                
+                # Normalize to 0-1 range for fair comparison
+                for result in publications_results:
+                    if pub_max > pub_min:
+                        result['normalized_score'] = (result.get('similarity_score', 0) - pub_min) / (pub_max - pub_min)
+                    else:
+                        result['normalized_score'] = 0.5
+                
+                for result in video_results:
+                    if video_max > video_min:
+                        result['normalized_score'] = (result.get('similarity_score', 0) - video_min) / (video_max - video_min)
+                    else:
+                        result['normalized_score'] = 0.5
+                
+                # Sort by normalized scores for fair comparison
+                all_results = publications_results + video_results
+                all_results.sort(key=lambda x: x.get('normalized_score', 0), reverse=True)
+                
+                logger.info(f"🔍 Unified search with normalized scores: {len(publications_results)} publications + {len(video_results)} videos")
+                logger.info(f"   Publication score range: {pub_min:.3f} - {pub_max:.3f}")
+                logger.info(f"   Video score range: {video_min:.3f} - {video_max:.3f}")
+                
+            else:
+                # If only one pipeline has results, just use raw scores
+                all_results = publications_results + video_results
+                all_results.sort(key=lambda x: x.get('similarity_score', 0), reverse=True)
+                logger.info(f"🔍 Unified search (single pipeline): {len(publications_results)} publications + {len(video_results)} videos")
             
             # Return top_k combined results
             final_results = all_results[:top_k]
             
-            logger.info(f"🔍 Unified search: {len(publications_results)} publications + {len(video_results)} videos = {len(final_results)} total results")
+            logger.info(f"🔍 Final results: {len(final_results)} total (requested: {top_k})")
             
             return final_results
             
