@@ -168,7 +168,7 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
                     if frame_path and Path(frame_path).exists():
                         # Display thumbnail as clickable image
                         logger.info(f"✅ Creating thumbnail for {chunk_id} using frame: {frame_path}")
-                        thumbnail_html = f'<a href="{youtube_url}" target="_blank" title="Watch video at {start_time}s"><img src="data:image/jpeg;base64,{encode_image_to_base64(frame_path)}" style="width: 80px; height: 60px; border-radius: 4px; margin: 0 5px; vertical-align: middle;" alt="Video thumbnail"></a>'
+                        thumbnail_html = f'<a href="{youtube_url}" target="_blank" title="Watch video at {start_time}s"><img src="data:image/jpeg;base64,{encode_image_to_base64(frame_path)}" style="width: 160px; height: 120px; border-radius: 4px; margin: 0 5px; vertical-align: middle;" alt="Video thumbnail"></a>'
                     else:
                         # Fallback: just show clickable text
                         logger.warning(f"⚠️ No frame found for {chunk_id}, using text fallback. Frame path: {frame_path}")
