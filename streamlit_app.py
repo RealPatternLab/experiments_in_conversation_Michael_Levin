@@ -1038,68 +1038,68 @@ def conversational_page():
                             })
                         
                         # Always show sources expander (either filtered or all results)
-                        if rag_results:
-                            logger.info(f"📚 Setting up Sources Used display for {len(rag_results)} results")
+                        # if rag_results:
+                        #     logger.info(f"📚 Setting up Sources Used display for {len(rag_results)} results")
                             
-                            # Process metadata for display
-                            processed_results = process_rag_metadata(rag_results)
-                            processed_filtered_results = process_rag_metadata(filtered_results) if filtered_results else []
+                        #     # Process metadata for display
+                        #     processed_results = process_rag_metadata(rag_results)
+                        #     processed_filtered_results = process_rag_metadata(filtered_results) if filtered_results else []
                             
-                            logger.info(f"   Processed {len(processed_results)} total results")
-                            logger.info(f"   Processed {len(processed_filtered_results)} filtered results")
+                        #     logger.info(f"   Processed {len(processed_results)} total results")
+                        #     logger.info(f"   Processed {len(processed_filtered_results)} filtered results")
                             
-                            with st.expander("📚 Sources used"):
-                                # Track unique sources to avoid duplicates
-                                seen_sources = set()
-                                source_counter = 1
+                        #     with st.expander("📚 Sources used"):
+                        #         # Track unique sources to avoid duplicates
+                        #         seen_sources = set()
+                        #         source_counter = 1
                                 
-                                # Show filtered results if available, otherwise show all results
-                                results_to_show = processed_filtered_results if processed_filtered_results else processed_results
-                                logger.info(f"   Displaying {len(results_to_show)} results in Sources Used")
+                        #         # Show filtered results if available, otherwise show all results
+                        #         results_to_show = processed_filtered_results if processed_filtered_results else processed_results
+                        #         logger.info(f"   Displaying {len(results_to_show)} results in Sources Used")
                                 
-                                for i, result in enumerate(results_to_show[:5]):  # Show up to 5 results
-                                    logger.info(f"   📝 Processing result {i+1} for display: {result.get('content_id', 'Unknown')}")
+                        #         for i, result in enumerate(results_to_show[:5]):  # Show up to 5 results
+                        #             logger.info(f"   📝 Processing result {i+1} for display: {result.get('content_id', 'Unknown')}")
                                     
-                                    source_title = result.get('title', 'Unknown')
-                                    year = result.get('publication_year', 'Unknown')
-                                    section_header = result.get('section', 'Unknown')
-                                    similarity = result.get('similarity_score', 0)
+                        #             source_title = result.get('title', 'Unknown')
+                        #             year = result.get('publication_year', 'Unknown')
+                        #             section_header = result.get('section', 'Unknown')
+                        #             similarity = result.get('similarity_score', 0)
                                     
-                                    logger.info(f"      Title: {source_title}")
-                                    logger.info(f"      Year: {year}")
-                                    logger.info(f"      Section: {section_header}")
-                                    logger.info(f"      Similarity: {similarity}")
+                        #             logger.info(f"      Title: {source_title}")
+                        #             logger.info(f"      Year: {year}")
+                        #             logger.info(f"      Section: {section_header}")
+                        #             logger.info(f"      Similarity: {similarity}")
                                     
-                                    # Create a unique identifier for this source
-                                    source_id = f"{source_title}_{year}_{section_header}"
-                                    logger.info(f"      Source ID: {source_id}")
+                        #             # Create a unique identifier for this source
+                        #             source_id = f"{source_title}_{year}_{section_header}"
+                        #             logger.info(f"      Source ID: {source_id}")
                                     
-                                    # Only show the source if it hasn't been listed before
-                                    if source_id not in seen_sources:
-                                        # Add visual indicator for filtered vs unfiltered results
-                                        status = "✅" if result in processed_filtered_results else "⚠️"
+                        #             # Only show the source if it hasn't been listed before
+                        #             if source_id not in seen_sources:
+                        #                 # Add visual indicator for filtered vs unfiltered results
+                        #                 status = "✅" if result in processed_filtered_results else "⚠️"
                                         
-                                        # Add pipeline source indicator
-                                        pipeline_icon = ""
-                                        if result.get('pipeline_source') == 'videos':
-                                            pipeline_icon = "🎥"
-                                        elif result.get('pipeline_source') == 'publications':
-                                            pipeline_icon = "📚"
+                        #                 # Add pipeline source indicator
+                        #                 pipeline_icon = ""
+                        #                 if result.get('pipeline_source') == 'videos':
+                        #                     pipeline_icon = "🎥"
+                        #                 elif result.get('pipeline_source') == 'publications':
+                        #                     pipeline_icon = "📚"
                                         
-                                        display_text = f"**{source_counter}.** {status} {pipeline_icon} {source_title} ({year}) - Section: {section_header} (Similarity: {similarity:.3f})"
-                                        logger.info(f"      🎯 Displaying: {display_text}")
+                        #                 display_text = f"**{source_counter}.** {status} {pipeline_icon} {source_title} ({year}) - Section: {section_header} (Similarity: {similarity:.3f})"
+                        #                 logger.info(f"      🎯 Displaying: {display_text}")
                                         
-                                        st.markdown(display_text)
-                                        seen_sources.add(source_id)
-                                        source_counter += 1
-                                    else:
-                                        logger.info(f"      ⚠️ Skipping duplicate source: {source_id}")
+                        #                 st.markdown(display_text)
+                        #                 seen_sources.add(source_id)
+                        #                 source_counter += 1
+                        #             else:
+                        #                 logger.info(f"      ⚠️ Skipping duplicate source: {source_id}")
                                 
-                                # Show threshold info
-                                if processed_filtered_results:
-                                    st.info(f"📊 Showing {len(processed_filtered_results)} results that met similarity threshold: {similarity_threshold:.2f}")
-                                else:
-                                    st.warning(f"📊 No results met similarity threshold: {similarity_threshold:.2f}. Showing all {len(processed_results)} results below threshold.")
+                        #         # Show threshold info
+                        #         if processed_filtered_results:
+                        #             st.info(f"📊 Showing {len(processed_filtered_results)} results that met similarity threshold: {similarity_threshold:.2f}")
+                        #         else:
+                        #             st.warning(f"📊 No results met similarity threshold: {similarity_threshold:.2f}. Showing all {len(processed_results)} results below threshold.")
                         
                 except Exception as e:
                     error_msg = f"Sorry, I encountered an error: {e}"
@@ -1483,7 +1483,7 @@ def main():
     # Header with video
     st.markdown("""
     <div style="text-align: center; margin-bottom: 2rem;">
-        <h1 style="color: #ffffff;">🧠 Michael Levin Research Assistant</h1>
+        <h1 style="color: #ffffff;">Michael Levin Research Assistant</h1>
         <p style="font-size: 1.2rem; color: #cccccc;">
             Explore Michael Levin's research across publications and videos using unified search
         </p>
