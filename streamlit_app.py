@@ -230,25 +230,6 @@ def encode_image_to_base64(image_path: str) -> str:
         logger.error(f"❌ Failed to encode image {image_path}: {e}")
         return ""
 
-def encode_video_to_base64(video_path: str) -> str:
-    """Encode a video file to base64 for inline display."""
-    try:
-        full_path = os.path.join(os.getcwd(), video_path)
-        if not os.path.exists(full_path):
-            logger.warning(f"⚠️ Video file not found: {full_path}")
-            return ""
-        
-        logger.info(f"🎬 Encoding video to base64: {full_path}")
-        with open(full_path, "rb") as video_file:
-            encoded_string = base64.b64encode(video_file.read()).decode('utf-8')
-        
-        logger.info(f"✅ Video encoded successfully: {full_path}")
-        return encoded_string
-        
-    except Exception as e:
-        logger.error(f"❌ Failed to encode video {video_path}: {e}")
-        return ""
-
 def process_rag_metadata(rag_results: list) -> list:
     """Process RAG results to extract proper metadata for display."""
     logger.info(f"🔍 Processing metadata for {len(rag_results)} RAG results")
@@ -1498,18 +1479,17 @@ def main():
     </style>
     """, unsafe_allow_html=True)
     
+    # Header
     # Header with video
     st.markdown("""
-    <div style="display: flex; align-items: center; margin-bottom: 2rem;">
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <h1 style="color: #ffffff;">🧠 Michael Levin Research Assistant</h1>
+        <p style="font-size: 1.2rem; color: #cccccc;">
+            Explore Michael Levin's research across publications and videos using unified search
+        </p>
+            """, unsafe_allow_html=True)
 
-        <div style="flex: 1; text-align: center;">
-            <h1 style="color: #ffffff;">Michael Levin Research Assistant</h1>
-            <p style="font-size: 1.2rem; color: #cccccc;">
-                Explore Michael Levin's research across publications and videos using unified search
-            </p>
-        </div>
-    </div>
-    """)
+
     # Check API keys first
     if not check_api_keys():
         st.stop()
