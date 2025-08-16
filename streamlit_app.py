@@ -1545,11 +1545,11 @@ def main():
         
         # Display unified embedding information
         if isinstance(st.session_state.retriever, UnifiedRetriever) or type(st.session_state.retriever).__name__ == "UnifiedRetriever":
-            # Simple CSS to change metric box borders from gray to metallic silver
+            # Simple CSS to change metric box borders to gold/yellow
             st.markdown("""
             <style>
             .stMetric {
-                border: 1px solid #c0c0c0 !important;
+                border: 1px solid #FFD700 !important;
                 border-radius: 4px !important;
             }
             </style>
