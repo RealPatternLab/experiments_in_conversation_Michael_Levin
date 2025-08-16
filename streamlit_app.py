@@ -49,6 +49,18 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Custom CSS to make sidebar narrower
+st.markdown("""
+<style>
+    [data-testid="stSidebar"] {
+        width: 200px !important;
+    }
+    [data-testid="stSidebar"] > div:first-child {
+        width: 200px !important;
+    }
+</style>
+""", unsafe_allow_html=True)
+
 # GitHub repository configuration
 # These can be set via environment variables for different deployments
 # Example: export GITHUB_REPO="your-username/your-repo"
