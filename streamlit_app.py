@@ -221,7 +221,11 @@ def get_conversational_response(query: str, rag_results: list, conversation_hist
                 chunk_id = chunk.get('content_id', 'Unknown')
                 
                 # Extract video ID from chunk_id (format: CXzaq4_MEV8_chunk_000)
-                video_id = chunk_id.split('_')[0] if '_' in chunk_id else 'Unknown'
+                # Take everything before '_chunk_' to get the full video ID
+                if '_chunk_' in chunk_id:
+                    video_id = chunk_id.split('_chunk_')[0]
+                else:
+                    video_id = chunk_id.split('_')[0] if '_' in chunk_id else 'Unknown'
                 
                 # Get metadata from nested structure
                 chunk_metadata = chunk.get('chunk_metadata', {})
