@@ -210,6 +210,110 @@ def save_video_metadata(video_id: str, original_metadata: Dict, download_result:
     except Exception as e:
         print(f"❌ Failed to save metadata: {e}")
 
+def get_video_file_info(video_dir: Path) -> Dict[str, Any]:
+    """
+    Get information about an existing video file.
+    
+    Args:
+        video_dir: Directory containing the video
+        
+    Returns:
+        Dictionary with file information
+    """
+    video_files = list(video_dir.glob("video.*"))
+    # Filter to only video files
+    video_files = [f for f in video_files if f.suffix.lower() in ['.mp4', '.webm', '.mkv', '.avi', '.mov']]
+    
+    if not video_files:
+        return {'exists': False, 'file_path': None, 'file_size_mb': 0}
+    
+    video_file = video_files[0]
+    file_size_mb = video_file.stat().st_size / (1024*1024)
+    
+    return {
+        'exists': True,
+        'file_path': str(video_file),
+        'file_size_mb': file_size_mb,
+        'file_extension': video_file.suffix
+    }
+
+def update_existing_video_metadata(video_id: str, new_playlist_metadata: Dict, output_dir: Path):
+    """
+    Update metadata for an existing video to show it belongs to this playlist.
+    
+    Args:
+        video_id: YouTube video ID
+        new_playlist_metadata: Metadata from the current playlist
+        output_dir: Base output directory
+    """
+    video_dir = output_dir / f"video_{video_id}"
+    metadata_file = video_dir / "comprehensive_metadata.json"
+    
+    # Get actual video file information
+    video_info = get_video_file_info(video_dir)
+    
+    if not metadata_file.exists():
+        print(f"⚠️  No existing metadata found for {video_id}, creating new entry")
+        # Create new metadata if none exists
+        save_video_metadata(video_id, new_playlist_metadata, {
+            'success': True,
+            'video_file': video_info.get('file_path', str(video_dir / "video.mp4")),
+            'file_size_mb': video_info.get('file_size_mb', 0),
+            'additional_metadata': {},
+            'download_time': 'already_processed',
+            'status': 'existing_video'
+        }, output_dir)
+        return
+    
+    try:
+        # Load existing metadata
+        with open(metadata_file, 'r', encoding='utf-8') as f:
+            existing_metadata = json.load(f)
+        
+        # Add playlist information
+        if 'playlists' not in existing_metadata:
+            existing_metadata['playlists'] = []
+        
+        # Check if this playlist is already listed
+        current_playlist_id = new_playlist_metadata.get('playlist_id', 'unknown')
+        playlist_already_exists = any(
+            p.get('playlist_id') == current_playlist_id 
+            for p in existing_metadata['playlists']
+        )
+        
+        if not playlist_already_exists:
+            # Add this playlist to the list
+            playlist_info = {
+                'playlist_id': current_playlist_id,
+                'playlist_title': new_playlist_metadata.get('playlist_title', 'Unknown'),
+                'added_to_playlist': datetime.now().isoformat(),
+                'video_position': new_playlist_metadata.get('position', 0)
+            }
+            existing_metadata['playlists'].append(playlist_info)
+            
+            # Update the processing timestamp
+            existing_metadata['last_updated'] = datetime.now().isoformat()
+            
+            # Save updated metadata
+            with open(metadata_file, 'w', encoding='utf-8') as f:
+                json.dump(existing_metadata, f, indent=2, ensure_ascii=False)
+            
+            print(f"✅ Updated metadata for {video_id} - added to playlist {current_playlist_id}")
+        else:
+            print(f"ℹ️  Video {video_id} already belongs to playlist {current_playlist_id}")
+            
+    except Exception as e:
+        print(f"❌ Failed to update metadata for {video_id}: {e}")
+        # Fallback: create new metadata entry
+        save_video_metadata(video_id, new_playlist_metadata, {
+            'success': True,
+            'video_file': video_info.get('file_path', str(video_dir / "video.mp4")),
+            'file_size_mb': video_info.get('file_size_mb', 0),
+            'additional_metadata': {},
+            'download_time': 'already_processed',
+            'status': 'existing_video_metadata_updated'
+        }, output_dir)
+
 def process_playlist_videos(playlist_data: Dict, output_dir: Path, max_videos: Optional[int] = None) -> Dict[str, Any]:
     """
     Process all videos in the playlist.
@@ -238,6 +342,8 @@ def process_playlist_videos(playlist_data: Dict, output_dir: Path, max_videos: O
     results = []
     successful_downloads = 0
     failed_downloads = 0
+    skipped_videos = 0
+    existing_videos = 0
     
     for i, video in enumerate(videos, 1):
         video_id = video.get('video_id')
@@ -251,7 +357,35 @@ def process_playlist_videos(playlist_data: Dict, output_dir: Path, max_videos: O
         print(f"📹 Processing video {i}/{len(videos)}: {video_id}")
         print(f"{'='*60}")
         
-        # Download video
+        # Check if video has already been processed
+        video_dir = output_dir / f"video_{video_id}"
+        video_info = get_video_file_info(video_dir)
+        
+        if video_dir.exists() and video_info['exists']:
+            print(f"🔄 Video already exists: {video_id}")
+            print(f"   Directory: {video_dir}")
+            print(f"   Video file: {video_info['file_path']}")
+            print(f"   File size: {video_info['file_size_mb']:.1f} MB")
+            
+            # Update metadata to show this video belongs to this playlist
+            update_existing_video_metadata(video_id, video, output_dir)
+            
+            # Track as existing video
+            existing_videos += 1
+            results.append({
+                'video_id': video_id,
+                'title': video_title,
+                'status': 'already_processed',
+                'local_path': video_info['file_path'],
+                'file_size_mb': video_info['file_size_mb'],
+                'playlist_added': datetime.now().isoformat()
+            })
+            
+            print(f"✅ Video {i} metadata updated (already processed)")
+            continue
+        
+        # Download video if it doesn't exist
+        print(f"⬇️  Downloading new video: {video_id}")
         download_result = download_video(video_id, video_title, output_dir)
         
         # Save comprehensive metadata
@@ -260,15 +394,16 @@ def process_playlist_videos(playlist_data: Dict, output_dir: Path, max_videos: O
         # Track results
         if download_result['success']:
             successful_downloads += 1
-            print(f"✅ Video {i} completed successfully")
+            print(f"✅ Video {i} downloaded successfully")
         else:
             failed_downloads += 1
-            print(f"❌ Video {i} failed")
+            print(f"❌ Video {i} download failed")
         
         results.append({
             'video_id': video_id,
             'title': video_title,
-            'download_result': download_result
+            'download_result': download_result,
+            'status': 'newly_downloaded'
         })
         
         # Small delay to be respectful to YouTube
@@ -279,6 +414,8 @@ def process_playlist_videos(playlist_data: Dict, output_dir: Path, max_videos: O
         'total_videos': len(videos),
         'successful_downloads': successful_downloads,
         'failed_downloads': failed_downloads,
+        'existing_videos': existing_videos,
+        'skipped_videos': skipped_videos,
         'success_rate': (successful_downloads / len(videos)) * 100 if videos else 0,
         'processing_timestamp': datetime.now().isoformat(),
         'results': results
@@ -355,16 +492,19 @@ def main():
     # Display results
     print(f"\n📊 Download Summary:")
     print(f"Total Videos: {summary['total_videos']}")
-    print(f"Successful Downloads: {summary['successful_downloads']}")
+    print(f"New Downloads: {summary['successful_downloads']}")
+    print(f"Existing Videos: {summary['existing_videos']}")
     print(f"Failed Downloads: {summary['failed_downloads']}")
     print(f"Success Rate: {summary['success_rate']:.1f}%")
     
-    if summary['successful_downloads'] > 0:
+    total_processed = summary['successful_downloads'] + summary['existing_videos']
+    if total_processed > 0:
         print(f"\n🚀 Ready for Step 03: Transcription")
-        print(f"Videos downloaded to: {step_02_dir}")
+        print(f"Total videos ready: {total_processed}")
+        print(f"Videos located at: {step_02_dir}")
         print(f"Run: python step_03_transcription.py")
     else:
-        print(f"\n❌ No videos were downloaded successfully")
+        print(f"\n❌ No videos were processed successfully")
         print(f"Check the logs for error details")
 
 if __name__ == "__main__":
