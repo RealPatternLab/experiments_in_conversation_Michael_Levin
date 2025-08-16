@@ -1,0 +1,35 @@
+{
+  "chunk_id": "CXzaq4_MEV8_chunk_051",
+  "text": "So, like bubble sort, okay, these are six lines of code, completely transparent, completely deterministic People have been working on them for many decades If you look at them the right way, you see that, yeah, they do the thing they're supposed to do, which is to sort numbers, but they also have these weird side quests that, that we measured as clustering and some other properties that are basically nowhere in the algorithm In other words, they have behaviors that would be again, quite recognizable by behavioral scientists that are not what the algorithm is forcing them to do Okay And so I, I think what this means is that there is something else besides chance and necessity, and this is a way to, to start thinking about what, what significant minds do",
+  "token_count": 134,
+  "sentence_count": 6,
+  "start_sentence": 51,
+  "end_sentence": 56,
+  "start_time_ms": 2481840,
+  "end_time_ms": 2529650,
+  "start_time_seconds": 2481.84,
+  "end_time_seconds": 2529.65,
+  "primary_topics": [
+    "Bubble sort algorithm",
+    "Deterministic behavior",
+    "Unexpected behaviors in algorithms"
+  ],
+  "secondary_topics": [
+    "Number sorting",
+    "Algorithmic properties",
+    "Behavioral science",
+    "Chance and necessity",
+    "Concept of significant minds"
+  ],
+  "key_terms": [
+    "Bubble sort",
+    "Deterministic",
+    "Clustering",
+    "Algorithm",
+    "Behavioral scientists",
+    "Chance and necessity"
+  ],
+  "content_summary": "The speaker discusses the deterministic nature of the bubble sort algorithm, highlighting unexpected behaviors such as clustering. The speaker suggests these behaviors may be more than just chance and necessity, hinting at the concept of 'significant minds'.",
+  "scientific_domain": "Computational biology, Bioelectricity",
+  "enhanced": true
+}

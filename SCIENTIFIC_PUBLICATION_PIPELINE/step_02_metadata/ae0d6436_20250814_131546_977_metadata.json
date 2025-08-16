@@ -1,0 +1,49 @@
+{
+  "document_type": "journal-article",
+  "title": "Phase conjugation of twisted Gaussian Schell model beams in stimulated down-conversion",
+  "authors": [
+    "Gustavo H. dos Santos",
+    "Andre G. de Oliveira",
+    "Nara Rubiano da Silva",
+    "Gustavo Cañas",
+    "Esteban S. Gómez",
+    "Stuti Joshi",
+    "Yaseera Ismail",
+    "Paulo H. Souto Ribeiro",
+    "Stephen Patrick Walborn"
+  ],
+  "journal": "Nanophotonics",
+  "publication_year": 2021,
+  "doi": "10.1515/nanoph-2021-0502",
+  "abstract": null,
+  "extraction_confidence": "high",
+  "filename": "ae0d6436_20250814_131546_977.pdf",
+  "extraction_timestamp": "2025-08-14T13:17:35.642413",
+  "extraction_method": "gemini_1.5_flash",
+  "pages_analyzed": 2,
+  "publication_date": "2022-02-25",
+  "page_range": "763-770",
+  "volume": "11",
+  "issue": "4",
+  "references_count": 44,
+  "publisher": "Walter de Gruyter GmbH",
+  "issn": "2192-8614",
+  "crossref_data": true,
+  "enrichment_method": "crossref_api",
+  "crossref_enriched": true,
+  "enrichment_timestamp": "2025-08-14T13:27:00.452616",
+  "affiliations": [
+    "center of the chromatophores whereas expanded chromatophores show higher irregularity in the location of the lowest reflecting regions",
+    "Department of the Navy",
+    "laboratory conditions [16",
+    "Laboratory Animal Care) guidelines were followed for handling octopuses and administering anesthesia [38]. Upon receival",
+    "LAB R2020a and Fiji were used to analyze the data. Specifically"
+  ],
+  "keywords": [
+    "biophotonics",
+    "dynamic coloration",
+    "multispectral mapping",
+    "Octopus bimaculoides"
+  ],
+  "text_enriched": true
+}

@@ -1,0 +1,383 @@
+{
+  "metadata": {
+    "document_type": "journal-article",
+    "title": "Transcriptomic and Metabolomic Profiling Identifies Calcium-Dependent Signaling Mechanisms As a Novel and Exploitable Target to Overcome Anti-CD20 Resistance in Non-Hodgkin Lymphoma (NHL)",
+    "authors": [
+      "Ravi Dashnamoorthy",
+      "Saheli Sarkar",
+      "Afshin Beheshti",
+      "Maisarah Mokhtar",
+      "Tali Konry",
+      "Michael Levin",
+      "Andrew M. Evens"
+    ],
+    "journal": "Blood",
+    "publication_year": 2019,
+    "doi": "10.1182/blood-2019-126539",
+    "abstract": null,
+    "extraction_confidence": "high",
+    "filename": "1232ec9d_20250814_131548_364.pdf",
+    "extraction_timestamp": "2025-08-14T13:16:14.746053",
+    "extraction_method": "gemini_1.5_flash",
+    "pages_analyzed": 2,
+    "publication_date": "2019-11-13",
+    "page_range": "1511-1511",
+    "volume": "134",
+    "issue": "Supplement_1",
+    "references_count": 0,
+    "publisher": "American Society of Hematology",
+    "issn": "0006-4971",
+    "crossref_data": true,
+    "enrichment_method": "crossref_api",
+    "crossref_enriched": true,
+    "enrichment_timestamp": "2025-08-14T13:27:05.594720"
+  },
+  "chunks": [
+    {
+      "text": "INTRODUCTION. This section serves as a brief introduction to the paper.",
+      "section": "[PAGE 1] INTRODUCTION",
+      "primary_topic": "Introduction",
+      "secondary_topics": [
+        "paper overview",
+        "research context"
+      ],
+      "chunk_summary": "This section provides a brief introduction to the paper's topic.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "1"
+    },
+    {
+      "text": "Anti-CD20 antibody drugs such as rituximab (RTX) and obinutuzumab (OBZ) are used ubiquitously in the treatment of B cell NHL. However, therapeutic resistance to anti-CD20 antibodies occurs quite commonly, especially in indolent NHL. Known mechanisms of resistance include loss of CD20 expression, poor immunoreactivity and dysfunctional apoptotic responses.",
+      "section": "Anti-CD",
+      "primary_topic": "Anti-CD20 Resistance",
+      "secondary_topics": [
+        "rituximab",
+        "obinutuzumab",
+        "NHL",
+        "resistance mechanisms",
+        "CD20 expression",
+        "immunoreactivity",
+        "apoptosis"
+      ],
+      "chunk_summary": "Anti-CD20 antibodies are commonly used in B cell NHL treatment, but resistance, including loss of CD20 expression, poor immunoreactivity, and dysfunctional apoptosis, is a frequent issue.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "However, few therapeutic strategies have been established to overcome resistance. Identification of new, targetable anti-CD20 resistance mechanisms are needed.",
+      "section": "Anti-CD",
+      "primary_topic": "Overcoming Resistance",
+      "secondary_topics": [
+        "therapeutic strategies",
+        "resistance mechanisms",
+        "targeted therapy",
+        "drug resistance"
+      ],
+      "chunk_summary": "Few strategies exist to overcome anti-CD20 resistance, highlighting the need to identify new targetable mechanisms.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "This section briefly mentions the use of methods.  Due to the extremely limited information provided, no further details on specific experimental procedures, data analysis techniques, or computational modeling approaches can be extracted.",
+      "section": "[PAGE 1] METHODS",
+      "primary_topic": "Methods",
+      "secondary_topics": [
+        "experimental procedures",
+        "data analysis",
+        "computational modeling"
+      ],
+      "chunk_summary": "This section acknowledges the existence of methods but provides no specific details.",
+      "position_in_section": "Beginning",
+      "certainty_level": "Low",
+      "citation_context": "None",
+      "page_number": "1"
+    },
+    {
+      "text": "Anti-CD20 resistant (RR) and OBZ resistant (OR) cells were developed using SUDHL4 and SUDHL10 cultured with chronic low antibody (Ab) drug concentrations. Development of anti-CD20 resistance were characterized by CD20 immunophenotyping, gene expression profiling and systems biology analysis.",
+      "section": "Anti-CD",
+      "primary_topic": "Resistance Development",
+      "secondary_topics": [
+        "anti-CD20",
+        "drug resistance",
+        "immunophenotyping",
+        "gene expression",
+        "systems biology",
+        "SUDHL4",
+        "SUDHL10"
+      ],
+      "chunk_summary": "Anti-CD20 resistant cell lines were developed and characterized using various molecular and systems biology approaches.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Natural killer (NK)-mediated ADCC activity (AcellaTox-Glo) with real-time interaction kinetics by microfluidics was utilized for immunological characterization of anti-CD20 resistance. Calcium agonists (ionomycin, thapsigargin & PMA) inducible calcium release was evaluated using Fluo-4 cell based assay.",
+      "section": "Anti-CD",
+      "primary_topic": "Resistance Characterization",
+      "secondary_topics": [
+        "NK cells",
+        "ADCC",
+        "microfluidics",
+        "calcium signaling",
+        "ionomycin",
+        "thapsigargin",
+        "PMA",
+        "Fluo-4"
+      ],
+      "chunk_summary": "NK cell activity and calcium signaling were investigated to further characterize anti-CD20 resistance mechanisms.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Western blot analysis was used to investigate BCR, autophagy and proteosomal signaling pathways. Metabolomic profiling was performed using Mass Spectrometry.",
+      "section": "Anti-CD",
+      "primary_topic": "Mechanism Investigation",
+      "secondary_topics": [
+        "Western blot",
+        "BCR signaling",
+        "autophagy",
+        "proteasome",
+        "metabolomics",
+        "mass spectrometry"
+      ],
+      "chunk_summary": "BCR signaling, autophagy, proteasomal pathways, and metabolomic profiles were analyzed to explore the underlying mechanisms of resistance.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "This section presents the results of the study. Due to the extremely limited content provided, a detailed analysis and breakdown into multiple chunks is not possible. The brevity of the section prevents a meaningful discussion of specific findings or data interpretation.",
+      "section": "[PAGE 2] RESULTS",
+      "primary_topic": "Results",
+      "secondary_topics": [
+        "data analysis",
+        "findings",
+        "experimental outcomes"
+      ],
+      "chunk_summary": "This section, being extremely short, simply states that it is the results section.",
+      "position_in_section": "Beginning",
+      "certainty_level": "Low",
+      "citation_context": "None",
+      "page_number": "2"
+    },
+    {
+      "text": "Microfluidic analyses of co-encapsulated single NK and SUDHL10 cell 1:1 effector-target (E:T) ratio revealed that NK cells engaged briskly with target cells within <50 minutes and resulted in >75% cell death within 120 minutes in the presence of anti-CD20 Ab drugs in RTX & OBZ-sensitive cells (P<0.001). These interaction kinetics indicated that CD20 Ab drugs facilitated rapid engagement & sustained tumor-NK interactions to promote cell death.",
+      "section": "Microfluidic analyses of co",
+      "primary_topic": "NK cell activity",
+      "secondary_topics": [
+        "microfluidics",
+        "anti-CD20 antibodies",
+        "ADCC",
+        "NK cells",
+        "tumor cells",
+        "cell death",
+        "drug sensitivity"
+      ],
+      "chunk_summary": "Microfluidic assays demonstrated that anti-CD20 antibodies enhance NK cell engagement and killing of sensitive tumor cells.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "However, ADCC assays using anti-CD20 Abs and primary NK cells revealed a marked decrease in NK mediated ADCC activity in RR (11%, P=0.0002) and OR (17%, P=0.001) cells compared with RTX- or OBZ-sensitive NHL B cells. Transcriptomic and secretomic analyses revealed downregulation of calcium dependent inflammatory responses (i.e., IFN, NFAT, IL6, IL22 & complementary pathways) with concurrent upregulation of nucleotide metabolism in both RR and OR cells.",
+      "section": "Microfluidic analyses of co",
+      "primary_topic": "Drug resistance mechanisms",
+      "secondary_topics": [
+        "ADCC",
+        "drug resistance",
+        "NK cells",
+        " transcriptomics",
+        "secretomics",
+        "calcium signaling",
+        "inflammatory response",
+        "nucleotide metabolism"
+      ],
+      "chunk_summary": "Drug-resistant cells showed reduced NK cell-mediated ADCC activity and altered gene expression related to inflammatory responses and nucleotide metabolism.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "Subsequently, analysis for 'store operated' calcium demonstrated lack of thapsigargin-releasable calcium in anti-CD20 resistant cells (Fig A-B) resulting in significant depolarization of NHL cells. While depolarization is relevant to BTK activation and mitogenic responses, we also observed activation of the pro-survival pathway, JNK (by phosphorylation), corresponding to lower calcium levels in anti-CD20 resistant NHL cells.",
+      "section": "Subsequently",
+      "primary_topic": "Calcium Signaling",
+      "secondary_topics": [
+        "calcium",
+        "depolarization",
+        "NHL cells",
+        "anti-CD20 resistance",
+        "BTK activation",
+        "JNK pathway",
+        "thapsigargin"
+      ],
+      "chunk_summary": "Lack of thapsigargin-releasable calcium in anti-CD20 resistant NHL cells leads to depolarization and activation of JNK pro-survival pathway.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "Lower calcium levels also modulated proteasomal function and promoted glucose-dependent metabolic activity. Additionally, metabolic profiling identified increased glucose uptake and significant increases in the pool sizes of AMP, GMP, CMP and UMP in both RR and OR cells compared with parental SUDHL-4 cells, which validated increases in nucleotide metabolism as predicted by transcriptomic studies.",
+      "section": "Subsequently",
+      "primary_topic": "Metabolic Activity",
+      "secondary_topics": [
+        "calcium",
+        "proteasome",
+        "glucose metabolism",
+        "nucleotide metabolism",
+        "AMP",
+        "GMP",
+        "CMP",
+        "UMP",
+        "SUDHL-4 cells",
+        "transcriptomics"
+      ],
+      "chunk_summary": "Lower calcium levels modulate proteasomal function, promote glucose metabolism, and increase nucleotide pools in resistant NHL cells, validating transcriptomic predictions.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "Thus, we hypothesized that calcium-dependent mechanisms may be exploited to induce cell death in anti-CD20 resistant cells. We delineated the impact of reversing depolarization with ivermectin, inhibition of BTK with acalibrunitib, and blocking autophagy and proteasomal function using chloroquine and bortezomib, respectively, in RR & OR cells. Findings indicated that co-targeting with acalibrunitib & ivermectin resulted in significantly decreased cell viability in SUDHL-4 RR cells compared with parental SUDHL4 cells (P<0.0001).",
+      "section": "Thus",
+      "primary_topic": "Cell Death Induction",
+      "secondary_topics": [
+        "calcium-dependent mechanisms",
+        "anti-CD20 resistance",
+        "ivermectin",
+        "acalibrutinib",
+        "chloroquine",
+        "bortezomib",
+        "autophagy",
+        "proteasomal function",
+        "cell viability"
+      ],
+      "chunk_summary": "This study investigated the impact of various drugs, including ivermectin and acalibrunitib, on cell viability in anti-CD20 resistant cells, finding that combined treatment significantly reduced viability.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "Furthermore, chloroquine or bortezomib treatment resulted in increased CD20 expression both in parental and anti-CD20 resistant cells (Fig C-D). In vivo studies of these therapeutics alone & combined are under evaluation in CD20 sensitive and resistant human xenograft NHL models and will be reported at the meeting.",
+      "section": "Thus",
+      "primary_topic": "CD20 Expression",
+      "secondary_topics": [
+        "chloroquine",
+        "bortezomib",
+        "CD20",
+        "in vivo studies",
+        "xenograft",
+        "NHL models",
+        "drug resistance"
+      ],
+      "chunk_summary": "Chloroquine and bortezomib increased CD20 expression in both parental and resistant cells, and further in vivo studies are underway in xenograft models.",
+      "position_in_section": "End",
+      "certainty_level": "Medium",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "The provided section titled \"CONCLUSIONS\" on page 2 is extremely brief, containing only the title itself.  Due to the lack of content, a detailed analysis of specific topics, methods, or findings is not possible.  This minimal content suggests that the full paper may be incomplete or that this section was inadvertently left blank.",
+      "section": "[PAGE 2] CONCLUSIONS",
+      "primary_topic": "Missing Content",
+      "secondary_topics": [
+        "incomplete paper",
+        "blank section",
+        "missing conclusions"
+      ],
+      "chunk_summary": "The conclusions section is empty, preventing any meaningful analysis.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "2"
+    },
+    {
+      "text": "We identified calcium as a critical modulator of anti-CD20 resistance in B cell NHL. Furthermore, rational multi-targeting of cellular voltage potential with BTK signaling, autophagy, and proteasomal activity resulted in CD20 re-expression and prominent enhancement of cell death in resistant NHL cells.",
+      "section": "We identified calcium as a critical modulator of anti-CD",
+      "primary_topic": "Calcium Signaling",
+      "secondary_topics": [
+        "CD20 resistance",
+        "B cell NHL",
+        "BTK signaling",
+        "Autophagy",
+        "Proteasomal activity",
+        "Cell death",
+        "Multi-targeting"
+      ],
+      "chunk_summary": "Calcium modulates anti-CD20 resistance, and multi-targeting cellular voltage, BTK signaling, autophagy, and proteasomal activity enhances cell death in resistant NHL cells.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "Collectively, these data suggest that small molecule compounds targeting ionic signaling, many of which are already approved for human use, may be harnessed as novel cancer therapies.",
+      "section": "We identified calcium as a critical modulator of anti-CD",
+      "primary_topic": "Cancer Therapy",
+      "secondary_topics": [
+        "Ionic signaling",
+        "Small molecule compounds",
+        "Drug repurposing",
+        "Novel therapies"
+      ],
+      "chunk_summary": "Small molecule compounds targeting ionic signaling may be repurposed as novel cancer therapies.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "The authors declare no competing interests.",
+      "section": "[PAGE 4] DISCLOSURES",
+      "primary_topic": "Disclosures",
+      "secondary_topics": [
+        "competing interests",
+        "conflict of interest",
+        "research ethics"
+      ],
+      "chunk_summary": "The authors declare no competing interests.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "4"
+    },
+    {
+      "text": "Drs. Evens reports relationships with Pharmacyclics (consultancy and honoraria), Verastem (consultancy and honoraria), Tesaro (research funding), Seattle Genetics (consultancy, honoraria, and research funding), and Epizyme (consultancy and honoraria).",
+      "section": "Evens",
+      "primary_topic": "Disclosures",
+      "secondary_topics": [
+        "conflict of interest",
+        "financial disclosure",
+        "research funding",
+        "consulting",
+        "honoraria",
+        "Pharmacyclics",
+        "Verastem",
+        "Tesaro",
+        "Seattle Genetics",
+        "Epizyme"
+      ],
+      "chunk_summary": "This section discloses Dr. Evens' financial relationships with various pharmaceutical companies.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    }
+  ],
+  "processed_at": "2025-08-14T14:29:48.304677",
+  "chunk_count": 19,
+  "processing_method": "document_splitting"
+}

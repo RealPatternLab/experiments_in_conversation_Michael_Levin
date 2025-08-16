@@ -1,0 +1,32 @@
+{
+  "document_type": "journal-article",
+  "title": "Competition for finite resources as coordination mechanism for morphogenesis: An evolutionary algorithm study of digital embryogeny",
+  "authors": [
+    "Peter Smiley",
+    "Michael Levin"
+  ],
+  "journal": "Biosystems",
+  "publication_year": 2022,
+  "doi": "10.1016/j.biosystems.2022.104762",
+  "abstract": null,
+  "extraction_confidence": "high",
+  "filename": "290628e7_20250814_131546_625.pdf",
+  "extraction_timestamp": "2025-08-14T13:16:44.486127",
+  "extraction_method": "gemini_1.5_flash",
+  "pages_analyzed": 2,
+  "publication_date": "2022-11",
+  "page_range": "104762",
+  "volume": "221",
+  "issue": null,
+  "references_count": 67,
+  "publisher": "Elsevier BV",
+  "issn": "0303-2647",
+  "crossref_data": true,
+  "enrichment_method": "crossref_api",
+  "crossref_enriched": true,
+  "enrichment_timestamp": "2025-08-14T13:26:55.355647",
+  "affiliations": [
+    "center of a two-dimensional grid. To begin each step of their discretely timed embryogenesis"
+  ],
+  "text_enriched": true
+}

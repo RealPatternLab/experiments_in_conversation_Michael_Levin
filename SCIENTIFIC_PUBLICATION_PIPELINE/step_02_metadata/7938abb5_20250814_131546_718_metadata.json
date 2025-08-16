@@ -1,0 +1,29 @@
+{
+  "document_type": "research_paper",
+  "title": "Modeling regenerative processes with membrane computing",
+  "authors": [
+    "Manuel Garcia-Quismondo",
+    "Michael Levin",
+    "Daniel Lobo"
+  ],
+  "journal": "Information Sciences",
+  "publication_year": 2017,
+  "doi": null,
+  "abstract": "Understanding the remarkable ability of some organisms to restore their anatomical shape following amputation of large portions of their bodies is a fundamental issue in regenerative biology and biomedicine. Despite rapid advances in the molecular processes required for regeneration, a systemic level algorithmic understanding of this process is still lacking.  A major challenge is to develop computational models that can explain how regeneration controls exactly what is missing, cell behaviors towards large-scale anatomical outcomes are largely unknown.",
+  "extraction_confidence": "high",
+  "filename": "7938abb5_20250814_131546_718.pdf",
+  "extraction_timestamp": "2025-08-14T13:16:50.509958",
+  "extraction_method": "gemini_1.5_flash",
+  "pages_analyzed": 2,
+  "affiliations": [
+    "Department of Biology",
+    "Department of Biological Sciences",
+    "University of Maryland",
+    "center of the morphology",
+    "center of the morphology. The model considers that all compartments that do not belong either to the head and the tail are automatically part of the trunk. Therefore"
+  ],
+  "page_range": "55-57",
+  "text_enriched": true,
+  "enrichment_method": "text_analysis",
+  "enrichment_timestamp": "2025-08-14T13:27:03.708459"
+}

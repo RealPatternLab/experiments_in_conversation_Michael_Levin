@@ -1,0 +1,40 @@
+{
+  "chunk_id": "CXzaq4_MEV8_chunk_026",
+  "text": "Now, in the one sort of uncontroversial example that we have of, of systems that try to implement goals that their individual parts don't have, the cognitive glue in the brain is electrophysiology We know that this is this remarkable architecture where cells generate electrical properties which they do or do not share with their neighbors in a dynamic fashion And that allows the network to perform computations, to pursue goals and so on That's what underlies the fact that we, we are more than the sum of our neurons We know things and we have goals that individual neurons in our brain do not And it also means that you can start to do this kind of neural decoding project where if we could just read out the electrophysiological signals and decode them, then we could basically understand the goals, the preferences, the memories of the cognitive content of that being It's supposed to be literally in the electrophysiology Well, as I said before, evolution figured out this architecture, long before we had neurons or brains, Every cell in your body has these ion channels Most cells in your body have these electrical synapses",
+  "token_count": 195,
+  "sentence_count": 9,
+  "start_sentence": 26,
+  "end_sentence": 34,
+  "start_time_ms": 1258020,
+  "end_time_ms": 1325380,
+  "start_time_seconds": 1258.02,
+  "end_time_seconds": 1325.38,
+  "primary_topics": [
+    "Electrophysiology",
+    "Neural decoding",
+    "Cellular electrical properties",
+    "Ion channels"
+  ],
+  "secondary_topics": [
+    "Cognitive content",
+    "Electrical synapses",
+    "Neurons",
+    "Cellular architecture",
+    "Evolution of cellular structure",
+    "Cellular communication",
+    "Memory encoding"
+  ],
+  "key_terms": [
+    "Electrophysiology",
+    "Neural decoding",
+    "Ion channels",
+    "Electrical synapses",
+    "Neurons",
+    "Cognitive glue",
+    "Dynamic fashion",
+    "Electrical properties"
+  ],
+  "content_summary": "The presentation discusses the role of electrophysiology in the brain, highlighting the electrical properties of cells and their communication with neighboring cells. It emphasizes the potential of neural decoding to understand cognitive content and memories. The speaker also mentions the presence of ion channels and electrical synapses in most body cells, suggesting a broader application of these principles beyond the brain.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
+  "enhanced": true
+}

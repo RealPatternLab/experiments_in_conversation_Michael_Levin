@@ -1,0 +1,1714 @@
+{
+  "metadata": {
+    "document_type": "journal-article",
+    "title": "Cellular signaling pathways as plastic, proto-cognitive systems: Implications for biomedicine",
+    "authors": [
+      "Juanita Mathews",
+      "Alan (Jaelyn) Chang",
+      "Liam Devlin",
+      "Michael Levin"
+    ],
+    "journal": "Patterns",
+    "publication_year": 2023,
+    "doi": "10.1016/j.patter.2023.100737",
+    "abstract": null,
+    "extraction_confidence": "high",
+    "filename": "505047db_20250814_131548_186.pdf",
+    "extraction_timestamp": "2025-08-14T13:16:22.408544",
+    "extraction_method": "gemini_1.5_flash",
+    "pages_analyzed": 2,
+    "publication_date": "2023-05",
+    "page_range": "100737",
+    "volume": "4",
+    "issue": "5",
+    "references_count": 262,
+    "publisher": "Elsevier BV",
+    "issn": "2666-3899",
+    "crossref_data": true,
+    "enrichment_method": "crossref_api",
+    "crossref_enriched": true,
+    "enrichment_timestamp": "2025-08-14T13:27:02.413247",
+    "affiliations": [
+      "laboratory data that show how high-level cognitive inputs and mechanistic pathway modulation interact to determine outcomes in vivo. Further"
+    ],
+    "text_enriched": true
+  },
+  "chunks": [
+    {
+      "text": "Cellular signaling pathways as plastic, proto-cognitive systems: Implications for biomedicine. This title introduces the concept of cellular signaling pathways not merely as mechanistic relays but as adaptable, quasi-cognitive systems. This perspective has significant implications for biomedicine, suggesting that these pathways can be understood and manipulated at a higher level of abstraction than traditional approaches.",
+      "section": "[PAGE 1] Cellular signaling pathways as plastic, proto-cognitive systems",
+      "primary_topic": "Cellular Cognition",
+      "secondary_topics": [
+        "signaling pathways",
+        "plasticity",
+        "proto-cognition",
+        "biomedicine",
+        "cell communication",
+        "adaptability"
+      ],
+      "chunk_summary": "Cellular signaling pathways can be viewed as adaptable, proto-cognitive systems, offering new possibilities for biomedical interventions.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "1"
+    },
+    {
+      "text": "Disorders ranging across drug addiction, injury, and cancer have proven difficult to definitively repair by focusing on the molecular hardware inside cells. Drug design and genomic editing face fundamental limitations of context, complexity, and cellular resistance. Fortunately, computer science and behavioral science are beginning to point the way to a transformative regenerative medicine in which pharmaceutical efforts focused on molecules will be complemented by top-down approaches that exploit the collective intelligence of cells and the native control mechanisms that establish form and function.",
+      "section": "THE BIGGER PICTURE D",
+      "primary_topic": "Regenerative Medicine",
+      "secondary_topics": [
+        "drug addiction",
+        "injury",
+        "cancer",
+        "drug design",
+        "genomic editing",
+        "cellular resistance",
+        "computer science",
+        "behavioral science",
+        "collective intelligence"
+      ],
+      "chunk_summary": "Traditional molecular approaches to treating diseases like addiction, injury, and cancer face limitations, while emerging fields like computer and behavioral science offer promising top-down approaches leveraging cellular intelligence.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Powerful methods of controlling complex body systems include taking advantage of their newly discovered cognitive properties: memory, problem solving, and reprogrammability. Emerging advances in placebo research, non-neural bioelectric networks, and the diverse intelligence of cells, tissues, and organs suggest that the medicine of the future may look more like a kind of somatic psychiatry than chemistry or genetics. Therapeutic interventions will communicate and behavior-shape body processes, exploiting the software of life for novel solutions to disease, injury, and aging.",
+      "section": "THE BIGGER PICTURE D",
+      "primary_topic": "Somatic Psychiatry",
+      "secondary_topics": [
+        "cognitive properties",
+        "memory",
+        "problem-solving",
+        "reprogrammability",
+        "placebo research",
+        "bioelectric networks",
+        "cellular intelligence",
+        "tissue intelligence",
+        "therapeutic interventions"
+      ],
+      "chunk_summary": "Future medicine may resemble somatic psychiatry, leveraging cognitive properties of cells, tissues, and organs, including memory and problem-solving, through therapeutic interventions that communicate with and shape body processes.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "SUMMARY",
+      "section": "SUMMARY",
+      "primary_topic": "Summary",
+      "secondary_topics": [],
+      "chunk_summary": "This section provides a brief summary.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Many aspects of health and disease are modeled using the abstraction of a \"pathway\"—a set of protein or other subcellular activities with specified functional linkages between them. This metaphor is a paradigmatic case of a deterministic, mechanistic framework that focuses biomedical intervention strategies on altering the members of this network or the up-/down-regulation links between them—rewiring the molecular hardware. However, protein pathways and transcriptional networks exhibit interesting and unexpected capabilities such as trainability (memory) and information processing in a context-sensitive manner. Specifically, they may be amenable to manipulation via their history of stimuli (equivalent to experiences in behavioral science).",
+      "section": "Many aspects of health and disease are modeled using the abstraction of a",
+      "primary_topic": "Biological Pathways",
+      "secondary_topics": [
+        "pathways",
+        "protein networks",
+        "mechanistic framework",
+        "molecular hardware",
+        "trainability",
+        "information processing",
+        "context sensitivity",
+        "stimuli"
+      ],
+      "chunk_summary": "Traditional mechanistic views of biological pathways must be expanded to account for their trainability and context-sensitive information processing capabilities.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "If true, this would enable a new class of biomedical interventions that target aspects of the dynamic physiological \"software” implemented by pathways and gene-regulatory networks. Here, we briefly review clinical and laboratory data that show how high-level cognitive inputs and mechanistic pathway modulation interact to determine outcomes in vivo. Further, we propose an expanded view of pathways from the perspective of basal cognition and argue that a broader understanding of pathways and how they process contextual information across scales will catalyze progress in many areas of physiology and neurobiology.",
+      "section": "Many aspects of health and disease are modeled using the abstraction of a",
+      "primary_topic": "Biomedical Interventions",
+      "secondary_topics": [
+        "physiological software",
+        "gene-regulatory networks",
+        "cognitive inputs",
+        "pathway modulation",
+        "in vivo studies",
+        "basal cognition",
+        "contextual information",
+        "physiology",
+        "neurobiology"
+      ],
+      "chunk_summary": "Understanding pathways as dynamic systems capable of processing contextual information could lead to new biomedical interventions targeting their \"software\" aspects and impacting physiological and neurobiological outcomes.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "We argue that this fuller understanding of the functionality and tractability of pathways must go beyond a focus on the mechanistic details of protein and drug structure to encompass their physiological history as well as their embedding within higher levels of organization in the organism, with numerous implications for data science addressing health and disease. Exploiting tools and concepts from behavioral and cognitive sciences to explore a proto-cognitive metaphor for the pathways underlying health and disease is more than a philosophical stance on biochemical processes; at stake is a new roadmap for overcoming the limitations of today's pharmacological strategies and for inferring future therapeutic interventions for a wide range of disease states.",
+      "section": "Many aspects of health and disease are modeled using the abstraction of a",
+      "primary_topic": "Pathway Complexity",
+      "secondary_topics": [
+        "physiological history",
+        "higher-level organization",
+        "data science",
+        "behavioral science",
+        "cognitive science",
+        "proto-cognitive metaphor",
+        "pharmacological strategies",
+        "therapeutic interventions",
+        "disease states"
+      ],
+      "chunk_summary": "A comprehensive understanding of pathway functionality requires considering their physiological history and higher-level organization within the organism, potentially leading to new therapeutic strategies beyond current pharmacological approaches.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "The field of developmental bioelectricity explores how endogenous bioelectric signals regulate cell behavior and pattern formation during embryogenesis and regeneration.  This brief introduction serves to frame the subsequent discussion.",
+      "section": "[PAGE 2] INTRODUCTION",
+      "primary_topic": "Developmental Bioelectricity",
+      "secondary_topics": [
+        "bioelectric signals",
+        "cell behavior",
+        "pattern formation",
+        "embryogenesis",
+        "regeneration"
+      ],
+      "chunk_summary": "Developmental bioelectricity studies how bioelectric signals control cell activity and tissue patterning in development and regeneration.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "2"
+    },
+    {
+      "text": "Understanding health and disease, and the discovery of biomedical interventions for complex system-level disorders, requires a model of the underlying mechanisms regulating physiological, developmental, and neurobiological processes. One of the most powerful formalisms has been the notion of a \"pathway\" (Figure 1): a well-defined topological network specifying some number of biochemical activities and the functional interactions between them. Implicit in this metaphor is the expectation that necessary information for prediction and control is local-specified by the connectome and states of the pathway itself.",
+      "section": "Understanding health and disease",
+      "primary_topic": "Disease Modeling",
+      "secondary_topics": [
+        "pathways",
+        "biomedical interventions",
+        "physiological processes",
+        "developmental processes",
+        "neurobiological processes",
+        "connectome",
+        "biological networks"
+      ],
+      "chunk_summary": "Understanding disease and developing interventions requires models of underlying mechanisms, with the \"pathway\" concept being a powerful formalism focusing on local interactions within a defined network.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "This view of causation meshes well with mechanistic approaches to the life sciences, identifying a deterministic, tractable set of dynamics at a single level of organization and de-emphasizing the complexity of history, context, and larger-scale systems within which the network is embedded. It guides approaches in data science both with respect to which kinds of data are gathered and used for modeling and the kinds of models that analyze these data for correlations and causal relationships.",
+      "section": "Understanding health and disease",
+      "primary_topic": "Mechanistic Approach",
+      "secondary_topics": [
+        "causation",
+        "data science",
+        "biological networks",
+        "systems biology",
+        "modeling",
+        "correlation",
+        "causal relationships"
+      ],
+      "chunk_summary": "The traditional mechanistic approach emphasizes local interactions and deterministic dynamics, influencing data collection and model development in data science for identifying correlations and causal relationships.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "This class of models implies a specific intervention strategy: adding, removing, or manipulating connections between nodes (Figure 2A) often through gene therapy, transgenic technology, protein design, or drugs.  Despite successes, this strategy has limitations. The complexity of pathways makes it difficult to predict which molecular-level intervention will achieve desired system-level health while avoiding side effects—the \"inverse problem.\" This molecular-focused approach is currently popular in academia and biotech, leading to the assumption that all control must be at the hardware level.",
+      "section": "This class of models also implies a specific strategy for intervention",
+      "primary_topic": "Intervention Strategies",
+      "secondary_topics": [
+        "gene therapy",
+        "transgenic technology",
+        "protein design",
+        "drug intervention",
+        "network manipulation",
+        "systems biology",
+        "inverse problem"
+      ],
+      "chunk_summary": "Manipulating network nodes via molecular interventions is a common but limited strategy due to pathway complexity and the difficulty of predicting system-level outcomes.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "This approach to modeling healthy and diseased function, focusing on molecular-level control (hardware), is extremely popular today in both academia and the biotech industry.  However, despite the increasing amount of omics data and advanced computational tools for understanding dynamical systems, significant unmet medical needs remain. This suggests that additional research perspectives beyond the current focus on molecular medicine are necessary to address these challenges.",
+      "section": "This class of models also implies a specific strategy for intervention",
+      "primary_topic": "Limitations of Molecular Approach",
+      "secondary_topics": [
+        "omics data",
+        "dynamical systems",
+        "computational tools",
+        "molecular medicine",
+        "unmet medical needs",
+        "research perspectives"
+      ],
+      "chunk_summary": "Despite the prevalence and resources dedicated to molecular-level interventions, significant unmet medical needs suggest the necessity of exploring alternative research perspectives.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "One example of a highly successful research roadmap is in computer science, which moved from physical rewiring of hardware in the 1940s and 1950s to programming at increasingly higher levels of abstraction. The remarkable state of information technology today is due in large part to commitment to the idea that some classes of devices can be controlled in software—by providing inputs that take advantage of the computational architecture and its built-in capabilities.",
+      "section": "One example of a highly successful research roadmap is in computer science",
+      "primary_topic": "Computer Science",
+      "secondary_topics": [
+        "abstraction",
+        "software",
+        "hardware",
+        "programming",
+        "information technology",
+        "computational architecture"
+      ],
+      "chunk_summary": "Computer science's progress from physical hardware manipulation to high-level software programming has revolutionized information technology.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "An understanding of the software-hardware axis and the different strategies that can be brought to bear on reprogrammable systems enables highly efficient control. If this strategy could be applied in biomedicine, we could avoid the intractable inverse problem of deriving low-level interventions for large-scale physiological or anatomical outcomes.",
+      "section": "One example of a highly successful research roadmap is in computer science",
+      "primary_topic": "Biomedical Application",
+      "secondary_topics": [
+        "biomedicine",
+        "reprogrammable systems",
+        "low-level interventions",
+        "physiological outcomes",
+        "anatomical outcomes",
+        "inverse problem"
+      ],
+      "chunk_summary": "Applying the principles of software-hardware interaction to biomedicine could offer efficient control and bypass the challenges of designing low-level interventions for complex biological systems.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "However, in many ways, biomedicine is still in the phase that information technology was 70 years ago. Exciting advances are being made on ever-finer levels of the hardware of life—e.g., CRISPR, single-molecule controls, protein design—and the pharma sector focuses discovery efforts on interventions at the molecular level. Despite this torrent of resources, a wide range of complex neurological problems, physiological states, and anatomical disorders (birth defects, injury, and cancer) remain unaddressed, and side effects of efficacious new drugs are often severe, highly variable, and hard to predict.",
+      "section": "However",
+      "primary_topic": "Biomedical limitations",
+      "secondary_topics": [
+        "molecular interventions",
+        "drug side effects",
+        "neurological problems",
+        "anatomical disorders",
+        "CRISPR",
+        "protein design"
+      ],
+      "chunk_summary": "Despite advances in molecular techniques, many complex medical problems remain unsolved, and drug side effects are a significant issue.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Achieving regenerative medicine that effectively moves the living system to a stable health state, as opposed to targeting symptoms without fixing the underlying dynamics, requires new ways to manipulate pathways. Is it possible that biological hardware has properties in common with reprogrammable devices and neural \"software\" systems that are reprogrammable in situ—that learn from experiences and offer powerful top-down control strategies? Could concepts and tools from the computational science of behavior complement current molecular mechanistic perspectives and provide a new way to exploit the allostatic and homeorhetic properties of living systems (Figure 2B)?",
+      "section": "However",
+      "primary_topic": "Reprogrammable biology",
+      "secondary_topics": [
+        "regenerative medicine",
+        "allostasis",
+        "homeorhesis",
+        "computational modeling",
+        "top-down control",
+        "biological hardware",
+        "neural software"
+      ],
+      "chunk_summary": "Regenerative medicine requires new approaches, potentially by viewing biological systems as reprogrammable entities and leveraging computational tools to understand their behavior.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "Computer metaphors are not meant to reduce the remarkable capacities of biology to the level of simple machines. On the contrary, we argue for expanding and exploiting a view of living tissue as a multi-scale agential material, amplifying its inherent capacities. Developing high-level \"programming languages\" that emphasize salient, context-specific information processing among biological components can complement current, largely reductionist, paradigms that focus primarily on the molecular level.",
+      "section": "Computer metaphors are not meant to reduce the remarkable capacities of biology to the level of simple machines",
+      "primary_topic": "Biological Complexity",
+      "secondary_topics": [
+        "multi-scale agential material",
+        "programming languages",
+        "information processing",
+        "reductionist paradigms",
+        "molecular level"
+      ],
+      "chunk_summary": "Biological systems are complex and multi-scale, requiring higher-level programming languages to complement reductionist molecular approaches.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "As Marr famously argued in the context of vision, mechanism is but one important level of analysis in multi-scale control problems such as somatic health and cognition.",
+      "section": "Computer metaphors are not meant to reduce the remarkable capacities of biology to the level of simple machines",
+      "primary_topic": "Multi-scale Analysis",
+      "secondary_topics": [
+        "Marr's levels of analysis",
+        "mechanism",
+        "multi-scale control",
+        "somatic health",
+        "cognition",
+        "vision"
+      ],
+      "chunk_summary": "Mechanism alone is insufficient for understanding complex biological phenomena like somatic health and cognition, necessitating multi-scale analysis.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Such \"programming\" approaches are entering neuroscience and biomedicine of the brain. The emerging field of computational psychiatry links pharmacology and neuroanatomy with computational models focused on cellular information processing and perceptual control. While such cognitive features are readily imagined in the context of the CNS, it is increasingly recognized that many aspects of brain function are evolutionary pivots of ancient problem-solving capacities still present in most cells; thus, the insights of neuroscience extend far beyond classical neurons.",
+      "section": "[PAGE 3] Such \"programming\" approaches are entering neuroscience and biomedicine of the brain. The emerging field of computational psychiatry links pharmacology and neuroanatomy with computational models focused on cellular information processing and perceptual control. 22-24,34,35 While such cognitive features are readily imagined in the context of the CNS, it is increasingly recognized that many aspects of brain function are evolutionary pivots of ancient problem-solving capacities still present in most cells; thus, the insights of neuroscience extend far beyond classical neurons. 36,37 Indeed, recent work has begun to emphasize the learning and memory capacities of ubiquitous and highly conserved molecular signaling machinery. 38",
+      "primary_topic": "Computational Psychiatry",
+      "secondary_topics": [
+        "neuroscience",
+        "biomedicine",
+        "pharmacology",
+        "neuroanatomy",
+        "computational models",
+        "cellular information processing",
+        "perceptual control",
+        "CNS"
+      ],
+      "chunk_summary": "Computational psychiatry links pharmacology, neuroanatomy, and computational models to understand cellular information processing and perceptual control, recognizing that brain functions are rooted in ancient cellular problem-solving capacities.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "3"
+    },
+    {
+      "text": "Indeed, recent work has begun to emphasize the learning and memory capacities of ubiquitous and highly conserved molecular signaling machinery.",
+      "section": "[PAGE 3] Such \"programming\" approaches are entering neuroscience and biomedicine of the brain. The emerging field of computational psychiatry links pharmacology and neuroanatomy with computational models focused on cellular information processing and perceptual control. 22-24,34,35 While such cognitive features are readily imagined in the context of the CNS, it is increasingly recognized that many aspects of brain function are evolutionary pivots of ancient problem-solving capacities still present in most cells; thus, the insights of neuroscience extend far beyond classical neurons. 36,37 Indeed, recent work has begun to emphasize the learning and memory capacities of ubiquitous and highly conserved molecular signaling machinery. 38",
+      "primary_topic": "Cellular Learning",
+      "secondary_topics": [
+        "molecular signaling",
+        "memory",
+        "cell biology",
+        "evolutionary conservation",
+        "learning"
+      ],
+      "chunk_summary": "Recent research highlights the learning and memory capacities of conserved molecular signaling machinery present in most cells.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "3"
+    },
+    {
+      "text": "Here, we suggest a new roadmap for medical interventions: exploiting the deep symmetries between pathway models and neural network functions, along with the ancient evolutionary origins of learning and memory mechanisms. Evolution's use of a modular multi-scale architecture provides numerous computational competencies in cells and tissues that could be harnessed for prediction and control.",
+      "section": "Here",
+      "primary_topic": "Medical Interventions",
+      "secondary_topics": [
+        "neural networks",
+        "pathway models",
+        "evolutionary origins",
+        "learning and memory",
+        "multi-scale architecture",
+        "prediction and control"
+      ],
+      "chunk_summary": "This chunk proposes a new roadmap for medical interventions based on exploiting the similarities between pathway models and neural networks, leveraging the evolutionary origins of learning and memory.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Taking this proto-cognitive, multi-scale perspective on cellular signaling invites use of concepts and tools from behavioral and computational neuroscience, including cybernetics and basal cognition.",
+      "section": "Here",
+      "primary_topic": "Cellular Signaling",
+      "secondary_topics": [
+        "proto-cognitive",
+        "multi-scale",
+        "behavioral neuroscience",
+        "computational neuroscience",
+        "cybernetics",
+        "basal cognition"
+      ],
+      "chunk_summary": "This chunk suggests that a proto-cognitive, multi-scale perspective on cellular signaling allows for the application of concepts and tools from neuroscience, including cybernetics and basal cognition.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "We first review concepts from behavior science that help explain important clinical and physiological/cell-biological phenomena with respect to pathways and the drugs that have been used to control their functionality. We then discuss work showing new capabilities revealed with this approach and suggest a roadmap for future experiments to further explore the invariants across these fields.",
+      "section": "We first review concepts from behavior science that help explain important clinical and physiological",
+      "primary_topic": "Behavioral Science",
+      "secondary_topics": [
+        "clinical phenomena",
+        "physiological phenomena",
+        "cell biology",
+        "drug pathways",
+        "functionality control"
+      ],
+      "chunk_summary": "This section reviews behavioral science concepts to explain clinical and physiological phenomena, focusing on drug pathways and their control, and proposes future research directions.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Importantly, use of a \"cognitive lens,\"45,46 to understand and control events outside of brains goes beyond a philosophical stance: facilitating the use of powerful concepts from other fields may help overcome limitations of today's discovery efforts, offering predictions that can be evaluated empirically.",
+      "section": "We first review concepts from behavior science that help explain important clinical and physiological",
+      "primary_topic": "Cognitive Lens",
+      "secondary_topics": [
+        "non-neural cognition",
+        "interdisciplinary approach",
+        "discovery limitations",
+        "empirical evaluation",
+        "prediction"
+      ],
+      "chunk_summary": "Applying a \"cognitive lens\" to non-neural systems offers a practical approach to overcome current limitations in scientific discovery by facilitating the use of concepts from other fields and generating testable predictions.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "The concept of tolerance and sensitization represents fundamental aspects of complex behavior, applicable across diverse biological systems.  These processes, involving decreased or increased responsiveness to repeated stimuli, are considered ubiquitous building blocks for more intricate behavioral patterns.",
+      "section": "[PAGE 3] TOLERANCE AND SENSITIZATION",
+      "primary_topic": "Tolerance/Sensitization",
+      "secondary_topics": [
+        "complex behavior",
+        "stimulus response",
+        "adaptation",
+        "habituation",
+        "biological systems"
+      ],
+      "chunk_summary": "Tolerance and sensitization, representing decreased and increased responsiveness to stimuli respectively, are fundamental building blocks of complex behavior across biological systems.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "3"
+    },
+    {
+      "text": "We recently proposed the idea of competency in navigating problem spaces as a central invariant unifying behavioral science, cell biology, and physiology. On this view, evolution adapted some of the same strategies across metabolic, transcriptional, physiological, and anatomical spaces that feature so prominently in the study of behavior in familiar 3D space. Thus, we have been exploring the applications of concepts from behavioral science to understand aspects of the control of form and function.",
+      "section": "We recently proposed the idea of competency in navigating problem spaces as a central invariant unifying behavioral science",
+      "primary_topic": "Problem Solving Competency",
+      "secondary_topics": [
+        "behavioral science",
+        "cell biology",
+        "physiology",
+        "evolution",
+        "3D space",
+        "form",
+        "function"
+      ],
+      "chunk_summary": "Evolutionary adaptation of problem-solving strategies across different biological scales, from metabolic to anatomical, is proposed as a unifying principle.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "The most basic aspects of proto-cognitive function, seen even in unicellular systems, are habituation and sensitization. These simplest kinds of memory (ability to alter future behavior in light of past experience) tie the temporal dynamics of pathway activity to questions in behavioral science, and we next discuss some molecular mechanisms by which these proto-cognitive effects are implemented.",
+      "section": "We recently proposed the idea of competency in navigating problem spaces as a central invariant unifying behavioral science",
+      "primary_topic": "Proto-cognitive Function",
+      "secondary_topics": [
+        "habituation",
+        "sensitization",
+        "memory",
+        "unicellular systems",
+        "temporal dynamics",
+        "molecular mechanisms"
+      ],
+      "chunk_summary": "Habituation and sensitization, as basic forms of memory in even unicellular organisms, link pathway activity dynamics to behavioral science and have underlying molecular mechanisms.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "Tolerance and reverse tolerance (sensitization) are, in their most general forms, a decrease or increase, respectively, in the magnitude of reaction to a repeated stimulus. The many types of tolerance include behavioral, pharmacokinetic, and pharmacodynamic, while sensitization can be behavioral or pharmacokinetic. Both have a large impact on human health.",
+      "section": "Tolerance and reverse tolerance",
+      "primary_topic": "Tolerance",
+      "secondary_topics": [
+        "sensitization",
+        "pharmacokinetics",
+        "pharmacodynamics",
+        "behavioral tolerance",
+        "public health"
+      ],
+      "chunk_summary": "Tolerance and sensitization are defined as decreased and increased reactions to repeated stimuli, respectively, and both have significant impacts on human health.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "4"
+    },
+    {
+      "text": "Tolerance to alcohol or other drugs can lead to increased consumption, dependency, and ultimately addiction, key factors in the current public health crisis of overdose deaths. Sensitization also plays a part in these deaths because it can amplify incentive and behavioral effects, such as drug seeking, while tolerance is decreasing the molecular effects.",
+      "section": "Tolerance and reverse tolerance",
+      "primary_topic": "Addiction",
+      "secondary_topics": [
+        "drug tolerance",
+        "drug sensitization",
+        "overdose",
+        "drug seeking behavior",
+        "public health crisis"
+      ],
+      "chunk_summary": "Drug tolerance can lead to addiction and contributes to the overdose crisis, while sensitization amplifies drug-seeking behavior despite decreasing molecular drug effects.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "A crucial type of behavioral tolerance develops in a context-specific way: the environmental cues presented at the time of drug administration trigger the behavioral tolerance to the drug's effect. Context-specific tolerance has been observed for a wide range of drugs including alcohol, ketamine, and morphine.",
+      "section": "A",
+      "primary_topic": "Context-Specific Tolerance",
+      "secondary_topics": [
+        "behavioral tolerance",
+        "drug administration",
+        "environmental cues",
+        "alcohol",
+        "ketamine",
+        "morphine"
+      ],
+      "chunk_summary": "Behavioral tolerance to drugs develops in a context-specific manner, triggered by environmental cues present during drug administration, and has been observed for various drugs like alcohol, ketamine, and morphine.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "The mechanism behind context-specific behavioral tolerance in ketamine use has been explained neurochemically by changes in dopamine release in different parts of the brain, specifically an increase in the infralimbic cortex and a decrease in the nucleus accumbens shell. Thus, in some cases, the surrounding context is a key input to the control circuit and must be taken into account in designing interventions.",
+      "section": "A",
+      "primary_topic": "Neurochemical Mechanism",
+      "secondary_topics": [
+        "dopamine release",
+        "infralimbic cortex",
+        "nucleus accumbens shell",
+        "ketamine",
+        "control circuit",
+        "interventions"
+      ],
+      "chunk_summary": "The neurochemical mechanism of context-specific tolerance in ketamine involves changes in dopamine release in the brain, highlighting the importance of context in designing interventions.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "In pharmacokinetic tolerance, repeated exposure increases drug metabolism or transport, reducing exposure to the active form of the drug. Ethanol, nicotine, tyrosine kinase inhibitors, anesthetics, and anti-epileptics can all increase the level of cytochrome P450 enzymes that are responsible for breaking them down. Drug metabolites can both drive transcription of those enzymes and stabilize them post-translationally by preventing their degradation. Many anti-epileptics also elicit pharmacokinetic tolerance by increasing reactive oxygen species (ROS) levels and thereby the expression of multi-drug transporters such as P-glycoprotein at the blood-brain barrier (BBB).",
+      "section": "In pharmacokinetic tolerance",
+      "primary_topic": "Pharmacokinetic Tolerance",
+      "secondary_topics": [
+        "drug metabolism",
+        "cytochrome P450",
+        "drug transporters",
+        "blood-brain barrier",
+        "reactive oxygen species",
+        "P-glycoprotein"
+      ],
+      "chunk_summary": "Pharmacokinetic tolerance arises from increased drug metabolism or transport, often involving cytochrome P450 enzymes or multi-drug transporters at the BBB.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Pharmacodynamic tolerance occurs when repeated exposure to a drug affects how the drug itself interacts with the body. Anti-epileptic drugs (AEDs) can lose their effectiveness over prolonged use due to different pharmacodynamic mechanisms. AEDs that specifically target and activate the γ-aminobutyric acid type A receptor (GABAA) and therefore increase cellular Cl⁻ influx, making neurons less likely to fire, can down-regulate receptor expression at the cell surface by increasing its endocytosis in an agonist-dependent manner. Nicotine tolerance depends on an increase in nicotinic cholinergic receptors (nAChRs) over time, accompanied by nicotine-mediated desensitization of those receptors.",
+      "section": "In pharmacokinetic tolerance",
+      "primary_topic": "Pharmacodynamic Tolerance",
+      "secondary_topics": [
+        "receptor desensitization",
+        "GABAA receptor",
+        "nicotinic cholinergic receptors",
+        "anti-epileptic drugs",
+        "drug tolerance"
+      ],
+      "chunk_summary": "Pharmacodynamic tolerance involves changes in drug-target interaction, such as receptor down-regulation or desensitization, exemplified by AEDs and nicotine.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Anti-depressants, specifically selective serotonin reuptake inhibitors (SSRIs) like fluoxetine (Prozac), can also elicit tolerance by desensitization of the 5-HT1A receptor. Even diuretics, used to treat hypertension brought on by high sodium concentrations, can show pharmacodynamic tolerance over time due to activation of the renin-angiotensin-aldosterone system and sympathetic nervous system activation resulting from increased loss of sodium and water. All of these are examples of how the molecular machinery, most of it highly conserved throughout the body, can underlie simple forms of memory in pathways guiding key biological processes. Memory of this kind presents an important limitation on the use of pharmaceuticals.",
+      "section": "In pharmacokinetic tolerance",
+      "primary_topic": "Drug Tolerance Mechanisms",
+      "secondary_topics": [
+        "SSRIs",
+        "5-HT1A receptor",
+        "diuretics",
+        "renin-angiotensin-aldosterone system",
+        "sympathetic nervous system",
+        "biological memory"
+      ],
+      "chunk_summary": "Various drugs, including SSRIs and diuretics, demonstrate tolerance through diverse mechanisms, highlighting the role of molecular machinery in a form of biological memory that limits pharmaceutical efficacy.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "Understanding that interoceptive early-drug onset cues (DOCs) create an association with larger drug effects and therefore lead to tolerance or behavioral sensitization can inform addiction treatment protocols. These may not only work on extinguishing environmental cues but also on interoceptive cues that can be elicited by the administration of very small quantities of the drug, a method that may lead to less relapse in a non-abstinence environment.",
+      "section": "Understanding that interoceptive early",
+      "primary_topic": "Addiction Treatment",
+      "secondary_topics": [
+        "interoceptive cues",
+        "DOCs",
+        "tolerance",
+        "behavioral sensitization",
+        "relapse",
+        "drug administration"
+      ],
+      "chunk_summary": "Interoceptive early-drug onset cues (DOCs) influence drug tolerance and sensitization, informing addiction treatment protocols that target both environmental and interoceptive cues.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Tolerance to opioid analgesics is known to depend on the intrinsic efficacy of the opioid. However, this dependence of tolerance on intrinsic efficacy is removed when intermittent dosing is used instead of continuous dosing, which could mean that a more thorough exploration of non-traditional dosing regimens will result in decreased tolerance.",
+      "section": "Understanding that interoceptive early",
+      "primary_topic": "Opioid Tolerance",
+      "secondary_topics": [
+        "intrinsic efficacy",
+        "intermittent dosing",
+        "continuous dosing",
+        "dosing regimens",
+        "analgesics"
+      ],
+      "chunk_summary": "Opioid tolerance depends on intrinsic efficacy, but intermittent dosing can eliminate this dependence, suggesting that non-traditional dosing regimens may reduce tolerance.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Drug habituation, often referred to as tolerance, is a complex phenomenon observed in various biological systems, including cells and tissues.  It involves a decrease in responsiveness to a drug after repeated exposure. This diminished response can arise from various cellular and molecular mechanisms, such as changes in receptor expression, downstream signaling pathways, or metabolic processes. Understanding the mechanisms underlying drug habituation is crucial for developing effective therapeutic strategies and overcoming treatment resistance in various diseases.",
+      "section": "[PAGE 4] RESISTANCE (DRUG HABITUATION)",
+      "primary_topic": "Drug Habituation",
+      "secondary_topics": [
+        "tolerance",
+        "drug resistance",
+        "cellular adaptation",
+        "molecular mechanisms",
+        "receptor expression",
+        "signaling pathways",
+        "therapeutic strategies"
+      ],
+      "chunk_summary": "Drug habituation, or tolerance, involves decreased drug responsiveness due to cellular and molecular adaptations, requiring further investigation for effective therapeutic development.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "4"
+    },
+    {
+      "text": "Acquired resistance to repeated stimuli is a kind of memory frequently studied in behavior science as habituation. Recent advances in targeted cancer therapies, especially tyrosine kinase inhibitors, are promising but can suffer from drug resistance—either present initially or that develops due to tumor cell population changes brought on by selection of genetic mutations, alternative splicing, alternative/compensatory signaling pathways, or epigenetic changes.",
+      "section": "Acquired resistance to repeated stimuli is a kind of memory frequently studied in behavior science as habituation",
+      "primary_topic": "Drug Resistance",
+      "secondary_topics": [
+        "habituation",
+        "cancer therapy",
+        "tyrosine kinase inhibitors",
+        "genetic mutations",
+        "alternative splicing",
+        "signaling pathways",
+        "epigenetic changes"
+      ],
+      "chunk_summary": "While targeted cancer therapies like tyrosine kinase inhibitors show promise, acquired drug resistance due to various cellular mechanisms poses a significant challenge.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Pharmacokinetic and pharmacodynamic mechanisms take part in cancer resistance due to genetic differences in drug-metabolizing enzymes, transporters, or receptor affinities.",
+      "section": "Acquired resistance to repeated stimuli is a kind of memory frequently studied in behavior science as habituation",
+      "primary_topic": "Resistance Mechanisms",
+      "secondary_topics": [
+        "pharmacokinetics",
+        "pharmacodynamics",
+        "drug-metabolizing enzymes",
+        "transporters",
+        "receptor affinities",
+        "genetic differences"
+      ],
+      "chunk_summary": "Pharmacokinetic and pharmacodynamic factors, including genetic variations in drug metabolism and receptor interactions, contribute to cancer drug resistance.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "The tyrosine kinase inhibitor imatinib treats chronic myeloid leukemia (CML), which is caused by an oncogenic non-receptor tyrosine kinase (BCR-ABL1) that constitutively activates cell proliferation and survival without regulation by normal extracellular signals. Resistance to imatinib arises primarily (50%-90%) from mutations to the ABL kinase domain or by overproduction of BCR-ABL1 by genomic amplification (10%). Recurrence of cancer upon cessation of imatinib treatment may be due to differential resistance to imatinib by hematopoietic stem cells but not hematopoietic progenitor cells, due to their expression of the P-glycoprotein drug transporter. This could also explain why genetic resistance can develop over time.",
+      "section": "The tyrosine kinase inhibitor imatinib treats chronic myeloid leukemia",
+      "primary_topic": "Imatinib resistance",
+      "secondary_topics": [
+        "CML",
+        "tyrosine kinase inhibitor",
+        "BCR-ABL1",
+        "mutation",
+        "genomic amplification",
+        "drug resistance",
+        "hematopoietic stem cells"
+      ],
+      "chunk_summary": "Imatinib resistance in CML arises from ABL kinase domain mutations, BCR-ABL1 overproduction, and differential resistance in hematopoietic stem cells.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Imatinib is also used to treat gastrointestinal stromal tumors (GISTs), which similarly exhibit mutations that cause both initial and acquired resistance. However, unlike for CML, no genetic amplifications were observed in people with acquired resistance, suggesting dynamic physiological habituation mechanisms.",
+      "section": "The tyrosine kinase inhibitor imatinib treats chronic myeloid leukemia",
+      "primary_topic": "Imatinib and GISTs",
+      "secondary_topics": [
+        "GISTs",
+        "acquired resistance",
+        "genetic amplification",
+        "physiological habituation",
+        "drug resistance"
+      ],
+      "chunk_summary": "While GISTs also develop imatinib resistance through mutations, they lack the genetic amplifications seen in CML, suggesting alternative resistance mechanisms like physiological habituation.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Drug conditioning experiments reveal proto-cognitive aspects of physiological signaling.  This section explores how physiological systems, beyond the nervous system, can exhibit learning and memory-like behaviors.  The title 'Drug Conditioning' suggests an analogy to classical conditioning paradigms used in behavioral studies, implying that non-neural tissues might be capable of similar associative learning.",
+      "section": "[PAGE 4] DRUG CONDITIONING",
+      "primary_topic": "Drug Conditioning",
+      "secondary_topics": [
+        "physiological signaling",
+        "proto-cognition",
+        "learning",
+        "memory",
+        "non-neural tissues",
+        "associative learning"
+      ],
+      "chunk_summary": "This section introduces the concept of drug conditioning as a way to explore learning and memory-like behaviors in non-neural tissues.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "4"
+    },
+    {
+      "text": "Environmental cues involved in certain types of tolerance and sensitization show how powerful context is in eliciting responses from the body. This conditioned tolerance is similar to Pavlovian conditioning in that it results in a decrease in alcohol-induced hypothermia in an alcohol-paired environment when alcohol is administered but also in a small hyperthermic response in the paired environment without administration.",
+      "section": "Environmental cues involved in certain types of tolerance and sensitization show how powerful context is in eliciting responses from the body",
+      "primary_topic": "Conditioned Tolerance",
+      "secondary_topics": [
+        "Pavlovian Conditioning",
+        "Environmental Cues",
+        "Hypothermia",
+        "Hyperthermia",
+        "Alcohol Tolerance",
+        "Sensitization"
+      ],
+      "chunk_summary": "Conditioned tolerance, similar to Pavlovian conditioning, influences the body's response to alcohol, leading to decreased hypothermia in paired environments with alcohol and a slight hyperthermic response in paired environments without alcohol.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "The same Pavlovian conditioning is observed in conditioned tolerance to alcohol-induced tachycardia since unpaired environments did not show the same level of conditioned tolerance as paired environments. Newlan proposed that conditioned responses can counter the drug's effect, resulting in tolerance to a depressant like alcohol or in behavioral sensitization to a stimulant like cocaine, but that both responses are due to increased stimulation of the reward centers.",
+      "section": "Environmental cues involved in certain types of tolerance and sensitization show how powerful context is in eliciting responses from the body",
+      "primary_topic": "Conditioned Responses",
+      "secondary_topics": [
+        "Tachycardia",
+        "Alcohol Tolerance",
+        "Behavioral Sensitization",
+        "Stimulants",
+        "Reward Centers",
+        "Drug Effects"
+      ],
+      "chunk_summary": "Conditioned responses can counteract drug effects, leading to tolerance for depressants like alcohol and sensitization to stimulants like cocaine, both attributed to increased stimulation of reward centers.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "5"
+    },
+    {
+      "text": "The relationship between environmental context and tolerance can have deadly consequences. Siegel posits that a large majority of heroin overdose deaths are not due to the quantity of the heroin administered but occur in cases where the environmental context normally paired with the heroin administration was not present, resulting in a loss of conditioned tolerance.",
+      "section": "The relationship between environmental context and tolerance can have deadly consequences",
+      "primary_topic": "Conditioned Tolerance",
+      "secondary_topics": [
+        "environmental context",
+        "heroin overdose",
+        "drug tolerance",
+        "Siegel",
+        "conditioning"
+      ],
+      "chunk_summary": "Environmental context plays a crucial role in drug tolerance, and its absence can lead to overdose even with familiar dosages.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "In support of this theory, Siegel shows that rats given the same increasing dosages of heroin had differential responses to an even higher dose of heroin depending on whether the higher dose was paired with the same environmental cue associated with the previous dosages or an environmental cue associated with dextrose injections: those injected in the heroin-paired environment were significantly more likely to survive those given a high dose. It is becoming increasingly clear that environmental cues have a strong impact on conditioning for drugs.",
+      "section": "The relationship between environmental context and tolerance can have deadly consequences",
+      "primary_topic": "Environmental Cues",
+      "secondary_topics": [
+        "animal model",
+        "drug conditioning",
+        "heroin",
+        "dextrose",
+        "survival rate",
+        "experimental design"
+      ],
+      "chunk_summary": "Experiments with rats demonstrate that environmental cues associated with drug administration significantly influence tolerance and survival rates upon subsequent high doses.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "The significance of place conditioning on drug use lies in the understanding that predicting a drug's action requires more than just knowing its pathway; the environmental context of administration is crucial.  Defining a \"pathway\" functionally necessitates broadening the scope beyond local chemical interactions to encompass the patient's past experiences and effects throughout the nervous system, even if the drug's target tissue is elsewhere. This expanded view alters our understanding of physiological processes controlled by molecular pathways.",
+      "section": "The significance of place conditioning",
+      "primary_topic": "Context-dependent drug action",
+      "secondary_topics": [
+        "place conditioning",
+        "drug use",
+        "pharmacology",
+        "environmental context",
+        "physiological pathways",
+        "nervous system"
+      ],
+      "chunk_summary": "Drug action is not solely determined by its pathway but is significantly influenced by the environmental context of administration, requiring a broader definition of \"pathway\" that includes past experiences and nervous system effects.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "The \"light cone\" of events influencing a physiological process is much wider and encompasses more organizational scales than standard disease pathway diagrams depict.  This broader perspective, extending beyond drug abuse context, suggests a new roadmap for computational modeling and therapeutics.  Models will increasingly incorporate past cognitive and physiological events as inputs, while therapies will aim to modify pharmacological interventions' outcomes using other stimuli, potentially delivered via virtual reality.",
+      "section": "The significance of place conditioning",
+      "primary_topic": "Computational modeling and therapeutics",
+      "secondary_topics": [
+        "light cone",
+        "organizational scales",
+        "disease pathways",
+        "computational modeling",
+        "therapeutics",
+        "virtual reality",
+        "pharmacological interventions"
+      ],
+      "chunk_summary": "A broader understanding of influencing factors on physiological processes suggests incorporating past events into computational models and using diverse stimuli, like virtual reality, to modify therapeutic outcomes.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "For example, interventions in the environmental cue (conditioned stimulus) pathways involved in tolerance could be used to disrupt the Pavlovian conditioning required to develop them. Partial reinforcement does this by periodically presenting the environmental cues without the drug (unconditioned stimulus) and has been shown to slow the development of tolerance to morphine in rats. Latent reinforcement can also slow the development of tolerance by presenting the environmental cue without the drug many times before the drug is ever given. An excellent example of this was shown by a study that administered an immunostimulatory synthetic polynucleotide (poly I:C) to mice paired with a complex environmental cue.",
+      "section": "For example",
+      "primary_topic": "Tolerance Development",
+      "secondary_topics": [
+        "Pavlovian conditioning",
+        "environmental cues",
+        "partial reinforcement",
+        "latent reinforcement",
+        "morphine",
+        "poly I:C",
+        "immunostimulation"
+      ],
+      "chunk_summary": "Manipulating environmental cues through partial and latent reinforcement can disrupt Pavlovian conditioning and slow the development of drug tolerance.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Natural killer (NK) cell activity decreased over repeated stimulation, showing tolerance; however, when the complex environmental cue was given repeatedly before the first poly (I:C) administration, tolerance did not occur. That same study also showed that after tolerance was established, repeated exposure to the environmental cue without administration of poly (I:C) significantly diminished tolerance, a perfect example of Pavlovian extinction. Another example of reducing tolerance using methods derived from Pavlovian conditioning is found in Fanselow's study using explicitly unpaired delivery, where rats that had grown conditionally tolerant to the locomotor-inhibitory effects of morphine lost their tolerance when morphine was administered in an unpaired environment.",
+      "section": "For example",
+      "primary_topic": "Tolerance Reduction",
+      "secondary_topics": [
+        "Pavlovian extinction",
+        "NK cell activity",
+        "environmental cues",
+        "poly I:C",
+        "morphine",
+        "unpaired delivery",
+        "locomotor inhibition"
+      ],
+      "chunk_summary": "Presenting environmental cues without the drug can lead to Pavlovian extinction and reduce established tolerance, as demonstrated by studies with poly I:C and morphine.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Interestingly, a change in temperature in the paired environment is sufficient to explicitly unpair the administration of alcohol, resulting in loss of tolerance. In agreement with Pavlov's theory of tolerance, Siegel also showed that a novel extraneous stimulus, e.g., strobing light, delivered to already conditionally tolerant rats right after alcohol administration, attenuated tolerance to the hypothermic effect of alcohol. New studies examining drug-drug conditioning show that pairing one drug with another in a specific environmental context can cause the administration of one drug alone to cause the effect of the second as long as it is administered in the same environment. Drug-drug conditioning could therefore be used to amplify the effects of single drugs or give them new effects.",
+      "section": "For example",
+      "primary_topic": "Drug-Drug Conditioning",
+      "secondary_topics": [
+        "tolerance",
+        "alcohol",
+        "environmental context",
+        "extraneous stimulus",
+        "hypothermic effect",
+        "drug-drug interaction"
+      ],
+      "chunk_summary": "Changes in the paired environment, such as temperature or introduction of a novel stimulus, can disrupt tolerance, and drug-drug conditioning can be used to modify drug effects within specific environments.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Pavlovian conditioning that involves a contextual environmental cue paired with drug administration is an example of delay conditioning and is mediated by the cerebellum and other brain regions. Another form of Pavlovian conditioning, called trace conditioning, is mediated by the hippocampus and forebrain and occurs when a short time interval separates termination of cue presentation and onset of drug presentation. These two types of Pavlovian conditioning correspond to declarative memory and procedural memory, respectively.",
+      "section": "Pavlovian conditioning that involves a contextual environmental cue paired with drug administration is an example of delay conditioning and is mediated by the cerebellum",
+      "primary_topic": "Pavlovian Conditioning",
+      "secondary_topics": [
+        "delay conditioning",
+        "trace conditioning",
+        "cerebellum",
+        "hippocampus",
+        "declarative memory",
+        "procedural memory",
+        "drug administration"
+      ],
+      "chunk_summary": "Delay and trace conditioning, mediated by different brain regions, correspond to declarative and procedural memory, respectively, in the context of drug administration.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Carey proposes that delayed conditioning of the environmental cues to drug administration elevates the environmental cue's salience, allowing trace conditioning to occur by repeatedly activating the limbic system, followed by an activation of the frontal lobes and hippocampus to shift goal-directed behaviors toward the drug. This agrees with Robinson and Berridge's view of the incentive-sensitization theory of drug addiction.",
+      "section": "Pavlovian conditioning that involves a contextual environmental cue paired with drug administration is an example of delay conditioning and is mediated by the cerebellum",
+      "primary_topic": "Incentive-Sensitization",
+      "secondary_topics": [
+        "drug addiction",
+        "salience",
+        "limbic system",
+        "frontal lobes",
+        "hippocampus",
+        "goal-directed behavior",
+        "environmental cues"
+      ],
+      "chunk_summary": "Delayed conditioning increases the salience of environmental cues, facilitating trace conditioning and ultimately shifting goal-directed behaviors towards drug seeking, aligning with the incentive-sensitization theory.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Methods of disrupting trace conditioning so that the environmental cues are linked instead to an anti-drug state may be a way of using Pavlovian conditioning to combat addiction. O'Brian et al. further theorized that withdrawal may also be a conditioned response arising from the \"drug opposite\" conditioned responses that occur when the right environmental cues are triggered.",
+      "section": "Pavlovian conditioning that involves a contextual environmental cue paired with drug administration is an example of delay conditioning and is mediated by the cerebellum",
+      "primary_topic": "Addiction Treatment",
+      "secondary_topics": [
+        "trace conditioning disruption",
+        "anti-drug state",
+        "conditioned response",
+        "withdrawal",
+        "environmental cues",
+        "Pavlovian conditioning"
+      ],
+      "chunk_summary": "Disrupting trace conditioning to link environmental cues to an anti-drug state and understanding withdrawal as a conditioned response are potential avenues for using Pavlovian conditioning to combat addiction.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Possible methods of pairing an anti-drug state with environmental cues can be inferred from studies examining the mechanism of the conditioned response. A study of fetal rats showed that pairing dynorphin A, an endogenous κ-opioid receptor agonist, with an artificial nipple induced a κ receptor-dependent conditioned response (reduction of face wiping), similar to the natural unconditioned stimulus of their first drink of milk. In other mechanistic studies, researchers are looking at how the actin cytoskeleton shuttles ion channels and neurotransmitter receptors to the synapse and regulates receptor channel opening during memory formation and consolidation.",
+      "section": "Possible methods of pairing an anti",
+      "primary_topic": "Conditioned Response",
+      "secondary_topics": [
+        "dynorphin A",
+        "κ-opioid receptor",
+        "actin cytoskeleton",
+        "ion channels",
+        "neurotransmitter receptors",
+        "synapse",
+        "memory formation"
+      ],
+      "chunk_summary": "Studies on conditioned responses, including pairing dynorphin A with an artificial nipple in rats and examining the role of the actin cytoskeleton in memory formation, offer insights into pairing anti-drug states with environmental cues.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "In a study of the effect of conditioning on cytoskeletal protein function in the sea slug *Hermissenda crassicornis*, a one-trial pairing of a light stimulus with serotonin delivery to the isolated circumesophageal nervous system resulted in phosphorylation of Ser-122 of Csp24, an actin-binding protein that contributes to the decrease of an A-type transient potassium current necessary for enhanced excitability. Phosphorylated Csp24 binds to 14-3-3 protein, potentially affecting cytoskeletal dynamics. Understanding the extent to which the CNS is involved in conditioning, and the mechanisms involved in that process, would allow development of targeted therapies to de-couple environmental stimuli from drug administration.",
+      "section": "Possible methods of pairing an anti",
+      "primary_topic": "Cytoskeletal Dynamics",
+      "secondary_topics": [
+        "Hermissenda crassicornis",
+        "serotonin",
+        "Csp24",
+        "actin-binding protein",
+        "potassium current",
+        "14-3-3 protein",
+        "CNS",
+        "conditioning"
+      ],
+      "chunk_summary": "Research on the sea slug *Hermissenda crassicornis* demonstrates how conditioning affects cytoskeletal protein function, specifically Csp24 phosphorylation and its interaction with 14-3-3 protein, influencing neuronal excitability, and highlights the importance of understanding CNS involvement in conditioning for developing targeted therapies.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "This would have profound implications for drug addiction therapy but also for clinical tolerance to a wide range of therapeutic agents.",
+      "section": "Possible methods of pairing an anti",
+      "primary_topic": "Therapeutic Implications",
+      "secondary_topics": [
+        "drug addiction therapy",
+        "clinical tolerance",
+        "therapeutic agents"
+      ],
+      "chunk_summary": "Decoupling environmental stimuli from drug administration through targeted therapies holds significant promise for treating drug addiction and managing clinical tolerance to various therapeutic agents.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": "6"
+    },
+    {
+      "text": "The influence of psychogenic factors on tissue behaviors is an emerging area of study.  Dykman and Gantt's research on dogs demonstrated that blood pressure could be conditioned using classical conditioning paradigms. Pairing a tone with a shock led to increased blood pressure, and eventually, the tone alone could elicit the same response.  Furthermore, varying shock intensities paired with different tones resulted in corresponding levels of hypertension when the tones were presented individually. This conditioned hypertension developed quickly but persisted longer than the conditioned motor responses to the shocks, illustrating the concept of schizokinesis.",
+      "section": "The influence of psychogenic factors on various tissue behaviors is just beginning to be explored",
+      "primary_topic": "Psychogenic conditioning",
+      "secondary_topics": [
+        "blood pressure",
+        "classical conditioning",
+        "schizokinesis",
+        "CNS",
+        "dogs",
+        "hypertension"
+      ],
+      "chunk_summary": "Classical conditioning can influence physiological responses like blood pressure, as demonstrated by Dykman and Gantt's experiments on dogs.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Gantt's continued research revealed that a wide range of physiological processes are susceptible to conditioning. These include skin resistance, respiration, heart rate, motor responses, thermoregulation, spleen contraction, kidney function, pancreatic secretions, and stomach secretions.  Beyond these, the immune and endocrine systems also exhibit conditionability, with the nature of the environmental cue significantly impacting the strength of the conditioned response.  Further research is needed to explore the full extent of conditionable internal biological processes.",
+      "section": "The influence of psychogenic factors on various tissue behaviors is just beginning to be explored",
+      "primary_topic": "Conditionable processes",
+      "secondary_topics": [
+        "immune system",
+        "endocrine system",
+        "physiological responses",
+        "environmental cues",
+        "conditioning strength"
+      ],
+      "chunk_summary": "A variety of physiological processes, including immune and endocrine functions, can be conditioned, and the type of environmental cue influences the strength of this conditioning.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Toward training cell signaling pathways to regulate health and disease",
+      "section": "[PAGE 7] Toward training cell signaling pathways to regulate health and disease",
+      "primary_topic": "Cell Signaling",
+      "secondary_topics": [
+        "disease regulation",
+        "health regulation",
+        "cell signaling pathways",
+        "training"
+      ],
+      "chunk_summary": "This section introduces the concept of training cell signaling pathways to regulate health and disease.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "7"
+    },
+    {
+      "text": "The profound possibilities of training for cell regulation are being realized. Systems from molecular networks to physiological networks in somatic organs exhibit plasticity and history-based remodeling of stable dynamical states.  A key question is whether gene-regulatory networks (GRNs) also exhibit history dependence, which could explain the variability of cellular responses and be used to control their function by modulating the temporal sequence of inputs. This differs from current views of memory as changes at epigenetic and protein levels, instead focusing on memory as a shift between stable attractors in a physiological circuit's dynamical state portrait.",
+      "section": "The profound possibilities of these kinds of training for cell regulation are only now beginning to be realized",
+      "primary_topic": "Cellular Memory",
+      "secondary_topics": [
+        "gene-regulatory networks",
+        "plasticity",
+        "dynamical systems",
+        "cell regulation",
+        "physiological networks",
+        "epigenetics",
+        "somatic organs"
+      ],
+      "chunk_summary": "The concept of cellular memory is explored, focusing on the potential for history dependence in gene-regulatory networks and its implications for controlling cell behavior.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Several studies have proposed memory phenomena in network models.  We recently analyzed GRN models and predicted several classes of learning, including associative conditioning.  Our findings indicate that many biological networks can stably store multiple memories, resist noise, and perform simple computations like counting discrete stimulus events.  Crucially, these memories are controllable by specific, computationally discoverable stimuli, without altering network structure or promoter connection weights.",
+      "section": "The profound possibilities of these kinds of training for cell regulation are only now beginning to be realized",
+      "primary_topic": "GRN Learning",
+      "secondary_topics": [
+        "gene-regulatory networks",
+        "associative conditioning",
+        "computational modeling",
+        "memory storage",
+        "noise resistance",
+        "stimulus control"
+      ],
+      "chunk_summary": "Analysis of GRN models reveals their capacity for learning, including associative conditioning, robust memory storage, and controllability via specific stimuli.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "While in vivo testing is pending, the implications are significant. For instance, potent drugs unsuitable for extended use could be paired with neutral drugs for Pavlovian conditioning. Subsequently, administering the neutral drug alone might elicit the same response for a period. Notably, random GRN models do not exhibit these trainability properties, highlighting the importance of biological network architecture.",
+      "section": "The profound possibilities of these kinds of training for cell regulation are only now beginning to be realized",
+      "primary_topic": "Therapeutic Implications",
+      "secondary_topics": [
+        "Pavlovian conditioning",
+        "drug administration",
+        "in vivo testing",
+        "network architecture",
+        "trainability"
+      ],
+      "chunk_summary": "The trainability of biological GRNs suggests potential therapeutic applications, such as Pavlovian conditioning with drugs, which is absent in random GRN models.",
+      "position_in_section": "End",
+      "certainty_level": "Medium",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "Beyond habituation and sensitization, more complex cell behavioral competencies are revealed by morphogenetic robustness.  This suggests that cellular responses to stimuli are not limited to simple adaptation but can involve more sophisticated information processing related to overall form and function.",
+      "section": "[PAGE 7] BEYOND HABITUATION AND SENSITIZATION",
+      "primary_topic": "Cellular Competency",
+      "secondary_topics": [
+        "morphogenetic robustness",
+        "cell behavior",
+        "habituation",
+        "sensitization",
+        "information processing"
+      ],
+      "chunk_summary": "Cellular responses extend beyond simple adaptation to encompass complex information processing related to morphogenesis.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "7"
+    },
+    {
+      "text": "This demonstration that GRNs, previously assumed to be purely mechanical systems, support several kinds of learning highlights an important part of a roadmap for future biomedicine: the need to examine regulatory mechanisms for computational competency as standard practice. In addition, Csermely et al. described a number of adaptive molecular mechanisms in individual non-neuronal cells as examples of generalized Hebbian learning in signaling networks. They also proposed that this demonstration of cellular learning opens new possibilities in drug design by providing new targets for intervention, as well as new models for artificial intelligence.",
+      "section": "This demonstration that GRNs",
+      "primary_topic": "Cellular Learning",
+      "secondary_topics": [
+        "GRNs",
+        "Hebbian Learning",
+        "Signaling Networks",
+        "Drug Design",
+        "Artificial Intelligence",
+        "Computational Competency"
+      ],
+      "chunk_summary": "Gene regulatory networks (GRNs) exhibit learning capabilities, impacting future biomedicine by requiring examination of computational competency in regulatory mechanisms and offering new possibilities for drug design and AI models.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Here, we expand the analysis of cell signaling topologically, conceptually, and temporally, going beyond Hebbian learning and beyond the level of the single cell to model cell signaling in the context of past experience and of tissue, organ, organism, and environment (Figure 2). We propose that a proto-cognitive metaphor for cellular signaling provides a framework and toolkit for experimenters to ascertain the behavioral competencies of tissues, organs, and the regulatory machinery of a wide range of unconventional substrates. This is already beginning to be worked out for synthetic biology and bioengineered life forms. What other capacities could plausibly be found in biomedically relevant processes?",
+      "section": "This demonstration that GRNs",
+      "primary_topic": "Proto-cognitive Signaling",
+      "secondary_topics": [
+        "Cell Signaling",
+        "Cognitive Metaphor",
+        "Tissue Behavior",
+        "Organ Behavior",
+        "Synthetic Biology",
+        "Bioengineering",
+        "Unconventional Substrates"
+      ],
+      "chunk_summary": "A proto-cognitive approach to cell signaling offers a framework for understanding tissue and organ behavior across diverse biological systems, including synthetic and bioengineered life forms.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "The following are novel examples of somatic information processing that can be addressed via behavioral neuroscience perspectives. We focus on a few examples of unique aspects that complement Csermely's work and other recent dynamical systems perspectives on molecular networks. William James defined intelligence as the capacity to reach the same goal by different means. Our previous work provides evidence for this capacity at the level of tissue morphogenesis, where groups of cells coordinately navigate morphospace—the space of all possible anatomical trajectories—to produce appropriate anatomies. One example of robust problem solving in morphospace is craniofacial remodeling in *Xenopus*, a system often used to model birth defects.",
+      "section": "[PAGE 7] The following are novel examples of somatic information processing that can be addressed via behavioral neuroscience perspectives. We focus on a just few examples of unique aspects that complement Csermely's work38,132-134 and other recent dynamical systems perspectives on molecular networks. 38,132-134,136-140 William James defined intelligence as the capacity to reach the same goal by different means. 141 Our previous work provides evidence for this capacity at the level of tissue morphogenesis, where groups of cells coordinately navigate morphospace—the space of all possible anatomical trajectories—to produce appropriate anatomies.37 One example of robust problem solving in morphospace 31 is craniofacial remodeling in *Xenopus*, a system often used to model birth defects. 142 Specifically, tadpoles must rearrange their facial features to metamorphose into frogs. We found that this is not a hardwired process where each organ blindly moves a certain distance in a certain direction. Instead, tadpoles with scrambled faces (e.g., eyes on top of the head, jaws off to the side, etc.) still make largely normal frogs because the organs keep moving until they reach the correct target morphology. 143 This extreme example is related to regulatory development (e.g., mammalian embryos cut into pieces give rise to normal monozygotic twins) and reveals the plasticity and problem-solving capacity of processes that underlie development, repair, and cancer suppression. To harness such capacities for repair and cancer normalization, 144,145 future work will characterize the parameters that cell collectives measure and the pattern-homeostatic mechanisms that enable error detection relative to a stored setpoint. Bioelectric mechanisms",
+      "primary_topic": "Somatic Information Processing",
+      "secondary_topics": [
+        "behavioral neuroscience",
+        "dynamical systems",
+        "molecular networks",
+        "tissue morphogenesis",
+        "morphospace",
+        "craniofacial remodeling",
+        "Xenopus",
+        "birth defects"
+      ],
+      "chunk_summary": "Somatic information processing allows cells to achieve target morphologies through various means, demonstrated by craniofacial remodeling in Xenopus.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "7"
+    },
+    {
+      "text": "Specifically, tadpoles must rearrange their facial features to metamorphose into frogs. We found that this is not a hardwired process where each organ blindly moves a certain distance in a certain direction. Instead, tadpoles with scrambled faces (e.g., eyes on top of the head, jaws off to the side, etc.) still make largely normal frogs because the organs keep moving until they reach the correct target morphology. This extreme example is related to regulatory development (e.g., mammalian embryos cut into pieces give rise to normal monozygotic twins) and reveals the plasticity and problem-solving capacity of processes that underlie development, repair, and cancer suppression.",
+      "section": "[PAGE 7] The following are novel examples of somatic information processing that can be addressed via behavioral neuroscience perspectives. We focus on a just few examples of unique aspects that complement Csermely's work38,132-134 and other recent dynamical systems perspectives on molecular networks. 38,132-134,136-140 William James defined intelligence as the capacity to reach the same goal by different means. 141 Our previous work provides evidence for this capacity at the level of tissue morphogenesis, where groups of cells coordinately navigate morphospace—the space of all possible anatomical trajectories—to produce appropriate anatomies.37 One example of robust problem solving in morphospace 31 is craniofacial remodeling in *Xenopus*, a system often used to model birth defects. 142 Specifically, tadpoles must rearrange their facial features to metamorphose into frogs. We found that this is not a hardwired process where each organ blindly moves a certain distance in a certain direction. Instead, tadpoles with scrambled faces (e.g., eyes on top of the head, jaws off to the side, etc.) still make largely normal frogs because the organs keep moving until they reach the correct target morphology. 143 This extreme example is related to regulatory development (e.g., mammalian embryos cut into pieces give rise to normal monozygotic twins) and reveals the plasticity and problem-solving capacity of processes that underlie development, repair, and cancer suppression. To harness such capacities for repair and cancer normalization, 144,145 future work will characterize the parameters that cell collectives measure and the pattern-homeostatic mechanisms that enable error detection relative to a stored setpoint. Bioelectric mechanisms",
+      "primary_topic": "Morphological Plasticity",
+      "secondary_topics": [
+        "Xenopus",
+        "metamorphosis",
+        "craniofacial development",
+        "regulatory development",
+        "monozygotic twins",
+        "plasticity",
+        "problem-solving",
+        "cancer suppression"
+      ],
+      "chunk_summary": "Xenopus tadpoles demonstrate remarkable plasticity in achieving correct morphology even with initially scrambled facial features, highlighting the robust problem-solving capacity of developmental processes.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": "7"
+    },
+    {
+      "text": "To harness such capacities for repair and cancer normalization, future work will characterize the parameters that cell collectives measure and the pattern-homeostatic mechanisms that enable error detection relative to a stored setpoint. Bioelectric mechanisms",
+      "section": "[PAGE 7] The following are novel examples of somatic information processing that can be addressed via behavioral neuroscience perspectives. We focus on a just few examples of unique aspects that complement Csermely's work38,132-134 and other recent dynamical systems perspectives on molecular networks. 38,132-134,136-140 William James defined intelligence as the capacity to reach the same goal by different means. 141 Our previous work provides evidence for this capacity at the level of tissue morphogenesis, where groups of cells coordinately navigate morphospace—the space of all possible anatomical trajectories—to produce appropriate anatomies.37 One example of robust problem solving in morphospace 31 is craniofacial remodeling in *Xenopus*, a system often used to model birth defects. 142 Specifically, tadpoles must rearrange their facial features to metamorphose into frogs. We found that this is not a hardwired process where each organ blindly moves a certain distance in a certain direction. Instead, tadpoles with scrambled faces (e.g., eyes on top of the head, jaws off to the side, etc.) still make largely normal frogs because the organs keep moving until they reach the correct target morphology. 143 This extreme example is related to regulatory development (e.g., mammalian embryos cut into pieces give rise to normal monozygotic twins) and reveals the plasticity and problem-solving capacity of processes that underlie development, repair, and cancer suppression. To harness such capacities for repair and cancer normalization, 144,145 future work will characterize the parameters that cell collectives measure and the pattern-homeostatic mechanisms that enable error detection relative to a stored setpoint. Bioelectric mechanisms",
+      "primary_topic": "Future Research Directions",
+      "secondary_topics": [
+        "repair",
+        "cancer normalization",
+        "pattern homeostasis",
+        "error detection",
+        "setpoint",
+        "bioelectric mechanisms"
+      ],
+      "chunk_summary": "Future research will focus on understanding the parameters measured by cell collectives and the homeostatic mechanisms enabling error detection for applications in tissue repair and cancer normalization.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": "7"
+    },
+    {
+      "text": "Bioelectricity, encompassing the flow of ions and the resulting electric fields and potentials within and around cells, plays a crucial role in shaping tissue structure and function. This roadmap outlines the potential of bioelectricity for reprogramming tissues, offering a novel approach to biomedicine.  By manipulating bioelectric signals, it may be possible to guide tissue regeneration, repair birth defects, and even control cancer growth. This emerging field promises to revolutionize how we understand and interact with living systems, opening doors to innovative therapeutic strategies.",
+      "section": "[PAGE 7] Bioelectricity",
+      "primary_topic": "Bioelectricity",
+      "secondary_topics": [
+        "tissue reprogramming",
+        "bioelectric signals",
+        "regeneration",
+        "biomedicine",
+        "ion flow",
+        "electric fields",
+        "therapeutic strategies"
+      ],
+      "chunk_summary": "Bioelectricity offers a promising roadmap for reprogramming tissues, potentially revolutionizing biomedicine through manipulation of bioelectric signals for regeneration and disease control.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "7"
+    },
+    {
+      "text": "The proto-cognitive functions (memory, context sensitivity, etc.) of cell signaling pathways are not unique to chemical signaling networks but are also implemented by bioelectrical networks. It has long been known that networks of neural cells exhibit learning, plasticity, and other information-processing capabilities that enable a very powerful form of functional control: behavior shaping (training). Bioelectric signaling in the brain binds a large number of individual cells into a larger-scale emergent agent with specific cognitive properties that do not belong to any of the cells individually.",
+      "section": "The proto",
+      "primary_topic": "Bioelectric networks",
+      "secondary_topics": [
+        "cell signaling",
+        "cognitive functions",
+        "neural networks",
+        "information processing",
+        "behavior shaping",
+        "emergent properties"
+      ],
+      "chunk_summary": "Bioelectric networks, like chemical signaling networks, exhibit proto-cognitive functions such as memory and context sensitivity, enabling information processing and behavior shaping in neural cell networks.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "The exciting emerging field of developmental bioelectricity emphasizes that these capacities are not unique to the CNS but are evolutionary modifications of an ancient bioelectric communication system that earlier used the same strategies to navigate a different problem space—morphospace.37",
+      "section": "The proto",
+      "primary_topic": "Developmental bioelectricity",
+      "secondary_topics": [
+        "CNS",
+        "evolution",
+        "bioelectric communication",
+        "morphospace",
+        "cell signaling"
+      ],
+      "chunk_summary": "Developmental bioelectricity highlights that bioelectric communication and its cognitive capacities are not exclusive to the CNS but are ancient, evolved mechanisms used for navigating morphospace.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Configuring the body in morphospace is a critical task throughout the lifespan; disorders manifest as birth defects or as failure to regenerate after damage, cancer, and aging. Much of the information processing that enables distributed groups of cells to ascertain current anatomy and execute changes to bring it closer to a species-specific target morphology is carried out by bioelectrical communication across tissues (Figure 3) using the same highly conserved molecular components used by neurons: ion channels and electrical synapses. Specific endogenous bioelectric dynamics (via slowly changing patterns of resting potential) are required for the forma-",
+      "section": "Configuring the body in morphospace is a critical task throughout the lifespan",
+      "primary_topic": "Bioelectric communication",
+      "secondary_topics": [
+        "morphospace",
+        "birth defects",
+        "regeneration",
+        "cancer",
+        "aging",
+        "ion channels",
+        "electrical synapses",
+        "resting potential"
+      ],
+      "chunk_summary": "Bioelectric communication via ion channels and electrical synapses plays a crucial role in coordinating cell behavior to achieve and maintain correct morphology throughout the lifespan, impacting processes like development, regeneration, and aging.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Top-down control, multi-scale information flows, and clinical medicine are discussed in this section.  This brief section title introduces the core concepts that link physiological control mechanisms with information processing across different scales of biological organization, from molecular to organismal levels, and their implications for medical applications.",
+      "section": "[PAGE 9] TOP-DOWN CONTROL, MULTI-SCALE INFORMATION FLOWS, AND CLINICAL MEDICINE",
+      "primary_topic": "Top-Down Control",
+      "secondary_topics": [
+        "multi-scale information flow",
+        "clinical medicine",
+        "physiological control",
+        "biological organization",
+        "medical applications"
+      ],
+      "chunk_summary": "This section will explore the intersection of top-down control mechanisms, multi-scale information processing, and their relevance to clinical medicine.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "9"
+    },
+    {
+      "text": "Words and drugs have the same mechanisms of action. — Fabrizio Benedetti 190",
+      "section": "Words and drugs have the same mechanisms of action",
+      "primary_topic": "Mechanism of Action",
+      "secondary_topics": [
+        "words",
+        "drugs",
+        "placebo",
+        "psychosomatic",
+        "mind-body interaction",
+        "suggestion",
+        "neuropharmacology"
+      ],
+      "chunk_summary": "Both words (suggestions) and pharmacological drugs operate through shared underlying mechanisms of action, influencing physiological processes.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "190"
+    },
+    {
+      "text": "The data on psychological effects in medicine support the concept of cross-scale computation and integration of stimuli.  For instance, the \"white coat\" effect, where social hierarchy-induced stress influences gene expression, demonstrates the impact of high-level stimuli on molecular processes.  Similarly, the therapist-patient relationship significantly affects drug efficacy, highlighting the importance of interpersonal dynamics in treatment outcomes.",
+      "section": "The data on psychological effects in medicine provide support for cross",
+      "primary_topic": "Cross-scale integration",
+      "secondary_topics": [
+        "psychological effects",
+        "gene expression",
+        "social hierarchy",
+        "drug efficacy",
+        "therapist-patient relationship",
+        "stimuli integration"
+      ],
+      "chunk_summary": "Psychological phenomena like the \"white coat\" effect and therapist-patient dynamics demonstrate cross-scale integration of stimuli, impacting molecular processes and treatment outcomes.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "This cross-level information transfer is also evident in biofeedback, which enables conscious control over autonomic body states.  Research on biofeedback in non-human systems, including closed-loop control of hybrots and organoids, promises to advance our understanding of cross-level control mechanisms.",
+      "section": "The data on psychological effects in medicine provide support for cross",
+      "primary_topic": "Biofeedback",
+      "secondary_topics": [
+        "cross-level control",
+        "autonomic body states",
+        "hybrots",
+        "organoids",
+        "closed-loop control"
+      ],
+      "chunk_summary": "Biofeedback research, particularly in non-human systems like hybrots and organoids, is furthering our understanding of cross-level control modalities.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Studies of placebo/nocebo effects reflect multi-scale integration of inputs. Benedetti's work demonstrates that the analgesic/anxiolytic effect of potent drugs is significantly reduced if the patient is unaware of administration.  Remarkably, open-label studies show placebos are effective even when the patient knows they are receiving a placebo. These findings have implications for predictive coding and Bayesian brain hypotheses.",
+      "section": "Studies of placebo",
+      "primary_topic": "Placebo/Nocebo Effects",
+      "secondary_topics": [
+        "placebo",
+        "nocebo",
+        "analgesic",
+        "anxiolytic",
+        "predictive coding",
+        "Bayesian brain",
+        "drug efficacy",
+        "open-label studies"
+      ],
+      "chunk_summary": "Placebo/nocebo effects demonstrate the importance of multi-scale integration of inputs, impacting drug efficacy based on patient awareness.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "This placebo phenomenon is relevant not only for patients but also for cells and tissues.  Associating a powerful stimulus with a neutral one (in tissues or GRN models) creates a minimal placebo model. In this model, the neutral stimulus's effects are not explained solely by its mechanism of action. The efficacy arises from a broader context established by learning and information processing across organizational levels, from subcellular networks to whole-body organ systems.",
+      "section": "Studies of placebo",
+      "primary_topic": "Cellular Placebo",
+      "secondary_topics": [
+        "placebo",
+        "tissues",
+        "cells",
+        "GRN models",
+        "stimulus",
+        "information processing",
+        "multi-scale integration",
+        "learning"
+      ],
+      "chunk_summary": "The placebo effect can be modeled at the cellular level, where a neutral stimulus gains efficacy through association with a powerful stimulus, highlighting the role of learning and information processing across scales.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "Future medicine holds immense potential by leveraging data-driven approaches to develop targeted interventions. This brief conclusion highlights the transition from data analysis to practical applications in healthcare.  By understanding the underlying mechanisms and principles governing biological systems, we can move beyond descriptive observations and develop strategies for precise and effective therapeutic interventions.",
+      "section": "[PAGE 9] CONCLUSION",
+      "primary_topic": "Future Medicine",
+      "secondary_topics": [
+        "data-driven medicine",
+        "targeted interventions",
+        "healthcare applications",
+        "biological systems"
+      ],
+      "chunk_summary": "Future medicine will leverage data analysis to develop targeted therapeutic interventions.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "9"
+    },
+    {
+      "text": "Decades of research with pharmacological and recreational drugs have revealed interesting aspects of cellular regulatory pathways that implement basic properties of cognition, including tolerance and sensitization. Studies of morphogenesis and of psychological regulation of clinical outcomes hint that non-neuronal cell signaling can exhibit even more complex proto-cognitive behaviors, integrating computation across scales to support top-down, context-sensitive control and reprogrammability at levels other than that of molecular properties. The data suggest several main points. Simple forms of learning, such as habituation and conditioning, exist outside the brain. Hints of more advanced capacities, such as solving novel problems in navigation of transcriptional spaces, physiological spaces, and morphospace suggest that such capacities of neural networks in unconventional substrates can provide exciting targets for biomedical intervention.",
+      "section": "Decades of research with pharmacological and recreational drugs have revealed interesting aspects of cellular regulatory pathways that implement basic properties of cognition",
+      "primary_topic": "Cellular Cognition",
+      "secondary_topics": [
+        "pharmacology",
+        "learning",
+        "non-neuronal signaling",
+        "morphogenesis",
+        "biomedical intervention",
+        "transcriptional spaces",
+        "physiological spaces",
+        "morphospace"
+      ],
+      "chunk_summary": "Research suggests that even non-neuronal cells exhibit complex cognitive behaviors, including learning and problem-solving, offering potential targets for biomedical intervention.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "While a major problem for the development of effective therapeutics, tolerance is not an inherently negative capacity. Indeed, its failure can result in overdose. The challenge is to develop therapeutic approaches that manipulate these homeostatic properties in efficient ways. Behavioral neuroscience is uniquely and rigorously comfortable with multi-scale approaches to these kinds of complex control problems. In particular, the disciplines of behavior science, control theory/cybernetics, and computational neurobiology provide rich toolkits of concepts, formalisms, and techniques that can be applied to somatic signaling systems (Figure 4). Examples include exploiting generic principles of behavior shaping to control phenotypes in synthetic biology and bioengineering, using concepts of perceptual control theory to understand instructive information in bioelectrical networks, and using the frameworks of active inference to understand and manipulate collective decision-making in regenerative and developmental morphogenesis.",
+      "section": "Decades of research with pharmacological and recreational drugs have revealed interesting aspects of cellular regulatory pathways that implement basic properties of cognition",
+      "primary_topic": "Therapeutic Approaches",
+      "secondary_topics": [
+        "tolerance",
+        "homeostasis",
+        "behavioral neuroscience",
+        "control theory",
+        "cybernetics",
+        "computational neurobiology",
+        "somatic signaling",
+        "synthetic biology",
+        "bioengineering",
+        "bioelectrical networks",
+        "regenerative morphogenesis",
+        "developmental morphogenesis"
+      ],
+      "chunk_summary": "Developing therapeutic approaches that effectively manipulate homeostatic properties like tolerance requires multi-scale approaches from fields like behavioral neuroscience and control theory.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "The remarkable capacities of pathways in biomedical contexts are very likely scaled-up aspects of extremely ancient properties of our unicellular ancestors, including multi-modal integration of signals, learning, and complex decision-making. The study of basal cognition and diverse intelligence is poised to strongly impact biomedicine by revealing the fundamental evolutionary roots of homeostasis, homeorhesis, and similar processes by minimal biochemical, biomechanical, and bioelectrical agents. Early efforts in regenerative medicine indicate the promise of this approach. Conversely, analyses of cell biological and clinical data are revealing how a collection of molecules in a network can work together as a special kind of dynamical system that can process a history of experiences (inputs, stimuli) and gain associative or other kinds of memories that belong to no individual molecule or molecular link but to the system as a whole.",
+      "section": "Decades of research with pharmacological and recreational drugs have revealed interesting aspects of cellular regulatory pathways that implement basic properties of cognition",
+      "primary_topic": "Evolutionary Origins",
+      "secondary_topics": [
+        "unicellular ancestors",
+        "basal cognition",
+        "homeostasis",
+        "homeorhesis",
+        "biochemical agents",
+        "biomechanical agents",
+        "bioelectrical agents",
+        "regenerative medicine",
+        "dynamical systems",
+        "molecular networks",
+        "cellular memory"
+      ],
+      "chunk_summary": "The complex capacities of biological pathways likely stem from ancient properties of unicellular ancestors, and studying these evolutionary roots can inform biomedicine, particularly regenerative medicine.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Pathways and other clinical targets can no longer be considered self-contained dynamical systems with a small set of local interactions and mechanical behavior; optimal prediction and control of their functionality requires probing their proto-cognitive capacities and functional connections with higher levels of organism function, such as environmental cues and cognitive attitudes. We suggest exploring scale-free dynamics that may be conserved between proto-cognition and evolution. For example, molecular resistance on coevolutionary time-scales, such as the ecotoxinology of venoms, may offer interesting parallels to organism-scale resistance effects. Likewise, exciting work hints at relevant coevolutionary dynamics driven by stress and cellular adaptation to novel conditions.",
+      "section": "Decades of research with pharmacological and recreational drugs have revealed interesting aspects of cellular regulatory pathways that implement basic properties of cognition",
+      "primary_topic": "Scale-Free Dynamics",
+      "secondary_topics": [
+        "proto-cognition",
+        "coevolution",
+        "molecular resistance",
+        "ecotoxinology",
+        "stress response",
+        "cellular adaptation",
+        "environmental cues",
+        "cognitive attitudes"
+      ],
+      "chunk_summary": "Understanding and controlling biological pathways requires considering their proto-cognitive capacities and scale-free dynamics, including coevolutionary processes like molecular resistance and adaptation to stress.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "This perspective has key implications for data science on biological control. It suggests we need to widen the data mined around any biological endpoint to include other regions of the body and other levels of organization (i.e., psychological in addition to molecular pathway data). This will require novel data structures to handle diverse information at different levels of organization, integrating advanced data mining techniques across modalities from physiological measurements to behavioral ones.",
+      "section": "[PAGE 10] Perspective",
+      "primary_topic": "Data Science",
+      "secondary_topics": [
+        "biological control",
+        "data mining",
+        "multi-scale data",
+        "physiological measurements",
+        "behavioral data"
+      ],
+      "chunk_summary": "Biological data analysis needs to incorporate wider datasets encompassing multiple levels of organization, from molecular pathways to psychological data, requiring new data structures and advanced data mining techniques.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "10"
+    },
+    {
+      "text": "In addition, unsupervised artificial intelligence (AI) approaches will be necessary to identify factors and dynamics that are as yet unknown and to infer interventions via integrated multi-scale models that exploit innate, multi-scale competencies from cell networks to organ systems.",
+      "section": "[PAGE 10] Perspective",
+      "primary_topic": "Unsupervised AI",
+      "secondary_topics": [
+        "artificial intelligence",
+        "multi-scale models",
+        "unknown factors",
+        "biological interventions",
+        "cell networks",
+        "organ systems"
+      ],
+      "chunk_summary": "Unsupervised AI and integrated multi-scale models are crucial for identifying unknown factors and inferring interventions that leverage the innate multi-scale competencies of biological systems from cells to organs.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "10"
+    },
+    {
+      "text": "Here, we have extended the concept of \"pathways\" along 3 dimensions: space, time, and level of organization. Data indicate that for cell signaling, history matters, and large-scale (non-local) inputs matter. Place modulation and placebo/association",
+      "section": "Here",
+      "primary_topic": "Cell Signaling",
+      "secondary_topics": [
+        "pathways",
+        "space",
+        "time",
+        "organization level",
+        "history",
+        "non-local inputs",
+        "place modulation",
+        "placebo"
+      ],
+      "chunk_summary": "Cell signaling pathways are influenced by spatial, temporal, and organizational factors, including history and non-local inputs, as evidenced by phenomena like place modulation and placebo effects.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Presenting new results",
+      "page_number": null
+    },
+    {
+      "text": "Early examples of high-level control protocols in pre-clinical models demonstrate the potential for brief interventions to trigger long-term regenerative processes.  A 1-day drug exposure can initiate 18 months of leg regeneration in a frog model, while a 1-hour exposure to a specific ionophore electro-ceutical can induce tail regeneration, including spinal cord regeneration.",
+      "section": "[PAGE 11] Perspective",
+      "primary_topic": "Regeneration",
+      "secondary_topics": [
+        "drug treatment",
+        "ionophore",
+        "electro-ceutical",
+        "frog model",
+        "tail regeneration",
+        "leg regeneration",
+        "spinal cord regeneration",
+        "pre-clinical models"
+      ],
+      "chunk_summary": "Brief exposures to drugs or ionophores can trigger long-term regeneration in pre-clinical models, including leg and tail regeneration with spinal cord involvement.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "11"
+    },
+    {
+      "text": "We propose a research roadmap (Figure 4) in which we view health and disease pathways as multi-scale, predictive computational agents that offer interfaces for prediction and control at multiple scales. Given the recent explosion of work on nervous systems as predictive agents in active inference formalisms, all the tools now exist (Figure 4A) to begin formulating sophisticated models of pharmacological signals and physiological/behavioral environment states that can predict which drug metabolism or receptor pathway needs to be modulated for therapeutic effects and to test those predictions.",
+      "section": "We propose a research roadmap",
+      "primary_topic": "Research Roadmap",
+      "secondary_topics": [
+        "predictive computational agents",
+        "multi-scale modeling",
+        "pharmacological signals",
+        "therapeutic effects",
+        "active inference",
+        "drug metabolism",
+        "receptor pathways"
+      ],
+      "chunk_summary": "A research roadmap is proposed, viewing health and disease pathways as multi-scale computational agents, enabling prediction and control through modeling of pharmacological signals and physiological states for therapeutic interventions.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Moving even further upstream, it should be possible to train tissues and organs for long-term changes in fundamental dynamics by appropriate positive and negative reinforcement. Indeed, many of the advances from the cognitive and behavioral sciences, including ones in which the efficacy of pharmaceutical therapeutics is highly dependent on high-level features such as \"therapeutic alliance\" and not only on molecular structure, are ideally poised to be translated into a kind of \"somatic psychiatry\" that maximizes efficacy by interventions at multiple scales.",
+      "section": "We propose a research roadmap",
+      "primary_topic": "Somatic Psychiatry",
+      "secondary_topics": [
+        "tissue training",
+        "organ training",
+        "reinforcement learning",
+        "cognitive science",
+        "behavioral science",
+        "therapeutic alliance",
+        "multi-scale interventions"
+      ],
+      "chunk_summary": "The concept of \"somatic psychiatry\" is introduced, suggesting that training tissues and organs through reinforcement learning, combined with insights from cognitive and behavioral sciences, can maximize therapeutic efficacy through multi-scale interventions.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "The non-neural components of the body play a crucial role in shaping morphology and function.  While the nervous system is essential for coordinating many physiological processes, other tissues, such as epithelial cells, connective tissue, and muscle, contribute significantly to the overall form and behavior of an organism. These non-neural tissues exhibit complex behaviors, including cell-cell communication, self-organization, and responses to environmental cues, which are critical for development, regeneration, and homeostasis.",
+      "section": "The non",
+      "primary_topic": "Non-neural tissues",
+      "secondary_topics": [
+        "morphology",
+        "cell communication",
+        "self-organization",
+        "tissue homeostasis",
+        "epithelial cells",
+        "connective tissue",
+        "muscle tissue"
+      ],
+      "chunk_summary": "Non-neural tissues play a crucial role in shaping morphology and function through complex behaviors like cell communication and self-organization.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    }
+  ],
+  "processed_at": "2025-08-14T13:43:22.783518",
+  "chunk_count": 91,
+  "processing_method": "document_splitting"
+}

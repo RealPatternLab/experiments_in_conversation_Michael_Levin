@@ -1,0 +1,10 @@
+{
+  "timestamp": "20250816_140602",
+  "total_chunks": 1789,
+  "embeddings_generated": 1789,
+  "failed": 0,
+  "dimension": 3072,
+  "index_type": "IndexFlatIP",
+  "embedding_strategy": "enhanced_text_with_topics",
+  "created_at": "2025-08-16T14:06:03.071647"
+}

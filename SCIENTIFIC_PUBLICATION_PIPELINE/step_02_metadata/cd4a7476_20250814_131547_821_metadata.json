@@ -1,0 +1,28 @@
+{
+  "document_type": "research_paper",
+  "title": "Multi-scale Chimerism: An experimental window on the algorithms of anatomical control",
+  "authors": [
+    "Vasilios Nanos",
+    "Michael Levin"
+  ],
+  "journal": "Cells & Development",
+  "publication_year": 2021,
+  "doi": "10.1016/j.cdev.2021.205764",
+  "abstract": "Despite the immense progress in genetics and cell biology, major knowledge gaps remain with respect to precise control and understanding of the morphogenetic algorithms that build multicellular organisms. Genomes dictate the building blocks but not the final form; thus, understanding how specific architectures arise requires a focus on standard models systems that will reveal invariant, species-specific anatomical knowledge and form control. This review analyzes the experimental evidence from the field of regenerative biology, with a focus on the study of the globally exhibited robust emergent properties of cells in multicellular systems. The existing data and future advances in this field will impact not only the understanding of organismal development but also regeneration, disease, and aging, as well as the design of strategies for tissue regeneration and other important phenomena; multi-scale chimera experiments using conceptual and experimental tools with which to analyze the emergent properties of cells in the context of the body plan. This approach is generating new insights into the geometry and functioning of body data from a powerful underlying DNA cell, cell cooperation, organ to organ communication, and the bioelectric properties of cells. We suggest that a deeper understanding of the evolutionary mechanisms that shaped the design of strategies for system-level outcomes in regenerative medicine and also the design of strategies for system-level outcomes in regenerative biology",
+  "extraction_confidence": "high",
+  "filename": "cd4a7476_20250814_131547_821.pdf",
+  "extraction_timestamp": "2025-08-14T13:15:58.780251",
+  "extraction_method": "gemini_1.5_flash",
+  "pages_analyzed": 2,
+  "affiliations": [
+    "Department of Biology",
+    "Allen Discovery Center at Tufts University",
+    "Tufts University",
+    "organisms often show collective\nbehaviors resulting in synchronized movement and migration patterns\nas observed in fish school",
+    "Center at Tufts University"
+  ],
+  "page_range": "28-30",
+  "text_enriched": true,
+  "enrichment_method": "text_analysis",
+  "enrichment_timestamp": "2025-08-14T13:26:58.263311"
+}

@@ -1,0 +1,183 @@
+[PAGE 1] Modeling regenerative processes with membrane computing
+
+Manuel García-Quismondoa,*, Michael Levinb, Daniel Lobo
+
+a National Zoological Park, Smithsonian Institution, 3001 Connecticut Ave. NW, Washington, DC 20008, USA
+b Department of Biology, Tufts University, 200 Boston Ave, Medford, MA 02155, USA
+c Department of Biological Sciences, University of Maryland, Baltimore County, 1000 Hilltop Circle, Baltimore, MD 21250, USA
+
+
+ABSTRACT
+Understanding the remarkable ability of some organisms to restore their anatomical shape following the amputation of large parts of their bodies is currently a major unsolved question in regenerative biology and biomedicine. Despite rapid advances in the molecular processes required for regeneration, a systems level, algorithmic understanding of this process has remained elusive. For this reason, the field needs new computational paradigms to help model the flow of information during regeneration. Membrane computing is a branch of natural computing that studies the properties and applications of theoretical computing devices known as P systems. These systems are an abstraction of the structure and functioning of a living cell, as well as its organization in tissues. Here, we propose a model of regenerative processes in planarian worms based on P systems, which recapitulates several aspects of regenerative pattern regulation. Our results demonstrate that it is possible to apply a novel computational framework to help understand pattern regulation in regenerative biology.
+
+
+[PAGE 1] 1. Introduction
+Membrane computing is a branch of natural computing introduced by Păun in 1998 [63]. This discipline studies the properties and applications of theoretical computing devices known as P systems, which are an abstraction of the structure and functioning of a living cell, as well as its organization in tissues and other higher-order structures [27,45,46,55-57,64,79,81-83]. A P system defines a structure consisting of a graph of interconnected compartments, which are symbolic entities that could represent biological cells or group of cells in an organism. Each compartment contains a multiset of objects, which may be molecules with potentially different electrical charges. There are rules that dictate how objects are created, removed, or migrate across compartments and during a computation, objects are processed by means of rewriting rules. P system rules are abstractions of the biochemical and electrical reactions that occur inside living cells. Objects can move between two compartments if there exists an edge or link that connects the two compartments. This represents the biological signaling that occurs between two cellular entities. Spurred by the success of membrane computing as a modeling framework, we propose herein a new class of P systems called regenerative P systems. This computational framework provides a mathematical formalism to model regenerative processes in biological organisms.
+One of the major unsolved questions facing basic biology and biomedicine today is understanding the remarkable ability of some organisms to restore their anatomical shape following amputation of large portions of their bodies [1,73]. For example, salamanders can regenerate their limbs, eyes, jaws, hearts, and portions of the brain [7]. Understanding shape homeostasis and restoration is critical, not only for advances in regenerative medicine, but also for fundamental issues in developmental biology and evolution [26,29,32,62,69]. While much progress has been recently made in identifying the molecular signaling required for regeneration [6], we are still very far from understanding the control of shape. The molecular details are becoming clearer, but the information flow, computation, and control policies for organizing cell behaviors towards large-scale anatomical outcomes are largely unknown [33].
+Planaria are a powerful model system in this field, because they can regenerate every part of their bodies [34,70]. We need to develop computational models that can explain how regeneration creates exactly what is missing, in the right location, and stops when the target morphology has been achieved. Several types of models have been proposed [11,49,80], yet constructive models are the important to explore. These models show the sufficient steps to restore pattern, not only pathways of events necessary for regeneration [2,35,38]. This is largely an unexplored field, and we are still groping for the correct formalism and appropriate data representation for such models and the algorithms they implement [3,5,50,68,74].
+To enrich the field of possibilities, and introduce biologists to another way to think about the controls of pattern regulation, we present here a model of planarian regeneration based on P systems.
+A number of modeling formalisms have been attempted in planaria, including [15,35,72,74] and others described in [14]; however, P systems have not been investigated in this context. We decided to select membrane computing as our modeling framework for regenerative processes because of its biologically-relevant properties. The explicit spatial structure of compartments in P systems facilitates the abstraction of morphological regions in regenerative biological organisms. Furthermore, the intercellular communication and signaling through proteins, small molecules, or biophysical phenomena essential to regeneration can be mathematically modeled with signals and objects between the compartments.
+Our model of regeneration can be easily extended by quantizing these signals in packages. This permits us to model the magnitude of these cellular signals as the difference in the number of objects of a given class. In addition, the modular property of P systems permits us to bundle any specific aspect of regenerative processes into a subset of rules. These rules can then be modified without affecting the overall dynamics of the model [13,66]. For example, the specific signaling mechanisms for regenerating the brain and eyes can be modeled with an isolated set of rules without interferences with other aspects of the model.
+In our proposed model, the flatworm morphology is represented as a rectangular compartment grid. Each compartment represents a morphological region, and each region belongs to one of the following parts in the morphology: head, trunk or tail. Signals can be sent between two compartments as long as there exists a link between them. We use objects to express the membership of a compartment to a worm region and to represent organs inside these regions. We also use links to denote communication between compartments. Our model aims to reproduce molecular and electrical signals sent between cells at a local level, which eventually configure emergent morphologies [33,75]. This modeling approach bears some resemblance to peer-to-peer networks. In both frameworks, a consensus system behavior emerges from the pairwise communication between nodes [16]. In fact, fault diagnosis of electrical and computer networks has been successfully modeled using P systems [58]. We have tested our modeling framework with a set of planarian in silico experiments that recapitulate the resultant phenotypes observed in vivo.
+[PAGE 3] Section 2 introduces regenerative P systems as a new class of membrane computing devices. In Section 3, the model is described and its behavior is explained. Section 4 simulates the model for several scenarios, encompassing interesting case studies. Section 5 compares the model predictions in these scenarios with experimental results. Finally, our conclusions are reported in Section 6.
+
+[PAGE 2/3] 2. Regenerative P systems
+In this section, we propose a novel framework named regenerative P systems to model biological regeneration processes. This framework is mainly inspired by kernel P systems, a previous approach in membrane computing [20-22,28]. Prior to defining the framework, we describe some preliminary concepts as defined in [18]:
+An alphabet Γ is a non-empty set whose elements are called symbols. Likewise, a multiset w over an alphabet Γ is a pair w = (Γ, f) where f: Γ→ N is a mapping. For each x ∈ Γ we say that f(x) is the multiplicity of the symbol x in w.
+If w = (Γ, f) is a multiset, then its support is defined as supp(w) = {x ∈ Γ | f(x) > 0}. A multiset is finite if its support is a finite set. A set is a multiset such that the multiplicity of each element of its support is greater or equal to 1, that is, the multiset can contain more than one object of the same class.
+If w = (Γ, f) is a finite multiset over Γ, and supp(w) = {a₁, ..., ak} then it will be denoted as w = a₁f(a₁) ... akf(ak) (here the order is irrelevant), and we say that f(a₁) +……+ f(ak) is the cardinal of w, denoted by |w|. The empty multiset is denoted by Ø. We also denote by M(Γ) the set of all finite multisets over Γ.
+Consider w₁ = (Γ, f₁) and w₂ = (Γ, f₂) multisets over Γ. We define the following concepts:
+• The union of w₁ and w₂, denoted by w₁ + w₂ is the multiset (Γ, g), where g = f₁ + f₂, that is, g(x) = f₁(x) + f₂(x) for each x ∈ Γ. Likewise, when w₁ is updated as w₁ ← w₁ + w₂, we say that w₂ is generated into w₁.
+• The relative complement of w₂ in w₁, denoted by w₁\w₂ is the multiset (Γ, g), where g(x) = f₁(x) – f₂(x) if f₁(x) ≥ f₂(x) and g(x) = 0 otherwise. Likewise, when w₁ is updated as w₁ ← w₁ – w₂, then we say that w₂ is consumed from w₁.
+We also say that w₁ is a submultiset of w₂, denoted by w₁ ⊆ w₂, if f₁(x) ≤ f₂(x) for each x ∈ Γ.
+[PAGE 3] Let w = (Γ, f) a multiset over Γ and A a set. We define the intersection w∩A as the multiset (Γ, g), where g(x) = f(x) for each x ∈ Γ∩A, and g(x) = 0 otherwise.
+We also must define some other concepts inspired by the idea of guard found in [22]. Please note that some definitions are slightly different from those provided in that reference:
+Let Γ be an alphabet and let  = {ā | a ∈ Γ}, provided Γ∩ = Ø. We say that Co(Γ) = Γ∪ is the alphabet of object constraints over Γ.
+We also recursively define a guard over an alphabet Γ as a predicate over Μ(Γ). To do so, let w ∈ Μ(Γ) be a multiset over Γ at a given instant. When a guard does not evaluate to true, then it evaluates to false:
+• An empty string is a guard over Γ, and we say that it always evaluates to true.
+• An object constraint a ∈ Co(Γ) is a guard over Γ. We say that a evaluates to true for w if (a ∈ Γ∧a∈ supp(w)) ∨ (ā∈ ∧a ∉ supp(w)).
+• Let g₁, g₂ be two guards over Γ. Then, g₁∧g₂ and g₁∨g₂ are guards. g₁∧g₂ evaluates to true if both g₁ and g₂ evaluate to true. Likewise, g₁∨g₂ evaluates to true if either g₁ or g₂ (or both) evaluate to true.
+In addition, the concept of script (see below) has been inspired by Probabilistic Guarded Scripted P systems [19]. When a script is generated, it triggers a procedure on the current configuration of the system. The execution of this procedure may have different effects on the ongoing computation. As an example, the multisets associated with each one of the compartments can be updated or the computation can be halted.
+A regenerative P system of degree (m, n), m ≥ 1, n ≥ 1 is defined as:
+Π = (H, G, Σ, Θ, {Whᵢ| 1 ≤ i ≤ q}, R, {(Sk, tk) | 1 ≤ k ≤ n}), where:
+• H = {h₁, ..., hm} is an alphabet of labels.
+• G = (V, S) is a non-directed graph without loops where V = {h₁, ..., hq}, q ≤ m is the initial set of nodes labeling compartments in the system and S is the initial set of edges (links) over V.
+• Σ and Θ are finite alphabets such that Σ∩Θ = Ø and σ∈ Θ. Elements in Σ are called objects, and elements in Θ are called scripts.
+• For each i, 1 ≤ i ≤ q, Whᵢ ∈ M(Σ) is the initial multiset associated with compartment hᵢ.
+• R is a finite set of rules of the following types:
+  [u]hᵢ → [v, s]hⱼ with u, v ∈ M(Σ), 1 ≤ i, j ≤ m and s ∈ Θ. If s = Ø, then we omit it in the notation.
+  [u]hᵢ → [v]hⱼ or [u]hᵢ # [v]hⱼ with u, v ∈ M(Σ),1 ≤ i, j ≤ m, and hᵢ ≠ hⱼ.
+  [u]hᵢ → [v]hᵢ[w]hⱼ with u, v, w ∈ M(Σ),1 ≤ i, j ≤ m and hᵢ ≠ hⱼ.
+• Each rule from R has an associated priority, that is, there exists a function pr from R into Z. We denote pr(r) in r as (pr(r)) prior to r, e.g., r = (pr(r))[u]hᵢ→[v, s]hⱼ. If pr(r) is equal to 0, then we omit it in the notation.
+• Each rule r∈ R has an associated guard gᵣ. We denote gᵣ in r as {gᵣ} prior to r and to pr(r), e.g., r = {gᵣ}(pr(r))[u]hᵢ→[v, s]hⱼ. If gᵣ is the empty string, then we omit it in the notation.
+• {(Sk, tk)|1 ≤ k ≤ n} is a set of pairs which contains the pair (σ, F) such as Sk∈ Θ and tk is a computable predicate over the set of configurations of Π (see below). F is a predicate which always evaluates to false. For each two pairs (sᵢ, tᵢ), (sⱼ, tⱼ), if i ≠ j then sᵢ ≠ sⱼ.
+[PAGE 3] We define a configuration Cₜ = (Vₜ, Sₜ, {Whᵢ,ₜ| hᵢ ∈ Vₜ}) of a regenerative P system Π of degree (m, n) at any given time t > 0 as a tuple whose components are the following: a) Vₜ is the (possibly equal) subset of compartment labels from H; b) Sₜ the set of links between labels; c) Whᵢ,ₜ|hᵢ ∈ Vₜ are the multisets of objects associated with each of the compartments of the system. The initial configuration of this regenerative P system is C₀ = (V, S, {Whᵢ| hᵢ ∈ V})
+Next, let Whᵢ,ₜ be the multiset associated with compartment hᵢ at any given time t > 0. Likewise, let Sₜ be the set of links in configuration Cₜ. Then, we define the applicability and application effects of rules in the regenerative P system Π as follows:
+• A rule of the form r = {gᵣ}(pr(r))[u]hᵢ → [v, s]hⱼ is applicable on compartment hᵢ if gᵣ evaluates to true, u ⊆ Whᵢ,ₜ and (hᵢ = hⱼ ∨ (hᵢ, hⱼ) ∈ Sₜ). Upon its application, u is consumed from Whᵢ,ₜ and v is generated into Whⱼ,ₜ. The role of script s is explained later in this section.
+• A rule of the form r = {gᵣ}(pr(r))[u]hᵢ → [v]hⱼ is applicable on compartment hᵢ if gᵣ evaluates to true, u ⊆ Whᵢ,ₜ, hⱼ ∈ Vₜ and (hᵢ, hⱼ) ∉ Sₜ. Upon its application, u is consumed from Whᵢ,ₜ and v is generated into Whⱼ,ₜ. Moreover, Sₜ ← Sₜ∪{(hᵢ, hⱼ)}.
+• A rule of the form r = {gᵣ}(pr(r))[u]hᵢ # [v]hⱼ is applicable on compartment hᵢ if gᵣ evaluates to true, u ⊆ Whᵢ,ₜ, hⱼ ∈ Vₜ and (hᵢ, hⱼ) ∈ Sₜ. Upon its application, u is consumed from Whᵢ,ₜ and v is generated into Whⱼ,ₜ. Moreover, Sₜ ← Sₜ\{(hᵢ, hⱼ)}.
+• A rule of the form r = {gᵣ}(pr(r))[u]hᵢ → [v]hᵢ[w]hⱼ is applicable on compartment hᵢ if gᵣ evaluates to true, u ⊆ Whᵢ,ₜ and hⱼ ∉ Vₜ. Upon its application, u is consumed from and v is generated into Whᵢ,ₜ. Also, a new compartment hⱼ with associated multiset w is created, updating Vₜ as Vₜ ← Vₜ∪{hⱼ}. Finally, Sₜ ← Sₜ∪{(hᵢ, hⱼ)}.
+Given a set of rules R, we say that a multiset of applicable rules at time t is mutually applicable if they altogether do not consume more objects than available. Moreover, we say that a mutually applicable multiset of rules is maximal in the case that, if we add any rule, then the resulting multiset is not mutually applicable.
+
+[PAGE 4] Next, the semantics of the model is defined. At every time t and until the computation halts, a transition step consists of the following stages: 1) all applicable rules are selected. If there exists none of such rules, then the current configuration is a halting configuration and the computation halts; 2) from these rules, those with the maximum priority are kept; 3) from the remainder, a maximal multiset of rules is non-deterministically chosen. The following restriction is applied: if any rule from this set does not consume any object, then it must appear once in the multiset; 4) all rules from such a multiset are applied; 5) for every rule of the form r = {gᵣ}(pr(r))[u]hᵢ → [v, s]hⱼ which has been applied in the current transition step, the predicate associated with s is evaluated for the current configuration. Objects consumed and generated in the current transition step are considered for this application. If any of these predicates evaluates to true, then the current configuration is a halting configuration and the computation halts.
+Finally, we define a computation C = {C₀, C₁, ..., Cn} as a sequence of configurations such that: a) the first term of the sequence is the initial configuration of Π; b) each remaining configuration is obtained by applying the rules defined in Π on the previous configuration in a transition step; c) the last term of the sequence is a halting configuration.
+In summary, a regenerative P system can be viewed as a set of q interconnected compartments, labeled by h₁,..., hq such that: a) Wh₁,..., Whq are finite multisets over Σ representing the objects initially placed in the compartments of the system; b) G is a non-directed graph whose edges (links) specify explicit connections among compartments; c) R is the set of rules that define the transition steps between configuration of the system and each rule r is associated with an integer number pr(r) ∈ Z describing a priority amongst rules, in such a way that only those applicable rules with the maximum priority can be applied; d) Θ is a set of symbols triggering halting predicates, in such a way that, if one of the triggered predicates is complied with at a given time, then the system halts.
+To illustrate the computations and the application of rules in a regenerative P system, let us consider a system such as:
+Π = (H = {1, 2, 3}, G = ({1, 2}, {(1,2)}), Σ = {a, b, c, d, e}, Θ = {s}, {W₁ = {a⁴, c, d}, W₂ = {a², b²}}, R = {r₁ = {d}(−1)[a², e]₁ → [b, c², s]₂, r₂ = {ē}(1)[a², d]₁ → [b, e]₁, r₃ = {d}(0)[c]₁ → [c]₂, r₄ = {d}(0)[b²]₂ # [b]₃, r₅ = (1)[a²]₂ → [b, c, d]₂[c]₃}, {(s, τ)})
+where τ(C), being C a configuration of Π, causes the system to halt. Let us consider the initial configuration of this regenerative P system. In this configuration, only rules r₂, r₃ and r₅ are applicable. Although there exists a link between compartments 1 and 2, r₁ cannot be applied because compartment 1 contains one d and zero e's, and r₁ requires that compartment 1 contains zero d's and one e. Moreover, rule r₂ is associated with the same compartment and has a higher priority (1).
+In addition, since there exists no link between compartments 2 and 3, r₅ has a higher priority than r₄. By applying r₂ and r₃, two a's, one c and one d are consumed and one b and one e are generated in compartment 1. Consequently, the multiset associated with compartment 1 becomes {a², b, e} in the next configuration. Plus, one object c is sent to compartment 2. By applying rule r₅, two a's are consumed and one b, one c and one d are generated in compartment 2. In addition, compartment 3 is created and linked with compartment 2. This compartment contains now one c. Therefore, the multiset associated with compartment 2 becomes {b³, c², d} and the multiset associated with compartment 3 becomes {c}. In the next configuration, only r₁ and r₄ can be applied. Both r₂ and r₃ require one d in compartment 1, but this compartment contains zero d's in the present configuration. Likewise, r₅ cannot be applied because there are zero a's in compartment 2 and compartment 3 has already been created. Upon applying r₁, one e and two a's are consumed from compartment 1 and one b and two c's are generated in compartment 2. Moreover, the script s is generated. Likewise, the application of r₄ consumes two b's from compartment 2 and generates one b in compartment 3. After all rules in this transition step have been applied, the link between compartments 2 and 3 is removed. Thus, the multiset associated with compartment 1 becomes {b}, the multiset associated with compartment 2 becomes {b², c⁴, d}, and the multiset associated with compartment 3 becomes {b, c}. Once these rules have been applied, the predicate associated with the script s is triggered and the system halts.
+
+[PAGE 4] 3. Regenerative P system model of planarian regeneration
+During planarian regeneration, precise intercellular signaling mechanisms are responsible for the growth and repatterning of the body regions (head, trunk, and tail) and organs with correct proportions and in the correct locations [34]. Although this process is not fully understood, it is thought to involve proteins and small molecules that are secreted by cells in different regions. These molecules travel by diffusion or active transport to other regions of the worm. Once there, they act as signals to instruct the fate of the new regenerated tissue [4,31,76]. For example, the family of proteins in the Wnt pathway are involved in the regeneration of a tail [60], whereas notum is involved in the signaling of the head region [61]. Furthermore, bioelectrical signals related to head or tail regeneration can also travel through gap junctions in the cells and act as regeneration signals [54]. Understanding the exchange and processing of these signals is an essential step for inferring the mechanisms responsible for the regeneration in the worm [36]. To this end, we present here a model within the framework of regenerative P systems that captures, in an abstract fashion, the cell signaling processes that enable a planarian worm to regenerate. Our model repeats iteratively the same cycle (sequence of steps), which consists of two sub-cycles.
+On the first sub-cycle, the model orients itself: it locates the head, the tail, the left-hand side and the right-hand side. If necessary, it also grows at a rhythm of one compartment per cycle. This procedure is illustrated in Figs. 2-5. The second half-cycle involves the allocation of organs inside the morphology. This process is performed case by case, depending on the organ that is being allocated. Some organs must be allocated in the center of the morphology, such as the pharynx. In contrast, other organs must be on the outside regions of the morphology, such as the eyes and brains. In total, the model takes 39 time steps to complete a cycle.
+[PAGE 5] Fig. 1 represents a regenerative P systems model of a planarian worm of length 4 and width 3 (see Table 2). The compartments labeled in grey make up the trunk, those labeled in gold and green compose the left-hand and right-hand sides, respectively; and those labeled in blue and red represent the tail and the head, respectively. Compartments with two colors belong to two regions simultaneously. The circles in each compartment represent the organs in each morphology part. Moreover, a black line between two compartments represents a link between them, through with objects (some proteins, small molecules, etc.) can pass.
+The model of planarian regeneration consists of a regenerative P system defined as follows:
+Π = (H, G, Σ, Θ, {Whᵢ | 1 ≤ i ≤ m}, R, {(Sk, tk) | 1 ≤ k ≤ n}), where:
+• H = {(1, 1), (1, 2), . . ., (1, width), (2, 1), (2, 2), . . ., (length, width)}, where length and width are the maximum distance from head to tail and left to right, respectively, in any possible morphology generated by the model.
+• G = (V, S) is a non-directed graph representing the initial morphology regions and their connections. Each node in G represents a region in the initial morphology, and each edge represents an initial link between two regions. The specific nodes in V depend on the simulated experiment.
+• Σ is a finite alphabet whose elements are called objects. These objects represent proteins, small molecules, bioelectrical signals, etc. The specific objects in Σ depend on the simulated experiment.
+• Θ is a finite alphabet whose elements are called scripts. These scripts represent specific procedures that are triggered when certain conditions are met. The specific scripts in Θ depend on the simulated experiment.
+• For each i, 1 ≤ i ≤ m, Whᵢ ∈ M(Σ) is the initial multiset associated with compartment hᵢ. The specific multisets in {Whᵢ | 1 ≤ i ≤ m} depend on the simulated experiment.
+• R is a finite set of rules of the following types:
+[u]₍ₘ,ₙ₎ → [v, s]₍ₘ,ₙ₎ with u, v ∈ M(Σ), 1 ≤ m ≤ length, 1 ≤ n ≤ width and s ∈ Θ. If s = Ø, then we omit it in the notation.
+[u]₍ₘ,ₙ₎ → [v]₍ₘ',ₙ'₎ or [u]₍ₘ,ₙ₎ # [v]₍ₘ',ₙ'₎ with u, v ∈ M(Σ), 1 ≤ m, m' ≤ length, 1 ≤ n, n' ≤ width, and (m, n) ≠ (m', n').
+[u]₍ₘ,ₙ₎ → [v]₍ₘ,ₙ₎[w]₍ₘ',ₙ'₎ with u, v, w ∈ M(Σ), 1 ≤ m, m' ≤ length, 1 ≤ n, n' ≤ width and (m, n) ≠ (m', n').
+• Each rule from R has an associated priority, that is, there exists a function pr from R into Z. We denote pr(r) in r as (pr(r)) prior to r, e.g., r = (pr(r))[u]₍ₘ,ₙ₎→[v, s]₍ₘ,ₙ₎. If pr(r) is equal to 0, then we omit it in the notation.
+• Each rule r∈ R has an associated guard gᵣ. We denote gᵣ in r as {gᵣ} prior to r and to pr(r), e.g., r = {gᵣ}(pr(r))[u]₍ₘ,ₙ₎→[v, s]₍ₘ,ₙ₎. If gᵣ is the empty string, then we omit it in the notation.
+• {(Sk, tk)|1 ≤ k ≤ n} is a set of pairs which contains the pair (σ, F) such as Sk∈ Θ and tk is a computable predicate over the set of configurations of Π. F is a predicate which always evaluates to false. For each two pairs (sᵢ, tᵢ), (sⱼ, tⱼ), if i ≠ j then sᵢ ≠ sⱼ.
+The values and descriptions of the parameters used in the model are the following:
+Parameters lp, bclkmax and oclkmax have been experimentally adjusted in order to synchronize the model. On the contrary, parameters length and width can be modified, according to the resolution needed for the experiment at hand.
+lp: Length of the pause between the morphology part allocation stage and the organ allocation stage.
+bclkmax: Maximum value of the morphology part clock.
+oclkmax: Maximum value of the organ clock.
+length: Maximum distance from head to tail in any possible morphology generated by the model.
+width: Maximum distance from left to right in any possible morphology generated by the model.
+
+[PAGE 5] The morphology part clock advances one unit per computation step.
+1 < m < length
+1 ≤ n ≤ width
+1 ≤ i ≤ bclkmax – 1
+(-1) [bclkᵢ → bclkᵢ₊₁]₍ₘ,ₙ₎ i≠2
+i ≠ lp+3
+i ≠ 2. lp+3
+i ≠ 3. lp+3
+[bclk₂₊ⱼ → bclk₃₊ⱼ]₍ₘ,ₙ₎
+[bclkᵢ₊ₗₚ₊₃ → bclkᵢ₊ₗₚ₊₄]₍ₘ,ₙ₎
+1 < m < length
+[bclkᵢ₊₂.ₗₚ₊₃ → bclkᵢ₊₂.ₗₚ₊₄]₍ₘ,ₙ₎
+1 ≤ n ≤ width
+[bclkᵢ₊₃.ₗₚ₊₃ → bclkᵢ₊₃.ₗₚ₊₄]₍ₘ,ₙ₎
+0 ≤ j ≤ 1
+[bclk_bclkmax → oclk₁]₍ₘ,ₙ₎
+After the morphology part allocation stage has been completed, the objects rec₍ₘ,ₙ₎ that remain unused are cleared.
+(1) [rec₍ₘ,ₙ₋₁₎, clkclkᵢₜ₋ₗₚ₋₂ → clkclkᵢₜ₋ₗₚ₋₁]₍ₘ,ₙ₎
+1 < m < length
+(1) [rec₍ₘ₋₁,ₙ₎, clkclkᵢₜ₋ₗₚ₋₂ → clkclkᵢₜ₋ₗₚ₋₁]₍ₘ,ₙ₎
+1 ≤ n ≤ width
+(1) [rec₍ₘ,ₙ₊₁₎, clkclkᵢₜ₋ₗₚ₋₂ → clkclkᵢₜ₋ₗₚ₋₁]₍ₘ,ₙ₎
+(1) [rec₍ₘ₊₁,ₙ₎, clkclkᵢₜ₋ₗₚ₋₂ → clkclkᵢₜ₋ₗₚ₋₁]₍ₘ,ₙ₎
+1 ≤ clkᵢₜ < 4
+
+Our model does not permit the same compartment to simultaneously belong to the head and the tail regions, nor to the left-hand and the right-hand side. Therefore, if any of these pairs of object markers coincides in a compartment at the same time, they are cleared out. Cells often implement bi-stable negative feedback signaling to ensure that only one outcome dominates. The purpose of these rules is to avoid incorrect behaviors in the model resulting from having the same compartment associated with opposing parts.
+(-1) [he, ta → Ø]₍ₘ,ₙ₎
+(-1) [ls, rs → Ø]₍ₘ,ₙ₎
+1 < m < length
+1 ≤ n ≤ width
+These rules initiate and locate the pharynx in the center of the morphology. The model considers that all compartments that do not belong either to the head and the tail are automatically part of the trunk. Therefore, head and tail compartments are excluded from the pharynx allocation. Likewise, compartments which belong either to the left-hand or the right-hand side are excluded from being assigned as 'center'.
+{¬he ∧ ¬ta ∧ ¬ls ∧ ¬rs ∧ oclk₁} [Ø → lsS₍ₙ,₀₎, rsS₍ₙ,₀₎, heS₍ₘ,₀₎, taS₍ₘ,₀₎]₍ₘ,ₙ₎
+{¬he ∧ ¬ta ∧ ¬ls ∧ ¬rs} [pharsl, pharsv → phar]₍ₘ,ₙ₎
+2 ≤ m ≤ length – 1
+2 ≤ n ≤ width – 1
+After all compartments have been associated with a morphology part, but before the organs are allocated, the model flushes organ markers.
+{oclk₁} [phar → Ø]₍ₘ,ₙ₎
+1 < m < length
+{oclk₁} [e → Ø]₍ₘ,ₙ₎
+{oclk₁} [b → Ø]₍ₘ,ₙ₎
+1 ≤ n ≤ width
+Compartments that have been allocated to the head send a signal to the left and right to allocate the eyes and brains. If they do not receive any response from the compartment on the left in the next step, then the compartment is at the leftmost position in the head. Consequently, it generates an eye and a brain. The same applies for the right-hand side.
+{he ∧ oclk₁} [Ø → les, res]₍ₘ,ₙ₎
+{he} [les]₍ₘ,ₙ₎ → [less]₍ₘ,ₙ₋₁₎
+{he} [res]₍ₘ,ₙ₎ → [ress]₍ₘ,ₙ₊₁₎
+{he} [less]₍ₘ,ₙ₎ → [lesb]₍ₘ,ₙ₊₁₎
+{he} [ress]₍ₘ,ₙ₎ → [resb]₍ₘ,ₙ₋₁₎
+2 ≤ m ≤ length
+1 ≤ n ≤ width
+{he ∧ oclk_oclkmax} [lesb → Ø]₍ₘ,ₙ₎
+{he ∧ oclk_oclkmax} [resb → Ø]₍ₘ,ₙ₎
+{he ∧ oclk_oclkmax ∧ lesb} [Ø → e, b]₍ₘ,ₙ₎
+{he ∧ oclk_oclkmax ∧ resb} [Ø → e, b]₍ₘ,ₙ₎
+The organ clock advances one unit per computation step.
+(-1) [oclkᵢ → oclkᵢ₊₁]₍ₘ,ₙ₎
+1 < m < length
+1 ≤ n ≤ width
+1 ≤ i ≤ oclkmax – 1
+The signals used to allocate the pharynx are transmitted at a speed of one compartment per computation step.
+{ls} [lsS₍ₐ,ᵢ₎]₍ₘ,ₙ₎ → [lsS₍ₐ,ᵢ₊₁₎]₍ₘ,ₙ₋₁₎
+{rs} [rsS₍ₐ,ᵢ₎]₍ₘ,ₙ₎ → [rsS₍ₐ,ᵢ₊₁₎]₍ₘ,ₙ₊₁₎
+{ta} [taS₍ₐ,ᵢ₎]₍ₘ,ₙ₎ → [taS₍ₐ,ᵢ₊₁₎]₍ₘ₋₁,ₙ₎
+{he} [heS₍ₐ,ᵢ₎]₍ₘ,ₙ₎ → [heS₍ₐ,ᵢ₊₁₎]₍ₘ₊₁,ₙ₎
+1 < m < length
+2 ≤ n ≤ width – 1
+1 ≤ a ≤ width
+0 ≤ i ≤ length
+2 < m < length – 1
+1 ≤ n ≤ width
+1 ≤ a ≤ length
+0 ≤ i ≤ width
+The signals used to allocate the pharynx return once they have reached the farthest compartment in a specific direction.
+1 < m < length
+{ls} [lsS₍ₐ,ᵢ₎]₍ₘ,ₙ₎ → [lsS₍b,ₐ,ᵢ₊₁₎]₍ₘ,ₙ₊₁₎
+1 ≤ n ≤ width
+{rs} [rsS₍ₐ,ᵢ₎]₍ₘ,ₙ₎ → [rsS₍b,ₐ,ᵢ₊₁₎]₍ₘ,ₙ₋₁₎
+1 ≤ a ≤ width
+0 ≤ i ≤ length
+{ta} [taS₍ₐ,ᵢ₎]₍ₘ,ₙ₎ → [taS₍b,ₐ,ᵢ₊₁₎]₍ₘ₊₁,ₙ₎
+1 < m < length
+1 ≤ n ≤ width
+{he} [heS₍ₐ,ᵢ₎]₍ₘ,ₙ₎ → [heS₍b,ₐ,ᵢ₊₁₎]₍ₘ₋₁,ₙ₎
+1 ≤ a ≤ length
+0 ≤ i ≤ width
+The signals used to allocate the pharynx propagate back until they reach their compartment of origin.
+1 < m < length
+2 ≤ n ≤ width – 1
+{ls} [lsS₍b,ₐ,ᵢ₎]₍ₘ,

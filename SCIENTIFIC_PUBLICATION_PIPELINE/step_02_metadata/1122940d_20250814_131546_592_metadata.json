@@ -1,0 +1,38 @@
+{
+  "document_type": "journal-article",
+  "title": "Transplantation of fragments from different planaria: A bioelectrical model for head regeneration",
+  "authors": [
+    "Javier Cervera",
+    "José A. Manzanares",
+    "Michael Levin",
+    "Salvador Mafe"
+  ],
+  "journal": "Journal of Theoretical Biology",
+  "publication_year": 2023,
+  "doi": "10.1016/j.jtbi.2022.111356",
+  "abstract": null,
+  "extraction_confidence": "high",
+  "filename": "1122940d_20250814_131546_592.pdf",
+  "extraction_timestamp": "2025-08-14T13:16:02.564979",
+  "extraction_method": "gemini_1.5_flash",
+  "pages_analyzed": 2,
+  "publication_date": "2023-02",
+  "page_range": "111356",
+  "volume": "558",
+  "issue": null,
+  "references_count": 48,
+  "publisher": "Elsevier BV",
+  "issn": "0022-5193",
+  "crossref_data": true,
+  "enrichment_method": "crossref_api",
+  "crossref_enriched": true,
+  "enrichment_timestamp": "2025-08-14T13:27:04.010599",
+  "affiliations": [
+    "Dept. of Biology and Allen Discovery Center at Tufts University",
+    "of Biology and Allen Discovery Center at Tufts University",
+    "Wyss Institute",
+    "Harvard University",
+    "Dept. Termodinamica"
+  ],
+  "text_enriched": true
+}

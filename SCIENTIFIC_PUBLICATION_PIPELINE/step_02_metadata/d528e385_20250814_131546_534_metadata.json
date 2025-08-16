@@ -1,0 +1,28 @@
+{
+  "document_type": "research_paper",
+  "title": "Alteration of bioelectrically-controlled processes in the embryo: a teratogenic mechanism for anticonvulsants",
+  "authors": [
+    "Sonia Hernández-Díaz",
+    "Michael Levin"
+  ],
+  "journal": "Reproductive Toxicology",
+  "publication_year": 2014,
+  "doi": null,
+  "abstract": "Maternal use of anticonvulsants during the first trimester of pregnancy has been associated with an elevated risk of major congenital malformations in the offspring. Whether the increased risk is caused by a direct teratogenic effect of the drugs or by an indirect effect through the mother's disease, or a combination of genetic or environmental factors both shared by epilepsy and malformations has been controversial. We discuss the hypothesis that alterations in bioelectric signaling during early development are a common pathophysiological mechanism that might lead to better seizing control in the mother and stronger alteration of development in the offspring. We also discuss the potential of developing more specific anticonvulsant drugs that result in safer drugs; pharmaceuticals that do not alter cell resting transmembrane voltage levels coded for development of organs.",
+  "extraction_confidence": "high",
+  "filename": "d528e385_20250814_131546_534.pdf",
+  "extraction_timestamp": "2025-08-14T13:16:38.774432",
+  "extraction_method": "gemini_1.5_flash",
+  "pages_analyzed": 2,
+  "affiliations": [
+    "Department of Epidemiology",
+    "School of Public Health",
+    "Department of Biology",
+    "Harvard School",
+    "Tufts University"
+  ],
+  "page_range": "1-3",
+  "text_enriched": true,
+  "enrichment_method": "text_analysis",
+  "enrichment_timestamp": "2025-08-14T13:27:05.312292"
+}

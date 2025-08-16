@@ -1,0 +1,625 @@
+{
+  "metadata": {
+    "document_type": "research_paper",
+    "title": "Alteration of bioelectrically-controlled processes in the embryo: a teratogenic mechanism for anticonvulsants",
+    "authors": [
+      "Sonia Hernández-Díaz",
+      "Michael Levin"
+    ],
+    "journal": "Reproductive Toxicology",
+    "publication_year": 2014,
+    "doi": null,
+    "abstract": "Maternal use of anticonvulsants during the first trimester of pregnancy has been associated with an elevated risk of major congenital malformations in the offspring. Whether the increased risk is caused by a direct teratogenic effect of the drugs or by an indirect effect through the mother's disease, or a combination of genetic or environmental factors both shared by epilepsy and malformations has been controversial. We discuss the hypothesis that alterations in bioelectric signaling during early development are a common pathophysiological mechanism that might lead to better seizing control in the mother and stronger alteration of development in the offspring. We also discuss the potential of developing more specific anticonvulsant drugs that result in safer drugs; pharmaceuticals that do not alter cell resting transmembrane voltage levels coded for development of organs.",
+    "extraction_confidence": "high",
+    "filename": "d528e385_20250814_131546_534.pdf",
+    "extraction_timestamp": "2025-08-14T13:16:38.774432",
+    "extraction_method": "gemini_1.5_flash",
+    "pages_analyzed": 2,
+    "affiliations": [
+      "Department of Epidemiology",
+      "School of Public Health",
+      "Department of Biology",
+      "Harvard School",
+      "Tufts University"
+    ],
+    "page_range": "1-3",
+    "text_enriched": true,
+    "enrichment_method": "text_analysis",
+    "enrichment_timestamp": "2025-08-14T13:27:05.312292"
+  },
+  "chunks": [
+    {
+      "text": "Alteration of bioelectrically-controlled processes in the embryo: a teratogenic mechanism for anticonvulsants.",
+      "section": "[PAGE 1] Alteration of bioelectrically-controlled processes in the embryo",
+      "primary_topic": "Teratogenesis",
+      "secondary_topics": [
+        "anticonvulsants",
+        "bioelectric signaling",
+        "embryo",
+        "teratogenic mechanism",
+        "developmental biology",
+        "drug side effects",
+        "birth defects"
+      ],
+      "chunk_summary": "Anticonvulsant drugs may disrupt bioelectrically controlled processes during embryonic development, leading to birth defects.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "1"
+    },
+    {
+      "text": "Sonia Hernández-Díaz and Michael Levin are the authors of this work. Hernández-Díaz is affiliated with the Department of Epidemiology at Harvard School of Public Health in Boston, MA, United States. Levin is affiliated with the Department of Biology and the Center for Regenerative and Developmental Biology at Tufts University in Medford, MA, United States.",
+      "section": "Sonia Hern",
+      "primary_topic": "Authors",
+      "secondary_topics": [
+        "authorship",
+        "affiliation",
+        "Harvard School of Public Health",
+        "Tufts University",
+        "Epidemiology",
+        "Regenerative Biology",
+        "Developmental Biology"
+      ],
+      "chunk_summary": "This section identifies the authors and their respective affiliations.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "ABSTRACT",
+      "section": "ABSTRACT",
+      "primary_topic": "Abstract",
+      "secondary_topics": [
+        "summary",
+        "overview"
+      ],
+      "chunk_summary": "This section serves as the abstract of the paper.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Maternal use of anticonvulsants during the first trimester of pregnancy has been associated with an elevated risk of major congenital malformations in the offspring. Whether the increased risk is caused by the specific pharmacological mechanisms of certain anticonvulsants, the underlying epilepsy, or common genetic or environmental risk factors shared by epilepsy and malformations has been controversial.",
+      "section": "Maternal use of anticonvulsants during the first trimester of pregnancy has been associated with an elevated risk of major congenital malformations in the offspring",
+      "primary_topic": "Anticonvulsant teratogenicity",
+      "secondary_topics": [
+        "congenital malformations",
+        "pregnancy",
+        "epilepsy",
+        "pharmacological mechanisms",
+        "genetic risk factors",
+        "environmental risk factors"
+      ],
+      "chunk_summary": "Maternal anticonvulsant use during the first trimester is linked to birth defects, but the exact cause (drug mechanism, epilepsy itself, or shared risk factors) remains unclear.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "1"
+    },
+    {
+      "text": "We hypothesize that anticonvulsant therapies during pregnancy that attain more successful inhibition of neurotransmission might lead to both better seizure control in the mother and stronger alteration of bioelectrically-controlled processes in the embryo that result in structural malformations. We propose that development of pharmaceuticals that do not alter cell resting transmembrane voltage levels could result in safer drugs.",
+      "section": "Maternal use of anticonvulsants during the first trimester of pregnancy has been associated with an elevated risk of major congenital malformations in the offspring",
+      "primary_topic": "Bioelectric signaling",
+      "secondary_topics": [
+        "neurotransmission",
+        "embryonic development",
+        "structural malformations",
+        "transmembrane voltage",
+        "drug development",
+        "anticonvulsant therapy"
+      ],
+      "chunk_summary": "The authors hypothesize that anticonvulsants disrupting neurotransmission may also affect bioelectrically controlled embryonic processes, leading to malformations, and suggest developing drugs that don't alter transmembrane voltage.",
+      "position_in_section": "End",
+      "certainty_level": "Medium",
+      "citation_context": "Drawing conclusions",
+      "page_number": "1"
+    },
+    {
+      "text": "The aim of anticonvulsants is to suppress the excessive firing of neurons that start a seizure to prevent the spread of the seizure within the brain. Drugs exert their anticonvulsant action through enhancement of inhibitory neurotransmission or/and reduction of excitatory neurotransmission. The mechanism of anticonvulsant drug action is complex and remains uncertain.",
+      "section": "The aim of anticonvulsants is to suppress the excessive firing of neurons that start a seizure to prevent the spread of the seizure within the brain",
+      "primary_topic": "Anticonvulsant Mechanisms",
+      "secondary_topics": [
+        "neurotransmission",
+        "seizures",
+        "neuron firing",
+        "inhibitory neurotransmission",
+        "excitatory neurotransmission"
+      ],
+      "chunk_summary": "Anticonvulsants aim to suppress excessive neuronal firing during seizures by modulating neurotransmission, although their exact mechanisms remain complex and uncertain.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "1"
+    },
+    {
+      "text": "The main proposed mechanisms of action include: (1) Block of voltage-sensitive sodium (Na+) channels, which inhibits firing of action potentials by axons (e.g., phenytoin, carbamazepine, lamotrigine, valproate, topiramate, zonisamide). (2) Enhance the inhibitory neurotransmitter gamma-aminobutyric acid (GABA; e.g., benzodiazepines, gabapentin, valproate, phenobarbital). (3) Block the excitatory neurotransmitter glutamate (e.g. lamotrigine). (4) Blockage of the T type calcium channels (e.g. ethosuximide, pregabalin).",
+      "section": "The aim of anticonvulsants is to suppress the excessive firing of neurons that start a seizure to prevent the spread of the seizure within the brain",
+      "primary_topic": "Anticonvulsant Targets",
+      "secondary_topics": [
+        "sodium channels",
+        "GABA",
+        "glutamate",
+        "calcium channels",
+        "action potentials",
+        "neurotransmitters",
+        "ion channels"
+      ],
+      "chunk_summary": "Proposed anticonvulsant mechanisms include blocking sodium and calcium channels, enhancing GABAergic inhibition, and blocking glutamatergic excitation.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "1"
+    },
+    {
+      "text": "Prenatal exposure to antiepileptic drugs (AEDs) has been associated with an increased risk of congenital malformations. However, the magnitude of the risks and the specific abnormalities vary for each drug. In the North American AED Pregnancy Registry, the estimated risk of major malformations overall associated with first trimester exposure ranged from 9.3% for valproate to 2.0% for lamotrigine.",
+      "section": "Prenatal exposure to antiepileptic drugs",
+      "primary_topic": "AED Exposure Risks",
+      "secondary_topics": [
+        "congenital malformations",
+        "antiepileptic drugs",
+        "prenatal exposure",
+        "valproate",
+        "lamotrigine",
+        "pregnancy registry"
+      ],
+      "chunk_summary": "Prenatal exposure to AEDs increases the risk of congenital malformations, with varying risks depending on the specific drug.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "The risk of oral clefts was over 10 per 1000 for infants exposed to phenobarbital, valproate or topiramate monotherapies, which is higher than expected based on any reference population (around 1 per 1000).",
+      "section": "Prenatal exposure to antiepileptic drugs",
+      "primary_topic": "Oral Cleft Risk",
+      "secondary_topics": [
+        "oral clefts",
+        "phenobarbital",
+        "valproate",
+        "topiramate",
+        "monotherapy",
+        "congenital malformations"
+      ],
+      "chunk_summary": "Exposure to certain AED monotherapies significantly increases the risk of oral clefts in infants.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "The teratogenicity of valproic acid has been established for three decades [7-9]. It is widely accepted that first trimester exposure to valproic acid increases the risk of neural tube defects from around 1 to 10 per 1000 births [7,8,10-12]. Some studies have also suggested an association with hypospadias [8-12], oral clefts [8,10,12], cardiac septal defects [9-12], and limb defects [11,12].",
+      "section": "The teratogenicity of valproic acid has been established for three decades",
+      "primary_topic": "Valproic acid teratogenicity",
+      "secondary_topics": [
+        "neural tube defects",
+        "hypospadias",
+        "oral clefts",
+        "cardiac septal defects",
+        "limb defects",
+        "birth defects",
+        "first trimester exposure"
+      ],
+      "chunk_summary": "First-trimester exposure to valproic acid significantly increases the risk of various birth defects, including neural tube defects, hypospadias, oral clefts, cardiac septal defects, and limb defects.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Other traditional AEDs may increase the risk of malformations two to three times: primidone and its metabolite phenobarbital have been associated with oral clefts, cardiovascular and urogenital defects [13]. Although less common, oral clefts, cardiovascular defects and urogenital defects have also been reported after phenytoin therapy [14,15]. In utero exposure to carbamazepine has been associated with cleft palate [16], neural tube defects [14,16,17] hypospadias and cardiovascular defects [16].",
+      "section": "The teratogenicity of valproic acid has been established for three decades",
+      "primary_topic": "AED teratogenicity",
+      "secondary_topics": [
+        "primidone",
+        "phenobarbital",
+        "phenytoin",
+        "carbamazepine",
+        "oral clefts",
+        "cardiovascular defects",
+        "urogenital defects",
+        "neural tube defects",
+        "hypospadias",
+        "cleft palate"
+      ],
+      "chunk_summary": "Other antiepileptic drugs (AEDs) like primidone, phenobarbital, phenytoin, and carbamazepine also carry a risk of birth defects, including oral clefts, cardiovascular defects, urogenital defects, and neural tube defects.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "The use of newer AEDs such as lamotrigine, topiramate and levetiracetam has increased in recent years. Studies consistently show a lower risk of malformations overall for lamotrigine than for the traditional AEDs [8,18-20]. However, the risk of oral clefts reported for lamotrigine has ranged from 1.0 to 4.5 per 1000 [4,8,20,21], and whether lamotrigine increases the risk of oral clefts is still under discussion.",
+      "section": "The use of newer AEDs such as lamotrigine",
+      "primary_topic": "Lamotrigine safety",
+      "secondary_topics": [
+        "AEDs",
+        "malformations",
+        "oral clefts",
+        "birth defects",
+        "teratogenicity",
+        "antiepileptic drugs"
+      ],
+      "chunk_summary": "While lamotrigine shows a lower overall risk of malformations compared to traditional AEDs, its association with oral clefts remains under investigation.",
+      "position_in_section": "Beginning",
+      "certainty_level": "Medium",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "For topiramate, at least four studies have already suggested an increased risk of oral clefts [22-24]. There is a limited amount of information available for levetiracetam and other new generation AEDs.",
+      "section": "The use of newer AEDs such as lamotrigine",
+      "primary_topic": "Topiramate and Levetiracetam",
+      "secondary_topics": [
+        "AEDs",
+        "oral clefts",
+        "topiramate",
+        "levetiracetam",
+        "birth defects",
+        "teratogenicity",
+        "safety"
+      ],
+      "chunk_summary": "Topiramate has been linked to an increased risk of oral clefts, while data on levetiracetam and other newer AEDs is limited.",
+      "position_in_section": "End",
+      "certainty_level": "Medium",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "In summary, most traditional and some new antiepileptic drugs (AEDs) have been associated with relatively specific birth defects to varying degrees. These defects include oral clefts, neural tube defects, cardiac defects, and urogenital defects.",
+      "section": "In summary",
+      "primary_topic": "Birth Defects",
+      "secondary_topics": [
+        "antiepileptic drugs",
+        "AEDs",
+        "teratogenicity",
+        "congenital anomalies",
+        "oral clefts",
+        "neural tube defects",
+        "cardiac defects",
+        "urogenital defects"
+      ],
+      "chunk_summary": "Traditional and newer antiepileptic drugs (AEDs) are associated with specific birth defects like oral clefts, neural tube defects, cardiac defects, and urogenital defects.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "2"
+    },
+    {
+      "text": "Evaluation of the teratogenic effects of AEDs is complicated by the fact that epilepsy itself could potentially increase the risk of birth defects [25,26]. However, the risk of malformations is higher in the offspring of women on AEDs than in those with untreated epilepsy during pregnancy [1,27,28], and women with a history of epilepsy but taking no AED do not have an increased risk of having children with major malformations [29,30]. Although these observations might reflect an effect of disease severity, since epilepsy can seldom remain untreated and untreated women might not be comparable to women on AEDs, they are also compatible with AEDs effects.",
+      "section": "Evaluation of the teratogenic effects of AEDs is complicated by the fact that epilepsy itself could potentially increase the risk of birth defects",
+      "primary_topic": "AED Teratogenicity",
+      "secondary_topics": [
+        "epilepsy",
+        "birth defects",
+        "malformations",
+        "pregnancy",
+        "disease severity",
+        "anticonvulsants"
+      ],
+      "chunk_summary": "While epilepsy itself may contribute to birth defects, the risk is significantly higher in offspring of women taking AEDs during pregnancy, suggesting a potential teratogenic effect of the drugs themselves.",
+      "position_in_section": "Beginning",
+      "certainty_level": "Medium",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Moreover, the type of epilepsy and the number of seizures during pregnancy do not affect the risk of malformations [19,27,28,31,32]. In addition, in recent years, several anticonvulsants have been increasingly used as mood stabilizers. Studies that looked at the prevalence of congenital anomalies according to indication (psychiatric vs. neurologic) suggest that the teratogenic effect is probably a drug effect rather than the epilepsy [29,30].",
+      "section": "Evaluation of the teratogenic effects of AEDs is complicated by the fact that epilepsy itself could potentially increase the risk of birth defects",
+      "primary_topic": "Teratogenic Mechanism",
+      "secondary_topics": [
+        "seizures",
+        "mood stabilizers",
+        "congenital anomalies",
+        "psychiatric indication",
+        "neurologic indication",
+        "drug effect"
+      ],
+      "chunk_summary": "The lack of correlation between seizure frequency/type and malformations, coupled with the observed teratogenic effects in psychiatric use of anticonvulsants, further supports the hypothesis that the drugs themselves are the primary teratogenic agents.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "2"
+    },
+    {
+      "text": "The mechanisms of teratogenicity of AEDs are largely unknown and may be different for different AEDs. One potential mechanism concerns folate. While it is widely accepted that several AEDs produce low folate levels [33,34], and that both low folate levels and AED use correlate with adverse pregnancy outcomes, it is unclear whether AED-induced low folate levels in the mother are themselves responsible for the higher risk of malformations [35].",
+      "section": "The mechanisms of teratogenicity of AEDs are largely unknown and may be different for different AEDs",
+      "primary_topic": "Folate and Teratogenicity",
+      "secondary_topics": [
+        "AEDs",
+        "folate deficiency",
+        "pregnancy outcomes",
+        "malformations",
+        "teratogens"
+      ],
+      "chunk_summary": "While AED use correlates with low folate levels and adverse pregnancy outcomes, it's unclear whether AED-induced low folate is directly responsible for malformations.",
+      "position_in_section": "Beginning",
+      "certainty_level": "Medium",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "Several alternative teratogenic mechanisms have been proposed [36], including a direct effect on DNA synthesis of developing cells [27,37], valproate inhibition of cell differentiation and induction of apoptosis through oxidative stress caused by the formation of reactive oxygen species [38], and valproate modification of gene expression through histone deacetylase inhibition [39]. Such a global effect on cell division would explain a broad spectrum of defects associated with prenatal AED exposure.",
+      "section": "The mechanisms of teratogenicity of AEDs are largely unknown and may be different for different AEDs",
+      "primary_topic": "Alternative Teratogenic Mechanisms",
+      "secondary_topics": [
+        "DNA synthesis",
+        "cell differentiation",
+        "apoptosis",
+        "oxidative stress",
+        "gene expression",
+        "histone deacetylase",
+        "valproate"
+      ],
+      "chunk_summary": "Alternative teratogenic mechanisms of AEDs include impacts on DNA synthesis, cell differentiation, apoptosis induction via oxidative stress, and gene expression modification through histone deacetylase inhibition.",
+      "position_in_section": "Middle",
+      "certainty_level": "Medium",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "However, AEDs have been associated with relatively specific defects (i.e. oral clefts, NTDs, cardiac defects, and urogenital defects). Intriguingly, all these malformations might be due to alterations in the fusion process of embryonic folds.",
+      "section": "The mechanisms of teratogenicity of AEDs are largely unknown and may be different for different AEDs",
+      "primary_topic": "Specific AED-Associated Defects",
+      "secondary_topics": [
+        "oral clefts",
+        "NTDs",
+        "cardiac defects",
+        "urogenital defects",
+        "embryonic folds",
+        "fusion process"
+      ],
+      "chunk_summary": "Despite proposed global effects, AEDs are linked to specific defects potentially caused by alterations in embryonic fold fusion.",
+      "position_in_section": "End",
+      "certainty_level": "Medium",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "One likely mechanism mediating these effects concerns interference with the endogenous bioelectric mechanisms guiding embryonic development. In addition to action potentials in neurons, slowly changing gradients of resting transmembrane voltage levels are present in all cells. It is now known that these voltage gradients function as instructive cues guiding cell division, programmed cell death, cell positioning and orientation, and differentiation. More broadly, such bioelectric cues are an important mechanism for orchestrating individual cell behaviors into large-scale patterning programs.",
+      "section": "One likely mechanism mediating these effects concerns interference with the endogenous bioelectric mechanisms guiding embryonic development",
+      "primary_topic": "Bioelectric signaling",
+      "secondary_topics": [
+        "voltage gradients",
+        "embryonic development",
+        "cell behavior",
+        "patterning",
+        "cell division",
+        "cell death",
+        "cell differentiation"
+      ],
+      "chunk_summary": "Endogenous bioelectric mechanisms, specifically voltage gradients, play a crucial role in guiding embryonic development by influencing cell behaviors and large-scale patterning.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "2"
+    },
+    {
+      "text": "Bioelectric cues have been implicated in craniofacial development, left-right patterning of the heart and viscera, neoplastic transformation, eye development, neuronal patterning, and other aspects of the control of biological growth and form. Any perturbation of ion channel function by pharmacological compounds is likely to disrupt the fine balance of resting potentials that provides positional information and other growth guidance to cells and tissues during embryogenesis, being especially relevant for actively growing tissues and stem cells.",
+      "section": "One likely mechanism mediating these effects concerns interference with the endogenous bioelectric mechanisms guiding embryonic development",
+      "primary_topic": "Bioelectric cues",
+      "secondary_topics": [
+        "ion channels",
+        "embryogenesis",
+        "growth guidance",
+        "stem cells",
+        "tissue development",
+        "pharmacological compounds"
+      ],
+      "chunk_summary": "Disruption of bioelectric cues, particularly through perturbation of ion channels by pharmacological compounds, can negatively impact embryonic development by altering resting potentials crucial for cell growth and tissue patterning.",
+      "position_in_section": "Middle",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "2"
+    },
+    {
+      "text": "Moreover, it has been shown that several neurotransmitters function as regulators of these gradients, as well as downstream players that transduce voltage changes into regulation of gene expression. Thus, drugs that modulate serotonergic and GABA/glycine receptors or transporters may also impact on the developmental outcomes required for normal embryogenesis.",
+      "section": "One likely mechanism mediating these effects concerns interference with the endogenous bioelectric mechanisms guiding embryonic development",
+      "primary_topic": "Neurotransmitter regulation",
+      "secondary_topics": [
+        "gene expression",
+        "neurotransmitters",
+        "GABA",
+        "glycine",
+        "serotonin",
+        "receptors",
+        "transporters"
+      ],
+      "chunk_summary": "Neurotransmitters regulate bioelectric gradients and downstream gene expression, implying that drugs affecting neurotransmitter systems can influence embryonic development.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": "2"
+    },
+    {
+      "text": "In a recent study, AED groups associated with the lowest frequency of seizures in the mother, like valproate or phenobarbital, also carried the greatest risk of major malformations in the fetus [4]. Newer drugs, like lamotrigine, seem safer for the fetus but may be less effective to control seizures during pregnancy [76]. The differences in effectiveness observed among the drugs in these non-randomized studies may be due to lack of comparability of treatment groups regarding the underlying indication.",
+      "section": "In a recent study",
+      "primary_topic": "AED Effectiveness",
+      "secondary_topics": [
+        "valproate",
+        "phenobarbital",
+        "lamotrigine",
+        "seizures",
+        "fetal malformations",
+        "pregnancy",
+        "non-randomized studies"
+      ],
+      "chunk_summary": "Older AEDs like valproate and phenobarbital are associated with lower seizure frequency but higher risk of fetal malformations, while newer AEDs like lamotrigine appear safer but potentially less effective, with study limitations potentially impacting observed differences.",
+      "position_in_section": "Beginning",
+      "certainty_level": "Medium",
+      "citation_context": "Describing prior work",
+      "page_number": "2"
+    },
+    {
+      "text": "Clinicians might keep women of childbearing age on valproate or phenobarbital when they are well controlled and are reluctant to switch and risk seizure recurrence, while newer AEDs could have been prescribed to patients not responding to traditional drugs. In addition, reduced effectiveness in seizure control during pregnancy might be the result of increased clearance or other pharmacokinetic changes associated with gestation, which may be particularly pronounced for specific AEDs.",
+      "section": "In a recent study",
+      "primary_topic": "Clinical Practice",
+      "secondary_topics": [
+        "valproate",
+        "phenobarbital",
+        "AEDs",
+        "seizure recurrence",
+        "pharmacokinetics",
+        "pregnancy",
+        "gestation"
+      ],
+      "chunk_summary": "Clinical practices, such as maintaining patients on effective older AEDs and prescribing newer AEDs to those not responding to traditional drugs, along with pharmacokinetic changes during pregnancy, may contribute to observed differences in AED effectiveness.",
+      "position_in_section": "Middle",
+      "certainty_level": "Medium",
+      "citation_context": "Describing prior work",
+      "page_number": "2"
+    },
+    {
+      "text": "Whatever the explanation might be, it is intriguing that less effective seizure control during pregnancy seemed safer for fetal development.",
+      "section": "In a recent study",
+      "primary_topic": "Fetal Safety",
+      "secondary_topics": [
+        "seizure control",
+        "pregnancy",
+        "fetal development"
+      ],
+      "chunk_summary": "Less effective seizure control during pregnancy paradoxically appears to be associated with improved fetal development.",
+      "position_in_section": "End",
+      "certainty_level": "Medium",
+      "citation_context": "Drawing conclusions",
+      "page_number": "2"
+    },
+    {
+      "text": "Based on these observations, we hypothesize that more successful inhibition of neurotransmission might lead to both better seizure control in the mother and stronger alteration of bioelectrically controlled processes in the embryo that result in structural malformations. This hypothesis is supported on the following premises: (1) through different mechanisms, all AEDs affect neuronal transmission and voltage gradients in non-neuronal cells.",
+      "section": "Based on these observations",
+      "primary_topic": "Neurotransmission Inhibition",
+      "secondary_topics": [
+        "AEDs",
+        "seizure control",
+        "bioelectric processes",
+        "structural malformations",
+        "voltage gradients",
+        "non-neuronal cells"
+      ],
+      "chunk_summary": "Inhibiting neurotransmission may improve seizure control but also disrupt bioelectrically controlled embryonic development, leading to malformations.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "Drawing conclusions",
+      "page_number": null
+    },
+    {
+      "text": "(2) Bioelectrical gradients, as well as associated upstream and downstream neurotransmitter-regulated mechanisms, are crucial regulators of patterning in numerous developmental systems, controlling somatic and stem cell behavior, and thus regulating morphogenesis at the tissue and organ levels. (3) Thus, substances that affect neurotransmitters and ion channels could not only reduce neuronal transmission and prevent seizures but also impair developmental events such as axial patterning, visceral organ positioning, neural and vascular network specification, craniofacial morphogenesis, and limb and neural tube patterning.",
+      "section": "Based on these observations",
+      "primary_topic": "Bioelectric Gradients",
+      "secondary_topics": [
+        "neurotransmitter regulation",
+        "developmental systems",
+        "somatic cells",
+        "stem cells",
+        "morphogenesis",
+        "ion channels",
+        "axial patterning",
+        "organogenesis",
+        "neural development",
+        "vascular development"
+      ],
+      "chunk_summary": "Bioelectric gradients and neurotransmitter regulation are crucial for development, and substances affecting these processes can impair various developmental events.",
+      "position_in_section": "End",
+      "certainty_level": "High",
+      "citation_context": "Describing prior work",
+      "page_number": null
+    },
+    {
+      "text": "The authors declare no conflict of interest.",
+      "section": "[PAGE 2] Conflict of interest",
+      "primary_topic": "Conflict of Interest",
+      "secondary_topics": [
+        "disclosure",
+        "ethics",
+        "research integrity",
+        "transparency"
+      ],
+      "chunk_summary": "The authors declare no conflict of interest.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "2"
+    },
+    {
+      "text": "The authors of this work declare that there are no conflicts of interest related to the research presented in this paper.",
+      "section": "The authors declare that there are no conflicts of interest",
+      "primary_topic": "Conflict of Interest",
+      "secondary_topics": [
+        "disclosure",
+        "ethics",
+        "research integrity",
+        "transparency",
+        "authorship"
+      ],
+      "chunk_summary": "The authors declare no conflicts of interest regarding the research presented.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "This section refers to a Transparency document mentioned on page 2.  Due to the brevity of the provided text, no further scientific content can be extracted. The purpose and content of the Transparency document are not described within this excerpt.",
+      "section": "[PAGE 2] Transparency document",
+      "primary_topic": "Transparency Document",
+      "secondary_topics": [
+        "transparency",
+        "documentation",
+        "supplementary materials"
+      ],
+      "chunk_summary": "A Transparency document is mentioned on page 2, but no details about its contents are provided.",
+      "position_in_section": "Beginning",
+      "certainty_level": "Low",
+      "citation_context": "None",
+      "page_number": "2"
+    },
+    {
+      "text": "The Transparency document associated with this article can be found in the online version.",
+      "section": "The Transparency document associated with this article can be found in the online version",
+      "primary_topic": "Transparency Document",
+      "secondary_topics": [
+        "transparency",
+        "online resources",
+        "supplementary materials",
+        "data availability",
+        "reproducibility"
+      ],
+      "chunk_summary": "The transparency document for this article is available online.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    },
+    {
+      "text": "Acknowledgements",
+      "section": "[PAGE 2] Acknowledgements",
+      "primary_topic": "Acknowledgements",
+      "secondary_topics": [],
+      "chunk_summary": "This section acknowledges contributions.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": "2"
+    },
+    {
+      "text": "ML gratefully acknowledges support of the NIH (Grants EY018168, AR061988, AR055993, and GM077425), American Heart Association (Established Investigator Grant 0740088N), and the G. Harold and Leila Y. Mathers Charitable Foundation. SHD gratefully acknowledges support of the Agency for Healthcare Research and Quality (AHRQ) (Grant RO1HS018533).",
+      "section": "ML",
+      "primary_topic": "Funding Acknowledgements",
+      "secondary_topics": [
+        "NIH grants",
+        "American Heart Association",
+        "Mathers Charitable Foundation",
+        "AHRQ",
+        "research funding"
+      ],
+      "chunk_summary": "This section acknowledges the funding sources for the research, including NIH, American Heart Association, Mathers Charitable Foundation, and AHRQ.",
+      "position_in_section": "Beginning",
+      "certainty_level": "High",
+      "citation_context": "None",
+      "page_number": null
+    }
+  ],
+  "processed_at": "2025-08-14T13:49:54.368007",
+  "chunk_count": 33,
+  "processing_method": "document_splitting"
+}

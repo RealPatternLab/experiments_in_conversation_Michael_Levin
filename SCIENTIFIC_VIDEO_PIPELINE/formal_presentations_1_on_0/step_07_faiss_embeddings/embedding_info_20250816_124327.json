@@ -1,0 +1,27 @@
+{
+  "timestamp": "20250816_124327",
+  "text_embeddings_shape": [
+    57,
+    3072
+  ],
+  "visual_embeddings_shape": [
+    57,
+    64
+  ],
+  "combined_embeddings_shape": [
+    57,
+    3136
+  ],
+  "total_content_items": 57,
+  "embedding_model": "text-embedding-3-large",
+  "index_type": "IndexFlatL2",
+  "files": {
+    "text_index": "step_07_faiss_embeddings/text_index_20250816_124327.faiss",
+    "visual_index": "step_07_faiss_embeddings/visual_index_20250816_124327.faiss",
+    "combined_index": "step_07_faiss_embeddings/combined_index_20250816_124327.faiss",
+    "embeddings": "step_07_faiss_embeddings/embeddings_20250816_124327.npy",
+    "metadata": "step_07_faiss_embeddings/metadata_20250816_124327.pkl"
+  },
+  "note": "Visual embeddings are simplified features based on metadata",
+  "consistency_note": "Using OpenAI text-embedding-3-large for consistency with publication pipeline"
+}
