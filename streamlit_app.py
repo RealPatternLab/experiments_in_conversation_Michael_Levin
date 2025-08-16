@@ -224,6 +224,71 @@ def encode_image_to_base64(image_path: str) -> str:
         logger.error(f"❌ Failed to encode image {image_path}: {e}")
         return ""
 
+def process_rag_metadata(rag_results: list) -> list:
+    """Process RAG results to extract proper metadata for display."""
+    logger.info(f"🔍 Processing metadata for {len(rag_results)} RAG results")
+    processed_results = []
+    
+    # Video title lookup - map video IDs to their actual titles
+    video_titles = {
+        'CXzaq4_MEV8': 'Unconventional Embodiments of Consciousness: a diverse intelligence research program - Michael Levin'
+    }
+    
+    for i, chunk in enumerate(rag_results):
+        logger.info(f"📝 Processing chunk {i+1}/{len(rag_results)}: {chunk.get('content_id', 'Unknown')}")
+        
+        pipeline_source = chunk.get('pipeline_source', 'unknown')
+        logger.info(f"   Pipeline source: {pipeline_source}")
+        
+        if pipeline_source == 'videos':
+            # Handle video chunks
+            chunk_id = chunk.get('content_id', 'Unknown')
+            logger.info(f"   Video chunk ID: {chunk_id}")
+            
+            # Extract video ID from chunk_id (format: CXzaq4_MEV8_chunk_000)
+            if '_chunk_' in chunk_id:
+                video_id = chunk_id.split('_chunk_')[0]
+            else:
+                video_id = chunk_id.split('_')[0] if '_' in chunk_id else 'Unknown'
+            logger.info(f"   Extracted video ID: {video_id}")
+            
+            # Get metadata from nested structure
+            chunk_metadata = chunk.get('chunk_metadata', {})
+            logger.info(f"   Chunk metadata keys: {list(chunk_metadata.keys())}")
+            
+            start_time = chunk_metadata.get('start_time_seconds', 0)
+            end_time = chunk_metadata.get('end_time_seconds', 0)
+            logger.info(f"   Time range: {start_time:.1f}s - {end_time:.1f}s")
+            
+            # Get video title from lookup
+            video_title = video_titles.get(video_id, f"Video: {video_id}")
+            logger.info(f"   Video title: {video_title}")
+            
+            processed_chunk = chunk.copy()
+            processed_chunk.update({
+                'title': video_title,
+                'publication_year': '2025',
+                'section': f"Timestamp: {start_time:.1f}s - {end_time:.1f}s",
+                'authors': ['Michael Levin']
+            })
+            logger.info(f"   ✅ Processed video chunk with title: {video_title}")
+            processed_results.append(processed_chunk)
+        else:
+            # Handle publication chunks (existing logic)
+            logger.info(f"   Publication chunk - title: {chunk.get('title', 'Unknown')}")
+            processed_chunk = chunk.copy()
+            processed_chunk.update({
+                'title': chunk.get('title', 'Unknown'),
+                'publication_year': chunk.get('publication_year', 'Unknown'),
+                'section': chunk.get('section', 'Unknown'),
+                'authors': chunk.get('authors', [])
+            })
+            logger.info(f"   ✅ Processed publication chunk")
+            processed_results.append(processed_chunk)
+    
+    logger.info(f"🎯 Metadata processing complete. Processed {len(processed_results)} chunks")
+    return processed_results
+
 def get_conversational_response(query: str, rag_results: list, conversation_history: list = None) -> str:
     """Generate a conversational response using RAG results with inline citations."""
     try:
@@ -856,6 +921,17 @@ def conversational_page():
                         
                         # Retrieve chunks with similarity filtering
                         rag_results = st.session_state.retriever.retrieve_relevant_chunks(prompt, top_k=top_k)
+                        logger.info(f"🔍 Retrieved {len(rag_results)} RAG results")
+                        
+                        # Log the structure of the first few results
+                        if rag_results:
+                            logger.info(f"📋 Sample RAG result structure:")
+                            for i, result in enumerate(rag_results[:2]):  # Log first 2 results
+                                logger.info(f"   Result {i+1} keys: {list(result.keys())}")
+                                logger.info(f"   Result {i+1} content_id: {result.get('content_id', 'Missing')}")
+                                logger.info(f"   Result {i+1} pipeline_source: {result.get('pipeline_source', 'Missing')}")
+                                if 'chunk_metadata' in result:
+                                    logger.info(f"   Result {i+1} chunk_metadata keys: {list(result['chunk_metadata'].keys())}")
                         
                         # Filter results by similarity threshold
                         filtered_results = []
@@ -925,27 +1001,45 @@ def conversational_page():
                         
                         # Always show sources expander (either filtered or all results)
                         if rag_results:
+                            logger.info(f"📚 Setting up Sources Used display for {len(rag_results)} results")
+                            
+                            # Process metadata for display
+                            processed_results = process_rag_metadata(rag_results)
+                            processed_filtered_results = process_rag_metadata(filtered_results) if filtered_results else []
+                            
+                            logger.info(f"   Processed {len(processed_results)} total results")
+                            logger.info(f"   Processed {len(processed_filtered_results)} filtered results")
+                            
                             with st.expander("📚 Sources used"):
                                 # Track unique sources to avoid duplicates
                                 seen_sources = set()
                                 source_counter = 1
                                 
                                 # Show filtered results if available, otherwise show all results
-                                results_to_show = filtered_results if filtered_results else rag_results
+                                results_to_show = processed_filtered_results if processed_filtered_results else processed_results
+                                logger.info(f"   Displaying {len(results_to_show)} results in Sources Used")
                                 
                                 for i, result in enumerate(results_to_show[:5]):  # Show up to 5 results
+                                    logger.info(f"   📝 Processing result {i+1} for display: {result.get('content_id', 'Unknown')}")
+                                    
                                     source_title = result.get('title', 'Unknown')
                                     year = result.get('publication_year', 'Unknown')
                                     section_header = result.get('section', 'Unknown')
                                     similarity = result.get('similarity_score', 0)
                                     
+                                    logger.info(f"      Title: {source_title}")
+                                    logger.info(f"      Year: {year}")
+                                    logger.info(f"      Section: {section_header}")
+                                    logger.info(f"      Similarity: {similarity}")
+                                    
                                     # Create a unique identifier for this source
                                     source_id = f"{source_title}_{year}_{section_header}"
+                                    logger.info(f"      Source ID: {source_id}")
                                     
                                     # Only show the source if it hasn't been listed before
                                     if source_id not in seen_sources:
                                         # Add visual indicator for filtered vs unfiltered results
-                                        status = "✅" if result in filtered_results else "⚠️"
+                                        status = "✅" if result in processed_filtered_results else "⚠️"
                                         
                                         # Add pipeline source indicator
                                         pipeline_icon = ""
@@ -954,15 +1048,20 @@ def conversational_page():
                                         elif result.get('pipeline_source') == 'publications':
                                             pipeline_icon = "📚"
                                         
-                                        st.markdown(f"**{source_counter}.** {status} {pipeline_icon} {source_title} ({year}) - Section: {section_header} (Similarity: {similarity:.3f})")
+                                        display_text = f"**{source_counter}.** {status} {pipeline_icon} {source_title} ({year}) - Section: {section_header} (Similarity: {similarity:.3f})"
+                                        logger.info(f"      🎯 Displaying: {display_text}")
+                                        
+                                        st.markdown(display_text)
                                         seen_sources.add(source_id)
                                         source_counter += 1
+                                    else:
+                                        logger.info(f"      ⚠️ Skipping duplicate source: {source_id}")
                                 
                                 # Show threshold info
-                                if filtered_results:
-                                    st.info(f"📊 Showing {len(filtered_results)} results that met similarity threshold: {similarity_threshold:.2f}")
+                                if processed_filtered_results:
+                                    st.info(f"📊 Showing {len(processed_filtered_results)} results that met similarity threshold: {similarity_threshold:.2f}")
                                 else:
-                                    st.warning(f"📊 No results met similarity threshold: {similarity_threshold:.2f}. Showing all {len(rag_results)} results below threshold.")
+                                    st.warning(f"📊 No results met similarity threshold: {similarity_threshold:.2f}. Showing all {len(processed_results)} results below threshold.")
                         
                 except Exception as e:
                     error_msg = f"Sorry, I encountered an error: {e}"
