@@ -161,11 +161,17 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
                 if chunk_id:
                     # Try to find a frame for this chunk
                     frame_path = source_info.get('frame_path', '')
+                    
+                    # Log frame path for debugging
+                    logger.info(f"🎥 Video citation processing - Chunk: {chunk_id}, Frame path: {frame_path}, Exists: {Path(frame_path).exists() if frame_path else False}")
+                    
                     if frame_path and Path(frame_path).exists():
                         # Display thumbnail as clickable image
+                        logger.info(f"✅ Creating thumbnail for {chunk_id} using frame: {frame_path}")
                         thumbnail_html = f'<a href="{youtube_url}" target="_blank" title="Watch video at {start_time}s"><img src="data:image/jpeg;base64,{encode_image_to_base64(frame_path)}" style="width: 80px; height: 60px; border-radius: 4px; margin: 0 5px; vertical-align: middle;" alt="Video thumbnail"></a>'
                     else:
                         # Fallback: just show clickable text
+                        logger.warning(f"⚠️ No frame found for {chunk_id}, using text fallback. Frame path: {frame_path}")
                         thumbnail_html = f'<a href="{youtube_url}" target="_blank" style="color: #ff0000; text-decoration: underline;" title="Watch video at {start_time}s">[🎥 Watch at {start_time}s]</a>'
                 
                 return f"<sup>{thumbnail_html}</sup>"
@@ -198,11 +204,13 @@ def encode_image_to_base64(image_path: str) -> str:
     """Encode an image file to base64 for inline display."""
     try:
         import base64
+        logger.info(f"🖼️ Encoding image to base64: {image_path}")
         with open(image_path, "rb") as image_file:
             encoded_string = base64.b64encode(image_file.read()).decode('utf-8')
+        logger.info(f"✅ Successfully encoded image: {image_path} (size: {len(encoded_string)} chars)")
         return encoded_string
     except Exception as e:
-        logger.warning(f"Failed to encode image {image_path}: {e}")
+        logger.error(f"❌ Failed to encode image {image_path}: {e}")
         return ""
 
 def get_conversational_response(query: str, rag_results: list, conversation_history: list = None) -> str:
@@ -244,7 +252,11 @@ def get_conversational_response(query: str, rag_results: list, conversation_hist
                 if visual_content and 'frames' in visual_content:
                     frames = visual_content['frames']
                     if frames:
-                        frame_path = frames[0].get('file_path', '')
+                        # Convert relative path to absolute path for the Streamlit app
+                        relative_path = frames[0].get('file_path', '')
+                        if relative_path:
+                            # The frame path is relative to the pipeline directory, but we need it relative to the root
+                            frame_path = f"SCIENTIFIC_VIDEO_PIPELINE/formal_presentations_1_on_0/{relative_path}"
                 
                 context_parts.append(f"{source_key} (Video: {chunk_id}, {start_time:.1f}s-{end_time:.1f}s): {text_content[:200]}...")
                 
