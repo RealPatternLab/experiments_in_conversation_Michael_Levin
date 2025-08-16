@@ -1,0 +1,10 @@
+{
+  "video_id": "CXzaq4_MEV8",
+  "total_alignments": 57,
+  "total_frames_aligned": 158,
+  "average_alignment_confidence": 0.8894736842105255,
+  "output_files": {
+    "alignments": "step_06_frame_chunk_alignment/CXzaq4_MEV8_alignments.json",
+    "rag_ready": "step_06_frame_chunk_alignment/CXzaq4_MEV8_rag_ready_aligned_content.json"
+  }
+}

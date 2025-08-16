@@ -1,0 +1,40 @@
+{
+  "chunk_id": "CXzaq4_MEV8_chunk_031",
+  "text": "Now the way this works is not because we are turning specific genes on and off, although certainly genes are changing their expression levels We're not talking to the gene level, we're not talking to the stomach stem cells We have no idea how to micromanage an eye any more than when I'm talking to you I don't know how and I don't have to know how to rearrange all the proteins in your synapses so that you remember what I'm saying to you You will handle that on your own We're using a very thin interface, this linguistic interface, where I give a very kind of high level message And the receiving system, because it is a multi scale cognitive system, takes care of making the molecular biology fit And the same thing is happening here All we say is build an eye And then all this lens, retina, optic nerve in the right position, the right orientations, the system takes care of all of that We are, we are giving a very minimal high level prompt now there's something interesting that happens here If we inject only a few cells, so the blue cells are the ones that we injected They will do the job of trying to recruit their neighbors to participate We don't have to tell them to do that The material is already doing it There's not enough of them to build an eye, so",
+  "token_count": 240,
+  "sentence_count": 16,
+  "start_sentence": 31,
+  "end_sentence": 46,
+  "start_time_ms": 1463010,
+  "end_time_ms": 1526300,
+  "start_time_seconds": 1463.01,
+  "end_time_seconds": 1526.3,
+  "primary_topics": [
+    "Gene expression",
+    "Stem cells",
+    "Bioelectricity",
+    "Developmental biology",
+    "Cellular communication"
+  ],
+  "secondary_topics": [
+    "Molecular biology",
+    "Cognitive systems",
+    "Protein arrangement",
+    "Synapses",
+    "Cell recruitment",
+    "Eye development"
+  ],
+  "key_terms": [
+    "Gene expression levels",
+    "Stomach stem cells",
+    "Linguistic interface",
+    "Multi scale cognitive system",
+    "Lens",
+    "Retina",
+    "Optic nerve",
+    "Cell injection"
+  ],
+  "content_summary": "The speaker discusses the process of cellular communication and development, specifically referencing the creation of an eye. They highlight the role of gene expression, stem cells, and bioelectricity, emphasizing that the system self-regulates at a molecular level without the need for micromanagement.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
+  "enhanced": true
+}

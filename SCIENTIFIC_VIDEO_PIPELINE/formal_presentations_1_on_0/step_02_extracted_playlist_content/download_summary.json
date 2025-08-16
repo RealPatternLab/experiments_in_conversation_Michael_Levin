@@ -1,0 +1,22 @@
+{
+  "total_videos": 1,
+  "successful_downloads": 1,
+  "failed_downloads": 0,
+  "success_rate": 100.0,
+  "processing_timestamp": "2025-08-16T08:59:55.446523",
+  "videos": [
+    {
+      "video_id": "CXzaq4_MEV8",
+      "title": "Unconventional Embodiments of Consciousness: a diverse intelligence research program - Michael Levin",
+      "local_path": "step_02_extracted_playlist_content/video_CXzaq4_MEV8/video.mp4",
+      "file_size_mb": 61.72634983062744,
+      "duration": 2805,
+      "upload_date": "20250806",
+      "view_count": 6247,
+      "like_count": 452,
+      "language": "en",
+      "resolution": "450x360",
+      "fps": 30
+    }
+  ]
+}
