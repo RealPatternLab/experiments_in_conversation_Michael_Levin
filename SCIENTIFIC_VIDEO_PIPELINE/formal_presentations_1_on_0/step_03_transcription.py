@@ -60,14 +60,36 @@ class VideoTranscriber:
         with open(metadata_file, 'r') as f:
             metadata = json.load(f)
         
-        videos = metadata.get('videos', [])
+        # Use the new results structure from updated step 2
+        videos = metadata.get('results', [])
         logger.info(f"Found {len(videos)} videos to process")
+        
+        # Track processing statistics
+        total_videos = len(videos)
+        new_transcripts = 0
+        existing_transcripts = 0
+        failed_transcripts = 0
         
         for video in videos:
             try:
-                self.process_single_video(video)
+                result = self.process_single_video(video)
+                if result == 'new':
+                    new_transcripts += 1
+                elif result == 'existing':
+                    existing_transcripts += 1
+                elif result == 'failed':
+                    failed_transcripts += 1
             except Exception as e:
                 logger.error(f"Failed to process video {video.get('video_id', 'unknown')}: {e}")
+                failed_transcripts += 1
+        
+        # Log summary
+        logger.info(f"Transcription Summary:")
+        logger.info(f"  Total videos: {total_videos}")
+        logger.info(f"  New transcripts: {new_transcripts}")
+        logger.info(f"  Existing transcripts: {existing_transcripts}")
+        logger.info(f"  Failed: {failed_transcripts}")
+        logger.info(f"  Success rate: {((new_transcripts + existing_transcripts) / total_videos * 100):.1f}%")
     
     def process_single_video(self, video_info: Dict[str, Any]):
         """Process a single video"""
@@ -76,7 +98,13 @@ class VideoTranscriber:
         
         if not video_path or not Path(video_path).exists():
             logger.warning(f"Video file not found for {video_id}")
-            return
+            return 'failed'
+        
+        # Check if transcript already exists
+        transcript_file = self.output_dir / f"{video_id}_transcript.json"
+        if transcript_file.exists():
+            logger.info(f"Transcript already exists for {video_id}, skipping")
+            return 'existing'
         
         logger.info(f"Processing video: {video_id}")
         
@@ -84,13 +112,13 @@ class VideoTranscriber:
         audio_path = self.extract_audio(video_path, video_id)
         if not audio_path:
             logger.error(f"Failed to extract audio for {video_id}")
-            return
+            return 'failed'
         
         # Create transcript
         transcript = self.create_transcript(audio_path, video_id)
         if not transcript:
             logger.error(f"Failed to create transcript for {video_id}")
-            return
+            return 'failed'
         
         # Save transcript
         self.save_transcript(transcript, video_id, video_info)
@@ -100,6 +128,7 @@ class VideoTranscriber:
             audio_path.unlink()
         
         logger.info(f"Successfully processed video: {video_id}")
+        return 'new'
     
     def extract_audio(self, video_path: str, video_id: str) -> Optional[Path]:
         """Extract audio from video file"""
