@@ -55,16 +55,43 @@ class SemanticChunker:
         transcript_files = list(self.input_dir.glob("*_transcript.json"))
         logger.info(f"Found {len(transcript_files)} transcript files")
         
+        # Track processing statistics
+        total_transcripts = len(transcript_files)
+        new_chunks = 0
+        existing_chunks = 0
+        failed_chunks = 0
+        
         for transcript_file in transcript_files:
             try:
-                self.process_single_transcript(transcript_file)
+                result = self.process_single_transcript(transcript_file)
+                if result == 'new':
+                    new_chunks += 1
+                elif result == 'existing':
+                    existing_chunks += 1
+                elif result == 'failed':
+                    failed_chunks += 1
             except Exception as e:
                 logger.error(f"Failed to process {transcript_file.name}: {e}")
+                failed_chunks += 1
+        
+        # Log summary
+        logger.info(f"Chunking Summary:")
+        logger.info(f"  Total transcripts: {total_transcripts}")
+        logger.info(f"  New chunks: {new_chunks}")
+        logger.info(f"  Existing chunks: {existing_chunks}")
+        logger.info(f"  Failed: {failed_chunks}")
+        logger.info(f"  Success rate: {((new_chunks + existing_chunks) / total_transcripts * 100):.1f}%")
     
     def process_single_transcript(self, transcript_file: Path):
         """Process a single transcript file"""
         video_id = transcript_file.stem.replace('_transcript', '')
         logger.info(f"Processing transcript: {video_id}")
+        
+        # Check if chunks already exist
+        chunks_file = self.output_dir / f"{video_id}_chunks.json"
+        if chunks_file.exists():
+            logger.info(f"Chunks already exist for {video_id}, skipping")
+            return 'existing'
         
         # Load transcript
         with open(transcript_file, 'r') as f:
@@ -78,7 +105,7 @@ class SemanticChunker:
         
         if not transcript_text:
             logger.warning(f"No transcript text found for {video_id}")
-            return
+            return 'failed'
         
         # Create semantic chunks with timestamp information
         chunks = self.create_semantic_chunks_with_timestamps(transcript_text, utterances, video_id)
@@ -90,6 +117,7 @@ class SemanticChunker:
         self.save_chunks(enhanced_chunks, video_id, video_metadata, transcript_metadata)
         
         logger.info(f"Successfully processed transcript: {video_id}")
+        return 'new'
     
     def create_semantic_chunks_with_timestamps(self, text: str, utterances: List[Dict], video_id: str) -> List[Dict[str, Any]]:
         """Create semantic chunks with timestamp information from AssemblyAI utterances"""
