@@ -1670,7 +1670,7 @@ def main():
         else:
             st.sidebar.metric("Total Engrams Indexed", stats['total_chunks'])
             pipeline_type = "Publications" if "publications" in str(type(st.session_state.retriever)) else "Videos"
-            st.sidebar.info(f"📚 {pipeline_type} Pipeline Only")        
+            # st.sidebar.info(f"📚 {pipeline_type} Pipeline Only")        
         
         # Main chat interface (no page switching)
         conversational_page()
