@@ -139,72 +139,9 @@ def get_completed_transcriptions():
 #     # AssemblyAI will POST to your webhook server, not to Streamlit
 #     pass
 
-def webhook_status_page():
-    """Display webhook status and transcription progress."""
-    st.header("🎯 AssemblyAI Webhook Status")
-    
-    # Show pending transcriptions
-    pending = get_pending_transcriptions()
-    if pending:
-        st.subheader("⏳ Pending Transcriptions")
-        for transcript_id, info in pending.items():
-            with st.expander(f"📹 {info['video_title']} ({transcript_id})"):
-                st.write(f"**Video ID:** {info['video_id']}")
-                st.write(f"**Submitted:** {info['submitted_at']}")
-                st.write(f"**Status:** {info['status']}")
-    else:
-        st.info("No pending transcriptions")
-    
-    # Show completed transcriptions
-    completed = get_completed_transcriptions()
-    if completed:
-        st.subheader("✅ Completed Transcriptions")
-        for transcript_id, info in completed.items():
-            with st.expander(f"📹 {info.get('video_title', 'Unknown')} ({transcript_id})"):
-                st.write(f"**Video ID:** {info.get('video_id', 'Unknown')}")
-                st.write(f"**Status:** {info['status']}")
-                if info['status'] == 'completed':
-                    st.write(f"**Completed:** {info.get('completed_at', 'Unknown')}")
-                    st.success("✅ Transcription ready for processing")
-                elif info['status'] == 'error':
-                    st.write(f"**Failed:** {info.get('failed_at', 'Unknown')}")
-                    st.error(f"❌ Error: {info.get('error', 'Unknown error')}")
-    else:
-        st.info("No completed transcriptions")
-    
-    # Manual webhook test
-    st.subheader("🧪 Test Webhook")
-    if st.button("Test Webhook Handler"):
-        test_transcript_id = "test_123"
-        test_video_id = "test_video"
-        test_video_title = "Test Video"
-        
-        add_pending_transcription(test_transcript_id, test_video_id, test_video_title)
-        st.success(f"Added test transcription: {test_transcript_id}")
-        
-        # Simulate completion
-        handle_assemblyai_webhook(test_transcript_id, "completed")
-        st.success("Simulated webhook completion")
 
-# Configure page layout
-st.set_page_config(
-    page_title="Michael Levin Research Assistant",
-    page_icon="🧠",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
 
-# Custom CSS to make sidebar narrower
-st.markdown("""
-<style>
-    [data-testid="stSidebar"] {
-        width: 260px !important;
-    }
-    [data-testid="stSidebar"] > div:first-child {
-        width: 260px !important;
-    }
-</style>
-""", unsafe_allow_html=True)
+
 
 # GitHub repository configuration
 # These can be set via environment variables for different deployments
@@ -1269,13 +1206,26 @@ def conversational_page():
         st.rerun()
 
 def main():
-    """Main Streamlit app."""
+    """Main Streamlit app - Single page chat interface."""
     st.set_page_config(
-        page_title="Michael Levin Scientific Publications RAG System",
+        page_title="Michael Levin Research Assistant - Chat",
         page_icon="🧠",
         layout="wide",
         initial_sidebar_state="expanded"
     )
+    
+    # Custom CSS to make sidebar narrower
+    st.markdown("""
+    <style>
+        [data-testid="stSidebar"] {
+            width: 260px !important;
+        }
+        [data-testid="stSidebar"] > div:first-child {
+            width: 260px !important;
+        }
+    </style>
+    """, unsafe_allow_html=True)
+    
     thinking_box = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/thinking_box.gif"
 
     st.markdown("""
@@ -1686,7 +1636,7 @@ def main():
         stats = st.session_state.retriever.get_collection_stats()
         active_info = st.session_state.retriever.get_active_embeddings_info()
         
-        # Sidebar
+        # Sidebar with stats and thinking box (no navigation)
         st.sidebar.markdown(f"""
         <div style="text-align: center; margin-bottom: 1rem;">
             <img src='{thinking_box}' alt="Thinking Box" style="
@@ -1722,33 +1672,8 @@ def main():
             pipeline_type = "Publications" if "publications" in str(type(st.session_state.retriever)) else "Videos"
             st.sidebar.info(f"📚 {pipeline_type} Pipeline Only")        
         
-        # # Search parameters
-        # st.sidebar.header("🔍 Search Settings")
-        # top_k = st.sidebar.slider(
-        #     "Number of results to retrieve",
-        #     min_value=1,
-        #     max_value=10,
-        #     value=10,
-        #     key="top_k"
-        # )
-        
-        st.markdown("---")
-        
-        # Navigation
-        st.sidebar.header("🧭 Navigation")
-        page = st.sidebar.selectbox(
-            "Choose a page:",
-            ["💬 Chat with Michael Levin", "🎯 Webhook Status"],
-            key="page_selector"
-        )
-        
-        st.markdown("---")
-        
-        # Main page routing
-        if page == "💬 Chat with Michael Levin":
-            conversational_page()
-        elif page == "🎯 Webhook Status":
-            webhook_status_page()
+        # Main chat interface (no page switching)
+        conversational_page()
         
     except Exception as e:
         st.error(f"Failed to initialize RAG system: {e}")
