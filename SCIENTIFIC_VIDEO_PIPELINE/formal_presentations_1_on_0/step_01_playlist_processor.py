@@ -41,6 +41,10 @@ class PlaylistProcessor:
         
         # Check if yt-dlp is available
         self.yt_dlp_available = self.check_yt_dlp_availability()
+        
+        # File paths for change detection
+        self.metadata_file = self.output_dir / "playlist_and_video_metadata.json"
+        self.previous_videos = self.load_previous_videos()
     
     def check_yt_dlp_availability(self) -> bool:
         """Check if yt-dlp is available and working"""
@@ -97,6 +101,21 @@ class PlaylistProcessor:
             try:
                 playlist_data = self.process_playlist_url(url)
                 if playlist_data:
+                    # Check for new videos
+                    current_videos = playlist_data.get('videos', [])
+                    new_videos = self.detect_new_videos(current_videos)
+                    
+                    if new_videos:
+                        logger.info(f"Found {len(new_videos)} new videos to process")
+                        # Keep all videos but mark which ones are new
+                        playlist_data['new_videos'] = True
+                        playlist_data['new_video_ids'] = [v.get('video_id') for v in new_videos]
+                        logger.info(f"New video IDs: {playlist_data['new_video_ids']}")
+                    else:
+                        logger.info("No new videos found, playlist unchanged")
+                        playlist_data['new_videos'] = False
+                        playlist_data['new_video_ids'] = []
+                    
                     processed_playlists.append(playlist_data)
                     total_videos += playlist_data.get('total_videos_found', 0)
             except Exception as e:
@@ -109,13 +128,19 @@ class PlaylistProcessor:
             'invalid_urls': len(urls) - len(processed_playlists),
             'total_videos_found': total_videos,
             'playlists': processed_playlists,
-            'processing_timestamp': self.get_timestamp()
+            'processing_timestamp': self.get_timestamp(),
+            'previous_videos_count': len(self.previous_videos),
+            'new_videos_detected': any(p.get('new_videos', False) for p in processed_playlists)
         }
         
         # Save results with consistent naming
         self.save_results(summary, "playlist")
         
         logger.info(f"Processed {len(processed_playlists)} playlists with {total_videos} total videos")
+        if summary['new_videos_detected']:
+            logger.info("🎉 New videos detected and will be processed in subsequent steps!")
+        else:
+            logger.info("✅ No new videos - all content already processed")
     
     def process_playlist_url(self, url: str) -> Optional[Dict[str, Any]]:
         """Process a single playlist URL"""
@@ -302,10 +327,8 @@ class PlaylistProcessor:
             video_lines = result.stdout.strip().split('\n')
             logger.info(f"Found {len(video_lines)} video entries in playlist")
             
-            # Limit to first 2 videos for testing
-            max_videos = 2
-            video_lines = video_lines[:max_videos]
-            logger.info(f"Limiting to first {max_videos} videos for testing")
+            # Process all videos in the playlist (no artificial limit)
+            logger.info(f"Processing all {len(video_lines)} videos in playlist")
             
             for i, line in enumerate(video_lines):
                 try:
@@ -346,6 +369,32 @@ class PlaylistProcessor:
         except Exception as e:
             logger.error(f"Failed to get playlist videos for {playlist_id}: {e}")
             return None
+    
+    def load_previous_videos(self) -> set:
+        """Load previously processed video IDs"""
+        try:
+            if self.metadata_file.exists():
+                with open(self.metadata_file, 'r') as f:
+                    data = json.load(f)
+                    videos = data.get('playlists', [{}])[0].get('videos', [])
+                    return {video.get('video_id') for video in videos if video.get('video_id')}
+            return set()
+        except Exception as e:
+            logger.warning(f"Failed to load previous videos: {e}")
+            return set()
+    
+    def detect_new_videos(self, current_videos: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """Detect which videos are new and need processing"""
+        current_video_ids = {video.get('video_id') for video in current_videos if video.get('video_id')}
+        new_video_ids = current_video_ids - self.previous_videos
+        
+        if new_video_ids:
+            logger.info(f"Found {len(new_video_ids)} new videos: {list(new_video_ids)}")
+            new_videos = [v for v in current_videos if v.get('video_id') in new_video_ids]
+            return new_videos
+        else:
+            logger.info("No new videos found in playlist")
+            return []
     
     def save_results(self, summary: Dict[str, Any], filename_prefix: str = "playlist"):
         """Save processing results"""

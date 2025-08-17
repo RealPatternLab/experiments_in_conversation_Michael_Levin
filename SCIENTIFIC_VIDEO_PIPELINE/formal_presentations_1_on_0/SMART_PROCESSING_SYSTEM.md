@@ -92,7 +92,7 @@ The Scientific Video Pipeline now includes a comprehensive smart processing syst
 ```bash
 # Run pipeline - will skip existing content
 python step_02_video_downloader.py
-python step_03_transcription.py
+python step_03_transcription_webhook.py
 python step_04_extract_chunks.py
 # ... etc
 ```

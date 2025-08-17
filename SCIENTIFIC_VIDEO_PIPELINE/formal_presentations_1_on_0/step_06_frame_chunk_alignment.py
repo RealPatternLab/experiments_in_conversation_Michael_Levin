@@ -152,12 +152,12 @@ class FrameChunkAligner:
             chunk_id = chunk.get('chunk_id', 'unknown')
             
             # Extract actual chunk timestamps from metadata
-            chunk_start_seconds = chunk.get('start_time_seconds', 0)
-            chunk_end_seconds = chunk.get('end_time_seconds', 0)
+            chunk_start_seconds = chunk.get('start_time_seconds')
+            chunk_end_seconds = chunk.get('end_time_seconds')
             
             # Convert to milliseconds if needed (frames use seconds)
-            chunk_start = chunk_start_seconds
-            chunk_end = chunk_end_seconds
+            chunk_start = chunk_start_seconds if chunk_start_seconds is not None else 0
+            chunk_end = chunk_end_seconds if chunk_end_seconds is not None else 0
             
             logger.debug(f"Aligning chunk {chunk_id}: {chunk_start}s - {chunk_end}s")
             

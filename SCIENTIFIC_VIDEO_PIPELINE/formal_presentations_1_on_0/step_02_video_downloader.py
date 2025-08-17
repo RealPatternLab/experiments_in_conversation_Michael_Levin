@@ -502,7 +502,7 @@ def main():
         print(f"\n🚀 Ready for Step 03: Transcription")
         print(f"Total videos ready: {total_processed}")
         print(f"Videos located at: {step_02_dir}")
-        print(f"Run: python step_03_transcription.py")
+        print(f"Run: python step_03_transcription_webhook.py")
     else:
         print(f"\n❌ No videos were processed successfully")
         print(f"Check the logs for error details")

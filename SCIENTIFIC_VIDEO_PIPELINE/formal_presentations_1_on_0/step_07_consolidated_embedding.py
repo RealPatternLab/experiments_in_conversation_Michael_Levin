@@ -14,6 +14,7 @@ from typing import Dict, Any, List, Optional, Tuple
 from dotenv import load_dotenv
 import openai
 import faiss
+from datetime import datetime
 
 # Load environment variables
 load_dotenv()
@@ -66,8 +67,113 @@ class ConsolidatedEmbedding:
     
     def get_current_timestamp(self) -> str:
         """Get current timestamp for file naming"""
-        from datetime import datetime
         return datetime.now().strftime("%Y%m%d_%H%M%S_%f")[:-3]
+    
+    def calculate_content_hash(self, rag_files: List[Path]) -> str:
+        """Calculate a hash of the content to detect changes"""
+        import hashlib
+        
+        # Sort files for consistent hashing
+        sorted_files = sorted(rag_files, key=lambda x: x.name)
+        
+        # Create a combined hash of file names, sizes, and modification times
+        hash_input = ""
+        for rag_file in sorted_files:
+            stat = rag_file.stat()
+            hash_input += f"{rag_file.name}:{stat.st_size}:{stat.st_mtime}:"
+        
+        # Also hash the actual content of each file
+        for rag_file in sorted_files:
+            try:
+                with open(rag_file, 'rb') as f:
+                    content_hash = hashlib.md5(f.read()).hexdigest()
+                    hash_input += f"{content_hash}:"
+            except Exception as e:
+                logger.warning(f"Could not hash content of {rag_file.name}: {e}")
+                # Use file size and modification time as fallback
+                stat = rag_file.stat()
+                hash_input += f"{stat.st_size}:{stat.st_mtime}:"
+        
+        return hashlib.md5(hash_input.encode()).hexdigest()
+    
+    def get_latest_embeddings_info(self) -> tuple:
+        """Get information about the most recent embeddings"""
+        # Find all embedding files
+        embedding_files = list(self.output_dir.glob("embeddings_*.npy"))
+        if not embedding_files:
+            return None, None, None
+        
+        # Get the most recent embeddings
+        latest_embeddings = max(embedding_files, key=lambda x: x.stat().st_mtime)
+        
+        # Extract timestamp from filename
+        timestamp = latest_embeddings.stem.replace("embeddings_", "")
+        
+        # Check for corresponding info file
+        info_file = self.output_dir / f"embedding_info_{timestamp}.json"
+        
+        return latest_embeddings, timestamp, info_file
+    
+    def should_skip_processing(self, rag_files: List[Path]) -> bool:
+        """Check if we can skip processing based on content changes"""
+        # Get latest embeddings info
+        latest_embeddings, timestamp, info_file = self.get_latest_embeddings_info()
+        if not latest_embeddings or not info_file:
+            logger.info("No existing embeddings found, will create new ones")
+            return False
+        
+        # Check if info file exists and contains content hash
+        if not info_file.exists():
+            logger.info("No embedding info file found, will create new embeddings")
+            return False
+        
+        try:
+            with open(info_file, 'r') as f:
+                info_data = json.load(f)
+            
+            previous_hash = info_data.get('content_hash')
+            if not previous_hash:
+                logger.info("No content hash in info file, will create new embeddings")
+                return False
+            
+            # Calculate current content hash
+            current_hash = self.calculate_content_hash(rag_files)
+            
+            if current_hash == previous_hash:
+                logger.info(f"Content unchanged since last run (hash: {current_hash[:8]}...), skipping embedding creation")
+                logger.info(f"Using existing embeddings from: {timestamp}")
+                return True
+            else:
+                logger.info(f"Content has changed (previous: {previous_hash[:8]}..., current: {current_hash[:8]}...), will create new embeddings")
+                return False
+                
+        except Exception as e:
+            logger.warning(f"Error checking content hash: {e}, will create new embeddings")
+            return False
+    
+    def save_content_hash_info(self, timestamp: str, rag_files: List[Path]):
+        """Save content hash information for future change detection"""
+        try:
+            content_hash = self.calculate_content_hash(rag_files)
+            
+            info_data = {
+                'timestamp': timestamp,
+                'content_hash': content_hash,
+                'input_files': [str(f.name) for f in rag_files],
+                'file_count': len(rag_files),
+                'created_at': datetime.now().isoformat(),
+                'pipeline_step': 'step_07_consolidated_embedding'
+            }
+            
+            info_file = self.output_dir / f"embedding_info_{timestamp}.json"
+            with open(info_file, 'w') as f:
+                json.dump(info_data, f, indent=2)
+            
+            logger.info(f"Content hash info saved: {info_file.name}")
+            logger.info(f"Content hash: {content_hash[:8]}...")
+            
+        except Exception as e:
+            logger.warning(f"Failed to save content hash info: {e}")
     
     def process_all_content(self):
         """Process all aligned content in the input directory"""
@@ -83,14 +189,9 @@ class ConsolidatedEmbedding:
             logger.error("No RAG-ready files found. Run step 6 first.")
             return
         
-        # Check if embeddings already exist
-        timestamp = self.get_current_timestamp()
-        embeddings_file = self.output_dir / f"embeddings_{timestamp}.npy"
-        metadata_file = self.output_dir / f"metadata_{timestamp}.pkl"
-        text_index_file = self.output_dir / f"text_index_{timestamp}.faiss"
-        
-        if all(f.exists() for f in [embeddings_file, metadata_file, text_index_file]):
-            logger.info(f"Embeddings already exist for timestamp {timestamp}, skipping")
+        # Check if we can skip processing based on content changes
+        if self.should_skip_processing(rag_files):
+            logger.info("✅ Skipping embedding creation - content unchanged")
             return
         
         # Process each file
@@ -111,6 +212,10 @@ class ConsolidatedEmbedding:
             logger.error("No content found to embed")
             return
         
+        # Generate timestamp for new embeddings
+        timestamp = self.get_current_timestamp()
+        logger.info(f"Creating new embeddings with timestamp: {timestamp}")
+        
         # Create embeddings
         logger.info(f"Creating embeddings for {len(all_text_chunks)} text chunks...")
         text_embeddings = self.create_text_embeddings(all_text_chunks)
@@ -119,10 +224,13 @@ class ConsolidatedEmbedding:
         visual_embeddings = self.create_simple_visual_embeddings(all_visual_features)
         
         # Create FAISS indices
-        self.create_faiss_indices(text_embeddings, visual_embeddings, all_metadata)
+        self.create_faiss_indices(text_embeddings, visual_embeddings, all_metadata, timestamp)
         
         # Create search demo
-        self.create_search_demo(text_embeddings, all_metadata)
+        self.create_search_demo(text_embeddings, all_metadata, timestamp)
+        
+        # Save content hash for future change detection
+        self.save_content_hash_info(timestamp, rag_files)
         
         logger.info("Consolidated embedding step completed successfully")
     
@@ -250,7 +358,8 @@ class ConsolidatedEmbedding:
         return np.array(embeddings, dtype=np.float32)
     
     def create_faiss_indices(self, text_embeddings: np.ndarray, 
-                            visual_embeddings: np.ndarray, metadata: List[Dict[str, Any]]):
+                            visual_embeddings: np.ndarray, metadata: List[Dict[str, Any]], 
+                            timestamp: str):
         """Create FAISS indices for text and visual embeddings"""
         try:
             # Create text index
@@ -266,8 +375,7 @@ class ConsolidatedEmbedding:
             combined_index = faiss.IndexFlatL2(combined_features.shape[1])
             combined_index.add(combined_features)
             
-            # Save indices
-            timestamp = self.get_timestamp()
+            # Save indices using provided timestamp
             
             # Save text index
             text_index_path = self.output_dir / f"text_index_{timestamp}.faiss"
@@ -323,7 +431,7 @@ class ConsolidatedEmbedding:
             logger.error(f"Failed to create FAISS indices: {e}")
             raise
     
-    def create_search_demo(self, text_embeddings: np.ndarray, metadata: List[Dict[str, Any]]):
+    def create_search_demo(self, text_embeddings: np.ndarray, metadata: List[Dict[str, Any]], timestamp: str):
         """Create a simple search demonstration"""
         try:
             # Create a simple search index for demo
@@ -346,7 +454,6 @@ class ConsolidatedEmbedding:
     
     def get_timestamp(self) -> str:
         """Get current timestamp string"""
-        from datetime import datetime
         return datetime.now().strftime("%Y%m%d_%H%M%S")
     
     def analyze_embedding_quality(self):
