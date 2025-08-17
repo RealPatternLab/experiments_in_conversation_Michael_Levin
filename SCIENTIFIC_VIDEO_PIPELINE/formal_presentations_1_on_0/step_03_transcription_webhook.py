@@ -364,6 +364,14 @@ class VideoTranscriberWebhook:
                 
                 if completed_this_round > 0:
                     logger.info(f"🎉 Completed {completed_this_round} transcriptions this round!")
+                    
+                    # Check if we're done after processing this round
+                    with open(webhook_file, 'r') as f:
+                        webhook_data = json.load(f)
+                    pending = webhook_data.get("pending_transcriptions", {})
+                    if not pending:
+                        logger.info("✅ All transcriptions completed! Exiting monitoring.")
+                        return
                 else:
                     logger.info(f"⏳ No completions yet. Waiting {poll_interval}s...")
                 
