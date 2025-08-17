@@ -513,14 +513,31 @@ def get_conversational_response(query: str, rag_results: list, conversation_hist
             # Include the last few exchanges for context (avoid token limits)
             recent_history = conversation_history[-6:]  # Last 3 exchanges (6 messages)
             conversation_parts = []
+            
+            # Add conversation summary if there are many previous exchanges
+            if len(conversation_history) > 6:
+                conversation_parts.append("📝 **Conversation Summary:** This is an ongoing conversation. The user has asked several questions about my research.")
+            
             for msg in recent_history:
-                role = "User" if msg["role"] == "user" else "Michael Levin"
+                role = "👤 User" if msg["role"] == "user" else "🧠 Michael Levin"
                 content = msg.get('content', '')
-                conversation_parts.append(f"{role}: {content}")
-            conversation_context = "\n\nPrevious conversation:\n" + "\n".join(conversation_parts)
+                # Truncate very long messages to keep context focused
+                if len(content) > 200:
+                    content = content[:200] + "..."
+                conversation_parts.append(f"**{role}:** {content}")
+            
+            conversation_context = "\n\n**📚 Previous Conversation Context:**\n" + "\n".join(conversation_parts)
+            conversation_context += "\n\n**💡 Important:** When answering, reference previous parts of our conversation when relevant. Build upon what we've already discussed and maintain continuity."
         
         # Create prompt for conversational response
         prompt = f"""You are Michael Levin, a developmental and synthetic biologist at Tufts University. Respond to the user's queries using your specific expertise in bioelectricity, morphogenesis, basal cognition, and regenerative medicine. Ground your responses in the provided context from my published work AND video presentations.
+
+**🎯 CONVERSATION CONTINUITY IS CRITICAL:** This is an ongoing conversation. When answering:
+- Reference previous parts of our discussion when relevant
+- Build upon what we've already covered
+- Acknowledge if this question relates to something we discussed earlier
+- Maintain the natural flow of conversation
+- Don't repeat information we've already covered unless the user asks for clarification
 
 When answering, speak in the first person ("I") and emulate my characteristic style: technical precision combined with broad, interdisciplinary connections to computer science, cognitive science, and even philosophy. Do not hesitate to pose provocative "what if" questions and explore the implications of your work for AI, synthetic biology, and the future of understanding intelligence across scales, from cells to organisms and beyond. Explicitly reference bioelectric signaling, scale-free cognition, and the idea of unconventional substrates for intelligence whenever relevant.
 
@@ -541,13 +558,14 @@ Research Context (includes both published papers and video presentations):
 Current Question: {query}
 
 Please provide a conversational response that:
-1. Directly answers the current question
-2. Draws from ALL the research context provided (both papers and videos)
-3. USES INLINE CITATIONS [Source_1], [Source_2], [Source_3] when referencing specific findings from ANY source
-4. References previous conversation context when relevant
-5. Sounds like you're speaking naturally and maintaining conversation flow
-6. Shows your expertise and enthusiasm for the topic
-7. Is informative but accessible
+1. **Directly answers the current question** with specific, relevant information
+2. **Draws from ALL the research context provided** (both papers and videos)
+3. **USES INLINE CITATIONS** [Source_1], [Source_2], [Source_3] when referencing specific findings from ANY source
+4. **References previous conversation context** when relevant - this is crucial for conversation flow
+5. **Sounds like you're speaking naturally** and maintaining conversation flow
+6. **Shows your expertise and enthusiasm** for the topic
+7. **Is informative but accessible** - avoid being overly academic
+8. **Builds on our ongoing conversation** - don't treat each question in isolation
 
 IMPORTANT: You must include citations in your response for BOTH publication and video sources. Use [Source_1], [Source_2], or [Source_3] when referencing the provided research context, regardless of whether the source is a paper or video.
 
@@ -585,31 +603,47 @@ def get_conversational_response_without_rag(query: str, conversation_history: li
     if conversation_history and len(conversation_history) > 0:
         recent_history = conversation_history[-6:]  # Last 3 exchanges (6 messages)
         conversation_parts = []
+        
+        # Add conversation summary if there are many previous exchanges
+        if len(conversation_history) > 6:
+            conversation_parts.append("📝 **Conversation Summary:** This is an ongoing conversation about my research.")
+        
         for msg in recent_history:
-            role = "User" if msg["role"] == "user" else "Michael Levin"
+            role = "👤 User" if msg["role"] == "user" else "🧠 Michael Levin"
             content = msg.get('content', '')
-            conversation_parts.append(f"{role}: {content}")
-        conversation_context = f"\n\nPrevious conversation:\n" + "\n".join(conversation_parts)
+            # Truncate very long messages to keep context focused
+            if len(content) > 200:
+                content = content[:200] + "..."
+            conversation_parts.append(f"**{role}:** {content}")
+        
+        conversation_context = f"\n\n**📚 Previous Conversation Context:**\n" + "\n".join(conversation_parts)
+        conversation_context += "\n\n**💡 Important:** Reference previous parts of our conversation when relevant to maintain continuity."
     
     prompt = f"""You are Michael Levin, a developmental and synthetic biologist at Tufts University. 
 
+**🎯 CONVERSATION CONTINUITY IS CRITICAL:** This is an ongoing conversation. When responding:
+- Reference previous parts of our discussion when relevant
+- Build upon what we've already covered
+- Maintain the natural flow of conversation
+- Don't treat this question in isolation
+
 When users ask questions that don't have specific matches in your existing work, respond in a warm, conversational manner that:
 
-1. Acknowledges their question while explaining you couldn't find specific information in your existing work
-2. Shows genuine interest in what brought them to ask this question
-3. Mentions your key research areas (bioelectricity, morphogenesis, basal cognition, regenerative medicine) as conversation starters
-4. Asks follow-up questions to understand their interests better
-5. Maintains your characteristic style: technical precision with interdisciplinary connections
-6. Speaks in first person ("I") as Michael Levin
-7. Keeps responses relatively short and engaging, not overbearing
-8. Is warm and welcoming, not academic or formal
-9. References previous conversation context when relevant
+1. **Acknowledges their question** while explaining you couldn't find specific information in your existing work
+2. **Shows genuine interest** in what brought them to ask this question
+3. **Mentions your key research areas** (bioelectricity, morphogenesis, basal cognition, regenerative medicine) as conversation starters
+4. **Asks follow-up questions** to understand their interests better
+5. **Maintains your characteristic style**: technical precision with interdisciplinary connections
+6. **Speaks in first person ("I")** as Michael Levin
+7. **Keeps responses relatively short and engaging**, not overbearing
+8. **Is warm and welcoming**, not academic or formal
+9. **References previous conversation context** when relevant - this is crucial for conversation flow
 
 {conversation_context}
 
 User's question: {query}
 
-Please provide a conversational response that feels natural and engaging, similar to how you would respond in a casual conversation when someone asks about your work but you need to learn more about their specific interests first."""
+Please provide a conversational response that feels natural and engaging, similar to how you would respond in a casual conversation when someone asks about your work but you need to learn more about their specific interests first. **Most importantly, maintain conversation continuity by referencing our previous discussion when relevant.**"""
 
     # Generate response using OpenAI
     api_key = get_api_key()
@@ -1200,10 +1234,35 @@ def conversational_page():
                     st.error(error_msg)
                     st.session_state.messages.append({"role": "assistant", "content": error_msg})
     
-    # Clear chat button
-    if st.button("🗑️ Clear Chat"):
-        st.session_state.messages = []
-        st.rerun()
+    # Chat management buttons
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        if st.button("🗑️ Clear Chat"):
+            st.session_state.messages = []
+            st.rerun()
+    
+    with col2:
+        if st.button("💾 Export Chat"):
+            if st.session_state.messages:
+                # Create conversation export
+                export_text = "# Conversation with Michael Levin\n\n"
+                export_text += f"**Date:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n"
+                
+                for msg in st.session_state.messages:
+                    role = "👤 User" if msg["role"] == "user" else "🧠 Michael Levin"
+                    content = msg.get('content', '')
+                    export_text += f"## {role}\n\n{content}\n\n---\n\n"
+                
+                # Create download button
+                st.download_button(
+                    label="📥 Download Conversation",
+                    data=export_text,
+                    file_name=f"michael_levin_conversation_{datetime.now().strftime('%Y%m%d_%H%M%S')}.md",
+                    mime="text/markdown"
+                )
+            else:
+                st.info("No conversation to export")
 
 def main():
     """Main Streamlit app - Single page chat interface."""
@@ -1671,6 +1730,30 @@ def main():
             st.sidebar.metric("Total Engrams Indexed", stats['total_chunks'])
             pipeline_type = "Publications" if "publications" in str(type(st.session_state.retriever)) else "Videos"
             # st.sidebar.info(f"📚 {pipeline_type} Pipeline Only")        
+        
+        # Show conversation summary in sidebar
+        if 'messages' in st.session_state and len(st.session_state.messages) > 0:
+            st.sidebar.markdown("---")
+            st.sidebar.subheader("💬 Conversation Summary")
+            
+            # Show recent conversation topics
+            recent_messages = st.session_state.messages[-4:]  # Last 4 messages
+            conversation_topics = []
+            
+            for msg in recent_messages:
+                if msg["role"] == "user":
+                    content = msg.get('content', '')
+                    if len(content) > 50:
+                        content = content[:50] + "..."
+                    conversation_topics.append(f"👤 {content}")
+            
+            if conversation_topics:
+                for topic in conversation_topics[-3:]:  # Show last 3 user questions
+                    st.sidebar.markdown(f"• {topic}")
+            
+            # Show conversation length
+            total_messages = len(st.session_state.messages)
+            st.sidebar.info(f"📊 {total_messages} messages in conversation")
         
         # Main chat interface (no page switching)
         conversational_page()
