@@ -30,7 +30,28 @@ class PipelineCleanup:
     
     def __init__(self, progress_queue=None):
         self.progress_queue = progress_queue or get_progress_queue()
-        self.base_dir = Path.cwd()
+        
+        # Determine the correct base directory
+        # Try to find the pipeline directory if we're not already in it
+        current_dir = Path.cwd()
+        
+        # Check if we're already in the pipeline directory
+        if (current_dir / "step_01_playlist_processor.py").exists():
+            self.base_dir = current_dir
+        elif (current_dir / "SCIENTIFIC_VIDEO_PIPELINE" / "formal_presentations_1_on_0" / "step_01_playlist_processor.py").exists():
+            self.base_dir = current_dir / "SCIENTIFIC_VIDEO_PIPELINE" / "formal_presentations_1_on_0"
+        else:
+            # Fallback: assume we're in the pipeline directory
+            self.base_dir = current_dir
+            logger.warning(f"⚠️ Could not determine pipeline directory. Using current directory: {current_dir}")
+        
+        logger.info(f"🔍 Using base directory: {self.base_dir}")
+        
+        # Verify we can find key pipeline files
+        if not (self.base_dir / "step_01_playlist_processor.py").exists():
+            logger.error(f"❌ Pipeline directory not found at {self.base_dir}")
+            logger.error("Please run this script from the pipeline directory or the project root")
+            raise FileNotFoundError(f"Pipeline directory not found at {self.base_dir}")
         
         # Track cleanup statistics
         self.cleanup_stats = {
@@ -147,43 +168,84 @@ class PipelineCleanup:
             logger.warning(f"Failed to read alignments for {video_id}: {e}")
             return set()
     
-    def cleanup_unreferenced_frames(self) -> float:
+    def cleanup_unreferenced_frames(self, dry_run: bool = False) -> float:
         """Remove frame files that are not referenced in chunk alignments"""
         logger.info("🖼️ Cleaning up unreferenced frame files...")
         
         frames_dir = self.base_dir / "step_05_frames"
         if not frames_dir.exists():
+            logger.warning("⚠️ Frames directory not found, skipping frame cleanup")
             return 0.0
         
+        # Check if alignment files exist before proceeding
+        alignment_dir = self.base_dir / "step_06_frame_chunk_alignment"
+        if not alignment_dir.exists():
+            logger.error("❌ Frame-chunk alignment directory not found!")
+            logger.error("Cannot determine which frames are referenced. Skipping frame cleanup for safety.")
+            return 0.0
+        
+        # Count alignment files to ensure we have the expected data
+        alignment_files = list(alignment_dir.glob("*_alignments.json"))
+        if not alignment_files:
+            logger.error("❌ No alignment files found!")
+            logger.error("Cannot determine which frames are referenced. Skipping frame cleanup for safety.")
+            return 0.0
+        
+        logger.info(f"🔍 Found {len(alignment_files)} alignment files")
+        
         total_freed = 0.0
+        frames_checked = 0
+        frames_removed = 0
+        frames_to_remove = []
         
         for video_subdir in frames_dir.iterdir():
             if video_subdir.is_dir():
                 video_id = video_subdir.name
                 referenced_frames = self.get_referenced_frames(video_id)
                 
+                if not referenced_frames:
+                    logger.warning(f"⚠️ No referenced frames found for {video_id}. Skipping frame cleanup for this video.")
+                    continue
+                
                 logger.info(f"🔍 Checking frames for {video_id}: {len(referenced_frames)} referenced")
                 
                 for frame_file in video_subdir.iterdir():
                     if frame_file.is_file() and frame_file.suffix == '.jpg':
+                        frames_checked += 1
                         # Extract frame ID from filename (e.g., "FzFFeRVEdUM_frame_000_0.0s.jpg")
                         frame_name = frame_file.stem
                         frame_id = frame_name.split('_frame_')[0] + '_frame_' + frame_name.split('_frame_')[1]
                         
                         if frame_id not in referenced_frames:
                             size_mb = self.get_file_size_mb(frame_file)
-                            frame_file.unlink()
-                            total_freed += size_mb
-                            self.cleanup_stats['unreferenced_frames_removed'] += 1
-                            logger.debug(f"🗑️ Removed unreferenced frame: {frame_file.name}")
+                            frames_to_remove.append((frame_file, size_mb))
+                            if not dry_run:
+                                frame_file.unlink()
+                                total_freed += size_mb
+                                frames_removed += 1
+                                self.cleanup_stats['unreferenced_frames_removed'] += 1
+                                logger.debug(f"🗑️ Removed unreferenced frame: {frame_file.name}")
+                            else:
+                                logger.info(f"🔍 Would remove unreferenced frame: {frame_file.name} ({size_mb:.1f} MB)")
                 
                 # Remove empty video frame directories
                 if not any(video_subdir.iterdir()):
-                    video_subdir.rmdir()
-                    logger.info(f"🗑️ Removed empty frame directory: {video_subdir.name}")
+                    if not dry_run:
+                        video_subdir.rmdir()
+                        logger.info(f"🗑️ Removed empty frame directory: {video_subdir.name}")
+                    else:
+                        logger.info(f"🔍 Would remove empty frame directory: {video_subdir.name}")
         
-        self.cleanup_stats['total_space_freed_mb'] += total_freed
-        logger.info(f"✅ Frame cleanup completed. Freed {total_freed:.1f} MB")
+        if dry_run:
+            logger.info(f"📊 Frame cleanup preview: {frames_checked} frames checked, {len(frames_to_remove)} would be removed")
+            if frames_to_remove:
+                total_size = sum(size for _, size in frames_to_remove)
+                logger.info(f"💾 Total space that would be freed: {total_size:.1f} MB")
+        else:
+            logger.info(f"📊 Frame cleanup summary: {frames_checked} frames checked, {frames_removed} removed")
+            self.cleanup_stats['total_space_freed_mb'] += total_freed
+            logger.info(f"✅ Frame cleanup completed. Freed {total_freed:.1f} MB")
+        
         return total_freed
     
     def cleanup_temp_scripts(self) -> int:
@@ -389,7 +451,7 @@ class PipelineCleanup:
         # Run all cleanup operations
         self.cleanup_video_files()
         self.cleanup_yt_dlp_files()
-        self.cleanup_unreferenced_frames()
+        self.cleanup_unreferenced_frames(dry_run)
         self.cleanup_temp_scripts()
         self.cleanup_old_logs()
         self.cleanup_old_reports()
