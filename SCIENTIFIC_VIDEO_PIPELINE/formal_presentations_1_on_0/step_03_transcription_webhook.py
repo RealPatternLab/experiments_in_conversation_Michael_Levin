@@ -17,6 +17,7 @@ from typing import Dict, Any, Optional
 import yt_dlp
 from dotenv import load_dotenv
 import requests
+from pipeline_progress_queue import get_progress_queue
 
 # Load environment variables
 load_dotenv()
@@ -33,7 +34,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 class VideoTranscriberWebhook:
-    def __init__(self):
+    def __init__(self, progress_queue=None):
         self.assemblyai_api_key = os.getenv('ASSEMBLYAI_API_KEY')
         if not self.assemblyai_api_key:
             raise ValueError("ASSEMBLYAI_API_KEY not found in environment variables")
@@ -41,6 +42,9 @@ class VideoTranscriberWebhook:
         self.input_dir = Path("step_02_extracted_playlist_content")
         self.output_dir = Path("step_03_transcription")
         self.output_dir.mkdir(exist_ok=True)
+        
+        # Initialize progress queue
+        self.progress_queue = progress_queue
         
         # AssemblyAI configuration
         self.assemblyai_url = "https://api.assemblyai.com/v2"
@@ -130,10 +134,17 @@ class VideoTranscriberWebhook:
             logger.warning(f"Video file not found for {video_id} at path: {video_path}")
             return 'failed'
         
-        # Check if transcript already exists
+        # Check if transcript already exists using progress queue
+        if self.progress_queue:
+            video_status = self.progress_queue.get_video_status(video_id)
+            if video_status and video_status.get('step_03_transcription') == 'completed':
+                logger.info(f"Transcript already completed for {video_id} (progress queue), skipping")
+                return 'existing'
+        
+        # Fallback: Check if transcript file exists (for backward compatibility)
         transcript_file = self.output_dir / f"{video_id}_transcript.json"
         if transcript_file.exists():
-            logger.info(f"Transcript already exists for {video_id}, skipping")
+            logger.info(f"Transcript already exists for {video_id} (file check), skipping")
             return 'existing'
         
         logger.info(f"Processing video: {video_id} - {video_title}")
@@ -428,6 +439,20 @@ class VideoTranscriberWebhook:
             logger.info(f"📄 Transcript saved: {transcript_file}")
             logger.info(f"📝 Text saved: {text_file}")
             
+            # Update progress queue
+            if self.progress_queue:
+                self.progress_queue.update_video_step_status(
+                    video_id,
+                    'step_03_transcription',
+                    'completed',
+                    metadata={
+                        'transcript_file': str(transcript_file),
+                        'text_file': str(text_file),
+                        'completed_at': datetime.now().isoformat()
+                    }
+                )
+                logger.info(f"📊 Progress queue updated: step 3 completed for {video_id}")
+            
             return True
             
         except Exception as e:
@@ -477,7 +502,11 @@ def main():
     args = parser.parse_args()
     
     try:
-        transcriber = VideoTranscriberWebhook()
+        # Initialize progress queue
+        progress_queue = get_progress_queue()
+        logger.info("✅ Progress queue initialized")
+        
+        transcriber = VideoTranscriberWebhook(progress_queue)
         
         if args.submit_only:
             # Only submit transcriptions

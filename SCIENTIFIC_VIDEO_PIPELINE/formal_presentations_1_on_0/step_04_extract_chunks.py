@@ -13,6 +13,7 @@ from pathlib import Path
 from typing import Dict, Any, List, Optional
 from dotenv import load_dotenv
 import openai
+from pipeline_progress_queue import get_progress_queue
 
 # Load environment variables
 load_dotenv()
@@ -29,7 +30,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 class SemanticChunker:
-    def __init__(self):
+    def __init__(self, progress_queue=None):
         self.openai_api_key = os.getenv('OPENAI_API_KEY')
         if not self.openai_api_key:
             raise ValueError("OPENAI_API_KEY not found in environment variables")
@@ -39,6 +40,9 @@ class SemanticChunker:
         self.input_dir = Path("step_03_transcription")
         self.output_dir = Path("step_04_extract_chunks")
         self.output_dir.mkdir(exist_ok=True)
+        
+        # Initialize progress queue
+        self.progress_queue = progress_queue
         
         # Chunking parameters - Optimized for Michael Levin's information-dense style
         self.max_chunk_tokens = 300   # Much smaller chunks for granular concepts
@@ -91,10 +95,17 @@ class SemanticChunker:
         video_id = transcript_file.stem.replace('_transcript', '')
         logger.info(f"Processing transcript: {video_id}")
         
-        # Check if chunks already exist
+        # Check if chunks already exist using progress queue
+        if self.progress_queue:
+            video_status = self.progress_queue.get_video_status(video_id)
+            if video_status and video_status.get('step_04_semantic_chunking') == 'completed':
+                logger.info(f"Chunks already completed for {video_id} (progress queue), skipping")
+                return 'existing'
+        
+        # Fallback: Check if chunks file exists (for backward compatibility)
         chunks_file = self.output_dir / f"{video_id}_chunks.json"
         if chunks_file.exists():
-            logger.info(f"Chunks already exist for {video_id}, skipping")
+            logger.info(f"Chunks already exist for {video_id} (file check), skipping")
             return 'existing'
         
         # Load transcript
@@ -476,13 +487,33 @@ class SemanticChunker:
             
             logger.info(f"Individual chunk files saved in: {chunks_dir}")
             
+            # Update progress queue
+            if self.progress_queue:
+                self.progress_queue.update_video_step_status(
+                    video_id,
+                    'step_04_semantic_chunking',
+                    'completed',
+                    metadata={
+                        'chunks_file': str(output_file),
+                        'chunks_dir': str(chunks_dir),
+                        'total_chunks': len(chunks),
+                        'total_tokens': sum(chunk.get('token_count', 0) for chunk in chunks),
+                        'completed_at': datetime.now().isoformat()
+                    }
+                )
+                logger.info(f"📊 Progress queue updated: step 4 completed for {video_id}")
+            
         except Exception as e:
             logger.error(f"Failed to save chunks: {e}")
 
 def main():
     """Main execution function"""
     try:
-        chunker = SemanticChunker()
+        # Initialize progress queue
+        progress_queue = get_progress_queue()
+        logger.info("✅ Progress queue initialized")
+        
+        chunker = SemanticChunker(progress_queue)
         chunker.process_all_transcripts()
         logger.info("Chunking step completed successfully")
     except Exception as e:

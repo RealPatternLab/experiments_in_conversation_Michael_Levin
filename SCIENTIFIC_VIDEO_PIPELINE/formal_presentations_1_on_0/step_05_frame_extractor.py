@@ -8,9 +8,12 @@ import os
 import json
 import logging
 import subprocess
+import time
 from pathlib import Path
 from typing import Dict, Any, List, Optional
+from datetime import datetime
 from dotenv import load_dotenv
+from pipeline_progress_queue import get_progress_queue
 
 # Load environment variables
 load_dotenv()
@@ -27,10 +30,13 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 class FrameExtractor:
-    def __init__(self):
+    def __init__(self, progress_queue=None):
         self.input_dir = Path("step_02_extracted_playlist_content")
         self.output_dir = Path("step_05_frames")
         self.output_dir.mkdir(exist_ok=True)
+        
+        # Initialize progress queue
+        self.progress_queue = progress_queue
         
         # Frame extraction parameters
         # Target ~15-20 second intervals (roughly half the expected chunk size of 30-60 seconds)
@@ -146,7 +152,14 @@ class FrameExtractor:
             logger.warning(f"Video file not found for {video_id}")
             return 'failed'
         
-        # Check if frames already exist and are complete
+        # Check if frames already exist using progress queue
+        if self.progress_queue:
+            video_status = self.progress_queue.get_video_status(video_id)
+            if video_status and video_status.get('step_05_frame_extraction') == 'completed':
+                logger.info(f"Frames already completed for {video_id} (progress queue), skipping")
+                return 'existing'
+        
+        # Fallback: Check if frames already exist and are complete (for backward compatibility)
         video_frames_dir = self.output_dir / video_id
         frames_summary_file = self.output_dir / f"{video_id}_frames_summary.json"
         
@@ -193,6 +206,22 @@ class FrameExtractor:
         # Save frame metadata only if we actually processed frames
         if frames_info:
             self.save_frame_metadata(frames_info, video_id, video_info)
+            
+            # Update progress queue
+            if self.progress_queue:
+                self.progress_queue.update_video_step_status(
+                    video_id,
+                    'step_05_frame_extraction',
+                    'completed',
+                    metadata={
+                        'frames_summary_file': str(frames_summary_file),
+                        'video_frames_dir': str(video_frames_dir),
+                        'total_frames_extracted': len(frames_info),
+                        'completed_at': datetime.now().isoformat()
+                    }
+                )
+                logger.info(f"📊 Progress queue updated: step 5 completed for {video_id}")
+            
             logger.info(f"Successfully processed video: {video_id}")
             return 'new'
         else:
@@ -366,7 +395,11 @@ class FrameExtractor:
 def main():
     """Main execution function"""
     try:
-        extractor = FrameExtractor()
+        # Initialize progress queue
+        progress_queue = get_progress_queue()
+        logger.info("✅ Progress queue initialized")
+        
+        extractor = FrameExtractor(progress_queue)
         extractor.process_all_videos()
         logger.info("Frame extraction step completed successfully")
     except Exception as e:

@@ -13,6 +13,7 @@ from typing import Dict, Any, List, Optional
 from urllib.parse import urlparse, parse_qs
 import requests
 from dotenv import load_dotenv
+from pipeline_progress_queue import get_progress_queue
 
 # Load environment variables
 load_dotenv()
@@ -42,7 +43,10 @@ class PlaylistProcessor:
         # Check if yt-dlp is available
         self.yt_dlp_available = self.check_yt_dlp_availability()
         
-        # File paths for change detection
+        # Initialize progress queue
+        self.progress_queue = get_progress_queue()
+        
+        # File paths for change detection (keeping for backward compatibility)
         self.metadata_file = self.output_dir / "playlist_and_video_metadata.json"
         self.previous_videos = self.load_previous_videos()
     
@@ -111,10 +115,44 @@ class PlaylistProcessor:
                         playlist_data['new_videos'] = True
                         playlist_data['new_video_ids'] = [v.get('video_id') for v in new_videos]
                         logger.info(f"New video IDs: {playlist_data['new_video_ids']}")
+                        
+                        # Add new videos to progress queue
+                        for video in new_videos:
+                            video_id = video.get('video_id')
+                            video_title = video.get('title', 'Unknown Title')
+                            playlist_id = playlist_data.get('playlist_id')
+                            
+                            if self.progress_queue.add_video(video_id, video_title, playlist_id):
+                                logger.info(f"Added video {video_id} to progress queue")
+                            else:
+                                logger.warning(f"Failed to add video {video_id} to progress queue")
+                        
+                        # Update progress queue for existing videos that need processing
+                        for video in playlist_data.get('videos', []):
+                            video_id = video.get('video_id')
+                            if video_id:
+                                # Mark step 1 as completed for all videos in this playlist
+                                self.progress_queue.update_video_step_status(
+                                    video_id, 
+                                    'step_01_playlist_processing', 
+                                    'completed',
+                                    metadata={'playlist_id': playlist_id}
+                                )
                     else:
                         logger.info("No new videos found, playlist unchanged")
                         playlist_data['new_videos'] = False
                         playlist_data['new_video_ids'] = []
+                        
+                        # Mark step 1 as completed for all videos in this playlist
+                        for video in playlist_data.get('videos', []):
+                            video_id = video.get('video_id')
+                            if video_id:
+                                self.progress_queue.update_video_step_status(
+                                    video_id, 
+                                    'step_01_playlist_processing', 
+                                    'completed',
+                                    metadata={'playlist_id': playlist_data.get('playlist_id')}
+                                )
                     
                     processed_playlists.append(playlist_data)
                     total_videos += playlist_data.get('total_videos_found', 0)
@@ -181,6 +219,15 @@ class PlaylistProcessor:
                 'videos': videos,
                 'total_videos_found': len(videos)
             }
+            
+            # Add playlist to progress queue
+            if videos:
+                playlist_title = playlist_metadata.get('title', f'Playlist {playlist_id}')
+                video_count = len(videos)
+                if self.progress_queue.add_playlist(playlist_id, playlist_title, video_count):
+                    logger.info(f"Added playlist {playlist_id} to progress queue")
+                else:
+                    logger.info(f"Playlist {playlist_id} already exists in progress queue")
             
             return playlist_data
             
@@ -384,17 +431,38 @@ class PlaylistProcessor:
             return set()
     
     def detect_new_videos(self, current_videos: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-        """Detect which videos are new and need processing"""
+        """Detect which videos are new and need processing using progress queue"""
         current_video_ids = {video.get('video_id') for video in current_videos if video.get('video_id')}
-        new_video_ids = current_video_ids - self.previous_videos
+        new_videos = []
         
-        if new_video_ids:
-            logger.info(f"Found {len(new_video_ids)} new videos: {list(new_video_ids)}")
-            new_videos = [v for v in current_videos if v.get('video_id') in new_video_ids]
-            return new_videos
+        for video in current_videos:
+            video_id = video.get('video_id')
+            if not video_id:
+                continue
+                
+            # Check if video exists in progress queue
+            video_status = self.progress_queue.get_video_status(video_id)
+            
+            if not video_status:
+                # Video not in progress queue - it's new
+                new_videos.append(video)
+                logger.info(f"Found new video: {video_id} - {video.get('title', 'Unknown Title')}")
+            else:
+                # Video exists in progress queue - check if step 1 is completed
+                step_01_status = video_status.get('step_01_playlist_processing', 'not_started')
+                if step_01_status != 'completed':
+                    # Step 1 not completed - needs processing
+                    new_videos.append(video)
+                    logger.info(f"Video {video_id} needs step 1 processing (status: {step_01_status})")
+                else:
+                    logger.debug(f"Video {video_id} already processed in step 1")
+        
+        if new_videos:
+            logger.info(f"Found {len(new_videos)} videos that need processing: {[v.get('video_id') for v in new_videos]}")
         else:
-            logger.info("No new videos found in playlist")
-            return []
+            logger.info("No new videos found in playlist - all videos already processed")
+        
+        return new_videos
     
     def save_results(self, summary: Dict[str, Any], filename_prefix: str = "playlist"):
         """Save processing results"""

@@ -15,6 +15,7 @@ from dotenv import load_dotenv
 import openai
 import faiss
 from datetime import datetime
+from pipeline_progress_queue import get_progress_queue
 
 # Load environment variables
 load_dotenv()
@@ -31,7 +32,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 class ConsolidatedEmbedding:
-    def __init__(self):
+    def __init__(self, progress_queue=None):
         self.openai_api_key = os.getenv('OPENAI_API_KEY')
         if not self.openai_api_key:
             raise ValueError("OPENAI_API_KEY not found in environment variables")
@@ -41,6 +42,9 @@ class ConsolidatedEmbedding:
         self.input_dir = Path("step_06_frame_chunk_alignment")
         self.output_dir = Path("step_07_faiss_embeddings")
         self.output_dir.mkdir(exist_ok=True)
+        
+        # Initialize progress queue
+        self.progress_queue = progress_queue
         
         # Embedding parameters
         self.embedding_model_name = "text-embedding-3-large"  # OpenAI model
@@ -116,6 +120,21 @@ class ConsolidatedEmbedding:
     
     def should_skip_processing(self, rag_files: List[Path]) -> bool:
         """Check if we can skip processing based on content changes"""
+        # First check progress queue for all videos
+        if self.progress_queue:
+            all_videos_completed = True
+            for rag_file in rag_files:
+                video_id = rag_file.stem.replace('_rag_ready_aligned_content', '')
+                video_status = self.progress_queue.get_video_status(video_id)
+                if not video_status or video_status.get('step_07_consolidated_embedding') != 'completed':
+                    all_videos_completed = False
+                    break
+            
+            if all_videos_completed:
+                logger.info("✅ All videos already completed in step 7 (progress queue), skipping")
+                return True
+        
+        # Fallback: Check if we can skip processing based on content changes
         # Get latest embeddings info
         latest_embeddings, timestamp, info_file = self.get_latest_embeddings_info()
         if not latest_embeddings or not info_file:
@@ -231,6 +250,29 @@ class ConsolidatedEmbedding:
         
         # Save content hash for future change detection
         self.save_content_hash_info(timestamp, rag_files)
+        
+        # Update progress queue for all processed videos
+        if self.progress_queue:
+            for rag_file in rag_files:
+                video_id = rag_file.stem.replace('_rag_ready_aligned_content', '')
+                self.progress_queue.update_video_step_status(
+                    video_id,
+                    'step_07_consolidated_embedding',
+                    'completed',
+                    metadata={
+                        'timestamp': timestamp,
+                        'content_hash': self.calculate_content_hash(rag_files),
+                        'embedding_files': {
+                            'text_index': f"text_index_{timestamp}.index",
+                            'visual_index': f"visual_index_{timestamp}.index",
+                            'combined_index': f"combined_index_{timestamp}.index",
+                            'embeddings': f"chunks_embeddings_{timestamp}.npy",
+                            'metadata': f"chunks_metadata_{timestamp}.pkl"
+                        },
+                        'completed_at': datetime.now().isoformat()
+                    }
+                )
+                logger.info(f"📊 Progress queue updated: step 7 completed for {video_id}")
         
         logger.info("Consolidated embedding step completed successfully")
     
@@ -485,7 +527,11 @@ class ConsolidatedEmbedding:
 def main():
     """Main execution function"""
     try:
-        embedder = ConsolidatedEmbedding()
+        # Initialize progress queue
+        progress_queue = get_progress_queue()
+        logger.info("✅ Progress queue initialized")
+        
+        embedder = ConsolidatedEmbedding(progress_queue)
         embedder.process_all_content()
         embedder.analyze_embedding_quality()
         logger.info("Consolidated embedding step completed successfully")

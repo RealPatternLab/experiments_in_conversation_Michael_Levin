@@ -11,6 +11,7 @@ import logging
 from pathlib import Path
 from typing import Dict, Any, List, Optional
 from dotenv import load_dotenv
+from pipeline_progress_queue import get_progress_queue
 
 # Load environment variables
 load_dotenv()
@@ -27,11 +28,14 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 class FrameChunkAligner:
-    def __init__(self):
+    def __init__(self, progress_queue=None):
         self.chunks_dir = Path("step_04_extract_chunks")
         self.frames_dir = Path("step_05_frames")
         self.output_dir = Path("step_06_frame_chunk_alignment")
         self.output_dir.mkdir(exist_ok=True)
+        
+        # Initialize progress queue
+        self.progress_queue = progress_queue
         
         # Alignment parameters
         self.timestamp_tolerance = 5.0  # Seconds tolerance for alignment
@@ -87,10 +91,17 @@ class FrameChunkAligner:
         video_id = chunk_file.stem.replace('_chunks', '')
         logger.info(f"Processing video: {video_id}")
         
-        # Check if alignments already exist
+        # Check if alignments already exist using progress queue
+        if self.progress_queue:
+            video_status = self.progress_queue.get_video_status(video_id)
+            if video_status and video_status.get('step_06_frame_chunk_alignment') == 'completed':
+                logger.info(f"Alignments already completed for {video_id} (progress queue), skipping")
+                return 'existing'
+        
+        # Fallback: Check if alignment file exists (for backward compatibility)
         alignment_file = self.output_dir / f"{video_id}_alignments.json"
         if alignment_file.exists():
-            logger.info(f"Alignments already exist for {video_id}, skipping")
+            logger.info(f"Alignments already exist for {video_id} (file check), skipping")
             return 'existing'
         
         # Load chunks
@@ -112,6 +123,22 @@ class FrameChunkAligner:
         
         # Save alignments
         self.save_alignments(alignments, rag_output, video_id)
+        
+        # Update progress queue
+        if self.progress_queue:
+            self.progress_queue.update_video_step_status(
+                video_id,
+                'step_06_frame_chunk_alignment',
+                'completed',
+                metadata={
+                    'alignments_file': f"{video_id}_alignments.json",
+                    'rag_ready_file': f"{video_id}_rag_ready_aligned_content.json",
+                    'summary_file': f"{video_id}_alignment_summary.json",
+                    'total_alignments': len(alignments),
+                    'completed_at': datetime.now().isoformat()
+                }
+            )
+            logger.info(f"📊 Progress queue updated: step 6 completed for {video_id}")
         
         logger.info(f"Successfully processed video: {video_id}")
         return 'new'
@@ -304,7 +331,11 @@ class FrameChunkAligner:
 def main():
     """Main execution function"""
     try:
-        aligner = FrameChunkAligner()
+        # Initialize progress queue
+        progress_queue = get_progress_queue()
+        logger.info("✅ Progress queue initialized")
+        
+        aligner = FrameChunkAligner(progress_queue)
         aligner.process_all_videos()
         logger.info("Frame-chunk alignment step completed successfully")
     except Exception as e:

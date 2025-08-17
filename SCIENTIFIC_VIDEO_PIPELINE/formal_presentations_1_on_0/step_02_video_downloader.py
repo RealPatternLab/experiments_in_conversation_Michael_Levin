@@ -15,6 +15,7 @@ from pathlib import Path
 from typing import Dict, List, Any, Optional
 from datetime import datetime
 import time
+from pipeline_progress_queue import get_progress_queue
 
 def setup_logging():
     """Set up logging configuration."""
@@ -314,7 +315,7 @@ def update_existing_video_metadata(video_id: str, new_playlist_metadata: Dict, o
             'status': 'existing_video_metadata_updated'
         }, output_dir)
 
-def process_playlist_videos(playlist_data: Dict, output_dir: Path, max_videos: Optional[int] = None) -> Dict[str, Any]:
+def process_playlist_videos(playlist_data: Dict, output_dir: Path, max_videos: Optional[int] = None, progress_queue = None) -> Dict[str, Any]:
     """
     Process all videos in the playlist.
     
@@ -357,7 +358,41 @@ def process_playlist_videos(playlist_data: Dict, output_dir: Path, max_videos: O
         print(f"📹 Processing video {i}/{len(videos)}: {video_id}")
         print(f"{'='*60}")
         
-        # Check if video has already been processed
+        # Check if video has already been processed using progress queue
+        if progress_queue:
+            video_status = progress_queue.get_video_status(video_id)
+            if video_status and video_status.get('step_02_video_download') == 'completed':
+                print(f"🔄 Video already processed in step 2: {video_id}")
+                print(f"   Status: {video_status.get('step_02_video_download')}")
+                
+                # Track as existing video
+                existing_videos += 1
+                results.append({
+                    'video_id': video_id,
+                    'title': video_title,
+                    'status': 'already_processed',
+                    'local_path': f"video_{video_id}/video.mp4",  # Assumed path
+                    'file_size_mb': 0,  # Will be updated if file exists
+                    'playlist_added': datetime.now().isoformat()
+                })
+                
+                print(f"✅ Video {i} already processed (skipping)")
+                
+                # Update progress queue to mark as completed
+                if progress_queue:
+                    progress_queue.update_video_step_status(
+                        video_id,
+                        'step_02_video_download',
+                        'completed',
+                        metadata={
+                            'status': 'already_processed',
+                            'playlist_added': datetime.now().isoformat()
+                        }
+                    )
+                    print(f"   📊 Progress queue updated: step 2 marked as completed")
+                continue
+        
+        # Fallback: Check if video directory exists (for backward compatibility)
         video_dir = output_dir / f"video_{video_id}"
         video_info = get_video_file_info(video_dir)
         
@@ -382,6 +417,21 @@ def process_playlist_videos(playlist_data: Dict, output_dir: Path, max_videos: O
             })
             
             print(f"✅ Video {i} metadata updated (already processed)")
+            
+            # Update progress queue to mark as completed
+            if progress_queue:
+                progress_queue.update_video_step_status(
+                    video_id,
+                    'step_02_video_download',
+                    'completed',
+                    metadata={
+                        'status': 'already_processed',
+                        'file_size_mb': video_info['file_size_mb'],
+                        'local_path': str(video_info['file_path']),
+                        'playlist_added': datetime.now().isoformat()
+                    }
+                )
+                print(f"   📊 Progress queue updated: step 2 marked as completed")
             continue
         
         # Download video if it doesn't exist
@@ -395,9 +445,33 @@ def process_playlist_videos(playlist_data: Dict, output_dir: Path, max_videos: O
         if download_result['success']:
             successful_downloads += 1
             print(f"✅ Video {i} downloaded successfully")
+            
+            # Update progress queue
+            if progress_queue:
+                progress_queue.update_video_step_status(
+                    video_id,
+                    'step_02_video_download',
+                    'completed',
+                    metadata={
+                        'file_size_mb': download_result.get('file_size_mb', 0),
+                        'local_path': str(download_result.get('local_path', '')),
+                        'download_timestamp': datetime.now().isoformat()
+                    }
+                )
+                print(f"   📊 Progress queue updated: step 2 completed")
         else:
             failed_downloads += 1
             print(f"❌ Video {i} download failed")
+            
+            # Update progress queue with error
+            if progress_queue:
+                progress_queue.update_video_step_status(
+                    video_id,
+                    'step_02_video_download',
+                    'failed',
+                    error=f"Download failed: {download_result.get('error', 'Unknown error')}"
+                )
+                print(f"   📊 Progress queue updated: step 2 failed")
         
         results.append({
             'video_id': video_id,
@@ -441,6 +515,10 @@ def main():
     
     # Setup
     logger = setup_logging()
+    
+    # Initialize progress queue
+    progress_queue = get_progress_queue()
+    print("✅ Progress queue initialized")
     
     # Check if yt-dlp is available
     if not check_yt_dlp_available():
@@ -487,7 +565,7 @@ def main():
     if max_videos:
         print(f"🔢 Limiting to {max_videos} videos for testing")
     
-    summary = process_playlist_videos(playlist_data, step_02_dir, max_videos)
+    summary = process_playlist_videos(playlist_data, step_02_dir, max_videos, progress_queue)
     
     # Display results
     print(f"\n📊 Download Summary:")
