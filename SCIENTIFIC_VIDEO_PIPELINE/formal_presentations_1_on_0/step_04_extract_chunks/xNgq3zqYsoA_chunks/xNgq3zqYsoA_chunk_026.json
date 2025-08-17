@@ -1,0 +1,39 @@
+{
+  "chunk_id": "xNgq3zqYsoA_chunk_026",
+  "text": "This is one of those biomedical applications So that first application I just showed you was about cancer So the idea was to normalize the cells, reconnect them to the body, not kill them with toxic chemotherapy, not try to fix the genetics, but to normalize them by reconnecting them to the memories of the body This is now a second application around limb and organ regeneration So using electrical cues to tell cells to rebuild the things they already know how to rebuild It's not just about rebuilding the exact thing in the right place You can also do interesting things like this We can tell a bunch of cells that would have been gut, we can say no Instead you should make an eye And the way we do that is we inject some ion channel RNA that establishes a bioelectrical signal and that tells the cells to build an eye And they build an eye And that eye has all the same lens, retina, optic nerve, all the stuff it's supposed to have And it has some other interesting properties that I don't have time to talk about",
+  "token_count": 191,
+  "sentence_count": 13,
+  "start_sentence": 26,
+  "end_sentence": 38,
+  "start_time_ms": null,
+  "end_time_ms": null,
+  "start_time_seconds": null,
+  "end_time_seconds": null,
+  "primary_topics": [
+    "Biomedical Applications",
+    "Cancer Cell Normalization",
+    "Limb and Organ Regeneration",
+    "Bioelectrical Signaling",
+    "Cellular Reassignment"
+  ],
+  "secondary_topics": [
+    "Chemotherapy Alternatives",
+    "Cellular Memory",
+    "Regenerative Medicine",
+    "Ion Channel RNA",
+    "Eye Development"
+  ],
+  "key_terms": [
+    "Bioelectricity",
+    "Ion Channel RNA",
+    "Cell Normalization",
+    "Regeneration",
+    "Bioelectrical Signal",
+    "Cellular Reassignment",
+    "Retina",
+    "Optic Nerve"
+  ],
+  "content_summary": "The speaker discusses biomedical applications of bioelectricity, focusing on cancer cell normalization and limb and organ regeneration. They explain how electrical cues can be used to instruct cells to regenerate, and even to change their developmental path, such as instructing gut cells to form an eye through the injection of ion channel RNA.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
+  "enhanced": true
+}

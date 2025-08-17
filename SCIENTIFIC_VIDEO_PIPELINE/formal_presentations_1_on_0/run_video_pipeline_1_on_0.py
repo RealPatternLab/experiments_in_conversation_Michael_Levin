@@ -62,6 +62,11 @@ class VideoPipeline1On0:
                 'name': 'Step 7: Consolidated Embedding',
                 'script': 'step_07_consolidated_embedding.py',
                 'description': 'Create embeddings and build FAISS indices'
+            },
+            {
+                'name': 'Step 8: Cleanup',
+                'script': 'step_08_cleanup.py',
+                'description': 'Remove unnecessary files to free up disk space while preserving essential data'
             }
         ]
         

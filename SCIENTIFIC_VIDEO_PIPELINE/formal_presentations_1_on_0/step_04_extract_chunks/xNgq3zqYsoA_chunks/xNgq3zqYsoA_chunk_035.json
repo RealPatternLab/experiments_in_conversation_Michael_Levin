@@ -1,0 +1,34 @@
+{
+  "chunk_id": "xNgq3zqYsoA_chunk_035",
+  "text": "This is not about biology at all I don't think we have, we have started looking at extremely minimal systems If any of you take programming, you will no doubt have heard of sorting algorithms, things like bubble sort and so on All computer science students study them They are very short, simple, deterministic algorithms And what we found is that even those things, when you look at them the right way, are doing things other, in addition to what is actually in the algorithm In other words, the algorithm Makes them sort numbers And they do, and they sort the numbers, but also they do other stuff They have these other side quests, is the best way I can describe it, that are nowhere in the algorithm And so they have a simple version of what we have",
+  "token_count": 139,
+  "sentence_count": 10,
+  "start_sentence": 35,
+  "end_sentence": 44,
+  "start_time_ms": null,
+  "end_time_ms": null,
+  "start_time_seconds": null,
+  "end_time_seconds": null,
+  "primary_topics": [
+    "Minimal Systems",
+    "Sorting Algorithms",
+    "Deterministic Algorithms"
+  ],
+  "secondary_topics": [
+    "Computer Programming",
+    "Algorithmic Behavior",
+    "Side Quests in Algorithms",
+    "Number Sorting",
+    "Complexity in Simple Systems"
+  ],
+  "key_terms": [
+    "Bubble Sort",
+    "Deterministic Algorithms",
+    "Minimal Systems",
+    "Side Quests",
+    "Number Sorting"
+  ],
+  "content_summary": "The speaker discusses the exploration of minimal systems, particularly deterministic algorithms such as sorting algorithms used in computer programming. They highlight the unexpected complexity found in these simple systems, where the algorithms not only perform their primary function but also undertake additional 'side quests'.",
+  "scientific_domain": "Computer Science",
+  "enhanced": true
+}

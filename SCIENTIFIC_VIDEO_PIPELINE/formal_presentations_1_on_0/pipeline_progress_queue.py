@@ -33,7 +33,7 @@ class VideoPipelineProgressQueue:
                 "pipeline_progress": {},
                 "playlist_progress": {},
                 "pipeline_info": {
-                    "total_steps": 7,
+                    "total_steps": 8,
                     "steps": [
                         "step_01_playlist_processing",
                         "step_02_video_download",
@@ -41,7 +41,8 @@ class VideoPipelineProgressQueue:
                         "step_04_semantic_chunking",
                         "step_05_frame_extraction",
                         "step_06_frame_chunk_alignment",
-                        "step_07_consolidated_embedding"
+                        "step_07_consolidated_embedding",
+                        "step_08_cleanup"
                     ]
                 },
                 "created_at": datetime.now().isoformat(),

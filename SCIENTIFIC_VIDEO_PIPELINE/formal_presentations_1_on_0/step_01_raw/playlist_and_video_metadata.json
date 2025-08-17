@@ -1,0 +1,82 @@
+{
+  "total_urls": 1,
+  "valid_urls": 1,
+  "invalid_urls": 0,
+  "total_videos_found": 3,
+  "playlists": [
+    {
+      "url": "https://www.youtube.com/playlist?list=PLmR3yIXYqfUIk4xQ_cp_MwuJlAq2PlCwH",
+      "is_valid": true,
+      "error": null,
+      "playlist_id": "PLmR3yIXYqfUIk4xQ_cp_MwuJlAq2PlCwH",
+      "domain": "www.youtube.com",
+      "scheme": "https",
+      "query_params": {
+        "list": [
+          "PLmR3yIXYqfUIk4xQ_cp_MwuJlAq2PlCwH"
+        ]
+      },
+      "playlist_metadata": {
+        "playlist_id": "PLmR3yIXYqfUIk4xQ_cp_MwuJlAq2PlCwH",
+        "title": "Playlist PLmR3yIXYqfUIk4xQ_cp_MwuJlAq2PlCwH",
+        "description": "Playlist description",
+        "channel_title": "Unknown Channel",
+        "published_at": "",
+        "video_count": 0,
+        "privacy_status": "public"
+      },
+      "videos": [
+        {
+          "video_id": "FzFFeRVEdUM",
+          "title": "\"Scaling Intelligence in Biology, Artificial Life, and Beyond\" by Michael Levin",
+          "description": null,
+          "channel_title": "Michael Levin's Academic Content",
+          "published_at": "",
+          "playlist_position": 1,
+          "duration": 1444,
+          "view_count": 10000,
+          "like_count": 0,
+          "category_id": [],
+          "default_language": null,
+          "default_audio_language": null
+        },
+        {
+          "video_id": "zKjdkxrvE6k",
+          "title": "\"Life, Mind, and Computing: a diverse intelligence perspective\" by Michael Levin",
+          "description": null,
+          "channel_title": "Michael Levin's Academic Content",
+          "published_at": "",
+          "playlist_position": 2,
+          "duration": 1988,
+          "view_count": 5700,
+          "like_count": 0,
+          "category_id": [],
+          "default_language": null,
+          "default_audio_language": null
+        },
+        {
+          "video_id": "xNgq3zqYsoA",
+          "title": "\"Ethics and the New Biology\" by Michael Levin",
+          "description": null,
+          "channel_title": "Michael Levin's Academic Content",
+          "published_at": "",
+          "playlist_position": 3,
+          "duration": 1953,
+          "view_count": 7000,
+          "like_count": 0,
+          "category_id": [],
+          "default_language": null,
+          "default_audio_language": null
+        }
+      ],
+      "total_videos_found": 3,
+      "new_videos": true,
+      "new_video_ids": [
+        "xNgq3zqYsoA"
+      ]
+    }
+  ],
+  "processing_timestamp": "2025-08-17T14:13:16.827301",
+  "previous_videos_count": 2,
+  "new_videos_detected": true
+}

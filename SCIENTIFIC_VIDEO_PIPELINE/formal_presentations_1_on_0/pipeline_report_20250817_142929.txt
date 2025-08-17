@@ -1,0 +1,41 @@
+📊 PIPELINE EXECUTION REPORT
+==================================================
+Generated: 2025-08-17 14:29:29
+
+📈 EXECUTION SUMMARY
+Total Steps: 7
+Completed: 7
+Failed: 0
+Success Rate: 100.0%
+
+🔍 STEP DETAILS
+1. ✅ Step 1: Playlist Processing
+   Duration: 2.1s
+   Status: completed
+
+2. ✅ Step 2: Video Download
+   Duration: 12.7s
+   Status: completed
+
+3. ✅ Step 3: Transcription
+   Duration: 390.2s
+   Status: completed
+
+4. ✅ Step 4: Semantic Chunking
+   Duration: 250.2s
+   Status: completed
+
+5. ✅ Step 5: Frame Extraction
+   Duration: 276.2s
+   Status: completed
+
+6. ✅ Step 6: Frame-Chunk Alignment
+   Duration: 0.1s
+   Status: completed
+
+7. ✅ Step 7: Consolidated Embedding
+   Duration: 43.5s
+   Status: completed
+
+⏱️ TIMING INFORMATION
+Total Pipeline Duration: 975.0s (16.2 minutes)

@@ -1,0 +1,11 @@
+{
+  "timestamp": "20250817_141121_363",
+  "content_hash": "76c42f2dacbdf6d95f174c317424b02b",
+  "input_files": [
+    "FzFFeRVEdUM_rag_ready_aligned_content.json",
+    "zKjdkxrvE6k_rag_ready_aligned_content.json"
+  ],
+  "file_count": 2,
+  "created_at": "2025-08-17T14:11:48.678372",
+  "pipeline_step": "step_07_consolidated_embedding"
+}

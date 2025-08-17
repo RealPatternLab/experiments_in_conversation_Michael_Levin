@@ -1,0 +1,43 @@
+{
+  "chunk_id": "xNgq3zqYsoA_chunk_032",
+  "text": "So human patients donate tracheal epithelial cells And we have a way of enabling them to self assemble We really don't do much The cells do all the, all the hard work They self assemble into this little motile creature This creature has four different behaviors that it switches between So you can build a little ethogram of its behaviors If you look at the gene expression here, this volcano plot, they express about 9,000 genes differently than the cells in the body that they come from In other words, about half the genome is drastically remodeled But, but we haven't touched the DNA We haven't done anything to the genome We haven't added any weird nanomaterials There are no synthetic biology circuits These are completely wild type cells and yet they're capable of having a very different embodiment This looks nothing like any stage of human development And they pick and choose what genes out of the, out of the genome they're going to express They have some wacky capabilities Like if you played a bunch of human neurons here, these anthrobots will come and they'll sit down in this superbot cluster and they start repairing the gap",
+  "token_count": 199,
+  "sentence_count": 18,
+  "start_sentence": 32,
+  "end_sentence": 49,
+  "start_time_ms": null,
+  "end_time_ms": null,
+  "start_time_seconds": null,
+  "end_time_seconds": null,
+  "primary_topics": [
+    "Tracheal epithelial cells",
+    "Self-assembly of cells",
+    "Gene expression",
+    "Genome remodeling"
+  ],
+  "secondary_topics": [
+    "Cellular behaviors",
+    "Ethogram",
+    "Volcano plot",
+    "Wild type cells",
+    "Synthetic biology circuits",
+    "Human development stages",
+    "Neuron repair"
+  ],
+  "key_terms": [
+    "Tracheal epithelial cells",
+    "Self-assembly",
+    "Gene expression",
+    "Genome",
+    "Ethogram",
+    "Volcano plot",
+    "Wild type cells",
+    "Synthetic biology circuits",
+    "Neurons",
+    "Anthrobots",
+    "Superbot cluster"
+  ],
+  "content_summary": "The presentation discusses an experiment where human tracheal epithelial cells self-assemble into a motile creature with distinct behaviors. Despite no alterations to the genome or addition of synthetic materials, these cells express about 9,000 genes differently than their original state, indicating significant genome remodeling. These assembled cells, referred to as 'anthrobots', also demonstrate the ability to repair neurons.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
+  "enhanced": true
+}
