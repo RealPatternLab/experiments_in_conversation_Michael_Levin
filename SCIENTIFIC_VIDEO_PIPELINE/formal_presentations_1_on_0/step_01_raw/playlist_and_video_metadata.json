@@ -2,7 +2,7 @@
   "total_urls": 1,
   "valid_urls": 1,
   "invalid_urls": 0,
-  "total_videos_found": 3,
+  "total_videos_found": 1,
   "playlists": [
     {
       "url": "https://www.youtube.com/playlist?list=PLmR3yIXYqfUIk4xQ_cp_MwuJlAq2PlCwH",
@@ -39,44 +39,16 @@
           "category_id": [],
           "default_language": null,
           "default_audio_language": null
-        },
-        {
-          "video_id": "zKjdkxrvE6k",
-          "title": "\"Life, Mind, and Computing: a diverse intelligence perspective\" by Michael Levin",
-          "description": null,
-          "channel_title": "Michael Levin's Academic Content",
-          "published_at": "",
-          "playlist_position": 2,
-          "duration": 1988,
-          "view_count": 5700,
-          "like_count": 0,
-          "category_id": [],
-          "default_language": null,
-          "default_audio_language": null
-        },
-        {
-          "video_id": "xNgq3zqYsoA",
-          "title": "\"Ethics and the New Biology\" by Michael Levin",
-          "description": null,
-          "channel_title": "Michael Levin's Academic Content",
-          "published_at": "",
-          "playlist_position": 3,
-          "duration": 1953,
-          "view_count": 7000,
-          "like_count": 0,
-          "category_id": [],
-          "default_language": null,
-          "default_audio_language": null
         }
       ],
-      "total_videos_found": 3,
+      "total_videos_found": 1,
       "new_videos": true,
       "new_video_ids": [
-        "xNgq3zqYsoA"
+        "FzFFeRVEdUM"
       ]
     }
   ],
-  "processing_timestamp": "2025-08-17T14:13:16.827301",
-  "previous_videos_count": 2,
+  "processing_timestamp": "2025-08-17T18:14:10.175864",
+  "previous_videos_count": 0,
   "new_videos_detected": true
 }

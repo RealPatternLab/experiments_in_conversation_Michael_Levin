@@ -1,14 +1,14 @@
 {
   "chunk_id": "FzFFeRVEdUM_chunk_008",
-  "text": "William James defined intelligence as the ability to get to the same goal by different means That's a very good definition because it doesn't say it has to be a brain It doesn't say what problem space you're operating with It just says you have a capacity to navigate that space in a way to solve problems The very first problem that the collective has to solve is to get aligned towards a specific journey in anatomical space Here's what I mean by that When you look at an early embryo, here's an embryonic blastodisk There might be, let's say, 100,000 cells We look at this and we say, oh, there's an embryo What are you counting when you say there's one embryo What is there one of Because actually there's 100,000 cells And within each one of those there are organelles and chemicals and so on What are you actually counting I'm going to say that what you're actually counting is alignment You are counting the fact that all of these cells, under normal circumstances, all of these cells are committed to the same story, to the same model of where in anatomical space they are going to go Anatomical space is basically the space of all possible geometric configurations of the body And all of these cells are going to collaborate on building one particular structure, Meaning they're going to get from the point of a single cell to the configuration of this complicated embryo Because they have all bought into the same story about where they're going to go Okay, what keeps these things aligned is a self model that they all accept",
+  "text": "William James defined intelligence as the ability to get to the same goal by different means. That's a very good definition because it doesn't say it has to be a brain. It doesn't say what problem space you're operating with. It just says you have a capacity to navigate that space in a way to solve problems. The very first problem that the collective has to solve is to get aligned towards a specific journey in anatomical space. Here's what I mean by that. When you look at an early embryo, here's an embryonic blastodisk. There might be, let's say, 100,000 cells. We look at this and we say, oh, there's an embryo. What are you counting when you say there's one embryo? What is there one of? Because actually there's 100,000 cells. And within each one of those there are organelles and chemicals and so on. What are you actually counting? I'm going to say that what you're actually counting is alignment. You are counting the fact that all of these cells, under normal circumstances, all of these cells are committed to the same story, to the same model of where in anatomical space they are going to go. Anatomical space is basically the space of all possible geometric configurations of the body. And all of these cells are going to collaborate on building one particular structure, Meaning they're going to get from the point of a single cell to the configuration of this complicated embryo. Because they have all bought into the same story about where they're going to go. Okay, what keeps these things aligned is a self model that they all accept.",
   "token_count": 276,
   "sentence_count": 20,
   "start_sentence": 8,
   "end_sentence": 27,
-  "start_time_ms": null,
-  "end_time_ms": null,
-  "start_time_seconds": null,
-  "end_time_seconds": null,
+  "start_time_ms": 528770,
+  "end_time_ms": 614100,
+  "start_time_seconds": 528.77,
+  "end_time_seconds": 614.1,
   "primary_topics": [
     "Intelligence Definition",
     "Embryonic Development",
@@ -16,20 +16,22 @@
     "Anatomical Space"
   ],
   "secondary_topics": [
-    "Problem Solving",
     "Cellular Collaboration",
-    "Geometric Configurations of the Body",
     "Self Model",
-    "Cellular Commitment"
+    "Geometric Configurations of the Body",
+    "Cellular Commitment",
+    "Problem Solving Capacity"
   ],
   "key_terms": [
-    "Embryonic Blastodisk",
+    "Intelligence",
+    "Embryo",
+    "Blastodisk",
+    "Cellular Alignment",
     "Anatomical Space",
-    "Alignment",
-    "Organelles",
-    "Embryo"
+    "Self Model",
+    "Geometric Configurations"
   ],
-  "content_summary": "The speaker discusses the concept of intelligence and its application to embryonic development. They emphasize the importance of alignment in cells during embryonic development, where each cell commits to a specific path in anatomical space, leading to the formation of a complex embryo.",
-  "scientific_domain": "Developmental Biology",
+  "content_summary": "The presentation discusses the concept of intelligence as the ability to achieve a goal through various means, applying this to the process of embryonic development. It emphasizes the importance of cellular alignment and collaboration in building a specific anatomical structure, suggesting that cells maintain alignment through a shared 'self model'.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
   "enhanced": true
 }

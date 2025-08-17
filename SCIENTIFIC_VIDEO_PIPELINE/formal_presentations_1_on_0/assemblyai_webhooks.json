@@ -1,28 +1,10 @@
 {
   "pending_transcriptions": {},
   "completed_transcriptions": {
-    "f1f5b9b8-22bf-4d2b-b85d-046d927e8e24": {
-      "video_id": "mOaSHpTOwu0",
-      "video_title": "\"Engineering Agential Materials\" by Michael Levin",
-      "completed_at": "2025-08-17T11:23:08.700052",
-      "status": "completed"
-    },
-    "7a0e47d0-1106-4972-9124-1986cef7fc89": {
+    "a2fc2f78-4422-437b-b3a3-216cf023e01d": {
       "video_id": "FzFFeRVEdUM",
       "video_title": "\"Scaling Intelligence in Biology, Artificial Life, and Beyond\" by Michael Levin",
-      "completed_at": "2025-08-17T11:58:52.241874",
-      "status": "completed"
-    },
-    "b0e6326b-6c40-40c7-95fa-b527cf2fb098": {
-      "video_id": "zKjdkxrvE6k",
-      "video_title": "\"Life, Mind, and Computing: a diverse intelligence perspective\" by Michael Levin",
-      "completed_at": "2025-08-17T13:59:50.060229",
-      "status": "completed"
-    },
-    "80a43b69-7278-4002-a3a3-acf7b4f2e1f2": {
-      "video_id": "xNgq3zqYsoA",
-      "video_title": "\"Ethics and the New Biology\" by Michael Levin",
-      "completed_at": "2025-08-17T14:19:59.765380",
+      "completed_at": "2025-08-17T18:20:14.185724",
       "status": "completed"
     }
   }

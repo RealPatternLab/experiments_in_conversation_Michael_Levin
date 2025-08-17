@@ -5,7 +5,7 @@
         "current": "\"Scaling Intelligence in Biology, Artificial Life, and Beyond\" by Michael Levin",
         "history": [
           {
-            "timestamp": "2025-08-17T13:01:46.297749",
+            "timestamp": "2025-08-17T18:14:10.175429",
             "value": "\"Scaling Intelligence in Biology, Artificial Life, and Beyond\" by Michael Levin",
             "action": "initial"
           }
@@ -17,7 +17,7 @@
         ],
         "history": [
           {
-            "timestamp": "2025-08-17T13:01:46.297755",
+            "timestamp": "2025-08-17T18:14:10.175435",
             "playlist_id": "PLmR3yIXYqfUIk4xQ_cp_MwuJlAq2PlCwH",
             "action": "added"
           }
@@ -32,12 +32,12 @@
       "step_03_transcription": "completed",
       "step_04_semantic_chunking": "completed",
       "step_05_frame_extraction": "completed",
-      "step_06_frame_chunk_alignment": "pending",
+      "step_06_frame_chunk_alignment": "completed",
       "step_07_consolidated_embedding": "completed",
-      "current_status": "partially_completed",
+      "current_status": "completed",
       "current_step": "step_01_playlist_processing",
-      "created_at": "2025-08-17T13:01:46.297758",
-      "last_updated": "2025-08-17T14:29:29.673011",
+      "created_at": "2025-08-17T18:14:10.175438",
+      "last_updated": "2025-08-17T18:25:55.727708",
       "chunk_count": 0,
       "frame_count": 0,
       "error_count": 0,
@@ -50,173 +50,29 @@
         "frame_count": null,
         "playlist_id": "PLmR3yIXYqfUIk4xQ_cp_MwuJlAq2PlCwH",
         "local_path": "",
-        "download_timestamp": "2025-08-17T13:01:51.951288",
-        "status": "already_processed",
-        "playlist_added": "2025-08-17T14:13:16.992871",
+        "download_timestamp": "2025-08-17T18:14:16.297282",
+        "transcript_file": "step_03_transcription/FzFFeRVEdUM_transcript.json",
+        "text_file": "step_03_transcription/FzFFeRVEdUM_transcript.txt",
+        "completed_at": "2025-08-17T18:25:55.727455",
         "chunks_file": "step_04_extract_chunks/FzFFeRVEdUM_chunks.json",
         "chunks_dir": "step_04_extract_chunks/FzFFeRVEdUM_chunks",
         "total_chunks": 26,
         "total_tokens": 4591,
-        "completed_at": "2025-08-17T14:29:29.672962",
         "frames_summary_file": "step_05_frames/FzFFeRVEdUM_frames_summary.json",
         "video_frames_dir": "step_05_frames/FzFFeRVEdUM",
         "total_frames_extracted": 81,
-        "timestamp": "20250817_142846_799",
-        "content_hash": "21e510622bbe24dee7b645392e5bb1a0",
+        "alignments_file": "FzFFeRVEdUM_alignments.json",
+        "rag_ready_file": "FzFFeRVEdUM_rag_ready_aligned_content.json",
+        "summary_file": "FzFFeRVEdUM_alignment_summary.json",
+        "total_alignments": 26,
+        "timestamp": "20250817_182538_415",
+        "content_hash": "082a7d78adac63f4eed8a81a3f6c580e",
         "embedding_files": {
-          "text_index": "text_index_20250817_142846_799.index",
-          "visual_index": "visual_index_20250817_142846_799.index",
-          "combined_index": "combined_index_20250817_142846_799.index",
-          "embeddings": "chunks_embeddings_20250817_142846_799.npy",
-          "metadata": "chunks_metadata_20250817_142846_799.pkl"
-        },
-        "transcript_file": "step_03_transcription/FzFFeRVEdUM_transcript.json",
-        "text_file": "step_03_transcription/FzFFeRVEdUM_transcript.txt"
-      }
-    },
-    "zKjdkxrvE6k": {
-      "video_title": {
-        "current": "\"Life, Mind, and Computing: a diverse intelligence perspective\" by Michael Levin",
-        "history": [
-          {
-            "timestamp": "2025-08-17T13:42:49.335353",
-            "value": "\"Life, Mind, and Computing: a diverse intelligence perspective\" by Michael Levin",
-            "action": "initial"
-          }
-        ]
-      },
-      "playlist_ids": {
-        "current": [
-          "PLmR3yIXYqfUIk4xQ_cp_MwuJlAq2PlCwH"
-        ],
-        "history": [
-          {
-            "timestamp": "2025-08-17T13:42:49.335360",
-            "playlist_id": "PLmR3yIXYqfUIk4xQ_cp_MwuJlAq2PlCwH",
-            "action": "added"
-          }
-        ]
-      },
-      "upload_date": {
-        "current": null,
-        "history": []
-      },
-      "step_01_playlist_processing": "completed",
-      "step_02_video_download": "completed",
-      "step_03_transcription": "completed",
-      "step_04_semantic_chunking": "completed",
-      "step_05_frame_extraction": "completed",
-      "step_06_frame_chunk_alignment": "pending",
-      "step_07_consolidated_embedding": "completed",
-      "current_status": "partially_completed",
-      "current_step": "step_01_playlist_processing",
-      "created_at": "2025-08-17T13:42:49.335365",
-      "last_updated": "2025-08-17T14:29:29.673942",
-      "chunk_count": 0,
-      "frame_count": 0,
-      "error_count": 0,
-      "errors": [],
-      "processing_metadata": {
-        "duration": null,
-        "file_size_mb": 31.681110382080078,
-        "transcript_length": null,
-        "chunk_count": null,
-        "frame_count": null,
-        "playlist_id": "PLmR3yIXYqfUIk4xQ_cp_MwuJlAq2PlCwH",
-        "local_path": "",
-        "download_timestamp": "2025-08-17T13:42:57.329323",
-        "transcript_file": "step_03_transcription/zKjdkxrvE6k_transcript.json",
-        "text_file": "step_03_transcription/zKjdkxrvE6k_transcript.txt",
-        "completed_at": "2025-08-17T14:29:29.673899",
-        "status": "already_processed",
-        "playlist_added": "2025-08-17T14:13:16.994048",
-        "chunks_file": "step_04_extract_chunks/zKjdkxrvE6k_chunks.json",
-        "chunks_dir": "step_04_extract_chunks/zKjdkxrvE6k_chunks",
-        "total_chunks": 40,
-        "total_tokens": 6204,
-        "frames_summary_file": "step_05_frames/zKjdkxrvE6k_frames_summary.json",
-        "video_frames_dir": "step_05_frames/zKjdkxrvE6k",
-        "total_frames_extracted": 111,
-        "timestamp": "20250817_142846_799",
-        "content_hash": "21e510622bbe24dee7b645392e5bb1a0",
-        "embedding_files": {
-          "text_index": "text_index_20250817_142846_799.index",
-          "visual_index": "visual_index_20250817_142846_799.index",
-          "combined_index": "combined_index_20250817_142846_799.index",
-          "embeddings": "chunks_embeddings_20250817_142846_799.npy",
-          "metadata": "chunks_metadata_20250817_142846_799.pkl"
-        }
-      }
-    },
-    "xNgq3zqYsoA": {
-      "video_title": {
-        "current": "\"Ethics and the New Biology\" by Michael Levin",
-        "history": [
-          {
-            "timestamp": "2025-08-17T14:13:16.825999",
-            "value": "\"Ethics and the New Biology\" by Michael Levin",
-            "action": "initial"
-          }
-        ]
-      },
-      "playlist_ids": {
-        "current": [
-          "PLmR3yIXYqfUIk4xQ_cp_MwuJlAq2PlCwH"
-        ],
-        "history": [
-          {
-            "timestamp": "2025-08-17T14:13:16.826005",
-            "playlist_id": "PLmR3yIXYqfUIk4xQ_cp_MwuJlAq2PlCwH",
-            "action": "added"
-          }
-        ]
-      },
-      "upload_date": {
-        "current": null,
-        "history": []
-      },
-      "step_01_playlist_processing": "completed",
-      "step_02_video_download": "completed",
-      "step_03_transcription": "completed",
-      "step_04_semantic_chunking": "completed",
-      "step_05_frame_extraction": "completed",
-      "step_06_frame_chunk_alignment": "pending",
-      "step_07_consolidated_embedding": "completed",
-      "current_status": "partially_completed",
-      "current_step": "step_01_playlist_processing",
-      "created_at": "2025-08-17T14:13:16.826008",
-      "last_updated": "2025-08-17T14:29:29.672045",
-      "chunk_count": 0,
-      "frame_count": 0,
-      "error_count": 0,
-      "errors": [],
-      "processing_metadata": {
-        "duration": null,
-        "file_size_mb": 27.287156105041504,
-        "transcript_length": null,
-        "chunk_count": null,
-        "frame_count": null,
-        "playlist_id": "PLmR3yIXYqfUIk4xQ_cp_MwuJlAq2PlCwH",
-        "local_path": "",
-        "download_timestamp": "2025-08-17T14:13:28.522553",
-        "transcript_file": "step_03_transcription/xNgq3zqYsoA_transcript.json",
-        "text_file": "step_03_transcription/xNgq3zqYsoA_transcript.txt",
-        "completed_at": "2025-08-17T14:29:29.671818",
-        "chunks_file": "step_04_extract_chunks/xNgq3zqYsoA_chunks.json",
-        "chunks_dir": "step_04_extract_chunks/xNgq3zqYsoA_chunks",
-        "total_chunks": 39,
-        "total_tokens": 6314,
-        "frames_summary_file": "step_05_frames/xNgq3zqYsoA_frames_summary.json",
-        "video_frames_dir": "step_05_frames/xNgq3zqYsoA",
-        "total_frames_extracted": 109,
-        "timestamp": "20250817_142846_799",
-        "content_hash": "21e510622bbe24dee7b645392e5bb1a0",
-        "embedding_files": {
-          "text_index": "text_index_20250817_142846_799.index",
-          "visual_index": "visual_index_20250817_142846_799.index",
-          "combined_index": "combined_index_20250817_142846_799.index",
-          "embeddings": "chunks_embeddings_20250817_142846_799.npy",
-          "metadata": "chunks_metadata_20250817_142846_799.pkl"
+          "text_index": "text_index_20250817_182538_415.index",
+          "visual_index": "visual_index_20250817_182538_415.index",
+          "combined_index": "combined_index_20250817_182538_415.index",
+          "embeddings": "chunks_embeddings_20250817_182538_415.npy",
+          "metadata": "chunks_metadata_20250817_182538_415.pkl"
         }
       }
     }
@@ -228,13 +84,13 @@
       "videos_processed": 0,
       "videos_failed": 0,
       "current_status": "processing",
-      "created_at": "2025-08-17T13:01:46.297151",
-      "last_updated": "2025-08-17T13:01:46.297154",
+      "created_at": "2025-08-17T18:14:10.174767",
+      "last_updated": "2025-08-17T18:14:10.174770",
       "errors": []
     }
   },
   "pipeline_info": {
-    "total_steps": 7,
+    "total_steps": 8,
     "steps": [
       "step_01_playlist_processing",
       "step_02_video_download",
@@ -242,9 +98,10 @@
       "step_04_semantic_chunking",
       "step_05_frame_extraction",
       "step_06_frame_chunk_alignment",
-      "step_07_consolidated_embedding"
+      "step_07_consolidated_embedding",
+      "step_08_cleanup"
     ]
   },
-  "created_at": "2025-08-17T13:01:44.500553",
-  "last_updated": "2025-08-17T14:29:29.673948"
+  "created_at": "2025-08-17T18:14:08.385632",
+  "last_updated": "2025-08-17T18:25:55.727753"
 }

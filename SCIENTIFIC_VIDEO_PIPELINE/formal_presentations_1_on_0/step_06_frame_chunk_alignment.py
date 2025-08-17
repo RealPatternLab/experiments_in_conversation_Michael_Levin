@@ -10,6 +10,7 @@ import json
 import logging
 from pathlib import Path
 from typing import Dict, Any, List, Optional
+from datetime import datetime
 from dotenv import load_dotenv
 from pipeline_progress_queue import get_progress_queue
 
@@ -192,16 +193,28 @@ class FrameChunkAligner:
             aligned_frames = []
             
             # Find frames that fall within this chunk's actual time range
+            frames_in_range = []
             for frame_timestamp, frame_info in frame_timestamps:
                 if chunk_start <= frame_timestamp <= chunk_end:
                     # Frame is within chunk time range
-                    aligned_frames.append({
+                    frames_in_range.append({
                         'frame_id': frame_info.get('frame_id'),
                         'timestamp': frame_timestamp,
                         'file_path': frame_info.get('file_path'),
                         'file_size': frame_info.get('file_size'),
                         'alignment_confidence': 0.9  # High confidence for timestamp-based
                     })
+            
+            # Only keep the FIRST (earliest) frame if multiple frames match
+            # This prevents cluttering the RAG content with multiple similar frames
+            if frames_in_range:
+                # Sort by timestamp and take only the first one
+                frames_in_range.sort(key=lambda x: x.get('timestamp', 0))
+                aligned_frames = [frames_in_range[0]]  # Only the first frame
+                if len(frames_in_range) > 1:
+                    logger.info(f"Multiple frames found for {chunk_id} ({len(frames_in_range)} frames), keeping only the first at {frames_in_range[0]['timestamp']}s")
+                else:
+                    logger.debug(f"Single frame found for {chunk_id} at {frames_in_range[0]['timestamp']}s")
             
             # If no frames found within range, find closest frame
             if not aligned_frames and frame_timestamps:

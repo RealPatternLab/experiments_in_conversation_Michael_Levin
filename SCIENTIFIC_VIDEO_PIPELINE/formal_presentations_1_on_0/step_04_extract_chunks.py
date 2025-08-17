@@ -139,11 +139,12 @@ class SemanticChunker:
         """Create semantic chunks with timestamp information from AssemblyAI utterances"""
         chunks = []
         
-        # Split by sentences first
-        sentences = self.split_into_sentences(text)
-        
         # Create a mapping from sentence text to timestamp ranges
-        sentence_timestamps = self.map_sentences_to_timestamps(sentences, utterances)
+        # This now builds sentences directly from word-level data
+        sentence_timestamps = self.map_sentences_to_timestamps([], utterances)
+        
+        # Get sentences from the timestamp mapping (they're built from words)
+        sentences = list(sentence_timestamps.keys())
         
         current_chunk = []
         current_tokens = 0
@@ -158,18 +159,35 @@ class SemanticChunker:
             if current_tokens + sentence_tokens > self.max_chunk_tokens and current_chunk:
                 # Save current chunk with timing
                 chunk_text = ' '.join(current_chunk)
-                chunks.append({
-                    'chunk_id': f"{video_id}_chunk_{len(chunks):03d}",
-                    'text': chunk_text,
-                    'token_count': current_tokens,
-                    'sentence_count': len(current_chunk),
-                    'start_sentence': len(chunks),
-                    'end_sentence': len(chunks) + len(current_chunk) - 1,
-                    'start_time_ms': current_start_time,
-                    'end_time_ms': current_end_time,
-                    'start_time_seconds': current_start_time / 1000.0 if current_start_time else None,
-                    'end_time_seconds': current_end_time / 1000.0 if current_end_time else None
-                })
+                # Validate timing before creating chunk
+                if current_start_time is not None and current_end_time is not None and current_end_time > current_start_time:
+                    chunks.append({
+                        'chunk_id': f"{video_id}_chunk_{len(chunks):03d}",
+                        'text': chunk_text,
+                        'token_count': current_tokens,
+                        'sentence_count': len(current_chunk),
+                        'start_sentence': len(chunks),
+                        'end_sentence': len(chunks) + len(current_chunk) - 1,
+                        'start_time_ms': current_start_time,
+                        'end_time_ms': current_end_time,
+                        'start_time_seconds': current_start_time / 1000.0,
+                        'end_time_seconds': current_end_time / 1000.0
+                    })
+                else:
+                    logger.warning(f"Skipping chunk with invalid timing: start={current_start_time}, end={current_end_time}")
+                    # Create chunk without timing
+                    chunks.append({
+                        'chunk_id': f"{video_id}_chunk_{len(chunks):03d}",
+                        'text': chunk_text,
+                        'token_count': current_tokens,
+                        'sentence_count': len(current_chunk),
+                        'start_sentence': len(chunks),
+                        'end_sentence': len(chunks) + len(current_chunk) - 1,
+                        'start_time_ms': None,
+                        'end_time_ms': None,
+                        'start_time_seconds': None,
+                        'end_time_seconds': None
+                    })
                 
                 # Start new chunk with minimal overlap (just last sentence for continuity)
                 current_chunk = [current_chunk[-1]] if current_chunk else []
@@ -184,18 +202,35 @@ class SemanticChunker:
             if self.is_topic_boundary(sentence) and current_chunk and current_tokens > self.min_chunk_tokens:
                 # Force a chunk break at topic boundaries
                 chunk_text = ' '.join(current_chunk)
-                chunks.append({
-                    'chunk_id': f"{video_id}_chunk_{len(chunks):03d}",
-                    'text': chunk_text,
-                    'token_count': current_tokens,
-                    'sentence_count': len(current_chunk),
-                    'start_sentence': len(chunks),
-                    'end_sentence': len(chunks) + len(current_chunk) - 1,
-                    'start_time_ms': current_start_time,
-                    'end_time_ms': current_end_time,
-                    'start_time_seconds': current_start_time / 1000.0 if current_start_time else None,
-                    'end_time_seconds': current_end_time / 1000.0 if current_end_time else None
-                })
+                # Validate timing before creating chunk
+                if current_start_time is not None and current_end_time is not None and current_end_time > current_start_time:
+                    chunks.append({
+                        'chunk_id': f"{video_id}_chunk_{len(chunks):03d}",
+                        'text': chunk_text,
+                        'token_count': current_tokens,
+                        'sentence_count': len(current_chunk),
+                        'start_sentence': len(chunks),
+                        'end_sentence': len(chunks) + len(current_chunk) - 1,
+                        'start_time_ms': current_start_time,
+                        'end_time_ms': current_end_time,
+                        'start_time_seconds': current_start_time / 1000.0,
+                        'end_time_seconds': current_end_time / 1000.0
+                    })
+                else:
+                    logger.warning(f"Skipping chunk with invalid timing: start={current_start_time}, end={current_end_time}")
+                    # Create chunk without timing
+                    chunks.append({
+                        'chunk_id': f"{video_id}_chunk_{len(chunks):03d}",
+                        'text': chunk_text,
+                        'token_count': current_tokens,
+                        'sentence_count': len(current_chunk),
+                        'start_sentence': len(chunks),
+                        'end_sentence': len(chunks) + len(current_chunk) - 1,
+                        'start_time_ms': None,
+                        'end_time_ms': None,
+                        'start_time_seconds': None,
+                        'end_time_seconds': None
+                    })
                 
                 current_chunk = []
                 current_tokens = 0
@@ -207,25 +242,43 @@ class SemanticChunker:
             current_tokens += sentence_tokens
             
             # Update timing for the chunk
-            if current_start_time is None:
-                current_start_time = sentence_timing.get('start', None)
-            current_end_time = sentence_timing.get('end', None)
+            if current_start_time is None and sentence_timing.get('start'):
+                current_start_time = sentence_timing.get('start')
+            if sentence_timing.get('end'):
+                current_end_time = sentence_timing.get('end')
         
         # Add final chunk
         if current_chunk:
             chunk_text = ' '.join(current_chunk)
-            chunks.append({
-                'chunk_id': f"{video_id}_chunk_{len(chunks):03d}",
-                'text': chunk_text,
-                'token_count': current_tokens,
-                'sentence_count': len(current_chunk),
-                'start_sentence': len(chunks),
-                'end_sentence': len(chunks) + len(current_chunk) - 1,
-                'start_time_ms': current_start_time,
-                'end_time_ms': current_end_time,
-                'start_time_seconds': current_start_time / 1000.0 if current_start_time else None,
-                'end_time_seconds': current_end_time / 1000.0 if current_end_time else None
-            })
+            # Validate timing before creating chunk
+            if current_start_time is not None and current_end_time is not None and current_end_time > current_start_time:
+                chunks.append({
+                    'chunk_id': f"{video_id}_chunk_{len(chunks):03d}",
+                    'text': chunk_text,
+                    'token_count': current_tokens,
+                    'sentence_count': len(current_chunk),
+                    'start_sentence': len(chunks),
+                    'end_sentence': len(chunks) + len(current_chunk) - 1,
+                    'start_time_ms': current_start_time,
+                    'end_time_ms': current_end_time,
+                    'start_time_seconds': current_start_time / 1000.0,
+                    'end_time_seconds': current_end_time / 1000.0
+                })
+            else:
+                logger.warning(f"Skipping final chunk with invalid timing: start={current_start_time}, end={current_end_time}")
+                # Create chunk without timing
+                chunks.append({
+                    'chunk_id': f"{video_id}_chunk_{len(chunks):03d}",
+                    'text': chunk_text,
+                    'token_count': current_tokens,
+                    'sentence_count': len(current_chunk),
+                    'start_sentence': len(chunks),
+                    'end_sentence': len(chunks) + len(current_chunk) - 1,
+                    'start_time_ms': None,
+                    'end_time_ms': None,
+                    'start_time_seconds': None,
+                    'end_time_seconds': None
+                })
         
         logger.info(f"Created {len(chunks)} timestamped chunks for {video_id}")
         return chunks
@@ -241,74 +294,77 @@ class SemanticChunker:
         """Map sentence text to their start/end timestamps using AssemblyAI word-level data"""
         sentence_timestamps = {}
         
-        # Flatten all words from all utterances
-        all_words = []
-        for utterance in utterances:
-            if 'words' in utterance:
-                all_words.extend(utterance['words'])
+        # Get words directly from the top-level 'words' field (AssemblyAI structure)
+        # The 'utterances' parameter is actually the words list from the transcript
+        all_words = utterances  # utterances is actually the words list
         
         if not all_words:
-            logger.warning("No word-level timing data found in utterances")
+            logger.warning("No word-level timing data found")
             return sentence_timestamps
         
         # Sort words by start time
         all_words.sort(key=lambda x: x.get('start', 0))
         
-        # Create a continuous text stream with timing information
-        full_text = ""
-        word_timings = []
+        # Instead of trying to find sentences in text, build sentences from words
+        # and assign timestamps directly
+        current_sentence = ""
+        current_sentence_words = []
+        sentence_count = 0
         
         for word_data in all_words:
             word_text = word_data.get('text', '').strip()
-            if word_text:
-                full_text += word_text + " "
-                word_timings.append({
-                    'text': word_text,
-                    'start': word_data.get('start', 0),
-                    'end': word_data.get('end', 0)
-                })
-        
-        full_text = full_text.strip()
-        
-        # For each sentence, find its position in the full text and map to timestamps
-        for sentence in sentences:
-            sentence_clean = sentence.strip()
-            
-            # Find the sentence in the full text
-            sentence_start_pos = full_text.find(sentence_clean)
-            if sentence_start_pos == -1:
-                logger.warning(f"Could not find sentence in full text: {sentence_clean[:50]}...")
+            if not word_text:
                 continue
             
-            sentence_end_pos = sentence_start_pos + len(sentence_clean)
+            # Add word to current sentence
+            current_sentence += word_text + " "
+            current_sentence_words.append(word_data)
             
-            # Find which words correspond to this sentence
-            sentence_words = []
-            current_pos = 0
+            # Check if we've reached a sentence boundary
+            # Look for sentence-ending punctuation or natural breaks
+            if (word_text.endswith('.') or word_text.endswith('!') or word_text.endswith('?') or
+                word_text.endswith('...') or len(current_sentence.strip()) > 200):
+                
+                # Finalize current sentence
+                sentence_text = current_sentence.strip()
+                
+                if sentence_text and current_sentence_words:
+                    # Get timing from first and last word
+                    sentence_start = current_sentence_words[0]['start']
+                    sentence_end = current_sentence_words[-1]['end']
+                    
+                    sentence_timestamps[sentence_text] = {
+                        'start': sentence_start,
+                        'end': sentence_end
+                    }
+                    
+                    logger.debug(f"Sentence {sentence_count}: {sentence_start}ms - {sentence_end}ms ({len(current_sentence_words)} words)")
+                    sentence_count += 1
+                
+                # Reset for next sentence
+                current_sentence = ""
+                current_sentence_words = []
+        
+        # Handle the last sentence if it exists
+        if current_sentence.strip() and current_sentence_words:
+            sentence_text = current_sentence.strip()
+            sentence_start = current_sentence_words[0]['start']
+            sentence_end = current_sentence_words[-1]['end']
             
-            for word_timing in word_timings:
-                word_start = current_pos
-                word_end = current_pos + len(word_timing['text']) + 1  # +1 for space
-                
-                # Check if this word overlaps with our sentence
-                if (word_start < sentence_end_pos and word_end > sentence_start_pos):
-                    sentence_words.append(word_timing)
-                
-                current_pos = word_end
+            sentence_timestamps[sentence_text] = {
+                'start': sentence_start,
+                'end': sentence_end
+            }
             
-            if sentence_words:
-                # Get the actual start and end times for this sentence
-                sentence_start = sentence_words[0]['start']
-                sentence_end = sentence_words[-1]['end']
-                
-                sentence_timestamps[sentence] = {
-                    'start': sentence_start,
-                    'end': sentence_end
-                }
-                
-                logger.debug(f"Sentence mapped: {sentence_start}ms - {sentence_end}ms ({len(sentence_words)} words)")
+            logger.debug(f"Final sentence: {sentence_start}ms - {sentence_end}ms ({len(current_sentence_words)} words)")
+            sentence_count += 1
         
         logger.info(f"Mapped {len(sentence_timestamps)} sentences to timestamps")
+        if sentence_timestamps:
+            # Show a few examples
+            sample_sentences = list(sentence_timestamps.items())[:3]
+            for sentence, timing in sample_sentences:
+                logger.info(f"Sample mapping: '{sentence[:50]}...' -> {timing['start']}ms - {timing['end']}ms")
         return sentence_timestamps
     
     def is_topic_boundary(self, sentence: str) -> bool:
