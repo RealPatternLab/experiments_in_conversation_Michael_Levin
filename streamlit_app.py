@@ -28,8 +28,9 @@ import sys
 import pickle
 from typing import Optional, List
 import requests
-from flask import Flask, request, jsonify
-from threading import Thread
+# Flask imports are only needed for the webhook server, not for Streamlit
+# from flask import Flask, request, jsonify
+# from threading import Thread
 try:
     import faiss
     FAISS_AVAILABLE = True
@@ -130,11 +131,13 @@ def get_completed_transcriptions():
     webhook_data = load_webhook_storage()
     return webhook_data["completed_transcriptions"]
 
-def webhook_endpoint():
-    """Webhook endpoint for AssemblyAI to call when transcription completes."""
-    # This function can be called by external HTTP requests
-    # AssemblyAI will POST to your Streamlit app URL + /webhook
-    pass
+# Webhook endpoint functionality is handled by the separate webhook_server.py
+# This function is not needed in the Streamlit app
+# def webhook_endpoint():
+#     """Webhook endpoint for AssemblyAI to call when transcription completes."""
+#     # This function can be called by external HTTP requests
+#     # AssemblyAI will POST to your webhook server, not to Streamlit
+#     pass
 
 def webhook_status_page():
     """Display webhook status and transcription progress."""
@@ -1731,8 +1734,21 @@ def main():
         
         st.markdown("---")
         
-        # Main conversation interface
-        conversational_page()
+        # Navigation
+        st.sidebar.header("🧭 Navigation")
+        page = st.sidebar.selectbox(
+            "Choose a page:",
+            ["💬 Chat with Michael Levin", "🎯 Webhook Status"],
+            key="page_selector"
+        )
+        
+        st.markdown("---")
+        
+        # Main page routing
+        if page == "💬 Chat with Michael Levin":
+            conversational_page()
+        elif page == "🎯 Webhook Status":
+            webhook_status_page()
         
     except Exception as e:
         st.error(f"Failed to initialize RAG system: {e}")

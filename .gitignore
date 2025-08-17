@@ -35,6 +35,24 @@ share/python-wheels/
 *.egg
 MANIFEST
 
+# Media files (large files that shouldn't be in git)
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wmv
+*.flv
+*.webm
+*.m4v
+*.3gp
+*.wav
+*.mp3
+*.aac
+*.flac
+*.ogg
+*.m4a
+*.wma
+
 # Keep Streamlit config
 !.streamlit/
 
