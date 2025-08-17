@@ -102,10 +102,10 @@ class SemanticChunker:
             transcript_data = json.load(f)
         
         # Extract text and metadata
-        transcript_text = transcript_data.get('transcript', '')
+        transcript_text = transcript_data.get('text', '')
         video_metadata = transcript_data.get('video_metadata', {})
         transcript_metadata = transcript_data.get('transcript_metadata', {})
-        utterances = transcript_data.get('utterances', [])
+        utterances = transcript_data.get('words', [])  # AssemblyAI uses 'words' instead of 'utterances'
         
         if not transcript_text:
             logger.warning(f"No transcript text found for {video_id}")

@@ -132,9 +132,9 @@ def list_webhooks():
 
 if __name__ == '__main__':
     logger.info("Starting AssemblyAI webhook server...")
-    logger.info("Webhook endpoint: http://localhost:5000/webhook")
-    logger.info("Health check: http://localhost:5000/health")
-    logger.info("Webhook data: http://localhost:5000/webhooks")
+    logger.info("Webhook endpoint: http://localhost:5001/webhook")
+    logger.info("Health check: http://localhost:5001/health")
+    logger.info("Webhook data: http://localhost:5001/webhooks")
     
     # Create webhook storage file if it doesn't exist
     if not os.path.exists(WEBHOOK_STORAGE_FILE):
@@ -143,4 +143,4 @@ if __name__ == '__main__':
         logger.info(f"Created initial webhook storage file: {WEBHOOK_STORAGE_FILE}")
     
     # Run the server
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5001, debug=True)
