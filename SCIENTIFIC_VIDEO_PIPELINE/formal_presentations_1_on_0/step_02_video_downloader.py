@@ -371,7 +371,7 @@ def process_playlist_videos(playlist_data: Dict, output_dir: Path, max_videos: O
                     'video_id': video_id,
                     'title': video_title,
                     'status': 'already_processed',
-                    'local_path': f"video_{video_id}/video.mp4",  # Assumed path
+                    'local_path': str(output_dir / f"video_{video_id}/video.mp4"),  # Full path
                     'file_size_mb': 0,  # Will be updated if file exists
                     'playlist_added': datetime.now().isoformat()
                 })

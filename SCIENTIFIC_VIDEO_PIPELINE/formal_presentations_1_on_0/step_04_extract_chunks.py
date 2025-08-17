@@ -11,6 +11,7 @@ import re
 import time
 from pathlib import Path
 from typing import Dict, Any, List, Optional
+from datetime import datetime
 from dotenv import load_dotenv
 import openai
 from pipeline_progress_queue import get_progress_queue

@@ -14,6 +14,7 @@ import time
 import argparse
 from pathlib import Path
 from typing import Dict, Any, Optional
+from datetime import datetime
 import yt_dlp
 from dotenv import load_dotenv
 import requests
@@ -139,12 +140,33 @@ class VideoTranscriberWebhook:
             video_status = self.progress_queue.get_video_status(video_id)
             if video_status and video_status.get('step_03_transcription') == 'completed':
                 logger.info(f"Transcript already completed for {video_id} (progress queue), skipping")
+                # Sync webhook file to mark any pending transcription as completed
+                self.sync_webhook_for_existing_transcript(video_id, video_title)
                 return 'existing'
         
         # Fallback: Check if transcript file exists (for backward compatibility)
         transcript_file = self.output_dir / f"{video_id}_transcript.json"
         if transcript_file.exists():
             logger.info(f"Transcript already exists for {video_id} (file check), skipping")
+            # Sync webhook file to mark any pending transcription as completed
+            self.sync_webhook_for_existing_transcript(video_id, video_title)
+            
+            # CRITICAL: Update progress queue to mark step 3 as completed
+            # This prevents the pipeline from hanging on this step
+            if self.progress_queue:
+                self.progress_queue.update_video_step_status(
+                    video_id,
+                    'step_03_transcription',
+                    'completed',
+                    metadata={
+                        'transcript_file': str(transcript_file),
+                        'text_file': str(self.output_dir / f"{video_id}_transcript.txt"),
+                        'completed_at': datetime.now().isoformat(),
+                        'status': 'existing_transcript_detected'
+                    }
+                )
+                logger.info(f"📊 Progress queue updated: step 3 completed for {video_id} (existing transcript)")
+            
             return 'existing'
         
         logger.info(f"Processing video: {video_id} - {video_title}")
@@ -319,17 +341,27 @@ class VideoTranscriberWebhook:
         except Exception as e:
             logger.error(f"Failed to save submission metadata: {e}")
 
-    def monitor_completion(self, poll_interval: int = 240):
+    def monitor_completion(self, poll_interval: int = 120, max_monitoring_time: int = 3600):
         """
         Monitor pending transcriptions for completion via polling.
         
         Args:
             poll_interval: Time between API checks in seconds (default: 4 minutes)
+            max_monitoring_time: Maximum time to monitor in seconds (default: 1 hour)
         """
         logger.info(f"🔍 Starting completion monitoring with {poll_interval}s intervals...")
+        logger.info(f"⏰ Maximum monitoring time: {max_monitoring_time}s")
+        
+        start_time = time.time()
         
         while True:
             try:
+                # Check if we've exceeded maximum monitoring time
+                elapsed_time = time.time() - start_time
+                if elapsed_time > max_monitoring_time:
+                    logger.warning(f"⏰ Maximum monitoring time ({max_monitoring_time}s) exceeded. Stopping monitoring.")
+                    break
+                
                 # Load current webhook data
                 webhook_file = "assemblyai_webhooks.json"
                 if not os.path.exists(webhook_file):
@@ -340,9 +372,24 @@ class VideoTranscriberWebhook:
                 with open(webhook_file, 'r') as f:
                     webhook_data = json.load(f)
                 
+                # Clean up any duplicate entries (safety check)
+                self.cleanup_duplicate_entries(webhook_data)
+                
                 pending = webhook_data.get("pending_transcriptions", {})
                 if not pending:
                     logger.info("✅ No pending transcriptions found. All done!")
+                    break
+                
+                # Additional safety check: if all videos in pending are already completed, exit
+                completed_video_ids = {info['video_id'] for info in webhook_data.get("completed_transcriptions", {}).values()}
+                all_pending_completed = all(info['video_id'] in completed_video_ids for info in pending.values())
+                if all_pending_completed:
+                    logger.warning("🔧 All pending transcriptions are already completed. Cleaning up and exiting.")
+                    # Clean up the pending entries
+                    webhook_data["pending_transcriptions"] = {}
+                    with open(webhook_file, 'w') as f:
+                        json.dump(webhook_data, f, indent=2)
+                    logger.info("✅ Pending entries cleaned up. Exiting monitoring.")
                     break
                 
                 logger.info(f"📊 Checking {len(pending)} pending transcriptions...")
@@ -361,8 +408,7 @@ class VideoTranscriberWebhook:
                     if status == 'completed':
                         # Download and save transcript
                         if self.download_completed_transcript(transcript_id, video_id, video_title):
-                            # Move from pending to completed
-                            self.move_to_completed(transcript_id, video_id, video_title)
+                            # Note: move_to_completed is now called inside download_completed_transcript
                             completed_this_round += 1
                             logger.info(f"✅ {transcript_id} completed and downloaded!")
                         else:
@@ -382,12 +428,16 @@ class VideoTranscriberWebhook:
                     pending = webhook_data.get("pending_transcriptions", {})
                     if not pending:
                         logger.info("✅ All transcriptions completed! Exiting monitoring.")
-                        return
+                        break  # Exit the loop if no more pending
                 else:
                     logger.info(f"⏳ No completions yet. Waiting {poll_interval}s...")
                 
-                # Wait before next check
-                time.sleep(poll_interval)
+                # Wait before next check (only if still pending)
+                if pending:
+                    time.sleep(poll_interval)
+                else:
+                    logger.info("✅ No more pending transcriptions, exiting monitoring loop.")
+                    break
                 
             except KeyboardInterrupt:
                 logger.info("🛑 Monitoring interrupted by user")
@@ -453,6 +503,11 @@ class VideoTranscriberWebhook:
                 )
                 logger.info(f"📊 Progress queue updated: step 3 completed for {video_id}")
             
+            # CRITICAL: Immediately update webhook file to mark as completed
+            # This prevents the monitoring loop from hanging
+            self.move_to_completed(transcript_id, video_id, video_title)
+            logger.info(f"🔗 Webhook file updated: {transcript_id} marked as completed")
+            
             return True
             
         except Exception as e:
@@ -467,10 +522,17 @@ class VideoTranscriberWebhook:
             with open(webhook_file, 'r') as f:
                 webhook_data = json.load(f)
             
+            # Check if already completed (safety check)
+            if transcript_id in webhook_data.get("completed_transcriptions", {}):
+                logger.info(f"Transcript {transcript_id} already marked as completed, skipping")
+                return
+            
             # Remove from pending
-            if transcript_id in webhook_data["pending_transcriptions"]:
+            if transcript_id in webhook_data.get("pending_transcriptions", {}):
                 pending_info = webhook_data["pending_transcriptions"].pop(transcript_id)
                 logger.info(f"Removed {transcript_id} from pending transcriptions")
+            else:
+                logger.warning(f"Transcript {transcript_id} not found in pending, may have been moved already")
             
             # Add to completed
             webhook_data["completed_transcriptions"][transcript_id] = {
@@ -488,6 +550,79 @@ class VideoTranscriberWebhook:
             
         except Exception as e:
             logger.error(f"Failed to move transcript to completed: {e}")
+    
+    def sync_webhook_for_existing_transcript(self, video_id: str, video_title: str):
+        """Sync webhook file when existing transcript is detected"""
+        try:
+            webhook_file = "assemblyai_webhooks.json"
+            
+            # Check if webhook file exists
+            if not os.path.exists(webhook_file):
+                logger.info(f"No webhook file found for {video_id}, skipping webhook sync")
+                return
+            
+            with open(webhook_file, 'r') as f:
+                webhook_data = json.load(f)
+            
+            # Find any pending transcription for this video
+            pending = webhook_data.get("pending_transcriptions", {})
+            transcript_id_to_complete = None
+            
+            for transcript_id, info in pending.items():
+                if info.get('video_id') == video_id:
+                    transcript_id_to_complete = transcript_id
+                    break
+            
+            if transcript_id_to_complete:
+                # Move from pending to completed
+                pending_info = pending.pop(transcript_id_to_complete)
+                webhook_data["completed_transcriptions"][transcript_id_to_complete] = {
+                    "video_id": video_id,
+                    "video_title": video_title,
+                    "completed_at": self.get_current_timestamp(),
+                    "status": "completed"
+                }
+                
+                # Save updated data
+                with open(webhook_file, 'w') as f:
+                    json.dump(webhook_data, f, indent=2)
+                
+                logger.info(f"📊 Webhook synced: {transcript_id_to_complete} marked as completed for {video_id}")
+            else:
+                logger.debug(f"No pending transcription found in webhook for {video_id}")
+                
+        except Exception as e:
+            logger.warning(f"Failed to sync webhook for {video_id}: {e}")
+    
+    def cleanup_duplicate_entries(self, webhook_data: dict):
+        """Clean up any duplicate entries between pending and completed"""
+        try:
+            pending = webhook_data.get("pending_transcriptions", {})
+            completed = webhook_data.get("completed_transcriptions", {})
+            
+            # Find videos that appear in both pending and completed
+            pending_video_ids = {info['video_id'] for info in pending.values()}
+            completed_video_ids = {info['video_id'] for info in completed.values()}
+            duplicates = pending_video_ids.intersection(completed_video_ids)
+            
+            if duplicates:
+                logger.warning(f"🔧 Found duplicate entries for videos: {duplicates}")
+                
+                # Remove pending entries for videos that are already completed
+                for transcript_id, info in list(pending.items()):
+                    if info['video_id'] in duplicates:
+                        logger.info(f"🧹 Removing duplicate pending entry: {transcript_id} for {info['video_id']}")
+                        pending.pop(transcript_id)
+                
+                # Save cleaned data
+                webhook_file = "assemblyai_webhooks.json"
+                with open(webhook_file, 'w') as f:
+                    json.dump(webhook_data, f, indent=2)
+                
+                logger.info("✅ Duplicate entries cleaned up")
+                
+        except Exception as e:
+            logger.error(f"Failed to cleanup duplicate entries: {e}")
 
 def main():
     """Main execution function with command line arguments"""
