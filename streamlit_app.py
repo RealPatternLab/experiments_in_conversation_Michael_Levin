@@ -933,11 +933,12 @@ class FAISSRetriever:
         timestamp = list(self.metadata.keys())[0]
         active_chunks = len(self.metadata[timestamp])
         
-        # Use the total chunk count from all directories
-        total_chunks = getattr(self, 'total_chunks', active_chunks)
+        # For the new run_{timestamp} format, the active chunks IS the total chunks
+        # since we're only loading one directory at a time
+        total_chunks = active_chunks
         
         return {
-            'total_chunks': total_chunks,  # Total chunks across all embedding directories
+            'total_chunks': total_chunks,  # Total chunks in the active embeddings
             'indices_loaded': 1,  # Only one index now
             'metadata_loaded': 1,  # Only one metadata now
             'active_timestamp': timestamp,
