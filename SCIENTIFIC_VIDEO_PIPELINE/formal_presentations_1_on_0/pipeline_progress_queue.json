@@ -37,7 +37,7 @@
       "current_status": "completed",
       "current_step": "step_01_playlist_processing",
       "created_at": "2025-08-17T18:14:10.175438",
-      "last_updated": "2025-08-17T18:25:55.727708",
+      "last_updated": "2025-08-17T18:59:07.264886",
       "chunk_count": 0,
       "frame_count": 0,
       "error_count": 0,
@@ -50,10 +50,10 @@
         "frame_count": null,
         "playlist_id": "PLmR3yIXYqfUIk4xQ_cp_MwuJlAq2PlCwH",
         "local_path": "",
-        "download_timestamp": "2025-08-17T18:14:16.297282",
+        "download_timestamp": "2025-08-17T18:56:20.207280",
         "transcript_file": "step_03_transcription/FzFFeRVEdUM_transcript.json",
         "text_file": "step_03_transcription/FzFFeRVEdUM_transcript.txt",
-        "completed_at": "2025-08-17T18:25:55.727455",
+        "completed_at": "2025-08-17T18:59:07.264652",
         "chunks_file": "step_04_extract_chunks/FzFFeRVEdUM_chunks.json",
         "chunks_dir": "step_04_extract_chunks/FzFFeRVEdUM_chunks",
         "total_chunks": 26,
@@ -103,5 +103,5 @@
     ]
   },
   "created_at": "2025-08-17T18:14:08.385632",
-  "last_updated": "2025-08-17T18:25:55.727753"
+  "last_updated": "2025-08-17T18:59:07.264910"
 }

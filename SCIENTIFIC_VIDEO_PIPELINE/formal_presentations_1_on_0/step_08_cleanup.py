@@ -214,7 +214,18 @@ class PipelineCleanup:
                         frames_checked += 1
                         # Extract frame ID from filename (e.g., "FzFFeRVEdUM_frame_000_0.0s.jpg")
                         frame_name = frame_file.stem
-                        frame_id = frame_name.split('_frame_')[0] + '_frame_' + frame_name.split('_frame_')[1]
+                        # The referenced frame IDs are in format "FzFFeRVEdUM_frame_001" (without timestamp)
+                        # So we need to extract: video_id + "_frame_" + frame_number
+                        if '_frame_' in frame_name:
+                            parts = frame_name.split('_frame_')
+                            if len(parts) >= 2:
+                                # parts[1] contains "001_18.0s", we need just "001"
+                                frame_number = parts[1].split('_')[0]  # Get just the number part
+                                frame_id = parts[0] + '_frame_' + frame_number
+                            else:
+                                frame_id = frame_name  # Fallback
+                        else:
+                            frame_id = frame_name  # Fallback
                         
                         if frame_id not in referenced_frames:
                             size_mb = self.get_file_size_mb(frame_file)

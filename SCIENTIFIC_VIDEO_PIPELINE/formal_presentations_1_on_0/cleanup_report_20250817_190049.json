@@ -1,0 +1,27 @@
+{
+  "cleanup_timestamp": "2025-08-17T19:00:49.246282",
+  "total_space_freed_gb": 0.0,
+  "total_space_freed_mb": 2.43,
+  "files_removed": {
+    "videos": 0,
+    "unreferenced_frames": 55,
+    "temp_scripts": 0,
+    "yt_dlp_files": 0,
+    "old_reports": 0,
+    "cache_directories": 1
+  },
+  "preserved_essentials": [
+    "pipeline_progress_queue.json",
+    "assemblyai_webhooks.json",
+    "All step scripts (*.py)",
+    "All transcript files (*_transcript.json)",
+    "All chunk files (*_chunks.json)",
+    "Referenced frame files (referenced in alignments)",
+    "All alignment files (*_alignments.json)",
+    "All embedding files and FAISS indices",
+    "Documentation files (*.md)",
+    "Latest pipeline report"
+  ],
+  "execution_time_seconds": 0.006876,
+  "dry_run": false
+}
