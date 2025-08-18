@@ -310,8 +310,14 @@ class ConsolidatedEmbedding:
                 
                 # Create metadata entry
                 chunk_meta = text_content.get('metadata', {})
+                
+                # Extract video_id from content_id (e.g., "FzFFeRVEdUM_chunk_000" -> "FzFFeRVEdUM")
+                content_id = content.get('content_id', '')
+                video_id = content_id.split('_chunk_')[0] if '_chunk_' in content_id else 'unknown'
+                
                 meta_entry = {
-                    'content_id': content.get('content_id', ''),
+                    'content_id': content_id,
+                    'video_id': video_id,  # Add video_id for proper video citation
                     'text': text,  # Include the actual text content for search results
                     'text_length': len(text),
                     'chunk_metadata': chunk_meta,

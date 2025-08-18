@@ -1,15 +1,15 @@
 {
-  "timestamp": "20250818_095714_354",
-  "run_directory": "step_07_faiss_embeddings/run_20250818_095714_354",
+  "timestamp": "20250818_102002_290",
+  "run_directory": "step_07_faiss_embeddings/run_20250818_102002_290",
   "total_chunks": 104,
   "total_frames": 104,
   "videos_processed": [
-    "FzFFeRVEdUM",
+    "zKjdkxrvE6k",
     "xNgq3zqYsoA",
-    "zKjdkxrvE6k"
+    "FzFFeRVEdUM"
   ],
   "embedding_dimensions": 3136,
-  "created_at": "2025-08-18T09:57:58.735154",
+  "created_at": "2025-08-18T10:20:49.091497",
   "files": {
     "text_index": "text_index.faiss",
     "visual_index": "visual_index.faiss",
