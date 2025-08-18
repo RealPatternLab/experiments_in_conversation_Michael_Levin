@@ -1,0 +1,41 @@
+{
+  "chunk_id": "mOaSHpTOwu0_chunk_011",
+  "text": "This is basically epithelial cells taken from a frog embryo. And when you take them away, so we don't edit the DNA, we don't put in synthetic biology circuits, there are no scaffolds, there are no drugs, no nanomaterials. All that we do is we engineer by subtraction, meaning that these cells normally are going to be bullied by these other cells and forced into being a boring two dimensional outer cover for the tadpole that keeps the bacteria out. But if you subtract this influence away and you ask what do these cells intrinsically want to do, then you see something interesting. They don't just crawl away from each other, they don't die or form a monolayer. They self assemble. And you can see actually each one of these circles is a single cell.",
+  "token_count": 135,
+  "sentence_count": 8,
+  "start_sentence": 11,
+  "end_sentence": 18,
+  "start_time_ms": 676390,
+  "end_time_ms": 722860,
+  "start_time_seconds": 676.39,
+  "end_time_seconds": 722.86,
+  "primary_topics": [
+    "Epithelial cells",
+    "Frog embryo",
+    "Cellular self-assembly",
+    "Intrinsic cellular behavior",
+    "Engineering by subtraction"
+  ],
+  "secondary_topics": [
+    "DNA editing",
+    "Synthetic biology circuits",
+    "Cellular scaffolds",
+    "Nanomaterials",
+    "Cellular monolayer",
+    "Cellular interaction",
+    "Cellular autonomy"
+  ],
+  "key_terms": [
+    "Epithelial cells",
+    "Frog embryo",
+    "Self-assembly",
+    "Engineering by subtraction",
+    "Monolayer",
+    "Intrinsic behavior",
+    "Cellular interaction",
+    "Autonomy"
+  ],
+  "content_summary": "The presentation discusses an experiment involving epithelial cells from a frog embryo. The researcher explains the concept of 'engineering by subtraction', where the influence of other cells is removed to observe the intrinsic behavior of the epithelial cells. These cells, when left to their own devices, self-assemble rather than forming a monolayer or dying off.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
+  "enhanced": true
+}

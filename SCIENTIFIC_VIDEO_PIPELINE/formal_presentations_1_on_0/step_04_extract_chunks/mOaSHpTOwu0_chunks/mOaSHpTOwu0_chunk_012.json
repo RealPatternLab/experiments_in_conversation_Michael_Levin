@@ -1,0 +1,40 @@
+{
+  "chunk_id": "mOaSHpTOwu0_chunk_012",
+  "text": "So here's this tiny little thing that doesn't hurt, that it looks like a little horse or something, it makes its way over here, it's moving around in a very interesting way that we still don't understand how it moves. There's a little calcium flash as it interacts with this, with this big one. So these are xenobots and they have some amazing Behaviors. They've repurposed their cilia to move through the fluid. You can see that here. They can go in circles. They can patrol back and forth like this. You can make weird shapes out of them like this donut thing. They have collective behaviors that we're still studying. Here's a xenobot navigating a maze. You know, we have no idea it's, it's self powered. We don't need to actuate it at all. We have no idea what, what guides. At this point, we're studying all that, but the decision making, you know, why it turns around at this particular spot. There's no liquid flow here. There are no gradients, there's no food. It takes this corner without having to bump into the opposite wall. And then at some point, it spontaneously turns around.",
+  "token_count": 196,
+  "sentence_count": 19,
+  "start_sentence": 12,
+  "end_sentence": 30,
+  "start_time_ms": 722860,
+  "end_time_ms": 780210,
+  "start_time_seconds": 722.86,
+  "end_time_seconds": 780.21,
+  "primary_topics": [
+    "Xenobots",
+    "Bioelectricity",
+    "Movement Mechanisms",
+    "Collective Behaviors"
+  ],
+  "secondary_topics": [
+    "Calcium Flash",
+    "Cilia Repurposing",
+    "Maze Navigation",
+    "Self-Powered Movement",
+    "Decision Making",
+    "Absence of Gradients",
+    "Spontaneous Actions"
+  ],
+  "key_terms": [
+    "Xenobots",
+    "Cilia",
+    "Bioelectricity",
+    "Calcium Flash",
+    "Collective Behaviors",
+    "Self-Powered",
+    "Gradients",
+    "Spontaneous"
+  ],
+  "content_summary": "The speaker discusses xenobots, which are bioelectric organisms that exhibit unique behaviors. They repurpose their cilia for movement, show collective behaviors, and can navigate mazes without external guidance. The speaker also mentions that these xenobots are self-powered and can make decisions without apparent stimuli.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
+  "enhanced": true
+}

@@ -1,0 +1,42 @@
+{
+  "chunk_id": "mOaSHpTOwu0_chunk_004",
+  "text": "Sometimes it goes to the spinal cord, sometimes to the Gut, never to the brain. And yet they can see and they can learn in visual tasks. Now that's kind of amazing. Why does this animal, with a novel sensorimotor architecture, not require new rounds of mutation selection adaptation? No, it works out of the box. And the plasticity for these kinds of things is absolutely enormous. And we can really take advantage of this in bioengineering. It's not just animals, plants do this too. Development is an incredibly reliable process. And you might think that what the oak genome encodes is the ability to build this flat green thing. It does it all the time, very consistently, except that along comes a non human bioengineer, this wasp, and it puts down some prompts that cause these cells to build something completely different. Okay, so here's this round, spiky red and orange thing, here's another one. They're called galls. There's an amazing variety of them. And they're not made from insect cells, they're made from plant cells. And they're not built the way that wasps build their nests, which is basically a 3D printing approach where it goes around and sort of builds it piece by piece, it lays down some signals and it basically hacks the morphogenetic competency of these plants, which, by the way, we would have had no idea that they're even capable of this if, if, if we hadn't had this, this example. And that opens the question of what does the latent space look like? What else are they capable of building?",
+  "token_count": 267,
+  "sentence_count": 19,
+  "start_sentence": 4,
+  "end_sentence": 22,
+  "start_time_ms": 301550,
+  "end_time_ms": 382320,
+  "start_time_seconds": 301.55,
+  "end_time_seconds": 382.32,
+  "primary_topics": [
+    "Bioelectricity",
+    "Developmental Biology",
+    "Plasticity in Biological Systems",
+    "Bioengineering"
+  ],
+  "secondary_topics": [
+    "Sensorimotor Architecture",
+    "Mutation Selection Adaptation",
+    "Plant Development",
+    "Morphogenetic Competency",
+    "Latent Space in Biology"
+  ],
+  "key_terms": [
+    "Spinal cord",
+    "Gut",
+    "Visual tasks",
+    "Mutation selection adaptation",
+    "Bioengineering",
+    "Oak genome",
+    "Galls",
+    "Insect cells",
+    "Plant cells",
+    "3D printing",
+    "Morphogenetic competency",
+    "Latent space"
+  ],
+  "content_summary": "The speaker discusses the remarkable adaptability and plasticity of biological systems, using examples from both animal and plant kingdoms. They highlight the potential of bioengineering to exploit this plasticity, and discuss the concept of 'latent space' in biology, referring to the unknown potential capabilities of organisms.",
+  "scientific_domain": "Developmental Biology, Bioelectricity, Bioengineering",
+  "enhanced": true
+}

@@ -2,7 +2,7 @@
   "total_urls": 1,
   "valid_urls": 1,
   "invalid_urls": 0,
-  "total_videos_found": 3,
+  "total_videos_found": 5,
   "playlists": [
     {
       "url": "https://www.youtube.com/playlist?list=PLmR3yIXYqfUIk4xQ_cp_MwuJlAq2PlCwH",
@@ -67,17 +67,45 @@
           "category_id": [],
           "default_language": null,
           "default_audio_language": null
+        },
+        {
+          "video_id": "mOaSHpTOwu0",
+          "title": "\"Engineering Agential Materials\" by Michael Levin",
+          "description": null,
+          "channel_title": "Michael Levin's Academic Content",
+          "published_at": "",
+          "playlist_position": 4,
+          "duration": 1640,
+          "view_count": 4100,
+          "like_count": 0,
+          "category_id": [],
+          "default_language": null,
+          "default_audio_language": null
+        },
+        {
+          "video_id": "OD5TOsPZIQY",
+          "title": "\"Against Mind-Blindness: recognizing and communicating with diverse intelligences\" by Michael Levin",
+          "description": null,
+          "channel_title": "Michael Levin's Academic Content",
+          "published_at": "",
+          "playlist_position": 5,
+          "duration": 2149,
+          "view_count": 120000,
+          "like_count": 0,
+          "category_id": [],
+          "default_language": null,
+          "default_audio_language": null
         }
       ],
-      "total_videos_found": 3,
+      "total_videos_found": 5,
       "new_videos": true,
       "new_video_ids": [
-        "zKjdkxrvE6k",
-        "xNgq3zqYsoA"
+        "mOaSHpTOwu0",
+        "OD5TOsPZIQY"
       ]
     }
   ],
-  "processing_timestamp": "2025-08-18T09:27:04.435945",
-  "previous_videos_count": 1,
+  "processing_timestamp": "2025-08-18T10:35:37.792114",
+  "previous_videos_count": 3,
   "new_videos_detected": true
 }

@@ -1,0 +1,1504 @@
+[
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_000",
+    "chunk_text": "Perfect. Okay, thank you so much. Very excited to be here and share some ideas with you. I'm going to say some kind of large scale conceptual things in addition to some data that I'm going to show you. And it's hard to do that in, in 15 minutes. So if anybody wants to download the primary data, the software, the, you know, all of that stuff is here. And then this is just a personal blog where I try to write about what I think some, some of these things mean. And this is a lot of what I'll say at the end is work done in collaboration with Josh Bongaard's lab as part of this ICDO organization that we have. And what I'm going to describe today is this notion of agential materials and a way of interacting with your materials that are more around the concepts of collaboration and literally a kind of social engineering with your material. Because we view these things as a collective intelligence that we want to motivate, not just rewire or micromanage. And so one of the great challenges in our field, which is both synthetic morphology and biomedicine, is that someday you want to sit in front of a computer and you want to draw the plant animal, biobot, organ, whatever you want, with no limitations really. And what this thing should do is compile that description down to a set of stimuli that would be given to cells to get them to build whatever you want, such as this three headed flatworm. And of course, if we had something like this, a lot of problems in biomedicine would go away and a lot of problems in bioengineering would be solved.",
+    "chunk_metadata": {
+      "token_count": 290,
+      "sentence_count": 15,
+      "primary_topics": [
+        "agential materials",
+        "synthetic morphology",
+        "biomedicine",
+        "bioengineering",
+        "collective intelligence"
+      ],
+      "secondary_topics": [
+        "social engineering",
+        "data sharing",
+        "collaboration in research",
+        "computer-aided design in biology",
+        "cellular stimuli",
+        "biobot creation",
+        "organ creation"
+      ],
+      "key_terms": [
+        "agential materials",
+        "synthetic morphology",
+        "biomedicine",
+        "bioengineering",
+        "collective intelligence",
+        "social engineering",
+        "biobot",
+        "cellular stimuli"
+      ],
+      "content_summary": "Michael Levin discusses the concept of agential materials and the idea of interacting with materials in a collaborative way, viewing them as a collective intelligence. He speaks about the challenges in synthetic morphology and biomedicine, and the potential for computer-aided design to direct cellular behavior to create desired biological forms, such as organs or biobots.",
+      "scientific_domain": "Developmental Biology, Bioelectricity, Bioengineering",
+      "start_time_seconds": 0.32,
+      "end_time_seconds": 91.12
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_001",
+        "timestamp": 18,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_001_18.0s.jpg",
+        "file_size": 41461,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_001",
+    "chunk_text": "And of course, if we had something like this, a lot of problems in biomedicine would go away and a lot of problems in bioengineering would be solved. But as we all know, we don't have anything remotely like this. We can only do this in a very small, if at all, in a very small set of circumstances. And I think that's largely because we've been thinking so far about either passive matter, now increasingly active matter, computational materials. But in biology, I think what we're dealing with is what I call an agential material. It's a material that at multiple scales has agendas and problem solving capacities which we have not largely have not yet taken advantage of. And so for me, the anatomical compiler is not some sort of 3D printer. It is a communications device. It is a translator between your goals as the engineer and the goals of the material. Because I do think that in the cybernetic sense the material has goals, in fact many of them.",
+    "chunk_metadata": {
+      "token_count": 173,
+      "sentence_count": 10,
+      "primary_topics": [
+        "Bioengineering",
+        "Biomedicine",
+        "Agential Material",
+        "Cybernetics",
+        "Anatomical Compiler"
+      ],
+      "secondary_topics": [
+        "3D Printing",
+        "Communication Devices",
+        "Problem Solving Capacities",
+        "Computational Materials",
+        "Active Matter",
+        "Passive Matter",
+        "Multi-scale Systems",
+        "Material Goals"
+      ],
+      "key_terms": [
+        "Bioengineering",
+        "Biomedicine",
+        "Agential Material",
+        "Anatomical Compiler",
+        "Cybernetics",
+        "3D Printing",
+        "Communication Devices",
+        "Computational Materials",
+        "Active Matter",
+        "Passive Matter"
+      ],
+      "content_summary": "The speaker discusses the concept of 'agential material' in biology, which has problem-solving capacities and 'goals' at multiple scales. They propose the idea of an 'anatomical compiler', a communication device that bridges the gap between the goals of an engineer and the goals of the material.",
+      "scientific_domain": "Developmental Biology, Bioelectricity, Bioengineering, Biomedicine",
+      "start_time_seconds": 83.44,
+      "end_time_seconds": 135.23
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_005",
+        "timestamp": 90,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_005_90.0s.jpg",
+        "file_size": 38533,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_002",
+    "chunk_text": "This is the sort of thing we're dealing with now. This is a pre living organism called Alacrimeria. But you get the idea It's a single cell. There's no brain, there's no nervous system. It's handling all of its needs in anatomical space and metabolic space and physiological space. From that one cell normally develop all of these kinds of amazing creatures, including these that will actually have very significant problem solving cognitive capacities. What we know from developmental biology is that this is a slow and grad. There is no specific magic line at which intelligence kicks in. This is a process of scaling competencies, not a process of magical categories. And so we need to understand the scaling in order to have good interactions with the material. In fact, it turns out that even below the single cell level, so just the molecular networks themselves, let's say gene regulatory networks or molecular pathways, already have six different kinds of learning that they can do. This does not require a cell or synapses or any of that, just the molecular pathways themselves. And this is a free gift from the mathematics of networks. They can already do habituation, association, pavlovian conditioning. And we're now taking advantage of all of that for experiments in drug conditioning for biomedical purposes. And so the material has these capacities sort of all the way from the very bottom. And what I think is happening here is a kind of multi scale competency architecture where each level, and so here are all the levels of organization. Each level is basically deforming the option space for the levels below, but each level is navigating that space. Context sensitive navigation of the option space. And these are transcriptional spaces, physiological state spaces, anatomical morphous space.",
+    "chunk_metadata": {
+      "token_count": 299,
+      "sentence_count": 21,
+      "primary_topics": [
+        "Developmental Biology",
+        "Bioelectricity",
+        "Cognitive Capacities of Single Cells",
+        "Molecular Networks",
+        "Multi-Scale Competency Architecture"
+      ],
+      "secondary_topics": [
+        "Gene Regulatory Networks",
+        "Physiological State Spaces",
+        "Anatomical Morphous Space",
+        "Context-Sensitive Navigation",
+        "Habituation",
+        "Association",
+        "Pavlovian Conditioning",
+        "Drug Conditioning for Biomedical Purposes"
+      ],
+      "key_terms": [
+        "Alacrimeria",
+        "Anatomical Space",
+        "Metabolic Space",
+        "Physiological Space",
+        "Scaling Competencies",
+        "Transcriptional Spaces",
+        "Option Space",
+        "Molecular Pathways"
+      ],
+      "content_summary": "The presentation discusses the complex cognitive capacities of single-celled organisms, the role of molecular networks in learning, and the concept of multi-scale competency architecture. It emphasizes the idea that intelligence and learning are not confined to organisms with brains or nervous systems, but can be observed at the molecular level, and even within gene regulatory networks.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "start_time_seconds": 136.45,
+      "end_time_seconds": 247.3
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_008",
+        "timestamp": 144,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_008_144.0s.jpg",
+        "file_size": 33570,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_003",
+    "chunk_text": "And these are transcriptional spaces, physiological state spaces, anatomical morphous space. And then at some point when nerve and muscle kicked in, then of course, three dimensional space of behavior. But all of this kind of relationship, relationship is present all the way down. And what each level is doing is deforming the option space for its parts to ensure that their conventional behavior is also serving the needs of a higher level in a different space that the parts don't know anything about. This enables some very interesting properties in the biological material. First, just as an example, and we could do hours and hours on these examples, there are many, many cool versions of this. Here's a tadpole of the frog. And so you'll see nostrils, mouth, brain, here, gut. What you'll notice is that we've prevented the primary eyes from forming, but we've put an eye on its tail. What we noticed by building a machine that automates the training and testing of these guys in visual cues is that they can see perfectly well. Here's the ectopic eye. It makes one optic nerve.",
+    "chunk_metadata": {
+      "token_count": 187,
+      "sentence_count": 13,
+      "primary_topics": [
+        "Transcriptional Spaces",
+        "Physiological State Spaces",
+        "Anatomical Morphous Space",
+        "Three Dimensional Space of Behavior",
+        "Biological Material Properties"
+      ],
+      "secondary_topics": [
+        "Nerve and Muscle Interaction",
+        "Option Space Deformation",
+        "Tadpole Anatomy",
+        "Visual Cues Training and Testing",
+        "Ectopic Eye Experiment"
+      ],
+      "key_terms": [
+        "Transcriptional Spaces",
+        "Physiological State",
+        "Anatomical Morphous Space",
+        "Three Dimensional Space",
+        "Option Space",
+        "Conventional Behavior",
+        "Ectopic Eye",
+        "Optic Nerve",
+        "Visual Cues"
+      ],
+      "content_summary": "The presentation discusses various spaces in biology including transcriptional, physiological, anatomical, and behavioral. It highlights how each level influences the option space of its parts to serve the needs of a higher level. An experiment on a tadpole, where an eye was placed on its tail, demonstrates these concepts.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "start_time_seconds": 241.38,
+      "end_time_seconds": 301.55
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_014",
+        "timestamp": 252,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_014_252.0s.jpg",
+        "file_size": 48901,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_004",
+    "chunk_text": "Sometimes it goes to the spinal cord, sometimes to the Gut, never to the brain. And yet they can see and they can learn in visual tasks. Now that's kind of amazing. Why does this animal, with a novel sensorimotor architecture, not require new rounds of mutation selection adaptation? No, it works out of the box. And the plasticity for these kinds of things is absolutely enormous. And we can really take advantage of this in bioengineering. It's not just animals, plants do this too. Development is an incredibly reliable process. And you might think that what the oak genome encodes is the ability to build this flat green thing. It does it all the time, very consistently, except that along comes a non human bioengineer, this wasp, and it puts down some prompts that cause these cells to build something completely different. Okay, so here's this round, spiky red and orange thing, here's another one. They're called galls. There's an amazing variety of them. And they're not made from insect cells, they're made from plant cells. And they're not built the way that wasps build their nests, which is basically a 3D printing approach where it goes around and sort of builds it piece by piece, it lays down some signals and it basically hacks the morphogenetic competency of these plants, which, by the way, we would have had no idea that they're even capable of this if, if, if we hadn't had this, this example. And that opens the question of what does the latent space look like? What else are they capable of building?",
+    "chunk_metadata": {
+      "token_count": 267,
+      "sentence_count": 19,
+      "primary_topics": [
+        "Bioelectricity",
+        "Developmental Biology",
+        "Plasticity in Biological Systems",
+        "Bioengineering"
+      ],
+      "secondary_topics": [
+        "Sensorimotor Architecture",
+        "Mutation Selection Adaptation",
+        "Plant Development",
+        "Morphogenetic Competency",
+        "Latent Space in Biology"
+      ],
+      "key_terms": [
+        "Spinal cord",
+        "Gut",
+        "Visual tasks",
+        "Mutation selection adaptation",
+        "Bioengineering",
+        "Oak genome",
+        "Galls",
+        "Insect cells",
+        "Plant cells",
+        "3D printing",
+        "Morphogenetic competency",
+        "Latent space"
+      ],
+      "content_summary": "The speaker discusses the remarkable adaptability and plasticity of biological systems, using examples from both animal and plant kingdoms. They highlight the potential of bioengineering to exploit this plasticity, and discuss the concept of 'latent space' in biology, referring to the unknown potential capabilities of organisms.",
+      "scientific_domain": "Developmental Biology, Bioelectricity, Bioengineering",
+      "start_time_seconds": 301.55,
+      "end_time_seconds": 382.32
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_017",
+        "timestamp": 306,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_017_306.0s.jpg",
+        "file_size": 62958,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_005",
+    "chunk_text": "Now, in order to find out what they're capable of building, we are going to have to ratchet up our own intelligence. And you can see there's a, there's a cool relationship between the sophistication of the hacker and the complexity of what it actually builds. So bacteria basically induce galls that are featureless. Slumps, fungi kind of do the same. So nematodes and mites kind of make something that has a shape, but by the time you get to insects, you get this kind of beautiful structure. So basically there's a bidirectional relationship between how smart we are as hackers and what we can get the material to do. And as I pointed out, we as humans, because of our own evolutionary history, are obsessed with three dimensional space. We are okay at recognizing intelligence of medium sized objects moving at medium speeds through the three dimensional space that we're used to.",
+    "chunk_metadata": {
+      "token_count": 153,
+      "sentence_count": 8,
+      "primary_topics": [
+        "Bioengineering",
+        "Evolutionary Biology",
+        "Intelligence"
+      ],
+      "secondary_topics": [
+        "Bacteria",
+        "Fungi",
+        "Nematodes",
+        "Mites",
+        "Insects",
+        "Three Dimensional Space",
+        "Hacking"
+      ],
+      "key_terms": [
+        "Bioengineering",
+        "Evolutionary Biology",
+        "Intelligence",
+        "Bacteria",
+        "Fungi",
+        "Nematodes",
+        "Mites",
+        "Insects",
+        "Three Dimensional Space",
+        "Hacking"
+      ],
+      "content_summary": "The speaker, Michael Levin, discusses the relationship between the sophistication of bioengineering (referred to as 'hacking') and the complexity of the structures that different organisms can build. He also talks about humans' unique perception of three-dimensional space due to our evolutionary history.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "start_time_seconds": 382.72,
+      "end_time_seconds": 430.65
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_022",
+        "timestamp": 396,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_022_396.0s.jpg",
+        "file_size": 34260,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_006",
+    "chunk_text": "But biology has been navigating all these other spaces and in particular doing the sensing, decision making, actuation loop in all kinds of other spaces, high dimensional, weird spaces that are hard for us to visualize, like transcriptional space, anatomical morph space, which is what we study, physiological state space, and so on. So embodiment is really not just about motility in three dimensional space. When we build these things that navigate space spaces in ways that we would like them to do, we have to think beyond just motion in three dimensional space. All of these other spaces, and probably many that we can't even visualize, are fair game for this.",
+    "chunk_metadata": {
+      "token_count": 112,
+      "sentence_count": 5,
+      "primary_topics": [
+        "Biology",
+        "Sensing",
+        "Decision Making",
+        "Actuation Loop",
+        "Embodiment"
+      ],
+      "secondary_topics": [
+        "Transcriptional Space",
+        "Anatomical Morph Space",
+        "Physiological State Space",
+        "High Dimensional Spaces",
+        "Visualization of Complex Spaces"
+      ],
+      "key_terms": [
+        "Embodiment",
+        "Motility",
+        "Three Dimensional Space",
+        "Transcriptional Space",
+        "Anatomical Morph Space",
+        "Physiological State Space"
+      ],
+      "content_summary": "The speaker, Michael Levin, discusses the complexity of biological systems, emphasizing that they operate in more than just three-dimensional space. He highlights the importance of understanding these 'spaces' such as transcriptional, anatomical morph, and physiological state spaces, in order to effectively manipulate biological systems.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "start_time_seconds": 431.2,
+      "end_time_seconds": 468.62
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_024",
+        "timestamp": 432,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_024_432.0s.jpg",
+        "file_size": 51791,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_007",
+    "chunk_text": "Now this is another thing I could talk for hours about, but I'm just going to show you one slide. In our group, we've been studying one particular kind of cognitive glue that binds individual cells with their agendas in transcriptional space and physiological space and so on into large scale multicellular constructs that navigate anatomical space. There are several kinds at least, but one kind of cognitive glue, much like in the brain, that does exactly the same thing for your neurons, making you more than just the pile of neurons, is bioelectricity. And so we have now ways to read and write electrical states into non neural tissue. We've developed these techniques over the last 20 years to basically take all of the tools of cognitive neuroscience and bring them into understanding the decision making, the memories, the problem solving capacities of non neural cells in navigating the space of possible shapes. And this, because now we understand what the cognitive glue is, we can start to use that as an interface to communicate new goals to the tissue. And so here, for example, and we could do this with drugs, with optogenetics, there are many ways to do it.",
+    "chunk_metadata": {
+      "token_count": 202,
+      "sentence_count": 9,
+      "primary_topics": [
+        "Bioelectricity",
+        "Cognitive Glue",
+        "Cellular Communication"
+      ],
+      "secondary_topics": [
+        "Transcriptional Space",
+        "Physiological Space",
+        "Multicellular Constructs",
+        "Cognitive Neuroscience",
+        "Non Neural Cells",
+        "Optogenetics",
+        "Drug Therapies"
+      ],
+      "key_terms": [
+        "Bioelectricity",
+        "Cognitive Glue",
+        "Transcriptional Space",
+        "Physiological Space",
+        "Multicellular Constructs",
+        "Cognitive Neuroscience",
+        "Non Neural Cells",
+        "Optogenetics",
+        "Drug Therapies"
+      ],
+      "content_summary": "Michael Levin discusses the concept of 'cognitive glue', a process similar to bioelectricity in the brain, that binds individual cells into multicellular constructs. He explains how his group has developed techniques to manipulate this process in non-neural tissue, potentially allowing for new ways to communicate with and direct these cells.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "start_time_seconds": 468.86,
+      "end_time_seconds": 539.489
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_027",
+        "timestamp": 486,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_027_486.0s.jpg",
+        "file_size": 42282,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_008",
+    "chunk_text": "But by injecting specific MRNA's, guided by a computational model that I don't have time to show you, we can introduce specific bioelectric patterns into the early embryo and convey very high level messages. Here in this case, we've put in a message that says, build an eye. Here you go. It makes a complete eye with lens, retina, optic nerve, all that stuff. Now, we don't know how to micromanage the building of an eye. It's a very complex organ, lots of genes expressed, lots of cell types in a very stereotypical order. We have no idea how to micromanage any of that. Luckily, we don't need to. Like with any good cognitive system, there are simple stimuli that result in very complex behaviors that the system knows how to do that you don't have to worry about. And the material has some really cool properties.",
+    "chunk_metadata": {
+      "token_count": 147,
+      "sentence_count": 10,
+      "primary_topics": [
+        "Bioelectric patterns",
+        "Embryonic development",
+        "MRNA injection",
+        "Eye development",
+        "Computational modeling"
+      ],
+      "secondary_topics": [
+        "Gene expression",
+        "Cell types",
+        "Cognitive systems",
+        "Complex behaviors",
+        "Material properties"
+      ],
+      "key_terms": [
+        "Bioelectricity",
+        "Embryo",
+        "MRNA",
+        "Computational model",
+        "Eye",
+        "Lens",
+        "Retina",
+        "Optic nerve",
+        "Cognitive system",
+        "Stimuli"
+      ],
+      "content_summary": "The speaker discusses the use of specific MRNA injections, guided by a computational model, to introduce bioelectric patterns into an early embryo. This method has been used to convey complex instructions, such as building an eye, without needing to micromanage the intricate process.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "start_time_seconds": 539.72,
+      "end_time_seconds": 588.66
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_030",
+        "timestamp": 540,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_030_540.0s.jpg",
+        "file_size": 42573,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_009",
+    "chunk_text": "For example, this is a cross section taken through a lens sitting in the tail somewhere. What you'll notice is the blue cells are the ones we injected all this other stuff that participates, we never touched it. This is secondary instruction. We told these cells, you should build an eye. And they intrinsically know that there's not enough of them to do it. And so they recruit their neighbors, so they propagate their abnormal bioelectrical state to their neighbors. And then the whole thing makes a decision to build a nice coherent lens. We don't have to hit every cell.",
+    "chunk_metadata": {
+      "token_count": 101,
+      "sentence_count": 8,
+      "primary_topics": [
+        "Cellular Communication",
+        "Bioelectricity",
+        "Cellular Recruitment",
+        "Developmental Biology"
+      ],
+      "secondary_topics": [
+        "Cellular Manipulation",
+        "Cellular Instruction",
+        "Cellular Decision Making",
+        "Lens Development",
+        "Cellular Propagation",
+        "Abnormal Bioelectrical State"
+      ],
+      "key_terms": [
+        "Cross Section",
+        "Lens",
+        "Secondary Instruction",
+        "Cell Recruitment",
+        "Bioelectrical State",
+        "Coherent Lens"
+      ],
+      "content_summary": "The speaker discusses a process where specific cells are instructed to build an eye. These cells, recognizing they are insufficient in number, recruit neighboring cells by propagating their abnormal bioelectrical state. This leads to a collective decision to construct a coherent lens.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "start_time_seconds": 588.66,
+      "end_time_seconds": 619.03
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_033",
+        "timestamp": 594,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_033_594.0s.jpg",
+        "file_size": 44378,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_010",
+    "chunk_text": "So these are the. And we didn't have to teach it to do that. It already does that. So these are the kind of competencies of, of this material, top down control modular communication where we can talk about an organ, not genes, not cells of individual type and so on. We can talk about whole organs. And cracking this bioelectric code is the main or one of the main efforts in our lab as to how we're going to really maximize our ability to communicate with this material. The last few things I just want to show you have to do with synthetic kinds of living constructs that don't have the benefit of eons of evolution, where we can say, well, it makes an eye, because of course it evolved a high level subroutine call that causes eyes to form because that's what the evolutionary history gave. What happens with beings that have no specific history of selection for this form factor? I'm sure Josh has already shown you some of this.",
+    "chunk_metadata": {
+      "token_count": 173,
+      "sentence_count": 10,
+      "primary_topics": [
+        "Bioelectric code",
+        "Organ-level communication",
+        "Synthetic living constructs"
+      ],
+      "secondary_topics": [
+        "Evolutionary history",
+        "Genetic factors",
+        "Cellular communication",
+        "Modular communication",
+        "Top-down control",
+        "Selection history",
+        "Form factor"
+      ],
+      "key_terms": [
+        "Bioelectric code",
+        "Organ",
+        "Synthetic living constructs",
+        "Evolution",
+        "Subroutine call",
+        "Form factor"
+      ],
+      "content_summary": "The speaker discusses the concept of bioelectric code and its role in organ-level communication. The focus is on understanding this code to improve communication with biological material. The speaker also touches on synthetic living constructs, questioning how they function without the benefit of evolutionary history.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "start_time_seconds": 619.03,
+      "end_time_seconds": 676.39
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_035",
+        "timestamp": 630,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_035_630.0s.jpg",
+        "file_size": 41107,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_011",
+    "chunk_text": "This is basically epithelial cells taken from a frog embryo. And when you take them away, so we don't edit the DNA, we don't put in synthetic biology circuits, there are no scaffolds, there are no drugs, no nanomaterials. All that we do is we engineer by subtraction, meaning that these cells normally are going to be bullied by these other cells and forced into being a boring two dimensional outer cover for the tadpole that keeps the bacteria out. But if you subtract this influence away and you ask what do these cells intrinsically want to do, then you see something interesting. They don't just crawl away from each other, they don't die or form a monolayer. They self assemble. And you can see actually each one of these circles is a single cell.",
+    "chunk_metadata": {
+      "token_count": 135,
+      "sentence_count": 8,
+      "primary_topics": [
+        "Epithelial cells",
+        "Frog embryo",
+        "Cellular self-assembly",
+        "Intrinsic cellular behavior",
+        "Engineering by subtraction"
+      ],
+      "secondary_topics": [
+        "DNA editing",
+        "Synthetic biology circuits",
+        "Cellular scaffolds",
+        "Nanomaterials",
+        "Cellular monolayer",
+        "Cellular interaction",
+        "Cellular autonomy"
+      ],
+      "key_terms": [
+        "Epithelial cells",
+        "Frog embryo",
+        "Self-assembly",
+        "Engineering by subtraction",
+        "Monolayer",
+        "Intrinsic behavior",
+        "Cellular interaction",
+        "Autonomy"
+      ],
+      "content_summary": "The presentation discusses an experiment involving epithelial cells from a frog embryo. The researcher explains the concept of 'engineering by subtraction', where the influence of other cells is removed to observe the intrinsic behavior of the epithelial cells. These cells, when left to their own devices, self-assemble rather than forming a monolayer or dying off.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "start_time_seconds": 676.39,
+      "end_time_seconds": 722.86
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_038",
+        "timestamp": 684,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_038_684.0s.jpg",
+        "file_size": 31968,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_012",
+    "chunk_text": "So here's this tiny little thing that doesn't hurt, that it looks like a little horse or something, it makes its way over here, it's moving around in a very interesting way that we still don't understand how it moves. There's a little calcium flash as it interacts with this, with this big one. So these are xenobots and they have some amazing Behaviors. They've repurposed their cilia to move through the fluid. You can see that here. They can go in circles. They can patrol back and forth like this. You can make weird shapes out of them like this donut thing. They have collective behaviors that we're still studying. Here's a xenobot navigating a maze. You know, we have no idea it's, it's self powered. We don't need to actuate it at all. We have no idea what, what guides. At this point, we're studying all that, but the decision making, you know, why it turns around at this particular spot. There's no liquid flow here. There are no gradients, there's no food. It takes this corner without having to bump into the opposite wall. And then at some point, it spontaneously turns around.",
+    "chunk_metadata": {
+      "token_count": 196,
+      "sentence_count": 19,
+      "primary_topics": [
+        "Xenobots",
+        "Bioelectricity",
+        "Movement Mechanisms",
+        "Collective Behaviors"
+      ],
+      "secondary_topics": [
+        "Calcium Flash",
+        "Cilia Repurposing",
+        "Maze Navigation",
+        "Self-Powered Movement",
+        "Decision Making",
+        "Absence of Gradients",
+        "Spontaneous Actions"
+      ],
+      "key_terms": [
+        "Xenobots",
+        "Cilia",
+        "Bioelectricity",
+        "Calcium Flash",
+        "Collective Behaviors",
+        "Self-Powered",
+        "Gradients",
+        "Spontaneous"
+      ],
+      "content_summary": "The speaker discusses xenobots, which are bioelectric organisms that exhibit unique behaviors. They repurpose their cilia for movement, show collective behaviors, and can navigate mazes without external guidance. The speaker also mentions that these xenobots are self-powered and can make decisions without apparent stimuli.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "start_time_seconds": 722.86,
+      "end_time_seconds": 780.21
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_041",
+        "timestamp": 738,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_041_738.0s.jpg",
+        "file_size": 28640,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_013",
+    "chunk_text": "So all of these kinds of things are completely spontaneous. We're not pacing it or controlling it. Now, one of the studies that we've made of it is what are the transcriptional, what does the transcriptome look like of a creature that has a novel lifestyle that has not been selected for? It turns out that it has hundreds of genes that are expressed very differently than these same cells back in the embryo. I'll just show you one example of what it does as it dips into the genome to pick out novel things that are there for this lifestyle. There's a whole cluster of genes that actually is associated with sensory perception of sound. And we thought that's kind of amazing. Is it possible that these things could actually hear or respond to sound? And so what we did was this experiment. We put a speaker under this. And again, this is just brand new kinds of things.",
+    "chunk_metadata": {
+      "token_count": 160,
+      "sentence_count": 11,
+      "primary_topics": [
+        "Spontaneous biological processes",
+        "Transcriptome analysis",
+        "Gene expression",
+        "Novel lifestyle adaptation"
+      ],
+      "secondary_topics": [
+        "Sensory perception of sound",
+        "Embryonic development",
+        "Genomic exploration",
+        "Experimental design",
+        "Sound response in organisms"
+      ],
+      "key_terms": [
+        "Transcriptome",
+        "Gene expression",
+        "Embryo",
+        "Sensory perception",
+        "Genome"
+      ],
+      "content_summary": "The speaker discusses the spontaneous nature of certain biological processes, focusing on the transcriptome of an organism adapting to a novel lifestyle. They highlight an unexpected finding of genes associated with sound perception, prompting further investigation into whether these organisms can respond to sound.",
+      "scientific_domain": "Developmental Biology, Bioelectricity, Genomics",
+      "start_time_seconds": 780.21,
+      "end_time_seconds": 832.16
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_044",
+        "timestamp": 792,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_044_792.0s.jpg",
+        "file_size": 32843,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_014",
+    "chunk_text": "But it turns out that they absolutely do change their behavior when you provide these kind of sound stimuli. So, you know, these little tight circles. As soon as you turn on the sound, they do this. And then eventually they go. When you stop, they go back to this. Not exactly the same. So maybe there's a little bit of residual memory, but we're trying to figure that out. So all of these things, we're now doing behavioral experiments to ask, what do they remember? What can they learn? What are their preferences? And the last thing that I'll just show you is that this is not some weird fluke of frog development. This little thing, which looks like we got it off the bottom of a pond somewhere, is actually, if you were to sequence it, It's Homo sapiens, 100% wild type Homo sapiens. These are anthrobots made of human tracheal epithelial Cells. And they also do some interesting things. If you played a bunch of human neurons and you put a big scratch through it, they will traverse that scratch, but then they'll pick a spot and sit down and they sort of form the superbot cluster. And what you see is that what they're actually doing is healing the gap. They can actually induce repair. If you lift them up four days later, this is what it looks like. They can actually induce repair across this gap.",
+    "chunk_metadata": {
+      "token_count": 241,
+      "sentence_count": 19,
+      "primary_topics": [
+        "Bioelectricity",
+        "Developmental Biology",
+        "Behavioral Experiments",
+        "Cellular Memory",
+        "Cellular Repair"
+      ],
+      "secondary_topics": [
+        "Sound Stimuli",
+        "Frog Development",
+        "Human Tracheal Epithelial Cells",
+        "Neuron Behavior",
+        "Anthrobots",
+        "Cellular Learning",
+        "Cellular Preferences"
+      ],
+      "key_terms": [
+        "Behavioral Experiments",
+        "Residual Memory",
+        "Frog Development",
+        "Homo Sapiens",
+        "Human Tracheal Epithelial Cells",
+        "Anthrobots",
+        "Neuron Behavior",
+        "Cellular Repair"
+      ],
+      "content_summary": "The speaker discusses experiments on bioelectric organisms, anthrobots, and their responses to sound stimuli. The organisms, including human tracheal epithelial cells, exhibit learning and memory behaviors, and have the ability to repair and heal gaps, suggesting a form of cellular memory and learning.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "start_time_seconds": 832.32,
+      "end_time_seconds": 901.04
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_047",
+        "timestamp": 846,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_047_846.0s.jpg",
+        "file_size": 33536,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_015",
+    "chunk_text": "So who would have known that your tracheal epithelial cells have the ability to form this autonomous little biobot, run around and heal wounds? They have thousands, about 9,000 genes differently expressed than the tissue of origin. Tons of amazing things here that we're still mining. Four discrete behaviors that you could build a behavioral ethogram of. And we're also working on trying to understand what their protocognitive properties look like. And so the very last thing that I'll just say, and this is, you know, kind of the weirdest, the weirdest part of this is that we have to start thinking, if it wasn't a history of selection, which, which people take to, to, to explain this, this path, this kind of thing, you know, what, what are these xenobots turning into? If it, if it wasn't direct engineering, which we didn't do, all we did was liberate the cells. We didn't program them in any way. And if it wasn't selection, where does other information come from? And I just want to pitch this, this, this idea that, you know, we do have a precedent for information that does not come from the physical world.",
+    "chunk_metadata": {
+      "token_count": 197,
+      "sentence_count": 11,
+      "primary_topics": [
+        "Tracheal epithelial cells",
+        "Biobots",
+        "Gene expression",
+        "Cellular behavior",
+        "Protocognitive properties"
+      ],
+      "secondary_topics": [
+        "Wound healing",
+        "Behavioral ethogram",
+        "Cell liberation",
+        "Information origin",
+        "Non-physical information"
+      ],
+      "key_terms": [
+        "Tracheal epithelial cells",
+        "Biobots",
+        "Gene expression",
+        "Behavioral ethogram",
+        "Protocognitive properties",
+        "Cell liberation",
+        "Information origin",
+        "Non-physical information"
+      ],
+      "content_summary": "The speaker discusses the surprising abilities of tracheal epithelial cells to form autonomous biobots capable of wound healing, exhibiting unique behaviors, and potentially possessing protocognitive properties. The speaker also raises questions about the origin of information guiding these cells, suggesting it may not come from physical or selection-based sources.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "start_time_seconds": 901.2,
+      "end_time_seconds": 964.23
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_051",
+        "timestamp": 918,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_051_918.0s.jpg",
+        "file_size": 65339,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_016",
+    "chunk_text": "In other words, this is a, this is a mathematical object called a heli plot of this little function. And if you want to ask why does it have the particular shape that it has? The answer is not anything about its evolutionary history. It's not anything about any facts of physics. It comes from other laws of mathematics that many Platonist mathematicians are studying as a structured, ordered set of patterns. This map of mathematics. I just want to argue, and again, this would take hours to do this properly. But just to point out that I think we need to go a lot far beyond emergence as an answer to the question of where do these properties come from? And we need to ask what are the structured patterns that we are releasing here? And I view these synthetic beings as vehicles for exploring this latent space. And I think this is the research program. And so as we make cyborgs and hybrots and biobots and all these kinds of things, yeah, they're Combinations of evolved material, engineered material, sometimes software, but also patterns from the space of mathematical patterns that are not to be found specifically among the laws of physics. And I think just by itself, emergence is not going to do the trick. We really need to develop tools to understand, to map out that space and map out the interactions between the physical interfaces that we make and the patterns that we see. And so this, now the ability to use all of these amazing features of the living material is part of the field of diverse intelligence where and we are trying to use some AI tools to communicate across all the different levels.",
+    "chunk_metadata": {
+      "token_count": 291,
+      "sentence_count": 17,
+      "primary_topics": [
+        "Mathematical Patterns",
+        "Emergence Theory",
+        "Synthetic Biology",
+        "Bioelectricity",
+        "Artificial Intelligence"
+      ],
+      "secondary_topics": [
+        "Platonist Mathematics",
+        "Cyborgs",
+        "Hybrots",
+        "Biobots",
+        "Evolutionary History",
+        "Physical Interfaces",
+        "Diverse Intelligence",
+        "Software Engineering"
+      ],
+      "key_terms": [
+        "Heli plot",
+        "Structured Patterns",
+        "Latent Space",
+        "Evolved Material",
+        "Engineered Material",
+        "Physical Interfaces"
+      ],
+      "content_summary": "The speaker, Michael Levin, discusses the importance of mathematical patterns in understanding the properties and behaviors of synthetic beings, such as cyborgs, hybrots, and biobots. He suggests that emergence theory alone is insufficient to explain these phenomena and emphasizes the need for tools to map out the interactions between physical interfaces and observed patterns. He also mentions the use of AI tools in the field of diverse intelligence.",
+      "scientific_domain": "Developmental Biology, Bioelectricity, Synthetic Biology, Artificial Intelligence",
+      "start_time_seconds": 964.23,
+      "end_time_seconds": 1061.38
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_054",
+        "timestamp": 972,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_054_972.0s.jpg",
+        "file_size": 63935,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_017",
+    "chunk_text": "So that's it. I'm going to stop here and just summarize. What I've tried to say is that in biology there's this multi scale competency architecture of nested problem solvers. We as evolution can, can exploit this material via prompts and training, not just rewiring or micromanagement. Tools are coming online to communicate with these systems via bioelectrics and of course other modalities. Lots of, lots of applications. And finally, I think that we really need to pay a lot of attention to what you might call the intrinsic motivation of the system. Not, not just programming, not just reinforcement learning, but actually understand what it is that, that these things can do, aside from what we've made them do. And so I'll just stop here and thank the people who did the work.",
+    "chunk_metadata": {
+      "token_count": 134,
+      "sentence_count": 9,
+      "primary_topics": [
+        "Multi scale competency architecture in biology",
+        "Bioelectric communication with biological systems",
+        "Intrinsic motivation of biological systems"
+      ],
+      "secondary_topics": [
+        "Evolutionary exploitation of biological material",
+        "Training and prompts in biological systems",
+        "Rewiring and micromanagement in biology",
+        "Applications of bioelectric tools",
+        "Understanding capabilities of biological systems"
+      ],
+      "key_terms": [
+        "Nested problem solvers",
+        "Prompts and training",
+        "Bioelectrics",
+        "Intrinsic motivation",
+        "Reinforcement learning"
+      ],
+      "content_summary": "The speaker discusses the multi scale competency architecture in biology, which can be exploited by evolution through training and prompts. The speaker also highlights the emerging tools for bioelectric communication with these systems and emphasizes the importance of understanding the intrinsic motivation of these systems beyond what they are programmed to do.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "start_time_seconds": 1061.38,
+      "end_time_seconds": 1102.87
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_059",
+        "timestamp": 1062,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_059_1062.0s.jpg",
+        "file_size": 59041,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_018",
+    "chunk_text": "So our postdocs, some, some, some amazing postdocs and grad students that did the work that I showed you today, lots of collaborators that work with us, always thank the funders and of course most of all to the model systems, both biological and synthetic, in every combination that has taught us all of these things. So I'll stop here. Thank you. Any questions from the audience? Yes, hello, It's Ines Barringham, B2 student from Sheffield. So I want to ask you about your insights. If we using Kaufman principles, like dealing with the biological cells as reaching steady states in a non liquid environment, or use it our dealing models the biological cells in quantum undeterministic rules. This will help us to predict what its behavior and making it. We predict it so we can know what it will do, so we can control it by controlling its behavior, without controlling it really.",
+    "chunk_metadata": {
+      "token_count": 154,
+      "sentence_count": 11,
+      "primary_topics": [
+        "Model Systems in Biology",
+        "Kaufman Principles",
+        "Bioelectricity"
+      ],
+      "secondary_topics": [
+        "Collaborative Research",
+        "Biological and Synthetic Systems",
+        "Steady States",
+        "Non-liquid Environment",
+        "Quantum Undeterministic Rules",
+        "Predictive Models",
+        "Cell Behavior Control"
+      ],
+      "key_terms": [
+        "Postdocs",
+        "Grad students",
+        "Funders",
+        "Biological Cells",
+        "Steady States",
+        "Quantum Undeterministic Rules",
+        "Predictive Models"
+      ],
+      "content_summary": "The speaker acknowledges the contributions of postdocs, grad students, and collaborators in their research. A question is raised about the application of Kaufman principles to predict and potentially control cell behavior in non-liquid environments and under quantum undeterministic rules.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "start_time_seconds": 1103.43,
+      "end_time_seconds": 1177.7
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_062",
+        "timestamp": 1116,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_062_1116.0s.jpg",
+        "file_size": 49601,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_019",
+    "chunk_text": "So I want to hear your insight about this. Yeah, my current framework for all of this stuff is that I think the most powerful advances in predicting their behavior, in manipulating their behavior and so on, are not going to come from thermodynamics or from quantum biology, although I'm sure those things have important Things to tell us. I think the biggest impact on this is going to come from behavioral and cognitive neuroscience, because I think that those things, those disciplines are not about neurons at all. They're about much more fundamental aspects of different modalities that function as a cognitive glue that basically scale the competencies of subunits and project them into novel problem spaces. And there is a wealth of information there that have so far approaches both experimental and conceptual, that have so far been deployed around brains and development.",
+    "chunk_metadata": {
+      "token_count": 145,
+      "sentence_count": 6,
+      "primary_topics": [
+        "Behavioral Neuroscience",
+        "Cognitive Neuroscience",
+        "Developmental Biology"
+      ],
+      "secondary_topics": [
+        "Thermodynamics",
+        "Quantum Biology",
+        "Neurons",
+        "Modalities",
+        "Problem Spaces",
+        "Experimental Approaches",
+        "Conceptual Approaches"
+      ],
+      "key_terms": [
+        "Behavior",
+        "Manipulation",
+        "Cognitive Glue",
+        "Competencies of Subunits",
+        "Novel Problem Spaces",
+        "Brains and Development"
+      ],
+      "content_summary": "The speaker believes that the most significant advances in understanding and manipulating behavior will come from the fields of behavioral and cognitive neuroscience, rather than thermodynamics or quantum biology. These disciplines focus on fundamental aspects of different modalities that function as a cognitive glue, scaling the competencies of subunits and projecting them into new problem spaces.",
+      "scientific_domain": "Developmental Biology, Bioelectricity, Neuroscience",
+      "start_time_seconds": 1178.42,
+      "end_time_seconds": 1241.32
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_066",
+        "timestamp": 1188,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_066_1188.0s.jpg",
+        "file_size": 29370,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_020",
+    "chunk_text": "But all of this stuff works in many other contexts. So not just the learning and molecular networks, but use of hallucinogens, of anesthetics, of serotonergic modulators to literally change the priors, the decision making, the certainty, all these kinds of things that you normally think of when dealing with animals. All this stuff works, as far as I can tell, all the way down. And so to me, all of this, that is where the biggest advances are going to go is from the field of diverse intelligence applied to bioengineering. And there's a massive opportunity there because actually that field is very focused on natural animals of all kinds. They think about bacteria and unicellular organisms and whales and things.",
+    "chunk_metadata": {
+      "token_count": 122,
+      "sentence_count": 7,
+      "primary_topics": [
+        "Bioengineering",
+        "Diverse Intelligence",
+        "Serotonergic Modulators",
+        "Decision Making Processes"
+      ],
+      "secondary_topics": [
+        "Use of Hallucinogens",
+        "Use of Anesthetics",
+        "Molecular Networks",
+        "Learning Processes",
+        "Unicellular Organisms",
+        "Natural Animals",
+        "Bacteria"
+      ],
+      "key_terms": [
+        "Bioengineering",
+        "Diverse Intelligence",
+        "Serotonergic Modulators",
+        "Hallucinogens",
+        "Anesthetics",
+        "Molecular Networks",
+        "Priors",
+        "Certainty",
+        "Unicellular Organisms",
+        "Bacteria"
+      ],
+      "content_summary": "The speaker discusses the application of diverse intelligence in bioengineering, specifically the use of serotonergic modulators, hallucinogens, and anesthetics to alter decision-making processes. They highlight the potential for major advancements in this field, which is currently focused on natural animals, including bacteria and unicellular organisms.",
+      "scientific_domain": "Developmental Biology, Bioelectricity, Bioengineering",
+      "start_time_seconds": 1241.4,
+      "end_time_seconds": 1285.6
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_069",
+        "timestamp": 1242,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_069_1242.0s.jpg",
+        "file_size": 29351,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_021",
+    "chunk_text": "But actually at those meetings there have been very few bioengineers. And so the opportunity for a cross fertilization of this, of these field and roboticists, the opportunity are massive, I think. Other questions? Thanks so much, Michael, as always. Good to see you. Curious about the sound, how you chose that. Is it just like a really nice, precise, non invasive way to do mechano transection, or was there another reason that sort of motivated that choice? Okay, so the question of sound to begin with was simply because we did the transcriptomics and we found this cluster of hearing genes and we thought, okay, maybe this thing is trying to, maybe this is the bigger picture here, I think, is the idea that these novel systems with a novel lifestyle are problem solving in the sense that they. And I have other examples we could talk about that dip into their genome to start to transcribe things that are going to be useful in this lifestyle. Right. And so this, this sort of primed us when we saw the hearing, is that, okay, let's, let's just test it now in terms of what the sound, what the sound is. The only thing we've published so far is one single wavelength is a sine wave and that's it, right? One, one frequency and it's a sine wave. We are currently testing everything from a full frequency sweep to we play different kinds of music that we Let them talk to each other, because, you know, there's a million things. And so the jury's very much still open on what they're doing with that information. While I'm sure the molecular view of this thing is some sort of mechanotransaction, that's probably how they're hearing.",
+    "chunk_metadata": {
+      "token_count": 294,
+      "sentence_count": 17,
+      "primary_topics": [
+        "Bioengineering",
+        "Cross-fertilization of scientific fields",
+        "Use of sound in biological systems"
+      ],
+      "secondary_topics": [
+        "Roboticists",
+        "Transcriptomics",
+        "Hearing genes",
+        "Mechanotransduction",
+        "Genome transcription",
+        "Frequency and sine waves"
+      ],
+      "key_terms": [
+        "Bioengineers",
+        "Roboticists",
+        "Transcriptomics",
+        "Mechanotransduction",
+        "Genome transcription",
+        "Frequency",
+        "Sine wave"
+      ],
+      "content_summary": "The speaker, Michael Levin, discusses the lack of bioengineers in his field and the potential for cross-fertilization with roboticists. He also delves into his research on the use of sound in biological systems, specifically the discovery of a cluster of hearing genes and the ongoing exploration of their function and potential applications.",
+      "scientific_domain": "Developmental Biology, Bioelectricity, Bioengineering",
+      "start_time_seconds": 1285.68,
+      "end_time_seconds": 1384.03
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_072",
+        "timestamp": 1296,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_072_1296.0s.jpg",
+        "file_size": 29388,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_022",
+    "chunk_text": "While I'm sure the molecular view of this thing is some sort of mechanotransaction, that's probably how they're hearing. I mean, they're using, you know, they're using cilia the same way that we do and so on. So I'm sure at the, at the lowest level, that is probably exactly what they're doing. But at a higher level, what I want to understand is ecologically, why are they. Why. Why is this now important? Why are they to trying transcribing these genes? And on the computation side, I want to know how it is. What is the internal causal architecture that allows that system to go from this is my environment to now this is what I want to transcribe. How is it? And the other examples that we've had in our lab have to do with, for example, flatworms identifying just a half dozen genes out of a. Out of a genome of tens of thousands, when it's. When that. That will allow it to overcome a novel toxin that it's never seen before.",
+    "chunk_metadata": {
+      "token_count": 175,
+      "sentence_count": 14,
+      "primary_topics": [
+        "Molecular Mechanotransduction",
+        "Gene Transcription",
+        "Ecological Significance",
+        "Computational Biology"
+      ],
+      "secondary_topics": [
+        "Cilia Function",
+        "Genomic Analysis",
+        "Adaptive Mechanisms",
+        "Environmental Influence on Gene Expression",
+        "Biochemical Response to Toxins"
+      ],
+      "key_terms": [
+        "Mechanotransduction",
+        "Cilia",
+        "Gene Transcription",
+        "Internal Causal Architecture",
+        "Genome",
+        "Toxin"
+      ],
+      "content_summary": "The speaker discusses the molecular mechanisms of mechanotransduction, specifically through cilia, and the ecological implications of gene transcription. They also express interest in understanding the computational aspects of how organisms adapt to their environment by selectively transcribing genes, using the example of a flatworm overcoming a novel toxin.",
+      "scientific_domain": "Developmental Biology, Bioelectricity, Computational Biology",
+      "start_time_seconds": 1376.71,
+      "end_time_seconds": 1431.76
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_077",
+        "timestamp": 1386,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_077_1386.0s.jpg",
+        "file_size": 29371,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_023",
+    "chunk_text": "So, so, so we have these experiments where we hit them with something that's never been around during evolution. Within, you know, within a week, they find. They find the solution. And so how do they find it? Because this, I think, has massive biomedical implications. So I think all of this has the two layers. There's the biophysical layer where it's like. Yeah, it's mechanotransduction, no doubt. But the bigger question is what information is processing, how and why. Hi, I'm wondering if you have any thoughts. You know, we're in this field, especially with the muscle tissue. We're, in a sense, we're trying to replicate the form and function of an organ that exists in a, you know, as a part of an organism. Yep.",
+    "chunk_metadata": {
+      "token_count": 127,
+      "sentence_count": 13,
+      "primary_topics": [
+        "Evolutionary Adaptation",
+        "Biomedical Implications",
+        "Biophysical Layer",
+        "Mechanotransduction",
+        "Organ Replication"
+      ],
+      "secondary_topics": [
+        "Information Processing",
+        "Muscle Tissue",
+        "Form and Function of Organs",
+        "Biological Experimentation",
+        "Adaptive Solutions"
+      ],
+      "key_terms": [
+        "Evolution",
+        "Biomedical",
+        "Biophysical",
+        "Mechanotransduction",
+        "Organ Replication",
+        "Information Processing",
+        "Muscle Tissue"
+      ],
+      "content_summary": "The speaker discusses an experiment where organisms adapt to a new stimulus, highlighting the potential biomedical implications. They mention the biophysical layer and mechanotransduction, and raise questions about information processing. The context is within the field of replicating the form and function of organs, particularly muscle tissue.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "start_time_seconds": 1432.0,
+      "end_time_seconds": 1484.23
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_080",
+        "timestamp": 1440,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_080_1440.0s.jpg",
+        "file_size": 29380,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_024",
+    "chunk_text": "But at the same time, we are exposing it to conditions and an environment where I would guess, you know, especially after learning about your work, like, the cells are in some way trying to do this problem solving on their own. And so I'm wondering, like, from. In terms of us trying to advance the function of the tissues, do you have any thoughts about, like, the way we should be approaching treating these cellular collectives? Should we just go off? Should we try to copy in vivo environments or, you know, explore other alternatives? Anyway, yeah. So the two approaches to this that I've written about and also that we are trying to follow in our lab are first of all, training.",
+    "chunk_metadata": {
+      "token_count": 124,
+      "sentence_count": 8,
+      "primary_topics": [
+        "Cellular problem solving",
+        "Tissue function advancement",
+        "Treatment of cellular collectives"
+      ],
+      "secondary_topics": [
+        "In vivo environment replication",
+        "Alternative treatment approaches",
+        "Cellular environment conditions",
+        "Cellular training",
+        "Laboratory research methods"
+      ],
+      "key_terms": [
+        "Cellular collectives",
+        "In vivo",
+        "Tissue function",
+        "Problem solving",
+        "Treatment approaches"
+      ],
+      "content_summary": "The speaker discusses the concept of cells 'problem-solving' in their environment, and the potential approaches to advancing tissue function. They question whether treatments should mimic in vivo environments or explore other alternatives, and mention two approaches they are exploring in their lab.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "start_time_seconds": 1484.23,
+      "end_time_seconds": 1537.37
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_083",
+        "timestamp": 1494,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_083_1494.0s.jpg",
+        "file_size": 29368,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_025",
+    "chunk_text": "So I think it would be. And you guys have a lot more expertise in actually setting up the muscle side of this than I do. But rewards and punishments and training of cells and tissues for specific outcomes. So building closed loop, this is one thing we're doing now, not with muscle, but for other reasons, is build a closed loop device that continuously rewards for desirable behavior and exploiting the learning capacity to basically train, not physically force, but to train the cells to do what you want them to do. That's the first thing. The second thing, which you can do with that same kind of platform is instrumental learning.",
+    "chunk_metadata": {
+      "token_count": 113,
+      "sentence_count": 7,
+      "primary_topics": [
+        "Cellular Training",
+        "Instrumental Learning",
+        "Closed Loop Devices"
+      ],
+      "secondary_topics": [
+        "Cellular Behavior",
+        "Learning Capacity of Cells",
+        "Desirable Cellular Outcomes",
+        "Rewards and Punishments in Cellular Training",
+        "Muscle Biology"
+      ],
+      "key_terms": [
+        "Closed Loop Device",
+        "Instrumental Learning",
+        "Cellular Training",
+        "Desirable Behavior",
+        "Exploiting Learning Capacity"
+      ],
+      "content_summary": "Michael Levin discusses the concept of training cells and tissues for specific outcomes using a closed loop device. He emphasizes the importance of rewarding desirable behavior and exploiting the learning capacity of cells, rather than physically forcing them to behave in a certain way.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "start_time_seconds": 1537.69,
+      "end_time_seconds": 1572.5
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_086",
+        "timestamp": 1548,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_086_1548.0s.jpg",
+        "file_size": 29431,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_026",
+    "chunk_text": "In other words, you can ask the cells what they want to do by giving them control over the environment. In other words, you set up a closed loop system where different actions lead to different outcomes. And in effect, you get to ask the cells, you let them find the kinds of behaviors that give them the stimuli and the outcomes that are meaningful to them. And I think by doing that, we learn more about the system and then we can become much better at motivating them. And I always think back to. Humans have been training dogs and horses thousands of years before we knew any neuroscience, and we had no idea about mechanisms.",
+    "chunk_metadata": {
+      "token_count": 117,
+      "sentence_count": 6,
+      "primary_topics": [
+        "Cellular Behavior",
+        "Bioelectricity",
+        "Closed Loop Systems"
+      ],
+      "secondary_topics": [
+        "Cell-Environment Interaction",
+        "Cellular Motivation",
+        "Cellular Outcomes",
+        "Learning Mechanisms",
+        "Neuroscience",
+        "Training and Conditioning",
+        "Cellular Stimuli"
+      ],
+      "key_terms": [
+        "Closed Loop System",
+        "Cellular Behavior",
+        "Bioelectricity",
+        "Stimuli",
+        "Outcomes",
+        "Neuroscience"
+      ],
+      "content_summary": "Michael Levin discusses the concept of asking cells what they want to do by giving them control over their environment, setting up a closed loop system where different actions lead to different outcomes. He draws an analogy to humans training animals, suggesting that understanding these cellular behaviors can help us become better at motivating them.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "start_time_seconds": 1572.5,
+      "end_time_seconds": 1607.72
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_088",
+        "timestamp": 1584,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_088_1584.0s.jpg",
+        "file_size": 29409,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  },
+  {
+    "chunk_id": "mOaSHpTOwu0_chunk_027",
+    "chunk_text": "But what we did understand is that they have this amazing interface that if we understand the currency of, of the way that they learn. So rewards and punishments and behavior shaping paradigms and all this kind of stuff, then you can get some amazing outcomes, Even if you're not micromanaging the synaptic chemistry. I have a feeling that that's what we're going to need to do here is to get a much better idea of what do the cells actually want to do, what do they value as rewards and negative reinforcement, and how can we do behavior shaping to get them to do it.",
+    "chunk_metadata": {
+      "token_count": 106,
+      "sentence_count": 4,
+      "primary_topics": [
+        "Cellular Behavior",
+        "Bioelectricity",
+        "Behavior Shaping Paradigms"
+      ],
+      "secondary_topics": [
+        "Synaptic Chemistry",
+        "Rewards and Punishments",
+        "Negative Reinforcement",
+        "Cellular Interactions",
+        "Learning Mechanisms"
+      ],
+      "key_terms": [
+        "Interface",
+        "Currency",
+        "Micromanaging",
+        "Rewards",
+        "Punishments",
+        "Behavior Shaping",
+        "Synaptic Chemistry",
+        "Negative Reinforcement"
+      ],
+      "content_summary": "The speaker discusses the potential of understanding and influencing cellular behavior through bioelectricity, without micromanaging synaptic chemistry. The focus is on understanding what cells 'want' and 'value', and how behavior shaping paradigms can be used to achieve desired outcomes.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "start_time_seconds": 1607.72,
+      "end_time_seconds": 1639.11
+    },
+    "aligned_frames": [
+      {
+        "frame_id": "mOaSHpTOwu0_frame_090",
+        "timestamp": 1620,
+        "file_path": "step_05_frames/mOaSHpTOwu0/mOaSHpTOwu0_frame_090_1620.0s.jpg",
+        "file_size": 29363,
+        "alignment_confidence": 0.9
+      }
+    ],
+    "alignment_quality": {
+      "total_frames": 1,
+      "average_confidence": 0.9,
+      "timestamp_coverage": 0.010869565217391304
+    },
+    "metadata": {
+      "alignment_method": "timestamp_based",
+      "timestamp_tolerance": 5.0
+    }
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "chunk_id": "OD5TOsPZIQY_chunk_020",
+  "text": "So these are not models. This is real, real data in time lapse. And you can see, you can see all the electrophysiology that goes on as the cells figure out who's going to be left, who's going to be right, anterior, posterior and so on. So we have all kinds of computational methods that we've developed to model this phenomenon and to understand how it can underly memories and large scale circuits that do pattern completion, which is basically regeneration, right? You lose a part of the body and then you can sort of complete that pattern later. So we have all kinds of simulations. I want to show you some of these patterns. Not only do these electrical patterns serve as a kind of cognitive Glue to bind cells together into a single body. And so here we have, this is a frog embryo putting its face together. And so this is one frame from that video. We call this the electric phase. Because what you see here is that before the gene expression and the cell behaviors that lead to forming a face, this is the memory that you can read out of what it's planning to build.",
+  "token_count": 201,
+  "sentence_count": 13,
+  "start_sentence": 20,
+  "end_sentence": 32,
+  "start_time_ms": 1051450,
+  "end_time_ms": 1110820,
+  "start_time_seconds": 1051.45,
+  "end_time_seconds": 1110.82,
+  "primary_topics": [
+    "Electrophysiology",
+    "Cellular Memory",
+    "Regeneration",
+    "Bioelectricity",
+    "Computational Modeling"
+  ],
+  "secondary_topics": [
+    "Cell Behavior",
+    "Gene Expression",
+    "Embryonic Development",
+    "Pattern Completion",
+    "Time Lapse Data",
+    "Simulation",
+    "Body Plan Formation",
+    "Cellular Communication"
+  ],
+  "key_terms": [
+    "Electrophysiology",
+    "Anterior",
+    "Posterior",
+    "Regeneration",
+    "Computational Methods",
+    "Simulations",
+    "Electric Phase",
+    "Gene Expression",
+    "Frog Embryo"
+  ],
+  "content_summary": "The presentation discusses the role of electrophysiology in cellular decision-making during development, such as determining cell positioning. It also explores how bioelectricity can underpin memory and regeneration in large scale circuits, with computational methods and simulations used to model these phenomena. An example of a frog embryo developing its face is given to illustrate these concepts.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
+  "enhanced": true
+}

@@ -1,0 +1,41 @@
+{
+  "chunk_id": "mOaSHpTOwu0_chunk_008",
+  "text": "But by injecting specific MRNA's, guided by a computational model that I don't have time to show you, we can introduce specific bioelectric patterns into the early embryo and convey very high level messages. Here in this case, we've put in a message that says, build an eye. Here you go. It makes a complete eye with lens, retina, optic nerve, all that stuff. Now, we don't know how to micromanage the building of an eye. It's a very complex organ, lots of genes expressed, lots of cell types in a very stereotypical order. We have no idea how to micromanage any of that. Luckily, we don't need to. Like with any good cognitive system, there are simple stimuli that result in very complex behaviors that the system knows how to do that you don't have to worry about. And the material has some really cool properties.",
+  "token_count": 147,
+  "sentence_count": 10,
+  "start_sentence": 8,
+  "end_sentence": 17,
+  "start_time_ms": 539720,
+  "end_time_ms": 588660,
+  "start_time_seconds": 539.72,
+  "end_time_seconds": 588.66,
+  "primary_topics": [
+    "Bioelectric patterns",
+    "Embryonic development",
+    "MRNA injection",
+    "Eye development",
+    "Computational modeling"
+  ],
+  "secondary_topics": [
+    "Gene expression",
+    "Cell types",
+    "Cognitive systems",
+    "Complex behaviors",
+    "Material properties"
+  ],
+  "key_terms": [
+    "Bioelectricity",
+    "Embryo",
+    "MRNA",
+    "Computational model",
+    "Eye",
+    "Lens",
+    "Retina",
+    "Optic nerve",
+    "Cognitive system",
+    "Stimuli"
+  ],
+  "content_summary": "The speaker discusses the use of specific MRNA injections, guided by a computational model, to introduce bioelectric patterns into an early embryo. This method has been used to convey complex instructions, such as building an eye, without needing to micromanage the intricate process.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
+  "enhanced": true
+}

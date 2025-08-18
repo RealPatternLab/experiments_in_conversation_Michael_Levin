@@ -1,11 +1,11 @@
 {
-  "total_videos": 3,
+  "total_videos": 5,
   "successful_downloads": 2,
   "failed_downloads": 0,
-  "existing_videos": 1,
+  "existing_videos": 3,
   "skipped_videos": 0,
-  "success_rate": 66.66666666666666,
-  "processing_timestamp": "2025-08-18T09:27:21.479356",
+  "success_rate": 40.0,
+  "processing_timestamp": "2025-08-18T10:35:55.573724",
   "results": [
     {
       "video_id": "FzFFeRVEdUM",
@@ -13,60 +13,36 @@
       "status": "already_processed",
       "local_path": "step_02_extracted_playlist_content/video_FzFFeRVEdUM/video.mp4",
       "file_size_mb": 0,
-      "playlist_added": "2025-08-18T09:27:04.607883"
+      "playlist_added": "2025-08-18T10:35:37.942858"
     },
     {
       "video_id": "zKjdkxrvE6k",
       "title": "\"Life, Mind, and Computing: a diverse intelligence perspective\" by Michael Levin",
-      "download_result": {
-        "success": true,
-        "video_file": "step_02_extracted_playlist_content/video_zKjdkxrvE6k/video.mp4",
-        "file_size_mb": 31.681110382080078,
-        "additional_metadata": {
-          "upload_date": "20250313",
-          "duration": 1988,
-          "view_count": 5706,
-          "like_count": 285,
-          "tags": [],
-          "categories": [
-            "People & Blogs"
-          ],
-          "language": "en",
-          "age_limit": 0,
-          "is_live": false,
-          "was_live": false,
-          "live_status": "not_live",
-          "availability": "public",
-          "format": "18 - 450x360 (360p)",
-          "resolution": "450x360",
-          "fps": 30,
-          "vcodec": "avc1.42001E",
-          "acodec": "mp4a.40.2",
-          "filesize": 33220052,
-          "filesize_approx": 33219810,
-          "subtitle_files": [
-            "video.en.vtt"
-          ],
-          "thumbnail_files": [
-            "video.webp"
-          ]
-        },
-        "download_time": "2025-08-18T09:27:13.119171"
-      },
-      "status": "newly_downloaded"
+      "status": "already_processed",
+      "local_path": "step_02_extracted_playlist_content/video_zKjdkxrvE6k/video.mp4",
+      "file_size_mb": 0,
+      "playlist_added": "2025-08-18T10:35:37.943540"
     },
     {
       "video_id": "xNgq3zqYsoA",
       "title": "\"Ethics and the New Biology\" by Michael Levin",
+      "status": "already_processed",
+      "local_path": "step_02_extracted_playlist_content/video_xNgq3zqYsoA/video.mp4",
+      "file_size_mb": 0,
+      "playlist_added": "2025-08-18T10:35:37.943983"
+    },
+    {
+      "video_id": "mOaSHpTOwu0",
+      "title": "\"Engineering Agential Materials\" by Michael Levin",
       "download_result": {
         "success": true,
-        "video_file": "step_02_extracted_playlist_content/video_xNgq3zqYsoA/video.mp4",
-        "file_size_mb": 27.287156105041504,
+        "video_file": "step_02_extracted_playlist_content/video_mOaSHpTOwu0/video.mp4",
+        "file_size_mb": 38.78764820098877,
         "additional_metadata": {
-          "upload_date": "20250426",
-          "duration": 1953,
-          "view_count": 7030,
-          "like_count": 408,
+          "upload_date": "20250711",
+          "duration": 1639,
+          "view_count": 4175,
+          "like_count": 244,
           "tags": [],
           "categories": [
             "People & Blogs"
@@ -82,8 +58,8 @@
           "fps": 30,
           "vcodec": "avc1.42001E",
           "acodec": "mp4a.40.2",
-          "filesize": 28612657,
-          "filesize_approx": 28612439,
+          "filesize": 40671797,
+          "filesize_approx": 40671610,
           "subtitle_files": [
             "video.en.vtt"
           ],
@@ -91,7 +67,47 @@
             "video.webp"
           ]
         },
-        "download_time": "2025-08-18T09:27:20.474427"
+        "download_time": "2025-08-18T10:35:45.069811"
+      },
+      "status": "newly_downloaded"
+    },
+    {
+      "video_id": "OD5TOsPZIQY",
+      "title": "\"Against Mind-Blindness: recognizing and communicating with diverse intelligences\" by Michael Levin",
+      "download_result": {
+        "success": true,
+        "video_file": "step_02_extracted_playlist_content/video_OD5TOsPZIQY/video.mp4",
+        "file_size_mb": 45.832369804382324,
+        "additional_metadata": {
+          "upload_date": "20250515",
+          "duration": 2149,
+          "view_count": 120574,
+          "like_count": 6872,
+          "tags": [],
+          "categories": [
+            "People & Blogs"
+          ],
+          "language": "en",
+          "age_limit": 0,
+          "is_live": false,
+          "was_live": false,
+          "live_status": "not_live",
+          "availability": "public",
+          "format": "18 - 576x360 (360p)",
+          "resolution": "576x360",
+          "fps": 25,
+          "vcodec": "avc1.42001E",
+          "acodec": "mp4a.40.2",
+          "filesize": 48058723,
+          "filesize_approx": 48058558,
+          "subtitle_files": [
+            "video.en.vtt"
+          ],
+          "thumbnail_files": [
+            "video.webp"
+          ]
+        },
+        "download_time": "2025-08-18T10:35:54.567994"
       },
       "status": "newly_downloaded"
     }

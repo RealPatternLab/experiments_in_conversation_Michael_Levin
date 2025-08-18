@@ -1,0 +1,37 @@
+{
+  "chunk_id": "mOaSHpTOwu0_chunk_009",
+  "text": "For example, this is a cross section taken through a lens sitting in the tail somewhere. What you'll notice is the blue cells are the ones we injected all this other stuff that participates, we never touched it. This is secondary instruction. We told these cells, you should build an eye. And they intrinsically know that there's not enough of them to do it. And so they recruit their neighbors, so they propagate their abnormal bioelectrical state to their neighbors. And then the whole thing makes a decision to build a nice coherent lens. We don't have to hit every cell.",
+  "token_count": 101,
+  "sentence_count": 8,
+  "start_sentence": 9,
+  "end_sentence": 16,
+  "start_time_ms": 588660,
+  "end_time_ms": 619030,
+  "start_time_seconds": 588.66,
+  "end_time_seconds": 619.03,
+  "primary_topics": [
+    "Cellular Communication",
+    "Bioelectricity",
+    "Cellular Recruitment",
+    "Developmental Biology"
+  ],
+  "secondary_topics": [
+    "Cellular Manipulation",
+    "Cellular Instruction",
+    "Cellular Decision Making",
+    "Lens Development",
+    "Cellular Propagation",
+    "Abnormal Bioelectrical State"
+  ],
+  "key_terms": [
+    "Cross Section",
+    "Lens",
+    "Secondary Instruction",
+    "Cell Recruitment",
+    "Bioelectrical State",
+    "Coherent Lens"
+  ],
+  "content_summary": "The speaker discusses a process where specific cells are instructed to build an eye. These cells, recognizing they are insufficient in number, recruit neighboring cells by propagating their abnormal bioelectrical state. This leads to a collective decision to construct a coherent lens.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
+  "enhanced": true
+}

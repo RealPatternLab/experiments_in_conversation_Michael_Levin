@@ -1,0 +1,34 @@
+{
+  "timestamp": "20250818_111111_210",
+  "run_directory": "step_07_faiss_embeddings/run_20250818_111111_210",
+  "text_embeddings_shape": [
+    176,
+    3072
+  ],
+  "visual_embeddings_shape": [
+    176,
+    64
+  ],
+  "combined_embeddings_shape": [
+    176,
+    3136
+  ],
+  "total_content_items": 176,
+  "embedding_model": "text-embedding-3-large",
+  "index_type": "IndexFlatL2",
+  "files": {
+    "text_index": "text_index.faiss",
+    "visual_index": "visual_index.faiss",
+    "combined_index": "combined_index.faiss",
+    "embeddings": "embeddings.npy",
+    "metadata": "metadata.pkl",
+    "consolidated_dir": "consolidated/",
+    "chunks_index": "consolidated/chunks.index",
+    "chunks_embeddings": "consolidated/chunks_embeddings.npy",
+    "chunks_metadata": "consolidated/chunks_metadata.pkl",
+    "info_json": "info.json"
+  },
+  "note": "All files organized in timestamped run directory for clean organization",
+  "consistency_note": "Using OpenAI text-embedding-3-large for consistency with publication pipeline",
+  "organization": "Clean timestamped directory structure with Streamlit compatibility"
+}
