@@ -11,31 +11,36 @@
   "end_time_seconds": 283.95,
   "primary_topics": [
     "Electromagnetism Theory",
-    "Bioengineering Tools",
-    "Sensitivity to Electromagnetic Spectrum",
-    "Evolutionary History"
-  ],
-  "secondary_topics": [
-    "Unification of Different Expressions",
-    "Technological Development",
-    "Practical Applications",
-    "Birth Defects",
+    "Bioengineering",
     "Regenerative Medicine",
     "Cancer Medicine",
+    "Tool Development"
+  ],
+  "secondary_topics": [
+    "Evolutionary History",
+    "Sensory Perception",
+    "Technology Application",
+    "Birth Defects",
+    "Conceptual Tools",
+    "Practical Bench Tools",
     "Mind Blindness",
-    "Perception of Three Dimensional Space"
+    "Three Dimensional Space"
   ],
   "key_terms": [
     "Electromagnetism",
     "Bioengineering",
-    "Evolutionary History",
     "Regenerative Medicine",
     "Cancer Medicine",
+    "Evolutionary History",
+    "Sensory Perception",
+    "Technology Application",
     "Birth Defects",
-    "Three Dimensional Space",
-    "Mind Blindness"
+    "Conceptual Tools",
+    "Practical Bench Tools",
+    "Mind Blindness",
+    "Three Dimensional Space"
   ],
-  "content_summary": "The speaker discusses the importance of understanding electromagnetism and its implications in various fields such as birth defects, regenerative medicine, and cancer medicine. They highlight the significance of creating tools to enhance our sensitivity to the electromagnetic spectrum, which is limited due to our evolutionary history.",
-  "scientific_domain": "Developmental Biology, Bioelectricity, Bioengineering",
+  "content_summary": "The speaker discusses the importance of the theory of electromagnetism, which has led to a greater understanding of the world and the development of various technologies. They express interest in creating tools, both conceptual and practical, to address issues in areas such as birth defects, regenerative medicine, and cancer medicine. The speaker also discusses the limitations of human perception due to evolutionary history, and the need for tools that can overcome these limitations.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
   "enhanced": true
 }

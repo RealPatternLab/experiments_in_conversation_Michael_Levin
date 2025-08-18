@@ -47,7 +47,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Webhook storage for AssemblyAI transcriptions
-WEBHOOK_STORAGE_FILE = "assemblyai_webhooks.json"
+WEBHOOK_STORAGE_FILE = "SCIENTIFIC_VIDEO_PIPELINE/formal_presentations_1_on_0/logs/assemblyai_webhooks.json"
 
 def load_webhook_storage():
     """Load webhook storage from file."""
@@ -728,48 +728,26 @@ class FAISSRetriever:
             return
             
         try:
-            # Look for consolidated embedding directories
-            embedding_dirs = [d for d in self.embeddings_dir.iterdir() if d.is_dir() and d.name.startswith('consolidated_')]
+            # Look for run directories first (new clean format), then consolidated, then legacy
+            run_dirs = [d for d in self.embeddings_dir.iterdir() if d.is_dir() and d.name.startswith('run_')]
+            consolidated_dirs = [d for d in self.embeddings_dir.iterdir() if d.is_dir() and d.name.startswith('consolidated_')]
+            legacy_dirs = [d for d in self.embeddings_dir.iterdir() if d.is_dir() and not d.name.startswith(('run_', 'consolidated_'))]
             
-            if not embedding_dirs:
-                logger.warning("No consolidated embedding directories found")
-                logger.info("Looking for legacy timestamped directories...")
+            if run_dirs:
+                # Use new clean run directory format
+                run_dirs.sort(key=lambda x: x.name, reverse=True)
+                most_recent_dir = run_dirs[0]
+                timestamp = most_recent_dir.name
+                logger.info(f"🎯 Using new clean run directory: {timestamp}")
                 
-                # Fallback to legacy timestamped directories
-                embedding_dirs = [d for d in self.embeddings_dir.iterdir() if d.is_dir()]
-                if not embedding_dirs:
-                    logger.error("No embedding directories found")
-                    return
-                
-                # Sort by timestamp (newest first)
-                embedding_dirs.sort(key=lambda x: x.name, reverse=True)
-                logger.info(f"Found {len(embedding_dirs)} legacy embedding directories")
-                
-                # Load metadata from ALL directories to get total chunk count
+                # For run directories, we'll load metadata later to get total chunks
                 total_chunks = 0
-                for embed_dir in embedding_dirs:
-                    timestamp = embed_dir.name
-                    metadata_path = embed_dir / "chunks_metadata.pkl"
-                    if metadata_path.exists():
-                        with open(metadata_path, 'rb') as f:
-                            metadata = pickle.load(f)
-                            total_chunks += len(metadata)
-                            logger.info(f"📊 {timestamp}: {len(metadata)} chunks")
                 
-                logger.info(f"📊 Total chunks across all legacy directories: {total_chunks}")
-                
-                # Select only the most recent directory for actual use
-                most_recent_dir = embedding_dirs[0]
+            elif consolidated_dirs:
+                # Use consolidated embeddings (intermediate format)
+                consolidated_dirs.sort(key=lambda x: x.name, reverse=True)
+                most_recent_dir = consolidated_dirs[0]
                 timestamp = most_recent_dir.name
-                
-                logger.info(f"🎯 Using most recent legacy embeddings for retrieval: {timestamp}")
-                
-            else:
-                # Use consolidated embeddings
-                embedding_dirs.sort(key=lambda x: x.name, reverse=True)
-                most_recent_dir = embedding_dirs[0]
-                timestamp = most_recent_dir.name
-                
                 logger.info(f"🎯 Using consolidated embeddings: {timestamp}")
                 
                 # Load summary to get total chunk count
@@ -782,16 +760,48 @@ class FAISSRetriever:
                         logger.info(f"📊 Total chunks in consolidated index: {total_chunks}")
                 else:
                     total_chunks = 0
+                    
+            elif legacy_dirs:
+                # Fallback to legacy timestamped directories
+                legacy_dirs.sort(key=lambda x: x.name, reverse=True)
+                logger.info(f"Found {len(legacy_dirs)} legacy embedding directories")
+                
+                # Load metadata from ALL directories to get total chunk count
+                total_chunks = 0
+                for embed_dir in legacy_dirs:
+                    timestamp = embed_dir.name
+                    metadata_path = embed_dir / "chunks_metadata.pkl"
+                    if metadata_path.exists():
+                        with open(metadata_path, 'rb') as f:
+                            metadata = pickle.load(f)
+                            total_chunks += len(metadata)
+                            logger.info(f"📊 {timestamp}: {len(metadata)} chunks")
+                
+                logger.info(f"📊 Total chunks across all legacy directories: {total_chunks}")
+                
+                # Select only the most recent directory for actual use
+                most_recent_dir = legacy_dirs[0]
+                timestamp = most_recent_dir.name
+                logger.info(f"🎯 Using most recent legacy embeddings for retrieval: {timestamp}")
+                
+            else:
+                logger.error("No embedding directories found")
+                return
             
             # Load FAISS indices - prefer text index for text search, fallback to combined
-            # Extract timestamp from consolidated directory name (e.g., "consolidated_20250817_210024_141" -> "20250817_210024_141")
-            if timestamp.startswith('consolidated_'):
+            if timestamp.startswith('run_'):
+                # New clean format - text index is inside the run directory
+                text_index_path = most_recent_dir / "text_index.faiss"
+                combined_index_path = most_recent_dir / "consolidated" / "chunks.index"
+            elif timestamp.startswith('consolidated_'):
+                # Intermediate format - text index is in parent directory
                 timestamp_suffix = timestamp.replace('consolidated_', '')
+                text_index_path = most_recent_dir.parent / f"text_index_{timestamp_suffix}.faiss"
+                combined_index_path = most_recent_dir / "chunks.index"
             else:
-                timestamp_suffix = timestamp
-            
-            text_index_path = most_recent_dir.parent / f"text_index_{timestamp_suffix}.faiss"
-            combined_index_path = most_recent_dir / "chunks.index"
+                # Legacy format - text index is in parent directory
+                text_index_path = most_recent_dir.parent / f"text_index_{timestamp}.faiss"
+                combined_index_path = most_recent_dir / "chunks.index"
             
             if text_index_path.exists():
                 # Use text index for text search (3072 dimensions)
@@ -806,7 +816,13 @@ class FAISSRetriever:
                 return
             
             # Load embeddings
-            embeddings_path = most_recent_dir / "chunks_embeddings.npy"
+            if timestamp.startswith('run_'):
+                # New clean format - embeddings are in consolidated subdirectory
+                embeddings_path = most_recent_dir / "consolidated" / "chunks_embeddings.npy"
+            else:
+                # Legacy/consolidated format - embeddings are in main directory
+                embeddings_path = most_recent_dir / "chunks_embeddings.npy"
+                
             if embeddings_path.exists():
                 all_embeddings = np.load(str(embeddings_path), allow_pickle=True)
                 
@@ -828,7 +844,13 @@ class FAISSRetriever:
                 return
             
             # Load metadata
-            metadata_path = most_recent_dir / "chunks_metadata.pkl"
+            if timestamp.startswith('run_'):
+                # New clean format - metadata is in consolidated subdirectory
+                metadata_path = most_recent_dir / "consolidated" / "chunks_metadata.pkl"
+            else:
+                # Legacy/consolidated format - metadata is in main directory
+                metadata_path = most_recent_dir / "chunks_metadata.pkl"
+                
             if metadata_path.exists():
                 with open(metadata_path, 'rb') as f:
                     self.metadata[timestamp] = pickle.load(f)

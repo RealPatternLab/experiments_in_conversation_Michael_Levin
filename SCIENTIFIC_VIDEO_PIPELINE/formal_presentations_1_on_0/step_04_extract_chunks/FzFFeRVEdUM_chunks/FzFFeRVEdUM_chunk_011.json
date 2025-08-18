@@ -10,19 +10,18 @@
   "start_time_seconds": 695.3,
   "end_time_seconds": 742.76,
   "primary_topics": [
-    "Dissociation",
-    "Split brain patients",
-    "Dissociative identity disorders",
-    "Cognitive light cone",
-    "Scaling of goals"
+    "Dissociation in biological systems",
+    "Concept of self in biological entities",
+    "Scaling of goals in biological systems",
+    "Cognitive light cone"
   ],
   "secondary_topics": [
-    "Boundary of the self",
-    "Size of the largest goal state",
+    "Split brain patients",
+    "Dissociative identity disorders",
     "Cellular goals",
     "Cellular memory",
-    "Cellular anticipatory power",
-    "Scalar goals",
+    "Anticipatory power in cells",
+    "Scalar goals in cells",
     "Cellular pH"
   ],
   "key_terms": [
@@ -30,15 +29,13 @@
     "Split brain",
     "Dissociative identity disorders",
     "Cognitive light cone",
-    "Goal scaling",
-    "Self boundary",
-    "Cellular goals",
+    "Scaling of goals",
     "Cellular memory",
-    "Cellular anticipatory power",
+    "Anticipatory power",
     "Scalar goals",
     "Cellular pH"
   ],
-  "content_summary": "The presentation discusses the concept of dissociation, particularly in split brain patients and those with dissociative identity disorders. A concept called 'cognitive light cone' is introduced, which represents the boundary of self and is defined by the scale of the largest goal one can pursue. This concept is then related to single cells, which have smaller, scalar goals and shorter memories.",
-  "scientific_domain": "Developmental Biology, Bioelectricity, Cognitive Science",
+  "content_summary": "The presentation discusses the concept of dissociation in biological systems, introducing the idea of a 'cognitive light cone' as the boundary of self. It explores the scaling of goals in biological entities, from split-brain patients to single cells, emphasizing that the size of the largest goal state one can remember and pursue defines the self.",
+  "scientific_domain": "Developmental Biology, Bioelectricity, Cognitive Biology",
   "enhanced": true
 }

@@ -10,27 +10,29 @@
   "start_time_seconds": 1038.88,
   "end_time_seconds": 1090.22,
   "primary_topics": [
-    "Cellular communication",
-    "Tissue development",
-    "Bioelectricity"
+    "Cellular Development",
+    "Bioelectricity",
+    "Cellular Communication"
   ],
   "secondary_topics": [
-    "Eye development",
-    "Cellular recruitment",
-    "Collective cellular intelligence",
-    "Cellular resistance",
-    "Cellular cooperation",
-    "Cellular world model"
+    "Tadpole Development",
+    "Eye Formation",
+    "Cellular Recruitment",
+    "Collective Intelligence",
+    "Cellular Resistance",
+    "Cellular Cooperation",
+    "Cellular Re-programming"
   ],
   "key_terms": [
     "Lens",
     "Retina",
-    "Optic nerve",
-    "Cellular recruitment",
-    "Collective intelligence",
-    "World model"
+    "Optic Nerve",
+    "Cell Injection",
+    "Cell Recruitment",
+    "World Model",
+    "Collective Intelligences"
   ],
-  "content_summary": "The speaker discusses a process where injected cells in a tadpole's tail can recruit neighboring cells to develop an eye, demonstrating cellular communication and collective intelligence. The cells resist initially but eventually cooperate to form a complete eye, suggesting a form of cellular 'debate' and decision-making.",
+  "content_summary": "The speaker discusses an experiment where cells are injected with instructions to form an eye, resulting in the creation of a complete eye structure in a tadpole's tail. The injected cells recruit neighboring cells to assist in the process, demonstrating a form of collective intelligence and communication among cells.",
   "scientific_domain": "Developmental Biology, Bioelectricity",
   "enhanced": true
 }

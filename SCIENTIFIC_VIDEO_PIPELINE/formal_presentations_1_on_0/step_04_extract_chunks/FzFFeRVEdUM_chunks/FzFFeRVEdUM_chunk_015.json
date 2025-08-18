@@ -11,31 +11,31 @@
   "end_time_seconds": 957.52,
   "primary_topics": [
     "Bioelectricity",
-    "Neuroscience",
     "Cellular Communication",
-    "Developmental Biology",
-    "Memory Networks"
+    "Neuroscience",
+    "Embryonic Development"
   ],
   "secondary_topics": [
     "Voltage Sensitive Fluorescent Dyes",
-    "Frog Embryo",
+    "Memory Networks",
+    "Pattern Completion",
     "Simulation Tools",
     "Connectionist Ideas",
-    "Pattern Completion",
-    "Attractors in Memory Networks",
-    "Collective Cellular Memory"
+    "Attractors",
+    "Space Navigation"
   ],
   "key_terms": [
     "Bioelectricity",
     "Neurons",
-    "Voltage Sensitive Fluorescent Dyes",
     "Frog Embryo",
-    "Simulation",
+    "Voltage Sensitive Fluorescent Dyes",
+    "Time Lapse",
+    "Simulations",
     "Attractors",
-    "Pattern Completion",
-    "Memory Networks"
+    "Memory Networks",
+    "Pattern Completion"
   ],
-  "content_summary": "Michael Levin discusses the concept of bioelectricity, comparing it to the cognitive glue that binds neurons together and allows cells to form a collective with shared memory. He mentions the use of voltage sensitive fluorescent dyes to track electrical communication in a frog embryo, and the development of simulation tools to explore memory networks and pattern completion.",
+  "content_summary": "The presentation discusses the concept of bioelectricity and its role in cellular communication and embryonic development. It highlights the use of voltage sensitive fluorescent dyes to track bioelectric signals in a frog embryo, and the development of simulation tools to understand the complex memory networks and pattern completion in cells.",
   "scientific_domain": "Developmental Biology, Bioelectricity",
   "enhanced": true
 }

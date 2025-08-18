@@ -63,8 +63,8 @@ class PipelineCleanup:
         
         # Files to preserve (essential for Streamlit and pipeline)
         self.essential_files = {
-            'pipeline_progress_queue.json',
-            'assemblyai_webhooks.json',
+            'logs/pipeline_progress_queue.json',
+            'logs/assemblyai_webhooks.json',
             'run_video_pipeline_1_on_0.py',
             'pipeline_progress_queue.py',
             'PIPELINE_ARCHITECTURE.md',
@@ -421,8 +421,8 @@ class PipelineCleanup:
                 'cache_directories': self.cleanup_stats['cache_cleaned']
             },
             'preserved_essentials': [
-                'pipeline_progress_queue.json',
-                'assemblyai_webhooks.json',
+                'logs/pipeline_progress_queue.json',
+                'logs/assemblyai_webhooks.json',
                 'All step scripts (*.py)',
                 'All transcript files (*_transcript.json)',
                 'All chunk files (*_chunks.json)',

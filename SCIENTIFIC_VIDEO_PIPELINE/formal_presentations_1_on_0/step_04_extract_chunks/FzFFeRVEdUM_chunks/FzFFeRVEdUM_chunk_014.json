@@ -12,31 +12,34 @@
   "primary_topics": [
     "Bioelectricity",
     "Developmental Biology",
-    "Neurobiology",
-    "Genetics",
-    "Sensory Motor Architecture"
+    "Sensory Motor Architecture",
+    "Visual Learning",
+    "Genetics"
   ],
   "secondary_topics": [
     "Optic Nerve Development",
-    "Visual Learning Tasks",
-    "Adaptation",
-    "Problem Solving",
+    "Cellular Problem Solving",
+    "Adaptation to Novel Manipulations",
+    "Role of Genetics in Development",
+    "Animal Vision",
     "Mutation and Selection",
-    "Genetic Interpretation",
-    "Cellular Behavior"
+    "Environmental Interpretation",
+    "Cellular Identity"
   ],
   "key_terms": [
-    "Optic Nerve",
+    "Optic nerve",
     "Synapses",
-    "Spinal Cord",
+    "Spinal cord",
     "Gut",
-    "Visual Learning",
     "Mutation",
     "Selection",
-    "Sensory Motor Architecture",
-    "Bioelectricity"
+    "Sensory motor architecture",
+    "Visual learning tasks",
+    "Bioelectricity",
+    "Genetics",
+    "Problem solving agent"
   ],
-  "content_summary": "The speaker discusses an unusual case where an animal's optic nerve does not connect to the brain but still allows the animal to see. This is attributed to the animal's cells' ability to creatively interpret their environment and genetics, negating the need for additional rounds of mutation and selection. The speaker emphasizes the role of bioelectricity in these processes.",
-  "scientific_domain": "Developmental Biology, Bioelectricity, Neurobiology, Genetics",
+  "content_summary": "The speaker discusses an animal's ability to see despite its optic nerve not connecting to the brain, but instead synapsing on the spinal cord or gut. This is attributed to the animal's cells' ability to creatively solve problems and adapt, rather than relying on genetic determinism. The speaker emphasizes the role of bioelectricity in this process.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
   "enhanced": true
 }

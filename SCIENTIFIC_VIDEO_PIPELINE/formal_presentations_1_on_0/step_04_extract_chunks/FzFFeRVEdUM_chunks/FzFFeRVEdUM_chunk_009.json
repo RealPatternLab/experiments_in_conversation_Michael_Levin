@@ -10,27 +10,27 @@
   "start_time_seconds": 609.62,
   "end_time_seconds": 652.64,
   "primary_topics": [
-    "Self-organization in embryogenesis",
-    "Bioelectricity in developmental biology",
-    "Genetic and non-genetic determinants of embryonic development"
+    "Embryo Development",
+    "Self-Organization",
+    "Bioelectricity"
   ],
   "secondary_topics": [
-    "Blastoderm manipulation",
-    "Embryo twinning",
-    "Cellular communication",
-    "Cellular differentiation",
-    "Embryonic healing processes",
-    "Role of genetics in embryonic development"
+    "Genetic Determinism",
+    "Cellular Communication",
+    "Blastoderm",
+    "Embryonic Twins and Triplets",
+    "Cellular Alignment",
+    "Cellular Self Model"
   ],
   "key_terms": [
     "Blastoderm",
     "Embryo",
-    "Self-organization",
+    "Genetics",
+    "Self-Organization",
     "Bioelectricity",
-    "Cellular alignment",
-    "Genetics"
+    "Cellular Alignment"
   ],
-  "content_summary": "The speaker, Michael Levin, discusses the concept of self-organization in embryogenesis, using the example of manipulating duck embryos. He explains that the number of individuals in an embryo is not solely determined by genetics, but can also be influenced by bioelectric signals that guide cellular alignment and differentiation.",
+  "content_summary": "The speaker, Michael Levin, discusses the concept of self-organization in embryo development. He emphasizes that the number of individuals in an embryo is not determined by genetics, but can self-organize. He illustrates this with an example from his grad school days where he manipulated duck embryos to create multiple individuals from a single embryo.",
   "scientific_domain": "Developmental Biology, Bioelectricity",
   "enhanced": true
 }
