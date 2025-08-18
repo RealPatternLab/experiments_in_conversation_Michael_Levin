@@ -11,32 +11,28 @@
   "end_time_seconds": 1038.48,
   "primary_topics": [
     "Bioelectricity",
-    "Cellular Memory",
     "Developmental Biology",
+    "Cellular Memory",
     "RNA Injection",
     "Ion Channels"
   ],
   "secondary_topics": [
-    "Cell Communication",
-    "Protein Encoding",
+    "Cellular Communication",
     "Voltage Gradients",
+    "Protein Encoding",
     "Cellular Interpretation",
-    "Bioengineering",
-    "Tadpole Development",
-    "Potassium Channels",
-    "Cellular Intelligence"
+    "Biological Experimentation"
   ],
   "key_terms": [
-    "Bioelectricity",
-    "Cellular Memory",
+    "Memory states",
     "RNA",
-    "Ion Channels",
-    "Voltage State",
-    "Potassium Channel",
-    "Cells",
-    "Voltage Gradients"
+    "Ion channel",
+    "Potassium channel",
+    "Voltage state",
+    "Surrounding cells",
+    "Voltage gradients"
   ],
-  "content_summary": "The speaker discusses the ability to read and potentially alter the 'memory states' of cells, using bioelectricity. By injecting RNA that encodes a specific ion channel protein, they can create a voltage state that instructs surrounding cells to build an eye in a tadpole, demonstrating a form of cellular intelligence.",
+  "content_summary": "The speaker discusses the ability to read and potentially alter the 'memory states' of cells, suggesting the possibility of instructing cells to build new structures, such as an eye on a tadpole's tail, through the injection of RNA that encodes specific ion channels. This concept is based on a decade of research into how cells interpret voltage gradients.",
   "scientific_domain": "Developmental Biology, Bioelectricity",
   "enhanced": true
 }

@@ -1,13 +1,13 @@
 {
-  "timestamp": "20250818_083844_561",
-  "run_directory": "step_07_faiss_embeddings/run_20250818_083844_561",
+  "timestamp": "20250818_092125_532",
+  "run_directory": "step_07_faiss_embeddings/run_20250818_092125_532",
   "total_chunks": 26,
   "total_frames": 26,
   "videos_processed": [
     "FzFFeRVEdUM"
   ],
   "embedding_dimensions": 3136,
-  "created_at": "2025-08-18T08:38:59.357730",
+  "created_at": "2025-08-18T09:21:37.514373",
   "files": {
     "text_index": "text_index.faiss",
     "visual_index": "visual_index.faiss",

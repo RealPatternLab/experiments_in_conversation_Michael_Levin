@@ -276,7 +276,7 @@ class VideoTranscriberWebhook:
     def add_pending_transcription(self, transcript_id: str, video_id: str, video_title: str):
         """Add transcription to pending list in webhook storage"""
         try:
-            webhook_file = "assemblyai_webhooks.json"
+            webhook_file = "logs/assemblyai_webhooks.json"
             webhook_data = {}
             
             # Load existing webhook data

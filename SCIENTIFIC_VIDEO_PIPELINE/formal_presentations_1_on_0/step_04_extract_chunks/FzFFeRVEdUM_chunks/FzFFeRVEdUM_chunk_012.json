@@ -11,27 +11,25 @@
   "end_time_seconds": 779.41,
   "primary_topics": [
     "Bioelectricity",
-    "Regeneration in Axolotl",
+    "Regeneration in Axolotls",
     "Cellular Homeostasis"
   ],
   "secondary_topics": [
     "Electrical Networks in Organisms",
-    "Sensory Response to Amputation",
-    "Rebuilding of Body Parts",
-    "Goal-oriented Cellular Activity",
-    "Cellular Communication",
-    "Developmental Biology",
-    "Amphibian Anatomy"
+    "Sensory Mechanisms in Cells",
+    "Cellular Goals",
+    "Amputation and Regrowth",
+    "Stopping Mechanisms in Regrowth"
   ],
   "key_terms": [
     "Axolotl",
     "Regeneration",
-    "Homeostatic state",
+    "Homeostatic State",
     "Amputation",
-    "Electrical network",
-    "Cellular goal"
+    "Electrical Network",
+    "Cellular Goals"
   ],
-  "content_summary": "The presentation discusses the bioelectricity in organisms, particularly axolotls, and how it contributes to their remarkable ability to regenerate body parts. The speaker explains that cells in these amphibians sense when they've been removed from their 'goal' due to amputation and work to rebuild until they reach their homeostatic state.",
+  "content_summary": "The presentation discusses the concept of bioelectricity and its role in the regeneration process in axolotls. It explores how cells can sense when they are removed from their 'goal' and work to rebuild, stopping when they reach a homeostatic state.",
   "scientific_domain": "Developmental Biology, Bioelectricity",
   "enhanced": true
 }

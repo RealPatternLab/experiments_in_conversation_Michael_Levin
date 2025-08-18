@@ -10,31 +10,33 @@
   "start_time_seconds": 1255.82,
   "end_time_seconds": 1328.38,
   "primary_topics": [
+    "Biobots",
     "Gene Expression",
     "Cellular Self-Assembly",
-    "Biobots",
-    "Genome Alteration",
-    "Cellular Repair Mechanisms"
+    "Therapeutic Applications",
+    "Genome Alteration"
   ],
   "secondary_topics": [
-    "Personalized Therapeutics",
     "Immune Suppression",
+    "Personalized Therapeutics",
     "Tracheal Cells",
     "Neurons",
     "Wound Healing",
-    "Active Systems in Genetics",
-    "Proto Organism"
+    "Active Systems",
+    "Proto Organism",
+    "Super Bot Cluster"
   ],
   "key_terms": [
     "Genome",
     "Affordances",
-    "Super bot cluster",
-    "Proto organism",
-    "Gene expression",
     "Biobots",
-    "Immune Suppression"
+    "Super Bot Cluster",
+    "Gene Expression",
+    "Self-Assembly",
+    "Immune Suppression",
+    "Therapeutics"
   ],
-  "content_summary": "The speaker discusses the discovery of biobots, self-assembled organisms from tracheal cells, and their potential in therapeutics. These biobots, with altered gene expression, can repair wounds in neurons and potentially other tissues, opening new avenues in personalized medicine.",
-  "scientific_domain": "Developmental Biology, Bioelectricity, Genetics",
+  "content_summary": "The speaker discusses the creation of 'biobots' from tracheal cells, which have the ability to self-assemble and express genes differently than their original state. These biobots can repair wounds in human neurons and potentially have other therapeutic applications, without the need for immune suppression.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
   "enhanced": true
 }

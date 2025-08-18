@@ -12,30 +12,31 @@
   "primary_topics": [
     "Bioelectricity",
     "Cellular Communication",
-    "Neuroscience",
-    "Embryonic Development"
+    "Neuroscience"
   ],
   "secondary_topics": [
     "Voltage Sensitive Fluorescent Dyes",
-    "Memory Networks",
-    "Pattern Completion",
+    "Frog Embryo Development",
     "Simulation Tools",
     "Connectionist Ideas",
-    "Attractors",
-    "Space Navigation"
+    "Attractors in Memory Networks",
+    "Pattern Completion",
+    "Cellular Collective Memory"
   ],
   "key_terms": [
     "Bioelectricity",
     "Neurons",
-    "Frog Embryo",
     "Voltage Sensitive Fluorescent Dyes",
     "Time Lapse",
+    "Frog Embryo",
+    "Electrical Communications",
     "Simulations",
+    "Connectionist Ideas",
     "Attractors",
     "Memory Networks",
     "Pattern Completion"
   ],
-  "content_summary": "The presentation discusses the concept of bioelectricity and its role in cellular communication and embryonic development. It highlights the use of voltage sensitive fluorescent dyes to track bioelectric signals in a frog embryo, and the development of simulation tools to understand the complex memory networks and pattern completion in cells.",
+  "content_summary": "The presentation discusses the concept of bioelectricity, its role in cellular communication, and its significance in binding neurons together. The speaker uses a frog embryo as an example to demonstrate these concepts and discusses the use of simulation tools and connectionist ideas in their research.",
   "scientific_domain": "Developmental Biology, Bioelectricity",
   "enhanced": true
 }

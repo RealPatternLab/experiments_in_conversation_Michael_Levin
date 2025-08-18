@@ -10,26 +10,37 @@
   "start_time_seconds": 337.12,
   "end_time_seconds": 428.68,
   "primary_topics": [
-    "Embryonic Development",
-    "Mind-Body Interaction",
-    "Bioelectricity",
-    "Cancer"
-  ],
-  "secondary_topics": [
-    "Physical Laws",
-    "Psychology and Psychoanalysis",
-    "Behavioral Science",
-    "Dissociative Identity Disorder",
+    "Embryonic development",
+    "Transition from physical to psychological domain",
+    "Concept of mind",
+    "Cancer as a dissociative identity disorder of the body",
     "Anthrobots"
   ],
-  "key_terms": [
-    "Scaling of Mind",
-    "Agential Material",
-    "Passive Parts",
-    "Intelligence",
-    "Developmental Biology"
+  "secondary_topics": [
+    "Physical laws",
+    "Chemistry",
+    "Psychology",
+    "Psychoanalysis",
+    "Behavioral science",
+    "Scaling of mind",
+    "Agential material",
+    "Comparison between biological organisms and robots"
   ],
-  "content_summary": "The speaker discusses the transition from physical and chemical processes to psychological and behavioral ones during embryonic development. He also mentions the potential for disorders like cancer and the possibility of cells living on as 'anthrobots' after the death of the original human donor.",
+  "key_terms": [
+    "Embryonic development",
+    "Physics",
+    "Chemistry",
+    "Psychology",
+    "Psychoanalysis",
+    "Behavioral science",
+    "Mind",
+    "Dissociative identity disorder",
+    "Cancer",
+    "Anthrobots",
+    "Agential material",
+    "Passive parts"
+  ],
+  "content_summary": "The speaker discusses the transition of a system from obeying physical laws to exhibiting psychological behaviors during embryonic development. They also mention the concept of cancer as a dissociative identity disorder of the body and introduce the concept of anthrobots, cells that can have a new life after the death of the original human donor.",
   "scientific_domain": "Developmental Biology, Bioelectricity",
   "enhanced": true
 }
