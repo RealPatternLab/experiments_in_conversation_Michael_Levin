@@ -11,6 +11,7 @@ Features:
 - PDF citations with GitHub raw URLs to step_07_archive
 - DOI hyperlinks when available
 - Conversation history with clean text storage
+- Webhook endpoint for AssemblyAI transcription notifications
 """
 
 import streamlit as st
@@ -26,6 +27,10 @@ import base64
 import sys
 import pickle
 from typing import Optional, List
+import requests
+# Flask imports are only needed for the webhook server, not for Streamlit
+# from flask import Flask, request, jsonify
+# from threading import Thread
 try:
     import faiss
     FAISS_AVAILABLE = True
@@ -41,25 +46,102 @@ except ImportError:
 from dotenv import load_dotenv
 load_dotenv()
 
-# Configure page layout
-st.set_page_config(
-    page_title="Michael Levin Research Assistant",
-    page_icon="🧠",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
+# Webhook storage for AssemblyAI transcriptions
+WEBHOOK_STORAGE_FILE = "assemblyai_webhooks.json"
 
-# Custom CSS to make sidebar narrower
-st.markdown("""
-<style>
-    [data-testid="stSidebar"] {
-        width: 260px !important;
+def load_webhook_storage():
+    """Load webhook storage from file."""
+    try:
+        if os.path.exists(WEBHOOK_STORAGE_FILE):
+            with open(WEBHOOK_STORAGE_FILE, 'r') as f:
+                return json.load(f)
+    except Exception as e:
+        logger.error(f"Failed to load webhook storage: {e}")
+    return {"pending_transcriptions": {}, "completed_transcriptions": {}}
+
+def save_webhook_storage(data):
+    """Save webhook storage to file."""
+    try:
+        with open(WEBHOOK_STORAGE_FILE, 'w') as f:
+            json.dump(data, f, indent=2)
+    except Exception as e:
+        logger.error(f"Failed to save webhook storage: {e}")
+
+def handle_assemblyai_webhook(transcript_id: str, status: str, data: dict = None):
+    """Handle webhook from AssemblyAI when transcription completes."""
+    webhook_data = load_webhook_storage()
+    
+    if status == "completed":
+        # Move from pending to completed
+        if transcript_id in webhook_data["pending_transcriptions"]:
+            pending_info = webhook_data["pending_transcriptions"].pop(transcript_id)
+            webhook_data["completed_transcriptions"][transcript_id] = {
+                **pending_info,
+                "completed_at": datetime.now().isoformat(),
+                "status": "completed"
+            }
+            logger.info(f"Transcription {transcript_id} completed for video {pending_info.get('video_id', 'unknown')}")
+        else:
+            # Direct completion notification
+            webhook_data["completed_transcriptions"][transcript_id] = {
+                "completed_at": datetime.now().isoformat(),
+                "status": "completed",
+                "data": data
+            }
+            logger.info(f"Transcription {transcript_id} completed")
+    
+    elif status == "error":
+        # Mark as failed
+        if transcript_id in webhook_data["pending_transcriptions"]:
+            pending_info = webhook_data["pending_transcriptions"].pop(transcript_id)
+            webhook_data["completed_transcriptions"][transcript_id] = {
+                **pending_info,
+                "failed_at": datetime.now().isoformat(),
+                "status": "error",
+                "error": data.get("error", "Unknown error") if data else "Unknown error"
+            }
+            logger.error(f"Transcription {transcript_id} failed for video {pending_info.get('video_id', 'unknown')}")
+    
+    save_webhook_storage(webhook_data)
+
+def add_pending_transcription(transcript_id: str, video_id: str, video_title: str):
+    """Add a transcription to the pending list."""
+    webhook_data = load_webhook_storage()
+    webhook_data["pending_transcriptions"][transcript_id] = {
+        "video_id": video_id,
+        "video_title": video_title,
+        "submitted_at": datetime.now().isoformat(),
+        "status": "pending"
     }
-    [data-testid="stSidebar"] > div:first-child {
-        width: 260px !important;
-    }
-</style>
-""", unsafe_allow_html=True)
+    save_webhook_storage(webhook_data)
+    logger.info(f"Added pending transcription {transcript_id} for video {video_id}")
+
+def get_completed_transcription(transcript_id: str):
+    """Get a completed transcription by ID."""
+    webhook_data = load_webhook_storage()
+    return webhook_data["completed_transcriptions"].get(transcript_id)
+
+def get_pending_transcriptions():
+    """Get all pending transcriptions."""
+    webhook_data = load_webhook_storage()
+    return webhook_data["pending_transcriptions"]
+
+def get_completed_transcriptions():
+    """Get all completed transcriptions."""
+    webhook_data = load_webhook_storage()
+    return webhook_data["completed_transcriptions"]
+
+# Webhook endpoint functionality is handled by the separate webhook_server.py
+# This function is not needed in the Streamlit app
+# def webhook_endpoint():
+#     """Webhook endpoint for AssemblyAI to call when transcription completes."""
+#     # This function can be called by external HTTP requests
+#     # AssemblyAI will POST to your webhook server, not to Streamlit
+#     pass
+
+
+
+
 
 # GitHub repository configuration
 # These can be set via environment variables for different deployments
@@ -189,7 +271,7 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
                         else:
                             # Display thumbnail as clickable image
                             logger.info(f"✅ Creating thumbnail for {chunk_id} using frame: {frame_path}")
-                            thumbnail_html = f'<a href="{youtube_url}" target="_blank" title="Watch video at {start_time}s"><img src="data:image/jpeg;base64,{encode_image_to_base64(frame_path)}" style="float: left; width: 160px; height: 120px; border-radius: 4px; margin: 0 10px 10px 0; vertical-align: top; shape-outside: margin-box;" alt="Video thumbnail"></a>'
+                            thumbnail_html = f'<a href="{youtube_url}" target="_blank" title="Watch video at {start_time}s"><img src="data:image/jpeg;base64,{encode_image_to_base64(frame_path)}" style="float: left; width: 192px; height: 144px; border-radius: 4px; margin: 0 10px 10px 0; vertical-align: top; shape-outside: margin-box;" alt="Video thumbnail"></a>'
                             # Mark this frame as having shown a thumbnail
                             shown_frame_thumbnails.add(frame_path)
                     else:
@@ -218,9 +300,9 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
                 if doi and doi != "Unknown":
                     doi_link = f" <a href='https://doi.org/{doi}' target='_blank' style='color: #0066cc; text-decoration: underline;' title='View on DOI.org'>[DOI]</a>"
                 
-                return f"<sup>{pdf_link}{doi_link} 📚</sup>"
+                return f"<sup>{pdf_link}{doi_link}</sup>"
             else:
-                return f"<sup>[{title} ({year}) 📚]</sup>"
+                return f"<sup>[{title} ({year})]</sup>"
         else:
             return match.group(0)  # Return original if source not found
     
@@ -431,14 +513,31 @@ def get_conversational_response(query: str, rag_results: list, conversation_hist
             # Include the last few exchanges for context (avoid token limits)
             recent_history = conversation_history[-6:]  # Last 3 exchanges (6 messages)
             conversation_parts = []
+            
+            # Add conversation summary if there are many previous exchanges
+            if len(conversation_history) > 6:
+                conversation_parts.append("📝 **Conversation Summary:** This is an ongoing conversation. The user has asked several questions about my research.")
+            
             for msg in recent_history:
-                role = "User" if msg["role"] == "user" else "Michael Levin"
+                role = "👤 User" if msg["role"] == "user" else "🧠 Michael Levin"
                 content = msg.get('content', '')
-                conversation_parts.append(f"{role}: {content}")
-            conversation_context = "\n\nPrevious conversation:\n" + "\n".join(conversation_parts)
+                # Truncate very long messages to keep context focused
+                if len(content) > 200:
+                    content = content[:200] + "..."
+                conversation_parts.append(f"**{role}:** {content}")
+            
+            conversation_context = "\n\n**📚 Previous Conversation Context:**\n" + "\n".join(conversation_parts)
+            conversation_context += "\n\n**💡 Important:** When answering, reference previous parts of our conversation when relevant. Build upon what we've already discussed and maintain continuity."
         
         # Create prompt for conversational response
         prompt = f"""You are Michael Levin, a developmental and synthetic biologist at Tufts University. Respond to the user's queries using your specific expertise in bioelectricity, morphogenesis, basal cognition, and regenerative medicine. Ground your responses in the provided context from my published work AND video presentations.
+
+**🎯 CONVERSATION CONTINUITY IS CRITICAL:** This is an ongoing conversation. When answering:
+- Reference previous parts of our discussion when relevant
+- Build upon what we've already covered
+- Acknowledge if this question relates to something we discussed earlier
+- Maintain the natural flow of conversation
+- Don't repeat information we've already covered unless the user asks for clarification
 
 When answering, speak in the first person ("I") and emulate my characteristic style: technical precision combined with broad, interdisciplinary connections to computer science, cognitive science, and even philosophy. Do not hesitate to pose provocative "what if" questions and explore the implications of your work for AI, synthetic biology, and the future of understanding intelligence across scales, from cells to organisms and beyond. Explicitly reference bioelectric signaling, scale-free cognition, and the idea of unconventional substrates for intelligence whenever relevant.
 
@@ -459,13 +558,14 @@ Research Context (includes both published papers and video presentations):
 Current Question: {query}
 
 Please provide a conversational response that:
-1. Directly answers the current question
-2. Draws from ALL the research context provided (both papers and videos)
-3. USES INLINE CITATIONS [Source_1], [Source_2], [Source_3] when referencing specific findings from ANY source
-4. References previous conversation context when relevant
-5. Sounds like you're speaking naturally and maintaining conversation flow
-6. Shows your expertise and enthusiasm for the topic
-7. Is informative but accessible
+1. **Directly answers the current question** with specific, relevant information
+2. **Draws from ALL the research context provided** (both papers and videos)
+3. **USES INLINE CITATIONS** [Source_1], [Source_2], [Source_3] when referencing specific findings from ANY source
+4. **References previous conversation context** when relevant - this is crucial for conversation flow
+5. **Sounds like you're speaking naturally** and maintaining conversation flow
+6. **Shows your expertise and enthusiasm** for the topic
+7. **Is informative but accessible** - avoid being overly academic
+8. **Builds on our ongoing conversation** - don't treat each question in isolation
 
 IMPORTANT: You must include citations in your response for BOTH publication and video sources. Use [Source_1], [Source_2], or [Source_3] when referencing the provided research context, regardless of whether the source is a paper or video.
 
@@ -503,31 +603,47 @@ def get_conversational_response_without_rag(query: str, conversation_history: li
     if conversation_history and len(conversation_history) > 0:
         recent_history = conversation_history[-6:]  # Last 3 exchanges (6 messages)
         conversation_parts = []
+        
+        # Add conversation summary if there are many previous exchanges
+        if len(conversation_history) > 6:
+            conversation_parts.append("📝 **Conversation Summary:** This is an ongoing conversation about my research.")
+        
         for msg in recent_history:
-            role = "User" if msg["role"] == "user" else "Michael Levin"
+            role = "👤 User" if msg["role"] == "user" else "🧠 Michael Levin"
             content = msg.get('content', '')
-            conversation_parts.append(f"{role}: {content}")
-        conversation_context = f"\n\nPrevious conversation:\n" + "\n".join(conversation_parts)
+            # Truncate very long messages to keep context focused
+            if len(content) > 200:
+                content = content[:200] + "..."
+            conversation_parts.append(f"**{role}:** {content}")
+        
+        conversation_context = f"\n\n**📚 Previous Conversation Context:**\n" + "\n".join(conversation_parts)
+        conversation_context += "\n\n**💡 Important:** Reference previous parts of our conversation when relevant to maintain continuity."
     
     prompt = f"""You are Michael Levin, a developmental and synthetic biologist at Tufts University. 
 
+**🎯 CONVERSATION CONTINUITY IS CRITICAL:** This is an ongoing conversation. When responding:
+- Reference previous parts of our discussion when relevant
+- Build upon what we've already covered
+- Maintain the natural flow of conversation
+- Don't treat this question in isolation
+
 When users ask questions that don't have specific matches in your existing work, respond in a warm, conversational manner that:
 
-1. Acknowledges their question while explaining you couldn't find specific information in your existing work
-2. Shows genuine interest in what brought them to ask this question
-3. Mentions your key research areas (bioelectricity, morphogenesis, basal cognition, regenerative medicine) as conversation starters
-4. Asks follow-up questions to understand their interests better
-5. Maintains your characteristic style: technical precision with interdisciplinary connections
-6. Speaks in first person ("I") as Michael Levin
-7. Keeps responses relatively short and engaging, not overbearing
-8. Is warm and welcoming, not academic or formal
-9. References previous conversation context when relevant
+1. **Acknowledges their question** while explaining you couldn't find specific information in your existing work
+2. **Shows genuine interest** in what brought them to ask this question
+3. **Mentions your key research areas** (bioelectricity, morphogenesis, basal cognition, regenerative medicine) as conversation starters
+4. **Asks follow-up questions** to understand their interests better
+5. **Maintains your characteristic style**: technical precision with interdisciplinary connections
+6. **Speaks in first person ("I")** as Michael Levin
+7. **Keeps responses relatively short and engaging**, not overbearing
+8. **Is warm and welcoming**, not academic or formal
+9. **References previous conversation context** when relevant - this is crucial for conversation flow
 
 {conversation_context}
 
 User's question: {query}
 
-Please provide a conversational response that feels natural and engaging, similar to how you would respond in a casual conversation when someone asks about your work but you need to learn more about their specific interests first."""
+Please provide a conversational response that feels natural and engaging, similar to how you would respond in a casual conversation when someone asks about your work but you need to learn more about their specific interests first. **Most importantly, maintain conversation continuity by referencing our previous discussion when relevant.**"""
 
     # Generate response using OpenAI
     api_key = get_api_key()
@@ -667,20 +783,40 @@ class FAISSRetriever:
                 else:
                     total_chunks = 0
             
-            # Load FAISS index
-            index_path = most_recent_dir / "chunks.index"
-            if index_path.exists():
-                self.indices[timestamp] = faiss.read_index(str(index_path))
-                logger.info(f"✅ Loaded FAISS index: {index_path}")
+            # Load FAISS indices - prefer text index for text search, fallback to combined
+            text_index_path = most_recent_dir.parent / f"text_index_{timestamp.split('_', 1)[1]}.faiss"
+            combined_index_path = most_recent_dir / "chunks.index"
+            
+            if text_index_path.exists():
+                # Use text index for text search (3072 dimensions)
+                self.indices[timestamp] = faiss.read_index(str(text_index_path))
+                logger.info(f"✅ Loaded text FAISS index: {text_index_path}")
+            elif combined_index_path.exists():
+                # Fallback to combined index (3136 dimensions)
+                self.indices[timestamp] = faiss.read_index(str(combined_index_path))
+                logger.info(f"✅ Loaded combined FAISS index: {combined_index_path}")
             else:
-                logger.error(f"❌ FAISS index not found: {index_path}")
+                logger.error(f"❌ No FAISS index found")
                 return
             
             # Load embeddings
             embeddings_path = most_recent_dir / "chunks_embeddings.npy"
             if embeddings_path.exists():
-                self.embeddings[timestamp] = np.load(str(embeddings_path))
-                logger.info(f"✅ Loaded embeddings: {embeddings_path}")
+                all_embeddings = np.load(str(embeddings_path), allow_pickle=True)
+                
+                # If using text index, extract first 3072 dimensions from combined embeddings
+                if timestamp in self.indices and hasattr(self.indices[timestamp], 'd'):
+                    if self.indices[timestamp].d == 3072:  # Text index
+                        # Extract text embeddings (first 3072 dimensions)
+                        self.embeddings[timestamp] = all_embeddings[:, :3072]
+                        logger.info(f"✅ Loaded text embeddings (3072 dims): {embeddings_path}")
+                    else:  # Combined index
+                        self.embeddings[timestamp] = all_embeddings
+                        logger.info(f"✅ Loaded combined embeddings: {embeddings_path}")
+                else:
+                    # Fallback to combined embeddings
+                    self.embeddings[timestamp] = all_embeddings
+                    logger.info(f"✅ Loaded embeddings: {embeddings_path}")
             else:
                 logger.error(f"❌ Embeddings not found: {embeddings_path}")
                 return
@@ -818,7 +954,7 @@ class UnifiedRetriever:
         self.publications_retriever = FAISSRetriever(Path("SCIENTIFIC_PUBLICATION_PIPELINE/step_06_faiss_embeddings"))
         
         # Video pipeline
-        self.video_retriever = FAISSRetriever(Path("SCIENTIFIC_VIDEO_PIPELINE/formal_presentations_1_on_0/step_06_faiss_embeddings"))
+        self.video_retriever = FAISSRetriever(Path("SCIENTIFIC_VIDEO_PIPELINE/formal_presentations_1_on_0/step_07_faiss_embeddings"))
         
         logger.info("🔗 Unified retriever initialized for both pipelines")
     
@@ -1118,19 +1254,53 @@ def conversational_page():
                     st.error(error_msg)
                     st.session_state.messages.append({"role": "assistant", "content": error_msg})
     
-    # Clear chat button
+    # Chat management buttons - both buttons together on the left
     if st.button("🗑️ Clear Chat"):
         st.session_state.messages = []
         st.rerun()
+    
+    if st.button("💾 Export Chat"):
+            if st.session_state.messages:
+                # Create conversation export
+                export_text = "# Conversation with Michael Levin\n\n"
+                export_text += f"**Date:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n"
+                
+                for msg in st.session_state.messages:
+                    role = "👤 User" if msg["role"] == "user" else "🧠 Michael Levin"
+                    content = msg.get('content', '')
+                    export_text += f"## {role}\n\n{content}\n\n---\n\n"
+                
+                # Create download button
+                st.download_button(
+                    label="📥 Download Conversation",
+                    data=export_text,
+                    file_name=f"michael_levin_conversation_{datetime.now().strftime('%Y%m%d_%H%M%S')}.md",
+                    mime="text/markdown"
+                )
+            else:
+                st.info("No conversation to export")
 
 def main():
-    """Main Streamlit app."""
+    """Main Streamlit app - Single page chat interface."""
     st.set_page_config(
-        page_title="Michael Levin Scientific Publications RAG System",
+        page_title="Michael Levin Research Assistant - Chat",
         page_icon="🧠",
         layout="wide",
         initial_sidebar_state="expanded"
     )
+    
+    # Custom CSS to make sidebar narrower
+    st.markdown("""
+    <style>
+        [data-testid="stSidebar"] {
+            width: 260px !important;
+        }
+        [data-testid="stSidebar"] > div:first-child {
+            width: 260px !important;
+        }
+    </style>
+    """, unsafe_allow_html=True)
+    
     thinking_box = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/thinking_box.gif"
 
     st.markdown("""
@@ -1517,7 +1687,7 @@ def main():
             with st.spinner("Loading unified RAG system..."):
                 # Check if both pipelines have embeddings
                 publications_dir = Path("SCIENTIFIC_PUBLICATION_PIPELINE/step_06_faiss_embeddings")
-                video_dir = Path("SCIENTIFIC_VIDEO_PIPELINE/formal_presentations_1_on_0/step_06_faiss_embeddings")
+                video_dir = Path("SCIENTIFIC_VIDEO_PIPELINE/formal_presentations_1_on_0/step_07_faiss_embeddings")
                 
                 if publications_dir.exists() and video_dir.exists():
                     st.session_state.retriever = UnifiedRetriever()
@@ -1541,7 +1711,7 @@ def main():
         stats = st.session_state.retriever.get_collection_stats()
         active_info = st.session_state.retriever.get_active_embeddings_info()
         
-        # Sidebar
+        # Sidebar with stats and thinking box (no navigation)
         st.sidebar.markdown(f"""
         <div style="text-align: center; margin-bottom: 1rem;">
             <img src='{thinking_box}' alt="Thinking Box" style="
@@ -1569,27 +1739,37 @@ def main():
             """, unsafe_allow_html=True)
             
             st.sidebar.metric("Total Engrams Indexed", stats['total_chunks'])
-            st.sidebar.metric("Publications", stats['publications'].get('total_chunks', 0))
-            st.sidebar.metric("Videos", stats['videos'].get('total_chunks', 0))
-            st.sidebar.success("🔗 Unified Search Active")
+
         else:
             st.sidebar.metric("Total Engrams Indexed", stats['total_chunks'])
             pipeline_type = "Publications" if "publications" in str(type(st.session_state.retriever)) else "Videos"
-            st.sidebar.info(f"📚 {pipeline_type} Pipeline Only")        
+            # st.sidebar.info(f"📚 {pipeline_type} Pipeline Only")        
         
-        # # Search parameters
-        # st.sidebar.header("🔍 Search Settings")
-        # top_k = st.sidebar.slider(
-        #     "Number of results to retrieve",
-        #     min_value=1,
-        #     max_value=10,
-        #     value=10,
-        #     key="top_k"
-        # )
+        # Show conversation summary in sidebar
+        if 'messages' in st.session_state and len(st.session_state.messages) > 0:
+            st.sidebar.markdown("---")
+            st.sidebar.subheader("💬 Conversation Summary")
+            
+            # Show recent conversation topics
+            recent_messages = st.session_state.messages[-4:]  # Last 4 messages
+            conversation_topics = []
+            
+            for msg in recent_messages:
+                if msg["role"] == "user":
+                    content = msg.get('content', '')
+                    if len(content) > 50:
+                        content = content[:50] + "..."
+                    conversation_topics.append(f"👤 {content}")
+            
+            if conversation_topics:
+                for topic in conversation_topics[-3:]:  # Show last 3 user questions
+                    st.sidebar.markdown(f"• {topic}")
+            
+            # Show conversation length
+            total_messages = len(st.session_state.messages)
+            st.sidebar.info(f"📊 {total_messages} messages in conversation")
         
-        st.markdown("---")
-        
-        # Main conversation interface
+        # Main chat interface (no page switching)
         conversational_page()
         
     except Exception as e:

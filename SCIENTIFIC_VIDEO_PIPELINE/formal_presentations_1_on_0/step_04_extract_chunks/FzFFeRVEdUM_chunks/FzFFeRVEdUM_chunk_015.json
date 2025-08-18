@@ -1,0 +1,41 @@
+{
+  "chunk_id": "FzFFeRVEdUM_chunk_015",
+  "text": "I kept mentioning this word bioelectricity. And so what we've developed is our methods to read and write the mind of the body the way that neuroscientists have done in the brain. And so here you're seeing voltage sensitive fluorescent Dyes tracking the color corresponds to voltage. And what you're seeing is a time lapse. Here are some cells. This is a frog embryo. What you're seeing is all the electrical communications that allow this thing to be more than the sum of its parts. The bioelectricity is the cognitive glue that binds your neurons together into not just a pile of neurons, but into you. And the bioelectricity is also the cognitive glue that binds individual cells into a collective that can remember what a tadpole is supposed to look like. And we have lots of tools for doing simulations that we've created. We're trying to merge those with all kinds of connectionist ideas about attractors in memory networks that can do pattern completion and that have the ability to navigate the space and so on.",
+  "token_count": 177,
+  "sentence_count": 11,
+  "start_sentence": 15,
+  "end_sentence": 25,
+  "start_time_ms": 898360,
+  "end_time_ms": 957520,
+  "start_time_seconds": 898.36,
+  "end_time_seconds": 957.52,
+  "primary_topics": [
+    "Bioelectricity",
+    "Neuroscience",
+    "Cellular Communication",
+    "Developmental Biology",
+    "Memory Networks"
+  ],
+  "secondary_topics": [
+    "Voltage Sensitive Fluorescent Dyes",
+    "Frog Embryo",
+    "Simulation Tools",
+    "Connectionist Ideas",
+    "Pattern Completion",
+    "Attractors in Memory Networks",
+    "Collective Cellular Memory"
+  ],
+  "key_terms": [
+    "Bioelectricity",
+    "Neurons",
+    "Voltage Sensitive Fluorescent Dyes",
+    "Frog Embryo",
+    "Simulation",
+    "Attractors",
+    "Pattern Completion",
+    "Memory Networks"
+  ],
+  "content_summary": "Michael Levin discusses the concept of bioelectricity, comparing it to the cognitive glue that binds neurons together and allows cells to form a collective with shared memory. He mentions the use of voltage sensitive fluorescent dyes to track electrical communication in a frog embryo, and the development of simulation tools to explore memory networks and pattern completion.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
+  "enhanced": true
+}

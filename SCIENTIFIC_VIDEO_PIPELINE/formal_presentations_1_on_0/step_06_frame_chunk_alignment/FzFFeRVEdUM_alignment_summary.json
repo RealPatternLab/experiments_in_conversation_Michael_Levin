@@ -1,0 +1,10 @@
+{
+  "video_id": "FzFFeRVEdUM",
+  "total_alignments": 26,
+  "total_frames_aligned": 26,
+  "average_alignment_confidence": 0.8999999999999997,
+  "output_files": {
+    "alignments": "step_06_frame_chunk_alignment/FzFFeRVEdUM_alignments.json",
+    "rag_ready": "step_06_frame_chunk_alignment/FzFFeRVEdUM_rag_ready_aligned_content.json"
+  }
+}

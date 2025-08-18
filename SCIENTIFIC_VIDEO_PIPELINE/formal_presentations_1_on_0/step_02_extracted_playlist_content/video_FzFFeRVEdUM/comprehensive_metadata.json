@@ -1,0 +1,53 @@
+{
+  "video_id": "FzFFeRVEdUM",
+  "original_metadata": {
+    "video_id": "FzFFeRVEdUM",
+    "title": "\"Scaling Intelligence in Biology, Artificial Life, and Beyond\" by Michael Levin",
+    "description": null,
+    "channel_title": "Michael Levin's Academic Content",
+    "published_at": "",
+    "playlist_position": 1,
+    "duration": 1444,
+    "view_count": 10000,
+    "like_count": 0,
+    "category_id": [],
+    "default_language": null,
+    "default_audio_language": null
+  },
+  "download_result": {
+    "success": true,
+    "video_file": "step_02_extracted_playlist_content/video_FzFFeRVEdUM/video.mp4",
+    "file_size_mb": 24.28466796875,
+    "additional_metadata": {
+      "upload_date": "20250511",
+      "duration": 1443,
+      "view_count": 10489,
+      "like_count": 638,
+      "tags": [],
+      "categories": [
+        "People & Blogs"
+      ],
+      "language": "en",
+      "age_limit": 0,
+      "is_live": false,
+      "was_live": false,
+      "live_status": "not_live",
+      "availability": "public",
+      "format": "18 - 450x360 (360p)",
+      "resolution": "450x360",
+      "fps": 30,
+      "vcodec": "avc1.42001E",
+      "acodec": "mp4a.40.2",
+      "filesize": 25464320,
+      "filesize_approx": 25464230,
+      "subtitle_files": [
+        "video.en.vtt"
+      ],
+      "thumbnail_files": [
+        "video.webp"
+      ]
+    },
+    "download_time": "2025-08-17T18:56:20.205881"
+  },
+  "processing_timestamp": "2025-08-17T18:56:20.205933"
+}

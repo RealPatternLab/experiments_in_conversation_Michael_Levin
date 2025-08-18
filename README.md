@@ -141,7 +141,7 @@ michael-levin-qa-engine-neu1/
    # Run each step in sequence
    uv run python step_01_playlist_processor.py
    uv run python step_02_video_downloader.py
-   uv run python step_03_transcription.py
+   uv run python step_03_transcription_webhook.py
    uv run python step_04_extract_chunks.py
    uv run python step_05_frame_extractor.py
    uv run python step_06_frame_chunk_alignment.py
