@@ -784,7 +784,13 @@ class FAISSRetriever:
                     total_chunks = 0
             
             # Load FAISS indices - prefer text index for text search, fallback to combined
-            text_index_path = most_recent_dir.parent / f"text_index_{timestamp.split('_', 1)[1]}.faiss"
+            # Extract timestamp from consolidated directory name (e.g., "consolidated_20250817_210024_141" -> "20250817_210024_141")
+            if timestamp.startswith('consolidated_'):
+                timestamp_suffix = timestamp.replace('consolidated_', '')
+            else:
+                timestamp_suffix = timestamp
+            
+            text_index_path = most_recent_dir.parent / f"text_index_{timestamp_suffix}.faiss"
             combined_index_path = most_recent_dir / "chunks.index"
             
             if text_index_path.exists():
