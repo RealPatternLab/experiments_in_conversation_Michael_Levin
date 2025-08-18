@@ -1,0 +1,2494 @@
+{
+  "metadata": {
+    "pipeline_step": "step_06_frame_chunk_alignment",
+    "total_alignments": 38,
+    "alignment_method": "timestamp_based",
+    "processing_timestamp": null
+  },
+  "aligned_content": [
+    {
+      "content_id": "xNgq3zqYsoA_chunk_000",
+      "text_content": {
+        "text": "All right, thank you so much. This is really fun. I've not given a talk specifically on this topic, but I take it very seriously and I think about it all the time. So let's try it and see how it goes. If you want to follow up on any of the science here, this is my official lab webpage that has all the papers, the data sets, the software, all that stuff. And then this is my personal blog with some kind of somewhat crazier version of what I think all of these things mean and so on. So what I'd like to do today is first just give you a quick outline of what I'm going to do, the kind of the journey I'm going to take you on. I'm going to try in the next 25 minutes to take you through a few different things. And fundamental to ethics is I think, this question of what should I do next? And I think fundamental to that is the question of what am I really? And how do I relate to the outside world? And this is a lot of what we do, even though we have a wet lab, a large wet lab where we do all kinds of work on cancer and bioengineering and so on.",
+        "metadata": {
+          "token_count": 220,
+          "sentence_count": 12,
+          "primary_topics": [
+            "Ethics in Science",
+            "Self-Identity in Science",
+            "Bioengineering",
+            "Cancer Research"
+          ],
+          "secondary_topics": [
+            "Scientific Communication",
+            "Data Sharing",
+            "Scientific Blogging",
+            "Wet Lab Research",
+            "Scientific Software",
+            "Scientific Papers"
+          ],
+          "key_terms": [
+            "Ethics",
+            "Bioengineering",
+            "Cancer",
+            "Wet Lab",
+            "Data Sets",
+            "Software"
+          ],
+          "content_summary": "The speaker, Michael Levin, introduces his talk focusing on the ethical considerations and self-identity in science. He mentions his work in a wet lab, conducting research on cancer and bioengineering, and highlights the importance of data sharing and scientific communication through his lab webpage and personal blog.",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 0.16,
+          "end_time_seconds": 65.31
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_001",
+            "timestamp": 18,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_001_18.0s.jpg",
+            "file_size": 43876,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          18
+        ],
+        "time_range": {
+          "start": 18,
+          "end": 18
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_001",
+      "text_content": {
+        "text": "But I think fundamentally this is the sort of thing that we actually work on. So I'm going to talk to you about this idea that we are all a kind of collective intelligence. In fact, I'm going to try to show you and again hard in 25 minutes, but I'll at least show you a few examples why I think really the world consists of intelligence all the way down, okay? Not just brainy mammals and birds and things like that, but all the way down. The implications of that, amazingly enough, are that we can reach all kinds of interesting new biomedicine if we understand how intelligence is implemented in our bodies. And so that gives all kinds of opportunities. There are always in the discussion of ethics, I'm sure somebody will be interested in the risks.",
+        "metadata": {
+          "token_count": 139,
+          "sentence_count": 7,
+          "primary_topics": [
+            "Collective Intelligence",
+            "Bioelectricity",
+            "Biomedicine",
+            "Ethics in Science"
+          ],
+          "secondary_topics": [
+            "Intelligence in Non-Mammalian Organisms",
+            "Biomedical Opportunities",
+            "Implementation of Intelligence in Bodies",
+            "Potential Risks in Biomedical Research"
+          ],
+          "key_terms": [
+            "Collective Intelligence",
+            "Bioelectricity",
+            "Biomedicine",
+            "Ethics",
+            "Intelligence Implementation",
+            "Biomedical Opportunities",
+            "Biomedical Risks"
+          ],
+          "content_summary": "Michael Levin discusses the concept of collective intelligence, suggesting that intelligence is not limited to traditionally 'brainy' organisms but is a universal trait. He proposes that understanding how this intelligence is implemented in our bodies could open up new avenues in biomedicine, though ethical considerations and potential risks must also be addressed.",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 65.31,
+          "end_time_seconds": 109.54
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_004",
+            "timestamp": 72,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_004_72.0s.jpg",
+            "file_size": 33677,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          72
+        ],
+        "time_range": {
+          "start": 72,
+          "end": 72
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_002",
+      "text_content": {
+        "text": "So I'm not going to do a lot of on that in the main talk. But if you want to ask me questions about it later, it's the kind of the most common thing that comes up. So I'd rather talk about some of the more unusual things. One thing that I want to be very clear on with respect to evaluating risk in science is that we really have to think about the opportunity cost. In other words, lots of people approach risk in scientific discovery with a kind of an unspoken assumption that everything is great now and you scientists better not screw it up.",
+        "metadata": {
+          "token_count": 107,
+          "sentence_count": 5,
+          "primary_topics": [
+            "Risk Evaluation in Science",
+            "Opportunity Cost in Scientific Discovery",
+            "Assumptions in Scientific Research"
+          ],
+          "secondary_topics": [
+            "Scientific Discovery",
+            "Risk Management",
+            "Scientific Progress",
+            "Scientific Ethics",
+            "Public Perception of Science",
+            "Scientific Innovation"
+          ],
+          "key_terms": [
+            "Risk Evaluation",
+            "Opportunity Cost",
+            "Scientific Discovery",
+            "Assumptions",
+            "Scientific Ethics"
+          ],
+          "content_summary": "The speaker discusses the importance of evaluating risk in scientific discovery, emphasizing the need to consider the opportunity cost. They critique the common assumption that the current state of affairs is optimal and caution against potential complacency in scientific progress.",
+          "scientific_domain": "Science and Society",
+          "start_time_seconds": 110.17,
+          "end_time_seconds": 140.84
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_007",
+            "timestamp": 126,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_007_126.0s.jpg",
+            "file_size": 33713,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          126
+        ],
+        "time_range": {
+          "start": 126,
+          "end": 126
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_003",
+      "text_content": {
+        "text": "In other words, don't do anything that makes the situation worse. That's a lot of, a lot of these discussions come from that, from that place. But actually, you probably know, things are absolutely not great. There is incredible biomedical suffering out there. I'm not a clinician, I'm not an md, but I get emails, probably a dozen emails per day from people in the most unbelievable extremes of pain and infirmity and disease and whatever. And so it's really hard for young, healthy people to realize what we're actually talking about here. And so I think, yeah, we absolutely have to think about the risks, but we also have to think about the ethical imperative to do something to help the situation. And I actually think it is a kind of moral cowardice to sort of leave it alone and say, not my problem. I'm just going to sit back and try not to make things worse. I think that's not the right way to go. And also, of course, there's issues with the environment and so on. Past the biomedical kinds of things. I'm going to talk about this notion of freedom of embodiment, because after we learn to fix all of the issues of the body towards the normal standard complement of form and function, then you realize that you can use the exact same tools to actually create any kind of embodiment that you want. And so this is something, of course, that we can think about in any discussion of ethics. And, and then towards the end, I'm going to talk about just, just the bigger picture of how that leads to a huge variety of unconventional beings with which we are going to share our world and already share",
+        "metadata": {
+          "token_count": 295,
+          "sentence_count": 16,
+          "primary_topics": [
+            "Biomedical suffering",
+            "Ethical imperative in biomedical research",
+            "Freedom of embodiment"
+          ],
+          "secondary_topics": [
+            "Healthcare communication",
+            "Moral responsibility in science",
+            "Potential of bioengineering",
+            "Unconventional beings",
+            "Environmental issues"
+          ],
+          "key_terms": [
+            "Biomedical suffering",
+            "Ethics",
+            "Embodiment",
+            "Bioengineering",
+            "Unconventional beings"
+          ],
+          "content_summary": "The speaker, Michael Levin, emphasizes the critical need to address biomedical suffering, arguing for an ethical imperative to intervene rather than avoid making things worse. He introduces the concept of 'freedom of embodiment', suggesting that once we can correct bodily issues, the same tools could potentially be used to create any desired form of embodiment, leading to a variety of unconventional beings.",
+          "scientific_domain": "Developmental Biology, Bioelectricity, Bioethics",
+          "start_time_seconds": 140.84,
+          "end_time_seconds": 229.95
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_008",
+            "timestamp": 144,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_008_144.0s.jpg",
+            "file_size": 33713,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          144
+        ],
+        "time_range": {
+          "start": 144,
+          "end": 144
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_004",
+      "text_content": {
+        "text": "And, and then towards the end, I'm going to talk about just, just the bigger picture of how that leads to a huge variety of unconventional beings with which we are going to share our world and already share our world and what we owe to these, to these beings. That, that. And so, and so that kind of brings us, brings us back full circle, right? You can see this is kind of really a cycle, even though I've, I've, I've listed it linearly. So, so the first, the first thing we need to think about is, well, what are all the beings that are relevant to ethics? And so we, when we see something like this, so here's a kind of Oscar winning performance here. This little squirrel knows exactly what's going on. She's going to put the thing on the neck. Ah, look, it's had a terrible accident. It's even going to look to see if the humans are watching to make sure that, see, are you guys looking? Look, I've had a terrible accident. And so when we see something like this, it's very obvious that this is something that has intelligence, that this is something that has preferences, that it has a theory of Mind. And so that we, you know, that we have to be. We have to be kind to things like this. And it's obvious to us because it functions on the same scale of space and time, it operates in the same space as we do in three dimensional space. It has somewhat similar goals to us in terms of survival and physiological integrity and so on.",
+        "metadata": {
+          "token_count": 276,
+          "sentence_count": 17,
+          "primary_topics": [
+            "Ethics in relation to non-human beings",
+            "Intelligence in animals",
+            "Theory of Mind in animals"
+          ],
+          "secondary_topics": [
+            "Inter-species communication",
+            "Animal behavior",
+            "Physiological integrity",
+            "Survival strategies in animals",
+            "Perception of time and space in animals",
+            "Animal preferences",
+            "Ethics in scientific research"
+          ],
+          "key_terms": [
+            "Ethics",
+            "Intelligence",
+            "Theory of Mind",
+            "Physiological integrity",
+            "Survival",
+            "Three dimensional space"
+          ],
+          "content_summary": "The speaker discusses the ethical considerations when dealing with non-human beings, using an example of a squirrel to demonstrate animal intelligence and theory of mind. The speaker emphasizes the need for kindness towards such beings, noting their similar goals in terms of survival and physiological integrity.",
+          "scientific_domain": "Developmental Biology, Ethology, Bioethics",
+          "start_time_seconds": 217.845,
+          "end_time_seconds": 293.68
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_013",
+            "timestamp": 234,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_013_234.0s.jpg",
+            "file_size": 33680,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          234
+        ],
+        "time_range": {
+          "start": 234,
+          "end": 234
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_005",
+      "text_content": {
+        "text": "So this is easy, but actually it gets much more complicated because, and I'll just use an example of the electromagnetic spectrum. Back in the day, there were phenomena such as lightning and static electricity and magnets and light and all kinds of things. And until we had a proper theory of electromagnetism, we had no idea that all of these were actually the same thing. Okay, we thought they were disparate phenomena. And, and what a proper theory of electricity and electromagnetism did for us is that it allowed us to say, first of all, that actually all of these things are manifestations of the same underlying phenomenon. That phenomenon is continuous.",
+        "metadata": {
+          "token_count": 113,
+          "sentence_count": 6,
+          "primary_topics": [
+            "Electromagnetism",
+            "Theory of Electricity",
+            "Phenomena of Lightning, Static Electricity, Magnets, and Light"
+          ],
+          "secondary_topics": [
+            "Electromagnetic Spectrum",
+            "Underlying Phenomena",
+            "Scientific Theories",
+            "Phenomena Continuity",
+            "Manifestations of Phenomena"
+          ],
+          "key_terms": [
+            "Electromagnetism",
+            "Electricity",
+            "Lightning",
+            "Static Electricity",
+            "Magnets",
+            "Light",
+            "Phenomena",
+            "Underlying Phenomenon",
+            "Manifestations"
+          ],
+          "content_summary": "The speaker discusses the complexity of the electromagnetic spectrum, using examples such as lightning, static electricity, magnets, and light. They emphasize the unifying role of the theory of electromagnetism, which posits that these seemingly disparate phenomena are all manifestations of the same underlying phenomenon.",
+          "scientific_domain": "Physics, Electromagnetism",
+          "start_time_seconds": 294.64,
+          "end_time_seconds": 331.12
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_017",
+            "timestamp": 306,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_017_306.0s.jpg",
+            "file_size": 39791,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          306
+        ],
+        "time_range": {
+          "start": 306,
+          "end": 306
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_006",
+      "text_content": {
+        "text": "In other words, it's a spectrum. It's not a set of discrete things. Even though we like to cut it up into regions just for convenience, it's actually a spectrum. And most importantly, that we are natively, because of our evolutionary history, we are only sensitive to a tiny part of that spectrum. All of this stuff, we had no idea that all of this stuff existed until that theory enabled technology that now, with the technological appliances and the theory behind them, enable us to recognize and make use of all kinds of other phenomena in our universe to which we were completely blind.",
+        "metadata": {
+          "token_count": 105,
+          "sentence_count": 6,
+          "primary_topics": [
+            "Spectrum of phenomena",
+            "Human perception limitations",
+            "Evolutionary history"
+          ],
+          "secondary_topics": [
+            "Technological advancements",
+            "Theory-driven technology",
+            "Human blindness to certain phenomena",
+            "Recognition of new phenomena",
+            "Use of unrecognized phenomena"
+          ],
+          "key_terms": [
+            "Spectrum",
+            "Discrete things",
+            "Evolutionary history",
+            "Technological appliances",
+            "Theory"
+          ],
+          "content_summary": "The speaker discusses the concept of a spectrum of phenomena, emphasizing that humans, due to their evolutionary history, are only sensitive to a small part of this spectrum. The speaker notes that the development of theory-driven technology has allowed us to recognize and utilize phenomena previously unknown to us.",
+          "scientific_domain": "Developmental biology, Bioelectricity",
+          "start_time_seconds": 331.12,
+          "end_time_seconds": 363.82
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_019",
+            "timestamp": 342,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_019_342.0s.jpg",
+            "file_size": 39773,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          342
+        ],
+        "time_range": {
+          "start": 342,
+          "end": 342
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_007",
+      "text_content": {
+        "text": "So I'm going to make the claim that we as humans, we have a significant amount of mind blindness. We're reasonably good at recognizing things like this. And so lots of people study birds and primates and maybe a whale or an octopus or things like this, but there are all kinds of other creatures. And one of the things that I try to do in my group is to develop a framework and that allows us to think about diverse intelligences, so all kinds of weird colonial organisms and engineered new life forms that have never existed before. I'm going to show you some today. Artificial intelligence, whether purely software or robotic, maybe someday aliens. And even really exotic things that don't look like beings at all, such as patterns, actually active patterns with the media. And so that spectrum, instead of the electromagnetic spectrum, what we have here is a spectrum of agency, okay? And we could talk about this for the longest time, but fundamentally what we have is some kind of a gradual continuum where passive matter, if there even is such a thing, slowly scales up its cognitive capacities to eventually become something like a metacognitive human or whatever is beyond that. And so this is what we work on, if you're interested. This paper has a lot of the details, and I think this is not just a philosophical task because as we have shown, if you do this well, it leads to new biomedical and bioengineering advances.",
+        "metadata": {
+          "token_count": 254,
+          "sentence_count": 13,
+          "primary_topics": [
+            "Mind Blindness",
+            "Diverse Intelligences",
+            "Artificial Intelligence",
+            "Spectrum of Agency",
+            "Biomedical and Bioengineering Advances"
+          ],
+          "secondary_topics": [
+            "Recognition of Different Organisms",
+            "Colonial Organisms",
+            "Engineered New Life Forms",
+            "Active Patterns with Media",
+            "Gradual Continuum of Cognitive Capacities",
+            "Metacognitive Humans",
+            "Biomedical Applications",
+            "Bioengineering Applications"
+          ],
+          "key_terms": [
+            "Mind Blindness",
+            "Diverse Intelligences",
+            "Artificial Intelligence",
+            "Spectrum of Agency",
+            "Metacognitive",
+            "Bioengineering",
+            "Biomedical",
+            "Cognitive Capacities",
+            "Active Patterns",
+            "Engineered Life Forms"
+          ],
+          "content_summary": "Michael Levin discusses the concept of mind blindness and the need to understand diverse intelligences, including those of artificial intelligence and engineered life forms. He introduces the idea of a 'spectrum of agency', a continuum where passive matter gradually scales up its cognitive capacities to become something like a metacognitive human. He suggests that this research could lead to advances in biomedical and bioengineering fields.",
+          "scientific_domain": "Developmental Biology, Bioelectricity, Artificial Intelligence, Bioengineering",
+          "start_time_seconds": 363.98,
+          "end_time_seconds": 451.77
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_021",
+            "timestamp": 378,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_021_378.0s.jpg",
+            "file_size": 53326,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          378
+        ],
+        "time_range": {
+          "start": 378,
+          "end": 378
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_008",
+      "text_content": {
+        "text": "So it actually drives new science and I think really, really critical. It's actually going to lead to better ethics. So another way to think about this is that if, you know the history of numbers, first we had some counting numbers, and then somebody invented zero, and then we had some negative numbers, and then we had the rationals, and then somebody realized that that wasn't enough and, you know, we needed the irrationals and so on. And each of these, each of these expansions of what we understand as number broke prior concepts as far as what defines the set of numbers. It required a conceptual leap to get there and to expand our understanding. And it was actually quite stressful for everybody. I mean, people, people died over this, you know, discovery that the rational numbers weren't all there is, you know, a lot of it.",
+        "metadata": {
+          "token_count": 149,
+          "sentence_count": 8,
+          "primary_topics": [
+            "Scientific advancement",
+            "Conceptual expansion",
+            "Ethical implications"
+          ],
+          "secondary_topics": [
+            "History of numbers",
+            "Conceptual leaps",
+            "Scientific stress",
+            "Discovery and its implications"
+          ],
+          "key_terms": [
+            "Counting numbers",
+            "Zero",
+            "Negative numbers",
+            "Rationals",
+            "Irrationals"
+          ],
+          "content_summary": "The speaker emphasizes the importance of scientific advancement and conceptual expansion, using the development of numerical concepts as an analogy. They highlight the ethical implications and the stress associated with such discoveries.",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 451.77,
+          "end_time_seconds": 499.43
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_026",
+            "timestamp": 468,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_026_468.0s.jpg",
+            "file_size": 37868,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          468
+        ],
+        "time_range": {
+          "start": 468,
+          "end": 468
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_009",
+      "text_content": {
+        "text": "Some people were killed, people committed suicide. It was, it was really fundamental. And I think what we have here, and I'm not going to get through, I may not even get to get to touch this, but, but I'm going to go, go through trying to gradually enlarge the set of things that I think are on the spectrum with us as being cognitive beings that are, that are relevant to questions of ethics. And the first thing is that, you know, in standard philosophy of mind or just philosophy textbooks in general, what you'll see is they talk about the human. Humans do this and they do that. Then they have. For the ability to imagine things and have moral worth and whatever. And so they have this. They have this beautiful agential glow about them that, that makes them important as moral actors.",
+        "metadata": {
+          "token_count": 146,
+          "sentence_count": 10,
+          "primary_topics": [
+            "Cognitive beings",
+            "Ethics",
+            "Philosophy of Mind"
+          ],
+          "secondary_topics": [
+            "Human cognition",
+            "Moral worth",
+            "Agential glow",
+            "Moral actors",
+            "Imagination",
+            "Human behavior"
+          ],
+          "key_terms": [
+            "Cognitive beings",
+            "Ethics",
+            "Philosophy of Mind",
+            "Moral worth",
+            "Agential glow",
+            "Moral actors"
+          ],
+          "content_summary": "The speaker discusses the concept of cognitive beings and their relevance to ethics. They reference standard philosophy of mind, highlighting the unique cognitive abilities of humans, their moral worth, and their role as moral actors.",
+          "scientific_domain": "Cognitive Science",
+          "start_time_seconds": 499.43,
+          "end_time_seconds": 541.539
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_028",
+            "timestamp": 504,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_028_504.0s.jpg",
+            "file_size": 37883,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          504
+        ],
+        "time_range": {
+          "start": 504,
+          "end": 504
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_010",
+      "text_content": {
+        "text": "But we know that, that we stand at the center of this continuum both on an evolutionary and developmental timescale where we started life as a single cell and whatever was the origin before that. And so this too is a set of slow changes. And whatever you think whatever philosophical properties this, this, this human has, you have to have some story of what happened in the previous stages, like how did we get here? And what. And you know, is it, is it gradual? Is it, is it discrete? You know, what's going on? And as I'm going to point out in a minute, this is not enough. There's another spectrum that we are at the center of which is the set of biological and technological changes that again, slowly and gradually could move us beyond what. What this is. And then again, you have to ask yourself, you know, where. Where does this agential glow peter out? And then you don't have to worry about these things anymore, or does it ever. And things like that.",
+        "metadata": {
+          "token_count": 179,
+          "sentence_count": 14,
+          "primary_topics": [
+            "Evolutionary biology",
+            "Developmental biology",
+            "Biological and technological changes"
+          ],
+          "secondary_topics": [
+            "Cellular origin",
+            "Gradual vs discrete changes",
+            "Philosophical implications",
+            "Biological continuum",
+            "Technological continuum",
+            "Agential glow"
+          ],
+          "key_terms": [
+            "Evolutionary timescale",
+            "Developmental timescale",
+            "Biological changes",
+            "Technological changes",
+            "Agential glow"
+          ],
+          "content_summary": "The speaker discusses the continuum of life from a single cell to complex organisms, emphasizing the gradual changes over time. They also introduce the concept of a spectrum of biological and technological changes, questioning where the 'agential glow' ends, or if it ever does.",
+          "scientific_domain": "Developmental Biology, Evolutionary Biology, Bioelectricity",
+          "start_time_seconds": 542.419,
+          "end_time_seconds": 595.26
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_031",
+            "timestamp": 558,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_031_558.0s.jpg",
+            "file_size": 24455,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          558
+        ],
+        "time_range": {
+          "start": 558,
+          "end": 558
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_011",
+      "text_content": {
+        "text": "So here's. Here's how we. We all enter the world. We start life as a little blob of chemistry and physics. It's a little unfertilized oocyte. The. Then there's this incredibly magical process called embryogenesis, where slowly and gradually there's never a magic lightning flash that takes you from physics to the land of psychology. But what happens is eventually you become one of these beings that are susceptible to the tools of behavioral science or maybe even psychoanalysis and something like this. And so the story of our origin is really the story of scale scaling up, of cognition and transformation. It's really, as scientists and philosophers, we need to understand this transformative process of how mind emerges from these simpler components. In fact, if you look at an early embryonic blastoderm, there might be a couple of hundred thousand cells at some particular stage. And you look at that and you say, well, there's an embryo. When you say it's an embryo, what are you counting? What is there one of? There's hundreds of thousands or millions of cells. Well, it turns out that the best thing you could say is that what there is one of is commitment to a particular story.",
+        "metadata": {
+          "token_count": 205,
+          "sentence_count": 16,
+          "primary_topics": [
+            "Embryogenesis",
+            "Transformation of simple components to complex organisms",
+            "Emergence of cognition"
+          ],
+          "secondary_topics": [
+            "Developmental biology",
+            "Bioelectricity",
+            "Behavioral science",
+            "Psychoanalysis",
+            "Cellular commitment",
+            "Scale scaling up"
+          ],
+          "key_terms": [
+            "Oocyte",
+            "Embryonic blastoderm",
+            "Cognition",
+            "Psychoanalysis",
+            "Cellular commitment"
+          ],
+          "content_summary": "The presentation discusses the transformation process from an unfertilized oocyte to a complex organism through embryogenesis. It emphasizes the emergence of cognition and the concept of cellular commitment in this transformative process.",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 595.66,
+          "end_time_seconds": 671.35
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_034",
+            "timestamp": 612,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_034_612.0s.jpg",
+            "file_size": 29277,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          612
+        ],
+        "time_range": {
+          "start": 612,
+          "end": 612
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_012",
+      "text_content": {
+        "text": "In other words, alignment towards a specific journey in anatomical space. An anatomical space being just the space of all possible configurations that a body might take. And that all of these cells agree. They all share the same. They've bought into the same model of where they're going to go in anatomical space. And then they make this one embryo. That's what you're counting. You're counting commitment to a model. And if you make little. Little scratches in this. In this blastoderm, then each one of these islands is going to do the same because it's unaware of the presence of the others. Eventually it might heal up or it might not, but basically, then you get twins and triplets and so on. And so what you see here is the question of how many individuals are inside this excitable medium is not known in advance. It's not set by the genetics. It could be anywhere from zero to probably half a dozen or more. And there are potentially multiple different cognitive beings that come out of this because of this process of differentiation. Where do I End and the outside world begins. That's what's happening here. And that of course, has lots of parallels to issues of individuation and dissociation in the cognitive sphere.",
+        "metadata": {
+          "token_count": 216,
+          "sentence_count": 19,
+          "primary_topics": [
+            "Cellular Agreement in Development",
+            "Embryo Formation",
+            "Cellular Differentiation",
+            "Individuation"
+          ],
+          "secondary_topics": [
+            "Anatomical Space",
+            "Blastoderm",
+            "Genetic Influence",
+            "Cognitive Beings",
+            "Dissociation",
+            "Twin and Triplet Formation"
+          ],
+          "key_terms": [
+            "Anatomical Space",
+            "Blastoderm",
+            "Differentiation",
+            "Individuation",
+            "Dissociation",
+            "Embryo",
+            "Twins",
+            "Triplets"
+          ],
+          "content_summary": "The speaker discusses how cells align towards a specific journey in anatomical space during development, forming an embryo. The speaker also highlights that the number of individuals formed is not predetermined by genetics, and that differentiation can lead to multiple cognitive beings. The process draws parallels to issues of individuation and dissociation in the cognitive sphere.",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 671.67,
+          "end_time_seconds": 737.2
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_038",
+            "timestamp": 684,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_038_684.0s.jpg",
+            "file_size": 59111,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          684
+        ],
+        "time_range": {
+          "start": 684,
+          "end": 684
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_013",
+      "text_content": {
+        "text": "So spirit split brain patients whose left and right hemispheres don't communicate very well. Dissociative identity disorders where you have multiple personalities on the same brain hardware and so on. So you're already starting to see that it's not at all as simple. Our origin and the underlying mechanisms are not what is commonly portrayed in philosophical discussions of humans and our ethical duties and so on. This is the sort of thing we're made from. Now. This happens to be a free living one called the Lacrymaria. But this is a single cell. It has no brain, no nervous system, very competent in all of its local goals.",
+        "metadata": {
+          "token_count": 109,
+          "sentence_count": 9,
+          "primary_topics": [
+            "Split brain patients",
+            "Dissociative identity disorders",
+            "Single-cell organisms"
+          ],
+          "secondary_topics": [
+            "Inter-hemisphere communication",
+            "Multiple personalities",
+            "Brain hardware",
+            "Philosophical discussions on human origins",
+            "Ethical duties",
+            "Local goals of single-cell organisms"
+          ],
+          "key_terms": [
+            "Split brain",
+            "Dissociative identity disorder",
+            "Lacrymaria",
+            "Nervous system",
+            "Brain",
+            "Single cell"
+          ],
+          "content_summary": "The speaker discusses complex neurological conditions such as split brain patients and dissociative identity disorders, challenging common philosophical perspectives on human origins and ethics. The talk also covers the capabilities of single-cell organisms, specifically Lacrymaria, despite their lack of a brain or nervous system.",
+          "scientific_domain": "Developmental Biology, Neurobiology, Bioelectricity",
+          "start_time_seconds": 737.2,
+          "end_time_seconds": 781.9
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_041",
+            "timestamp": 738,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_041_738.0s.jpg",
+            "file_size": 59140,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          738
+        ],
+        "time_range": {
+          "start": 738,
+          "end": 738
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_014",
+      "text_content": {
+        "text": "This is what we're made of. You can already see that it has some ability to manage its business at this lower scale. In fact, even below that level, the molecular networks inside of that little creature, in fact, inside of all of us, are molecular networks that are capable of six different kinds of learning different kinds of memory, including Pavlovian conditioning. The material that you're made of, all the way down to the molecular level has, and probably below that we could talk about, that has certain behavioral properties that you would easily recognize as aspects of cognition. And we're taking advantage of that for all kinds of biomedical purposes in our lab to try to train these electrical networks, these biochemical networks for drug conditioning and things like that. Life exerts intelligence in lots of spaces, not just the three dimensional space where it's easy for us to recognize, things like these crows that have learned to exchange cigarette butts for treats.",
+        "metadata": {
+          "token_count": 165,
+          "sentence_count": 8,
+          "primary_topics": [
+            "Molecular Networks",
+            "Bioelectricity",
+            "Cognition",
+            "Learning and Memory"
+          ],
+          "secondary_topics": [
+            "Pavlovian Conditioning",
+            "Biomedical Applications",
+            "Drug Conditioning",
+            "Behavioral Properties",
+            "Intelligence in Life Forms",
+            "Three Dimensional Space"
+          ],
+          "key_terms": [
+            "Molecular Networks",
+            "Bioelectricity",
+            "Cognition",
+            "Learning",
+            "Memory",
+            "Pavlovian Conditioning",
+            "Biomedical",
+            "Drug Conditioning",
+            "Behavioral Properties",
+            "Intelligence",
+            "Three Dimensional Space"
+          ],
+          "content_summary": "The speaker, Michael Levin, discusses the inherent cognitive abilities found in molecular networks, extending even to the concept of learning and memory. He mentions the application of these concepts in biomedical research, specifically in training electrical and biochemical networks for drug conditioning.",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 781.9,
+          "end_time_seconds": 838.07
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_044",
+            "timestamp": 792,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_044_792.0s.jpg",
+            "file_size": 53162,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          792
+        ],
+        "time_range": {
+          "start": 792,
+          "end": 792
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_015",
+      "text_content": {
+        "text": "But it operates in many spaces. It operates in the space of gene expression, it operates in the space of physiological states, and it operates in anatomical morphospace, which is again the space of shape configurations. And this is the one we'll talk about today. And when I say life operates in these spaces, I mean that it navigates those spaces adaptively to solve problems, just like conventional animals that you're used to navigate a three dimensional space to solve problems. I'll give you just one, one simple example of how. What I mean by that, by that, this is a cross section through a kidney tubule in a newt. And you can see it's got a lumen in the middle. And then you got these 8 to 10 cells that work together. If you make new embryos with multiple copies of their genome, the cells will get bigger to accommodate the additional Genetic material. Oddly, the newt stays the same size. And you say, well, how could that be? And that's because while the cells are bigger, what they do is they adjust. And fewer of them are now making the exact same structure. Until you make a newt with so many copies of their genome that the cells become gigantic. And instead of many cells working together to build this, one single cell will bend around itself and leave a hole in the middle. Okay, this is the different mechanism, These are different molecular mechanisms.",
+        "metadata": {
+          "token_count": 247,
+          "sentence_count": 17,
+          "primary_topics": [
+            "Gene expression",
+            "Physiological states",
+            "Anatomical morphospace"
+          ],
+          "secondary_topics": [
+            "Adaptive navigation in biological spaces",
+            "Kidney tubule structure",
+            "Cell size adjustment",
+            "Genome duplication",
+            "Molecular mechanisms"
+          ],
+          "key_terms": [
+            "Gene expression",
+            "Physiological states",
+            "Anatomical morphospace",
+            "Lumen",
+            "Genome",
+            "Cell size adjustment",
+            "Molecular mechanisms"
+          ],
+          "content_summary": "The speaker discusses how life operates in various spaces such as gene expression, physiological states, and anatomical morphospace, using the example of a newt's kidney tubule. The speaker explains how cells adjust their size to accommodate additional genetic material without changing the overall size of the newt, and how different molecular mechanisms come into play when the cells become too large.",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 838.95,
+          "end_time_seconds": 918.859
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_047",
+            "timestamp": 846,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_047_846.0s.jpg",
+            "file_size": 54522,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          846
+        ],
+        "time_range": {
+          "start": 846,
+          "end": 846
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_016",
+      "text_content": {
+        "text": "So what you have here are a bunch of cells that are using different affordances, different genetically specified affordances, meaning different mechanisms that they have to get the job done in the face of incredibly weird circumstances. If you're a newt coming into this world, you can't count on the outer environment. Of course things will change, but you can't even count on your own parts. You don't even know how many copies of your genetic material you're going to have. You don't know what the size of your cells are going to be. You don't know what the number of your cells are going to be. You have to get. You have to reach that region of anatomical amorphous space with new, various new tricks using the tools you have. Despite all of the all these novelties that is a standard version of intelligence, that is how they measure IQ tests, is they'll say, you've got these parts now creatively use them to solve this problem you've never seen before. Okay, this is a system that does that, but not in 3D space. It does it in anatomical space. And it means the fact that the living material has this kind of beginner's mind aspect to it where it does not assume, in fact, at least most organisms do not assume that everything is going to go the way that it used to go. For its ancestors, they have this ability to creatively use their genome and its products to solve problems. That means that not only can they do things like this, they can also do things like this. Here's a tadpole.",
+        "metadata": {
+          "token_count": 274,
+          "sentence_count": 18,
+          "primary_topics": [
+            "Cellular Adaptability",
+            "Genetic Affordances",
+            "Anatomical Space"
+          ],
+          "secondary_topics": [
+            "Cellular Intelligence",
+            "Genetic Material",
+            "Problem Solving Mechanisms",
+            "Cell Size",
+            "Cell Number",
+            "Novelty in Biological Systems",
+            "Beginner's Mind Aspect"
+          ],
+          "key_terms": [
+            "Affordances",
+            "Genome",
+            "IQ tests",
+            "Anatomical Space",
+            "Beginner's Mind Aspect"
+          ],
+          "content_summary": "The speaker discusses the adaptability of cells, particularly in newts, to unpredictable environments and circumstances. They highlight the ability of cells to creatively use their genetic affordances to navigate anatomical space and solve problems, a process likened to measures of intelligence.",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 918.859,
+          "end_time_seconds": 998.02
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_052",
+            "timestamp": 936,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_052_936.0s.jpg",
+            "file_size": 42664,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          936
+        ],
+        "time_range": {
+          "start": 936,
+          "end": 936
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_017",
+      "text_content": {
+        "text": "So here's the mouth, the nostrils, the brain, the spinal cord here. What we've done is prevent the primary eyes from forming. But we did put an eye on its tail and we found that these animals can see quite well. How do we know? We built a device that trains them in visual behavioral tasks and they can see. Now, this is kind of shocking. Why don't these animals, where the eye does not connect to the brain, so here the eye makes an optic nerve. That optic nerve might synapse onto the spinal cord. It might Go to the gut, it might go nowhere at all. Why does this work out of the box? How come you don't need rounds of evolutionary mutation, selection, adaptation, all that stuff to accommodate this completely novel sensorimotor architecture? And so, and it's because of that plasticity that I told you a minute ago, because evolution does not make fixed solutions to fixed environments. It makes problem solving agents that, you know, these cells never assumed the tadpole was going to be the same all the time anyway. It's going to. They figure out a way to make it work. And one way they do that. And so you understand, I'm using. I'm using this example of cells navigating anatomical space as a case study or a, a model of an unconventional intelligence. We don't have any aliens, but we do have intelligences that live in very different problem spaces. And we can use that as a way to start understanding how do we communicate, how do we detect intelligence? And so I showed you some ways of doing that. You sort of make perturbations and you notice they can get to the same goal by different means.",
+        "metadata": {
+          "token_count": 296,
+          "sentence_count": 22,
+          "primary_topics": [
+            "Bioelectricity",
+            "Developmental Biology",
+            "Neurobiology",
+            "Sensory Systems",
+            "Biological Adaptation"
+          ],
+          "secondary_topics": [
+            "Evolutionary Biology",
+            "Cellular Plasticity",
+            "Sensorimotor Architecture",
+            "Unconventional Intelligence",
+            "Anatomical Space Navigation",
+            "Visual Behavioral Tasks",
+            "Problem Solving Agents"
+          ],
+          "key_terms": [
+            "Optic Nerve",
+            "Spinal Cord",
+            "Synapse",
+            "Mutation",
+            "Selection",
+            "Adaptation",
+            "Perturbations"
+          ],
+          "content_summary": "The speaker discusses an experiment where an eye was placed on a tadpole's tail, which surprisingly allowed the tadpole to see. This is attributed to cellular plasticity and the ability of biological systems to adapt to new sensorimotor architectures without the need for evolutionary mutation and selection. The speaker uses this as a model of unconventional intelligence.",
+          "scientific_domain": "Developmental Biology, Bioelectricity, Neurobiology",
+          "start_time_seconds": 998.02,
+          "end_time_seconds": 1089.04
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_056",
+            "timestamp": 1008,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_056_1008.0s.jpg",
+            "file_size": 55370,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1008
+        ],
+        "time_range": {
+          "start": 1008,
+          "end": 1008
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_018",
+      "text_content": {
+        "text": "You sort of make perturbations and you notice they can get to the same goal by different means. So that's William James's definition of intelligence. Okay, so we've detected them. What's the next step? Well, how do we communicate with them? If we're going to have a relationship with, with these intelligences, how do we communicate them with them? Well, we discovered that a very important kind of communication with them can take place through the bioelectric interface, just like you and I are now communicating through the bioelectrical interface of your nervous system, of your retina and your auditory stream and your nervous system. Turns out this is also a very good way to communicate with the cellular intelligence of your body.",
+        "metadata": {
+          "token_count": 123,
+          "sentence_count": 9,
+          "primary_topics": [
+            "Intelligence",
+            "Bioelectric Interface",
+            "Cellular Intelligence",
+            "Communication with Cellular Intelligence"
+          ],
+          "secondary_topics": [
+            "Perturbations",
+            "William James's definition of intelligence",
+            "Nervous System",
+            "Retina",
+            "Auditory Stream"
+          ],
+          "key_terms": [
+            "Perturbations",
+            "Bioelectric Interface",
+            "Cellular Intelligence",
+            "Nervous System",
+            "Retina",
+            "Auditory Stream"
+          ],
+          "content_summary": "The speaker discusses the concept of intelligence, specifically cellular intelligence, and how it can be communicated with via a bioelectric interface. This method of communication is likened to how humans communicate through the bioelectrical interface of our nervous system, retina, and auditory stream.",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 1084.48,
+          "end_time_seconds": 1122.78
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_061",
+            "timestamp": 1098,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_061_1098.0s.jpg",
+            "file_size": 55181,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1098
+        ],
+        "time_range": {
+          "start": 1098,
+          "end": 1098
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_019",
+      "text_content": {
+        "text": "So what we've developed are tools that let us see the electrical signals moving between all of the components of this collective intelligence. So this is just like neuroscientists do in the brain, except we can now do this anywhere in the body. So the colors indicate voltage levels. Here's a bunch of cells in the dish. This is an early frog embryo. And now what we can do is we can read the mind of the body by reading these electrical signals. We can try to interpret them and then try to understand what is it that what are the memories, the preferences, the goals and so on of this new collective intelligence? We now have a way to also write information. We don't use electric fields or waves or frequencies or anything like that. We manipulate the interface that the cells are normally using to control each other.",
+        "metadata": {
+          "token_count": 150,
+          "sentence_count": 10,
+          "primary_topics": [
+            "Bioelectricity",
+            "Cellular Communication",
+            "Collective Intelligence"
+          ],
+          "secondary_topics": [
+            "Neuroscience",
+            "Voltage Levels",
+            "Embryonic Development",
+            "Information Writing in Cells",
+            "Interpretation of Electrical Signals",
+            "Cellular Interface Manipulation"
+          ],
+          "key_terms": [
+            "Electrical Signals",
+            "Voltage Levels",
+            "Frog Embryo",
+            "Collective Intelligence",
+            "Electric Fields",
+            "Waves",
+            "Frequencies"
+          ],
+          "content_summary": "Michael Levin discusses the development of tools that allow for the visualization and interpretation of electrical signals between cells, akin to neuroscience studies in the brain. He highlights the ability to 'read' and 'write' information to cells, manipulating their normal interfaces for control, using a frog embryo as an example.",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 1123.22,
+          "end_time_seconds": 1170.27
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_063",
+            "timestamp": 1134,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_063_1134.0s.jpg",
+            "file_size": 55115,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1134
+        ],
+        "time_range": {
+          "start": 1134,
+          "end": 1134
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_020",
+      "text_content": {
+        "text": "So that means ion channels and electrical synapses known as gap junction, just like in neuroscience. So this is the communication interface that we hack. If you do this, you can do some interesting things. First of all, you can shift the border of the self, of an agent. So just to explain what I mean, this single cell that I've shown you before has very tiny goals. All of its goals are in terms of space, time, kind of radius. The cognitive light cone is very small, both in space and time. But when they get together, these cells can pursue really grandiose goals.",
+        "metadata": {
+          "token_count": 105,
+          "sentence_count": 8,
+          "primary_topics": [
+            "Ion Channels",
+            "Electrical Synapses",
+            "Gap Junctions",
+            "Cellular Communication",
+            "Cellular Goals"
+          ],
+          "secondary_topics": [
+            "Neuroscience",
+            "Cellular Interface",
+            "Self-Border Shift",
+            "Cognitive Light Cone",
+            "Cellular Cooperation"
+          ],
+          "key_terms": [
+            "Ion Channels",
+            "Electrical Synapses",
+            "Gap Junctions",
+            "Communication Interface",
+            "Cellular Goals",
+            "Cognitive Light Cone",
+            "Self-Border Shift"
+          ],
+          "content_summary": "The speaker discusses the role of ion channels and electrical synapses, or gap junctions, in cellular communication. They explain how manipulating these elements can shift the 'self-border' of a cell, altering its goals and capabilities. When cells cooperate, they can pursue larger goals, expanding their 'cognitive light cone' in space and time.",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 1170.51,
+          "end_time_seconds": 1207.31
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_066",
+            "timestamp": 1188,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_066_1188.0s.jpg",
+            "file_size": 34228,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1188
+        ],
+        "time_range": {
+          "start": 1188,
+          "end": 1188
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_021",
+      "text_content": {
+        "text": "So here's the. The limb of a, of a salamander. If you amputate that limb anywhere here, the cells will rapidly build, and then they stop when it's done. So so their goal, the goal of the collective, is to build this thing. And you know, it's a goal because if you deviate them from that goal, they will work really hard, they will achieve it, and then they will stop. So now no individual cell knows what a finger is or how many fingers you're supposed to have, but the collective absolutely does. As you can see here, it's very reliable.",
+        "metadata": {
+          "token_count": 102,
+          "sentence_count": 7,
+          "primary_topics": [
+            "Limb regeneration in salamanders",
+            "Cellular collective behavior",
+            "Goal-oriented biological systems"
+          ],
+          "secondary_topics": [
+            "Cellular communication",
+            "Bioelectricity",
+            "Amputation recovery",
+            "Regenerative biology",
+            "Cellular intelligence",
+            "Developmental biology"
+          ],
+          "key_terms": [
+            "Amputation",
+            "Regeneration",
+            "Collective behavior",
+            "Goal-oriented",
+            "Cellular communication"
+          ],
+          "content_summary": "The presentation discusses the remarkable ability of salamander cells to regenerate a complete limb after amputation. It emphasizes the collective behavior of cells, which, despite not individually knowing the final structure, work towards a common goal of complete limb regeneration.",
+          "scientific_domain": "Developmental Biology, Bioelectricity, Regenerative Biology",
+          "start_time_seconds": 1207.31,
+          "end_time_seconds": 1232.65
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_068",
+            "timestamp": 1224,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_068_1224.0s.jpg",
+            "file_size": 31440,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1224
+        ],
+        "time_range": {
+          "start": 1224,
+          "end": 1224
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_022",
+      "text_content": {
+        "text": "So the scale of the goals, right, the border between self and world has grown huge. The self is gigantic here, the self is very tiny here. But that process can break down. So here's human glioblastoma cells. These are cancer cells that are basically disconnected electrically from the collective. And at that point, they're back to their unicellular lifestyle. They just can't remember the large scale goal of building a nice, nice brain or anything else. And so once you understand that, you can actually control that electrical connection between cells and force a larger cognitive light cone onto the system.",
+        "metadata": {
+          "token_count": 102,
+          "sentence_count": 8,
+          "primary_topics": [
+            "Bioelectricity",
+            "Cellular Communication",
+            "Cancer Cell Behaviour",
+            "Cellular Memory"
+          ],
+          "secondary_topics": [
+            "Glioblastoma Cells",
+            "Unicellular Lifestyle",
+            "Cellular Control",
+            "Electrical Disconnection",
+            "Cognitive Light Cone"
+          ],
+          "key_terms": [
+            "Bioelectricity",
+            "Glioblastoma Cells",
+            "Cellular Communication",
+            "Unicellular Lifestyle",
+            "Cognitive Light Cone"
+          ],
+          "content_summary": "The speaker discusses the concept of bioelectricity and its role in cellular communication, particularly in the context of cancer cells. They highlight how glioblastoma cells, a type of cancer cell, disconnect electrically from the collective, reverting to a unicellular lifestyle and losing their 'memory' of their role in larger biological structures.",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 1232.73,
+          "end_time_seconds": 1266.14
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_069",
+            "timestamp": 1242,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_069_1242.0s.jpg",
+            "file_size": 34108,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1242
+        ],
+        "time_range": {
+          "start": 1242,
+          "end": 1242
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_023",
+      "text_content": {
+        "text": "So here's a human oncogene injected into this tadpole. It will make a tumor. The tumor has this really weird electrical state where you can see the cells are actually disconnecting from their neighbors. But if you prevent them from doing that, even though that oncoprotein is blazingly expressed, it's the same animal. So there's tons of that nasty oncogene. There's no tumor, because what you've done is kept the cells connected to the neighbors, so they're part of this mind meld of building nice skin, nice muscle, and so on. So the cancer cells aren't more selfish. They have smaller selves. The border between self and world has shrunk and we've reinflated again.",
+        "metadata": {
+          "token_count": 114,
+          "sentence_count": 9,
+          "primary_topics": [
+            "Oncogenes",
+            "Bioelectricity in Tumor Cells",
+            "Cellular Connectivity"
+          ],
+          "secondary_topics": [
+            "Tumor Development",
+            "Cellular Communication",
+            "Cellular Identity",
+            "Cancer Cell Behavior",
+            "Bioelectric State of Cells",
+            "Influence of Cellular Environment"
+          ],
+          "key_terms": [
+            "Oncogene",
+            "Tumor",
+            "Bioelectric State",
+            "Cellular Disconnect",
+            "Oncoprotein",
+            "Cellular Connectivity",
+            "Selfish Cells"
+          ],
+          "content_summary": "The speaker discusses the role of oncogenes in tumor formation, highlighting the unusual bioelectric state of tumor cells. They emphasize that preventing cellular disconnection, even in the presence of oncogenes, can inhibit tumor formation, suggesting that the 'selfishness' of cancer cells is related to their reduced connectivity.",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 1266.38,
+          "end_time_seconds": 1301.16
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_071",
+            "timestamp": 1278,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_071_1278.0s.jpg",
+            "file_size": 43419,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1278
+        ],
+        "time_range": {
+          "start": 1278,
+          "end": 1278
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_024",
+      "text_content": {
+        "text": "So that's one thing you can do through this interface, is you can sort of play with the border between self and world, of course we can communicate certain goals. Now that we understand a little bit about how they think we can communicate certain goals, here's one thing we can do, is to tell a frog. Frogs don't regenerate their legs. Unlike that salamander that I showed you, we can, we can tell these cells here to go down the leg building path instead of the scarring path. And so by 45 days, then you already have some toe, some toes you've got, a toenail, you've got, and eventually a very respectable looking functional leg. We did that by providing specific ion channel drugs at this interface to put the cells in an electrical state where they remember that they need to build a limb as opposed to scarring and stopping. We are currently doing this. And so I have to do a disclosure because this is a company that was spun out of our lab with David Kaplan. To do this in mammals and hopefully someday humans.",
+        "metadata": {
+          "token_count": 189,
+          "sentence_count": 9,
+          "primary_topics": [
+            "Bioelectricity",
+            "Cellular Regeneration",
+            "Ion Channel Drugs"
+          ],
+          "secondary_topics": [
+            "Frog Leg Regeneration",
+            "Cellular Communication",
+            "Regenerative Pathways",
+            "Scarring Pathway",
+            "Cellular Memory",
+            "Biological Interface",
+            "Biotechnology Companies"
+          ],
+          "key_terms": [
+            "Bioelectricity",
+            "Regeneration",
+            "Ion Channel Drugs",
+            "Cellular Communication",
+            "Scarring",
+            "Cellular Memory",
+            "Interface",
+            "Biotechnology"
+          ],
+          "content_summary": "The speaker discusses the use of bioelectricity and ion channel drugs to stimulate cellular regeneration in frogs, specifically leg regeneration. They mention the development of a biotechnology company to apply these findings to mammals and potentially humans.",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 1301.16,
+          "end_time_seconds": 1355.2
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_073",
+            "timestamp": 1314,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_073_1314.0s.jpg",
+            "file_size": 44097,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1314
+        ],
+        "time_range": {
+          "start": 1314,
+          "end": 1314
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_025",
+      "text_content": {
+        "text": "This is one of those biomedical applications. So that first application I just showed you was about cancer. So the idea was to normalize the cells, reconnect them to the body, not kill them with toxic chemotherapy, not try to fix the genetics, but to normalize them by reconnecting them to the memories of the body. This is now a second application around limb and organ regeneration. So using electrical cues to tell cells to rebuild the things they already know how to rebuild. It's not just about rebuilding the exact thing in the right place. You can also do interesting things like this. We can tell a bunch of cells that would have been gut, we can say no. Instead you should make an eye. And the way we do that is we inject some ion channel RNA that establishes a bioelectrical signal and that tells the cells to build an eye. And they build an eye. And that eye has all the same. Lens, retina, optic nerve, all the stuff it's supposed to have. And it has some other interesting properties that I don't have time to talk about.",
+        "metadata": {
+          "token_count": 191,
+          "sentence_count": 15,
+          "primary_topics": [
+            "Biomedical Applications",
+            "Cancer Treatment",
+            "Limb and Organ Regeneration",
+            "Bioelectricity",
+            "Cell Normalization"
+          ],
+          "secondary_topics": [
+            "Chemotherapy",
+            "Genetic Modification",
+            "Bioelectrical Signals",
+            "Ion Channel RNA",
+            "Cellular Memory",
+            "Eye Development",
+            "Tissue Engineering",
+            "Cellular Rebuilding"
+          ],
+          "key_terms": [
+            "Bioelectrical signal",
+            "Ion channel RNA",
+            "Cell normalization",
+            "Regeneration",
+            "Retina",
+            "Optic nerve",
+            "Lens"
+          ],
+          "content_summary": "The speaker discusses two biomedical applications: a non-toxic, non-genetic approach to cancer treatment that involves normalizing cells by reconnecting them to the body's 'memories', and a method of limb and organ regeneration that uses electrical cues to instruct cells to rebuild structures. An example is given where cells destined to become gut tissue are instructed to form an eye instead, using ion channel RNA to establish a bioelectrical signal.",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 1355.2,
+          "end_time_seconds": 1410.4
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_076",
+            "timestamp": 1368,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_076_1368.0s.jpg",
+            "file_size": 43163,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1368
+        ],
+        "time_range": {
+          "start": 1368,
+          "end": 1368
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_026",
+      "text_content": {
+        "text": "But the idea is much like what, when I'm talking to you now, I don't need to worry about reaching into your brain and changing all the synaptic structures in your, in your brain to make sure you remember what I've told you. You do that on your own. I'm only providing a very kind of thin stimulus. And you do all the hard work of managing the underlying biochemistry in your brain to form memories, make decisions, and so on. Same thing here. We are not telling the cells what to do. We are not talking to the genesis genes or the Stem cells, we provide a very high level signal, build an eye. That's it. The system being, being a good multi scale cognitive system, it then takes that and does all of the underlying biochemistry that's needed to implement the message that, that we've given them.",
+        "metadata": {
+          "token_count": 149,
+          "sentence_count": 10,
+          "primary_topics": [
+            "Bioelectricity",
+            "Cellular Communication",
+            "Developmental Biology",
+            "Memory Formation",
+            "Biochemistry"
+          ],
+          "secondary_topics": [
+            "Synaptic Structures",
+            "Stem Cells",
+            "Genesis Genes",
+            "Multiscale Cognitive Systems",
+            "Signal Processing in Cells"
+          ],
+          "key_terms": [
+            "Bioelectricity",
+            "Synaptic Structures",
+            "Biochemistry",
+            "Stem Cells",
+            "Genesis Genes",
+            "Multiscale Cognitive Systems",
+            "Signal Processing"
+          ],
+          "content_summary": "The speaker discusses the concept of bioelectricity and cellular communication, drawing parallels between how the brain forms memories and how cells interpret signals. The speaker emphasizes that cells, like the brain, can interpret high-level signals and manage the underlying biochemistry to achieve complex tasks, such as building an eye.",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 1410.4,
+          "end_time_seconds": 1453.0
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_079",
+            "timestamp": 1422,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_079_1422.0s.jpg",
+            "file_size": 48478,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1422
+        ],
+        "time_range": {
+          "start": 1422,
+          "end": 1422
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_027",
+      "text_content": {
+        "text": "So once, once you, once you see all this, you realize that, that, that what we eventually are going to have is something that I call the anatomical compiler. In other words, once you understand how to tell groups of cells what, what to build, then, then you get to move from, from just from repair to freedom of embodiment. Because then you are going to be able to sit down and draw any kind of a plant, animal, organ, biobot, whatever. And the system should be able to compile it into a set of stimuli that would be given to cells to get them to build exactly whatever you want it to build. And so yes, it will, it will. If we had that, which, which we don't yet, but, but eventually we will. And if we have that, all of this would go away.",
+        "metadata": {
+          "token_count": 146,
+          "sentence_count": 7,
+          "primary_topics": [
+            "Anatomical Compiler",
+            "Bioelectricity",
+            "Cellular Development",
+            "Tissue Engineering"
+          ],
+          "secondary_topics": [
+            "Cellular Stimuli",
+            "Embodiment Freedom",
+            "Regenerative Medicine",
+            "Biological Programming",
+            "Biobot Development"
+          ],
+          "key_terms": [
+            "Anatomical Compiler",
+            "Bioelectricity",
+            "Cellular Stimuli",
+            "Biobot",
+            "Embodiment Freedom"
+          ],
+          "content_summary": "The speaker, Michael Levin, discusses the concept of an 'anatomical compiler', a theoretical tool that could instruct groups of cells to construct any desired biological structure, from organs to biobots. This would represent a significant advancement in bioelectricity and developmental biology, moving beyond repair to the freedom of embodiment.",
+          "scientific_domain": "Developmental Biology, Bioelectricity, Tissue Engineering",
+          "start_time_seconds": 1453.32,
+          "end_time_seconds": 1494.4
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_081",
+            "timestamp": 1458,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_081_1458.0s.jpg",
+            "file_size": 35849,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1458
+        ],
+        "time_range": {
+          "start": 1458,
+          "end": 1458
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_028",
+      "text_content": {
+        "text": "So birth defects, traumatic injury, cancer, aging, degenerative disease, all of that will disappear once we know how to tell cells exactly what to build. It's a communication problem. It's not 3D printing, it's not gene editing. It's a translator. What you need is a translator interface from our goal to that of the agential material of life. But you realize now that this means that you don't just have to stick to the standard human shape. If somebody decides that, you know what, I'd like to have a couple of extra arms and maybe an eye on the back of the head and maybe it should be infrared sensitive and whatever, all of that should be completely possible.",
+        "metadata": {
+          "token_count": 119,
+          "sentence_count": 8,
+          "primary_topics": [
+            "Cellular communication",
+            "Bioengineering",
+            "Regenerative medicine",
+            "Bioelectricity"
+          ],
+          "secondary_topics": [
+            "Birth defects",
+            "Traumatic injury",
+            "Cancer",
+            "Aging",
+            "Degenerative disease",
+            "Gene editing",
+            "3D printing",
+            "Human body modification"
+          ],
+          "key_terms": [
+            "Agential material of life",
+            "Translator interface",
+            "Infrared sensitive",
+            "Standard human shape"
+          ],
+          "content_summary": "The speaker, Michael Levin, discusses the potential of cellular communication in eliminating a range of health issues from birth defects to degenerative diseases. He suggests the need for a translator interface to instruct cells on what to build, extending the concept to potential modifications of the human form.",
+          "scientific_domain": "Developmental Biology, Bioelectricity, Bioengineering",
+          "start_time_seconds": 1494.96,
+          "end_time_seconds": 1531.52
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_084",
+            "timestamp": 1512,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_084_1512.0s.jpg",
+            "file_size": 36636,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1512
+        ],
+        "time_range": {
+          "start": 1512,
+          "end": 1512
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_029",
+      "text_content": {
+        "text": "So much like we augment ourselves now with toothbrushes and antibiotics and education and glasses and crutches and working out and clothes and all of this kind of stuff that we use now to go beyond our kind of quote unquote natural state in the future you're going to be able to do that even more so biologically. And I think the beings of the future, and I don't think it's a very far future, I think it's not that far off, are going to look back and think it is completely unimaginable that people in our day had to live their whole life in the body. They were handed at birth. You know, you were, you're, you're born. The details of your body, of your limitations, physical and mental limitations are currently set by stray cosmic rays that, that hit the cells of embryos. You know, Going back however many, however many eons ago, and, and people, I, I think people of the future are going to be aghast at this, at this notion that we just had to, we just had to live that way. And there was no, no, you know, no, no, no opportunity for, for improvement, you know, deal with the consequences of these, of these stochastic processes that don't really care about our goals or our capabilities or our values or any of that.",
+        "metadata": {
+          "token_count": 230,
+          "sentence_count": 10,
+          "primary_topics": [
+            "Biological Augmentation",
+            "Future of Human Evolution",
+            "Bioengineering",
+            "Human Body Limitations"
+          ],
+          "secondary_topics": [
+            "Stochastic Processes",
+            "Cosmic Rays",
+            "Embryonic Development",
+            "Physical and Mental Limitations",
+            "Human Adaptation",
+            "Biological Improvements",
+            "Societal Perception"
+          ],
+          "key_terms": [
+            "Biological Augmentation",
+            "Stochastic Processes",
+            "Cosmic Rays",
+            "Embryonic Cells",
+            "Physical Limitations",
+            "Mental Limitations",
+            "Bioengineering"
+          ],
+          "content_summary": "Michael Levin discusses the future of biological augmentation and bioengineering, envisioning a future where humans are not confined to the bodies they are born with. He highlights the limitations of our current physical and mental state, which are influenced by stochastic processes such as cosmic rays affecting embryonic cells.",
+          "scientific_domain": "Developmental Biology, Bioelectricity, Bioengineering",
+          "start_time_seconds": 1532.24,
+          "end_time_seconds": 1605.09
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_086",
+            "timestamp": 1548,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_086_1548.0s.jpg",
+            "file_size": 36636,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1548
+        ],
+        "time_range": {
+          "start": 1548,
+          "end": 1548
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_030",
+      "text_content": {
+        "text": "So the final thing I want to show you in the last couple of minutes is this. If you look at this little creature. So now let's go even beyond. So I've shown you how to communicate with the intelligence of the body for repair. Then the idea that you can use that to make radical changes in the structure. You can make other kinds of, different kinds of embodiments. And now I want to go even further than that and really talk about the plasticity and the capabilities of the material of life. What else can it really do? So if you look at something like this, this looks like some kind of primitive creature I got off the bottom of a pond somewhere. It actually, it turns out if you were to sequence the genome, it's 100% Homo sapiens. We call these anthrobots. These are made of adult human cells.",
+        "metadata": {
+          "token_count": 152,
+          "sentence_count": 12,
+          "primary_topics": [
+            "Bioelectricity",
+            "Developmental Biology",
+            "Cellular Plasticity",
+            "Genome Sequencing",
+            "Anthrobots"
+          ],
+          "secondary_topics": [
+            "Body Repair",
+            "Structural Changes",
+            "Embodiment",
+            "Material of Life",
+            "Adult Human Cells"
+          ],
+          "key_terms": [
+            "Intelligence of the Body",
+            "Radical Changes",
+            "Primitive Creature",
+            "Homo Sapiens",
+            "Genome"
+          ],
+          "content_summary": "The speaker, Michael Levin, discusses the potential of bioelectricity and developmental biology in body repair and making structural changes. He introduces the concept of 'anthrobots', entities made from adult human cells, emphasizing the plasticity and capabilities of the material of life.",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 1605.41,
+          "end_time_seconds": 1651.26
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_090",
+            "timestamp": 1620,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_090_1620.0s.jpg",
+            "file_size": 43536,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1620
+        ],
+        "time_range": {
+          "start": 1620,
+          "end": 1620
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_031",
+      "text_content": {
+        "text": "So human patients donate tracheal epithelial cells. And we have a way of enabling them to self assemble. We really don't do much. The cells do all the, all the hard work. They self assemble into this little motile creature. This creature has four different behaviors that it switches between. So you can build a little ethogram of its behaviors. If you look at the gene expression here, this volcano plot, they express about 9,000 genes differently than the cells in the body that they come from. In other words, about half the genome is drastically remodeled. But, but we haven't touched the DNA. We haven't done anything to the genome. We haven't added any weird nanomaterials. There are no synthetic biology circuits. These are completely wild type cells and yet they're capable of having a very different embodiment. This looks nothing like any stage of human development. And they pick and choose what genes out of the, out of the genome they're going to express. They have some wacky capabilities. Like if you played a bunch of human neurons here, these anthrobots will come and they'll sit down in this superbot cluster and they start repairing the gap.",
+        "metadata": {
+          "token_count": 199,
+          "sentence_count": 18,
+          "primary_topics": [
+            "Self-assembly of tracheal epithelial cells",
+            "Gene expression",
+            "Genome remodeling"
+          ],
+          "secondary_topics": [
+            "Cellular behavior",
+            "Ethogram",
+            "Volcano plot",
+            "DNA",
+            "Synthetic biology",
+            "Neuron repair"
+          ],
+          "key_terms": [
+            "Tracheal epithelial cells",
+            "Self-assembly",
+            "Gene expression",
+            "Genome",
+            "Ethogram",
+            "Volcano plot",
+            "DNA",
+            "Synthetic biology",
+            "Neurons",
+            "Anthrobots",
+            "Superbot cluster"
+          ],
+          "content_summary": "The presentation discusses the self-assembly of donated human tracheal epithelial cells into a motile creature with distinct behaviors. Despite no alterations to the DNA or genome, these cells express around 9,000 genes differently from their original state, indicating a significant genome remodeling. These self-assembled structures, referred to as 'anthrobots', also demonstrate the ability to repair neurons.",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 1651.34,
+          "end_time_seconds": 1714.44
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_092",
+            "timestamp": 1656,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_092_1656.0s.jpg",
+            "file_size": 42473,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1656
+        ],
+        "time_range": {
+          "start": 1656,
+          "end": 1656
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_032",
+      "text_content": {
+        "text": "So they'll sit there and they'll knit the neurons together across this wound. Now, who would have Thought, who knew that the cells in your airway are capable of becoming a self motile little creature that by the way, likes to heal neural wounds. We would have never known that. So the biomedical aspect. So there's two aspects of note here. The biomedical aspect is that someday you will have biobots made of your own cells that can be injected into your body to make repairs. You don't need immune therapy because they're your own cells. They won't be rejected. And can we learn to program these things to enhance their healing abilities so that they can, they can have all kinds of useful, useful activities in the body.",
+        "metadata": {
+          "token_count": 129,
+          "sentence_count": 9,
+          "primary_topics": [
+            "Neural Healing",
+            "Biomedical Applications",
+            "Cellular Reprogramming",
+            "Biobots"
+          ],
+          "secondary_topics": [
+            "Cellular Motility",
+            "Immune Therapy",
+            "Cellular Adaptability",
+            "Wound Healing",
+            "Biomedical Engineering",
+            "Tissue Repair",
+            "Cellular Biology"
+          ],
+          "key_terms": [
+            "Neurons",
+            "Airway Cells",
+            "Self Motile",
+            "Biobots",
+            "Immune Therapy",
+            "Cellular Reprogramming",
+            "Healing Abilities"
+          ],
+          "content_summary": "The speaker discusses the potential of cells in the airway to become self-motile and aid in neural healing. They further explore the concept of 'biobots', made from a person's own cells, which could be used in the future for internal body repairs without the need for immune therapy.",
+          "scientific_domain": "Developmental Biology, Bioelectricity, Biomedical Engineering",
+          "start_time_seconds": 1715.16,
+          "end_time_seconds": 1751.64
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_096",
+            "timestamp": 1728,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_096_1728.0s.jpg",
+            "file_size": 58493,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1728
+        ],
+        "time_range": {
+          "start": 1728,
+          "end": 1728
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_033",
+      "text_content": {
+        "text": "But the other thing is the plasticity, the incredible plasticity of life. There's never been any anthrobots, there's never been any evolutionary selection to be a good anthrobot. Where does this come from? We can talk about that too. But what that means, that incredible plasticity means that almost any level in biology can be augmented or manipulated by engineering. And so when we talk about ethics, a lot of people like to compare, well, I'm a real human, and then there are these machines and we're very different. Well, the problem you're all going to be facing in your lifetime, no doubt about it, is not what to do with language models sitting inside a server somewhere. It's this, this guy has had various modifications and there are a lot of people who are going to be interested in figuring out is this a quote unquote real human? Is it? You know, what are we going to do? Is it 51% implants and now you're not a real human? What is going to happen to beings that are, that are extended, rationally extended and modified in other ways? And that opens up numerous questions and really I think is going to be very difficult and lead to a lot of moral lapses if we insist on binary categories where using old school methods, we're going to try to figure out if this is a human or a machine. I'm going to skip a couple things here because we're running out of time just to end on this.",
+        "metadata": {
+          "token_count": 258,
+          "sentence_count": 15,
+          "primary_topics": [
+            "Biological Plasticity",
+            "Bioengineering",
+            "Human-Machine Integration"
+          ],
+          "secondary_topics": [
+            "Evolutionary Selection",
+            "Ethics in Bioengineering",
+            "Definition of 'Real Human'",
+            "Moral Dilemmas in Bioengineering",
+            "Categorization of Biological Entities"
+          ],
+          "key_terms": [
+            "Anthrobot",
+            "Plasticity",
+            "Augmentation",
+            "Manipulation",
+            "Implants",
+            "Binary Categories"
+          ],
+          "content_summary": "The speaker discusses the plasticity of life and how it can be manipulated or augmented through bioengineering. He raises ethical questions about the definition of a 'real human' and the moral dilemmas that arise from integrating humans and machines.",
+          "scientific_domain": "Developmental Biology, Bioelectricity, Bioengineering",
+          "start_time_seconds": 1751.72,
+          "end_time_seconds": 1837.15
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_098",
+            "timestamp": 1764,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_098_1764.0s.jpg",
+            "file_size": 58619,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1764
+        ],
+        "time_range": {
+          "start": 1764,
+          "end": 1764
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_034",
+      "text_content": {
+        "text": "This is not about biology at all. I don't think we have, we have started looking at extremely minimal systems. If any of you take programming, you will no doubt have heard of sorting algorithms, things like bubble sort and so on. All computer science students study them. They are very short, simple, deterministic algorithms. And what we found is that even those things, when you look at them the right way, are doing things other in addition to what is actually in the algorithm. In other words, the Algorithm makes them sort numbers, and they do, and they sort the numbers, but also they do other stuff. They have these other side quests, is the best way I can describe it, that are nowhere in the algorithm. And so they have a simple version of what we have.",
+        "metadata": {
+          "token_count": 139,
+          "sentence_count": 9,
+          "primary_topics": [
+            "Minimal Systems",
+            "Sorting Algorithms",
+            "Algorithm Behavior"
+          ],
+          "secondary_topics": [
+            "Computer Science",
+            "Deterministic Algorithms",
+            "Number Sorting",
+            "Side Effects of Algorithms",
+            "Algorithm Complexity"
+          ],
+          "key_terms": [
+            "Bubble Sort",
+            "Deterministic Algorithms",
+            "Side Quests",
+            "Number Sorting"
+          ],
+          "content_summary": "The speaker discusses the behavior of minimal systems, specifically sorting algorithms. They highlight that these deterministic algorithms, while primarily designed to sort numbers, also perform additional tasks not explicitly defined in the algorithm, referred to as 'side quests'.",
+          "scientific_domain": "Computer Science",
+          "start_time_seconds": 1838.35,
+          "end_time_seconds": 1879.61
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_103",
+            "timestamp": 1854,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_103_1854.0s.jpg",
+            "file_size": 48882,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1854
+        ],
+        "time_range": {
+          "start": 1854,
+          "end": 1854
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_035",
+      "text_content": {
+        "text": "In other words, you have to obey physics, but within the context of that, in your life you do all kinds of things that are not actually prescribed by the physics at all. And it doesn't take life and it doesn't take complexity and it doesn't take a brain to be able to do that. I think it's baked in all the way down. And that means that all of natural life is a tiny little speck in this enormous space of possible bodies and minds. You know, pretty much any combination of evolved material, engineered material, software, and something I haven't had a chance to talk about.",
+        "metadata": {
+          "token_count": 108,
+          "sentence_count": 5,
+          "primary_topics": [
+            "Physics and Life",
+            "Complexity in Life",
+            "Potential of Natural Life"
+          ],
+          "secondary_topics": [
+            "Evolution",
+            "Engineering in Biology",
+            "Software in Biology",
+            "Material Science in Biology"
+          ],
+          "key_terms": [
+            "Physics",
+            "Complexity",
+            "Brain",
+            "Evolved material",
+            "Engineered material",
+            "Software"
+          ],
+          "content_summary": "The speaker discusses the relationship between physics and life, asserting that life's complexity is not solely dictated by physics. They suggest that the potential of natural life extends beyond what we currently know, encompassing any combination of evolved and engineered materials, as well as software.",
+          "scientific_domain": "Developmental Biology, Bioelectricity, Physics",
+          "start_time_seconds": 1879.61,
+          "end_time_seconds": 1910.29
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_105",
+            "timestamp": 1890,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_105_1890.0s.jpg",
+            "file_size": 48870,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1890
+        ],
+        "time_range": {
+          "start": 1890,
+          "end": 1890
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_036",
+      "text_content": {
+        "text": "But basically, basically patterns that are not in the physical world at all is, is some kind of being with some kind of embodied intelligence that we are going to have to learn to live with. And part of the ethics of the future is developing a kind of synth biosis, a synthetic mutually beneficial interaction with beings that are not like us at all. So I'm just going to thank the postdocs and the students who did some of the work that I showed you today. And again, some disclosures. There's three companies that have spun out of all this stuff and our funders and most of all the systems that we learn from. They do all the heavy lifting.",
+        "metadata": {
+          "token_count": 121,
+          "sentence_count": 6,
+          "primary_topics": [
+            "Synthetic biology",
+            "Bioethics",
+            "Artificial Intelligence"
+          ],
+          "secondary_topics": [
+            "Embodied intelligence",
+            "Synthetic mutually beneficial interaction",
+            "Research ethics",
+            "Scientific collaboration",
+            "Technology commercialization"
+          ],
+          "key_terms": [
+            "Synth biosis",
+            "Postdocs",
+            "Students",
+            "Disclosures",
+            "Spin-out companies",
+            "Funders",
+            "Systems"
+          ],
+          "content_summary": "The speaker discusses the concept of synthetic biology and the ethical considerations of developing a symbiotic relationship with artificial beings. They also acknowledge the contributions of postdocs, students, and funders, and mention the creation of spin-out companies from their research.",
+          "scientific_domain": "Developmental Biology, Bioelectricity, Bioethics",
+          "start_time_seconds": 1910.29,
+          "end_time_seconds": 1949.61
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_107",
+            "timestamp": 1926,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_107_1926.0s.jpg",
+            "file_size": 65234,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1926
+        ],
+        "time_range": {
+          "start": 1926,
+          "end": 1926
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    },
+    {
+      "content_id": "xNgq3zqYsoA_chunk_037",
+      "text_content": {
+        "text": "So I will stop here. I'll thank you and take questions.",
+        "metadata": {
+          "token_count": 11,
+          "sentence_count": 2,
+          "primary_topics": [],
+          "secondary_topics": [],
+          "key_terms": [],
+          "content_summary": "",
+          "scientific_domain": "",
+          "start_time_seconds": 1949.93,
+          "end_time_seconds": 1952.33
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "xNgq3zqYsoA_frame_108",
+            "timestamp": 1944,
+            "file_path": "step_05_frames/xNgq3zqYsoA/xNgq3zqYsoA_frame_108_1944.0s.jpg",
+            "file_size": 51337,
+            "alignment_confidence": 0.6
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1944
+        ],
+        "time_range": {
+          "start": 1944,
+          "end": 1944
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.6,
+        "timestamp_coverage": 0.009174311926605505
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      }
+    }
+  ]
+}

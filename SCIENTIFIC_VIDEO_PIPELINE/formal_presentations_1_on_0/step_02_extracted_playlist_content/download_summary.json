@@ -1,24 +1,32 @@
 {
-  "total_videos": 1,
-  "successful_downloads": 1,
+  "total_videos": 3,
+  "successful_downloads": 2,
   "failed_downloads": 0,
-  "existing_videos": 0,
+  "existing_videos": 1,
   "skipped_videos": 0,
-  "success_rate": 100.0,
-  "processing_timestamp": "2025-08-18T09:08:50.414844",
+  "success_rate": 66.66666666666666,
+  "processing_timestamp": "2025-08-18T09:27:21.479356",
   "results": [
     {
       "video_id": "FzFFeRVEdUM",
       "title": "\"Scaling Intelligence in Biology, Artificial Life, and Beyond\" by Michael Levin",
+      "status": "already_processed",
+      "local_path": "step_02_extracted_playlist_content/video_FzFFeRVEdUM/video.mp4",
+      "file_size_mb": 0,
+      "playlist_added": "2025-08-18T09:27:04.607883"
+    },
+    {
+      "video_id": "zKjdkxrvE6k",
+      "title": "\"Life, Mind, and Computing: a diverse intelligence perspective\" by Michael Levin",
       "download_result": {
         "success": true,
-        "video_file": "step_02_extracted_playlist_content/video_FzFFeRVEdUM/video.mp4",
-        "file_size_mb": 24.28466796875,
+        "video_file": "step_02_extracted_playlist_content/video_zKjdkxrvE6k/video.mp4",
+        "file_size_mb": 31.681110382080078,
         "additional_metadata": {
-          "upload_date": "20250511",
-          "duration": 1443,
-          "view_count": 10515,
-          "like_count": 640,
+          "upload_date": "20250313",
+          "duration": 1988,
+          "view_count": 5706,
+          "like_count": 285,
           "tags": [],
           "categories": [
             "People & Blogs"
@@ -34,8 +42,8 @@
           "fps": 30,
           "vcodec": "avc1.42001E",
           "acodec": "mp4a.40.2",
-          "filesize": 25464320,
-          "filesize_approx": 25464230,
+          "filesize": 33220052,
+          "filesize_approx": 33219810,
           "subtitle_files": [
             "video.en.vtt"
           ],
@@ -43,7 +51,47 @@
             "video.webp"
           ]
         },
-        "download_time": "2025-08-18T09:08:49.409286"
+        "download_time": "2025-08-18T09:27:13.119171"
+      },
+      "status": "newly_downloaded"
+    },
+    {
+      "video_id": "xNgq3zqYsoA",
+      "title": "\"Ethics and the New Biology\" by Michael Levin",
+      "download_result": {
+        "success": true,
+        "video_file": "step_02_extracted_playlist_content/video_xNgq3zqYsoA/video.mp4",
+        "file_size_mb": 27.287156105041504,
+        "additional_metadata": {
+          "upload_date": "20250426",
+          "duration": 1953,
+          "view_count": 7030,
+          "like_count": 408,
+          "tags": [],
+          "categories": [
+            "People & Blogs"
+          ],
+          "language": "en",
+          "age_limit": 0,
+          "is_live": false,
+          "was_live": false,
+          "live_status": "not_live",
+          "availability": "public",
+          "format": "18 - 450x360 (360p)",
+          "resolution": "450x360",
+          "fps": 30,
+          "vcodec": "avc1.42001E",
+          "acodec": "mp4a.40.2",
+          "filesize": 28612657,
+          "filesize_approx": 28612439,
+          "subtitle_files": [
+            "video.en.vtt"
+          ],
+          "thumbnail_files": [
+            "video.webp"
+          ]
+        },
+        "download_time": "2025-08-18T09:27:20.474427"
       },
       "status": "newly_downloaded"
     }

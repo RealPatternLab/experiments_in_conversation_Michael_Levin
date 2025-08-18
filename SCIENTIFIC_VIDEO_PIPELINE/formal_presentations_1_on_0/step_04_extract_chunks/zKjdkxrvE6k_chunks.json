@@ -1,0 +1,1518 @@
+{
+  "video_id": "zKjdkxrvE6k",
+  "video_metadata": {},
+  "transcript_metadata": {},
+  "chunking_parameters": {
+    "max_chunk_tokens": 300,
+    "min_chunk_tokens": 100,
+    "overlap_tokens": 50
+  },
+  "total_chunks": 40,
+  "total_tokens": 6201,
+  "chunks": [
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_000",
+      "text": "And what I thought I would take you through is some ideas that at the beginning of the talk, some things I feel pretty strongly about, and then some things at the end which are kind of way, way at the edge of what we know, and basically speculation that I think is useful nevertheless. Okay, so here are four things I'm going to try to talk about very quickly. First of all, I'm going to address this issue of biology, solving problems at all levels, in all kinds of problem spaces, and argue that genomes are not drivers, if anything, they are more like libraries of affordances, and that evolution makes problem solving agents, not solutions to specific problems. I will not have time to talk about this. Normally, if I give a long talk, I actually show how we go about communicating with the agential material that underlies life, because this is where we have most of our data. Then what I will talk about is give some thoughts about basically the fact that the architecture of life is fundamentally creative because it is dealing with an unreliable substrate, and that this gives rise to a really powerful intelligence ratchet. And towards the end, if we have time, I'll talk about some recent ideas about shifting the perspective of agents versus data and how the notion of Platonic space can be actually useful for research.",
+      "token_count": 237,
+      "sentence_count": 10,
+      "start_sentence": 0,
+      "end_sentence": 9,
+      "start_time_ms": 240,
+      "end_time_ms": 83430,
+      "start_time_seconds": 0.24,
+      "end_time_seconds": 83.43,
+      "primary_topics": [
+        "Role of Genomes in Biology",
+        "Problem-Solving in Biology",
+        "Architecture of Life",
+        "Intelligence Ratchet",
+        "Perspective of Agents vs Data"
+      ],
+      "secondary_topics": [
+        "Evolution",
+        "Agential Material",
+        "Unreliable Substrate",
+        "Platonic Space",
+        "Communication in Biology",
+        "Creativity in Biological Architecture",
+        "Data in Biology"
+      ],
+      "key_terms": [
+        "Genomes",
+        "Problem Solving Agents",
+        "Libraries of Affordances",
+        "Agential Material",
+        "Unreliable Substrate",
+        "Intelligence Ratchet",
+        "Agents",
+        "Data",
+        "Platonic Space"
+      ],
+      "content_summary": "The speaker discusses the role of genomes in biology, emphasizing that they are not drivers but rather libraries of affordances. He also explores the concept of problem-solving in biology and the inherent creativity in the architecture of life. Towards the end, he plans to discuss the perspective of agents versus data and the potential usefulness of the notion of Platonic space for research.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_001",
+      "text": "So what I'm interested in is to address something that I think we have, which is a degree of mind blindness. And it's an analogy. You can think about this as the electromagnetic spectrum. It used to be back in the day that things that happen when you wave magnets around, light, X rays, all of those things were thought to be very, very different things. Actually, could we mute somebody? Somebody's. Yep, there we go. Thank you. And, and something, something really interesting happened when we ended up with a proper theory of electromagnetism, which is that first of all, phenomena that were thought to be extremely different turned out to be manifestations of the same thing. And so we, we, we have an idea for how they relate to each other. And it allowed a technology to be made that enables us to detect and interact with and make use of all kinds of things that were completely inaccessible to us with our natural set of senses. And so I think something like that is happening with cognition, where evolution has given us some firmware that enables us to recognize certain extremely narrow range of kinds of minds. And I think we need to develop theory and that will lead to practical tools to enable us to recognize, create, and ethically relate to a very wide, diverse set of intelligences, regardless of how they got here or what they're made of. And so we're interested in my group, in understanding how to relate to all of these kinds of weird things. And in particular very important to move experimental work forward.",
+      "token_count": 273,
+      "sentence_count": 17,
+      "start_sentence": 1,
+      "end_sentence": 17,
+      "start_time_ms": 84450,
+      "end_time_ms": 179950,
+      "start_time_seconds": 84.45,
+      "end_time_seconds": 179.95,
+      "primary_topics": [
+        "Mind Blindness",
+        "Theory of Electromagnetism",
+        "Cognition",
+        "Evolution",
+        "Diverse Intelligences"
+      ],
+      "secondary_topics": [
+        "Electromagnetic Spectrum",
+        "Technology Development",
+        "Sensory Perception",
+        "Experimental Work",
+        "Ethical Relations",
+        "Recognition of Intelligences",
+        "Creation of Intelligences"
+      ],
+      "key_terms": [
+        "Electromagnetic Spectrum",
+        "Cognition",
+        "Evolution",
+        "Firmware",
+        "Intelligences",
+        "Theory of Electromagnetism",
+        "Mind Blindness"
+      ],
+      "content_summary": "Michael Levin discusses the concept of 'mind blindness', drawing an analogy with the electromagnetic spectrum. He emphasizes the need for a theory that will enable us to recognize, create, and ethically relate to a diverse set of intelligences, much like the theory of electromagnetism allowed us to understand and utilize different electromagnetic phenomena.",
+      "scientific_domain": "Developmental Biology, Bioelectricity, Cognitive Science",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_002",
+      "text": "So I like philosophical ideas that end up being computational models and then end up being applications and eventually therapeutics. And this is why part of the lab does birth defects, regenerative medicine, cancer and so on, because then we know we're on the right track. And in particular, again, what I don't have time to do today, but what I do, I've just sort of made a recent talk about. All of this is similar to what happened to different kinds of numbers where we slowly, with certain kinds of schisms and people sort of freaking out when they discover certain new kinds of numbers we've kind of enlarged. Even though some of these sets are infinite, we've discovered novel degrees of infinity and new kinds of numbers. I think the same thing is happening and going to happen more with the sets of cognitive agents that are out there. And so we all can recognize this, some of us are okay with this, or even this.",
+      "token_count": 168,
+      "sentence_count": 8,
+      "start_sentence": 2,
+      "end_sentence": 9,
+      "start_time_ms": 179950,
+      "end_time_ms": 235910,
+      "start_time_seconds": 179.95,
+      "end_time_seconds": 235.91,
+      "primary_topics": [
+        "Computational Models",
+        "Regenerative Medicine",
+        "Birth Defects",
+        "Cancer Research"
+      ],
+      "secondary_topics": [
+        "Therapeutics",
+        "Cognitive Agents",
+        "Philosophical Ideas in Science",
+        "Discovery of New Kinds of Numbers",
+        "Degrees of Infinity"
+      ],
+      "key_terms": [
+        "Computational Models",
+        "Regenerative Medicine",
+        "Birth Defects",
+        "Cancer",
+        "Therapeutics",
+        "Cognitive Agents",
+        "Infinity",
+        "Numbers"
+      ],
+      "content_summary": "The speaker discusses the importance of computational models in scientific research, particularly in the fields of birth defects, regenerative medicine, and cancer. He draws a parallel between the discovery of new kinds of numbers and the potential for discovering new cognitive agents.",
+      "scientific_domain": "Developmental Biology, Bioelectricity, Computational Biology",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_003",
+      "text": "But actually it gets really weird. And this, I'm not prepared to talk much. We could touch on it, but I'm not prepared to talk much about this today. But we can certainly talk about this and the infinity of sentient forms. I think once we understand what we're looking at is getting bigger and bigger and bigger and we can think about for each of these things what is needed to be able to recognize these things. And then what does it break for our assumptions and then how do we do something useful? Okay, so the first section here is. I'm just going to show you a little bit of biology and this idea that what we call life are systems that self assemble into a multi scale competency architecture where every level has agendas and certain capabilities which explores problem spaces by aligning its parts towards larger and more diverse goals.",
+      "token_count": 154,
+      "sentence_count": 9,
+      "start_sentence": 3,
+      "end_sentence": 11,
+      "start_time_ms": 236070,
+      "end_time_ms": 283460,
+      "start_time_seconds": 236.07,
+      "end_time_seconds": 283.46,
+      "primary_topics": [
+        "Sentient forms",
+        "Self-assembly in biological systems",
+        "Multi-scale competency architecture"
+      ],
+      "secondary_topics": [
+        "Recognition of sentient forms",
+        "Assumptions in biological research",
+        "Application of biological knowledge",
+        "Exploration of problem spaces",
+        "Alignment of parts towards goals"
+      ],
+      "key_terms": [
+        "Sentient forms",
+        "Self-assembly",
+        "Multi-scale competency architecture",
+        "Problem spaces",
+        "Goals"
+      ],
+      "content_summary": "The speaker discusses the concept of sentient forms and the complexity of life as systems that self-assemble into a multi-scale competency architecture. They also touch on the challenges in recognizing these forms and the implications for our assumptions in biological research.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_004",
+      "text": "This is the journey that each of us takes from physics and chemistry which describe this quiescent oocyte. That's how we all start life eventually, through this slow, gradual, continuous process. No magic lightning flashes that suddenly push us into the realm of psychology and so on. Eventually we end up being something like this. This is what we're made of. These are single cells. They're extremely. I mean this is a free living organism. But you can see in a single cell, no brain, no nervous system, it has all kinds of capacities to pursue its own tiny little goals. And then life normally goes this way. It can take some twists and turns, it can have a breakdown of Multicellularity, a kind of dissociative identity disorder of the collective intelligence that gives rise to cancer. It can also, with our help, go into new directions, such as these anthrobots, which can continue life even after a patient has died. And we can talk about all that. And what fundamentally happens to bring us into the world is alignment and a kind of dynamic storytelling. And what I mean by that is that when we look at an embryo, and there may be, let's say at an early stage, it's a sheet of 100,000 cells. Why do we look at that and we say there's one embryo, what is there one of? If there's 100,000 cells, what's there one of? Well, what there's one of is a particular model, a commitment to travel in anatomical space to a particular location that describes whatever it is that's being built. A human, a giraffe, snake, whatever. And all of the cells are committed to this one story of what it is that they're building.",
+      "token_count": 293,
+      "sentence_count": 20,
+      "start_sentence": 4,
+      "end_sentence": 23,
+      "start_time_ms": 284900,
+      "end_time_ms": 378050,
+      "start_time_seconds": 284.9,
+      "end_time_seconds": 378.05,
+      "primary_topics": [
+        "Developmental Biology",
+        "Bioelectricity",
+        "Cellular Intelligence",
+        "Multicellularity",
+        "Embryogenesis"
+      ],
+      "secondary_topics": [
+        "Physics and Chemistry of Life",
+        "Cellular Goals",
+        "Cancer as a Breakdown of Multicellularity",
+        "Anthrobots",
+        "Dynamic Storytelling in Development"
+      ],
+      "key_terms": [
+        "Quiescent Oocyte",
+        "Psychology",
+        "Free Living Organism",
+        "Dissociative Identity Disorder",
+        "Collective Intelligence",
+        "Alignment",
+        "Anatomical Space",
+        "Embryo"
+      ],
+      "content_summary": "The presentation discusses the journey of life from a single cell to a complex organism, highlighting the role of bioelectricity and cellular intelligence. It also explores the concept of multicellularity, its breakdown leading to diseases like cancer, and the potential of new directions like anthrobots. The speaker emphasizes the commitment of cells to a 'story' of what they are building, reflected in embryogenesis.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_005",
+      "text": "And all of the cells are committed to this one story of what it is that they're building. And the fact that they're all committed to the same story and reliably make that journey together is what allows us to call it one embryo. But if you were to, and I used to do this in grad school with duck embryos, you take a little needle and you put some scratches into this blastoderm. Each one of these little islands will align within itself because it can't feel the others and self organize into a new embryo. And you get multiples, twins, triplets, quadruplets and so on, which may or may not then heal up and reattach.",
+      "token_count": 117,
+      "sentence_count": 5,
+      "start_sentence": 5,
+      "end_sentence": 9,
+      "start_time_ms": 374130,
+      "end_time_ms": 405940,
+      "start_time_seconds": 374.13,
+      "end_time_seconds": 405.94,
+      "primary_topics": [
+        "Cellular Commitment",
+        "Embryonic Development",
+        "Self-Organization in Embryos",
+        "Bioelectricity in Development"
+      ],
+      "secondary_topics": [
+        "Blastoderm",
+        "Embryo Multiplication",
+        "Cellular Communication",
+        "Experimental Manipulation of Embryos",
+        "Regeneration and Healing"
+      ],
+      "key_terms": [
+        "Blastoderm",
+        "Embryo",
+        "Twins",
+        "Triplets",
+        "Quadruplets",
+        "Self-Organization",
+        "Cellular Commitment"
+      ],
+      "content_summary": "The speaker discusses the concept of cellular commitment in embryonic development, where all cells are committed to the development of a single embryo. However, experimental manipulation, such as scratching the blastoderm, can cause cells to self-organize into multiple embryos, leading to twins, triplets, etc.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_006",
+      "text": "But in the meantime, you have multiple individuals. So the question is, how many selves are present in an embryo is not at all obvious. It's not nailed down by the genetics. It's a self organizing process that leads to the creation of anywhere from, I shouldn't say creation, the manifestation of anywhere from zero to half a dozen or more individuals. And the capacity of this excitable medium is not really clear, much like it's not really clear in the brain at all how many actual individuals fit into a particular amount of real estate in the brain. And we can, we can talk about that.",
+      "token_count": 107,
+      "sentence_count": 6,
+      "start_sentence": 6,
+      "end_sentence": 11,
+      "start_time_ms": 405940,
+      "end_time_ms": 440650,
+      "start_time_seconds": 405.94,
+      "end_time_seconds": 440.65,
+      "primary_topics": [
+        "Embryo development",
+        "Self-organization in biology",
+        "Bioelectricity"
+      ],
+      "secondary_topics": [
+        "Genetics",
+        "Brain capacity",
+        "Individuality in biology",
+        "Biological real estate",
+        "Excitable medium",
+        "Manifestation of individuals"
+      ],
+      "key_terms": [
+        "Embryo",
+        "Self-organizing process",
+        "Individuals",
+        "Genetics",
+        "Excitable medium",
+        "Brain real estate"
+      ],
+      "content_summary": "The speaker discusses the concept of individuality in embryo development, emphasizing that it's not solely determined by genetics but rather a self-organizing process. The speaker also draws a parallel between the unclear capacity of an embryo and the brain to host individuals.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_007",
+      "text": "So what you have here is then, is then alignment, both physical and functional, to a particular model of navigation of that space. Like any good collective intelligence, or any intelligence really, it can be. We can think about how reliably it does its job. Here are acorns, they make these oak leaves. We think that, okay, this is what the oak genome knows how to do, is direct the formation of exactly this pattern. It's incredibly reliable. They're very good at doing their job, these cells. But of course it's hackable. For example, this is an example of a non human bioengineer. This little wasp that comes around and deposits some signals, a kind of bioprompting that causes these cells to build something completely different. Right?",
+      "token_count": 127,
+      "sentence_count": 11,
+      "start_sentence": 7,
+      "end_sentence": 17,
+      "start_time_ms": 442250,
+      "end_time_ms": 1145290,
+      "start_time_seconds": 442.25,
+      "end_time_seconds": 1145.29,
+      "primary_topics": [
+        "Collective Intelligence",
+        "Cellular Functionality",
+        "Bioengineering",
+        "Genomic Direction"
+      ],
+      "secondary_topics": [
+        "Physical Alignment",
+        "Functional Alignment",
+        "Reliability of Biological Processes",
+        "Cellular Manipulation",
+        "Bioprompting",
+        "Inter-species Interaction"
+      ],
+      "key_terms": [
+        "Alignment",
+        "Collective Intelligence",
+        "Acorns",
+        "Oak Genome",
+        "Pattern Formation",
+        "Bioengineer",
+        "Wasp",
+        "Signals",
+        "Bioprompting"
+      ],
+      "content_summary": "The speaker discusses the concept of collective intelligence in biological systems, using the example of an oak tree's genome directing the formation of leaves. They also highlight the ability to manipulate these processes, as demonstrated by a wasp that prompts cells to build something different.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_008",
+      "text": "So you'd have no idea that these flat green things were actually capable of building something like this or something like this. And there are lots of examples that I could show you how life hacks each itself and each other, and how we are learning to do it. One of the most interesting interfaces to this collective intelligence, much like in the brain. So what is it in the brain? It's bioelectricity or AKA electrophysiology, But that's actually extremely ancient. It was used as a cognitive glue by evolution long before brains and muscles appeared. And so we now have ways to manipulate, to observe it and manipulate it. And just to show you a couple of things, because the visuals are cool, this is an early frog embryo putting its face together. And you can see that the colors are voltage, the colors are the different voltages of the cells.",
+      "token_count": 152,
+      "sentence_count": 9,
+      "start_sentence": 8,
+      "end_sentence": 16,
+      "start_time_ms": 491200,
+      "end_time_ms": 538600,
+      "start_time_seconds": 491.2,
+      "end_time_seconds": 538.6,
+      "primary_topics": [
+        "Bioelectricity",
+        "Electrophysiology",
+        "Developmental Biology",
+        "Evolution",
+        "Collective Intelligence"
+      ],
+      "secondary_topics": [
+        "Life Hacks",
+        "Brain Function",
+        "Cellular Voltage",
+        "Embryonic Development",
+        "Manipulation of Bioelectricity",
+        "Observation Techniques",
+        "Evolutionary Biology",
+        "Cognitive Glue"
+      ],
+      "key_terms": [
+        "Bioelectricity",
+        "Electrophysiology",
+        "Evolution",
+        "Embryo",
+        "Cellular Voltage",
+        "Collective Intelligence",
+        "Cognitive Glue"
+      ],
+      "content_summary": "The speaker discusses the concept of bioelectricity, or electrophysiology, and its role in evolution and development. The speaker also mentions the ability to observe and manipulate bioelectricity, providing an example of a frog embryo developing its face, where different colors represent different cellular voltages.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_009",
+      "text": "This is one frame. What you're seeing here is you're reading out the memories inside the collective intelligence that's navigating that anatomical space. This is the memory, this is the face. So here's where the mouth is going to go, here's where the right eye is going to be. Here are the placodes. This is what guides the downstream gene expression and the anatomy to form a proper face. This is how. This, when you ask how do the cells know what to do? This is how they know what to do. This is their memory. And that bioelectric pattern is not just for bundling together cells to form a single embryo. It actually connects multiple embryos together.",
+      "token_count": 118,
+      "sentence_count": 12,
+      "start_sentence": 9,
+      "end_sentence": 20,
+      "start_time_ms": 538600,
+      "end_time_ms": 574570,
+      "start_time_seconds": 538.6,
+      "end_time_seconds": 574.57,
+      "primary_topics": [
+        "Bioelectricity",
+        "Cellular Memory",
+        "Gene Expression",
+        "Embryonic Development",
+        "Anatomical Formation"
+      ],
+      "secondary_topics": [
+        "Collective Intelligence",
+        "Anatomical Space Navigation",
+        "Cellular Communication",
+        "Placodes",
+        "Embryo Connectivity"
+      ],
+      "key_terms": [
+        "Bioelectric Pattern",
+        "Downstream Gene Expression",
+        "Anatomical Space",
+        "Placodes",
+        "Embryo"
+      ],
+      "content_summary": "The speaker, Michael Levin, discusses the concept of bioelectricity and cellular memory in guiding gene expression and anatomical formation during embryonic development. He emphasizes the role of bioelectric patterns in not only forming a single embryo but also in connecting multiple embryos.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_010",
+      "text": "So it's a multi scale kind of phenomenon. If I poke this guy here, all of his friends, each one of these things is a separate embryo. It's a separate frog embryo. Each one of them finds out about it. You can poke this one here. Within some minutes they all find out about it. And here you can see some cells doing their thing. So once you start to read these, it's basically think of neural decoding, think of trying to read the electrophysiology of the brain and extract memories and preferences and so on. We can do the same thing in morphogenesis and we can start to manipulate it.",
+      "token_count": 111,
+      "sentence_count": 9,
+      "start_sentence": 10,
+      "end_sentence": 18,
+      "start_time_ms": 574570,
+      "end_time_ms": 607940,
+      "start_time_seconds": 574.57,
+      "end_time_seconds": 607.94,
+      "primary_topics": [
+        "Multi-scale phenomena",
+        "Embryonic development",
+        "Bioelectricity in morphogenesis",
+        "Neural decoding",
+        "Electrophysiology"
+      ],
+      "secondary_topics": [
+        "Cellular communication",
+        "Frog embryo development",
+        "Manipulation of morphogenesis",
+        "Extraction of memories and preferences",
+        "Cellular behavior"
+      ],
+      "key_terms": [
+        "Morphogenesis",
+        "Electrophysiology",
+        "Neural decoding",
+        "Embryo",
+        "Multi-scale phenomena",
+        "Bioelectricity"
+      ],
+      "content_summary": "The speaker discusses the multi-scale phenomena of bioelectricity in embryonic development, specifically in frog embryos. They draw parallels between neural decoding in the brain and the manipulation of morphogenesis in embryos.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_011",
+      "text": "So while the normal flatworm has a very clear memory that it needs one head and one tail, so that when you cut it into pieces, every piece makes one head and one tail. We can change that, we can incept false memories into these things using optogenetics and pharmacology and various other means. And so now you can say, no, actually. And of course this is still messy, we're still working this out, but you can say no, actually, you should have two heads. And it's a perfectly normal one headed animal, right? There he is with the wrong internal representation of what a correct planarian should look like. It's a latent memory. In fact, it's a counterfactual because it's not true. Right now, right now he has one head.",
+      "token_count": 131,
+      "sentence_count": 9,
+      "start_sentence": 11,
+      "end_sentence": 19,
+      "start_time_ms": 608020,
+      "end_time_ms": 643900,
+      "start_time_seconds": 608.02,
+      "end_time_seconds": 643.9,
+      "primary_topics": [
+        "Flatworm Regeneration",
+        "Memory in Biological Systems",
+        "Optogenetics",
+        "Pharmacology"
+      ],
+      "secondary_topics": [
+        "Bioelectricity",
+        "Developmental Biology",
+        "Regenerative Medicine",
+        "Neural Plasticity",
+        "Biological Memory Manipulation",
+        "Planarian Worms",
+        "Internal Representation"
+      ],
+      "key_terms": [
+        "Flatworm",
+        "Optogenetics",
+        "Pharmacology",
+        "Memory",
+        "Regeneration",
+        "Internal Representation",
+        "Latent Memory",
+        "Counterfactual"
+      ],
+      "content_summary": "The speaker discusses the ability of flatworms to regenerate and the inherent 'memory' they possess of their original form. They explain how this memory can be manipulated using optogenetics and pharmacology to create a two-headed worm, challenging the worm's internal representation of its normal structure.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_012",
+      "text": "But what happens is if you cut him, if you cut the tail, the head and the tail, that fragment is actually going to give rise to, we had an animal. And I now have to tell people, this is not AI, this is not, you know, Photoshop. These are real, real results. And what happens is because this is what enables the collective to know what to build and when to stop. So you can, you can read out these pattern memories if you continue to cut these two headed animals that the memory holds. It's a bioelectric memory. It is not controlled by the genetics. The genetics are totally wild type. Nothing has changed. Changes in the genome sequencing the genome will not tell you that these things have two heads. It will also not tell you that the whole lineage will have two heads because you can keep cutting them. And in fact, when they reproduce, they cut themselves in half on their own and then they regenerate. They will continue to be two headed. Here's a video. You can see what these guys are doing.",
+      "token_count": 189,
+      "sentence_count": 15,
+      "start_sentence": 12,
+      "end_sentence": 26,
+      "start_time_ms": 644220,
+      "end_time_ms": 692710,
+      "start_time_seconds": 644.22,
+      "end_time_seconds": 692.71,
+      "primary_topics": [
+        "Regeneration",
+        "Bioelectric Memory",
+        "Genetics"
+      ],
+      "secondary_topics": [
+        "Animal Fragmentation",
+        "Pattern Memories",
+        "Genome Sequencing",
+        "Wild Type Genetics",
+        "Regenerative Reproduction",
+        "Two-headed Animals"
+      ],
+      "key_terms": [
+        "Regeneration",
+        "Bioelectric Memory",
+        "Genome Sequencing",
+        "Wild Type",
+        "Fragmentation",
+        "Reproduction"
+      ],
+      "content_summary": "The speaker discusses the phenomenon of animal regeneration, specifically focusing on how certain animals can regenerate into two-headed creatures. The speaker emphasizes that this is not a genetic trait, but rather a bioelectric memory that guides the regeneration process.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_013",
+      "text": "So what we're seeing here is that there are a variety of computational systems at all levels of organization. And I don't have time to talk about all the cool things that the genetic networks are doing. They can learn too. You don't even need cells, just the molecular networks alone have six different kinds of memory, including Pavlovian conditioning. But all of these things work together and they solve problems in various spaces. And as I mentioned before, we are tuned to recognize medium sized objects moving at medium speeds in three dimensional space. And so crows and primates and maybe a whale or an octopus, we can sort of get that.",
+      "token_count": 113,
+      "sentence_count": 7,
+      "start_sentence": 13,
+      "end_sentence": 19,
+      "start_time_ms": 693430,
+      "end_time_ms": 732830,
+      "start_time_seconds": 693.43,
+      "end_time_seconds": 732.83,
+      "primary_topics": [
+        "Computational Systems",
+        "Genetic Networks",
+        "Molecular Networks"
+      ],
+      "secondary_topics": [
+        "Memory Types",
+        "Pavlovian Conditioning",
+        "Problem Solving",
+        "Perception of Medium Sized Objects",
+        "Animal Cognition"
+      ],
+      "key_terms": [
+        "Computational Systems",
+        "Genetic Networks",
+        "Molecular Networks",
+        "Memory",
+        "Pavlovian Conditioning",
+        "Problem Solving",
+        "Perception",
+        "Cognition"
+      ],
+      "content_summary": "The speaker discusses the complexity of computational systems at different levels of organization, including genetic and molecular networks. These networks are capable of learning and have different types of memory, including Pavlovian conditioning. The speaker also touches on the perception of medium-sized objects in three-dimensional space by different animals.",
+      "scientific_domain": "Developmental Biology, Bioelectricity, Cognitive Science",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_014",
+      "text": "But what biology is teaching us is, is that embodiment is really not what we think. So when people say that a various kinds of AIs are not embodied because they don't roll around the room on wheels and they don't walk around that. I, I think that's actually not, not the right way to think about it at all. Because there's lots of perception, action loops and goal directedness and intelligence that take place in spaces that we cannot see. So your cells and your tissues are navigating a high dimensional space of possible gene expressions. They're navigating a space of physiological states. And of course what we study is morphous space, okay?",
+      "token_count": 114,
+      "sentence_count": 7,
+      "start_sentence": 14,
+      "end_sentence": 20,
+      "start_time_ms": 732830,
+      "end_time_ms": 771640,
+      "start_time_seconds": 732.83,
+      "end_time_seconds": 771.64,
+      "primary_topics": [
+        "Embodiment in Biology",
+        "Artificial Intelligence",
+        "Perception-Action Loops",
+        "Gene Expressions",
+        "Physiological States"
+      ],
+      "secondary_topics": [
+        "Intelligence",
+        "High Dimensional Space Navigation",
+        "Morphous Space",
+        "Goal-Directedness",
+        "Cellular Navigation"
+      ],
+      "key_terms": [
+        "Embodiment",
+        "Artificial Intelligence",
+        "Perception-Action Loops",
+        "Gene Expressions",
+        "Physiological States",
+        "High Dimensional Space",
+        "Morphous Space"
+      ],
+      "content_summary": "The speaker, Michael Levin, challenges the conventional understanding of embodiment in biology and AI, arguing that it's not about physical mobility but about navigating through complex spaces such as gene expressions and physiological states. He also highlights the study of morphous space.",
+      "scientific_domain": "Developmental Biology, Bioelectricity, Artificial Intelligence",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_015",
+      "text": "So the space of possible anatomical configurations. And they don't just roll down hills and automatically sort of do the same thing every single time. They are really navigating with some amazing capabilities. The kind of problem solving that they do is, is astounding. I'm just going to show you two examples. We could talk about this for hours. And I think really important for us to understand in order to make real artificial intelligence and things like that. So here's just one example. You take this planaria, these flatworms, you put them in a solution of barium chloride. Barium is a non specific potassium channel blocker. It makes their cells very unhappy. Their heads explode. Literally over the next 24 hours, they're heads explode.",
+      "token_count": 125,
+      "sentence_count": 13,
+      "start_sentence": 15,
+      "end_sentence": 27,
+      "start_time_ms": 771640,
+      "end_time_ms": 813330,
+      "start_time_seconds": 771.64,
+      "end_time_seconds": 813.33,
+      "primary_topics": [
+        "Anatomical Configurations",
+        "Problem Solving Capabilities of Organisms",
+        "Artificial Intelligence",
+        "Planaria Reaction to Barium Chloride"
+      ],
+      "secondary_topics": [
+        "Potassium Channel Blocker",
+        "Cellular Reactions to External Stimuli",
+        "Bioelectricity in Flatworms",
+        "Biological Experimentation",
+        "Biochemical Effects of Barium",
+        "Cellular Damage"
+      ],
+      "key_terms": [
+        "Anatomical Configurations",
+        "Artificial Intelligence",
+        "Planaria",
+        "Barium Chloride",
+        "Potassium Channel Blocker"
+      ],
+      "content_summary": "The speaker discusses the complex problem-solving capabilities of organisms, using the example of planaria's reaction to barium chloride. This reaction, which results in the planaria's heads exploding, is highlighted as a significant point of interest for developing artificial intelligence.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_016",
+      "text": "But if you leave them in the barium, what happens is that a little while later they will make a new head. And the new head is completely fine with barium, no problem. It's barium adapted. When you check what is different about the original head and the barium adapted head, you find that it's, it's only, it's, it's less than a dozen genes that are different. And the trick is that these guys, planaria, have never seen barium either. These worms, nor in their evolutionary history, there's never been selection for knowing what to do when you get hit with barium.",
+      "token_count": 102,
+      "sentence_count": 6,
+      "start_sentence": 16,
+      "end_sentence": 21,
+      "start_time_ms": 813330,
+      "end_time_ms": 840700,
+      "start_time_seconds": 813.33,
+      "end_time_seconds": 840.7,
+      "primary_topics": [
+        "Bioelectricity",
+        "Planaria Regeneration",
+        "Genetic Adaptation"
+      ],
+      "secondary_topics": [
+        "Evolutionary Biology",
+        "Gene Expression",
+        "Environmental Adaptation",
+        "Barium Exposure",
+        "Planaria Anatomy",
+        "Selective Pressure"
+      ],
+      "key_terms": [
+        "Barium",
+        "Planaria",
+        "Genes",
+        "Adaptation",
+        "Regeneration",
+        "Evolutionary History"
+      ],
+      "content_summary": "The speaker discusses an experiment where Planaria worms regenerate a new head after exposure to barium, despite no prior evolutionary exposure to the element. The new head is adapted to barium, with less than a dozen genes differing from the original.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_017",
+      "text": "So just think about this, this problem. You've got an, you've got an extreme physiological stressor. You have on the order of 20,000 control knobs that you can, that you can, that you can twist. So like a Moravic bush, you know, with, with, with an incredible number of effectors, which of these genes do you turn on enough to solve a novel, a novel stressor? It's kind of like being in a nuclear reactor control room. The thing's melting down. And unless you know exactly how it works, unless you have a model of your own apparatus, what you don't have time to do is to start flipping switches randomly to see if life gets better because you'll be dead. And there's no time for that.",
+      "token_count": 127,
+      "sentence_count": 9,
+      "start_sentence": 17,
+      "end_sentence": 25,
+      "start_time_ms": 840700,
+      "end_time_ms": 878280,
+      "start_time_seconds": 840.7,
+      "end_time_seconds": 878.28,
+      "primary_topics": [
+        "Physiological stressor",
+        "Gene regulation",
+        "Modeling biological systems"
+      ],
+      "secondary_topics": [
+        "Bioelectricity",
+        "Developmental biology",
+        "Stress response",
+        "Genetic control knobs",
+        "Moravic bush",
+        "Nuclear reactor analogy",
+        "Survival under extreme conditions"
+      ],
+      "key_terms": [
+        "Physiological stressor",
+        "Control knobs",
+        "Moravic bush",
+        "Effectors",
+        "Novel stressor",
+        "Nuclear reactor control room",
+        "Model of apparatus"
+      ],
+      "content_summary": "The speaker discusses the complexity of managing physiological stressors, comparing the process to controlling a nuclear reactor. They emphasize the importance of understanding and modeling biological systems to effectively regulate genes and respond to novel stressors.",
+      "scientific_domain": "Developmental biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_018",
+      "text": "So we need to understand how these living systems actually solve novel problems. That they haven't seen before. This is maybe my favorite example of all time. This is a cross section through the kidney tubule of a salamander. So normally 8 to 10 cells that make this thing up. What you can do is you can make these newts with more copies of their genetic material. So when you have more copies of their genetic material, so instead of 2N chromosomes, you can have 4N, 5N, 6N and so on. When you do this, the cells get bigger, but the newt stays the same size. Well, how can that be? Well, it's because the cell, there's actually few fewer cells that make up the same structure. The cells are bigger, but there's less of them. Okay. And then when you make the cells truly gigantic, what you find is that one cell will bend around itself like this and leave a space in the middle, same structure.",
+      "token_count": 168,
+      "sentence_count": 13,
+      "start_sentence": 18,
+      "end_sentence": 30,
+      "start_time_ms": 878760,
+      "end_time_ms": 931920,
+      "start_time_seconds": 878.76,
+      "end_time_seconds": 931.92,
+      "primary_topics": [
+        "Adaptability of living systems",
+        "Genetic manipulation in salamanders",
+        "Cell size and structure"
+      ],
+      "secondary_topics": [
+        "Problem-solving in biological systems",
+        "Genetic material duplication",
+        "Cellular adaptation",
+        "Structural integrity of cells",
+        "Cellular organization",
+        "Cell morphology"
+      ],
+      "key_terms": [
+        "Chromosomes",
+        "Kidney tubule",
+        "Cross section",
+        "Cell size",
+        "Genetic material",
+        "Newts",
+        "Cellular structure"
+      ],
+      "content_summary": "The presentation discusses how living systems, specifically salamanders, adapt to novel problems. By increasing the number of chromosomes in salamander cells, the cells become larger while the overall size of the organism remains the same. This is due to fewer but larger cells making up the same structure. The cells can even bend around themselves to maintain the same structure when they become extremely large.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_019",
+      "text": "Now here are a couple of amazing parts. First of all, this is a completely different molecular mechanism. So instead of cell to cell communication and tubulogenesis, here, this is cytoskeletal bending. So, so what the system is doing is what you would do on an IQ test. You use various tools at your disposal to get to the, to solve the problem, to get to the same goal in novel ways beyond what you would normally do. Right. It's creative use of the tools that you already have. And think about what this means from the perspective of the system. You come into the world, what can you count on? Well, you can't count on your environment, we all know that.",
+      "token_count": 122,
+      "sentence_count": 10,
+      "start_sentence": 19,
+      "end_sentence": 28,
+      "start_time_ms": 931920,
+      "end_time_ms": 967770,
+      "start_time_seconds": 931.92,
+      "end_time_seconds": 967.77,
+      "primary_topics": [
+        "Molecular Mechanisms",
+        "Cell Communication",
+        "Cytoskeletal Bending",
+        "Tubulogenesis"
+      ],
+      "secondary_topics": [
+        "Problem Solving",
+        "Environmental Adaptation",
+        "Cellular Tools",
+        "Cellular Creativity",
+        "System Perspective"
+      ],
+      "key_terms": [
+        "Molecular Mechanism",
+        "Cell to Cell Communication",
+        "Cytoskeletal Bending",
+        "Tubulogenesis",
+        "IQ Test",
+        "Tools",
+        "Environment"
+      ],
+      "content_summary": "The speaker discusses a new molecular mechanism involving cytoskeletal bending, contrasting it with traditional cell communication and tubulogenesis. They compare this to problem-solving on an IQ test, using available tools in creative ways. The speaker also touches on the concept of environmental unpredictability.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_020",
+      "text": "But you also apparently can't. You don't know how many copies of your genetic material you're going to have. You don't know how big your cells are going to be. You don't know how many cells you're going to have. But you still have to make that newt. And in a minute I'm going to show you you can actually make other things. But you try really hard to make that newt, despite the fact that you can't even rely on your own parts, never mind the environment. You can't even assume that your parts are what they are. So here, for the next couple minutes, I just want to talk about this. That unlike most of the things we program, life really operates with a, with a poly computing architecture where you are free to reinterpret all the messages that you have, and those are genetic messages from the past. Everything you have is up for interpretation. Because your substrate is unreliable. You cannot afford to care too much about what your ancestors thought that your genes mean or what your past self thinks that Your memories meant you have to reinterpret all this stuff from scratch.",
+      "token_count": 198,
+      "sentence_count": 14,
+      "start_sentence": 20,
+      "end_sentence": 33,
+      "start_time_ms": 967770,
+      "end_time_ms": 1026640,
+      "start_time_seconds": 967.77,
+      "end_time_seconds": 1026.64,
+      "primary_topics": [
+        "Genetic Material",
+        "Cellular Development",
+        "Bioelectricity",
+        "Poly Computing Architecture in Biological Systems",
+        "Genetic Interpretation"
+      ],
+      "secondary_topics": [
+        "Newt Development",
+        "Genetic Variability",
+        "Cellular Variability",
+        "Environmental Influence on Development",
+        "Ancestral Genetic Influence",
+        "Memory Interpretation",
+        "Substrate Unreliability"
+      ],
+      "key_terms": [
+        "Genetic Material",
+        "Cells",
+        "Newt",
+        "Poly Computing Architecture",
+        "Genetic Messages",
+        "Substrate",
+        "Ancestors",
+        "Memories"
+      ],
+      "content_summary": "The speaker discusses the unpredictability and variability in biological systems, such as the number of genetic material copies, cell size, and cell count. Despite these uncertainties, organisms like newts still develop. The speaker introduces the concept of a poly computing architecture in life, which allows for reinterpretation of genetic messages, emphasizing the need to reinterpret ancestral genetic meanings and personal memories due to the unreliability of the biological substrate.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_021",
+      "text": "Let me just show you a couple of examples of how this looks on three scales. On the evolutionary scale, the developmental scale and the cognitive scale. One of the things that I like to think about is caterpillars and butterflies. Caterpillars are this kind of soft bodied creature with a controller suitable for soft body motion, and they crawl around and they eat leaves. They have to turn into this thing that lives in the three dimensional world and it forms, flies around, and it's a hard bodied creature and it needs a completely different controller for that. And so in the meantime, what it does is it basically liquefies its brain, kills most of the cells, breaks most of the connections, and then eventually rebuilds a new butterfly brain. Okay, so what is known is that if you train the caterpillar to, let's say, eat leaves when it sees a particular colored disc, it's known that butterflies actually retain this information.",
+      "token_count": 163,
+      "sentence_count": 7,
+      "start_sentence": 21,
+      "end_sentence": 27,
+      "start_time_ms": 1027590,
+      "end_time_ms": 1079830,
+      "start_time_seconds": 1027.59,
+      "end_time_seconds": 1079.83,
+      "primary_topics": [
+        "Evolutionary Scale",
+        "Developmental Scale",
+        "Cognitive Scale"
+      ],
+      "secondary_topics": [
+        "Caterpillar to Butterfly Transformation",
+        "Brain Reconstruction",
+        "Memory Retention",
+        "Neural Controller",
+        "Soft Body to Hard Body Transition"
+      ],
+      "key_terms": [
+        "Evolution",
+        "Development",
+        "Cognition",
+        "Metamorphosis",
+        "Neural Connections",
+        "Memory Retention",
+        "Liquefaction"
+      ],
+      "content_summary": "The speaker discusses the transformation of caterpillars into butterflies as an example of evolution, development, and cognition. This process involves a complete reconstruction of the brain and a transition from a soft-bodied creature to a hard-bodied one. Despite this drastic change, butterflies retain memories from their caterpillar stage.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_022",
+      "text": "So on the surface of it, the crazy thing here to think about is, well, how do you maintain information while you're drastically refactoring the substrate? Okay, and so that's a cool question, but there's a better, there's an even more amazing piece to this, which is that the actual memories of the caterpillar are of absolutely no use to the butterfly. The butterfly doesn't crawl, it doesn't eat leaves, it wants nectar. The memories of the caterpillar, if they were trying to stay intact, would never survive. But if they are able to be remapped onto a new architecture, not just carried over, not just persist, but actually change, remap, then they survive into this new embodiment as the creature gains a new life in a higher dimensional space.",
+      "token_count": 130,
+      "sentence_count": 6,
+      "start_sentence": 22,
+      "end_sentence": 27,
+      "start_time_ms": 1080680,
+      "end_time_ms": 1124100,
+      "start_time_seconds": 1080.68,
+      "end_time_seconds": 1124.1,
+      "primary_topics": [
+        "Information Maintenance",
+        "Substrate Refactoring",
+        "Memory Remapping"
+      ],
+      "secondary_topics": [
+        "Caterpillar to Butterfly Transformation",
+        "Memory Persistence",
+        "Memory Usefulness",
+        "Architectural Change",
+        "Dimensional Space"
+      ],
+      "key_terms": [
+        "Substrate",
+        "Refactoring",
+        "Memory",
+        "Remapping",
+        "Architecture",
+        "Dimensional Space"
+      ],
+      "content_summary": "The speaker discusses the intriguing concept of how information is maintained while drastically refactoring the substrate. An even more fascinating aspect is the remapping of caterpillar memories onto a new butterfly architecture, allowing them to survive in a higher dimensional space.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_023",
+      "text": "So you have here something like the paradox of change, where if you as a biological organism or a lineage, if you stay the same, you will surely die when the circumstances change. But if you change to fit those circumstances, in a sense, you, meaning the old you, is still gone. How do you persist? You cannot persist in place. That's the, that seems to be the paradox. So what I like to think about is this idea that your memories, and these are memories, these are both cognitive memories and genetic memories are just messages from, from your past self.",
+      "token_count": 102,
+      "sentence_count": 6,
+      "start_sentence": 23,
+      "end_sentence": 28,
+      "start_time_ms": 1124580,
+      "end_time_ms": 1162220,
+      "start_time_seconds": 1124.58,
+      "end_time_seconds": 1162.22,
+      "primary_topics": [
+        "Paradox of Change in Biological Organisms",
+        "Persistence of Biological Organisms",
+        "Cognitive and Genetic Memories"
+      ],
+      "secondary_topics": [
+        "Adaptation to Changing Circumstances",
+        "Concept of Self in Biology",
+        "Memory as a Message from Past Self",
+        "Survival Strategies in Biology",
+        "Role of Memory in Persistence",
+        "Evolutionary Implications of Change"
+      ],
+      "key_terms": [
+        "Biological Organism",
+        "Lineage",
+        "Circumstances",
+        "Change",
+        "Cognitive Memories",
+        "Genetic Memories",
+        "Persistence",
+        "Paradox"
+      ],
+      "content_summary": "The speaker, Michael Levin, discusses the paradox of change in biological organisms, where change is necessary for survival but also results in the loss of the 'old self'. He proposes the concept of cognitive and genetic memories as messages from the past self as a means of persistence.",
+      "scientific_domain": "Developmental Biology, Bioelectricity, Evolutionary Biology",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_024",
+      "text": "So what you don't have access to at any given moment in time is the past. You have no idea what happened in the past. What you have are memory engrams, traces left in your brain and body that were constructed by your past selves. They were compressed, they were Generalized, they went through this bottleneck. So here are all the stuff that, I mean, all the computer science people will recognize this immediately. All the inputs and the different diverse experiences came through. They were compressed somehow into these, this very, this very thin substrate which are the engrams that people still fight about what that is.",
+      "token_count": 108,
+      "sentence_count": 7,
+      "start_sentence": 24,
+      "end_sentence": 30,
+      "start_time_ms": 1162540,
+      "end_time_ms": 1198070,
+      "start_time_seconds": 1162.54,
+      "end_time_seconds": 1198.07,
+      "primary_topics": [
+        "Memory Engrams",
+        "Data Compression",
+        "Past Experiences"
+      ],
+      "secondary_topics": [
+        "Brain Function",
+        "Neuroscience",
+        "Cognitive Science",
+        "Information Processing",
+        "Memory Storage",
+        "Data Generalization"
+      ],
+      "key_terms": [
+        "Memory Engrams",
+        "Data Compression",
+        "Generalization",
+        "Bottleneck",
+        "Substrate"
+      ],
+      "content_summary": "The speaker discusses the concept of memory engrams, which are traces left in the brain and body by past experiences. These engrams are compressed and generalized, representing a 'thin substrate' of diverse inputs and experiences.",
+      "scientific_domain": "Developmental Biology, Bioelectricity, Neuroscience",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_025",
+      "text": "But future you has to decompress them. And information was lost here. You don't actually know what these memories mean. When you find a particular memory molecule or a set of electrical states in your brain, you don't actually know what they mean. You have to creatively interpret them. And I suspect that while this part can be algorithmic and deductive, this part I don't think can. I suspect this is, and I don't exactly know what this is, I'll speculate a little bit at the end, but there's something else going on here which allows, allows those memories to be remapped in a novel context. Like every memory, every message from others at the current time, messages from past, you also need to be interpreted. And you don't need to really care about what they meant before. What you do need to care about is how do I make them adaptive now?",
+      "token_count": 153,
+      "sentence_count": 10,
+      "start_sentence": 25,
+      "end_sentence": 34,
+      "start_time_ms": 1198310,
+      "end_time_ms": 1245910,
+      "start_time_seconds": 1198.31,
+      "end_time_seconds": 1245.91,
+      "primary_topics": [
+        "Memory Interpretation",
+        "Adaptive Memory Utilization",
+        "Brain Electrical States"
+      ],
+      "secondary_topics": [
+        "Memory Molecules",
+        "Algorithmic Interpretation",
+        "Deductive Interpretation",
+        "Memory Remapping",
+        "Novel Contextualization",
+        "Past and Current Messages Interpretation"
+      ],
+      "key_terms": [
+        "Memory Molecule",
+        "Electrical States",
+        "Algorithmic",
+        "Deductive",
+        "Remapping",
+        "Adaptive"
+      ],
+      "content_summary": "The speaker discusses the complexities of interpreting memories and the electrical states in the brain, suggesting that this process may not be purely algorithmic or deductive. They propose that memories are remapped and interpreted in new contexts, with an emphasis on making them adaptive to current situations.",
+      "scientific_domain": "Developmental Biology, Neurobiology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_026",
+      "text": "So what the biology is optimizing for is not fidelity of information, it's saliency. So you're not trying to keep the caterpillar memories as they are, you're trying to remap them to a new meaning and new functions. So the same thing is happening in, so that's the cognitive side, the same thing is happening in the developmental side when you have a genome. And I know I didn't have time to go through all these examples, probably you can find some of the stuff in this paper. But the idea basically is this, that you come into the world with a certain genome.",
+      "token_count": 104,
+      "sentence_count": 5,
+      "start_sentence": 26,
+      "end_sentence": 30,
+      "start_time_ms": 1245990,
+      "end_time_ms": 1284570,
+      "start_time_seconds": 1245.99,
+      "end_time_seconds": 1284.57,
+      "primary_topics": [
+        "Optimization in biology",
+        "Cognitive remapping",
+        "Genome development"
+      ],
+      "secondary_topics": [
+        "Information fidelity",
+        "Caterpillar memories",
+        "New meaning and functions",
+        "Developmental side",
+        "World entry with a certain genome"
+      ],
+      "key_terms": [
+        "Biology",
+        "Saliency",
+        "Cognitive side",
+        "Developmental side",
+        "Genome"
+      ],
+      "content_summary": "The speaker discusses the concept of optimization in biology, highlighting that it is not about maintaining information fidelity but about remapping to new meanings and functions. This is applicable in both cognitive and developmental aspects, particularly in the context of genome development.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_027",
+      "text": "But now comes the creative process. So this is all of past history, this is your genetics. Now comes the fun part of, as if, if you're an embryo or a regenerating organ or anything like that, is to say, what do these things mean? And in my current environment and given what's going on now, how do I use this information to do something useful? And we have lots of examples in biology of this happening. I'll show you a couple more now. So basically the idea is that you can't over train on what the past was. You assume that the hardware is unreliable, meaning you know you're going to get mutated. You know that proteins come and go. You have no idea exactly how many of anything is in your cell. All of that stuff is Very fluid. And for this reason, you have to commit to interpreting on the fly. And what evolution does is produce systems that are very good at creative interpretation of data.",
+      "token_count": 170,
+      "sentence_count": 13,
+      "start_sentence": 27,
+      "end_sentence": 39,
+      "start_time_ms": 1284890,
+      "end_time_ms": 1333380,
+      "start_time_seconds": 1284.89,
+      "end_time_seconds": 1333.38,
+      "primary_topics": [
+        "Genetics",
+        "Cellular Biology",
+        "Evolution",
+        "Bioelectricity",
+        "Regeneration"
+      ],
+      "secondary_topics": [
+        "Protein Synthesis",
+        "Mutation",
+        "Cellular Fluidity",
+        "Data Interpretation",
+        "Adaptation",
+        "Embryonic Development",
+        "Organ Regeneration"
+      ],
+      "key_terms": [
+        "Genetics",
+        "Mutation",
+        "Proteins",
+        "Embryo",
+        "Regenerating Organ",
+        "Cell",
+        "Evolution",
+        "Data Interpretation"
+      ],
+      "content_summary": "The speaker discusses the role of genetics and the inherent unpredictability of biological systems in development and regeneration. They highlight the importance of on-the-fly interpretation of data, given the fluid nature of cellular components and the inevitability of mutations.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_028",
+      "text": "First that, that was the case physiologically, then, you know, genetically and developmentally, and then eventually, you know, conventional cognition. And again, all of this, all of this is here. One of the cool things about it is that this gives rise to an interesting intelligence, ratchet. So the more creative interpretation of your genome you do during development, the harder it is for selection to actually know whether your genome was any good or not. And we've done simulations of this to show that what happens when you evolve over a competent material like this is that the pressure on the structural genome comes off and all of the work of evolution starts being done on the actual algorithm of, of the creative interpretation of the tools that you have. Because with each sort of run through that loop, it becomes harder and harder to select better genomes because you can't see them. You can just see the fact that useful phenotypes had appeared. And so I think that ratchet started very early on, and it contributes to the amazing, you know, sort of conventional intelligence that we see in the, in the animal world. Okay, and so the last part, just, just maybe two, two minutes more, the last part is this. When we have these, when the, the systems that I showed you, when I talk about problem solving, what I've, what I've been showing you are systems that can get to their goal by different means.",
+      "token_count": 250,
+      "sentence_count": 11,
+      "start_sentence": 28,
+      "end_sentence": 38,
+      "start_time_ms": 1333460,
+      "end_time_ms": 1419530,
+      "start_time_seconds": 1333.46,
+      "end_time_seconds": 1419.53,
+      "primary_topics": [
+        "Evolution",
+        "Genetic Interpretation",
+        "Developmental Biology",
+        "Bioelectricity",
+        "Cognition"
+      ],
+      "secondary_topics": [
+        "Genome Selection",
+        "Phenotypic Variation",
+        "Problem Solving",
+        "Evolutionary Pressure",
+        "Intelligence",
+        "Simulation",
+        "Algorithm Development",
+        "Animal Intelligence"
+      ],
+      "key_terms": [
+        "Genome",
+        "Phenotypes",
+        "Structural Genome",
+        "Algorithm",
+        "Intelligence Ratchet",
+        "Competent Material",
+        "Conventional Intelligence"
+      ],
+      "content_summary": "The speaker discusses the concept of 'intelligence ratchet', where the creative interpretation of a genome during development makes it difficult for selection to determine the quality of the genome. This leads to a shift in evolutionary pressure from the structural genome to the algorithm of interpretation. The speaker suggests that this process contributes to the diverse intelligence observed in the animal world.",
+      "scientific_domain": "Developmental Biology, Bioelectricity, Evolutionary Biology",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_029",
+      "text": "So that's William James's definition of intelligence. And there's, there's sort of, they have these competencies. The newt will be the same size even if you mess with the genetics or the size of cells or whatever. But what happens when you make novel systems? Where do their goals come from? Because for all of the natural systems, you could say, well, evolution did that. Evolution gave you the goal. And that's what we normally say. Why does this animal look the way it looks? Why does it have behaviors that it has? Because of selection. Eons of selection gave you that goal. Okay, what happens in novel systems? I'm very interested in where goals come from. I don't really think they come from evolution per se. And so we wanted a model system that tries to study that aspect of it. And so in biology, we like genetics and we like environment, and those are the two things, the two sources of information that we think and so on.",
+      "token_count": 170,
+      "sentence_count": 17,
+      "start_sentence": 29,
+      "end_sentence": 45,
+      "start_time_ms": 1419530,
+      "end_time_ms": 1473100,
+      "start_time_seconds": 1419.53,
+      "end_time_seconds": 1473.1,
+      "primary_topics": [
+        "Intelligence Definition",
+        "Role of Evolution in Shaping Organisms",
+        "Origin of Goals in Biological Systems"
+      ],
+      "secondary_topics": [
+        "Genetics",
+        "Environment",
+        "Selection Process",
+        "Novel Biological Systems",
+        "Model Systems in Biology",
+        "Cell Size"
+      ],
+      "key_terms": [
+        "Intelligence",
+        "Evolution",
+        "Goals",
+        "Genetics",
+        "Environment",
+        "Selection",
+        "Novel Systems",
+        "Model System"
+      ],
+      "content_summary": "The speaker discusses the concept of intelligence and the role of evolution in shaping the characteristics and behaviors of organisms. They express interest in understanding the origin of goals in biological systems, particularly in novel systems, and suggest that these goals may not solely come from evolution.",
+      "scientific_domain": "Developmental Biology, Evolutionary Biology",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_030",
+      "text": "So I'm very interested in this kind of stuff. When we make novel beings, whether technological hybrids or biological and cyborgs and augmented Humans, all kinds of weird stuff that is already partially in existence. What else? I mean, these, you know, these things, these things here don't really necessarily have a history of selection for specific properties. Where else are they getting these goals if it's not? Where do these patterns come from if it's not selection? And by the way, one story I didn't show you is that there is an anatomical space. There are these attractors that correspond to different species shapes. And we can actually show that the same genetic hardware can actually visit multiple attractors. It doesn't have to go to its species specific attractor, but, but they're there. And then people will say, well, okay, fine, so these are shaped by evolution.",
+      "token_count": 148,
+      "sentence_count": 11,
+      "start_sentence": 30,
+      "end_sentence": 40,
+      "start_time_ms": 1473340,
+      "end_time_ms": 1523520,
+      "start_time_seconds": 1473.34,
+      "end_time_seconds": 1523.52,
+      "primary_topics": [
+        "Biohybrid organisms",
+        "Cyborgs and augmented humans",
+        "Evolutionary selection",
+        "Species-specific attractors",
+        "Genetic hardware"
+      ],
+      "secondary_topics": [
+        "Anatomical space",
+        "Evolutionary biology",
+        "Genetic variation",
+        "Pattern formation",
+        "Developmental biology",
+        "Bioelectricity",
+        "Morphogenesis"
+      ],
+      "key_terms": [
+        "Technological hybrids",
+        "Biological and cyborgs",
+        "Augmented humans",
+        "Selection",
+        "Anatomical space",
+        "Attractors",
+        "Species shapes",
+        "Genetic hardware"
+      ],
+      "content_summary": "The speaker discusses the creation of novel beings, such as biohybrid organisms and augmented humans, questioning where their patterns and goals come from if not from selection. They also mention the existence of species-specific attractors in an anatomical space, which can be visited by the same genetic hardware.",
+      "scientific_domain": "Developmental Biology and Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_031",
+      "text": "So what I'm really interested in are patterns that don't have a history and they don't have an explanation in terms of physics. And what could that possibly be? So, so here's one example. This thing is called a Halley plot and there's a million examples. I just like these. It's called a Hali plot. You get it? It's a fractal that you get from plotting this very simple formula, this tiny little seed in complex number Z. If you unpack, it gives you this. And if you slowly change one of these numbers, what you'll get are videos and movies of all this kind of stuff.",
+      "token_count": 107,
+      "sentence_count": 10,
+      "start_sentence": 31,
+      "end_sentence": 40,
+      "start_time_ms": 1523920,
+      "end_time_ms": 1556080,
+      "start_time_seconds": 1523.92,
+      "end_time_seconds": 1556.08,
+      "primary_topics": [
+        "Pattern Formation",
+        "Fractals",
+        "Complex Numbers"
+      ],
+      "secondary_topics": [
+        "Halley Plot",
+        "Physics",
+        "Mathematical Models",
+        "Pattern Dynamics",
+        "Complex Number Plotting",
+        "Fractal Generation",
+        "Mathematical Formulas"
+      ],
+      "key_terms": [
+        "Halley Plot",
+        "Fractal",
+        "Complex Number",
+        "Physics",
+        "Pattern"
+      ],
+      "content_summary": "The speaker discusses his interest in patterns that lack a history or explanation in terms of physics. He introduces the concept of a Halley plot, a fractal derived from plotting a simple formula in complex number Z. He emphasizes that changing one of these numbers can result in a variety of visual outputs.",
+      "scientific_domain": "Developmental Biology, Bioelectricity, Mathematical Biology",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_032",
+      "text": "So what's interesting here, and then you can, you can make all sorts of other things clearly clear. Complexity doesn't hurt that it's kind of organic looking as well. But what's interesting about it is that it does not have, at least to my knowledge, I'm not a mathematician, but to my knowledge it does not have an explanation in physics. It does not have an explanation of history. It was not evolved, it was not selected. Is, it is in some way indexed into by this tiny little, little seed or pointer. I don't, I don't think you can call it a compression for reasons we can, we can talk about.",
+      "token_count": 112,
+      "sentence_count": 7,
+      "start_sentence": 32,
+      "end_sentence": 38,
+      "start_time_ms": 1556480,
+      "end_time_ms": 1588360,
+      "start_time_seconds": 1556.48,
+      "end_time_seconds": 1588.36,
+      "primary_topics": [
+        "Complexity in biology",
+        "Concept of organic structures",
+        "Role of physics in explaining biological phenomena"
+      ],
+      "secondary_topics": [
+        "Evolutionary biology",
+        "Concept of selection",
+        "Role of mathematics in biology",
+        "Concept of indexing",
+        "Concept of compression in biology"
+      ],
+      "key_terms": [
+        "Complexity",
+        "Organic",
+        "Physics",
+        "Evolution",
+        "Selection",
+        "Indexing",
+        "Compression"
+      ],
+      "content_summary": "The speaker discusses the complexity and organic nature of certain biological structures, which, to their knowledge, cannot be explained by physics or evolutionary history. The speaker also mentions the concept of 'indexing' by a 'seed' or 'pointer', and dismisses the idea of calling it 'compression'.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_033",
+      "text": "But, but clearly there are, there are patterns that come from, from at least mathematics that, that do not have the conventional kind of explanation that biological patterns have. So how much of this is actually relevant to biology? So, so, so biologists hate this idea because they want a nice kind of sparse ontology where you have, you have the physical world and that's it. And they don't want any, you know, any, any weird stuff. But I think a lot of mathematicians are actually pretty comfortable that what they're doing is exploring a completely different world that is not in fact explained by any fact of Physics, it matters for physics.",
+      "token_count": 113,
+      "sentence_count": 6,
+      "start_sentence": 33,
+      "end_sentence": 38,
+      "start_time_ms": 1588440,
+      "end_time_ms": 1624940,
+      "start_time_seconds": 1588.44,
+      "end_time_seconds": 1624.94,
+      "primary_topics": [
+        "Biological patterns",
+        "Mathematical patterns",
+        "Physics"
+      ],
+      "secondary_topics": [
+        "Ontology",
+        "Mathematical exploration",
+        "Biologists' perspective",
+        "Mathematicians' perspective",
+        "Relevance of mathematical patterns to biology"
+      ],
+      "key_terms": [
+        "Ontology",
+        "Biological patterns",
+        "Mathematical patterns",
+        "Physics",
+        "Sparse ontology"
+      ],
+      "content_summary": "The speaker discusses the difference between biological and mathematical patterns, and the reluctance of biologists to accept mathematical patterns as part of biological ontology. The speaker also mentions that mathematicians are comfortable exploring a world that is not necessarily explained by physics.",
+      "scientific_domain": "Developmental Biology, Mathematics, Physics",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_034",
+      "text": "So it, it has influence in the physical world. But, but, but it isn't something that you're going to find, you know, by, by, by, by studying physics. And so we've started, we've, we've started to ask, you know, what other kinds of patterns might be interesting for biology. And so I'll show you just a couple of quick things. This little thing, when you're looking at it, you might think that this is some sort of primitive organism that we found from a pond somewhere. If you were to sequence the genome, you would find out that you're very mistaken. The genome is Homo sapiens, 100% Homo sapiens, normal Homo sapiens. We call these anthrobots. They're self constructing little biobots that, that are made from adult human tracheal epithelial cells. They are not embryonic. There's no embryonic tissue here. They don't resemble any stage of normal human development. They are what your cells do when liberated from the rest of your body and given a chance to have a new life. The patient that donated these may or may not be alive, but these guys have rebooted their multicellularity. They do some cool stuff. They have novel behaviors which we can arrange in ethograms, like we do for animals. Half their genome is expressed differently than what they were doing when they were part of the tissue inside the patient. They have cool properties like they will heal your neural wounds.",
+      "token_count": 242,
+      "sentence_count": 18,
+      "start_sentence": 34,
+      "end_sentence": 51,
+      "start_time_ms": 1625020,
+      "end_time_ms": 1704140,
+      "start_time_seconds": 1625.02,
+      "end_time_seconds": 1704.14,
+      "primary_topics": [
+        "Biobots",
+        "Cellular Behavior",
+        "Genome Expression"
+      ],
+      "secondary_topics": [
+        "Cellular Autonomy",
+        "Human Tracheal Epithelial Cells",
+        "Neural Wound Healing",
+        "Ethograms",
+        "Multicellularity",
+        "Human Development"
+      ],
+      "key_terms": [
+        "Anthrobots",
+        "Homo sapiens Genome",
+        "Adult Human Tracheal Epithelial Cells",
+        "Embryonic Tissue",
+        "Multicellularity",
+        "Ethograms",
+        "Neural Wounds"
+      ],
+      "content_summary": "The speaker discusses the concept of biobots, specifically 'anthrobots', which are self-constructing entities made from adult human tracheal epithelial cells. These cells, when separated from the human body, exhibit unique behaviors and express half their genome differently. They also possess the ability to heal neural wounds.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_035",
+      "text": "So if you make a big scratch through this neural tissue in vitro, they'll sit here in this biobot cluster and they'll heal it. And you can see here, they'll. And who would have known, who would have known that your tracheal cells can do this? And we've done this with, with frog embryos too. These are xenobots, which are made from frog skin cells, from embryonic epithelial cells. They don't have the ability to reproduce the way normal frogs do, but they've figured out something different. This is basically von Neumann's dream of a robot that finds material and makes copies of itself. If you provide them with loose epithelial cells, they will push them together into little piles and they then sort of polish the little piles. The little piles mature into the next generation of xenobots. And guess what that does? It does the same thing. It makes the next generation and the next. None of this existed before in evolution. There's been no evolutionary pressure to be a good xenobot or to be a good anthrobot. And so now we're confronted with some, with two options in order to try to deal with these novel, novel forms, behaviors and other patterns that, that are not directly selected for by evolution. We can say they're emergent, which basically just means that they're surprising to us. We can catalog them and when we come across them, well, there they are. We find emergent things. I don't really like it. I like it allows you to have a sparse ontology, but it's kind of a mysterious position. I don't like just saying that. Well, it's a fact that holds in the physical world.",
+      "token_count": 284,
+      "sentence_count": 22,
+      "start_sentence": 35,
+      "end_sentence": 56,
+      "start_time_ms": 1704140,
+      "end_time_ms": 1797360,
+      "start_time_seconds": 1704.14,
+      "end_time_seconds": 1797.36,
+      "primary_topics": [
+        "Xenobots",
+        "Bioelectricity",
+        "Developmental Biology",
+        "Self-replication",
+        "Emergent Properties"
+      ],
+      "secondary_topics": [
+        "Neural Tissue Healing",
+        "Tracheal Cells",
+        "Frog Embryos",
+        "Embryonic Epithelial Cells",
+        "Evolutionary Pressure",
+        "Sparse Ontology"
+      ],
+      "key_terms": [
+        "In vitro",
+        "Biobot Cluster",
+        "Frog Skin Cells",
+        "Von Neumann's Dream",
+        "Anthrobot",
+        "Emergent",
+        "Physical World"
+      ],
+      "content_summary": "The speaker discusses the creation and behavior of xenobots, which are bio-robots made from frog skin cells. These xenobots can replicate themselves by pushing together loose epithelial cells, a process not seen in traditional evolution. The speaker also discusses the concept of emergent properties, which are unexpected behaviors or patterns not directly selected for by evolution.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_036",
+      "text": "Well, it's a fact that holds in the physical world. And, and that's that I prefer what I think is a more optimistic version, which is to say, much like the mathematicians is probably an ordered space of these things and we should have a research agenda to systematically investigate them. And that the things that we're making, such as xenobots, anthrobots, various chimeras are, and some other crazy stuff such as minimal algorithms, are actually vehicles. They're exploration vehicles that you can use to look for patterns in the latent space of possibilities and, and understand how those patterns come into the physical world and under what circumstances.",
+      "token_count": 109,
+      "sentence_count": 5,
+      "start_sentence": 36,
+      "end_sentence": 40,
+      "start_time_ms": 1795240,
+      "end_time_ms": 1833070,
+      "start_time_seconds": 1795.24,
+      "end_time_seconds": 1833.07,
+      "primary_topics": [
+        "Bioelectricity",
+        "Developmental Biology",
+        "Xenobots",
+        "Anthrobots",
+        "Chimeras"
+      ],
+      "secondary_topics": [
+        "Research Methodology",
+        "Mathematical Models",
+        "Physical World",
+        "Pattern Recognition",
+        "Latent Space of Possibilities"
+      ],
+      "key_terms": [
+        "Xenobots",
+        "Anthrobots",
+        "Chimeras",
+        "Minimal Algorithms",
+        "Ordered Space",
+        "Latent Space",
+        "Physical World",
+        "Exploration Vehicles"
+      ],
+      "content_summary": "The speaker discusses the concept of exploring the physical world using bioengineered entities like xenobots, anthrobots, and chimeras. These entities are viewed as vehicles to investigate patterns in the latent space of possibilities, contributing to our understanding of how these patterns manifest in the physical world.",
+      "scientific_domain": "Developmental Biology and Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_037",
+      "text": "So, so, so, so, so this is, this is my current hypothesis. And certainly other people have, have put out versions of this in the past. But the idea is that I think we now have actual tools that we can begin to, to study this and to figure out why it is that the frog genome doesn't just point to frog morphologies, but actually it knows how to make many different things that it pulls down. And so what I think are, is that the Platonic space doesn't just contain things that mathematicians like, such as facts about prime numbers and such, but also things that we would recognize as kinds of minds, in other words, behavioral patterns and capabilities. And what we make when we make, when, when we perceive, produce embryos, xenobots, computers, pretty much anything. You're not really making these kinds of things. What you're doing is making pointers that allow the ingression of specific patterns from that space into the physical world. And our job is to understand the relationship between the pointers and the thing they bring down. And okay, I'm going to stop because I already run way out of time.",
+      "token_count": 198,
+      "sentence_count": 11,
+      "start_sentence": 37,
+      "end_sentence": 47,
+      "start_time_ms": 1833390,
+      "end_time_ms": 1897590,
+      "start_time_seconds": 1833.39,
+      "end_time_seconds": 1897.59,
+      "primary_topics": [
+        "Genome Functionality",
+        "Morphological Variability",
+        "Platonic Space",
+        "Bioelectricity"
+      ],
+      "secondary_topics": [
+        "Developmental Biology",
+        "Genetic Tools",
+        "Behavioral Patterns",
+        "Embryos",
+        "Xenobots",
+        "Computers",
+        "Ingression of Patterns"
+      ],
+      "key_terms": [
+        "Genome",
+        "Morphologies",
+        "Platonic Space",
+        "Minds",
+        "Behavioral Patterns",
+        "Embryos",
+        "Xenobots",
+        "Computers",
+        "Pointers",
+        "Ingression"
+      ],
+      "content_summary": "The speaker, Michael Levin, presents his hypothesis that the genome, using the frog as an example, has the ability to create a variety of morphologies, not just those specific to the frog. He suggests that this is due to the existence of a 'Platonic space' that contains not just mathematical concepts but also 'minds', or behavioral patterns. The creation of embryos, xenobots, and computers are seen as 'pointers' that allow specific patterns from this Platonic space to manifest in the physical world.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_038",
+      "text": "But just to point out that natural living things are a tiny corner of the pot possible space of beings because any combination of evolved material, engineered material and software is some kind of a system that's going to pull down interesting patterns from the space that we are very bad at predicting. Okay, we cannot, we really, we do not know what, when these things come, they come in extremely minimal forms. It doesn't take much. You know, we found crazy capabilities in classical sorting algorithms, things like bubble sort, which have been studied, you know, for decades. We can talk about that. And I think, you know, basically what Magritte was trying to tell us here when he said, this is not a pipe, is that when. When people say, I know what it is, I've built it, I. I put. I built it with my own hands. I. I chose the material.",
+      "token_count": 155,
+      "sentence_count": 12,
+      "start_sentence": 38,
+      "end_sentence": 49,
+      "start_time_ms": 1897590,
+      "end_time_ms": 1944780,
+      "start_time_seconds": 1897.59,
+      "end_time_seconds": 1944.78,
+      "primary_topics": [
+        "Bioelectricity",
+        "Developmental Biology",
+        "Artificial Life"
+      ],
+      "secondary_topics": [
+        "Evolution",
+        "Material Engineering",
+        "Software Systems",
+        "Pattern Recognition",
+        "Algorithm Analysis"
+      ],
+      "key_terms": [
+        "Evolved material",
+        "Engineered material",
+        "Software",
+        "Sorting algorithms",
+        "Bubble sort"
+      ],
+      "content_summary": "The speaker emphasizes the vast potential of life forms that could result from combinations of evolved and engineered materials, and software. They highlight the unpredictability of these systems and the surprising capabilities found in classical algorithms like bubble sort.",
+      "scientific_domain": "Developmental Biology, Bioelectricity, Computer Science",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "zKjdkxrvE6k_chunk_039",
+      "text": "So I know what this is and I know what it can do. I think we have to be extremely careful because I don't think anything is exactly what. What the algorithm or the materials say it is. That I don't think that's true for. For humans in terms of the laws of biochemistry, and I don't think it's true for machines because of the formal limitations of the algorithms that they're supposedly running. That's it. Here's just the summary of these ideas. We now have a research agenda for all of this stuff. I'd just like to thank the people who did all the work. These are the postdocs and the students in my group, and we have lots of collaborators. And I have to do a disclosure. There are three companies that I'm involved with.",
+      "token_count": 137,
+      "sentence_count": 12,
+      "start_sentence": 39,
+      "end_sentence": 50,
+      "start_time_ms": 1944780,
+      "end_time_ms": 1986800,
+      "start_time_seconds": 1944.78,
+      "end_time_seconds": 1986.8,
+      "primary_topics": [
+        "Biochemistry",
+        "Algorithm Limitations",
+        "Machine Capabilities"
+      ],
+      "secondary_topics": [
+        "Research Agenda",
+        "Collaborative Research",
+        "Role of Postdocs and Students",
+        "Commercial Applications"
+      ],
+      "key_terms": [
+        "Biochemistry",
+        "Algorithms",
+        "Machines",
+        "Postdocs",
+        "Students",
+        "Collaborators",
+        "Companies"
+      ],
+      "content_summary": "The speaker discusses the limitations of both biochemistry in humans and algorithms in machines, suggesting that neither are fully defined by their supposed parameters. The speaker also mentions the involvement of postdocs, students, and collaborators in their research, and discloses involvement with three companies.",
+      "scientific_domain": "Developmental Biology and Bioelectricity",
+      "enhanced": true
+    }
+  ],
+  "processing_timestamp": ""
+}
