@@ -37,7 +37,7 @@
       "current_status": "completed",
       "current_step": "step_01_playlist_processing",
       "created_at": "2025-08-17T18:14:10.175438",
-      "last_updated": "2025-08-17T18:59:07.264886",
+      "last_updated": "2025-08-17T19:11:37.932688",
       "chunk_count": 0,
       "frame_count": 0,
       "error_count": 0,
@@ -53,7 +53,7 @@
         "download_timestamp": "2025-08-17T18:56:20.207280",
         "transcript_file": "step_03_transcription/FzFFeRVEdUM_transcript.json",
         "text_file": "step_03_transcription/FzFFeRVEdUM_transcript.txt",
-        "completed_at": "2025-08-17T18:59:07.264652",
+        "completed_at": "2025-08-17T19:11:37.932623",
         "chunks_file": "step_04_extract_chunks/FzFFeRVEdUM_chunks.json",
         "chunks_dir": "step_04_extract_chunks/FzFFeRVEdUM_chunks",
         "total_chunks": 26,
@@ -65,14 +65,14 @@
         "rag_ready_file": "FzFFeRVEdUM_rag_ready_aligned_content.json",
         "summary_file": "FzFFeRVEdUM_alignment_summary.json",
         "total_alignments": 26,
-        "timestamp": "20250817_182538_415",
+        "timestamp": "20250817_191126_766",
         "content_hash": "082a7d78adac63f4eed8a81a3f6c580e",
         "embedding_files": {
-          "text_index": "text_index_20250817_182538_415.index",
-          "visual_index": "visual_index_20250817_182538_415.index",
-          "combined_index": "combined_index_20250817_182538_415.index",
-          "embeddings": "chunks_embeddings_20250817_182538_415.npy",
-          "metadata": "chunks_metadata_20250817_182538_415.pkl"
+          "text_index": "text_index_20250817_191126_766.index",
+          "visual_index": "visual_index_20250817_191126_766.index",
+          "combined_index": "combined_index_20250817_191126_766.index",
+          "embeddings": "chunks_embeddings_20250817_191126_766.npy",
+          "metadata": "chunks_metadata_20250817_191126_766.pkl"
         }
       }
     }
@@ -103,5 +103,5 @@
     ]
   },
   "created_at": "2025-08-17T18:14:08.385632",
-  "last_updated": "2025-08-17T18:59:07.264910"
+  "last_updated": "2025-08-17T19:11:37.932706"
 }

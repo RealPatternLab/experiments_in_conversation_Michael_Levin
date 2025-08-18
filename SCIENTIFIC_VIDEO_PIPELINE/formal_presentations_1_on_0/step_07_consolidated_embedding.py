@@ -296,6 +296,7 @@ class ConsolidatedEmbedding:
                 chunk_meta = text_content.get('metadata', {})
                 meta_entry = {
                     'content_id': content.get('content_id', ''),
+                    'text': text,  # Include the actual text content for search results
                     'text_length': len(text),
                     'chunk_metadata': chunk_meta,
                     'visual_content': content.get('visual_content', {}),
@@ -433,11 +434,8 @@ class ConsolidatedEmbedding:
             
             # Save embeddings and metadata
             embeddings_path = self.output_dir / f"embeddings_{timestamp}.npy"
-            np.save(str(embeddings_path), {
-                'text': text_embeddings,
-                'visual': visual_embeddings,
-                'combined': combined_features
-            })
+            # Save the combined embeddings as a simple 2D array for compatibility with FAISSRetriever
+            np.save(str(embeddings_path), combined_features)
             
             metadata_path = self.output_dir / f"metadata_{timestamp}.pkl"
             with open(metadata_path, 'wb') as f:

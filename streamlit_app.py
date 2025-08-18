@@ -783,20 +783,40 @@ class FAISSRetriever:
                 else:
                     total_chunks = 0
             
-            # Load FAISS index
-            index_path = most_recent_dir / "chunks.index"
-            if index_path.exists():
-                self.indices[timestamp] = faiss.read_index(str(index_path))
-                logger.info(f"✅ Loaded FAISS index: {index_path}")
+            # Load FAISS indices - prefer text index for text search, fallback to combined
+            text_index_path = most_recent_dir.parent / f"text_index_{timestamp.split('_', 1)[1]}.faiss"
+            combined_index_path = most_recent_dir / "chunks.index"
+            
+            if text_index_path.exists():
+                # Use text index for text search (3072 dimensions)
+                self.indices[timestamp] = faiss.read_index(str(text_index_path))
+                logger.info(f"✅ Loaded text FAISS index: {text_index_path}")
+            elif combined_index_path.exists():
+                # Fallback to combined index (3136 dimensions)
+                self.indices[timestamp] = faiss.read_index(str(combined_index_path))
+                logger.info(f"✅ Loaded combined FAISS index: {combined_index_path}")
             else:
-                logger.error(f"❌ FAISS index not found: {index_path}")
+                logger.error(f"❌ No FAISS index found")
                 return
             
             # Load embeddings
             embeddings_path = most_recent_dir / "chunks_embeddings.npy"
             if embeddings_path.exists():
-                self.embeddings[timestamp] = np.load(str(embeddings_path))
-                logger.info(f"✅ Loaded embeddings: {embeddings_path}")
+                all_embeddings = np.load(str(embeddings_path), allow_pickle=True)
+                
+                # If using text index, extract first 3072 dimensions from combined embeddings
+                if timestamp in self.indices and hasattr(self.indices[timestamp], 'd'):
+                    if self.indices[timestamp].d == 3072:  # Text index
+                        # Extract text embeddings (first 3072 dimensions)
+                        self.embeddings[timestamp] = all_embeddings[:, :3072]
+                        logger.info(f"✅ Loaded text embeddings (3072 dims): {embeddings_path}")
+                    else:  # Combined index
+                        self.embeddings[timestamp] = all_embeddings
+                        logger.info(f"✅ Loaded combined embeddings: {embeddings_path}")
+                else:
+                    # Fallback to combined embeddings
+                    self.embeddings[timestamp] = all_embeddings
+                    logger.info(f"✅ Loaded embeddings: {embeddings_path}")
             else:
                 logger.error(f"❌ Embeddings not found: {embeddings_path}")
                 return
@@ -934,7 +954,7 @@ class UnifiedRetriever:
         self.publications_retriever = FAISSRetriever(Path("SCIENTIFIC_PUBLICATION_PIPELINE/step_06_faiss_embeddings"))
         
         # Video pipeline
-        self.video_retriever = FAISSRetriever(Path("SCIENTIFIC_VIDEO_PIPELINE/formal_presentations_1_on_0/step_06_faiss_embeddings"))
+        self.video_retriever = FAISSRetriever(Path("SCIENTIFIC_VIDEO_PIPELINE/formal_presentations_1_on_0/step_07_faiss_embeddings"))
         
         logger.info("🔗 Unified retriever initialized for both pipelines")
     
@@ -1671,7 +1691,7 @@ def main():
             with st.spinner("Loading unified RAG system..."):
                 # Check if both pipelines have embeddings
                 publications_dir = Path("SCIENTIFIC_PUBLICATION_PIPELINE/step_06_faiss_embeddings")
-                video_dir = Path("SCIENTIFIC_VIDEO_PIPELINE/formal_presentations_1_on_0/step_06_faiss_embeddings")
+                video_dir = Path("SCIENTIFIC_VIDEO_PIPELINE/formal_presentations_1_on_0/step_07_faiss_embeddings")
                 
                 if publications_dir.exists() and video_dir.exists():
                     st.session_state.retriever = UnifiedRetriever()
