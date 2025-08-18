@@ -11,12 +11,11 @@ import logging
 from pathlib import Path
 import subprocess
 
+# Import centralized logging configuration
+from logging_config import setup_logging
+
 # Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
-logger = logging.getLogger(__name__)
+logger = setup_logging('recover_frames')
 
 def check_frame_status():
     """Check the current status of frames in the pipeline"""

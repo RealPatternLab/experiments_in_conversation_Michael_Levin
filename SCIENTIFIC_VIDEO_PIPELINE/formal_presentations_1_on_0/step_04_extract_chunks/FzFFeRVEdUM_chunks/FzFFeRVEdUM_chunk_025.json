@@ -10,21 +10,28 @@
   "start_time_seconds": 1414.39,
   "end_time_seconds": 1443.12,
   "primary_topics": [
-    "N/A"
+    "Research Team Acknowledgement",
+    "Funding and Support",
+    "Model Systems"
   ],
   "secondary_topics": [
-    "N/A"
+    "Postdoctoral Researchers",
+    "Graduate Students",
+    "Collaborators",
+    "Spin-off Companies",
+    "Research Funding",
+    "Model Organisms"
   ],
   "key_terms": [
-    "postdocs",
-    "grad students",
-    "collaborators",
-    "funders",
-    "disclosures",
-    "spin off companies",
-    "model systems"
+    "Postdocs",
+    "Grad students",
+    "Collaborators",
+    "Funders",
+    "Disclosures",
+    "Spin-off companies",
+    "Model systems"
   ],
-  "content_summary": "This transcript chunk is the closing remarks of a scientific presentation by Michael Levin. He acknowledges the contributions of his postdocs, grad students, collaborators, and funders. He also mentions the spin-off companies that support their research and gives special thanks to the model systems they use in their studies.",
-  "scientific_domain": "N/A",
+  "content_summary": "In this section of the presentation, Michael Levin acknowledges the contributions of his research team, including postdocs, grad students, and collaborators. He also mentions the financial support from funders and spin-off companies, and gives credit to the model systems used in their research.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
   "enhanced": true
 }

@@ -13,27 +13,26 @@
     "Bioelectricity",
     "Developmental Biology",
     "Cellular Memory",
+    "RNA Injection",
     "Ion Channels"
   ],
   "secondary_topics": [
-    "RNA Injection",
-    "Voltage Gradients",
     "Cellular Communication",
+    "Voltage Gradients",
     "Protein Encoding",
-    "Tadpole Development",
     "Cellular Interpretation",
-    "Potassium Channels"
+    "Biological Experimentation"
   ],
   "key_terms": [
-    "Bioelectricity",
-    "Cellular Memory",
-    "Ion Channels",
-    "RNA Injection",
-    "Voltage Gradients",
-    "Protein Encoding",
-    "Potassium Channel"
+    "Memory states",
+    "RNA",
+    "Ion channel",
+    "Potassium channel",
+    "Voltage state",
+    "Surrounding cells",
+    "Voltage gradients"
   ],
-  "content_summary": "The speaker discusses the ability to read and potentially alter the 'memory states' of cells, specifically by injecting RNA that encodes a specific ion channel protein. This process can influence cellular development, as demonstrated by the hypothetical example of inducing a tadpole to grow an eye on its gut.",
+  "content_summary": "The speaker discusses the ability to read and potentially alter the 'memory states' of cells, suggesting the possibility of instructing cells to build new structures, such as an eye on a tadpole's tail, through the injection of RNA that encodes specific ion channels. This concept is based on a decade of research into how cells interpret voltage gradients.",
   "scientific_domain": "Developmental Biology, Bioelectricity",
   "enhanced": true
 }

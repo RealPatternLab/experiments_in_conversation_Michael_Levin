@@ -14,16 +14,11 @@ from datetime import datetime
 import argparse
 from pipeline_progress_queue import get_progress_queue
 
+# Import centralized logging configuration
+from logging_config import setup_logging
+
 # Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler('cleanup.log'),
-        logging.StreamHandler()
-    ]
-)
-logger = logging.getLogger(__name__)
+logger = setup_logging('cleanup')
 
 class PipelineCleanup:
     """Cleans up unnecessary files from the pipeline while preserving essential data"""
@@ -68,8 +63,8 @@ class PipelineCleanup:
         
         # Files to preserve (essential for Streamlit and pipeline)
         self.essential_files = {
-            'pipeline_progress_queue.json',
-            'assemblyai_webhooks.json',
+            'logs/pipeline_progress_queue.json',
+            'logs/assemblyai_webhooks.json',
             'run_video_pipeline_1_on_0.py',
             'pipeline_progress_queue.py',
             'PIPELINE_ARCHITECTURE.md',
@@ -426,8 +421,8 @@ class PipelineCleanup:
                 'cache_directories': self.cleanup_stats['cache_cleaned']
             },
             'preserved_essentials': [
-                'pipeline_progress_queue.json',
-                'assemblyai_webhooks.json',
+                'logs/pipeline_progress_queue.json',
+                'logs/assemblyai_webhooks.json',
                 'All step scripts (*.py)',
                 'All transcript files (*_transcript.json)',
                 'All chunk files (*_chunks.json)',
@@ -443,7 +438,10 @@ class PipelineCleanup:
     
     def save_cleanup_report(self, summary: Dict):
         """Save cleanup report to file"""
-        report_file = self.base_dir / f"cleanup_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+        from logging_config import get_logs_dir
+        
+        logs_dir = get_logs_dir()
+        report_file = logs_dir / f"cleanup_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
         
         with open(report_file, 'w') as f:
             json.dump(summary, f, indent=2)

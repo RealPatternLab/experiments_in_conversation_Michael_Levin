@@ -18,16 +18,11 @@ from pipeline_progress_queue import get_progress_queue
 # Load environment variables
 load_dotenv()
 
+# Import centralized logging configuration
+from logging_config import setup_logging
+
 # Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler('playlist_processing.log'),
-        logging.StreamHandler()
-    ]
-)
-logger = logging.getLogger(__name__)
+logger = setup_logging('playlist_processing')
 
 class PlaylistProcessor:
     def __init__(self):

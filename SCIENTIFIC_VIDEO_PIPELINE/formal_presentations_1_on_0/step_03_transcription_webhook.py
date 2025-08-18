@@ -23,16 +23,11 @@ from pipeline_progress_queue import get_progress_queue
 # Load environment variables
 load_dotenv()
 
+# Import centralized logging configuration
+from logging_config import setup_logging
+
 # Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler('transcription_webhook.log'),
-        logging.StreamHandler()
-    ]
-)
-logger = logging.getLogger(__name__)
+logger = setup_logging('transcription_webhook')
 
 class VideoTranscriberWebhook:
     def __init__(self, progress_queue=None):
@@ -281,7 +276,7 @@ class VideoTranscriberWebhook:
     def add_pending_transcription(self, transcript_id: str, video_id: str, video_title: str):
         """Add transcription to pending list in webhook storage"""
         try:
-            webhook_file = "assemblyai_webhooks.json"
+            webhook_file = "logs/assemblyai_webhooks.json"
             webhook_data = {}
             
             # Load existing webhook data
@@ -363,7 +358,7 @@ class VideoTranscriberWebhook:
                     break
                 
                 # Load current webhook data
-                webhook_file = "assemblyai_webhooks.json"
+                webhook_file = "logs/assemblyai_webhooks.json"
                 if not os.path.exists(webhook_file):
                     logger.warning("Webhook file not found, waiting...")
                     time.sleep(poll_interval)
@@ -517,7 +512,7 @@ class VideoTranscriberWebhook:
     def move_to_completed(self, transcript_id: str, video_id: str, video_title: str):
         """Move transcript from pending to completed in webhook storage"""
         try:
-            webhook_file = "assemblyai_webhooks.json"
+            webhook_file = "logs/assemblyai_webhooks.json"
             
             with open(webhook_file, 'r') as f:
                 webhook_data = json.load(f)
@@ -554,7 +549,7 @@ class VideoTranscriberWebhook:
     def sync_webhook_for_existing_transcript(self, video_id: str, video_title: str):
         """Sync webhook file when existing transcript is detected"""
         try:
-            webhook_file = "assemblyai_webhooks.json"
+            webhook_file = "logs/assemblyai_webhooks.json"
             
             # Check if webhook file exists
             if not os.path.exists(webhook_file):
@@ -615,7 +610,7 @@ class VideoTranscriberWebhook:
                         pending.pop(transcript_id)
                 
                 # Save cleaned data
-                webhook_file = "assemblyai_webhooks.json"
+                webhook_file = "logs/assemblyai_webhooks.json"
                 with open(webhook_file, 'w') as f:
                     json.dump(webhook_data, f, indent=2)
                 

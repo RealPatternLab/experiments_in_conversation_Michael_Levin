@@ -10,35 +10,29 @@
   "start_time_seconds": 695.3,
   "end_time_seconds": 742.76,
   "primary_topics": [
-    "Dissociation",
     "Split brain patients",
     "Dissociative identity disorders",
     "Cognitive light cone",
-    "Scaling of goals"
+    "Scaling of goals",
+    "Cellular behavior"
   ],
   "secondary_topics": [
-    "Boundary of the self",
-    "Size of the largest goal state",
+    "Self-identity",
+    "Perception of self and the outside world",
+    "Memory and anticipatory power of cells",
     "Cellular goals",
-    "Cellular memory",
-    "Cellular anticipatory power",
-    "Scalar goals",
-    "Cellular pH"
+    "Cellular response to pH"
   ],
   "key_terms": [
     "Dissociation",
-    "Split brain",
-    "Dissociative identity disorders",
     "Cognitive light cone",
-    "Goal scaling",
-    "Self boundary",
-    "Cellular goals",
-    "Cellular memory",
-    "Cellular anticipatory power",
-    "Scalar goals",
-    "Cellular pH"
+    "Self",
+    "Goal state",
+    "Scalars",
+    "pH",
+    "Anticipatory power"
   ],
-  "content_summary": "The presentation discusses the concept of dissociation, particularly in split brain patients and those with dissociative identity disorders. A concept called 'cognitive light cone' is introduced, which represents the boundary of self and is defined by the scale of the largest goal one can pursue. This concept is then related to single cells, which have smaller, scalar goals and shorter memories.",
+  "content_summary": "The presentation discusses the concept of a 'cognitive light cone', a boundary distinguishing the self from the outside world, and its relation to the scaling of goals. It also explores the behavior of single cells, their short-term goals and responses to factors like pH.",
   "scientific_domain": "Developmental Biology, Bioelectricity, Cognitive Science",
   "enhanced": true
 }

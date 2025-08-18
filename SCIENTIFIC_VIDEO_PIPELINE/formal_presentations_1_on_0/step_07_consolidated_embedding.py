@@ -20,16 +20,11 @@ from pipeline_progress_queue import get_progress_queue
 # Load environment variables
 load_dotenv()
 
+# Import centralized logging configuration
+from logging_config import setup_logging
+
 # Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler('consolidated_embedding.log'),
-        logging.StreamHandler()
-    ]
-)
-logger = logging.getLogger(__name__)
+logger = setup_logging('consolidated_embedding')
 
 class ConsolidatedEmbedding:
     def __init__(self, progress_queue=None):
@@ -102,7 +97,20 @@ class ConsolidatedEmbedding:
     
     def get_latest_embeddings_info(self) -> tuple:
         """Get information about the most recent embeddings"""
-        # Find all embedding files
+        # First look for new organized structure (run directories)
+        run_dirs = list(self.output_dir.glob("run_*"))
+        if run_dirs:
+            # Use new organized format
+            latest_run_dir = max(run_dirs, key=lambda x: x.stat().st_mtime)
+            timestamp = latest_run_dir.name.replace("run_", "")
+            
+            # Check if embeddings exist in the run directory
+            embeddings_path = latest_run_dir / "embeddings.npy"
+            if embeddings_path.exists():
+                info_file = latest_run_dir / "embedding_info.json"
+                return embeddings_path, timestamp, info_file
+        
+        # Fallback to legacy format
         embedding_files = list(self.output_dir.glob("embeddings_*.npy"))
         if not embedding_files:
             return None, None, None
@@ -113,7 +121,7 @@ class ConsolidatedEmbedding:
         # Extract timestamp from filename
         timestamp = latest_embeddings.stem.replace("embeddings_", "")
         
-        # Check for corresponding info file
+        # Check for corresponding info file in root (legacy)
         info_file = self.output_dir / f"embedding_info_{timestamp}.json"
         
         return latest_embeddings, timestamp, info_file
@@ -184,7 +192,13 @@ class ConsolidatedEmbedding:
                 'pipeline_step': 'step_07_consolidated_embedding'
             }
             
-            info_file = self.output_dir / f"embedding_info_{timestamp}.json"
+            # Save in run directory if it exists, otherwise in root (for backward compatibility)
+            run_dir = self.output_dir / f"run_{timestamp}"
+            if run_dir.exists():
+                info_file = run_dir / "content_hash_info.json"
+            else:
+                info_file = self.output_dir / f"embedding_info_{timestamp}.json"
+                
             with open(info_file, 'w') as f:
                 json.dump(info_data, f, indent=2)
             
@@ -263,11 +277,13 @@ class ConsolidatedEmbedding:
                         'timestamp': timestamp,
                         'content_hash': self.calculate_content_hash(rag_files),
                         'embedding_files': {
-                            'text_index': f"text_index_{timestamp}.index",
-                            'visual_index': f"visual_index_{timestamp}.index",
-                            'combined_index': f"combined_index_{timestamp}.index",
-                            'embeddings': f"chunks_embeddings_{timestamp}.npy",
-                            'metadata': f"chunks_metadata_{timestamp}.pkl"
+                            'run_directory': f"run_{timestamp}",
+                            'text_index': f"run_{timestamp}/text_index.faiss",
+                            'visual_index': f"run_{timestamp}/visual_index.faiss",
+                            'combined_index': f"run_{timestamp}/combined_index.faiss",
+                            'embeddings': f"run_{timestamp}/embeddings.npy",
+                            'metadata': f"run_{timestamp}/metadata.pkl",
+                            'streamlit_files': f"run_{timestamp}/consolidated/"
                         },
                         'completed_at': datetime.now().isoformat()
                     }
@@ -294,8 +310,14 @@ class ConsolidatedEmbedding:
                 
                 # Create metadata entry
                 chunk_meta = text_content.get('metadata', {})
+                
+                # Extract video_id from content_id (e.g., "FzFFeRVEdUM_chunk_000" -> "FzFFeRVEdUM")
+                content_id = content.get('content_id', '')
+                video_id = content_id.split('_chunk_')[0] if '_chunk_' in content_id else 'unknown'
+                
                 meta_entry = {
-                    'content_id': content.get('content_id', ''),
+                    'content_id': content_id,
+                    'video_id': video_id,  # Add video_id for proper video citation
                     'text': text,  # Include the actual text content for search results
                     'text_length': len(text),
                     'chunk_metadata': chunk_meta,
@@ -420,30 +442,78 @@ class ConsolidatedEmbedding:
             
             # Save indices using provided timestamp
             
-            # Save text index
-            text_index_path = self.output_dir / f"text_index_{timestamp}.faiss"
+            # Create clean timestamped directory for this run
+            run_dir = self.output_dir / f"run_{timestamp}"
+            run_dir.mkdir(exist_ok=True)
+            
+            # Save ALL files in the timestamped directory with clear names
+            # Text index
+            text_index_path = run_dir / "text_index.faiss"
             faiss.write_index(text_index, str(text_index_path))
             
-            # Save visual index
-            visual_index_path = self.output_dir / f"visual_index_{timestamp}.faiss"
+            # Visual index
+            visual_index_path = run_dir / "visual_index.faiss"
             faiss.write_index(visual_index, str(visual_index_path))
             
-            # Save combined index
-            combined_index_path = self.output_dir / f"combined_index_{timestamp}.faiss"
+            # Combined index
+            combined_index_path = run_dir / "combined_index.faiss"
             faiss.write_index(combined_index, str(combined_index_path))
             
-            # Save embeddings and metadata
-            embeddings_path = self.output_dir / f"embeddings_{timestamp}.npy"
-            # Save the combined embeddings as a simple 2D array for compatibility with FAISSRetriever
+            # Embeddings
+            embeddings_path = run_dir / "embeddings.npy"
             np.save(str(embeddings_path), combined_features)
             
-            metadata_path = self.output_dir / f"metadata_{timestamp}.pkl"
+            # Metadata
+            metadata_path = run_dir / "metadata.pkl"
             with open(metadata_path, 'wb') as f:
                 pickle.dump(metadata, f)
+            
+            # Streamlit-compatible files (symlinks or copies to expected names)
+            # Create a consolidated subdirectory for Streamlit compatibility
+            consolidated_dir = run_dir / "consolidated"
+            consolidated_dir.mkdir(exist_ok=True)
+            
+            # Save Streamlit-expected files
+            chunks_index_path = consolidated_dir / "chunks.index"
+            faiss.write_index(combined_index, str(chunks_index_path))
+            
+            chunks_embeddings_path = consolidated_dir / "chunks_embeddings.npy"
+            np.save(str(chunks_embeddings_path), combined_features)
+            
+            chunks_metadata_path = consolidated_dir / "chunks_metadata.pkl"
+            with open(chunks_metadata_path, 'wb') as f:
+                pickle.dump(metadata, f)
+            
+            # Create comprehensive info.json
+            info_data = {
+                'timestamp': timestamp,
+                'run_directory': str(run_dir),
+                'total_chunks': len(metadata),
+                'total_frames': sum(1 for meta in metadata if meta.get('visual_content')),
+                'videos_processed': list(set(meta.get('content_id', '').split('_')[0] for meta in metadata if meta.get('content_id'))),
+                'embedding_dimensions': combined_features.shape[1],
+                'created_at': datetime.now().isoformat(),
+                'files': {
+                    'text_index': 'text_index.faiss',
+                    'visual_index': 'visual_index.faiss',
+                    'combined_index': 'combined_index.faiss',
+                    'embeddings': 'embeddings.npy',
+                    'metadata': 'metadata.pkl',
+                    'consolidated_dir': 'consolidated/',
+                    'chunks_index': 'consolidated/chunks.index',
+                    'chunks_embeddings': 'consolidated/chunks_embeddings.npy',
+                    'chunks_metadata': 'consolidated/chunks_metadata.pkl'
+                }
+            }
+            
+            info_path = run_dir / "info.json"
+            with open(info_path, 'w') as f:
+                json.dump(info_data, f, indent=2)
             
             # Save index info
             index_info = {
                 'timestamp': timestamp,
+                'run_directory': str(run_dir),
                 'text_embeddings_shape': text_embeddings.shape,
                 'visual_embeddings_shape': visual_embeddings.shape,
                 'combined_embeddings_shape': combined_features.shape,
@@ -451,21 +521,31 @@ class ConsolidatedEmbedding:
                 'embedding_model': self.embedding_model_name,
                 'index_type': self.index_type,
                 'files': {
-                    'text_index': str(text_index_path),
-                    'visual_index': str(visual_index_path),
-                    'combined_index': str(combined_index_path),
-                    'embeddings': str(embeddings_path),
-                    'metadata': str(metadata_path)
+                    'text_index': 'text_index.faiss',
+                    'visual_index': 'visual_index.faiss',
+                    'combined_index': 'combined_index.faiss',
+                    'embeddings': 'embeddings.npy',
+                    'metadata': 'metadata.pkl',
+                    'consolidated_dir': 'consolidated/',
+                    'chunks_index': 'consolidated/chunks.index',
+                    'chunks_embeddings': 'consolidated/chunks_embeddings.npy',
+                    'chunks_metadata': 'consolidated/chunks_metadata.pkl',
+                    'info_json': 'info.json'
                 },
-                'note': 'Visual embeddings are simplified features based on metadata',
-                'consistency_note': 'Using OpenAI text-embedding-3-large for consistency with publication pipeline'
+                'note': 'All files organized in timestamped run directory for clean organization',
+                'consistency_note': 'Using OpenAI text-embedding-3-large for consistency with publication pipeline',
+                'organization': 'Clean timestamped directory structure with Streamlit compatibility'
             }
             
-            info_path = self.output_dir / f"embedding_info_{timestamp}.json"
+            # Save index info in the run directory (not in root)
+            info_path = run_dir / "embedding_info.json"
             with open(info_path, 'w') as f:
                 json.dump(index_info, f, indent=2)
             
             logger.info(f"FAISS indices saved with timestamp: {timestamp}")
+            logger.info(f"✅ Created clean run directory: {run_dir}")
+            logger.info(f"✅ All files organized in timestamped directory for clean structure")
+            logger.info(f"✅ Streamlit-compatible files saved in: {consolidated_dir}")
             
         except Exception as e:
             logger.error(f"Failed to create FAISS indices: {e}")
@@ -478,12 +558,16 @@ class ConsolidatedEmbedding:
             demo_index = faiss.IndexFlatL2(text_embeddings.shape[1])
             demo_index.add(text_embeddings)
             
+            # Save demo files in the run directory for organization
+            run_dir = self.output_dir / f"run_{timestamp}"
+            run_dir.mkdir(exist_ok=True)
+            
             # Save demo index
-            demo_path = self.output_dir / "demo_search_index.faiss"
+            demo_path = run_dir / "demo_search_index.faiss"
             faiss.write_index(demo_index, str(demo_path))
             
             # Save demo metadata
-            demo_metadata_path = self.output_dir / "demo_metadata.pkl"
+            demo_metadata_path = run_dir / "demo_metadata.pkl"
             with open(demo_metadata_path, 'wb') as f:
                 pickle.dump(metadata, f)
             
@@ -499,7 +583,29 @@ class ConsolidatedEmbedding:
     def analyze_embedding_quality(self):
         """Analyze the quality of created embeddings"""
         try:
-            # Find latest embedding info
+            # Find latest embedding info in run directories (new format)
+            run_dirs = list(self.output_dir.glob("run_*"))
+            if run_dirs:
+                # Use new organized format
+                latest_run_dir = max(run_dirs, key=lambda x: x.stat().st_mtime)
+                info_path = latest_run_dir / "embedding_info.json"
+                
+                if info_path.exists():
+                    with open(info_path, 'r') as f:
+                        info = json.load(f)
+                    
+                    logger.info("=== Embedding Quality Analysis (New Format) ===")
+                    logger.info(f"Run directory: {info.get('run_directory', 'N/A')}")
+                    logger.info(f"Total content items: {info['total_content_items']}")
+                    logger.info(f"Text embeddings: {info['text_embeddings_shape']}")
+                    logger.info(f"Visual embeddings: {info['visual_embeddings_shape']}")
+                    logger.info(f"Combined embeddings: {info['combined_embeddings_shape']}")
+                    logger.info(f"Embedding model: {info['embedding_model']}")
+                    logger.info(f"Index type: {info['index_type']}")
+                    logger.info(f"Processing timestamp: {info['timestamp']}")
+                    return
+            
+            # Fallback to legacy format
             info_files = list(self.output_dir.glob("embedding_info_*.json"))
             if not info_files:
                 logger.warning("No embedding info files found")
@@ -510,7 +616,7 @@ class ConsolidatedEmbedding:
             with open(latest_info, 'r') as f:
                 info = json.load(f)
             
-            logger.info("=== Embedding Quality Analysis ===")
+            logger.info("=== Embedding Quality Analysis (Legacy Format) ===")
             logger.info(f"Total content items: {info['total_content_items']}")
             logger.info(f"Text embeddings: {info['text_embeddings_shape']}")
             logger.info(f"Visual embeddings: {info['visual_embeddings_shape']}")

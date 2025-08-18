@@ -1,0 +1,36 @@
+{
+  "chunk_id": "zKjdkxrvE6k_chunk_021",
+  "text": "Let me just show you a couple of examples of how this looks on three scales. On the evolutionary scale, the developmental scale and the cognitive scale. One of the things that I like to think about is caterpillars and butterflies. Caterpillars are this kind of soft bodied creature with a controller suitable for soft body motion, and they crawl around and they eat leaves. They have to turn into this thing that lives in the three dimensional world and it forms, flies around, and it's a hard bodied creature and it needs a completely different controller for that. And so in the meantime, what it does is it basically liquefies its brain, kills most of the cells, breaks most of the connections, and then eventually rebuilds a new butterfly brain. Okay, so what is known is that if you train the caterpillar to, let's say, eat leaves when it sees a particular colored disc, it's known that butterflies actually retain this information.",
+  "token_count": 163,
+  "sentence_count": 7,
+  "start_sentence": 21,
+  "end_sentence": 27,
+  "start_time_ms": 1027590,
+  "end_time_ms": 1079830,
+  "start_time_seconds": 1027.59,
+  "end_time_seconds": 1079.83,
+  "primary_topics": [
+    "Evolutionary Scale",
+    "Developmental Scale",
+    "Cognitive Scale"
+  ],
+  "secondary_topics": [
+    "Caterpillar to Butterfly Transformation",
+    "Brain Reconstruction",
+    "Memory Retention",
+    "Neural Controller",
+    "Soft Body to Hard Body Transition"
+  ],
+  "key_terms": [
+    "Evolution",
+    "Development",
+    "Cognition",
+    "Metamorphosis",
+    "Neural Connections",
+    "Memory Retention",
+    "Liquefaction"
+  ],
+  "content_summary": "The speaker discusses the transformation of caterpillars into butterflies as an example of evolution, development, and cognition. This process involves a complete reconstruction of the brain and a transition from a soft-bodied creature to a hard-bodied one. Despite this drastic change, butterflies retain memories from their caterpillar stage.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
+  "enhanced": true
+}

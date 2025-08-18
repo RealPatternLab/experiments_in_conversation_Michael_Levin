@@ -12,31 +12,33 @@
   "primary_topics": [
     "Bioelectricity",
     "Developmental Biology",
-    "Neurobiology",
-    "Genetics",
-    "Sensory Motor Architecture"
+    "Sensory Motor Architecture",
+    "Visual Learning",
+    "Genetic Interpretation"
   ],
   "secondary_topics": [
     "Optic Nerve Development",
-    "Visual Learning Tasks",
-    "Adaptation",
-    "Problem Solving",
-    "Mutation and Selection",
-    "Genetic Interpretation",
-    "Cellular Behavior"
+    "Cellular Problem Solving",
+    "Genetic Influence on Development",
+    "Adaptation to Novel Manipulations",
+    "Cellular Creativity",
+    "Genetic Mutation",
+    "Natural Selection",
+    "Cellular Identity"
   ],
   "key_terms": [
-    "Optic Nerve",
+    "Optic nerve",
+    "Spinal cord",
     "Synapses",
-    "Spinal Cord",
-    "Gut",
-    "Visual Learning",
     "Mutation",
     "Selection",
-    "Sensory Motor Architecture",
-    "Bioelectricity"
+    "Sensory motor architecture",
+    "Bioelectricity",
+    "Visual learning tasks",
+    "Genetics",
+    "Problem solving agent"
   ],
-  "content_summary": "The speaker discusses an unusual case where an animal's optic nerve does not connect to the brain but still allows the animal to see. This is attributed to the animal's cells' ability to creatively interpret their environment and genetics, negating the need for additional rounds of mutation and selection. The speaker emphasizes the role of bioelectricity in these processes.",
-  "scientific_domain": "Developmental Biology, Bioelectricity, Neurobiology, Genetics",
+  "content_summary": "The speaker discusses an experiment where an animal's optic nerve does not connect to the brain, but instead to the spinal cord or gut, yet the animal can still see. This is attributed to the cells' ability to creatively solve problems and interpret their environment and genetics, without the need for additional rounds of mutation and selection. The speaker also introduces the concept of bioelectricity.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
   "enhanced": true
 }

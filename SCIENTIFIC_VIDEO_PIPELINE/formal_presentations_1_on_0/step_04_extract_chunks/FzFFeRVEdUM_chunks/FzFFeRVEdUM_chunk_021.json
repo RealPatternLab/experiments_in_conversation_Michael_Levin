@@ -10,29 +10,30 @@
   "start_time_seconds": 1210.25,
   "end_time_seconds": 1255.82,
   "primary_topics": [
-    "Cellular Rejuvenation",
-    "Cellular Isolation",
-    "Multicellularity"
+    "Cellular regeneration",
+    "Multicellularity",
+    "Human tracheal epithelial cells"
   ],
   "secondary_topics": [
-    "Tracheal Epithelial Cells",
-    "Human Development",
-    "Cellular Environment",
-    "Genomic Editing",
-    "Synthetic Biology Circuits",
+    "Synthetic biology circuits",
+    "Genomic editing",
     "Transgenes",
-    "Cellular Scaffolds"
+    "Cellular environment",
+    "Cellular manipulation",
+    "Cellular autonomy",
+    "Human development stages"
   ],
   "key_terms": [
-    "Adult Human Cells",
-    "Tracheal Epithelial Cells",
-    "Multicellularity",
-    "Synthetic Biology Circuits",
+    "Adult human cells",
+    "Tracheal epithelial cells",
+    "Synthetic biology circuits",
+    "Scaffolds",
     "Transgenes",
-    "Genomic Editing",
-    "Cellular Scaffolds"
+    "Genomic editing",
+    "Multicellularity",
+    "Human development"
   ],
-  "content_summary": "The speaker discusses the potential of adult human cells, specifically tracheal epithelial cells, to rejuvenate and develop a new form of life when isolated from the body. This process does not involve any synthetic biology circuits, transgenes, genomic editing, or scaffolds.",
+  "content_summary": "The speaker discusses the potential of adult human tracheal epithelial cells to regenerate and live a new life outside the body without any synthetic manipulation or genomic editing. The cells, when placed in a slightly different environment, can reboot their multicellularity and exist independently, which is not a typical stage of human development.",
   "scientific_domain": "Developmental Biology, Bioelectricity",
   "enhanced": true
 }

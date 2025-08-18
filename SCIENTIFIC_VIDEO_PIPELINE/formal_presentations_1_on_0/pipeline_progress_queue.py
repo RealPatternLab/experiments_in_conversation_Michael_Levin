@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 class VideoPipelineProgressQueue:
     """Manages pipeline progress tracking for videos and playlists."""
     
-    def __init__(self, queue_file: Path = Path("pipeline_progress_queue.json")):
+    def __init__(self, queue_file: Path = Path("logs/pipeline_progress_queue.json")):
         self.queue_file = queue_file
         self.lock = threading.Lock()
         

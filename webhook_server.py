@@ -26,7 +26,7 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 
 # Webhook storage file (same as in streamlit_app.py)
-WEBHOOK_STORAGE_FILE = "assemblyai_webhooks.json"
+WEBHOOK_STORAGE_FILE = "SCIENTIFIC_VIDEO_PIPELINE/formal_presentations_1_on_0/logs/assemblyai_webhooks.json"
 
 def load_webhook_storage():
     """Load webhook storage from file."""

@@ -11,27 +11,26 @@
   "end_time_seconds": 695.14,
   "primary_topics": [
     "Bioelectrical Mechanisms",
-    "Embryonic Development",
+    "Embryo Development",
     "Cellular Organization",
     "Cognition and Morphogenesis Parallel"
   ],
   "secondary_topics": [
+    "Pattern Formation",
     "Bioelectrical Networks",
-    "Pattern Memory in Cells",
-    "Implications in Cognitive Science",
-    "Formation of Body",
-    "Formation of Mind",
-    "Individuality of Organisms"
+    "Cognitive Science",
+    "Body Formation",
+    "Mind Formation",
+    "Cellular Memory"
   ],
   "key_terms": [
     "Bioelectricity",
-    "Embryo",
-    "Individual",
-    "Cognitive Science",
     "Morphogenesis",
-    "Cognition"
+    "Cognition",
+    "Embryo",
+    "Cellular Network"
   ],
-  "content_summary": "The speaker discusses the role of bioelectrical mechanisms in aligning cells during embryonic development, which is crucial for the formation of an individual organism. They also draw a parallel between cognition and morphogenesis, suggesting that the formation of the body and mind are essentially the same problem.",
-  "scientific_domain": "Developmental Biology, Bioelectricity, Cognitive Science",
+  "content_summary": "The speaker discusses the role of bioelectrical mechanisms in aligning cells and forming patterns during embryo development. They highlight the parallel between cognition and morphogenesis, suggesting that the formation of the body and mind are essentially the same problem.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
   "enhanced": true
 }

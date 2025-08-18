@@ -13,16 +13,16 @@
     "Limb Regeneration",
     "Bioelectricity",
     "Cell Signaling",
-    "Bioreactors"
+    "Bioreactor Application"
   ],
   "secondary_topics": [
     "Frog Biology",
-    "Axolotl Biology",
+    "Axolotl Regeneration",
     "Ion Channels",
     "Cognitive Systems",
     "Biochemistry",
     "Stem Cells",
-    "3D Printing of Scaffolds",
+    "3D Printing Scaffolds",
     "Scar Tissue Formation"
   ],
   "key_terms": [
@@ -34,7 +34,7 @@
     "Scarring Path",
     "Leg Building Path"
   ],
-  "content_summary": "Michael Levin discusses the use of bioelectricity and cell signaling to stimulate limb regeneration in frogs. By using a wearable bioreactor with an ion channel payload, cells are given an early signal to start regrowth, leading to a fully functional leg over time without the need for constant intervention.",
+  "content_summary": "The presentation discusses the use of bioelectricity and cell signaling in limb regeneration, specifically in frogs. The speaker emphasizes the importance of providing an initial signal to stimulate regeneration, rather than micromanaging the process, and compares this to cognitive systems and communication.",
   "scientific_domain": "Developmental Biology, Bioelectricity",
   "enhanced": true
 }
