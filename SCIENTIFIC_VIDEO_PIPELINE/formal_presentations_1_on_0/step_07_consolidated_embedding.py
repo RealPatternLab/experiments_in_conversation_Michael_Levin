@@ -415,26 +415,48 @@ class ConsolidatedEmbedding:
             
             # Save indices using provided timestamp
             
-            # Save text index
+            # Create consolidated subdirectory for Streamlit app compatibility
+            consolidated_dir = self.output_dir / f"consolidated_{timestamp}"
+            consolidated_dir.mkdir(exist_ok=True)
+            
+            # Save text index (in parent directory for backward compatibility)
             text_index_path = self.output_dir / f"text_index_{timestamp}.faiss"
             faiss.write_index(text_index, str(text_index_path))
             
-            # Save visual index
+            # Save visual index (in parent directory for backward compatibility)
             visual_index_path = self.output_dir / f"visual_index_{timestamp}.faiss"
             faiss.write_index(visual_index, str(visual_index_path))
             
-            # Save combined index
+            # Save combined index (in parent directory for backward compatibility)
             combined_index_path = self.output_dir / f"combined_index_{timestamp}.faiss"
             faiss.write_index(combined_index, str(combined_index_path))
             
-            # Save embeddings and metadata
-            embeddings_path = self.output_dir / f"embeddings_{timestamp}.npy"
+            # Save embeddings and metadata with expected names in consolidated subdirectory
+            embeddings_path = consolidated_dir / "chunks_embeddings.npy"
             # Save the combined embeddings as a simple 2D array for compatibility with FAISSRetriever
             np.save(str(embeddings_path), combined_features)
             
-            metadata_path = self.output_dir / f"metadata_{timestamp}.pkl"
+            metadata_path = consolidated_dir / "chunks_metadata.pkl"
             with open(metadata_path, 'wb') as f:
                 pickle.dump(metadata, f)
+            
+            # Save combined index with expected name in consolidated subdirectory
+            chunks_index_path = consolidated_dir / "chunks.index"
+            faiss.write_index(combined_index, str(chunks_index_path))
+            
+            # Create info.json for Streamlit app
+            info_data = {
+                'timestamp': timestamp,
+                'total_chunks': len(metadata),
+                'total_frames': sum(1 for meta in metadata if meta.get('visual_content')),
+                'videos_processed': list(set(meta.get('content_id', '').split('_')[0] for meta in metadata if meta.get('content_id'))),
+                'embedding_dimensions': combined_features.shape[1],
+                'created_at': datetime.now().isoformat()
+            }
+            
+            info_path = consolidated_dir / "info.json"
+            with open(info_path, 'w') as f:
+                json.dump(info_data, f, indent=2)
             
             # Save index info
             index_info = {
@@ -450,10 +472,16 @@ class ConsolidatedEmbedding:
                     'visual_index': str(visual_index_path),
                     'combined_index': str(combined_index_path),
                     'embeddings': str(embeddings_path),
-                    'metadata': str(metadata_path)
+                    'metadata': str(metadata_path),
+                    'consolidated_dir': str(consolidated_dir),
+                    'chunks_index': str(chunks_index_path),
+                    'chunks_embeddings': str(embeddings_path),
+                    'chunks_metadata': str(metadata_path),
+                    'info_json': str(info_path)
                 },
                 'note': 'Visual embeddings are simplified features based on metadata',
-                'consistency_note': 'Using OpenAI text-embedding-3-large for consistency with publication pipeline'
+                'consistency_note': 'Using OpenAI text-embedding-3-large for consistency with publication pipeline',
+                'streamlit_compatibility': 'Files saved in both locations for backward compatibility and Streamlit app compatibility'
             }
             
             info_path = self.output_dir / f"embedding_info_{timestamp}.json"
@@ -461,6 +489,8 @@ class ConsolidatedEmbedding:
                 json.dump(index_info, f, indent=2)
             
             logger.info(f"FAISS indices saved with timestamp: {timestamp}")
+            logger.info(f"✅ Created consolidated directory: {consolidated_dir}")
+            logger.info(f"✅ Streamlit-compatible files saved: chunks.index, chunks_embeddings.npy, chunks_metadata.pkl, info.json")
             
         except Exception as e:
             logger.error(f"Failed to create FAISS indices: {e}")
