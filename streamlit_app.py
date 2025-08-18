@@ -1743,9 +1743,7 @@ def main():
             """, unsafe_allow_html=True)
             
             st.sidebar.metric("Total Engrams Indexed", stats['total_chunks'])
-            st.sidebar.metric("Publications", stats['publications'].get('total_chunks', 0))
-            st.sidebar.metric("Videos", stats['videos'].get('total_chunks', 0))
-            st.sidebar.success("🔗 Unified Search Active")
+
         else:
             st.sidebar.metric("Total Engrams Indexed", stats['total_chunks'])
             pipeline_type = "Publications" if "publications" in str(type(st.session_state.retriever)) else "Videos"
