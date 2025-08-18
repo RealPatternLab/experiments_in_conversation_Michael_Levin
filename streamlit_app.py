@@ -271,7 +271,7 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
                         else:
                             # Display thumbnail as clickable image
                             logger.info(f"✅ Creating thumbnail for {chunk_id} using frame: {frame_path}")
-                            thumbnail_html = f'<a href="{youtube_url}" target="_blank" title="Watch video at {start_time}s"><img src="data:image/jpeg;base64,{encode_image_to_base64(frame_path)}" style="float: left; width: 160px; height: 120px; border-radius: 4px; margin: 0 10px 10px 0; vertical-align: top; shape-outside: margin-box;" alt="Video thumbnail"></a>'
+                            thumbnail_html = f'<a href="{youtube_url}" target="_blank" title="Watch video at {start_time}s"><img src="data:image/jpeg;base64,{encode_image_to_base64(frame_path)}" style="float: left; width: 192px; height: 144px; border-radius: 4px; margin: 0 10px 10px 0; vertical-align: top; shape-outside: margin-box;" alt="Video thumbnail"></a>'
                             # Mark this frame as having shown a thumbnail
                             shown_frame_thumbnails.add(frame_path)
                     else:
