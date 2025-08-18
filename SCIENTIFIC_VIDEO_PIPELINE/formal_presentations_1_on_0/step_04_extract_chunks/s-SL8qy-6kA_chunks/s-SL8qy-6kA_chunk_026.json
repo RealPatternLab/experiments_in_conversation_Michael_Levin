@@ -1,0 +1,39 @@
+{
+  "chunk_id": "s-SL8qy-6kA_chunk_026",
+  "text": "So we built these tools to read the electrical information. But much more important than that is to be able to modify and to do functional experiments and write the information. And so here's how we do it. We do not use any electrodes. There are no fields, there are no waves, there are no frequen electromagnetics. Basically we do exactly what neuroscience does to control the interface that these cells are using to control each other. That means we can change the open, close state of the gap junctions. So we can open or shut them and control which cells talk to which other cells. And we can directly control these different ion channels.",
+  "token_count": 115,
+  "sentence_count": 9,
+  "start_sentence": 26,
+  "end_sentence": 34,
+  "start_time_ms": 1370120,
+  "end_time_ms": 1407460,
+  "start_time_seconds": 1370.12,
+  "end_time_seconds": 1407.46,
+  "primary_topics": [
+    "Bioelectricity",
+    "Cell Communication",
+    "Ion Channels",
+    "Gap Junctions",
+    "Functional Experiments"
+  ],
+  "secondary_topics": [
+    "Neuroscience",
+    "Electrical Information",
+    "Cellular Interface",
+    "Electromagnetics",
+    "Cellular Control",
+    "Information Modification",
+    "Bioengineering Tools"
+  ],
+  "key_terms": [
+    "Electrodes",
+    "Fields",
+    "Waves",
+    "Frequen Electromagnetics",
+    "Open, Close State",
+    "Functional Experiments"
+  ],
+  "content_summary": "The speaker discusses the development of tools for reading and modifying electrical information in cells. They explain their method of controlling cell communication by altering the open or closed state of gap junctions and directly controlling ion channels, without the use of electrodes, fields, or waves.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
+  "enhanced": true
+}

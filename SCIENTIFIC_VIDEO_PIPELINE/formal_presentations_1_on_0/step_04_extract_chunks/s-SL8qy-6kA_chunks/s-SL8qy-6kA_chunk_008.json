@@ -1,0 +1,41 @@
+{
+  "chunk_id": "s-SL8qy-6kA_chunk_008",
+  "text": "But we all start life like this as a collection of embryonic blastomeres. Where does this pattern actually come from? You might be tempted to say that it's in the DNA, of course, the human genome. But we know now we can read genomes. And even long before that, we knew that genomes don't really code for any of these patterns. What the genomes code for are the proteins. They directly encode the hardware that every cell gets to have. Once you have that hardware, you still have to figure out how the physiological software grows a particular structure. How does it know when to stop? What happens if cells decide to do something different? In the case of cancer, for example, if something is missing or damaged, how do we induce them to repair and to rebuild it again? And as engineers, although I won't talk about this today, we have a lot of work asking, what else can these cells build? Can we get build something completely different that is not what their native outcome is at all? And I want to point out that in order to solve this problem, genetic information is not enough. There's a lot of excitement about genomics and CRISPR and things like that. And I just want to point out the deep and fundamental problem here.",
+  "token_count": 224,
+  "sentence_count": 16,
+  "start_sentence": 8,
+  "end_sentence": 23,
+  "start_time_ms": 369070,
+  "end_time_ms": 434070,
+  "start_time_seconds": 369.07,
+  "end_time_seconds": 434.07,
+  "primary_topics": [
+    "Embryonic Development",
+    "Genomics",
+    "Bioelectricity",
+    "Protein Coding",
+    "Cellular Physiology"
+  ],
+  "secondary_topics": [
+    "CRISPR",
+    "Cancer",
+    "Cellular Repair",
+    "Genetic Information",
+    "Cellular Engineering",
+    "Physiological Software",
+    "Cellular Hardware"
+  ],
+  "key_terms": [
+    "Embryonic Blastomeres",
+    "Human Genome",
+    "Proteins",
+    "Physiological Software",
+    "Cellular Hardware",
+    "Genomics",
+    "CRISPR",
+    "Cancer"
+  ],
+  "content_summary": "The speaker discusses the complexity of embryonic development, emphasizing that it is not solely determined by genetic information. They highlight the role of proteins, referred to as 'cellular hardware', and the 'physiological software' that governs cell behavior. The speaker also touches on the potential for cellular engineering and the challenges of cellular repair, particularly in the context of cancer.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
+  "enhanced": true
+}

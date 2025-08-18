@@ -1,0 +1,43 @@
+{
+  "chunk_id": "s-SL8qy-6kA_chunk_009",
+  "text": "This is a baby axolotl. These salamanders, at this juvenile stage, they have little four legs here. This is a tadpole of a frog. They do not have legs at this stage. In my lab, we make something called a frog, a lottl. So it's a hybrid, it's a combination. It has some cells from the axolotl, some cells from the frog, and we make a chimeric embryo. Now, I ask you a simple question. Will froglottles have legs or not? We have the genomes. You have the axolotl genome, you have the frog genome. Could you tell me if the frog, a lottl, is going to have legs? If it is going to have legs, will Those legs be made entirely of axolotl cells or will they be made of some frog cells? We currently have no ability to predict this from the genomes. We know the entire sequence. No one can tell you if froglottles are going to have legs. And that's because while molecular medicine is very good at this low level kind of description, which proteins interact with which other proteins and so on, we are really a long way away from large scale form and function. What we want in biomedicine is when somebody comes to you and they're missing an arm, or they had a birth defect or a tumor or something else, and they want you to grow them a new one, or perhaps even change the one they have into a different shape. We are still at the very beginning of knowledge with this. And I think that's because we are in biology today, where computer science was in the 1940s and 1950s.",
+  "token_count": 281,
+  "sentence_count": 22,
+  "start_sentence": 9,
+  "end_sentence": 30,
+  "start_time_ms": 435110,
+  "end_time_ms": 520270,
+  "start_time_seconds": 435.11,
+  "end_time_seconds": 520.27,
+  "primary_topics": [
+    "Developmental Biology",
+    "Bioelectricity",
+    "Chimeric Organisms",
+    "Genomics",
+    "Regenerative Medicine"
+  ],
+  "secondary_topics": [
+    "Axolotl Biology",
+    "Frog Biology",
+    "Hybrid Organisms",
+    "Protein Interactions",
+    "Biomedical Applications",
+    "Birth Defects",
+    "Tumors",
+    "Computer Science"
+  ],
+  "key_terms": [
+    "Axolotl",
+    "Frog",
+    "Chimeric Embryo",
+    "Genome",
+    "Molecular Medicine",
+    "Proteins",
+    "Biomedicine",
+    "Birth Defect",
+    "Tumor"
+  ],
+  "content_summary": "Michael Levin discusses the creation of a chimeric organism, a 'froglottle', made from axolotl and frog cells. He highlights the current limitations in predicting the development of such organisms from genomic data alone, emphasizing the need for further research in large scale form and function. He compares the current state of biology to the early stages of computer science.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
+  "enhanced": true
+}

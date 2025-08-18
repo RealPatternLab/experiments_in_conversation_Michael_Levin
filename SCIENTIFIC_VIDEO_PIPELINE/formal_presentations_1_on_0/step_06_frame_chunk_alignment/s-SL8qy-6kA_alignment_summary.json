@@ -1,0 +1,10 @@
+{
+  "video_id": "s-SL8qy-6kA",
+  "total_alignments": 46,
+  "total_frames_aligned": 46,
+  "average_alignment_confidence": 0.8999999999999992,
+  "output_files": {
+    "alignments": "step_06_frame_chunk_alignment/s-SL8qy-6kA_alignments.json",
+    "rag_ready": "step_06_frame_chunk_alignment/s-SL8qy-6kA_rag_ready_aligned_content.json"
+  }
+}

@@ -37,7 +37,7 @@
       "current_status": "completed",
       "current_step": "step_01_playlist_processing",
       "created_at": "2025-08-17T18:14:10.175438",
-      "last_updated": "2025-08-17T21:00:55.593725",
+      "last_updated": "2025-08-17T22:47:49.778873",
       "chunk_count": 0,
       "frame_count": 0,
       "error_count": 0,
@@ -53,7 +53,7 @@
         "download_timestamp": "2025-08-17T18:56:20.207280",
         "transcript_file": "step_03_transcription/FzFFeRVEdUM_transcript.json",
         "text_file": "step_03_transcription/FzFFeRVEdUM_transcript.txt",
-        "completed_at": "2025-08-17T21:00:55.593378",
+        "completed_at": "2025-08-17T22:47:49.778800",
         "chunks_file": "step_04_extract_chunks/FzFFeRVEdUM_chunks.json",
         "chunks_dir": "step_04_extract_chunks/FzFFeRVEdUM_chunks",
         "total_chunks": 26,
@@ -65,17 +65,17 @@
         "rag_ready_file": "FzFFeRVEdUM_rag_ready_aligned_content.json",
         "summary_file": "FzFFeRVEdUM_alignment_summary.json",
         "total_alignments": 26,
-        "timestamp": "20250817_210024_141",
-        "content_hash": "72b818b7e5849daa94b5c6bac416ea96",
+        "timestamp": "20250817_224658_594",
+        "content_hash": "356c5bbb99d5bfe8b41a572d7a313927",
         "embedding_files": {
-          "text_index": "text_index_20250817_210024_141.index",
-          "visual_index": "visual_index_20250817_210024_141.index",
-          "combined_index": "combined_index_20250817_210024_141.index",
-          "embeddings": "chunks_embeddings_20250817_210024_141.npy",
-          "metadata": "chunks_metadata_20250817_210024_141.pkl"
+          "text_index": "text_index_20250817_224658_594.index",
+          "visual_index": "visual_index_20250817_224658_594.index",
+          "combined_index": "combined_index_20250817_224658_594.index",
+          "embeddings": "chunks_embeddings_20250817_224658_594.npy",
+          "metadata": "chunks_metadata_20250817_224658_594.pkl"
         },
         "status": "already_processed",
-        "playlist_added": "2025-08-17T20:43:19.242598"
+        "playlist_added": "2025-08-17T21:42:37.883351"
       }
     },
     "OD5TOsPZIQY": {
@@ -115,7 +115,7 @@
       "current_status": "completed",
       "current_step": "step_01_playlist_processing",
       "created_at": "2025-08-17T20:43:19.076046",
-      "last_updated": "2025-08-17T21:00:55.594529",
+      "last_updated": "2025-08-17T22:47:49.779863",
       "chunk_count": 0,
       "frame_count": 0,
       "error_count": 0,
@@ -131,7 +131,7 @@
         "download_timestamp": "2025-08-17T20:43:28.021560",
         "transcript_file": "step_03_transcription/OD5TOsPZIQY_transcript.json",
         "text_file": "step_03_transcription/OD5TOsPZIQY_transcript.txt",
-        "completed_at": "2025-08-17T21:00:55.594487",
+        "completed_at": "2025-08-17T22:47:49.779814",
         "chunks_file": "step_04_extract_chunks/OD5TOsPZIQY_chunks.json",
         "chunks_dir": "step_04_extract_chunks/OD5TOsPZIQY_chunks",
         "total_chunks": 44,
@@ -143,14 +143,92 @@
         "rag_ready_file": "OD5TOsPZIQY_rag_ready_aligned_content.json",
         "summary_file": "OD5TOsPZIQY_alignment_summary.json",
         "total_alignments": 44,
-        "timestamp": "20250817_210024_141",
-        "content_hash": "72b818b7e5849daa94b5c6bac416ea96",
+        "timestamp": "20250817_224658_594",
+        "content_hash": "356c5bbb99d5bfe8b41a572d7a313927",
         "embedding_files": {
-          "text_index": "text_index_20250817_210024_141.index",
-          "visual_index": "visual_index_20250817_210024_141.index",
-          "combined_index": "combined_index_20250817_210024_141.index",
-          "embeddings": "chunks_embeddings_20250817_210024_141.npy",
-          "metadata": "chunks_metadata_20250817_210024_141.pkl"
+          "text_index": "text_index_20250817_224658_594.index",
+          "visual_index": "visual_index_20250817_224658_594.index",
+          "combined_index": "combined_index_20250817_224658_594.index",
+          "embeddings": "chunks_embeddings_20250817_224658_594.npy",
+          "metadata": "chunks_metadata_20250817_224658_594.pkl"
+        },
+        "status": "already_processed",
+        "playlist_added": "2025-08-17T21:42:37.884076"
+      }
+    },
+    "s-SL8qy-6kA": {
+      "video_title": {
+        "current": "The Bioelectric Interface to the Intelligence of the Body: the future of biomedicine",
+        "history": [
+          {
+            "timestamp": "2025-08-17T21:42:37.712300",
+            "value": "The Bioelectric Interface to the Intelligence of the Body: the future of biomedicine",
+            "action": "initial"
+          }
+        ]
+      },
+      "playlist_ids": {
+        "current": [
+          "PLmR3yIXYqfUIk4xQ_cp_MwuJlAq2PlCwH"
+        ],
+        "history": [
+          {
+            "timestamp": "2025-08-17T21:42:37.712310",
+            "playlist_id": "PLmR3yIXYqfUIk4xQ_cp_MwuJlAq2PlCwH",
+            "action": "added"
+          }
+        ]
+      },
+      "upload_date": {
+        "current": null,
+        "history": []
+      },
+      "step_01_playlist_processing": "completed",
+      "step_02_video_download": "completed",
+      "step_03_transcription": "completed",
+      "step_04_semantic_chunking": "completed",
+      "step_05_frame_extraction": "completed",
+      "step_06_frame_chunk_alignment": "completed",
+      "step_07_consolidated_embedding": "completed",
+      "current_status": "completed",
+      "current_step": "step_01_playlist_processing",
+      "created_at": "2025-08-17T21:42:37.712314",
+      "last_updated": "2025-08-17T22:47:49.780808",
+      "chunk_count": 0,
+      "frame_count": 0,
+      "error_count": 0,
+      "errors": [],
+      "processing_metadata": {
+        "duration": null,
+        "file_size_mb": 52.414780616760254,
+        "transcript_length": null,
+        "chunk_count": null,
+        "frame_count": null,
+        "playlist_id": "PLmR3yIXYqfUIk4xQ_cp_MwuJlAq2PlCwH",
+        "local_path": "",
+        "download_timestamp": "2025-08-17T21:42:47.772881",
+        "transcript_file": "step_03_transcription/s-SL8qy-6kA_transcript.json",
+        "text_file": "step_03_transcription/s-SL8qy-6kA_transcript.txt",
+        "completed_at": "2025-08-17T22:47:49.780758",
+        "chunks_file": "step_04_extract_chunks/s-SL8qy-6kA_chunks.json",
+        "chunks_dir": "step_04_extract_chunks/s-SL8qy-6kA_chunks",
+        "total_chunks": 46,
+        "total_tokens": 7600,
+        "frames_summary_file": "step_05_frames/s-SL8qy-6kA_frames_summary.json",
+        "video_frames_dir": "step_05_frames/s-SL8qy-6kA",
+        "total_frames_extracted": 137,
+        "alignments_file": "s-SL8qy-6kA_alignments.json",
+        "rag_ready_file": "s-SL8qy-6kA_rag_ready_aligned_content.json",
+        "summary_file": "s-SL8qy-6kA_alignment_summary.json",
+        "total_alignments": 46,
+        "timestamp": "20250817_224658_594",
+        "content_hash": "356c5bbb99d5bfe8b41a572d7a313927",
+        "embedding_files": {
+          "text_index": "text_index_20250817_224658_594.index",
+          "visual_index": "visual_index_20250817_224658_594.index",
+          "combined_index": "combined_index_20250817_224658_594.index",
+          "embeddings": "chunks_embeddings_20250817_224658_594.npy",
+          "metadata": "chunks_metadata_20250817_224658_594.pkl"
         }
       }
     }
@@ -181,5 +259,5 @@
     ]
   },
   "created_at": "2025-08-17T18:14:08.385632",
-  "last_updated": "2025-08-17T21:00:55.594535"
+  "last_updated": "2025-08-17T22:47:49.780814"
 }

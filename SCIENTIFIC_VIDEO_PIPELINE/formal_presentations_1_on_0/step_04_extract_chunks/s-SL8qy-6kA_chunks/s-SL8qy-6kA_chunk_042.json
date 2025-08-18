@@ -1,0 +1,43 @@
+{
+  "chunk_id": "s-SL8qy-6kA_chunk_042",
+  "text": "But is it, wouldn't it be amazing to deploy biobots made of your own cells so you don't need immunosuppression? They're made of the patient's own cells, they go into your body, they do healing properties like this natively, or maybe we've taught them to do other things and then eventually they biodegrade. But they are your own cells and they already know what health, disease, stress, inflammation, cancer, these are all things that cells already understand. We don't need to manufacture this from scratch, such as mechanical nanobots and things like that. I'll stop here and just summarize on what I've tried to say is that I think the rate limiting step in truly transformative regenerative medicine is our ability to communicate goals to cellular swarms, to view them not as complex, complex, complex machines, but actually agents, problem solving agents with goals and preferences and, and agendas that we need to communicate and collaborate with. Genetics and big data are not sufficient for this CRISPR and things like that. You know, the biggest problem is going to be what genes do you crispr, you know, what genes do you edit? It's, it's this kind of bottom up approach for complex problems is not going to be sufficient efficient. Fortunately we have a roadmap for this and it comes from behavior science and neuroscience. And we can exploit the native computation competencies of the software of life. Top down control, resetting their goals, resetting their set points, not trying to micromanage them molecularly. And specifically the bioelectric interface. I mean there's a lot of different kinds of intelligence in cell groups, but bioelectricity is a very nice interface to that intelligence, much like it is in the nervous system.",
+  "token_count": 290,
+  "sentence_count": 14,
+  "start_sentence": 42,
+  "end_sentence": 55,
+  "start_time_ms": 2256980,
+  "end_time_ms": 2359210,
+  "start_time_seconds": 2256.98,
+  "end_time_seconds": 2359.21,
+  "primary_topics": [
+    "Biobots",
+    "Regenerative Medicine",
+    "Bioelectricity",
+    "Cellular Communication",
+    "Cellular Intelligence"
+  ],
+  "secondary_topics": [
+    "Immunosuppression",
+    "Health and Disease Understanding",
+    "Genetics",
+    "Big Data",
+    "CRISPR",
+    "Behavior Science",
+    "Neuroscience",
+    "Software of Life"
+  ],
+  "key_terms": [
+    "Biodegrade",
+    "Inflammation",
+    "Cancer",
+    "Mechanical Nanobots",
+    "Cellular Swarms",
+    "Problem Solving Agents",
+    "Gene Editing",
+    "Top Down Control",
+    "Bioelectric Interface"
+  ],
+  "content_summary": "The speaker discusses the potential of using biobots, made from the patient's own cells, for healing and regenerative medicine. He emphasizes the need to communicate and collaborate with these cells, viewing them as problem-solving agents. He suggests that bioelectricity could be a key interface for this communication, and that a top-down approach, guided by behavior science and neuroscience, could be more effective than bottom-up genetic manipulation.",
+  "scientific_domain": "Developmental Biology, Bioelectricity Research",
+  "enhanced": true
+}

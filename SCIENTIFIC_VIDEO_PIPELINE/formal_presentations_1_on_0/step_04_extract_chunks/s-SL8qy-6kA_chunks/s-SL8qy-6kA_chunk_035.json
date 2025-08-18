@@ -1,0 +1,41 @@
+{
+  "chunk_id": "s-SL8qy-6kA_chunk_035",
+  "text": "So, so these animals here, they have a, a genetic Notch mutation, a dominant notch mutation. But you couldn't tell that from their behavior or from the anatomy or from the gene expression. They're all fixed. And so at least in some cases, and I'm not saying this will be true in all cases, but at least in some cases, certain hardware defects can be fixed in software by communicating the correct pattern to the cells, regardless of what's underneath and what would have happened normally with the hardware. So this is our roadmap for birth defect repair. And so what we're doing now is creating this, the system, we call it eden, the electroceutical design environment, where you know what the electric state is that's incorrect, that you're trying to fix. If we do enough physiomics to get the data so that you know what the correct, correct pattern is, then you can ask the computational system which ion channel targets are the ones that are going to get you from the wrong state to the correct state. And so you can already play with this.",
+  "token_count": 187,
+  "sentence_count": 10,
+  "start_sentence": 35,
+  "end_sentence": 44,
+  "start_time_ms": 1864140,
+  "end_time_ms": 1919960,
+  "start_time_seconds": 1864.14,
+  "end_time_seconds": 1919.96,
+  "primary_topics": [
+    "Notch mutation",
+    "bioelectricity",
+    "gene expression",
+    "birth defect repair",
+    "electroceutical design environment"
+  ],
+  "secondary_topics": [
+    "genetic mutations",
+    "anatomy",
+    "cellular communication",
+    "physiomics",
+    "computational systems",
+    "ion channel targets",
+    "hardware and software analogy in biology"
+  ],
+  "key_terms": [
+    "Notch mutation",
+    "gene expression",
+    "hardware defects",
+    "software",
+    "eden",
+    "electric state",
+    "physiomics",
+    "ion channel targets"
+  ],
+  "content_summary": "The speaker discusses a case where animals with a Notch mutation show no observable defects due to corrective cellular communication. They introduce a system called 'eden', an electroceutical design environment, which aims to correct incorrect electrical states in cells, potentially offering a roadmap for birth defect repair.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
+  "enhanced": true
+}

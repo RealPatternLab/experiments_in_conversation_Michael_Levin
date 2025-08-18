@@ -1,0 +1,40 @@
+{
+  "chunk_id": "s-SL8qy-6kA_chunk_038",
+  "text": "So this has not been created yet. This is kind of an artist's rendition of what we're working on. But the idea is to have a kind of augmented reality goggles along with a voltage sensitive dye so that surgeons or even people at home actually with these dyes can look and see pre cancer. They can see cells that are about to disconnect from the network, and they can see the margins of the tumor. And this is where the aberrant electrical states are. We're hoping to create something like that. But even more importantly than just detecting it, you can imagine what if we forcibly reconnected these cells to their neighbors, not kill them with toxic chemotherapy, but just reconnect them. And so here is an animal injected with a nasty oncogene. We've done Kras mutations, dominant, negative P53, all those kinds of things. What you'll see is that the oncoprotein is still blazingly expressed here. It's very strong, but there is no tumor, because this is the same animal here, because we co injected an ion channel that forces. It doesn't kill the cells, it doesn't remove the oncoprotein, but what it does do is force the cells into an electrical network that will work towards large scale goals, building nice skin, nice muscle, and so on. And we think this is also this normalization, this tumor reprogramming or normalization approach, not at the genetic level. Here's another example where the physiological state drives the outcome, not the genetic state, but the physiological information drives the outcome. We've now started moving from the frog model into the human model.",
+  "token_count": 272,
+  "sentence_count": 16,
+  "start_sentence": 38,
+  "end_sentence": 53,
+  "start_time_ms": 2021320,
+  "end_time_ms": 2110410,
+  "start_time_seconds": 2021.32,
+  "end_time_seconds": 2110.41,
+  "primary_topics": [
+    "Bioelectricity",
+    "Cancer Detection",
+    "Tumor Reprogramming",
+    "Ion Channels"
+  ],
+  "secondary_topics": [
+    "Augmented Reality",
+    "Voltage Sensitive Dye",
+    "Oncoprotein",
+    "Kras Mutations",
+    "Negative P53",
+    "Physiological State",
+    "Genetic State",
+    "Frog Model",
+    "Human Model"
+  ],
+  "key_terms": [
+    "Aberrant Electrical States",
+    "Oncogene",
+    "Ion Channel",
+    "Electrical Network",
+    "Normalization",
+    "Physiological Information"
+  ],
+  "content_summary": "The presentation discusses the development of an augmented reality tool combined with a voltage-sensitive dye for early detection of precancerous cells and tumor margins. It also explores the concept of tumor reprogramming or normalization by forcibly reconnecting cells to their neighbors using ion channels, which can potentially prevent the formation of tumors even in the presence of oncoproteins.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
+  "enhanced": true
+}
