@@ -97,7 +97,7 @@ Step 01: Playlist Processing (step_01_playlist_processor.py)
     ↓
 Step 02: Video Download & Metadata (step_02_video_downloader.py)
     ↓
-Step 03: Enhanced Transcription (step_03_transcription_webhook.py)
+Step 03: Enhanced Transcription (step_03_transcription.py)
     ↓
 Step 04: Semantic Chunking (step_04_extract_chunks.py)
     ↓

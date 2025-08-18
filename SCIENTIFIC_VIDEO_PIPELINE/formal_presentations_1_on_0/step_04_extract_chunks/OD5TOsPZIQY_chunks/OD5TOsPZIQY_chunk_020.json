@@ -1,0 +1,42 @@
+{
+  "chunk_id": "OD5TOsPZIQY_chunk_020",
+  "text": "So these are not models. This is real, real data in time lapse. And you can see, you can see all the electrophysiology that goes on as the cells figure out who's going to be left, who's going to be right, anterior, posterior and so on. So we have all kinds of computational methods that we've developed to model this phenomenon and to understand how it can underly memories and large scale circuits that do pattern completion, which is basically regeneration, right? You lose a part of the body and then you can sort of complete that pattern later. So we have all kinds of simulations. I want to show you some of these patterns. Not only do these electrical patterns serve as a kind of cognitive Glue to bind cells together into a single body. And so here we have, this is a frog embryo putting its face together. And so this is one frame from that video. We call this the electric phase. Because what you see here is that before the gene expression and the cell behaviors that lead to forming a face, this is the memory that you can read out of what it's planning to build.",
+  "token_count": 201,
+  "sentence_count": 13,
+  "start_sentence": 20,
+  "end_sentence": 32,
+  "start_time_ms": 1051450,
+  "end_time_ms": 1110820,
+  "start_time_seconds": 1051.45,
+  "end_time_seconds": 1110.82,
+  "primary_topics": [
+    "Electrophysiology",
+    "Cellular Development",
+    "Bioelectricity",
+    "Regeneration",
+    "Computational Modelling"
+  ],
+  "secondary_topics": [
+    "Gene Expression",
+    "Cell Behavior",
+    "Memory",
+    "Large Scale Circuits",
+    "Pattern Completion",
+    "Simulations",
+    "Embryonic Development"
+  ],
+  "key_terms": [
+    "Electrophysiology",
+    "Anterior",
+    "Posterior",
+    "Computational Methods",
+    "Regeneration",
+    "Simulations",
+    "Electric Phase",
+    "Gene Expression",
+    "Cell Behaviors"
+  ],
+  "content_summary": "The speaker discusses the role of electrophysiology in cellular development, specifically in determining cell positions and roles. He also mentions the use of computational models to understand this phenomenon and its connection to memory and regeneration. The concept of 'electric phase' is introduced, which precedes gene expression and cell behaviors in embryonic development.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
+  "enhanced": true
+}

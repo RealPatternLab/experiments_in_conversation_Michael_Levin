@@ -7,9 +7,11 @@ import json
 import logging
 from pathlib import Path
 
+# Import centralized logging configuration
+from logging_config import setup_logging
+
 # Configure logging
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-logger = logging.getLogger(__name__)
+logger = setup_logging('debug_timestamps', logging.DEBUG)
 
 def debug_timestamp_mapping():
     """Debug the timestamp mapping logic"""

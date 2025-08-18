@@ -12,16 +12,11 @@ from pathlib import Path
 from typing import Dict, Any, List
 from datetime import datetime
 
+# Import centralized logging configuration
+from logging_config import setup_logging, get_logs_dir
+
 # Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler('pipeline_execution.log'),
-        logging.StreamHandler()
-    ]
-)
-logger = logging.getLogger(__name__)
+logger = setup_logging('pipeline_execution')
 
 class VideoPipeline1On0:
     """Consolidated pipeline runner for all 7 steps"""
@@ -240,13 +235,17 @@ class VideoPipeline1On0:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             filename = f"pipeline_report_{timestamp}.txt"
         
+        # Save to logs directory
+        logs_dir = get_logs_dir()
+        report_path = logs_dir / filename
+        
         report_content = self.generate_report()
         
-        with open(filename, 'w') as f:
+        with open(report_path, 'w') as f:
             f.write(report_content)
         
-        logger.info(f"📄 Execution report saved to: {filename}")
-        return filename
+        logger.info(f"📄 Execution report saved to: {report_path}")
+        return str(report_path)
 
 def main():
     """Main entry point"""

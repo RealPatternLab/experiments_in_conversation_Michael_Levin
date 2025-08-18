@@ -19,15 +19,8 @@ from pipeline_progress_queue import get_progress_queue
 
 def setup_logging():
     """Set up logging configuration."""
-    logging.basicConfig(
-        level=logging.INFO,
-        format='%(asctime)s - %(levelname)s - %(message)s',
-        handlers=[
-            logging.StreamHandler(),
-            logging.FileHandler('video_download.log')
-        ]
-    )
-    return logging.getLogger(__name__)
+    from logging_config import setup_logging as setup_centralized_logging
+    return setup_centralized_logging('video_download')
 
 def check_yt_dlp_available() -> bool:
     """Check if yt-dlp is available on the system."""

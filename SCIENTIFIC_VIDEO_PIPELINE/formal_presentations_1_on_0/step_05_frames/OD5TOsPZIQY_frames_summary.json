@@ -1,0 +1,1012 @@
+{
+  "video_id": "OD5TOsPZIQY",
+  "video_metadata": {
+    "video_id": "OD5TOsPZIQY",
+    "title": "\"Against Mind-Blindness: recognizing and communicating with diverse intelligences\" by Michael Levin",
+    "download_result": {
+      "success": true,
+      "video_file": "step_02_extracted_playlist_content/video_OD5TOsPZIQY/video.mp4",
+      "file_size_mb": 45.832369804382324,
+      "additional_metadata": {
+        "upload_date": "20250515",
+        "duration": 2149,
+        "view_count": 120527,
+        "like_count": 6870,
+        "tags": [],
+        "categories": [
+          "People & Blogs"
+        ],
+        "language": "en",
+        "age_limit": 0,
+        "is_live": false,
+        "was_live": false,
+        "live_status": "not_live",
+        "availability": "public",
+        "format": "18 - 576x360 (360p)",
+        "resolution": "576x360",
+        "fps": 25,
+        "vcodec": "avc1.42001E",
+        "acodec": "mp4a.40.2",
+        "filesize": 48058723,
+        "filesize_approx": 48058558,
+        "subtitle_files": [
+          "video.en.vtt"
+        ],
+        "thumbnail_files": [
+          "video.webp"
+        ]
+      },
+      "download_time": "2025-08-17T20:43:28.021242"
+    },
+    "status": "newly_downloaded"
+  },
+  "extraction_parameters": {
+    "frame_interval": 18,
+    "frame_quality": 2,
+    "max_frames": 200
+  },
+  "total_frames_extracted": 120,
+  "frames": [
+    {
+      "frame_id": "OD5TOsPZIQY_frame_000",
+      "filename": "OD5TOsPZIQY_frame_000_0.0s.jpg",
+      "timestamp": 0,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_000_0.0s.jpg",
+      "file_size": 40605,
+      "extraction_order": 0
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_001",
+      "filename": "OD5TOsPZIQY_frame_001_18.0s.jpg",
+      "timestamp": 18,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_001_18.0s.jpg",
+      "file_size": 40769,
+      "extraction_order": 1
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_002",
+      "filename": "OD5TOsPZIQY_frame_002_36.0s.jpg",
+      "timestamp": 36,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_002_36.0s.jpg",
+      "file_size": 40633,
+      "extraction_order": 2
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_003",
+      "filename": "OD5TOsPZIQY_frame_003_54.0s.jpg",
+      "timestamp": 54,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_003_54.0s.jpg",
+      "file_size": 36408,
+      "extraction_order": 3
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_004",
+      "filename": "OD5TOsPZIQY_frame_004_72.0s.jpg",
+      "timestamp": 72,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_004_72.0s.jpg",
+      "file_size": 36516,
+      "extraction_order": 4
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_005",
+      "filename": "OD5TOsPZIQY_frame_005_90.0s.jpg",
+      "timestamp": 90,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_005_90.0s.jpg",
+      "file_size": 36549,
+      "extraction_order": 5
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_006",
+      "filename": "OD5TOsPZIQY_frame_006_108.0s.jpg",
+      "timestamp": 108,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_006_108.0s.jpg",
+      "file_size": 36562,
+      "extraction_order": 6
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_007",
+      "filename": "OD5TOsPZIQY_frame_007_126.0s.jpg",
+      "timestamp": 126,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_007_126.0s.jpg",
+      "file_size": 36543,
+      "extraction_order": 7
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_008",
+      "filename": "OD5TOsPZIQY_frame_008_144.0s.jpg",
+      "timestamp": 144,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_008_144.0s.jpg",
+      "file_size": 53527,
+      "extraction_order": 8
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_009",
+      "filename": "OD5TOsPZIQY_frame_009_162.0s.jpg",
+      "timestamp": 162,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_009_162.0s.jpg",
+      "file_size": 53350,
+      "extraction_order": 9
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_010",
+      "filename": "OD5TOsPZIQY_frame_010_180.0s.jpg",
+      "timestamp": 180,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_010_180.0s.jpg",
+      "file_size": 53449,
+      "extraction_order": 10
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_011",
+      "filename": "OD5TOsPZIQY_frame_011_198.0s.jpg",
+      "timestamp": 198,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_011_198.0s.jpg",
+      "file_size": 53426,
+      "extraction_order": 11
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_012",
+      "filename": "OD5TOsPZIQY_frame_012_216.0s.jpg",
+      "timestamp": 216,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_012_216.0s.jpg",
+      "file_size": 41125,
+      "extraction_order": 12
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_013",
+      "filename": "OD5TOsPZIQY_frame_013_234.0s.jpg",
+      "timestamp": 234,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_013_234.0s.jpg",
+      "file_size": 41207,
+      "extraction_order": 13
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_014",
+      "filename": "OD5TOsPZIQY_frame_014_252.0s.jpg",
+      "timestamp": 252,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_014_252.0s.jpg",
+      "file_size": 41215,
+      "extraction_order": 14
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_015",
+      "filename": "OD5TOsPZIQY_frame_015_270.0s.jpg",
+      "timestamp": 270,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_015_270.0s.jpg",
+      "file_size": 41187,
+      "extraction_order": 15
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_016",
+      "filename": "OD5TOsPZIQY_frame_016_288.0s.jpg",
+      "timestamp": 288,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_016_288.0s.jpg",
+      "file_size": 41287,
+      "extraction_order": 16
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_017",
+      "filename": "OD5TOsPZIQY_frame_017_306.0s.jpg",
+      "timestamp": 306,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_017_306.0s.jpg",
+      "file_size": 30177,
+      "extraction_order": 17
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_018",
+      "filename": "OD5TOsPZIQY_frame_018_324.0s.jpg",
+      "timestamp": 324,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_018_324.0s.jpg",
+      "file_size": 29445,
+      "extraction_order": 18
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_019",
+      "filename": "OD5TOsPZIQY_frame_019_342.0s.jpg",
+      "timestamp": 342,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_019_342.0s.jpg",
+      "file_size": 55133,
+      "extraction_order": 19
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_020",
+      "filename": "OD5TOsPZIQY_frame_020_360.0s.jpg",
+      "timestamp": 360,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_020_360.0s.jpg",
+      "file_size": 55585,
+      "extraction_order": 20
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_021",
+      "filename": "OD5TOsPZIQY_frame_021_378.0s.jpg",
+      "timestamp": 378,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_021_378.0s.jpg",
+      "file_size": 37529,
+      "extraction_order": 21
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_022",
+      "filename": "OD5TOsPZIQY_frame_022_396.0s.jpg",
+      "timestamp": 396,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_022_396.0s.jpg",
+      "file_size": 37195,
+      "extraction_order": 22
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_023",
+      "filename": "OD5TOsPZIQY_frame_023_414.0s.jpg",
+      "timestamp": 414,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_023_414.0s.jpg",
+      "file_size": 36911,
+      "extraction_order": 23
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_024",
+      "filename": "OD5TOsPZIQY_frame_024_432.0s.jpg",
+      "timestamp": 432,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_024_432.0s.jpg",
+      "file_size": 37570,
+      "extraction_order": 24
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_025",
+      "filename": "OD5TOsPZIQY_frame_025_450.0s.jpg",
+      "timestamp": 450,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_025_450.0s.jpg",
+      "file_size": 58957,
+      "extraction_order": 25
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_026",
+      "filename": "OD5TOsPZIQY_frame_026_468.0s.jpg",
+      "timestamp": 468,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_026_468.0s.jpg",
+      "file_size": 58998,
+      "extraction_order": 26
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_027",
+      "filename": "OD5TOsPZIQY_frame_027_486.0s.jpg",
+      "timestamp": 486,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_027_486.0s.jpg",
+      "file_size": 59054,
+      "extraction_order": 27
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_028",
+      "filename": "OD5TOsPZIQY_frame_028_504.0s.jpg",
+      "timestamp": 504,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_028_504.0s.jpg",
+      "file_size": 59024,
+      "extraction_order": 28
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_029",
+      "filename": "OD5TOsPZIQY_frame_029_522.0s.jpg",
+      "timestamp": 522,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_029_522.0s.jpg",
+      "file_size": 59029,
+      "extraction_order": 29
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_030",
+      "filename": "OD5TOsPZIQY_frame_030_540.0s.jpg",
+      "timestamp": 540,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_030_540.0s.jpg",
+      "file_size": 58963,
+      "extraction_order": 30
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_031",
+      "filename": "OD5TOsPZIQY_frame_031_558.0s.jpg",
+      "timestamp": 558,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_031_558.0s.jpg",
+      "file_size": 26109,
+      "extraction_order": 31
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_032",
+      "filename": "OD5TOsPZIQY_frame_032_576.0s.jpg",
+      "timestamp": 576,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_032_576.0s.jpg",
+      "file_size": 25988,
+      "extraction_order": 32
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_033",
+      "filename": "OD5TOsPZIQY_frame_033_594.0s.jpg",
+      "timestamp": 594,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_033_594.0s.jpg",
+      "file_size": 52220,
+      "extraction_order": 33
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_034",
+      "filename": "OD5TOsPZIQY_frame_034_612.0s.jpg",
+      "timestamp": 612,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_034_612.0s.jpg",
+      "file_size": 52285,
+      "extraction_order": 34
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_035",
+      "filename": "OD5TOsPZIQY_frame_035_630.0s.jpg",
+      "timestamp": 630,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_035_630.0s.jpg",
+      "file_size": 51855,
+      "extraction_order": 35
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_036",
+      "filename": "OD5TOsPZIQY_frame_036_648.0s.jpg",
+      "timestamp": 648,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_036_648.0s.jpg",
+      "file_size": 62954,
+      "extraction_order": 36
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_037",
+      "filename": "OD5TOsPZIQY_frame_037_666.0s.jpg",
+      "timestamp": 666,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_037_666.0s.jpg",
+      "file_size": 52821,
+      "extraction_order": 37
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_038",
+      "filename": "OD5TOsPZIQY_frame_038_684.0s.jpg",
+      "timestamp": 684,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_038_684.0s.jpg",
+      "file_size": 52941,
+      "extraction_order": 38
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_039",
+      "filename": "OD5TOsPZIQY_frame_039_702.0s.jpg",
+      "timestamp": 702,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_039_702.0s.jpg",
+      "file_size": 52952,
+      "extraction_order": 39
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_040",
+      "filename": "OD5TOsPZIQY_frame_040_720.0s.jpg",
+      "timestamp": 720,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_040_720.0s.jpg",
+      "file_size": 40355,
+      "extraction_order": 40
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_041",
+      "filename": "OD5TOsPZIQY_frame_041_738.0s.jpg",
+      "timestamp": 738,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_041_738.0s.jpg",
+      "file_size": 40415,
+      "extraction_order": 41
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_042",
+      "filename": "OD5TOsPZIQY_frame_042_756.0s.jpg",
+      "timestamp": 756,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_042_756.0s.jpg",
+      "file_size": 40423,
+      "extraction_order": 42
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_043",
+      "filename": "OD5TOsPZIQY_frame_043_774.0s.jpg",
+      "timestamp": 774,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_043_774.0s.jpg",
+      "file_size": 58344,
+      "extraction_order": 43
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_044",
+      "filename": "OD5TOsPZIQY_frame_044_792.0s.jpg",
+      "timestamp": 792,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_044_792.0s.jpg",
+      "file_size": 58365,
+      "extraction_order": 44
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_045",
+      "filename": "OD5TOsPZIQY_frame_045_810.0s.jpg",
+      "timestamp": 810,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_045_810.0s.jpg",
+      "file_size": 58351,
+      "extraction_order": 45
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_046",
+      "filename": "OD5TOsPZIQY_frame_046_828.0s.jpg",
+      "timestamp": 828,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_046_828.0s.jpg",
+      "file_size": 58347,
+      "extraction_order": 46
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_047",
+      "filename": "OD5TOsPZIQY_frame_047_846.0s.jpg",
+      "timestamp": 846,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_047_846.0s.jpg",
+      "file_size": 58368,
+      "extraction_order": 47
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_048",
+      "filename": "OD5TOsPZIQY_frame_048_864.0s.jpg",
+      "timestamp": 864,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_048_864.0s.jpg",
+      "file_size": 58366,
+      "extraction_order": 48
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_049",
+      "filename": "OD5TOsPZIQY_frame_049_882.0s.jpg",
+      "timestamp": 882,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_049_882.0s.jpg",
+      "file_size": 43595,
+      "extraction_order": 49
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_050",
+      "filename": "OD5TOsPZIQY_frame_050_900.0s.jpg",
+      "timestamp": 900,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_050_900.0s.jpg",
+      "file_size": 43366,
+      "extraction_order": 50
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_051",
+      "filename": "OD5TOsPZIQY_frame_051_918.0s.jpg",
+      "timestamp": 918,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_051_918.0s.jpg",
+      "file_size": 43439,
+      "extraction_order": 51
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_052",
+      "filename": "OD5TOsPZIQY_frame_052_936.0s.jpg",
+      "timestamp": 936,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_052_936.0s.jpg",
+      "file_size": 43425,
+      "extraction_order": 52
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_053",
+      "filename": "OD5TOsPZIQY_frame_053_954.0s.jpg",
+      "timestamp": 954,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_053_954.0s.jpg",
+      "file_size": 43638,
+      "extraction_order": 53
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_054",
+      "filename": "OD5TOsPZIQY_frame_054_972.0s.jpg",
+      "timestamp": 972,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_054_972.0s.jpg",
+      "file_size": 43514,
+      "extraction_order": 54
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_055",
+      "filename": "OD5TOsPZIQY_frame_055_990.0s.jpg",
+      "timestamp": 990,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_055_990.0s.jpg",
+      "file_size": 43562,
+      "extraction_order": 55
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_056",
+      "filename": "OD5TOsPZIQY_frame_056_1008.0s.jpg",
+      "timestamp": 1008,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_056_1008.0s.jpg",
+      "file_size": 43481,
+      "extraction_order": 56
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_057",
+      "filename": "OD5TOsPZIQY_frame_057_1026.0s.jpg",
+      "timestamp": 1026,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_057_1026.0s.jpg",
+      "file_size": 43499,
+      "extraction_order": 57
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_058",
+      "filename": "OD5TOsPZIQY_frame_058_1044.0s.jpg",
+      "timestamp": 1044,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_058_1044.0s.jpg",
+      "file_size": 52024,
+      "extraction_order": 58
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_059",
+      "filename": "OD5TOsPZIQY_frame_059_1062.0s.jpg",
+      "timestamp": 1062,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_059_1062.0s.jpg",
+      "file_size": 52622,
+      "extraction_order": 59
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_060",
+      "filename": "OD5TOsPZIQY_frame_060_1080.0s.jpg",
+      "timestamp": 1080,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_060_1080.0s.jpg",
+      "file_size": 53191,
+      "extraction_order": 60
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_061",
+      "filename": "OD5TOsPZIQY_frame_061_1098.0s.jpg",
+      "timestamp": 1098,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_061_1098.0s.jpg",
+      "file_size": 45827,
+      "extraction_order": 61
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_062",
+      "filename": "OD5TOsPZIQY_frame_062_1116.0s.jpg",
+      "timestamp": 1116,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_062_1116.0s.jpg",
+      "file_size": 43052,
+      "extraction_order": 62
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_063",
+      "filename": "OD5TOsPZIQY_frame_063_1134.0s.jpg",
+      "timestamp": 1134,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_063_1134.0s.jpg",
+      "file_size": 46211,
+      "extraction_order": 63
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_064",
+      "filename": "OD5TOsPZIQY_frame_064_1152.0s.jpg",
+      "timestamp": 1152,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_064_1152.0s.jpg",
+      "file_size": 45561,
+      "extraction_order": 64
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_065",
+      "filename": "OD5TOsPZIQY_frame_065_1170.0s.jpg",
+      "timestamp": 1170,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_065_1170.0s.jpg",
+      "file_size": 43745,
+      "extraction_order": 65
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_066",
+      "filename": "OD5TOsPZIQY_frame_066_1188.0s.jpg",
+      "timestamp": 1188,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_066_1188.0s.jpg",
+      "file_size": 44094,
+      "extraction_order": 66
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_067",
+      "filename": "OD5TOsPZIQY_frame_067_1206.0s.jpg",
+      "timestamp": 1206,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_067_1206.0s.jpg",
+      "file_size": 43863,
+      "extraction_order": 67
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_068",
+      "filename": "OD5TOsPZIQY_frame_068_1224.0s.jpg",
+      "timestamp": 1224,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_068_1224.0s.jpg",
+      "file_size": 43952,
+      "extraction_order": 68
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_069",
+      "filename": "OD5TOsPZIQY_frame_069_1242.0s.jpg",
+      "timestamp": 1242,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_069_1242.0s.jpg",
+      "file_size": 43853,
+      "extraction_order": 69
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_070",
+      "filename": "OD5TOsPZIQY_frame_070_1260.0s.jpg",
+      "timestamp": 1260,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_070_1260.0s.jpg",
+      "file_size": 44065,
+      "extraction_order": 70
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_071",
+      "filename": "OD5TOsPZIQY_frame_071_1278.0s.jpg",
+      "timestamp": 1278,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_071_1278.0s.jpg",
+      "file_size": 43648,
+      "extraction_order": 71
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_072",
+      "filename": "OD5TOsPZIQY_frame_072_1296.0s.jpg",
+      "timestamp": 1296,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_072_1296.0s.jpg",
+      "file_size": 39403,
+      "extraction_order": 72
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_073",
+      "filename": "OD5TOsPZIQY_frame_073_1314.0s.jpg",
+      "timestamp": 1314,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_073_1314.0s.jpg",
+      "file_size": 39511,
+      "extraction_order": 73
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_074",
+      "filename": "OD5TOsPZIQY_frame_074_1332.0s.jpg",
+      "timestamp": 1332,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_074_1332.0s.jpg",
+      "file_size": 39540,
+      "extraction_order": 74
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_075",
+      "filename": "OD5TOsPZIQY_frame_075_1350.0s.jpg",
+      "timestamp": 1350,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_075_1350.0s.jpg",
+      "file_size": 40270,
+      "extraction_order": 75
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_076",
+      "filename": "OD5TOsPZIQY_frame_076_1368.0s.jpg",
+      "timestamp": 1368,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_076_1368.0s.jpg",
+      "file_size": 40692,
+      "extraction_order": 76
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_077",
+      "filename": "OD5TOsPZIQY_frame_077_1386.0s.jpg",
+      "timestamp": 1386,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_077_1386.0s.jpg",
+      "file_size": 40655,
+      "extraction_order": 77
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_078",
+      "filename": "OD5TOsPZIQY_frame_078_1404.0s.jpg",
+      "timestamp": 1404,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_078_1404.0s.jpg",
+      "file_size": 40241,
+      "extraction_order": 78
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_079",
+      "filename": "OD5TOsPZIQY_frame_079_1422.0s.jpg",
+      "timestamp": 1422,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_079_1422.0s.jpg",
+      "file_size": 40712,
+      "extraction_order": 79
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_080",
+      "filename": "OD5TOsPZIQY_frame_080_1440.0s.jpg",
+      "timestamp": 1440,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_080_1440.0s.jpg",
+      "file_size": 58569,
+      "extraction_order": 80
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_081",
+      "filename": "OD5TOsPZIQY_frame_081_1458.0s.jpg",
+      "timestamp": 1458,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_081_1458.0s.jpg",
+      "file_size": 58477,
+      "extraction_order": 81
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_082",
+      "filename": "OD5TOsPZIQY_frame_082_1476.0s.jpg",
+      "timestamp": 1476,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_082_1476.0s.jpg",
+      "file_size": 58610,
+      "extraction_order": 82
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_083",
+      "filename": "OD5TOsPZIQY_frame_083_1494.0s.jpg",
+      "timestamp": 1494,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_083_1494.0s.jpg",
+      "file_size": 58577,
+      "extraction_order": 83
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_084",
+      "filename": "OD5TOsPZIQY_frame_084_1512.0s.jpg",
+      "timestamp": 1512,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_084_1512.0s.jpg",
+      "file_size": 58578,
+      "extraction_order": 84
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_085",
+      "filename": "OD5TOsPZIQY_frame_085_1530.0s.jpg",
+      "timestamp": 1530,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_085_1530.0s.jpg",
+      "file_size": 58473,
+      "extraction_order": 85
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_086",
+      "filename": "OD5TOsPZIQY_frame_086_1548.0s.jpg",
+      "timestamp": 1548,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_086_1548.0s.jpg",
+      "file_size": 70089,
+      "extraction_order": 86
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_087",
+      "filename": "OD5TOsPZIQY_frame_087_1566.0s.jpg",
+      "timestamp": 1566,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_087_1566.0s.jpg",
+      "file_size": 60808,
+      "extraction_order": 87
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_088",
+      "filename": "OD5TOsPZIQY_frame_088_1584.0s.jpg",
+      "timestamp": 1584,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_088_1584.0s.jpg",
+      "file_size": 64436,
+      "extraction_order": 88
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_089",
+      "filename": "OD5TOsPZIQY_frame_089_1602.0s.jpg",
+      "timestamp": 1602,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_089_1602.0s.jpg",
+      "file_size": 62069,
+      "extraction_order": 89
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_090",
+      "filename": "OD5TOsPZIQY_frame_090_1620.0s.jpg",
+      "timestamp": 1620,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_090_1620.0s.jpg",
+      "file_size": 65644,
+      "extraction_order": 90
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_091",
+      "filename": "OD5TOsPZIQY_frame_091_1638.0s.jpg",
+      "timestamp": 1638,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_091_1638.0s.jpg",
+      "file_size": 48257,
+      "extraction_order": 91
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_092",
+      "filename": "OD5TOsPZIQY_frame_092_1656.0s.jpg",
+      "timestamp": 1656,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_092_1656.0s.jpg",
+      "file_size": 51581,
+      "extraction_order": 92
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_093",
+      "filename": "OD5TOsPZIQY_frame_093_1674.0s.jpg",
+      "timestamp": 1674,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_093_1674.0s.jpg",
+      "file_size": 51577,
+      "extraction_order": 93
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_094",
+      "filename": "OD5TOsPZIQY_frame_094_1692.0s.jpg",
+      "timestamp": 1692,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_094_1692.0s.jpg",
+      "file_size": 51433,
+      "extraction_order": 94
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_095",
+      "filename": "OD5TOsPZIQY_frame_095_1710.0s.jpg",
+      "timestamp": 1710,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_095_1710.0s.jpg",
+      "file_size": 51467,
+      "extraction_order": 95
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_096",
+      "filename": "OD5TOsPZIQY_frame_096_1728.0s.jpg",
+      "timestamp": 1728,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_096_1728.0s.jpg",
+      "file_size": 55926,
+      "extraction_order": 96
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_097",
+      "filename": "OD5TOsPZIQY_frame_097_1746.0s.jpg",
+      "timestamp": 1746,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_097_1746.0s.jpg",
+      "file_size": 57129,
+      "extraction_order": 97
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_098",
+      "filename": "OD5TOsPZIQY_frame_098_1764.0s.jpg",
+      "timestamp": 1764,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_098_1764.0s.jpg",
+      "file_size": 36780,
+      "extraction_order": 98
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_099",
+      "filename": "OD5TOsPZIQY_frame_099_1782.0s.jpg",
+      "timestamp": 1782,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_099_1782.0s.jpg",
+      "file_size": 37669,
+      "extraction_order": 99
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_100",
+      "filename": "OD5TOsPZIQY_frame_100_1800.0s.jpg",
+      "timestamp": 1800,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_100_1800.0s.jpg",
+      "file_size": 37624,
+      "extraction_order": 100
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_101",
+      "filename": "OD5TOsPZIQY_frame_101_1818.0s.jpg",
+      "timestamp": 1818,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_101_1818.0s.jpg",
+      "file_size": 37666,
+      "extraction_order": 101
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_102",
+      "filename": "OD5TOsPZIQY_frame_102_1836.0s.jpg",
+      "timestamp": 1836,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_102_1836.0s.jpg",
+      "file_size": 51149,
+      "extraction_order": 102
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_103",
+      "filename": "OD5TOsPZIQY_frame_103_1854.0s.jpg",
+      "timestamp": 1854,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_103_1854.0s.jpg",
+      "file_size": 50876,
+      "extraction_order": 103
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_104",
+      "filename": "OD5TOsPZIQY_frame_104_1872.0s.jpg",
+      "timestamp": 1872,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_104_1872.0s.jpg",
+      "file_size": 51049,
+      "extraction_order": 104
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_105",
+      "filename": "OD5TOsPZIQY_frame_105_1890.0s.jpg",
+      "timestamp": 1890,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_105_1890.0s.jpg",
+      "file_size": 50942,
+      "extraction_order": 105
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_106",
+      "filename": "OD5TOsPZIQY_frame_106_1908.0s.jpg",
+      "timestamp": 1908,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_106_1908.0s.jpg",
+      "file_size": 50973,
+      "extraction_order": 106
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_107",
+      "filename": "OD5TOsPZIQY_frame_107_1926.0s.jpg",
+      "timestamp": 1926,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_107_1926.0s.jpg",
+      "file_size": 42927,
+      "extraction_order": 107
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_108",
+      "filename": "OD5TOsPZIQY_frame_108_1944.0s.jpg",
+      "timestamp": 1944,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_108_1944.0s.jpg",
+      "file_size": 42895,
+      "extraction_order": 108
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_109",
+      "filename": "OD5TOsPZIQY_frame_109_1962.0s.jpg",
+      "timestamp": 1962,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_109_1962.0s.jpg",
+      "file_size": 42983,
+      "extraction_order": 109
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_110",
+      "filename": "OD5TOsPZIQY_frame_110_1980.0s.jpg",
+      "timestamp": 1980,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_110_1980.0s.jpg",
+      "file_size": 42930,
+      "extraction_order": 110
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_111",
+      "filename": "OD5TOsPZIQY_frame_111_1998.0s.jpg",
+      "timestamp": 1998,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_111_1998.0s.jpg",
+      "file_size": 64199,
+      "extraction_order": 111
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_112",
+      "filename": "OD5TOsPZIQY_frame_112_2016.0s.jpg",
+      "timestamp": 2016,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_112_2016.0s.jpg",
+      "file_size": 47071,
+      "extraction_order": 112
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_113",
+      "filename": "OD5TOsPZIQY_frame_113_2034.0s.jpg",
+      "timestamp": 2034,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_113_2034.0s.jpg",
+      "file_size": 47151,
+      "extraction_order": 113
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_114",
+      "filename": "OD5TOsPZIQY_frame_114_2052.0s.jpg",
+      "timestamp": 2052,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_114_2052.0s.jpg",
+      "file_size": 47125,
+      "extraction_order": 114
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_115",
+      "filename": "OD5TOsPZIQY_frame_115_2070.0s.jpg",
+      "timestamp": 2070,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_115_2070.0s.jpg",
+      "file_size": 47094,
+      "extraction_order": 115
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_116",
+      "filename": "OD5TOsPZIQY_frame_116_2088.0s.jpg",
+      "timestamp": 2088,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_116_2088.0s.jpg",
+      "file_size": 47926,
+      "extraction_order": 116
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_117",
+      "filename": "OD5TOsPZIQY_frame_117_2106.0s.jpg",
+      "timestamp": 2106,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_117_2106.0s.jpg",
+      "file_size": 47820,
+      "extraction_order": 117
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_118",
+      "filename": "OD5TOsPZIQY_frame_118_2124.0s.jpg",
+      "timestamp": 2124,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_118_2124.0s.jpg",
+      "file_size": 47826,
+      "extraction_order": 118
+    },
+    {
+      "frame_id": "OD5TOsPZIQY_frame_119",
+      "filename": "OD5TOsPZIQY_frame_119_2142.0s.jpg",
+      "timestamp": 2142,
+      "file_path": "step_05_frames/OD5TOsPZIQY/OD5TOsPZIQY_frame_119_2142.0s.jpg",
+      "file_size": 62181,
+      "extraction_order": 119
+    }
+  ],
+  "processing_timestamp": ""
+}

@@ -14,16 +14,11 @@ from datetime import datetime
 import argparse
 from pipeline_progress_queue import get_progress_queue
 
+# Import centralized logging configuration
+from logging_config import setup_logging
+
 # Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler('cleanup.log'),
-        logging.StreamHandler()
-    ]
-)
-logger = logging.getLogger(__name__)
+logger = setup_logging('cleanup')
 
 class PipelineCleanup:
     """Cleans up unnecessary files from the pipeline while preserving essential data"""
@@ -443,7 +438,10 @@ class PipelineCleanup:
     
     def save_cleanup_report(self, summary: Dict):
         """Save cleanup report to file"""
-        report_file = self.base_dir / f"cleanup_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+        from logging_config import get_logs_dir
+        
+        logs_dir = get_logs_dir()
+        report_file = logs_dir / f"cleanup_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
         
         with open(report_file, 'w') as f:
             json.dump(summary, f, indent=2)
