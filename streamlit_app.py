@@ -300,9 +300,9 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
                 if doi and doi != "Unknown":
                     doi_link = f" <a href='https://doi.org/{doi}' target='_blank' style='color: #0066cc; text-decoration: underline;' title='View on DOI.org'>[DOI]</a>"
                 
-                return f"<sup>{pdf_link}{doi_link} 📚</sup>"
+                return f"<sup>{pdf_link}{doi_link}</sup>"
             else:
-                return f"<sup>[{title} ({year}) 📚]</sup>"
+                return f"<sup>[{title} ({year})]</sup>"
         else:
             return match.group(0)  # Return original if source not found
     
@@ -1254,16 +1254,12 @@ def conversational_page():
                     st.error(error_msg)
                     st.session_state.messages.append({"role": "assistant", "content": error_msg})
     
-    # Chat management buttons
-    col1, col2 = st.columns(2)
+    # Chat management buttons - both buttons together on the left
+    if st.button("🗑️ Clear Chat"):
+        st.session_state.messages = []
+        st.rerun()
     
-    with col1:
-        if st.button("🗑️ Clear Chat"):
-            st.session_state.messages = []
-            st.rerun()
-    
-    with col2:
-        if st.button("💾 Export Chat"):
+    if st.button("💾 Export Chat"):
             if st.session_state.messages:
                 # Create conversation export
                 export_text = "# Conversation with Michael Levin\n\n"
