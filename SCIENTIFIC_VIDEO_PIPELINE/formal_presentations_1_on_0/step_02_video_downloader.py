@@ -554,7 +554,7 @@ def main():
         print("   You can modify the max_videos parameter in the script")
     
     # Process videos (limit to 6 for testing - remove this limit for production)
-    max_videos = 6  # Change this to None for all videos
+    max_videos = 100  # Change this to None for all videos
     if max_videos:
         print(f"🔢 Limiting to {max_videos} videos for testing")
     
