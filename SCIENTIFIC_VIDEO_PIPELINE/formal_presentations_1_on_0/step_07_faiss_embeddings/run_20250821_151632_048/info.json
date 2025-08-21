@@ -1,0 +1,27 @@
+{
+  "timestamp": "20250821_151632_048",
+  "run_directory": "step_07_faiss_embeddings/run_20250821_151632_048",
+  "total_chunks": 213,
+  "total_frames": 213,
+  "videos_processed": [
+    "xNgq3zqYsoA",
+    "zKjdkxrvE6k",
+    "mOaSHpTOwu0",
+    "OD5TOsPZIQY",
+    "1qRIetbuoH4",
+    "FzFFeRVEdUM"
+  ],
+  "embedding_dimensions": 3136,
+  "created_at": "2025-08-21T15:18:04.518957",
+  "files": {
+    "text_index": "text_index.faiss",
+    "visual_index": "visual_index.faiss",
+    "combined_index": "combined_index.faiss",
+    "embeddings": "embeddings.npy",
+    "metadata": "metadata.pkl",
+    "consolidated_dir": "consolidated/",
+    "chunks_index": "consolidated/chunks.index",
+    "chunks_embeddings": "consolidated/chunks_embeddings.npy",
+    "chunks_metadata": "consolidated/chunks_metadata.pkl"
+  }
+}

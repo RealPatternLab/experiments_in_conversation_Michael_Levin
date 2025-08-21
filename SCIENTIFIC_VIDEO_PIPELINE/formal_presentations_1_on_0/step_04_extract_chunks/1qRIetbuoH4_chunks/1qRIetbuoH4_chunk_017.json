@@ -1,0 +1,39 @@
+{
+  "chunk_id": "1qRIetbuoH4_chunk_017",
+  "text": "So the way it happens in the brain is that the hardware looks like this. It's a bunch of cells we call neurons. They're electrically active. And so they have these little ion channels in that, in their membrane that set a voltage. That voltage sometimes is communicated to their neighbors through these gap junctions or these electrical synapses. And so there's this network and there's this physiology. So here it is. This group imaged all the electrical activity of a living zebrafish brain as zebrafish are thinking about whatever it is that zebrafish normally think about. And so you can see, and you can see all this activity. And it's the commitment of neuroscience that all of the cognitive activity, the goals, the preferences, the memories, the behavioral repertoires of this animal are in this physiological Activity, if only we could decode it.",
+  "token_count": 144,
+  "sentence_count": 11,
+  "start_sentence": 17,
+  "end_sentence": 27,
+  "start_time_ms": 850520,
+  "end_time_ms": 894580,
+  "start_time_seconds": 850.52,
+  "end_time_seconds": 894.58,
+  "primary_topics": [
+    "Neurons",
+    "Ion Channels",
+    "Electrical Synapses",
+    "Neural Network",
+    "Physiological Activity"
+  ],
+  "secondary_topics": [
+    "Brain Hardware",
+    "Voltage Communication",
+    "Gap Junctions",
+    "Zebrafish Brain Activity",
+    "Cognitive Activity Decoding"
+  ],
+  "key_terms": [
+    "Neurons",
+    "Ion Channels",
+    "Voltage",
+    "Gap Junctions",
+    "Electrical Synapses",
+    "Physiological Activity",
+    "Zebrafish",
+    "Neuroscience"
+  ],
+  "content_summary": "The presentation discusses the structure and function of neurons, highlighting the role of ion channels and electrical synapses in setting and communicating voltage. The speaker uses the example of imaging the electrical activity of a living zebrafish brain to illustrate these concepts, emphasizing the challenge of decoding this physiological activity to understand cognitive processes.",
+  "scientific_domain": "Developmental Biology, Bioelectricity, Neuroscience",
+  "enhanced": true
+}

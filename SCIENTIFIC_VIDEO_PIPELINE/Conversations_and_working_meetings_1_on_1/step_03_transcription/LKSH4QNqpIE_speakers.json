@@ -1,10 +1,10 @@
 {
   "video_id": "LKSH4QNqpIE",
   "pipeline_type": "conversations_1_on_1",
-  "extraction_timestamp": "2025-08-18T17:08:57.030479",
+  "extraction_timestamp": "2025-08-21T14:15:44.137279",
   "speakers": [
-    "B",
-    "A"
+    "A",
+    "B"
   ],
   "speaker_turns": [
     {
@@ -39675,7 +39675,7 @@
       "text": "And, right. So it's like, and a lot of collective intelligences do this. Ants obviously do this too. Right. When they come across something too heavy for them to lift, they recruit their, their nest mates to come in to come and help. So it's kind of like a feature of a self scaling property of collective intelligence of certain kinds. But there's a, there's a more interesting piece to the story which is that sometimes you do this, you get no eye at all. And when you look, what's actually happening is that there's kind of a battle of patterns going on there because, because the cells we injected are saying to their neighbors, you should help us to build an eye. And then, and all the neighbors, they have a tumor suppression mechanism that says, you guys have crazy voltage, you should stay skin. And that's what they normally, that's what cells normally do to, to suppress neighbors that acquire, start to acquire weird voltage patterns is they, they use these gap junctions to equalize it out. They try to buffer it out. So. And that's. And that's a. That's a, you know, a ubiquitous cancer suppression mechanism. So you have this. You have this battle, and sometimes the eyes. The eye story wins, and sometimes the skin story wins, because I really think it's. It's fundamentally a battle of patterns and which ones are the most convincing to these cells. And so sometimes you get an eye, and sometimes you get nothing. You know, you get. You get your normal organ. So that's the other thing is that I think there's a lot of both. Both competition and cooperation, and. And some of it takes place from the perspective of the cells, but some of it, I think, takes place from the perspective of the patterns, you know?",
       "start": 2046630,
       "end": 2134980,
-      "confidence": 0.9692615,
+      "confidence": 0.9690552,
       "words": [
         {
           "text": "And,",
@@ -41641,7 +41641,7 @@
           "text": "and",
           "start": 2125660,
           "end": 2125900,
-          "confidence": 0.9667969,
+          "confidence": 0.96240234,
           "speaker": "B"
         },
         {
@@ -41683,7 +41683,7 @@
           "text": "it",
           "start": 2128140,
           "end": 2128420,
-          "confidence": 1.0,
+          "confidence": 0.9995117,
           "speaker": "B"
         },
         {
@@ -41739,14 +41739,14 @@
           "text": "cells,",
           "start": 2130140,
           "end": 2130820,
-          "confidence": 0.9451904,
+          "confidence": 0.94384766,
           "speaker": "B"
         },
         {
           "text": "but",
           "start": 2130820,
           "end": 2131140,
-          "confidence": 1.0,
+          "confidence": 0.9995117,
           "speaker": "B"
         },
         {
@@ -41774,7 +41774,7 @@
           "text": "I",
           "start": 2131700,
           "end": 2131980,
-          "confidence": 0.9975586,
+          "confidence": 0.9980469,
           "speaker": "B"
         },
         {
@@ -41802,7 +41802,7 @@
           "text": "from",
           "start": 2132660,
           "end": 2132860,
-          "confidence": 1.0,
+          "confidence": 0.9995117,
           "speaker": "B"
         },
         {
@@ -41837,21 +41837,21 @@
           "text": "patterns,",
           "start": 2133740,
           "end": 2134340,
-          "confidence": 0.99853516,
+          "confidence": 0.99820966,
           "speaker": "B"
         },
         {
           "text": "you",
           "start": 2134420,
           "end": 2134700,
-          "confidence": 0.96533203,
+          "confidence": 0.96484375,
           "speaker": "B"
         },
         {
           "text": "know?",
           "start": 2134700,
           "end": 2134980,
-          "confidence": 0.6791992,
+          "confidence": 0.6225586,
           "speaker": "B"
         }
       ]
@@ -41861,55 +41861,55 @@
       "text": "Yeah. God, it's so freaking cool, man.",
       "start": 2136900,
       "end": 2139140,
-      "confidence": 0.96285576,
+      "confidence": 0.9633673,
       "words": [
         {
           "text": "Yeah.",
           "start": 2136900,
           "end": 2137380,
-          "confidence": 0.9860026,
+          "confidence": 0.98876953,
           "speaker": "A"
         },
         {
           "text": "God,",
           "start": 2137540,
           "end": 2137940,
-          "confidence": 0.9086914,
+          "confidence": 0.9145508,
           "speaker": "A"
         },
         {
           "text": "it's",
           "start": 2137940,
           "end": 2138180,
-          "confidence": 0.8860677,
+          "confidence": 0.8771159,
           "speaker": "A"
         },
         {
           "text": "so",
           "start": 2138180,
           "end": 2138300,
-          "confidence": 0.9980469,
+          "confidence": 0.9975586,
           "speaker": "A"
         },
         {
           "text": "freaking",
           "start": 2138300,
           "end": 2138580,
-          "confidence": 0.9724121,
+          "confidence": 0.97314453,
           "speaker": "A"
         },
         {
           "text": "cool,",
           "start": 2138580,
           "end": 2138860,
-          "confidence": 0.99902344,
+          "confidence": 0.99975586,
           "speaker": "A"
         },
         {
           "text": "man.",
           "start": 2138860,
           "end": 2139140,
-          "confidence": 0.9897461,
+          "confidence": 0.9926758,
           "speaker": "A"
         }
       ]

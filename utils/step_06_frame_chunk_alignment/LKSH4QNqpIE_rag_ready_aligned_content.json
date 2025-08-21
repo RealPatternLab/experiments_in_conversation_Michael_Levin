@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "pipeline_step": "step_06_frame_chunk_alignment",
+    "total_alignments": 1,
+    "alignment_method": "timestamp_based",
+    "processing_timestamp": "2025-08-21T13:45:38.538204",
+    "pipeline_type": "conversations"
+  },
+  "aligned_content": [
+    {
+      "content_id": "chunk_001",
+      "text_content": {
+        "text": "",
+        "metadata": {
+          "token_count": 0,
+          "sentence_count": 0,
+          "primary_topics": [],
+          "secondary_topics": [],
+          "key_terms": [],
+          "content_summary": "",
+          "scientific_domain": "",
+          "start_time_seconds": 120.0,
+          "end_time_seconds": 180.0
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "frame_001",
+            "timestamp": 120.0,
+            "file_path": "frames/frame_001.jpg",
+            "file_size": 1024,
+            "alignment_confidence": 0.9
+          },
+          {
+            "frame_id": "frame_002",
+            "timestamp": 180.0,
+            "file_path": "frames/frame_002.jpg",
+            "file_size": 1024,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 2
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          120.0,
+          180.0
+        ],
+        "time_range": {
+          "start": 120.0,
+          "end": 180.0
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 2,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 1.0
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "metadata": {
+        "pipeline_type": "conversations",
+        "created_at": "2025-08-21T13:45:38.538164",
+        "video_id": "LKSH4QNqpIE"
+      },
+      "conversation_context": {
+        "question": "What is bioelectricity?",
+        "answer": "Bioelectricity is the electrical signaling that occurs in biological systems...",
+        "questioner": "Interviewer",
+        "answerer": "Michael Levin",
+        "youtube_link": "https://youtube.com/watch?v=LKSH4QNqpIE&t=120s",
+        "pipeline_type": "conversations_1_on_1"
+      }
+    }
+  ]
+}

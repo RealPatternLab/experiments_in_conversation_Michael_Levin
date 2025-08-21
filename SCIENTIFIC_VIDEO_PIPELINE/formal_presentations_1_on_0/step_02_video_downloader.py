@@ -71,7 +71,7 @@ def download_video(video_id: str, video_title: str, output_dir: Path) -> Dict[st
         # Download video with metadata
         cmd = [
             "yt-dlp",
-            "-f", "best[height<=720]",  # Limit quality for processing
+            "-f", "232+233",  # 1152x720 video + audio (format IDs from available formats)
             "--write-info-json",
             "--write-auto-subs",
             "--sub-langs", "en",
@@ -553,8 +553,8 @@ def main():
         print("   For testing, you may want to limit the number of videos")
         print("   You can modify the max_videos parameter in the script")
     
-    # Process videos (limit to 5 for testing - remove this limit for production)
-    max_videos = 5  # Change this to None for all videos
+    # Process videos (limit to 6 for testing - remove this limit for production)
+    max_videos = 6  # Change this to None for all videos
     if max_videos:
         print(f"🔢 Limiting to {max_videos} videos for testing")
     

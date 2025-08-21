@@ -1,0 +1,40 @@
+{
+  "chunk_id": "1qRIetbuoH4_chunk_021",
+  "text": "But already using this voltage dye, you can see what's going on here. You can see that these cells are electrically decoupling from their neighbors. They're acquiring a weird depolarized membrane potential. And they're just going to roll back to their amoeba lifestyle and migrate and treat the rest of the body as external environment. So that's what we read these patterns and we've developed tools to rewrite these patterns. And we don't use. There are no electrodes, no applied fields, no waves, no frequencies. What we do is we exploit the native interface by which the cells are normally hacking each other's behavior, which is these ion channels that are on each other on their surface and these gap junctions that allow them to talk to each other. We have ways, mostly appropriated from neuroscience, using optogenetics and drugs and so on to open and close these channels and to control the topology of the network. And so when you do this, what you can do is we can induce whole organs.",
+  "token_count": 173,
+  "sentence_count": 11,
+  "start_sentence": 21,
+  "end_sentence": 31,
+  "start_time_ms": 1015060,
+  "end_time_ms": 1069990,
+  "start_time_seconds": 1015.06,
+  "end_time_seconds": 1069.99,
+  "primary_topics": [
+    "Bioelectricity",
+    "Cellular Communication",
+    "Membrane Potential",
+    "Optogenetics",
+    "Cell Migration"
+  ],
+  "secondary_topics": [
+    "Voltage Dye",
+    "Amoeba Lifestyle",
+    "Ion Channels",
+    "Gap Junctions",
+    "Network Topology",
+    "Drug Interactions",
+    "Organ Induction"
+  ],
+  "key_terms": [
+    "Electrical Decoupling",
+    "Depolarized Membrane Potential",
+    "Ion Channels",
+    "Gap Junctions",
+    "Optogenetics",
+    "Drugs",
+    "Network Topology"
+  ],
+  "content_summary": "The speaker discusses the use of voltage dye to observe cells electrically decoupling and adopting a depolarized membrane potential. They mention the development of tools to manipulate these patterns by exploiting ion channels and gap junctions, using methods from neuroscience such as optogenetics and drugs, to control the network topology and potentially induce whole organs.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
+  "enhanced": true
+}

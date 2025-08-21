@@ -40,7 +40,7 @@ class ConversationsVideoDownloader:
         
         # yt-dlp configuration for conversations
         self.yt_dlp_config = {
-            'format': 'best[height<=720]',  # Limit quality for processing
+            'format': '232+233',  # 1152x720 video + audio (format IDs from available formats)
             'write_info_json': True,
             'write_auto_subs': True,
             'sub_langs': 'en',
@@ -107,7 +107,8 @@ class ConversationsVideoDownloader:
                 # Check if video is pending for download
                 step_status = self.progress_queue.get_video_step_status(video_id, 'step_02_video_download')
                 
-                if step_status == 'pending':
+                # Treat None (no entry) as pending, or if status is explicitly pending
+                if step_status is None or step_status == 'pending':
                     # Check if video files already exist
                     video_dir = self.output_dir / f"video_{video_id}"
                     video_file = video_dir / "video.mp4"
@@ -152,7 +153,7 @@ class ConversationsVideoDownloader:
         try:
             # Configure yt-dlp options
             ydl_opts = {
-                'format': self.yt_dlp_config['format'],
+                'format': '232+233',  # 1152x720 video + audio (format IDs from available formats)
                 'outtmpl': str(video_dir / 'video.%(ext)s'),
                 'writeinfojson': True,
                 'writesubtitles': True,

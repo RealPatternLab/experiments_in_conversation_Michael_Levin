@@ -11,7 +11,7 @@ from typing import List, Dict, Any, Optional, Tuple
 from datetime import datetime
 from abc import ABC, abstractmethod
 
-from .pipeline_data_models import (
+from pipeline_data_models import (
     PipelineType, BaseRAGOutput, BaseRAGEntry, FrameInfo, 
     ChunkMetadata, VisualContent, TemporalInfo, QualityMetrics, 
     ProcessingMetadata, create_rag_entry, create_rag_output

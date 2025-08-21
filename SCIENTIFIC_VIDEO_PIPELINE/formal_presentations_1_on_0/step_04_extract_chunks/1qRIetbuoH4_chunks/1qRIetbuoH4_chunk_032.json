@@ -1,0 +1,37 @@
+{
+  "chunk_id": "1qRIetbuoH4_chunk_032",
+  "text": "Now here's one navigating a maze. You can see what it's doing. It's swimming here. Takes the corner without bumping into the opposite wall. And then here, for some internal reason, it decides to turn around and go back where it came from. Okay, Again, completely spontaneous. These xenobots have all kinds of calcium activity which you would normally see in the brain, but again, no neurons, just skin. And one of the most remarkable things about this is that we can now use AI to control their behavior. What you're seeing here is this white stuff out here, these little particles. These are other skin cells, just loose skin cells that we provided them with what we did.",
+  "token_count": 119,
+  "sentence_count": 10,
+  "start_sentence": 32,
+  "end_sentence": 41,
+  "start_time_ms": 1518800,
+  "end_time_ms": 1560980,
+  "start_time_seconds": 1518.8,
+  "end_time_seconds": 1560.98,
+  "primary_topics": [
+    "Xenobots",
+    "Bioelectricity",
+    "Artificial Intelligence"
+  ],
+  "secondary_topics": [
+    "Calcium activity",
+    "Neurons",
+    "Skin cells",
+    "Cellular behavior",
+    "Cell navigation",
+    "Spontaneous actions",
+    "Cellular control"
+  ],
+  "key_terms": [
+    "Xenobots",
+    "Bioelectricity",
+    "Artificial Intelligence",
+    "Calcium activity",
+    "Neurons",
+    "Skin cells"
+  ],
+  "content_summary": "The speaker discusses the behavior of xenobots, which exhibit calcium activity typically seen in the brain, despite having no neurons and being made of just skin. The speaker also mentions the use of AI to control the behavior of these xenobots.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
+  "enhanced": true
+}

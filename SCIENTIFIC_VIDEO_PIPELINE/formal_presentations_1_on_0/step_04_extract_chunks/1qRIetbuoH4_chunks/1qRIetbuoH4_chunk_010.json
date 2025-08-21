@@ -1,0 +1,39 @@
+{
+  "chunk_id": "1qRIetbuoH4_chunk_010",
+  "text": "This is where, you know, computer science was in the 40s and 50s, where in order to reprogram the machine, you have to physically interact with the hardware, right? You have to, you have to physically rewire. And this is, this is where all the excitement is today, so, so gene regulatory circuits, novel, novel molecular interactions and so on. But, but in addition to that, we have the opportunity to do something amazing, which is to take advantage of the high level information processing, AKA intelligence in the layers of biology. Now, when I say intelligence, I don't mean, and this is the good news is that we have now opportunities to do this. I don't mean a human level second order. I know that, I know. And that, that kind of thing, I mean something else that might be at different locations along this continuum. This sort of continuum is due to Norbert Wiener and colleagues. And William James defined intelligence as the ability to reach the same goal by different means. And so I don't have time to show you too many examples, but I'll show you a few. Biology is really good at this. And what we now have the opportunity to do is to use AI as a kind of translator between us and this robust intelligence of cells and tissues that are navigating something we call morphospace. Morphospace is simply the space of all. It's a virtual space of all possible morphogenetic outcomes or anatomical outcomes. And so we have the ability to control how the living system navigates that amorphous space. And it's possible because biology, unlike most of our technology, I sometimes give a different talk of why robots don't get cancer.",
+  "token_count": 290,
+  "sentence_count": 17,
+  "start_sentence": 10,
+  "end_sentence": 26,
+  "start_time_ms": 431260,
+  "end_time_ms": 523310,
+  "start_time_seconds": 431.26,
+  "end_time_seconds": 523.31,
+  "primary_topics": [
+    "Bioelectricity",
+    "Developmental Biology",
+    "Artificial Intelligence in Biology",
+    "Gene Regulatory Circuits",
+    "Molecular Interactions"
+  ],
+  "secondary_topics": [
+    "Computer Science History",
+    "Information Processing in Biology",
+    "Intelligence in Biological Systems",
+    "Morphospace",
+    "Cellular and Tissue Intelligence",
+    "Anatomical Outcomes"
+  ],
+  "key_terms": [
+    "Gene Regulatory Circuits",
+    "Molecular Interactions",
+    "High Level Information Processing",
+    "Intelligence in Biology",
+    "Morphospace",
+    "Morphogenetic Outcomes",
+    "Anatomical Outcomes"
+  ],
+  "content_summary": "The speaker compares the current state of bioelectricity and developmental biology to the early stages of computer science, emphasizing the need for physical interaction with the 'hardware' or genetic and molecular components. They discuss the potential of using artificial intelligence as a translator between humans and the 'intelligence' of cells and tissues, particularly in navigating 'morphospace' - the range of all possible morphogenetic or anatomical outcomes.",
+  "scientific_domain": "Developmental Biology, Bioelectricity, Artificial Intelligence in Biology",
+  "enhanced": true
+}

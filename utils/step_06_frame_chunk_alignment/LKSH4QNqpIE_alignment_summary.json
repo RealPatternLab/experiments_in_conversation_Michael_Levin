@@ -1,0 +1,13 @@
+{
+  "video_id": "LKSH4QNqpIE",
+  "pipeline_type": "conversations",
+  "total_alignments": 1,
+  "processing_timestamp": "2025-08-21T13:45:38.538502",
+  "alignment_method": "timestamp_based",
+  "timestamp_tolerance": 5.0,
+  "files_created": [
+    "step_06_frame_chunk_alignment/LKSH4QNqpIE_alignments.json",
+    "step_06_frame_chunk_alignment/LKSH4QNqpIE_rag_ready_aligned_content.json",
+    "step_06_frame_chunk_alignment/LKSH4QNqpIE_alignment_summary.json"
+  ]
+}

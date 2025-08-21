@@ -1,0 +1,40 @@
+{
+  "chunk_id": "1qRIetbuoH4_chunk_030",
+  "text": "This is the same animal, there's tons of it. If you were to sequence this, you would see that there's a nasty Kras mutation or something like that. And you would say, ah, there has to be a tumor there. And in fact there is no tumor because what we've also done is co inject an ion channel that forces these cells into electrical communication with their neighbors, does not let them detach. So there's a cancer, the therapeutics thing here, the last bit I want to show you in the last couple of minutes, I want to show you some synthetic life. We call these xenobots because they come from the skin cells of the frog called Xenopus laevis. And we think this is a biorobotics platform.",
+  "token_count": 128,
+  "sentence_count": 7,
+  "start_sentence": 30,
+  "end_sentence": 36,
+  "start_time_ms": 1420940,
+  "end_time_ms": 1459720,
+  "start_time_seconds": 1420.94,
+  "end_time_seconds": 1459.72,
+  "primary_topics": [
+    "Bioelectricity",
+    "Developmental Biology",
+    "Cancer Therapeutics",
+    "Synthetic Life",
+    "Biorobotics"
+  ],
+  "secondary_topics": [
+    "Ion Channels",
+    "Cellular Communication",
+    "Genetic Sequencing",
+    "Kras Mutation",
+    "Xenobots",
+    "Xenopus laevis",
+    "Skin Cells"
+  ],
+  "key_terms": [
+    "Ion Channel",
+    "Kras Mutation",
+    "Xenobots",
+    "Xenopus laevis",
+    "Biorobotics",
+    "Synthetic Life",
+    "Electrical Communication"
+  ],
+  "content_summary": "The speaker discusses the role of bioelectricity in preventing tumor development, despite the presence of a Kras mutation. They also introduce the concept of 'xenobots', synthetic life forms derived from the skin cells of a frog species, Xenopus laevis, as a potential platform for biorobotics.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
+  "enhanced": true
+}

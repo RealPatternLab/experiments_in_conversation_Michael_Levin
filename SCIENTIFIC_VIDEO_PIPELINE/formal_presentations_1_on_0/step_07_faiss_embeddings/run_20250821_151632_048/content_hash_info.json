@@ -1,0 +1,15 @@
+{
+  "timestamp": "20250821_151632_048",
+  "content_hash": "81731d6430e7890a6b56a24ccfcabc6d",
+  "input_files": [
+    "1qRIetbuoH4_rag_ready_aligned_content.json",
+    "xNgq3zqYsoA_rag_ready_aligned_content.json",
+    "FzFFeRVEdUM_rag_ready_aligned_content.json",
+    "mOaSHpTOwu0_rag_ready_aligned_content.json",
+    "OD5TOsPZIQY_rag_ready_aligned_content.json",
+    "zKjdkxrvE6k_rag_ready_aligned_content.json"
+  ],
+  "file_count": 6,
+  "created_at": "2025-08-21T15:18:04.531288",
+  "pipeline_step": "step_07_consolidated_embedding"
+}

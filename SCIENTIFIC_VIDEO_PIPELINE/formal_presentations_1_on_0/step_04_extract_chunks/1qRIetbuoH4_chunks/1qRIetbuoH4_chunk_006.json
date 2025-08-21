@@ -1,0 +1,36 @@
+{
+  "chunk_id": "1qRIetbuoH4_chunk_006",
+  "text": "So this is the larva of an axolotl. So baby A axolotls have little four legs, this is a tadpole, and baby frogs at this point do not have legs. So in my lab we can make something called a frog lottle. So what's a froglottle? Well, it's a chimeric embryo that's part cells from an axolotl, part cells from a frog. And now I can ask a very simple question. Well, we have both genomes, so the axolotl genome has been sequenced, the frog genome has been sequenced. Could anybody tell me whether froglottles are going to have legs or not? And the answer is no. There is no existing model that will go from genomic information to being able to predict anatomy in cases like this. In fact, even within a, we can't go from the genome to a Description of what the anatomy is going to be without cheating. Basically comparing that genome to something where you already know what it is. And so there's this fundamental disconnect between the molecular hardware and the large scale anatomical decision making of the collective of cells that's going to decide to build this large scale structure, possibly involving cells from the frog.",
+  "token_count": 203,
+  "sentence_count": 14,
+  "start_sentence": 6,
+  "end_sentence": 19,
+  "start_time_ms": 252060,
+  "end_time_ms": 309380,
+  "start_time_seconds": 252.06,
+  "end_time_seconds": 309.38,
+  "primary_topics": [
+    "Chimeric embryos",
+    "Genome sequencing",
+    "Anatomical development"
+  ],
+  "secondary_topics": [
+    "Axolotl larva",
+    "Frog development",
+    "Genomic information",
+    "Cellular decision making",
+    "Large scale structure",
+    "Comparative genomics",
+    "Bioelectricity"
+  ],
+  "key_terms": [
+    "Froglottle",
+    "Axolotl genome",
+    "Frog genome",
+    "Anatomy prediction",
+    "Molecular hardware"
+  ],
+  "content_summary": "The presentation discusses the creation of a 'froglottle', a chimeric embryo made from axolotl and frog cells. Despite having sequenced genomes of both species, it is currently impossible to predict the anatomy of such a hybrid organism from genomic information alone, highlighting a disconnect between the molecular level and large-scale anatomical development.",
+  "scientific_domain": "Developmental Biology, Bioelectricity, Genomics",
+  "enhanced": true
+}

@@ -1,0 +1,41 @@
+{
+  "chunk_id": "1qRIetbuoH4_chunk_003",
+  "text": "So now there are two really important pieces to this. One is that this is not a 3D printer. The point is not to micromanage the position of every cell and try to assemble something complex piece by piece. It is also not anything to do with genomic editing or CRISPR or anything like that. This is fundamentally the right way to think about this is as a communications device. This system and the AI that will make it possible is for translating our anatomical and functional goals to the goals of a collective intelligence of cells that are going to build this thing.",
+  "token_count": 104,
+  "sentence_count": 6,
+  "start_sentence": 3,
+  "end_sentence": 8,
+  "start_time_ms": 114000,
+  "end_time_ms": 147200,
+  "start_time_seconds": 114.0,
+  "end_time_seconds": 147.2,
+  "primary_topics": [
+    "Bioelectricity",
+    "Developmental Biology",
+    "Artificial Intelligence in Biology",
+    "Cellular Communication",
+    "Collective Intelligence of Cells"
+  ],
+  "secondary_topics": [
+    "3D Printing in Biology",
+    "Genomic Editing",
+    "CRISPR",
+    "Anatomical Goals",
+    "Functional Goals"
+  ],
+  "key_terms": [
+    "Bioelectricity",
+    "Developmental Biology",
+    "Artificial Intelligence",
+    "Cellular Communication",
+    "Collective Intelligence",
+    "3D Printing",
+    "Genomic Editing",
+    "CRISPR",
+    "Anatomical Goals",
+    "Functional Goals"
+  ],
+  "content_summary": "Michael Levin explains that the system he is discussing is not a 3D printer or related to genomic editing or CRISPR. Instead, it's a communication device that, with the help of AI, translates our anatomical and functional goals to the collective intelligence of cells that will build the structure.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
+  "enhanced": true
+}

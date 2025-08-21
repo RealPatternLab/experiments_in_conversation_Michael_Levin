@@ -1,0 +1,42 @@
+{
+  "chunk_id": "1qRIetbuoH4_chunk_005",
+  "text": "But actually we could read genomes now and we know what's in the genome. What the genome encodes is the tiny protein hardware, the molecular hardware that every cell gets to have. There's nothing directly in the genome that says anything about size, shape, the number of organs, the types of organs. And so the fundamental scientific challenge here is to understand how this group of cells exploits that hardware to build something reliably. How do they know when to stop? Why do cells sometimes defect from this plan and then that results in cancer? And then as workers in regenerative medicine, we'd like to know if something is missing, how do you convince the cells to regrow it? And if, as engineers, we would like to say, well, what else can these cells build? With a standard genome, can you get the exact same hardware to build something completely different? And so these are the questions that face us now. I want to show an extremely simple example to remind us why genetic information is not enough.",
+  "token_count": 178,
+  "sentence_count": 11,
+  "start_sentence": 5,
+  "end_sentence": 15,
+  "start_time_ms": 192550,
+  "end_time_ms": 252060,
+  "start_time_seconds": 192.55,
+  "end_time_seconds": 252.06,
+  "primary_topics": [
+    "Genome and its role",
+    "Cellular hardware",
+    "Regenerative medicine",
+    "Cellular behavior in cancer",
+    "Potential of cellular hardware"
+  ],
+  "secondary_topics": [
+    "Genome reading",
+    "Cellular structure",
+    "Organ development",
+    "Cellular regeneration",
+    "Engineering cellular behavior",
+    "Limitations of genetic information"
+  ],
+  "key_terms": [
+    "Genome",
+    "Protein hardware",
+    "Molecular hardware",
+    "Cell",
+    "Size",
+    "Shape",
+    "Organs",
+    "Cancer",
+    "Regenerative medicine",
+    "Engineers"
+  ],
+  "content_summary": "The presentation discusses the role of the genome in encoding the protein and molecular hardware of cells, but highlights its limitations in determining size, shape, and organ types. It explores the challenges in understanding how cells use this hardware to build structures and the implications for cancer and regenerative medicine. The speaker also raises the possibility of using the same cellular hardware to build different structures.",
+  "scientific_domain": "Developmental Biology, Bioelectricity",
+  "enhanced": true
+}

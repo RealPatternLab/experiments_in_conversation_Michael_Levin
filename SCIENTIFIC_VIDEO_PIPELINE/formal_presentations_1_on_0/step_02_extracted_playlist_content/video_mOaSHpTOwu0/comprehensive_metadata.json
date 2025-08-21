@@ -8,46 +8,16 @@
     "published_at": "",
     "playlist_position": 4,
     "duration": 1640,
-    "view_count": 4100,
+    "view_count": 4200,
     "like_count": 0,
     "category_id": [],
     "default_language": null,
     "default_audio_language": null
   },
   "download_result": {
-    "success": true,
-    "video_file": "step_02_extracted_playlist_content/video_mOaSHpTOwu0/video.mp4",
-    "file_size_mb": 38.78764820098877,
-    "additional_metadata": {
-      "upload_date": "20250711",
-      "duration": 1639,
-      "view_count": 4175,
-      "like_count": 244,
-      "tags": [],
-      "categories": [
-        "People & Blogs"
-      ],
-      "language": "en",
-      "age_limit": 0,
-      "is_live": false,
-      "was_live": false,
-      "live_status": "not_live",
-      "availability": "public",
-      "format": "18 - 450x360 (360p)",
-      "resolution": "450x360",
-      "fps": 30,
-      "vcodec": "avc1.42001E",
-      "acodec": "mp4a.40.2",
-      "filesize": 40671797,
-      "filesize_approx": 40671610,
-      "subtitle_files": [
-        "video.en.vtt"
-      ],
-      "thumbnail_files": [
-        "video.webp"
-      ]
-    },
-    "download_time": "2025-08-18T10:35:45.069811"
+    "success": false,
+    "error": "yt-dlp error: ERROR: \n[download] Got error: HTTP Error 403: Forbidden\nERROR: fragment 1 not found, unable to continue\nWARNING: Unable to download format 232. Skipping...\nERROR: \n[download] Got error: HTTP Error 403: Forbidden\nERROR: fragment 1 not found, unable to continue\nWARNING: Unable to download format 233. Skipping...\nERROR: [youtube] mOaSHpTOwu0: Requested format is not available. Use --list-formats for a list of available formats\n",
+    "download_time": "2025-08-21T14:49:36.648681"
   },
-  "processing_timestamp": "2025-08-18T10:35:45.069845"
+  "processing_timestamp": "2025-08-21T14:49:36.648857"
 }

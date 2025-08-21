@@ -1,7 +1,7 @@
 {
   "pipeline_type": "conversations_1_on_1",
   "description": "Metadata for conversations between Michael Levin and other researchers",
-  "extraction_timestamp": "2025-08-19T01:11:44Z",
+  "extraction_timestamp": "2025-08-21T18:42:17Z",
   "total_playlists": 1,
   "total_videos": 1,
   "playlists": [
@@ -24,7 +24,7 @@
       "processing_type": "conversations_1_on_1",
       "expected_speakers": 2,
       "content_type": "conversation",
-      "extraction_timestamp": "2025-08-19T01:11:43Z",
+      "extraction_timestamp": "2025-08-21T18:42:16Z",
       "videos": [
         {
           "video_id": "LKSH4QNqpIE",

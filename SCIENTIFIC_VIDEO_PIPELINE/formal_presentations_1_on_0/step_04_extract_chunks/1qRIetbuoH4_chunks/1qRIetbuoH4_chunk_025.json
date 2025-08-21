@@ -1,0 +1,40 @@
+{
+  "chunk_id": "1qRIetbuoH4_chunk_025",
+  "text": "So this has to do with organ level induction. We can inject certain ion channel RNAs that will induce, for example, we can copy that eye spot that I showed you in the electric face. We can put it anywhere in the body. If we put it on the gut. These gut cells happily make an eye. And this eye has all the right lens and retina and optic nerve and all of that stuff. But notice a couple of interesting things. One is that we didn't have to put in all the information about how to make an eye. In fact we don't have any idea of how to make an eye. What we do know is that there's a high level subroutine called, that says to the local cells make an eye. And then all this stuff downstream, all the, all the morphogenesis, all the gene expression, all the gradients, everything else is taken care of. The other thing, so, so that's, that's really a really attractive property of this, this, this, this modularity.",
+  "token_count": 176,
+  "sentence_count": 12,
+  "start_sentence": 25,
+  "end_sentence": 36,
+  "start_time_ms": 1200850,
+  "end_time_ms": 1247790,
+  "start_time_seconds": 1200.85,
+  "end_time_seconds": 1247.79,
+  "primary_topics": [
+    "Organ level induction",
+    "Ion channel RNAs",
+    "Eye morphogenesis"
+  ],
+  "secondary_topics": [
+    "Gene expression",
+    "Morphogenesis",
+    "Cellular modularity",
+    "Bioelectricity",
+    "Developmental biology",
+    "Cellular subroutines"
+  ],
+  "key_terms": [
+    "Organ level induction",
+    "Ion channel RNAs",
+    "Eye spot",
+    "Gut cells",
+    "Lens",
+    "Retina",
+    "Optic nerve",
+    "Gene expression",
+    "Gradients",
+    "Morphogenesis"
+  ],
+  "content_summary": "The speaker discusses the process of organ level induction, specifically the creation of an eye in a non-traditional location using ion channel RNAs. The speaker emphasizes the modularity of this process, where a high level command initiates a cascade of gene expression, morphogenesis, and other processes to create a functional eye.",
+  "scientific_domain": "Developmental Biology and Bioelectricity",
+  "enhanced": true
+}

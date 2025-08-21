@@ -1,0 +1,36 @@
+{
+  "chunk_id": "1qRIetbuoH4_chunk_033",
+  "text": "So what Josh and Sam did was to do a bunch of simulations that showed us that if we make this little pac man shape, they become really, really good at this task. So what they do is they collect the cells, they sort of push them together into a little ball and they polish that little ball. And because they're dealing with an agential material, meaning the cells are not passive particles, they have agendas. They like to do certain things. Once they're pushed into this ball, that matures into generation of xenobots. And guess what they do? They run around and do the same thing, although not quite as well as the first generation. And so there's a few things we, we learned from this. One is that we can use now AI to begin, and this is just the very beginning. We can use AI to begin to control the native behaviors, the very rich native repertoire, very surprising repertoire that nobody had any idea that skin cells can sort of implement. Von Neumann's dream, a robot that goes around and builds copies of itself from loose material it finds in the environment.",
+  "token_count": 196,
+  "sentence_count": 11,
+  "start_sentence": 33,
+  "end_sentence": 43,
+  "start_time_ms": 1561380,
+  "end_time_ms": 1620640,
+  "start_time_seconds": 1561.38,
+  "end_time_seconds": 1620.64,
+  "primary_topics": [
+    "Artificial Intelligence in Biology",
+    "Cellular Behavior",
+    "Xenobots",
+    "Self-replicating Robots",
+    "Cellular Agendas"
+  ],
+  "secondary_topics": [
+    "Biological Simulations",
+    "Cellular Manipulation",
+    "Cellular Material",
+    "Native Repertoire of Cells",
+    "Von Neumann's Dream"
+  ],
+  "key_terms": [
+    "Agential Material",
+    "Skin Cells",
+    "First Generation",
+    "Native Behaviors",
+    "Loose Material"
+  ],
+  "content_summary": "The presentation discusses the use of artificial intelligence to manipulate cells into a formation (referred to as 'xenobots') that can replicate itself. The speaker emphasizes the surprising capabilities of skin cells and references Von Neumann's concept of a self-replicating robot.",
+  "scientific_domain": "Developmental Biology, Bioelectricity, Artificial Intelligence",
+  "enhanced": true
+}

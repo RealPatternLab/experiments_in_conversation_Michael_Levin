@@ -9,7 +9,7 @@
       "summary": {
         "video_id": "LKSH4QNqpIE",
         "total_alignments": 24,
-        "total_frames_aligned": 55,
+        "total_frames_aligned": 44,
         "average_alignment_confidence": 0.9,
         "output_files": {
           "alignments": "step_06_frame_chunk_alignment/LKSH4QNqpIE_alignments.json",
@@ -23,5 +23,5 @@
       }
     }
   },
-  "processing_timestamp": "2025-08-21T12:06:11.770451"
+  "processing_timestamp": "2025-08-21T14:31:13.898501"
 }

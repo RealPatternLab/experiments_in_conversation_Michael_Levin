@@ -358,7 +358,7 @@ class AdvancedTranscriptProcessor:
                 
                 total_seconds = (hours * 3600) + (minutes * 60) + seconds
                 return total_seconds * 1000
-                else:
+            else:
                 return 0
                 
         except Exception:
@@ -667,12 +667,12 @@ class AdvancedTranscriptProcessor:
         
         return enhanced_chunks
     
-    def create_fine_tuning_datasets(self, qa_pairs: List[Dict]):
+    def create_fine_tuning_datasets(self, qa_pairs: List[Dict], video_id: str):
         """Create datasets in different formats for fine-tuning"""
         logger.info("Creating fine-tuning datasets...")
         
         # OpenAI fine-tuning format (JSONL)
-        openai_file = self.output_dir / "finetune_data" / "openai_finetune.jsonl"
+        openai_file = self.output_dir / "finetune_data" / f"{video_id}_openai_finetune.jsonl"
         openai_file.parent.mkdir(exist_ok=True)
         
         with open(openai_file, 'w') as f:
@@ -686,7 +686,7 @@ class AdvancedTranscriptProcessor:
                 f.write(json.dumps(openai_format) + '\n')
         
         # Hugging Face format
-        hf_file = self.output_dir / "finetune_data" / "huggingface_dataset.json"
+        hf_file = self.output_dir / "finetune_data" / f"{video_id}_huggingface_dataset.json"
         hf_dataset = []
         for qa in qa_pairs:
             hf_format = {
@@ -717,7 +717,7 @@ class AdvancedTranscriptProcessor:
             stats['question_types'][q_type] = stats['question_types'].get(q_type, 0) + 1
             stats['confidence_levels'][confidence] = stats['confidence_levels'].get(confidence, 0) + 1
         
-        stats_file = self.output_dir / "finetune_data" / "dataset_stats.json"
+        stats_file = self.output_dir / "finetune_data" / f"{video_id}_dataset_stats.json"
         with open(stats_file, 'w') as f:
             json.dump(stats, f, indent=2)
         
@@ -796,7 +796,7 @@ class AdvancedTranscriptProcessor:
         logger.info(f"Enhanced RAG chunks saved: {enhanced_chunks_file}")
         
         # 6. Create fine-tuning datasets
-        self.create_fine_tuning_datasets(qa_pairs)
+        self.create_fine_tuning_datasets(qa_pairs, video_id)
         
         logger.info(f"✅ Successfully processed {video_id}")
         return True

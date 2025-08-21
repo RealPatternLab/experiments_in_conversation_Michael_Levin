@@ -3,35 +3,36 @@
     "pipeline_step": "step_06_frame_chunk_alignment",
     "total_alignments": 24,
     "alignment_method": "timestamp_based",
-    "processing_timestamp": "2025-08-21T12:06:11.768806"
+    "processing_timestamp": "2025-08-21T14:31:13.895448"
   },
   "aligned_content": [
     {
       "content_id": "enhanced_conv_chunk_0001",
       "text_content": {
-        "text": "In the context of evolving cellular automata, Michael Levin explains: \"When we evolve them, we always start from this one red. It's called. We call it the seed condition. Or it's just like one red cel...",
+        "text": "In discussing the initial conditions for cellular automata used in his research, Michael Levin explains: \"When we evolve them, we always start from this one red. It's called. We call it the seed condi...",
         "metadata": {
-          "token_count": 36,
-          "sentence_count": 4,
+          "token_count": 34,
+          "sentence_count": 3,
           "primary_topics": [
-            "computational_biology",
             "morphogenesis",
+            "development",
+            "computational_biology",
             "self_organization"
           ],
           "secondary_topics": [],
           "key_terms": [
-            "cellular",
-            "always",
-            "explains",
             "from",
-            "evolving",
             "evolve",
-            "seed",
+            "levin",
             "when",
-            "just",
-            "called"
+            "seed",
+            "explains",
+            "research",
+            "automata",
+            "initial",
+            "call"
           ],
-          "content_summary": "In the context of evolving cellular automata, Michael Levin explains: \"When we evolve them, we al...",
+          "content_summary": "In discussing the initial conditions for cellular automata used in his research, Michael Levin ex...",
           "scientific_domain": "Developmental Biology, Bioelectricity",
           "start_time_seconds": 372.0,
           "end_time_seconds": 430.0
@@ -43,7 +44,7 @@
             "frame_id": "LKSH4QNqpIE_frame_007",
             "timestamp": 420,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_007_420.0s.jpg",
-            "file_size": 45638,
+            "file_size": 123932,
             "alignment_confidence": 0.9
           }
         ],
@@ -68,7 +69,7 @@
         "timestamp_tolerance": 5.0
       },
       "conversation_context": {
-        "question": "What starting string do you use for evolving cellular automata?",
+        "question": "What starting string do you use for the cellular automata?",
         "answer": "When we evolve them, we always start from this one red. It's called. We call it the seed condition. Or it's just like one red cell.",
         "questioner": "Speaker B",
         "answerer": "michael_levin",
@@ -78,36 +79,36 @@
       "metadata": {
         "video_id": "LKSH4QNqpIE",
         "pipeline_type": "conversations_1_on_1",
-        "created_at": "2025-08-21T12:06:11.768824"
+        "created_at": "2025-08-21T14:31:13.895472"
       }
     },
     {
       "content_id": "enhanced_conv_chunk_0002",
       "text_content": {
-        "text": "In the context of modifying the rules of cellular automata during evolution, Michael Levin explains: \"We're changing the, the rules by one bit at a time. And if the, if the bit results in a longer or ...",
+        "text": "In response to a question about evolving rules in cellular automata models, Michael Levin explains: \"We're changing the, the rules by one bit at a time. And if the, if the bit results in a longer or t...",
         "metadata": {
           "token_count": 38,
           "sentence_count": 2,
           "primary_topics": [
+            "morphogenesis",
             "evolutionary_competency",
             "computational_biology",
-            "self_organization",
-            "complexity"
+            "self_organization"
           ],
           "secondary_topics": [],
           "key_terms": [
-            "cellular",
-            "changing",
             "time",
-            "evolution",
-            "explains",
+            "response",
+            "results",
             "longer",
-            "rules",
-            "during",
+            "explains",
+            "about",
             "automata",
-            "results"
+            "changing",
+            "question",
+            "rules"
           ],
-          "content_summary": "In the context of modifying the rules of cellular automata during evolution, Michael Levin explai...",
+          "content_summary": "In response to a question about evolving rules in cellular automata models, Michael Levin explain...",
           "scientific_domain": "Developmental Biology, Bioelectricity",
           "start_time_seconds": 387.0,
           "end_time_seconds": 430.0
@@ -119,7 +120,7 @@
             "frame_id": "LKSH4QNqpIE_frame_007",
             "timestamp": 420,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_007_420.0s.jpg",
-            "file_size": 45638,
+            "file_size": 123932,
             "alignment_confidence": 0.9
           }
         ],
@@ -144,9 +145,9 @@
         "timestamp_tolerance": 5.0
       },
       "conversation_context": {
-        "question": "How do you modify the rules of cellular automata during evolution?",
+        "question": "How do you evolve the rules in your cellular automata model?",
         "answer": "We're changing the, the rules by one bit at a time. And if the, if the bit results in a longer or the same lifetime, then we keep it. So it's like kind of like a mutation and then a mutation to the rules. And then if it's neutral or advantageous, then we keep it.",
-        "questioner": "Speaker A",
+        "questioner": "Speaker B",
         "answerer": "michael_levin",
         "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=387s",
         "pipeline_type": "conversations_1_on_1"
@@ -154,35 +155,35 @@
       "metadata": {
         "video_id": "LKSH4QNqpIE",
         "pipeline_type": "conversations_1_on_1",
-        "created_at": "2025-08-21T12:06:11.768834"
+        "created_at": "2025-08-21T14:31:13.895483"
       }
     },
     {
       "content_id": "enhanced_conv_chunk_0003",
       "text_content": {
-        "text": "In the context of cellular automata, the term 'lifetime' refers to the duration of the automaton's existence. Michael Levin explains: \"Lifetime, we mean just the length of the automaton. So another po...",
+        "text": "In the context of cellular automata, Michael Levin explains: \"Lifetime, we mean just the length of the automaton. So another point I should mention is that if the automaton lives forever, often due to...",
         "metadata": {
-          "token_count": 32,
-          "sentence_count": 3,
+          "token_count": 34,
+          "sentence_count": 2,
           "primary_topics": [
             "computational_biology",
-            "complexity",
-            "emergent_properties"
+            "emergent_properties",
+            "complexity"
           ],
           "secondary_topics": [],
           "key_terms": [
-            "cellular",
+            "another",
+            "lives",
+            "mention",
             "explains",
-            "existence",
             "mean",
             "just",
-            "term",
             "automaton",
-            "refers",
-            "another",
-            "automata"
+            "lifetime",
+            "automata",
+            "often"
           ],
-          "content_summary": "In the context of cellular automata, the term 'lifetime' refers to the duration of the automaton'...",
+          "content_summary": "In the context of cellular automata, Michael Levin explains: \"Lifetime, we mean just the length o...",
           "scientific_domain": "Developmental Biology, Bioelectricity",
           "start_time_seconds": 433.0,
           "end_time_seconds": 465.0
@@ -209,8 +210,8 @@
         "timestamp_tolerance": 5.0
       },
       "conversation_context": {
-        "question": "What does 'lifetime' mean in the context of cellular automata?",
-        "answer": "Lifetime, we mean just the length of the automaton. So another point I should mention is that if it, if it lives forever, so a lot of times it'll. You'll do a mutation and then it'll like get into a loop and then like live forever, which we throw. We count that as a fitness of zero or a lifetime of zero.",
+        "question": "What does 'lifetime' mean in the context of your cellular automata?",
+        "answer": "Lifetime, we mean just the length of the automaton. So another point I should mention is that if it, if it lives forever, so a lot of times it'll. You'll do a mutation and then it'll like get into a loop and then like live forever, which we throw. We count that as a fitness of zero or a lifetime of zero. And then. So it's basically trying to get a longer and longer finite length.",
         "questioner": "Speaker B",
         "answerer": "michael_levin",
         "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=433s",
@@ -219,36 +220,36 @@
       "metadata": {
         "video_id": "LKSH4QNqpIE",
         "pipeline_type": "conversations_1_on_1",
-        "created_at": "2025-08-21T12:06:11.768842"
+        "created_at": "2025-08-21T14:31:13.895492"
       }
     },
     {
       "content_id": "enhanced_conv_chunk_0004",
       "text_content": {
-        "text": "In the context of ensuring robustness in the evolution of cellular automata, Michael Levin explains: \"When we're evolving these cellular automata, because we were looking for robustness from the persp...",
+        "text": "In response to a question about ensuring robustness in the evolution of cellular automata, Michael Levin explains: \"When we're evolving these cellular automata, because we were looking from the perspe...",
         "metadata": {
           "token_count": 30,
           "sentence_count": 1,
           "primary_topics": [
             "evolutionary_competency",
-            "robustness",
-            "cellular_automata",
-            "perturbation"
+            "morphogenesis",
+            "developmental_biology",
+            "computational_biology"
           ],
           "secondary_topics": [],
           "key_terms": [
-            "robustness",
-            "cellular",
-            "evolution",
-            "explains",
+            "response",
             "from",
-            "evolving",
-            "persp",
-            "ensuring",
-            "when",
-            "automata"
+            "perspe",
+            "explains",
+            "evolution",
+            "looking",
+            "about",
+            "automata",
+            "robustness",
+            "question"
           ],
-          "content_summary": "In the context of ensuring robustness in the evolution of cellular automata, Michael Levin explai...",
+          "content_summary": "In response to a question about ensuring robustness in the evolution of cellular automata, Michae...",
           "scientific_domain": "Developmental Biology, Bioelectricity",
           "start_time_seconds": 470.0,
           "end_time_seconds": 528.0
@@ -260,7 +261,7 @@
             "frame_id": "LKSH4QNqpIE_frame_008",
             "timestamp": 480,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_008_480.0s.jpg",
-            "file_size": 49454,
+            "file_size": 132724,
             "alignment_confidence": 0.9
           }
         ],
@@ -285,9 +286,9 @@
         "timestamp_tolerance": 5.0
       },
       "conversation_context": {
-        "question": "How do you ensure robustness in the evolution of cellular automata?",
+        "question": "How do you ensure robustness in the evolution of your cellular automata?",
         "answer": "When we're evolving, these guys, because, because we were looking for like from the perspective of medicine, we wanted them to be robust. And this is like the kind of. One of the main things I wanted to ask you about, which is, so what we do is we do that same evolution, but we perturb it during the evolution. So this is like an example of a single step of evolution. And then we take the minimum fitness. So basically, if you perturb it 10 times, then you take the minimum fitness. So in this case it would be this 60 right here. And that's then the fitness. And all that's doing is just forcing the organism to be able to deal with perturbations.",
-        "questioner": "Speaker A",
+        "questioner": "Speaker B",
         "answerer": "michael_levin",
         "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=470s",
         "pipeline_type": "conversations_1_on_1"
@@ -295,36 +296,36 @@
       "metadata": {
         "video_id": "LKSH4QNqpIE",
         "pipeline_type": "conversations_1_on_1",
-        "created_at": "2025-08-21T12:06:11.768848"
+        "created_at": "2025-08-21T14:31:13.895500"
       }
     },
     {
       "content_id": "enhanced_conv_chunk_0005",
       "text_content": {
-        "text": "In discussing the unique reproductive process of planaria and its impact on their genome, Michael Levin explains: Planaria, at least the ones that we study, reproduce by ripping themselves in half and...",
+        "text": "In discussing the unique reproductive methods of planaria, Michael Levin explains: Planaria, at least the ones that we study, reproduce by ripping themselves in half and regenerating. Unlike most of u...",
         "metadata": {
-          "token_count": 32,
-          "sentence_count": 1,
+          "token_count": 31,
+          "sentence_count": 2,
           "primary_topics": [
             "regeneration",
-            "development",
-            "evolutionary_competency",
-            "stem_cells"
+            "developmental_biology",
+            "morphogenesis",
+            "evolutionary_competency"
           ],
           "secondary_topics": [],
           "key_terms": [
-            "reproduce",
-            "study",
-            "discussing",
-            "their",
-            "explains",
-            "ones",
-            "themselves",
+            "ripping",
             "reproductive",
-            "impact",
-            "genome"
+            "methods",
+            "michael",
+            "explains",
+            "themselves",
+            "ones",
+            "unique",
+            "study",
+            "half"
           ],
-          "content_summary": "In discussing the unique reproductive process of planaria and its impact on their genome, Michael...",
+          "content_summary": "In discussing the unique reproductive methods of planaria, Michael Levin explains: Planaria, at l...",
           "scientific_domain": "Developmental Biology, Bioelectricity",
           "start_time_seconds": 652.0,
           "end_time_seconds": 738.0
@@ -336,14 +337,14 @@
             "frame_id": "LKSH4QNqpIE_frame_011",
             "timestamp": 660,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_011_660.0s.jpg",
-            "file_size": 49278,
+            "file_size": 130905,
             "alignment_confidence": 0.9
           },
           {
             "frame_id": "LKSH4QNqpIE_frame_012",
             "timestamp": 720,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_012_720.0s.jpg",
-            "file_size": 48954,
+            "file_size": 130048,
             "alignment_confidence": 0.9
           }
         ],
@@ -369,9 +370,9 @@
         "timestamp_tolerance": 5.0
       },
       "conversation_context": {
-        "question": "What is unique about the way planaria reproduce and how does it affect their genome?",
+        "question": "What is unique about the way planaria reproduce compared to most other organisms?",
         "answer": "Planaria, at least the ones that we study, reproduce by ripping themselves in half and regenerating. Unlike most of us who have this thing called Weissman's barrier, which is that mutations in your body don't get passed on to your offspring, planaria are not like that because any mutation that doesn't kill the cell is propagated into the next generation as these stem cells reproduce.",
-        "questioner": "Speaker A",
+        "questioner": "Synthetic",
         "answerer": "michael_levin",
         "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=652s",
         "pipeline_type": "conversations_1_on_1"
@@ -379,13 +380,13 @@
       "metadata": {
         "video_id": "LKSH4QNqpIE",
         "pipeline_type": "conversations_1_on_1",
-        "created_at": "2025-08-21T12:06:11.768856"
+        "created_at": "2025-08-21T14:31:13.895509"
       }
     },
     {
       "content_id": "enhanced_conv_chunk_0006",
       "text_content": {
-        "text": "In discussing the surprising nature of planaria's genome, Michael Levin responds: \"It bothered me for a couple of decades when I first found out about this that the animal that is highly regenerative,...",
+        "text": "In response to a question about why the messy genome of planaria contradicts traditional biological teachings, Michael Levin explains: \"It bothered me for a couple of decades when I first found out ab...",
         "metadata": {
           "token_count": 33,
           "sentence_count": 1,
@@ -393,22 +394,22 @@
             "regeneration",
             "developmental_biology",
             "morphogenesis",
-            "regenerative_medicine"
+            "evolutionary_competency"
           ],
           "secondary_topics": [],
           "key_terms": [
-            "surprising",
-            "responds",
-            "discussing",
-            "decades",
-            "animal",
-            "regenerative",
+            "response",
             "first",
-            "couple",
+            "levin",
             "when",
-            "about"
+            "planaria",
+            "explains",
+            "decades",
+            "couple",
+            "genome",
+            "question"
           ],
-          "content_summary": "In discussing the surprising nature of planaria's genome, Michael Levin responds: \"It bothered me...",
+          "content_summary": "In response to a question about why the messy genome of planaria contradicts traditional biologic...",
           "scientific_domain": "Developmental Biology, Bioelectricity",
           "start_time_seconds": 652.0,
           "end_time_seconds": 738.0
@@ -420,14 +421,14 @@
             "frame_id": "LKSH4QNqpIE_frame_011",
             "timestamp": 660,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_011_660.0s.jpg",
-            "file_size": 49278,
+            "file_size": 130905,
             "alignment_confidence": 0.9
           },
           {
             "frame_id": "LKSH4QNqpIE_frame_012",
             "timestamp": 720,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_012_720.0s.jpg",
-            "file_size": 48954,
+            "file_size": 130048,
             "alignment_confidence": 0.9
           }
         ],
@@ -455,7 +456,7 @@
       "conversation_context": {
         "question": "Why does the messy genome of planaria contradict traditional biological teachings?",
         "answer": "It bothered me for a couple of decades when I first found out about this that the animal that is highly regenerative, immortal, resistant to cancer is also the one with the dirtiest genome. That's the exact opposite of what everybody tells you in biology classes where you say, well the genome is very important, you have to keep it clean because it determines this and that.",
-        "questioner": "Speaker A",
+        "questioner": "Synthetic",
         "answerer": "michael_levin",
         "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=652s",
         "pipeline_type": "conversations_1_on_1"
@@ -463,35 +464,36 @@
       "metadata": {
         "video_id": "LKSH4QNqpIE",
         "pipeline_type": "conversations_1_on_1",
-        "created_at": "2025-08-21T12:06:11.768862"
+        "created_at": "2025-08-21T14:31:13.895517"
       }
     },
     {
       "content_id": "enhanced_conv_chunk_0007",
       "text_content": {
-        "text": "In the context of planarian research, the significance of the lack of mutant lines is highlighted. Michael Levin explains: For almost every other model system, you can call the stock center and you ca...",
+        "text": "In discussing the significance of the lack of mutant lines in planaria, Michael Levin explains: \"For almost every other model system, you can call the stock center and you can get mutants. There are m...",
         "metadata": {
-          "token_count": 34,
+          "token_count": 35,
           "sentence_count": 2,
           "primary_topics": [
             "developmental_biology",
             "morphogenesis",
-            "regenerative_medicine"
+            "regenerative_medicine",
+            "evolutionary_competency"
           ],
           "secondary_topics": [],
           "key_terms": [
-            "planarian",
-            "explains",
-            "center",
-            "levin",
-            "almost",
-            "system",
             "stock",
-            "model",
+            "mutant",
+            "system",
+            "every",
+            "other",
+            "levin",
+            "planaria",
+            "explains",
             "significance",
-            "call"
+            "center"
           ],
-          "content_summary": "In the context of planarian research, the significance of the lack of mutant lines is highlighted",
+          "content_summary": "In discussing the significance of the lack of mutant lines in planaria, Michael Levin explains: \"...",
           "scientific_domain": "Developmental Biology, Bioelectricity",
           "start_time_seconds": 740.0,
           "end_time_seconds": 920.0
@@ -503,21 +505,21 @@
             "frame_id": "LKSH4QNqpIE_frame_013",
             "timestamp": 780,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_013_780.0s.jpg",
-            "file_size": 48953,
+            "file_size": 130069,
             "alignment_confidence": 0.9
           },
           {
             "frame_id": "LKSH4QNqpIE_frame_014",
             "timestamp": 840,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_014_840.0s.jpg",
-            "file_size": 48927,
+            "file_size": 129996,
             "alignment_confidence": 0.9
           },
           {
             "frame_id": "LKSH4QNqpIE_frame_015",
             "timestamp": 900,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_015_900.0s.jpg",
-            "file_size": 48978,
+            "file_size": 130072,
             "alignment_confidence": 0.9
           }
         ],
@@ -545,8 +547,8 @@
       },
       "conversation_context": {
         "question": "What is the significance of the lack of mutant lines in planaria?",
-        "answer": "For almost every other model system you can call the stock center and you can get mutants, so you can get flies with curly wings and mice with weird eyes and there's chickens with funny feet. There are mutant lines that you can get in planaria. There are no mutant lines. The only non-standard planaria that exist are our two head form and our, what we call the cryptic form. And neither of them is genetic, was created genetically.",
-        "questioner": "Speaker A",
+        "answer": "For almost every other model system you can call the stock center and you can get mutants... There are mutant lines that you can get in planaria. There are no mutant lines. The only non-standard planaria that exist are our two head form and our, what we call the cryptic form. And neither of them is genetic, was created genetically.",
+        "questioner": "Synthetic",
         "answerer": "michael_levin",
         "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=740s",
         "pipeline_type": "conversations_1_on_1"
@@ -554,36 +556,36 @@
       "metadata": {
         "video_id": "LKSH4QNqpIE",
         "pipeline_type": "conversations_1_on_1",
-        "created_at": "2025-08-21T12:06:11.768912"
+        "created_at": "2025-08-21T14:31:13.895580"
       }
     },
     {
       "content_id": "enhanced_conv_chunk_0008",
       "text_content": {
-        "text": "In discussing the relationship between morphogenetic competency and evolution in planaria, Michael Levin explains: \"The biggest, the most important thing about living tissue is that there is not a mec...",
+        "text": "In response to a question about how morphogenetic competency influences evolution in planaria, Michael Levin explains: \"Imagine what happens to a creature that has that level of morphogenetic competen...",
         "metadata": {
-          "token_count": 30,
+          "token_count": 29,
           "sentence_count": 1,
           "primary_topics": [
             "morphogenetic_code",
             "evolutionary_competency",
-            "problem_solving",
-            "developmental_biology"
+            "developmental_biology",
+            "morphogenesis"
           ],
           "secondary_topics": [],
           "key_terms": [
+            "response",
             "competency",
-            "discussing",
-            "important",
-            "evolution",
+            "creature",
+            "michael",
+            "morphogenetic",
             "explains",
-            "living",
-            "relationship",
-            "there",
-            "between",
-            "biggest"
+            "evolution",
+            "competen",
+            "imagine",
+            "about"
           ],
-          "content_summary": "In discussing the relationship between morphogenetic competency and evolution in planaria, Michae...",
+          "content_summary": "In response to a question about how morphogenetic competency influences evolution in planaria, Mi...",
           "scientific_domain": "Developmental Biology, Bioelectricity",
           "start_time_seconds": 740.0,
           "end_time_seconds": 920.0
@@ -595,21 +597,21 @@
             "frame_id": "LKSH4QNqpIE_frame_013",
             "timestamp": 780,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_013_780.0s.jpg",
-            "file_size": 48953,
+            "file_size": 130069,
             "alignment_confidence": 0.9
           },
           {
             "frame_id": "LKSH4QNqpIE_frame_014",
             "timestamp": 840,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_014_840.0s.jpg",
-            "file_size": 48927,
+            "file_size": 129996,
             "alignment_confidence": 0.9
           },
           {
             "frame_id": "LKSH4QNqpIE_frame_015",
             "timestamp": 900,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_015_900.0s.jpg",
-            "file_size": 48978,
+            "file_size": 130072,
             "alignment_confidence": 0.9
           }
         ],
@@ -636,9 +638,9 @@
         "timestamp_tolerance": 5.0
       },
       "conversation_context": {
-        "question": "How does the concept of morphogenetic competency relate to evolution in planaria?",
-        "answer": "The biggest, the most important thing about living tissue is that there is not a mechanical mapping between the genotype and the phenotype. The middle layer that leads from the genome to the genotype to the phenotype has intelligence. It's a problem-solving system. This makes evolution go faster because lots of mutations that otherwise would have been deleterious become neutral.",
-        "questioner": "Speaker A",
+        "question": "How does the concept of morphogenetic competency affect evolution in planaria?",
+        "answer": "Imagine what happens to a creature that has that level of morphogenetic competency between the genotype and the phenotype. Let's say you make a mutation. And that mutation, like all mutations, does multiple things... Instead what happens is the face self corrects, as many things in embryogenesis do. And so now, now, now great, lots of mutations that otherwise would have been deleterious become neutral. And so now you get to explore that. So that's, that's fine. But, but, but here's the other thing about it. So, so that makes evolution go faster.",
+        "questioner": "Synthetic",
         "answerer": "michael_levin",
         "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=740s",
         "pipeline_type": "conversations_1_on_1"
@@ -646,15 +648,15 @@
       "metadata": {
         "video_id": "LKSH4QNqpIE",
         "pipeline_type": "conversations_1_on_1",
-        "created_at": "2025-08-21T12:06:11.768922"
+        "created_at": "2025-08-21T14:31:13.895592"
       }
     },
     {
       "content_id": "enhanced_conv_chunk_0009",
       "text_content": {
-        "text": "In discussing the challenges faced by natural selection in evaluating planaria with morphogenetic competency, Michael Levin explains: \"When that animal comes up for selection, selection doesn't know d...",
+        "text": "In discussing the challenges faced by natural selection due to morphogenetic competency in planaria, Michael Levin explains: \"When that animal comes up for selection, selection doesn't know do you hav...",
         "metadata": {
-          "token_count": 28,
+          "token_count": 30,
           "sentence_count": 1,
           "primary_topics": [
             "morphogenetic_code",
@@ -665,17 +667,17 @@
           "secondary_topics": [],
           "key_terms": [
             "competency",
-            "know",
-            "discussing",
-            "animal",
-            "explains",
             "comes",
+            "michael",
             "natural",
-            "when",
-            "faced",
-            "morphogenetic"
+            "morphogenetic",
+            "explains",
+            "animal",
+            "challenges",
+            "know",
+            "selection"
           ],
-          "content_summary": "In discussing the challenges faced by natural selection in evaluating planaria with morphogenetic...",
+          "content_summary": "In discussing the challenges faced by natural selection due to morphogenetic competency in planar...",
           "scientific_domain": "Developmental Biology, Bioelectricity",
           "start_time_seconds": 740.0,
           "end_time_seconds": 920.0
@@ -687,21 +689,21 @@
             "frame_id": "LKSH4QNqpIE_frame_013",
             "timestamp": 780,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_013_780.0s.jpg",
-            "file_size": 48953,
+            "file_size": 130069,
             "alignment_confidence": 0.9
           },
           {
             "frame_id": "LKSH4QNqpIE_frame_014",
             "timestamp": 840,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_014_840.0s.jpg",
-            "file_size": 48927,
+            "file_size": 129996,
             "alignment_confidence": 0.9
           },
           {
             "frame_id": "LKSH4QNqpIE_frame_015",
             "timestamp": 900,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_015_900.0s.jpg",
-            "file_size": 48978,
+            "file_size": 130072,
             "alignment_confidence": 0.9
           }
         ],
@@ -728,9 +730,9 @@
         "timestamp_tolerance": 5.0
       },
       "conversation_context": {
-        "question": "What challenge does selection face in evaluating planaria with morphogenetic competency?",
+        "question": "What challenge does selection face due to morphogenetic competency in planaria?",
         "answer": "When that animal comes up for selection, selection doesn't know do you have a good face because your structural genome was great, or do you have a good face because your structural genome was actually kind of crap, but you had a lot of competency and you fixed it.",
-        "questioner": "Speaker A",
+        "questioner": "Synthetic",
         "answerer": "michael_levin",
         "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=740s",
         "pipeline_type": "conversations_1_on_1"
@@ -738,39 +740,38 @@
       "metadata": {
         "video_id": "LKSH4QNqpIE",
         "pipeline_type": "conversations_1_on_1",
-        "created_at": "2025-08-21T12:06:11.768931"
+        "created_at": "2025-08-21T14:31:13.895601"
       }
     },
     {
       "content_id": "enhanced_conv_chunk_0010",
       "text_content": {
-        "text": "In discussing the challenges evolution faces with the structural genome, Michael Levin explains: \"What happens is that evolution has a hard time seeing the structural genome. The pressure on the genom...",
+        "text": "In discussing the impact of evolution's difficulty in perceiving the structural genome, Michael Levin explains: \"What happens is that evolution has a hard time seeing the structural genome. The pressu...",
         "metadata": {
-          "token_count": 31,
+          "token_count": 30,
           "sentence_count": 2,
           "primary_topics": [
             "evolutionary_competency",
             "morphogenetic_code",
-            "developmental_biology",
-            "emergent_properties"
+            "developmental_biology"
           ],
           "secondary_topics": [],
           "key_terms": [
-            "happens",
             "time",
-            "discussing",
             "seeing",
-            "evolution",
-            "structural",
+            "perceiving",
             "explains",
-            "hard",
-            "faces",
-            "pressure"
+            "evolution",
+            "impact",
+            "happens",
+            "genome",
+            "discussing",
+            "what"
           ],
-          "content_summary": "In discussing the challenges evolution faces with the structural genome, Michael Levin explains: ...",
+          "content_summary": "In discussing the impact of evolution's difficulty in perceiving the structural genome, Michael L...",
           "scientific_domain": "Developmental Biology, Bioelectricity",
           "start_time_seconds": 921.0,
-          "end_time_seconds": 1140.0
+          "end_time_seconds": 960.0
         }
       },
       "visual_content": {
@@ -779,47 +780,23 @@
             "frame_id": "LKSH4QNqpIE_frame_016",
             "timestamp": 960,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_016_960.0s.jpg",
-            "file_size": 49029,
-            "alignment_confidence": 0.9
-          },
-          {
-            "frame_id": "LKSH4QNqpIE_frame_017",
-            "timestamp": 1020,
-            "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_017_1020.0s.jpg",
-            "file_size": 50220,
-            "alignment_confidence": 0.9
-          },
-          {
-            "frame_id": "LKSH4QNqpIE_frame_018",
-            "timestamp": 1080,
-            "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_018_1080.0s.jpg",
-            "file_size": 50269,
-            "alignment_confidence": 0.9
-          },
-          {
-            "frame_id": "LKSH4QNqpIE_frame_019",
-            "timestamp": 1140,
-            "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_019_1140.0s.jpg",
-            "file_size": 49028,
+            "file_size": 130182,
             "alignment_confidence": 0.9
           }
         ],
-        "frame_count": 4
+        "frame_count": 1
       },
       "temporal_info": {
         "frame_timestamps": [
-          960,
-          1020,
-          1080,
-          1140
+          960
         ],
         "time_range": {
           "start": 921.0,
-          "end": 1140.0
+          "end": 960.0
         }
       },
       "quality_metrics": {
-        "total_frames": 4,
+        "total_frames": 1,
         "average_confidence": 0.9,
         "timestamp_coverage": 0.1
       },
@@ -838,7 +815,7 @@
       "metadata": {
         "video_id": "LKSH4QNqpIE",
         "pipeline_type": "conversations_1_on_1",
-        "created_at": "2025-08-21T12:06:11.768939"
+        "created_at": "2025-08-21T14:31:13.895612"
       }
     },
     {
@@ -855,21 +832,21 @@
           ],
           "secondary_topics": [],
           "key_terms": [
-            "competency",
-            "considered",
-            "evolutionary",
-            "their",
             "substrate",
-            "explains",
-            "work",
-            "evolution",
+            "response",
+            "evolutionary",
+            "competency",
+            "unreliable",
+            "michael",
             "went",
-            "unreliable"
+            "explains",
+            "evolution",
+            "extreme"
           ],
           "content_summary": "In response to why planaria are considered an extreme example of evolutionary competency, Michael...",
           "scientific_domain": "Developmental Biology, Bioelectricity",
-          "start_time_seconds": 921.0,
-          "end_time_seconds": 1140.0
+          "start_time_seconds": 960.0,
+          "end_time_seconds": 1000.0
         }
       },
       "visual_content": {
@@ -878,47 +855,23 @@
             "frame_id": "LKSH4QNqpIE_frame_016",
             "timestamp": 960,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_016_960.0s.jpg",
-            "file_size": 49029,
-            "alignment_confidence": 0.9
-          },
-          {
-            "frame_id": "LKSH4QNqpIE_frame_017",
-            "timestamp": 1020,
-            "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_017_1020.0s.jpg",
-            "file_size": 50220,
-            "alignment_confidence": 0.9
-          },
-          {
-            "frame_id": "LKSH4QNqpIE_frame_018",
-            "timestamp": 1080,
-            "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_018_1080.0s.jpg",
-            "file_size": 50269,
-            "alignment_confidence": 0.9
-          },
-          {
-            "frame_id": "LKSH4QNqpIE_frame_019",
-            "timestamp": 1140,
-            "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_019_1140.0s.jpg",
-            "file_size": 49028,
+            "file_size": 130182,
             "alignment_confidence": 0.9
           }
         ],
-        "frame_count": 4
+        "frame_count": 1
       },
       "temporal_info": {
         "frame_timestamps": [
-          960,
-          1020,
-          1080,
-          1140
+          960
         ],
         "time_range": {
-          "start": 921.0,
-          "end": 1140.0
+          "start": 960.0,
+          "end": 1000.0
         }
       },
       "quality_metrics": {
-        "total_frames": 4,
+        "total_frames": 1,
         "average_confidence": 0.9,
         "timestamp_coverage": 0.1
       },
@@ -931,19 +884,19 @@
         "answer": "Planaria, because their substrate was so unreliable, all the work of evolution went into making an algorithm that makes a proper worm no matter what the hardware looks like, pretty much. So they're kind of the biggest example of that's why there are no mutant lines is because, yeah, you try to edit the genome, but they ignore it because they mostly ignore their own genome too.",
         "questioner": "Synthetic",
         "answerer": "michael_levin",
-        "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=921s",
+        "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=960s",
         "pipeline_type": "conversations_1_on_1"
       },
       "metadata": {
         "video_id": "LKSH4QNqpIE",
         "pipeline_type": "conversations_1_on_1",
-        "created_at": "2025-08-21T12:06:11.768946"
+        "created_at": "2025-08-21T14:31:13.895620"
       }
     },
     {
       "content_id": "enhanced_conv_chunk_0012",
       "text_content": {
-        "text": "In discussing the regenerative capabilities of different organisms, Michael Levin explains: You have intermediate cases like salamanders, which are pretty good at regenerating, but they're not immorta...",
+        "text": "In discussing the variation in regenerative abilities among different organisms, Michael Levin explains: You have intermediate cases like salamanders, which are pretty good at regenerating, but they'r...",
         "metadata": {
           "token_count": 27,
           "sentence_count": 1,
@@ -954,70 +907,46 @@
           ],
           "secondary_topics": [],
           "key_terms": [
-            "organisms",
-            "discussing",
-            "capabilities",
-            "explains",
+            "salamanders",
+            "variation",
             "regenerative",
+            "explains",
             "intermediate",
-            "good",
-            "pretty",
             "which",
-            "salamanders"
+            "organisms",
+            "abilities",
+            "regenerating",
+            "discussing"
           ],
-          "content_summary": "In discussing the regenerative capabilities of different organisms, Michael Levin explains: You h...",
+          "content_summary": "In discussing the variation in regenerative abilities among different organisms, Michael Levin ex...",
           "scientific_domain": "Developmental Biology, Bioelectricity",
-          "start_time_seconds": 921.0,
-          "end_time_seconds": 1140.0
+          "start_time_seconds": 1000.0,
+          "end_time_seconds": 1030.0
         }
       },
       "visual_content": {
         "frames": [
           {
-            "frame_id": "LKSH4QNqpIE_frame_016",
-            "timestamp": 960,
-            "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_016_960.0s.jpg",
-            "file_size": 49029,
-            "alignment_confidence": 0.9
-          },
-          {
             "frame_id": "LKSH4QNqpIE_frame_017",
             "timestamp": 1020,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_017_1020.0s.jpg",
-            "file_size": 50220,
-            "alignment_confidence": 0.9
-          },
-          {
-            "frame_id": "LKSH4QNqpIE_frame_018",
-            "timestamp": 1080,
-            "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_018_1080.0s.jpg",
-            "file_size": 50269,
-            "alignment_confidence": 0.9
-          },
-          {
-            "frame_id": "LKSH4QNqpIE_frame_019",
-            "timestamp": 1140,
-            "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_019_1140.0s.jpg",
-            "file_size": 49028,
+            "file_size": 134323,
             "alignment_confidence": 0.9
           }
         ],
-        "frame_count": 4
+        "frame_count": 1
       },
       "temporal_info": {
         "frame_timestamps": [
-          960,
-          1020,
-          1080,
-          1140
+          1020
         ],
         "time_range": {
-          "start": 921.0,
-          "end": 1140.0
+          "start": 1000.0,
+          "end": 1030.0
         }
       },
       "quality_metrics": {
-        "total_frames": 4,
+        "total_frames": 1,
         "average_confidence": 0.9,
         "timestamp_coverage": 0.1
       },
@@ -1026,98 +955,158 @@
         "timestamp_tolerance": 5.0
       },
       "conversation_context": {
-        "question": "How do different organisms vary in their regenerative capabilities according to Levin?",
+        "question": "How do different organisms vary in their regenerative abilities according to Levin?",
         "answer": "You have intermediate cases like salamanders, which are pretty good at regenerating, but they're not immortal like planaria. And then you have mammals, and then all the way on the left you have something like nematodes, which are just completely cookie cutter organisms where every cell is numbered and all that.",
         "questioner": "Synthetic",
         "answerer": "michael_levin",
-        "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=921s",
+        "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=1000s",
         "pipeline_type": "conversations_1_on_1"
       },
       "metadata": {
         "video_id": "LKSH4QNqpIE",
         "pipeline_type": "conversations_1_on_1",
-        "created_at": "2025-08-21T12:06:11.768954"
+        "created_at": "2025-08-21T14:31:13.895628"
       }
     },
     {
       "content_id": "enhanced_conv_chunk_0013",
       "text_content": {
-        "text": "In discussing the role of the competency layer in his model of morphogenesis, Michael Levin explains: \"The key here is this middle layer, which is the competency layer. And this is what we've been mod...",
+        "text": "In discussing the role of the competency layer in biological systems, Michael Levin explains: The key here is this middle layer, which is the competency layer. And this is what we've been modeling and...",
         "metadata": {
-          "token_count": 35,
+          "token_count": 34,
           "sentence_count": 2,
           "primary_topics": [
-            "morphogenesis",
             "competency_layer",
+            "regenerative_medicine",
             "developmental_biology",
-            "regenerative_medicine"
+            "goal_directed_behavior"
           ],
           "secondary_topics": [],
           "key_terms": [
             "competency",
-            "model",
-            "here",
-            "discussing",
+            "layer",
+            "biological",
+            "systems",
             "explains",
-            "morphogenesis",
-            "which",
-            "role",
+            "here",
             "middle",
-            "what"
+            "which",
+            "discussing",
+            "levin"
           ],
-          "content_summary": "In discussing the role of the competency layer in his model of morphogenesis, Michael Levin expla...",
+          "content_summary": "In discussing the role of the competency layer in biological systems, Michael Levin explains: The...",
           "scientific_domain": "Developmental Biology, Bioelectricity",
-          "start_time_seconds": 921.0,
+          "start_time_seconds": 1030.0,
+          "end_time_seconds": 1080.0
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "LKSH4QNqpIE_frame_018",
+            "timestamp": 1080,
+            "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_018_1080.0s.jpg",
+            "file_size": 135779,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1080
+        ],
+        "time_range": {
+          "start": 1030.0,
+          "end": 1080.0
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "What is the role of the competency layer in biological systems?",
+        "answer": "The key here is this middle layer, which is the competency layer. And this is what we've been modeling and what I've been writing about. So I think that's how in all of RCAs, that's what we've been doing. So we have the genome that comes in with the rules, we have the phenotype which gets selected, but in the middle it's something like a neural ca. Which really has some competencies and to get certain goals met even under, under, you know, all kinds of novel conditions.",
+        "questioner": "Synthetic",
+        "answerer": "michael_levin",
+        "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=1030s",
+        "pipeline_type": "conversations_1_on_1"
+      },
+      "metadata": {
+        "video_id": "LKSH4QNqpIE",
+        "pipeline_type": "conversations_1_on_1",
+        "created_at": "2025-08-21T14:31:13.895636"
+      }
+    },
+    {
+      "content_id": "enhanced_conv_chunk_0014",
+      "text_content": {
+        "text": "In discussing the significance of Yuri Alon's work in systems medicine, Michael Levin explains: \"There's this guy, Yuri Alon, you know him, he's like a synthetic biologist in Israel. He's, he's really...",
+        "metadata": {
+          "token_count": 32,
+          "sentence_count": 2,
+          "primary_topics": [
+            "synthetic_biology",
+            "systems_medicine",
+            "physiological_circuits",
+            "failure_modes"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "really",
+            "systems",
+            "significance",
+            "explains",
+            "yuri",
+            "alon",
+            "know",
+            "israel",
+            "work",
+            "biologist"
+          ],
+          "content_summary": "In discussing the significance of Yuri Alon's work in systems medicine, Michael Levin explains: \"...",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 1080.0,
           "end_time_seconds": 1140.0
         }
       },
       "visual_content": {
         "frames": [
           {
-            "frame_id": "LKSH4QNqpIE_frame_016",
-            "timestamp": 960,
-            "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_016_960.0s.jpg",
-            "file_size": 49029,
-            "alignment_confidence": 0.9
-          },
-          {
-            "frame_id": "LKSH4QNqpIE_frame_017",
-            "timestamp": 1020,
-            "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_017_1020.0s.jpg",
-            "file_size": 50220,
-            "alignment_confidence": 0.9
-          },
-          {
             "frame_id": "LKSH4QNqpIE_frame_018",
             "timestamp": 1080,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_018_1080.0s.jpg",
-            "file_size": 50269,
+            "file_size": 135779,
             "alignment_confidence": 0.9
           },
           {
             "frame_id": "LKSH4QNqpIE_frame_019",
             "timestamp": 1140,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_019_1140.0s.jpg",
-            "file_size": 49028,
+            "file_size": 129880,
             "alignment_confidence": 0.9
           }
         ],
-        "frame_count": 4
+        "frame_count": 2
       },
       "temporal_info": {
         "frame_timestamps": [
-          960,
-          1020,
           1080,
           1140
         ],
         "time_range": {
-          "start": 921.0,
+          "start": 1080.0,
           "end": 1140.0
         }
       },
       "quality_metrics": {
-        "total_frames": 4,
+        "total_frames": 2,
         "average_confidence": 0.9,
         "timestamp_coverage": 0.1
       },
@@ -1126,112 +1115,46 @@
         "timestamp_tolerance": 5.0
       },
       "conversation_context": {
-        "question": "What is the role of the competency layer in Levin's model of morphogenesis?",
-        "answer": "The key here is this middle layer, which is the competency layer. And this is what we've been modeling and what I've been writing about. So I think that's how in all of RCAs, that's what we've been doing. So we have the genome that comes in with the rules, we have the phenotype which gets selected, but in the middle it's something like a neural ca. Which really has some competencies and to get certain goals met even under, under, you know, all kinds of novel conditions.",
+        "question": "What is the significance of Yuri Alon's work in systems medicine?",
+        "answer": "There's this guy, Yuri Alon, you know him, he's like a synthetic biologist in Israel. He's, he's really good. He has a ton of great work. Anyway, here's the book and I'm going to put the title on the chat. You should take a look at this. It's called Systems Medicine by Yuri Alon, A L O N and the COVID of it is like basically like a periodic table. Like basically he's trying to ask the question of what from physiological circuits. What can we say about the kind of failure modes?",
         "questioner": "Synthetic",
         "answerer": "michael_levin",
-        "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=921s",
+        "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=1080s",
         "pipeline_type": "conversations_1_on_1"
       },
       "metadata": {
         "video_id": "LKSH4QNqpIE",
         "pipeline_type": "conversations_1_on_1",
-        "created_at": "2025-08-21T12:06:11.768961"
-      }
-    },
-    {
-      "content_id": "enhanced_conv_chunk_0014",
-      "text_content": {
-        "text": "In response to a question about simple systems that demonstrate competency, Michael Levin explains: \"We started looking at it in very simple things, so we started looking at it in sorting algorithms. ...",
-        "metadata": {
-          "token_count": 33,
-          "sentence_count": 1,
-          "primary_topics": [
-            "unconventional_intelligence",
-            "problem_solving",
-            "computational_biology",
-            "emergent_properties"
-          ],
-          "secondary_topics": [],
-          "key_terms": [
-            "competency",
-            "very",
-            "sorting",
-            "algorithms",
-            "simple",
-            "explains",
-            "about",
-            "systems",
-            "response",
-            "michael"
-          ],
-          "content_summary": "In response to a question about simple systems that demonstrate competency, Michael Levin explain...",
-          "scientific_domain": "Developmental Biology, Bioelectricity",
-          "start_time_seconds": 1321.0,
-          "end_time_seconds": 1360.0
-        }
-      },
-      "visual_content": {
-        "frames": [],
-        "frame_count": 0
-      },
-      "temporal_info": {
-        "frame_timestamps": [],
-        "time_range": {
-          "start": 1321.0,
-          "end": 1360.0
-        }
-      },
-      "quality_metrics": {
-        "total_frames": 0,
-        "average_confidence": 0.9,
-        "timestamp_coverage": 0.1
-      },
-      "processing_metadata": {
-        "alignment_method": "timestamp_based",
-        "timestamp_tolerance": 5.0
-      },
-      "conversation_context": {
-        "question": "What are some simple systems that demonstrate competency according to Levin?",
-        "answer": "We started looking at it in very simple things, so we started looking at it in sorting algorithms. I don't know if you've seen this paper that we have on sorting and there's a couple of blog posts I have about it, but basically there's some of this already in Bubble sort already does some of this. So very simple systems, like extremely simple deterministic systems already do this.",
-        "questioner": "Synthetic",
-        "answerer": "michael_levin",
-        "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=1321s",
-        "pipeline_type": "conversations_1_on_1"
-      },
-      "metadata": {
-        "video_id": "LKSH4QNqpIE",
-        "pipeline_type": "conversations_1_on_1",
-        "created_at": "2025-08-21T12:06:11.768968"
+        "created_at": "2025-08-21T14:31:13.895644"
       }
     },
     {
       "content_id": "enhanced_conv_chunk_0015",
       "text_content": {
-        "text": "In response to a question about how planaria demonstrate creative problem-solving when faced with environmental challenges, Michael Levin explains: In planaria, for example, we have this thing where w...",
+        "text": "In response to how planaria demonstrate creative problem-solving when exposed to barium chloride, Michael Levin explains: In planaria, for example, we have this thing where we put them in barium chlor...",
         "metadata": {
-          "token_count": 29,
+          "token_count": 31,
           "sentence_count": 1,
           "primary_topics": [
             "problem_solving",
             "regeneration",
-            "developmental_biology",
-            "adaptation"
+            "morphogenesis",
+            "developmental_biology"
           ],
           "secondary_topics": [],
           "key_terms": [
-            "example",
-            "explains",
-            "environmental",
-            "when",
-            "about",
-            "faced",
-            "creative",
+            "exposed",
             "response",
+            "thing",
+            "chloride",
             "michael",
-            "thing"
+            "explains",
+            "chlor",
+            "planaria",
+            "barium",
+            "where"
           ],
-          "content_summary": "In response to a question about how planaria demonstrate creative problem-solving when faced with...",
+          "content_summary": "In response to how planaria demonstrate creative problem-solving when exposed to barium chloride,...",
           "scientific_domain": "Developmental Biology, Bioelectricity",
           "start_time_seconds": 1382.0,
           "end_time_seconds": 1685.0
@@ -1243,35 +1166,35 @@
             "frame_id": "LKSH4QNqpIE_frame_024",
             "timestamp": 1440,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_024_1440.0s.jpg",
-            "file_size": 48986,
+            "file_size": 132382,
             "alignment_confidence": 0.9
           },
           {
             "frame_id": "LKSH4QNqpIE_frame_025",
             "timestamp": 1500,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_025_1500.0s.jpg",
-            "file_size": 49182,
+            "file_size": 133189,
             "alignment_confidence": 0.9
           },
           {
             "frame_id": "LKSH4QNqpIE_frame_026",
             "timestamp": 1560,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_026_1560.0s.jpg",
-            "file_size": 49152,
+            "file_size": 133000,
             "alignment_confidence": 0.9
           },
           {
             "frame_id": "LKSH4QNqpIE_frame_027",
             "timestamp": 1620,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_027_1620.0s.jpg",
-            "file_size": 49161,
+            "file_size": 133100,
             "alignment_confidence": 0.9
           },
           {
             "frame_id": "LKSH4QNqpIE_frame_028",
             "timestamp": 1680,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_028_1680.0s.jpg",
-            "file_size": 48962,
+            "file_size": 132068,
             "alignment_confidence": 0.9
           }
         ],
@@ -1300,7 +1223,7 @@
         "timestamp_tolerance": 5.0
       },
       "conversation_context": {
-        "question": "How do planaria demonstrate creative problem-solving in response to environmental challenges?",
+        "question": "How do planaria demonstrate creative problem-solving in response to barium chloride exposure?",
         "answer": "In planaria, for example, we have this thing where we put them in barium chloride and barium is a non-specific blocker of potassium channels. So the cells are very unhappy. In particular, all the neurons in the head are very unhappy because they can't pass potassium. So over a day, their heads explode. But then if you leave them in the barium after about a week or two, they grow back a new head and the new head is completely insensitive to the barium. We found out that they express under a dozen new genes that enable them to live with blocked potassium channels.",
         "questioner": "Synthetic",
         "answerer": "michael_levin",
@@ -1310,36 +1233,36 @@
       "metadata": {
         "video_id": "LKSH4QNqpIE",
         "pipeline_type": "conversations_1_on_1",
-        "created_at": "2025-08-21T12:06:11.768974"
+        "created_at": "2025-08-21T14:31:13.895651"
       }
     },
     {
       "content_id": "enhanced_conv_chunk_0016",
       "text_content": {
-        "text": "In exploring the complexities of bioelectrical circuits within biological systems, Michael Levin responds: Our situation is somewhat like neuroscience in that if you're looking at the proximal molecul...",
+        "text": "In the context of understanding the mechanisms of bioelectrical circuits in biological systems, Michael Levin explains: Our situation is somewhat like neuroscience in that if you're looking at the pro...",
         "metadata": {
-          "token_count": 28,
+          "token_count": 30,
           "sentence_count": 1,
           "primary_topics": [
             "bioelectricity",
             "bioelectric_circuits",
             "computational_biology",
-            "complexity"
+            "anatomical_decision_making"
           ],
           "secondary_topics": [],
           "key_terms": [
-            "bioelectrical",
-            "responds",
-            "somewhat",
-            "proximal",
-            "neuroscience",
-            "molecul",
-            "within",
             "biological",
-            "complexities",
-            "exploring"
+            "michael",
+            "situation",
+            "bioelectrical",
+            "systems",
+            "explains",
+            "neuroscience",
+            "looking",
+            "circuits",
+            "context"
           ],
-          "content_summary": "In exploring the complexities of bioelectrical circuits within biological systems, Michael Levin ...",
+          "content_summary": "In the context of understanding the mechanisms of bioelectrical circuits in biological systems, M...",
           "scientific_domain": "Developmental Biology, Bioelectricity",
           "start_time_seconds": 1783.0,
           "end_time_seconds": 1855.0
@@ -1351,7 +1274,7 @@
             "frame_id": "LKSH4QNqpIE_frame_030",
             "timestamp": 1800,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_030_1800.0s.jpg",
-            "file_size": 49137,
+            "file_size": 133036,
             "alignment_confidence": 0.9
           }
         ],
@@ -1386,15 +1309,15 @@
       "metadata": {
         "video_id": "LKSH4QNqpIE",
         "pipeline_type": "conversations_1_on_1",
-        "created_at": "2025-08-21T12:06:11.768981"
+        "created_at": "2025-08-21T14:31:13.895658"
       }
     },
     {
       "content_id": "enhanced_conv_chunk_0017",
       "text_content": {
-        "text": "In response to a question about how bioelectrical circuits contribute to the understanding of biological computation, Michael Levin explains: \"We know that a lot of this is mediated by bioelectrical c...",
+        "text": "In response to a question about how bioelectrical circuits contribute to the understanding of biological computation, Michael Levin explains: We know that a lot of the understanding of biological comp...",
         "metadata": {
-          "token_count": 31,
+          "token_count": 30,
           "sentence_count": 1,
           "primary_topics": [
             "bioelectricity",
@@ -1404,16 +1327,16 @@
           ],
           "secondary_topics": [],
           "key_terms": [
-            "bioelectrical",
-            "know",
-            "explains",
-            "mediated",
-            "biological",
-            "about",
-            "computation",
             "response",
             "contribute",
-            "understanding"
+            "biological",
+            "michael",
+            "bioelectrical",
+            "explains",
+            "computation",
+            "about",
+            "know",
+            "circuits"
           ],
           "content_summary": "In response to a question about how bioelectrical circuits contribute to the understanding of bio...",
           "scientific_domain": "Developmental Biology, Bioelectricity",
@@ -1427,7 +1350,7 @@
             "frame_id": "LKSH4QNqpIE_frame_030",
             "timestamp": 1800,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_030_1800.0s.jpg",
-            "file_size": 49137,
+            "file_size": 133036,
             "alignment_confidence": 0.9
           }
         ],
@@ -1453,7 +1376,7 @@
       },
       "conversation_context": {
         "question": "How do bioelectrical circuits contribute to the understanding of biological computation?",
-        "answer": "We know that a lot of this is mediated by bioelectrical circuits. We know the molecules involved. We can see the electrical computations happening. Like the mechanisms aspect of it, we have it. But what's the computation that it's actually doing? That's a much more challenging thing.",
+        "answer": "We know that a lot of this is mediated by bioelectrical circuits. We know the molecules involved. We can see the electrical computations happening. Like the mechanisms aspect of it. We have it. But, but that by itself is, is utterly unsatisfying because it's kind of like saying you understand the computer because you understand copper and silicon and you can watch the electrons flow.",
         "questioner": "Synthetic",
         "answerer": "michael_levin",
         "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=1783s",
@@ -1462,15 +1385,15 @@
       "metadata": {
         "video_id": "LKSH4QNqpIE",
         "pipeline_type": "conversations_1_on_1",
-        "created_at": "2025-08-21T12:06:11.768987"
+        "created_at": "2025-08-21T14:31:13.895664"
       }
     },
     {
       "content_id": "enhanced_conv_chunk_0018",
       "text_content": {
-        "text": "In response to a question about the significance of morphogenesis in the study of biological systems, Michael Levin explains: \"I love morphogenesis as a behavior in anatomical space. I would recommend...",
+        "text": "In response to a question about the significance of morphogenesis in biological research, Michael Levin explains: \"I love morphogenesis as a behavior in anatomical space. I would recommend thinking ab...",
         "metadata": {
-          "token_count": 31,
+          "token_count": 30,
           "sentence_count": 2,
           "primary_topics": [
             "morphogenesis",
@@ -1480,18 +1403,18 @@
           ],
           "secondary_topics": [],
           "key_terms": [
-            "study",
-            "explains",
-            "love",
+            "behavior",
+            "response",
+            "biological",
+            "thinking",
             "morphogenesis",
             "significance",
+            "explains",
             "anatomical",
-            "biological",
-            "about",
-            "behavior",
-            "recommend"
+            "space",
+            "about"
           ],
-          "content_summary": "In response to a question about the significance of morphogenesis in the study of biological syst...",
+          "content_summary": "In response to a question about the significance of morphogenesis in biological research, Michael...",
           "scientific_domain": "Developmental Biology, Bioelectricity",
           "start_time_seconds": 1693.0,
           "end_time_seconds": 1744.0
@@ -1503,7 +1426,7 @@
             "frame_id": "LKSH4QNqpIE_frame_029",
             "timestamp": 1740,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_029_1740.0s.jpg",
-            "file_size": 49133,
+            "file_size": 130201,
             "alignment_confidence": 0.9
           }
         ],
@@ -1528,8 +1451,8 @@
         "timestamp_tolerance": 5.0
       },
       "conversation_context": {
-        "question": "What is the significance of morphogenesis in the study of biological systems?",
-        "answer": "I love morphogenesis as a behavior in anatomical space. I would recommend thinking about that, looking at different aspects of the shapes. Aspect ratio is good, and then going beyond that too. That's what we do in Ben Hardless paper that I just put up, is look at the ability to regenerate after anatomical damage.",
+        "question": "What is the significance of morphogenesis in biological research?",
+        "answer": "I love morphogenesis as a behavior in anatomical space. I would recommend thinking about that, looking at different aspects of the shapes. Aspect ratio is good, and then going beyond that too. That's what we do in Ben Hardless paper that I just put up is look at the ability to regenerate after anatomical damage.",
         "questioner": "Synthetic",
         "answerer": "michael_levin",
         "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=1693s",
@@ -1538,36 +1461,36 @@
       "metadata": {
         "video_id": "LKSH4QNqpIE",
         "pipeline_type": "conversations_1_on_1",
-        "created_at": "2025-08-21T12:06:11.768996"
+        "created_at": "2025-08-21T14:31:13.895672"
       }
     },
     {
       "content_id": "enhanced_conv_chunk_0019",
       "text_content": {
-        "text": "In response to how biological systems find novel solutions to environmental challenges, Michael Levin explains: The living material is able to achieve the standard outcome despite all the noise and un...",
+        "text": "In response to a question about how biological systems find novel solutions to environmental challenges, Michael Levin explains: This question of how the living material is able to achieve the standar...",
         "metadata": {
           "token_count": 31,
           "sentence_count": 1,
           "primary_topics": [
+            "unconventional_intelligence",
             "morphogenesis",
-            "xenobots",
-            "anthrobots",
-            "problem_solving"
+            "problem_solving",
+            "xenobots"
           ],
           "secondary_topics": [],
           "key_terms": [
-            "noise",
-            "despite",
-            "able",
-            "novel",
+            "response",
+            "biological",
+            "systems",
+            "solutions",
             "explains",
-            "levin",
-            "outcome",
-            "environmental",
-            "standard",
-            "systems"
+            "standar",
+            "challenges",
+            "about",
+            "achieve",
+            "able"
           ],
-          "content_summary": "In response to how biological systems find novel solutions to environmental challenges, Michael L...",
+          "content_summary": "In response to a question about how biological systems find novel solutions to environmental chal...",
           "scientific_domain": "Developmental Biology, Bioelectricity",
           "start_time_seconds": 1382.0,
           "end_time_seconds": 1685.0
@@ -1579,35 +1502,35 @@
             "frame_id": "LKSH4QNqpIE_frame_024",
             "timestamp": 1440,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_024_1440.0s.jpg",
-            "file_size": 48986,
+            "file_size": 132382,
             "alignment_confidence": 0.9
           },
           {
             "frame_id": "LKSH4QNqpIE_frame_025",
             "timestamp": 1500,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_025_1500.0s.jpg",
-            "file_size": 49182,
+            "file_size": 133189,
             "alignment_confidence": 0.9
           },
           {
             "frame_id": "LKSH4QNqpIE_frame_026",
             "timestamp": 1560,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_026_1560.0s.jpg",
-            "file_size": 49152,
+            "file_size": 133000,
             "alignment_confidence": 0.9
           },
           {
             "frame_id": "LKSH4QNqpIE_frame_027",
             "timestamp": 1620,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_027_1620.0s.jpg",
-            "file_size": 49161,
+            "file_size": 133100,
             "alignment_confidence": 0.9
           },
           {
             "frame_id": "LKSH4QNqpIE_frame_028",
             "timestamp": 1680,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_028_1680.0s.jpg",
-            "file_size": 48962,
+            "file_size": 132068,
             "alignment_confidence": 0.9
           }
         ],
@@ -1637,7 +1560,7 @@
       },
       "conversation_context": {
         "question": "How do biological systems find novel solutions to environmental challenges?",
-        "answer": "The living material is able to achieve the standard outcome despite all the noise and unreliability of the substrate, but also find new solutions, whether they be physiological solutions like vivarium or anatomical solutions and behavioral solutions like for anthrobots and xenobots. There's some degree of homeostasis and navigation of that anatomical space, but also towards novel solutions, which I think is just the exact same thing as creative problem-solving.",
+        "answer": "This question of how the living material is able to achieve the standard outcome despite all the noise and unreliability of the substrate, but also find new solutions, whether they be physiological solutions like vivarium or anatomical solutions and behavioral solutions like for anthrobots and xenobots, there's some degree of homeostasis and navigation of that anatomical space, but also towards novel solutions, which I think is just the exact same thing as creative problem solving.",
         "questioner": "Synthetic",
         "answerer": "michael_levin",
         "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=1382s",
@@ -1646,36 +1569,36 @@
       "metadata": {
         "video_id": "LKSH4QNqpIE",
         "pipeline_type": "conversations_1_on_1",
-        "created_at": "2025-08-21T12:06:11.769003"
+        "created_at": "2025-08-21T14:31:13.895681"
       }
     },
     {
       "content_id": "enhanced_conv_chunk_0020",
       "text_content": {
-        "text": "In response to a question about inducing tadpoles to develop eyes on their tails, Michael Levin explains: We have it to the extent that we can make tadpoles with eyes on their tails and the two-headed...",
+        "text": "In response to a question about examples of regenerative events that can be induced in organisms, Michael Levin explains: \"We can make tadpoles with eyes on their tails and the two-headed flatworms an...",
         "metadata": {
-          "token_count": 36,
+          "token_count": 33,
           "sentence_count": 1,
           "primary_topics": [
-            "morphogenesis",
             "regeneration",
+            "morphogenesis",
             "developmental_biology",
-            "bioelectricity"
+            "regenerative_medicine"
           ],
           "secondary_topics": [],
           "key_terms": [
-            "their",
-            "explains",
-            "extent",
-            "eyes",
-            "inducing",
-            "tadpoles",
-            "about",
+            "flatworms",
+            "response",
+            "regenerative",
             "make",
-            "develop",
-            "response"
+            "explains",
+            "about",
+            "events",
+            "organisms",
+            "eyes",
+            "tadpoles"
           ],
-          "content_summary": "In response to a question about inducing tadpoles to develop eyes on their tails, Michael Levin e...",
+          "content_summary": "In response to a question about examples of regenerative events that can be induced in organisms,...",
           "scientific_domain": "Developmental Biology, Bioelectricity",
           "start_time_seconds": 1859.0,
           "end_time_seconds": 1926.0
@@ -1687,14 +1610,14 @@
             "frame_id": "LKSH4QNqpIE_frame_031",
             "timestamp": 1860,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_031_1860.0s.jpg",
-            "file_size": 49163,
+            "file_size": 133138,
             "alignment_confidence": 0.9
           },
           {
             "frame_id": "LKSH4QNqpIE_frame_032",
             "timestamp": 1920,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_032_1920.0s.jpg",
-            "file_size": 49130,
+            "file_size": 133002,
             "alignment_confidence": 0.9
           }
         ],
@@ -1720,8 +1643,8 @@
         "timestamp_tolerance": 5.0
       },
       "conversation_context": {
-        "question": "How can tadpoles be induced to develop eyes on their tails?",
-        "answer": "We have it to the extent that we can make tadpoles with eyes on their tails and the two headed flatworms and we can fix certain kinds of birth defects and we can induce certain kinds of regenerative events.",
+        "question": "What are some examples of regenerative events that can be induced in organisms?",
+        "answer": "We can make tadpoles with eyes on their tails and the two-headed flatworms and we can fix certain kinds of birth defects and we can induce certain kinds of regenerative events.",
         "questioner": "Synthetic",
         "answerer": "michael_levin",
         "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=1859s",
@@ -1730,16 +1653,16 @@
       "metadata": {
         "video_id": "LKSH4QNqpIE",
         "pipeline_type": "conversations_1_on_1",
-        "created_at": "2025-08-21T12:06:11.769010"
+        "created_at": "2025-08-21T14:31:13.895688"
       }
     },
     {
       "content_id": "enhanced_conv_chunk_0021",
       "text_content": {
-        "text": "In response to why Michael Levin believes that medicine won't be solved by mechanical approaches, Michael Levin explains: \"I don't think medicine is going to be solved by mechanical kinds of approache...",
+        "text": "In discussing the future of medicine, Michael Levin responds: \"I don't think medicine is going to be solved by mechanical kinds of approaches and not feed forward emergence. I think all of this is pro...",
         "metadata": {
-          "token_count": 32,
-          "sentence_count": 1,
+          "token_count": 35,
+          "sentence_count": 2,
           "primary_topics": [
             "regenerative_medicine",
             "emergent_properties",
@@ -1747,18 +1670,18 @@
           ],
           "secondary_topics": [],
           "key_terms": [
+            "feed",
+            "responds",
+            "future",
             "think",
-            "explains",
-            "believes",
-            "mechanical",
-            "medicine",
+            "emergence",
+            "going",
             "kinds",
-            "approaches",
-            "approache",
-            "response",
-            "solved"
+            "discussing",
+            "forward",
+            "levin"
           ],
-          "content_summary": "In response to why Michael Levin believes that medicine won't be solved by mechanical approaches,...",
+          "content_summary": "In discussing the future of medicine, Michael Levin responds: \"I don't think medicine is going to...",
           "scientific_domain": "Developmental Biology, Bioelectricity",
           "start_time_seconds": 1859.0,
           "end_time_seconds": 1926.0
@@ -1770,14 +1693,14 @@
             "frame_id": "LKSH4QNqpIE_frame_031",
             "timestamp": 1860,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_031_1860.0s.jpg",
-            "file_size": 49163,
+            "file_size": 133138,
             "alignment_confidence": 0.9
           },
           {
             "frame_id": "LKSH4QNqpIE_frame_032",
             "timestamp": 1920,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_032_1920.0s.jpg",
-            "file_size": 49130,
+            "file_size": 133002,
             "alignment_confidence": 0.9
           }
         ],
@@ -1803,7 +1726,7 @@
         "timestamp_tolerance": 5.0
       },
       "conversation_context": {
-        "question": "Why does Michael Levin believe that medicine won't be solved by mechanical approaches?",
+        "question": "Why does Michael Levin believe that medicine should focus on developing prompts rather than mechanical approaches?",
         "answer": "I don't think medicine is going to be solved by mechanical kinds of approaches and not feed forward emergence. I think all of this is prompt and I think this is why we have so few good drugs in the sense of dependable efficacy and consistent, you know, lack of side effects among patients.",
         "questioner": "Synthetic",
         "answerer": "michael_levin",
@@ -1813,7 +1736,7 @@
       "metadata": {
         "video_id": "LKSH4QNqpIE",
         "pipeline_type": "conversations_1_on_1",
-        "created_at": "2025-08-21T12:06:11.769016"
+        "created_at": "2025-08-21T14:31:13.895695"
       }
     },
     {
@@ -1826,21 +1749,21 @@
           "primary_topics": [
             "bioelectricity",
             "morphogenesis",
-            "developmental_biology",
+            "development",
             "regenerative_medicine"
           ],
           "secondary_topics": [],
           "key_terms": [
+            "response",
+            "cells",
+            "electrical",
             "altering",
             "communication",
-            "cells",
             "explains",
-            "norm",
-            "tadpoles",
             "about",
-            "melanoma",
             "metastatic",
-            "response"
+            "tadpoles",
+            "norm"
           ],
           "content_summary": "In response to a question about how altering electrical communication in cells can induce metasta...",
           "scientific_domain": "Developmental Biology, Bioelectricity",
@@ -1854,14 +1777,14 @@
             "frame_id": "LKSH4QNqpIE_frame_033",
             "timestamp": 1980,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_033_1980.0s.jpg",
-            "file_size": 49129,
+            "file_size": 133034,
             "alignment_confidence": 0.9
           },
           {
             "frame_id": "LKSH4QNqpIE_frame_034",
             "timestamp": 2040,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_034_2040.0s.jpg",
-            "file_size": 49180,
+            "file_size": 133126,
             "alignment_confidence": 0.9
           }
         ],
@@ -1888,8 +1811,8 @@
       },
       "conversation_context": {
         "question": "How can altering electrical communication in cells induce metastatic melanoma in tadpoles?",
-        "answer": "We can induce basically metastatic melanoma in a normal tadpole. No, no drugs, no carcinogens, no oncogenes, no DNA damage. And you can do that by, by messing up the electrical communication with some cells. It only takes about three cells in the whole, in the whole tadpole before they trigger every other melanocyte to go, to go metastatic.",
-        "questioner": "Speaker A",
+        "answer": "We can induce basically metastatic melanoma in a normal tadpole. No drugs, no carcinogens, no oncogenes, no DNA damage. And you can do that by messing up the electrical communication with some cells. It only takes about three cells in the whole tadpole before they trigger every other melanocyte to go metastatic.",
+        "questioner": "Synthetic",
         "answerer": "michael_levin",
         "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=1959s",
         "pipeline_type": "conversations_1_on_1"
@@ -1897,36 +1820,36 @@
       "metadata": {
         "video_id": "LKSH4QNqpIE",
         "pipeline_type": "conversations_1_on_1",
-        "created_at": "2025-08-21T12:06:11.769022"
+        "created_at": "2025-08-21T14:31:13.895702"
       }
     },
     {
       "content_id": "enhanced_conv_chunk_0023",
       "text_content": {
-        "text": "In response to a question about whether bioelectric signals can influence cells that are not geometrically proximal, Michael Levin explains: \"We've shown both in cancer and in brain repair that you ca...",
+        "text": "In the context of understanding how bioelectric signals can influence cells that are not physically close, Michael Levin explains: \"We've shown both in cancer and in brain repair that you can actually...",
         "metadata": {
           "token_count": 32,
           "sentence_count": 1,
           "primary_topics": [
             "bioelectricity",
             "morphogenesis",
-            "regeneration",
+            "regenerative_medicine",
             "developmental_biology"
           ],
           "secondary_topics": [],
           "key_terms": [
-            "cancer",
             "influence",
-            "proximal",
-            "explains",
+            "bioelectric",
             "cells",
-            "brain",
+            "michael",
+            "physically",
+            "explains",
             "shown",
-            "whether",
-            "about",
-            "signals"
+            "signals",
+            "brain",
+            "actually"
           ],
-          "content_summary": "In response to a question about whether bioelectric signals can influence cells that are not geom...",
+          "content_summary": "In the context of understanding how bioelectric signals can influence cells that are not physical...",
           "scientific_domain": "Developmental Biology, Bioelectricity",
           "start_time_seconds": 1959.0,
           "end_time_seconds": 2045.0
@@ -1938,14 +1861,14 @@
             "frame_id": "LKSH4QNqpIE_frame_033",
             "timestamp": 1980,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_033_1980.0s.jpg",
-            "file_size": 49129,
+            "file_size": 133034,
             "alignment_confidence": 0.9
           },
           {
             "frame_id": "LKSH4QNqpIE_frame_034",
             "timestamp": 2040,
             "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_034_2040.0s.jpg",
-            "file_size": 49180,
+            "file_size": 133126,
             "alignment_confidence": 0.9
           }
         ],
@@ -1972,7 +1895,7 @@
       },
       "conversation_context": {
         "question": "Can bioelectric signals affect cells that are not geometrically proximal?",
-        "answer": "We've shown both in cancer and in brain repair that you can actually trigger cells on the opposite side of the animal and still get, and get effects on the other side. So these things move. So there are waves of, propagating waves of this information that go through tissue and which we can now see to some extent.",
+        "answer": "We've shown both in cancer and in brain repair that you can actually trigger cells on the opposite side of the animal and still get effects on the other side. So there are waves of propagating waves of this information that go through tissue.",
         "questioner": "Synthetic",
         "answerer": "michael_levin",
         "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=1959s",
@@ -1981,7 +1904,7 @@
       "metadata": {
         "video_id": "LKSH4QNqpIE",
         "pipeline_type": "conversations_1_on_1",
-        "created_at": "2025-08-21T12:06:11.769028"
+        "created_at": "2025-08-21T14:31:13.895709"
       }
     },
     {
@@ -1993,60 +1916,52 @@
           "sentence_count": 2,
           "primary_topics": [
             "morphogenesis",
-            "developmental_biology",
+            "development",
             "bioelectricity",
-            "self_organization"
+            "pattern_formation"
           ],
           "secondary_topics": [],
           "key_terms": [
-            "ectopic",
-            "explains",
             "cells",
-            "eyes",
-            "inducing",
+            "explains",
+            "ectopic",
+            "tail",
             "tadpoles",
-            "when",
-            "section",
             "context",
-            "tail"
+            "section",
+            "levin",
+            "eyes",
+            "inducing"
           ],
           "content_summary": "In the context of inducing ectopic eyes in tadpoles, Michael Levin explains: When you induce an e...",
           "scientific_domain": "Developmental Biology, Bioelectricity",
-          "start_time_seconds": 1959.0,
-          "end_time_seconds": 2045.0
+          "start_time_seconds": 2046.0,
+          "end_time_seconds": 2134.0
         }
       },
       "visual_content": {
         "frames": [
           {
-            "frame_id": "LKSH4QNqpIE_frame_033",
-            "timestamp": 1980,
-            "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_033_1980.0s.jpg",
-            "file_size": 49129,
-            "alignment_confidence": 0.9
-          },
-          {
-            "frame_id": "LKSH4QNqpIE_frame_034",
-            "timestamp": 2040,
-            "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_034_2040.0s.jpg",
-            "file_size": 49180,
+            "frame_id": "LKSH4QNqpIE_frame_035",
+            "timestamp": 2100,
+            "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_035_2100.0s.jpg",
+            "file_size": 133150,
             "alignment_confidence": 0.9
           }
         ],
-        "frame_count": 2
+        "frame_count": 1
       },
       "temporal_info": {
         "frame_timestamps": [
-          1980,
-          2040
+          2100
         ],
         "time_range": {
-          "start": 1959.0,
-          "end": 2045.0
+          "start": 2046.0,
+          "end": 2134.0
         }
       },
       "quality_metrics": {
-        "total_frames": 2,
+        "total_frames": 1,
         "average_confidence": 0.9,
         "timestamp_coverage": 0.1
       },
@@ -2055,17 +1970,17 @@
         "timestamp_tolerance": 5.0
       },
       "conversation_context": {
-        "question": "What happens when an ectopic eye is induced in a tadpole?",
-        "answer": "When you induce a, an ectopic eye on the, on the tail of a, or in the gut of a tadpole, you don't have to hit a lot of cells. If when you section those eyes, you often find out that we actually only hit a small number of cells. But what they did was recruit all their neighbors to help them build this structure.",
+        "question": "What happens when you induce an ectopic eye in a tadpole?",
+        "answer": "When you induce an ectopic eye on the tail of a, or in the gut of a tadpole, you don't have to hit a lot of cells. If when you section those eyes, you often find out that we actually only hit a small number of cells. But what they did was recruit all their neighbors to help them build this structure.",
         "questioner": "Synthetic",
         "answerer": "michael_levin",
-        "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=1959s",
+        "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=2046s",
         "pipeline_type": "conversations_1_on_1"
       },
       "metadata": {
         "video_id": "LKSH4QNqpIE",
         "pipeline_type": "conversations_1_on_1",
-        "created_at": "2025-08-21T12:06:11.769036"
+        "created_at": "2025-08-21T14:31:13.895716"
       }
     }
   ]

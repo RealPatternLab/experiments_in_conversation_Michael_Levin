@@ -1,13 +1,14 @@
 [
   {
     "id": "enhanced_conv_chunk_0001",
-    "text": "In the context of evolving cellular automata, Michael Levin explains: \"When we evolve them, we always start from this one red. It's called. We call it the seed condition. Or it's just like one red cell.\"",
+    "text": "In discussing the initial conditions for cellular automata used in his research, Michael Levin explains: \"When we evolve them, we always start from this one red. It's called. We call it the seed condition. Or it's just like one red cell.\"",
     "topics": [
-      "computational_biology",
       "morphogenesis",
+      "development",
+      "computational_biology",
       "self_organization"
     ],
-    "original_question": "What starting string do you use for evolving cellular automata?",
+    "original_question": "What starting string do you use for the cellular automata?",
     "original_answer": "When we evolve them, we always start from this one red. It's called. We call it the seed condition. Or it's just like one red cell.",
     "questioner": "Speaker B",
     "answerer": "michael_levin",
@@ -23,16 +24,16 @@
   },
   {
     "id": "enhanced_conv_chunk_0002",
-    "text": "In the context of modifying the rules of cellular automata during evolution, Michael Levin explains: \"We're changing the, the rules by one bit at a time. And if the, if the bit results in a longer or the same lifetime, then we keep it. So it's like kind of like a mutation and then a mutation to the rules. And then if it's neutral or advantageous, then we keep it.\"",
+    "text": "In response to a question about evolving rules in cellular automata models, Michael Levin explains: \"We're changing the, the rules by one bit at a time. And if the, if the bit results in a longer or the same lifetime, then we keep it. So it's like kind of like a mutation and then a mutation to the rules. And then if it's neutral or advantageous, then we keep it.\"",
     "topics": [
+      "morphogenesis",
       "evolutionary_competency",
       "computational_biology",
-      "self_organization",
-      "complexity"
+      "self_organization"
     ],
-    "original_question": "How do you modify the rules of cellular automata during evolution?",
+    "original_question": "How do you evolve the rules in your cellular automata model?",
     "original_answer": "We're changing the, the rules by one bit at a time. And if the, if the bit results in a longer or the same lifetime, then we keep it. So it's like kind of like a mutation and then a mutation to the rules. And then if it's neutral or advantageous, then we keep it.",
-    "questioner": "Speaker A",
+    "questioner": "Speaker B",
     "answerer": "michael_levin",
     "video_id": "LKSH4QNqpIE",
     "chunk_type": "enhanced_conversation_rag",
@@ -46,14 +47,14 @@
   },
   {
     "id": "enhanced_conv_chunk_0003",
-    "text": "In the context of cellular automata, the term 'lifetime' refers to the duration of the automaton's existence. Michael Levin explains: \"Lifetime, we mean just the length of the automaton. So another point I should mention is that if the automaton lives forever, often due to a mutation causing it to enter a loop, we count that as a fitness of zero or a lifetime of zero.\"",
+    "text": "In the context of cellular automata, Michael Levin explains: \"Lifetime, we mean just the length of the automaton. So another point I should mention is that if the automaton lives forever, often due to a mutation causing it to get into a loop and live indefinitely, we count that as a fitness of zero or a lifetime of zero. It's basically trying to get a longer and longer finite length.\"",
     "topics": [
       "computational_biology",
-      "complexity",
-      "emergent_properties"
+      "emergent_properties",
+      "complexity"
     ],
-    "original_question": "What does 'lifetime' mean in the context of cellular automata?",
-    "original_answer": "Lifetime, we mean just the length of the automaton. So another point I should mention is that if it, if it lives forever, so a lot of times it'll. You'll do a mutation and then it'll like get into a loop and then like live forever, which we throw. We count that as a fitness of zero or a lifetime of zero.",
+    "original_question": "What does 'lifetime' mean in the context of your cellular automata?",
+    "original_answer": "Lifetime, we mean just the length of the automaton. So another point I should mention is that if it, if it lives forever, so a lot of times it'll. You'll do a mutation and then it'll like get into a loop and then like live forever, which we throw. We count that as a fitness of zero or a lifetime of zero. And then. So it's basically trying to get a longer and longer finite length.",
     "questioner": "Speaker B",
     "answerer": "michael_levin",
     "video_id": "LKSH4QNqpIE",
@@ -68,16 +69,16 @@
   },
   {
     "id": "enhanced_conv_chunk_0004",
-    "text": "In the context of ensuring robustness in the evolution of cellular automata, Michael Levin explains: \"When we're evolving these cellular automata, because we were looking for robustness from the perspective of medicine, we wanted them to be robust. One of the main things I wanted to address is that we do the same evolution, but we perturb the system during the evolution. This is an example of a single step of evolution. We then take the minimum fitness value after perturbing it multiple times. So, if you perturb it 10 times, you take the minimum fitness value, which might be 60 in this case. That's the fitness measure, and all it's doing is forcing the organism to be able to deal with perturbations.\"",
+    "text": "In response to a question about ensuring robustness in the evolution of cellular automata, Michael Levin explains: \"When we're evolving these cellular automata, because we were looking from the perspective of medicine, we wanted them to be robust. One of the main things I wanted to ask you about is how we do that same evolution, but we perturb the system during the evolution. This is an example of a single step of evolution. We take the minimum fitness by perturbing the system 10 times and then taking the minimum fitness value, like this 60 right here. That's then the fitness. All that's doing is just forcing the organism to be able to deal with perturbations.\"",
     "topics": [
       "evolutionary_competency",
-      "robustness",
-      "cellular_automata",
-      "perturbation"
+      "morphogenesis",
+      "developmental_biology",
+      "computational_biology"
     ],
-    "original_question": "How do you ensure robustness in the evolution of cellular automata?",
+    "original_question": "How do you ensure robustness in the evolution of your cellular automata?",
     "original_answer": "When we're evolving, these guys, because, because we were looking for like from the perspective of medicine, we wanted them to be robust. And this is like the kind of. One of the main things I wanted to ask you about, which is, so what we do is we do that same evolution, but we perturb it during the evolution. So this is like an example of a single step of evolution. And then we take the minimum fitness. So basically, if you perturb it 10 times, then you take the minimum fitness. So in this case it would be this 60 right here. And that's then the fitness. And all that's doing is just forcing the organism to be able to deal with perturbations.",
-    "questioner": "Speaker A",
+    "questioner": "Speaker B",
     "answerer": "michael_levin",
     "video_id": "LKSH4QNqpIE",
     "chunk_type": "enhanced_conversation_rag",
@@ -91,16 +92,16 @@
   },
   {
     "id": "enhanced_conv_chunk_0005",
-    "text": "In discussing the unique reproductive process of planaria and its impact on their genome, Michael Levin explains: Planaria, at least the ones that we study, reproduce by ripping themselves in half and regenerating. Unlike most of us who have this thing called Weissman's barrier, which is that mutations in your body don't get passed on to your offspring, planaria are not like that because any mutation that doesn't kill the cell is propagated into the next generation as these stem cells reproduce.",
+    "text": "In discussing the unique reproductive methods of planaria, Michael Levin explains: Planaria, at least the ones that we study, reproduce by ripping themselves in half and regenerating. Unlike most of us who have this thing called Weissman's barrier, which is that mutations in your body don't get passed on to your offspring, planaria are not like that because any mutation that doesn't kill the cell is propagated into the next generation as these stem cells reproduce.",
     "topics": [
       "regeneration",
-      "development",
-      "evolutionary_competency",
-      "stem_cells"
+      "developmental_biology",
+      "morphogenesis",
+      "evolutionary_competency"
     ],
-    "original_question": "What is unique about the way planaria reproduce and how does it affect their genome?",
+    "original_question": "What is unique about the way planaria reproduce compared to most other organisms?",
     "original_answer": "Planaria, at least the ones that we study, reproduce by ripping themselves in half and regenerating. Unlike most of us who have this thing called Weissman's barrier, which is that mutations in your body don't get passed on to your offspring, planaria are not like that because any mutation that doesn't kill the cell is propagated into the next generation as these stem cells reproduce.",
-    "questioner": "Speaker A",
+    "questioner": "Synthetic",
     "answerer": "michael_levin",
     "video_id": "LKSH4QNqpIE",
     "chunk_type": "enhanced_conversation_rag",
@@ -114,16 +115,16 @@
   },
   {
     "id": "enhanced_conv_chunk_0006",
-    "text": "In discussing the surprising nature of planaria's genome, Michael Levin responds: \"It bothered me for a couple of decades when I first found out about this that the animal that is highly regenerative, immortal, resistant to cancer is also the one with the dirtiest genome. That's the exact opposite of what everybody tells you in biology classes where you say, well the genome is very important, you have to keep it clean because it determines this and that.\"",
+    "text": "In response to a question about why the messy genome of planaria contradicts traditional biological teachings, Michael Levin explains: \"It bothered me for a couple of decades when I first found out about this that the animal that is highly regenerative, immortal, resistant to cancer is also the one with the dirtiest genome. That's the exact opposite of what everybody tells you in biology classes where you say, well the genome is very important, you have to keep it clean because it determines this and that.\"",
     "topics": [
       "regeneration",
       "developmental_biology",
       "morphogenesis",
-      "regenerative_medicine"
+      "evolutionary_competency"
     ],
     "original_question": "Why does the messy genome of planaria contradict traditional biological teachings?",
     "original_answer": "It bothered me for a couple of decades when I first found out about this that the animal that is highly regenerative, immortal, resistant to cancer is also the one with the dirtiest genome. That's the exact opposite of what everybody tells you in biology classes where you say, well the genome is very important, you have to keep it clean because it determines this and that.",
-    "questioner": "Speaker A",
+    "questioner": "Synthetic",
     "answerer": "michael_levin",
     "video_id": "LKSH4QNqpIE",
     "chunk_type": "enhanced_conversation_rag",
@@ -137,15 +138,16 @@
   },
   {
     "id": "enhanced_conv_chunk_0007",
-    "text": "In the context of planarian research, the significance of the lack of mutant lines is highlighted. Michael Levin explains: For almost every other model system, you can call the stock center and you can get mutants, so you can get flies with curly wings and mice with weird eyes and there's chickens with funny feet. There are mutant lines that you can get in planaria. There are no mutant lines. The only non-standard planaria that exist are our two head form and our, what we call the cryptic form. And neither of them is genetic, was created genetically.",
+    "text": "In discussing the significance of the lack of mutant lines in planaria, Michael Levin explains: \"For almost every other model system, you can call the stock center and you can get mutants. There are mutant lines that you can get in planaria. There are no mutant lines. The only non-standard planaria that exist are our two head form and our, what we call the cryptic form. And neither of them is genetic, was created genetically.\"",
     "topics": [
       "developmental_biology",
       "morphogenesis",
-      "regenerative_medicine"
+      "regenerative_medicine",
+      "evolutionary_competency"
     ],
     "original_question": "What is the significance of the lack of mutant lines in planaria?",
-    "original_answer": "For almost every other model system you can call the stock center and you can get mutants, so you can get flies with curly wings and mice with weird eyes and there's chickens with funny feet. There are mutant lines that you can get in planaria. There are no mutant lines. The only non-standard planaria that exist are our two head form and our, what we call the cryptic form. And neither of them is genetic, was created genetically.",
-    "questioner": "Speaker A",
+    "original_answer": "For almost every other model system you can call the stock center and you can get mutants... There are mutant lines that you can get in planaria. There are no mutant lines. The only non-standard planaria that exist are our two head form and our, what we call the cryptic form. And neither of them is genetic, was created genetically.",
+    "questioner": "Synthetic",
     "answerer": "michael_levin",
     "video_id": "LKSH4QNqpIE",
     "chunk_type": "enhanced_conversation_rag",
@@ -159,16 +161,16 @@
   },
   {
     "id": "enhanced_conv_chunk_0008",
-    "text": "In discussing the relationship between morphogenetic competency and evolution in planaria, Michael Levin explains: \"The biggest, the most important thing about living tissue is that there is not a mechanical mapping between the genotype and the phenotype. The middle layer that leads from the genome to the genotype to the phenotype has intelligence. It's a problem-solving system. This makes evolution go faster because lots of mutations that otherwise would have been deleterious become neutral.\"",
+    "text": "In response to a question about how morphogenetic competency influences evolution in planaria, Michael Levin explains: \"Imagine what happens to a creature that has that level of morphogenetic competency between the genotype and the phenotype. Let's say you make a mutation. And that mutation, like all mutations, does multiple things... Instead what happens is the face self-corrects, as many things in embryogenesis do. And so now, now, now great, lots of mutations that otherwise would have been deleterious become neutral. And so now you get to explore that. So that's, that's fine. But, but, but here's the other thing about it. So, so that makes evolution go faster.\"",
     "topics": [
       "morphogenetic_code",
       "evolutionary_competency",
-      "problem_solving",
-      "developmental_biology"
+      "developmental_biology",
+      "morphogenesis"
     ],
-    "original_question": "How does the concept of morphogenetic competency relate to evolution in planaria?",
-    "original_answer": "The biggest, the most important thing about living tissue is that there is not a mechanical mapping between the genotype and the phenotype. The middle layer that leads from the genome to the genotype to the phenotype has intelligence. It's a problem-solving system. This makes evolution go faster because lots of mutations that otherwise would have been deleterious become neutral.",
-    "questioner": "Speaker A",
+    "original_question": "How does the concept of morphogenetic competency affect evolution in planaria?",
+    "original_answer": "Imagine what happens to a creature that has that level of morphogenetic competency between the genotype and the phenotype. Let's say you make a mutation. And that mutation, like all mutations, does multiple things... Instead what happens is the face self corrects, as many things in embryogenesis do. And so now, now, now great, lots of mutations that otherwise would have been deleterious become neutral. And so now you get to explore that. So that's, that's fine. But, but, but here's the other thing about it. So, so that makes evolution go faster.",
+    "questioner": "Synthetic",
     "answerer": "michael_levin",
     "video_id": "LKSH4QNqpIE",
     "chunk_type": "enhanced_conversation_rag",
@@ -182,16 +184,16 @@
   },
   {
     "id": "enhanced_conv_chunk_0009",
-    "text": "In discussing the challenges faced by natural selection in evaluating planaria with morphogenetic competency, Michael Levin explains: \"When that animal comes up for selection, selection doesn't know do you have a good face because your structural genome was great, or do you have a good face because your structural genome was actually kind of crap, but you had a lot of competency and you fixed it.\"",
+    "text": "In discussing the challenges faced by natural selection due to morphogenetic competency in planaria, Michael Levin explains: \"When that animal comes up for selection, selection doesn't know do you have a good face because your structural genome was great, or do you have a good face because your structural genome was actually kind of crap, but you had a lot of competency and you fixed it.\"",
     "topics": [
       "morphogenetic_code",
       "morphogenesis",
       "evolutionary_competency",
       "developmental_biology"
     ],
-    "original_question": "What challenge does selection face in evaluating planaria with morphogenetic competency?",
+    "original_question": "What challenge does selection face due to morphogenetic competency in planaria?",
     "original_answer": "When that animal comes up for selection, selection doesn't know do you have a good face because your structural genome was great, or do you have a good face because your structural genome was actually kind of crap, but you had a lot of competency and you fixed it.",
-    "questioner": "Speaker A",
+    "questioner": "Synthetic",
     "answerer": "michael_levin",
     "video_id": "LKSH4QNqpIE",
     "chunk_type": "enhanced_conversation_rag",
@@ -205,12 +207,11 @@
   },
   {
     "id": "enhanced_conv_chunk_0010",
-    "text": "In discussing the challenges evolution faces with the structural genome, Michael Levin explains: \"What happens is that evolution has a hard time seeing the structural genome. The pressure on the genome comes off, but what it does do is crank the competency. And so all the work ends up being spent on improving the competency and it becomes a positive feedback loop because the more you do that, the less you can see the structural genome.\"",
+    "text": "In discussing the impact of evolution's difficulty in perceiving the structural genome, Michael Levin explains: \"What happens is that evolution has a hard time seeing the structural genome. The pressure on the genome comes off, but what it does do is crank the competency. And so all the work ends up being spent on improving the competency and it becomes a positive feedback loop because the more you do that, the less you can see the structural genome.\"",
     "topics": [
       "evolutionary_competency",
       "morphogenetic_code",
-      "developmental_biology",
-      "emergent_properties"
+      "developmental_biology"
     ],
     "original_question": "What happens when evolution has a hard time seeing the structural genome?",
     "original_answer": "What happens is that evolution has a hard time seeing the structural genome. The pressure on the genome comes off, but what it does do is crank the competency. And so all the work ends up being spent on improving the competency and it becomes a positive feedback loop because the more you do that, the less you can see the structural genome.",
@@ -220,9 +221,9 @@
     "chunk_type": "enhanced_conversation_rag",
     "enhancement_method": "gpt4_contextual_with_topics",
     "start_time_ms": 921000,
-    "end_time_ms": 1140000,
+    "end_time_ms": 960000,
     "start_timestamp": "00:15:21",
-    "end_timestamp": "00:19:00",
+    "end_timestamp": "00:16:00",
     "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=921s",
     "chunk_index": 2
   },
@@ -241,91 +242,91 @@
     "video_id": "LKSH4QNqpIE",
     "chunk_type": "enhanced_conversation_rag",
     "enhancement_method": "gpt4_contextual_with_topics",
-    "start_time_ms": 921000,
-    "end_time_ms": 1140000,
-    "start_timestamp": "00:15:21",
-    "end_timestamp": "00:19:00",
-    "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=921s",
+    "start_time_ms": 960000,
+    "end_time_ms": 1000000,
+    "start_timestamp": "00:16:00",
+    "end_timestamp": "00:16:40",
+    "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=960s",
     "chunk_index": 2
   },
   {
     "id": "enhanced_conv_chunk_0012",
-    "text": "In discussing the regenerative capabilities of different organisms, Michael Levin explains: You have intermediate cases like salamanders, which are pretty good at regenerating, but they're not immortal like planaria. And then you have mammals, and then all the way on the left you have something like nematodes, which are just completely cookie cutter organisms where every cell is numbered and all that.",
+    "text": "In discussing the variation in regenerative abilities among different organisms, Michael Levin explains: You have intermediate cases like salamanders, which are pretty good at regenerating, but they're not immortal like planaria. And then you have mammals, and then all the way on the left you have something like nematodes, which are just completely cookie cutter organisms where every cell is numbered and all that.",
     "topics": [
       "regeneration",
       "developmental_biology",
       "morphogenesis"
     ],
-    "original_question": "How do different organisms vary in their regenerative capabilities according to Levin?",
+    "original_question": "How do different organisms vary in their regenerative abilities according to Levin?",
     "original_answer": "You have intermediate cases like salamanders, which are pretty good at regenerating, but they're not immortal like planaria. And then you have mammals, and then all the way on the left you have something like nematodes, which are just completely cookie cutter organisms where every cell is numbered and all that.",
     "questioner": "Synthetic",
     "answerer": "michael_levin",
     "video_id": "LKSH4QNqpIE",
     "chunk_type": "enhanced_conversation_rag",
     "enhancement_method": "gpt4_contextual_with_topics",
-    "start_time_ms": 921000,
-    "end_time_ms": 1140000,
-    "start_timestamp": "00:15:21",
-    "end_timestamp": "00:19:00",
-    "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=921s",
+    "start_time_ms": 1000000,
+    "end_time_ms": 1030000,
+    "start_timestamp": "00:16:40",
+    "end_timestamp": "00:17:10",
+    "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=1000s",
     "chunk_index": 2
   },
   {
     "id": "enhanced_conv_chunk_0013",
-    "text": "In discussing the role of the competency layer in his model of morphogenesis, Michael Levin explains: \"The key here is this middle layer, which is the competency layer. And this is what we've been modeling and what I've been writing about. So I think that's how in all of the Regenerative and Constructive Algorithms (RCAs), that's what we've been doing. So we have the genome that comes in with the rules, we have the phenotype which gets selected, but in the middle it's something like a neural cellular automaton. Which really has some competencies and to get certain goals met even under, under, you know, all kinds of novel conditions.\"",
+    "text": "In discussing the role of the competency layer in biological systems, Michael Levin explains: The key here is this middle layer, which is the competency layer. And this is what we've been modeling and what I've been writing about. So I think that's how in all of Regenerative Competency Architectures (RCAs), that's what we've been doing. We have the genome that comes in with the rules, we have the phenotype which gets selected, but in the middle, it's something like a neural cellular automaton. This middle layer really has some competencies to get certain goals met even under all kinds of novel conditions.",
     "topics": [
-      "morphogenesis",
       "competency_layer",
+      "regenerative_medicine",
       "developmental_biology",
-      "regenerative_medicine"
+      "goal_directed_behavior"
     ],
-    "original_question": "What is the role of the competency layer in Levin's model of morphogenesis?",
+    "original_question": "What is the role of the competency layer in biological systems?",
     "original_answer": "The key here is this middle layer, which is the competency layer. And this is what we've been modeling and what I've been writing about. So I think that's how in all of RCAs, that's what we've been doing. So we have the genome that comes in with the rules, we have the phenotype which gets selected, but in the middle it's something like a neural ca. Which really has some competencies and to get certain goals met even under, under, you know, all kinds of novel conditions.",
     "questioner": "Synthetic",
     "answerer": "michael_levin",
     "video_id": "LKSH4QNqpIE",
     "chunk_type": "enhanced_conversation_rag",
     "enhancement_method": "gpt4_contextual_with_topics",
-    "start_time_ms": 921000,
-    "end_time_ms": 1140000,
-    "start_timestamp": "00:15:21",
-    "end_timestamp": "00:19:00",
-    "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=921s",
+    "start_time_ms": 1030000,
+    "end_time_ms": 1080000,
+    "start_timestamp": "00:17:10",
+    "end_timestamp": "00:18:00",
+    "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=1030s",
     "chunk_index": 2
   },
   {
     "id": "enhanced_conv_chunk_0014",
-    "text": "In response to a question about simple systems that demonstrate competency, Michael Levin explains: \"We started looking at it in very simple things, so we started looking at it in sorting algorithms. I don't know if you've seen this paper that we have on sorting and there's a couple of blog posts I have about it, but basically there's some of this already in Bubble sort already does some of this. So very simple systems, like extremely simple deterministic systems already do this.\"",
+    "text": "In discussing the significance of Yuri Alon's work in systems medicine, Michael Levin explains: \"There's this guy, Yuri Alon, you know him, he's like a synthetic biologist in Israel. He's, he's really good. He has a ton of great work. Anyway, here's the book and I'm going to put the title on the chat. You should take a look at this. It's called Systems Medicine by Yuri Alon, A L O N and the cover of it is like basically like a periodic table. Like basically he's trying to ask the question of what from physiological circuits. What can we say about the kind of failure modes?\"",
     "topics": [
-      "unconventional_intelligence",
-      "problem_solving",
-      "computational_biology",
-      "emergent_properties"
+      "synthetic_biology",
+      "systems_medicine",
+      "physiological_circuits",
+      "failure_modes"
     ],
-    "original_question": "What are some simple systems that demonstrate competency according to Levin?",
-    "original_answer": "We started looking at it in very simple things, so we started looking at it in sorting algorithms. I don't know if you've seen this paper that we have on sorting and there's a couple of blog posts I have about it, but basically there's some of this already in Bubble sort already does some of this. So very simple systems, like extremely simple deterministic systems already do this.",
+    "original_question": "What is the significance of Yuri Alon's work in systems medicine?",
+    "original_answer": "There's this guy, Yuri Alon, you know him, he's like a synthetic biologist in Israel. He's, he's really good. He has a ton of great work. Anyway, here's the book and I'm going to put the title on the chat. You should take a look at this. It's called Systems Medicine by Yuri Alon, A L O N and the COVID of it is like basically like a periodic table. Like basically he's trying to ask the question of what from physiological circuits. What can we say about the kind of failure modes?",
     "questioner": "Synthetic",
     "answerer": "michael_levin",
     "video_id": "LKSH4QNqpIE",
     "chunk_type": "enhanced_conversation_rag",
     "enhancement_method": "gpt4_contextual_with_topics",
-    "start_time_ms": 1321000,
-    "end_time_ms": 1360000,
-    "start_timestamp": "00:22:01",
-    "end_timestamp": "00:22:40",
-    "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=1321s",
+    "start_time_ms": 1080000,
+    "end_time_ms": 1140000,
+    "start_timestamp": "00:18:00",
+    "end_timestamp": "00:19:00",
+    "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=1080s",
     "chunk_index": 2
   },
   {
     "id": "enhanced_conv_chunk_0015",
-    "text": "In response to a question about how planaria demonstrate creative problem-solving when faced with environmental challenges, Michael Levin explains: In planaria, for example, we have this thing where we put them in barium chloride and barium is a non-specific blocker of potassium channels. So the cells are very unhappy. In particular, all the neurons in the head are very unhappy because they can't pass potassium. So over a day, their heads explode. But then if you leave them in the barium after about a week or two, they grow back a new head and the new head is completely insensitive to the barium. We found out that they express under a dozen new genes that enable them to live with blocked potassium channels.",
+    "text": "In response to how planaria demonstrate creative problem-solving when exposed to barium chloride, Michael Levin explains: In planaria, for example, we have this thing where we put them in barium chloride and barium is a non-specific blocker of potassium channels. So the cells are very unhappy. In particular, all the neurons in the head are very unhappy because they can't pass potassium. So over a day, their heads explode. But then if you leave them in the barium after about a week or two, they grow back a new head and the new head is completely insensitive to the barium. We found out that they express under a dozen new genes that enable them to live with blocked potassium channels.",
     "topics": [
       "problem_solving",
       "regeneration",
-      "developmental_biology",
-      "adaptation"
+      "morphogenesis",
+      "developmental_biology"
     ],
-    "original_question": "How do planaria demonstrate creative problem-solving in response to environmental challenges?",
+    "original_question": "How do planaria demonstrate creative problem-solving in response to barium chloride exposure?",
     "original_answer": "In planaria, for example, we have this thing where we put them in barium chloride and barium is a non-specific blocker of potassium channels. So the cells are very unhappy. In particular, all the neurons in the head are very unhappy because they can't pass potassium. So over a day, their heads explode. But then if you leave them in the barium after about a week or two, they grow back a new head and the new head is completely insensitive to the barium. We found out that they express under a dozen new genes that enable them to live with blocked potassium channels.",
     "questioner": "Synthetic",
     "answerer": "michael_levin",
@@ -341,12 +342,12 @@
   },
   {
     "id": "enhanced_conv_chunk_0016",
-    "text": "In exploring the complexities of bioelectrical circuits within biological systems, Michael Levin responds: Our situation is somewhat like neuroscience in that if you're looking at the proximal molecular mechanism, we understand it quite well. We know that a lot of this is mediated by bioelectrical circuits. We know the molecules involved. We can see the electrical computations happening. But that by itself is utterly unsatisfying because it's kind of like saying you understand the computer because you understand copper and silicon and you can watch the electrons flow. But what's the computation that it's actually doing? That's a much more challenging thing.",
+    "text": "In the context of understanding the mechanisms of bioelectrical circuits in biological systems, Michael Levin explains: Our situation is somewhat like neuroscience in that if you're looking at the proximal molecular mechanism, we understand it quite well. We know that a lot of this is mediated by bioelectrical circuits. We know the molecules involved. We can see the electrical computations happening. But that by itself is utterly unsatisfying because it's kind of like saying you understand the computer because you understand copper and silicon and you can watch the electrons flow. But what's the computation that it's actually doing? That's a much more challenging thing.",
     "topics": [
       "bioelectricity",
       "bioelectric_circuits",
       "computational_biology",
-      "complexity"
+      "anatomical_decision_making"
     ],
     "original_question": "What challenges exist in understanding the mechanisms of bioelectrical circuits in biological systems?",
     "original_answer": "Our situation is somewhat like neuroscience in that if you're looking at the proximal molecular mechanism, we understand it quite well. We know that a lot of this is mediated by bioelectrical circuits. We know the molecules involved. We can see the electrical computations happening. But that by itself is utterly unsatisfying because it's kind of like saying you understand the computer because you understand copper and silicon and you can watch the electrons flow. But what's the computation that it's actually doing? That's a much more challenging thing.",
@@ -364,7 +365,7 @@
   },
   {
     "id": "enhanced_conv_chunk_0017",
-    "text": "In response to a question about how bioelectrical circuits contribute to the understanding of biological computation, Michael Levin explains: \"We know that a lot of this is mediated by bioelectrical circuits. We know the molecules involved. We can see the electrical computations happening. Like the mechanisms aspect of it, we have it. But what's the computation that it's actually doing? That's a much more challenging thing.\"",
+    "text": "In response to a question about how bioelectrical circuits contribute to the understanding of biological computation, Michael Levin explains: We know that a lot of the understanding of biological computation is mediated by bioelectrical circuits. We know the molecules involved. We can see the electrical computations happening. Like the mechanisms aspect of it. We have it. But, but that by itself is, is utterly unsatisfying because it's kind of like saying you understand the computer because you understand copper and silicon and you can watch the electrons flow.",
     "topics": [
       "bioelectricity",
       "biological_computation",
@@ -372,7 +373,7 @@
       "computational_biology"
     ],
     "original_question": "How do bioelectrical circuits contribute to the understanding of biological computation?",
-    "original_answer": "We know that a lot of this is mediated by bioelectrical circuits. We know the molecules involved. We can see the electrical computations happening. Like the mechanisms aspect of it, we have it. But what's the computation that it's actually doing? That's a much more challenging thing.",
+    "original_answer": "We know that a lot of this is mediated by bioelectrical circuits. We know the molecules involved. We can see the electrical computations happening. Like the mechanisms aspect of it. We have it. But, but that by itself is, is utterly unsatisfying because it's kind of like saying you understand the computer because you understand copper and silicon and you can watch the electrons flow.",
     "questioner": "Synthetic",
     "answerer": "michael_levin",
     "video_id": "LKSH4QNqpIE",
@@ -387,15 +388,15 @@
   },
   {
     "id": "enhanced_conv_chunk_0018",
-    "text": "In response to a question about the significance of morphogenesis in the study of biological systems, Michael Levin explains: \"I love morphogenesis as a behavior in anatomical space. I would recommend thinking about that, looking at different aspects of the shapes. Aspect ratio is good, and then going beyond that too. That's what we do in Ben Hardless paper that I just put up, is look at the ability to regenerate after anatomical damage.\"",
+    "text": "In response to a question about the significance of morphogenesis in biological research, Michael Levin explains: \"I love morphogenesis as a behavior in anatomical space. I would recommend thinking about that, looking at different aspects of the shapes. Aspect ratio is good, and then going beyond that too. That's what we do in Ben Hardless paper that I just put up is look at the ability to regenerate after anatomical damage.\"",
     "topics": [
       "morphogenesis",
       "regeneration",
       "developmental_biology",
       "anatomical_decision_making"
     ],
-    "original_question": "What is the significance of morphogenesis in the study of biological systems?",
-    "original_answer": "I love morphogenesis as a behavior in anatomical space. I would recommend thinking about that, looking at different aspects of the shapes. Aspect ratio is good, and then going beyond that too. That's what we do in Ben Hardless paper that I just put up, is look at the ability to regenerate after anatomical damage.",
+    "original_question": "What is the significance of morphogenesis in biological research?",
+    "original_answer": "I love morphogenesis as a behavior in anatomical space. I would recommend thinking about that, looking at different aspects of the shapes. Aspect ratio is good, and then going beyond that too. That's what we do in Ben Hardless paper that I just put up is look at the ability to regenerate after anatomical damage.",
     "questioner": "Synthetic",
     "answerer": "michael_levin",
     "video_id": "LKSH4QNqpIE",
@@ -410,15 +411,15 @@
   },
   {
     "id": "enhanced_conv_chunk_0019",
-    "text": "In response to how biological systems find novel solutions to environmental challenges, Michael Levin explains: The living material is able to achieve the standard outcome despite all the noise and unreliability of the substrate, but also find new solutions, whether they be physiological solutions like vivarium or anatomical solutions and behavioral solutions like for anthrobots and xenobots. There's some degree of homeostasis and navigation of that anatomical space, but also towards novel solutions, which I think is just the exact same thing as creative problem-solving.",
+    "text": "In response to a question about how biological systems find novel solutions to environmental challenges, Michael Levin explains: This question of how the living material is able to achieve the standard outcome despite all the noise and unreliability of the substrate, but also find new solutions, whether they be physiological solutions like vivarium or anatomical solutions and behavioral solutions like for anthrobots and xenobots, there's some degree of homeostasis and navigation of that anatomical space, but also towards novel solutions, which I think is just the exact same thing as creative problem solving.",
     "topics": [
+      "unconventional_intelligence",
       "morphogenesis",
-      "xenobots",
-      "anthrobots",
-      "problem_solving"
+      "problem_solving",
+      "xenobots"
     ],
     "original_question": "How do biological systems find novel solutions to environmental challenges?",
-    "original_answer": "The living material is able to achieve the standard outcome despite all the noise and unreliability of the substrate, but also find new solutions, whether they be physiological solutions like vivarium or anatomical solutions and behavioral solutions like for anthrobots and xenobots. There's some degree of homeostasis and navigation of that anatomical space, but also towards novel solutions, which I think is just the exact same thing as creative problem-solving.",
+    "original_answer": "This question of how the living material is able to achieve the standard outcome despite all the noise and unreliability of the substrate, but also find new solutions, whether they be physiological solutions like vivarium or anatomical solutions and behavioral solutions like for anthrobots and xenobots, there's some degree of homeostasis and navigation of that anatomical space, but also towards novel solutions, which I think is just the exact same thing as creative problem solving.",
     "questioner": "Synthetic",
     "answerer": "michael_levin",
     "video_id": "LKSH4QNqpIE",
@@ -433,15 +434,15 @@
   },
   {
     "id": "enhanced_conv_chunk_0020",
-    "text": "In response to a question about inducing tadpoles to develop eyes on their tails, Michael Levin explains: We have it to the extent that we can make tadpoles with eyes on their tails and the two-headed flatworms, and we can fix certain kinds of birth defects and we can induce certain kinds of regenerative events.",
+    "text": "In response to a question about examples of regenerative events that can be induced in organisms, Michael Levin explains: \"We can make tadpoles with eyes on their tails and the two-headed flatworms and we can fix certain kinds of birth defects and we can induce certain kinds of regenerative events.\"",
     "topics": [
-      "morphogenesis",
       "regeneration",
+      "morphogenesis",
       "developmental_biology",
-      "bioelectricity"
+      "regenerative_medicine"
     ],
-    "original_question": "How can tadpoles be induced to develop eyes on their tails?",
-    "original_answer": "We have it to the extent that we can make tadpoles with eyes on their tails and the two headed flatworms and we can fix certain kinds of birth defects and we can induce certain kinds of regenerative events.",
+    "original_question": "What are some examples of regenerative events that can be induced in organisms?",
+    "original_answer": "We can make tadpoles with eyes on their tails and the two-headed flatworms and we can fix certain kinds of birth defects and we can induce certain kinds of regenerative events.",
     "questioner": "Synthetic",
     "answerer": "michael_levin",
     "video_id": "LKSH4QNqpIE",
@@ -456,13 +457,13 @@
   },
   {
     "id": "enhanced_conv_chunk_0021",
-    "text": "In response to why Michael Levin believes that medicine won't be solved by mechanical approaches, Michael Levin explains: \"I don't think medicine is going to be solved by mechanical kinds of approaches and not feed forward emergence. I think all of this is prompt and I think this is why we have so few good drugs in the sense of dependable efficacy and consistent, you know, lack of side effects among patients.\"",
+    "text": "In discussing the future of medicine, Michael Levin responds: \"I don't think medicine is going to be solved by mechanical kinds of approaches and not feed forward emergence. I think all of this is prompt and I think this is why we have so few good drugs in the sense of dependable efficacy and consistent, you know, lack of side effects among patients.\"",
     "topics": [
       "regenerative_medicine",
       "emergent_properties",
       "developmental_biology"
     ],
-    "original_question": "Why does Michael Levin believe that medicine won't be solved by mechanical approaches?",
+    "original_question": "Why does Michael Levin believe that medicine should focus on developing prompts rather than mechanical approaches?",
     "original_answer": "I don't think medicine is going to be solved by mechanical kinds of approaches and not feed forward emergence. I think all of this is prompt and I think this is why we have so few good drugs in the sense of dependable efficacy and consistent, you know, lack of side effects among patients.",
     "questioner": "Synthetic",
     "answerer": "michael_levin",
@@ -478,16 +479,16 @@
   },
   {
     "id": "enhanced_conv_chunk_0022",
-    "text": "In response to a question about how altering electrical communication in cells can induce metastatic melanoma in tadpoles, Michael Levin explains: We can induce basically metastatic melanoma in a normal tadpole. No, no drugs, no carcinogens, no oncogenes, no DNA damage. And you can do that by, by messing up the electrical communication with some cells. It only takes about three cells in the whole, in the whole tadpole before they trigger every other melanocyte to go, to go metastatic.",
+    "text": "In response to a question about how altering electrical communication in cells can induce metastatic melanoma in tadpoles, Michael Levin explains: We can induce basically metastatic melanoma in a normal tadpole. No drugs, no carcinogens, no oncogenes, no DNA damage. And you can do that by messing up the electrical communication with some cells. It only takes about three cells in the whole tadpole before they trigger every other melanocyte to go metastatic.",
     "topics": [
       "bioelectricity",
       "morphogenesis",
-      "developmental_biology",
+      "development",
       "regenerative_medicine"
     ],
     "original_question": "How can altering electrical communication in cells induce metastatic melanoma in tadpoles?",
-    "original_answer": "We can induce basically metastatic melanoma in a normal tadpole. No, no drugs, no carcinogens, no oncogenes, no DNA damage. And you can do that by, by messing up the electrical communication with some cells. It only takes about three cells in the whole, in the whole tadpole before they trigger every other melanocyte to go, to go metastatic.",
-    "questioner": "Speaker A",
+    "original_answer": "We can induce basically metastatic melanoma in a normal tadpole. No drugs, no carcinogens, no oncogenes, no DNA damage. And you can do that by messing up the electrical communication with some cells. It only takes about three cells in the whole tadpole before they trigger every other melanocyte to go metastatic.",
+    "questioner": "Synthetic",
     "answerer": "michael_levin",
     "video_id": "LKSH4QNqpIE",
     "chunk_type": "enhanced_conversation_rag",
@@ -501,15 +502,15 @@
   },
   {
     "id": "enhanced_conv_chunk_0023",
-    "text": "In response to a question about whether bioelectric signals can influence cells that are not geometrically proximal, Michael Levin explains: \"We've shown both in cancer and in brain repair that you can actually trigger cells on the opposite side of the animal and still get effects on the other side. So these things move. So there are waves of, propagating waves of this information that go through tissue and which we can now see to some extent.\"",
+    "text": "In the context of understanding how bioelectric signals can influence cells that are not physically close, Michael Levin explains: \"We've shown both in cancer and in brain repair that you can actually trigger cells on the opposite side of the animal and still get effects on the other side. So there are waves of propagating waves of this information that go through tissue.\"",
     "topics": [
       "bioelectricity",
       "morphogenesis",
-      "regeneration",
+      "regenerative_medicine",
       "developmental_biology"
     ],
     "original_question": "Can bioelectric signals affect cells that are not geometrically proximal?",
-    "original_answer": "We've shown both in cancer and in brain repair that you can actually trigger cells on the opposite side of the animal and still get, and get effects on the other side. So these things move. So there are waves of, propagating waves of this information that go through tissue and which we can now see to some extent.",
+    "original_answer": "We've shown both in cancer and in brain repair that you can actually trigger cells on the opposite side of the animal and still get effects on the other side. So there are waves of propagating waves of this information that go through tissue.",
     "questioner": "Synthetic",
     "answerer": "michael_levin",
     "video_id": "LKSH4QNqpIE",
@@ -524,25 +525,25 @@
   },
   {
     "id": "enhanced_conv_chunk_0024",
-    "text": "In the context of inducing ectopic eyes in tadpoles, Michael Levin explains: When you induce an ectopic eye on the tail or in the gut of a tadpole, you don't have to hit a lot of cells. If you section those eyes, you often find out that we actually only hit a small number of cells. But what these cells did was recruit all their neighbors to help them build this structure.",
+    "text": "In the context of inducing ectopic eyes in tadpoles, Michael Levin explains: When you induce an ectopic eye on the tail or in the gut of a tadpole, you don't have to hit a lot of cells. If you section those eyes, you often find out that we actually only hit a small number of cells. But what those cells did was recruit all their neighbors to help them build this structure.",
     "topics": [
       "morphogenesis",
-      "developmental_biology",
+      "development",
       "bioelectricity",
-      "self_organization"
+      "pattern_formation"
     ],
-    "original_question": "What happens when an ectopic eye is induced in a tadpole?",
-    "original_answer": "When you induce a, an ectopic eye on the, on the tail of a, or in the gut of a tadpole, you don't have to hit a lot of cells. If when you section those eyes, you often find out that we actually only hit a small number of cells. But what they did was recruit all their neighbors to help them build this structure.",
+    "original_question": "What happens when you induce an ectopic eye in a tadpole?",
+    "original_answer": "When you induce an ectopic eye on the tail of a, or in the gut of a tadpole, you don't have to hit a lot of cells. If when you section those eyes, you often find out that we actually only hit a small number of cells. But what they did was recruit all their neighbors to help them build this structure.",
     "questioner": "Synthetic",
     "answerer": "michael_levin",
     "video_id": "LKSH4QNqpIE",
     "chunk_type": "enhanced_conversation_rag",
     "enhancement_method": "gpt4_contextual_with_topics",
-    "start_time_ms": 1959000,
-    "end_time_ms": 2045000,
-    "start_timestamp": "00:32:39",
-    "end_timestamp": "00:34:05",
-    "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=1959s",
+    "start_time_ms": 2046000,
+    "end_time_ms": 2134000,
+    "start_timestamp": "00:34:06",
+    "end_timestamp": "00:35:34",
+    "youtube_link": "https://www.youtube.com/watch?v=LKSH4QNqpIE&t=2046s",
     "chunk_index": 4
   }
 ]

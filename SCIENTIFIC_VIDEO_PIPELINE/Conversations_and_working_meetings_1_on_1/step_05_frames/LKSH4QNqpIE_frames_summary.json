@@ -5,16 +5,16 @@
     "title": "Cellular automata and models of health and disease",
     "playlist_id": "PLmR3yIXYqfUIxjoMcSDxoBsj-tSasEZT2",
     "playlist_title": "Conversations and working meetings - 1 - on -1_test",
-    "status": "completed",
+    "status": null,
     "download_path": "step_02_extracted_playlist_content/video_LKSH4QNqpIE/video.mp4",
-    "file_size_mb": 32.61
+    "file_size_mb": 73.47
   },
   "extraction_parameters": {
     "frame_interval": 60,
     "frame_interval_seconds": 60,
     "frame_interval_minutes": 1.0,
     "frame_quality": 2,
-    "max_frames": 200,
+    "max_frames": 400,
     "pipeline_type": "conversations_1_on_1"
   },
   "total_frames_extracted": 36,
@@ -24,7 +24,7 @@
       "filename": "LKSH4QNqpIE_frame_000_0.0s.jpg",
       "timestamp": 0,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_000_0.0s.jpg",
-      "file_size": 33337,
+      "file_size": 96495,
       "extraction_order": 0
     },
     {
@@ -32,7 +32,7 @@
       "filename": "LKSH4QNqpIE_frame_001_60.0s.jpg",
       "timestamp": 60,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_001_60.0s.jpg",
-      "file_size": 38720,
+      "file_size": 106122,
       "extraction_order": 1
     },
     {
@@ -40,7 +40,7 @@
       "filename": "LKSH4QNqpIE_frame_002_120.0s.jpg",
       "timestamp": 120,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_002_120.0s.jpg",
-      "file_size": 58871,
+      "file_size": 155621,
       "extraction_order": 2
     },
     {
@@ -48,7 +48,7 @@
       "filename": "LKSH4QNqpIE_frame_003_180.0s.jpg",
       "timestamp": 180,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_003_180.0s.jpg",
-      "file_size": 51338,
+      "file_size": 141422,
       "extraction_order": 3
     },
     {
@@ -56,7 +56,7 @@
       "filename": "LKSH4QNqpIE_frame_004_240.0s.jpg",
       "timestamp": 240,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_004_240.0s.jpg",
-      "file_size": 44022,
+      "file_size": 118689,
       "extraction_order": 4
     },
     {
@@ -64,7 +64,7 @@
       "filename": "LKSH4QNqpIE_frame_005_300.0s.jpg",
       "timestamp": 300,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_005_300.0s.jpg",
-      "file_size": 40647,
+      "file_size": 113486,
       "extraction_order": 5
     },
     {
@@ -72,7 +72,7 @@
       "filename": "LKSH4QNqpIE_frame_006_360.0s.jpg",
       "timestamp": 360,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_006_360.0s.jpg",
-      "file_size": 46161,
+      "file_size": 116543,
       "extraction_order": 6
     },
     {
@@ -80,7 +80,7 @@
       "filename": "LKSH4QNqpIE_frame_007_420.0s.jpg",
       "timestamp": 420,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_007_420.0s.jpg",
-      "file_size": 45638,
+      "file_size": 123932,
       "extraction_order": 7
     },
     {
@@ -88,7 +88,7 @@
       "filename": "LKSH4QNqpIE_frame_008_480.0s.jpg",
       "timestamp": 480,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_008_480.0s.jpg",
-      "file_size": 49454,
+      "file_size": 132724,
       "extraction_order": 8
     },
     {
@@ -96,7 +96,7 @@
       "filename": "LKSH4QNqpIE_frame_009_540.0s.jpg",
       "timestamp": 540,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_009_540.0s.jpg",
-      "file_size": 59083,
+      "file_size": 161873,
       "extraction_order": 9
     },
     {
@@ -104,7 +104,7 @@
       "filename": "LKSH4QNqpIE_frame_010_600.0s.jpg",
       "timestamp": 600,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_010_600.0s.jpg",
-      "file_size": 47130,
+      "file_size": 130026,
       "extraction_order": 10
     },
     {
@@ -112,7 +112,7 @@
       "filename": "LKSH4QNqpIE_frame_011_660.0s.jpg",
       "timestamp": 660,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_011_660.0s.jpg",
-      "file_size": 49278,
+      "file_size": 130905,
       "extraction_order": 11
     },
     {
@@ -120,7 +120,7 @@
       "filename": "LKSH4QNqpIE_frame_012_720.0s.jpg",
       "timestamp": 720,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_012_720.0s.jpg",
-      "file_size": 48954,
+      "file_size": 130048,
       "extraction_order": 12
     },
     {
@@ -128,7 +128,7 @@
       "filename": "LKSH4QNqpIE_frame_013_780.0s.jpg",
       "timestamp": 780,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_013_780.0s.jpg",
-      "file_size": 48953,
+      "file_size": 130069,
       "extraction_order": 13
     },
     {
@@ -136,7 +136,7 @@
       "filename": "LKSH4QNqpIE_frame_014_840.0s.jpg",
       "timestamp": 840,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_014_840.0s.jpg",
-      "file_size": 48927,
+      "file_size": 129996,
       "extraction_order": 14
     },
     {
@@ -144,7 +144,7 @@
       "filename": "LKSH4QNqpIE_frame_015_900.0s.jpg",
       "timestamp": 900,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_015_900.0s.jpg",
-      "file_size": 48978,
+      "file_size": 130072,
       "extraction_order": 15
     },
     {
@@ -152,7 +152,7 @@
       "filename": "LKSH4QNqpIE_frame_016_960.0s.jpg",
       "timestamp": 960,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_016_960.0s.jpg",
-      "file_size": 49029,
+      "file_size": 130182,
       "extraction_order": 16
     },
     {
@@ -160,7 +160,7 @@
       "filename": "LKSH4QNqpIE_frame_017_1020.0s.jpg",
       "timestamp": 1020,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_017_1020.0s.jpg",
-      "file_size": 50220,
+      "file_size": 134323,
       "extraction_order": 17
     },
     {
@@ -168,7 +168,7 @@
       "filename": "LKSH4QNqpIE_frame_018_1080.0s.jpg",
       "timestamp": 1080,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_018_1080.0s.jpg",
-      "file_size": 50269,
+      "file_size": 135779,
       "extraction_order": 18
     },
     {
@@ -176,7 +176,7 @@
       "filename": "LKSH4QNqpIE_frame_019_1140.0s.jpg",
       "timestamp": 1140,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_019_1140.0s.jpg",
-      "file_size": 49028,
+      "file_size": 129880,
       "extraction_order": 19
     },
     {
@@ -184,7 +184,7 @@
       "filename": "LKSH4QNqpIE_frame_020_1200.0s.jpg",
       "timestamp": 1200,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_020_1200.0s.jpg",
-      "file_size": 49048,
+      "file_size": 130096,
       "extraction_order": 20
     },
     {
@@ -192,7 +192,7 @@
       "filename": "LKSH4QNqpIE_frame_021_1260.0s.jpg",
       "timestamp": 1260,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_021_1260.0s.jpg",
-      "file_size": 49056,
+      "file_size": 131047,
       "extraction_order": 21
     },
     {
@@ -200,7 +200,7 @@
       "filename": "LKSH4QNqpIE_frame_022_1320.0s.jpg",
       "timestamp": 1320,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_022_1320.0s.jpg",
-      "file_size": 48594,
+      "file_size": 129559,
       "extraction_order": 22
     },
     {
@@ -208,7 +208,7 @@
       "filename": "LKSH4QNqpIE_frame_023_1380.0s.jpg",
       "timestamp": 1380,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_023_1380.0s.jpg",
-      "file_size": 49110,
+      "file_size": 130446,
       "extraction_order": 23
     },
     {
@@ -216,7 +216,7 @@
       "filename": "LKSH4QNqpIE_frame_024_1440.0s.jpg",
       "timestamp": 1440,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_024_1440.0s.jpg",
-      "file_size": 48986,
+      "file_size": 132382,
       "extraction_order": 24
     },
     {
@@ -224,7 +224,7 @@
       "filename": "LKSH4QNqpIE_frame_025_1500.0s.jpg",
       "timestamp": 1500,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_025_1500.0s.jpg",
-      "file_size": 49182,
+      "file_size": 133189,
       "extraction_order": 25
     },
     {
@@ -232,7 +232,7 @@
       "filename": "LKSH4QNqpIE_frame_026_1560.0s.jpg",
       "timestamp": 1560,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_026_1560.0s.jpg",
-      "file_size": 49152,
+      "file_size": 133000,
       "extraction_order": 26
     },
     {
@@ -240,7 +240,7 @@
       "filename": "LKSH4QNqpIE_frame_027_1620.0s.jpg",
       "timestamp": 1620,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_027_1620.0s.jpg",
-      "file_size": 49161,
+      "file_size": 133100,
       "extraction_order": 27
     },
     {
@@ -248,7 +248,7 @@
       "filename": "LKSH4QNqpIE_frame_028_1680.0s.jpg",
       "timestamp": 1680,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_028_1680.0s.jpg",
-      "file_size": 48962,
+      "file_size": 132068,
       "extraction_order": 28
     },
     {
@@ -256,7 +256,7 @@
       "filename": "LKSH4QNqpIE_frame_029_1740.0s.jpg",
       "timestamp": 1740,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_029_1740.0s.jpg",
-      "file_size": 49133,
+      "file_size": 130201,
       "extraction_order": 29
     },
     {
@@ -264,7 +264,7 @@
       "filename": "LKSH4QNqpIE_frame_030_1800.0s.jpg",
       "timestamp": 1800,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_030_1800.0s.jpg",
-      "file_size": 49137,
+      "file_size": 133036,
       "extraction_order": 30
     },
     {
@@ -272,7 +272,7 @@
       "filename": "LKSH4QNqpIE_frame_031_1860.0s.jpg",
       "timestamp": 1860,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_031_1860.0s.jpg",
-      "file_size": 49163,
+      "file_size": 133138,
       "extraction_order": 31
     },
     {
@@ -280,7 +280,7 @@
       "filename": "LKSH4QNqpIE_frame_032_1920.0s.jpg",
       "timestamp": 1920,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_032_1920.0s.jpg",
-      "file_size": 49130,
+      "file_size": 133002,
       "extraction_order": 32
     },
     {
@@ -288,7 +288,7 @@
       "filename": "LKSH4QNqpIE_frame_033_1980.0s.jpg",
       "timestamp": 1980,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_033_1980.0s.jpg",
-      "file_size": 49129,
+      "file_size": 133034,
       "extraction_order": 33
     },
     {
@@ -296,7 +296,7 @@
       "filename": "LKSH4QNqpIE_frame_034_2040.0s.jpg",
       "timestamp": 2040,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_034_2040.0s.jpg",
-      "file_size": 49180,
+      "file_size": 133126,
       "extraction_order": 34
     },
     {
@@ -304,9 +304,9 @@
       "filename": "LKSH4QNqpIE_frame_035_2100.0s.jpg",
       "timestamp": 2100,
       "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_035_2100.0s.jpg",
-      "file_size": 49159,
+      "file_size": 133150,
       "extraction_order": 35
     }
   ],
-  "processing_timestamp": "2025-08-19T20:43:22.801371"
+  "processing_timestamp": "2025-08-21T14:27:06.151864"
 }

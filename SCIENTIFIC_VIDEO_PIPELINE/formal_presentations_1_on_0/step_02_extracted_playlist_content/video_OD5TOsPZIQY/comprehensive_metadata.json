@@ -15,39 +15,9 @@
     "default_audio_language": null
   },
   "download_result": {
-    "success": true,
-    "video_file": "step_02_extracted_playlist_content/video_OD5TOsPZIQY/video.mp4",
-    "file_size_mb": 45.832369804382324,
-    "additional_metadata": {
-      "upload_date": "20250515",
-      "duration": 2149,
-      "view_count": 120574,
-      "like_count": 6872,
-      "tags": [],
-      "categories": [
-        "People & Blogs"
-      ],
-      "language": "en",
-      "age_limit": 0,
-      "is_live": false,
-      "was_live": false,
-      "live_status": "not_live",
-      "availability": "public",
-      "format": "18 - 576x360 (360p)",
-      "resolution": "576x360",
-      "fps": 25,
-      "vcodec": "avc1.42001E",
-      "acodec": "mp4a.40.2",
-      "filesize": 48058723,
-      "filesize_approx": 48058558,
-      "subtitle_files": [
-        "video.en.vtt"
-      ],
-      "thumbnail_files": [
-        "video.webp"
-      ]
-    },
-    "download_time": "2025-08-18T10:35:54.567994"
+    "success": false,
+    "error": "yt-dlp error: ERROR: \n[download] Got error: HTTP Error 403: Forbidden\nERROR: fragment 1 not found, unable to continue\nWARNING: Unable to download format 232. Skipping...\nERROR: \n[download] Got error: HTTP Error 403: Forbidden\nERROR: fragment 1 not found, unable to continue\nWARNING: Unable to download format 233. Skipping...\nERROR: [youtube] OD5TOsPZIQY: Requested format is not available. Use --list-formats for a list of available formats\n",
+    "download_time": "2025-08-21T14:49:40.480280"
   },
-  "processing_timestamp": "2025-08-18T10:35:54.568024"
+  "processing_timestamp": "2025-08-21T14:49:40.480500"
 }

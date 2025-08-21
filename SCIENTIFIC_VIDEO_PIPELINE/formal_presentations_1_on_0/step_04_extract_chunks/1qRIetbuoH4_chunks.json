@@ -1,0 +1,1441 @@
+{
+  "video_id": "1qRIetbuoH4",
+  "video_metadata": {},
+  "transcript_metadata": {},
+  "chunking_parameters": {
+    "max_chunk_tokens": 300,
+    "min_chunk_tokens": 100,
+    "overlap_tokens": 50
+  },
+  "total_chunks": 37,
+  "total_tokens": 5668,
+  "chunks": [
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_000",
+      "text": "Is interested in any of the details, the software, the data sets, or getting in touch with me. This is the website where everything is. And so what we're going to talk about is the opportunities around bioelectricity and in general around cellular collective intelligence in biorobotics, regenerative medicine and so on. So the design challenge that we have is, can be summed up as the total rational control of growth and form. And what I mean by that is that if we had the ability to tell groups of cells what to build in terms of three dimensional anatomical structure, many medical problems, in fact most medical problems would go away.",
+      "token_count": 112,
+      "sentence_count": 6,
+      "start_sentence": 0,
+      "end_sentence": 5,
+      "start_time_ms": 400,
+      "end_time_ms": 37730,
+      "start_time_seconds": 0.4,
+      "end_time_seconds": 37.73,
+      "primary_topics": [
+        "Bioelectricity",
+        "Cellular Collective Intelligence",
+        "Biorobotics",
+        "Regenerative Medicine",
+        "Control of Growth and Form"
+      ],
+      "secondary_topics": [
+        "Three Dimensional Anatomical Structure",
+        "Medical Problems",
+        "Rational Control",
+        "Cellular Communication",
+        "Data Sets",
+        "Software",
+        "Website"
+      ],
+      "key_terms": [
+        "Bioelectricity",
+        "Biorobotics",
+        "Regenerative Medicine",
+        "Cellular Collective Intelligence",
+        "Three Dimensional Anatomical Structure",
+        "Rational Control",
+        "Growth and Form"
+      ],
+      "content_summary": "The presentation discusses the potential of bioelectricity and cellular collective intelligence in fields such as biorobotics and regenerative medicine. The speaker emphasizes the challenge and importance of achieving rational control over growth and form in cellular structures, which could potentially solve many medical problems.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_001",
+      "text": "So birth defects, regeneration after traumatic injury would be possible. Cancer could be reprogrammed, aging, degenerative disease, and not only biomedical kind of problems, but also synthetic biomorphology. So not just reprogramming individual cells, but actually programming a large scale shape and structure and also actually non neuromor AI would become possible. And so all of these things boil down to one problem. How do we communicate our morphological goals to a group of cells? And here I have to do disclosures because I'm involved in three different spinoffs from my lab, which I'm happy to talk about afterwards. So morphosuticals, Astonishing labs and Fauna systems.",
+      "token_count": 106,
+      "sentence_count": 7,
+      "start_sentence": 1,
+      "end_sentence": 7,
+      "start_time_ms": 37730,
+      "end_time_ms": 78870,
+      "start_time_seconds": 37.73,
+      "end_time_seconds": 78.87,
+      "primary_topics": [
+        "Cellular Reprogramming",
+        "Regeneration after Traumatic Injury",
+        "Bioelectricity in Aging and Degenerative Diseases",
+        "Synthetic Biomorphology",
+        "Non-Neuromor AI"
+      ],
+      "secondary_topics": [
+        "Birth Defects",
+        "Cancer Reprogramming",
+        "Large Scale Shape and Structure Programming",
+        "Morphological Goals Communication",
+        "Spinoff Companies"
+      ],
+      "key_terms": [
+        "Birth Defects",
+        "Regeneration",
+        "Cancer",
+        "Aging",
+        "Degenerative Disease",
+        "Synthetic Biomorphology",
+        "Non-Neuromor AI",
+        "Morphosuticals",
+        "Astonishing labs",
+        "Fauna systems"
+      ],
+      "content_summary": "The speaker, Michael Levin, discusses the potential of cellular reprogramming in addressing issues like birth defects, regeneration after injury, cancer, aging, and degenerative diseases. He also explores the possibilities of synthetic biomorphology and non-neuromor AI, and mentions his involvement in three spinoff companies.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_002",
+      "text": "Now the solution to these problems we call the anatomical compiler. So the idea is that at some point in the future the you will be able to sit down in front of a computer and draw the animal or plant that you would like to have. So you would draw the three dimensional structure, the anatomy, not the molecular biology of it, but actually the anatomy of what you want. And this system would compile that anatomical description into a set of stimuli that would have to be given to cells to get them to build whatever you want. And in this case, here's this like three headed flatworm. I'll show you some flatworms in a minute.",
+      "token_count": 118,
+      "sentence_count": 6,
+      "start_sentence": 2,
+      "end_sentence": 7,
+      "start_time_ms": 79990,
+      "end_time_ms": 113500,
+      "start_time_seconds": 79.99,
+      "end_time_seconds": 113.5,
+      "primary_topics": [
+        "Anatomical Compiler",
+        "Bioengineering",
+        "Developmental Biology"
+      ],
+      "secondary_topics": [
+        "Molecular Biology",
+        "Computer Science",
+        "Cellular Stimuli",
+        "Three-dimensional Structures",
+        "Flatworm Anatomy"
+      ],
+      "key_terms": [
+        "Anatomical Compiler",
+        "Anatomy",
+        "Molecular Biology",
+        "Cellular Stimuli",
+        "Three-dimensional Structure",
+        "Flatworm"
+      ],
+      "content_summary": "Michael Levin discusses the concept of an 'anatomical compiler', a future technology that could allow users to design organisms by drawing their desired anatomy. This system would translate the anatomical design into cellular stimuli to instruct cells to build the organism, exemplified by a three-headed flatworm.",
+      "scientific_domain": "Developmental Biology, Bioelectricity, Bioengineering",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_003",
+      "text": "So now there are two really important pieces to this. One is that this is not a 3D printer. The point is not to micromanage the position of every cell and try to assemble something complex piece by piece. It is also not anything to do with genomic editing or CRISPR or anything like that. This is fundamentally the right way to think about this is as a communications device. This system and the AI that will make it possible is for translating our anatomical and functional goals to the goals of a collective intelligence of cells that are going to build this thing.",
+      "token_count": 104,
+      "sentence_count": 6,
+      "start_sentence": 3,
+      "end_sentence": 8,
+      "start_time_ms": 114000,
+      "end_time_ms": 147200,
+      "start_time_seconds": 114.0,
+      "end_time_seconds": 147.2,
+      "primary_topics": [
+        "Bioelectricity",
+        "Developmental Biology",
+        "Artificial Intelligence in Biology",
+        "Cellular Communication",
+        "Collective Intelligence of Cells"
+      ],
+      "secondary_topics": [
+        "3D Printing in Biology",
+        "Genomic Editing",
+        "CRISPR",
+        "Anatomical Goals",
+        "Functional Goals"
+      ],
+      "key_terms": [
+        "Bioelectricity",
+        "Developmental Biology",
+        "Artificial Intelligence",
+        "Cellular Communication",
+        "Collective Intelligence",
+        "3D Printing",
+        "Genomic Editing",
+        "CRISPR",
+        "Anatomical Goals",
+        "Functional Goals"
+      ],
+      "content_summary": "Michael Levin explains that the system he is discussing is not a 3D printer or related to genomic editing or CRISPR. Instead, it's a communication device that, with the help of AI, translates our anatomical and functional goals to the collective intelligence of cells that will build the structure.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_004",
+      "text": "Now we don't have anything remotely like that. We can only do this sort of thing in very Few specific cases, but I wanted to lay out the opportunity ahead. This is the kind of the roadmap. So one of the. So why don't we have this. Genetics and molecular biology have been doing great over for decades. Why don't we have an anatomical compiler? Well, let's just remind ourselves that we all start life as a group of cells and these embryonic blastomeres reliably build something like this. So this is a cross section through a human torso. You can see the incredible complexity of all the tissues, organs, everything is in the right place relative to each other. And so the question is, where does this shape come from? Where is this order stored? Where is it recorded? And you might think, well, the genome, everything's in the genome.",
+      "token_count": 151,
+      "sentence_count": 14,
+      "start_sentence": 4,
+      "end_sentence": 17,
+      "start_time_ms": 147200,
+      "end_time_ms": 192550,
+      "start_time_seconds": 147.2,
+      "end_time_seconds": 192.55,
+      "primary_topics": [
+        "Developmental Biology",
+        "Bioelectricity",
+        "Genetics",
+        "Molecular Biology",
+        "Anatomical Compiler"
+      ],
+      "secondary_topics": [
+        "Embryonic Blastomeres",
+        "Human Torso Cross Section",
+        "Tissue Complexity",
+        "Organ Placement",
+        "Genome"
+      ],
+      "key_terms": [
+        "Anatomical Compiler",
+        "Embryonic Blastomeres",
+        "Genome",
+        "Molecular Biology",
+        "Genetics"
+      ],
+      "content_summary": "The speaker discusses the lack of an 'anatomical compiler' that can predictably create complex biological structures. They highlight the role of genetics and molecular biology in development, and question where the 'blueprint' for complex anatomical structures, such as the human torso, is stored.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_005",
+      "text": "But actually we could read genomes now and we know what's in the genome. What the genome encodes is the tiny protein hardware, the molecular hardware that every cell gets to have. There's nothing directly in the genome that says anything about size, shape, the number of organs, the types of organs. And so the fundamental scientific challenge here is to understand how this group of cells exploits that hardware to build something reliably. How do they know when to stop? Why do cells sometimes defect from this plan and then that results in cancer? And then as workers in regenerative medicine, we'd like to know if something is missing, how do you convince the cells to regrow it? And if, as engineers, we would like to say, well, what else can these cells build? With a standard genome, can you get the exact same hardware to build something completely different? And so these are the questions that face us now. I want to show an extremely simple example to remind us why genetic information is not enough.",
+      "token_count": 178,
+      "sentence_count": 11,
+      "start_sentence": 5,
+      "end_sentence": 15,
+      "start_time_ms": 192550,
+      "end_time_ms": 252060,
+      "start_time_seconds": 192.55,
+      "end_time_seconds": 252.06,
+      "primary_topics": [
+        "Genome and its role",
+        "Cellular hardware",
+        "Regenerative medicine",
+        "Cellular behavior in cancer",
+        "Potential of cellular hardware"
+      ],
+      "secondary_topics": [
+        "Genome reading",
+        "Cellular structure",
+        "Organ development",
+        "Cellular regeneration",
+        "Engineering cellular behavior",
+        "Limitations of genetic information"
+      ],
+      "key_terms": [
+        "Genome",
+        "Protein hardware",
+        "Molecular hardware",
+        "Cell",
+        "Size",
+        "Shape",
+        "Organs",
+        "Cancer",
+        "Regenerative medicine",
+        "Engineers"
+      ],
+      "content_summary": "The presentation discusses the role of the genome in encoding the protein and molecular hardware of cells, but highlights its limitations in determining size, shape, and organ types. It explores the challenges in understanding how cells use this hardware to build structures and the implications for cancer and regenerative medicine. The speaker also raises the possibility of using the same cellular hardware to build different structures.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_006",
+      "text": "So this is the larva of an axolotl. So baby A axolotls have little four legs, this is a tadpole, and baby frogs at this point do not have legs. So in my lab we can make something called a frog lottle. So what's a froglottle? Well, it's a chimeric embryo that's part cells from an axolotl, part cells from a frog. And now I can ask a very simple question. Well, we have both genomes, so the axolotl genome has been sequenced, the frog genome has been sequenced. Could anybody tell me whether froglottles are going to have legs or not? And the answer is no. There is no existing model that will go from genomic information to being able to predict anatomy in cases like this. In fact, even within a, we can't go from the genome to a Description of what the anatomy is going to be without cheating. Basically comparing that genome to something where you already know what it is. And so there's this fundamental disconnect between the molecular hardware and the large scale anatomical decision making of the collective of cells that's going to decide to build this large scale structure, possibly involving cells from the frog.",
+      "token_count": 203,
+      "sentence_count": 14,
+      "start_sentence": 6,
+      "end_sentence": 19,
+      "start_time_ms": 252060,
+      "end_time_ms": 309380,
+      "start_time_seconds": 252.06,
+      "end_time_seconds": 309.38,
+      "primary_topics": [
+        "Chimeric embryos",
+        "Genome sequencing",
+        "Anatomical development"
+      ],
+      "secondary_topics": [
+        "Axolotl larva",
+        "Frog development",
+        "Genomic information",
+        "Cellular decision making",
+        "Large scale structure",
+        "Comparative genomics",
+        "Bioelectricity"
+      ],
+      "key_terms": [
+        "Froglottle",
+        "Axolotl genome",
+        "Frog genome",
+        "Anatomy prediction",
+        "Molecular hardware"
+      ],
+      "content_summary": "The presentation discusses the creation of a 'froglottle', a chimeric embryo made from axolotl and frog cells. Despite having sequenced genomes of both species, it is currently impossible to predict the anatomy of such a hybrid organism from genomic information alone, highlighting a disconnect between the molecular level and large-scale anatomical development.",
+      "scientific_domain": "Developmental Biology, Bioelectricity, Genomics",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_007",
+      "text": "But this is the frontier. The frontier is understanding how large scale collective decisions are being made that determine our anatomy and our, and our function. Now the bad news is that by themselves, these very important technologies such as genomic editing and molecular biology are not going to give us everything that we want. Because this process of going from a single cell egg to one of these complex bodies is this, this, this morphogenetic process is incredibly complex and recurrent. In other words, all of these cells are doing various things and together there's, they end up building something like this.",
+      "token_count": 103,
+      "sentence_count": 5,
+      "start_sentence": 7,
+      "end_sentence": 11,
+      "start_time_ms": 310580,
+      "end_time_ms": 348290,
+      "start_time_seconds": 310.58,
+      "end_time_seconds": 348.29,
+      "primary_topics": [
+        "Large scale collective decisions in anatomy",
+        "Genomic editing",
+        "Molecular biology",
+        "Morphogenetic process"
+      ],
+      "secondary_topics": [
+        "Single cell egg",
+        "Complex bodies",
+        "Cellular functions",
+        "Bioengineering",
+        "Genetics",
+        "Cellular biology",
+        "Developmental biology"
+      ],
+      "key_terms": [
+        "Large scale collective decisions",
+        "Genomic editing",
+        "Molecular biology",
+        "Morphogenetic process",
+        "Single cell egg",
+        "Complex bodies"
+      ],
+      "content_summary": "The speaker discusses the complexity of understanding how large scale collective decisions determine our anatomy and function. They note that while genomic editing and molecular biology are important technologies, they alone cannot fully explain the intricate process of morphogenesis, which transforms a single cell egg into a complex body.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_008",
+      "text": "But reversing this is extremely hard. To give you a very simple example from for example, the fractals, this is a simple mathematical formula. It's very short, very simple. If you iterate it and plot the kind of a version of the Julia set, you will get this very complex pattern. But now, and so that's great. Going forward is easy going. Starting with the rules and getting something complex is very simple, but going backwards. If I, if you were a worker in regenerative medicine, you said, well, this thing isn't quite symmetrical. And by the way, I don't want three of these, I want four. How would you have to change the formula? It's, there is no, there's no way to do that.",
+      "token_count": 125,
+      "sentence_count": 11,
+      "start_sentence": 8,
+      "end_sentence": 18,
+      "start_time_ms": 348290,
+      "end_time_ms": 385190,
+      "start_time_seconds": 348.29,
+      "end_time_seconds": 385.19,
+      "primary_topics": [
+        "Fractals",
+        "Mathematical Formulas",
+        "Regenerative Medicine"
+      ],
+      "secondary_topics": [
+        "Julia Set",
+        "Symmetry",
+        "Complex Patterns",
+        "Iterative Processes",
+        "Reverse Engineering",
+        "Regeneration",
+        "Biological Symmetry"
+      ],
+      "key_terms": [
+        "Fractals",
+        "Julia Set",
+        "Regenerative Medicine",
+        "Symmetry",
+        "Iterate",
+        "Complex Pattern",
+        "Mathematical Formula"
+      ],
+      "content_summary": "The speaker discusses the complexity of reversing processes in regenerative medicine, using the example of fractals and the Julia set. The challenge lies in modifying a simple formula to achieve a specific complex outcome, such as changing the number of symmetrical elements.",
+      "scientific_domain": "Developmental Biology, Bioelectricity, Mathematical Biology",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_009",
+      "text": "This is an intractable inverse problem. And so figuring out what you would have to change on the molecular genetic level to make large scale changes and repairs is extremely difficult. It'll be possible for some cases, but it needs to be complemented with a top down approach. Now here's where we are today. We're very good as a community in manipulating molecules and cells. And there are amazing kinds of advances all the time in terms of synthetic biology and protein engineering and things like this. We're actually still a very long way away from control of large scale form and function. Injuries, cancer, birth defects, these things are largely yet not addressable. I think that's because we are still fundamentally in molecular medicine somewhere here.",
+      "token_count": 127,
+      "sentence_count": 9,
+      "start_sentence": 9,
+      "end_sentence": 17,
+      "start_time_ms": 385190,
+      "end_time_ms": 431260,
+      "start_time_seconds": 385.19,
+      "end_time_seconds": 431.26,
+      "primary_topics": [
+        "Intractable inverse problem",
+        "Molecular genetic level changes",
+        "Large scale changes and repairs",
+        "Top down approach",
+        "Molecular medicine"
+      ],
+      "secondary_topics": [
+        "Synthetic biology",
+        "Protein engineering",
+        "Control of large scale form and function",
+        "Injuries",
+        "Cancer",
+        "Birth defects"
+      ],
+      "key_terms": [
+        "Intractable inverse problem",
+        "Molecular genetic level",
+        "Top down approach",
+        "Synthetic biology",
+        "Protein engineering",
+        "Molecular medicine"
+      ],
+      "content_summary": "The speaker discusses the challenges of making large scale changes and repairs at the molecular genetic level, highlighting the need for a top-down approach. Despite advances in synthetic biology and protein engineering, controlling large scale form and function, and addressing issues like injuries, cancer, and birth defects remain significant challenges.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_010",
+      "text": "This is where, you know, computer science was in the 40s and 50s, where in order to reprogram the machine, you have to physically interact with the hardware, right? You have to, you have to physically rewire. And this is, this is where all the excitement is today, so, so gene regulatory circuits, novel, novel molecular interactions and so on. But, but in addition to that, we have the opportunity to do something amazing, which is to take advantage of the high level information processing, AKA intelligence in the layers of biology. Now, when I say intelligence, I don't mean, and this is the good news is that we have now opportunities to do this. I don't mean a human level second order. I know that, I know. And that, that kind of thing, I mean something else that might be at different locations along this continuum. This sort of continuum is due to Norbert Wiener and colleagues. And William James defined intelligence as the ability to reach the same goal by different means. And so I don't have time to show you too many examples, but I'll show you a few. Biology is really good at this. And what we now have the opportunity to do is to use AI as a kind of translator between us and this robust intelligence of cells and tissues that are navigating something we call morphospace. Morphospace is simply the space of all. It's a virtual space of all possible morphogenetic outcomes or anatomical outcomes. And so we have the ability to control how the living system navigates that amorphous space. And it's possible because biology, unlike most of our technology, I sometimes give a different talk of why robots don't get cancer.",
+      "token_count": 290,
+      "sentence_count": 17,
+      "start_sentence": 10,
+      "end_sentence": 26,
+      "start_time_ms": 431260,
+      "end_time_ms": 523310,
+      "start_time_seconds": 431.26,
+      "end_time_seconds": 523.31,
+      "primary_topics": [
+        "Bioelectricity",
+        "Developmental Biology",
+        "Artificial Intelligence in Biology",
+        "Gene Regulatory Circuits",
+        "Molecular Interactions"
+      ],
+      "secondary_topics": [
+        "Computer Science History",
+        "Information Processing in Biology",
+        "Intelligence in Biological Systems",
+        "Morphospace",
+        "Cellular and Tissue Intelligence",
+        "Anatomical Outcomes"
+      ],
+      "key_terms": [
+        "Gene Regulatory Circuits",
+        "Molecular Interactions",
+        "High Level Information Processing",
+        "Intelligence in Biology",
+        "Morphospace",
+        "Morphogenetic Outcomes",
+        "Anatomical Outcomes"
+      ],
+      "content_summary": "The speaker compares the current state of bioelectricity and developmental biology to the early stages of computer science, emphasizing the need for physical interaction with the 'hardware' or genetic and molecular components. They discuss the potential of using artificial intelligence as a translator between humans and the 'intelligence' of cells and tissues, particularly in navigating 'morphospace' - the range of all possible morphogenetic or anatomical outcomes.",
+      "scientific_domain": "Developmental Biology, Bioelectricity, Artificial Intelligence in Biology",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_011",
+      "text": "And it's possible because biology, unlike most of our technology, I sometimes give a different talk of why robots don't get cancer. And the reason that biology is so special and there's no reason why we couldn't emulate this, is that it uses a multi scale competency architecture. The idea is that at every level, so from molecular networks to cells, to tissues, to whole bodies, whether in behavioral space or anatomical space, or even collectives, each of these layers solves its own problems. They are not just structural, they are problem solving systems that operate or navigate in the space of gene expression, the space of physiology, the space of anatomy, and of course three dimensional behavioral space, in our case also linguistic spaces and so on. And they all have different levels of sophistication and different competencies to do this.",
+      "token_count": 142,
+      "sentence_count": 7,
+      "start_sentence": 11,
+      "end_sentence": 17,
+      "start_time_ms": 515230,
+      "end_time_ms": 566170,
+      "start_time_seconds": 515.23,
+      "end_time_seconds": 566.17,
+      "primary_topics": [
+        "Multi scale competency architecture in biology",
+        "Problem-solving systems in biology",
+        "Levels of biological organization"
+      ],
+      "secondary_topics": [
+        "Gene expression",
+        "Physiology",
+        "Anatomy",
+        "Behavioral space",
+        "Linguistic spaces",
+        "Molecular networks",
+        "Cellular biology",
+        "Tissue biology"
+      ],
+      "key_terms": [
+        "Multi scale competency architecture",
+        "Problem-solving systems",
+        "Gene expression",
+        "Physiology",
+        "Anatomy",
+        "Behavioral space",
+        "Linguistic spaces",
+        "Molecular networks",
+        "Cells",
+        "Tissues"
+      ],
+      "content_summary": "The presentation discusses the unique aspect of biology that operates on a multi scale competency architecture. It emphasizes that each level, from molecular networks to whole bodies, solves its own problems and navigates in different spaces such as gene expression, physiology, anatomy, and behavioral space.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_012",
+      "text": "But the key is that rewiring them physically is not the only game in town. We also have the opportunity because their intelligence is higher than a simple hardwired clockworks. We have the opportunity to communicate with them, to reset their set points and to have various other kinds of interesting interactions with them. So the thing to recall is that fundamentally we are all collective intelligences. There's no such thing as an indivisible kind of some sort of indivisible diamond of intelligence. We are all made of parts and the parts that we are made of are individual cells. Now, here's a cell this happens to be a free living organism known as a lacrimaria. One cell, there's no brain, there's no nervous system. This thing is incredibly competent at very local, tiny little goals, metabolic, physiological and other kinds of states. You can see it here feeding in the environment. Anybody who's into soft robotics should be drooling at this. We don't have anything remotely like this level of control. And again, just one cell, and it is made of molecular networks that also have all kinds of competencies.",
+      "token_count": 191,
+      "sentence_count": 13,
+      "start_sentence": 12,
+      "end_sentence": 24,
+      "start_time_ms": 566250,
+      "end_time_ms": 628670,
+      "start_time_seconds": 566.25,
+      "end_time_seconds": 628.67,
+      "primary_topics": [
+        "Cellular Intelligence",
+        "Bioelectricity",
+        "Cellular Interactions",
+        "Cellular Competencies"
+      ],
+      "secondary_topics": [
+        "Soft Robotics",
+        "Physiological States",
+        "Metabolic States",
+        "Molecular Networks",
+        "Rewiring Cells",
+        "Collective Intelligences"
+      ],
+      "key_terms": [
+        "Set Points",
+        "Free Living Organism",
+        "Lacrimaria",
+        "Nervous System",
+        "Hardwired Clockworks"
+      ],
+      "content_summary": "The speaker discusses the concept of cellular intelligence, emphasizing that cells are not just physically rewired but can also be communicated with and reset. The speaker uses the example of a single-celled organism, Lacrimaria, to illustrate the complexity and competency of cells, even without a brain or nervous system.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_013",
+      "text": "For example, the gene regulatory circuits and pathways inside cells are capable of at least six different kinds of learning, including associative conditioning. This is all without changing their structure at all. This is not about rewiring GRNs with gene regulatory networks through experience. This is in situ, exactly how they are. They're capable of learning. So this multi scale architecture of competency, meaning that we are made of cells that used to be independent organisms and didn't drop all their intelligence when they joined together, means that we have lots of different competencies in morphogenetic space. So, for example, when you take an early embryo, let's say a human embryo, and you cut it into halves or quarters, you don't get two half bodies, you get two perfectly normal monozygotic twins, because each half can recognize that the other half is missing, rebuild what it needs. In fact, you can think of embryonic development as a regeneration of the entire body from just one cell. There's this ability of different systems. Here's the normal embryo, here's the embryo cut in half, and so on. The ability of different systems to navigate this space, to reach the ensemble of goal states that we associate with normal target morphology or normal anatomy for that species. And in fact, in many cases, going around avoiding various local maxima that would trap a less intelligent system.",
+      "token_count": 233,
+      "sentence_count": 14,
+      "start_sentence": 13,
+      "end_sentence": 26,
+      "start_time_ms": 628670,
+      "end_time_ms": 709580,
+      "start_time_seconds": 628.67,
+      "end_time_seconds": 709.58,
+      "primary_topics": [
+        "Gene Regulatory Circuits and Pathways",
+        "Cellular Learning",
+        "Morphogenetic Space",
+        "Embryonic Development",
+        "Regeneration"
+      ],
+      "secondary_topics": [
+        "Associative Conditioning",
+        "Multi-Scale Architecture of Competency",
+        "Cellular Intelligence",
+        "Embryo Manipulation",
+        "Target Morphology",
+        "Species-Specific Anatomy",
+        "Navigation of Morphogenetic Space",
+        "Avoidance of Local Maxima"
+      ],
+      "key_terms": [
+        "Gene Regulatory Networks (GRNs)",
+        "In situ",
+        "Monozygotic Twins",
+        "Regeneration",
+        "Morphology",
+        "Anatomy",
+        "Local Maxima"
+      ],
+      "content_summary": "The presentation discusses the ability of gene regulatory circuits and pathways within cells to learn without changing their structure. It also explores the concept of morphogenetic space and the ability of cells and systems to navigate this space. The speaker uses the example of an embryo being able to regenerate into two normal monozygotic twins when cut in half to illustrate these concepts.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_014",
+      "text": "This is one example of regulative development. Here's another example, creature like this, this is an axolotl. And these guys regenerate their legs, their eyes, their jaws, their portions of their heart and brain, their ovaries, spinal cord and so on. What they do is, if you amputate and in fact they bite each other's legs off all the time. So this is a natural experiment that keeps happening. You can amputate anywhere along this line and the cells will very rapidly build exactly what's needed and then they stop. Now, this is the most amazing part of this whole process, right, is that, is that not only does it regenerate no matter where you cut it from, it makes exactly what's needed, no more, no less, but that it ever stops. How does it know when to stop? It stops when a correct salamander arm has been completed.",
+      "token_count": 149,
+      "sentence_count": 10,
+      "start_sentence": 14,
+      "end_sentence": 23,
+      "start_time_ms": 710460,
+      "end_time_ms": 755070,
+      "start_time_seconds": 710.46,
+      "end_time_seconds": 755.07,
+      "primary_topics": [
+        "Regulative Development",
+        "Axolotl Regeneration",
+        "Bioelectricity in Regeneration"
+      ],
+      "secondary_topics": [
+        "Amputation in Axolotls",
+        "Regeneration of Specific Organs",
+        "Cellular Activity during Regeneration",
+        "Regenerative Limitations",
+        "Regenerative Precision"
+      ],
+      "key_terms": [
+        "Regulative Development",
+        "Axolotl",
+        "Regeneration",
+        "Amputation",
+        "Cellular Activity",
+        "Regenerative Limitations",
+        "Regenerative Precision"
+      ],
+      "content_summary": "The speaker discusses the concept of regulative development, using the axolotl as an example. The axolotl's ability to regenerate various body parts, including limbs and organs, is highlighted. The speaker also ponders on the precision and limitations of this regenerative process, particularly how it knows when to stop.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_015",
+      "text": "So this now tells you that this kind of thing is some sort of a navigation policy in this anatomical space. It's an error minimization scheme where errors like this become corrected over time. And when the error is small, small enough, then they stop. So we really need to understand this ability, this ability to navigate. So all the tools of autonomous self driving, various vehicles and all of this, the kind of control theory stuff from engineering and AI becomes very relevant here. Now, this is not just for salamanders and worms. I'm going to show you in a minute. Mammals do this too. Humans regenerate their livers. Human children regenerate their fingertips. Up until a certain age, if you just leave it alone, an amputated fingertip actually becomes cosmetically a very nice finger. And deer are a large adult mammal that regrows basically meters of new bone, vasculature, innervation, and so on. And it does it every year, and it does it at a rate of about a centimeter and a half of new bone per day.",
+      "token_count": 180,
+      "sentence_count": 13,
+      "start_sentence": 15,
+      "end_sentence": 27,
+      "start_time_ms": 755070,
+      "end_time_ms": 814390,
+      "start_time_seconds": 755.07,
+      "end_time_seconds": 814.39,
+      "primary_topics": [
+        "Bioelectricity in Regeneration",
+        "Error Minimization in Biological Systems",
+        "Application of Control Theory in Biology"
+      ],
+      "secondary_topics": [
+        "Autonomous Self-Driving Tools",
+        "Artificial Intelligence in Biology",
+        "Human Regeneration Capabilities",
+        "Regeneration in Mammals",
+        "Rate of Regeneration in Deer"
+      ],
+      "key_terms": [
+        "Navigation Policy",
+        "Anatomical Space",
+        "Error Minimization",
+        "Control Theory",
+        "Regeneration",
+        "Innervation",
+        "Vasculature"
+      ],
+      "content_summary": "The speaker discusses the concept of bioelectricity in regeneration, likening it to an error minimization scheme in which errors are corrected over time. This concept is not only applicable to simple organisms but also to mammals, including humans. The speaker also highlights the rapid regeneration capabilities of deer, which regrow large amounts of bone annually.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_016",
+      "text": "So it is not the case that mammals are somehow unable to regenerate. But our capacities at present, and I do think this is changeable, are not as good as those of certain other organisms. Now, we've been studying for some years how it is that this happens. How does a collection of cells know what to build and when to stop? And we took our inspiration from the nervous system, which is basically a collection of cells that guide your body through behavioral space using, using memories and goals and so on. Exactly the same thing, it turns out, happens in anatomical space.",
+      "token_count": 104,
+      "sentence_count": 6,
+      "start_sentence": 16,
+      "end_sentence": 21,
+      "start_time_ms": 814790,
+      "end_time_ms": 850440,
+      "start_time_seconds": 814.79,
+      "end_time_seconds": 850.44,
+      "primary_topics": [
+        "Regenerative capabilities in mammals",
+        "Cellular behavior in anatomical space",
+        "Comparison of regenerative abilities across different organisms"
+      ],
+      "secondary_topics": [
+        "Nervous system functionality",
+        "Cellular memory and goals",
+        "Developmental biology",
+        "Bioelectricity",
+        "Cellular communication",
+        "Regeneration in other organisms"
+      ],
+      "key_terms": [
+        "Regeneration",
+        "Anatomical space",
+        "Behavioral space",
+        "Nervous system",
+        "Cellular behavior"
+      ],
+      "content_summary": "The speaker discusses the regenerative capabilities of mammals, emphasizing that they are not as efficient as those of some other organisms. They also draw a parallel between the function of the nervous system and the behavior of cells in anatomical space, suggesting that cells may have a form of 'memory' and 'goals' that guide their behavior.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_017",
+      "text": "So the way it happens in the brain is that the hardware looks like this. It's a bunch of cells we call neurons. They're electrically active. And so they have these little ion channels in that, in their membrane that set a voltage. That voltage sometimes is communicated to their neighbors through these gap junctions or these electrical synapses. And so there's this network and there's this physiology. So here it is. This group imaged all the electrical activity of a living zebrafish brain as zebrafish are thinking about whatever it is that zebrafish normally think about. And so you can see, and you can see all this activity. And it's the commitment of neuroscience that all of the cognitive activity, the goals, the preferences, the memories, the behavioral repertoires of this animal are in this physiological Activity, if only we could decode it.",
+      "token_count": 144,
+      "sentence_count": 11,
+      "start_sentence": 17,
+      "end_sentence": 27,
+      "start_time_ms": 850520,
+      "end_time_ms": 894580,
+      "start_time_seconds": 850.52,
+      "end_time_seconds": 894.58,
+      "primary_topics": [
+        "Neurons",
+        "Ion Channels",
+        "Electrical Synapses",
+        "Neural Network",
+        "Physiological Activity"
+      ],
+      "secondary_topics": [
+        "Brain Hardware",
+        "Voltage Communication",
+        "Gap Junctions",
+        "Zebrafish Brain Activity",
+        "Cognitive Activity Decoding"
+      ],
+      "key_terms": [
+        "Neurons",
+        "Ion Channels",
+        "Voltage",
+        "Gap Junctions",
+        "Electrical Synapses",
+        "Physiological Activity",
+        "Zebrafish",
+        "Neuroscience"
+      ],
+      "content_summary": "The presentation discusses the structure and function of neurons, highlighting the role of ion channels and electrical synapses in setting and communicating voltage. The speaker uses the example of imaging the electrical activity of a living zebrafish brain to illustrate these concepts, emphasizing the challenge of decoding this physiological activity to understand cognitive processes.",
+      "scientific_domain": "Developmental Biology, Bioelectricity, Neuroscience",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_018",
+      "text": "So there's this, there's this notion of neural decoding where you can scan a brain, decode it somehow and figure out what the animal is thinking about or looking at. And there's been some success in this, both in humans and model systems. The amazing thing is that brains and neurons didn't learn this trick on their own or didn't invent it from scratch. This is something that living systems have been doing since the time of bacterial biofilms back already that long ago. Evolution discovered that electrical networks are amazing at storing and processing information. Every cell in your body has these ion channels. And figuring out what is a neuron and what isn't is actually not trivial at all. Most cells are connected to their neighbors with these electrical synapses. And what you can do is you can look at early embryos or regenerating limbs or anything else using the same techniques, basically electrical imaging, and try to do the same decoding program. You could ask, could we learn to decode to understand what the cells are saying to each other and then to rewrite those patterns and get them to build something else.",
+      "token_count": 196,
+      "sentence_count": 10,
+      "start_sentence": 18,
+      "end_sentence": 27,
+      "start_time_ms": 894580,
+      "end_time_ms": 956890,
+      "start_time_seconds": 894.58,
+      "end_time_seconds": 956.89,
+      "primary_topics": [
+        "Neural Decoding",
+        "Bioelectricity",
+        "Cell Communication",
+        "Evolution of Electrical Networks"
+      ],
+      "secondary_topics": [
+        "Brain Scanning",
+        "Information Processing",
+        "Ion Channels",
+        "Electrical Synapses",
+        "Electrical Imaging",
+        "Embryo Development",
+        "Limb Regeneration"
+      ],
+      "key_terms": [
+        "Neural Decoding",
+        "Biofilms",
+        "Ion Channels",
+        "Electrical Synapses",
+        "Electrical Imaging",
+        "Embryo",
+        "Regeneration"
+      ],
+      "content_summary": "The presentation discusses the concept of neural decoding, the ability to interpret brain activity to understand thought processes. It highlights the evolutionary development of bioelectricity, emphasizing the role of ion channels and electrical synapses in cell communication. The speaker suggests that these principles could be applied to understand and potentially manipulate cellular communication in early embryos or regenerating limbs.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_019",
+      "text": "This is what we've been working on to show you very quickly, just two examples of these bioelectrical patterns. This is using a voltage sensitive fluorescent dye. Here. The grayscale colors represent a voltage of the cells. This is a time lapse movie of an early frog embryo putting its face together. Now, one thing you'll note, this is a frame, one frame out of that movie. We call this the electric face. Why? Because already before the genes come on that are going to pattern this whole structure, already you can see this is where the eye is going to be.",
+      "token_count": 102,
+      "sentence_count": 9,
+      "start_sentence": 19,
+      "end_sentence": 27,
+      "start_time_ms": 957210,
+      "end_time_ms": 985360,
+      "start_time_seconds": 957.21,
+      "end_time_seconds": 985.36,
+      "primary_topics": [
+        "Bioelectrical patterns",
+        "Voltage sensitive fluorescent dye",
+        "Frog embryo development"
+      ],
+      "secondary_topics": [
+        "Cellular voltage",
+        "Time lapse imaging",
+        "Gene activation",
+        "Structural patterning",
+        "Eye development"
+      ],
+      "key_terms": [
+        "Bioelectricity",
+        "Fluorescent dye",
+        "Embryo",
+        "Cellular voltage",
+        "Gene activation",
+        "Structural patterning",
+        "Eye development"
+      ],
+      "content_summary": "The presentation discusses the use of a voltage sensitive fluorescent dye to observe bioelectrical patterns in a developing frog embryo. It is highlighted that these patterns, visible before gene activation, can predict where certain structures, such as the eye, will form.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_020",
+      "text": "This is where the mouth is going to be. The animal's left eye comes in later. This is the placodes out to the side that give rise to all kinds of tissues. Already you can read the electrical pattern memory that's going to guide what happens next. I'm going to show you in a minute how we know that this is actually an instructive set of interactions. But this is a normal pattern. This is required for normal development. This is a pathological pattern. Here we've injected a human oncogene into an embryo. Eventually it's going to make a tumor. Eventually the tumor will metastasize.",
+      "token_count": 105,
+      "sentence_count": 11,
+      "start_sentence": 20,
+      "end_sentence": 30,
+      "start_time_ms": 985360,
+      "end_time_ms": 1014980,
+      "start_time_seconds": 985.36,
+      "end_time_seconds": 1014.98,
+      "primary_topics": [
+        "Bioelectricity in Development",
+        "Role of Oncogenes in Tumor Formation",
+        "Electrical Pattern Memory in Development"
+      ],
+      "secondary_topics": [
+        "Embryonic Development",
+        "Tissue Formation",
+        "Metastasis",
+        "Pathological Patterns in Development",
+        "Instructive Interactions in Development",
+        "Role of Placodes"
+      ],
+      "key_terms": [
+        "Bioelectricity",
+        "Oncogene",
+        "Embryo",
+        "Metastasis",
+        "Tumor",
+        "Placodes",
+        "Electrical Pattern Memory",
+        "Instructive Interactions"
+      ],
+      "content_summary": "The presentation discusses the role of bioelectricity and electrical pattern memory in embryonic development, particularly in tissue formation and the establishment of body parts such as the mouth and eyes. It also explores the impact of injecting a human oncogene into an embryo, leading to tumor formation and eventual metastasis.",
+      "scientific_domain": "Developmental Biology, Bioelectricity Research, Oncology",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_021",
+      "text": "But already using this voltage dye, you can see what's going on here. You can see that these cells are electrically decoupling from their neighbors. They're acquiring a weird depolarized membrane potential. And they're just going to roll back to their amoeba lifestyle and migrate and treat the rest of the body as external environment. So that's what we read these patterns and we've developed tools to rewrite these patterns. And we don't use. There are no electrodes, no applied fields, no waves, no frequencies. What we do is we exploit the native interface by which the cells are normally hacking each other's behavior, which is these ion channels that are on each other on their surface and these gap junctions that allow them to talk to each other. We have ways, mostly appropriated from neuroscience, using optogenetics and drugs and so on to open and close these channels and to control the topology of the network. And so when you do this, what you can do is we can induce whole organs.",
+      "token_count": 173,
+      "sentence_count": 11,
+      "start_sentence": 21,
+      "end_sentence": 31,
+      "start_time_ms": 1015060,
+      "end_time_ms": 1069990,
+      "start_time_seconds": 1015.06,
+      "end_time_seconds": 1069.99,
+      "primary_topics": [
+        "Bioelectricity",
+        "Cellular Communication",
+        "Membrane Potential",
+        "Optogenetics",
+        "Cell Migration"
+      ],
+      "secondary_topics": [
+        "Voltage Dye",
+        "Amoeba Lifestyle",
+        "Ion Channels",
+        "Gap Junctions",
+        "Network Topology",
+        "Drug Interactions",
+        "Organ Induction"
+      ],
+      "key_terms": [
+        "Electrical Decoupling",
+        "Depolarized Membrane Potential",
+        "Ion Channels",
+        "Gap Junctions",
+        "Optogenetics",
+        "Drugs",
+        "Network Topology"
+      ],
+      "content_summary": "The speaker discusses the use of voltage dye to observe cells electrically decoupling and adopting a depolarized membrane potential. They mention the development of tools to manipulate these patterns by exploiting ion channels and gap junctions, using methods from neuroscience such as optogenetics and drugs, to control the network topology and potentially induce whole organs.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_022",
+      "text": "So we can do inner ears. This is all in the frog model. Right now I'm showing you inner ears. We can induce hearts, ectopic beating hearts. We can induce forebrain. So here's where the forebrain normally stops. In this tapo here we've made this extra large forebrain, we can make extra limbs. So here's our five and, and six legged frogs. And we can make some structures that don't even belong on this animal, like fins. And there's a whole story that I don't have time to tell you today about changing the actual shape of an animal to a different species without changing the genome. And we have several stories about that. One of the amazing things about this is that these changes can be permanent because we're dealing with a tissue level intelligence that has memory. When we take this flatworm, here's a flat worm, it's got a head and a tail. And we amputate the tail, we amputate the head, we leave just the middle frag.",
+      "token_count": 170,
+      "sentence_count": 14,
+      "start_sentence": 22,
+      "end_sentence": 35,
+      "start_time_ms": 1069990,
+      "end_time_ms": 1118910,
+      "start_time_seconds": 1069.99,
+      "end_time_seconds": 1118.91,
+      "primary_topics": [
+        "Inducing organ growth",
+        "Tissue level intelligence",
+        "Bioelectricity in developmental biology"
+      ],
+      "secondary_topics": [
+        "Frog model",
+        "Ectopic beating hearts",
+        "Forebrain induction",
+        "Extra limb induction",
+        "Species morphological change without genome alteration",
+        "Regeneration in flatworms"
+      ],
+      "key_terms": [
+        "Inner ears",
+        "Ectopic",
+        "Forebrain",
+        "Extra limbs",
+        "Fins",
+        "Tissue level intelligence",
+        "Flatworm",
+        "Amputation",
+        "Regeneration"
+      ],
+      "content_summary": "The presentation discusses the ability to induce growth of various organs and structures in a frog model, including inner ears, hearts, forebrains, and extra limbs. The speaker also mentions the possibility of changing an animal's shape to resemble a different species without altering the genome, and the concept of tissue level intelligence with memory, as demonstrated in a flatworm regeneration experiment.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_023",
+      "text": "So this middle fragment will normally regenerate 100% of the time. They make a normal worm, one head, one tail. And we asked the question, how do they know, how do they know how many heads they're supposed to have? And we found this electrical gradient that says one head, one tail. We change that gradient to say actually two heads. And so what you get is this two headed worm. And this is not photoshopped, these are real, you can see the video. These two headed worms, in their spare time, what they're doing, the amazing thing is that once you've got this two headed worm, that's it. From then on, if you amputate the primary head, you amputate this ectopic secondary head, this middle fragment will Continue to regrow two heads. The genetics are untouched. We never did any genomic editing here. There's no transgenes, no new circuits, no synthetic biology, nothing. All we did was a very brief physiological stimulus that rewrites the pattern memory.",
+      "token_count": 168,
+      "sentence_count": 13,
+      "start_sentence": 23,
+      "end_sentence": 35,
+      "start_time_ms": 1119300,
+      "end_time_ms": 1168780,
+      "start_time_seconds": 1119.3,
+      "end_time_seconds": 1168.78,
+      "primary_topics": [
+        "Regeneration",
+        "Bioelectricity",
+        "Pattern Memory"
+      ],
+      "secondary_topics": [
+        "Physiological Stimulus",
+        "Genomic Editing",
+        "Synthetic Biology",
+        "Transgenes",
+        "Electrical Gradient",
+        "Ectopic Secondary Head"
+      ],
+      "key_terms": [
+        "Regeneration",
+        "Bioelectricity",
+        "Pattern Memory",
+        "Physiological Stimulus",
+        "Genomic Editing",
+        "Synthetic Biology",
+        "Transgenes",
+        "Electrical Gradient",
+        "Ectopic Secondary Head"
+      ],
+      "content_summary": "The speaker discusses an experiment where a worm's bioelectric pattern memory was altered to regenerate two heads instead of one. This was achieved without genetic modification, but through a brief physiological stimulus that changed the worm's electrical gradient.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_024",
+      "text": "This is literally the way that people read the memories of a brain. By looking at the electrical activity, we can now read the memories of the collective intelligence of the body. And so what we can see is that once you've rewritten what the system encodes as the correct morphology, well, it will continue to build this new morphology as far as we can tell, forever. And that we now also have a way of changing them back to be one headed. Now I'll show you one other example and then we'll get to some of the biomedical stuff and the bio robotics.",
+      "token_count": 104,
+      "sentence_count": 5,
+      "start_sentence": 24,
+      "end_sentence": 28,
+      "start_time_ms": 1168780,
+      "end_time_ms": 1200610,
+      "start_time_seconds": 1168.78,
+      "end_time_seconds": 1200.61,
+      "primary_topics": [
+        "Bioelectricity",
+        "Memory Encoding",
+        "Morphological Changes"
+      ],
+      "secondary_topics": [
+        "Brain Electrical Activity",
+        "Collective Intelligence of the Body",
+        "Biomedical Applications",
+        "Bio Robotics",
+        "System Encoding"
+      ],
+      "key_terms": [
+        "Electrical Activity",
+        "Memory",
+        "Morphology",
+        "Encoding",
+        "Biomedical",
+        "Bio Robotics"
+      ],
+      "content_summary": "The speaker discusses the concept of reading the memories of a brain through observing its electrical activity. They highlight the ability to alter the system's encoding of correct morphology, implying potential applications in biomedical and bio robotics fields.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_025",
+      "text": "So this has to do with organ level induction. We can inject certain ion channel RNAs that will induce, for example, we can copy that eye spot that I showed you in the electric face. We can put it anywhere in the body. If we put it on the gut. These gut cells happily make an eye. And this eye has all the right lens and retina and optic nerve and all of that stuff. But notice a couple of interesting things. One is that we didn't have to put in all the information about how to make an eye. In fact we don't have any idea of how to make an eye. What we do know is that there's a high level subroutine called, that says to the local cells make an eye. And then all this stuff downstream, all the, all the morphogenesis, all the gene expression, all the gradients, everything else is taken care of. The other thing, so, so that's, that's really a really attractive property of this, this, this, this modularity.",
+      "token_count": 176,
+      "sentence_count": 12,
+      "start_sentence": 25,
+      "end_sentence": 36,
+      "start_time_ms": 1200850,
+      "end_time_ms": 1247790,
+      "start_time_seconds": 1200.85,
+      "end_time_seconds": 1247.79,
+      "primary_topics": [
+        "Organ level induction",
+        "Ion channel RNAs",
+        "Eye morphogenesis"
+      ],
+      "secondary_topics": [
+        "Gene expression",
+        "Morphogenesis",
+        "Cellular modularity",
+        "Bioelectricity",
+        "Developmental biology",
+        "Cellular subroutines"
+      ],
+      "key_terms": [
+        "Organ level induction",
+        "Ion channel RNAs",
+        "Eye spot",
+        "Gut cells",
+        "Lens",
+        "Retina",
+        "Optic nerve",
+        "Gene expression",
+        "Gradients",
+        "Morphogenesis"
+      ],
+      "content_summary": "The speaker discusses the process of organ level induction, specifically the creation of an eye in a non-traditional location using ion channel RNAs. The speaker emphasizes the modularity of this process, where a high level command initiates a cascade of gene expression, morphogenesis, and other processes to create a functional eye.",
+      "scientific_domain": "Developmental Biology and Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_026",
+      "text": "But the other thing is that there are other hidden competencies here. For example, this is a lens sitting out in the flank of a tadpole somewhere. And the blue cells are the ones that we injected with this potassium channel. And so they go to make an eye, but there's not enough of them. There's only a few of them. What do they do? They recruit a bunch of their normal cells which are not blue. That's how you know, we have not manipulated them. And these brown and clear cells participate because these cells hijack them. They recruit them towards this goal.",
+      "token_count": 104,
+      "sentence_count": 10,
+      "start_sentence": 26,
+      "end_sentence": 35,
+      "start_time_ms": 1247870,
+      "end_time_ms": 1274790,
+      "start_time_seconds": 1247.87,
+      "end_time_seconds": 1274.79,
+      "primary_topics": [
+        "Bioelectricity",
+        "Cellular Recruitment",
+        "Developmental Biology"
+      ],
+      "secondary_topics": [
+        "Cellular Manipulation",
+        "Potassium Channels",
+        "Tadpole Development",
+        "Cellular Competencies",
+        "Cellular Communication",
+        "Cellular Hijacking"
+      ],
+      "key_terms": [
+        "Potassium Channel",
+        "Cell Recruitment",
+        "Tadpole",
+        "Lens",
+        "Blue Cells",
+        "Normal Cells",
+        "Brown and Clear Cells"
+      ],
+      "content_summary": "The presentation discusses an experiment where a lens in a tadpole's flank was injected with a potassium channel. Despite the limited number of manipulated cells, these cells were able to recruit normal cells to participate in the formation of an eye, demonstrating a hidden competency in bioelectricity and developmental biology.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_027",
+      "text": "This is the mark of a good collective intelligence. Like ants and termites. When there's a task that's too big for the individuals that have started on it, they will recruit their neighbors to all work together. So again, we didn't have to orchestrate any of this. This is already, this competency is already in. So discovering these subroutines and discovering the various competencies and the abilities of these networks to restore the correct structure and function with minimal intervention, with minimal tweaks is the name of the game here. Moving to the regenerative part in a frog, unlike salamander, if it loses a leg 45 days later, there's nothing. Although interestingly, once you do the amputation, the opposite leg lights up bioelectrically within 30 seconds, it lights up at exactly the location where the damage took place. The whole body knows about this and you can think of about this is surrogate site diagnostics and things like this. Already you can read out where the damage was.",
+      "token_count": 168,
+      "sentence_count": 11,
+      "start_sentence": 27,
+      "end_sentence": 37,
+      "start_time_ms": 1274790,
+      "end_time_ms": 1329350,
+      "start_time_seconds": 1274.79,
+      "end_time_seconds": 1329.35,
+      "primary_topics": [
+        "Collective Intelligence",
+        "Regeneration",
+        "Bioelectricity",
+        "Subroutines Discovery"
+      ],
+      "secondary_topics": [
+        "Frog Regeneration",
+        "Salamander Regeneration",
+        "Bioelectric Signals",
+        "Damage Diagnostics",
+        "Minimal Intervention",
+        "Network Abilities",
+        "Structure and Function Restoration"
+      ],
+      "key_terms": [
+        "Collective Intelligence",
+        "Regeneration",
+        "Bioelectricity",
+        "Amputation",
+        "Surrogate Site Diagnostics",
+        "Subroutines",
+        "Competencies",
+        "Networks"
+      ],
+      "content_summary": "The speaker discusses the concept of collective intelligence in biological systems and its application in regeneration. He highlights the ability of bioelectric networks to restore structure and function with minimal intervention, using the example of a frog's bioelectric response to amputation.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_028",
+      "text": "Now what we did was we came up with a cocktail of ion channel drugs that induces regeneration. So here the pro regenerative genes come on. Within 45 days, you've already got some toes, you've got a toenail. Eventually you have a very nice leg and it's touch sensitive and it's motile. What we found is that one day. So 24 hours of a wearable bioreactor made by David Kaplan's lab with the right payload gives you 18 months, a year and a half of leg growth, during which time we don't touch it at all. This is not about 3D printing.",
+      "token_count": 102,
+      "sentence_count": 7,
+      "start_sentence": 28,
+      "end_sentence": 34,
+      "start_time_ms": 1329670,
+      "end_time_ms": 1359200,
+      "start_time_seconds": 1329.67,
+      "end_time_seconds": 1359.2,
+      "primary_topics": [
+        "Regeneration",
+        "Ion Channel Drugs",
+        "Bioreactor"
+      ],
+      "secondary_topics": [
+        "Pro Regenerative Genes",
+        "Tissue Growth",
+        "Sensitivity and Motility",
+        "3D Printing",
+        "Drug Delivery",
+        "Wearable Technology",
+        "Timeframe of Regeneration"
+      ],
+      "key_terms": [
+        "Ion Channel",
+        "Regeneration",
+        "Bioreactor",
+        "Payload",
+        "Pro Regenerative Genes",
+        "Motility",
+        "3D Printing"
+      ],
+      "content_summary": "The presentation discusses the use of a cocktail of ion channel drugs to induce regeneration, resulting in the growth of a leg within 18 months. This process is facilitated by a wearable bioreactor developed by David Kaplan's lab, which only requires 24 hours of use to initiate the long-term growth.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_029",
+      "text": "This is not about micromanaging what the stem cells do. It is about convincing the cells at the very beginning that they're going to go down the regenerative route and not the scarring route. And that's it. After that, you don't touch it again. We are now this is our efforts through morphaceuticals again. David Kaplan and I are co founders and what we're using is that we're now in mammals and we're attempting to do this in mice right now with a bioreactor that controls the wound environment. And then it's got a payload of drugs that try to convince the cells that they need to regenerate. There are also applications to cancer. I showed you this picture a minute ago. Once you start thinking about this as these electrical networks as a way of creating a larger scale system that can pursue large goals like building nice organs instead of little tiny amoeba level goals of proliferate and migrate, then what we can do is we can artificially reconnect these cells. When the oncogene tells them to disconnect, we can force them to be in the Right. Electrical state. You see here, the oncogene is labeled in red.",
+      "token_count": 200,
+      "sentence_count": 14,
+      "start_sentence": 29,
+      "end_sentence": 42,
+      "start_time_ms": 1359200,
+      "end_time_ms": 1420940,
+      "start_time_seconds": 1359.2,
+      "end_time_seconds": 1420.94,
+      "primary_topics": [
+        "Stem cell manipulation",
+        "Regenerative biology",
+        "Bioelectricity in tissue regeneration",
+        "Cancer treatment"
+      ],
+      "secondary_topics": [
+        "Morphaceuticals",
+        "Bioreactor use in tissue regeneration",
+        "Electrical networks in cells",
+        "Oncogene influence on cell behavior",
+        "Drug delivery systems"
+      ],
+      "key_terms": [
+        "Stem cells",
+        "Regenerative route",
+        "Scarring route",
+        "Morphaceuticals",
+        "Bioreactor",
+        "Oncogene",
+        "Electrical state"
+      ],
+      "content_summary": "The presentation discusses the use of bioelectricity to guide stem cells towards regeneration rather than scarring. The speaker also mentions the application of this concept in cancer treatment, where oncogenes can be manipulated to change the electrical state of cells.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_030",
+      "text": "This is the same animal, there's tons of it. If you were to sequence this, you would see that there's a nasty Kras mutation or something like that. And you would say, ah, there has to be a tumor there. And in fact there is no tumor because what we've also done is co inject an ion channel that forces these cells into electrical communication with their neighbors, does not let them detach. So there's a cancer, the therapeutics thing here, the last bit I want to show you in the last couple of minutes, I want to show you some synthetic life. We call these xenobots because they come from the skin cells of the frog called Xenopus laevis. And we think this is a biorobotics platform.",
+      "token_count": 128,
+      "sentence_count": 7,
+      "start_sentence": 30,
+      "end_sentence": 36,
+      "start_time_ms": 1420940,
+      "end_time_ms": 1459720,
+      "start_time_seconds": 1420.94,
+      "end_time_seconds": 1459.72,
+      "primary_topics": [
+        "Bioelectricity",
+        "Developmental Biology",
+        "Cancer Therapeutics",
+        "Synthetic Life",
+        "Biorobotics"
+      ],
+      "secondary_topics": [
+        "Ion Channels",
+        "Cellular Communication",
+        "Genetic Sequencing",
+        "Kras Mutation",
+        "Xenobots",
+        "Xenopus laevis",
+        "Skin Cells"
+      ],
+      "key_terms": [
+        "Ion Channel",
+        "Kras Mutation",
+        "Xenobots",
+        "Xenopus laevis",
+        "Biorobotics",
+        "Synthetic Life",
+        "Electrical Communication"
+      ],
+      "content_summary": "The speaker discusses the role of bioelectricity in preventing tumor development, despite the presence of a Kras mutation. They also introduce the concept of 'xenobots', synthetic life forms derived from the skin cells of a frog species, Xenopus laevis, as a potential platform for biorobotics.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_031",
+      "text": "This is a collaboration between Josh Vongaard at the University of Vermont and myself. Doug Blackiston is the biologist who does this work in my group. Sam Friedman was Josh's student who does the programming. What you see here is this thing swimming. This is a piece of, this is this, this, this proto organism self assembled from cells taken, scraped off of an early embryo. These are just skin again. There's no neurons here, there's no brain. This is what the skin will do when left to its own devices when, when, when freed basically from the instructive influence of the other cells. And you can see what happens here. They can move in circles, they can patrol back and forth like this. These are all spontaneous behaviors. They have collective behaviors. They can interact with each other, they can sort of go on these longer journeys. There's great individuality here among them. And what you're looking at is the answer to the question, what would skin cells do if given a chance to reboot their multicellularity taken away from these other cells?",
+      "token_count": 184,
+      "sentence_count": 15,
+      "start_sentence": 31,
+      "end_sentence": 45,
+      "start_time_ms": 1459960,
+      "end_time_ms": 1518640,
+      "start_time_seconds": 1459.96,
+      "end_time_seconds": 1518.64,
+      "primary_topics": [
+        "Developmental Biology",
+        "Bioelectricity",
+        "Cellular Behavior",
+        "Multicellularity",
+        "Self-assembly"
+      ],
+      "secondary_topics": [
+        "Cellular Interactions",
+        "Spontaneous Behaviors",
+        "Cellular Individuality",
+        "Proto Organism",
+        "Embryonic Development",
+        "Skin Cells",
+        "Neurons"
+      ],
+      "key_terms": [
+        "Proto organism",
+        "Self-assembly",
+        "Embryo",
+        "Neurons",
+        "Spontaneous behaviors",
+        "Multicellularity",
+        "Skin cells"
+      ],
+      "content_summary": "The presentation discusses a study of a proto organism self-assembled from skin cells scraped off an early embryo. The cells exhibit spontaneous behaviors and individuality, demonstrating what skin cells would do if given a chance to reboot their multicellularity away from other cells.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_032",
+      "text": "Now here's one navigating a maze. You can see what it's doing. It's swimming here. Takes the corner without bumping into the opposite wall. And then here, for some internal reason, it decides to turn around and go back where it came from. Okay, Again, completely spontaneous. These xenobots have all kinds of calcium activity which you would normally see in the brain, but again, no neurons, just skin. And one of the most remarkable things about this is that we can now use AI to control their behavior. What you're seeing here is this white stuff out here, these little particles. These are other skin cells, just loose skin cells that we provided them with what we did.",
+      "token_count": 119,
+      "sentence_count": 10,
+      "start_sentence": 32,
+      "end_sentence": 41,
+      "start_time_ms": 1518800,
+      "end_time_ms": 1560980,
+      "start_time_seconds": 1518.8,
+      "end_time_seconds": 1560.98,
+      "primary_topics": [
+        "Xenobots",
+        "Bioelectricity",
+        "Artificial Intelligence"
+      ],
+      "secondary_topics": [
+        "Calcium activity",
+        "Neurons",
+        "Skin cells",
+        "Cellular behavior",
+        "Cell navigation",
+        "Spontaneous actions",
+        "Cellular control"
+      ],
+      "key_terms": [
+        "Xenobots",
+        "Bioelectricity",
+        "Artificial Intelligence",
+        "Calcium activity",
+        "Neurons",
+        "Skin cells"
+      ],
+      "content_summary": "The speaker discusses the behavior of xenobots, which exhibit calcium activity typically seen in the brain, despite having no neurons and being made of just skin. The speaker also mentions the use of AI to control the behavior of these xenobots.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_033",
+      "text": "So what Josh and Sam did was to do a bunch of simulations that showed us that if we make this little pac man shape, they become really, really good at this task. So what they do is they collect the cells, they sort of push them together into a little ball and they polish that little ball. And because they're dealing with an agential material, meaning the cells are not passive particles, they have agendas. They like to do certain things. Once they're pushed into this ball, that matures into generation of xenobots. And guess what they do? They run around and do the same thing, although not quite as well as the first generation. And so there's a few things we, we learned from this. One is that we can use now AI to begin, and this is just the very beginning. We can use AI to begin to control the native behaviors, the very rich native repertoire, very surprising repertoire that nobody had any idea that skin cells can sort of implement. Von Neumann's dream, a robot that goes around and builds copies of itself from loose material it finds in the environment.",
+      "token_count": 196,
+      "sentence_count": 11,
+      "start_sentence": 33,
+      "end_sentence": 43,
+      "start_time_ms": 1561380,
+      "end_time_ms": 1620640,
+      "start_time_seconds": 1561.38,
+      "end_time_seconds": 1620.64,
+      "primary_topics": [
+        "Artificial Intelligence in Biology",
+        "Cellular Behavior",
+        "Xenobots",
+        "Self-replicating Robots",
+        "Cellular Agendas"
+      ],
+      "secondary_topics": [
+        "Biological Simulations",
+        "Cellular Manipulation",
+        "Cellular Material",
+        "Native Repertoire of Cells",
+        "Von Neumann's Dream"
+      ],
+      "key_terms": [
+        "Agential Material",
+        "Skin Cells",
+        "First Generation",
+        "Native Behaviors",
+        "Loose Material"
+      ],
+      "content_summary": "The presentation discusses the use of artificial intelligence to manipulate cells into a formation (referred to as 'xenobots') that can replicate itself. The speaker emphasizes the surprising capabilities of skin cells and references Von Neumann's concept of a self-replicating robot.",
+      "scientific_domain": "Developmental Biology, Bioelectricity, Artificial Intelligence",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_034",
+      "text": "But there are these amazing competencies, and the research program now in the roadmap is to learn to recognize them and then to learn to control them and reprogram them for applications in regenerative medicine, robotics, and ultimately to take what we learn from the intelligence of these cells and use them to create new artificial intelligences. And so, because biology is so incredibly interoperable, biology finds a way to live coherently under so many circumstances. In the future, almost any combination of evolved natural material, designed material and software at whatever scale is some viable creature. And so I think in the future we are going to be surrounded by all kinds of hybrids and cyborgs and chimeras and all kinds of things which are going to require a new kind of ethics for relating to beings that are nowhere on the normal tree of life with us.",
+      "token_count": 149,
+      "sentence_count": 6,
+      "start_sentence": 34,
+      "end_sentence": 39,
+      "start_time_ms": 1620880,
+      "end_time_ms": 1674350,
+      "start_time_seconds": 1620.88,
+      "end_time_seconds": 1674.35,
+      "primary_topics": [
+        "Cellular Intelligence",
+        "Regenerative Medicine",
+        "Robotics",
+        "Artificial Intelligence",
+        "Biohybrid Systems"
+      ],
+      "secondary_topics": [
+        "Cellular Competencies",
+        "Interoperability in Biology",
+        "Evolved Natural Material",
+        "Designed Material",
+        "Software",
+        "Ethics in Biotechnology",
+        "Hybrids",
+        "Cyborgs",
+        "Chimeras"
+      ],
+      "key_terms": [
+        "Cellular Competencies",
+        "Regenerative Medicine",
+        "Robotics",
+        "Artificial Intelligence",
+        "Interoperability",
+        "Biohybrid Systems",
+        "Evolved Natural Material",
+        "Designed Material",
+        "Software",
+        "Hybrids",
+        "Cyborgs",
+        "Chimeras",
+        "Ethics"
+      ],
+      "content_summary": "The presentation discusses the potential of understanding and harnessing cellular intelligence for applications in regenerative medicine, robotics, and artificial intelligence. The speaker envisions a future where biology's interoperability allows for the creation of various hybrids and chimeras, necessitating a new ethical framework for these beings not found on the conventional tree of life.",
+      "scientific_domain": "Developmental Biology, Bioelectricity, Bioengineering, Artificial Intelligence",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_035",
+      "text": "In other words, we cannot use familiar criteria of where did you come from? Meaning evolved or designed? And what are you made of? Meaning, do you have a brain, does it look human, that kind of thing? Those criteria are going to be out the window. Everything that Darwin meant when he said endless forms, most beautiful are a tiny corner in this enormous option space, Possible bodies and possible minds. And so I will just end with this by saying that there's some, there's some very deep new ideas coming in in the space of biomedical interventions rooted in this kind of idea by Fabrizio Benedetti, who studies placebo effects, which is that really what you have here is the role of top down cognitive information on molecular events. You do that every time you get up out of bed every morning. Your intention, your mental intention of getting up feeds down into the molecular properties of your muscle cell membranes that make you get up. The idea, especially using bioelectricity as this transduction layer, that software layer between the intelligence and the actual execution machinery and AI to actually manage this, gives us a whole range of strategies here that are in complement to all the successful kind of mainstream strategies.",
+      "token_count": 214,
+      "sentence_count": 12,
+      "start_sentence": 35,
+      "end_sentence": 46,
+      "start_time_ms": 1674350,
+      "end_time_ms": 1750210,
+      "start_time_seconds": 1674.35,
+      "end_time_seconds": 1750.21,
+      "primary_topics": [
+        "Bioelectricity",
+        "Biomedical Interventions",
+        "Artificial Intelligence in Biology",
+        "Placebo Effects",
+        "Cognitive Information on Molecular Events"
+      ],
+      "secondary_topics": [
+        "Darwin's Theory of Evolution",
+        "Top Down Cognitive Information",
+        "Molecular Properties of Muscle Cell Membranes",
+        "Transduction Layer",
+        "Software Layer between Intelligence and Execution Machinery"
+      ],
+      "key_terms": [
+        "Bioelectricity",
+        "Biomedical Interventions",
+        "Artificial Intelligence",
+        "Placebo Effects",
+        "Cognitive Information",
+        "Molecular Events",
+        "Transduction Layer",
+        "Software Layer"
+      ],
+      "content_summary": "The speaker discusses the potential of bioelectricity and AI in biomedical interventions, emphasizing the role of cognitive information on molecular events. They highlight the concept of a 'software layer' that mediates between mental intention and physical action, suggesting new strategies for biological research and treatment.",
+      "scientific_domain": "Developmental Biology, Bioelectricity, Biomedical Science, Artificial Intelligence",
+      "enhanced": true
+    },
+    {
+      "chunk_id": "1qRIetbuoH4_chunk_036",
+      "text": "So that's it. Just to summarize what I've said, the rate limiting step in truly transformative technologies are the communication of goals to cellular swarms. Not just the molecular details, but actually the algorithms of life. And we have a roadmap for exploiting the native computation and the competencies of living networks. Bioelectrical signaling is a really crucial protocognitive medium of that collective intelligence. And we now have tools that appropriate all kinds of deep concepts from neuroscience to help us understand this in other contexts. And at stake are a huge number of really transformative applications. And so I'll just, I'll end here by thanking the postdocs and the students who did all the work, our funders, and most of all the animal model systems, because they do all the heavy lifting. And then once again, there's some disclosures that I need to make, so thank you very much.",
+      "token_count": 150,
+      "sentence_count": 9,
+      "start_sentence": 36,
+      "end_sentence": 44,
+      "start_time_ms": 1750530,
+      "end_time_ms": 1802710,
+      "start_time_seconds": 1750.53,
+      "end_time_seconds": 1802.71,
+      "primary_topics": [
+        "Communication of goals to cellular swarms",
+        "Algorithms of life",
+        "Bioelectrical signaling",
+        "Collective intelligence of living networks",
+        "Application of neuroscience concepts in other contexts"
+      ],
+      "secondary_topics": [
+        "Transformative technologies",
+        "Native computation",
+        "Protocognitive medium",
+        "Transformative applications",
+        "Animal model systems"
+      ],
+      "key_terms": [
+        "Rate limiting step",
+        "Molecular details",
+        "Living networks",
+        "Bioelectrical signaling",
+        "Protocognitive medium",
+        "Collective intelligence",
+        "Neuroscience",
+        "Animal model systems"
+      ],
+      "content_summary": "The speaker, Michael Levin, emphasizes the importance of communicating goals to cellular swarms and understanding the algorithms of life for transformative technologies. He highlights the role of bioelectrical signaling as a crucial protocognitive medium for the collective intelligence of living networks and the application of neuroscience concepts in other contexts.",
+      "scientific_domain": "Developmental Biology, Bioelectricity",
+      "enhanced": true
+    }
+  ],
+  "processing_timestamp": ""
+}
