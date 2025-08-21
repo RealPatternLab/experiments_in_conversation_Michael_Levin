@@ -4,6 +4,8 @@
 
 The Michael Levin Scientific Knowledge Base is a sophisticated multi-modal RAG system that processes scientific publications (PDFs), scientific videos, and conversations/working meetings into an interactive knowledge base. The system uses separate processing pipelines for different content types, with plans to evolve toward unified search capabilities while maintaining separation of concerns.
 
+**🔧 Data Standardization**: The system now implements shared data models and base classes to ensure consistency across all pipelines, reducing troubleshooting and improving maintainability.
+
 ## High-Level Architecture
 
 ```
@@ -387,6 +389,60 @@ const UnifiedSearch = () => {
 - **Unified index backups** (Phase 2+)
 - **Metadata versioning** for rollback capabilities
 
+## Data Standardization System
+
+### Overview
+
+The system now implements a comprehensive data standardization approach using shared data models and base classes to ensure consistency across all pipelines.
+
+### Shared Data Models
+
+**Location**: `utils/pipeline_data_models.py`
+
+**Components**:
+- **BaseRAGEntry**: Common structure for all content types
+- **PipelineType**: Enumeration for different pipeline types
+- **Standardized Fields**: Consistent metadata, visual content, and temporal information
+- **Validation Functions**: Automatic data structure validation
+
+### Base Classes
+
+**Location**: `utils/base_frame_chunk_aligner.py`
+
+**Purpose**: Provide common functionality while allowing pipeline-specific customization
+
+**Benefits**:
+- **Code Reuse**: Common functionality centralized
+- **Consistency**: Standardized output formats
+- **Maintainability**: Single point for updates
+- **Validation**: Built-in data structure validation
+
+### Pipeline Integration
+
+**Video Pipelines**:
+- **Formal Presentations**: Ready for refactoring to use base classes
+- **Conversations**: Ready for refactoring to use base classes
+- **Future Pipelines**: Easy to add using inheritance pattern
+
+**Publications Pipeline**:
+- **Data Alignment**: Follows shared data standards
+- **Metadata Consistency**: Uses common naming conventions
+- **Output Compatibility**: Maintains consistency with video pipelines
+
+### Migration Path
+
+1. **Phase 1**: ✅ Create shared models and base classes
+2. **Phase 2**: Refactor existing pipelines to use base classes
+3. **Phase 3**: Implement data validation across all pipelines
+4. **Phase 4**: Add new pipeline types using standardized approach
+
+### Benefits
+
+- **Reduced Troubleshooting**: Consistent data structures across pipelines
+- **Easier Maintenance**: Common code centralized
+- **Future-Proof**: Easy to add new pipeline types
+- **Quality Assurance**: Automatic validation catches issues early
+
 ## Conclusion
 
 This multi-pipeline architecture provides the best of both worlds:
@@ -395,5 +451,6 @@ This multi-pipeline architecture provides the best of both worlds:
 2. **Clear evolution path** toward unified search capabilities
 3. **Risk mitigation** through gradual integration
 4. **Scalability** for adding new content types in the future
+5. **Data consistency** through shared models and base classes
 
-The system is designed to evolve naturally as requirements become clearer and the technology becomes more robust, while maintaining the flexibility to experiment and iterate on each pipeline independently.
+The system is designed to evolve naturally as requirements become clearer and the technology becomes more robust, while maintaining the flexibility to experiment and iterate on each pipeline independently. The new standardization system ensures that all pipelines generate consistent, validated outputs that work seamlessly in the unified RAG system.

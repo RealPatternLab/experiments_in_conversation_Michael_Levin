@@ -46,6 +46,7 @@ This system processes **scientific publications (PDFs)**, **scientific videos (Y
 
 ### Key Features
 - **Triple Pipeline Architecture**: Separate processing for publications, videos, and conversations
+- **Data Standardization**: Shared models and base classes ensure consistency across pipelines
 - **Multimodal Content**: Text, audio, and visual content processing
 - **Semantic Chunking**: Intelligently splits documents and transcripts
 - **Vector Embeddings**: Creates FAISS indices for fast semantic search
@@ -119,7 +120,32 @@ michael-levin-qa-engine-neu1/
 ├── ARCHITECTURE.md                      # System architecture details
 ├── PIPELINE_EVOLUTION_PLAN.md           # Evolution strategy
 └── .env                                 # Environment variables
+├── utils/                               # Shared data models and base classes
+│   ├── pipeline_data_models.py          # Common data structures
+│   ├── base_frame_chunk_aligner.py      # Base classes for pipelines
+│   └── README.md                        # Standardization documentation
 ```
+
+## 🔧 **Data Standardization System**
+
+**NEW**: The system now implements shared data models and base classes to ensure consistency across all pipelines:
+
+### What It Provides
+- **Shared Data Models**: Common structures for all pipeline outputs
+- **Base Classes**: Reusable functionality for video pipelines
+- **Automatic Validation**: Catches data structure issues early
+- **Type Safety**: Pydantic models ensure data integrity
+
+### Benefits
+- **Reduced Troubleshooting**: Consistent data structures across pipelines
+- **Easier Maintenance**: Common code centralized
+- **Future-Proof**: Easy to add new pipeline types
+- **Quality Assurance**: Automatic validation catches issues early
+
+### Documentation
+- **Full Details**: See `utils/README.md` for comprehensive documentation
+- **Examples**: Check `utils/conversations_aligner_example.py` for usage patterns
+- **Testing**: Run `utils/test_data_validation.py` to see validation in action
 
 ## 🎯 Usage
 
