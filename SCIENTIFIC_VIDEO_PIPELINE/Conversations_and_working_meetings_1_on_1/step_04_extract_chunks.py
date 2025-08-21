@@ -358,7 +358,7 @@ class AdvancedTranscriptProcessor:
                 
                 total_seconds = (hours * 3600) + (minutes * 60) + seconds
                 return total_seconds * 1000
-            else:
+                else:
                 return 0
                 
         except Exception:
@@ -660,7 +660,7 @@ class AdvancedTranscriptProcessor:
                 }
                 
                 enhanced_chunks.append(enhanced_chunk)
-                
+                    
             except Exception as e:
                 logger.error(f"Failed to enhance Q&A pair {i}: {e}")
                 continue

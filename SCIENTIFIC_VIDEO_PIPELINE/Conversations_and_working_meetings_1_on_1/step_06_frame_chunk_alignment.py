@@ -282,16 +282,31 @@ class FrameChunkAligner:
                 with open(alignments_file, 'w') as f:
                     json.dump(alignments, f, indent=2)
                 
-                # Save summary
+                # Save RAG-ready content (chunks with visual context)
+                rag_output = self.create_rag_ready_output(video_id, alignments)
+                rag_file = self.output_dir / f"{video_id}_rag_ready_aligned_content.json"
+                with open(rag_file, 'w') as f:
+                    json.dump(rag_output, f, indent=2)
+                
+                logger.info(f"RAG-ready content saved: {rag_file}")
+                
+                # Save summary matching formal presentations format
+                summary = {
+                    'video_id': video_id,
+                    'total_alignments': len(alignments),
+                    'total_frames_aligned': sum(len(a.get('relevant_frames', [])) for a in alignments),
+                    'average_alignment_confidence': 0.9,  # Default for conversations
+                    'output_files': {
+                        'alignments': str(alignments_file),
+                        'rag_ready': str(rag_file)
+                    }
+                }
+                
                 summary_file = self.output_dir / f"{video_id}_alignment_summary.json"
                 with open(summary_file, 'w') as f:
                     json.dump(summary, f, indent=2)
                 
-                # Save RAG-ready content (chunks with visual context)
-                rag_content = self.create_rag_ready_content(video_id, alignments)
-                rag_file = self.output_dir / f"{video_id}_rag_ready_aligned_content.json"
-                with open(rag_file, 'w') as f:
-                    json.dump(rag_content, f, indent=2)
+                logger.info(f"Alignment summary saved: {summary_file}")
                 
                 all_results[video_id] = {
                     'alignments_count': len(alignments),
@@ -309,13 +324,18 @@ class FrameChunkAligner:
                 
                 # Update progress queue
                 if self.progress_queue:
+                    # Calculate visual coverage percentage
+                    total_chunks = len(alignments)
+                    chunks_with_frames = sum(1 for a in alignments if a.get('relevant_frames'))
+                    visual_coverage = (chunks_with_frames / total_chunks * 100) if total_chunks > 0 else 0
+                    
                     self.progress_queue.update_video_step_status(
                         video_id,
                         'step_06_frame_chunk_alignment',
                         'completed',
                         metadata={
                             'alignments_count': len(alignments),
-                            'visual_coverage_percentage': summary['summary']['visual_coverage_percentage'],
+                            'visual_coverage_percentage': visual_coverage,
                             'completed_at': datetime.now().isoformat()
                         }
                     )
@@ -353,40 +373,75 @@ class FrameChunkAligner:
             'overall_summary': overall_summary
         }
     
-    def create_rag_ready_content(self, video_id: str, alignments: List[Dict]) -> List[Dict]:
-        """Create RAG-ready content with visual context."""
-        rag_content = []
+    def create_rag_ready_output(self, video_id: str, alignments: List[Dict]) -> Dict[str, Any]:
+        """Create RAG-ready output format matching formal presentations pipeline structure."""
+        rag_output = {
+            'metadata': {
+                'pipeline_step': 'step_06_frame_chunk_alignment',
+                'total_alignments': len(alignments),
+                'alignment_method': 'timestamp_based',
+                'processing_timestamp': datetime.now().isoformat()
+            },
+            'aligned_content': []
+        }
         
         for alignment in alignments:
-            # Create enhanced content for RAG
-            rag_item = {
-                'id': alignment['chunk_id'],
-                'text': alignment['chunk_text'],
-                'question': alignment['chunk_question'],
-                'answer': alignment['chunk_answer'],
-                'questioner': alignment['chunk_questioner'],
-                'answerer': alignment['chunk_answerer'],
-                'topics': alignment['chunk_topics'],
-                'timing': {
-                    'start_time': alignment['chunk_start_timestamp'],
-                    'end_time': alignment['chunk_end_timestamp'],
-                    'start_seconds': alignment['chunk_start_time'],
-                    'end_seconds': alignment['chunk_end_time']
+            # Create RAG entry matching formal presentations structure
+            rag_entry = {
+                'content_id': alignment['chunk_id'],
+                'text_content': {
+                    'text': alignment.get('chunk_text', ''),
+                    'metadata': {
+                        'token_count': len(alignment.get('chunk_text', '').split()) if alignment.get('chunk_text') else 0,
+                        'sentence_count': len([s for s in alignment.get('chunk_text', '').split('.') if s.strip()]) if alignment.get('chunk_text') else 0,
+                        'primary_topics': alignment.get('chunk_topics', []),
+                        'secondary_topics': [],  # Could be enhanced later
+                        'key_terms': self._extract_key_terms(alignment.get('chunk_text', '')),
+                        'content_summary': self._generate_content_summary(alignment.get('chunk_text', '')),
+                        'scientific_domain': 'Developmental Biology, Bioelectricity',
+                        'start_time_seconds': alignment.get('chunk_start_time', 0),
+                        'end_time_seconds': alignment.get('chunk_end_time', 0)
+                    }
                 },
-                'youtube_link': alignment['chunk_youtube_link'],
-                'visual_context': {
-                    'frame_count': alignment['frame_count'],
-                    'alignment_quality': alignment['alignment_quality'],
+                'visual_content': {
                     'frames': [
                         {
-                            'filename': frame['filename'],
-                            'timestamp': frame['timestamp'],
-                            'timestamp_formatted': f"{int(frame['timestamp']//60):02d}:{int(frame['timestamp']%60):02d}",
-                            'file_path': frame['file_path']
+                            'frame_id': frame.get('frame_id', frame.get('filename', '')),
+                            'timestamp': frame.get('timestamp', 0),
+                            'file_path': frame.get('file_path', ''),
+                            'file_size': frame.get('file_size', 0),
+                            'alignment_confidence': 0.9  # Default confidence for conversations
                         }
-                        for frame in alignment['relevant_frames']
-                    ]
+                        for frame in alignment.get('relevant_frames', [])
+                    ],
+                    'frame_count': len(alignment.get('relevant_frames', []))
                 },
+                'temporal_info': {
+                    'frame_timestamps': [f.get('timestamp', 0) for f in alignment.get('relevant_frames', [])],
+                    'time_range': {
+                        'start': alignment.get('chunk_start_time', 0),
+                        'end': alignment.get('chunk_end_time', 0)
+                    }
+                },
+                'quality_metrics': {
+                    'total_frames': len(alignment.get('relevant_frames', [])),
+                    'average_confidence': 0.9,  # Default for conversations
+                    'timestamp_coverage': 0.1  # Default coverage
+                },
+                'processing_metadata': {
+                    'alignment_method': 'timestamp_based',
+                    'timestamp_tolerance': 5.0
+                },
+                # Conversation-specific fields (preserved)
+                'conversation_context': {
+                    'question': alignment.get('chunk_question', ''),
+                    'answer': alignment.get('chunk_answer', ''),
+                    'questioner': alignment.get('chunk_questioner', ''),
+                    'answerer': alignment.get('chunk_answerer', ''),
+                    'youtube_link': alignment.get('chunk_youtube_link', ''),
+                    'pipeline_type': 'conversations_1_on_1'
+                },
+                # Ensure video_id is available at chunk level
                 'metadata': {
                     'video_id': video_id,
                     'pipeline_type': 'conversations_1_on_1',
@@ -394,9 +449,46 @@ class FrameChunkAligner:
                 }
             }
             
-            rag_content.append(rag_item)
+            rag_output['aligned_content'].append(rag_entry)
         
-        return rag_content
+        return rag_output
+    
+    def _extract_key_terms(self, text: str) -> List[str]:
+        """Extract key terms from text for metadata."""
+        if not text:
+            return []
+        
+        # Simple key term extraction - could be enhanced with NLP
+        words = text.lower().split()
+        # Filter out common words and short words
+        stop_words = {'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by', 'is', 'are', 'was', 'were', 'be', 'been', 'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could', 'should', 'may', 'might', 'can', 'this', 'that', 'these', 'those', 'i', 'you', 'he', 'she', 'it', 'we', 'they', 'me', 'him', 'her', 'us', 'them'}
+        
+        key_terms = []
+        for word in words:
+            word = word.strip('.,!?;:()[]{}"\'').lower()
+            if len(word) > 3 and word not in stop_words and word.isalpha():
+                key_terms.append(word)
+        
+        # Return top 10 unique terms
+        return list(set(key_terms))[:10]
+    
+    def _generate_content_summary(self, text: str) -> str:
+        """Generate a brief content summary for metadata."""
+        if not text:
+            return ""
+        
+        # Simple summary - first sentence or first 100 characters
+        sentences = [s.strip() for s in text.split('.') if s.strip()]
+        if sentences:
+            summary = sentences[0]
+            if len(summary) > 100:
+                summary = summary[:97] + "..."
+            return summary
+        
+        # Fallback to truncated text
+        if len(text) > 100:
+            return text[:97] + "..."
+        return text
 
 def main():
     """Main execution function."""

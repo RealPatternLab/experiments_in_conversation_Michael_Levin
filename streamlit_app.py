@@ -229,6 +229,15 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
     # Find all citation patterns like [Source_1], [Source_2], etc.
     citation_pattern = r'\[Source_(\d+)\]'
     
+    # Debug: Log what we're looking for and what we found
+    logger.info(f"🔍 Processing citations in response text (length: {len(response_text)})")
+    logger.info(f"🔍 Looking for citation pattern: {citation_pattern}")
+    logger.info(f"🔍 Available source mapping keys: {list(source_mapping.keys())}")
+    
+    # Find all matches
+    matches = re.findall(citation_pattern, response_text)
+    logger.info(f"🔍 Found {len(matches)} Source_X citations: {matches}")
+    
     # Track which specific frames have already shown thumbnails to avoid duplicates
     shown_frame_thumbnails = set()
     
@@ -236,22 +245,33 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
         source_num = int(match.group(1))
         source_key = f"Source_{source_num}"
         
+        logger.info(f"🔍 Processing citation: {source_key}")
+        
         if source_key in source_mapping:
             source_info = source_mapping[source_key]
             title = source_info.get('title', 'Unknown')
             year = source_info.get('publication_date', 'Unknown')
             pipeline_source = source_info.get('pipeline_source', 'unknown')
             
+            logger.info(f"🔍 Source info for {source_key}: title='{title}', year='{year}', pipeline_source='{pipeline_source}'")
+            logger.info(f"🔍 Full source_info keys: {list(source_info.keys())}")
+            
             # Handle video citations with thumbnails and YouTube links
-            if pipeline_source == 'videos':
+            if pipeline_source == 'videos' or pipeline_source == 'formal_presentations' or pipeline_source == 'conversations':
+                logger.info(f"🎥 Processing video citation for {source_key}")
                 video_id = source_info.get('video_id', '')
                 start_time = source_info.get('start_time_seconds', '')
                 chunk_id = source_info.get('chunk_id', '')
                 
-                # Create YouTube link with timestamp
-                youtube_url = f"https://www.youtube.com/watch?v={video_id}"
-                if start_time:
-                    youtube_url += f"&t={int(start_time)}"
+                logger.info(f"🎥 Video details: video_id='{video_id}', start_time='{start_time}', chunk_id='{chunk_id}'")
+                
+                # Use pre-built YouTube URL if available, otherwise construct it
+                youtube_url = source_info.get('youtube_url', '')
+                if not youtube_url:
+                    # Fallback: Create YouTube link with timestamp (matching the format used in pre-built URLs)
+                    youtube_url = f"https://www.youtube.com/watch?v={video_id}"
+                    if start_time:
+                        youtube_url += f"&t={int(start_time)}s"
                 
                 # Create thumbnail display with clickable link
                 thumbnail_html = ""
@@ -267,17 +287,26 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
                         if frame_path in shown_frame_thumbnails:
                             # Already shown this frame, just use text link
                             logger.info(f"🔄 Frame {frame_path} already shown, using text link for {chunk_id}")
-                            thumbnail_html = f'<a href="{youtube_url}" target="_blank" style="color: #ff0000; text-decoration: underline;" title="Watch video at {start_time}s">[🎥 Watch at {start_time}s]</a>'
+                            if pipeline_source == 'conversations':
+                                thumbnail_html = f'<a href="{youtube_url}" target="_blank" style="color: #00ff00; text-decoration: underline;" title="Watch conversation at {start_time}s">[💬 Watch at {start_time}s]</a>'
+                            else:
+                                thumbnail_html = f'<a href="{youtube_url}" target="_blank" style="color: #ff0000; text-decoration: underline;" title="Watch video at {start_time}s">[🎥 Watch at {start_time}s]</a>'
                         else:
                             # Display thumbnail as clickable image
                             logger.info(f"✅ Creating thumbnail for {chunk_id} using frame: {frame_path}")
-                            thumbnail_html = f'<a href="{youtube_url}" target="_blank" title="Watch video at {start_time}s"><img src="data:image/jpeg;base64,{encode_image_to_base64(frame_path)}" style="float: left; width: 192px; height: 144px; border-radius: 4px; margin: 0 10px 10px 0; vertical-align: top; shape-outside: margin-box;" alt="Video thumbnail"></a>'
+                            if pipeline_source == 'conversations':
+                                thumbnail_html = f'<a href="{youtube_url}" target="_blank" title="Watch conversation at {start_time}s"><img src="data:image/jpeg;base64,{encode_image_to_base64(frame_path)}" style="float: left; width: 192px; height: 144px; border-radius: 4px; margin: 0 10px 10px 0; vertical-align: top; shape-outside: margin-box;" alt="Conversation thumbnail"></a>'
+                            else:
+                                thumbnail_html = f'<a href="{youtube_url}" target="_blank" title="Watch video at {start_time}s"><img src="data:image/jpeg;base64,{encode_image_to_base64(frame_path)}" style="float: left; width: 192px; height: 144px; border-radius: 4px; margin: 0 10px 10px 0; vertical-align: top; shape-outside: margin-box;" alt="Video thumbnail"></a>'
                             # Mark this frame as having shown a thumbnail
                             shown_frame_thumbnails.add(frame_path)
                     else:
                         # Fallback: just show clickable text
                         logger.warning(f"⚠️ No frame found for {chunk_id}, using text fallback. Frame path: {frame_path}")
-                        thumbnail_html = f'<a href="{youtube_url}" target="_blank" style="color: #ff0000; text-decoration: underline;" title="Watch video at {start_time}s">[🎥 Watch at {start_time}s]</a>'
+                        if pipeline_source == 'conversations':
+                            thumbnail_html = f'<a href="{youtube_url}" target="_blank" style="color: #00ff00; text-decoration: underline;" title="Watch conversation at {start_time}s">[💬 Watch at {start_time}s]</a>'
+                        else:
+                            thumbnail_html = f'<a href="{youtube_url}" target="_blank" style="color: #ff0000; text-decoration: underline;" title="Watch video at {start_time}s">[🎥 Watch at {start_time}s]</a>'
                 
                 # Only wrap thumbnails in divs, keep text links inline
                 if '<img' in thumbnail_html:
@@ -291,6 +320,8 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
             pdf_filename = source_info.get('sanitized_filename')
             doi = source_info.get('doi', '')
             
+            logger.info(f"📚 Processing publication citation for {source_key}: pdf_filename='{pdf_filename}', doi='{doi}'")
+            
             if pdf_filename and pdf_filename != "Unknown":
                 github_raw_url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/SCIENTIFIC_PUBLICATION_PIPELINE/step_07_archive/{pdf_filename}"
                 
@@ -300,55 +331,16 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
                 if doi and doi != "Unknown":
                     doi_link = f" <a href='https://doi.org/{doi}' target='_blank' style='color: #0066cc; text-decoration: underline;' title='View on DOI.org'>[DOI]</a>"
                 
+                logger.info(f"📚 Created publication links: {pdf_link}{doi_link}")
                 return f"<sup>{pdf_link}{doi_link}</sup>"
             else:
+                logger.info(f"📚 No PDF filename, falling back to title format: {title} ({year})")
                 return f"<sup>[{title} ({year})]</sup>"
         
-        # Handle conversations pipeline citations
-        elif pipeline_source == 'conversations':
-            video_id = source_info.get('video_id', '')
-            start_time = source_info.get('start_time_seconds', '')
-            chunk_id = source_info.get('chunk_id', '')
-            
-            # Create YouTube link with timestamp
-            youtube_url = f"https://www.youtube.com/watch?v={video_id}"
-            if start_time:
-                youtube_url += f"&t={int(start_time)}"
-            
-            # Create thumbnail display with clickable link
-            thumbnail_html = ""
-            if chunk_id:
-                # Try to find a frame for this chunk
-                frame_path = source_info.get('frame_path', '')
-                
-                # Log frame path for debugging
-                logger.info(f"💬 Conversations citation processing - Chunk: {chunk_id}, Frame path: {frame_path}, Exists: {Path(frame_path).exists() if frame_path else False}")
-                
-                if frame_path and Path(frame_path).exists():
-                    # Check if we've already shown this exact frame to avoid duplicates
-                    if frame_path in shown_frame_thumbnails:
-                        # Already shown this frame, just use text link
-                        logger.info(f"🔄 Frame {frame_path} already shown, using text link for {chunk_id}")
-                        thumbnail_html = f'<a href="{youtube_url}" target="_blank" style="color: #00ff00; text-decoration: underline;" title="Watch conversation at {start_time}s">[💬 Watch at {start_time}s]</a>'
-                    else:
-                        # Display thumbnail as clickable image
-                        logger.info(f"✅ Creating thumbnail for {chunk_id} using frame: {frame_path}")
-                        thumbnail_html = f'<a href="{youtube_url}" target="_blank" title="Watch conversation at {start_time}s"><img src="data:image/jpeg;base64,{encode_image_to_base64(frame_path)}" style="float: left; width: 192px; height: 144px; border-radius: 4px; margin: 0 10px 10px 0; vertical-align: top; shape-outside: margin-box;" alt="Conversation thumbnail"></a>'
-                        # Mark this frame as having shown a thumbnail
-                        shown_frame_thumbnails.add(frame_path)
-                else:
-                    # Fallback: just show clickable text
-                    logger.warning(f"⚠️ No frame found for {chunk_id}, using text fallback. Frame path: {frame_path}")
-                    thumbnail_html = f'<a href="{youtube_url}" target="_blank" style="color: #00ff00; text-decoration: underline;" title="Watch conversation at {start_time}s">[💬 Watch at {start_time}s]</a>'
-            
-            # Only wrap thumbnails in divs, keep text links inline
-            if '<img' in thumbnail_html:
-                # This is a thumbnail, wrap it in a div for proper text wrapping
-                return f"<div style='margin: 5px 0;'>{thumbnail_html}</div>"
-            else:
-                # This is a text link, return it inline without wrapping
-                return thumbnail_html
+        # Conversations pipeline citations are now handled in the video citation section above
         else:
+            logger.warning(f"⚠️ Source {source_key} not found in source_mapping!")
+            logger.warning(f"⚠️ Available keys: {list(source_mapping.keys())}")
             return match.group(0)  # Return original if source not found
     
     # Replace citations with hyperlinks
@@ -420,44 +412,173 @@ def process_rag_metadata(rag_results: list) -> list:
             processed_results.append(processed_chunk)
         elif pipeline_source == 'conversations':
             # Handle conversations chunks
-            chunk_id = chunk.get('id', 'Unknown')
+            chunk_id = chunk.get('content_id', 'Unknown')
             logger.info(f"   Conversations chunk ID: {chunk_id}")
             
             # Get metadata directly from chunk structure
-            video_id = chunk.get('metadata', {}).get('video_id', 'Unknown')
-            timing = chunk.get('timing', {})
-            start_time = timing.get('start_seconds', 0)
-            end_time = timing.get('end_seconds', 0)
-            logger.info(f"   Time range: {start_time:.1f}s - {end_time:.1f}s")
+            video_id = chunk.get('video_id', 'Unknown')
             
-            # Get video title (for conversations, we can extract from the chunk text or use video_id)
-            video_title = f"Conversation: {video_id}"
-            logger.info(f"   Video title: {video_title}")
+            # Fallback: try to extract video_id from youtube_link if metadata.video_id is not available
+            if video_id == 'Unknown':
+                youtube_link = chunk.get('youtube_link', '')
+                if youtube_link and 'youtube.com/watch?v=' in youtube_link:
+                    # Extract video_id from youtube_link (format: https://www.youtube.com/watch?v=VIDEO_ID&t=...)
+                    try:
+                        video_id = youtube_link.split('youtube.com/watch?v=')[1].split('&')[0]
+                        logger.info(f"💬 Extracted video_id from youtube_link: {video_id}")
+                    except (IndexError, AttributeError):
+                        logger.warning(f"💬 Failed to extract video_id from youtube_link: {youtube_link}")
             
+            # Get timing information from the standardized structure
+            start_time = chunk.get('timing', {}).get('start_time_seconds', 0)
+            end_time = chunk.get('timing', {}).get('end_time_seconds', 0)
+            logger.info(f"💬 Chunk details: video_id='{video_id}', start_time={start_time}, end_time={end_time}")
+            
+            # Get text content
+            text_content = chunk.get('text', '')
+            
+            # Get frame path for thumbnail
+            frame_path = ""
+            visual_context = chunk.get('visual_context', {})
+            if visual_context and 'frames' in visual_context:
+                frames = visual_context['frames']
+                if frames:
+                    # Convert relative path to absolute path for the Streamlit app
+                    relative_path = frames[0].get('file_path', '')
+                    if relative_path:
+                        # The frame path is relative to the pipeline directory, but we need it relative to the root
+                        frame_path = f"SCIENTIFIC_VIDEO_PIPELINE/Conversations_and_working_meetings_1_on_1/{relative_path}"
+                        logger.info(f"💬 Frame path: {frame_path}")
+                    else:
+                        logger.warning(f"💬 No file_path in frame: {frames[0]}")
+                else:
+                    logger.warning(f"💬 No frames in visual_context: {visual_context}")
+            else:
+                logger.warning(f"💬 No visual_context or frames in chunk: {chunk.keys()}")
+            
+            # Process the conversation chunk and add to results
             processed_chunk = chunk.copy()
             processed_chunk.update({
-                'title': video_title,
+                'id': chunk_id,  # Ensure we have the id field for later processing
+                'title': f"Working Meeting: {video_id}",
                 'publication_year': '2025',
                 'section': f"Timestamp: {start_time:.1f}s - {end_time:.1f}s",
-                'authors': ['Michael Levin']
+                'authors': ['Michael Levin'],
+                'video_id': video_id,
+                'start_time_seconds': start_time,
+                'end_time_seconds': end_time,
+                'text': text_content,
+                'frame_path': frame_path
             })
-            logger.info(f"   ✅ Processed conversations chunk with title: {video_title}")
+            logger.info(f"   ✅ Processed conversation chunk with video_id: {video_id}")
             processed_results.append(processed_chunk)
         else:
-            # Handle publication chunks (existing logic)
-            logger.info(f"   Publication chunk - title: {chunk.get('title', 'Unknown')}")
+            # Handle other pipeline sources (publications, etc.)
             processed_chunk = chunk.copy()
-            processed_chunk.update({
-                'title': chunk.get('title', 'Unknown'),
-                'publication_year': chunk.get('publication_year', 'Unknown'),
-                'section': chunk.get('section', 'Unknown'),
-                'authors': chunk.get('authors', [])
-            })
-            logger.info(f"   ✅ Processed publication chunk")
             processed_results.append(processed_chunk)
     
-    logger.info(f"🎯 Metadata processing complete. Processed {len(processed_results)} chunks")
-    return processed_results
+    # Create source mapping for citations
+    source_mapping = {}
+    for i, chunk in enumerate(processed_results[:3]):  # Use top 3 results
+        source_key = f"Source_{i+1}"
+        pipeline_source = chunk.get('pipeline_source', 'unknown')
+        
+        if pipeline_source == 'videos':
+            # Handle video chunks
+            chunk_id = chunk.get('content_id', 'Unknown')
+            video_id = chunk_id.split('_chunk_')[0] if '_chunk_' in chunk_id else chunk_id.split('_')[0] if '_' in chunk_id else 'Unknown'
+            chunk_metadata = chunk.get('chunk_metadata', {})
+            start_time = chunk_metadata.get('start_time_seconds', 0)
+            end_time = chunk_metadata.get('end_time_seconds', 0)
+            text_content = chunk.get('text', '') or chunk_metadata.get('text', '')
+            
+            # Get frame path for thumbnail
+            frame_path = ""
+            visual_content = chunk.get('visual_content', {})
+            if visual_content and 'frames' in visual_content:
+                frames = visual_content['frames']
+                if frames:
+                    frame_path = frames[0].get('file_path', '')
+            
+            source_mapping[source_key] = {
+                'title': chunk.get('title', f"Video: {video_id}"),
+                'authors': ['Michael Levin'],
+                'journal': 'YouTube Video',
+                'doi': '',
+                'publication_date': '2025',
+                'text': text_content,
+                'sanitized_filename': '',
+                'rank': i + 1,
+                'section': f"Timestamp: {start_time:.1f}s - {end_time:.1f}s",
+                'topic': '',
+                'pipeline_source': 'videos',
+                'content_type': 'video_transcript',
+                'video_id': video_id,
+                'start_time_seconds': start_time,
+                'end_time_seconds': end_time,
+                'youtube_url': f"https://www.youtube.com/watch?v={video_id}&t={int(start_time)}s" if start_time > 0 else f"https://www.youtube.com/watch?v={video_id}",
+                'frame_path': frame_path,
+                'chunk_id': chunk_id
+            }
+        elif pipeline_source == 'conversations':
+            # Handle conversations chunks
+            chunk_id = chunk.get('id', 'Unknown')
+            video_id = chunk.get('video_id', 'Unknown')
+            start_time = chunk.get('start_time_seconds', 0)
+            end_time = chunk.get('end_time_seconds', 0)
+            text_content = chunk.get('text', '')
+            frame_path = chunk.get('frame_path', '')
+            
+            # Get video title
+            video_title = "Working Meeting Discussion"
+            if "cellular automata" in text_content.lower():
+                video_title = "Working Meeting: Cellular Automata Discussion"
+            elif "health" in text_content.lower() or "disease" in text_content.lower():
+                video_title = "Working Meeting: Health and Disease Modeling"
+            elif "evolution" in text_content.lower():
+                video_title = "Working Meeting: Evolutionary Biology Discussion"
+            else:
+                video_title = f"Working Meeting: {video_id}"
+            
+            source_mapping[source_key] = {
+                'title': video_title,
+                'authors': ['Michael Levin'],
+                'journal': 'YouTube Working Meeting',
+                'doi': '',
+                'publication_date': '2025',
+                'text': text_content,
+                'sanitized_filename': '',
+                'rank': i + 1,
+                'section': f"Timestamp: {start_time:.1f}s - {end_time:.1f}s",
+                'topic': '',
+                'pipeline_source': 'conversations',
+                'content_type': 'conversation_transcript',
+                'video_id': video_id,
+                'start_time_seconds': start_time,
+                'end_time_seconds': end_time,
+                'youtube_url': f"https://www.youtube.com/watch?v={video_id}&t={int(start_time)}s" if start_time > 0 else f"https://www.youtube.com/watch?v={video_id}",
+                'frame_path': frame_path,
+                'chunk_id': chunk_id
+            }
+        else:
+            # Handle publication chunks
+            source_mapping[source_key] = {
+                'title': chunk.get('title', 'Unknown'),
+                'authors': chunk.get('authors', []),
+                'journal': chunk.get('journal', 'Unknown'),
+                'doi': chunk.get('doi', 'Unknown'),
+                'publication_date': chunk.get('publication_year', 'Unknown'),
+                'text': chunk.get('text', ''),
+                'sanitized_filename': chunk.get('pdf_filename', ''),
+                'rank': i + 1,
+                'section': chunk.get('section', 'Unknown'),
+                'topic': chunk.get('topic', ''),
+                'pipeline_source': 'publications',
+                'content_type': 'scientific_paper'
+            }
+    
+    logger.info(f"✅ Created source mapping with {len(source_mapping)} sources")
+    return source_mapping
 
 def get_conversational_response(query: str, rag_results: list, conversation_history: list = None) -> str:
     """Generate a conversational response using RAG results with inline citations."""
@@ -475,7 +596,7 @@ def get_conversational_response(query: str, rag_results: list, conversation_hist
             source_key = f"Source_{i+1}"
             pipeline_source = chunk.get('pipeline_source', 'unknown')
             
-            if pipeline_source == 'videos':
+            if pipeline_source == 'videos' or pipeline_source == 'formal_presentations':
                 # Handle video chunks
                 chunk_id = chunk.get('content_id', 'Unknown')
                 
@@ -530,19 +651,33 @@ def get_conversational_response(query: str, rag_results: list, conversation_hist
                     'video_id': video_id,
                     'start_time_seconds': start_time,
                     'end_time_seconds': end_time,
-                    'youtube_url': f"https://www.youtube.com/watch?v={video_id}",
+                    'youtube_url': f"https://www.youtube.com/watch?v={video_id}&t={int(start_time)}s" if start_time > 0 else f"https://www.youtube.com/watch?v={video_id}",
                     'frame_path': frame_path,
                     'chunk_id': chunk_id
                 }
             elif pipeline_source == 'conversations':
                 # Handle conversations chunks
                 chunk_id = chunk.get('id', 'Unknown')
+                logger.info(f"💬 Processing conversations chunk: {chunk_id}")
                 
                 # Get metadata directly from chunk structure
-                video_id = chunk.get('metadata', {}).get('video_id', 'Unknown')
-                timing = chunk.get('timing', {})
-                start_time = timing.get('start_seconds', 0)
-                end_time = timing.get('end_seconds', 0)
+                video_id = chunk.get('video_id', 'Unknown')
+                
+                # Fallback: try to extract video_id from youtube_link if metadata.video_id is not available
+                if video_id == 'Unknown':
+                    youtube_link = chunk.get('youtube_link', '')
+                    if youtube_link and 'youtube.com/watch?v=' in youtube_link:
+                        # Extract video_id from youtube_link (format: https://www.youtube.com/watch?v=VIDEO_ID&t=...)
+                        try:
+                            video_id = youtube_link.split('youtube.com/watch?v=')[1].split('&')[0]
+                            logger.info(f"💬 Extracted video_id from youtube_link: {video_id}")
+                        except (IndexError, AttributeError):
+                            logger.warning(f"💬 Failed to extract video_id from youtube_link: {youtube_link}")
+                
+                # Get timing information from the standardized structure
+                start_time = chunk.get('timing', {}).get('start_time_seconds', 0)
+                end_time = chunk.get('timing', {}).get('end_time_seconds', 0)
+                logger.info(f"💬 Chunk details: video_id='{video_id}', start_time={start_time}, end_time={end_time}")
                 
                 # Get text content
                 text_content = chunk.get('text', '')
@@ -558,16 +693,31 @@ def get_conversational_response(query: str, rag_results: list, conversation_hist
                         if relative_path:
                             # The frame path is relative to the pipeline directory, but we need it relative to the root
                             frame_path = f"SCIENTIFIC_VIDEO_PIPELINE/Conversations_and_working_meetings_1_on_1/{relative_path}"
+                            logger.info(f"💬 Frame path: {frame_path}")
+                        else:
+                            logger.warning(f"💬 No file_path in frame: {frames[0]}")
+                    else:
+                        logger.warning(f"💬 No frames in visual_context: {visual_context}")
+                else:
+                    logger.warning(f"💬 No visual_context or frames in chunk: {chunk.keys()}")
                 
                 context_parts.append(f"{source_key} [CONVERSATION] ({chunk_id}, {start_time:.1f}s-{end_time:.1f}s): {text_content[:200]}...")
                 
-                # Get video title
-                video_title = f"Conversation: {video_id}"
+                # Get video title - extract from chunk text or use meaningful description
+                video_title = "Working Meeting Discussion"
+                if "cellular automata" in text_content.lower():
+                    video_title = "Working Meeting: Cellular Automata Discussion"
+                elif "health" in text_content.lower() or "disease" in text_content.lower():
+                    video_title = "Working Meeting: Health and Disease Modeling"
+                elif "evolution" in text_content.lower():
+                    video_title = "Working Meeting: Evolutionary Biology Discussion"
+                else:
+                    video_title = f"Working Meeting: {video_id}"
                 
                 source_mapping[source_key] = {
                     'title': video_title,
                     'authors': ['Michael Levin'],
-                    'journal': 'YouTube Conversation',
+                    'journal': 'YouTube Working Meeting',
                     'doi': '',
                     'publication_date': '2025',
                     'text': text_content,
@@ -580,10 +730,12 @@ def get_conversational_response(query: str, rag_results: list, conversation_hist
                     'video_id': video_id,
                     'start_time_seconds': start_time,
                     'end_time_seconds': end_time,
-                    'youtube_url': f"https://www.youtube.com/watch?v={video_id}",
+                    'youtube_url': f"https://www.youtube.com/watch?v={video_id}&t={int(start_time)}s" if start_time > 0 else f"https://www.youtube.com/watch?v={video_id}",
                     'frame_path': frame_path,
                     'chunk_id': chunk_id
                 }
+                
+                logger.info(f"💬 Created source mapping for {source_key}: {video_title}")
             else:
                 # Handle publication chunks (existing logic)
                 authors = chunk.get('authors', [])
@@ -665,6 +817,12 @@ CRITICAL: You MUST use inline citations in this exact format when referencing sp
 - Use [Source_3] for the third source provided (whether it's a paper or video)
 - ALWAYS include citations when discussing specific findings from ANY source type
 - Examples: "In our work on morphogenesis [Source_1], we found..." or "As I discussed in my presentation [Source_2], our research has shown..."
+- **DO NOT use [Title (Year)] format - ONLY use [Source_X] format**
+- **The citation processor expects [Source_X] format to create clickable links and thumbnails**
+
+**🎯 CRITICAL INSTRUCTION:** Look at the Research Context below. You will see sources labeled as "Source_1", "Source_2", "Source_3", etc. When you reference any of these sources in your response, you MUST use the exact format [Source_1], [Source_2], [Source_3], etc. This is the ONLY way the citation processor can create clickable links and thumbnails.
+
+**📝 EXAMPLE:** If you see "Source_1 [CONVERSATION] (chunk_id, time): text about cellular automata..." in the context, and you want to reference it, write: "As I discussed in my working meeting [Source_1], cellular automata demonstrate..." NOT "As I discussed in my working meeting [Working Meeting: Cellular Automata Discussion (2025)], cellular automata demonstrate..."
 
 {conversation_context}
 
@@ -694,7 +852,7 @@ Response:"""
         response = client.chat.completions.create(
             model="gpt-4o",
             messages=[
-                {"role": "system", "content": "You are Michael Levin, a developmental and synthetic biologist at Tufts University. Respond to queries using your expertise in bioelectricity, morphogenesis, basal cognition, and regenerative medicine. Speak in the first person and emulate Michael's characteristic style: technical precision with interdisciplinary connections. Reference bioelectric signaling, scale-free cognition, and unconventional substrates for intelligence. Use inline citations [Source_1], [Source_2], etc. when referencing specific findings from BOTH publications AND videos. Maintain conversation context and refer to previous exchanges when relevant."},
+                {"role": "system", "content": "You are Michael Levin, a developmental and synthetic biologist at Tufts University. Respond to queries using your expertise in bioelectricity, morphogenesis, basal cognition, and regenerative medicine. Speak in the first person and emulate Michael's characteristic style: technical precision with interdisciplinary connections. Reference bioelectric signaling, scale-free cognition, and unconventional substrates for intelligence. CRITICAL: You MUST use inline citations [Source_1], [Source_2], etc. when referencing specific findings from BOTH publications AND videos. DO NOT use [Title (Year)] format. The citation processor requires [Source_X] format to create clickable links and thumbnails. When you see sources labeled as 'Source_1', 'Source_2', etc. in the context, you MUST reference them as [Source_1], [Source_2], etc. Maintain conversation context and refer to previous exchanges when relevant."},
                 {"role": "user", "content": prompt}
             ],
             max_tokens=800,

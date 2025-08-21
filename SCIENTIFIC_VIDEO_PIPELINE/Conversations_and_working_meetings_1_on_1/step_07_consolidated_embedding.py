@@ -218,26 +218,41 @@ class ConversationsConsolidatedEmbedding:
         text_chunks = []
         metadata = []
         
-        for content in rag_data:
-            # Extract text content for embedding
-            text = content.get('text', '')
+        # Handle new standardized structure (matches formal presentations pipeline)
+        if isinstance(rag_data, dict) and 'aligned_content' in rag_data:
+            content_list = rag_data['aligned_content']
+        else:
+            # Fallback to old structure
+            content_list = rag_data if isinstance(rag_data, list) else []
+        
+        for content in content_list:
+            # Extract text content for embedding (new structure)
+            text = content.get('text_content', {}).get('text', '')
+            if not text:
+                # Fallback to old structure
+                text = content.get('text', '')
+            
             if text:
                 text_chunks.append(text)
                 
                 # Create comprehensive metadata entry
                 meta_entry = {
-                    'id': content.get('id', ''),
+                    'id': content.get('content_id', content.get('id', '')),
                     'video_id': content.get('metadata', {}).get('video_id', ''),
                     'text': text,
                     'text_length': len(text),
-                    'question': content.get('question', ''),
-                    'answer': content.get('answer', ''),
-                    'questioner': content.get('questioner', ''),
-                    'answerer': content.get('answerer', ''),
-                    'topics': content.get('topics', []),
-                    'timing': content.get('timing', {}),
-                    'youtube_link': content.get('youtube_link', ''),
-                    'visual_context': content.get('visual_context', {}),
+                    # Extract from conversation_context if available
+                    'question': content.get('conversation_context', {}).get('question', ''),
+                    'answer': content.get('conversation_context', {}).get('answer', ''),
+                    'questioner': content.get('conversation_context', {}).get('questioner', ''),
+                    'answerer': content.get('conversation_context', {}).get('answerer', ''),
+                    'topics': content.get('text_content', {}).get('metadata', {}).get('primary_topics', []),
+                    'timing': {
+                        'start_time_seconds': content.get('text_content', {}).get('metadata', {}).get('start_time_seconds', 0),
+                        'end_time_seconds': content.get('text_content', {}).get('metadata', {}).get('end_time_seconds', 0)
+                    },
+                    'youtube_link': content.get('conversation_context', {}).get('youtube_link', ''),
+                    'visual_context': content.get('visual_content', {}),
                     'source_file': rag_file.name,
                     'pipeline_type': 'conversations_1_on_1',
                     'created_at': content.get('metadata', {}).get('created_at', '')

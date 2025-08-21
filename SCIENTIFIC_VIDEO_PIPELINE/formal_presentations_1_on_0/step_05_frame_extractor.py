@@ -37,7 +37,7 @@ class FrameExtractor:
         # Target ~15-20 second intervals (roughly half the expected chunk size of 30-60 seconds)
         self.frame_interval = 18  # Extract frame every 18 seconds for better chunk coverage
         self.frame_quality = 2    # FFmpeg quality (1-31, lower is better)
-        self.max_frames = 200     # Increased from 100 to cover full video duration
+        self.max_frames = 500     # Increased from 100 to cover full video duration
     
     def process_all_videos(self):
         """Process all videos in the input directory"""
