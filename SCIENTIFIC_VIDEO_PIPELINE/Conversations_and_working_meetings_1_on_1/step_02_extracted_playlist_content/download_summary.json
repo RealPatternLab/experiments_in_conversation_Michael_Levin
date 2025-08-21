@@ -1,0 +1,22 @@
+{
+  "pipeline_type": "conversations_1_on_1",
+  "step": "step_02_video_download",
+  "timestamp": "2025-08-18 16:30:57",
+  "summary": {
+    "total_videos_processed": 1,
+    "successful_downloads": 1,
+    "failed_downloads": 0,
+    "success_rate": "100.0%"
+  },
+  "download_details": [
+    {
+      "video_id": "LKSH4QNqpIE",
+      "title": "Cellular automata and models of health and disease",
+      "playlist_id": "PLmR3yIXYqfUIxjoMcSDxoBsj-tSasEZT2",
+      "playlist_title": "Conversations and working meetings - 1 - on -1_test",
+      "status": "completed",
+      "download_path": "step_02_extracted_playlist_content/video_LKSH4QNqpIE/video.mp4",
+      "file_size_mb": 32.61
+    }
+  ]
+}

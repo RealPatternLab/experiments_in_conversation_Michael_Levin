@@ -1,0 +1,27 @@
+{
+  "transcript_id": "e1fc347a-2d75-407b-8d68-cb83d7034ab0",
+  "video_id": "LKSH4QNqpIE",
+  "video_title": "Cellular automata and models of health and disease",
+  "submitted_at": "2025-08-18T17:06:53.194797",
+  "pipeline_type": "conversations_1_on_1",
+  "transcription_config": {
+    "speaker_labels": true,
+    "speakers_expected": 2,
+    "auto_highlights": true,
+    "entity_detection": true,
+    "auto_chapters": true,
+    "sentiment_analysis": true,
+    "iab_categories": true,
+    "content_safety": false,
+    "language_detection": true,
+    "boost_param": "high"
+  },
+  "conversation_features": {
+    "speaker_diarization": true,
+    "qa_extraction_ready": true,
+    "levin_knowledge_focus": true,
+    "conversation_context_preservation": true
+  },
+  "webhook_url": "https://experimentsinconversationmichaellevin-neodev.streamlit.app/webhook",
+  "status": "pending"
+}

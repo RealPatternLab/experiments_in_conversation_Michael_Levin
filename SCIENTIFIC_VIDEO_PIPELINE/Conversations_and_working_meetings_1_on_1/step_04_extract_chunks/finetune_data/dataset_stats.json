@@ -1,0 +1,12 @@
+{
+  "total_qa_pairs": 24,
+  "question_types": {
+    "explicit": 4,
+    "synthetic": 20
+  },
+  "confidence_levels": {
+    "high": 24
+  },
+  "avg_question_length": 11.458333333333334,
+  "avg_answer_length": 65.29166666666667
+}

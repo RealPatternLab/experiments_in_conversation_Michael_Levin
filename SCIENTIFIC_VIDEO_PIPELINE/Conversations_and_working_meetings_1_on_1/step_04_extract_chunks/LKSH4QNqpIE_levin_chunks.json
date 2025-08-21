@@ -1,0 +1,288 @@
+[
+  {
+    "text": "Bioelectric signals are not just passive reflections of cellular states but actively participate in the regulation of morphogenesis by forming a dynamic, instructive field that guides tissue patterning.",
+    "topic": "Bioelectric Morphogenesis",
+    "insight": "Bioelectric signals actively regulate morphogenesis by forming instructive fields.",
+    "context": "Discussion about the role of bioelectricity in developmental biology.",
+    "scientific_topics": [
+      "bioelectricity",
+      "morphogenesis",
+      "developmental_biology"
+    ],
+    "video_id": "LKSH4QNqpIE",
+    "extracted_at": "2025-08-19T18:08:56.668005"
+  },
+  {
+    "text": "Our approach to regenerative biology involves manipulating bioelectric gradients to control the growth and form of tissues, offering a novel method for inducing regeneration in complex organisms.",
+    "topic": "Regenerative Biology",
+    "insight": "Manipulating bioelectric gradients can control tissue growth and form, aiding regeneration.",
+    "context": "Exploration of bioelectricity's potential in regenerative medicine.",
+    "scientific_topics": [
+      "bioelectricity",
+      "regenerative_biology",
+      "tissue_engineering"
+    ],
+    "video_id": "LKSH4QNqpIE",
+    "extracted_at": "2025-08-19T18:08:56.668028"
+  },
+  {
+    "text": "We propose that bioelectric networks serve as a computational layer that integrates genetic and environmental information to make decisions about growth and form, challenging the traditional gene-centric view of development.",
+    "topic": "Bioelectric Networks",
+    "insight": "Bioelectric networks integrate genetic and environmental data to guide development, challenging gene-centric views.",
+    "context": "Discussion on the computational role of bioelectricity in development.",
+    "scientific_topics": [
+      "bioelectricity",
+      "developmental_biology",
+      "systems_biology"
+    ],
+    "video_id": "LKSH4QNqpIE",
+    "extracted_at": "2025-08-19T18:08:56.668030"
+  },
+  {
+    "text": "By altering bioelectric states, we can reprogram cells to adopt different fates, suggesting a powerful tool for regenerative medicine and synthetic biology.",
+    "topic": "Cell Reprogramming",
+    "insight": "Altering bioelectric states can reprogram cell fates, useful for regenerative medicine.",
+    "context": "Insights into bioelectricity's role in cell fate determination.",
+    "scientific_topics": [
+      "bioelectricity",
+      "cell_biology",
+      "synthetic_biology"
+    ],
+    "video_id": "LKSH4QNqpIE",
+    "extracted_at": "2025-08-19T18:08:56.668032"
+  },
+  {
+    "text": "Planaria reproduce by ripping themselves in half and regenerating, which means any mutation that doesn't kill the cell is propagated into the next generation as these stem cells reproduce.",
+    "topic": "Planarian Regeneration",
+    "insight": "Planaria propagate mutations through regeneration, leading to a messy genome.",
+    "context": "Discussion on planarian reproduction and mutation propagation.",
+    "scientific_topics": [
+      "regenerative_biology",
+      "genetics",
+      "stem_cells"
+    ],
+    "video_id": "LKSH4QNqpIE",
+    "extracted_at": "2025-08-19T18:08:56.668033"
+  },
+  {
+    "text": "The animal that is highly regenerative, immortal, and resistant to cancer is also the one with the dirtiest genome, which is the opposite of what is typically taught about the importance of a clean genome.",
+    "topic": "Genomic Paradox in Planaria",
+    "insight": "Planaria challenge the notion that a clean genome is necessary for regeneration and cancer resistance.",
+    "context": "Exploration of the relationship between genome integrity and regenerative capabilities.",
+    "scientific_topics": [
+      "genomics",
+      "regenerative_biology",
+      "cancer_biology"
+    ],
+    "video_id": "LKSH4QNqpIE",
+    "extracted_at": "2025-08-19T18:08:56.668035"
+  },
+  {
+    "text": "The most important thing about living tissue is that there is not a mechanical mapping between the genotype and the phenotype; the middle layer has intelligence and acts as a problem-solving system.",
+    "topic": "Intelligent Morphogenetic Systems",
+    "insight": "The genotype-phenotype relationship involves an intelligent, problem-solving middle layer.",
+    "context": "Discussion on the complexity of genotype to phenotype mapping.",
+    "scientific_topics": [
+      "morphogenesis",
+      "genetics",
+      "developmental_biology"
+    ],
+    "video_id": "LKSH4QNqpIE",
+    "extracted_at": "2025-08-19T18:08:56.668036"
+  },
+  {
+    "text": "In our tadpoles, when craniofacial organs are moved to a novel location, they eventually find their way back, demonstrating morphogenetic competency that adjusts to perturbation.",
+    "topic": "Morphogenetic Competency",
+    "insight": "Tadpoles exhibit morphogenetic competency by self-correcting organ placement.",
+    "context": "Example of morphogenetic competency in tadpoles.",
+    "scientific_topics": [
+      "morphogenesis",
+      "developmental_biology",
+      "bioelectricity"
+    ],
+    "video_id": "LKSH4QNqpIE",
+    "extracted_at": "2025-08-19T18:08:56.668039"
+  },
+  {
+    "text": "Mutations that would have been deleterious become neutral due to the self-correcting nature of morphogenetic systems, allowing evolution to explore beneficial mutations more rapidly.",
+    "topic": "Evolutionary Implications of Morphogenetic Competency",
+    "insight": "Self-correction in morphogenesis neutralizes deleterious mutations, accelerating evolution.",
+    "context": "Impact of morphogenetic competency on evolutionary processes.",
+    "scientific_topics": [
+      "evolutionary_biology",
+      "morphogenesis",
+      "genetics"
+    ],
+    "video_id": "LKSH4QNqpIE",
+    "extracted_at": "2025-08-19T18:08:56.668041"
+  },
+  {
+    "text": "Our research suggests that evolution can lead to a positive feedback loop where the focus shifts from the structural genome to enhancing the organism's competency, especially in organisms like planaria, which have developed algorithms to maintain their form regardless of genetic changes.",
+    "topic": "Evolutionary Competency",
+    "insight": "Evolutionary pressure can shift from genetic structure to organismal competency, creating robust forms like planaria.",
+    "context": "Discussion on how evolution affects genetic and phenotypic expression in organisms.",
+    "scientific_topics": [
+      "evolutionary_biology",
+      "genetics",
+      "morphogenesis"
+    ],
+    "video_id": "LKSH4QNqpIE",
+    "extracted_at": "2025-08-19T18:08:56.668043"
+  },
+  {
+    "text": "In our work with xenobots and anthrobots, we observe that when tissues are removed from their normal context, they don't attempt to repair to a default state but instead form new, viable structures with unique behaviors, highlighting the role of a competency layer in morphogenesis.",
+    "topic": "Bioelectric Morphogenesis",
+    "insight": "Tissues can form new structures with unique behaviors when removed from their normal context, indicating a competency layer in morphogenesis.",
+    "context": "Exploration of tissue behavior in novel contexts and its implications for morphogenesis.",
+    "scientific_topics": [
+      "bioelectricity",
+      "morphogenesis",
+      "regenerative_biology"
+    ],
+    "video_id": "LKSH4QNqpIE",
+    "extracted_at": "2025-08-19T18:08:56.668044"
+  },
+  {
+    "text": "We are investigating the simplest systems that exhibit competency, such as sorting algorithms, which demonstrate that even simple deterministic systems can possess competencies similar to biological systems.",
+    "topic": "Basal Cognition and Competency",
+    "insight": "Simple deterministic systems like sorting algorithms can exhibit competencies akin to biological systems.",
+    "context": "Research into the fundamental aspects of competency in both biological and computational systems.",
+    "scientific_topics": [
+      "computational_biology",
+      "cognitive_science",
+      "systems_biology"
+    ],
+    "video_id": "LKSH4QNqpIE",
+    "extracted_at": "2025-08-19T18:08:56.668046"
+  },
+  {
+    "text": "In planaria, when exposed to barium chloride, which blocks potassium channels, their heads initially explode, but over time they regenerate new heads that are insensitive to barium, expressing new genes that allow them to function despite blocked channels.",
+    "topic": "Adaptive Regeneration in Planaria",
+    "insight": "Planaria can adaptively regenerate heads with new gene expressions to overcome environmental challenges.",
+    "context": "Discussion on planaria's ability to solve novel problems through regeneration.",
+    "scientific_topics": [
+      "regenerative_biology",
+      "genetics",
+      "bioelectricity"
+    ],
+    "video_id": "LKSH4QNqpIE",
+    "extracted_at": "2025-08-19T18:08:56.668047"
+  },
+  {
+    "text": "Living systems can achieve standard outcomes despite noise and unreliability, and also find novel solutions, akin to creative problem solving, by navigating anatomical and physiological spaces.",
+    "topic": "Creative Problem Solving in Biology",
+    "insight": "Biological systems exhibit creative problem solving by finding novel solutions in complex environments.",
+    "context": "Exploration of biological systems' ability to solve new problems.",
+    "scientific_topics": [
+      "morphogenesis",
+      "bioelectricity",
+      "systems_biology"
+    ],
+    "video_id": "LKSH4QNqpIE",
+    "extracted_at": "2025-08-19T18:08:56.668049"
+  },
+  {
+    "text": "We model electrical activity in cells as a navigating agent in anatomical space, similar to neural decoding, to understand the algorithms guiding bioelectric computations.",
+    "topic": "Bioelectric Computation and Navigation",
+    "insight": "Bioelectric activity is modeled as an agent navigating anatomical space to decode underlying algorithms.",
+    "context": "Comparison of bioelectric computation to neural decoding.",
+    "scientific_topics": [
+      "bioelectricity",
+      "computational_biology",
+      "neuroscience"
+    ],
+    "video_id": "LKSH4QNqpIE",
+    "extracted_at": "2025-08-19T18:08:56.668050"
+  },
+  {
+    "text": "In our research, we reward for growth control and specific topological relationships, aiming to evolve structures with particular shapes and biological topologies.",
+    "topic": "Evolving Biological Structures",
+    "insight": "Research focuses on evolving biological structures by rewarding growth control and specific topologies.",
+    "context": "Discussion on methodologies for evolving biological shapes.",
+    "scientific_topics": [
+      "morphogenesis",
+      "evolutionary_biology",
+      "developmental_biology"
+    ],
+    "video_id": "LKSH4QNqpIE",
+    "extracted_at": "2025-08-19T18:08:56.668052"
+  },
+  {
+    "text": "Our research demonstrates that bioelectric signals can induce complex regenerative events, such as creating tadpoles with eyes on their tails and two-headed flatworms, by learning the prompts that guide these processes.",
+    "topic": "Bioelectric Regeneration",
+    "insight": "Bioelectric signals can be used to induce complex regenerative events by learning specific prompts.",
+    "context": "Discussion about the potential of bioelectric signals in regenerative biology.",
+    "scientific_topics": [
+      "bioelectricity",
+      "regenerative_biology",
+      "morphogenesis"
+    ],
+    "video_id": "LKSH4QNqpIE",
+    "extracted_at": "2025-08-19T18:08:56.668053"
+  },
+  {
+    "text": "I believe that medicine should focus on developing prompts for the decision-making intelligence of physiological circuits, rather than micromanaging molecular states, which is why we have few drugs with dependable efficacy.",
+    "topic": "Bioelectric Medicine",
+    "insight": "Medicine should develop prompts for physiological circuits instead of micromanaging molecular states.",
+    "context": "Critique of current medical approaches and the potential of bioelectricity.",
+    "scientific_topics": [
+      "bioelectricity",
+      "medicine",
+      "physiology"
+    ],
+    "video_id": "LKSH4QNqpIE",
+    "extracted_at": "2025-08-19T18:08:56.668055"
+  },
+  {
+    "text": "In some cases, altering the electrical communication of just a few cells can trigger widespread changes, such as inducing metastatic melanoma in tadpoles without carcinogens or DNA damage.",
+    "topic": "Bioelectric Communication",
+    "insight": "Altering electrical communication in a few cells can trigger widespread changes like metastatic melanoma.",
+    "context": "Explaining the impact of bioelectric signals on cellular behavior.",
+    "scientific_topics": [
+      "bioelectricity",
+      "cancer_biology",
+      "cell_communication"
+    ],
+    "video_id": "LKSH4QNqpIE",
+    "extracted_at": "2025-08-19T18:08:56.668057"
+  },
+  {
+    "text": "We've shown that bioelectric signals can propagate through tissue, affecting cells even on the opposite side of the organism, which is observable with our new visualization modality.",
+    "topic": "Bioelectric Signal Propagation",
+    "insight": "Bioelectric signals can propagate through tissue, affecting distant cells, observable with new visualization techniques.",
+    "context": "Discussion on the propagation of bioelectric signals and their visualization.",
+    "scientific_topics": [
+      "bioelectricity",
+      "signal_propagation",
+      "visualization_techniques"
+    ],
+    "video_id": "LKSH4QNqpIE",
+    "extracted_at": "2025-08-19T18:08:56.668058"
+  },
+  {
+    "text": "When inducing ectopic eyes in tadpoles, a small number of cells can recruit their neighbors to build the structure, demonstrating a self-scaling property of collective cellular intelligence.",
+    "topic": "Collective Cellular Intelligence",
+    "insight": "A small number of cells can recruit neighbors to build structures, showing self-scaling collective intelligence.",
+    "context": "Example of collective intelligence in cellular behavior during morphogenesis.",
+    "scientific_topics": [
+      "bioelectricity",
+      "collective_intelligence",
+      "morphogenesis"
+    ],
+    "video_id": "LKSH4QNqpIE",
+    "extracted_at": "2025-08-19T18:08:56.668059"
+  },
+  {
+    "text": "There is a battle of patterns in cellular behavior, where cells injected with bioelectric signals may either form an ectopic eye or be suppressed by tumor suppression mechanisms, depending on which pattern is more convincing.",
+    "topic": "Pattern Competition in Cells",
+    "insight": "Cellular behavior involves a battle of patterns, influenced by bioelectric signals and tumor suppression mechanisms.",
+    "context": "Exploration of pattern competition in cellular morphogenesis.",
+    "scientific_topics": [
+      "bioelectricity",
+      "cellular_patterns",
+      "tumor_suppression"
+    ],
+    "video_id": "LKSH4QNqpIE",
+    "extracted_at": "2025-08-19T18:08:56.668061"
+  }
+]

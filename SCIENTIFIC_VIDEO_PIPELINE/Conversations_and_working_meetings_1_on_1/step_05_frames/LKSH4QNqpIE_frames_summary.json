@@ -1,0 +1,312 @@
+{
+  "video_id": "LKSH4QNqpIE",
+  "video_metadata": {
+    "video_id": "LKSH4QNqpIE",
+    "title": "Cellular automata and models of health and disease",
+    "playlist_id": "PLmR3yIXYqfUIxjoMcSDxoBsj-tSasEZT2",
+    "playlist_title": "Conversations and working meetings - 1 - on -1_test",
+    "status": "completed",
+    "download_path": "step_02_extracted_playlist_content/video_LKSH4QNqpIE/video.mp4",
+    "file_size_mb": 32.61
+  },
+  "extraction_parameters": {
+    "frame_interval": 60,
+    "frame_interval_seconds": 60,
+    "frame_interval_minutes": 1.0,
+    "frame_quality": 2,
+    "max_frames": 200,
+    "pipeline_type": "conversations_1_on_1"
+  },
+  "total_frames_extracted": 36,
+  "frames": [
+    {
+      "frame_id": "LKSH4QNqpIE_frame_000",
+      "filename": "LKSH4QNqpIE_frame_000_0.0s.jpg",
+      "timestamp": 0,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_000_0.0s.jpg",
+      "file_size": 33337,
+      "extraction_order": 0
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_001",
+      "filename": "LKSH4QNqpIE_frame_001_60.0s.jpg",
+      "timestamp": 60,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_001_60.0s.jpg",
+      "file_size": 38720,
+      "extraction_order": 1
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_002",
+      "filename": "LKSH4QNqpIE_frame_002_120.0s.jpg",
+      "timestamp": 120,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_002_120.0s.jpg",
+      "file_size": 58871,
+      "extraction_order": 2
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_003",
+      "filename": "LKSH4QNqpIE_frame_003_180.0s.jpg",
+      "timestamp": 180,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_003_180.0s.jpg",
+      "file_size": 51338,
+      "extraction_order": 3
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_004",
+      "filename": "LKSH4QNqpIE_frame_004_240.0s.jpg",
+      "timestamp": 240,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_004_240.0s.jpg",
+      "file_size": 44022,
+      "extraction_order": 4
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_005",
+      "filename": "LKSH4QNqpIE_frame_005_300.0s.jpg",
+      "timestamp": 300,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_005_300.0s.jpg",
+      "file_size": 40647,
+      "extraction_order": 5
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_006",
+      "filename": "LKSH4QNqpIE_frame_006_360.0s.jpg",
+      "timestamp": 360,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_006_360.0s.jpg",
+      "file_size": 46161,
+      "extraction_order": 6
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_007",
+      "filename": "LKSH4QNqpIE_frame_007_420.0s.jpg",
+      "timestamp": 420,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_007_420.0s.jpg",
+      "file_size": 45638,
+      "extraction_order": 7
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_008",
+      "filename": "LKSH4QNqpIE_frame_008_480.0s.jpg",
+      "timestamp": 480,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_008_480.0s.jpg",
+      "file_size": 49454,
+      "extraction_order": 8
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_009",
+      "filename": "LKSH4QNqpIE_frame_009_540.0s.jpg",
+      "timestamp": 540,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_009_540.0s.jpg",
+      "file_size": 59083,
+      "extraction_order": 9
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_010",
+      "filename": "LKSH4QNqpIE_frame_010_600.0s.jpg",
+      "timestamp": 600,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_010_600.0s.jpg",
+      "file_size": 47130,
+      "extraction_order": 10
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_011",
+      "filename": "LKSH4QNqpIE_frame_011_660.0s.jpg",
+      "timestamp": 660,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_011_660.0s.jpg",
+      "file_size": 49278,
+      "extraction_order": 11
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_012",
+      "filename": "LKSH4QNqpIE_frame_012_720.0s.jpg",
+      "timestamp": 720,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_012_720.0s.jpg",
+      "file_size": 48954,
+      "extraction_order": 12
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_013",
+      "filename": "LKSH4QNqpIE_frame_013_780.0s.jpg",
+      "timestamp": 780,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_013_780.0s.jpg",
+      "file_size": 48953,
+      "extraction_order": 13
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_014",
+      "filename": "LKSH4QNqpIE_frame_014_840.0s.jpg",
+      "timestamp": 840,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_014_840.0s.jpg",
+      "file_size": 48927,
+      "extraction_order": 14
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_015",
+      "filename": "LKSH4QNqpIE_frame_015_900.0s.jpg",
+      "timestamp": 900,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_015_900.0s.jpg",
+      "file_size": 48978,
+      "extraction_order": 15
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_016",
+      "filename": "LKSH4QNqpIE_frame_016_960.0s.jpg",
+      "timestamp": 960,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_016_960.0s.jpg",
+      "file_size": 49029,
+      "extraction_order": 16
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_017",
+      "filename": "LKSH4QNqpIE_frame_017_1020.0s.jpg",
+      "timestamp": 1020,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_017_1020.0s.jpg",
+      "file_size": 50220,
+      "extraction_order": 17
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_018",
+      "filename": "LKSH4QNqpIE_frame_018_1080.0s.jpg",
+      "timestamp": 1080,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_018_1080.0s.jpg",
+      "file_size": 50269,
+      "extraction_order": 18
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_019",
+      "filename": "LKSH4QNqpIE_frame_019_1140.0s.jpg",
+      "timestamp": 1140,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_019_1140.0s.jpg",
+      "file_size": 49028,
+      "extraction_order": 19
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_020",
+      "filename": "LKSH4QNqpIE_frame_020_1200.0s.jpg",
+      "timestamp": 1200,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_020_1200.0s.jpg",
+      "file_size": 49048,
+      "extraction_order": 20
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_021",
+      "filename": "LKSH4QNqpIE_frame_021_1260.0s.jpg",
+      "timestamp": 1260,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_021_1260.0s.jpg",
+      "file_size": 49056,
+      "extraction_order": 21
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_022",
+      "filename": "LKSH4QNqpIE_frame_022_1320.0s.jpg",
+      "timestamp": 1320,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_022_1320.0s.jpg",
+      "file_size": 48594,
+      "extraction_order": 22
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_023",
+      "filename": "LKSH4QNqpIE_frame_023_1380.0s.jpg",
+      "timestamp": 1380,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_023_1380.0s.jpg",
+      "file_size": 49110,
+      "extraction_order": 23
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_024",
+      "filename": "LKSH4QNqpIE_frame_024_1440.0s.jpg",
+      "timestamp": 1440,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_024_1440.0s.jpg",
+      "file_size": 48986,
+      "extraction_order": 24
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_025",
+      "filename": "LKSH4QNqpIE_frame_025_1500.0s.jpg",
+      "timestamp": 1500,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_025_1500.0s.jpg",
+      "file_size": 49182,
+      "extraction_order": 25
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_026",
+      "filename": "LKSH4QNqpIE_frame_026_1560.0s.jpg",
+      "timestamp": 1560,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_026_1560.0s.jpg",
+      "file_size": 49152,
+      "extraction_order": 26
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_027",
+      "filename": "LKSH4QNqpIE_frame_027_1620.0s.jpg",
+      "timestamp": 1620,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_027_1620.0s.jpg",
+      "file_size": 49161,
+      "extraction_order": 27
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_028",
+      "filename": "LKSH4QNqpIE_frame_028_1680.0s.jpg",
+      "timestamp": 1680,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_028_1680.0s.jpg",
+      "file_size": 48962,
+      "extraction_order": 28
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_029",
+      "filename": "LKSH4QNqpIE_frame_029_1740.0s.jpg",
+      "timestamp": 1740,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_029_1740.0s.jpg",
+      "file_size": 49133,
+      "extraction_order": 29
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_030",
+      "filename": "LKSH4QNqpIE_frame_030_1800.0s.jpg",
+      "timestamp": 1800,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_030_1800.0s.jpg",
+      "file_size": 49137,
+      "extraction_order": 30
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_031",
+      "filename": "LKSH4QNqpIE_frame_031_1860.0s.jpg",
+      "timestamp": 1860,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_031_1860.0s.jpg",
+      "file_size": 49163,
+      "extraction_order": 31
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_032",
+      "filename": "LKSH4QNqpIE_frame_032_1920.0s.jpg",
+      "timestamp": 1920,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_032_1920.0s.jpg",
+      "file_size": 49130,
+      "extraction_order": 32
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_033",
+      "filename": "LKSH4QNqpIE_frame_033_1980.0s.jpg",
+      "timestamp": 1980,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_033_1980.0s.jpg",
+      "file_size": 49129,
+      "extraction_order": 33
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_034",
+      "filename": "LKSH4QNqpIE_frame_034_2040.0s.jpg",
+      "timestamp": 2040,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_034_2040.0s.jpg",
+      "file_size": 49180,
+      "extraction_order": 34
+    },
+    {
+      "frame_id": "LKSH4QNqpIE_frame_035",
+      "filename": "LKSH4QNqpIE_frame_035_2100.0s.jpg",
+      "timestamp": 2100,
+      "file_path": "step_05_frames/LKSH4QNqpIE/LKSH4QNqpIE_frame_035_2100.0s.jpg",
+      "file_size": 49159,
+      "extraction_order": 35
+    }
+  ],
+  "processing_timestamp": "2025-08-19T20:43:22.801371"
+}

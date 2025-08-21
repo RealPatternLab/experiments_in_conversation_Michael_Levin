@@ -1,0 +1,78 @@
+{
+  "video_id": "LKSH4QNqpIE",
+  "summary": {
+    "total_chunks": 24,
+    "chunks_with_frames": 22,
+    "chunks_without_frames": 2,
+    "total_frames": 55,
+    "average_frames_per_chunk": 2.2916666666666665,
+    "visual_coverage_percentage": 91.66666666666666
+  },
+  "quality_distribution": {
+    "good": 18,
+    "no_frames": 2,
+    "fair": 4
+  },
+  "best_visual_chunks": [
+    {
+      "chunk_id": "enhanced_conv_chunk_0015",
+      "frame_count": 5,
+      "start_time": "00:23:02",
+      "end_time": "00:28:05",
+      "topics": [
+        "problem_solving",
+        "regeneration",
+        "developmental_biology",
+        "adaptation"
+      ]
+    },
+    {
+      "chunk_id": "enhanced_conv_chunk_0019",
+      "frame_count": 5,
+      "start_time": "00:23:02",
+      "end_time": "00:28:05",
+      "topics": [
+        "morphogenesis",
+        "xenobots",
+        "anthrobots",
+        "problem_solving"
+      ]
+    },
+    {
+      "chunk_id": "enhanced_conv_chunk_0010",
+      "frame_count": 4,
+      "start_time": "00:15:21",
+      "end_time": "00:19:00",
+      "topics": [
+        "evolutionary_competency",
+        "morphogenetic_code",
+        "developmental_biology",
+        "emergent_properties"
+      ]
+    },
+    {
+      "chunk_id": "enhanced_conv_chunk_0011",
+      "frame_count": 4,
+      "start_time": "00:15:21",
+      "end_time": "00:19:00",
+      "topics": [
+        "evolutionary_competency",
+        "morphogenesis",
+        "developmental_biology"
+      ]
+    },
+    {
+      "chunk_id": "enhanced_conv_chunk_0012",
+      "frame_count": 4,
+      "start_time": "00:15:21",
+      "end_time": "00:19:00",
+      "topics": [
+        "regeneration",
+        "developmental_biology",
+        "morphogenesis"
+      ]
+    }
+  ],
+  "processing_timestamp": "2025-08-19T21:29:06.234448",
+  "pipeline_type": "conversations_1_on_1"
+}

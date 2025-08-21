@@ -1,0 +1,194 @@
+[
+  {
+    "instruction": "What starting string do you use for evolving cellular automata?",
+    "output": "When we evolve them, we always start from this one red. It's called. We call it the seed condition. Or it's just like one red cell.",
+    "context": "Discussion about cellular automata and their application in modeling diseases.",
+    "questioner": "Speaker B",
+    "question_type": "explicit",
+    "confidence": "high"
+  },
+  {
+    "instruction": "How do you modify the rules of cellular automata during evolution?",
+    "output": "We're changing the, the rules by one bit at a time. And if the, if the bit results in a longer or the same lifetime, then we keep it. So it's like kind of like a mutation and then a mutation to the rules. And then if it's neutral or advantageous, then we keep it.",
+    "context": "Explanation of the evolutionary process used in cellular automata.",
+    "questioner": "Speaker A",
+    "question_type": "synthetic",
+    "confidence": "high"
+  },
+  {
+    "instruction": "What does 'lifetime' mean in the context of cellular automata?",
+    "output": "Lifetime, we mean just the length of the automaton. So another point I should mention is that if it, if it lives forever, so a lot of times it'll. You'll do a mutation and then it'll like get into a loop and then like live forever, which we throw. We count that as a fitness of zero or a lifetime of zero.",
+    "context": "Clarification on the concept of 'lifetime' in cellular automata.",
+    "questioner": "Speaker B",
+    "question_type": "explicit",
+    "confidence": "high"
+  },
+  {
+    "instruction": "How do you ensure robustness in the evolution of cellular automata?",
+    "output": "When we're evolving, these guys, because, because we were looking for like from the perspective of medicine, we wanted them to be robust. And this is like the kind of. One of the main things I wanted to ask you about, which is, so what we do is we do that same evolution, but we perturb it during the evolution. So this is like an example of a single step of evolution. And then we take the minimum fitness. So basically, if you perturb it 10 times, then you take the minimum fitness. So in this case it would be this 60 right here. And that's then the fitness. And all that's doing is just forcing the organism to be able to deal with perturbations.",
+    "context": "Discussion on the robustness of cellular automata in medical modeling.",
+    "questioner": "Speaker A",
+    "question_type": "synthetic",
+    "confidence": "high"
+  },
+  {
+    "instruction": "What is unique about the way planaria reproduce and how does it affect their genome?",
+    "output": "Planaria, at least the ones that we study, reproduce by ripping themselves in half and regenerating. Unlike most of us who have this thing called Weissman's barrier, which is that mutations in your body don't get passed on to your offspring, planaria are not like that because any mutation that doesn't kill the cell is propagated into the next generation as these stem cells reproduce.",
+    "context": "Discussion about planaria reproduction and genetic mutations",
+    "questioner": "Speaker A",
+    "question_type": "synthetic",
+    "confidence": "high"
+  },
+  {
+    "instruction": "Why does the messy genome of planaria contradict traditional biological teachings?",
+    "output": "It bothered me for a couple of decades when I first found out about this that the animal that is highly regenerative, immortal, resistant to cancer is also the one with the dirtiest genome. That's the exact opposite of what everybody tells you in biology classes where you say, well the genome is very important, you have to keep it clean because it determines this and that.",
+    "context": "Discussion about planaria genome and biological teachings",
+    "questioner": "Speaker A",
+    "question_type": "synthetic",
+    "confidence": "high"
+  },
+  {
+    "instruction": "What is the significance of the lack of mutant lines in planaria?",
+    "output": "For almost every other model system you can call the stock center and you can get mutants, so you can get flies with curly wings and mice with weird eyes and there's chickens with funny feet. There are mutant lines that you can get in planaria. There are no mutant lines. The only non-standard planaria that exist are our two head form and our, what we call the cryptic form. And neither of them is genetic, was created genetically.",
+    "context": "Discussion about mutant lines in planaria",
+    "questioner": "Speaker A",
+    "question_type": "synthetic",
+    "confidence": "high"
+  },
+  {
+    "instruction": "How does the concept of morphogenetic competency relate to evolution in planaria?",
+    "output": "The biggest, the most important thing about living tissue is that there is not a mechanical mapping between the genotype and the phenotype. The middle layer that leads from the genome to the genotype to the phenotype has intelligence. It's a problem-solving system. This makes evolution go faster because lots of mutations that otherwise would have been deleterious become neutral.",
+    "context": "Discussion about morphogenetic competency and evolution",
+    "questioner": "Speaker A",
+    "question_type": "synthetic",
+    "confidence": "high"
+  },
+  {
+    "instruction": "What challenge does selection face in evaluating planaria with morphogenetic competency?",
+    "output": "When that animal comes up for selection, selection doesn't know do you have a good face because your structural genome was great, or do you have a good face because your structural genome was actually kind of crap, but you had a lot of competency and you fixed it.",
+    "context": "Discussion about selection challenges in planaria",
+    "questioner": "Speaker A",
+    "question_type": "synthetic",
+    "confidence": "high"
+  },
+  {
+    "instruction": "What happens when evolution has a hard time seeing the structural genome?",
+    "output": "What happens is that evolution has a hard time seeing the structural genome. The pressure on the genome comes off, but what it does do is crank the competency. And so all the work ends up being spent on improving the competency and it becomes a positive feedback loop because the more you do that, the less you can see the structural genome.",
+    "context": "Discussion about evolutionary processes and competency in organisms",
+    "questioner": "Synthetic",
+    "question_type": "synthetic",
+    "confidence": "high"
+  },
+  {
+    "instruction": "Why are planaria considered an extreme example of evolutionary competency?",
+    "output": "Planaria, because their substrate was so unreliable, all the work of evolution went into making an algorithm that makes a proper worm no matter what the hardware looks like, pretty much. So they're kind of the biggest example of that's why there are no mutant lines is because, yeah, you try to edit the genome, but they ignore it because they mostly ignore their own genome too.",
+    "context": "Discussion about evolutionary competency and organismal adaptation",
+    "questioner": "Synthetic",
+    "question_type": "synthetic",
+    "confidence": "high"
+  },
+  {
+    "instruction": "How do different organisms vary in their regenerative capabilities according to Levin?",
+    "output": "You have intermediate cases like salamanders, which are pretty good at regenerating, but they're not immortal like planaria. And then you have mammals, and then all the way on the left you have something like nematodes, which are just completely cookie cutter organisms where every cell is numbered and all that.",
+    "context": "Discussion about regenerative capabilities across different species",
+    "questioner": "Synthetic",
+    "question_type": "synthetic",
+    "confidence": "high"
+  },
+  {
+    "instruction": "What is the role of the competency layer in Levin's model of morphogenesis?",
+    "output": "The key here is this middle layer, which is the competency layer. And this is what we've been modeling and what I've been writing about. So I think that's how in all of RCAs, that's what we've been doing. So we have the genome that comes in with the rules, we have the phenotype which gets selected, but in the middle it's something like a neural ca. Which really has some competencies and to get certain goals met even under, under, you know, all kinds of novel conditions.",
+    "context": "Discussion about the role of competency in biological systems",
+    "questioner": "Synthetic",
+    "question_type": "synthetic",
+    "confidence": "high"
+  },
+  {
+    "instruction": "What are some simple systems that demonstrate competency according to Levin?",
+    "output": "We started looking at it in very simple things, so we started looking at it in sorting algorithms. I don't know if you've seen this paper that we have on sorting and there's a couple of blog posts I have about it, but basically there's some of this already in Bubble sort already does some of this. So very simple systems, like extremely simple deterministic systems already do this.",
+    "context": "Discussion about simple systems demonstrating competency",
+    "questioner": "Synthetic",
+    "question_type": "synthetic",
+    "confidence": "high"
+  },
+  {
+    "instruction": "How do planaria demonstrate creative problem-solving in response to environmental challenges?",
+    "output": "In planaria, for example, we have this thing where we put them in barium chloride and barium is a non-specific blocker of potassium channels. So the cells are very unhappy. In particular, all the neurons in the head are very unhappy because they can't pass potassium. So over a day, their heads explode. But then if you leave them in the barium after about a week or two, they grow back a new head and the new head is completely insensitive to the barium. We found out that they express under a dozen new genes that enable them to live with blocked potassium channels.",
+    "context": "Discussion about biological tissues and creative problem-solving",
+    "questioner": "Synthetic",
+    "question_type": "synthetic",
+    "confidence": "high"
+  },
+  {
+    "instruction": "What challenges exist in understanding the mechanisms of bioelectrical circuits in biological systems?",
+    "output": "Our situation is somewhat like neuroscience in that if you're looking at the proximal molecular mechanism, we understand it quite well. We know that a lot of this is mediated by bioelectrical circuits. We know the molecules involved. We can see the electrical computations happening. But that by itself is utterly unsatisfying because it's kind of like saying you understand the computer because you understand copper and silicon and you can watch the electrons flow. But what's the computation that it's actually doing? That's a much more challenging thing.",
+    "context": "Discussion about understanding mechanisms in biological systems",
+    "questioner": "Speaker A",
+    "question_type": "explicit",
+    "confidence": "high"
+  },
+  {
+    "instruction": "How do bioelectrical circuits contribute to the understanding of biological computation?",
+    "output": "We know that a lot of this is mediated by bioelectrical circuits. We know the molecules involved. We can see the electrical computations happening. Like the mechanisms aspect of it, we have it. But what's the computation that it's actually doing? That's a much more challenging thing.",
+    "context": "Discussion about bioelectrical circuits and biological computation",
+    "questioner": "Synthetic",
+    "question_type": "synthetic",
+    "confidence": "high"
+  },
+  {
+    "instruction": "What is the significance of morphogenesis in the study of biological systems?",
+    "output": "I love morphogenesis as a behavior in anatomical space. I would recommend thinking about that, looking at different aspects of the shapes. Aspect ratio is good, and then going beyond that too. That's what we do in Ben Hardless paper that I just put up, is look at the ability to regenerate after anatomical damage.",
+    "context": "Discussion about morphogenesis and its role in biological systems",
+    "questioner": "Synthetic",
+    "question_type": "synthetic",
+    "confidence": "high"
+  },
+  {
+    "instruction": "How do biological systems find novel solutions to environmental challenges?",
+    "output": "The living material is able to achieve the standard outcome despite all the noise and unreliability of the substrate, but also find new solutions, whether they be physiological solutions like vivarium or anatomical solutions and behavioral solutions like for anthrobots and xenobots. There's some degree of homeostasis and navigation of that anatomical space, but also towards novel solutions, which I think is just the exact same thing as creative problem-solving.",
+    "context": "Discussion about biological systems and problem-solving",
+    "questioner": "Synthetic",
+    "question_type": "synthetic",
+    "confidence": "high"
+  },
+  {
+    "instruction": "How can tadpoles be induced to develop eyes on their tails?",
+    "output": "We have it to the extent that we can make tadpoles with eyes on their tails and the two headed flatworms and we can fix certain kinds of birth defects and we can induce certain kinds of regenerative events.",
+    "context": "Discussion about bioelectricity and its role in morphogenesis and regenerative medicine",
+    "questioner": "Synthetic",
+    "question_type": "synthetic",
+    "confidence": "high"
+  },
+  {
+    "instruction": "Why does Michael Levin believe that medicine won't be solved by mechanical approaches?",
+    "output": "I don't think medicine is going to be solved by mechanical kinds of approaches and not feed forward emergence. I think all of this is prompt and I think this is why we have so few good drugs in the sense of dependable efficacy and consistent, you know, lack of side effects among patients.",
+    "context": "Discussion about the limitations of current medical approaches and the potential of bioelectricity",
+    "questioner": "Synthetic",
+    "question_type": "synthetic",
+    "confidence": "high"
+  },
+  {
+    "instruction": "How can altering electrical communication in cells induce metastatic melanoma in tadpoles?",
+    "output": "We can induce basically metastatic melanoma in a normal tadpole. No, no drugs, no carcinogens, no oncogenes, no DNA damage. And you can do that by, by messing up the electrical communication with some cells. It only takes about three cells in the whole, in the whole tadpole before they trigger every other melanocyte to go, to go metastatic.",
+    "context": "Discussion about hierarchical control in organisms and the impact of bioelectric signals",
+    "questioner": "Speaker A",
+    "question_type": "explicit",
+    "confidence": "high"
+  },
+  {
+    "instruction": "Can bioelectric signals affect cells that are not geometrically proximal?",
+    "output": "We've shown both in cancer and in brain repair that you can actually trigger cells on the opposite side of the animal and still get, and get effects on the other side. So these things move. So there are waves of, propagating waves of this information that go through tissue and which we can now see to some extent.",
+    "context": "Discussion about the propagation of bioelectric signals and their effects on cells",
+    "questioner": "Synthetic",
+    "question_type": "synthetic",
+    "confidence": "high"
+  },
+  {
+    "instruction": "What happens when an ectopic eye is induced in a tadpole?",
+    "output": "When you induce a, an ectopic eye on the, on the tail of a, or in the gut of a tadpole, you don't have to hit a lot of cells. If when you section those eyes, you often find out that we actually only hit a small number of cells. But what they did was recruit all their neighbors to help them build this structure.",
+    "context": "Discussion about the self-organizing properties of cells and bioelectric signals",
+    "questioner": "Synthetic",
+    "question_type": "synthetic",
+    "confidence": "high"
+  }
+]

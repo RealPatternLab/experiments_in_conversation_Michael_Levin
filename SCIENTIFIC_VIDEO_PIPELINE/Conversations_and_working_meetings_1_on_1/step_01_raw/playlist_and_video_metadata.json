@@ -1,0 +1,52 @@
+{
+  "pipeline_type": "conversations_1_on_1",
+  "description": "Metadata for conversations between Michael Levin and other researchers",
+  "extraction_timestamp": "2025-08-19T01:11:44Z",
+  "total_playlists": 1,
+  "total_videos": 1,
+  "playlists": [
+    {
+      "playlist_id": "PLmR3yIXYqfUIxjoMcSDxoBsj-tSasEZT2",
+      "title": "Conversations and working meetings - 1 - on -1_test",
+      "uploader": "realpattern",
+      "video_count": 1,
+      "playlist_url": "https://www.youtube.com/playlist?list=PLmR3yIXYqfUIxjoMcSDxoBsj-tSasEZT2",
+      "first_video_id": "LKSH4QNqpIE",
+      "first_video_title": "Cellular automata and models of health and disease",
+      "first_video_uploader": "Michael Levin's Academic Content",
+      "first_video_upload_date": null,
+      "first_video_duration": 2140,
+      "first_video_view_count": 2300,
+      "first_video_like_count": null,
+      "first_video_description": null,
+      "first_video_tags": [],
+      "first_video_categories": [],
+      "processing_type": "conversations_1_on_1",
+      "expected_speakers": 2,
+      "content_type": "conversation",
+      "extraction_timestamp": "2025-08-19T01:11:43Z",
+      "videos": [
+        {
+          "video_id": "LKSH4QNqpIE",
+          "title": "Cellular automata and models of health and disease",
+          "uploader": "Michael Levin's Academic Content",
+          "upload_date": null,
+          "duration": 2140,
+          "view_count": 2300,
+          "like_count": null,
+          "description": null,
+          "tags": [],
+          "categories": [],
+          "playlist_index": 1,
+          "playlist_id": "PLmR3yIXYqfUIxjoMcSDxoBsj-tSasEZT2"
+        }
+      ]
+    }
+  ],
+  "processing_notes": [
+    "This pipeline is designed for conversations between Michael Levin and other researchers",
+    "Speaker diarization will be used to identify different speakers",
+    "Semantic chunking will focus on Levin's views and knowledge",
+    "Q&A pairs will be extracted for fine-tuning purposes"
+  ]
+}

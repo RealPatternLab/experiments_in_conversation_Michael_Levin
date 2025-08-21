@@ -303,6 +303,51 @@ def process_citations(response_text: str, source_mapping: dict) -> str:
                 return f"<sup>{pdf_link}{doi_link}</sup>"
             else:
                 return f"<sup>[{title} ({year})]</sup>"
+        
+        # Handle conversations pipeline citations
+        elif pipeline_source == 'conversations':
+            video_id = source_info.get('video_id', '')
+            start_time = source_info.get('start_time_seconds', '')
+            chunk_id = source_info.get('chunk_id', '')
+            
+            # Create YouTube link with timestamp
+            youtube_url = f"https://www.youtube.com/watch?v={video_id}"
+            if start_time:
+                youtube_url += f"&t={int(start_time)}"
+            
+            # Create thumbnail display with clickable link
+            thumbnail_html = ""
+            if chunk_id:
+                # Try to find a frame for this chunk
+                frame_path = source_info.get('frame_path', '')
+                
+                # Log frame path for debugging
+                logger.info(f"💬 Conversations citation processing - Chunk: {chunk_id}, Frame path: {frame_path}, Exists: {Path(frame_path).exists() if frame_path else False}")
+                
+                if frame_path and Path(frame_path).exists():
+                    # Check if we've already shown this exact frame to avoid duplicates
+                    if frame_path in shown_frame_thumbnails:
+                        # Already shown this frame, just use text link
+                        logger.info(f"🔄 Frame {frame_path} already shown, using text link for {chunk_id}")
+                        thumbnail_html = f'<a href="{youtube_url}" target="_blank" style="color: #00ff00; text-decoration: underline;" title="Watch conversation at {start_time}s">[💬 Watch at {start_time}s]</a>'
+                    else:
+                        # Display thumbnail as clickable image
+                        logger.info(f"✅ Creating thumbnail for {chunk_id} using frame: {frame_path}")
+                        thumbnail_html = f'<a href="{youtube_url}" target="_blank" title="Watch conversation at {start_time}s"><img src="data:image/jpeg;base64,{encode_image_to_base64(frame_path)}" style="float: left; width: 192px; height: 144px; border-radius: 4px; margin: 0 10px 10px 0; vertical-align: top; shape-outside: margin-box;" alt="Conversation thumbnail"></a>'
+                        # Mark this frame as having shown a thumbnail
+                        shown_frame_thumbnails.add(frame_path)
+                else:
+                    # Fallback: just show clickable text
+                    logger.warning(f"⚠️ No frame found for {chunk_id}, using text fallback. Frame path: {frame_path}")
+                    thumbnail_html = f'<a href="{youtube_url}" target="_blank" style="color: #00ff00; text-decoration: underline;" title="Watch conversation at {start_time}s">[💬 Watch at {start_time}s]</a>'
+            
+            # Only wrap thumbnails in divs, keep text links inline
+            if '<img' in thumbnail_html:
+                # This is a thumbnail, wrap it in a div for proper text wrapping
+                return f"<div style='margin: 5px 0;'>{thumbnail_html}</div>"
+            else:
+                # This is a text link, return it inline without wrapping
+                return thumbnail_html
         else:
             return match.group(0)  # Return original if source not found
     
@@ -372,6 +417,31 @@ def process_rag_metadata(rag_results: list) -> list:
                 'authors': ['Michael Levin']
             })
             logger.info(f"   ✅ Processed video chunk with title: {video_title}")
+            processed_results.append(processed_chunk)
+        elif pipeline_source == 'conversations':
+            # Handle conversations chunks
+            chunk_id = chunk.get('id', 'Unknown')
+            logger.info(f"   Conversations chunk ID: {chunk_id}")
+            
+            # Get metadata directly from chunk structure
+            video_id = chunk.get('metadata', {}).get('video_id', 'Unknown')
+            timing = chunk.get('timing', {})
+            start_time = timing.get('start_seconds', 0)
+            end_time = timing.get('end_seconds', 0)
+            logger.info(f"   Time range: {start_time:.1f}s - {end_time:.1f}s")
+            
+            # Get video title (for conversations, we can extract from the chunk text or use video_id)
+            video_title = f"Conversation: {video_id}"
+            logger.info(f"   Video title: {video_title}")
+            
+            processed_chunk = chunk.copy()
+            processed_chunk.update({
+                'title': video_title,
+                'publication_year': '2025',
+                'section': f"Timestamp: {start_time:.1f}s - {end_time:.1f}s",
+                'authors': ['Michael Levin']
+            })
+            logger.info(f"   ✅ Processed conversations chunk with title: {video_title}")
             processed_results.append(processed_chunk)
         else:
             # Handle publication chunks (existing logic)
@@ -464,6 +534,56 @@ def get_conversational_response(query: str, rag_results: list, conversation_hist
                     'frame_path': frame_path,
                     'chunk_id': chunk_id
                 }
+            elif pipeline_source == 'conversations':
+                # Handle conversations chunks
+                chunk_id = chunk.get('id', 'Unknown')
+                
+                # Get metadata directly from chunk structure
+                video_id = chunk.get('metadata', {}).get('video_id', 'Unknown')
+                timing = chunk.get('timing', {})
+                start_time = timing.get('start_seconds', 0)
+                end_time = timing.get('end_seconds', 0)
+                
+                # Get text content
+                text_content = chunk.get('text', '')
+                
+                # Get frame path for thumbnail
+                frame_path = ""
+                visual_context = chunk.get('visual_context', {})
+                if visual_context and 'frames' in visual_context:
+                    frames = visual_context['frames']
+                    if frames:
+                        # Convert relative path to absolute path for the Streamlit app
+                        relative_path = frames[0].get('file_path', '')
+                        if relative_path:
+                            # The frame path is relative to the pipeline directory, but we need it relative to the root
+                            frame_path = f"SCIENTIFIC_VIDEO_PIPELINE/Conversations_and_working_meetings_1_on_1/{relative_path}"
+                
+                context_parts.append(f"{source_key} [CONVERSATION] ({chunk_id}, {start_time:.1f}s-{end_time:.1f}s): {text_content[:200]}...")
+                
+                # Get video title
+                video_title = f"Conversation: {video_id}"
+                
+                source_mapping[source_key] = {
+                    'title': video_title,
+                    'authors': ['Michael Levin'],
+                    'journal': 'YouTube Conversation',
+                    'doi': '',
+                    'publication_date': '2025',
+                    'text': text_content,
+                    'sanitized_filename': '',
+                    'rank': i + 1,
+                    'section': f"Timestamp: {start_time:.1f}s - {end_time:.1f}s",
+                    'topic': '',
+                    'pipeline_source': 'conversations',
+                    'content_type': 'conversation_transcript',
+                    'video_id': video_id,
+                    'start_time_seconds': start_time,
+                    'end_time_seconds': end_time,
+                    'youtube_url': f"https://www.youtube.com/watch?v={video_id}",
+                    'frame_path': frame_path,
+                    'chunk_id': chunk_id
+                }
             else:
                 # Handle publication chunks (existing logic)
                 authors = chunk.get('authors', [])
@@ -500,11 +620,7 @@ def get_conversational_response(query: str, rag_results: list, conversation_hist
                     'frame_path': '',
                     'chunk_id': ''
                 }
-            
-            # Optional: Log key fields for debugging (commented out for production)
-            # logger.info(f"pdf_filename: {chunk.get('pdf_filename')}")
-            # logger.info(f"title: {chunk.get('title')}")
-            
+        
         context = "\n\n".join(context_parts)
         
         # Prepare conversation history for context
@@ -975,26 +1091,32 @@ class FAISSRetriever:
 
 
 class UnifiedRetriever:
-    """Unified retriever that searches both publications and video pipelines."""
+    """Unified retriever that searches publications, formal presentations, and conversations pipelines."""
     
     def __init__(self):
-        """Initialize the unified retriever with both pipelines."""
+        """Initialize the unified retriever with all three pipelines."""
         # Publications pipeline
         self.publications_retriever = FAISSRetriever(Path("SCIENTIFIC_PUBLICATION_PIPELINE/step_06_faiss_embeddings"))
         
-        # Video pipeline
+        # Formal presentations video pipeline
         self.video_retriever = FAISSRetriever(Path("SCIENTIFIC_VIDEO_PIPELINE/formal_presentations_1_on_0/step_07_faiss_embeddings"))
         
-        logger.info("🔗 Unified retriever initialized for both pipelines")
+        # Conversations pipeline
+        self.conversations_retriever = FAISSRetriever(Path("SCIENTIFIC_VIDEO_PIPELINE/Conversations_and_working_meetings_1_on_1/step_07_faiss_embeddings"))
+        
+        logger.info("🔗 Unified retriever initialized for all three pipelines")
     
     def retrieve_relevant_chunks(self, query: str, top_k: int = 10) -> list:
-        """Retrieve chunks from both pipelines and amalgamate results."""
+        """Retrieve chunks from all three pipelines and amalgamate results."""
         try:
             # Search publications pipeline
             publications_results = self.publications_retriever.retrieve_relevant_chunks(query, top_k=top_k)
             
-            # Search video pipeline
+            # Search formal presentations video pipeline
             video_results = self.video_retriever.retrieve_relevant_chunks(query, top_k=top_k)
+            
+            # Search conversations pipeline
+            conversations_results = self.conversations_retriever.retrieve_relevant_chunks(query, top_k=top_k)
             
             # Add pipeline source to each result
             for result in publications_results:
@@ -1002,44 +1124,52 @@ class UnifiedRetriever:
                 result['content_type'] = 'scientific_paper'
             
             for result in video_results:
-                result['pipeline_source'] = 'videos'
+                result['pipeline_source'] = 'formal_presentations'
                 result['content_type'] = 'video_transcript'
             
+            for result in conversations_results:
+                result['pipeline_source'] = 'conversations'
+                result['content_type'] = 'conversation_transcript'
+            
             # Normalize similarity scores to make them comparable across pipelines
-            if publications_results and video_results:
-                # Get score ranges for each pipeline
-                pub_scores = [r.get('similarity_score', 0) for r in publications_results]
-                video_scores = [r.get('similarity_score', 0) for r in video_results]
-                
-                pub_min, pub_max = min(pub_scores), max(pub_scores)
-                video_min, video_max = min(video_scores), max(video_scores)
-                
-                # Normalize to 0-1 range for fair comparison
-                for result in publications_results:
-                    if pub_max > pub_min:
-                        result['normalized_score'] = (result.get('similarity_score', 0) - pub_min) / (pub_max - pub_min)
-                    else:
+            all_pipelines = [
+                ('publications', publications_results),
+                ('formal_presentations', video_results),
+                ('conversations', conversations_results)
+            ]
+            
+            # Get score ranges for each pipeline
+            pipeline_scores = {}
+            for pipeline_name, results in all_pipelines:
+                if results:
+                    scores = [r.get('similarity_score', 0) for r in results]
+                    pipeline_scores[pipeline_name] = (min(scores), max(scores))
+                else:
+                    pipeline_scores[pipeline_name] = (0, 0)
+            
+            # Normalize scores to 0-1 range for fair comparison
+            for pipeline_name, results in all_pipelines:
+                if results and pipeline_scores[pipeline_name][1] > pipeline_scores[pipeline_name][0]:
+                    min_score, max_score = pipeline_scores[pipeline_name]
+                    for result in results:
+                        result['normalized_score'] = (result.get('similarity_score', 0) - min_score) / (max_score - min_score)
+                else:
+                    for result in results:
                         result['normalized_score'] = 0.5
-                
-                for result in video_results:
-                    if video_max > video_min:
-                        result['normalized_score'] = (result.get('similarity_score', 0) - video_min) / (video_max - video_min)
-                    else:
-                        result['normalized_score'] = 0.5
-                
-                # Sort by normalized scores for fair comparison
-                all_results = publications_results + video_results
-                all_results.sort(key=lambda x: x.get('normalized_score', 0), reverse=True)
-                
-                logger.info(f"🔍 Unified search with normalized scores: {len(publications_results)} publications + {len(video_results)} videos")
-                logger.info(f"   Publication score range: {pub_min:.3f} - {pub_max:.3f}")
-                logger.info(f"   Video score range: {video_min:.3f} - {video_max:.3f}")
-                
-            else:
-                # If only one pipeline has results, just use raw scores
-                all_results = publications_results + video_results
-                all_results.sort(key=lambda x: x.get('similarity_score', 0), reverse=True)
-                logger.info(f"🔍 Unified search (single pipeline): {len(publications_results)} publications + {len(video_results)} videos")
+            
+            # Combine all results and sort by normalized scores
+            all_results = publications_results + video_results + conversations_results
+            all_results.sort(key=lambda x: x.get('normalized_score', 0), reverse=True)
+            
+            logger.info(f"🔍 Unified search with normalized scores:")
+            logger.info(f"   Publications: {len(publications_results)} chunks")
+            logger.info(f"   Formal presentations: {len(video_results)} chunks")
+            logger.info(f"   Conversations: {len(conversations_results)} chunks")
+            
+            # Log score ranges for debugging
+            for pipeline_name, (min_score, max_score) in pipeline_scores.items():
+                if max_score > min_score:
+                    logger.info(f"   {pipeline_name} score range: {min_score:.3f} - {max_score:.3f}")
             
             # Return top_k combined results
             final_results = all_results[:top_k]
@@ -1054,28 +1184,34 @@ class UnifiedRetriever:
             return self.publications_retriever.retrieve_relevant_chunks(query, top_k=top_k)
     
     def get_collection_stats(self) -> dict:
-        """Get combined statistics from both pipelines."""
+        """Get combined statistics from all three pipelines."""
         publications_stats = self.publications_retriever.get_collection_stats()
         video_stats = self.video_retriever.get_collection_stats()
+        conversations_stats = self.conversations_retriever.get_collection_stats()
         
-        total_chunks = publications_stats.get('total_chunks', 0) + video_stats.get('total_chunks', 0)
+        total_chunks = (publications_stats.get('total_chunks', 0) + 
+                       video_stats.get('total_chunks', 0) + 
+                       conversations_stats.get('total_chunks', 0))
         
         return {
             'total_chunks': total_chunks,
             'publications': publications_stats,
-            'videos': video_stats,
-            'pipelines': 2
+            'formal_presentations': video_stats,
+            'conversations': conversations_stats,
+            'pipelines': 3
         }
     
     def get_active_embeddings_info(self) -> dict:
-        """Get information about active embeddings from both pipelines."""
+        """Get information about active embeddings from all three pipelines."""
         publications_info = self.publications_retriever.get_active_embeddings_info()
         video_info = self.video_retriever.get_active_embeddings_info()
+        conversations_info = self.conversations_retriever.get_active_embeddings_info()
         
         return {
             'publications': publications_info,
-            'videos': video_info,
-            'total_pipelines': 2
+            'formal_presentations': video_info,
+            'conversations': conversations_info,
+            'total_pipelines': 3
         }
 
 def conversational_page():
@@ -1260,6 +1396,10 @@ def conversational_page():
                         #                 pipeline_icon = ""
                         #                 if result.get('pipeline_source') == 'videos':
                         #                     pipeline_icon = "🎥"
+                        #                 elif result.get('pipeline_source') == 'formal_presentations':
+                        #                     pipeline_icon = "🎥"
+                        #                 elif result.get('pipeline_source') == 'conversations':
+                        #                     pipeline_icon = "💬"
                         #                 elif result.get('pipeline_source') == 'publications':
                         #                     pipeline_icon = "📚"
                                         
@@ -1696,7 +1836,7 @@ def main():
     <div style="text-align: center; margin-bottom: 2rem;">
         <h1 style="color: #ffffff;">Michael Levin Research Assistant</h1>
         <p style="font-size: 1.2rem; color: #cccccc;">
-            Explore Michael Levin's research across publications and videos using unified search
+            Explore Michael Levin's research across publications, formal presentations, and conversations using unified search
         </p>
             """, unsafe_allow_html=True)
 
@@ -1714,19 +1854,42 @@ def main():
             
         if 'retriever' not in st.session_state:
             with st.spinner("Loading unified RAG system..."):
-                # Check if both pipelines have embeddings
+                # Check if all three pipelines have embeddings
                 publications_dir = Path("SCIENTIFIC_PUBLICATION_PIPELINE/step_06_faiss_embeddings")
-                video_dir = Path("SCIENTIFIC_VIDEO_PIPELINE/formal_presentations_1_on_0/step_07_faiss_embeddings")
+                formal_presentations_dir = Path("SCIENTIFIC_VIDEO_PIPELINE/formal_presentations_1_on_0/step_07_faiss_embeddings")
+                conversations_dir = Path("SCIENTIFIC_VIDEO_PIPELINE/Conversations_and_working_meetings_1_on_1/step_07_faiss_embeddings")
                 
-                if publications_dir.exists() and video_dir.exists():
+                pipeline_status = {
+                    'publications': publications_dir.exists(),
+                    'formal_presentations': formal_presentations_dir.exists(),
+                    'conversations': conversations_dir.exists()
+                }
+                
+                available_pipelines = sum(pipeline_status.values())
+                
+                if available_pipelines >= 2:
                     st.session_state.retriever = UnifiedRetriever()
-                    # st.success("✅ Unified retriever loaded (publications + videos)")
-                elif publications_dir.exists():
-                    st.session_state.retriever = FAISSRetriever(publications_dir)
-                    # st.warning("⚠️ Publications pipeline only (videos not found)")
-                elif video_dir.exists():
-                    st.session_state.retriever = FAISSRetriever(video_dir)
-                    # st.warning("⚠️ Video pipeline only (publications not found)")
+                    st.success(f"✅ Unified retriever loaded ({available_pipelines}/3 pipelines available)")
+                    
+                    # Show which pipelines are available
+                    pipeline_info = []
+                    for name, available in pipeline_status.items():
+                        status = "✅" if available else "❌"
+                        pipeline_info.append(f"{status} {name.replace('_', ' ').title()}")
+                    
+                    st.info("📊 Pipeline Status: " + " | ".join(pipeline_info))
+                    
+                elif available_pipelines == 1:
+                    # Use single pipeline retriever
+                    if pipeline_status['publications']:
+                        st.session_state.retriever = FAISSRetriever(publications_dir)
+                        st.warning("⚠️ Publications pipeline only (videos not found)")
+                    elif pipeline_status['formal_presentations']:
+                        st.session_state.retriever = FAISSRetriever(formal_presentations_dir)
+                        st.warning("⚠️ Formal presentations pipeline only (other pipelines not found)")
+                    elif pipeline_status['conversations']:
+                        st.session_state.retriever = FAISSRetriever(conversations_dir)
+                        st.warning("⚠️ Conversations pipeline only (other pipelines not found)")
                 else:
                     st.error("No FAISS embeddings found!")
                     st.info("Please run the pipelines first to generate embeddings.")
