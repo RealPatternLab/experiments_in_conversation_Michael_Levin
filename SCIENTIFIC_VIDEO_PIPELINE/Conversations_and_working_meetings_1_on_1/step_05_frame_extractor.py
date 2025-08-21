@@ -38,7 +38,7 @@ class ConversationsFrameExtractor:
         # Extract frame every 60 seconds (1 minute) for conversational content
         self.frame_interval = 60  # Extract frame every 60 seconds
         self.frame_quality = 2    # FFmpeg quality (1-31, lower is better)
-        self.max_frames = 200     # Reasonable limit for conversation videos
+        self.max_frames = 400     # Reasonable limit for conversation videos
     
     def process_all_videos(self):
         """Process all videos in the input directory"""
