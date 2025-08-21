@@ -1628,7 +1628,7 @@ def main():
     </style>
     """, unsafe_allow_html=True)
     
-            thinking_box = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/media/thinking_box.gif"
+    thinking_box = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/media/thinking_box.gif"
 
     st.markdown("""
     <style>
