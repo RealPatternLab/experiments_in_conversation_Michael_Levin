@@ -2,7 +2,7 @@
 
 ## System Overview
 
-The Michael Levin Scientific Knowledge Base is a sophisticated multi-modal RAG system that processes both scientific publications (PDFs) and scientific videos into an interactive knowledge base. The system uses separate processing pipelines for different content types, with plans to evolve toward unified search capabilities while maintaining separation of concerns.
+The Michael Levin Scientific Knowledge Base is a sophisticated multi-modal RAG system that processes scientific publications (PDFs), scientific videos, and conversations/working meetings into an interactive knowledge base. The system uses separate processing pipelines for different content types, with plans to evolve toward unified search capabilities while maintaining separation of concerns.
 
 ## High-Level Architecture
 
@@ -34,8 +34,30 @@ The Michael Levin Scientific Knowledge Base is a sophisticated multi-modal RAG s
 │  └─────────────────────────┘    └─────────────────────────────────────────┘ │
 │                                                                             │
 │  ┌─────────────────────────────────────────────────────────────────────────┐ │
+│  │                    CONVERSATIONS PIPELINE                              │ │
+│  │                                                                         │ │
+│  │  ┌─────────────────┐                                                   │ │
+│  │  │  Video Input    │                                                   │ │
+│  │  │(YouTube URLs)   │                                                   │ │
+│  │  └─────────────────┘                                                   │ │
+│  │           │                                                             │ │
+│  │           ▼                                                             │ │
+│  │  ┌─────────────────┐                                                   │ │
+│  │  │ 8-Step Pipeline │                                                   │ │
+│  │  │(Conversations)  │                                                   │ │
+│  │  │                 │                                                   │ │
+│  │  └─────────────────┘                                                   │ │
+│  │           │                                                             │ │
+│  │           ▼                                                             │ │
+│  │  ┌─────────────────┐                                                   │ │
+│  │  │ FAISS Index     │                                                   │ │
+│  │  │ (3072 dim)      │                                                   │ │
+│  │  └─────────────────┘                                                   │ │
+│  └─────────────────────────────────────────────────────────────────────────┘ │
+│                                                                             │
+│  ┌─────────────────────────────────────────────────────────────────────────┐ │
 │  │                    UNIFIED SEARCH LAYER (Phase 1)                      │ │
-│  │  • Query both pipelines simultaneously                                  │ │
+│  │  • Query all three pipelines simultaneously                             │ │
 │  │  • Fuse and rank results                                                │ │
 │  │  • Provide unified user experience                                     │ │
 │  └─────────────────────────────────────────────────────────────────────────┘ │
@@ -116,6 +138,36 @@ Step 08: Archive Management (step_08_archive.py)
 - **Embeddings**: OpenAI text-embedding-3-large (3072 dimensions) + visual features (64 dimensions)
 - **Output**: FAISS indices + metadata for videos
 
+### 3. Conversations Pipeline
+
+**Location**: `/SCIENTIFIC_VIDEO_PIPELINE/Conversations_and_working_meetings_1_on_1/`
+
+The conversations pipeline processes YouTube working meetings and conversations through 8 sequential steps:
+
+```
+Step 01: Playlist Processing (step_01_playlist_processor.py)
+    ↓
+Step 02: Video Download & Metadata (step_02_video_downloader.py)
+    ↓
+Step 03: Enhanced Transcription (step_03_transcription_webhook.py)
+    ↓
+Step 04: Semantic Chunking (step_04_extract_chunks.py)
+    ↓
+Step 05: Frame Extraction (step_05_frame_extractor.py)
+    ↓
+Step 06: Frame-Chunk Alignment (step_06_frame_chunk_alignment.py)
+    ↓
+Step 07: Consolidated Embedding (step_07_consolidated_embedding.py)
+    ↓
+Step 08: Archive Management (step_08_cleanup.py)
+```
+
+**Key Features**:
+- **Input**: YouTube videos (conversations, working meetings)
+- **Processing**: Speaker diarization, Q&A extraction, Levin's insights identification
+- **Embeddings**: OpenAI text-embedding-3-large (3072 dimensions) + visual features
+- **Output**: FAISS indices + metadata for conversations with timestamps
+
 ## Evolution Strategy
 
 ### Design Philosophy
@@ -135,12 +187,13 @@ The system is designed with **separation of concerns** and **evolutionary archit
 ```python
 class UnifiedRAGSearch:
     def search(self, query: str):
-        # Search both pipelines simultaneously
+        # Search all three pipelines simultaneously
         pub_results = self.search_publications(query)
         video_results = self.search_videos(query)
+        conversation_results = self.search_conversations(query)
         
         # Fuse and rank results
-        return self.fuse_results(pub_results, video_results)
+        return self.fuse_results(pub_results, video_results, conversation_results)
 ```
 
 **Benefits**:
@@ -164,9 +217,10 @@ class KnowledgeBaseMerger:
         # Load existing indices (NO re-embedding)
         pub_index = faiss.read_index("publications.faiss")
         video_index = faiss.read_index("videos.faiss")
+        conversation_index = faiss.read_index("conversations.faiss")
         
         # Concatenate existing vectors
-        unified_vectors = np.vstack([pub_vectors, video_vectors])
+        unified_vectors = np.vstack([pub_vectors, video_vectors, conversation_vectors])
         
         # Create unified index
         unified_index = faiss.IndexFlatL2(unified_vectors.shape[1])

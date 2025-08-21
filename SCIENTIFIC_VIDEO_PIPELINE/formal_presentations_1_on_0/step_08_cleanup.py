@@ -288,16 +288,19 @@ class PipelineCleanup:
         
         log_files = [
             'pipeline_execution.log',
-            'transcription_webhook.log',
             'chunking.log',
             'frame_extraction.log',
             'frame_chunk_alignment.log',
             'consolidated_embedding.log',
-            'video_download.log',
-            'playlist_processing.log'
+            'video_download.log'
         ]
         
+        # Check for logs in the main logs directory
+        main_logs_dir = Path(__file__).parent.parent.parent.parent / "logs"
+        
         removed_count = 0
+        
+        # Process local pipeline logs
         for log_file in log_files:
             log_path = self.base_dir / log_file
             if log_path.exists():
@@ -312,6 +315,23 @@ class PipelineCleanup:
                         logger.info(f"📝 Truncated log: {log_file} (kept last 1000 lines)")
                 except Exception as e:
                     logger.warning(f"Failed to truncate log {log_file}: {e}")
+        
+        # Also check main logs directory for moved log files
+        if main_logs_dir.exists():
+            main_log_files = ['transcription_webhook.log', 'playlist_processing.log']
+            for log_file in main_log_files:
+                log_path = main_logs_dir / log_file
+                if log_path.exists():
+                    try:
+                        with open(log_path, 'r') as f:
+                            lines = f.readlines()
+                        
+                        if len(lines) > 1000:
+                            with open(log_path, 'w') as f:
+                                f.writelines(lines[-1000:])
+                            logger.info(f"📝 Truncated main log: {log_file} (kept last 1000 lines)")
+                    except Exception as e:
+                        logger.warning(f"Failed to truncate main log {log_file}: {e}")
         
         logger.info(f"✅ Log cleanup completed")
         return removed_count

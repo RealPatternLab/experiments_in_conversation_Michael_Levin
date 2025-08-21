@@ -42,15 +42,15 @@ An AI-powered system that creates a conversational interface with Michael Levin 
 
 ## 🔬 What This System Does
 
-This system processes **scientific publications (PDFs)** and **scientific videos (YouTube)** through specialized pipelines to create a comprehensive, multimodal knowledge base. Users can ask questions about Michael Levin's research and receive answers based on his actual publications and presentations.
+This system processes **scientific publications (PDFs)**, **scientific videos (YouTube)**, and **conversations/working meetings** through specialized pipelines to create a comprehensive, multimodal knowledge base. Users can ask questions about Michael Levin's research and receive answers based on his actual publications, presentations, and conversations.
 
 ### Key Features
-- **Dual Pipeline Architecture**: Separate processing for publications and videos
+- **Triple Pipeline Architecture**: Separate processing for publications, videos, and conversations
 - **Multimodal Content**: Text, audio, and visual content processing
 - **Semantic Chunking**: Intelligently splits documents and transcripts
 - **Vector Embeddings**: Creates FAISS indices for fast semantic search
 - **RAG Interface**: Chat with an AI that cites specific sources
-- **Source Citations**: Every response includes links to source PDFs, videos, and timestamps
+- **Source Citations**: Every response includes links to source PDFs, videos with timestamps, and conversation clips
 
 ## 📊 Pipeline Overview
 
@@ -73,6 +73,16 @@ This system processes **scientific publications (PDFs)** and **scientific videos
 7. **Consolidated Embedding** (`step_07`) - Creates multimodal FAISS indices
 8. **Archive** (`step_08`) - Organizes processed content
 
+### Conversations Pipeline (8 Steps)
+1. **Playlist Processing** (`step_01`) - Processes YouTube playlist URLs
+2. **Video Download** (`step_02`) - Downloads videos and extracts metadata
+3. **Enhanced Transcription** (`step_03`) - Creates transcripts with speaker diarization
+4. **Semantic Chunking** (`step_04`) - Extracts Q&A pairs and Levin's insights
+5. **Frame Extraction** (`step_05`) - Extracts key video frames
+6. **Frame-Chunk Alignment** (`step_06`) - Aligns frames with semantic chunks
+7. **Consolidated Embedding** (`step_07`) - Creates FAISS indices for conversations
+8. **Archive** (`step_08`) - Organizes processed content
+
 ## 🏗️ Project Structure
 
 ```
@@ -86,14 +96,23 @@ michael-levin-qa-engine-neu1/
 │   ├── step_06_faiss_embeddings/        # FAISS vector indices
 │   └── step_07_archive/                 # Processed PDFs
 ├── SCIENTIFIC_VIDEO_PIPELINE/           # Videos processing pipeline
-│   └── formal_presentations_1_on_0/     # Formal presentation content
+│   ├── formal_presentations_1_on_0/     # Formal presentation content
+│   │   ├── step_01_raw/                 # YouTube playlist URLs
+│   │   ├── step_02_extracted_playlist_content/ # Downloaded videos
+│   │   ├── step_03_transcription/       # Generated transcripts
+│   │   ├── step_04_extract_chunks/      # Semantic chunks
+│   │   ├── step_05_frames/              # Extracted video frames
+│   │   ├── step_06_frame_chunk_alignment/ # Frame-chunk alignment
+│   │   ├── step_07_faiss_embeddings/    # Multimodal FAISS indices
+│   │   └── step_08_archive/             # Processed content
+│   └── Conversations_and_working_meetings_1_on_1/ # Conversations content
 │       ├── step_01_raw/                 # YouTube playlist URLs
 │       ├── step_02_extracted_playlist_content/ # Downloaded videos
-│       ├── step_03_transcription/       # Generated transcripts
-│       ├── step_04_extract_chunks/      # Semantic chunks
+│       ├── step_03_transcription/       # Transcripts with speaker diarization
+│       ├── step_04_extract_chunks/      # Q&A pairs and semantic chunks
 │       ├── step_05_frames/              # Extracted video frames
 │       ├── step_06_frame_chunk_alignment/ # Frame-chunk alignment
-│       ├── step_07_faiss_embeddings/    # Multimodal FAISS indices
+│       ├── step_07_faiss_embeddings/    # FAISS indices for conversations
 │       └── step_08_archive/             # Processed content
 ├── streamlit_app.py                      # Main web interface
 ├── pyproject.toml                       # Project configuration

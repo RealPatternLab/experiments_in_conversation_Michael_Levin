@@ -35,15 +35,26 @@ cp .env.example .env
 echo "OPENAI_API_KEY=your_actual_api_key_here" > .env
 ```
 
-## Step 3: Add Your First PDF
+## Step 3: Add Your First Content
 
+### Option A: Add a Scientific PDF
 ```bash
 # Copy a scientific PDF to the input directory
 cp your_research_paper.pdf SCIENTIFIC_PUBLICATION_PIPELINE/step_01_raw/
 ```
 
+### Option B: Add YouTube Videos
+```bash
+# Add YouTube playlist URLs for formal presentations
+echo "https://www.youtube.com/playlist?list=..." > SCIENTIFIC_VIDEO_PIPELINE/formal_presentations_1_on_0/step_01_raw/youtube_playlist.txt
+
+# Add YouTube playlist URLs for conversations/working meetings
+echo "https://www.youtube.com/playlist?list=..." > SCIENTIFIC_VIDEO_PIPELINE/Conversations_and_working_meetings_1_on_1/step_01_raw/youtube_playlist.txt
+```
+
 ## Step 4: Run the Pipeline
 
+### Publications Pipeline
 ```bash
 cd SCIENTIFIC_PUBLICATION_PIPELINE
 
@@ -55,6 +66,22 @@ uv run python step_04_optional_metadata_enrichment.py
 uv run python step_05_semantic_chunker_split.py
 uv run python step_06_consolidated_embedding.py
 uv run python step_07_move_to_archive.py
+```
+
+### Videos Pipeline (Formal Presentations)
+```bash
+cd SCIENTIFIC_VIDEO_PIPELINE/formal_presentations_1_on_0
+
+# Run the pipeline
+uv run python run_video_pipeline_1_on_0.py
+```
+
+### Conversations Pipeline
+```bash
+cd SCIENTIFIC_VIDEO_PIPELINE/Conversations_and_working_meetings_1_on_1
+
+# Run the pipeline
+uv run python run_conversations_pipeline.py
 ```
 
 ## Step 5: Start the Chat Interface
@@ -76,7 +103,7 @@ uv run streamlit run streamlit_app.py
 
 ## 🎯 What Just Happened?
 
-### Pipeline Processing:
+### Publications Pipeline Processing:
 1. **Hash Validation**: Your PDF was checked for duplicates
 2. **Metadata Extraction**: Title, authors, DOI were extracted
 3. **Text Extraction**: PDF content was converted to searchable text
@@ -85,10 +112,28 @@ uv run streamlit run streamlit_app.py
 6. **Embedding Generation**: Each chunk was converted to a vector
 7. **Archive**: Processed files were organized by year
 
+### Videos Pipeline Processing:
+1. **Playlist Processing**: YouTube URLs were processed
+2. **Video Download**: Videos were downloaded with metadata
+3. **Transcription**: Audio was converted to searchable text
+4. **Semantic Chunking**: Transcripts were split into meaningful chunks
+5. **Frame Extraction**: Key video frames were captured
+6. **Frame-Chunk Alignment**: Visual content was aligned with text
+7. **Embedding Generation**: Text and visual features were vectorized
+
+### Conversations Pipeline Processing:
+1. **Playlist Processing**: YouTube URLs were processed
+2. **Video Download**: Videos were downloaded with metadata
+3. **Enhanced Transcription**: Audio was converted with speaker diarization
+4. **Semantic Chunking**: Q&A pairs and Levin's insights were extracted
+5. **Frame Extraction**: Key video frames were captured
+6. **Frame-Chunk Alignment**: Visual content was aligned with semantic chunks
+7. **Embedding Generation**: Enhanced chunks were vectorized
+
 ### RAG System:
-- Your PDF chunks are now searchable via semantic similarity
-- The AI can find relevant sections and cite them
-- Responses include links to source materials
+- All content types are now searchable via semantic similarity
+- The AI can find relevant sections and cite them with proper source links
+- Responses include links to PDFs, videos with timestamps, and conversation clips
 
 ## 🔧 Common Issues & Solutions
 
