@@ -1,0 +1,86 @@
+{
+  "chunk_id": "o-0lj02cBPY_chunk_015",
+  "semantic_text": "Do, do the, do the individual personalities ever express a resistance to any kind of integration? Do they have some kind of a self preservation quality where they, they don't want to disappear into a larger integrated personality? Yes. Yeah. In fact, that's probably the norm that they interested in preserving their, them, the individuality intact. And so clinically you're not bothered, you're not trying to integrate them, whatever that is. If you're trying to develop more harmony, more internal communication. And sometimes that needs to pass through some sort of outside process. So I had a technique I call the bulletin board where they left each other notes and on the refrigerator, for example. And that's how they began to break down some of those cognitive barriers. And they'll talk about having meat together in which different ones participate and contribute to kind of a. And that's sort of where you, you want to go clinically is increase the internal harmony, you know, not so much force them to be one. But they're very afraid of that actually afraid that you're going to get rid of the others, which you can't do. But that's their perception that you're going to get rid of some and keep others.",
+  "speaker": "multiple",
+  "speaker_name": "Multiple Speakers",
+  "speaker_role": "Multiple Roles",
+  "is_levin": true,
+  "speaker_order": "multiple",
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:12:48.699512",
+  "start_time": 1947530,
+  "end_time": 2028750,
+  "timestamp": "1947530.00s - 2028750.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "A",
+        "B"
+      ],
+      "speaker_details": {
+        "A": {
+          "speaker_id": "A",
+          "name": "Frank Putnam",
+          "role": "UNC at Chapel Hill",
+          "is_levin": false,
+          "speaker_order": 2,
+          "additional_context": "Dept. of Psychiatry",
+          "identified_at": "2025-08-22T11:42:22.299847"
+        },
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:43:13.147432"
+        }
+      },
+      "conversation_type": "dialogue"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 2,
+      "speaker_interaction_type": "dialogue",
+      "conversation_flow": [
+        "B: Do, do the, do the individual personalities ever e...",
+        "A: Yes. Yeah. In fact, that's probably the norm that ..."
+      ],
+      "collaboration_pattern": "dialogue"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "Do, do the, do the individual personalities ever express a resistance to any kind of integration? Do they have some kind of a self preservation quality where they, they don't want to disappear into a larger integrated personality?",
+      "start_time": 1947530,
+      "end_time": 1963050,
+      "timestamp": "1947530.00s - 1963050.00s"
+    },
+    {
+      "speaker_id": "A",
+      "speaker_name": "Frank Putnam",
+      "speaker_role": "UNC at Chapel Hill",
+      "is_levin": false,
+      "speaker_order": 2,
+      "text": "Yes. Yeah. In fact, that's probably the norm that they interested in preserving their, them, the individuality intact. And so clinically you're not bothered, you're not trying to integrate them, whatever that is. If you're trying to develop more harmony, more internal communication. And sometimes that needs to pass through some sort of outside process. So I had a technique I call the bulletin board where they left each other notes and on the refrigerator, for example. And that's how they began to break down some of those cognitive barriers. And they'll talk about having meat together in which different ones participate and contribute to kind of a. And that's sort of where you, you want to go clinically is increase the internal harmony, you know, not so much force them to be one. But they're very afraid of that actually afraid that you're going to get rid of the others, which you can't do. But that's their perception that you're going to get rid of some and keep others.",
+      "start_time": 1963530,
+      "end_time": 2028750,
+      "timestamp": "1963530.00s - 2028750.00s"
+    }
+  ]
+}

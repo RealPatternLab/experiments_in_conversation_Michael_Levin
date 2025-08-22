@@ -1,0 +1,108 @@
+{
+  "chunk_id": "o-0lj02cBPY_chunk_000",
+  "semantic_text": "Okay. Nice to meet you. Wow, what a library behind you. Very nice to meet you. Hey, Alexi, Good to see you. Hi, Mike. Good.",
+  "speaker": "multiple",
+  "speaker_name": "Multiple Speakers",
+  "speaker_role": "Multiple Roles",
+  "is_levin": true,
+  "speaker_order": "multiple",
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:12:48.699406",
+  "start_time": 1920,
+  "end_time": 10680,
+  "timestamp": "1920.00s - 10680.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "A",
+        "C",
+        "B"
+      ],
+      "speaker_details": {
+        "A": {
+          "speaker_id": "A",
+          "name": "Frank Putnam",
+          "role": "UNC at Chapel Hill",
+          "is_levin": false,
+          "speaker_order": 2,
+          "additional_context": "Dept. of Psychiatry",
+          "identified_at": "2025-08-22T11:42:22.299847"
+        },
+        "C": {
+          "speaker_id": "C",
+          "name": "Alexey Tolchinsky",
+          "role": "George Washington University",
+          "is_levin": false,
+          "speaker_order": 3,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:43:13.147300"
+        },
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:43:13.147432"
+        }
+      },
+      "conversation_type": "multi_speaker_discussion"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 3,
+      "speaker_interaction_type": "multi_speaker_discussion",
+      "conversation_flow": [
+        "A: Okay. Nice to meet you. Wow, what a library behind...",
+        "B: Very nice to meet you. Hey, Alexi, Good to see you...",
+        "C: Hi, Mike. Good...."
+      ],
+      "collaboration_pattern": "round_table_discussion"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "A",
+      "speaker_name": "Frank Putnam",
+      "speaker_role": "UNC at Chapel Hill",
+      "is_levin": false,
+      "speaker_order": 2,
+      "text": "Okay. Nice to meet you. Wow, what a library behind you.",
+      "start_time": 1920,
+      "end_time": 5600,
+      "timestamp": "1920.00s - 5600.00s"
+    },
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "Very nice to meet you. Hey, Alexi, Good to see you.",
+      "start_time": 6800,
+      "end_time": 8720,
+      "timestamp": "6800.00s - 8720.00s"
+    },
+    {
+      "speaker_id": "C",
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "George Washington University",
+      "is_levin": false,
+      "speaker_order": 3,
+      "text": "Hi, Mike. Good.",
+      "start_time": 9120,
+      "end_time": 10680,
+      "timestamp": "9120.00s - 10680.00s"
+    }
+  ]
+}

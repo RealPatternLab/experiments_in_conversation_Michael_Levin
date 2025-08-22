@@ -1,0 +1,64 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_036",
+  "semantic_text": "I, I, I think we're pretty much on the same page. Maybe we use different again, perspectives. But, you know, in a jury, there's 12 members, but the jury is functionally doing the same thing together collectively. They need to do something together as a collective. And so I think if we move up at the level, then we can see that this collect, yes, it is collective, but they have the same function or the same goal or these, you know, collection of cells are navigating the maze. They're all navigating the maze together. And the, the, the idea, I don't know if it's so much as fight for the real estate, but one of the prominent theories is that integration was too painful. If I remember I, the coherent whole, it hurts too much. So I'm going to compartmentalize and I'm going to move into this piece where it hurts less. You know, it's sort of, as Frank Putnam said, one of the experts in the field, it's, it's the escape when there's no other escape, escapes. These are prolonged cases of neglect and abuse when really it feels inescapable. And what the extreme defenses is, I'm going to break my mind into pieces. This is the extreme immobilization, a sort of dysfunction. I'm going to do that in order to, I cannot tolerate that pain anymore.",
+  "speaker": "A",
+  "speaker_name": "Alexey Tolchinsky",
+  "speaker_role": "The George Washington University, Center for Professional Psychology",
+  "is_levin": false,
+  "speaker_order": 2,
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.777270",
+  "start_time": 3253320,
+  "end_time": 3317650,
+  "timestamp": "3253320.00s - 3317650.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "A"
+      ],
+      "speaker_details": {
+        "A": {
+          "speaker_id": "A",
+          "name": "Alexey Tolchinsky",
+          "role": "The George Washington University, Center for Professional Psychology",
+          "is_levin": false,
+          "speaker_order": 2,
+          "additional_context": "a clinical psychologist and Adjunct Professor",
+          "identified_at": "2025-08-22T11:45:25.343931"
+        }
+      },
+      "conversation_type": "monologue"
+    },
+    "levin_context": {
+      "levin_involved": false,
+      "levin_role": "not_involved",
+      "levin_contribution_type": null,
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 1,
+      "speaker_interaction_type": "monologue",
+      "conversation_flow": [
+        "A: I, I, I think we're pretty much on the same page. ..."
+      ],
+      "collaboration_pattern": "single_speaker"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "A",
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "is_levin": false,
+      "speaker_order": 2,
+      "text": "I, I, I think we're pretty much on the same page. Maybe we use different again, perspectives. But, you know, in a jury, there's 12 members, but the jury is functionally doing the same thing together collectively. They need to do something together as a collective. And so I think if we move up at the level, then we can see that this collect, yes, it is collective, but they have the same function or the same goal or these, you know, collection of cells are navigating the maze. They're all navigating the maze together. And the, the, the idea, I don't know if it's so much as fight for the real estate, but one of the prominent theories is that integration was too painful. If I remember I, the coherent whole, it hurts too much. So I'm going to compartmentalize and I'm going to move into this piece where it hurts less. You know, it's sort of, as Frank Putnam said, one of the experts in the field, it's, it's the escape when there's no other escape, escapes. These are prolonged cases of neglect and abuse when really it feels inescapable. And what the extreme defenses is, I'm going to break my mind into pieces. This is the extreme immobilization, a sort of dysfunction. I'm going to do that in order to, I cannot tolerate that pain anymore.",
+      "start_time": 3253320,
+      "end_time": 3317650,
+      "timestamp": "3253320.00s - 3317650.00s"
+    }
+  ]
+}

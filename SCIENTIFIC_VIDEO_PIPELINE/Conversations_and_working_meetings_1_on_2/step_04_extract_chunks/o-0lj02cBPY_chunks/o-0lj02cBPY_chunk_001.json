@@ -1,0 +1,108 @@
+{
+  "chunk_id": "o-0lj02cBPY_chunk_001",
+  "semantic_text": "Good to meet you. We were just talking about how to carry this on or can make connections. So Alexi had some ideas. Please. Yeah. Should we maybe, you know, have. Say a few words, maybe, Frank, about who you are? Because I. So grateful that the two of you are talking. You're highly influential in each of your respective fields. You're both poly scientists. Frank is one of the few kind of, you know, renowned psychologists who is brave enough to use nonlinear dynamical systems, computer modeling, and so you can speak the same language, which I'm very excited about. So.",
+  "speaker": "multiple",
+  "speaker_name": "Multiple Speakers",
+  "speaker_role": "Multiple Roles",
+  "is_levin": true,
+  "speaker_order": "multiple",
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:12:48.699421",
+  "start_time": 10680,
+  "end_time": 53250,
+  "timestamp": "10680.00s - 53250.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "A",
+        "C",
+        "B"
+      ],
+      "speaker_details": {
+        "A": {
+          "speaker_id": "A",
+          "name": "Frank Putnam",
+          "role": "UNC at Chapel Hill",
+          "is_levin": false,
+          "speaker_order": 2,
+          "additional_context": "Dept. of Psychiatry",
+          "identified_at": "2025-08-22T11:42:22.299847"
+        },
+        "C": {
+          "speaker_id": "C",
+          "name": "Alexey Tolchinsky",
+          "role": "George Washington University",
+          "is_levin": false,
+          "speaker_order": 3,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:43:13.147300"
+        },
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:43:13.147432"
+        }
+      },
+      "conversation_type": "multi_speaker_discussion"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 3,
+      "speaker_interaction_type": "multi_speaker_discussion",
+      "conversation_flow": [
+        "A: Good to meet you. We were just talking about how t...",
+        "B: Please. Yeah....",
+        "C: Should we maybe, you know, have. Say a few words, ..."
+      ],
+      "collaboration_pattern": "round_table_discussion"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "A",
+      "speaker_name": "Frank Putnam",
+      "speaker_role": "UNC at Chapel Hill",
+      "is_levin": false,
+      "speaker_order": 2,
+      "text": "Good to meet you. We were just talking about how to carry this on or can make connections. So Alexi had some ideas.",
+      "start_time": 10680,
+      "end_time": 21920,
+      "timestamp": "10680.00s - 21920.00s"
+    },
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "Please. Yeah.",
+      "start_time": 22240,
+      "end_time": 23040,
+      "timestamp": "22240.00s - 23040.00s"
+    },
+    {
+      "speaker_id": "C",
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "George Washington University",
+      "is_levin": false,
+      "speaker_order": 3,
+      "text": "Should we maybe, you know, have. Say a few words, maybe, Frank, about who you are? Because I. So grateful that the two of you are talking. You're highly influential in each of your respective fields. You're both poly scientists. Frank is one of the few kind of, you know, renowned psychologists who is brave enough to use nonlinear dynamical systems, computer modeling, and so you can speak the same language, which I'm very excited about. So.",
+      "start_time": 24960,
+      "end_time": 53250,
+      "timestamp": "24960.00s - 53250.00s"
+    }
+  ]
+}

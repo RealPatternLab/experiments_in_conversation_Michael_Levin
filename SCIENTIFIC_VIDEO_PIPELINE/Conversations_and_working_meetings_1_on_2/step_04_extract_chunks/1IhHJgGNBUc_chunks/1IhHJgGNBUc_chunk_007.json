@@ -1,0 +1,64 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_007",
+  "semantic_text": "And in that example, does changing the environment or that niche construction, you're talking about it working on the substrate being the brain. But is there another perspective where the substrate is the behavioral space? Right. So with the guy with the functional cognitive disorder, the behavioral space changes because all of a sudden they're not going to parties, they're not going to that shop, or with somebody with an obsession, the behavioral repertoire changes. So that actually constructed a kind of behavioral niche and Actually, that may be the more obvious kind of niche construction that happens before there's a kind of bit of meat that gets changed, or would that still make sense?",
+  "speaker": "C",
+  "speaker_name": "Thomas Pollak",
+  "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+  "is_levin": false,
+  "speaker_order": 3,
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.777127",
+  "start_time": 587690,
+  "end_time": 628780,
+  "timestamp": "587690.00s - 628780.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "C"
+      ],
+      "speaker_details": {
+        "C": {
+          "speaker_id": "C",
+          "name": "Thomas Pollak",
+          "role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+          "is_levin": false,
+          "speaker_order": 3,
+          "additional_context": "neuropsychiatrist and researche",
+          "identified_at": "2025-08-22T11:46:00.876129"
+        }
+      },
+      "conversation_type": "monologue"
+    },
+    "levin_context": {
+      "levin_involved": false,
+      "levin_role": "not_involved",
+      "levin_contribution_type": null,
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 1,
+      "speaker_interaction_type": "monologue",
+      "conversation_flow": [
+        "C: And in that example, does changing the environment..."
+      ],
+      "collaboration_pattern": "single_speaker"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "C",
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "is_levin": false,
+      "speaker_order": 3,
+      "text": "And in that example, does changing the environment or that niche construction, you're talking about it working on the substrate being the brain. But is there another perspective where the substrate is the behavioral space? Right. So with the guy with the functional cognitive disorder, the behavioral space changes because all of a sudden they're not going to parties, they're not going to that shop, or with somebody with an obsession, the behavioral repertoire changes. So that actually constructed a kind of behavioral niche and Actually, that may be the more obvious kind of niche construction that happens before there's a kind of bit of meat that gets changed, or would that still make sense?",
+      "start_time": 587690,
+      "end_time": 628780,
+      "timestamp": "587690.00s - 628780.00s"
+    }
+  ]
+}

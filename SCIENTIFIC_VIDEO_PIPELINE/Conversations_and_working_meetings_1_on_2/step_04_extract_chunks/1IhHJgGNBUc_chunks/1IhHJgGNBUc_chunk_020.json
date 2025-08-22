@@ -1,0 +1,64 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_020",
+  "semantic_text": "Yeah, I mean, one, one way. So, so there's one discipline where that kind of thing is completely normal, and that's computer science. Right. Because in computer science we are very comfortable with having interactions with systems that are not actually physical. So you've got an algorithm. The algorithm that's running will have memories, it may have goals, it may have, you know, and you can, you can communicate with it, you can provide input. And somebody could say, look, there is no algorithm, there's just silicon and copper and electrons right here. You know, this is a fiction. But we all know in computer science that that kind of reduction doesn't actually get you anywhere. That treating the algorithm as the real thing, it really does make the electrons dance in an important sense. And so we're okay with then focusing on managing these patterns that are not the actual. I mean, some people obviously work in hardware, but many people don't. And so I think we can, at least on the biomedical side, I think we can have models in which we treat the actual cellular substrate as the memory, as the tape. That's the scratch pad actually. And what's really driving it is an algorithm that's embedded in some kind of information dynamic that it might be some sort of active inference thing, it might be some other thing. But I do think there is a path there that is not in the sense that we have tools now, we have conceptual and we have practical tools at the bench to start looking at some of these things. I mean, we're, we're now, because of the physiological imaging that's possible now where we can see calcium waves and we can see metabolic states and we can see bioelectric properties and so on, we can see them, we can visualize them in an individual, we can visualize them over time. They move, they move around, they do things, they're causal and by the way they spread across bodies. So we've published something and we have a lot more coming where you have actually multiple frog embryos. In addition, you can watch these patterns move between them. They belong to the group, they don't belong to the individual. And you know, so, so I think, so I think there is some kind of a path there. You know, how much of that is, it's going to make its way into what you guys do. I, I have no idea.",
+  "speaker": "B",
+  "speaker_name": "Michael Levin",
+  "speaker_role": "Biologist, Tufts University",
+  "is_levin": true,
+  "speaker_order": 2,
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.777189",
+  "start_time": 1564450,
+  "end_time": 1697100,
+  "timestamp": "1564450.00s - 1697100.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "B"
+      ],
+      "speaker_details": {
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:46:00.876272"
+        }
+      },
+      "conversation_type": "monologue"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 1,
+      "speaker_interaction_type": "monologue",
+      "conversation_flow": [
+        "B: Yeah, I mean, one, one way. So, so there's one dis..."
+      ],
+      "collaboration_pattern": "single_speaker"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "Yeah, I mean, one, one way. So, so there's one discipline where that kind of thing is completely normal, and that's computer science. Right. Because in computer science we are very comfortable with having interactions with systems that are not actually physical. So you've got an algorithm. The algorithm that's running will have memories, it may have goals, it may have, you know, and you can, you can communicate with it, you can provide input. And somebody could say, look, there is no algorithm, there's just silicon and copper and electrons right here. You know, this is a fiction. But we all know in computer science that that kind of reduction doesn't actually get you anywhere. That treating the algorithm as the real thing, it really does make the electrons dance in an important sense. And so we're okay with then focusing on managing these patterns that are not the actual. I mean, some people obviously work in hardware, but many people don't. And so I think we can, at least on the biomedical side, I think we can have models in which we treat the actual cellular substrate as the memory, as the tape. That's the scratch pad actually. And what's really driving it is an algorithm that's embedded in some kind of information dynamic that it might be some sort of active inference thing, it might be some other thing. But I do think there is a path there that is not in the sense that we have tools now, we have conceptual and we have practical tools at the bench to start looking at some of these things. I mean, we're, we're now, because of the physiological imaging that's possible now where we can see calcium waves and we can see metabolic states and we can see bioelectric properties and so on, we can see them, we can visualize them in an individual, we can visualize them over time. They move, they move around, they do things, they're causal and by the way they spread across bodies. So we've published something and we have a lot more coming where you have actually multiple frog embryos. In addition, you can watch these patterns move between them. They belong to the group, they don't belong to the individual. And you know, so, so I think, so I think there is some kind of a path there. You know, how much of that is, it's going to make its way into what you guys do. I, I have no idea.",
+      "start_time": 1564450,
+      "end_time": 1697100,
+      "timestamp": "1564450.00s - 1697100.00s"
+    }
+  ]
+}

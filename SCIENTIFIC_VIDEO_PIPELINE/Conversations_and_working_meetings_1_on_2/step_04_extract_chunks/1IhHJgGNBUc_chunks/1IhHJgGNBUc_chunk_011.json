@@ -1,0 +1,86 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_011",
+  "semantic_text": "Amazing. And then the psychologist sort of takes control. And in a kind of very, you know, organized and manualized way over six or eight sessions or so, the, the, the. The. The patient enters into relation with this voice. And frequently there's a kind of slightly nasty dynamic that reflects the actual dynamic of the heard voice initially, but then it can kind of get a little bit more. A little less assertive. You know, the, the. The avatar starts to question itself. And the, the. The power dynamics are sort of subtly encouraging. And I mean, the results have been amazing. And of course, they've been two big randomized control trials, but they're already thinking about sort of taking it into OCD and eating disorders. There's been a small study already where you're the kind of. The eating disorder voice gets kind of externalized as this kind of avatar. But I think what's so interesting there is. It's essentially. It's an act of imagination, right? It's not like I, I feel like there's. There's something so creative that you're kind of. You're giving birth to this pseudo agent, and yet if you act with it like it's a real agent, then it, it kind of does the job anyway. And there's something that really I find very sort of fascinating. Fascinating but confusing that just acting as if seems to be enough in some cases for the. For the sort of therapeutic efficacy to get there. And I don't know whether or how that happens.",
+  "speaker": "multiple",
+  "speaker_name": "Multiple Speakers",
+  "speaker_role": "Multiple Roles",
+  "is_levin": true,
+  "speaker_order": "multiple",
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.777147",
+  "start_time": 801940,
+  "end_time": 895240,
+  "timestamp": "801940.00s - 895240.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "C",
+        "B"
+      ],
+      "speaker_details": {
+        "C": {
+          "speaker_id": "C",
+          "name": "Thomas Pollak",
+          "role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+          "is_levin": false,
+          "speaker_order": 3,
+          "additional_context": "neuropsychiatrist and researche",
+          "identified_at": "2025-08-22T11:46:00.876129"
+        },
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:46:00.876272"
+        }
+      },
+      "conversation_type": "dialogue"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 2,
+      "speaker_interaction_type": "dialogue",
+      "conversation_flow": [
+        "B: Amazing....",
+        "C: And then the psychologist sort of takes control. A..."
+      ],
+      "collaboration_pattern": "dialogue"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "Amazing.",
+      "start_time": 801940,
+      "end_time": 802500,
+      "timestamp": "801940.00s - 802500.00s"
+    },
+    {
+      "speaker_id": "C",
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "is_levin": false,
+      "speaker_order": 3,
+      "text": "And then the psychologist sort of takes control. And in a kind of very, you know, organized and manualized way over six or eight sessions or so, the, the, the. The. The patient enters into relation with this voice. And frequently there's a kind of slightly nasty dynamic that reflects the actual dynamic of the heard voice initially, but then it can kind of get a little bit more. A little less assertive. You know, the, the. The avatar starts to question itself. And the, the. The power dynamics are sort of subtly encouraging. And I mean, the results have been amazing. And of course, they've been two big randomized control trials, but they're already thinking about sort of taking it into OCD and eating disorders. There's been a small study already where you're the kind of. The eating disorder voice gets kind of externalized as this kind of avatar. But I think what's so interesting there is. It's essentially. It's an act of imagination, right? It's not like I, I feel like there's. There's something so creative that you're kind of. You're giving birth to this pseudo agent, and yet if you act with it like it's a real agent, then it, it kind of does the job anyway. And there's something that really I find very sort of fascinating. Fascinating but confusing that just acting as if seems to be enough in some cases for the. For the sort of therapeutic efficacy to get there. And I don't know whether or how that happens.",
+      "start_time": 802500,
+      "end_time": 895240,
+      "timestamp": "802500.00s - 895240.00s"
+    }
+  ]
+}

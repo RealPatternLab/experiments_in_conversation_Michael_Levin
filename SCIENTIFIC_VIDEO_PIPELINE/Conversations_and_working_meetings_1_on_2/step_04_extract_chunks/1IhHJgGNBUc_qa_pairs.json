@@ -1,0 +1,1232 @@
+[
+  {
+    "pair_id": "1IhHJgGNBUc_qa_000",
+    "question": {
+      "speaker": "C",
+      "text": "Yeah. So I'm a neuropsychiatrist working in London. I'm also a researcher at King's College London. I research, I guess you'd call it immunopsychiatry. So the relationship between the immune system and mental illness mainly is particularly focusing on psychosis and autoimmunity. Clinically, I guess as a neuropsychiatrist, I'm seeing patients with kind of you'd call neurological disorders, brain disorders who also present psychiatrically. Obviously those categories are a little bit problematic at some level. And a lot of the patients that I see are patients who have sort of brain inflammation and kind of immune problems with the brain. And it's interesting to see how they sort of what happens to them. But I guess the other area, the other patient group that I think would be super interesting if we had time of these patients who. They have a diagnosis called functional neurological disorder. And so these are patients who have symptoms that look very much like the symptoms that we see in neurology and neurosurgery, but there's no structural, organic cause that we can find. And there is this idea that there's a sort of a top down kind of etiology happening. And I think it touches on some of the nice ideas about sort of dissociation and placebo that I know you've written about.",
+      "is_levin": false,
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "speaker_order": 3,
+      "timestamp": "26580.00s - 104770.00s"
+    },
+    "answer": {
+      "speaker": "B",
+      "text": "Yeah, yeah, super interesting. You know, in particular, I was, I want to get your, your views on in these, this, this potential distinction between organic disease and quote unquote, psychological disease. And there's a concept that we, that I think about a lot, which is this, this, this notion of the thought that breaks the thinker, right? These, these, these thought patterns that are. There's nothing wrong with the system. It isn't broken, it isn't damaged. And that also attaches to some things that we've been doing in the aging field recently. And this idea that. So the typical theories of aging are either that it's an accumulation of noise and damage over time or that it's evolutionarily programmed in somehow. But there's also, I think there's kind of a cognitive perspective on things where it's actually certain things can happen and can go wrong not because of any damage or any, any problem, but as a Result of processing certain inputs. And what kind of. Right. What kind of inputs can trigger cognitive dynamics that then cause significant problems? And maybe eventually they too, filter down into the. Into the physical. Right. And they affect the. You know. But anyway, so. So that's. That's. That's the kind of stuff I. I was hoping we talk about today.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "106840.00s - 181760.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_001",
+    "question": {
+      "speaker": "B",
+      "text": "Yeah, yeah, super interesting. You know, in particular, I was, I want to get your, your views on in these, this, this potential distinction between organic disease and quote unquote, psychological disease. And there's a concept that we, that I think about a lot, which is this, this, this notion of the thought that breaks the thinker, right? These, these, these thought patterns that are. There's nothing wrong with the system. It isn't broken, it isn't damaged. And that also attaches to some things that we've been doing in the aging field recently. And this idea that. So the typical theories of aging are either that it's an accumulation of noise and damage over time or that it's evolutionarily programmed in somehow. But there's also, I think there's kind of a cognitive perspective on things where it's actually certain things can happen and can go wrong not because of any damage or any, any problem, but as a Result of processing certain inputs. And what kind of. Right. What kind of inputs can trigger cognitive dynamics that then cause significant problems? And maybe eventually they too, filter down into the. Into the physical. Right. And they affect the. You know. But anyway, so. So that's. That's. That's the kind of stuff I. I was hoping we talk about today.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "106840.00s - 181760.00s"
+    },
+    "answer": {
+      "speaker": "C",
+      "text": "Yeah, that's great. I mean, certainly what you said about the kind of aging process and the cognitive problems resonates a lot with a kind of group of patients that we've started seeing an awful lot recently. And again, why we didn't see them quite as much in the past, but we're seeing them a lot more, is one of these kind of mysteries that you get. But these are people who are. They don't have to be old, but often they are in the right age to start developing dementia. But. And they're complaining of these kind of cognitive symptoms, but then there is very clearly no neuropsychological deficits when you. When you test them. They don't have MRI scans that are suggestive of dementia. And even if you manage to get, like, a lumbar puncture on them and look for all those markers, they don't have those markers. The idea is some of these people are framed as having this kind of functional cognitive disorder. And it's like a variant of this functional neurological disorder that I was just talking about. And one way of sort of, I guess, thinking about it is the. I guess the automaticity with which we normally think becomes disrupted by. By some sort of misallocation of attention. Right. So the typical case is someone meets someone that they know very well, a friend or someone in the shop, and all of a sudden the name goes out of their head. And. And then. And. And I guess at this point, we. We're beginning to kind of impute what might be happening, but there's. There's some sort of a reaction, maybe an emotional reaction, or, you know, know, oh, God, what does this portend? Does this mean that.",
+      "is_levin": false,
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "speaker_order": 3,
+      "timestamp": "183200.00s - 294830.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_002",
+    "question": {
+      "speaker": "C",
+      "text": "Yeah, that's great. I mean, certainly what you said about the kind of aging process and the cognitive problems resonates a lot with a kind of group of patients that we've started seeing an awful lot recently. And again, why we didn't see them quite as much in the past, but we're seeing them a lot more, is one of these kind of mysteries that you get. But these are people who are. They don't have to be old, but often they are in the right age to start developing dementia. But. And they're complaining of these kind of cognitive symptoms, but then there is very clearly no neuropsychological deficits when you. When you test them. They don't have MRI scans that are suggestive of dementia. And even if you manage to get, like, a lumbar puncture on them and look for all those markers, they don't have those markers. The idea is some of these people are framed as having this kind of functional cognitive disorder. And it's like a variant of this functional neurological disorder that I was just talking about. And one way of sort of, I guess, thinking about it is the. I guess the automaticity with which we normally think becomes disrupted by. By some sort of misallocation of attention. Right. So the typical case is someone meets someone that they know very well, a friend or someone in the shop, and all of a sudden the name goes out of their head. And. And then. And. And I guess at this point, we. We're beginning to kind of impute what might be happening, but there's. There's some sort of a reaction, maybe an emotional reaction, or, you know, know, oh, God, what does this portend? Does this mean that.",
+      "is_levin": false,
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "speaker_order": 3,
+      "timestamp": "183200.00s - 294830.00s"
+    },
+    "answer": {
+      "speaker": "B",
+      "text": "That.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "294830.00s - 295030.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_003",
+    "question": {
+      "speaker": "C",
+      "text": "That. That my. My memory is getting worse? Am I getting dementia? That then causes a kind of reallocation of attentional resources away from the ensuing conversation. So more stuff gets forgotten, and you get this kind of runaway feedback loop that in a pretty short space of time can take over someone's life to the extent that they become absolutely convinced that they have a sort of degenerative sort of dementing condition. And. And we think that the kind of.",
+      "is_levin": false,
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "speaker_order": 3,
+      "timestamp": "295030.00s - 320280.00s"
+    },
+    "answer": {
+      "speaker": "A",
+      "text": "The.",
+      "is_levin": false,
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "speaker_order": 2,
+      "timestamp": "320280.00s - 320480.00s"
+    },
+    "levin_involved": false,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_004",
+    "question": {
+      "speaker": "C",
+      "text": "The kind of causal dynamics of that you see in other kinds of functional neurological disorder and and actually, it's kind of like what you see in the. The yips in sport or in, or in. In music. It's a. The loss of automaticity that comes from a kind of hyper focus on something that previously was overlearned. And then suddenly it just. It just breaks down. And, you know, it's like when, when I was. When I was young and I was trying to kind of walk past a pretty girl at school, and all of a sudden I'm trying to pay attention to the way my legs are working and, you know, I can't do it anymore. It's that sort of thing, I guess.",
+      "is_levin": false,
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "speaker_order": 3,
+      "timestamp": "320480.00s - 358470.00s"
+    },
+    "answer": {
+      "speaker": "A",
+      "text": "I had a quick comment about one of the aspects you've mentioned, Thomas, about, you know, dementia, non dementia. Sometimes it's a hard question to answer, and we need repeated neuropsych evaluations a year apart, and imaging data to investigate whether there is or there isn't dementia. But if we take it a step further into the progression of this condition, then one of the viewpoints is that what we see is disintegration. Proponents of the global workspace theory saying that you have this unity of consciousness as the sign of health. And I just wanted to bring it up because we talk a lot about Michael's viewpoint that all intelligences are collective. And I wanted to mention a couple of things in the DSM where it bumps very strongly into a prevalent fuse. But in dementia specifically, you start seeing fragments, you know, this sort of islands. And perhaps I'm quoting Lionel Nakash, a neurologist, and other colleagues, but to me, this is also an interesting viewpoint. If we just take one aspect of this conversation of integration and disintegration at different levels from different perspectives in health and pathology, I think that may be useful, maybe starting point.",
+      "is_levin": false,
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "speaker_order": 2,
+      "timestamp": "365510.00s - 436500.00s"
+    },
+    "levin_involved": false,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_005",
+    "question": {
+      "speaker": "A",
+      "text": "I had a quick comment about one of the aspects you've mentioned, Thomas, about, you know, dementia, non dementia. Sometimes it's a hard question to answer, and we need repeated neuropsych evaluations a year apart, and imaging data to investigate whether there is or there isn't dementia. But if we take it a step further into the progression of this condition, then one of the viewpoints is that what we see is disintegration. Proponents of the global workspace theory saying that you have this unity of consciousness as the sign of health. And I just wanted to bring it up because we talk a lot about Michael's viewpoint that all intelligences are collective. And I wanted to mention a couple of things in the DSM where it bumps very strongly into a prevalent fuse. But in dementia specifically, you start seeing fragments, you know, this sort of islands. And perhaps I'm quoting Lionel Nakash, a neurologist, and other colleagues, but to me, this is also an interesting viewpoint. If we just take one aspect of this conversation of integration and disintegration at different levels from different perspectives in health and pathology, I think that may be useful, maybe starting point.",
+      "is_levin": false,
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "speaker_order": 2,
+      "timestamp": "365510.00s - 436500.00s"
+    },
+    "answer": {
+      "speaker": "C",
+      "text": "Yeah, absolutely. I. I mean, I just. Maybe, Mike, this idea of the thought that breaks the thinker. I don't know whether the example I was giving is quite getting at what you were sort of thinking of. I know you've spoken about these, the way that obsessions can build a niche and, and I suspect that there's a similar thing going on in, in that example. But is that kind of the. The what you were getting at?",
+      "is_levin": false,
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "speaker_order": 3,
+      "timestamp": "440420.00s - 464340.00s"
+    },
+    "levin_involved": false,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_006",
+    "question": {
+      "speaker": "C",
+      "text": "Yeah, absolutely. I. I mean, I just. Maybe, Mike, this idea of the thought that breaks the thinker. I don't know whether the example I was giving is quite getting at what you were sort of thinking of. I know you've spoken about these, the way that obsessions can build a niche and, and I suspect that there's a similar thing going on in, in that example. But is that kind of the. The what you were getting at?",
+      "is_levin": false,
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "speaker_order": 3,
+      "timestamp": "440420.00s - 464340.00s"
+    },
+    "answer": {
+      "speaker": "B",
+      "text": "Yeah. So there's two things, both of which I would love to hear you guys talk about. One is what I think you were saying, the dynamics that takes place mostly at the psychological level, which is that you've had a thought and that leads you to a train of other thoughts which become maybe maladaptive, but also difficult to leave. Right. And so you Know, some I've seen, I don't know, maybe you guys have too. But some very high IQ individuals can get trapped into the stuff where they encounter some sort of, you know, they have some sort of existential crisis or something. And it, it's really quite debilitating where it wouldn't be for other people who just aren't that deep thinkers, you know, they just don't even go that far. But, but, but some people become trapped in this whirlwind of non big, you know, or, or they hear these, you know, human. I've actually seen it with, you know, what happened when I was, when I was doing philosophy, homeschooling my kid. I realized real quick that you got to be very careful with these things because they sometimes hear these ideas, you know, from, from, from human and girl and whatever and like, oh no. And you know, if you're, if it really just like screws up your, you know, your whole thing and climbing out of that can be hard. So, so that's, so that's one thing. But, but, but the other thing I'm also really interested in is the, is the niche construction. So, so once you've had certain kinds of thoughts and they start, they start sort of auto catalyzing themselves, do they in fact, and, and how much do they affect the underlying substrate? So do they actually induce measurable changes in the, in the neural, you know, I don't know what, whatever metric you would use, but do they actually make those kind of organic changes which then of course will facilitate their own, their own construction? I'm interested in that from the perspective of some of our work on thoughts as thinkers. So this idea that it's the patterns actually that can be, Well, I mean we're patterns too, but it's the patterns that can be the agents. And trying to look at some of these things from the perspective of thought patterns and memories that maybe have a drive to either persist or to change their environment or to. I don't know what they're actually driven to, but these are the kinds of things I've been thinking about.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "464980.00s - 585440.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_007",
+    "question": {
+      "speaker": "B",
+      "text": "Yeah. So there's two things, both of which I would love to hear you guys talk about. One is what I think you were saying, the dynamics that takes place mostly at the psychological level, which is that you've had a thought and that leads you to a train of other thoughts which become maybe maladaptive, but also difficult to leave. Right. And so you Know, some I've seen, I don't know, maybe you guys have too. But some very high IQ individuals can get trapped into the stuff where they encounter some sort of, you know, they have some sort of existential crisis or something. And it, it's really quite debilitating where it wouldn't be for other people who just aren't that deep thinkers, you know, they just don't even go that far. But, but, but some people become trapped in this whirlwind of non big, you know, or, or they hear these, you know, human. I've actually seen it with, you know, what happened when I was, when I was doing philosophy, homeschooling my kid. I realized real quick that you got to be very careful with these things because they sometimes hear these ideas, you know, from, from, from human and girl and whatever and like, oh no. And you know, if you're, if it really just like screws up your, you know, your whole thing and climbing out of that can be hard. So, so that's, so that's one thing. But, but, but the other thing I'm also really interested in is the, is the niche construction. So, so once you've had certain kinds of thoughts and they start, they start sort of auto catalyzing themselves, do they in fact, and, and how much do they affect the underlying substrate? So do they actually induce measurable changes in the, in the neural, you know, I don't know what, whatever metric you would use, but do they actually make those kind of organic changes which then of course will facilitate their own, their own construction? I'm interested in that from the perspective of some of our work on thoughts as thinkers. So this idea that it's the patterns actually that can be, Well, I mean we're patterns too, but it's the patterns that can be the agents. And trying to look at some of these things from the perspective of thought patterns and memories that maybe have a drive to either persist or to change their environment or to. I don't know what they're actually driven to, but these are the kinds of things I've been thinking about.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "464980.00s - 585440.00s"
+    },
+    "answer": {
+      "speaker": "C",
+      "text": "And in that example, does changing the environment or that niche construction, you're talking about it working on the substrate being the brain. But is there another perspective where the substrate is the behavioral space? Right. So with the guy with the functional cognitive disorder, the behavioral space changes because all of a sudden they're not going to parties, they're not going to that shop, or with somebody with an obsession, the behavioral repertoire changes. So that actually constructed a kind of behavioral niche and Actually, that may be the more obvious kind of niche construction that happens before there's a kind of bit of meat that gets changed, or would that still make sense?",
+      "is_levin": false,
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "speaker_order": 3,
+      "timestamp": "587690.00s - 628780.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_008",
+    "question": {
+      "speaker": "C",
+      "text": "And in that example, does changing the environment or that niche construction, you're talking about it working on the substrate being the brain. But is there another perspective where the substrate is the behavioral space? Right. So with the guy with the functional cognitive disorder, the behavioral space changes because all of a sudden they're not going to parties, they're not going to that shop, or with somebody with an obsession, the behavioral repertoire changes. So that actually constructed a kind of behavioral niche and Actually, that may be the more obvious kind of niche construction that happens before there's a kind of bit of meat that gets changed, or would that still make sense?",
+      "is_levin": false,
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "speaker_order": 3,
+      "timestamp": "587690.00s - 628780.00s"
+    },
+    "answer": {
+      "speaker": "B",
+      "text": "Sure, sure. Yeah. Yeah, That's. I mean, yeah, that's. All of that is, I think, part of it. And in general, I've been playing a lot with, trying to. Trying to map differently the metaphor of, like, the Turing machine metaphor. We've got the. You've got the hardware, and then there's some information patterns that it processes, and the data is passive, and then the machine is what does the work. So we've been doing a lot of thinking about how to flip that and see that from other perspectives. And in our work on the developmental side, is it that the body has bioelectric memories that guide morphogenesis? Or conversely, are the bioelectric patterns themselves the agent and the body's a scratch pad? So everything that happens in the gene expression space, in the cell, cell behavior, histologically and whatever is just. It's a scratch pad of what's actually, you know, what's. What's primary, which is the working out of these patterns and their own dynamics. So I think figuring out what's the. What's the, you know, what's the niche and what's the agent is very much, you know, not. Not obvious here at all. Yeah.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "628860.00s - 693190.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_009",
+    "question": {
+      "speaker": "B",
+      "text": "Sure, sure. Yeah. Yeah, That's. I mean, yeah, that's. All of that is, I think, part of it. And in general, I've been playing a lot with, trying to. Trying to map differently the metaphor of, like, the Turing machine metaphor. We've got the. You've got the hardware, and then there's some information patterns that it processes, and the data is passive, and then the machine is what does the work. So we've been doing a lot of thinking about how to flip that and see that from other perspectives. And in our work on the developmental side, is it that the body has bioelectric memories that guide morphogenesis? Or conversely, are the bioelectric patterns themselves the agent and the body's a scratch pad? So everything that happens in the gene expression space, in the cell, cell behavior, histologically and whatever is just. It's a scratch pad of what's actually, you know, what's. What's primary, which is the working out of these patterns and their own dynamics. So I think figuring out what's the. What's the, you know, what's the niche and what's the agent is very much, you know, not. Not obvious here at all. Yeah.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "628860.00s - 693190.00s"
+    },
+    "answer": {
+      "speaker": "C",
+      "text": "I mean, in. In some of our disorders, even more impressively than in. In the ones we were talking about, like in. In schizophrenia and psychosis, the thought, I guess, depending on what you're calling a thought here. Right. But this other agent that is perceived as being external, you know, at times takes full control over the body. Right. And it's not, you know, this is. It's doing stuff that even. Even in real time, the. The individual doesn't want being done. Their arm is being moved against. Against their will, or they're kind of acting in a way that they know is.",
+      "is_levin": false,
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "speaker_order": 3,
+      "timestamp": "693990.00s - 729400.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_010",
+    "question": {
+      "speaker": "C",
+      "text": "I mean, in. In some of our disorders, even more impressively than in. In the ones we were talking about, like in. In schizophrenia and psychosis, the thought, I guess, depending on what you're calling a thought here. Right. But this other agent that is perceived as being external, you know, at times takes full control over the body. Right. And it's not, you know, this is. It's doing stuff that even. Even in real time, the. The individual doesn't want being done. Their arm is being moved against. Against their will, or they're kind of acting in a way that they know is.",
+      "is_levin": false,
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "speaker_order": 3,
+      "timestamp": "693990.00s - 729400.00s"
+    },
+    "answer": {
+      "speaker": "B",
+      "text": "Is. Is. Is.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "729400.00s - 730470.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_011",
+    "question": {
+      "speaker": "C",
+      "text": "Is potentially harmful to them. So, I mean, I guess it's. I mean, there have been these. These great examples of, you know, I guess in psychiatry we can be very deflationary and. And talk about that agent as a fiction. And the point of psychiatry is to kind of bash that perspective out of the patient with medications or therapy or whatever. But I think there are other approaches that actually, I guess more consistent with the way you might be thinking about things is, well, what happens if you engage with it relationally as an agent? And I'm just thinking in my university, there's this wonderful trial of something Called Avatar therapy, where people that have these distressing voices that, you know, can. They say awful things to the patient, they take control of them, and, you know, they have all this kind of psychological baggage with it. The patient sits down with a therapist and they construct an avatar on a computer screen that has the same voice as the voice they hear and kind of looks the same.",
+      "is_levin": false,
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "speaker_order": 3,
+      "timestamp": "730470.00s - 801620.00s"
+    },
+    "answer": {
+      "speaker": "B",
+      "text": "Amazing.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "801940.00s - 802500.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_012",
+    "question": {
+      "speaker": "C",
+      "text": "And then the psychologist sort of takes control. And in a kind of very, you know, organized and manualized way over six or eight sessions or so, the, the, the. The. The patient enters into relation with this voice. And frequently there's a kind of slightly nasty dynamic that reflects the actual dynamic of the heard voice initially, but then it can kind of get a little bit more. A little less assertive. You know, the, the. The avatar starts to question itself. And the, the. The power dynamics are sort of subtly encouraging. And I mean, the results have been amazing. And of course, they've been two big randomized control trials, but they're already thinking about sort of taking it into OCD and eating disorders. There's been a small study already where you're the kind of. The eating disorder voice gets kind of externalized as this kind of avatar. But I think what's so interesting there is. It's essentially. It's an act of imagination, right? It's not like I, I feel like there's. There's something so creative that you're kind of. You're giving birth to this pseudo agent, and yet if you act with it like it's a real agent, then it, it kind of does the job anyway. And there's something that really I find very sort of fascinating. Fascinating but confusing that just acting as if seems to be enough in some cases for the. For the sort of therapeutic efficacy to get there. And I don't know whether or how that happens.",
+      "is_levin": false,
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "speaker_order": 3,
+      "timestamp": "802500.00s - 895240.00s"
+    },
+    "answer": {
+      "speaker": "B",
+      "text": "Amazing. That makes me think of two things. One is there are these ancient traditions where thought forms are a thing. And not only that, but you can bind the thought forms to specific objects. Now, back in the day, they didn't have AI avatars and things like that, so these would be much more passive objects or things that. Dolls and things like this. Right. So there is that whole. And, and, and the other thing that this, this reminds me of is, you know, the, the therapy for phantom limb syndrome. Have you seen this stuff? Right. So, so, so similar, right. You're providing an avatar for the, for the limb that isn't there. You're basically unclenching through the mirror, you know, from. By mirroring the other hand, you can Sort of unclench the one that's missing and that, that then eventually becomes the, the, you know, the new, the new reality. So I think, I think, I think that's extremely interesting offloading. That's a new and very useful use for AI as a kind of, you know, all VR and all these avatars and things as a way to improve our dialogue with systems. I mean, it matches nicely our attempted use of AI now as a translator tool to other intelligences that you wouldn't be able to see. So we're working on, you know, communicating with your organs and with cells and things like that. That would make it much harder. Normally it's pretty hard to do, but, but these, these kind of technologies are good for that.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "895800.00s - 984870.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_013",
+    "question": {
+      "speaker": "B",
+      "text": "Amazing. That makes me think of two things. One is there are these ancient traditions where thought forms are a thing. And not only that, but you can bind the thought forms to specific objects. Now, back in the day, they didn't have AI avatars and things like that, so these would be much more passive objects or things that. Dolls and things like this. Right. So there is that whole. And, and, and the other thing that this, this reminds me of is, you know, the, the therapy for phantom limb syndrome. Have you seen this stuff? Right. So, so, so similar, right. You're providing an avatar for the, for the limb that isn't there. You're basically unclenching through the mirror, you know, from. By mirroring the other hand, you can Sort of unclench the one that's missing and that, that then eventually becomes the, the, you know, the new, the new reality. So I think, I think, I think that's extremely interesting offloading. That's a new and very useful use for AI as a kind of, you know, all VR and all these avatars and things as a way to improve our dialogue with systems. I mean, it matches nicely our attempted use of AI now as a translator tool to other intelligences that you wouldn't be able to see. So we're working on, you know, communicating with your organs and with cells and things like that. That would make it much harder. Normally it's pretty hard to do, but, but these, these kind of technologies are good for that.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "895800.00s - 984870.00s"
+    },
+    "answer": {
+      "speaker": "A",
+      "text": "I was thinking about the problem when it's posed as, you know, the thought that breaks the thinker. And part of me wants to say that what we're doing here in terms of modeling is a modular approach where we break functional functions into modules. These are thoughts and these are other things. And I think that in systems approach, you know, the thought is never alone. There is affect, there is generalized arousal, there's biology and all of these other things. I think thought is a low hanging fruit. We're very aware of it in our conscious minds and thoughts are stabilized in working memory. I want an apple is a series of three things that I strung together and I maintain it, you know, in the working memory in this global workspace. But while I am having it, I have a thing happening in my body. Perhaps a low blood sugar. It's a process, it's dynamic, it's up and down, it's sort of. And I think that if we take the extreme example of, you know, suicidal thought, thought that results in irreversible, catastrophic destruction of a body, it is also not the thought that kills. You know, there's hopelessness, which is the highest correlation with completed suicides. There is helplessness, nobody can do anything. You know, there is history and memories that drive the predictions forward. They're all black and negative predictions. There's the mood tone and, and part of me wants to think that if we model these things, we certainly need to include affects which, which are structured differently and, and work differently and sometimes a wordless and homeostat kind of similar, more so than the thought.",
+      "is_levin": false,
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "speaker_order": 2,
+      "timestamp": "986070.00s - 1073760.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_014",
+    "question": {
+      "speaker": "A",
+      "text": "I was thinking about the problem when it's posed as, you know, the thought that breaks the thinker. And part of me wants to say that what we're doing here in terms of modeling is a modular approach where we break functional functions into modules. These are thoughts and these are other things. And I think that in systems approach, you know, the thought is never alone. There is affect, there is generalized arousal, there's biology and all of these other things. I think thought is a low hanging fruit. We're very aware of it in our conscious minds and thoughts are stabilized in working memory. I want an apple is a series of three things that I strung together and I maintain it, you know, in the working memory in this global workspace. But while I am having it, I have a thing happening in my body. Perhaps a low blood sugar. It's a process, it's dynamic, it's up and down, it's sort of. And I think that if we take the extreme example of, you know, suicidal thought, thought that results in irreversible, catastrophic destruction of a body, it is also not the thought that kills. You know, there's hopelessness, which is the highest correlation with completed suicides. There is helplessness, nobody can do anything. You know, there is history and memories that drive the predictions forward. They're all black and negative predictions. There's the mood tone and, and part of me wants to think that if we model these things, we certainly need to include affects which, which are structured differently and, and work differently and sometimes a wordless and homeostat kind of similar, more so than the thought.",
+      "is_levin": false,
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "speaker_order": 2,
+      "timestamp": "986070.00s - 1073760.00s"
+    },
+    "answer": {
+      "speaker": "B",
+      "text": "I got kind of a, kind of a weird question for these, as you guys mentioned, these voices that tend to be very negative and destructive and all that. Is there ever a positive version of this in the clinical literature? Does anybody say, I've got this Voice. And it's amazing. It builds me up, it tells me how great I am. It has good ideas. It tells me to do stuff I otherwise was afraid to do. Like, amazing. Does that. Does that ever happen or is it always a negative thing?",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "1076160.00s - 1101400.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_015",
+    "question": {
+      "speaker": "B",
+      "text": "I got kind of a, kind of a weird question for these, as you guys mentioned, these voices that tend to be very negative and destructive and all that. Is there ever a positive version of this in the clinical literature? Does anybody say, I've got this Voice. And it's amazing. It builds me up, it tells me how great I am. It has good ideas. It tells me to do stuff I otherwise was afraid to do. Like, amazing. Does that. Does that ever happen or is it always a negative thing?",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "1076160.00s - 1101400.00s"
+    },
+    "answer": {
+      "speaker": "C",
+      "text": "Yeah, absolutely. And I think we're just beginning to appreciate how common it is. And I think, as you'd expect, that there's such a sort of. There's a continuity to some extent. Right. I mean, I get in trouble with colleagues if I say that it's kind of purely dimensional. But yeah, there are people who hear voices who only experience positive, you know, things being said. There are people who once experienced very negative things and who had the right kind of treatment or just one day, you know, thing, things got better. And I think, I guess I see that on a continuity, really, with. So, for example, I'm one of the 10% of people who don't hear thoughts verbally. I have them as images. And I kind of assume that, you know, there's probably no sharp discontinuity between somebody having verbal thoughts. You know, I'm hungry, I need to go to the gym. And then, you know, eventually someone hearing. Hearing voices. Because of course, you can hear first person voices. That kind of feel a little bit like my own. But maybe not. And I'm sure that no matter where you look, you will never be able to find a point where there is a sharp discontinuity there. But in recent years, there are things like the hearing voices movement, which is a kind of quite a kind of powerful and lovely movement, kind of trying to reclaim these experiences away from the, you know, the. The medical establishment.",
+      "is_levin": false,
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "speaker_order": 3,
+      "timestamp": "1102600.00s - 1189920.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_016",
+    "question": {
+      "speaker": "C",
+      "text": "Yeah, absolutely. And I think we're just beginning to appreciate how common it is. And I think, as you'd expect, that there's such a sort of. There's a continuity to some extent. Right. I mean, I get in trouble with colleagues if I say that it's kind of purely dimensional. But yeah, there are people who hear voices who only experience positive, you know, things being said. There are people who once experienced very negative things and who had the right kind of treatment or just one day, you know, thing, things got better. And I think, I guess I see that on a continuity, really, with. So, for example, I'm one of the 10% of people who don't hear thoughts verbally. I have them as images. And I kind of assume that, you know, there's probably no sharp discontinuity between somebody having verbal thoughts. You know, I'm hungry, I need to go to the gym. And then, you know, eventually someone hearing. Hearing voices. Because of course, you can hear first person voices. That kind of feel a little bit like my own. But maybe not. And I'm sure that no matter where you look, you will never be able to find a point where there is a sharp discontinuity there. But in recent years, there are things like the hearing voices movement, which is a kind of quite a kind of powerful and lovely movement, kind of trying to reclaim these experiences away from the, you know, the. The medical establishment.",
+      "is_levin": false,
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "speaker_order": 3,
+      "timestamp": "1102600.00s - 1189920.00s"
+    },
+    "answer": {
+      "speaker": "A",
+      "text": "I guess just to add nuance to what, what Thomas just said and what Michael, you asked. I think that the positive versus negative voice is the affect. It's not the thought. The thought in and of itself, it's neutral. It has no valence. But, you know, in psychosis literature, you know, and I'm quoting Mark Solmes and others, we often see the direction of wishful thinking. For example, person with Korsakov, you know, syndrome who cannot retrieve memories or find them fluently. And he confabulates. He tends to confabulate in the direction of what he wants. When he doesn't remember what happened yesterday, he's not going to say, you know, I was like, you know, working out in the gym. He says, I saw my brother John, and we were just, you know, gossiping and having beers. He will tell you in the direction of where he wants to go. Oftentimes we see the same phenomenon in the dreams and other things. But this is where kind of the feeling of the gap happens in the direction of what's missing and what the person wants.",
+      "is_levin": false,
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "speaker_order": 2,
+      "timestamp": "1190160.00s - 1243820.00s"
+    },
+    "levin_involved": false,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_017",
+    "question": {
+      "speaker": "A",
+      "text": "I guess just to add nuance to what, what Thomas just said and what Michael, you asked. I think that the positive versus negative voice is the affect. It's not the thought. The thought in and of itself, it's neutral. It has no valence. But, you know, in psychosis literature, you know, and I'm quoting Mark Solmes and others, we often see the direction of wishful thinking. For example, person with Korsakov, you know, syndrome who cannot retrieve memories or find them fluently. And he confabulates. He tends to confabulate in the direction of what he wants. When he doesn't remember what happened yesterday, he's not going to say, you know, I was like, you know, working out in the gym. He says, I saw my brother John, and we were just, you know, gossiping and having beers. He will tell you in the direction of where he wants to go. Oftentimes we see the same phenomenon in the dreams and other things. But this is where kind of the feeling of the gap happens in the direction of what's missing and what the person wants.",
+      "is_levin": false,
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "speaker_order": 2,
+      "timestamp": "1190160.00s - 1243820.00s"
+    },
+    "answer": {
+      "speaker": "B",
+      "text": "Sometimes in the cases that you just mentioned, where the negative voices become, over time, more positive, do you see that as providing therapy to the voice itself? Or are you still like, has the voice gotten better because you've sort of resolved its issues, so to speak? Is that a way to think about it?",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "1243820.00s - 1265220.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_018",
+    "question": {
+      "speaker": "B",
+      "text": "Sometimes in the cases that you just mentioned, where the negative voices become, over time, more positive, do you see that as providing therapy to the voice itself? Or are you still like, has the voice gotten better because you've sort of resolved its issues, so to speak? Is that a way to think about it?",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "1243820.00s - 1265220.00s"
+    },
+    "answer": {
+      "speaker": "C",
+      "text": "Yeah, I would say that most people in my field really don't engage with the voices or the characters behind the voices in any way at all. I think probably in psychological therapies there might be a little bit more of that, but I imagine probably not too much either. No, they are seen really as symptoms of. Of an illness. And, And. And my feeling is that, you know, if one day someone's voice is no longer heard as the devil and it's now heard as God and it's saying. And they're saying good things, that's probably interpreted by most people in the profession as, you know, a migraine that suddenly got a bit. A bit more pleasant. You know, it's. It's just a symptom changing. And I. I don't think that's the right way to. To think about it. But I suppose from the clinical perspective, as soon as the voice gets good, it's kind of. It's not your problem anymore.",
+      "is_levin": false,
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "speaker_order": 3,
+      "timestamp": "1268490.00s - 1324040.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_019",
+    "question": {
+      "speaker": "A",
+      "text": "I agree. I think we don't work with this symptom necessarily in therapy specifically, we're trying to work with a patient. And I think voice. I mean, general principle, I think in psychiatry, don't argue with the delusion. We're not trying to talk him out of it, because when you do, it becomes more entrenched. But, you know, with. We try to make sense of the symptom. We try to come up with a hypothesis where what's happening makes some sense. And oftentimes people come into therapy with an explanatory gap, such as they're saying, I feel badly, but I don't exactly know what it is and how it came about, or I'm doing this thing. I keep on doing it over and over, and I know I shouldn't be doing it, but I'm doing it anyway. And part of the work initially is to sort of fill in this gap with the hypothesis, to make sense of what's happening, why it's happening, and then to do certain things together over a long period of time. But typically, I don't think the voice is itself is targeted I agree with Thomas here.",
+      "is_levin": false,
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "speaker_order": 2,
+      "timestamp": "1326440.00s - 1378880.00s"
+    },
+    "answer": {
+      "speaker": "B",
+      "text": "Yeah, I think, you know, I think, I think it's interesting to, I, I, I, I'm, there's a distinction, I think, between arguing with the patient about the delusion versus saying to what extent, like how much, how much agency does the delusion itself have? It could be very low, but probably not as high as the, you know, as the, as the actual patient, but it, but it might not be zero. Right. And yeah, I'm thinking of these kinds of things in biomedicine too. Now nowadays where normally we focus on the physical machine and we think that if we fix the machine, the information patterns will get better, but I also think there might be scenarios where the driving force is the pattern itself and that what you, your actual target is not the physical substrate, it's the, it's the pattern. Whether that be a pattern of stress or an incorrect anatomical, you know, bioelectrical pre pattern, a memory, and it's actually you're trying to engage with it. And I don't know too, I mean, these are all empirical questions, so I guess we'll find out. But I don't know to what extent treating them as not, you know, as having less reality or as being mechanical and not actual, you know, mini thinkers or whatever. I don't know to what extent that really is the top of what we can do. I think, I think there might be scenarios where these things are actually doing their own goal directed computation. And there might be payoff in, in at least on the biomedical side, I don't know. On the psychological side, there might be payoff in engaging with them and their needs and their stressors and, and you know, whatever it is that's driving that, that pattern as distinct from what the, what the larger system is experiencing.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "1379600.00s - 1476800.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_020",
+    "question": {
+      "speaker": "B",
+      "text": "Yeah, I think, you know, I think, I think it's interesting to, I, I, I, I'm, there's a distinction, I think, between arguing with the patient about the delusion versus saying to what extent, like how much, how much agency does the delusion itself have? It could be very low, but probably not as high as the, you know, as the, as the actual patient, but it, but it might not be zero. Right. And yeah, I'm thinking of these kinds of things in biomedicine too. Now nowadays where normally we focus on the physical machine and we think that if we fix the machine, the information patterns will get better, but I also think there might be scenarios where the driving force is the pattern itself and that what you, your actual target is not the physical substrate, it's the, it's the pattern. Whether that be a pattern of stress or an incorrect anatomical, you know, bioelectrical pre pattern, a memory, and it's actually you're trying to engage with it. And I don't know too, I mean, these are all empirical questions, so I guess we'll find out. But I don't know to what extent treating them as not, you know, as having less reality or as being mechanical and not actual, you know, mini thinkers or whatever. I don't know to what extent that really is the top of what we can do. I think, I think there might be scenarios where these things are actually doing their own goal directed computation. And there might be payoff in, in at least on the biomedical side, I don't know. On the psychological side, there might be payoff in engaging with them and their needs and their stressors and, and you know, whatever it is that's driving that, that pattern as distinct from what the, what the larger system is experiencing.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "1379600.00s - 1476800.00s"
+    },
+    "answer": {
+      "speaker": "C",
+      "text": "And, and I think that's probably what got me so excited about some of what you've been writing. Anyway. You, I mean, I think you use the phrase the space of possible minds. And, and at some point the phrase the space of possible patients came to me. Right. Like, you know, if we're, we're treating, either we treat people or we treat maybe their neurotransmitter receptors or something. And it, it seems to me like there's there's a whole lot in between that could be potential targets. And, and, and it's funny because, like in this Avatar therapy example, you've kind of got to give it a little bit of a boost. You've kind of got to do a little bit of, you know, animistic magic or something to make these, these agents solid enough to interact with. But it just strikes me that maybe there's this whole set of practices or set of, you know, possibilities that involve granting a degree of autonom or somehow boosting the autonomy or the reality or the solidity of, of these sub agents so that you can then enter and enter into a relationship with them. And again, I think there are all kinds of ways that one could do that, but they all sound a bit woo woo. And I don't think medicine has a grasp on it yet. And I don't see what, I'm not sure what they would, what the analogs of that would look like in sort of more basic biomedicine either, or whether they.",
+      "is_levin": false,
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "speaker_order": 3,
+      "timestamp": "1477439.00s - 1563010.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_021",
+    "question": {
+      "speaker": "C",
+      "text": "And, and I think that's probably what got me so excited about some of what you've been writing. Anyway. You, I mean, I think you use the phrase the space of possible minds. And, and at some point the phrase the space of possible patients came to me. Right. Like, you know, if we're, we're treating, either we treat people or we treat maybe their neurotransmitter receptors or something. And it, it seems to me like there's there's a whole lot in between that could be potential targets. And, and, and it's funny because, like in this Avatar therapy example, you've kind of got to give it a little bit of a boost. You've kind of got to do a little bit of, you know, animistic magic or something to make these, these agents solid enough to interact with. But it just strikes me that maybe there's this whole set of practices or set of, you know, possibilities that involve granting a degree of autonom or somehow boosting the autonomy or the reality or the solidity of, of these sub agents so that you can then enter and enter into a relationship with them. And again, I think there are all kinds of ways that one could do that, but they all sound a bit woo woo. And I don't think medicine has a grasp on it yet. And I don't see what, I'm not sure what they would, what the analogs of that would look like in sort of more basic biomedicine either, or whether they.",
+      "is_levin": false,
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "speaker_order": 3,
+      "timestamp": "1477439.00s - 1563010.00s"
+    },
+    "answer": {
+      "speaker": "B",
+      "text": "Yeah, I mean, one, one way. So, so there's one discipline where that kind of thing is completely normal, and that's computer science. Right. Because in computer science we are very comfortable with having interactions with systems that are not actually physical. So you've got an algorithm. The algorithm that's running will have memories, it may have goals, it may have, you know, and you can, you can communicate with it, you can provide input. And somebody could say, look, there is no algorithm, there's just silicon and copper and electrons right here. You know, this is a fiction. But we all know in computer science that that kind of reduction doesn't actually get you anywhere. That treating the algorithm as the real thing, it really does make the electrons dance in an important sense. And so we're okay with then focusing on managing these patterns that are not the actual. I mean, some people obviously work in hardware, but many people don't. And so I think we can, at least on the biomedical side, I think we can have models in which we treat the actual cellular substrate as the memory, as the tape. That's the scratch pad actually. And what's really driving it is an algorithm that's embedded in some kind of information dynamic that it might be some sort of active inference thing, it might be some other thing. But I do think there is a path there that is not in the sense that we have tools now, we have conceptual and we have practical tools at the bench to start looking at some of these things. I mean, we're, we're now, because of the physiological imaging that's possible now where we can see calcium waves and we can see metabolic states and we can see bioelectric properties and so on, we can see them, we can visualize them in an individual, we can visualize them over time. They move, they move around, they do things, they're causal and by the way they spread across bodies. So we've published something and we have a lot more coming where you have actually multiple frog embryos. In addition, you can watch these patterns move between them. They belong to the group, they don't belong to the individual. And you know, so, so I think, so I think there is some kind of a path there. You know, how much of that is, it's going to make its way into what you guys do. I, I have no idea.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "1564450.00s - 1697100.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_022",
+    "question": {
+      "speaker": "B",
+      "text": "Yeah, I mean, one, one way. So, so there's one discipline where that kind of thing is completely normal, and that's computer science. Right. Because in computer science we are very comfortable with having interactions with systems that are not actually physical. So you've got an algorithm. The algorithm that's running will have memories, it may have goals, it may have, you know, and you can, you can communicate with it, you can provide input. And somebody could say, look, there is no algorithm, there's just silicon and copper and electrons right here. You know, this is a fiction. But we all know in computer science that that kind of reduction doesn't actually get you anywhere. That treating the algorithm as the real thing, it really does make the electrons dance in an important sense. And so we're okay with then focusing on managing these patterns that are not the actual. I mean, some people obviously work in hardware, but many people don't. And so I think we can, at least on the biomedical side, I think we can have models in which we treat the actual cellular substrate as the memory, as the tape. That's the scratch pad actually. And what's really driving it is an algorithm that's embedded in some kind of information dynamic that it might be some sort of active inference thing, it might be some other thing. But I do think there is a path there that is not in the sense that we have tools now, we have conceptual and we have practical tools at the bench to start looking at some of these things. I mean, we're, we're now, because of the physiological imaging that's possible now where we can see calcium waves and we can see metabolic states and we can see bioelectric properties and so on, we can see them, we can visualize them in an individual, we can visualize them over time. They move, they move around, they do things, they're causal and by the way they spread across bodies. So we've published something and we have a lot more coming where you have actually multiple frog embryos. In addition, you can watch these patterns move between them. They belong to the group, they don't belong to the individual. And you know, so, so I think, so I think there is some kind of a path there. You know, how much of that is, it's going to make its way into what you guys do. I, I have no idea.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "1564450.00s - 1697100.00s"
+    },
+    "answer": {
+      "speaker": "A",
+      "text": "I think Michael, what you are focused on, and this is very useful is the active phase of treatment. So, and you bring up the computer science metaphor. Let's say the API, the interface, you know, at what level of the hierarchy do intervene in. At the very top, at the very bottom, mid tier. And what's the interface and how, like whether it's bioelectric interface or something. And you know, the, the difference is that, you know, in say trauma therapy with dissociations, we usually have a phased approach where if the patient is dead, it doesn't matter what technique I use. So the first thing we do is stabilization. What I'm trying to say is the API is the relationship with the clinician always. We have a vast amount of literature that without it nothing happens. No matter what avatars or AIs or psychedelics people use because they cannot think, because they feel, you know, they're sort of flooded by affect and they, they can't, you know, take advantage of any communication with any interface. Right. So one is reduction of suicidality, reduction of non suicidal self harm behavior, substance use, basic kind of grounding. And after that we move to perhaps trauma therapy if we see trauma. So we need a model of a condition, is the etiological cause of the symptoms. And we don't target the voice or the dissociation, target the trauma. And then there's a phase of treatment which I think has to do with what you mentioned, which is sort of reintegration where we try to, I mean we generally move back toward that unity, the mental, the subjective unity. And at that point there's possibilities for all these things and, and also in the trauma therapy. But I just wanted to say that this is sort of the pathway we usually go through. And I don't know any way around. Even in, in pharmacological psychiatry we have this interesting thing called psychiatrist effect effect where the exact same medication and exact same doses prescribed by two different psychiatrists and that one has higher efficacy numbers because it is human, it's interaction. And, and this human interaction has biology. The pen system gets activated we're trying to lead the patient from disorganized, feeling insecure in a relationship to earn secure attachment. But then from there we move forward. But we have to build that foundation first. We never just start with like, let's do trauma treatment on the first session or second session conditions.",
+      "is_levin": false,
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "speaker_order": 2,
+      "timestamp": "1698300.00s - 1826290.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_023",
+    "question": {
+      "speaker": "A",
+      "text": "I think Michael, what you are focused on, and this is very useful is the active phase of treatment. So, and you bring up the computer science metaphor. Let's say the API, the interface, you know, at what level of the hierarchy do intervene in. At the very top, at the very bottom, mid tier. And what's the interface and how, like whether it's bioelectric interface or something. And you know, the, the difference is that, you know, in say trauma therapy with dissociations, we usually have a phased approach where if the patient is dead, it doesn't matter what technique I use. So the first thing we do is stabilization. What I'm trying to say is the API is the relationship with the clinician always. We have a vast amount of literature that without it nothing happens. No matter what avatars or AIs or psychedelics people use because they cannot think, because they feel, you know, they're sort of flooded by affect and they, they can't, you know, take advantage of any communication with any interface. Right. So one is reduction of suicidality, reduction of non suicidal self harm behavior, substance use, basic kind of grounding. And after that we move to perhaps trauma therapy if we see trauma. So we need a model of a condition, is the etiological cause of the symptoms. And we don't target the voice or the dissociation, target the trauma. And then there's a phase of treatment which I think has to do with what you mentioned, which is sort of reintegration where we try to, I mean we generally move back toward that unity, the mental, the subjective unity. And at that point there's possibilities for all these things and, and also in the trauma therapy. But I just wanted to say that this is sort of the pathway we usually go through. And I don't know any way around. Even in, in pharmacological psychiatry we have this interesting thing called psychiatrist effect effect where the exact same medication and exact same doses prescribed by two different psychiatrists and that one has higher efficacy numbers because it is human, it's interaction. And, and this human interaction has biology. The pen system gets activated we're trying to lead the patient from disorganized, feeling insecure in a relationship to earn secure attachment. But then from there we move forward. But we have to build that foundation first. We never just start with like, let's do trauma treatment on the first session or second session conditions.",
+      "is_levin": false,
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "speaker_order": 2,
+      "timestamp": "1698300.00s - 1826290.00s"
+    },
+    "answer": {
+      "speaker": "B",
+      "text": "Is that, is that the same or related to this, this idea of the therapeutic alliance is that kind of thing? Yeah.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "1828210.00s - 1835730.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_024",
+    "question": {
+      "speaker": "B",
+      "text": "Is that, is that the same or related to this, this idea of the therapeutic alliance is that kind of thing? Yeah.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "1828210.00s - 1835730.00s"
+    },
+    "answer": {
+      "speaker": "A",
+      "text": "Which in and of itself doesn't heal it, but it's a necessary condition. Without it, nothing happens. We need to build it first. And that's usually the first stage of therapies.",
+      "is_levin": false,
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "speaker_order": 2,
+      "timestamp": "1836210.00s - 1843570.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_025",
+    "question": {
+      "speaker": "A",
+      "text": "Which in and of itself doesn't heal it, but it's a necessary condition. Without it, nothing happens. We need to build it first. And that's usually the first stage of therapies.",
+      "is_levin": false,
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "speaker_order": 2,
+      "timestamp": "1836210.00s - 1843570.00s"
+    },
+    "answer": {
+      "speaker": "B",
+      "text": "Yeah, yeah, yeah. I, I think a lot about what that looks like in the, in the regenerative medicine space. Right. So what's the, what's the somatic version of this? You know, how do you, like, like one simple way to imagine it is, you know, we've got these experiments where we're, we're working on limb regeneration and there's this wearable bioreactor that fits onto the amputation wound and then you deliver, you know, the payload or whatever that might be. And like, one of the things that I think that does is actually because, because the biodome itself, without any drugs in it, actually has, has some positive effect. Not as much as the combination, but it has some. And the idea might be that what is happening is that it convinces the cells that there is hope to regenerate. Right. It's a controlled environment. You know, they're not like all the, the compounds and everything they're making isn't just disappearing off into the, into the infinite web bath. But, but, but it's actually like they have some control, right? So they have some agency over the environment. They can tell because that you have this, this autocratic release something. And, and yeah, there it is. It's not like, gone. So, so, so it's almost like step one is, is to, is to convince the cells and tissues that this isn't, this is a safe environment that you, you know, you're going to be able to complete this, this task. Right, like that, like you said, that's not enough, but it's, but it's a crucial, you know, it's a crucial part. So that's kind of a wacky way to think about it. But I, yeah, I, I, I think it, it might have important analogies in other aspects of the regenera.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "1845570.00s - 1929160.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_026",
+    "question": {
+      "speaker": "B",
+      "text": "Yeah, yeah, yeah. I, I think a lot about what that looks like in the, in the regenerative medicine space. Right. So what's the, what's the somatic version of this? You know, how do you, like, like one simple way to imagine it is, you know, we've got these experiments where we're, we're working on limb regeneration and there's this wearable bioreactor that fits onto the amputation wound and then you deliver, you know, the payload or whatever that might be. And like, one of the things that I think that does is actually because, because the biodome itself, without any drugs in it, actually has, has some positive effect. Not as much as the combination, but it has some. And the idea might be that what is happening is that it convinces the cells that there is hope to regenerate. Right. It's a controlled environment. You know, they're not like all the, the compounds and everything they're making isn't just disappearing off into the, into the infinite web bath. But, but, but it's actually like they have some control, right? So they have some agency over the environment. They can tell because that you have this, this autocratic release something. And, and yeah, there it is. It's not like, gone. So, so, so it's almost like step one is, is to, is to convince the cells and tissues that this isn't, this is a safe environment that you, you know, you're going to be able to complete this, this task. Right, like that, like you said, that's not enough, but it's, but it's a crucial, you know, it's a crucial part. So that's kind of a wacky way to think about it. But I, yeah, I, I, I think it, it might have important analogies in other aspects of the regenera.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "1845570.00s - 1929160.00s"
+    },
+    "answer": {
+      "speaker": "A",
+      "text": "Exactly right. I think what, what you're doing there is you're telling the cell collective or tissue, for example, that, you know, I speak your language and it's okay, to talk to me. And if you use a different API, different interface and like, who are you? You're not me. I'm not going to talk, I'm not going to engage. So you find the circumstances, you create the context in which the communication that is healing becomes possible. So.",
+      "is_levin": false,
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "speaker_order": 2,
+      "timestamp": "1932240.00s - 1951120.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_027",
+    "question": {
+      "speaker": "A",
+      "text": "Exactly right. I think what, what you're doing there is you're telling the cell collective or tissue, for example, that, you know, I speak your language and it's okay, to talk to me. And if you use a different API, different interface and like, who are you? You're not me. I'm not going to talk, I'm not going to engage. So you find the circumstances, you create the context in which the communication that is healing becomes possible. So.",
+      "is_levin": false,
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "speaker_order": 2,
+      "timestamp": "1932240.00s - 1951120.00s"
+    },
+    "answer": {
+      "speaker": "C",
+      "text": "Mike, you've spoken about your, your anthrobot, is that, that's what they're called, right? And, and the notion that, you know, in the future they could be used therapeutically as a sort of non immunogenic agents that, you know, you can put inside the organism and then they can do, they can do their thing. Right. And again, I keep on trying to sort of see other analogies kind of psychologically that, that, that one can do here and it gets, it gets a bit weird, right? But like, is, is there a, you know, is there something that's made out of, of the same psychic DNA as us that is much, much smaller and maybe a bit more stupid, but acting when you've got loads of them, you know, when they're in there, they, you know, they, they can do a good job. And, and which, because it's made from the same sort of stuff as you, doesn't elicit the, you know, the, that sort of rejection. Right. Like, and, and in a way, part of the therapeutic alliance that, I guess what Alexia is talking about is, is, is a smoothing over of that possibility of rejection. I mean, the number of times, the first time I meet a patient, things are pretty rough. And then over, you know, over, over the weeks and months they might smooth down. But. Yeah, and again, there's the. I guess I run the risk of kind of caricaturing things because what Alexei does is so sort of subtle and nuanced and I'm kind of coming at it with all these kind of cell analogies and the like. But, you know, it seems weird that we can think of anthrobots made of cells, but we can't think of similar things made of thoughts or other kind of stuff. At least none that we, that I can, that we can use maybe in a sort of systematically effective way.",
+      "is_levin": false,
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "speaker_order": 3,
+      "timestamp": "1954720.00s - 2062450.00s"
+    },
+    "levin_involved": false,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_028",
+    "question": {
+      "speaker": "C",
+      "text": "Mike, you've spoken about your, your anthrobot, is that, that's what they're called, right? And, and the notion that, you know, in the future they could be used therapeutically as a sort of non immunogenic agents that, you know, you can put inside the organism and then they can do, they can do their thing. Right. And again, I keep on trying to sort of see other analogies kind of psychologically that, that, that one can do here and it gets, it gets a bit weird, right? But like, is, is there a, you know, is there something that's made out of, of the same psychic DNA as us that is much, much smaller and maybe a bit more stupid, but acting when you've got loads of them, you know, when they're in there, they, you know, they, they can do a good job. And, and which, because it's made from the same sort of stuff as you, doesn't elicit the, you know, the, that sort of rejection. Right. Like, and, and in a way, part of the therapeutic alliance that, I guess what Alexia is talking about is, is, is a smoothing over of that possibility of rejection. I mean, the number of times, the first time I meet a patient, things are pretty rough. And then over, you know, over, over the weeks and months they might smooth down. But. Yeah, and again, there's the. I guess I run the risk of kind of caricaturing things because what Alexei does is so sort of subtle and nuanced and I'm kind of coming at it with all these kind of cell analogies and the like. But, you know, it seems weird that we can think of anthrobots made of cells, but we can't think of similar things made of thoughts or other kind of stuff. At least none that we, that I can, that we can use maybe in a sort of systematically effective way.",
+      "is_levin": false,
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "speaker_order": 3,
+      "timestamp": "1954720.00s - 2062450.00s"
+    },
+    "answer": {
+      "speaker": "B",
+      "text": "Yeah, yeah, yeah, I think that's exactly right. And one of the, you know, there are sort of more conventional practical uses of these, of these anthrobots is just, you know, they're delivering some sort of specific reparative intervention, whatever. But I think the bigger picture might be that they're actually just vehicles for transplanting behavior patterns or memories. And that's something that people have done. You know, transplantation of memories is a thing that people have done in various animal, animal models and we've done it too in morphogenesis. And one of the wild things about it is that oftentimes it's a very small piece of tissue that you transplant and it somehow takes over the whole thing. So in cases where we've done transplants of pieces of tissue from two headed worms into one headed worms or pieces of tissue into tadpoles that otherwise would have had some sort of severe brain defect. And in many of these cases you get, you get conversion to the new pattern, right? Either normalization or you get the two heads carried over. And it's like why I only introduced a few cells. Why don't they get taken over by the, you know, convinced by the rest of the environment to do that? It's very non linear. You can't really tell. You know, it's not the size of the tissue that matters, it's the, you know, maybe it's something like, you know, how compelling is your message, right? Like the signaling that you're doing. How likely is it to, to actually get alignment of the bigger system that, that you're in something like that. And we see, we see this, this, this kind of battle of like it's funny, if you, if you, if you. In, in an early frog embryo, if you inject some, some cells with a particular potassium channel rna, it makes a voltage that is, is really equivalent to the, the voltage spot that sets up I formation. And so now what you have is a few cells that are saying to their neighbors, let's make an eye. And, and they, and, and this is very much a, a message that goes outwards because there's not enough of them to do it themselves. And so in the cases where you do get an eye, you can section it, you can see that there's actually only very few cells that you injected. What they did was convince all their neighbors to participate. And their name, you know, it was kind of a secondary induction effect. You didn't touch the neighbors. They, they convince them. But, but what typ. But, but what typically happens is there's an interesting battle that goes on because those cells are signaling to their neighbors and let's make an eye. Their neighbors meanwhile are doing their normal tumor suppression thing and they're saying no, your voltage is crazy. You should be skin. And so you should be this, this instead. And, and they, and they fight and, and try to convince each other. And so, and in some cases you get the iron, in some cases you get nothing because, because the skin one and, or the gut cells one and said, this is, you know, you're wrong. And, and, and it actually goes that way. And that's, and that's a way, that's a, that's a very basic thing that, that bodies do to suppress carcinogenic transformations like all, you know, all the time. So, so I think it's quite interesting how you can have these, these things as basically carriers or vehicles of information. And what's really critical is whether that, that story that you're passing on is going to take hold and become convincing and cause alignment within the larger, you know, within the larger system and in particular with behavior. So that's all on the morphology side, on the behavior side. I have been thinking about ways to like these anthrobots. We get them from donated patient tracheal epithelia. And you get this sheet, you get a sheet of information on the patient. And so one of the things that I've been wanting to do is get some from smokers and find out if my anthrobots are now nicotine addicted. Right. Do the anthrobots that come from those cells actually pursue nicotine? And if I were to take those anthropods and stick them into, I don't know, an immunosuppressed mouse or something, would the mouse inherit some of the. Right. Can you, can you actually pass behavioral propensities that way? Wow.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "2063570.00s - 2292330.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_029",
+    "question": {
+      "speaker": "B",
+      "text": "Yeah, yeah, yeah, I think that's exactly right. And one of the, you know, there are sort of more conventional practical uses of these, of these anthrobots is just, you know, they're delivering some sort of specific reparative intervention, whatever. But I think the bigger picture might be that they're actually just vehicles for transplanting behavior patterns or memories. And that's something that people have done. You know, transplantation of memories is a thing that people have done in various animal, animal models and we've done it too in morphogenesis. And one of the wild things about it is that oftentimes it's a very small piece of tissue that you transplant and it somehow takes over the whole thing. So in cases where we've done transplants of pieces of tissue from two headed worms into one headed worms or pieces of tissue into tadpoles that otherwise would have had some sort of severe brain defect. And in many of these cases you get, you get conversion to the new pattern, right? Either normalization or you get the two heads carried over. And it's like why I only introduced a few cells. Why don't they get taken over by the, you know, convinced by the rest of the environment to do that? It's very non linear. You can't really tell. You know, it's not the size of the tissue that matters, it's the, you know, maybe it's something like, you know, how compelling is your message, right? Like the signaling that you're doing. How likely is it to, to actually get alignment of the bigger system that, that you're in something like that. And we see, we see this, this, this kind of battle of like it's funny, if you, if you, if you. In, in an early frog embryo, if you inject some, some cells with a particular potassium channel rna, it makes a voltage that is, is really equivalent to the, the voltage spot that sets up I formation. And so now what you have is a few cells that are saying to their neighbors, let's make an eye. And, and they, and, and this is very much a, a message that goes outwards because there's not enough of them to do it themselves. And so in the cases where you do get an eye, you can section it, you can see that there's actually only very few cells that you injected. What they did was convince all their neighbors to participate. And their name, you know, it was kind of a secondary induction effect. You didn't touch the neighbors. They, they convince them. But, but what typ. But, but what typically happens is there's an interesting battle that goes on because those cells are signaling to their neighbors and let's make an eye. Their neighbors meanwhile are doing their normal tumor suppression thing and they're saying no, your voltage is crazy. You should be skin. And so you should be this, this instead. And, and they, and they fight and, and try to convince each other. And so, and in some cases you get the iron, in some cases you get nothing because, because the skin one and, or the gut cells one and said, this is, you know, you're wrong. And, and, and it actually goes that way. And that's, and that's a way, that's a, that's a very basic thing that, that bodies do to suppress carcinogenic transformations like all, you know, all the time. So, so I think it's quite interesting how you can have these, these things as basically carriers or vehicles of information. And what's really critical is whether that, that story that you're passing on is going to take hold and become convincing and cause alignment within the larger, you know, within the larger system and in particular with behavior. So that's all on the morphology side, on the behavior side. I have been thinking about ways to like these anthrobots. We get them from donated patient tracheal epithelia. And you get this sheet, you get a sheet of information on the patient. And so one of the things that I've been wanting to do is get some from smokers and find out if my anthrobots are now nicotine addicted. Right. Do the anthrobots that come from those cells actually pursue nicotine? And if I were to take those anthropods and stick them into, I don't know, an immunosuppressed mouse or something, would the mouse inherit some of the. Right. Can you, can you actually pass behavioral propensities that way? Wow.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "2063570.00s - 2292330.00s"
+    },
+    "answer": {
+      "speaker": "A",
+      "text": "Yeah.",
+      "is_levin": false,
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "speaker_order": 2,
+      "timestamp": "2292810.00s - 2293130.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_030",
+    "question": {
+      "speaker": "C",
+      "text": "But what about, I mean, have you, have you considered what would sort of getting the cells from, say, patients with a, with schizophrenia or with a sort of severe self disorder? Because the polygenic risk for these disorders. Right. I mean, we know, we know for a start that it's associated with developmental, physical, developmental abnormalities as well as the sort of psychological. But you could almost flip that on its head and say, well, what's the social behavior of these anthrops who are derived from patient cells or something like that?",
+      "is_levin": false,
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "speaker_order": 3,
+      "timestamp": "2295570.00s - 2329350.00s"
+    },
+    "answer": {
+      "speaker": "B",
+      "text": "Totally, totally. Yeah. Yeah. I've talked about this with. And if you have access to, by the way, to tissues, we should talk about the collaboration. But yes, we thought about making that what we need. Now the next thing we're developing now is a bunch of more subtle behavioral tests with these things because so far all we've been watching is just native movement and they have some specific behaviors and we've characterized all that. But now the question is, okay, so what are your preferences? What, what can you learn? Right? What are your, what are your you know, what kind of memories can you form? What are you measuring in the environment? So once we understand a little bit about what the assays should be, then then we can start screening through patient samples and just find out if, you know, a, does it reflect current state? Is a predictive of future state? Is it, is it something that you can get out of it? You know, as an avatar? Another thing, we're thinking of these things as screening avatars for, for, for, for drugs, right? So when you have, if you have multiple options of should you be on this antidepressant or that one or, or something else, you might be able to screen that on, on the bots and actually find out that, okay, for this, for this patient, these other three things didn't work, but this one, that works. So, so some, something like that. Yeah.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "2329830.00s - 2397350.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_031",
+    "question": {
+      "speaker": "B",
+      "text": "Totally, totally. Yeah. Yeah. I've talked about this with. And if you have access to, by the way, to tissues, we should talk about the collaboration. But yes, we thought about making that what we need. Now the next thing we're developing now is a bunch of more subtle behavioral tests with these things because so far all we've been watching is just native movement and they have some specific behaviors and we've characterized all that. But now the question is, okay, so what are your preferences? What, what can you learn? Right? What are your, what are your you know, what kind of memories can you form? What are you measuring in the environment? So once we understand a little bit about what the assays should be, then then we can start screening through patient samples and just find out if, you know, a, does it reflect current state? Is a predictive of future state? Is it, is it something that you can get out of it? You know, as an avatar? Another thing, we're thinking of these things as screening avatars for, for, for, for drugs, right? So when you have, if you have multiple options of should you be on this antidepressant or that one or, or something else, you might be able to screen that on, on the bots and actually find out that, okay, for this, for this patient, these other three things didn't work, but this one, that works. So, so some, something like that. Yeah.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "2329830.00s - 2397350.00s"
+    },
+    "answer": {
+      "speaker": "C",
+      "text": "That's wild. That's amazing.",
+      "is_levin": false,
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "speaker_order": 3,
+      "timestamp": "2398550.00s - 2399990.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_032",
+    "question": {
+      "speaker": "A",
+      "text": "I was thinking and listening to you both is, is I find myself a little disoriented because I'm trying to figure out what level of the hierarchy are we talking at? When we're talking anthropods, it seems like mid tier. We're not at the molecular level, we're not at the very top. Right. And if we take your paper on cancer, Michael, I think that you have built the first principles, you have built a high level theory which is tame. And then you have the therapeutic experiments where you're saying, I do this, I restore the communications with the neighbors and the propagation of cancer stops. But in the middle you have a model of a condition of a specific cancer in specific environment. You're saying one aspect of this cancer is that this cancer cell stopped communicating with the neighbors. That's a model. And I'm missing that. With application of, I think your work to clinical psychology, I think that this is where we need to put meat on the bones. It's just saying, what is our model using tame is one of the principles, using your work of schizophrenia is very complex. But even if we take one symptom that we try to do, dissociative symptoms, you know, obsessive symptoms and other things, until then, I think it's very hard to go straight to therapeutics because I think, you know, we go from first principles to, to what to do. And if we take physics as a metaphor, the principles are prescriptive. There's sort of a method of how to do some things right. And then one level down is the mechanic, that's the model which is the Newton's laws, you know, and one way down from that is the dynamics of Kepler or how the, how the, the, the bodily of the planets move. But it's hard, it's hard to go from the first principle straight to the therapeutics or sort of what to do until we have the more nuanced understanding of the specific aspect of a specific disorder.",
+      "is_levin": false,
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "speaker_order": 2,
+      "timestamp": "2401430.00s - 2503500.00s"
+    },
+    "answer": {
+      "speaker": "B",
+      "text": "Yeah, yeah, I think that's, I think that's exactly right. And one of the things that we're writing next in the next couple months is I don't know if you've seen, there was a paper that Patrick McMillan in my group did and I on aspects of morphogenesis that are basically reflections of aspects of collective intelligence. So here are the things in development that actually look like intelligence and you know, sort of these protocognitive kind of capabilities. So what I want to do now is I want to do the flip side and I want to do the disorders. So I want to, I want to take a look at what are, what are all the disorders, the known disorders of cognitive systems. And what does that look like in these developmental, you know, is it, is it, you know, every, everything from, from like optical, like illusions of perception. Right. So optical illusions. So that kind of like simple stuff all the way to excessive, you know, to, to, to, to too much certainty about what's going on, not enough certainty. Loss of, loss of, loss of agency, loss of, you know, loss of purpose. I mean, you can, you can sort of stack them, stack them up and just see, see what we already have. And then from there develop some of these connective mid level models. As Alexei was just saying, that would show. Okay, this is, this is going wrong because you've overestimated the, the, the importance of this particular signal. And thus you're, you know, put yourself in this condition. And so then from there we can start to, we can start to develop therapeutics.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "2504780.00s - 2589520.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_033",
+    "question": {
+      "speaker": "B",
+      "text": "Yeah, yeah, I think that's, I think that's exactly right. And one of the things that we're writing next in the next couple months is I don't know if you've seen, there was a paper that Patrick McMillan in my group did and I on aspects of morphogenesis that are basically reflections of aspects of collective intelligence. So here are the things in development that actually look like intelligence and you know, sort of these protocognitive kind of capabilities. So what I want to do now is I want to do the flip side and I want to do the disorders. So I want to, I want to take a look at what are, what are all the disorders, the known disorders of cognitive systems. And what does that look like in these developmental, you know, is it, is it, you know, every, everything from, from like optical, like illusions of perception. Right. So optical illusions. So that kind of like simple stuff all the way to excessive, you know, to, to, to, to too much certainty about what's going on, not enough certainty. Loss of, loss of, loss of agency, loss of, you know, loss of purpose. I mean, you can, you can sort of stack them, stack them up and just see, see what we already have. And then from there develop some of these connective mid level models. As Alexei was just saying, that would show. Okay, this is, this is going wrong because you've overestimated the, the, the importance of this particular signal. And thus you're, you know, put yourself in this condition. And so then from there we can start to, we can start to develop therapeutics.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "2504780.00s - 2589520.00s"
+    },
+    "answer": {
+      "speaker": "A",
+      "text": "Super interesting, if I may, because you brought the big elephant in the room. I think throughout your work you're saying all intelligences are collective. And I think we need to talk about it. And I look forward to Thomas, the high level paper that you think about how psychiatry would look like with Michael's principles. But I think we can talk a bit about it. Let me give you a citation. The definition of dissociation in the latest version of the DSM 5 TR is a disruption and or discontinuity in the normal integration of consciousness, memory, identity, emotion, perception, bodily representation, motor control and behavior. The integration is deemed normal in the guiding document. And then if I quote a neuroscientist, Daniel Seth, he says that monadic self is A form of a delusion in a sense that it only exists at the level of subjective belief and not an objective outside reality. Then we have your statement that all intelligences are collective. How do we reconcile these things together? What do we do? And I want to give some credit to dsm, you know, it is indeed so that, you know, on average, healthy individuals subjectively feel at the level of phenomenology, the continuity of the mind. You know, it goes back to Emmanuel Kant, 18th century, where. But I am the same as I have been before and I predict to be the same in the future. We even, you know, kind of. We bind together things, you know, we're bind together things. When I listen to you speak, you know, into coherent whole. There's a lot of integration, binding happen and a lot of disorders have to do with disintegration. But the important thing I think is the perspective. Collective intelligence is something that we see from the outside, not from the inside. The way I feel inside my body is at that level as a coherent whole. So perspective is one thing. The second thing is when we wrote in the paper that if we model self as a nested, embedded functional system, then, you know, essentially it's. It's a hierarchical system of beliefs. We. I don't like the annual sets word delusion. I think it pathologizes an important thing. I would say belief or inference. But beliefs can be powerful. They can kill. So I think that. And it's only the higher levels of the self that believe in the unity. The autobiographical self, the core self, the hunger doesn't even have an eye. It's a low blood sugar that compels me to go do something. So this is the higher levels of the. The hierarchy that have the. The unified self. And this is what we, you know, interact with in psychotherapy with a patient. And the final thing is the kind of the distance. You know, if again we have a house and we look at a person moving between different rooms, then they are different and collective, perhaps. But if I'm a mile away and I look at the person in the house, it looks as the same system. So, but, but I. I want to say that they're not. It's not necessarily a paradox. If we qualify at which level of the hierarchy and from which perspective, then we can have unity here and collective there. And we also can have it lower levels of the hierarchy, collective intelligence. Take ant colony. The intelligence of the colony is unified at the next upper level of the hierarchy. That's the definitionally emergent. Emergent property happens at the higher level. So I just wanted to bring it here to discuss.",
+      "is_levin": false,
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "speaker_order": 2,
+      "timestamp": "2590800.00s - 2779660.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_034",
+    "question": {
+      "speaker": "A",
+      "text": "Super interesting, if I may, because you brought the big elephant in the room. I think throughout your work you're saying all intelligences are collective. And I think we need to talk about it. And I look forward to Thomas, the high level paper that you think about how psychiatry would look like with Michael's principles. But I think we can talk a bit about it. Let me give you a citation. The definition of dissociation in the latest version of the DSM 5 TR is a disruption and or discontinuity in the normal integration of consciousness, memory, identity, emotion, perception, bodily representation, motor control and behavior. The integration is deemed normal in the guiding document. And then if I quote a neuroscientist, Daniel Seth, he says that monadic self is A form of a delusion in a sense that it only exists at the level of subjective belief and not an objective outside reality. Then we have your statement that all intelligences are collective. How do we reconcile these things together? What do we do? And I want to give some credit to dsm, you know, it is indeed so that, you know, on average, healthy individuals subjectively feel at the level of phenomenology, the continuity of the mind. You know, it goes back to Emmanuel Kant, 18th century, where. But I am the same as I have been before and I predict to be the same in the future. We even, you know, kind of. We bind together things, you know, we're bind together things. When I listen to you speak, you know, into coherent whole. There's a lot of integration, binding happen and a lot of disorders have to do with disintegration. But the important thing I think is the perspective. Collective intelligence is something that we see from the outside, not from the inside. The way I feel inside my body is at that level as a coherent whole. So perspective is one thing. The second thing is when we wrote in the paper that if we model self as a nested, embedded functional system, then, you know, essentially it's. It's a hierarchical system of beliefs. We. I don't like the annual sets word delusion. I think it pathologizes an important thing. I would say belief or inference. But beliefs can be powerful. They can kill. So I think that. And it's only the higher levels of the self that believe in the unity. The autobiographical self, the core self, the hunger doesn't even have an eye. It's a low blood sugar that compels me to go do something. So this is the higher levels of the. The hierarchy that have the. The unified self. And this is what we, you know, interact with in psychotherapy with a patient. And the final thing is the kind of the distance. You know, if again we have a house and we look at a person moving between different rooms, then they are different and collective, perhaps. But if I'm a mile away and I look at the person in the house, it looks as the same system. So, but, but I. I want to say that they're not. It's not necessarily a paradox. If we qualify at which level of the hierarchy and from which perspective, then we can have unity here and collective there. And we also can have it lower levels of the hierarchy, collective intelligence. Take ant colony. The intelligence of the colony is unified at the next upper level of the hierarchy. That's the definitionally emergent. Emergent property happens at the higher level. So I just wanted to bring it here to discuss.",
+      "is_levin": false,
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "speaker_order": 2,
+      "timestamp": "2590800.00s - 2779660.00s"
+    },
+    "answer": {
+      "speaker": "B",
+      "text": "Yeah, that's important. I wonder to what. So I'm cautious about this notion that under normal circumstances the patient feels unified in the sense that we are really reliant on language and observable behavior. And so this is what happens when, when I, when I talk about intelligence of organs and so on. People say, well, I don't feel like my liver is conscious. I'm like, right, the left hemisphere that is talking to me right now will make that claim. And that's great. But, but, but your liver, with whom I cannot yet speak, although we're working on it. But, but that we can't talk to yet, might have a different perspective on this. And of course you don't feel it any more than you feel me being conscious, right? So you don't necessarily. So, you know, it's clear that in the normal human there is a voice that feels unified, for sure. But I'm just, I'm not super sure that there aren't others that normally don't get to speak. And I think we know right from the sodium pentothal experiments and when you put the language hemisphere to sleep and then the split brain studies and all of that, that there's at the very least one other set of opinions in there and probably many more, but, but they're sort of generically suppressed, right? So I think, I think we have to be, we have to be careful about that. But I don't know what you guys think about that.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "2780860.00s - 2864600.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_035",
+    "question": {
+      "speaker": "B",
+      "text": "Yeah, that's important. I wonder to what. So I'm cautious about this notion that under normal circumstances the patient feels unified in the sense that we are really reliant on language and observable behavior. And so this is what happens when, when I, when I talk about intelligence of organs and so on. People say, well, I don't feel like my liver is conscious. I'm like, right, the left hemisphere that is talking to me right now will make that claim. And that's great. But, but, but your liver, with whom I cannot yet speak, although we're working on it. But, but that we can't talk to yet, might have a different perspective on this. And of course you don't feel it any more than you feel me being conscious, right? So you don't necessarily. So, you know, it's clear that in the normal human there is a voice that feels unified, for sure. But I'm just, I'm not super sure that there aren't others that normally don't get to speak. And I think we know right from the sodium pentothal experiments and when you put the language hemisphere to sleep and then the split brain studies and all of that, that there's at the very least one other set of opinions in there and probably many more, but, but they're sort of generically suppressed, right? So I think, I think we have to be, we have to be careful about that. But I don't know what you guys think about that.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "2780860.00s - 2864600.00s"
+    },
+    "answer": {
+      "speaker": "C",
+      "text": "No, I, I agree. I, I promised I wasn't going to bring Buddhism and meditation into it, but I'm, I'm going to now. But yeah, I mean, I think, I think my, my experience and a lot of people who, who do meditate, you know, there's this sort of learning curve that, that happens where you start off. All the mind is, the monkey mind is thinking about all the stuff all the time and, and you know, you kind of eventually get through that and there's a sort of a feeling of maybe some sort of more, more unification. And people use the analogy of, you know, the choppy waters at the top and you get down and it becomes more still. But actually I think a lot of people then realize that when you really get quiet enough, you actually start, you know, that's when the weird stuff starts happening, right? That's when you start hearing sort of strange little voices. Then you don't know where they come from or, or, or, or ideas that are popping into your head that feel like they've just been burped out of nowhere. And yeah, I mean, I think there's a reason that the Buddhist puts so much on the fact that there is no sort of unified self. Because I think at least the phenomenology of some of these states, which are hard won and take a long time to get into, kind of do suggest that, that really when you pay attention there's not that there's not that unity. And also, I mean dream dreams and, and, and, and things that happen to us, you know, throughout the day, I think feel less unified than maybe they, they might.",
+      "is_levin": false,
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "speaker_order": 3,
+      "timestamp": "2865960.00s - 2950460.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_036",
+    "question": {
+      "speaker": "C",
+      "text": "No, I, I agree. I, I promised I wasn't going to bring Buddhism and meditation into it, but I'm, I'm going to now. But yeah, I mean, I think, I think my, my experience and a lot of people who, who do meditate, you know, there's this sort of learning curve that, that happens where you start off. All the mind is, the monkey mind is thinking about all the stuff all the time and, and you know, you kind of eventually get through that and there's a sort of a feeling of maybe some sort of more, more unification. And people use the analogy of, you know, the choppy waters at the top and you get down and it becomes more still. But actually I think a lot of people then realize that when you really get quiet enough, you actually start, you know, that's when the weird stuff starts happening, right? That's when you start hearing sort of strange little voices. Then you don't know where they come from or, or, or, or ideas that are popping into your head that feel like they've just been burped out of nowhere. And yeah, I mean, I think there's a reason that the Buddhist puts so much on the fact that there is no sort of unified self. Because I think at least the phenomenology of some of these states, which are hard won and take a long time to get into, kind of do suggest that, that really when you pay attention there's not that there's not that unity. And also, I mean dream dreams and, and, and, and things that happen to us, you know, throughout the day, I think feel less unified than maybe they, they might.",
+      "is_levin": false,
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "speaker_order": 3,
+      "timestamp": "2865960.00s - 2950460.00s"
+    },
+    "answer": {
+      "speaker": "A",
+      "text": "I, I agree with you both entirely. When I wake up, I notice myself in this non egoic state that Metzinger is talking about. And Thomas, you talk about where things just flow through the mind. There's not even an eye. I mean, I don't yet recall that it's Tuesday and 9 o' clock and what I'm about to do, but just little things that flow through the mind is this sort of non egoic sense of self. But I wanted to leave some space. I'm trying to say that we're not here to come in and say you guys are wrong when you talk about your unity. Because if you take the very severe patients, you take the DID disintegration causes a lot of distress. These patients suffer tremendously. And so it is of course all the spectrum. But I think that we do work with reintegration in a specific clinical practice of traumatized patients with DID DPTR are in dissociative disorders. Yes, it is a belief, yes. But that, that belief is very important to try to restore to. Because they cannot work, they cannot maintain relationships with their loved ones and they drink too much or you know, use substances. And part of it is the disruption, the, the lack of continuity, predictability. We'll go back developmentally. You know, we take children. A lot of things that happen in children's lives can be metabolized and they can. But, but when they have lack of predictability, lack of continuity, this is an issue. So even divorce, the world changes. So I just want to say that in sort of more severe kinds of pathology there is space for this belief or not. I'm not saying it's hardware, it's not hardware, but at the level of software, it's important that Microsoft Word is the same Microsoft Word, isn't it? Right.",
+      "is_levin": false,
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "speaker_order": 2,
+      "timestamp": "2951020.00s - 3044890.00s"
+    },
+    "levin_involved": false,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_037",
+    "question": {
+      "speaker": "A",
+      "text": "I, I agree with you both entirely. When I wake up, I notice myself in this non egoic state that Metzinger is talking about. And Thomas, you talk about where things just flow through the mind. There's not even an eye. I mean, I don't yet recall that it's Tuesday and 9 o' clock and what I'm about to do, but just little things that flow through the mind is this sort of non egoic sense of self. But I wanted to leave some space. I'm trying to say that we're not here to come in and say you guys are wrong when you talk about your unity. Because if you take the very severe patients, you take the DID disintegration causes a lot of distress. These patients suffer tremendously. And so it is of course all the spectrum. But I think that we do work with reintegration in a specific clinical practice of traumatized patients with DID DPTR are in dissociative disorders. Yes, it is a belief, yes. But that, that belief is very important to try to restore to. Because they cannot work, they cannot maintain relationships with their loved ones and they drink too much or you know, use substances. And part of it is the disruption, the, the lack of continuity, predictability. We'll go back developmentally. You know, we take children. A lot of things that happen in children's lives can be metabolized and they can. But, but when they have lack of predictability, lack of continuity, this is an issue. So even divorce, the world changes. So I just want to say that in sort of more severe kinds of pathology there is space for this belief or not. I'm not saying it's hardware, it's not hardware, but at the level of software, it's important that Microsoft Word is the same Microsoft Word, isn't it? Right.",
+      "is_levin": false,
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "speaker_order": 2,
+      "timestamp": "2951020.00s - 3044890.00s"
+    },
+    "answer": {
+      "speaker": "B",
+      "text": "Yeah. And I wonder. So we see this right during embryogenesis when we look and say, oh look, there's one embryo. Well, what is there one of? Because what you're really looking at, for example, is a hundred thousand cells. And when you say there's one embryo, what helps you, what you're really counting is alignment. And you're counting the fact that all of these individual cells are aligned towards the same vision of what they're doing. They're building a particular structure, they're going to work like hell to get there, despite various interventions. And so I wonder. And so it's kind of, I don't even think these are necessarily distinct things, but, you know, there's a way to think about this as reintegration, so that, so that now there really is one thing, but under the hood, what that might be. And again, I'm not making any claims on about psychological matters because I don't know any of this stuff. But, but, but I, but, but I wonder if under the hood, what you're really looking at is a more adaptive alignment so that the, the, the fragment that's good at particular kinds of interactions handles that business in your life and that's another fragment that handles something else. And as long as they're all, you know, once, if they're not aligned, then, then of course it's going to be a nightmare. But, but fine, then it's kind of fine that you have these specializations that can come out and do specific things. So, you know, I don't know if that, if that makes sense.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "3046490.00s - 3118050.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_038",
+    "question": {
+      "speaker": "B",
+      "text": "Yeah. And I wonder. So we see this right during embryogenesis when we look and say, oh look, there's one embryo. Well, what is there one of? Because what you're really looking at, for example, is a hundred thousand cells. And when you say there's one embryo, what helps you, what you're really counting is alignment. And you're counting the fact that all of these individual cells are aligned towards the same vision of what they're doing. They're building a particular structure, they're going to work like hell to get there, despite various interventions. And so I wonder. And so it's kind of, I don't even think these are necessarily distinct things, but, you know, there's a way to think about this as reintegration, so that, so that now there really is one thing, but under the hood, what that might be. And again, I'm not making any claims on about psychological matters because I don't know any of this stuff. But, but, but I, but, but I wonder if under the hood, what you're really looking at is a more adaptive alignment so that the, the, the fragment that's good at particular kinds of interactions handles that business in your life and that's another fragment that handles something else. And as long as they're all, you know, once, if they're not aligned, then, then of course it's going to be a nightmare. But, but fine, then it's kind of fine that you have these specializations that can come out and do specific things. So, you know, I don't know if that, if that makes sense.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "3046490.00s - 3118050.00s"
+    },
+    "answer": {
+      "speaker": "C",
+      "text": "Yeah, absolutely. It really does. And is there a way, Alexei, that. Because in these extreme cases like dissociative identity disorder and stuff, there's.",
+      "is_levin": false,
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "speaker_order": 3,
+      "timestamp": "3119810.00s - 3130410.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_039",
+    "question": {
+      "speaker": "C",
+      "text": "It almost feels like again, I don't see these patients very often, very occasionally, but not so often, but it feels like there's a, a kind of a fight for real estate. Right? There's a fight between the altars at, roughly speaking, the same, the same level. I mean, there's a lot of argument that the altars may not be as rich, etc, but they're both sort of claiming the, the top agential spot, right? In, in, in some sense. And so the integration of that level is, you know, clearly something that you would imagine it would be hard to see how someone could get on and be healthy without there being an integration at that level. But when you start thinking about the kind of verticality of it, and I appreciate dividing it into horizontal and vertical probably isn't that useful. But then there is perhaps, as Mike says, it's more about this sort of alignment, everything pointing in the same direction as opposed to there just being one single agent at each level that kind of wears the trousers.",
+      "is_levin": false,
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "speaker_order": 3,
+      "timestamp": "3130690.00s - 3192740.00s"
+    },
+    "answer": {
+      "speaker": "A",
+      "text": "I think we're all. Yeah, go ahead.",
+      "is_levin": false,
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "speaker_order": 2,
+      "timestamp": "3194020.00s - 3195700.00s"
+    },
+    "levin_involved": false,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  },
+  {
+    "pair_id": "1IhHJgGNBUc_qa_040",
+    "question": {
+      "speaker": "B",
+      "text": "I was just gonna say I love the real estate point because maybe this, this avatar therapy that you talked about is an example of that. Right? So instead of fighting over the same real estate, what if we give you more real estate? And what if, I mean, the problem, of course, is that there's only one body. And if, and if one wants to sit home and watch TV and the other one has to go to work, then there's an issue. But if, but if actually you can, there's some version of VR or some other thing. And we're actually thinking about this in the biomedical case too. There's this almost, I don't want to say decoy, but it's like a, you get some real estate of your own, you can sort of inhabit this thing and do your thing, and you don't all have to fight about the same thing. I don't know what that would look like, but I do think that in all of these cases, that fight of patterns for reality, the fight for real estate in which they can manifest is, is huge. And maybe, maybe we can, we can grow the pot in some, in some way, maybe that, maybe that's a solution.",
+      "is_levin": true,
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "speaker_order": 2,
+      "timestamp": "3196660.00s - 3251960.00s"
+    },
+    "answer": {
+      "speaker": "A",
+      "text": "I, I, I think we're pretty much on the same page. Maybe we use different again, perspectives. But, you know, in a jury, there's 12 members, but the jury is functionally doing the same thing together collectively. They need to do something together as a collective. And so I think if we move up at the level, then we can see that this collect, yes, it is collective, but they have the same function or the same goal or these, you know, collection of cells are navigating the maze. They're all navigating the maze together. And the, the, the idea, I don't know if it's so much as fight for the real estate, but one of the prominent theories is that integration was too painful. If I remember I, the coherent whole, it hurts too much. So I'm going to compartmentalize and I'm going to move into this piece where it hurts less. You know, it's sort of, as Frank Putnam said, one of the experts in the field, it's, it's the escape when there's no other escape, escapes. These are prolonged cases of neglect and abuse when really it feels inescapable. And what the extreme defenses is, I'm going to break my mind into pieces. This is the extreme immobilization, a sort of dysfunction. I'm going to do that in order to, I cannot tolerate that pain anymore.",
+      "is_levin": false,
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "speaker_order": 2,
+      "timestamp": "3253320.00s - 3317650.00s"
+    },
+    "levin_involved": true,
+    "multi_speaker_dynamics": {
+      "interaction_pattern": "question_response",
+      "collaboration_type": "academic_discussion",
+      "speaker_roles": [
+        "questioner",
+        "responder"
+      ]
+    }
+  }
+]

@@ -1,0 +1,64 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_013",
+  "semantic_text": "I was thinking about the problem when it's posed as, you know, the thought that breaks the thinker. And part of me wants to say that what we're doing here in terms of modeling is a modular approach where we break functional functions into modules. These are thoughts and these are other things. And I think that in systems approach, you know, the thought is never alone. There is affect, there is generalized arousal, there's biology and all of these other things. I think thought is a low hanging fruit. We're very aware of it in our conscious minds and thoughts are stabilized in working memory. I want an apple is a series of three things that I strung together and I maintain it, you know, in the working memory in this global workspace. But while I am having it, I have a thing happening in my body. Perhaps a low blood sugar. It's a process, it's dynamic, it's up and down, it's sort of. And I think that if we take the extreme example of, you know, suicidal thought, thought that results in irreversible, catastrophic destruction of a body, it is also not the thought that kills. You know, there's hopelessness, which is the highest correlation with completed suicides. There is helplessness, nobody can do anything. You know, there is history and memories that drive the predictions forward. They're all black and negative predictions. There's the mood tone and, and part of me wants to think that if we model these things, we certainly need to include affects which, which are structured differently and, and work differently and sometimes a wordless and homeostat kind of similar, more so than the thought.",
+  "speaker": "A",
+  "speaker_name": "Alexey Tolchinsky",
+  "speaker_role": "The George Washington University, Center for Professional Psychology",
+  "is_levin": false,
+  "speaker_order": 2,
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.777155",
+  "start_time": 986070,
+  "end_time": 1073760,
+  "timestamp": "986070.00s - 1073760.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "A"
+      ],
+      "speaker_details": {
+        "A": {
+          "speaker_id": "A",
+          "name": "Alexey Tolchinsky",
+          "role": "The George Washington University, Center for Professional Psychology",
+          "is_levin": false,
+          "speaker_order": 2,
+          "additional_context": "a clinical psychologist and Adjunct Professor",
+          "identified_at": "2025-08-22T11:45:25.343931"
+        }
+      },
+      "conversation_type": "monologue"
+    },
+    "levin_context": {
+      "levin_involved": false,
+      "levin_role": "not_involved",
+      "levin_contribution_type": null,
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 1,
+      "speaker_interaction_type": "monologue",
+      "conversation_flow": [
+        "A: I was thinking about the problem when it's posed a..."
+      ],
+      "collaboration_pattern": "single_speaker"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "A",
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "is_levin": false,
+      "speaker_order": 2,
+      "text": "I was thinking about the problem when it's posed as, you know, the thought that breaks the thinker. And part of me wants to say that what we're doing here in terms of modeling is a modular approach where we break functional functions into modules. These are thoughts and these are other things. And I think that in systems approach, you know, the thought is never alone. There is affect, there is generalized arousal, there's biology and all of these other things. I think thought is a low hanging fruit. We're very aware of it in our conscious minds and thoughts are stabilized in working memory. I want an apple is a series of three things that I strung together and I maintain it, you know, in the working memory in this global workspace. But while I am having it, I have a thing happening in my body. Perhaps a low blood sugar. It's a process, it's dynamic, it's up and down, it's sort of. And I think that if we take the extreme example of, you know, suicidal thought, thought that results in irreversible, catastrophic destruction of a body, it is also not the thought that kills. You know, there's hopelessness, which is the highest correlation with completed suicides. There is helplessness, nobody can do anything. You know, there is history and memories that drive the predictions forward. They're all black and negative predictions. There's the mood tone and, and part of me wants to think that if we model these things, we certainly need to include affects which, which are structured differently and, and work differently and sometimes a wordless and homeostat kind of similar, more so than the thought.",
+      "start_time": 986070,
+      "end_time": 1073760,
+      "timestamp": "986070.00s - 1073760.00s"
+    }
+  ]
+}

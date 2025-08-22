@@ -1,0 +1,64 @@
+{
+  "chunk_id": "o-0lj02cBPY_chunk_010",
+  "semantic_text": "Well, as I say, I keep feeling there are places where we sort of crisscross, but it's at such different scales. I'm is when we talked to the phone, I was very interested in. In this idea of your temple collapse and particularly what aspects of dissociation you felt emerged from that process. I had a sense that you felt that temporal collapse brought on dissociation. Is that correct that the dissociation as we understand it clinically, the sort of outside of the body and the sense of multiple separate cells and the amnesias, those symptoms emerge out of the temporal collapse? Or does the.",
+  "speaker": "A",
+  "speaker_name": "Frank Putnam",
+  "speaker_role": "UNC at Chapel Hill",
+  "is_levin": false,
+  "speaker_order": 2,
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:12:48.699494",
+  "start_time": 1080440,
+  "end_time": 1128590,
+  "timestamp": "1080440.00s - 1128590.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "A"
+      ],
+      "speaker_details": {
+        "A": {
+          "speaker_id": "A",
+          "name": "Frank Putnam",
+          "role": "UNC at Chapel Hill",
+          "is_levin": false,
+          "speaker_order": 2,
+          "additional_context": "Dept. of Psychiatry",
+          "identified_at": "2025-08-22T11:42:22.299847"
+        }
+      },
+      "conversation_type": "monologue"
+    },
+    "levin_context": {
+      "levin_involved": false,
+      "levin_role": "not_involved",
+      "levin_contribution_type": null,
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 1,
+      "speaker_interaction_type": "monologue",
+      "conversation_flow": [
+        "A: Well, as I say, I keep feeling there are places wh..."
+      ],
+      "collaboration_pattern": "single_speaker"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "A",
+      "speaker_name": "Frank Putnam",
+      "speaker_role": "UNC at Chapel Hill",
+      "is_levin": false,
+      "speaker_order": 2,
+      "text": "Well, as I say, I keep feeling there are places where we sort of crisscross, but it's at such different scales. I'm is when we talked to the phone, I was very interested in. In this idea of your temple collapse and particularly what aspects of dissociation you felt emerged from that process. I had a sense that you felt that temporal collapse brought on dissociation. Is that correct that the dissociation as we understand it clinically, the sort of outside of the body and the sense of multiple separate cells and the amnesias, those symptoms emerge out of the temporal collapse? Or does the.",
+      "start_time": 1080440,
+      "end_time": 1128590,
+      "timestamp": "1080440.00s - 1128590.00s"
+    }
+  ]
+}

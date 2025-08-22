@@ -1,0 +1,24 @@
+{
+  "timestamp": "20250822_114610_995",
+  "run_directory": "step_07_faiss_embeddings/run_20250822_114610_995",
+  "text_embeddings_shape": [
+    66,
+    3072
+  ],
+  "total_content_items": 66,
+  "embedding_model": "text-embedding-3-large",
+  "index_type": "IndexFlatIP",
+  "content_hash": "9445fe99c286c4cb580705208bd1391a",
+  "files": {
+    "text_index": "text_index.faiss",
+    "embeddings": "embeddings.npy",
+    "metadata": "metadata.pkl",
+    "consolidated_dir": "consolidated/",
+    "chunks_index": "consolidated/chunks.index",
+    "chunks_embeddings": "consolidated/chunks_embeddings.npy",
+    "chunks_metadata": "consolidated/chunks_metadata.pkl",
+    "info_json": "info.json"
+  },
+  "note": "Conversations pipeline embeddings with visual context",
+  "organization": "Clean timestamped directory structure with consolidated compatibility"
+}

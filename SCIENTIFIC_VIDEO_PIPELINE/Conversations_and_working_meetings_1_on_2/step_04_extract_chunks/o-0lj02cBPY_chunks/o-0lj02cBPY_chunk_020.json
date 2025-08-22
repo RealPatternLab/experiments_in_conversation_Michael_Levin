@@ -1,0 +1,98 @@
+{
+  "chunk_id": "o-0lj02cBPY_chunk_020",
+  "semantic_text": "I had a reaction, Michael. Go ahead, Go ahead, Frank. I just was saying I thought those eye experiments are extraordinary and that they were functional was just amazing to me. Yeah. What you said about the empty container, that or promotes regeneration. We have a direct analog of that in psychotherapy. In fact, the word container is used. But if we take developmental analogy, then the three year old Starts exploring or even younger child crawling to different corners when there's a safe base, mom's lap. When the child doesn't have a safe base, they explore less. So. And what we sometimes do in therapy, what is one of the components of therapeutic alliance, is to create the safe space to which the sort of patient grows into, as opposed to forcing them or telling them, nudging, you know, whatever. And so that. That is sort of very resonant to what you said. When. When it's perceived that this space in the relationship, the dyadic space is safe, then the growth starts.",
+  "speaker": "multiple",
+  "speaker_name": "Multiple Speakers",
+  "speaker_role": "Multiple Roles",
+  "is_levin": false,
+  "speaker_order": "multiple",
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:12:48.699536",
+  "start_time": 2624400,
+  "end_time": 2690900,
+  "timestamp": "2624400.00s - 2690900.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "A",
+        "C"
+      ],
+      "speaker_details": {
+        "A": {
+          "speaker_id": "A",
+          "name": "Frank Putnam",
+          "role": "UNC at Chapel Hill",
+          "is_levin": false,
+          "speaker_order": 2,
+          "additional_context": "Dept. of Psychiatry",
+          "identified_at": "2025-08-22T11:42:22.299847"
+        },
+        "C": {
+          "speaker_id": "C",
+          "name": "Alexey Tolchinsky",
+          "role": "George Washington University",
+          "is_levin": false,
+          "speaker_order": 3,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:43:13.147300"
+        }
+      },
+      "conversation_type": "dialogue"
+    },
+    "levin_context": {
+      "levin_involved": false,
+      "levin_role": "not_involved",
+      "levin_contribution_type": null,
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 2,
+      "speaker_interaction_type": "dialogue",
+      "conversation_flow": [
+        "C: I had a reaction, Michael. Go ahead, Go ahead, Fra...",
+        "A: I just was saying I thought those eye experiments ...",
+        "C: What you said about the empty container, that or p..."
+      ],
+      "collaboration_pattern": "dialogue"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "C",
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "George Washington University",
+      "is_levin": false,
+      "speaker_order": 3,
+      "text": "I had a reaction, Michael. Go ahead, Go ahead, Frank.",
+      "start_time": 2624400,
+      "end_time": 2627810,
+      "timestamp": "2624400.00s - 2627810.00s"
+    },
+    {
+      "speaker_id": "A",
+      "speaker_name": "Frank Putnam",
+      "speaker_role": "UNC at Chapel Hill",
+      "is_levin": false,
+      "speaker_order": 2,
+      "text": "I just was saying I thought those eye experiments are extraordinary and that they were functional was just amazing to me. Yeah.",
+      "start_time": 2627890,
+      "end_time": 2636450,
+      "timestamp": "2627890.00s - 2636450.00s"
+    },
+    {
+      "speaker_id": "C",
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "George Washington University",
+      "is_levin": false,
+      "speaker_order": 3,
+      "text": "What you said about the empty container, that or promotes regeneration. We have a direct analog of that in psychotherapy. In fact, the word container is used. But if we take developmental analogy, then the three year old Starts exploring or even younger child crawling to different corners when there's a safe base, mom's lap. When the child doesn't have a safe base, they explore less. So. And what we sometimes do in therapy, what is one of the components of therapeutic alliance, is to create the safe space to which the sort of patient grows into, as opposed to forcing them or telling them, nudging, you know, whatever. And so that. That is sort of very resonant to what you said. When. When it's perceived that this space in the relationship, the dyadic space is safe, then the growth starts.",
+      "start_time": 2638450,
+      "end_time": 2690900,
+      "timestamp": "2638450.00s - 2690900.00s"
+    }
+  ]
+}

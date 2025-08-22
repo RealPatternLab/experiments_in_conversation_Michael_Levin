@@ -1,0 +1,64 @@
+{
+  "chunk_id": "o-0lj02cBPY_chunk_024",
+  "semantic_text": "It's psychodome maybe led to what Frank just said. Michael, when Frank mentioned type D attachment, it's called disorganized, meaning the child has no idea what's coming. They cannot rely on a parent's predictable state of behavior. So when the parent leaves, they don't know if they need to cry. And that reliably brings the parent down. So they don't have a sense style of how to deal with that separation, which is a huge stress. But I wanted to ask you both also on a different scale of things from Frank, your paper and your work, Michael, where chronic stress early on in childhood. Because Frank, you wrote that in these DID cases there's hypercortisol initially, but then it balances out to hypocortisol in adulthood. So if we look at the period of chronic stress in childhood, there's chronic inflammation, immunosuppression, microglial dystrophy, perhaps. But the question is, will it bring reduction in plasticity? Because if chronic stress results in reduction in plasticity, this could be a very concrete level for the onset of aging or acceleration of aging.",
+  "speaker": "C",
+  "speaker_name": "Alexey Tolchinsky",
+  "speaker_role": "George Washington University",
+  "is_levin": false,
+  "speaker_order": 3,
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:12:48.699554",
+  "start_time": 3134700,
+  "end_time": 3200290,
+  "timestamp": "3134700.00s - 3200290.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "C"
+      ],
+      "speaker_details": {
+        "C": {
+          "speaker_id": "C",
+          "name": "Alexey Tolchinsky",
+          "role": "George Washington University",
+          "is_levin": false,
+          "speaker_order": 3,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:43:13.147300"
+        }
+      },
+      "conversation_type": "monologue"
+    },
+    "levin_context": {
+      "levin_involved": false,
+      "levin_role": "not_involved",
+      "levin_contribution_type": null,
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 1,
+      "speaker_interaction_type": "monologue",
+      "conversation_flow": [
+        "C: It's psychodome maybe led to what Frank just said...."
+      ],
+      "collaboration_pattern": "single_speaker"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "C",
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "George Washington University",
+      "is_levin": false,
+      "speaker_order": 3,
+      "text": "It's psychodome maybe led to what Frank just said. Michael, when Frank mentioned type D attachment, it's called disorganized, meaning the child has no idea what's coming. They cannot rely on a parent's predictable state of behavior. So when the parent leaves, they don't know if they need to cry. And that reliably brings the parent down. So they don't have a sense style of how to deal with that separation, which is a huge stress. But I wanted to ask you both also on a different scale of things from Frank, your paper and your work, Michael, where chronic stress early on in childhood. Because Frank, you wrote that in these DID cases there's hypercortisol initially, but then it balances out to hypocortisol in adulthood. So if we look at the period of chronic stress in childhood, there's chronic inflammation, immunosuppression, microglial dystrophy, perhaps. But the question is, will it bring reduction in plasticity? Because if chronic stress results in reduction in plasticity, this could be a very concrete level for the onset of aging or acceleration of aging.",
+      "start_time": 3134700,
+      "end_time": 3200290,
+      "timestamp": "3134700.00s - 3200290.00s"
+    }
+  ]
+}

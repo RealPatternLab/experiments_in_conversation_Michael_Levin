@@ -34,11 +34,11 @@ class ConversationsFrameExtractor:
         self.progress_queue = progress_queue
         
         # Frame extraction parameters - adjusted for conversations
-        # For conversations, we want fewer frames since content changes more slowly
-        # Extract frame every 60 seconds (1 minute) for conversational content
-        self.frame_interval = 60  # Extract frame every 60 seconds
+        # For conversations, we want more frequent frames for better coverage
+        # Extract frame every 15 seconds for conversational content
+        self.frame_interval = 15  # Extract frame every 15 seconds
         self.frame_quality = 2    # FFmpeg quality (1-31, lower is better)
-        self.max_frames = 400     # Reasonable limit for conversation videos
+        self.max_frames = 800     # Increased limit for more frequent frames
     
     def process_all_videos(self):
         """Process all videos in the input directory"""
@@ -204,7 +204,7 @@ class ConversationsFrameExtractor:
             frame_times = self.calculate_frame_times(duration)
             
             logger.info(f"Calculated {len(frame_times)} frame extraction points for {video_id} (duration: {duration}s)")
-            logger.info(f"Frame interval: {self.frame_interval}s (appropriate for conversational content)")
+            logger.info(f"Frame interval: {self.frame_interval}s (every 15 seconds for conversational content)")
             
             for i, timestamp in enumerate(frame_times):
                 if i >= self.max_frames:
@@ -287,7 +287,7 @@ class ConversationsFrameExtractor:
                 cmd, 
                 capture_output=True, 
                 text=True,
-                timeout=30  # 30 second timeout
+                timeout=280  # 30 second timeout
             )
             
             if result.returncode != 0:

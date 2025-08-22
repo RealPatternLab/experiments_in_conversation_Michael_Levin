@@ -1,0 +1,64 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_002",
+  "semantic_text": "Yeah, that's great. I mean, certainly what you said about the kind of aging process and the cognitive problems resonates a lot with a kind of group of patients that we've started seeing an awful lot recently. And again, why we didn't see them quite as much in the past, but we're seeing them a lot more, is one of these kind of mysteries that you get. But these are people who are. They don't have to be old, but often they are in the right age to start developing dementia. But. And they're complaining of these kind of cognitive symptoms, but then there is very clearly no neuropsychological deficits when you. When you test them. They don't have MRI scans that are suggestive of dementia. And even if you manage to get, like, a lumbar puncture on them and look for all those markers, they don't have those markers. The idea is some of these people are framed as having this kind of functional cognitive disorder. And it's like a variant of this functional neurological disorder that I was just talking about. And one way of sort of, I guess, thinking about it is the. I guess the automaticity with which we normally think becomes disrupted by. By some sort of misallocation of attention. Right. So the typical case is someone meets someone that they know very well, a friend or someone in the shop, and all of a sudden the name goes out of their head. And. And then. And. And I guess at this point, we. We're beginning to kind of impute what might be happening, but there's. There's some sort of a reaction, maybe an emotional reaction, or, you know, know, oh, God, what does this portend? Does this mean that.",
+  "speaker": "C",
+  "speaker_name": "Thomas Pollak",
+  "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+  "is_levin": false,
+  "speaker_order": 3,
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.776969",
+  "start_time": 183200,
+  "end_time": 294830,
+  "timestamp": "183200.00s - 294830.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "C"
+      ],
+      "speaker_details": {
+        "C": {
+          "speaker_id": "C",
+          "name": "Thomas Pollak",
+          "role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+          "is_levin": false,
+          "speaker_order": 3,
+          "additional_context": "neuropsychiatrist and researche",
+          "identified_at": "2025-08-22T11:46:00.876129"
+        }
+      },
+      "conversation_type": "monologue"
+    },
+    "levin_context": {
+      "levin_involved": false,
+      "levin_role": "not_involved",
+      "levin_contribution_type": null,
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 1,
+      "speaker_interaction_type": "monologue",
+      "conversation_flow": [
+        "C: Yeah, that's great. I mean, certainly what you sai..."
+      ],
+      "collaboration_pattern": "single_speaker"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "C",
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "is_levin": false,
+      "speaker_order": 3,
+      "text": "Yeah, that's great. I mean, certainly what you said about the kind of aging process and the cognitive problems resonates a lot with a kind of group of patients that we've started seeing an awful lot recently. And again, why we didn't see them quite as much in the past, but we're seeing them a lot more, is one of these kind of mysteries that you get. But these are people who are. They don't have to be old, but often they are in the right age to start developing dementia. But. And they're complaining of these kind of cognitive symptoms, but then there is very clearly no neuropsychological deficits when you. When you test them. They don't have MRI scans that are suggestive of dementia. And even if you manage to get, like, a lumbar puncture on them and look for all those markers, they don't have those markers. The idea is some of these people are framed as having this kind of functional cognitive disorder. And it's like a variant of this functional neurological disorder that I was just talking about. And one way of sort of, I guess, thinking about it is the. I guess the automaticity with which we normally think becomes disrupted by. By some sort of misallocation of attention. Right. So the typical case is someone meets someone that they know very well, a friend or someone in the shop, and all of a sudden the name goes out of their head. And. And then. And. And I guess at this point, we. We're beginning to kind of impute what might be happening, but there's. There's some sort of a reaction, maybe an emotional reaction, or, you know, know, oh, God, what does this portend? Does this mean that.",
+      "start_time": 183200,
+      "end_time": 294830,
+      "timestamp": "183200.00s - 294830.00s"
+    }
+  ]
+}

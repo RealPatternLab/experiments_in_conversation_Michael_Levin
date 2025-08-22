@@ -1,0 +1,98 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_022",
+  "semantic_text": "Is that, is that the same or related to this, this idea of the therapeutic alliance is that kind of thing? Yeah. Which in and of itself doesn't heal it, but it's a necessary condition. Without it, nothing happens. We need to build it first. And that's usually the first stage of therapies. Yeah, yeah, yeah. I, I think a lot about what that looks like in the, in the regenerative medicine space. Right. So what's the, what's the somatic version of this? You know, how do you, like, like one simple way to imagine it is, you know, we've got these experiments where we're, we're working on limb regeneration and there's this wearable bioreactor that fits onto the amputation wound and then you deliver, you know, the payload or whatever that might be. And like, one of the things that I think that does is actually because, because the biodome itself, without any drugs in it, actually has, has some positive effect. Not as much as the combination, but it has some. And the idea might be that what is happening is that it convinces the cells that there is hope to regenerate. Right. It's a controlled environment. You know, they're not like all the, the compounds and everything they're making isn't just disappearing off into the, into the infinite web bath. But, but, but it's actually like they have some control, right? So they have some agency over the environment. They can tell because that you have this, this autocratic release something. And, and yeah, there it is. It's not like, gone. So, so, so it's almost like step one is, is to, is to convince the cells and tissues that this isn't, this is a safe environment that you, you know, you're going to be able to complete this, this task. Right, like that, like you said, that's not enough, but it's, but it's a crucial, you know, it's a crucial part. So that's kind of a wacky way to think about it. But I, yeah, I, I, I think it, it might have important analogies in other aspects of the regenera.",
+  "speaker": "multiple",
+  "speaker_name": "Multiple Speakers",
+  "speaker_role": "Multiple Roles",
+  "is_levin": true,
+  "speaker_order": "multiple",
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.777199",
+  "start_time": 1828210,
+  "end_time": 1929160,
+  "timestamp": "1828210.00s - 1929160.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "A",
+        "B"
+      ],
+      "speaker_details": {
+        "A": {
+          "speaker_id": "A",
+          "name": "Alexey Tolchinsky",
+          "role": "The George Washington University, Center for Professional Psychology",
+          "is_levin": false,
+          "speaker_order": 2,
+          "additional_context": "a clinical psychologist and Adjunct Professor",
+          "identified_at": "2025-08-22T11:45:25.343931"
+        },
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:46:00.876272"
+        }
+      },
+      "conversation_type": "dialogue"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 2,
+      "speaker_interaction_type": "dialogue",
+      "conversation_flow": [
+        "B: Is that, is that the same or related to this, this...",
+        "A: Which in and of itself doesn't heal it, but it's a...",
+        "B: Yeah, yeah, yeah. I, I think a lot about what that..."
+      ],
+      "collaboration_pattern": "dialogue"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "Is that, is that the same or related to this, this idea of the therapeutic alliance is that kind of thing? Yeah.",
+      "start_time": 1828210,
+      "end_time": 1835730,
+      "timestamp": "1828210.00s - 1835730.00s"
+    },
+    {
+      "speaker_id": "A",
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "is_levin": false,
+      "speaker_order": 2,
+      "text": "Which in and of itself doesn't heal it, but it's a necessary condition. Without it, nothing happens. We need to build it first. And that's usually the first stage of therapies.",
+      "start_time": 1836210,
+      "end_time": 1843570,
+      "timestamp": "1836210.00s - 1843570.00s"
+    },
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "Yeah, yeah, yeah. I, I think a lot about what that looks like in the, in the regenerative medicine space. Right. So what's the, what's the somatic version of this? You know, how do you, like, like one simple way to imagine it is, you know, we've got these experiments where we're, we're working on limb regeneration and there's this wearable bioreactor that fits onto the amputation wound and then you deliver, you know, the payload or whatever that might be. And like, one of the things that I think that does is actually because, because the biodome itself, without any drugs in it, actually has, has some positive effect. Not as much as the combination, but it has some. And the idea might be that what is happening is that it convinces the cells that there is hope to regenerate. Right. It's a controlled environment. You know, they're not like all the, the compounds and everything they're making isn't just disappearing off into the, into the infinite web bath. But, but, but it's actually like they have some control, right? So they have some agency over the environment. They can tell because that you have this, this autocratic release something. And, and yeah, there it is. It's not like, gone. So, so, so it's almost like step one is, is to, is to convince the cells and tissues that this isn't, this is a safe environment that you, you know, you're going to be able to complete this, this task. Right, like that, like you said, that's not enough, but it's, but it's a crucial, you know, it's a crucial part. So that's kind of a wacky way to think about it. But I, yeah, I, I, I think it, it might have important analogies in other aspects of the regenera.",
+      "start_time": 1845570,
+      "end_time": 1929160,
+      "timestamp": "1845570.00s - 1929160.00s"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "pipeline_type": "conversations_1_on_2",
+  "step": "step_02_video_download",
+  "timestamp": "2025-08-21 21:43:22",
+  "summary": {
+    "total_videos_processed": 2,
+    "successful_downloads": 2,
+    "failed_downloads": 0,
+    "success_rate": "100.0%"
+  },
+  "download_details": [
+    {
+      "video_id": "o-0lj02cBPY",
+      "title": "Conversation with Frank Putnam and Alexey Tolchinsky 1",
+      "playlist_id": "PLmR3yIXYqfUKKU8ZRo4JW1oUOjk1sq4FX",
+      "playlist_title": "Conversations and working meetings - 2 - on -1_test",
+      "status": "completed",
+      "download_path": "step_02_extracted_playlist_content/video_o-0lj02cBPY/video.mp4",
+      "file_size_mb": 109.05
+    },
+    {
+      "video_id": "1IhHJgGNBUc",
+      "title": "Discussion with Alexey Tolchinsky and Thomas Pollak 1",
+      "playlist_id": "PLmR3yIXYqfUKKU8ZRo4JW1oUOjk1sq4FX",
+      "playlist_title": "Conversations and working meetings - 2 - on -1_test",
+      "status": "completed",
+      "download_path": "step_02_extracted_playlist_content/video_1IhHJgGNBUc/video.mp4",
+      "file_size_mb": 282.5
+    }
+  ]
+}

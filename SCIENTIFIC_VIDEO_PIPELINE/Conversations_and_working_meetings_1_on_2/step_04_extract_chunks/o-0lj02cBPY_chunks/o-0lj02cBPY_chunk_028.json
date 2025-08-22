@@ -1,0 +1,64 @@
+{
+  "chunk_id": "o-0lj02cBPY_chunk_028",
+  "semantic_text": "Amazing. Yeah. I think the whole thing. Now, if I had to define development, I would say it's sense making. It's, you get, you get some prompts from your genome and that's great, but, but, but the fundamental of the process is it's creative sense making in real time that, that just, you know, most of the time it looks like it has the same outcome, but it really doesn't have to. And I think we can, we can learn a lot from, from the things that you guys are studying, so.",
+  "speaker": "B",
+  "speaker_name": "Michael Levin",
+  "speaker_role": "Biologist, Tufts University",
+  "is_levin": true,
+  "speaker_order": 2,
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:12:48.699570",
+  "start_time": 3363540,
+  "end_time": 3389420,
+  "timestamp": "3363540.00s - 3389420.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "B"
+      ],
+      "speaker_details": {
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:43:13.147432"
+        }
+      },
+      "conversation_type": "monologue"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 1,
+      "speaker_interaction_type": "monologue",
+      "conversation_flow": [
+        "B: Amazing. Yeah. I think the whole thing. Now, if I ..."
+      ],
+      "collaboration_pattern": "single_speaker"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "Amazing. Yeah. I think the whole thing. Now, if I had to define development, I would say it's sense making. It's, you get, you get some prompts from your genome and that's great, but, but, but the fundamental of the process is it's creative sense making in real time that, that just, you know, most of the time it looks like it has the same outcome, but it really doesn't have to. And I think we can, we can learn a lot from, from the things that you guys are studying, so.",
+      "start_time": 3363540,
+      "end_time": 3389420,
+      "timestamp": "3363540.00s - 3389420.00s"
+    }
+  ]
+}

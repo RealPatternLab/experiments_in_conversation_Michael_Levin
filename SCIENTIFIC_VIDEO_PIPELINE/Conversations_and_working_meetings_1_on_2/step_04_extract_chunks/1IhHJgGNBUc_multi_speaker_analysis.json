@@ -1,0 +1,34 @@
+{
+  "video_id": "1IhHJgGNBUc",
+  "total_utterances": 56,
+  "speaker_contributions": {
+    "A": {
+      "utterance_count": 15,
+      "total_words": 2942,
+      "is_levin": false
+    },
+    "B": {
+      "utterance_count": 23,
+      "total_words": 4363,
+      "is_levin": true
+    },
+    "C": {
+      "utterance_count": 18,
+      "total_words": 3048,
+      "is_levin": false
+    }
+  },
+  "conversation_flow_sample": [
+    "Alexey Tolchinsky: I'm a clinical psychologist in Maryland. I work wi...",
+    "Michael Levin: Great....",
+    "Thomas Pollak: Yeah. So I'm a neuropsychiatrist working in London...",
+    "Michael Levin: Yeah, yeah, super interesting. You know, in partic...",
+    "Thomas Pollak: Yeah, that's great. I mean, certainly what you sai...",
+    "Michael Levin: That....",
+    "Thomas Pollak: That. That my. My memory is getting worse? Am I ge...",
+    "Alexey Tolchinsky: The....",
+    "Thomas Pollak: The kind of causal dynamics of that you see in oth...",
+    "Alexey Tolchinsky: I had a quick comment about one of the aspects you..."
+  ],
+  "analysis_timestamp": "2025-08-22T14:15:49.230339"
+}

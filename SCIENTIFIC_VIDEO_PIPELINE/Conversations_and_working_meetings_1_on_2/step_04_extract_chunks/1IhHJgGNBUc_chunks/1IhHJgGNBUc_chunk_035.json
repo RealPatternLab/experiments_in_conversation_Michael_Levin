@@ -1,0 +1,86 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_035",
+  "semantic_text": "I think we're all. Yeah, go ahead. I was just gonna say I love the real estate point because maybe this, this avatar therapy that you talked about is an example of that. Right? So instead of fighting over the same real estate, what if we give you more real estate? And what if, I mean, the problem, of course, is that there's only one body. And if, and if one wants to sit home and watch TV and the other one has to go to work, then there's an issue. But if, but if actually you can, there's some version of VR or some other thing. And we're actually thinking about this in the biomedical case too. There's this almost, I don't want to say decoy, but it's like a, you get some real estate of your own, you can sort of inhabit this thing and do your thing, and you don't all have to fight about the same thing. I don't know what that would look like, but I do think that in all of these cases, that fight of patterns for reality, the fight for real estate in which they can manifest is, is huge. And maybe, maybe we can, we can grow the pot in some, in some way, maybe that, maybe that's a solution.",
+  "speaker": "multiple",
+  "speaker_name": "Multiple Speakers",
+  "speaker_role": "Multiple Roles",
+  "is_levin": true,
+  "speaker_order": "multiple",
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.777265",
+  "start_time": 3194020,
+  "end_time": 3251960,
+  "timestamp": "3194020.00s - 3251960.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "A",
+        "B"
+      ],
+      "speaker_details": {
+        "A": {
+          "speaker_id": "A",
+          "name": "Alexey Tolchinsky",
+          "role": "The George Washington University, Center for Professional Psychology",
+          "is_levin": false,
+          "speaker_order": 2,
+          "additional_context": "a clinical psychologist and Adjunct Professor",
+          "identified_at": "2025-08-22T11:45:25.343931"
+        },
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:46:00.876272"
+        }
+      },
+      "conversation_type": "dialogue"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 2,
+      "speaker_interaction_type": "dialogue",
+      "conversation_flow": [
+        "A: I think we're all. Yeah, go ahead....",
+        "B: I was just gonna say I love the real estate point ..."
+      ],
+      "collaboration_pattern": "dialogue"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "A",
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "is_levin": false,
+      "speaker_order": 2,
+      "text": "I think we're all. Yeah, go ahead.",
+      "start_time": 3194020,
+      "end_time": 3195700,
+      "timestamp": "3194020.00s - 3195700.00s"
+    },
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "I was just gonna say I love the real estate point because maybe this, this avatar therapy that you talked about is an example of that. Right? So instead of fighting over the same real estate, what if we give you more real estate? And what if, I mean, the problem, of course, is that there's only one body. And if, and if one wants to sit home and watch TV and the other one has to go to work, then there's an issue. But if, but if actually you can, there's some version of VR or some other thing. And we're actually thinking about this in the biomedical case too. There's this almost, I don't want to say decoy, but it's like a, you get some real estate of your own, you can sort of inhabit this thing and do your thing, and you don't all have to fight about the same thing. I don't know what that would look like, but I do think that in all of these cases, that fight of patterns for reality, the fight for real estate in which they can manifest is, is huge. And maybe, maybe we can, we can grow the pot in some, in some way, maybe that, maybe that's a solution.",
+      "start_time": 3196660,
+      "end_time": 3251960,
+      "timestamp": "3196660.00s - 3251960.00s"
+    }
+  ]
+}

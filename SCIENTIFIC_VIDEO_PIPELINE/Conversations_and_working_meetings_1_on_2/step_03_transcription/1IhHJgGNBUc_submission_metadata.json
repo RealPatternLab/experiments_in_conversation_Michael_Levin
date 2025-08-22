@@ -1,0 +1,27 @@
+{
+  "transcript_id": "61991bfb-591b-44ba-a04c-044848e2351d",
+  "video_id": "1IhHJgGNBUc",
+  "video_title": "Discussion with Alexey Tolchinsky and Thomas Pollak 1",
+  "submitted_at": "2025-08-21T21:55:39.493406",
+  "pipeline_type": "conversations_1_on_2",
+  "transcription_config": {
+    "speaker_labels": true,
+    "speakers_expected": 3,
+    "auto_highlights": true,
+    "entity_detection": true,
+    "auto_chapters": true,
+    "sentiment_analysis": true,
+    "iab_categories": true,
+    "content_safety": false,
+    "language_detection": true,
+    "boost_param": "high"
+  },
+  "conversation_features": {
+    "speaker_diarization": true,
+    "qa_extraction_ready": true,
+    "levin_knowledge_focus": true,
+    "conversation_context_preservation": true
+  },
+  "webhook_url": "https://experimentsinconversationmichaellevin-neodev.streamlit.app/webhook",
+  "status": "pending"
+}

@@ -1,0 +1,64 @@
+{
+  "chunk_id": "o-0lj02cBPY_chunk_011",
+  "semantic_text": "Our hypothesis, and I think we're working on just building the model in silico and seeing what happens in a computer modeling. But the idea there, Frank, was that the continuation of self in time requires a temporal depth. Meaning I am the same as I have been and I predict to be the same Alexei, in the future now, when that collapse and I live in the here and now of the few seconds or a few minutes or whatever, and there's no temporal depth that then essentially there is no continuity of self. It's discontinuous. So the only thing we're saying is that that temporal depth is a prerequisite for coherence of the self. Is one of the arguments in the paper that without it, it's pretty impossible to maintain the coherence, if it makes any sense.",
+  "speaker": "C",
+  "speaker_name": "Alexey Tolchinsky",
+  "speaker_role": "George Washington University",
+  "is_levin": false,
+  "speaker_order": 3,
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:12:48.699497",
+  "start_time": 1130020,
+  "end_time": 1175850,
+  "timestamp": "1130020.00s - 1175850.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "C"
+      ],
+      "speaker_details": {
+        "C": {
+          "speaker_id": "C",
+          "name": "Alexey Tolchinsky",
+          "role": "George Washington University",
+          "is_levin": false,
+          "speaker_order": 3,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:43:13.147300"
+        }
+      },
+      "conversation_type": "monologue"
+    },
+    "levin_context": {
+      "levin_involved": false,
+      "levin_role": "not_involved",
+      "levin_contribution_type": null,
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 1,
+      "speaker_interaction_type": "monologue",
+      "conversation_flow": [
+        "C: Our hypothesis, and I think we're working on just ..."
+      ],
+      "collaboration_pattern": "single_speaker"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "C",
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "George Washington University",
+      "is_levin": false,
+      "speaker_order": 3,
+      "text": "Our hypothesis, and I think we're working on just building the model in silico and seeing what happens in a computer modeling. But the idea there, Frank, was that the continuation of self in time requires a temporal depth. Meaning I am the same as I have been and I predict to be the same Alexei, in the future now, when that collapse and I live in the here and now of the few seconds or a few minutes or whatever, and there's no temporal depth that then essentially there is no continuity of self. It's discontinuous. So the only thing we're saying is that that temporal depth is a prerequisite for coherence of the self. Is one of the arguments in the paper that without it, it's pretty impossible to maintain the coherence, if it makes any sense.",
+      "start_time": 1130020,
+      "end_time": 1175850,
+      "timestamp": "1130020.00s - 1175850.00s"
+    }
+  ]
+}

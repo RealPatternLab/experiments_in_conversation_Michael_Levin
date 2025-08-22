@@ -1,0 +1,64 @@
+{
+  "chunk_id": "o-0lj02cBPY_chunk_013",
+  "semantic_text": "Super interesting. I have a question, and then I want to comment on what Alexi had said. My question is this. In these patients, are the different personalities. How should I ask this? Do they have similar cognitive power? And what I mean by that is, do you get the sense that the sum total of cognitive performance that a given volume of human brain can, you know, can. Can put forth? Is, is there an issue that. An interesting question about how do you support multiple such things on the same hardware? Right. You see what I'm getting at. In other words, you would, you would think that. And there. I know there are other reasons to not think this, but. But the naive assumption is that there is some degree of cognitive performance that a given volume of substrate can, can manage. And suddenly you're running multiple humans on the same. In the same, you know, in the same amount. Is that, is that an issue? Or do you feel that each one of them is then diminished so that the sum total is basically preserved?",
+  "speaker": "B",
+  "speaker_name": "Michael Levin",
+  "speaker_role": "Biologist, Tufts University",
+  "is_levin": true,
+  "speaker_order": 2,
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:12:48.699504",
+  "start_time": 1651200,
+  "end_time": 1712440,
+  "timestamp": "1651200.00s - 1712440.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "B"
+      ],
+      "speaker_details": {
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:43:13.147432"
+        }
+      },
+      "conversation_type": "monologue"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 1,
+      "speaker_interaction_type": "monologue",
+      "conversation_flow": [
+        "B: Super interesting. I have a question, and then I w..."
+      ],
+      "collaboration_pattern": "single_speaker"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "Super interesting. I have a question, and then I want to comment on what Alexi had said. My question is this. In these patients, are the different personalities. How should I ask this? Do they have similar cognitive power? And what I mean by that is, do you get the sense that the sum total of cognitive performance that a given volume of human brain can, you know, can. Can put forth? Is, is there an issue that. An interesting question about how do you support multiple such things on the same hardware? Right. You see what I'm getting at. In other words, you would, you would think that. And there. I know there are other reasons to not think this, but. But the naive assumption is that there is some degree of cognitive performance that a given volume of substrate can, can manage. And suddenly you're running multiple humans on the same. In the same, you know, in the same amount. Is that, is that an issue? Or do you feel that each one of them is then diminished so that the sum total is basically preserved?",
+      "start_time": 1651200,
+      "end_time": 1712440,
+      "timestamp": "1651200.00s - 1712440.00s"
+    }
+  ]
+}

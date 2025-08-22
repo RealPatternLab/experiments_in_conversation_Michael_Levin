@@ -1,0 +1,2767 @@
+{
+  "metadata": {
+    "pipeline_step": "step_06_frame_chunk_alignment",
+    "total_alignments": 37,
+    "alignment_method": "timestamp_based",
+    "processing_timestamp": "2025-08-22T14:07:39.358811"
+  },
+  "aligned_content": [
+    {
+      "content_id": "1IhHJgGNBUc_chunk_000",
+      "text_content": {
+        "text": "I'm a clinical psychologist in Maryland. I work with outpatient requests and doing psychotherapy primarily. And I also, you know, write papers and Michael was kind enough to collaborate on a few of th...",
+        "metadata": {
+          "token_count": 34,
+          "sentence_count": 3,
+          "primary_topics": [
+            "multiple"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "psychotherapy",
+            "clinical",
+            "psychologist",
+            "maryland",
+            "outpatient",
+            "requests",
+            "doing",
+            "primarily",
+            "write",
+            "papers",
+            "michael",
+            "enough",
+            "collaborate"
+          ],
+          "content_summary": "And I also, you know, write papers and Michael was kind enough to collaborate on a few of th",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 0.48,
+          "end_time_seconds": 104.77
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_001",
+            "timestamp": 15,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_001_15.0s.jpg",
+            "file_size": 134563,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          15
+        ],
+        "time_range": {
+          "start": 0.48,
+          "end": 104.77
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:07:41.617774"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_001",
+      "text_content": {
+        "text": "Yeah, yeah, super interesting. You know, in particular, I was, I want to get your, your views on in these, this, this potential distinction between organic disease and quote unquote, psychological dis...",
+        "metadata": {
+          "token_count": 32,
+          "sentence_count": 2,
+          "primary_topics": [
+            "B"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "super",
+            "interesting",
+            "particular",
+            "views",
+            "potential",
+            "distinction",
+            "between",
+            "organic",
+            "disease",
+            "quote",
+            "unquote",
+            "psychological"
+          ],
+          "content_summary": "You know, in particular, I was, I want to get your, your views on in these, this, this potential dis...",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 106.84,
+          "end_time_seconds": 181.76
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_008",
+            "timestamp": 120,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_008_120.0s.jpg",
+            "file_size": 127223,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          120
+        ],
+        "time_range": {
+          "start": 106.84,
+          "end": 181.76
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:07:43.423762"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_002",
+      "text_content": {
+        "text": "Yeah, that's great. I mean, certainly what you said about the kind of aging process and the cognitive problems resonates a lot with a kind of group of patients that we've started seeing an awful lot r...",
+        "metadata": {
+          "token_count": 37,
+          "sentence_count": 2,
+          "primary_topics": [
+            "C"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "aging",
+            "cognitive",
+            "great",
+            "certainly",
+            "about",
+            "process",
+            "problems",
+            "resonates",
+            "group",
+            "patients",
+            "started",
+            "seeing",
+            "awful"
+          ],
+          "content_summary": "I mean, certainly what you said about the kind of aging process and the cognitive problems resonates...",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 183.2,
+          "end_time_seconds": 294.83
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_013",
+            "timestamp": 195,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_013_195.0s.jpg",
+            "file_size": 126476,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          195
+        ],
+        "time_range": {
+          "start": 183.2,
+          "end": 294.83
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:07:45.357956"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_003",
+      "text_content": {
+        "text": "That. That. That my. My memory is getting worse? Am I getting dementia? That then causes a kind of reallocation of attentional resources away from the ensuing conversation. So more stuff gets forgotte...",
+        "metadata": {
+          "token_count": 33,
+          "sentence_count": 5,
+          "primary_topics": [
+            "multiple"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "memory",
+            "dementia",
+            "getting",
+            "worse",
+            "getting",
+            "causes",
+            "reallocation",
+            "attentional",
+            "resources",
+            "ensuing",
+            "conversation",
+            "stuff",
+            "forgotte"
+          ],
+          "content_summary": "My memory is getting worse? Am I getting dementia? That then causes a kind of reallocation of attent...",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 294.83,
+          "end_time_seconds": 320.48
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_020",
+            "timestamp": 300,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_020_300.0s.jpg",
+            "file_size": 131143,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          300
+        ],
+        "time_range": {
+          "start": 294.83,
+          "end": 320.48
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:07:47.201657"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_004",
+      "text_content": {
+        "text": "The kind of causal dynamics of that you see in other kinds of functional neurological disorder and and actually, it's kind of like what you see in the. The yips in sport or in, or in. In music. It's a...",
+        "metadata": {
+          "token_count": 40,
+          "sentence_count": 4,
+          "primary_topics": [
+            "C"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "functional",
+            "neurological",
+            "disorder",
+            "causal",
+            "dynamics",
+            "other",
+            "kinds",
+            "sport",
+            "music"
+          ],
+          "content_summary": "The kind of causal dynamics of that you see in other kinds of functional neurological disorder and a...",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 320.48,
+          "end_time_seconds": 358.47
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_022",
+            "timestamp": 330,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_022_330.0s.jpg",
+            "file_size": 137144,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          330
+        ],
+        "time_range": {
+          "start": 320.48,
+          "end": 358.47
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:07:49.043282"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_005",
+      "text_content": {
+        "text": "I had a quick comment about one of the aspects you've mentioned, Thomas, about, you know, dementia, non dementia. Sometimes it's a hard question to answer, and we need repeated neuropsych evaluations ...",
+        "metadata": {
+          "token_count": 33,
+          "sentence_count": 2,
+          "primary_topics": [
+            "A"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "dementia",
+            "dementia",
+            "quick",
+            "comment",
+            "about",
+            "aspects",
+            "mentioned",
+            "thomas",
+            "about",
+            "sometimes",
+            "question",
+            "answer",
+            "repeated",
+            "neuropsych",
+            "evaluations"
+          ],
+          "content_summary": "I had a quick comment about one of the aspects you've mentioned, Thomas, about, you know, dementia, ...",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 365.51,
+          "end_time_seconds": 436.5
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_025",
+            "timestamp": 375,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_025_375.0s.jpg",
+            "file_size": 131338,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          375
+        ],
+        "time_range": {
+          "start": 365.51,
+          "end": 436.5
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:07:50.941992"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_006",
+      "text_content": {
+        "text": "Yeah, absolutely. I. I mean, I just. Maybe, Mike, this idea of the thought that breaks the thinker. I don't know whether the example I was giving is quite getting at what you were sort of thinking of....",
+        "metadata": {
+          "token_count": 38,
+          "sentence_count": 5,
+          "primary_topics": [
+            "multiple"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "absolutely",
+            "maybe",
+            "thought",
+            "breaks",
+            "thinker",
+            "whether",
+            "example",
+            "giving",
+            "getting",
+            "thinking"
+          ],
+          "content_summary": "I don't know whether the example I was giving is quite getting at what you were sort of thinking of",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 440.42,
+          "end_time_seconds": 585.44
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_030",
+            "timestamp": 450,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_030_450.0s.jpg",
+            "file_size": 134286,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          450
+        ],
+        "time_range": {
+          "start": 440.42,
+          "end": 585.44
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:07:52.627453"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_007",
+      "text_content": {
+        "text": "And in that example, does changing the environment or that niche construction, you're talking about it working on the substrate being the brain. But is there another perspective where the substrate is...",
+        "metadata": {
+          "token_count": 32,
+          "sentence_count": 2,
+          "primary_topics": [
+            "C"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "brain",
+            "example",
+            "changing",
+            "environment",
+            "niche",
+            "construction",
+            "talking",
+            "about",
+            "working",
+            "substrate",
+            "being",
+            "there",
+            "another",
+            "perspective",
+            "where"
+          ],
+          "content_summary": "And in that example, does changing the environment or that niche construction, you're talking about ...",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 587.69,
+          "end_time_seconds": 628.78
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_040",
+            "timestamp": 600,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_040_600.0s.jpg",
+            "file_size": 134571,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          600
+        ],
+        "time_range": {
+          "start": 587.69,
+          "end": 628.78
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:07:54.469582"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_008",
+      "text_content": {
+        "text": "Sure, sure. Yeah. Yeah, That's. I mean, yeah, that's. All of that is, I think, part of it. And in general, I've been playing a lot with, trying to. Trying to map differently the metaphor of, like, the...",
+        "metadata": {
+          "token_count": 38,
+          "sentence_count": 7,
+          "primary_topics": [
+            "B"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "think",
+            "general",
+            "playing",
+            "trying",
+            "trying",
+            "differently",
+            "metaphor"
+          ],
+          "content_summary": "And in general, I've been playing a lot with, trying to",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 628.86,
+          "end_time_seconds": 693.19
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_042",
+            "timestamp": 630,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_042_630.0s.jpg",
+            "file_size": 131161,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          630
+        ],
+        "time_range": {
+          "start": 628.86,
+          "end": 693.19
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:07:56.232897"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_009",
+      "text_content": {
+        "text": "I mean, in. In some of our disorders, even more impressively than in. In the ones we were talking about, like in. In schizophrenia and psychosis, the thought, I guess, depending on what you're calling...",
+        "metadata": {
+          "token_count": 35,
+          "sentence_count": 4,
+          "primary_topics": [
+            "C"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "disorders",
+            "psychosis",
+            "impressively",
+            "talking",
+            "about",
+            "schizophrenia",
+            "thought",
+            "guess",
+            "depending",
+            "calling"
+          ],
+          "content_summary": "In schizophrenia and psychosis, the thought, I guess, depending on what you're calling",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 693.99,
+          "end_time_seconds": 729.4
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_047",
+            "timestamp": 705,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_047_705.0s.jpg",
+            "file_size": 129958,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          705
+        ],
+        "time_range": {
+          "start": 693.99,
+          "end": 729.4
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:07:58.102254"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_010",
+      "text_content": {
+        "text": "Is. Is. Is. Is potentially harmful to them. So, I mean, I guess it's. I mean, there have been these. These great examples of, you know, I guess in psychiatry we can be very deflationary and. And talk ...",
+        "metadata": {
+          "token_count": 39,
+          "sentence_count": 8,
+          "primary_topics": [
+            "multiple"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "potentially",
+            "harmful",
+            "guess",
+            "there",
+            "great",
+            "examples",
+            "guess",
+            "psychiatry",
+            "deflationary"
+          ],
+          "content_summary": "These great examples of, you know, I guess in psychiatry we can be very deflationary and",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 729.4,
+          "end_time_seconds": 801.62
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_049",
+            "timestamp": 735,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_049_735.0s.jpg",
+            "file_size": 132873,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          735
+        ],
+        "time_range": {
+          "start": 729.4,
+          "end": 801.62
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:00.243757"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_011",
+      "text_content": {
+        "text": "Amazing. And then the psychologist sort of takes control. And in a kind of very, you know, organized and manualized way over six or eight sessions or so, the, the, the. The. The patient enters into re...",
+        "metadata": {
+          "token_count": 37,
+          "sentence_count": 5,
+          "primary_topics": [
+            "multiple"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "amazing",
+            "psychologist",
+            "takes",
+            "control",
+            "organized",
+            "manualized",
+            "eight",
+            "sessions",
+            "patient",
+            "enters"
+          ],
+          "content_summary": "And in a kind of very, you know, organized and manualized way over six or eight sessions or so, the,...",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 801.94,
+          "end_time_seconds": 895.24
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_054",
+            "timestamp": 810,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_054_810.0s.jpg",
+            "file_size": 134477,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          810
+        ],
+        "time_range": {
+          "start": 801.94,
+          "end": 895.24
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:01.968039"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_012",
+      "text_content": {
+        "text": "Amazing. That makes me think of two things. One is there are these ancient traditions where thought forms are a thing. And not only that, but you can bind the thought forms to specific objects. Now, b...",
+        "metadata": {
+          "token_count": 37,
+          "sentence_count": 5,
+          "primary_topics": [
+            "B"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "amazing",
+            "makes",
+            "think",
+            "things",
+            "there",
+            "ancient",
+            "traditions",
+            "where",
+            "thought",
+            "forms",
+            "thing",
+            "thought",
+            "forms",
+            "specific",
+            "objects"
+          ],
+          "content_summary": "One is there are these ancient traditions where thought forms are a thing",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 895.8,
+          "end_time_seconds": 984.87
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_060",
+            "timestamp": 900,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_060_900.0s.jpg",
+            "file_size": 129718,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          900
+        ],
+        "time_range": {
+          "start": 895.8,
+          "end": 984.87
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:03.651063"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_013",
+      "text_content": {
+        "text": "I was thinking about the problem when it's posed as, you know, the thought that breaks the thinker. And part of me wants to say that what we're doing here in terms of modeling is a modular approach wh...",
+        "metadata": {
+          "token_count": 39,
+          "sentence_count": 2,
+          "primary_topics": [
+            "A"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "thinking",
+            "about",
+            "problem",
+            "posed",
+            "thought",
+            "breaks",
+            "thinker",
+            "wants",
+            "doing",
+            "terms",
+            "modeling",
+            "modular",
+            "approach"
+          ],
+          "content_summary": "And part of me wants to say that what we're doing here in terms of modeling is a modular approach wh",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 986.07,
+          "end_time_seconds": 1073.76
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_066",
+            "timestamp": 990,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_066_990.0s.jpg",
+            "file_size": 132341,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          990
+        ],
+        "time_range": {
+          "start": 986.07,
+          "end": 1073.76
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:05.410705"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_014",
+      "text_content": {
+        "text": "I got kind of a, kind of a weird question for these, as you guys mentioned, these voices that tend to be very negative and destructive and all that. Is there ever a positive version of this in the cli...",
+        "metadata": {
+          "token_count": 40,
+          "sentence_count": 2,
+          "primary_topics": [
+            "multiple"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "weird",
+            "question",
+            "mentioned",
+            "voices",
+            "negative",
+            "destructive",
+            "there",
+            "positive",
+            "version"
+          ],
+          "content_summary": "I got kind of a, kind of a weird question for these, as you guys mentioned, these voices that tend t...",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 1076.16,
+          "end_time_seconds": 1189.92
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_072",
+            "timestamp": 1080,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_072_1080.0s.jpg",
+            "file_size": 129827,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1080
+        ],
+        "time_range": {
+          "start": 1076.16,
+          "end": 1189.92
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:07.191534"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_015",
+      "text_content": {
+        "text": "I guess just to add nuance to what, what Thomas just said and what Michael, you asked. I think that the positive versus negative voice is the affect. It's not the thought. The thought in and of itself...",
+        "metadata": {
+          "token_count": 38,
+          "sentence_count": 4,
+          "primary_topics": [
+            "A"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "guess",
+            "nuance",
+            "thomas",
+            "michael",
+            "asked",
+            "think",
+            "positive",
+            "versus",
+            "negative",
+            "voice",
+            "affect",
+            "thought",
+            "thought",
+            "itself"
+          ],
+          "content_summary": "I guess just to add nuance to what, what Thomas just said and what Michael, you asked",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 1190.16,
+          "end_time_seconds": 1243.82
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_080",
+            "timestamp": 1200,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_080_1200.0s.jpg",
+            "file_size": 128574,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1200
+        ],
+        "time_range": {
+          "start": 1190.16,
+          "end": 1243.82
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:09.007023"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_016",
+      "text_content": {
+        "text": "Sometimes in the cases that you just mentioned, where the negative voices become, over time, more positive, do you see that as providing therapy to the voice itself? Or are you still like, has the voi...",
+        "metadata": {
+          "token_count": 36,
+          "sentence_count": 1,
+          "primary_topics": [
+            "multiple"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "sometimes",
+            "cases",
+            "mentioned",
+            "where",
+            "negative",
+            "voices",
+            "become",
+            "positive",
+            "providing",
+            "therapy",
+            "voice",
+            "itself",
+            "still"
+          ],
+          "content_summary": "Sometimes in the cases that you just mentioned, where the negative voices become, over time, more po...",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 1243.82,
+          "end_time_seconds": 1324.04
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_083",
+            "timestamp": 1245,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_083_1245.0s.jpg",
+            "file_size": 136938,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1245
+        ],
+        "time_range": {
+          "start": 1243.82,
+          "end": 1324.04
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:10.705161"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_017",
+      "text_content": {
+        "text": "Right. I agree. I think we don't work with this symptom necessarily in therapy specifically, we're trying to work with a patient. And I think voice. I mean, general principle, I think in psychiatry, d...",
+        "metadata": {
+          "token_count": 35,
+          "sentence_count": 5,
+          "primary_topics": [
+            "multiple"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "agree",
+            "think",
+            "symptom",
+            "necessarily",
+            "therapy",
+            "specifically",
+            "trying",
+            "patient",
+            "think",
+            "voice",
+            "general",
+            "principle",
+            "think",
+            "psychiatry"
+          ],
+          "content_summary": "I think we don't work with this symptom necessarily in therapy specifically, we're trying to work wi...",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 1324.04,
+          "end_time_seconds": 1378.88
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_089",
+            "timestamp": 1335,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_089_1335.0s.jpg",
+            "file_size": 132552,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1335
+        ],
+        "time_range": {
+          "start": 1324.04,
+          "end": 1378.88
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:12.363096"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_018",
+      "text_content": {
+        "text": "Yeah, I think, you know, I think, I think it's interesting to, I, I, I, I'm, there's a distinction, I think, between arguing with the patient about the delusion versus saying to what extent, like how ...",
+        "metadata": {
+          "token_count": 37,
+          "sentence_count": 1,
+          "primary_topics": [
+            "B"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "think",
+            "think",
+            "think",
+            "interesting",
+            "distinction",
+            "think",
+            "between",
+            "arguing",
+            "patient",
+            "about",
+            "delusion",
+            "versus",
+            "saying",
+            "extent"
+          ],
+          "content_summary": "Yeah, I think, you know, I think, I think it's interesting to, I, I, I, I'm, there's a distinction, ...",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 1379.6,
+          "end_time_seconds": 1476.8
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_092",
+            "timestamp": 1380,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_092_1380.0s.jpg",
+            "file_size": 135665,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1380
+        ],
+        "time_range": {
+          "start": 1379.6,
+          "end": 1476.8
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:14.137460"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_019",
+      "text_content": {
+        "text": "And, and I think that's probably what got me so excited about some of what you've been writing. Anyway. You, I mean, I think you use the phrase the space of possible minds. And, and at some point the ...",
+        "metadata": {
+          "token_count": 40,
+          "sentence_count": 4,
+          "primary_topics": [
+            "C"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "think",
+            "probably",
+            "excited",
+            "about",
+            "writing",
+            "anyway",
+            "think",
+            "phrase",
+            "space",
+            "possible",
+            "minds",
+            "point"
+          ],
+          "content_summary": "And, and I think that's probably what got me so excited about some of what you've been writing",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 1477.439,
+          "end_time_seconds": 1563.01
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_099",
+            "timestamp": 1485,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_099_1485.0s.jpg",
+            "file_size": 139833,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1485
+        ],
+        "time_range": {
+          "start": 1477.439,
+          "end": 1563.01
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:15.867485"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_020",
+      "text_content": {
+        "text": "Yeah, I mean, one, one way. So, so there's one discipline where that kind of thing is completely normal, and that's computer science. Right. Because in computer science we are very comfortable with ha...",
+        "metadata": {
+          "token_count": 34,
+          "sentence_count": 4,
+          "primary_topics": [
+            "B"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "discipline",
+            "where",
+            "thing",
+            "completely",
+            "normal",
+            "computer",
+            "science",
+            "because",
+            "computer",
+            "science",
+            "comfortable"
+          ],
+          "content_summary": "So, so there's one discipline where that kind of thing is completely normal, and that's computer sci...",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 1564.45,
+          "end_time_seconds": 1697.1
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_105",
+            "timestamp": 1575,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_105_1575.0s.jpg",
+            "file_size": 132218,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1575
+        ],
+        "time_range": {
+          "start": 1564.45,
+          "end": 1697.1
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:17.535201"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_021",
+      "text_content": {
+        "text": "I think Michael, what you are focused on, and this is very useful is the active phase of treatment. So, and you bring up the computer science metaphor. Let's say the API, the interface, you know, at w...",
+        "metadata": {
+          "token_count": 38,
+          "sentence_count": 3,
+          "primary_topics": [
+            "A"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "think",
+            "michael",
+            "focused",
+            "useful",
+            "active",
+            "phase",
+            "treatment",
+            "bring",
+            "computer",
+            "science",
+            "metaphor",
+            "interface"
+          ],
+          "content_summary": "I think Michael, what you are focused on, and this is very useful is the active phase of treatment",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 1698.3,
+          "end_time_seconds": 1826.29
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_114",
+            "timestamp": 1710,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_114_1710.0s.jpg",
+            "file_size": 137298,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1710
+        ],
+        "time_range": {
+          "start": 1698.3,
+          "end": 1826.29
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:19.201595"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_022",
+      "text_content": {
+        "text": "Is that, is that the same or related to this, this idea of the therapeutic alliance is that kind of thing? Yeah. Which in and of itself doesn't heal it, but it's a necessary condition. Without it, not...",
+        "metadata": {
+          "token_count": 38,
+          "sentence_count": 3,
+          "primary_topics": [
+            "multiple"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "related",
+            "therapeutic",
+            "alliance",
+            "thing",
+            "which",
+            "itself",
+            "necessary",
+            "condition",
+            "without"
+          ],
+          "content_summary": "Is that, is that the same or related to this, this idea of the therapeutic alliance is that kind of ...",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 1828.21,
+          "end_time_seconds": 1929.16
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_122",
+            "timestamp": 1830,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_122_1830.0s.jpg",
+            "file_size": 134920,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1830
+        ],
+        "time_range": {
+          "start": 1828.21,
+          "end": 1929.16
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:20.894292"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_023",
+      "text_content": {
+        "text": "Exactly right. I think what, what you're doing there is you're telling the cell collective or tissue, for example, that, you know, I speak your language and it's okay, to talk to me. And if you use a ...",
+        "metadata": {
+          "token_count": 39,
+          "sentence_count": 3,
+          "primary_topics": [
+            "multiple"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "collective",
+            "exactly",
+            "think",
+            "doing",
+            "there",
+            "telling",
+            "tissue",
+            "example",
+            "speak",
+            "language"
+          ],
+          "content_summary": "I think what, what you're doing there is you're telling the cell collective or tissue, for example, ...",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 1932.24,
+          "end_time_seconds": 2062.45
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_129",
+            "timestamp": 1935,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_129_1935.0s.jpg",
+            "file_size": 133562,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          1935
+        ],
+        "time_range": {
+          "start": 1932.24,
+          "end": 2062.45
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:22.563703"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_024",
+      "text_content": {
+        "text": "Yeah, yeah, yeah, I think that's exactly right. And one of the, you know, there are sort of more conventional practical uses of these, of these anthrobots is just, you know, they're delivering some so...",
+        "metadata": {
+          "token_count": 35,
+          "sentence_count": 2,
+          "primary_topics": [
+            "B"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "anthrobots",
+            "think",
+            "exactly",
+            "there",
+            "conventional",
+            "practical",
+            "delivering"
+          ],
+          "content_summary": "And one of the, you know, there are sort of more conventional practical uses of these, of these anth...",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 2063.57,
+          "end_time_seconds": 2292.33
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_138",
+            "timestamp": 2070,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_138_2070.0s.jpg",
+            "file_size": 127621,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          2070
+        ],
+        "time_range": {
+          "start": 2063.57,
+          "end": 2292.33
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:24.299541"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_025",
+      "text_content": {
+        "text": "Yeah. I mean, we haven't done it yet, so I don't know. You know, I don't know that that works. But what about, I mean, have you, have you considered what would sort of getting the cells from, say, pat...",
+        "metadata": {
+          "token_count": 40,
+          "sentence_count": 4,
+          "primary_topics": [
+            "multiple"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "works",
+            "about",
+            "considered",
+            "getting",
+            "cells"
+          ],
+          "content_summary": "But what about, I mean, have you, have you considered what would sort of getting the cells from, say...",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 2292.81,
+          "end_time_seconds": 2329.35
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_153",
+            "timestamp": 2295,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_153_2295.0s.jpg",
+            "file_size": 126780,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          2295
+        ],
+        "time_range": {
+          "start": 2292.81,
+          "end": 2329.35
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:26.038432"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_026",
+      "text_content": {
+        "text": "Totally, totally. Yeah. Yeah. I've talked about this with. And if you have access to, by the way, to tissues, we should talk about the collaboration. But yes, we thought about making that what we need...",
+        "metadata": {
+          "token_count": 36,
+          "sentence_count": 6,
+          "primary_topics": [
+            "B"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "totally",
+            "totally",
+            "talked",
+            "about",
+            "access",
+            "tissues",
+            "about",
+            "collaboration",
+            "thought",
+            "about",
+            "making"
+          ],
+          "content_summary": "And if you have access to, by the way, to tissues, we should talk about the collaboration",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 2329.83,
+          "end_time_seconds": 2397.35
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_156",
+            "timestamp": 2340,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_156_2340.0s.jpg",
+            "file_size": 138485,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          2340
+        ],
+        "time_range": {
+          "start": 2329.83,
+          "end": 2397.35
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:27.766243"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_027",
+      "text_content": {
+        "text": "That's wild. That's amazing. I was thinking and listening to you both is, is I find myself a little disoriented because I'm trying to figure out what level of the hierarchy are we talking at? When we'...",
+        "metadata": {
+          "token_count": 37,
+          "sentence_count": 3,
+          "primary_topics": [
+            "multiple"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "amazing",
+            "thinking",
+            "listening",
+            "myself",
+            "little",
+            "disoriented",
+            "because",
+            "trying",
+            "figure",
+            "level",
+            "hierarchy",
+            "talking"
+          ],
+          "content_summary": "I was thinking and listening to you both is, is I find myself a little disoriented because I'm tryin...",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 2398.55,
+          "end_time_seconds": 2503.5
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_160",
+            "timestamp": 2400,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_160_2400.0s.jpg",
+            "file_size": 134867,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          2400
+        ],
+        "time_range": {
+          "start": 2398.55,
+          "end": 2503.5
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:29.432913"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_028",
+      "text_content": {
+        "text": "Yeah, yeah, I think that's, I think that's exactly right. And one of the things that we're writing next in the next couple months is I don't know if you've seen, there was a paper that Patrick McMilla...",
+        "metadata": {
+          "token_count": 38,
+          "sentence_count": 2,
+          "primary_topics": [
+            "B"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "think",
+            "think",
+            "exactly",
+            "things",
+            "writing",
+            "couple",
+            "months",
+            "there",
+            "paper",
+            "patrick",
+            "mcmilla"
+          ],
+          "content_summary": "And one of the things that we're writing next in the next couple months is I don't know if you've se...",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 2504.78,
+          "end_time_seconds": 2589.52
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_167",
+            "timestamp": 2505,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_167_2505.0s.jpg",
+            "file_size": 132414,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          2505
+        ],
+        "time_range": {
+          "start": 2504.78,
+          "end": 2589.52
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:31.003182"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_029",
+      "text_content": {
+        "text": "Super interesting, if I may, because you brought the big elephant in the room. I think throughout your work you're saying all intelligences are collective. And I think we need to talk about it. And I ...",
+        "metadata": {
+          "token_count": 37,
+          "sentence_count": 4,
+          "primary_topics": [
+            "A"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "collective",
+            "super",
+            "interesting",
+            "because",
+            "brought",
+            "elephant",
+            "think",
+            "throughout",
+            "saying",
+            "intelligences",
+            "think",
+            "about"
+          ],
+          "content_summary": "Super interesting, if I may, because you brought the big elephant in the room",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 2590.8,
+          "end_time_seconds": 2779.66
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_173",
+            "timestamp": 2595,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_173_2595.0s.jpg",
+            "file_size": 136577,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          2595
+        ],
+        "time_range": {
+          "start": 2590.8,
+          "end": 2779.66
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:32.780835"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_030",
+      "text_content": {
+        "text": "Yeah, that's important. I wonder to what. So I'm cautious about this notion that under normal circumstances the patient feels unified in the sense that we are really reliant on language and observable...",
+        "metadata": {
+          "token_count": 33,
+          "sentence_count": 3,
+          "primary_topics": [
+            "B"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "important",
+            "wonder",
+            "cautious",
+            "about",
+            "notion",
+            "under",
+            "normal",
+            "circumstances",
+            "patient",
+            "feels",
+            "unified",
+            "sense",
+            "reliant",
+            "language",
+            "observable"
+          ],
+          "content_summary": "So I'm cautious about this notion that under normal circumstances the patient feels unified in the s...",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 2780.86,
+          "end_time_seconds": 2864.6
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_186",
+            "timestamp": 2790,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_186_2790.0s.jpg",
+            "file_size": 128870,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          2790
+        ],
+        "time_range": {
+          "start": 2780.86,
+          "end": 2864.6
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:34.521366"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_031",
+      "text_content": {
+        "text": "No, I, I agree. I, I promised I wasn't going to bring Buddhism and meditation into it, but I'm, I'm going to now. But yeah, I mean, I think, I think my, my experience and a lot of people who, who do m...",
+        "metadata": {
+          "token_count": 43,
+          "sentence_count": 3,
+          "primary_topics": [
+            "C"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "agree",
+            "promised",
+            "going",
+            "bring",
+            "buddhism",
+            "meditation",
+            "going",
+            "think",
+            "think",
+            "experience",
+            "people"
+          ],
+          "content_summary": "I, I promised I wasn't going to bring Buddhism and meditation into it, but I'm, I'm going to now",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 2865.96,
+          "end_time_seconds": 2950.46
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_192",
+            "timestamp": 2880,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_192_2880.0s.jpg",
+            "file_size": 135675,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          2880
+        ],
+        "time_range": {
+          "start": 2865.96,
+          "end": 2950.46
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:36.146995"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_032",
+      "text_content": {
+        "text": "I, I agree with you both entirely. When I wake up, I notice myself in this non egoic state that Metzinger is talking about. And Thomas, you talk about where things just flow through the mind. There's ...",
+        "metadata": {
+          "token_count": 38,
+          "sentence_count": 4,
+          "primary_topics": [
+            "A"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "agree",
+            "entirely",
+            "notice",
+            "myself",
+            "egoic",
+            "state",
+            "metzinger",
+            "talking",
+            "about",
+            "thomas",
+            "about",
+            "where",
+            "things",
+            "through"
+          ],
+          "content_summary": "When I wake up, I notice myself in this non egoic state that Metzinger is talking about",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 2951.02,
+          "end_time_seconds": 3044.89
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_197",
+            "timestamp": 2955,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_197_2955.0s.jpg",
+            "file_size": 132228,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          2955
+        ],
+        "time_range": {
+          "start": 2951.02,
+          "end": 3044.89
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:37.976222"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_033",
+      "text_content": {
+        "text": "Yeah. And I wonder. So we see this right during embryogenesis when we look and say, oh look, there's one embryo. Well, what is there one of? Because what you're really looking at, for example, is a hu...",
+        "metadata": {
+          "token_count": 38,
+          "sentence_count": 4,
+          "primary_topics": [
+            "B"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "wonder",
+            "during",
+            "embryogenesis",
+            "embryo",
+            "there",
+            "because",
+            "looking",
+            "example"
+          ],
+          "content_summary": "So we see this right during embryogenesis when we look and say, oh look, there's one embryo",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 3046.49,
+          "end_time_seconds": 3118.05
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_204",
+            "timestamp": 3060,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_204_3060.0s.jpg",
+            "file_size": 128648,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          3060
+        ],
+        "time_range": {
+          "start": 3046.49,
+          "end": 3118.05
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:39.578070"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_034",
+      "text_content": {
+        "text": "Yeah, absolutely. It really does. And is there a way, Alexei, that. Because in these extreme cases like dissociative identity disorder and stuff, there's. It. It almost feels like again, I don't see t...",
+        "metadata": {
+          "token_count": 34,
+          "sentence_count": 6,
+          "primary_topics": [
+            "multiple"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "disorder",
+            "absolutely",
+            "there",
+            "alexei",
+            "because",
+            "extreme",
+            "cases",
+            "dissociative",
+            "identity",
+            "stuff",
+            "almost",
+            "feels",
+            "again"
+          ],
+          "content_summary": "Because in these extreme cases like dissociative identity disorder and stuff, there's",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 3119.81,
+          "end_time_seconds": 3192.74
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_208",
+            "timestamp": 3120,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_208_3120.0s.jpg",
+            "file_size": 129884,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          3120
+        ],
+        "time_range": {
+          "start": 3119.81,
+          "end": 3192.74
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:41.413552"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_035",
+      "text_content": {
+        "text": "I think we're all. Yeah, go ahead. I was just gonna say I love the real estate point because maybe this, this avatar therapy that you talked about is an example of that. Right? So instead of fighting ...",
+        "metadata": {
+          "token_count": 39,
+          "sentence_count": 4,
+          "primary_topics": [
+            "multiple"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "think",
+            "ahead",
+            "gonna",
+            "estate",
+            "point",
+            "because",
+            "maybe",
+            "avatar",
+            "therapy",
+            "talked",
+            "about",
+            "example",
+            "instead",
+            "fighting"
+          ],
+          "content_summary": "I was just gonna say I love the real estate point because maybe this, this avatar therapy that you t...",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 3194.02,
+          "end_time_seconds": 3251.96
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_213",
+            "timestamp": 3195,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_213_3195.0s.jpg",
+            "file_size": 125260,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          3195
+        ],
+        "time_range": {
+          "start": 3194.02,
+          "end": 3251.96
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:43.155186"
+      }
+    },
+    {
+      "content_id": "1IhHJgGNBUc_chunk_036",
+      "text_content": {
+        "text": "I, I, I think we're pretty much on the same page. Maybe we use different again, perspectives. But, you know, in a jury, there's 12 members, but the jury is functionally doing the same thing together c...",
+        "metadata": {
+          "token_count": 37,
+          "sentence_count": 3,
+          "primary_topics": [
+            "A"
+          ],
+          "secondary_topics": [],
+          "key_terms": [
+            "think",
+            "pretty",
+            "maybe",
+            "different",
+            "again",
+            "perspectives",
+            "members",
+            "functionally",
+            "doing",
+            "thing",
+            "together"
+          ],
+          "content_summary": "But, you know, in a jury, there's 12 members, but the jury is functionally doing the same thing toge...",
+          "scientific_domain": "Developmental Biology, Bioelectricity",
+          "start_time_seconds": 3253.32,
+          "end_time_seconds": 3317.65
+        }
+      },
+      "visual_content": {
+        "frames": [
+          {
+            "frame_id": "1IhHJgGNBUc_frame_217",
+            "timestamp": 3255,
+            "file_path": "step_05_frames/1IhHJgGNBUc/1IhHJgGNBUc_frame_217_3255.0s.jpg",
+            "file_size": 126331,
+            "alignment_confidence": 0.9
+          }
+        ],
+        "frame_count": 1
+      },
+      "temporal_info": {
+        "frame_timestamps": [
+          3255
+        ],
+        "time_range": {
+          "start": 3253.32,
+          "end": 3317.65
+        }
+      },
+      "quality_metrics": {
+        "total_frames": 1,
+        "average_confidence": 0.9,
+        "timestamp_coverage": 0.1
+      },
+      "processing_metadata": {
+        "alignment_method": "timestamp_based",
+        "timestamp_tolerance": 5.0
+      },
+      "conversation_context": {
+        "question": "",
+        "answer": "",
+        "questioner": "",
+        "answerer": "",
+        "youtube_link": "",
+        "pipeline_type": "conversations_1_on_2"
+      },
+      "metadata": {
+        "video_id": "1IhHJgGNBUc",
+        "pipeline_type": "conversations_1_on_2",
+        "created_at": "2025-08-22T14:08:44.841224"
+      }
+    }
+  ]
+}

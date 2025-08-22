@@ -1,0 +1,64 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_021",
+  "semantic_text": "I think Michael, what you are focused on, and this is very useful is the active phase of treatment. So, and you bring up the computer science metaphor. Let's say the API, the interface, you know, at what level of the hierarchy do intervene in. At the very top, at the very bottom, mid tier. And what's the interface and how, like whether it's bioelectric interface or something. And you know, the, the difference is that, you know, in say trauma therapy with dissociations, we usually have a phased approach where if the patient is dead, it doesn't matter what technique I use. So the first thing we do is stabilization. What I'm trying to say is the API is the relationship with the clinician always. We have a vast amount of literature that without it nothing happens. No matter what avatars or AIs or psychedelics people use because they cannot think, because they feel, you know, they're sort of flooded by affect and they, they can't, you know, take advantage of any communication with any interface. Right. So one is reduction of suicidality, reduction of non suicidal self harm behavior, substance use, basic kind of grounding. And after that we move to perhaps trauma therapy if we see trauma. So we need a model of a condition, is the etiological cause of the symptoms. And we don't target the voice or the dissociation, target the trauma. And then there's a phase of treatment which I think has to do with what you mentioned, which is sort of reintegration where we try to, I mean we generally move back toward that unity, the mental, the subjective unity. And at that point there's possibilities for all these things and, and also in the trauma therapy. But I just wanted to say that this is sort of the pathway we usually go through. And I don't know any way around. Even in, in pharmacological psychiatry we have this interesting thing called psychiatrist effect effect where the exact same medication and exact same doses prescribed by two different psychiatrists and that one has higher efficacy numbers because it is human, it's interaction. And, and this human interaction has biology. The pen system gets activated we're trying to lead the patient from disorganized, feeling insecure in a relationship to earn secure attachment. But then from there we move forward. But we have to build that foundation first. We never just start with like, let's do trauma treatment on the first session or second session conditions.",
+  "speaker": "A",
+  "speaker_name": "Alexey Tolchinsky",
+  "speaker_role": "The George Washington University, Center for Professional Psychology",
+  "is_levin": false,
+  "speaker_order": 2,
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.777193",
+  "start_time": 1698300,
+  "end_time": 1826290,
+  "timestamp": "1698300.00s - 1826290.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "A"
+      ],
+      "speaker_details": {
+        "A": {
+          "speaker_id": "A",
+          "name": "Alexey Tolchinsky",
+          "role": "The George Washington University, Center for Professional Psychology",
+          "is_levin": false,
+          "speaker_order": 2,
+          "additional_context": "a clinical psychologist and Adjunct Professor",
+          "identified_at": "2025-08-22T11:45:25.343931"
+        }
+      },
+      "conversation_type": "monologue"
+    },
+    "levin_context": {
+      "levin_involved": false,
+      "levin_role": "not_involved",
+      "levin_contribution_type": null,
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 1,
+      "speaker_interaction_type": "monologue",
+      "conversation_flow": [
+        "A: I think Michael, what you are focused on, and this..."
+      ],
+      "collaboration_pattern": "single_speaker"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "A",
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "is_levin": false,
+      "speaker_order": 2,
+      "text": "I think Michael, what you are focused on, and this is very useful is the active phase of treatment. So, and you bring up the computer science metaphor. Let's say the API, the interface, you know, at what level of the hierarchy do intervene in. At the very top, at the very bottom, mid tier. And what's the interface and how, like whether it's bioelectric interface or something. And you know, the, the difference is that, you know, in say trauma therapy with dissociations, we usually have a phased approach where if the patient is dead, it doesn't matter what technique I use. So the first thing we do is stabilization. What I'm trying to say is the API is the relationship with the clinician always. We have a vast amount of literature that without it nothing happens. No matter what avatars or AIs or psychedelics people use because they cannot think, because they feel, you know, they're sort of flooded by affect and they, they can't, you know, take advantage of any communication with any interface. Right. So one is reduction of suicidality, reduction of non suicidal self harm behavior, substance use, basic kind of grounding. And after that we move to perhaps trauma therapy if we see trauma. So we need a model of a condition, is the etiological cause of the symptoms. And we don't target the voice or the dissociation, target the trauma. And then there's a phase of treatment which I think has to do with what you mentioned, which is sort of reintegration where we try to, I mean we generally move back toward that unity, the mental, the subjective unity. And at that point there's possibilities for all these things and, and also in the trauma therapy. But I just wanted to say that this is sort of the pathway we usually go through. And I don't know any way around. Even in, in pharmacological psychiatry we have this interesting thing called psychiatrist effect effect where the exact same medication and exact same doses prescribed by two different psychiatrists and that one has higher efficacy numbers because it is human, it's interaction. And, and this human interaction has biology. The pen system gets activated we're trying to lead the patient from disorganized, feeling insecure in a relationship to earn secure attachment. But then from there we move forward. But we have to build that foundation first. We never just start with like, let's do trauma treatment on the first session or second session conditions.",
+      "start_time": 1698300,
+      "end_time": 1826290,
+      "timestamp": "1698300.00s - 1826290.00s"
+    }
+  ]
+}

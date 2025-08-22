@@ -1,0 +1,64 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_018",
+  "semantic_text": "Yeah, I think, you know, I think, I think it's interesting to, I, I, I, I'm, there's a distinction, I think, between arguing with the patient about the delusion versus saying to what extent, like how much, how much agency does the delusion itself have? It could be very low, but probably not as high as the, you know, as the, as the actual patient, but it, but it might not be zero. Right. And yeah, I'm thinking of these kinds of things in biomedicine too. Now nowadays where normally we focus on the physical machine and we think that if we fix the machine, the information patterns will get better, but I also think there might be scenarios where the driving force is the pattern itself and that what you, your actual target is not the physical substrate, it's the, it's the pattern. Whether that be a pattern of stress or an incorrect anatomical, you know, bioelectrical pre pattern, a memory, and it's actually you're trying to engage with it. And I don't know too, I mean, these are all empirical questions, so I guess we'll find out. But I don't know to what extent treating them as not, you know, as having less reality or as being mechanical and not actual, you know, mini thinkers or whatever. I don't know to what extent that really is the top of what we can do. I think, I think there might be scenarios where these things are actually doing their own goal directed computation. And there might be payoff in, in at least on the biomedical side, I don't know. On the psychological side, there might be payoff in engaging with them and their needs and their stressors and, and you know, whatever it is that's driving that, that pattern as distinct from what the, what the larger system is experiencing.",
+  "speaker": "B",
+  "speaker_name": "Michael Levin",
+  "speaker_role": "Biologist, Tufts University",
+  "is_levin": true,
+  "speaker_order": 2,
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.777182",
+  "start_time": 1379600,
+  "end_time": 1476800,
+  "timestamp": "1379600.00s - 1476800.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "B"
+      ],
+      "speaker_details": {
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:46:00.876272"
+        }
+      },
+      "conversation_type": "monologue"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 1,
+      "speaker_interaction_type": "monologue",
+      "conversation_flow": [
+        "B: Yeah, I think, you know, I think, I think it's int..."
+      ],
+      "collaboration_pattern": "single_speaker"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "Yeah, I think, you know, I think, I think it's interesting to, I, I, I, I'm, there's a distinction, I think, between arguing with the patient about the delusion versus saying to what extent, like how much, how much agency does the delusion itself have? It could be very low, but probably not as high as the, you know, as the, as the actual patient, but it, but it might not be zero. Right. And yeah, I'm thinking of these kinds of things in biomedicine too. Now nowadays where normally we focus on the physical machine and we think that if we fix the machine, the information patterns will get better, but I also think there might be scenarios where the driving force is the pattern itself and that what you, your actual target is not the physical substrate, it's the, it's the pattern. Whether that be a pattern of stress or an incorrect anatomical, you know, bioelectrical pre pattern, a memory, and it's actually you're trying to engage with it. And I don't know too, I mean, these are all empirical questions, so I guess we'll find out. But I don't know to what extent treating them as not, you know, as having less reality or as being mechanical and not actual, you know, mini thinkers or whatever. I don't know to what extent that really is the top of what we can do. I think, I think there might be scenarios where these things are actually doing their own goal directed computation. And there might be payoff in, in at least on the biomedical side, I don't know. On the psychological side, there might be payoff in engaging with them and their needs and their stressors and, and you know, whatever it is that's driving that, that pattern as distinct from what the, what the larger system is experiencing.",
+      "start_time": 1379600,
+      "end_time": 1476800,
+      "timestamp": "1379600.00s - 1476800.00s"
+    }
+  ]
+}

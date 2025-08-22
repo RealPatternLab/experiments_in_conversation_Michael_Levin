@@ -1,0 +1,10 @@
+{
+  "video_id": "1IhHJgGNBUc",
+  "total_alignments": 37,
+  "total_frames_aligned": 37,
+  "average_alignment_confidence": 0.9,
+  "output_files": {
+    "alignments": "step_06_frame_chunk_alignment/1IhHJgGNBUc_alignments.json",
+    "rag_ready": "step_06_frame_chunk_alignment/1IhHJgGNBUc_rag_ready_aligned_content.json"
+  }
+}

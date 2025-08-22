@@ -1,0 +1,98 @@
+{
+  "chunk_id": "o-0lj02cBPY_chunk_027",
+  "semantic_text": "Okay, well, very good. I've enjoyed it very much. I really liked your papers. I thought. Thank you so much. It really opened my eyes in a number of areas I really haven't thought about. About morphogenesis as being this powerful process. In the same way that you really make a strong argument for. I thought the experiments were really remarkable. I love the kidney tubules and how they maintain the same diameter down single cell.",
+  "speaker": "multiple",
+  "speaker_name": "Multiple Speakers",
+  "speaker_role": "Multiple Roles",
+  "is_levin": true,
+  "speaker_order": "multiple",
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:12:48.699565",
+  "start_time": 3334490,
+  "end_time": 3362340,
+  "timestamp": "3334490.00s - 3362340.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "A",
+        "B"
+      ],
+      "speaker_details": {
+        "A": {
+          "speaker_id": "A",
+          "name": "Frank Putnam",
+          "role": "UNC at Chapel Hill",
+          "is_levin": false,
+          "speaker_order": 2,
+          "additional_context": "Dept. of Psychiatry",
+          "identified_at": "2025-08-22T11:42:22.299847"
+        },
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:43:13.147432"
+        }
+      },
+      "conversation_type": "dialogue"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 2,
+      "speaker_interaction_type": "dialogue",
+      "conversation_flow": [
+        "A: Okay, well, very good. I've enjoyed it very much. ...",
+        "B: Thank you so much....",
+        "A: It really opened my eyes in a number of areas I re..."
+      ],
+      "collaboration_pattern": "dialogue"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "A",
+      "speaker_name": "Frank Putnam",
+      "speaker_role": "UNC at Chapel Hill",
+      "is_levin": false,
+      "speaker_order": 2,
+      "text": "Okay, well, very good. I've enjoyed it very much. I really liked your papers. I thought.",
+      "start_time": 3334490,
+      "end_time": 3339250,
+      "timestamp": "3334490.00s - 3339250.00s"
+    },
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "Thank you so much.",
+      "start_time": 3339250,
+      "end_time": 3339810,
+      "timestamp": "3339250.00s - 3339810.00s"
+    },
+    {
+      "speaker_id": "A",
+      "speaker_name": "Frank Putnam",
+      "speaker_role": "UNC at Chapel Hill",
+      "is_levin": false,
+      "speaker_order": 2,
+      "text": "It really opened my eyes in a number of areas I really haven't thought about. About morphogenesis as being this powerful process. In the same way that you really make a strong argument for. I thought the experiments were really remarkable. I love the kidney tubules and how they maintain the same diameter down single cell.",
+      "start_time": 3339810,
+      "end_time": 3362340,
+      "timestamp": "3339810.00s - 3362340.00s"
+    }
+  ]
+}

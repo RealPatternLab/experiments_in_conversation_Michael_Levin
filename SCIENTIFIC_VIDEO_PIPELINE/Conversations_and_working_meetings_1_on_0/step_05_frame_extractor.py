@@ -283,7 +283,7 @@ class ConversationsFrameExtractor:
                 cmd, 
                 capture_output=True, 
                 text=True,
-                timeout=30  # 30 second timeout
+                timeout=280  # 30 second timeout
             )
             
             if result.returncode != 0:

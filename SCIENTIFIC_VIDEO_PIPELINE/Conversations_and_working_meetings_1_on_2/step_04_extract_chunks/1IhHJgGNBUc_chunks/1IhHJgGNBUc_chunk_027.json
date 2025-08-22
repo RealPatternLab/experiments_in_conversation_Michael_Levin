@@ -1,0 +1,86 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_027",
+  "semantic_text": "That's wild. That's amazing. I was thinking and listening to you both is, is I find myself a little disoriented because I'm trying to figure out what level of the hierarchy are we talking at? When we're talking anthropods, it seems like mid tier. We're not at the molecular level, we're not at the very top. Right. And if we take your paper on cancer, Michael, I think that you have built the first principles, you have built a high level theory which is tame. And then you have the therapeutic experiments where you're saying, I do this, I restore the communications with the neighbors and the propagation of cancer stops. But in the middle you have a model of a condition of a specific cancer in specific environment. You're saying one aspect of this cancer is that this cancer cell stopped communicating with the neighbors. That's a model. And I'm missing that. With application of, I think your work to clinical psychology, I think that this is where we need to put meat on the bones. It's just saying, what is our model using tame is one of the principles, using your work of schizophrenia is very complex. But even if we take one symptom that we try to do, dissociative symptoms, you know, obsessive symptoms and other things, until then, I think it's very hard to go straight to therapeutics because I think, you know, we go from first principles to, to what to do. And if we take physics as a metaphor, the principles are prescriptive. There's sort of a method of how to do some things right. And then one level down is the mechanic, that's the model which is the Newton's laws, you know, and one way down from that is the dynamics of Kepler or how the, how the, the, the bodily of the planets move. But it's hard, it's hard to go from the first principle straight to the therapeutics or sort of what to do until we have the more nuanced understanding of the specific aspect of a specific disorder.",
+  "speaker": "multiple",
+  "speaker_name": "Multiple Speakers",
+  "speaker_role": "Multiple Roles",
+  "is_levin": false,
+  "speaker_order": "multiple",
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.777229",
+  "start_time": 2398550,
+  "end_time": 2503500,
+  "timestamp": "2398550.00s - 2503500.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "A",
+        "C"
+      ],
+      "speaker_details": {
+        "A": {
+          "speaker_id": "A",
+          "name": "Alexey Tolchinsky",
+          "role": "The George Washington University, Center for Professional Psychology",
+          "is_levin": false,
+          "speaker_order": 2,
+          "additional_context": "a clinical psychologist and Adjunct Professor",
+          "identified_at": "2025-08-22T11:45:25.343931"
+        },
+        "C": {
+          "speaker_id": "C",
+          "name": "Thomas Pollak",
+          "role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+          "is_levin": false,
+          "speaker_order": 3,
+          "additional_context": "neuropsychiatrist and researche",
+          "identified_at": "2025-08-22T11:46:00.876129"
+        }
+      },
+      "conversation_type": "dialogue"
+    },
+    "levin_context": {
+      "levin_involved": false,
+      "levin_role": "not_involved",
+      "levin_contribution_type": null,
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 2,
+      "speaker_interaction_type": "dialogue",
+      "conversation_flow": [
+        "C: That's wild. That's amazing....",
+        "A: I was thinking and listening to you both is, is I ..."
+      ],
+      "collaboration_pattern": "dialogue"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "C",
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "is_levin": false,
+      "speaker_order": 3,
+      "text": "That's wild. That's amazing.",
+      "start_time": 2398550,
+      "end_time": 2399990,
+      "timestamp": "2398550.00s - 2399990.00s"
+    },
+    {
+      "speaker_id": "A",
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "is_levin": false,
+      "speaker_order": 2,
+      "text": "I was thinking and listening to you both is, is I find myself a little disoriented because I'm trying to figure out what level of the hierarchy are we talking at? When we're talking anthropods, it seems like mid tier. We're not at the molecular level, we're not at the very top. Right. And if we take your paper on cancer, Michael, I think that you have built the first principles, you have built a high level theory which is tame. And then you have the therapeutic experiments where you're saying, I do this, I restore the communications with the neighbors and the propagation of cancer stops. But in the middle you have a model of a condition of a specific cancer in specific environment. You're saying one aspect of this cancer is that this cancer cell stopped communicating with the neighbors. That's a model. And I'm missing that. With application of, I think your work to clinical psychology, I think that this is where we need to put meat on the bones. It's just saying, what is our model using tame is one of the principles, using your work of schizophrenia is very complex. But even if we take one symptom that we try to do, dissociative symptoms, you know, obsessive symptoms and other things, until then, I think it's very hard to go straight to therapeutics because I think, you know, we go from first principles to, to what to do. And if we take physics as a metaphor, the principles are prescriptive. There's sort of a method of how to do some things right. And then one level down is the mechanic, that's the model which is the Newton's laws, you know, and one way down from that is the dynamics of Kepler or how the, how the, the, the bodily of the planets move. But it's hard, it's hard to go from the first principle straight to the therapeutics or sort of what to do until we have the more nuanced understanding of the specific aspect of a specific disorder.",
+      "start_time": 2401430,
+      "end_time": 2503500,
+      "timestamp": "2401430.00s - 2503500.00s"
+    }
+  ]
+}

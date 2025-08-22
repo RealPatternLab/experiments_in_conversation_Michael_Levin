@@ -1,0 +1,64 @@
+{
+  "chunk_id": "o-0lj02cBPY_chunk_026",
+  "semantic_text": "Amazing. Super interesting. Yeah. Okay. Yeah, I've taken a bunch of notes. I learned a lot. This is. This has been great. Thank you. Let me. Let me ponder some more, and I think I'm gonna. I'll come back with some much more specific. Some specific questions, but we should really. We should really think about this. I think. I think there's some. Some really good stuff here for aspects of regenerative medicine that are basically stuck. And I think. I think this is. Some of. This is. I think the missing. The missing piece.",
+  "speaker": "B",
+  "speaker_name": "Michael Levin",
+  "speaker_role": "Biologist, Tufts University",
+  "is_levin": true,
+  "speaker_order": 2,
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:12:48.699561",
+  "start_time": 3304200,
+  "end_time": 3333210,
+  "timestamp": "3304200.00s - 3333210.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "B"
+      ],
+      "speaker_details": {
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:43:13.147432"
+        }
+      },
+      "conversation_type": "monologue"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 1,
+      "speaker_interaction_type": "monologue",
+      "conversation_flow": [
+        "B: Amazing. Super interesting. Yeah. Okay. Yeah, I've..."
+      ],
+      "collaboration_pattern": "single_speaker"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "Amazing. Super interesting. Yeah. Okay. Yeah, I've taken a bunch of notes. I learned a lot. This is. This has been great. Thank you. Let me. Let me ponder some more, and I think I'm gonna. I'll come back with some much more specific. Some specific questions, but we should really. We should really think about this. I think. I think there's some. Some really good stuff here for aspects of regenerative medicine that are basically stuck. And I think. I think this is. Some of. This is. I think the missing. The missing piece.",
+      "start_time": 3304200,
+      "end_time": 3333210,
+      "timestamp": "3304200.00s - 3333210.00s"
+    }
+  ]
+}

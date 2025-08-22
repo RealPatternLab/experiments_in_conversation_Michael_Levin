@@ -1,0 +1,64 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_012",
+  "semantic_text": "Amazing. That makes me think of two things. One is there are these ancient traditions where thought forms are a thing. And not only that, but you can bind the thought forms to specific objects. Now, back in the day, they didn't have AI avatars and things like that, so these would be much more passive objects or things that. Dolls and things like this. Right. So there is that whole. And, and, and the other thing that this, this reminds me of is, you know, the, the therapy for phantom limb syndrome. Have you seen this stuff? Right. So, so, so similar, right. You're providing an avatar for the, for the limb that isn't there. You're basically unclenching through the mirror, you know, from. By mirroring the other hand, you can Sort of unclench the one that's missing and that, that then eventually becomes the, the, you know, the new, the new reality. So I think, I think, I think that's extremely interesting offloading. That's a new and very useful use for AI as a kind of, you know, all VR and all these avatars and things as a way to improve our dialogue with systems. I mean, it matches nicely our attempted use of AI now as a translator tool to other intelligences that you wouldn't be able to see. So we're working on, you know, communicating with your organs and with cells and things like that. That would make it much harder. Normally it's pretty hard to do, but, but these, these kind of technologies are good for that.",
+  "speaker": "B",
+  "speaker_name": "Michael Levin",
+  "speaker_role": "Biologist, Tufts University",
+  "is_levin": true,
+  "speaker_order": 2,
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.777151",
+  "start_time": 895800,
+  "end_time": 984870,
+  "timestamp": "895800.00s - 984870.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "B"
+      ],
+      "speaker_details": {
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:46:00.876272"
+        }
+      },
+      "conversation_type": "monologue"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 1,
+      "speaker_interaction_type": "monologue",
+      "conversation_flow": [
+        "B: Amazing. That makes me think of two things. One is..."
+      ],
+      "collaboration_pattern": "single_speaker"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "Amazing. That makes me think of two things. One is there are these ancient traditions where thought forms are a thing. And not only that, but you can bind the thought forms to specific objects. Now, back in the day, they didn't have AI avatars and things like that, so these would be much more passive objects or things that. Dolls and things like this. Right. So there is that whole. And, and, and the other thing that this, this reminds me of is, you know, the, the therapy for phantom limb syndrome. Have you seen this stuff? Right. So, so, so similar, right. You're providing an avatar for the, for the limb that isn't there. You're basically unclenching through the mirror, you know, from. By mirroring the other hand, you can Sort of unclench the one that's missing and that, that then eventually becomes the, the, you know, the new, the new reality. So I think, I think, I think that's extremely interesting offloading. That's a new and very useful use for AI as a kind of, you know, all VR and all these avatars and things as a way to improve our dialogue with systems. I mean, it matches nicely our attempted use of AI now as a translator tool to other intelligences that you wouldn't be able to see. So we're working on, you know, communicating with your organs and with cells and things like that. That would make it much harder. Normally it's pretty hard to do, but, but these, these kind of technologies are good for that.",
+      "start_time": 895800,
+      "end_time": 984870,
+      "timestamp": "895800.00s - 984870.00s"
+    }
+  ]
+}

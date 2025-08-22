@@ -1,0 +1,13 @@
+{
+  "timestamp": "20250822_114610_995",
+  "content_hash": "25ed1dbef79da82d3a98ee05be42b4c4",
+  "input_files": [
+    "1IhHJgGNBUc_rag_ready_aligned_content.json",
+    "o-0lj02cBPY_rag_ready_aligned_content.json"
+  ],
+  "file_count": 2,
+  "total_chunks": 66,
+  "created_at": "2025-08-22T11:46:44.807862",
+  "pipeline_step": "step_07_consolidated_embedding",
+  "pipeline_type": "conversations_1_on_2"
+}

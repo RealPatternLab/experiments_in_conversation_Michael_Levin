@@ -1,0 +1,45 @@
+{
+  "total_videos_processed": 2,
+  "total_alignments": 66,
+  "videos_with_errors": 0,
+  "successful_videos": 2,
+  "results": {
+    "1IhHJgGNBUc": {
+      "alignments_count": 37,
+      "summary": {
+        "video_id": "1IhHJgGNBUc",
+        "total_alignments": 37,
+        "total_frames_aligned": 37,
+        "average_alignment_confidence": 0.9,
+        "output_files": {
+          "alignments": "step_06_frame_chunk_alignment/1IhHJgGNBUc_alignments.json",
+          "rag_ready": "step_06_frame_chunk_alignment/1IhHJgGNBUc_rag_ready_aligned_content.json"
+        }
+      },
+      "files": {
+        "alignments": "step_06_frame_chunk_alignment/1IhHJgGNBUc_alignments.json",
+        "summary": "step_06_frame_chunk_alignment/1IhHJgGNBUc_alignment_summary.json",
+        "rag_content": "step_06_frame_chunk_alignment/1IhHJgGNBUc_rag_ready_aligned_content.json"
+      }
+    },
+    "o-0lj02cBPY": {
+      "alignments_count": 29,
+      "summary": {
+        "video_id": "o-0lj02cBPY",
+        "total_alignments": 29,
+        "total_frames_aligned": 26,
+        "average_alignment_confidence": 0.9,
+        "output_files": {
+          "alignments": "step_06_frame_chunk_alignment/o-0lj02cBPY_alignments.json",
+          "rag_ready": "step_06_frame_chunk_alignment/o-0lj02cBPY_rag_ready_aligned_content.json"
+        }
+      },
+      "files": {
+        "alignments": "step_06_frame_chunk_alignment/o-0lj02cBPY_alignments.json",
+        "summary": "step_06_frame_chunk_alignment/o-0lj02cBPY_alignment_summary.json",
+        "rag_content": "step_06_frame_chunk_alignment/o-0lj02cBPY_rag_ready_aligned_content.json"
+      }
+    }
+  },
+  "processing_timestamp": "2025-08-22T14:09:35.179905"
+}

@@ -1,0 +1,64 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_028",
+  "semantic_text": "Yeah, yeah, I think that's, I think that's exactly right. And one of the things that we're writing next in the next couple months is I don't know if you've seen, there was a paper that Patrick McMillan in my group did and I on aspects of morphogenesis that are basically reflections of aspects of collective intelligence. So here are the things in development that actually look like intelligence and you know, sort of these protocognitive kind of capabilities. So what I want to do now is I want to do the flip side and I want to do the disorders. So I want to, I want to take a look at what are, what are all the disorders, the known disorders of cognitive systems. And what does that look like in these developmental, you know, is it, is it, you know, every, everything from, from like optical, like illusions of perception. Right. So optical illusions. So that kind of like simple stuff all the way to excessive, you know, to, to, to, to too much certainty about what's going on, not enough certainty. Loss of, loss of, loss of agency, loss of, you know, loss of purpose. I mean, you can, you can sort of stack them, stack them up and just see, see what we already have. And then from there develop some of these connective mid level models. As Alexei was just saying, that would show. Okay, this is, this is going wrong because you've overestimated the, the, the importance of this particular signal. And thus you're, you know, put yourself in this condition. And so then from there we can start to, we can start to develop therapeutics.",
+  "speaker": "B",
+  "speaker_name": "Michael Levin",
+  "speaker_role": "Biologist, Tufts University",
+  "is_levin": true,
+  "speaker_order": 2,
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.777235",
+  "start_time": 2504780,
+  "end_time": 2589520,
+  "timestamp": "2504780.00s - 2589520.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "B"
+      ],
+      "speaker_details": {
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:46:00.876272"
+        }
+      },
+      "conversation_type": "monologue"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 1,
+      "speaker_interaction_type": "monologue",
+      "conversation_flow": [
+        "B: Yeah, yeah, I think that's, I think that's exactly..."
+      ],
+      "collaboration_pattern": "single_speaker"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "Yeah, yeah, I think that's, I think that's exactly right. And one of the things that we're writing next in the next couple months is I don't know if you've seen, there was a paper that Patrick McMillan in my group did and I on aspects of morphogenesis that are basically reflections of aspects of collective intelligence. So here are the things in development that actually look like intelligence and you know, sort of these protocognitive kind of capabilities. So what I want to do now is I want to do the flip side and I want to do the disorders. So I want to, I want to take a look at what are, what are all the disorders, the known disorders of cognitive systems. And what does that look like in these developmental, you know, is it, is it, you know, every, everything from, from like optical, like illusions of perception. Right. So optical illusions. So that kind of like simple stuff all the way to excessive, you know, to, to, to, to too much certainty about what's going on, not enough certainty. Loss of, loss of, loss of agency, loss of, you know, loss of purpose. I mean, you can, you can sort of stack them, stack them up and just see, see what we already have. And then from there develop some of these connective mid level models. As Alexei was just saying, that would show. Okay, this is, this is going wrong because you've overestimated the, the, the importance of this particular signal. And thus you're, you know, put yourself in this condition. And so then from there we can start to, we can start to develop therapeutics.",
+      "start_time": 2504780,
+      "end_time": 2589520,
+      "timestamp": "2504780.00s - 2589520.00s"
+    }
+  ]
+}

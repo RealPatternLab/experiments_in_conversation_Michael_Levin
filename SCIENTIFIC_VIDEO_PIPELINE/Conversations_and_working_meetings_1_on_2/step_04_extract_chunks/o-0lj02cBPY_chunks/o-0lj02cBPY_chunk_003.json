@@ -1,0 +1,64 @@
+{
+  "chunk_id": "o-0lj02cBPY_chunk_003",
+  "semantic_text": "Fascinating. Fascinating. Yeah. Many things to, to talk about and I'll, I'll tell you kind of the big picture of what we do, but I just wanted to, because you brought it up, I wanted to say one, one interesting thing that is brand new out of our lab that you may not have seen yet regarding to aging, to what you said about aging. So it turns out that in normal human patients, if there is such a thing, if you look at the gene expression that they have young versus older, one of the things that we find during aging is a dissociation of the phylogenetic age of the genes that they are expressing. And what I mean by that is younger tissues, all of the different organs are in pretty tight agreement about where on the tree of life most of your genes should be. So there's, there's this technique called phylo stratigraphy which tells you for, for any given gene, you know roughly how old, how old it is right across the tree, like so, so if you look at, if you look at young, young tissues, all of the tissues in the body are basically concordant with respect to the age of the genes that they're expressing. During age, the different organs start to float away from each other. They start to dissociate and they start to express differently across the tree of life, including some of them go, go backwards, right? Traverse the evolutionary history backwards towards more primitive genes. But what you find, which I think is to me quite interesting with respect to what you study is the loss of concordance. They are no longer in agreement. There's not just one story about where we are on the tree of life, but there are multiple stories. And, and, and you know how much of the aging phenotype is actually a consequence of the fact that you are now, I don't know if they're switching. It's, you know, we don't know that. But, but what we do know is that you now have different regions in the body that are no longer in agreement about where, where what the age of their genes should be. And I think in that wild, so, so we study, I mean for years we've been studying the spatial dissociation of cancer. So Cancer, in many ways is a, is a disease spatial dissociative. I mean, I call it a somatic dissociative disorder because, because what's, what happens literally is that cells disconnect from the electrical network that keeps all of the cells focused on building and maintaining specific things. So they have this, this large scale pattern memory, whether it be a heart or, you know, liver or whatever, they're working on individual cells disconnect from that, and they can no longer remember that goal. And now they're just amoebas in the environment and they do what they single celled organisms do. And we've developed a kind of integration approach where we don't kill the cells, we don't fix the genetic mutations if they have them. What we do is we reconnect them to the, forcibly reconnect them to the electrical network and they rejoin and they start doing normal things and behaving normally and, you know, and they stop making tumors and that kind of thing. But whereas cancer is that kind of dissociation in space, it now starts to look like aging, like human aging is a dissociation in time, specifically in evolutionary time. And so I think this, this issue of, I mean, you know, I think this is why Alexei brought us together. This issue of dissociation and reassociation and switching is, has profound consequences across scales. You know, not just cognitively, but, but, but somatically and biomedically as well.",
+  "speaker": "B",
+  "speaker_name": "Michael Levin",
+  "speaker_role": "Biologist, Tufts University",
+  "is_levin": true,
+  "speaker_order": 2,
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:12:48.699439",
+  "start_time": 446750,
+  "end_time": 653680,
+  "timestamp": "446750.00s - 653680.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "B"
+      ],
+      "speaker_details": {
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:43:13.147432"
+        }
+      },
+      "conversation_type": "monologue"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 1,
+      "speaker_interaction_type": "monologue",
+      "conversation_flow": [
+        "B: Fascinating. Fascinating. Yeah. Many things to, to..."
+      ],
+      "collaboration_pattern": "single_speaker"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "Fascinating. Fascinating. Yeah. Many things to, to talk about and I'll, I'll tell you kind of the big picture of what we do, but I just wanted to, because you brought it up, I wanted to say one, one interesting thing that is brand new out of our lab that you may not have seen yet regarding to aging, to what you said about aging. So it turns out that in normal human patients, if there is such a thing, if you look at the gene expression that they have young versus older, one of the things that we find during aging is a dissociation of the phylogenetic age of the genes that they are expressing. And what I mean by that is younger tissues, all of the different organs are in pretty tight agreement about where on the tree of life most of your genes should be. So there's, there's this technique called phylo stratigraphy which tells you for, for any given gene, you know roughly how old, how old it is right across the tree, like so, so if you look at, if you look at young, young tissues, all of the tissues in the body are basically concordant with respect to the age of the genes that they're expressing. During age, the different organs start to float away from each other. They start to dissociate and they start to express differently across the tree of life, including some of them go, go backwards, right? Traverse the evolutionary history backwards towards more primitive genes. But what you find, which I think is to me quite interesting with respect to what you study is the loss of concordance. They are no longer in agreement. There's not just one story about where we are on the tree of life, but there are multiple stories. And, and, and you know how much of the aging phenotype is actually a consequence of the fact that you are now, I don't know if they're switching. It's, you know, we don't know that. But, but what we do know is that you now have different regions in the body that are no longer in agreement about where, where what the age of their genes should be. And I think in that wild, so, so we study, I mean for years we've been studying the spatial dissociation of cancer. So Cancer, in many ways is a, is a disease spatial dissociative. I mean, I call it a somatic dissociative disorder because, because what's, what happens literally is that cells disconnect from the electrical network that keeps all of the cells focused on building and maintaining specific things. So they have this, this large scale pattern memory, whether it be a heart or, you know, liver or whatever, they're working on individual cells disconnect from that, and they can no longer remember that goal. And now they're just amoebas in the environment and they do what they single celled organisms do. And we've developed a kind of integration approach where we don't kill the cells, we don't fix the genetic mutations if they have them. What we do is we reconnect them to the, forcibly reconnect them to the electrical network and they rejoin and they start doing normal things and behaving normally and, you know, and they stop making tumors and that kind of thing. But whereas cancer is that kind of dissociation in space, it now starts to look like aging, like human aging is a dissociation in time, specifically in evolutionary time. And so I think this, this issue of, I mean, you know, I think this is why Alexei brought us together. This issue of dissociation and reassociation and switching is, has profound consequences across scales. You know, not just cognitively, but, but, but somatically and biomedically as well.",
+      "start_time": 446750,
+      "end_time": 653680,
+      "timestamp": "446750.00s - 653680.00s"
+    }
+  ]
+}

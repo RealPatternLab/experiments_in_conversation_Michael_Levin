@@ -1,0 +1,86 @@
+{
+  "chunk_id": "o-0lj02cBPY_chunk_004",
+  "semantic_text": "Yeah, yeah, I know. That's certainly one of the places I felt that there was a connection there. So they were sort of on very different scales. Planaria versus people. Yeah, so, so overall, you know, that's, that's what, that's what I study. I want to understand how my, how very diverse kinds of minds come to be, how they scale up, how parts become integrated. So cognitive glue mechanisms. How do, how do parts in this might be cells and they might be neurons, as in your case, or they might be other kinds of cells, as in my case, form collectives that are dominated by specific thought patterns that, that make them more than the sum of their parts. And we see this. And so, and so what I like to do is steal tools from the cognitive behavioral science community and the neuroscientists and apply them widely first in other kinds of cells. That's almost trivial because that is where the mechanisms are all homologous. That is where the brain evolved. All of its cool mental tricks is by pivot them from anatomical spaces that have been navigated since the beginning of multicellularity and actually bacterial biofilms. Even, but we also apply them to some other really weird things that are not cells. So that's what I'm interested in, is learning to detect unfamiliar minds and weird embodiments and trying to understand the scaling process by which they dissociate and associate in the first place.",
+  "speaker": "multiple",
+  "speaker_name": "Multiple Speakers",
+  "speaker_role": "Multiple Roles",
+  "is_levin": true,
+  "speaker_order": "multiple",
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:12:48.699446",
+  "start_time": 654000,
+  "end_time": 749690,
+  "timestamp": "654000.00s - 749690.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "A",
+        "B"
+      ],
+      "speaker_details": {
+        "A": {
+          "speaker_id": "A",
+          "name": "Frank Putnam",
+          "role": "UNC at Chapel Hill",
+          "is_levin": false,
+          "speaker_order": 2,
+          "additional_context": "Dept. of Psychiatry",
+          "identified_at": "2025-08-22T11:42:22.299847"
+        },
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:43:13.147432"
+        }
+      },
+      "conversation_type": "dialogue"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 2,
+      "speaker_interaction_type": "dialogue",
+      "conversation_flow": [
+        "A: Yeah, yeah, I know. That's certainly one of the pl...",
+        "B: Yeah, so, so overall, you know, that's, that's wha..."
+      ],
+      "collaboration_pattern": "dialogue"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "A",
+      "speaker_name": "Frank Putnam",
+      "speaker_role": "UNC at Chapel Hill",
+      "is_levin": false,
+      "speaker_order": 2,
+      "text": "Yeah, yeah, I know. That's certainly one of the places I felt that there was a connection there. So they were sort of on very different scales. Planaria versus people.",
+      "start_time": 654000,
+      "end_time": 667350,
+      "timestamp": "654000.00s - 667350.00s"
+    },
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "Yeah, so, so overall, you know, that's, that's what, that's what I study. I want to understand how my, how very diverse kinds of minds come to be, how they scale up, how parts become integrated. So cognitive glue mechanisms. How do, how do parts in this might be cells and they might be neurons, as in your case, or they might be other kinds of cells, as in my case, form collectives that are dominated by specific thought patterns that, that make them more than the sum of their parts. And we see this. And so, and so what I like to do is steal tools from the cognitive behavioral science community and the neuroscientists and apply them widely first in other kinds of cells. That's almost trivial because that is where the mechanisms are all homologous. That is where the brain evolved. All of its cool mental tricks is by pivot them from anatomical spaces that have been navigated since the beginning of multicellularity and actually bacterial biofilms. Even, but we also apply them to some other really weird things that are not cells. So that's what I'm interested in, is learning to detect unfamiliar minds and weird embodiments and trying to understand the scaling process by which they dissociate and associate in the first place.",
+      "start_time": 668230,
+      "end_time": 749690,
+      "timestamp": "668230.00s - 749690.00s"
+    }
+  ]
+}

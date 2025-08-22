@@ -1,0 +1,64 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_030",
+  "semantic_text": "Yeah, that's important. I wonder to what. So I'm cautious about this notion that under normal circumstances the patient feels unified in the sense that we are really reliant on language and observable behavior. And so this is what happens when, when I, when I talk about intelligence of organs and so on. People say, well, I don't feel like my liver is conscious. I'm like, right, the left hemisphere that is talking to me right now will make that claim. And that's great. But, but, but your liver, with whom I cannot yet speak, although we're working on it. But, but that we can't talk to yet, might have a different perspective on this. And of course you don't feel it any more than you feel me being conscious, right? So you don't necessarily. So, you know, it's clear that in the normal human there is a voice that feels unified, for sure. But I'm just, I'm not super sure that there aren't others that normally don't get to speak. And I think we know right from the sodium pentothal experiments and when you put the language hemisphere to sleep and then the split brain studies and all of that, that there's at the very least one other set of opinions in there and probably many more, but, but they're sort of generically suppressed, right? So I think, I think we have to be, we have to be careful about that. But I don't know what you guys think about that.",
+  "speaker": "B",
+  "speaker_name": "Michael Levin",
+  "speaker_role": "Biologist, Tufts University",
+  "is_levin": true,
+  "speaker_order": 2,
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.777242",
+  "start_time": 2780860,
+  "end_time": 2864600,
+  "timestamp": "2780860.00s - 2864600.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "B"
+      ],
+      "speaker_details": {
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:46:00.876272"
+        }
+      },
+      "conversation_type": "monologue"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 1,
+      "speaker_interaction_type": "monologue",
+      "conversation_flow": [
+        "B: Yeah, that's important. I wonder to what. So I'm c..."
+      ],
+      "collaboration_pattern": "single_speaker"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "Yeah, that's important. I wonder to what. So I'm cautious about this notion that under normal circumstances the patient feels unified in the sense that we are really reliant on language and observable behavior. And so this is what happens when, when I, when I talk about intelligence of organs and so on. People say, well, I don't feel like my liver is conscious. I'm like, right, the left hemisphere that is talking to me right now will make that claim. And that's great. But, but, but your liver, with whom I cannot yet speak, although we're working on it. But, but that we can't talk to yet, might have a different perspective on this. And of course you don't feel it any more than you feel me being conscious, right? So you don't necessarily. So, you know, it's clear that in the normal human there is a voice that feels unified, for sure. But I'm just, I'm not super sure that there aren't others that normally don't get to speak. And I think we know right from the sodium pentothal experiments and when you put the language hemisphere to sleep and then the split brain studies and all of that, that there's at the very least one other set of opinions in there and probably many more, but, but they're sort of generically suppressed, right? So I think, I think we have to be, we have to be careful about that. But I don't know what you guys think about that.",
+      "start_time": 2780860,
+      "end_time": 2864600,
+      "timestamp": "2780860.00s - 2864600.00s"
+    }
+  ]
+}

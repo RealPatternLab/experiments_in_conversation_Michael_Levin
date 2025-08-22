@@ -372,14 +372,14 @@ def process_rag_metadata(rag_results: list) -> list:
     }
     
     for i, chunk in enumerate(rag_results):
-        logger.info(f"📝 Processing chunk {i+1}/{len(rag_results)}: {chunk.get('content_id', 'Unknown')}")
+        logger.info(f"📝 Processing chunk {i+1}/{len(rag_results)}: {chunk.get('id', chunk.get('content_id', 'Unknown'))}")
         
         pipeline_source = chunk.get('pipeline_source', 'unknown')
         logger.info(f"   Pipeline source: {pipeline_source}")
         
         if pipeline_source == 'videos':
             # Handle video chunks
-            chunk_id = chunk.get('content_id', 'Unknown')
+            chunk_id = chunk.get('id', chunk.get('content_id', 'Unknown'))
             logger.info(f"   Video chunk ID: {chunk_id}")
             
             # Extract video ID from chunk_id (format: CXzaq4_MEV8_chunk_000)
@@ -412,7 +412,7 @@ def process_rag_metadata(rag_results: list) -> list:
             processed_results.append(processed_chunk)
         elif pipeline_source == 'conversations':
             # Handle conversations chunks
-            chunk_id = chunk.get('content_id', 'Unknown')
+            chunk_id = chunk.get('id', chunk.get('content_id', 'Unknown'))
             logger.info(f"   Conversations chunk ID: {chunk_id}")
             
             # Get metadata directly from chunk structure
@@ -446,8 +446,17 @@ def process_rag_metadata(rag_results: list) -> list:
                     # Convert relative path to absolute path for the Streamlit app
                     relative_path = frames[0].get('file_path', '')
                     if relative_path:
-                        # The frame path is relative to the pipeline directory, but we need it relative to the root
-                        frame_path = f"SCIENTIFIC_VIDEO_PIPELINE/Conversations_and_working_meetings_1_on_1/{relative_path}"
+                        # Determine the correct pipeline directory based on the chunk source
+                        # Check if this is from the 1-on-2 or 1-on-1 pipeline
+                        if 'Conversations_and_working_meetings_1_on_2' in relative_path:
+                            pipeline_dir = "Conversations_and_working_meetings_1_on_2"
+                        elif 'Conversations_and_working_meetings_1_on_1' in relative_path:
+                            pipeline_dir = "Conversations_and_working_meetings_1_on_1"
+                        else:
+                            # Default to 1-on-2 if we can't determine
+                            pipeline_dir = "Conversations_and_working_meetings_1_on_2"
+                        
+                        frame_path = f"SCIENTIFIC_VIDEO_PIPELINE/{pipeline_dir}/{relative_path}"
                         logger.info(f"💬 Frame path: {frame_path}")
                     else:
                         logger.warning(f"💬 No file_path in frame: {frames[0]}")
@@ -485,7 +494,7 @@ def process_rag_metadata(rag_results: list) -> list:
         
         if pipeline_source == 'videos':
             # Handle video chunks
-            chunk_id = chunk.get('content_id', 'Unknown')
+            chunk_id = chunk.get('id', chunk.get('content_id', 'Unknown'))
             video_id = chunk_id.split('_chunk_')[0] if '_chunk_' in chunk_id else chunk_id.split('_')[0] if '_' in chunk_id else 'Unknown'
             chunk_metadata = chunk.get('chunk_metadata', {})
             start_time = chunk_metadata.get('start_time_seconds', 0)
@@ -598,7 +607,7 @@ def get_conversational_response(query: str, rag_results: list, conversation_hist
             
             if pipeline_source == 'videos' or pipeline_source == 'formal_presentations':
                 # Handle video chunks
-                chunk_id = chunk.get('content_id', 'Unknown')
+                chunk_id = chunk.get('id', chunk.get('content_id', 'Unknown'))
                 
                 # Extract video ID from chunk_id (format: CXzaq4_MEV8_chunk_000)
                 # Take everything before '_chunk_' to get the full video ID
@@ -685,14 +694,27 @@ def get_conversational_response(query: str, rag_results: list, conversation_hist
                 # Get frame path for thumbnail
                 frame_path = ""
                 visual_context = chunk.get('visual_context', {})
+                logger.info(f"💬 Debug: visual_context keys: {list(visual_context.keys()) if visual_context else 'None'}")
+                
                 if visual_context and 'frames' in visual_context:
                     frames = visual_context['frames']
+                    logger.info(f"💬 Debug: frames array length: {len(frames) if frames else 0}")
                     if frames:
                         # Convert relative path to absolute path for the Streamlit app
                         relative_path = frames[0].get('file_path', '')
+                        logger.info(f"💬 Debug: relative_path from frame: {relative_path}")
                         if relative_path:
-                            # The frame path is relative to the pipeline directory, but we need it relative to the root
-                            frame_path = f"SCIENTIFIC_VIDEO_PIPELINE/Conversations_and_working_meetings_1_on_1/{relative_path}"
+                            # Determine the correct pipeline directory based on the chunk source
+                            # Check if this is from the 1-on-2 or 1-on-1 pipeline
+                            if 'Conversations_and_working_meetings_1_on_2' in relative_path:
+                                pipeline_dir = "Conversations_and_working_meetings_1_on_2"
+                            elif 'Conversations_and_working_meetings_1_on_1' in relative_path:
+                                pipeline_dir = "Conversations_and_working_meetings_1_on_1"
+                            else:
+                                # Default to 1-on-2 if we can't determine
+                                pipeline_dir = "Conversations_and_working_meetings_1_on_2"
+                            
+                            frame_path = f"SCIENTIFIC_VIDEO_PIPELINE/{pipeline_dir}/{relative_path}"
                             logger.info(f"💬 Frame path: {frame_path}")
                         else:
                             logger.warning(f"💬 No file_path in frame: {frames[0]}")
@@ -700,6 +722,11 @@ def get_conversational_response(query: str, rag_results: list, conversation_hist
                         logger.warning(f"💬 No frames in visual_context: {visual_context}")
                 else:
                     logger.warning(f"💬 No visual_context or frames in chunk: {chunk.keys()}")
+                    # Try alternative frame data locations
+                    if 'frames' in chunk:
+                        logger.info(f"💬 Debug: Found 'frames' directly in chunk: {chunk['frames']}")
+                    if 'visual_content' in chunk:
+                        logger.info(f"💬 Debug: Found 'visual_content' in chunk: {chunk['visual_content']}")
                 
                 context_parts.append(f"{source_key} [CONVERSATION] ({chunk_id}, {start_time:.1f}s-{end_time:.1f}s): {text_content[:200]}...")
                 
@@ -1252,17 +1279,38 @@ class UnifiedRetriever:
     """Unified retriever that searches publications, formal presentations, and conversations pipelines."""
     
     def __init__(self):
-        """Initialize the unified retriever with all three pipelines."""
+        """Initialize the unified retriever with all available pipelines."""
         # Publications pipeline
         self.publications_retriever = FAISSRetriever(Path("SCIENTIFIC_PUBLICATION_PIPELINE/step_06_faiss_embeddings"))
         
         # Formal presentations video pipeline
         self.video_retriever = FAISSRetriever(Path("SCIENTIFIC_VIDEO_PIPELINE/formal_presentations_1_on_0/step_07_faiss_embeddings"))
         
-        # Conversations pipeline
-        self.conversations_retriever = FAISSRetriever(Path("SCIENTIFIC_VIDEO_PIPELINE/Conversations_and_working_meetings_1_on_1/step_07_faiss_embeddings"))
+        # Multiple conversations pipelines
+        self.conversations_retrievers = []
         
-        logger.info("🔗 Unified retriever initialized for all three pipelines")
+        # Try to load 1-on-2 pipeline
+        conversations_1on2_path = Path("SCIENTIFIC_VIDEO_PIPELINE/Conversations_and_working_meetings_1_on_2/step_07_faiss_embeddings")
+        if conversations_1on2_path.exists():
+            try:
+                self.conversations_retrievers.append(FAISSRetriever(conversations_1on2_path))
+                logger.info("✅ Loaded 1-on-2 conversations pipeline")
+            except Exception as e:
+                logger.warning(f"⚠️ Failed to load 1-on-2 conversations pipeline: {e}")
+        
+        # Try to load 1-on-1 pipeline
+        conversations_1on1_path = Path("SCIENTIFIC_VIDEO_PIPELINE/Conversations_and_working_meetings_1_on_1/step_07_faiss_embeddings")
+        if conversations_1on1_path.exists():
+            try:
+                self.conversations_retrievers.append(FAISSRetriever(conversations_1on1_path))
+                logger.info("✅ Loaded 1-on-1 conversations pipeline")
+            except Exception as e:
+                logger.warning(f"⚠️ Failed to load 1-on-1 conversations pipeline: {e}")
+        
+        if not self.conversations_retrievers:
+            logger.warning("⚠️ No conversations pipelines loaded")
+        
+        logger.info(f"🔗 Unified retriever initialized with {len(self.conversations_retrievers)} conversation pipeline(s)")
     
     def retrieve_relevant_chunks(self, query: str, top_k: int = 10) -> list:
         """Retrieve chunks from all three pipelines and amalgamate results."""
@@ -1273,8 +1321,18 @@ class UnifiedRetriever:
             # Search formal presentations video pipeline
             video_results = self.video_retriever.retrieve_relevant_chunks(query, top_k=top_k)
             
-            # Search conversations pipeline
-            conversations_results = self.conversations_retriever.retrieve_relevant_chunks(query, top_k=top_k)
+            # Search all conversations pipelines
+            conversations_results = []
+            for i, conv_retriever in enumerate(self.conversations_retrievers):
+                try:
+                    conv_results = conv_retriever.retrieve_relevant_chunks(query, top_k=top_k)
+                    # Add pipeline identifier to distinguish between different conversation pipelines
+                    for result in conv_results:
+                        result['conversation_pipeline_id'] = f"conversations_{i+1}"
+                    conversations_results.extend(conv_results)
+                    logger.info(f"✅ Retrieved {len(conv_results)} chunks from conversations pipeline {i+1}")
+                except Exception as e:
+                    logger.warning(f"⚠️ Failed to retrieve from conversations pipeline {i+1}: {e}")
             
             # Add pipeline source to each result
             for result in publications_results:
@@ -1322,7 +1380,7 @@ class UnifiedRetriever:
             logger.info(f"🔍 Unified search with normalized scores:")
             logger.info(f"   Publications: {len(publications_results)} chunks")
             logger.info(f"   Formal presentations: {len(video_results)} chunks")
-            logger.info(f"   Conversations: {len(conversations_results)} chunks")
+            logger.info(f"   Conversations: {len(conversations_results)} chunks (from {len(self.conversations_retrievers)} pipeline(s))")
             
             # Log score ranges for debugging
             for pipeline_name, (min_score, max_score) in pipeline_scores.items():
@@ -1342,34 +1400,56 @@ class UnifiedRetriever:
             return self.publications_retriever.retrieve_relevant_chunks(query, top_k=top_k)
     
     def get_collection_stats(self) -> dict:
-        """Get combined statistics from all three pipelines."""
+        """Get combined statistics from all available pipelines."""
         publications_stats = self.publications_retriever.get_collection_stats()
         video_stats = self.video_retriever.get_collection_stats()
-        conversations_stats = self.conversations_retriever.get_collection_stats()
+        
+        # Aggregate stats from all conversation pipelines
+        conversations_stats = {'total_chunks': 0}
+        for i, conv_retriever in enumerate(self.conversations_retrievers):
+            try:
+                conv_stats = conv_retriever.get_collection_stats()
+                conversations_stats['total_chunks'] += conv_stats.get('total_chunks', 0)
+                # Store individual pipeline stats
+                conversations_stats[f'pipeline_{i+1}'] = conv_stats
+            except Exception as e:
+                logger.warning(f"⚠️ Failed to get stats from conversations pipeline {i+1}: {e}")
         
         total_chunks = (publications_stats.get('total_chunks', 0) + 
                        video_stats.get('total_chunks', 0) + 
                        conversations_stats.get('total_chunks', 0))
+        
+        total_pipelines = 2 + len(self.conversations_retrievers)  # publications + videos + conversations
         
         return {
             'total_chunks': total_chunks,
             'publications': publications_stats,
             'formal_presentations': video_stats,
             'conversations': conversations_stats,
-            'pipelines': 3
+            'pipelines': total_pipelines
         }
     
     def get_active_embeddings_info(self) -> dict:
-        """Get information about active embeddings from all three pipelines."""
+        """Get information about active embeddings from all available pipelines."""
         publications_info = self.publications_retriever.get_active_embeddings_info()
         video_info = self.video_retriever.get_active_embeddings_info()
-        conversations_info = self.conversations_retriever.get_active_embeddings_info()
+        
+        # Aggregate info from all conversation pipelines
+        conversations_info = {}
+        for i, conv_retriever in enumerate(self.conversations_retrievers):
+            try:
+                conv_info = conv_retriever.get_active_embeddings_info()
+                conversations_info[f'pipeline_{i+1}'] = conv_info
+            except Exception as e:
+                logger.warning(f"⚠️ Failed to get embeddings info from conversations pipeline {i+1}: {e}")
+        
+        total_pipelines = 2 + len(self.conversations_retrievers)  # publications + videos + conversations
         
         return {
             'publications': publications_info,
             'formal_presentations': video_info,
             'conversations': conversations_info,
-            'total_pipelines': 3
+            'total_pipelines': total_pipelines
         }
 
 def conversational_page():
@@ -2012,28 +2092,37 @@ def main():
             
         if 'retriever' not in st.session_state:
             with st.spinner("Loading unified RAG system..."):
-                # Check if all three pipelines have embeddings
+                # Check if pipelines have embeddings
                 publications_dir = Path("SCIENTIFIC_PUBLICATION_PIPELINE/step_06_faiss_embeddings")
                 formal_presentations_dir = Path("SCIENTIFIC_VIDEO_PIPELINE/formal_presentations_1_on_0/step_07_faiss_embeddings")
-                conversations_dir = Path("SCIENTIFIC_VIDEO_PIPELINE/Conversations_and_working_meetings_1_on_1/step_07_faiss_embeddings")
+                
+                # Check multiple conversation pipelines
+                conversations_1on2_dir = Path("SCIENTIFIC_VIDEO_PIPELINE/Conversations_and_working_meetings_1_on_2/step_07_faiss_embeddings")
+                conversations_1on1_dir = Path("SCIENTIFIC_VIDEO_PIPELINE/Conversations_and_working_meetings_1_on_1/step_07_faiss_embeddings")
                 
                 pipeline_status = {
                     'publications': publications_dir.exists(),
                     'formal_presentations': formal_presentations_dir.exists(),
-                    'conversations': conversations_dir.exists()
+                    'conversations_1on2': conversations_1on2_dir.exists(),
+                    'conversations_1on1': conversations_1on1_dir.exists()
                 }
                 
+                # Count available pipelines (publications + videos + any conversations)
                 available_pipelines = sum(pipeline_status.values())
+                conversations_available = pipeline_status['conversations_1on2'] or pipeline_status['conversations_1on1']
                 
                 if available_pipelines >= 2:
                     st.session_state.retriever = UnifiedRetriever()
-                    st.success(f"✅ Unified retriever loaded ({available_pipelines}/3 pipelines available)")
+                    st.success(f"✅ Unified retriever loaded ({available_pipelines}/4+ pipelines available)")
                     
                     # Show which pipelines are available
                     pipeline_info = []
                     for name, available in pipeline_status.items():
                         status = "✅" if available else "❌"
-                        pipeline_info.append(f"{status} {name.replace('_', ' ').title()}")
+                        display_name = name.replace('_', ' ').title()
+                        if name.startswith('conversations_'):
+                            display_name = f"Conversations ({name.split('_')[1]})"
+                        pipeline_info.append(f"{status} {display_name}")
                     
                     st.info("📊 Pipeline Status: " + " | ".join(pipeline_info))
                     
@@ -2041,13 +2130,18 @@ def main():
                     # Use single pipeline retriever
                     if pipeline_status['publications']:
                         st.session_state.retriever = FAISSRetriever(publications_dir)
-                        st.warning("⚠️ Publications pipeline only (videos not found)")
+                        st.warning("⚠️ Publications pipeline only (other pipelines not found)")
                     elif pipeline_status['formal_presentations']:
                         st.session_state.retriever = FAISSRetriever(formal_presentations_dir)
                         st.warning("⚠️ Formal presentations pipeline only (other pipelines not found)")
-                    elif pipeline_status['conversations']:
-                        st.session_state.retriever = FAISSRetriever(conversations_dir)
-                        st.warning("⚠️ Conversations pipeline only (other pipelines not found)")
+                    elif conversations_available:
+                        # Use the first available conversations pipeline
+                        if pipeline_status['conversations_1on2']:
+                            st.session_state.retriever = FAISSRetriever(conversations_1on2_dir)
+                            st.warning("⚠️ Conversations 1-on-2 pipeline only (other pipelines not found)")
+                        else:
+                            st.session_state.retriever = FAISSRetriever(conversations_1on1_dir)
+                            st.warning("⚠️ Conversations 1-on-1 pipeline only (other pipelines not found)")
                 else:
                     st.error("No FAISS embeddings found!")
                     st.info("Please run the pipelines first to generate embeddings.")

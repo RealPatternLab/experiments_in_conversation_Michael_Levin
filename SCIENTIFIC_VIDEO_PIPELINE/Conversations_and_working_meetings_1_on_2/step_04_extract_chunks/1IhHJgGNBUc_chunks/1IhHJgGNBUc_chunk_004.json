@@ -1,0 +1,64 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_004",
+  "semantic_text": "The kind of causal dynamics of that you see in other kinds of functional neurological disorder and and actually, it's kind of like what you see in the. The yips in sport or in, or in. In music. It's a. The loss of automaticity that comes from a kind of hyper focus on something that previously was overlearned. And then suddenly it just. It just breaks down. And, you know, it's like when, when I was. When I was young and I was trying to kind of walk past a pretty girl at school, and all of a sudden I'm trying to pay attention to the way my legs are working and, you know, I can't do it anymore. It's that sort of thing, I guess.",
+  "speaker": "C",
+  "speaker_name": "Thomas Pollak",
+  "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+  "is_levin": false,
+  "speaker_order": 3,
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.776984",
+  "start_time": 320480,
+  "end_time": 358470,
+  "timestamp": "320480.00s - 358470.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "C"
+      ],
+      "speaker_details": {
+        "C": {
+          "speaker_id": "C",
+          "name": "Thomas Pollak",
+          "role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+          "is_levin": false,
+          "speaker_order": 3,
+          "additional_context": "neuropsychiatrist and researche",
+          "identified_at": "2025-08-22T11:46:00.876129"
+        }
+      },
+      "conversation_type": "monologue"
+    },
+    "levin_context": {
+      "levin_involved": false,
+      "levin_role": "not_involved",
+      "levin_contribution_type": null,
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 1,
+      "speaker_interaction_type": "monologue",
+      "conversation_flow": [
+        "C: The kind of causal dynamics of that you see in oth..."
+      ],
+      "collaboration_pattern": "single_speaker"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "C",
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "is_levin": false,
+      "speaker_order": 3,
+      "text": "The kind of causal dynamics of that you see in other kinds of functional neurological disorder and and actually, it's kind of like what you see in the. The yips in sport or in, or in. In music. It's a. The loss of automaticity that comes from a kind of hyper focus on something that previously was overlearned. And then suddenly it just. It just breaks down. And, you know, it's like when, when I was. When I was young and I was trying to kind of walk past a pretty girl at school, and all of a sudden I'm trying to pay attention to the way my legs are working and, you know, I can't do it anymore. It's that sort of thing, I guess.",
+      "start_time": 320480,
+      "end_time": 358470,
+      "timestamp": "320480.00s - 358470.00s"
+    }
+  ]
+}

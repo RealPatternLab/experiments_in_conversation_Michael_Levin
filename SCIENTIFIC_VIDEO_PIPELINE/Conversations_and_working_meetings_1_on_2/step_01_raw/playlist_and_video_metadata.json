@@ -1,0 +1,66 @@
+{
+  "pipeline_type": "conversations_1_on_1",
+  "description": "Metadata for conversations between Michael Levin and other researchers",
+  "extraction_timestamp": "2025-08-22T02:40:18Z",
+  "total_playlists": 1,
+  "total_videos": 2,
+  "playlists": [
+    {
+      "playlist_id": "PLmR3yIXYqfUKKU8ZRo4JW1oUOjk1sq4FX",
+      "title": "Conversations and working meetings - 2 - on -1_test",
+      "uploader": "realpattern",
+      "video_count": 2,
+      "playlist_url": "https://www.youtube.com/playlist?list=PLmR3yIXYqfUKKU8ZRo4JW1oUOjk1sq4FX",
+      "first_video_id": "o-0lj02cBPY",
+      "first_video_title": "Conversation with Frank Putnam and Alexey Tolchinsky 1",
+      "first_video_uploader": "Michael Levin's Academic Content",
+      "first_video_upload_date": null,
+      "first_video_duration": 3390,
+      "first_video_view_count": 3200,
+      "first_video_like_count": null,
+      "first_video_description": null,
+      "first_video_tags": [],
+      "first_video_categories": [],
+      "processing_type": "conversations_1_on_1",
+      "expected_speakers": 2,
+      "content_type": "conversation",
+      "extraction_timestamp": "2025-08-22T02:40:17Z",
+      "videos": [
+        {
+          "video_id": "o-0lj02cBPY",
+          "title": "Conversation with Frank Putnam and Alexey Tolchinsky 1",
+          "uploader": "Michael Levin's Academic Content",
+          "upload_date": null,
+          "duration": 3390,
+          "view_count": 3200,
+          "like_count": null,
+          "description": null,
+          "tags": [],
+          "categories": [],
+          "playlist_index": 1,
+          "playlist_id": "PLmR3yIXYqfUKKU8ZRo4JW1oUOjk1sq4FX"
+        },
+        {
+          "video_id": "1IhHJgGNBUc",
+          "title": "Discussion with Alexey Tolchinsky and Thomas Pollak 1",
+          "uploader": "Michael Levin's Academic Content",
+          "upload_date": null,
+          "duration": 3320,
+          "view_count": 3400,
+          "like_count": null,
+          "description": null,
+          "tags": [],
+          "categories": [],
+          "playlist_index": 2,
+          "playlist_id": "PLmR3yIXYqfUKKU8ZRo4JW1oUOjk1sq4FX"
+        }
+      ]
+    }
+  ],
+  "processing_notes": [
+    "This pipeline is designed for conversations between Michael Levin and other researchers",
+    "Speaker diarization will be used to identify different speakers",
+    "Semantic chunking will focus on Levin's views and knowledge",
+    "Q&A pairs will be extracted for fine-tuning purposes"
+  ]
+}

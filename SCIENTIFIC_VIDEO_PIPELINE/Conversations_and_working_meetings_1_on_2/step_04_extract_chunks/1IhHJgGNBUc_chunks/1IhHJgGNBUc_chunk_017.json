@@ -1,0 +1,86 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_017",
+  "semantic_text": "Right. I agree. I think we don't work with this symptom necessarily in therapy specifically, we're trying to work with a patient. And I think voice. I mean, general principle, I think in psychiatry, don't argue with the delusion. We're not trying to talk him out of it, because when you do, it becomes more entrenched. But, you know, with. We try to make sense of the symptom. We try to come up with a hypothesis where what's happening makes some sense. And oftentimes people come into therapy with an explanatory gap, such as they're saying, I feel badly, but I don't exactly know what it is and how it came about, or I'm doing this thing. I keep on doing it over and over, and I know I shouldn't be doing it, but I'm doing it anyway. And part of the work initially is to sort of fill in this gap with the hypothesis, to make sense of what's happening, why it's happening, and then to do certain things together over a long period of time. But typically, I don't think the voice is itself is targeted I agree with Thomas here.",
+  "speaker": "multiple",
+  "speaker_name": "Multiple Speakers",
+  "speaker_role": "Multiple Roles",
+  "is_levin": true,
+  "speaker_order": "multiple",
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.777178",
+  "start_time": 1324040,
+  "end_time": 1378880,
+  "timestamp": "1324040.00s - 1378880.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "A",
+        "B"
+      ],
+      "speaker_details": {
+        "A": {
+          "speaker_id": "A",
+          "name": "Alexey Tolchinsky",
+          "role": "The George Washington University, Center for Professional Psychology",
+          "is_levin": false,
+          "speaker_order": 2,
+          "additional_context": "a clinical psychologist and Adjunct Professor",
+          "identified_at": "2025-08-22T11:45:25.343931"
+        },
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:46:00.876272"
+        }
+      },
+      "conversation_type": "dialogue"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 2,
+      "speaker_interaction_type": "dialogue",
+      "conversation_flow": [
+        "B: Right....",
+        "A: I agree. I think we don't work with this symptom n..."
+      ],
+      "collaboration_pattern": "dialogue"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "Right.",
+      "start_time": 1324040,
+      "end_time": 1324360,
+      "timestamp": "1324040.00s - 1324360.00s"
+    },
+    {
+      "speaker_id": "A",
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "is_levin": false,
+      "speaker_order": 2,
+      "text": "I agree. I think we don't work with this symptom necessarily in therapy specifically, we're trying to work with a patient. And I think voice. I mean, general principle, I think in psychiatry, don't argue with the delusion. We're not trying to talk him out of it, because when you do, it becomes more entrenched. But, you know, with. We try to make sense of the symptom. We try to come up with a hypothesis where what's happening makes some sense. And oftentimes people come into therapy with an explanatory gap, such as they're saying, I feel badly, but I don't exactly know what it is and how it came about, or I'm doing this thing. I keep on doing it over and over, and I know I shouldn't be doing it, but I'm doing it anyway. And part of the work initially is to sort of fill in this gap with the hypothesis, to make sense of what's happening, why it's happening, and then to do certain things together over a long period of time. But typically, I don't think the voice is itself is targeted I agree with Thomas here.",
+      "start_time": 1326440,
+      "end_time": 1378880,
+      "timestamp": "1326440.00s - 1378880.00s"
+    }
+  ]
+}

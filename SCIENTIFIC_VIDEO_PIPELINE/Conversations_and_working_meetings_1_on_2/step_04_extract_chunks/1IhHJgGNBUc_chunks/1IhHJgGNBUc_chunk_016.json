@@ -1,0 +1,86 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_016",
+  "semantic_text": "Sometimes in the cases that you just mentioned, where the negative voices become, over time, more positive, do you see that as providing therapy to the voice itself? Or are you still like, has the voice gotten better because you've sort of resolved its issues, so to speak? Is that a way to think about it? Yeah, I would say that most people in my field really don't engage with the voices or the characters behind the voices in any way at all. I think probably in psychological therapies there might be a little bit more of that, but I imagine probably not too much either. No, they are seen really as symptoms of. Of an illness. And, And. And my feeling is that, you know, if one day someone's voice is no longer heard as the devil and it's now heard as God and it's saying. And they're saying good things, that's probably interpreted by most people in the profession as, you know, a migraine that suddenly got a bit. A bit more pleasant. You know, it's. It's just a symptom changing. And I. I don't think that's the right way to. To think about it. But I suppose from the clinical perspective, as soon as the voice gets good, it's kind of. It's not your problem anymore.",
+  "speaker": "multiple",
+  "speaker_name": "Multiple Speakers",
+  "speaker_role": "Multiple Roles",
+  "is_levin": true,
+  "speaker_order": "multiple",
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.777170",
+  "start_time": 1243820,
+  "end_time": 1324040,
+  "timestamp": "1243820.00s - 1324040.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "C",
+        "B"
+      ],
+      "speaker_details": {
+        "C": {
+          "speaker_id": "C",
+          "name": "Thomas Pollak",
+          "role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+          "is_levin": false,
+          "speaker_order": 3,
+          "additional_context": "neuropsychiatrist and researche",
+          "identified_at": "2025-08-22T11:46:00.876129"
+        },
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:46:00.876272"
+        }
+      },
+      "conversation_type": "dialogue"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 2,
+      "speaker_interaction_type": "dialogue",
+      "conversation_flow": [
+        "B: Sometimes in the cases that you just mentioned, wh...",
+        "C: Yeah, I would say that most people in my field rea..."
+      ],
+      "collaboration_pattern": "dialogue"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "Sometimes in the cases that you just mentioned, where the negative voices become, over time, more positive, do you see that as providing therapy to the voice itself? Or are you still like, has the voice gotten better because you've sort of resolved its issues, so to speak? Is that a way to think about it?",
+      "start_time": 1243820,
+      "end_time": 1265220,
+      "timestamp": "1243820.00s - 1265220.00s"
+    },
+    {
+      "speaker_id": "C",
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "is_levin": false,
+      "speaker_order": 3,
+      "text": "Yeah, I would say that most people in my field really don't engage with the voices or the characters behind the voices in any way at all. I think probably in psychological therapies there might be a little bit more of that, but I imagine probably not too much either. No, they are seen really as symptoms of. Of an illness. And, And. And my feeling is that, you know, if one day someone's voice is no longer heard as the devil and it's now heard as God and it's saying. And they're saying good things, that's probably interpreted by most people in the profession as, you know, a migraine that suddenly got a bit. A bit more pleasant. You know, it's. It's just a symptom changing. And I. I don't think that's the right way to. To think about it. But I suppose from the clinical perspective, as soon as the voice gets good, it's kind of. It's not your problem anymore.",
+      "start_time": 1268490,
+      "end_time": 1324040,
+      "timestamp": "1268490.00s - 1324040.00s"
+    }
+  ]
+}

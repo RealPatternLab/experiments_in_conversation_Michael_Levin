@@ -1,0 +1,86 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_010",
+  "semantic_text": "Is. Is. Is. Is potentially harmful to them. So, I mean, I guess it's. I mean, there have been these. These great examples of, you know, I guess in psychiatry we can be very deflationary and. And talk about that agent as a fiction. And the point of psychiatry is to kind of bash that perspective out of the patient with medications or therapy or whatever. But I think there are other approaches that actually, I guess more consistent with the way you might be thinking about things is, well, what happens if you engage with it relationally as an agent? And I'm just thinking in my university, there's this wonderful trial of something Called Avatar therapy, where people that have these distressing voices that, you know, can. They say awful things to the patient, they take control of them, and, you know, they have all this kind of psychological baggage with it. The patient sits down with a therapist and they construct an avatar on a computer screen that has the same voice as the voice they hear and kind of looks the same.",
+  "speaker": "multiple",
+  "speaker_name": "Multiple Speakers",
+  "speaker_role": "Multiple Roles",
+  "is_levin": true,
+  "speaker_order": "multiple",
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.777141",
+  "start_time": 729400,
+  "end_time": 801620,
+  "timestamp": "729400.00s - 801620.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "C",
+        "B"
+      ],
+      "speaker_details": {
+        "C": {
+          "speaker_id": "C",
+          "name": "Thomas Pollak",
+          "role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+          "is_levin": false,
+          "speaker_order": 3,
+          "additional_context": "neuropsychiatrist and researche",
+          "identified_at": "2025-08-22T11:46:00.876129"
+        },
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:46:00.876272"
+        }
+      },
+      "conversation_type": "dialogue"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 2,
+      "speaker_interaction_type": "dialogue",
+      "conversation_flow": [
+        "B: Is. Is. Is....",
+        "C: Is potentially harmful to them. So, I mean, I gues..."
+      ],
+      "collaboration_pattern": "dialogue"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "Is. Is. Is.",
+      "start_time": 729400,
+      "end_time": 730470,
+      "timestamp": "729400.00s - 730470.00s"
+    },
+    {
+      "speaker_id": "C",
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "is_levin": false,
+      "speaker_order": 3,
+      "text": "Is potentially harmful to them. So, I mean, I guess it's. I mean, there have been these. These great examples of, you know, I guess in psychiatry we can be very deflationary and. And talk about that agent as a fiction. And the point of psychiatry is to kind of bash that perspective out of the patient with medications or therapy or whatever. But I think there are other approaches that actually, I guess more consistent with the way you might be thinking about things is, well, what happens if you engage with it relationally as an agent? And I'm just thinking in my university, there's this wonderful trial of something Called Avatar therapy, where people that have these distressing voices that, you know, can. They say awful things to the patient, they take control of them, and, you know, they have all this kind of psychological baggage with it. The patient sits down with a therapist and they construct an avatar on a computer screen that has the same voice as the voice they hear and kind of looks the same.",
+      "start_time": 730470,
+      "end_time": 801620,
+      "timestamp": "730470.00s - 801620.00s"
+    }
+  ]
+}

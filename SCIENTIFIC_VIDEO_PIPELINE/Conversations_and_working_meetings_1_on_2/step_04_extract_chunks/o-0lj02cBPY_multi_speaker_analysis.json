@@ -1,0 +1,34 @@
+{
+  "video_id": "o-0lj02cBPY",
+  "total_utterances": 51,
+  "speaker_contributions": {
+    "A": {
+      "utterance_count": 23,
+      "total_words": 4357,
+      "is_levin": false
+    },
+    "B": {
+      "utterance_count": 16,
+      "total_words": 2929,
+      "is_levin": true
+    },
+    "C": {
+      "utterance_count": 12,
+      "total_words": 1419,
+      "is_levin": false
+    }
+  },
+  "conversation_flow_sample": [
+    "Frank Putnam: Okay. Nice to meet you. Wow, what a library behind...",
+    "Michael Levin: Very nice to meet you. Hey, Alexi, Good to see you...",
+    "Alexey Tolchinsky: Hi, Mike. Good....",
+    "Frank Putnam: Good to meet you. We were just talking about how t...",
+    "Michael Levin: Please. Yeah....",
+    "Alexey Tolchinsky: Should we maybe, you know, have. Say a few words, ...",
+    "Frank Putnam: So I'm actually a psychiatrist, but I also had a d...",
+    "Michael Levin: Fascinating. Fascinating. Yeah. Many things to, to...",
+    "Frank Putnam: Yeah, yeah, I know. That's certainly one of the pl...",
+    "Michael Levin: Yeah, so, so overall, you know, that's, that's wha..."
+  ],
+  "analysis_timestamp": "2025-08-22T14:14:06.724542"
+}

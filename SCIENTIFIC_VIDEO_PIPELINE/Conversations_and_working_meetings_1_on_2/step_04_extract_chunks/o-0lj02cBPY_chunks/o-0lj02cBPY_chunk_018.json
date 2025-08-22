@@ -1,0 +1,98 @@
+{
+  "chunk_id": "o-0lj02cBPY_chunk_018",
+  "semantic_text": "Amazing. You know. Yeah. Sorry, please, go ahead. Sorry, what? No, please, please finish. Finish your thought.",
+  "speaker": "multiple",
+  "speaker_name": "Multiple Speakers",
+  "speaker_role": "Multiple Roles",
+  "is_levin": true,
+  "speaker_order": "multiple",
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:12:48.699525",
+  "start_time": 2445790,
+  "end_time": 2455270,
+  "timestamp": "2445790.00s - 2455270.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "A",
+        "B"
+      ],
+      "speaker_details": {
+        "A": {
+          "speaker_id": "A",
+          "name": "Frank Putnam",
+          "role": "UNC at Chapel Hill",
+          "is_levin": false,
+          "speaker_order": 2,
+          "additional_context": "Dept. of Psychiatry",
+          "identified_at": "2025-08-22T11:42:22.299847"
+        },
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:43:13.147432"
+        }
+      },
+      "conversation_type": "dialogue"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 2,
+      "speaker_interaction_type": "dialogue",
+      "conversation_flow": [
+        "B: Amazing. You know. Yeah. Sorry, please, go ahead....",
+        "A: Sorry, what?...",
+        "B: No, please, please finish. Finish your thought...."
+      ],
+      "collaboration_pattern": "dialogue"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "Amazing. You know. Yeah. Sorry, please, go ahead.",
+      "start_time": 2445790,
+      "end_time": 2450750,
+      "timestamp": "2445790.00s - 2450750.00s"
+    },
+    {
+      "speaker_id": "A",
+      "speaker_name": "Frank Putnam",
+      "speaker_role": "UNC at Chapel Hill",
+      "is_levin": false,
+      "speaker_order": 2,
+      "text": "Sorry, what?",
+      "start_time": 2452670,
+      "end_time": 2453390,
+      "timestamp": "2452670.00s - 2453390.00s"
+    },
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "No, please, please finish. Finish your thought.",
+      "start_time": 2453550,
+      "end_time": 2455270,
+      "timestamp": "2453550.00s - 2455270.00s"
+    }
+  ]
+}

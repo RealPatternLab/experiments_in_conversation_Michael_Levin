@@ -1,0 +1,108 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_000",
+  "semantic_text": "I'm a clinical psychologist in Maryland. I work with outpatient requests and doing psychotherapy primarily. And I also, you know, write papers and Michael was kind enough to collaborate on a few of those. Have a lot of interest in Michael's work and integration of it with clinical psychologies. Great. Yeah. So I'm a neuropsychiatrist working in London. I'm also a researcher at King's College London. I research, I guess you'd call it immunopsychiatry. So the relationship between the immune system and mental illness mainly is particularly focusing on psychosis and autoimmunity. Clinically, I guess as a neuropsychiatrist, I'm seeing patients with kind of you'd call neurological disorders, brain disorders who also present psychiatrically. Obviously those categories are a little bit problematic at some level. And a lot of the patients that I see are patients who have sort of brain inflammation and kind of immune problems with the brain. And it's interesting to see how they sort of what happens to them. But I guess the other area, the other patient group that I think would be super interesting if we had time of these patients who. They have a diagnosis called functional neurological disorder. And so these are patients who have symptoms that look very much like the symptoms that we see in neurology and neurosurgery, but there's no structural, organic cause that we can find. And there is this idea that there's a sort of a top down kind of etiology happening. And I think it touches on some of the nice ideas about sort of dissociation and placebo that I know you've written about.",
+  "speaker": "multiple",
+  "speaker_name": "Multiple Speakers",
+  "speaker_role": "Multiple Roles",
+  "is_levin": true,
+  "speaker_order": "multiple",
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.776926",
+  "start_time": 480,
+  "end_time": 104770,
+  "timestamp": "480.00s - 104770.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "A",
+        "C",
+        "B"
+      ],
+      "speaker_details": {
+        "A": {
+          "speaker_id": "A",
+          "name": "Alexey Tolchinsky",
+          "role": "The George Washington University, Center for Professional Psychology",
+          "is_levin": false,
+          "speaker_order": 2,
+          "additional_context": "a clinical psychologist and Adjunct Professor",
+          "identified_at": "2025-08-22T11:45:25.343931"
+        },
+        "C": {
+          "speaker_id": "C",
+          "name": "Thomas Pollak",
+          "role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+          "is_levin": false,
+          "speaker_order": 3,
+          "additional_context": "neuropsychiatrist and researche",
+          "identified_at": "2025-08-22T11:46:00.876129"
+        },
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:46:00.876272"
+        }
+      },
+      "conversation_type": "multi_speaker_discussion"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 3,
+      "speaker_interaction_type": "multi_speaker_discussion",
+      "conversation_flow": [
+        "A: I'm a clinical psychologist in Maryland. I work wi...",
+        "B: Great....",
+        "C: Yeah. So I'm a neuropsychiatrist working in London..."
+      ],
+      "collaboration_pattern": "round_table_discussion"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "A",
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "is_levin": false,
+      "speaker_order": 2,
+      "text": "I'm a clinical psychologist in Maryland. I work with outpatient requests and doing psychotherapy primarily. And I also, you know, write papers and Michael was kind enough to collaborate on a few of those. Have a lot of interest in Michael's work and integration of it with clinical psychologies.",
+      "start_time": 480,
+      "end_time": 23040,
+      "timestamp": "480.00s - 23040.00s"
+    },
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "Great.",
+      "start_time": 24960,
+      "end_time": 25360,
+      "timestamp": "24960.00s - 25360.00s"
+    },
+    {
+      "speaker_id": "C",
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "is_levin": false,
+      "speaker_order": 3,
+      "text": "Yeah. So I'm a neuropsychiatrist working in London. I'm also a researcher at King's College London. I research, I guess you'd call it immunopsychiatry. So the relationship between the immune system and mental illness mainly is particularly focusing on psychosis and autoimmunity. Clinically, I guess as a neuropsychiatrist, I'm seeing patients with kind of you'd call neurological disorders, brain disorders who also present psychiatrically. Obviously those categories are a little bit problematic at some level. And a lot of the patients that I see are patients who have sort of brain inflammation and kind of immune problems with the brain. And it's interesting to see how they sort of what happens to them. But I guess the other area, the other patient group that I think would be super interesting if we had time of these patients who. They have a diagnosis called functional neurological disorder. And so these are patients who have symptoms that look very much like the symptoms that we see in neurology and neurosurgery, but there's no structural, organic cause that we can find. And there is this idea that there's a sort of a top down kind of etiology happening. And I think it touches on some of the nice ideas about sort of dissociation and placebo that I know you've written about.",
+      "start_time": 26580,
+      "end_time": 104770,
+      "timestamp": "26580.00s - 104770.00s"
+    }
+  ]
+}

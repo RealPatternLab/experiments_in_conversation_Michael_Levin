@@ -1,0 +1,64 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_009",
+  "semantic_text": "I mean, in. In some of our disorders, even more impressively than in. In the ones we were talking about, like in. In schizophrenia and psychosis, the thought, I guess, depending on what you're calling a thought here. Right. But this other agent that is perceived as being external, you know, at times takes full control over the body. Right. And it's not, you know, this is. It's doing stuff that even. Even in real time, the. The individual doesn't want being done. Their arm is being moved against. Against their will, or they're kind of acting in a way that they know is.",
+  "speaker": "C",
+  "speaker_name": "Thomas Pollak",
+  "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+  "is_levin": false,
+  "speaker_order": 3,
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.777134",
+  "start_time": 693990,
+  "end_time": 729400,
+  "timestamp": "693990.00s - 729400.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "C"
+      ],
+      "speaker_details": {
+        "C": {
+          "speaker_id": "C",
+          "name": "Thomas Pollak",
+          "role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+          "is_levin": false,
+          "speaker_order": 3,
+          "additional_context": "neuropsychiatrist and researche",
+          "identified_at": "2025-08-22T11:46:00.876129"
+        }
+      },
+      "conversation_type": "monologue"
+    },
+    "levin_context": {
+      "levin_involved": false,
+      "levin_role": "not_involved",
+      "levin_contribution_type": null,
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 1,
+      "speaker_interaction_type": "monologue",
+      "conversation_flow": [
+        "C: I mean, in. In some of our disorders, even more im..."
+      ],
+      "collaboration_pattern": "single_speaker"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "C",
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "is_levin": false,
+      "speaker_order": 3,
+      "text": "I mean, in. In some of our disorders, even more impressively than in. In the ones we were talking about, like in. In schizophrenia and psychosis, the thought, I guess, depending on what you're calling a thought here. Right. But this other agent that is perceived as being external, you know, at times takes full control over the body. Right. And it's not, you know, this is. It's doing stuff that even. Even in real time, the. The individual doesn't want being done. Their arm is being moved against. Against their will, or they're kind of acting in a way that they know is.",
+      "start_time": 693990,
+      "end_time": 729400,
+      "timestamp": "693990.00s - 729400.00s"
+    }
+  ]
+}

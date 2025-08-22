@@ -1,0 +1,64 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_001",
+  "semantic_text": "Yeah, yeah, super interesting. You know, in particular, I was, I want to get your, your views on in these, this, this potential distinction between organic disease and quote unquote, psychological disease. And there's a concept that we, that I think about a lot, which is this, this, this notion of the thought that breaks the thinker, right? These, these, these thought patterns that are. There's nothing wrong with the system. It isn't broken, it isn't damaged. And that also attaches to some things that we've been doing in the aging field recently. And this idea that. So the typical theories of aging are either that it's an accumulation of noise and damage over time or that it's evolutionarily programmed in somehow. But there's also, I think there's kind of a cognitive perspective on things where it's actually certain things can happen and can go wrong not because of any damage or any, any problem, but as a Result of processing certain inputs. And what kind of. Right. What kind of inputs can trigger cognitive dynamics that then cause significant problems? And maybe eventually they too, filter down into the. Into the physical. Right. And they affect the. You know. But anyway, so. So that's. That's. That's the kind of stuff I. I was hoping we talk about today.",
+  "speaker": "B",
+  "speaker_name": "Michael Levin",
+  "speaker_role": "Biologist, Tufts University",
+  "is_levin": true,
+  "speaker_order": 2,
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.776957",
+  "start_time": 106840,
+  "end_time": 181760,
+  "timestamp": "106840.00s - 181760.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "B"
+      ],
+      "speaker_details": {
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:46:00.876272"
+        }
+      },
+      "conversation_type": "monologue"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 1,
+      "speaker_interaction_type": "monologue",
+      "conversation_flow": [
+        "B: Yeah, yeah, super interesting. You know, in partic..."
+      ],
+      "collaboration_pattern": "single_speaker"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "Yeah, yeah, super interesting. You know, in particular, I was, I want to get your, your views on in these, this, this potential distinction between organic disease and quote unquote, psychological disease. And there's a concept that we, that I think about a lot, which is this, this, this notion of the thought that breaks the thinker, right? These, these, these thought patterns that are. There's nothing wrong with the system. It isn't broken, it isn't damaged. And that also attaches to some things that we've been doing in the aging field recently. And this idea that. So the typical theories of aging are either that it's an accumulation of noise and damage over time or that it's evolutionarily programmed in somehow. But there's also, I think there's kind of a cognitive perspective on things where it's actually certain things can happen and can go wrong not because of any damage or any, any problem, but as a Result of processing certain inputs. And what kind of. Right. What kind of inputs can trigger cognitive dynamics that then cause significant problems? And maybe eventually they too, filter down into the. Into the physical. Right. And they affect the. You know. But anyway, so. So that's. That's. That's the kind of stuff I. I was hoping we talk about today.",
+      "start_time": 106840,
+      "end_time": 181760,
+      "timestamp": "106840.00s - 181760.00s"
+    }
+  ]
+}

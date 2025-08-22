@@ -1,0 +1,98 @@
+{
+  "chunk_id": "o-0lj02cBPY_chunk_005",
+  "semantic_text": "Very interesting. I thought your papers were very interesting. Oh, thank you. Cognitive Glue paper. I read that several times. You know, I had a little more trouble with the thoughts and the thinkers, but I. I really like the. The cognitive blue. I thought that was extraordinary. The experiments were just amazing to me, actually. Yeah.",
+  "speaker": "multiple",
+  "speaker_name": "Multiple Speakers",
+  "speaker_role": "Multiple Roles",
+  "is_levin": true,
+  "speaker_order": "multiple",
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:12:48.699454",
+  "start_time": 752390,
+  "end_time": 774310,
+  "timestamp": "752390.00s - 774310.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "A",
+        "B"
+      ],
+      "speaker_details": {
+        "A": {
+          "speaker_id": "A",
+          "name": "Frank Putnam",
+          "role": "UNC at Chapel Hill",
+          "is_levin": false,
+          "speaker_order": 2,
+          "additional_context": "Dept. of Psychiatry",
+          "identified_at": "2025-08-22T11:42:22.299847"
+        },
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:43:13.147432"
+        }
+      },
+      "conversation_type": "dialogue"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 2,
+      "speaker_interaction_type": "dialogue",
+      "conversation_flow": [
+        "A: Very interesting. I thought your papers were very ...",
+        "B: Oh, thank you....",
+        "A: Cognitive Glue paper. I read that several times. Y..."
+      ],
+      "collaboration_pattern": "dialogue"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "A",
+      "speaker_name": "Frank Putnam",
+      "speaker_role": "UNC at Chapel Hill",
+      "is_levin": false,
+      "speaker_order": 2,
+      "text": "Very interesting. I thought your papers were very interesting.",
+      "start_time": 752390,
+      "end_time": 755110,
+      "timestamp": "752390.00s - 755110.00s"
+    },
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "Oh, thank you.",
+      "start_time": 755190,
+      "end_time": 755910,
+      "timestamp": "755190.00s - 755910.00s"
+    },
+    {
+      "speaker_id": "A",
+      "speaker_name": "Frank Putnam",
+      "speaker_role": "UNC at Chapel Hill",
+      "is_levin": false,
+      "speaker_order": 2,
+      "text": "Cognitive Glue paper. I read that several times. You know, I had a little more trouble with the thoughts and the thinkers, but I. I really like the. The cognitive blue. I thought that was extraordinary. The experiments were just amazing to me, actually. Yeah.",
+      "start_time": 756150,
+      "end_time": 774310,
+      "timestamp": "756150.00s - 774310.00s"
+    }
+  ]
+}

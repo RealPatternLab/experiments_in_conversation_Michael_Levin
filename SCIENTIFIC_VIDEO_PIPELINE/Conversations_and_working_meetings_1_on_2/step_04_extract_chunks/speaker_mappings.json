@@ -1,0 +1,60 @@
+{
+  "o-0lj02cBPY": {
+    "A": {
+      "speaker_id": "A",
+      "name": "Frank Putnam",
+      "role": "UNC at Chapel Hill",
+      "is_levin": false,
+      "speaker_order": 2,
+      "additional_context": "Dept. of Psychiatry",
+      "identified_at": "2025-08-22T11:42:22.299847"
+    },
+    "C": {
+      "speaker_id": "C",
+      "name": "Alexey Tolchinsky",
+      "role": "George Washington University",
+      "is_levin": false,
+      "speaker_order": 3,
+      "additional_context": null,
+      "identified_at": "2025-08-22T11:43:13.147300"
+    },
+    "B": {
+      "speaker_id": "B",
+      "name": "Michael Levin",
+      "role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "additional_context": null,
+      "identified_at": "2025-08-22T11:43:13.147432"
+    }
+  },
+  "1IhHJgGNBUc": {
+    "A": {
+      "speaker_id": "A",
+      "name": "Alexey Tolchinsky",
+      "role": "The George Washington University, Center for Professional Psychology",
+      "is_levin": false,
+      "speaker_order": 2,
+      "additional_context": "a clinical psychologist and Adjunct Professor",
+      "identified_at": "2025-08-22T11:45:25.343931"
+    },
+    "C": {
+      "speaker_id": "C",
+      "name": "Thomas Pollak",
+      "role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "is_levin": false,
+      "speaker_order": 3,
+      "additional_context": "neuropsychiatrist and researche",
+      "identified_at": "2025-08-22T11:46:00.876129"
+    },
+    "B": {
+      "speaker_id": "B",
+      "name": "Michael Levin",
+      "role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "additional_context": null,
+      "identified_at": "2025-08-22T11:46:00.876272"
+    }
+  }
+}

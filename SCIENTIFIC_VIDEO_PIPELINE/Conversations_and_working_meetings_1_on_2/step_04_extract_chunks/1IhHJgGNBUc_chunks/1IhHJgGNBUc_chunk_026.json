@@ -1,0 +1,64 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_026",
+  "semantic_text": "Totally, totally. Yeah. Yeah. I've talked about this with. And if you have access to, by the way, to tissues, we should talk about the collaboration. But yes, we thought about making that what we need. Now the next thing we're developing now is a bunch of more subtle behavioral tests with these things because so far all we've been watching is just native movement and they have some specific behaviors and we've characterized all that. But now the question is, okay, so what are your preferences? What, what can you learn? Right? What are your, what are your you know, what kind of memories can you form? What are you measuring in the environment? So once we understand a little bit about what the assays should be, then then we can start screening through patient samples and just find out if, you know, a, does it reflect current state? Is a predictive of future state? Is it, is it something that you can get out of it? You know, as an avatar? Another thing, we're thinking of these things as screening avatars for, for, for, for drugs, right? So when you have, if you have multiple options of should you be on this antidepressant or that one or, or something else, you might be able to screen that on, on the bots and actually find out that, okay, for this, for this patient, these other three things didn't work, but this one, that works. So, so some, something like that. Yeah.",
+  "speaker": "B",
+  "speaker_name": "Michael Levin",
+  "speaker_role": "Biologist, Tufts University",
+  "is_levin": true,
+  "speaker_order": 2,
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.777222",
+  "start_time": 2329830,
+  "end_time": 2397350,
+  "timestamp": "2329830.00s - 2397350.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "B"
+      ],
+      "speaker_details": {
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:46:00.876272"
+        }
+      },
+      "conversation_type": "monologue"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 1,
+      "speaker_interaction_type": "monologue",
+      "conversation_flow": [
+        "B: Totally, totally. Yeah. Yeah. I've talked about th..."
+      ],
+      "collaboration_pattern": "single_speaker"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "Totally, totally. Yeah. Yeah. I've talked about this with. And if you have access to, by the way, to tissues, we should talk about the collaboration. But yes, we thought about making that what we need. Now the next thing we're developing now is a bunch of more subtle behavioral tests with these things because so far all we've been watching is just native movement and they have some specific behaviors and we've characterized all that. But now the question is, okay, so what are your preferences? What, what can you learn? Right? What are your, what are your you know, what kind of memories can you form? What are you measuring in the environment? So once we understand a little bit about what the assays should be, then then we can start screening through patient samples and just find out if, you know, a, does it reflect current state? Is a predictive of future state? Is it, is it something that you can get out of it? You know, as an avatar? Another thing, we're thinking of these things as screening avatars for, for, for, for drugs, right? So when you have, if you have multiple options of should you be on this antidepressant or that one or, or something else, you might be able to screen that on, on the bots and actually find out that, okay, for this, for this patient, these other three things didn't work, but this one, that works. So, so some, something like that. Yeah.",
+      "start_time": 2329830,
+      "end_time": 2397350,
+      "timestamp": "2329830.00s - 2397350.00s"
+    }
+  ]
+}

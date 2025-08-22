@@ -1,0 +1,108 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_003",
+  "semantic_text": "That. That. That my. My memory is getting worse? Am I getting dementia? That then causes a kind of reallocation of attentional resources away from the ensuing conversation. So more stuff gets forgotten, and you get this kind of runaway feedback loop that in a pretty short space of time can take over someone's life to the extent that they become absolutely convinced that they have a sort of degenerative sort of dementing condition. And. And we think that the kind of. The.",
+  "speaker": "multiple",
+  "speaker_name": "Multiple Speakers",
+  "speaker_role": "Multiple Roles",
+  "is_levin": true,
+  "speaker_order": "multiple",
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.776978",
+  "start_time": 294830,
+  "end_time": 320480,
+  "timestamp": "294830.00s - 320480.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "A",
+        "C",
+        "B"
+      ],
+      "speaker_details": {
+        "A": {
+          "speaker_id": "A",
+          "name": "Alexey Tolchinsky",
+          "role": "The George Washington University, Center for Professional Psychology",
+          "is_levin": false,
+          "speaker_order": 2,
+          "additional_context": "a clinical psychologist and Adjunct Professor",
+          "identified_at": "2025-08-22T11:45:25.343931"
+        },
+        "C": {
+          "speaker_id": "C",
+          "name": "Thomas Pollak",
+          "role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+          "is_levin": false,
+          "speaker_order": 3,
+          "additional_context": "neuropsychiatrist and researche",
+          "identified_at": "2025-08-22T11:46:00.876129"
+        },
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:46:00.876272"
+        }
+      },
+      "conversation_type": "multi_speaker_discussion"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 3,
+      "speaker_interaction_type": "multi_speaker_discussion",
+      "conversation_flow": [
+        "B: That....",
+        "C: That. That my. My memory is getting worse? Am I ge...",
+        "A: The...."
+      ],
+      "collaboration_pattern": "round_table_discussion"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "That.",
+      "start_time": 294830,
+      "end_time": 295030,
+      "timestamp": "294830.00s - 295030.00s"
+    },
+    {
+      "speaker_id": "C",
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "is_levin": false,
+      "speaker_order": 3,
+      "text": "That. That my. My memory is getting worse? Am I getting dementia? That then causes a kind of reallocation of attentional resources away from the ensuing conversation. So more stuff gets forgotten, and you get this kind of runaway feedback loop that in a pretty short space of time can take over someone's life to the extent that they become absolutely convinced that they have a sort of degenerative sort of dementing condition. And. And we think that the kind of.",
+      "start_time": 295030,
+      "end_time": 320280,
+      "timestamp": "295030.00s - 320280.00s"
+    },
+    {
+      "speaker_id": "A",
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "is_levin": false,
+      "speaker_order": 2,
+      "text": "The.",
+      "start_time": 320280,
+      "end_time": 320480,
+      "timestamp": "320280.00s - 320480.00s"
+    }
+  ]
+}

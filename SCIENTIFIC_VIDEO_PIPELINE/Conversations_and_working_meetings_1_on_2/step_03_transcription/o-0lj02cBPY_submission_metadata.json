@@ -1,0 +1,27 @@
+{
+  "transcript_id": "ac831bd6-fcec-44ce-8545-c7e81bde00ca",
+  "video_id": "o-0lj02cBPY",
+  "video_title": "Conversation with Frank Putnam and Alexey Tolchinsky 1",
+  "submitted_at": "2025-08-21T21:45:36.057139",
+  "pipeline_type": "conversations_1_on_2",
+  "transcription_config": {
+    "speaker_labels": true,
+    "speakers_expected": 3,
+    "auto_highlights": true,
+    "entity_detection": true,
+    "auto_chapters": true,
+    "sentiment_analysis": true,
+    "iab_categories": true,
+    "content_safety": false,
+    "language_detection": true,
+    "boost_param": "high"
+  },
+  "conversation_features": {
+    "speaker_diarization": true,
+    "qa_extraction_ready": true,
+    "levin_knowledge_focus": true,
+    "conversation_context_preservation": true
+  },
+  "webhook_url": "https://experimentsinconversationmichaellevin-neodev.streamlit.app/webhook",
+  "status": "pending"
+}

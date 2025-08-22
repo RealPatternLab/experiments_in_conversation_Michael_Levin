@@ -1,0 +1,64 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_019",
+  "semantic_text": "And, and I think that's probably what got me so excited about some of what you've been writing. Anyway. You, I mean, I think you use the phrase the space of possible minds. And, and at some point the phrase the space of possible patients came to me. Right. Like, you know, if we're, we're treating, either we treat people or we treat maybe their neurotransmitter receptors or something. And it, it seems to me like there's there's a whole lot in between that could be potential targets. And, and, and it's funny because, like in this Avatar therapy example, you've kind of got to give it a little bit of a boost. You've kind of got to do a little bit of, you know, animistic magic or something to make these, these agents solid enough to interact with. But it just strikes me that maybe there's this whole set of practices or set of, you know, possibilities that involve granting a degree of autonom or somehow boosting the autonomy or the reality or the solidity of, of these sub agents so that you can then enter and enter into a relationship with them. And again, I think there are all kinds of ways that one could do that, but they all sound a bit woo woo. And I don't think medicine has a grasp on it yet. And I don't see what, I'm not sure what they would, what the analogs of that would look like in sort of more basic biomedicine either, or whether they.",
+  "speaker": "C",
+  "speaker_name": "Thomas Pollak",
+  "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+  "is_levin": false,
+  "speaker_order": 3,
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.777186",
+  "start_time": 1477439,
+  "end_time": 1563010,
+  "timestamp": "1477439.00s - 1563010.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "C"
+      ],
+      "speaker_details": {
+        "C": {
+          "speaker_id": "C",
+          "name": "Thomas Pollak",
+          "role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+          "is_levin": false,
+          "speaker_order": 3,
+          "additional_context": "neuropsychiatrist and researche",
+          "identified_at": "2025-08-22T11:46:00.876129"
+        }
+      },
+      "conversation_type": "monologue"
+    },
+    "levin_context": {
+      "levin_involved": false,
+      "levin_role": "not_involved",
+      "levin_contribution_type": null,
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 1,
+      "speaker_interaction_type": "monologue",
+      "conversation_flow": [
+        "C: And, and I think that's probably what got me so ex..."
+      ],
+      "collaboration_pattern": "single_speaker"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "C",
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "is_levin": false,
+      "speaker_order": 3,
+      "text": "And, and I think that's probably what got me so excited about some of what you've been writing. Anyway. You, I mean, I think you use the phrase the space of possible minds. And, and at some point the phrase the space of possible patients came to me. Right. Like, you know, if we're, we're treating, either we treat people or we treat maybe their neurotransmitter receptors or something. And it, it seems to me like there's there's a whole lot in between that could be potential targets. And, and, and it's funny because, like in this Avatar therapy example, you've kind of got to give it a little bit of a boost. You've kind of got to do a little bit of, you know, animistic magic or something to make these, these agents solid enough to interact with. But it just strikes me that maybe there's this whole set of practices or set of, you know, possibilities that involve granting a degree of autonom or somehow boosting the autonomy or the reality or the solidity of, of these sub agents so that you can then enter and enter into a relationship with them. And again, I think there are all kinds of ways that one could do that, but they all sound a bit woo woo. And I don't think medicine has a grasp on it yet. And I don't see what, I'm not sure what they would, what the analogs of that would look like in sort of more basic biomedicine either, or whether they.",
+      "start_time": 1477439,
+      "end_time": 1563010,
+      "timestamp": "1477439.00s - 1563010.00s"
+    }
+  ]
+}

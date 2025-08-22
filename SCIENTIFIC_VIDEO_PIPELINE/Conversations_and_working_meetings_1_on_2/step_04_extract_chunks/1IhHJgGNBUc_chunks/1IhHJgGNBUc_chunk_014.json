@@ -1,0 +1,86 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_014",
+  "semantic_text": "I got kind of a, kind of a weird question for these, as you guys mentioned, these voices that tend to be very negative and destructive and all that. Is there ever a positive version of this in the clinical literature? Does anybody say, I've got this Voice. And it's amazing. It builds me up, it tells me how great I am. It has good ideas. It tells me to do stuff I otherwise was afraid to do. Like, amazing. Does that. Does that ever happen or is it always a negative thing? Yeah, absolutely. And I think we're just beginning to appreciate how common it is. And I think, as you'd expect, that there's such a sort of. There's a continuity to some extent. Right. I mean, I get in trouble with colleagues if I say that it's kind of purely dimensional. But yeah, there are people who hear voices who only experience positive, you know, things being said. There are people who once experienced very negative things and who had the right kind of treatment or just one day, you know, thing, things got better. And I think, I guess I see that on a continuity, really, with. So, for example, I'm one of the 10% of people who don't hear thoughts verbally. I have them as images. And I kind of assume that, you know, there's probably no sharp discontinuity between somebody having verbal thoughts. You know, I'm hungry, I need to go to the gym. And then, you know, eventually someone hearing. Hearing voices. Because of course, you can hear first person voices. That kind of feel a little bit like my own. But maybe not. And I'm sure that no matter where you look, you will never be able to find a point where there is a sharp discontinuity there. But in recent years, there are things like the hearing voices movement, which is a kind of quite a kind of powerful and lovely movement, kind of trying to reclaim these experiences away from the, you know, the. The medical establishment.",
+  "speaker": "multiple",
+  "speaker_name": "Multiple Speakers",
+  "speaker_role": "Multiple Roles",
+  "is_levin": true,
+  "speaker_order": "multiple",
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.777159",
+  "start_time": 1076160,
+  "end_time": 1189920,
+  "timestamp": "1076160.00s - 1189920.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "C",
+        "B"
+      ],
+      "speaker_details": {
+        "C": {
+          "speaker_id": "C",
+          "name": "Thomas Pollak",
+          "role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+          "is_levin": false,
+          "speaker_order": 3,
+          "additional_context": "neuropsychiatrist and researche",
+          "identified_at": "2025-08-22T11:46:00.876129"
+        },
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:46:00.876272"
+        }
+      },
+      "conversation_type": "dialogue"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 2,
+      "speaker_interaction_type": "dialogue",
+      "conversation_flow": [
+        "B: I got kind of a, kind of a weird question for thes...",
+        "C: Yeah, absolutely. And I think we're just beginning..."
+      ],
+      "collaboration_pattern": "dialogue"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "I got kind of a, kind of a weird question for these, as you guys mentioned, these voices that tend to be very negative and destructive and all that. Is there ever a positive version of this in the clinical literature? Does anybody say, I've got this Voice. And it's amazing. It builds me up, it tells me how great I am. It has good ideas. It tells me to do stuff I otherwise was afraid to do. Like, amazing. Does that. Does that ever happen or is it always a negative thing?",
+      "start_time": 1076160,
+      "end_time": 1101400,
+      "timestamp": "1076160.00s - 1101400.00s"
+    },
+    {
+      "speaker_id": "C",
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "is_levin": false,
+      "speaker_order": 3,
+      "text": "Yeah, absolutely. And I think we're just beginning to appreciate how common it is. And I think, as you'd expect, that there's such a sort of. There's a continuity to some extent. Right. I mean, I get in trouble with colleagues if I say that it's kind of purely dimensional. But yeah, there are people who hear voices who only experience positive, you know, things being said. There are people who once experienced very negative things and who had the right kind of treatment or just one day, you know, thing, things got better. And I think, I guess I see that on a continuity, really, with. So, for example, I'm one of the 10% of people who don't hear thoughts verbally. I have them as images. And I kind of assume that, you know, there's probably no sharp discontinuity between somebody having verbal thoughts. You know, I'm hungry, I need to go to the gym. And then, you know, eventually someone hearing. Hearing voices. Because of course, you can hear first person voices. That kind of feel a little bit like my own. But maybe not. And I'm sure that no matter where you look, you will never be able to find a point where there is a sharp discontinuity there. But in recent years, there are things like the hearing voices movement, which is a kind of quite a kind of powerful and lovely movement, kind of trying to reclaim these experiences away from the, you know, the. The medical establishment.",
+      "start_time": 1102600,
+      "end_time": 1189920,
+      "timestamp": "1102600.00s - 1189920.00s"
+    }
+  ]
+}

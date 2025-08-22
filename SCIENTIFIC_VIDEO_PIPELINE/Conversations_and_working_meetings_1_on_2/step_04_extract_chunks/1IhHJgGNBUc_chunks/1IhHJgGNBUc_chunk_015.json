@@ -1,0 +1,64 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_015",
+  "semantic_text": "I guess just to add nuance to what, what Thomas just said and what Michael, you asked. I think that the positive versus negative voice is the affect. It's not the thought. The thought in and of itself, it's neutral. It has no valence. But, you know, in psychosis literature, you know, and I'm quoting Mark Solmes and others, we often see the direction of wishful thinking. For example, person with Korsakov, you know, syndrome who cannot retrieve memories or find them fluently. And he confabulates. He tends to confabulate in the direction of what he wants. When he doesn't remember what happened yesterday, he's not going to say, you know, I was like, you know, working out in the gym. He says, I saw my brother John, and we were just, you know, gossiping and having beers. He will tell you in the direction of where he wants to go. Oftentimes we see the same phenomenon in the dreams and other things. But this is where kind of the feeling of the gap happens in the direction of what's missing and what the person wants.",
+  "speaker": "A",
+  "speaker_name": "Alexey Tolchinsky",
+  "speaker_role": "The George Washington University, Center for Professional Psychology",
+  "is_levin": false,
+  "speaker_order": 2,
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.777165",
+  "start_time": 1190160,
+  "end_time": 1243820,
+  "timestamp": "1190160.00s - 1243820.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "A"
+      ],
+      "speaker_details": {
+        "A": {
+          "speaker_id": "A",
+          "name": "Alexey Tolchinsky",
+          "role": "The George Washington University, Center for Professional Psychology",
+          "is_levin": false,
+          "speaker_order": 2,
+          "additional_context": "a clinical psychologist and Adjunct Professor",
+          "identified_at": "2025-08-22T11:45:25.343931"
+        }
+      },
+      "conversation_type": "monologue"
+    },
+    "levin_context": {
+      "levin_involved": false,
+      "levin_role": "not_involved",
+      "levin_contribution_type": null,
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 1,
+      "speaker_interaction_type": "monologue",
+      "conversation_flow": [
+        "A: I guess just to add nuance to what, what Thomas ju..."
+      ],
+      "collaboration_pattern": "single_speaker"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "A",
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "is_levin": false,
+      "speaker_order": 2,
+      "text": "I guess just to add nuance to what, what Thomas just said and what Michael, you asked. I think that the positive versus negative voice is the affect. It's not the thought. The thought in and of itself, it's neutral. It has no valence. But, you know, in psychosis literature, you know, and I'm quoting Mark Solmes and others, we often see the direction of wishful thinking. For example, person with Korsakov, you know, syndrome who cannot retrieve memories or find them fluently. And he confabulates. He tends to confabulate in the direction of what he wants. When he doesn't remember what happened yesterday, he's not going to say, you know, I was like, you know, working out in the gym. He says, I saw my brother John, and we were just, you know, gossiping and having beers. He will tell you in the direction of where he wants to go. Oftentimes we see the same phenomenon in the dreams and other things. But this is where kind of the feeling of the gap happens in the direction of what's missing and what the person wants.",
+      "start_time": 1190160,
+      "end_time": 1243820,
+      "timestamp": "1190160.00s - 1243820.00s"
+    }
+  ]
+}

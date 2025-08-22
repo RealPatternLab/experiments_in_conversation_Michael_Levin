@@ -1,0 +1,98 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_034",
+  "semantic_text": "Yeah, absolutely. It really does. And is there a way, Alexei, that. Because in these extreme cases like dissociative identity disorder and stuff, there's. It. It almost feels like again, I don't see these patients very often, very occasionally, but not so often, but it feels like there's a, a kind of a fight for real estate. Right? There's a fight between the altars at, roughly speaking, the same, the same level. I mean, there's a lot of argument that the altars may not be as rich, etc, but they're both sort of claiming the, the top agential spot, right? In, in, in some sense. And so the integration of that level is, you know, clearly something that you would imagine it would be hard to see how someone could get on and be healthy without there being an integration at that level. But when you start thinking about the kind of verticality of it, and I appreciate dividing it into horizontal and vertical probably isn't that useful. But then there is perhaps, as Mike says, it's more about this sort of alignment, everything pointing in the same direction as opposed to there just being one single agent at each level that kind of wears the trousers.",
+  "speaker": "multiple",
+  "speaker_name": "Multiple Speakers",
+  "speaker_role": "Multiple Roles",
+  "is_levin": true,
+  "speaker_order": "multiple",
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.777259",
+  "start_time": 3119810,
+  "end_time": 3192740,
+  "timestamp": "3119810.00s - 3192740.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "C",
+        "B"
+      ],
+      "speaker_details": {
+        "C": {
+          "speaker_id": "C",
+          "name": "Thomas Pollak",
+          "role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+          "is_levin": false,
+          "speaker_order": 3,
+          "additional_context": "neuropsychiatrist and researche",
+          "identified_at": "2025-08-22T11:46:00.876129"
+        },
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:46:00.876272"
+        }
+      },
+      "conversation_type": "dialogue"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 2,
+      "speaker_interaction_type": "dialogue",
+      "conversation_flow": [
+        "C: Yeah, absolutely. It really does. And is there a w...",
+        "B: It....",
+        "C: It almost feels like again, I don't see these pati..."
+      ],
+      "collaboration_pattern": "dialogue"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "C",
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "is_levin": false,
+      "speaker_order": 3,
+      "text": "Yeah, absolutely. It really does. And is there a way, Alexei, that. Because in these extreme cases like dissociative identity disorder and stuff, there's.",
+      "start_time": 3119810,
+      "end_time": 3130410,
+      "timestamp": "3119810.00s - 3130410.00s"
+    },
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "It.",
+      "start_time": 3130410,
+      "end_time": 3130690,
+      "timestamp": "3130410.00s - 3130690.00s"
+    },
+    {
+      "speaker_id": "C",
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "is_levin": false,
+      "speaker_order": 3,
+      "text": "It almost feels like again, I don't see these patients very often, very occasionally, but not so often, but it feels like there's a, a kind of a fight for real estate. Right? There's a fight between the altars at, roughly speaking, the same, the same level. I mean, there's a lot of argument that the altars may not be as rich, etc, but they're both sort of claiming the, the top agential spot, right? In, in, in some sense. And so the integration of that level is, you know, clearly something that you would imagine it would be hard to see how someone could get on and be healthy without there being an integration at that level. But when you start thinking about the kind of verticality of it, and I appreciate dividing it into horizontal and vertical probably isn't that useful. But then there is perhaps, as Mike says, it's more about this sort of alignment, everything pointing in the same direction as opposed to there just being one single agent at each level that kind of wears the trousers.",
+      "start_time": 3130690,
+      "end_time": 3192740,
+      "timestamp": "3130690.00s - 3192740.00s"
+    }
+  ]
+}

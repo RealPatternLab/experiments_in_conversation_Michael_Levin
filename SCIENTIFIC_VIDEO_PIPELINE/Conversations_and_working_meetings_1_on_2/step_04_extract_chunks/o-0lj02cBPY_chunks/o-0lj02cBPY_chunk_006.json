@@ -1,0 +1,98 @@
+{
+  "chunk_id": "o-0lj02cBPY_chunk_006",
+  "semantic_text": "Would it be okay if I tried to share a very brief kind of attempt to integrate your work, Michael? Go for it. Go for it. I was thinking, Michael, to start with your hypothesis that if we take development first. Development is active. There is a morphogenic goal set up. And to me, during development, it's a very active phase. There's a lot of work to do, a lot of construction to make. And in that sense, the system is hopeful, optimistic. You know, it's hopeful to reach the goal. And you have this measure in your paper with leo, active information storage, which simply means that during development there's much data transfer from the past to the present. We use our memories quite a bit, and we use them to move toward the goal in the future. What that means is the temporal depth is significant. Your light cone is present during development.",
+  "speaker": "multiple",
+  "speaker_name": "Multiple Speakers",
+  "speaker_role": "Multiple Roles",
+  "is_levin": true,
+  "speaker_order": "multiple",
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:12:48.699461",
+  "start_time": 776240,
+  "end_time": 828280,
+  "timestamp": "776240.00s - 828280.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "C",
+        "B"
+      ],
+      "speaker_details": {
+        "C": {
+          "speaker_id": "C",
+          "name": "Alexey Tolchinsky",
+          "role": "George Washington University",
+          "is_levin": false,
+          "speaker_order": 3,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:43:13.147300"
+        },
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:43:13.147432"
+        }
+      },
+      "conversation_type": "dialogue"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 2,
+      "speaker_interaction_type": "dialogue",
+      "conversation_flow": [
+        "C: Would it be okay if I tried to share a very brief ...",
+        "B: Go for it....",
+        "C: I was thinking, Michael, to start with your hypoth..."
+      ],
+      "collaboration_pattern": "dialogue"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "C",
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "George Washington University",
+      "is_levin": false,
+      "speaker_order": 3,
+      "text": "Would it be okay if I tried to share a very brief kind of attempt to integrate your work, Michael? Go for it.",
+      "start_time": 776240,
+      "end_time": 783120,
+      "timestamp": "776240.00s - 783120.00s"
+    },
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "Go for it.",
+      "start_time": 783120,
+      "end_time": 783840,
+      "timestamp": "783120.00s - 783840.00s"
+    },
+    {
+      "speaker_id": "C",
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "George Washington University",
+      "is_levin": false,
+      "speaker_order": 3,
+      "text": "I was thinking, Michael, to start with your hypothesis that if we take development first. Development is active. There is a morphogenic goal set up. And to me, during development, it's a very active phase. There's a lot of work to do, a lot of construction to make. And in that sense, the system is hopeful, optimistic. You know, it's hopeful to reach the goal. And you have this measure in your paper with leo, active information storage, which simply means that during development there's much data transfer from the past to the present. We use our memories quite a bit, and we use them to move toward the goal in the future. What that means is the temporal depth is significant. Your light cone is present during development.",
+      "start_time": 784640,
+      "end_time": 828280,
+      "timestamp": "784640.00s - 828280.00s"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "chunk_id": "1IhHJgGNBUc_chunk_025",
+  "semantic_text": "Yeah. I mean, we haven't done it yet, so I don't know. You know, I don't know that that works. But what about, I mean, have you, have you considered what would sort of getting the cells from, say, patients with a, with schizophrenia or with a sort of severe self disorder? Because the polygenic risk for these disorders. Right. I mean, we know, we know for a start that it's associated with developmental, physical, developmental abnormalities as well as the sort of psychological. But you could almost flip that on its head and say, well, what's the social behavior of these anthrops who are derived from patient cells or something like that?",
+  "speaker": "multiple",
+  "speaker_name": "Multiple Speakers",
+  "speaker_role": "Multiple Roles",
+  "is_levin": true,
+  "speaker_order": "multiple",
+  "speaker_additional_context": null,
+  "speaker_identified_at": "2025-08-22T14:14:06.777217",
+  "start_time": 2292810,
+  "end_time": 2329350,
+  "timestamp": "2292810.00s - 2329350.00s",
+  "primary_topics": [],
+  "secondary_topics": [],
+  "key_terms": [],
+  "conversation_context": {
+    "speaker_context": {
+      "speakers_involved": [
+        "A",
+        "C",
+        "B"
+      ],
+      "speaker_details": {
+        "A": {
+          "speaker_id": "A",
+          "name": "Alexey Tolchinsky",
+          "role": "The George Washington University, Center for Professional Psychology",
+          "is_levin": false,
+          "speaker_order": 2,
+          "additional_context": "a clinical psychologist and Adjunct Professor",
+          "identified_at": "2025-08-22T11:45:25.343931"
+        },
+        "C": {
+          "speaker_id": "C",
+          "name": "Thomas Pollak",
+          "role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+          "is_levin": false,
+          "speaker_order": 3,
+          "additional_context": "neuropsychiatrist and researche",
+          "identified_at": "2025-08-22T11:46:00.876129"
+        },
+        "B": {
+          "speaker_id": "B",
+          "name": "Michael Levin",
+          "role": "Biologist, Tufts University",
+          "is_levin": true,
+          "speaker_order": 2,
+          "additional_context": null,
+          "identified_at": "2025-08-22T11:46:00.876272"
+        }
+      },
+      "conversation_type": "multi_speaker_discussion"
+    },
+    "levin_context": {
+      "levin_involved": true,
+      "levin_role": "primary_speaker",
+      "levin_contribution_type": "providing_expert_insights",
+      "levin_expertise_area": null,
+      "levin_insights": []
+    },
+    "multi_speaker_context": {
+      "total_speakers": 3,
+      "speaker_interaction_type": "multi_speaker_discussion",
+      "conversation_flow": [
+        "A: Yeah....",
+        "B: I mean, we haven't done it yet, so I don't know. Y...",
+        "C: But what about, I mean, have you, have you conside..."
+      ],
+      "collaboration_pattern": "round_table_discussion"
+    }
+  },
+  "chunk_entries": [
+    {
+      "speaker_id": "A",
+      "speaker_name": "Alexey Tolchinsky",
+      "speaker_role": "The George Washington University, Center for Professional Psychology",
+      "is_levin": false,
+      "speaker_order": 2,
+      "text": "Yeah.",
+      "start_time": 2292810,
+      "end_time": 2293130,
+      "timestamp": "2292810.00s - 2293130.00s"
+    },
+    {
+      "speaker_id": "B",
+      "speaker_name": "Michael Levin",
+      "speaker_role": "Biologist, Tufts University",
+      "is_levin": true,
+      "speaker_order": 2,
+      "text": "I mean, we haven't done it yet, so I don't know. You know, I don't know that that works.",
+      "start_time": 2293130,
+      "end_time": 2295570,
+      "timestamp": "2293130.00s - 2295570.00s"
+    },
+    {
+      "speaker_id": "C",
+      "speaker_name": "Thomas Pollak",
+      "speaker_role": "the Institute of Psychiatry, Psychology and Neuroscience at King's College London",
+      "is_levin": false,
+      "speaker_order": 3,
+      "text": "But what about, I mean, have you, have you considered what would sort of getting the cells from, say, patients with a, with schizophrenia or with a sort of severe self disorder? Because the polygenic risk for these disorders. Right. I mean, we know, we know for a start that it's associated with developmental, physical, developmental abnormalities as well as the sort of psychological. But you could almost flip that on its head and say, well, what's the social behavior of these anthrops who are derived from patient cells or something like that?",
+      "start_time": 2295570,
+      "end_time": 2329350,
+      "timestamp": "2295570.00s - 2329350.00s"
+    }
+  ]
+}
