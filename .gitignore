@@ -52,6 +52,7 @@ MANIFEST
 *.ogg
 *.m4a
 *.wma
+*.part
 
 # Keep Streamlit config
 !.streamlit/
