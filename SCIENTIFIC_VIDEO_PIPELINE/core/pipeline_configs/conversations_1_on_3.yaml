@@ -1,0 +1,98 @@
+pipeline_type: "conversations_1_on_3"
+pipeline_name: "Conversations and Working Meetings 1-on-3"
+description: "Pipeline for processing conversations with 4 speakers (1 moderator + 3 participants)"
+
+# Speaker configuration
+speaker_count: 4
+speaker_identification: "interactive"
+speaker_roles:
+  - "moderator"
+  - "participant_1"
+  - "participant_2"
+  - "participant_3"
+
+# Transcription configuration
+transcription_service: "assemblyai"
+transcription_config:
+  speaker_diarization: true
+  language_detection: true
+  custom_spelling: true
+
+# LLM enhancement configuration
+llm_enhancement: true
+llm_config:
+  model: "gpt-4"
+  temperature: 0.3
+  max_tokens: 800
+  system_prompt: "You are a scientific content analyst specializing in developmental biology, bioelectricity, psychiatry, and neuroscience. You excel at extracting meaningful insights from multi-speaker scientific discussions and identifying interaction patterns between participants."
+
+# Chunking configuration
+chunking_config:
+  strategy: "semantic"
+  max_chunk_tokens: 400
+  min_chunk_tokens: 150
+  overlap_tokens: 75
+  conversation_context: true
+
+# Frame extraction configuration
+frame_extraction:
+  enabled: true
+  interval_seconds: 15
+  quality: "high"
+  frame_format: "jpg"
+  frame_size: "1280x720"
+  max_frames_per_video: 1200
+
+# Frame alignment configuration
+frame_alignment:
+  strategy: "single_frame_per_chunk"
+  timestamp_tolerance: 6.0
+  min_alignment_confidence: 0.75
+
+# Embedding configuration
+embedding_config:
+  model: "text-embedding-3-large"
+  chunk_size: 1000
+  include_metadata: true
+  include_content_summary: true
+
+# Download configuration
+download_config:
+  retry_attempts: 4
+  retry_delay: 8
+  timeout_seconds: 400
+  preferred_formats: ["mp4", "webm"]
+
+# Output configuration
+output_config:
+  create_enhanced_chunks: true
+  create_finetune_data: true
+  create_qa_pairs: true
+  create_speaker_analysis: true
+  create_interaction_patterns: true
+
+# Q&A generation configuration
+qa_generation:
+  enabled: true
+  max_qa_pairs_per_chunk: 3
+  question_types: ["clarification", "follow_up", "synthesis"]
+
+# Multi-speaker analysis configuration
+multi_speaker_analysis:
+  enabled: true
+  interaction_patterns: true
+  speaker_dynamics: true
+  topic_transitions: true
+  conversation_flow: true
+  levin_insights: true
+  cross_speaker_references: true
+
+# Cleanup configuration
+cleanup_config:
+  strategy: "aggressive"
+  preserve_essential: true
+  max_log_age_days: 10
+
+# Progress tracking
+progress_tracking: true
+detailed_logging: true

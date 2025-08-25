@@ -1,0 +1,14 @@
+# Sample Playlist for Conversations 1-on-3 Pipeline
+# This demonstrates how the unified framework works with a new pipeline type
+
+# Example video URLs (replace with actual URLs when testing)
+https://www.youtube.com/watch?v=dQw4w9WgXcQ
+https://www.youtube.com/watch?v=9bZkp7q19f0
+https://www.youtube.com/watch?v=kJQP7kiw5Fk
+
+# The unified framework will:
+# 1. Process this playlist using the conversations_1_on_3 configuration
+# 2. Extract 4 speakers (moderator + 3 participants)
+# 3. Use 12-second frame intervals (vs 15s for other pipelines)
+# 4. Apply enhanced LLM analysis for multi-speaker dynamics
+# 5. Generate Q&A pairs and interaction pattern analysis

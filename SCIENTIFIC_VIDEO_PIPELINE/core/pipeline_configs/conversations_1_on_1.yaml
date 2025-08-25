@@ -1,0 +1,143 @@
+# Conversations 1-on-1 Pipeline Configuration
+# Two speakers: Michael Levin + 1 other, conversational content
+
+pipeline_type: "conversations_1_on_1"
+pipeline_name: "Conversations and Working Meetings 1-on-1"
+description: "Pipeline for processing conversational content with 2 speakers (Levin + 1 other)"
+
+# Speaker Configuration
+speaker_count: 2
+speaker_identification: "interactive"
+speaker_mapping:
+  default_roles:
+    - "michael_levin"
+    - "speaker_1"
+  levin_identifier: "michael_levin"
+  speaker_order: ["levin", "other"]
+
+# Transcription Configuration
+transcription_service: "assemblyai"
+transcription_config:
+  language_code: "en"
+  speaker_diarization: true
+  custom_spelling: []
+  disfluencies: true
+  auto_highlights: false
+  content_safety: false
+  auto_chapters: false
+  entity_detection: false
+  iab_categories: false
+  auto_labels: false
+  sentiment_analysis: false
+
+# Chunking Configuration
+chunking_strategy: "conversational"
+chunking_config:
+  max_chunk_tokens: 500
+  min_chunk_tokens: 150
+  overlap_tokens: 75
+  semantic_boundaries: true
+  topic_aware: true
+  speaker_aware: true
+  conversation_flow: true
+
+# LLM Enhancement Configuration
+llm_enhancement: true
+llm_config:
+  model: "gpt-4"
+  temperature: 0.3
+  max_tokens: 500
+  system_prompt: "You are a scientific content analyst specializing in developmental biology, bioelectricity, psychiatry, and neuroscience. You excel at extracting meaningful insights from conversational scientific discussions."
+  enhancement_fields:
+    - "primary_topics"
+    - "secondary_topics"
+    - "key_terms"
+    - "content_summary"
+    - "scientific_domain"
+
+# Frame Extraction Configuration
+frame_extraction:
+  enabled: true
+  interval_seconds: 15
+  quality: "high"
+  max_frames_per_video: 1000
+  frame_format: "jpg"
+  frame_size: "1280x720"
+
+# Frame-Chunk Alignment Configuration
+frame_alignment:
+  strategy: "single_frame_per_chunk"
+  timestamp_tolerance: 5.0
+  min_alignment_confidence: 0.7
+  frame_selection: "first_match"
+  alignment_quality: "proximity_based"
+
+# Embedding Configuration
+embedding_config:
+  model: "text-embedding-3-large"
+  chunk_size: 1000
+  include_metadata: true
+  include_content_summary: true
+  include_speaker_context: true
+  include_conversation_context: true
+
+# Cleanup Configuration
+cleanup_strategy: "aggressive"
+cleanup_config:
+  remove_video_files: true
+  remove_unreferenced_frames: true
+  remove_temp_files: true
+  preserve_essential: true
+  essential_files:
+    - "logs/pipeline_progress_queue.json"
+    - "logs/assemblyai_webhooks.json"
+    - "*.py"
+    - "*.md"
+    - "enhanced_chunks/*.json"
+    - "finetune_data/*.json"
+
+# Output Configuration
+output_config:
+  create_enhanced_chunks: true
+  create_finetune_data: true
+  create_qa_pairs: true
+  create_speaker_analysis: true
+  create_conversation_flow: true
+  output_formats: ["json", "jsonl"]
+  enhanced_chunks:
+    include_qa_context: true
+    include_speaker_mapping: true
+    include_temporal_context: true
+
+# Processing Configuration
+processing_config:
+  parallel_processing: false
+  max_workers: 1
+  retry_attempts: 3
+  retry_delay: 5
+  timeout_seconds: 300
+  progress_tracking: true
+  detailed_logging: true
+  llm_rate_limiting: true
+  llm_delay_seconds: 1.0
+
+# Q&A Generation Configuration
+qa_generation:
+  enabled: true
+  qa_strategy: "conversational"
+  qa_config:
+    max_qa_pairs: 50
+    min_qa_confidence: 0.7
+    include_context: true
+    speaker_aware: true
+    topic_aware: true
+
+# Multi-Speaker Analysis Configuration
+multi_speaker_analysis:
+  enabled: true
+  analysis_types:
+    - "speaker_dynamics"
+    - "conversation_flow"
+    - "topic_transitions"
+    - "interaction_patterns"
+    - "levin_insights"

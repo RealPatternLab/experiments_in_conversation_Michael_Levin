@@ -1,0 +1,20 @@
+{
+  "playlist_name": "sample_playlist",
+  "pipeline_type": "conversations_1_on_3",
+  "pipeline_name": "Conversations and Working Meetings 1-on-3",
+  "total_videos": 10,
+  "video_ids": [
+    "dQw4w9WgXcQ",
+    "9bZkp7q19f0",
+    "kJQP7kiw5Fk",
+    "Conversatio",
+    "demonstrate",
+    "conversatio",
+    "configurati",
+    "participant",
+    "multi-speak",
+    "interaction"
+  ],
+  "created_at": "2025-08-22T16:41:55.943794",
+  "source_file": "step_01_raw/sample_playlist.txt"
+}
